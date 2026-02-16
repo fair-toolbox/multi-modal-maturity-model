@@ -3,7 +3,8 @@ name = "multi-modal-maturity-model"
 version = "0.1.0"
 description = "Multi-modal maturity model for research software and services."
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Ana Mendes",email = "anitamnd@github.com"},
+    {name = "Magnus Palmblad",email = "magnuspalmblad@github.com"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
@@ -13,8 +14,13 @@ dependencies = [
     "howfairis (>=0.14.2,<0.15.0)",
     "pandas (>=3.0.0,<4.0.0)",
     "pygithub (>=2.8.1,<3.0.0)",
-    "pydantic (>=2.12.5,<3.0.0)"
+    "pydantic (>=2.12.5,<3.0.0)",
+    "lizard (>=1.21.0,<2.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)"
 ]
+
+[project.scripts]
+m4 = "multi_modal_maturity_model.cli:main"
 
 [dependency-groups]
 dev = [
