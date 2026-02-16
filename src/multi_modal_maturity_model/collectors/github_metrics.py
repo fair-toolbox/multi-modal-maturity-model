@@ -75,6 +75,7 @@ class GitHubMetricsCollector:
                 "branches_protected": self._get_protected_branch_count(repo),
                 "default_branch_is_protected": self._is_default_branch_protected(repo),
                 "languages": self._get_languages(repo),
+                "has_license": self._get_license(repo),
                 "contributors": self._get_contributors(repo),
             }
             
@@ -177,7 +178,18 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Could not get languages: {e}")
             return []
-    
+        
+    def _get_license(self, repo: Repository) -> bool:
+        """Return true if repo has a license, else False."""
+        try:
+            license_obj = repo.get_license()
+            return license_obj is not None
+        except GithubException:
+            return False
+        except Exception as e:
+            logger.warning(f"Cannot get license: {e}")
+            return False
+        
     def _get_contributors(self, repo: Repository) -> list[dict[str, Any]]:
         """Get contributors sorted by contribution count."""
         try:
