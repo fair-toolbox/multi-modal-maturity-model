@@ -114,9 +114,6 @@ class MaturityCalculator:
         logger.info(f"Analysis complete. Results saved to {output_dir}")
         return results
 
-    def analyze_from_spreadsheet():
-        pass
-
     def _collect_github_metrics(self, repo_urls: list[str]) -> list[dict[str, Any]]:
         """Collect GitHub metrics for all repositories."""
         results = []
