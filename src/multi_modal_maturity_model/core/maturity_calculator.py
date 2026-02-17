@@ -118,7 +118,7 @@ class MaturityCalculator:
         pass
 
     def _collect_github_metrics(self, repo_urls: list[str]) -> list[dict[str, Any]]:
-        """Collect GitHub metrics for a list of repository URLs."""
+        """Collect GitHub metrics for all repositories."""
         results = []
         for i, url in enumerate(repo_urls, 1):
             try:
@@ -129,8 +129,9 @@ class MaturityCalculator:
                 results.append({"url": url, "error": str(e)})
         return results
 
-    def _collect_fairness_metrics():
-        pass
+    def _collect_fairness_metrics(self, repo_urls: list[str]) -> list[dict[str, Any]]:
+        """Collect FAIR metrics for all repositories."""
+        return self.fairness.collect_batch(repo_urls)
 
     def _collect_code_quality_metrics():
         pass
