@@ -9,7 +9,7 @@ from typing import Any
 import pandas as pd
 
 from ..collectors import (
-    GitHubMetricsCollector,
+    GitHubCollector,
     EuropePMCCollector,
     FairnessCollector,
     CodeQualityCollector,
@@ -46,7 +46,7 @@ class MetricsAggregator:
         logger.info("Initializing MaturityCalculator")
 
         # Initialize collectors
-        self.github = GitHubMetricsCollector(token=github_token)
+        self.github = GitHubCollector(token=github_token)
         self.citations = EuropePMCCollector()
         self.fairness = FairnessCollector(rate_limit_seconds=rate_limit_seconds)
         self.code_quality = CodeQualityCollector()
