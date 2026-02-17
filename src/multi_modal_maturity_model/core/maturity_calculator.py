@@ -145,8 +145,9 @@ class MaturityCalculator:
                 results.append({"url": url, "error": str(e)})
         return results
 
-    def _collect_citation_metrics():
-        pass
+    def _collect_citation_metrics(self, pmids: list[str]) -> list[dict[str, Any]]:
+        """Collect citation metrics for all PMIDs."""
+        return self.citations.collect_batch(pmids)
 
     def _save_to_csv(self, data: list[dict[str, Any]], filepath: Path) -> None:
         """Save collected metrics to a CSV file."""
