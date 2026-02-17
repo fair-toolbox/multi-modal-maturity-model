@@ -1,5 +1,3 @@
-# src/multi_modal_maturity_model/collectors/github_metrics.py
-
 """
 GitHub API client for collecting repository health metrics.
 """
@@ -14,12 +12,12 @@ from github.Repository import Repository
 logger = logging.getLogger(__name__)
 
 
-class GitHubMetricsCollector:
+class GitHubCollector:
     """
     Collect metrics from GitHub repositories.
     Uses PyGithub library for authenticated access.
     """
-    
+
     def __init__(self, token: str, closed_issues_window: int = 300):
         """
         Parameters
@@ -33,21 +31,21 @@ class GitHubMetricsCollector:
         self.gh = Github(auth=self.auth)
         self.closed_issues_window = closed_issues_window
         logger.info("GitHubMetricsCollector initialized")
-    
+
     def collect(self, repo_url: str) -> dict[str, Any]:
         """
         Main entry point: collect all metrics for a repository.
-        
+
         Parameters
         ----------
         repo_url : str
             Full GitHub URL (e.g., https://github.com/owner/repo)
-            
+
         Returns
         -------
         dict
             Dictionary with all collected metrics
-            
+
         Raises
         ------
         ValueError
@@ -56,13 +54,13 @@ class GitHubMetricsCollector:
             If API call fails (rate limit, not found, etc.)
         """
         from ..utils import URLParser
-        
+
         try:
             owner_repo = URLParser.to_owner_repo(repo_url)
             logger.debug(f"Collecting metrics for {owner_repo}")
-            
+
             repo = self.gh.get_repo(owner_repo)
-            
+
             return {
                 "url": repo_url,
                 "repo": owner_repo,
@@ -78,30 +76,30 @@ class GitHubMetricsCollector:
                 "has_license": self._get_license(repo),
                 "contributors": self._get_contributors(repo),
             }
-            
+
         except GithubException as e:
             logger.error(f"GitHub API error for {repo_url}: {e.status} - {e.data}")
             raise
         except Exception as e:
             logger.error(f"Unexpected error collecting metrics for {repo_url}: {e}")
             raise
-    
+
     def _get_default_branch(self, repo: Repository) -> str:
         """Get default branch name."""
         return repo.default_branch
-    
+
     def _get_forks(self, repo: Repository) -> int:
         """Get fork count (Com8 indicator)."""
         return repo.forks_count
-    
+
     def _get_open_issues(self, repo: Repository) -> int:
         """Get open issues count (Is1 indicator)."""
         return repo.get_issues(state="open").totalCount
-    
+
     def _get_avg_time_to_close(self, repo: Repository) -> float | None:
         """
         Calculate average time to close issues in days (Is2 indicator).
-        
+
         Returns
         -------
         float | None
@@ -110,7 +108,7 @@ class GitHubMetricsCollector:
         try:
             closed_issues = repo.get_issues(state="closed")
             durations_seconds = []
-            
+
             for i, issue in enumerate(closed_issues):
                 if i >= self.closed_issues_window:
                     break
@@ -120,17 +118,17 @@ class GitHubMetricsCollector:
                 if issue.created_at and issue.closed_at:
                     duration = (issue.closed_at - issue.created_at).total_seconds()
                     durations_seconds.append(duration)
-            
+
             if not durations_seconds:
                 return None
-            
+
             avg_seconds = mean(durations_seconds)
             return round(avg_seconds / 86400, 3)  # Convert to days
-            
+
         except Exception as e:
             logger.warning(f"Could not calculate avg time to close: {e}")
             return None
-    
+
     def _get_last_commit_date(self, repo: Repository) -> str | None:
         """Get last commit date on default branch. """
         try:
@@ -140,7 +138,7 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Could not get last commit date: {e}")
             return None
-    
+
     def _get_branch_count(self, repo: Repository) -> int:
         """Get total branch count (Co3 indicator)."""
         try:
@@ -148,7 +146,7 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Could not get branch count: {e}")
             return 0
-    
+
     def _get_protected_branch_count(self, repo: Repository) -> int:
         """Get protected branch count (Co3 indicator)."""
         try:
@@ -157,7 +155,7 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Could not get protected branch count: {e}")
             return 0
-    
+
     def _is_default_branch_protected(self, repo: Repository) -> bool | None:
         """Check if default branch is protected (Co13 indicator)."""
         try:
@@ -166,19 +164,19 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Could not check default branch protection: {e}")
             return None
-    
+
     def _get_languages(self, repo: Repository) -> list[str]:
         """Get languages sorted by usage."""
         try:
             languages = repo.get_languages()
             return [
-                lang for lang, _ in 
+                lang for lang, _ in
                 sorted(languages.items(), key=lambda x: x[1], reverse=True)
             ]
         except Exception as e:
             logger.warning(f"Could not get languages: {e}")
             return []
-        
+
     def _get_license(self, repo: Repository) -> bool:
         """Return true if repo has a license, else False."""
         try:
@@ -189,7 +187,7 @@ class GitHubMetricsCollector:
         except Exception as e:
             logger.warning(f"Cannot get license: {e}")
             return False
-        
+
     def _get_contributors(self, repo: Repository) -> list[dict[str, Any]]:
         """Get contributors sorted by contribution count."""
         try:

@@ -1,3 +1,7 @@
+"""
+Fetches tool metadata from the bio.tools API.
+"""
+
 import logging
 from typing import Any
 
@@ -9,7 +13,7 @@ class BioToolsCollector:
     """Collect bio.tools metadata."""
 
     def __init__(self, base_url: str = "https://bio.tools/api/tool"):
-        
+
         self.base_url = base_url
         logger.info("bio.tools collector initialized")
 
@@ -20,7 +24,7 @@ class BioToolsCollector:
             data = self._fetch_tool_data(tool_id)
 
             return data
-        
+
         except requests.RequestException as e:
             logger.error(f"Failed to fetch biotoolsID {tool_id}: {e}")
             raise
@@ -33,4 +37,4 @@ class BioToolsCollector:
         logger.debug(f"Requesting URL: {url}")
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        return response.json() 
+        return response.json()
