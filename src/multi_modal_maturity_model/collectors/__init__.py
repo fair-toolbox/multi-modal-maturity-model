@@ -1,7 +1,7 @@
 from .biotools import BioToolsCollector
-from .code_quality import CodeQualityCollector
-from .github_metrics import GitHubMetricsCollector
+from .lizard import CodeQualityCollector
+from .github import GitHubCollector
 from .europe_pmc import EuropePMCCollector
 from .howfairis import FairnessCollector
 
-__all__ = ["BioToolsCollector", "CodeQualityCollector", "GitHubMetricsCollector", "EuropePMCCollector", "FairnessCollector"]
+__all__ = ["BioToolsCollector", "CodeQualityCollector", "GitHubCollector", "EuropePMCCollector", "FairnessCollector"]
