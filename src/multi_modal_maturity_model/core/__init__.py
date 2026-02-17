@@ -1,3 +1,3 @@
-from .maturity_calculator import MaturityCalculator
+from .metrics_aggregator import MetricsAggregator
 
-__all__ = ["MaturityCalculator"]
+__all__ = ["MetricsAggregator"]

@@ -1,8 +1,5 @@
-# src/multi_modal_maturity_model/core/maturity_calculator.py
-
 """
-Main orchestrator for maturity model calculations.
-Coordinates all data collectors and exporters.
+Aggregates all data collectors and exporters.
 """
 
 import logging
@@ -21,9 +18,9 @@ from ..collectors import (
 logger = logging.getLogger(__name__)
 
 
-class MaturityCalculator:
+class MetricsAggregator:
     """
-    Main orchestrator for collecting maturity metrics.
+    Main aggregator for collecting maturity metrics.
     """
 
     def __init__(
