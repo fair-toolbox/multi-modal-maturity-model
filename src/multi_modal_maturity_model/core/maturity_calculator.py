@@ -117,8 +117,17 @@ class MaturityCalculator:
     def analyze_from_spreadsheet():
         pass
 
-    def _collect_github_metrics():
-        pass
+    def _collect_github_metrics(self, repo_urls: list[str]) -> list[dict[str, Any]]:
+        """Collect GitHub metrics for a list of repository URLs."""
+        results = []
+        for i, url in enumerate(repo_urls, 1):
+            try:
+                result = self.github.collect(url)
+                results.append(result)
+            except Exception as e:
+                logger.error(f"Error collecting GitHub metrics for {url}: {e}")
+                results.append({"url": url, "error": str(e)})
+        return results
 
     def _collect_fairness_metrics():
         pass
