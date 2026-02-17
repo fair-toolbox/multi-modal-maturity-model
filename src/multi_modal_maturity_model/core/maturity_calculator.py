@@ -113,3 +113,31 @@ class MaturityCalculator:
 
         logger.info(f"Analysis complete. Results saved to {output_dir}")
         return results
+
+    def analyze_from_spreadsheet():
+        pass
+
+    def _collect_github_metrics():
+        pass
+
+    def _collect_fairness_metrics():
+        pass
+
+    def _collect_code_quality_metrics():
+        pass
+
+    def _collect_citation_metrics():
+        pass
+
+    def _save_to_csv(self, data: list[dict[str, Any]], filepath: Path) -> None:
+        """Save collected metrics to a CSV file."""
+        if not data:
+            logger.warning(f"No data to save for {filepath}")
+            return
+
+        try:
+            df = pd.DataFrame(data)
+            df.to_csv(filepath, index=False)
+            logger.info(f"Saved metrics to {filepath}")
+        except Exception as e:
+            logger.error(f"Failed to save metrics to {filepath}: {e}")
