@@ -18,13 +18,11 @@ class BioToolsCollector:
         logger.info("bio.tools collector initialized")
 
     def collect(self, tool_id: str) -> dict[str, Any]:
-        logger.debug(f"Fetching tool data for biotoolsID: {tool_id}")
+        logger.debug(f"Fetching tool data {tool_id}")
 
         try:
             data = self._fetch_tool_data(tool_id)
-
             return data
-
         except requests.RequestException as e:
             logger.error(f"Failed to fetch biotoolsID {tool_id}: {e}")
             raise
@@ -33,8 +31,9 @@ class BioToolsCollector:
             raise
 
     def _fetch_tool_data(self, tool_id: str) -> dict[str, Any]:
-        url = f"{self.base_url}/{tool_id}"
-        logger.debug(f"Requesting URL: {url}")
+        url = f"{self.base_url}/{tool_id}?format=json"
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        return response.json()
+        data = response.json()
+        logger.debug(f"Fetched data from bio.tools for ID {tool_id} successfully")
+        return data
