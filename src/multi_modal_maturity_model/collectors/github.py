@@ -65,6 +65,7 @@ class GitHubCollector:
                 "url": repo_url,
                 "repo": owner_repo,
                 "default_branch": self._get_default_branch(repo),
+                "stars": self._get_stars(repo),
                 "forks": self._get_forks(repo),
                 "open_issues": self._get_open_issues(repo),
                 "avg_time_to_close_days": self._get_avg_time_to_close(repo),
@@ -91,6 +92,10 @@ class GitHubCollector:
     def _get_forks(self, repo: Repository) -> int:
         """Get fork count (Com8 indicator)."""
         return repo.forks_count
+
+    def _get_stars(self, repo: Repository) -> int:
+        """Get star count."""
+        return repo.stargazers_count
 
     def _get_open_issues(self, repo: Repository) -> int:
         """Get open issues count (Is1 indicator)."""
