@@ -110,6 +110,12 @@ class GitlabCollector:
             raise ValueError(f"No commits found for default branch '{default_branch}' in project '{project.path_with_namespace}'")
 
     def _get_has_license(self, project) -> bool:
-        # GitLab API does not have a direct "has_license" field or license_url
-        # We can check if the project has a license file in the repository...
-        pass
+        """Check if the project has a license file."""
+        try:
+            repo_tree = project.repository_tree(path='', ref=project.default_branch, per_page=100)
+            for file in repo_tree:
+                if 'license' in file['name'].lower() or 'copying' in file['name'].lower():
+                    return True
+        except GitlabError as e:
+            logger.warning(f"Could not retrieve repository tree for license check: {e}")
+        return False
