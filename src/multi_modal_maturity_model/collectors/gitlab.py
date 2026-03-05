@@ -64,6 +64,7 @@ class GitlabCollector:
                 "repo": group_sub_project,
                 "default_branch": project.default_branch,
                 "forks": project.forks_count,
+                "stars": project.star_count,
                 "open_issues": project.issues.list(state='opened', iterator=True).total,
                 "avg_time_to_close_days": self._get_avg_time_to_close(project),
                 "last_commit_date": self._get_last_commit_date(project),
@@ -73,7 +74,6 @@ class GitlabCollector:
                 "languages": project.languages(),
                 "has_license": self._get_has_license(project),
                 "contributors": project.repository_contributors(), # name, email, commits, additions, deletions
-                "stars": project.star_count,
             }
 
         except GitlabError as e:
@@ -85,6 +85,7 @@ class GitlabCollector:
 
 
     def _get_avg_time_to_close(self, project) -> float | None:
+        """Calculate average time to close issues in days."""
         closed_issues = project.issues.list(state='closed', iterator=True)
         closed_issues = list(closed_issues)
 
@@ -96,10 +97,17 @@ class GitlabCollector:
                 duration_days = (closed - created).total_seconds() / 86400
                 durations.append(duration_days)
 
-        return mean(durations) if durations else None
+        return mean(durations, 3) if durations else None
 
     def _get_last_commit_date(self, project) -> str | None:
-        pass
+        """Get the date of the last commit on the default branch."""
+        default_branch = project.default_branch
+        last_commit = project.commits.list(ref_name=default_branch, per_page=1)
+
+        if last_commit:
+            return last_commit[0].committed_date
+        else:
+            raise ValueError(f"No commits found for default branch '{default_branch}' in project '{project.path_with_namespace}'")
 
     def _get_has_license(self, project) -> bool:
         # GitLab API does not have a direct "has_license" field or license_url
