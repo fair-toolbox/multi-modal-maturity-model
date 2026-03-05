@@ -2,10 +2,11 @@
 GitLab API client for collecting repository health metrics.
 """
 
+import datetime
 import logging
-from typing import Any
-
 from gitlab import Gitlab, GitlabError
+from matplotlib.pylab import mean
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -67,7 +68,7 @@ class GitlabCollector:
                 "avg_time_to_close_days": self._get_avg_time_to_close(project),
                 "last_commit_date": self._get_last_commit_date(project),
                 "branches_total": project.branches.list(get_all=True),
-                "branches_protected": project.protectedbranches.list(interator=True).total,
+                "branches_protected": project.protectedbranches.list(iterator=True).total,
                 "default_branch_is_protected": project.branches.get(project.default_branch).protected,
                 "languages": project.languages(),
                 "has_license": self._get_has_license(project),
@@ -84,7 +85,18 @@ class GitlabCollector:
 
 
     def _get_avg_time_to_close(self, project) -> float | None:
-        pass
+        closed_issues = project.issues.list(state='closed', iterator=True)
+        closed_issues = list(closed_issues)
+
+        durations = []
+        for i in closed_issues:
+            if i.closed_at:
+                closed = datetime.fromisoformat(i.closed_at)
+                created = datetime.fromisoformat(i.created_at)
+                duration_days = (closed - created).total_seconds() / 86400
+                durations.append(duration_days)
+
+        return mean(durations) if durations else None
 
     def _get_last_commit_date(self, project) -> str | None:
         pass
