@@ -2,9 +2,9 @@ from dataclasses import dataclass
 
 @dataclass
 class RepositoryMetrics:
-    platform: str # "github" or "gitlab"
+    platform: str
     url: str
-    repo: str  # owner/repo format
+    repo: str
     default_branch: str
     stars: int
     forks: int

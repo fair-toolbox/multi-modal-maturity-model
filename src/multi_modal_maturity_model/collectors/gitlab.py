@@ -8,7 +8,7 @@ from gitlab import Gitlab, GitlabError
 from matplotlib.pylab import mean
 from typing import Any
 
-from ..core.models import RepositoryMetrics
+from ..models import RepositoryMetrics
 
 logger = logging.getLogger(__name__)
 
@@ -32,14 +32,14 @@ class GitlabCollector:
         self.closed_issues_window = closed_issues_window
         logger.info("GitLabCollector initialized")
 
-    def collect(self, repo_url: str) -> RepositoryMetrics:
+    def collect(self, group_sub_project: str) -> RepositoryMetrics:
         """
         Main entry point: collect all metrics for a repository.
 
         Parameters
         ----------
-        repo_url : str
-            Full GitLab URL (e.g., https://gitlab.com/owner/repo)
+        group_sub_project : str
+            Group and sub-project name (e.g., "group/project" or "group/subgroup/project")
 
         Returns
         -------
@@ -49,24 +49,18 @@ class GitlabCollector:
         Raises
         ------
         ValueError
-            If repo_url is not a valid GitLab URL
+            If group_sub_project is not a valid GitLab project identifier
         GitlabException
             If API call fails (rate limit, not found, etc.)
         """
-        from ..utils import URLParser
-
-        # Validate that this is a GitLab URL
-        URLParser.validate_platform_url(repo_url, "gitlab")
-
         try:
-            group_sub_project = URLParser.to_owner_repo(repo_url)
             logger.debug(f"Collecting metrics for {group_sub_project}")
 
-            project = self.gl.projects.get(group_sub_project, )
+            project = self.gl.projects.get(group_sub_project)
 
             return RepositoryMetrics(
                 platform="gitlab",
-                url=repo_url,
+                url=project.http_url_to_repo,
                 repo=group_sub_project,
                 default_branch=project.default_branch,
                 forks=project.forks_count,
@@ -82,10 +76,10 @@ class GitlabCollector:
                 contributors=project.repository_contributors(), # name, email, commits, additions, deletions
             )
         except GitlabError as e:
-            logger.error(f"GitLab API error for {repo_url}: {e.response_code} - {e.error_message}")
+            logger.error(f"GitLab API error for {group_sub_project}: {e.response_code} - {e.error_message}")
             raise
         except Exception as e:
-            logger.error(f"Unexpected error collecting metrics for {repo_url}: {e}")
+            logger.error(f"Unexpected error collecting metrics for {group_sub_project}: {e}")
             raise
 
 
