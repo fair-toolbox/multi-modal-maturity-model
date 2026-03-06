@@ -24,6 +24,11 @@ def main():
         default=None
     )
     parser.add_argument(
+        "--local-path",
+        help="Local path to repository for code quality analysis (optional, will clone from URL if not provided)",
+        default=None
+    )
+    parser.add_argument(
         "--output-dir",
         help="Output directory for results (default: ./results)",
         default="./results"
@@ -38,6 +43,8 @@ def main():
 
     print(f"M4 - Multi-Modal Maturity Model v0.1.0")
     print(f"Analyzing repository: {args.repository}")
+    if args.local_path:
+        print(f"Using local repository path: {args.local_path}")
     if args.pmid:
         print(f"Citation analysis for PMID: {args.pmid}")
     if args.biotoolsID:
