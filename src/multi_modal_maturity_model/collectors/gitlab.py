@@ -2,11 +2,13 @@
 GitLab API client for collecting repository health metrics.
 """
 
-import datetime
 import logging
+from datetime import datetime
 from gitlab import Gitlab, GitlabError
 from matplotlib.pylab import mean
 from typing import Any
+
+from ..core.models import RepositoryMetrics
 
 logger = logging.getLogger(__name__)
 
@@ -30,7 +32,7 @@ class GitlabCollector:
         self.closed_issues_window = closed_issues_window
         logger.info("GitLabCollector initialized")
 
-    def collect(self, repo_url: str) -> dict[str, Any]:
+    def collect(self, repo_url: str) -> RepositoryMetrics:
         """
         Main entry point: collect all metrics for a repository.
 
@@ -41,8 +43,8 @@ class GitlabCollector:
 
         Returns
         -------
-        dict
-            Dictionary with all collected metrics
+        RepositoryMetrics
+            Instance containing all collected metrics
 
         Raises
         ------
@@ -53,29 +55,32 @@ class GitlabCollector:
         """
         from ..utils import URLParser
 
+        # Validate that this is a GitLab URL
+        URLParser.validate_platform_url(repo_url, "gitlab")
+
         try:
             group_sub_project = URLParser.to_owner_repo(repo_url)
             logger.debug(f"Collecting metrics for {group_sub_project}")
 
             project = self.gl.projects.get(group_sub_project, )
 
-            return {
-                "url": repo_url,
-                "repo": group_sub_project,
-                "default_branch": project.default_branch,
-                "forks": project.forks_count,
-                "stars": project.star_count,
-                "open_issues": project.issues.list(state='opened', iterator=True).total,
-                "avg_time_to_close_days": self._get_avg_time_to_close(project),
-                "last_commit_date": self._get_last_commit_date(project),
-                "branches_total": project.branches.list(get_all=True),
-                "branches_protected": project.protectedbranches.list(iterator=True).total,
-                "default_branch_is_protected": project.branches.get(project.default_branch).protected,
-                "languages": project.languages(),
-                "has_license": self._get_has_license(project),
-                "contributors": project.repository_contributors(), # name, email, commits, additions, deletions
-            }
-
+            return RepositoryMetrics(
+                platform="gitlab",
+                url=repo_url,
+                repo=group_sub_project,
+                default_branch=project.default_branch,
+                forks=project.forks_count,
+                stars=project.star_count,
+                open_issues=project.issues.list(state='opened', iterator=True).total,
+                avg_time_to_close_days=self._get_avg_time_to_close(project),
+                last_commit_date=self._get_last_commit_date(project),
+                branches_total=project.branches.list(get_all=True),
+                branches_protected=project.protectedbranches.list(iterator=True).total,
+                default_branch_is_protected=project.branches.get(project.default_branch).protected,
+                languages=project.languages(),
+                has_license=self._get_has_license(project),
+                contributors=project.repository_contributors(), # name, email, commits, additions, deletions
+            )
         except GitlabError as e:
             logger.error(f"GitLab API error for {repo_url}: {e.response_code} - {e.error_message}")
             raise
@@ -97,12 +102,12 @@ class GitlabCollector:
                 duration_days = (closed - created).total_seconds() / 86400
                 durations.append(duration_days)
 
-        return mean(durations, 3) if durations else None
+        return round(mean(durations), 3) if durations else None
 
     def _get_last_commit_date(self, project) -> str | None:
         """Get the date of the last commit on the default branch."""
         default_branch = project.default_branch
-        last_commit = project.commits.list(ref_name=default_branch, per_page=1)
+        last_commit = project.commits.list(ref_name=default_branch, per_page=1, get_all=False)
 
         if last_commit:
             return last_commit[0].committed_date
