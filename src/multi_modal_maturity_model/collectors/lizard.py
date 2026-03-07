@@ -27,12 +27,15 @@ class CodeQualityCollector:
 
     def collect(self, repo_url: str) -> dict[str, Any]:
         """
-        Analyze code quality for a repository by cloning and running Lizard.
+        Analyze code quality for a repository.
+
+        Accepts either a Git repository URL (will be cloned) or a local path
+        to an existing repository.
 
         Parameters
         ----------
         repo_url : str
-            Git repository URL to clone and analyze
+            Git repository URL to clone and analyze, or local path to existing repository
 
         Returns
         -------
@@ -43,22 +46,45 @@ class CodeQualityCollector:
             - total_ccn: int | None (Su5: total cyclomatic complexity)
             - avg_ccn: float | None (Su6: average cyclomatic complexity)
             - duplicate_rate: float | None (Sc3: percentage of duplicate code)
+
+        Raises
+        ------
+        subprocess.CalledProcessError
+            If git clone fails (for remote URLs)
+        FileNotFoundError
+            If local path does not exist
+        Exception
+            For other unexpected failures during clone/setup
+
+        Note
+        ----
+        Analysis failures (lizard execution) return None values rather than raising.
+        Only repository access failures (clone, invalid path) raise exceptions.
         """
         logger.debug(f"Analyzing code quality for: {repo_url}")
 
         temp_dir = None
-        try:
-            # Create temp directory for cloning
-            temp_dir = tempfile.mkdtemp(prefix="m4_lizard_")
-            logger.debug(f"Created temp directory: {temp_dir}")
+        should_cleanup = False
 
-            self._clone_repo(repo_url, temp_dir)
+        try:
+            # Determine if input is a local path or URL
+            if self._is_local_path(repo_url):
+                logger.debug(f"Using existing local repository: {repo_url}")
+                analysis_path = repo_url
+            else:
+                # Create temp directory for cloning
+                temp_dir = tempfile.mkdtemp(prefix="m4_lizard_")
+                logger.debug(f"Created temp directory: {temp_dir}")
+                should_cleanup = True
+
+                self._clone_repo(repo_url, temp_dir)
+                analysis_path = temp_dir
 
             # Run lizard (python api)
-            complexity_metrics = self._analyze_complexity(temp_dir)
+            complexity_metrics = self._analyze_complexity(analysis_path)
 
             # Run duplicate detection (cli only)
-            duplicate_rate = self._analyze_duplicates(temp_dir)
+            duplicate_rate = self._analyze_duplicates(analysis_path)
 
             result = {
                 "url": repo_url,
@@ -70,14 +96,36 @@ class CodeQualityCollector:
 
             return result
 
-        except Exception as e:
-            logger.error(f"Error analyzing {repo_url}: {e}")
-            return self._empty_result(repo_url)
-
         finally:
-            if temp_dir and os.path.exists(temp_dir):
+            # Always cleanup temp directory if we created one
+            if should_cleanup and temp_dir and os.path.exists(temp_dir):
                 shutil.rmtree(temp_dir)
                 logger.debug(f"Cleaned up temp directory: {temp_dir}")
+
+    def _is_local_path(self, path: str) -> bool:
+        """
+        Check if the input is a local path (vs a URL).
+
+        Parameters
+        ----------
+        path : str
+            Path or URL to check
+
+        Returns
+        -------
+        bool
+            True if path is a local directory, False if it's a URL
+        """
+        # Check if it's an existing directory
+        if os.path.isdir(path):
+            return True
+
+        url_schemes = ('http://', 'https://', 'git://', 'ssh://', 'git@')
+        if path.startswith(url_schemes):
+            return False
+
+        # If not a URL and not an existing directory, treat as URL (will fail later if invalid)
+        return False
 
     def _clone_repo(self, repo_url: str, target_dir: str) -> None:
         """
@@ -203,25 +251,3 @@ class CodeQualityCollector:
         except Exception as e:
             logger.warning(f"Duplicate analysis failed: {e}")
             return None
-
-    def _empty_result(self, repo_url: str) -> dict[str, Any]:
-        """
-        Return an empty/failed result structure.
-
-        Parameters
-        ----------
-        repo_url : str
-            Repository URL
-
-        Returns
-        -------
-        dict
-            Result with all None values
-        """
-        return {
-            "url": repo_url,
-            "total_nloc": None,
-            "total_ccn": None,
-            "avg_ccn": None,
-            "duplicate_rate": None,
-        }
