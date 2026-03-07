@@ -10,18 +10,8 @@ repos:
       - id: check-merge-conflict
       - id: mixed-line-ending
 
-  - repo: local
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
     hooks:
-      - id: fmt
-        name: fmt (ruff --fix + black)
-        entry: poetry run fmt
-        language: system
-        pass_filenames: false
-        stages: [pre-commit]
-
-      - id: lint
-        name: lint (ruff + black --check)
-        entry: poetry run lint
-        language: system
-        pass_filenames: false
-        stages: [pre-push]
+      - id: black
+        language_version: python3
