@@ -9,6 +9,8 @@ from statistics import mean
 from github import Auth, Github, GithubException
 from github.Repository import Repository
 
+from ..models import RepositoryMetrics
+
 logger = logging.getLogger(__name__)
 
 
@@ -32,56 +34,53 @@ class GitHubCollector:
         self.closed_issues_window = closed_issues_window
         logger.info("GitHubMetricsCollector initialized")
 
-    def collect(self, repo_url: str) -> dict[str, Any]:
+    def collect(self, owner_repo: str) -> RepositoryMetrics:
         """
         Main entry point: collect all metrics for a repository.
 
         Parameters
         ----------
-        repo_url : str
-            Full GitHub URL (e.g., https://github.com/owner/repo)
+        owner_repo : str
+            Repository in owner/repo format (e.g., "owner/repo")
 
         Returns
         -------
-        dict
-            Dictionary with all collected metrics
+        RepositoryMetrics
+            Instance containing all collected metrics
 
         Raises
         ------
-        ValueError
-            If repo_url is not a valid GitHub URL
         GithubException
             If API call fails (rate limit, not found, etc.)
         """
-        from ..utils import URLParser
-
         try:
-            owner_repo = URLParser.to_owner_repo(repo_url)
             logger.debug(f"Collecting metrics for {owner_repo}")
 
             repo = self.gh.get_repo(owner_repo)
 
-            return {
-                "url": repo_url,
-                "repo": owner_repo,
-                "default_branch": self._get_default_branch(repo),
-                "forks": self._get_forks(repo),
-                "open_issues": self._get_open_issues(repo),
-                "avg_time_to_close_days": self._get_avg_time_to_close(repo),
-                "last_commit_date": self._get_last_commit_date(repo),
-                "branches_total": self._get_branch_count(repo),
-                "branches_protected": self._get_protected_branch_count(repo),
-                "default_branch_is_protected": self._is_default_branch_protected(repo),
-                "languages": self._get_languages(repo),
-                "has_license": self._get_license(repo),
-                "contributors": self._get_contributors(repo),
-            }
+            return RepositoryMetrics(
+                platform="github",
+                repo=owner_repo,
+                url=repo.html_url,
+                default_branch=self._get_default_branch(repo),
+                stars=self._get_stars(repo),
+                forks=self._get_forks(repo),
+                open_issues=self._get_open_issues(repo),
+                avg_time_to_close_days=self._get_avg_time_to_close(repo),
+                last_commit_date=self._get_last_commit_date(repo),
+                branches_total=self._get_branch_count(repo),
+                branches_protected=self._get_protected_branch_count(repo),
+                default_branch_is_protected=self._is_default_branch_protected(repo),
+                languages=self._get_languages(repo),
+                has_license=self._get_license(repo),
+                contributors=self._get_contributors(repo),
+            )
 
         except GithubException as e:
-            logger.error(f"GitHub API error for {repo_url}: {e.status} - {e.data}")
+            logger.error(f"GitHub API error for {owner_repo}: {e.status} - {e.data}")
             raise
         except Exception as e:
-            logger.error(f"Unexpected error collecting metrics for {repo_url}: {e}")
+            logger.error(f"Unexpected error collecting metrics for {owner_repo}: {e}")
             raise
 
     def _get_default_branch(self, repo: Repository) -> str:
@@ -91,6 +90,10 @@ class GitHubCollector:
     def _get_forks(self, repo: Repository) -> int:
         """Get fork count (Com8 indicator)."""
         return repo.forks_count
+
+    def _get_stars(self, repo: Repository) -> int:
+        """Get star count."""
+        return repo.stargazers_count
 
     def _get_open_issues(self, repo: Repository) -> int:
         """Get open issues count (Is1 indicator)."""
