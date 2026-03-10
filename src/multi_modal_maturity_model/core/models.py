@@ -36,7 +36,7 @@ class DimensionScore:
 
 @dataclass
 class MaturityProfile:
-    """Maturity profile for a repository."""
+    """Maturity profile for a project/research software."""
 
     url: str
     compatibility: DimensionScore
