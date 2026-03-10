@@ -9,7 +9,7 @@ from statistics import mean
 from github import Auth, Github, GithubException
 from github.Repository import Repository
 
-from ..models import RepositoryMetrics
+from ..core.models import RepositoryMetrics
 
 logger = logging.getLogger(__name__)
 
@@ -133,7 +133,7 @@ class GitHubCollector:
             return None
 
     def _get_last_commit_date(self, repo: Repository) -> str | None:
-        """Get last commit date on default branch. """
+        """Get last commit date on default branch."""
         try:
             branch = repo.get_branch(repo.default_branch)
             commit = repo.get_commit(branch.commit.sha)
@@ -173,8 +173,10 @@ class GitHubCollector:
         try:
             languages = repo.get_languages()
             return [
-                lang for lang, _ in
-                sorted(languages.items(), key=lambda x: x[1], reverse=True)
+                lang
+                for lang, _ in sorted(
+                    languages.items(), key=lambda x: x[1], reverse=True
+                )
             ]
         except Exception as e:
             logger.warning(f"Could not get languages: {e}")
@@ -197,9 +199,7 @@ class GitHubCollector:
             return [
                 {"login": c.login, "total_commits": c.contributions}
                 for c in sorted(
-                    repo.get_contributors(),
-                    key=lambda c: c.contributions,
-                    reverse=True
+                    repo.get_contributors(), key=lambda c: c.contributions, reverse=True
                 )
                 if c.login is not None
             ]
