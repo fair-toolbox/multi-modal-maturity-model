@@ -18,21 +18,45 @@ class GitHubCollector:
     """
     Collect metrics from GitHub repositories.
     Uses PyGithub library for authenticated access.
+    Parameters
+    ----------
+    token : str
+        GitHub personal access token
+    closed_issues_window : int
+        Number of closed issues to analyze for time-to-close metric
     """
 
     def __init__(self, token: str, closed_issues_window: int = 300):
-        """
-        Parameters
-        ----------
-        token : str
-            GitHub personal access token
-        closed_issues_window : int
-            Number of closed issues to analyze for time-to-close metric
-        """
         self.auth = Auth.Token(token)
         self.gh = Github(auth=self.auth)
         self.closed_issues_window = closed_issues_window
-        logger.info("GitHubMetricsCollector initialized")
+
+    def _get(self, owner_repo: str) -> dict[str, Any]:
+        try:
+            data = self.gh.get_repo(owner_repo)
+            return data
+        except GithubException as e:
+            logger.warning(f"Error fetching GitHub repository {owner_repo}: {e}")
+            raise
+
+    def fetch(self, owner_repo: str) -> dict[str, Any]:
+        """
+        Fetch repository metadata for a given owner/repo format.
+
+        Parameters
+        ----------
+        owner_repo : str
+            Repository in owner/repo format (e.g., "owner/repo")
+
+        Returns
+        -------
+        dict
+            Dictionary containing the repository metadata.
+        """
+        logger.debug(f"Fetching GitHub repository {owner_repo}")
+        data = self._get(owner_repo)
+        logger.info(f"Successfully collected GitHub repository {owner_repo}")
+        return data
 
     def collect(self, owner_repo: str) -> RepositoryMetrics:
         """
