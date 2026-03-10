@@ -14,7 +14,7 @@ from ..core.models import RepositoryMetrics
 logger = logging.getLogger(__name__)
 
 
-class GitHubCollector:
+class GitHubClient:
     """
     Collect metrics from GitHub repositories.
     Uses PyGithub library for authenticated access.
