@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class RepositoryMetrics:
     platform: str
@@ -18,7 +19,30 @@ class RepositoryMetrics:
     has_license: bool
     contributors: list[Contributor]
 
+
 @dataclass
 class Contributor:
     login: str
     total_commits: int
+
+
+@dataclass
+class DimensionScore:
+    """Score for a single maturity dimension."""
+
+    name: str
+    score: float
+
+
+@dataclass
+class MaturityProfile:
+    """Maturity profile for a project/research software."""
+
+    url: str
+    compatibility: DimensionScore
+    fairness: DimensionScore
+    maintainability: DimensionScore
+    sustainability: DimensionScore
+    security: DimensionScore
+    scientific_impact: DimensionScore
+    overall_score: float
