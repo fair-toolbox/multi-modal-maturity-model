@@ -13,24 +13,51 @@ from ..core.models import RepositoryMetrics
 logger = logging.getLogger(__name__)
 
 
-class GitlabCollector:
+class GitLabClient:
     """
     Collect metrics from GitLab repositories.
     Uses  library python-gitlab for authenticated access.
+
+    Parameters
+    ----------
+    token : str
+        GitLab personal access token
+    closed_issues_window : int
+        Number of closed issues to analyze for time-to-close metric
     """
 
     def __init__(self, token: str, closed_issues_window: int = 300):
+        self.gl = Gitlab(private_token=token)
+        self.closed_issues_window = closed_issues_window
+
+    def _get(self, group_sub_project: str) -> dict[str, Any]:
+        try:
+            data = self.gl.projects.get(group_sub_project)
+            return data
+        except GitlabError as e:
+            logger.warning(f"Error fetching GitLab repository {group_sub_project}: {e}")
+            raise
+
+    def fetch(self, group_sub_project: str) -> dict[str, Any]:
         """
+        Fetch repository metadata for a given group/sub-project format.
+
         Parameters
         ----------
-        token : str
-            GitLab personal access token
-        closed_issues_window : int
-            Number of closed issues to analyze for time-to-close metric
+        group_sub_project : str
+            Repository in group/sub-project format (e.g., "group/project" or "group/subgroup/project")
+
+        Returns
+        -------
+        dict
+            Dictionary containing the repository metadata.
         """
-        self.gl = Gitlab("https://gitlab.com", private_token=token)
-        self.closed_issues_window = closed_issues_window
-        logger.info("GitLabCollector initialized")
+        logger.debug(f"Fetching GitLab repository {group_sub_project}")
+        data = self._get(group_sub_project)
+        logger.info(
+            f"Successfully collected metadata for GitLab repository {group_sub_project}"
+        )
+        return data
 
     def collect(self, group_sub_project: str) -> RepositoryMetrics:
         """
