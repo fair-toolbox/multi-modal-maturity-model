@@ -1,3 +1,8 @@
-from .aggregator import MetricsAggregator
+from .models import RepositoryMetrics, Contributor, DimensionScore, MaturityProfile
 
-__all__ = ["MetricsAggregator"]
+__all__ = [
+    "RepositoryMetrics",
+    "Contributor",
+    "DimensionScore",
+    "MaturityProfile",
+]
