@@ -9,31 +9,47 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-class BioToolsCollector:
-    """Collect bio.tools metadata."""
+
+class BioToolsClient:
+    """
+    Collect bio.tools metadata from the bio.tools API.
+
+    Parameters
+    ----------
+    base_url : str
+        Base URL for the bio.tools API (default: "https://bio.tools/api/tool")
+    """
 
     def __init__(self, base_url: str = "https://bio.tools/api/tool"):
-
         self.base_url = base_url
-        logger.info("bio.tools collector initialized")
 
-    def collect(self, tool_id: str) -> dict[str, Any]:
-        logger.debug(f"Fetching tool data {tool_id}")
-
+    def _get(self, tool_id: str) -> dict[str, Any]:
+        url = f"{self.base_url}/{tool_id}?format=json"
         try:
-            data = self._fetch_tool_data(tool_id)
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+            logger.debug(f"Fetched data from bio.tools for ID {tool_id} successfully")
             return data
         except requests.RequestException as e:
-            logger.error(f"Failed to fetch biotoolsID {tool_id}: {e}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error fetching tool {tool_id}: {e}")
+            logger.warning(f"Error fetching data from bio.tools for ID {tool_id}: {e}")
             raise
 
-    def _fetch_tool_data(self, tool_id: str) -> dict[str, Any]:
-        url = f"{self.base_url}/{tool_id}?format=json"
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        logger.debug(f"Fetched data from bio.tools for ID {tool_id} successfully")
+    def fetch(self, tool_id: str) -> dict[str, Any]:
+        """
+        Fetch bio.tools metadata for a given tool ID.
+
+        Parameters
+        ----------
+        tool_id : str
+            The bio.tools ID of the tool to fetch
+
+        Returns
+        -------
+        dict
+            Dictionary containing the tool metadata.
+        """
+        logger.debug(f"Fetching bio.tools entry {tool_id}")
+        data = self._get(tool_id)
+        logger.info(f"Successfully collected bio.tools entry {tool_id}")
         return data
