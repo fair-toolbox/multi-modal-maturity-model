@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class RepositoryMetrics:
     platform: str
@@ -17,6 +18,7 @@ class RepositoryMetrics:
     languages: list[str]
     has_license: bool
     contributors: list[Contributor]
+
 
 @dataclass
 class Contributor:
