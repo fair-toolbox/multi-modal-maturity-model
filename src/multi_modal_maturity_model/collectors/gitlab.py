@@ -54,7 +54,7 @@ class GitLabClient:
         )
 
         result: dict[str, Any] = {
-            "repo": data,
+            "repo": data.attributes,
             "branches_count": branches_count,
             "contributors": contributors,
             "closed_issues": closed_issues,
