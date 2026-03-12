@@ -11,19 +11,13 @@ from howfairis import Checker, Repo
 logger = logging.getLogger(__name__)
 
 
-class HowfairisClient:
+class HowfairisCollector:
     """
     Collect FAIR compliance metrics using howfairis library.
     """
 
-    def __init__(self, rate_limit_seconds: int = 60):
-        """
-        Parameters
-        ----------
-        rate_limit_seconds : int
-            Seconds to wait between API calls to avoid rate limiting
-        """
-        self.rate_limit_seconds = rate_limit_seconds
+    def __init__(self):
+        """Initialize howfairis client."""
 
     def fetch(self, repo_url: str) -> dict[str, Any]:
         """
