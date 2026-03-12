@@ -3,6 +3,7 @@ EuropePMC API client for citation metrics and open access status.
 """
 
 import logging
+import re
 from typing import Any
 
 import requests
@@ -10,24 +11,39 @@ import requests
 logger = logging.getLogger(__name__)
 
 
+class EuropePMCError(Exception):
+    """Base exception for EuropePMC client errors."""
+
+    pass
+
+
 class EuropePMCClient:
     """
     Collect citation counts and open access status from EuropePMC API.
+
+    Uses connection pooling for multiple requests.
     """
 
     def __init__(
-        self, base_url: str = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+        self,
+        base_url: str = "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+        timeout: int = 30,
     ):
         """
+        Initialize the EuropePMC client.
+
         Parameters
         ----------
         base_url : str
-            EuropePMC API base URL
+            Base URL for EuropePMC API
+        timeout : int
+            Request timeout in seconds (default: 30)
         """
         self.base_url = base_url
-        logger.info("EuropePMCCollector initialized")
+        self.timeout = timeout
+        self._session = requests.Session()
 
-    def collect(self, pmid: str) -> dict[str, Any]:
+    def fetch(self, pmid: str) -> dict[str, Any]:
         """
         Collect citation metrics for a single PMID.
 
@@ -44,62 +60,43 @@ class EuropePMCClient:
 
         Raises
         ------
+        InvalidPMIDError
+            If PMID format is invalid
         requests.RequestException
             If API call fails
+        EuropePMCError
+            If data extraction fails
         """
+        self._validate_pmid(pmid)
         logger.debug(f"Fetching citation data for PMID: {pmid}")
 
         try:
             data = self._fetch_publication_data(pmid)
+            result_item = self._get_first_result(data)
+
+            if result_item is None:
+                logger.warning(f"No results found for PMID {pmid}")
+                return {
+                    "pmid": pmid,
+                    "citation_count": None,
+                    "is_open_access": None,
+                }
 
             result = {
                 "pmid": pmid,
-                "citation_count": self._extract_citation_count(data),
-                "is_open_access": self._extract_open_access_status(data),
+                "citation_count": self._extract_citation_count(result_item),
+                "is_open_access": self._extract_open_access_status(result_item),
             }
 
             logger.info(f"Successfully collected data for PMID {pmid}")
             return result
 
         except requests.RequestException as e:
-            logger.error(f"Request error for PMID {pmid}: {e}")
+            logger.error(f"API request failed for PMID {pmid}: {e}")
             raise
         except Exception as e:
             logger.error(f"Unexpected error for PMID {pmid}: {e}")
-            raise
-
-    def collect_batch(self, pmids: list[str]) -> list[dict[str, Any]]:
-        """
-        Collect citation metrics for multiple PMIDs.
-
-        Parameters
-        ----------
-        pmids : list[str]
-            List of PubMed IDs
-
-        Returns
-        -------
-        list[dict]
-            List of dictionaries with citation data for each PMID
-        """
-        results = []
-
-        for pmid in pmids:
-            try:
-                result = self.collect(pmid)
-                results.append(result)
-            except Exception as e:
-                logger.warning(f"Failed to collect data for PMID {pmid}: {e}")
-                # Return None values for failed requests
-                results.append(
-                    {
-                        "pmid": pmid,
-                        "citation_count": None,
-                        "is_open_access": None,
-                    }
-                )
-
-        return results
+            raise EuropePMCError(f"Failed to fetch data for PMID {pmid}") from e
 
     def _fetch_publication_data(self, pmid: str) -> dict[str, Any]:
         """
@@ -126,57 +123,67 @@ class EuropePMCClient:
             "format": "json",
         }
 
-        response = requests.get(self.base_url, params=params, timeout=30)
+        response = self._session.get(self.base_url, params=params, timeout=self.timeout)
         response.raise_for_status()
 
         return response.json()
 
-    def _extract_citation_count(self, data: dict[str, Any]) -> int | None:
+    def _get_first_result(self, payload: dict[str, Any]) -> dict[str, Any] | None:
         """
-        Extract citation count from API response.
+        Extract the first result from API response.
 
         Parameters
         ----------
-        data : dict
-            Raw API response
+        payload : dict
+            API response payload
 
         Returns
         -------
-        int | None
-            Citation count, or None if not available
+        dict | None
+            First result or None if no results found
         """
+        results = payload.get("resultList", {}).get("result") or []
+        return results[0] if results else None
+
+    def _extract_citation_count(self, result_item: dict[str, Any]) -> int | None:
+        """
+        Extract citation count from a publication result.
+        """
+        cited_by = result_item.get("citedByCount")
+        if cited_by is None:
+            return None
+
         try:
-            result = data["resultList"]["result"][0]
-            count = int(result.get("citedByCount", 0))
-            return count
-        except (IndexError, KeyError, ValueError) as e:
-            logger.warning(f"Could not extract citation count: {e}")
+            return int(cited_by)
+        except (ValueError, TypeError):
+            logger.warning(f"Invalid citation count value: {cited_by}")
             return None
 
-    def _extract_open_access_status(self, data: dict[str, Any]) -> bool | None:
+    def _extract_open_access_status(self, result_item: dict[str, Any]) -> bool | None:
         """
-        Extract open access status from API response.
+        Extract open access status from a publication result.
 
-        Parameters
-        ----------
-        data : dict
-            Raw API response
-
-        Returns
-        -------
-        bool | None
-            True if open access, False if not, None if unknown
         """
-        try:
-            result = data["resultList"]["result"][0]
-            is_oa = result.get("isOpenAccess", None)
-
-            if is_oa is not None:
-                # API returns "Y" or "N"
-                return is_oa.lower() == "y"
-
+        is_oa = result_item.get("isOpenAccess")
+        if is_oa is None:
             return None
 
-        except (IndexError, KeyError) as e:
-            logger.warning(f"Could not extract open access status: {e}")
-            return None
+        # API returns "Y" or "N"
+        if isinstance(is_oa, str):
+            return is_oa.upper() == "Y"
+
+        logger.warning(f"Unexpected open access value type: {type(is_oa)}")
+        return None
+
+    def close(self) -> None:
+        """Close the HTTP session."""
+        self._session.close()
+
+    def __enter__(self):
+        """Context manager entry."""
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit."""
+        self.close()
+        return False
