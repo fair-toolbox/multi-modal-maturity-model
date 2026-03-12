@@ -7,9 +7,9 @@ from .howfairis import FairnessCollector
 
 __all__ = [
     "BioToolsClient",
-    "CodeQualityCollector",
     "GitHubClient",
     "GitLabClient",
+    "LizardClient",
     "EuropePMCCollector",
     "FairnessCollector",
 ]
