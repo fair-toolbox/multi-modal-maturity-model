@@ -3,11 +3,8 @@ Code quality metrics collection using Lizard.
 """
 
 import logging
-import os
 import re
-import shutil
 import subprocess
-import tempfile
 from typing import Any
 
 import lizard
