@@ -12,8 +12,6 @@ class RepositoryMetrics:
     open_issues: int
     avg_time_to_close_days: float | None
     last_commit_date: str | None
-    branches_total: int
-    branches_protected: int
     default_branch_is_protected: bool | None
     languages: list[str]
     has_license: bool
