@@ -11,7 +11,6 @@ class RepositoryMetrics:
     forks: int
     open_issues: int
     avg_time_to_close_days: float | None
-    last_commit_date: str | None
     default_branch_is_protected: bool | None
     languages: list[str]
     has_license: bool
