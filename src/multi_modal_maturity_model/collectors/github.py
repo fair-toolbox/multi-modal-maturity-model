@@ -41,6 +41,7 @@ class GitHubClient:
             Dictionary containing the repository metadata.
         """
         logger.debug(f"Fetching GitHub repository {owner_repo}")
+
         data = self._fetch_repository(owner_repo)
         contributors = self._fetch_contributors(data)
         closed_issues = self._fetch_closed_issues(data)

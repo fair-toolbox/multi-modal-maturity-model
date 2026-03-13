@@ -48,6 +48,7 @@ class GitLabClient:
         open_issues_count = self._fetch_open_issues_count(data)
         languages = self._fetch_languages(data)
         repository_tree = self._fetch_repository_tree(data)
+        default_branch_protected = self._is_default_branch_protected(data)
 
         logger.info(
             f"Successfully collected metadata for GitLab repository {group_sub_project}"
@@ -61,6 +62,7 @@ class GitLabClient:
             "open_issues_count": open_issues_count,
             "languages": languages,
             "repository_tree": repository_tree,
+            "default_branch_protected": default_branch_protected,
         }
         return result
 
@@ -138,5 +140,16 @@ class GitLabClient:
         except GitlabError as e:
             logger.warning(
                 f"Error fetching repository tree for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _is_default_branch_protected(self, project: Project) -> bool | None:
+        """Check if the default branch is protected."""
+        try:
+            default_branch = project.branches.get(project.default_branch)
+            return default_branch.protected
+        except GitlabError as e:
+            logger.warning(
+                f"Error checking if default branch is protected for {project.path_with_namespace}: {e}"
             )
             return None
