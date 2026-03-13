@@ -3,10 +3,12 @@ Adapter for transforming GitLab collector data into core models.
 """
 
 import logging
-from datetime import datetime
 from typing import Any
 
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
+from multi_modal_maturity_model.adapters.adapters_utils import (
+    calculate_avg_time_to_close,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -81,42 +83,6 @@ def extract_languages(languages: dict[str, Any]) -> list[str]:
     if not languages:
         return []
     return list(languages.keys())
-
-
-def parse_gitlab_iso_datetime(value: str) -> datetime:
-    return datetime.fromisoformat(value.replace("Z", "+00:00"))
-
-
-def calculate_avg_time_to_close(closed_issues: list[Any] | None) -> float | None:
-    """
-    Calculate average time to close issues in days.
-    Parameters
-    ----------
-    closed_issues : list[Any] | None
-        List of closed issue objects from GitLab API.
-    Returns
-    -------
-    float | None
-        Average days to close, or None if no data available.
-    """
-    if not closed_issues:
-        return None
-
-    total_days = 0
-    count = 0
-
-    for issue in closed_issues:
-        created_at = parse_gitlab_iso_datetime(getattr(issue, "created_at", None))
-        closed_at = parse_gitlab_iso_datetime(getattr(issue, "closed_at", None))
-
-        if created_at and closed_at:
-            total_days += (closed_at - created_at).total_seconds() / 86400
-            count += 1
-
-    if count == 0:
-        return None
-
-    return round(total_days / count, 2)
 
 
 def detect_license(repository_tree: list[dict[str, Any]]) -> bool:
