@@ -6,8 +6,10 @@ from multi_modal_maturity_model.adapters.gitlab_adapter import (
     GitLabAdapter,
     transform_contributors,
     extract_languages,
-    calculate_avg_time_to_close,
     detect_license,
+)
+from multi_modal_maturity_model.adapters.adapters_utils import (
+    calculate_avg_time_to_close,
 )
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
 
