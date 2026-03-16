@@ -38,3 +38,11 @@ docs = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+include = [
+    { path = "src/multi_modal_maturity_model/data/*.json", format = ["sdist", "wheel"] }
+]
+
+[tool.poetry.scripts]
+update_edam = "scripts.update_edam:main"
