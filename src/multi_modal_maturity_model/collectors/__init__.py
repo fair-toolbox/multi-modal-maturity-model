@@ -9,6 +9,7 @@ from .github import GitHubClient
 from .gitlab import GitLabClient
 from .howfairis import HowfairisCollector
 from .lizard import LizardCollector
+from .edam_cache import edam_cache
 
 __all__ = [
     "BioToolsClient",
@@ -17,4 +18,5 @@ __all__ = [
     "GitLabClient",
     "HowfairisCollector",
     "LizardCollector",
+    "edam_cache",
 ]
