@@ -2,6 +2,34 @@ from dataclasses import dataclass
 
 
 @dataclass
+class ToolModel:
+    biotools_id: str
+    function: list[Function] | None
+
+
+@dataclass
+class Function:
+    operation: list[EDAMItem]
+    input: list[DataItem] | None
+    output: list[DataItem] | None
+
+
+@dataclass
+class DataItem:
+    data: EDAMItem
+    format: list[EDAMItem] | None
+
+
+@dataclass
+class EDAMItem:
+    uri: str
+    term: str
+
+
+#####################
+
+
+@dataclass
 class RepositoryMetrics:
     platform: str
     url: str

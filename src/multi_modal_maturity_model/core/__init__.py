@@ -1,8 +1,21 @@
-from .models import RepositoryMetrics, Contributor, DimensionScore, MaturityProfile
+from .models import (
+    Contributor,
+    DataFormat,
+    DimensionScore,
+    EDAMTerm,
+    Function,
+    MaturityProfile,
+    RepositoryMetrics,
+    ToolModel,
+)
 
 __all__ = [
-    "RepositoryMetrics",
     "Contributor",
+    "DataFormat",
     "DimensionScore",
+    "EDAMTerm",
+    "Function",
     "MaturityProfile",
+    "RepositoryMetrics",
+    "ToolModel",
 ]
