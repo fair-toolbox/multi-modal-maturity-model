@@ -10,19 +10,19 @@ from multi_modal_maturity_model.collectors.biotools import BioToolsClient
 
 
 @pytest.fixture
-def collector(self):
+def collector():
     """Create a BioToolsClient instance for testing."""
     return BioToolsClient()
 
 
 @pytest.fixture
-def custom_collector(self):
+def custom_collector():
     """Create a BioToolsClient with custom base URL."""
     return BioToolsClient(base_url="https://custom.bio.tools/api/tool")
 
 
 @pytest.fixture
-def mock_biotools_response(self):
+def mock_biotools_response():
     """Sample bio.tools API response."""
     return {
         "biotoolsID": "blast",
@@ -50,18 +50,18 @@ def mock_biotools_response(self):
     }
 
 
-def test_init_default_url(self, collector):
+def test_init_default_url(collector):
     """Test initialization with default base URL."""
     assert collector.base_url == "https://bio.tools/api/tool"
 
 
-def test_init_custom_url(self, custom_collector):
+def test_init_custom_url(custom_collector):
     """Test initialization with custom base URL."""
     assert custom_collector.base_url == "https://custom.bio.tools/api/tool"
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_success(self, mock_get, collector, mock_biotools_response):
+def test_get_success(mock_get, collector, mock_biotools_response):
     """Test successful API call via _get method."""
     mock_response = Mock()
     mock_response.json.return_value = mock_biotools_response
@@ -77,7 +77,7 @@ def test_get_success(self, mock_get, collector, mock_biotools_response):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_http_error(self, mock_get, collector):
+def test_get_http_error(mock_get, collector):
     """Test _get method handles HTTP errors."""
     # Setup mock to raise HTTPError
     mock_response = Mock()
@@ -89,7 +89,7 @@ def test_get_http_error(self, mock_get, collector):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_timeout(self, mock_get, collector):
+def test_get_timeout(mock_get, collector):
     """Test _get method handles timeout errors."""
     # Setup mock to raise Timeout
     mock_get.side_effect = requests.Timeout("Request timed out")
@@ -102,7 +102,7 @@ def test_get_timeout(self, mock_get, collector):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_connection_error(self, mock_get, collector):
+def test_get_connection_error(mock_get, collector):
     """Test _get method handles connection errors."""
     # Setup mock to raise ConnectionError
     mock_get.side_effect = requests.ConnectionError("Connection failed")
@@ -112,9 +112,7 @@ def test_get_connection_error(self, mock_get, collector):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_with_custom_base_url(
-    self, mock_get, custom_collector, mock_biotools_response
-):
+def test_get_with_custom_base_url(mock_get, custom_collector, mock_biotools_response):
     """Test _get method uses custom base URL."""
     # Setup mock
     mock_response = Mock()
@@ -131,7 +129,7 @@ def test_get_with_custom_base_url(
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_fetch_success(self, mock_get, collector, mock_biotools_response):
+def test_fetch_success(mock_get, collector, mock_biotools_response):
     """Test successful fetch method."""
     # Setup mock
     mock_response = Mock()
@@ -146,7 +144,7 @@ def test_fetch_success(self, mock_get, collector, mock_biotools_response):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_fetch_propagates_exceptions(self, mock_get, collector):
+def test_fetch_propagates_exceptions(mock_get, collector):
     """Test that fetch method propagates exceptions from _get."""
     # Setup mock to raise exception
     mock_get.side_effect = requests.HTTPError("404 Not Found")
@@ -157,7 +155,7 @@ def test_fetch_propagates_exceptions(self, mock_get, collector):
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
 def test_fetch_with_special_characters_in_id(
-    self, mock_get, collector, mock_biotools_response
+    mock_get, collector, mock_biotools_response
 ):
     """Test fetch with tool ID containing special characters."""
     # Setup mock
@@ -175,7 +173,7 @@ def test_fetch_with_special_characters_in_id(
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_returns_dict(self, mock_get, collector):
+def test_get_returns_dict(mock_get, collector):
     """Test that _get returns a dictionary."""
     # Setup mock with valid JSON
     mock_response = Mock()
@@ -189,7 +187,7 @@ def test_get_returns_dict(self, mock_get, collector):
 
 
 @patch("multi_modal_maturity_model.collectors.biotools.requests.get")
-def test_get_invalid_json(self, mock_get, collector):
+def test_get_invalid_json(mock_get, collector):
     """Test _get method handles invalid JSON response."""
     # Setup mock to raise JSONDecodeError
     mock_response = Mock()

@@ -1,8 +1,8 @@
 from .models import (
     Contributor,
-    DataFormat,
+    DataItem,
     DimensionScore,
-    EDAMTerm,
+    EDAMItem,
     Function,
     MaturityProfile,
     RepositoryMetrics,
@@ -11,9 +11,9 @@ from .models import (
 
 __all__ = [
     "Contributor",
-    "DataFormat",
+    "DataItem",
     "DimensionScore",
-    "EDAMTerm",
+    "EDAMItem",
     "Function",
     "MaturityProfile",
     "RepositoryMetrics",
