@@ -18,6 +18,14 @@ class RepositoryMetrics:
 
 
 @dataclass
+class CodeQualityMetrics:
+    total_nloc: int | None
+    total_ccn: int | None
+    avg_ccn: float | None
+    duplicate_rate: float | None
+
+
+@dataclass
 class Contributor:
     login: str
     total_commits: int
