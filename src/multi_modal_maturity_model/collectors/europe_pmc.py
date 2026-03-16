@@ -67,7 +67,6 @@ class EuropePMCClient:
         EuropePMCError
             If data extraction fails
         """
-        self._validate_pmid(pmid)
         logger.debug(f"Fetching citation data for PMID: {pmid}")
 
         try:
