@@ -1,4 +1,33 @@
 from dataclasses import dataclass
+from typing import Any
+
+
+@dataclass
+class ToolModel:
+    biotools_id: str
+    function: list[Function] | None
+
+
+@dataclass
+class Function:
+    operation: list[EDAMItem]
+    input: list[DataItem] | None
+    output: list[DataItem] | None
+
+
+@dataclass
+class DataItem:
+    data: EDAMItem
+    format: list[EDAMItem] | None
+
+
+@dataclass
+class EDAMItem:
+    uri: str
+    term: str
+
+
+#####################
 
 
 @dataclass
@@ -11,13 +40,18 @@ class RepositoryMetrics:
     forks: int
     open_issues: int
     avg_time_to_close_days: float | None
-    last_commit_date: str | None
-    branches_total: int
-    branches_protected: int
     default_branch_is_protected: bool | None
     languages: list[str]
     has_license: bool
     contributors: list[Contributor]
+
+
+@dataclass
+class CodeQualityMetrics:
+    total_nloc: int | None
+    total_ccn: int | None
+    avg_ccn: float | None
+    duplicate_rate: float | None
 
 
 @dataclass
@@ -32,13 +66,13 @@ class DimensionScore:
 
     name: str
     score: float
+    details: dict[str, Any] | None = None
 
 
 @dataclass
 class MaturityProfile:
     """Maturity profile for a project/research software."""
 
-    url: str
     compatibility: DimensionScore
     fairness: DimensionScore
     maintainability: DimensionScore

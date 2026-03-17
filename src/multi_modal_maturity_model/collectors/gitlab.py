@@ -3,118 +3,153 @@ GitLab API client for collecting repository health metrics.
 """
 
 import logging
-from datetime import datetime
 from gitlab import Gitlab, GitlabError
-from matplotlib.pylab import mean
+from gitlab.v4.objects import Project
 from typing import Any
 
-from ..models import RepositoryMetrics
 
 logger = logging.getLogger(__name__)
 
 
-class GitlabCollector:
+class GitLabClient:
     """
     Collect metrics from GitLab repositories.
-    Uses  library python-gitlab for authenticated access.
+    Uses library python-gitlab for authenticated access.
+
+    Parameters
+    ----------
+    token : str
+        GitLab personal access token
     """
 
-    def __init__(self, token: str, closed_issues_window: int = 300):
-        """
-        Parameters
-        ----------
-        token : str
-            GitLab personal access token
-        closed_issues_window : int
-            Number of closed issues to analyze for time-to-close metric
-        """
-        self.gl = Gitlab('https://gitlab.com', private_token=token)
-        self.closed_issues_window = closed_issues_window
-        logger.info("GitLabCollector initialized")
+    def __init__(self, token: str):
+        self.gl = Gitlab(private_token=token)
 
-    def collect(self, group_sub_project: str) -> RepositoryMetrics:
+    def fetch(self, group_sub_project: str) -> dict[str, Any]:
         """
-        Main entry point: collect all metrics for a repository.
+        Fetch repository metadata for a given group/sub-project format.
 
         Parameters
         ----------
         group_sub_project : str
-            Group and sub-project name (e.g., "group/project" or "group/subgroup/project")
+            Repository in group/sub-project format (e.g., "group/project" or "group/subgroup/project")
 
         Returns
         -------
-        RepositoryMetrics
-            Instance containing all collected metrics
-
-        Raises
-        ------
-        ValueError
-            If group_sub_project is not a valid GitLab project identifier
-        GitlabException
-            If API call fails (rate limit, not found, etc.)
+        dict
+            Dictionary containing the repository metadata.
         """
+        logger.debug(f"Fetching GitLab repository {group_sub_project}")
+
+        data = self._fetch_project(group_sub_project)
+        branches_count = self._fetch_branches_count(data)
+        contributors = self._fetch_contributors(data)
+        closed_issues = self._fetch_closed_issues(data)
+        open_issues_count = self._fetch_open_issues_count(data)
+        languages = self._fetch_languages(data)
+        repository_tree = self._fetch_repository_tree(data)
+        default_branch_protected = self._is_default_branch_protected(data)
+
+        logger.info(
+            f"Successfully collected metadata for GitLab repository {group_sub_project}"
+        )
+
+        result: dict[str, Any] = {
+            "repo": data.attributes,
+            "branches_count": branches_count,
+            "contributors": contributors,
+            "closed_issues": closed_issues,
+            "open_issues_count": open_issues_count,
+            "languages": languages,
+            "repository_tree": repository_tree,
+            "default_branch_protected": default_branch_protected,
+        }
+        return result
+
+    def _fetch_project(self, group_sub_project: str) -> Project:
         try:
-            logger.debug(f"Collecting metrics for {group_sub_project}")
+            data = self.gl.projects.get(group_sub_project)
+            return data
+        except GitlabError as e:
+            logger.warning(f"Error fetching GitLab repository {group_sub_project}: {e}")
+            raise
 
-            project = self.gl.projects.get(group_sub_project)
-
-            return RepositoryMetrics(
-                platform="gitlab",
-                url=project.http_url_to_repo,
-                repo=group_sub_project,
-                default_branch=project.default_branch,
-                forks=project.forks_count,
-                stars=project.star_count,
-                open_issues=project.issues.list(state='opened', iterator=True).total,
-                avg_time_to_close_days=self._get_avg_time_to_close(project),
-                last_commit_date=self._get_last_commit_date(project),
-                branches_total=project.branches.list(get_all=True),
-                branches_protected=project.protectedbranches.list(iterator=True).total,
-                default_branch_is_protected=project.branches.get(project.default_branch).protected,
-                languages=project.languages(),
-                has_license=self._get_has_license(project),
-                contributors=project.repository_contributors(), # name, email, commits, additions, deletions
+    def _fetch_branches_count(self, project: Project) -> int | None:
+        """Get the total number of branches."""
+        try:
+            branches_count = project.branches.list(iterator=True).total
+            return branches_count
+        except GitlabError as e:
+            logger.warning(
+                f"Error fetching branches for {project.path_with_namespace}: {e}"
             )
-        except GitlabError as e:
-            logger.error(f"GitLab API error for {group_sub_project}: {e.response_code} - {e.error_message}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error collecting metrics for {group_sub_project}: {e}")
-            raise
+            return None
 
-
-    def _get_avg_time_to_close(self, project) -> float | None:
-        """Calculate average time to close issues in days."""
-        closed_issues = project.issues.list(state='closed', iterator=True)
-        closed_issues = list(closed_issues)
-
-        durations = []
-        for i in closed_issues:
-            if i.closed_at:
-                closed = datetime.fromisoformat(i.closed_at)
-                created = datetime.fromisoformat(i.created_at)
-                duration_days = (closed - created).total_seconds() / 86400
-                durations.append(duration_days)
-
-        return round(mean(durations), 3) if durations else None
-
-    def _get_last_commit_date(self, project) -> str | None:
-        """Get the date of the last commit on the default branch."""
-        default_branch = project.default_branch
-        last_commit = project.commits.list(ref_name=default_branch, per_page=1, get_all=False)
-
-        if last_commit:
-            return last_commit[0].committed_date
-        else:
-            raise ValueError(f"No commits found for default branch '{default_branch}' in project '{project.path_with_namespace}'")
-
-    def _get_has_license(self, project) -> bool:
-        """Check if the project has a license file."""
+    def _fetch_contributors(self, project: Project) -> list | None:
+        """Get a list of contributors with their commit counts."""
         try:
-            repo_tree = project.repository_tree(path='', ref=project.default_branch, per_page=100)
-            for file in repo_tree:
-                if 'license' in file['name'].lower() or 'copying' in file['name'].lower():
-                    return True
+            contributors = project.repository_contributors(get_all=True)
+            return contributors
         except GitlabError as e:
-            logger.warning(f"Could not retrieve repository tree for license check: {e}")
-        return False
+            logger.warning(
+                f"Error fetching contributors for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _fetch_closed_issues(self, project: Project) -> list | None:
+        """Get a list of closed issues."""
+        try:
+            iterator = project.issues.list(state="closed", iterator=True)
+            closed_issues = list(iterator)
+            return closed_issues
+        except GitlabError as e:
+            logger.warning(
+                f"Error fetching closed issues for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _fetch_open_issues_count(self, project: Project) -> int | None:
+        """Get the count of open issues."""
+        try:
+            open_issues_count = project.issues.list(state="opened", iterator=True).total
+            return open_issues_count
+        except GitlabError as e:
+            logger.warning(
+                f"Error fetching open issues for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _fetch_languages(self, project: Project) -> dict | None:
+        """Get a dictionary of languages used in the project."""
+        try:
+            languages = project.languages(get_all=True)
+            return languages
+        except GitlabError as e:
+            logger.warning(
+                f"Error fetching languages for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _fetch_repository_tree(self, project: Project) -> list | None:
+        """Get the repository tree for the default branch."""
+        try:
+            repository_tree = project.repository_tree(
+                path="", ref=project.default_branch, per_page=100
+            )
+            return repository_tree
+        except GitlabError as e:
+            logger.warning(
+                f"Error fetching repository tree for {project.path_with_namespace}: {e}"
+            )
+            return None
+
+    def _is_default_branch_protected(self, project: Project) -> bool | None:
+        """Check if the default branch is protected."""
+        try:
+            default_branch = project.branches.get(project.default_branch)
+            return default_branch.protected
+        except GitlabError as e:
+            logger.warning(
+                f"Error checking if default branch is protected for {project.path_with_namespace}: {e}"
+            )
+            return None

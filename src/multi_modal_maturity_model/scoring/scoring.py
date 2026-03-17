@@ -110,7 +110,6 @@ class DimensionScorer:
         avg_ccn: float,
         duplicate_rate: float,
         has_old_languages: bool = False,
-        tech_stack_size: int = 1,
     ) -> DimensionScore:
         """
         Calculate Maintainability dimension.
@@ -124,7 +123,6 @@ class DimensionScorer:
         - Lower average CCN is better (normalized to max 10)
         - Lower duplicate rate is better
         - Penalty for old languages
-        - Penalty for large tech stack
 
         Parameters
         ----------
@@ -138,8 +136,6 @@ class DimensionScorer:
             Fraction of duplicated code (0.0-1.0)
         has_old_languages : bool
             Whether codebase uses outdated languages
-        tech_stack_size : int
-            Number of different technologies/languages used
 
         Returns
         -------
@@ -153,9 +149,6 @@ class DimensionScorer:
 
         # Apply penalties
         lang_penalty = 0.1 if has_old_languages else 0.0
-        stack_penalty = max(
-            0.0, (tech_stack_size - 3) * 0.05
-        )  # Penalty after 3 languages
 
         # Weighted combination
         score = (
@@ -164,7 +157,6 @@ class DimensionScorer:
             + 0.25 * avg_ccn_score
             + 0.25 * dup_score
             - lang_penalty
-            - stack_penalty
         )
 
         return DimensionScore(
@@ -176,7 +168,6 @@ class DimensionScorer:
                 "avg_ccn": avg_ccn,
                 "duplicate_rate": duplicate_rate,
                 "has_old_languages": has_old_languages,
-                "tech_stack_size": tech_stack_size,
             },
         )
 
@@ -185,7 +176,6 @@ class DimensionScorer:
         avg_issue_close_time_days: float,
         num_open_issues: int,
         days_since_last_commit: int,
-        commit_frequency: float,  # commits per month
     ) -> DimensionScore:
         """
         Calculate Sustainability dimension.
@@ -206,9 +196,6 @@ class DimensionScorer:
         num_open_issues : int
             Number of currently open issues
         days_since_last_commit : int
-            Days since the last commit
-        commit_frequency : float
-            Average commits per month
 
         Returns
         -------
@@ -229,18 +216,8 @@ class DimensionScorer:
         # Last commit recency (within 3 months is good)
         recent_score = max(0.0, 1.0 - (days_since_last_commit / 90.0))
 
-        # Commit frequency (at least 1 per month is good)
-        frequency_score = min(
-            1.0, commit_frequency / 2.0
-        )  # 2+ commits/month = excellent
-
         # Weighted combination
-        score = (
-            0.25 * close_time_score
-            + 0.25 * open_issues_score
-            + 0.25 * recent_score
-            + 0.25 * frequency_score
-        )
+        score = 0.4 * close_time_score + 0.3 * open_issues_score + 0.2 * recent_score
 
         return DimensionScore(
             name="Sustainability",
@@ -249,7 +226,6 @@ class DimensionScorer:
                 "avg_issue_close_time_days": avg_issue_close_time_days,
                 "num_open_issues": num_open_issues,
                 "days_since_last_commit": days_since_last_commit,
-                "commit_frequency": commit_frequency,
             },
         )
 
