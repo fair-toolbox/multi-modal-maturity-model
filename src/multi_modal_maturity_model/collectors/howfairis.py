@@ -43,14 +43,14 @@ class HowfairisCollector:
         try:
             repo = Repo(repo_url)
             checker = Checker(repo)
-            checker.check_five_recommendations()
+            compliance = checker.check_five_recommendations()
 
             result = {
-                "repository": checker.has_open_repository,
-                "license": checker.has_license,
-                "registry": checker.has_registry,
-                "citation": checker.has_citation,
-                "checklist": checker.has_checklist,
+                "repository": compliance.repository,
+                "license": compliance.license,
+                "registry": compliance.registry,
+                "citation": compliance.citation,
+                "checklist": compliance.checklist,
             }
 
             logger.info(f"Successfully assessed {repo_url}")
