@@ -4,28 +4,23 @@ This guide shows you how to use the Multi-Modal Maturity Model (M4) to assess yo
 
 ## Installation
 
-```bash
-pip install multi-modal-maturity-model
-```
+With poetry:
 
-For local development:
 ```bash
-git clone https://github.com/fair-toolbox/multi-modal-maturity-model.git
-cd multi-modal-maturity-model
-pip install -e .
+poetry install
 ```
 
 ## Authentication
 
-Some metrics require authentication. Set up your tokens as environment variables:
+Copy the example environment file:
 
 ```bash
-export GITHUB_TOKEN="your_github_token"
-export GITLAB_TOKEN="your_gitlab_token"  # if using GitLab
+cp .env.example .env
 ```
 
-Or create a `.env` file in your project directory:
-```
+Add your token(s) to `.env`:
+
+```bash
 GITHUB_TOKEN=your_github_token
 GITLAB_TOKEN=your_gitlab_token
 ```
@@ -37,30 +32,55 @@ The CLI tool `m4` lets you quickly analyze a repository from the command line.
 ### Basic usage
 
 ```bash
-m4 owner/repo
+poetry run m4 owner/repo --platform=github
 ```
 
-### With optional parameters
+or
 
 ```bash
-m4 https://github.com/owner/repo \
+poetry run m4 https://github.com/owner/repo
+```
+
+### Complete assessment with all data sources
+
+```bash
+poetry run m4 https://github.com/owner/repo \
   --pmid 12345678 \
   --biotoolsID my_tool \
-  --output-dir ./my_results \
-  --verbose
 ```
 
 ### CLI Options
 
 - `repository`: GitHub or GitLab repository URL (e.g., `owner/repo` or full URL)
+- `--platform`: If not full URL, platform needs to be provided (_github_ or _gitlab_)
+- `--local-path`: Local repository path for code quality analysis (optional, skips cloning)
 - `--pmid`: PubMed ID for citation metrics (optional)
-- `--biotoolsID`: bio.tools identifier (optional)
-- `--local-path`: Local repository path for code quality analysis (optional)
+- `--biotools-id`: bio.tools identifier (optional)
 - `--output-dir`: Directory to save results (default: `./results`)
 - `--verbose, -v`: Enable detailed output
 
 
-## Package Usage
+#### Analysis Control
+
+- `--no-code-quality` - Skip code quality analysis (faster, no cloning)
+- `--no-fair` - Skip FAIR compliance assessment
+
+
+#### Authentication
+
+- `--github-token TOKEN` - GitHub API token (or use `GITHUB_TOKEN` env var)
+- `--gitlab-token TOKEN` - GitLab API token (or use `GITLAB_TOKEN` env var)
+
+
+#### Configuration
+
+- `--output-dir DIR` - Output directory for results (default: `./results`)
+- `--max-citations NUM` - Max citations for normalization (default: 1000)
+- `--verbose, -v` - Enable detailed output with metrics breakdown
+- `--version` - Show version and exit
+- `--help, -h` - Show help message
+
+## Package Usage (TDB)
 
 For programmatic access and custom workflows, use M4 as a Python package.
 
@@ -92,15 +112,6 @@ results = aggregator.analyze_repositories(
     output_dir="./batch_results"
 )
 ```
-
-### Working with results
-
-Results are saved as CSV files in the output directory:
-- `github_metrics.csv` or `gitlab_metrics.csv`: Repository statistics
-- `citation_metrics.csv`: Publication and citation data
-- `fairness_metrics.csv`: FAIR compliance scores
-- `code_quality_metrics.csv`: Static analysis results
-
 
 TBD
 
