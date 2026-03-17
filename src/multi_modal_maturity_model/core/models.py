@@ -73,7 +73,6 @@ class DimensionScore:
 class MaturityProfile:
     """Maturity profile for a project/research software."""
 
-    url: str
     compatibility: DimensionScore
     fairness: DimensionScore
     maintainability: DimensionScore
