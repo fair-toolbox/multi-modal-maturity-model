@@ -42,7 +42,7 @@ class HowfairisCollector:
 
         try:
             repo = Repo(repo_url)
-            checker = Checker(repo)
+            checker = Checker(repo, is_quiet=True)
             compliance = checker.check_five_recommendations()
 
             result = {
