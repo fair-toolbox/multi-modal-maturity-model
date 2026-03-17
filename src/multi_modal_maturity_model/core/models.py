@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Any
 
 
 @dataclass
@@ -65,6 +66,7 @@ class DimensionScore:
 
     name: str
     score: float
+    details: dict[str, Any] | None = None
 
 
 @dataclass
