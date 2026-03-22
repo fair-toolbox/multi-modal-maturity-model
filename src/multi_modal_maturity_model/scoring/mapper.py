@@ -254,9 +254,17 @@ class MaturityMapper:
             logger.warning("No citation metrics available for scientific impact")
             return DimensionScore(name="Scientific Impact", score=0.0)
 
-        citation_count = citation_metrics.get("citation_count", 0)
+        citation_count = citation_metrics.get(
+            "citation_count",
+            citation_metrics.get("citationCount", 0),
+        )
+        influential_citation_count = citation_metrics.get(
+            "influential_citation_count",
+            citation_metrics.get("influentialCitationCount"),
+        )
 
         return self.scorer.calculate_scientific_impact(
             citation_count=citation_count,
+            influential_citation_count=influential_citation_count,
             max_citations_in_corpus=self.max_citations_corpus,
         )
