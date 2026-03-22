@@ -110,9 +110,10 @@ def sample_fair_metrics():
 
 @pytest.fixture
 def sample_citation_metrics():
-    """Sample citation metrics from EuropePMC."""
+    """Sample merged citation metrics from EuropePMC and Semantic Scholar."""
     return {
         "citation_count": 50,
+        "influential_citation_count": 10,
         "is_open_access": True,
     }
 
@@ -257,3 +258,5 @@ def test_map_scientific_impact(sample_citation_metrics):
     assert score.name == "Scientific Impact"
     assert 0.0 <= score.score <= 1.0
     assert score.score > 0.0  # Has citations
+    assert score.details["citation_count"] == 50
+    assert score.details["influential_citation_count"] == 10

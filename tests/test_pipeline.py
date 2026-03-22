@@ -409,6 +409,64 @@ def test_assess_with_citation_metrics(mock_client, assessor):
     assert profile.scientific_impact.score > 0.0
 
 
+@patch("multi_modal_maturity_model.pipeline.SemanticScholarClient")
+def test_assess_with_semantic_scholar_metrics(mock_client, assessor):
+    """Test assessment with Semantic Scholar DOI metrics."""
+    mock_client_instance = Mock()
+    mock_client.return_value = mock_client_instance
+    mock_client_instance.get_paper_by_doi.return_value = {
+        "title": "Test Paper",
+        "citationCount": 75,
+        "influentialCitationCount": 12,
+        "referenceCount": 40,
+        "year": 2024,
+        "authors": [{"name": "Example Author"}],
+    }
+
+    profile = assessor.assess(doi="10.1000/test-doi")
+
+    assert profile is not None
+    mock_client_instance.get_paper_by_doi.assert_called_once_with("10.1000/test-doi")
+    assert profile.scientific_impact.score > 0.0
+    assert profile.scientific_impact.details["citation_count"] == 75
+    assert profile.scientific_impact.details["influential_citation_count"] == 12
+
+
+@patch("multi_modal_maturity_model.pipeline.SemanticScholarClient")
+@patch("multi_modal_maturity_model.pipeline.EuropePMCClient")
+def test_assess_merges_europepmc_and_semantic_scholar_metrics(
+    mock_europepmc,
+    mock_semantic_scholar,
+    assessor,
+):
+    """Test citation metrics are merged across providers."""
+    mock_europepmc_instance = Mock()
+    mock_europepmc.return_value = mock_europepmc_instance
+    mock_europepmc_instance.fetch.return_value = {
+        "pmid": "12345678",
+        "citation_count": 50,
+        "is_open_access": True,
+    }
+
+    mock_semantic_scholar_instance = Mock()
+    mock_semantic_scholar.return_value = mock_semantic_scholar_instance
+    mock_semantic_scholar_instance.get_paper_by_doi.return_value = {
+        "title": "Test Paper",
+        "citationCount": 75,
+        "influentialCitationCount": 12,
+        "referenceCount": 40,
+        "year": 2024,
+        "authors": [{"name": "Example Author"}],
+    }
+
+    profile = assessor.assess(pmid="12345678", doi="10.1000/test-doi")
+
+    assert profile is not None
+    assert profile.fairness.score > 0.0
+    assert profile.scientific_impact.details["citation_count"] == 50
+    assert profile.scientific_impact.details["influential_citation_count"] == 12
+
+
 def test_assess_skip_code_quality(assessor):
     """Test that code quality collection can be skipped."""
     with patch("multi_modal_maturity_model.pipeline.resolve_repo_path") as mock_resolve:
