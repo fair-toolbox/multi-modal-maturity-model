@@ -261,6 +261,7 @@ class DimensionScorer:
     @staticmethod
     def calculate_scientific_impact(
         citation_count: int,
+        influential_citation_count: int | None,
         max_citations_in_corpus: int,
     ) -> DimensionScore:
         """
@@ -275,6 +276,8 @@ class DimensionScorer:
         ----------
         citation_count : int
             Number of citations to the publication
+        influential_citation_count : int | None
+            Number of influential citations reported by Semantic Scholar
         max_citations_in_corpus : int
             Maximum citations in the reference corpus (default 1000)
 
@@ -285,16 +288,29 @@ class DimensionScorer:
         if max_citations_in_corpus <= 0:
             max_citations_in_corpus = 1000  # Default fallback
 
-        numerator = math.log(citation_count + 0.5)
         denominator = math.log(max_citations_in_corpus + 0.5)
+        citation_component = 0.0
+        if denominator > 0:
+            citation_component = math.log(max(citation_count, 0) + 0.5) / denominator
 
-        score = numerator / denominator if denominator > 0 else 0.0
+        influential_component = None
+        if influential_citation_count is not None and denominator > 0:
+            influential_component = (
+                math.log(max(influential_citation_count, 0) + 0.5) / denominator
+            )
+
+        score = citation_component
+        if influential_component is not None:
+            # Total citations remain the primary signal, while influential
+            # citations add a secondary quality-weighted contribution.
+            score = (0.7 * citation_component) + (0.3 * influential_component)
 
         return DimensionScore(
             name="Scientific Impact",
             score=min(1.0, max(0.0, score)),
             details={
                 "citation_count": citation_count,
+                "influential_citation_count": influential_citation_count,
                 "max_citations_in_corpus": max_citations_in_corpus,
             },
         )
