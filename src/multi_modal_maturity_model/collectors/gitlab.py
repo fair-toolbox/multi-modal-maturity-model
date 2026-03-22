@@ -100,7 +100,7 @@ class GitLabClient:
         """Get a list of closed issues."""
         try:
             iterator = project.issues.list(state="closed", iterator=True)
-            closed_issues = list(iterator)
+            closed_issues = [issue.attributes for issue in iterator]
             return closed_issues
         except GitlabError as e:
             logger.warning(

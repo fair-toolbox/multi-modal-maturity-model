@@ -13,6 +13,7 @@ from .collectors import (
     GitLabClient,
     HowfairisCollector,
     LizardCollector,
+    SemanticScholarClient,
 )
 from .core.models import MaturityProfile
 from .git_utils import resolve_repo_path
@@ -74,6 +75,7 @@ class MaturityAssessor:
         repo_url: str | None = None,
         repo_path: str | None = None,
         pmid: str | None = None,
+        doi: str | None = None,
         platform: str | None = None,
         collect_code_quality: bool = True,
         collect_fair: bool = True,
@@ -99,6 +101,8 @@ class MaturityAssessor:
             Local path to repository (takes precedence over repo_url)
         pmid : str | None
             PubMed ID for citation metrics
+        doi : str | None
+            DOI for Semantic Scholar citation metrics
         platform : str | None
             Explicit platform specification: "github" or "gitlab"
             Required when using short format (owner/repo)
@@ -118,10 +122,10 @@ class MaturityAssessor:
         ValueError
             If no data sources are provided
         """
-        if not any([biotools_id, repo_url, repo_path, pmid]):
+        if not any([biotools_id, repo_url, repo_path, pmid, doi]):
             raise ValueError(
                 "At least one data source must be provided "
-                "(biotools_id, repo_url, repo_path, or pmid)"
+                "(biotools_id, repo_url, repo_path, pmid, or doi)"
             )
 
         logger.info("Starting maturity assessment...")
@@ -130,6 +134,7 @@ class MaturityAssessor:
         biotools_client = BioToolsClient() if biotools_id else None
         howfairis_collector = HowfairisCollector() if collect_fair else None
         europepmc_client = EuropePMCClient() if pmid else None
+        semantic_scholar_client = SemanticScholarClient() if doi else None
 
         # Determine repository platform and initialize client
         repo_client = None
@@ -246,6 +251,19 @@ class MaturityAssessor:
                 except Exception as e:
                     logger.warning(f"Failed to collect citation metrics: {e}")
 
+            if semantic_scholar_client:
+                logger.info(f"Collecting Semantic Scholar data for DOI {doi}...")
+                try:
+                    semantic_scholar_metrics = semantic_scholar_client.get_paper_by_doi(
+                        doi
+                    )
+                    citation_metrics = self._merge_citation_metrics(
+                        citation_metrics,
+                        semantic_scholar_metrics,
+                    )
+                except Exception as e:
+                    logger.warning(f"Failed to collect Semantic Scholar metrics: {e}")
+
             # ====== Map to maturity profile ======
             logger.info("Mapping collected data to maturity dimensions...")
             maturity_profile = self.mapper.map_to_maturity_profile(
@@ -351,3 +369,34 @@ class MaturityAssessor:
             return f"https://gitlab.com/{repo_url}"
 
         return repo_url
+
+    def _merge_citation_metrics(
+        self,
+        europepmc_metrics: dict[str, Any] | None,
+        semantic_scholar_metrics: dict[str, Any] | None,
+    ) -> dict[str, Any] | None:
+        """Merge citation metrics from Europe PMC and Semantic Scholar."""
+        if not europepmc_metrics and not semantic_scholar_metrics:
+            return None
+
+        merged_metrics: dict[str, Any] = dict(europepmc_metrics or {})
+
+        if semantic_scholar_metrics:
+            merged_metrics.update(
+                {
+                    "doi": semantic_scholar_metrics.get("externalIds", {}).get("DOI"),
+                    "title": semantic_scholar_metrics.get("title"),
+                    "citation_count": merged_metrics.get(
+                        "citation_count",
+                        semantic_scholar_metrics.get("citationCount"),
+                    ),
+                    "reference_count": semantic_scholar_metrics.get("referenceCount"),
+                    "year": semantic_scholar_metrics.get("year"),
+                    "authors": semantic_scholar_metrics.get("authors"),
+                    "influential_citation_count": semantic_scholar_metrics.get(
+                        "influentialCitationCount"
+                    ),
+                }
+            )
+
+        return merged_metrics
