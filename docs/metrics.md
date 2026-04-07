@@ -1,40 +1,83 @@
 # Metrics
 
-This tool collects metrics from various sources to help you assess the maturity and quality of your research software. M4 gathers data about repository activity, code quality, FAIR compliance, citations, and more.
+This tool collects metrics from various sources to help you assess the maturity and quality of your research software.
 
 ## Overview
 
 | Metric | Purpose | Data Source | Authentication |
 |-----------|---------|-------------|----------------|
 | **Repository** | Repository health metrics | GitHub/GitLab API | Required (token) |
-| **Publication** | Citation metrics | Europe PMC API | Not required |
+| **Publication** | Citation metrics | Europe PMC API, Semantic Scholar API | Not required |
 | **Fairness** | FAIR compliance | howfairis library | Not required |
 | **Registry** | Tool metadata | bio.tools API | Not required |
 | **Code Quality** | Code quality metrics | Lizard static analysis | Not required |
 
-## Repository Metrics
 
-Collected from repository providers (GitHub or GitLab).
+# Dimensions
 
-- **Repository statistics**: Stars, forks, watchers, size
-- **Activity metrics**: Open/closed issues, pull requests
-- **Maintenance indicators**: Last commit date, update frequency
-- **Community metrics**: Contributors, issue resolution time
-- **Documentation**: README presence, wiki status
+## Compatibility
 
-## Publication Metrics
+**Data sources:** bio.tools, GitHub/GitLab
 
-Collected from the EuropePMC API.
+**Metrics:**
+- EDAM compatibility
+- Workflow support
+- Distribution support
 
-- **Citation counts**
-- **Open access status**
 
 ## Fairness
 
-howfairis
+**Data sources:** howfairis, EuropePMC (publication open access)
 
-## Registry
+**Metrics:**
+- Has open repository
+- Has license
+- Has registry (badge)
+- Has ciatation file or zenodo badge
+- Checklist: has core infrastructures badge
 
-bio.tools
 
-## Code Quality
+## Maintainability
+
+**Data Sources:** Lizard, GitHub/GitLab
+
+**Metrics:**
+- Total nloc
+- Total CCN
+- Average CCN
+- Duplicate rate
+- Has old languages
+
+
+## Scientific Impact
+
+**Data sources:** EuropePMC, Semantic Scholar
+
+**Metrics:**
+- Citation count
+- Influential citation count
+
+
+## Security
+
+Security checks for protected branches and presence of security policies, and security scanning workflows.
+
+**Data sources:** GitHub/GitLab
+
+**Metrics:**
+- Default branch protected
+- Has security policy
+- Has security scanning
+
+
+## Sustainability
+
+Sustainability combines repository activity and maintenance resilience signals from GitHub or GitLab.
+
+**Data sources:** GitHub/GitLab
+
+**Metrics:**
+- Average issue close time
+- Number of open issues
+- Days since last commit
+- Contributor diversity measured with the Inverse Simpson index on commit shares
