@@ -6,9 +6,10 @@ appropriate dimension scoring functions.
 """
 
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
+from ..adapters.adapters_utils import parse_iso_datetime
 from ..core.models import (
     CodeQualityMetrics,
     DimensionScore,
@@ -237,9 +238,17 @@ class MaturityMapper:
             logger.warning("No repository metrics available for sustainability")
             return DimensionScore(name="Sustainability", score=0.0)
 
-        # Calculate days since last commit
-        # TODO: This requires commit date data - add to RepositoryMetrics
-        days_since_last_commit = 0  # Placeholder
+        days_since_last_commit = None
+        if repository_metrics.last_commit_date:
+            try:
+                last_commit_date = parse_iso_datetime(
+                    repository_metrics.last_commit_date
+                )
+                now = datetime.now(last_commit_date.tzinfo or timezone.utc)
+                days_since_last_commit = max(0, (now - last_commit_date).days)
+            except ValueError as error:
+                logger.debug(f"Could not parse last commit date: {error}")
+
         inverse_simpson_index = self.scorer.calculate_inverse_simpson_index(
             repository_metrics.contributors
         )

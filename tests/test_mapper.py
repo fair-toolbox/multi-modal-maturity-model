@@ -2,6 +2,8 @@
 Tests for the MaturityMapper class.
 """
 
+from datetime import datetime, timedelta, timezone
+
 import pytest
 
 from multi_modal_maturity_model.core.models import (
@@ -71,13 +73,15 @@ def sample_repository_metrics():
         url="https://github.com/test/repo",
         repo="test/repo",
         default_branch="main",
+        last_commit_date=(datetime.now(timezone.utc) - timedelta(days=10))
+        .isoformat()
+        .replace("+00:00", "Z"),
         stars=100,
         forks=20,
         open_issues=5,
         avg_time_to_close_days=10.5,
         default_branch_is_protected=True,
         languages=["Python", "JavaScript"],
-        last_commit_date="2024-01-01",
         has_license=True,
         contributors=[
             Contributor(login="user1", total_commits=50),
@@ -255,7 +259,21 @@ def test_map_sustainability(sample_repository_metrics):
 
     assert score.name == "Sustainability"
     assert 0.0 <= score.score <= 1.0
+    assert score.details["days_since_last_commit"] == 10
     assert score.details["inverse_simpson_index"] == pytest.approx(1.8823529411764706)
+
+
+def test_map_sustainability_handles_missing_last_commit_date(
+    sample_repository_metrics,
+):
+    """Missing last commit dates should be excluded from sustainability scoring."""
+    mapper = MaturityMapper()
+    sample_repository_metrics.last_commit_date = None
+
+    score = mapper._map_sustainability(sample_repository_metrics)
+
+    assert score.name == "Sustainability"
+    assert score.details["days_since_last_commit"] is None
 
 
 def test_inverse_simpson_index_balanced_contributors():

@@ -233,7 +233,7 @@ class DimensionScorer:
     def calculate_sustainability(
         avg_issue_close_time_days: float,
         num_open_issues: int,
-        days_since_last_commit: int,
+        days_since_last_commit: int | None,
         inverse_simpson_index: float | None = None,
     ) -> DimensionScore:
         """
@@ -254,7 +254,7 @@ class DimensionScorer:
             Average days to close an issue
         num_open_issues : int
             Number of currently open issues
-        days_since_last_commit : int
+        days_since_last_commit : int | None
         inverse_simpson_index : float | None
             Effective number of contributors based on commit-share diversity
 
@@ -274,8 +274,10 @@ class DimensionScorer:
                 0.0, 1.0 - (math.log(num_open_issues + 1) / math.log(100))
             )
 
-        # Last commit recency (within 3 months is good)
-        recent_score = max(0.0, 1.0 - (days_since_last_commit / 90.0))
+        recent_score = None
+        if days_since_last_commit is not None:
+            # Last commit recency (within 6 months = good?)
+            recent_score = max(0.0, 1.0 - (days_since_last_commit / 180.0))
 
         diversity_score = None
         if inverse_simpson_index is not None:
