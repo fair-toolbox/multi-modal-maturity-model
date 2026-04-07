@@ -241,6 +241,8 @@ class MaturityMapper:
         # TODO: This requires commit date data - add to RepositoryMetrics
         days_since_last_commit = 0  # Placeholder
 
+        # TODO BusFactor or Inverse Simpson metric
+
         return self.scorer.calculate_sustainability(
             avg_issue_close_time_days=repository_metrics.avg_time_to_close_days or 90.0,
             num_open_issues=repository_metrics.open_issues,
@@ -259,7 +261,9 @@ class MaturityMapper:
 
         return self.scorer.calculate_security(
             default_branch_protected=repository_metrics.default_branch_is_protected
-            or False
+            or False,
+            has_security_policy=repository_metrics.has_security_policy,
+            has_security_scanning=repository_metrics.has_security_scanning,
         )
 
     def _map_scientific_impact(
