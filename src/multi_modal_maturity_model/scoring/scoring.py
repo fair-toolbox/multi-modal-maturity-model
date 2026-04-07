@@ -260,29 +260,42 @@ class DimensionScorer:
     @staticmethod
     def calculate_security(
         default_branch_protected: bool,
+        has_security_policy: bool | None = None,
+        has_security_scanning: bool | None = None,
     ) -> DimensionScore:
         """
         Calculate Security dimension.
 
-        For now, based on: default branch protection status.
-        Can be extended with additional metrics.
+        Based on a small set of repository-level security signals.
 
         Parameters
         ----------
         default_branch_protected : bool
             Whether the default branch is protected
+        has_security_policy : bool | None
+            Whether the repository publishes a security policy or disclosure guide
+        has_security_scanning : bool | None
+            Whether repository files indicate automated security scanning
 
         Returns
         -------
         DimensionScore
         """
-        score = float(default_branch_protected)
+        signals = [float(default_branch_protected)]
+        if has_security_policy is not None:
+            signals.append(float(has_security_policy))
+        if has_security_scanning is not None:
+            signals.append(float(has_security_scanning))
+
+        score = sum(signals) / len(signals)
 
         return DimensionScore(
             name="Security",
             score=score,
             details={
                 "default_branch_protected": default_branch_protected,
+                "has_security_policy": has_security_policy,
+                "has_security_scanning": has_security_scanning,
             },
         )
 

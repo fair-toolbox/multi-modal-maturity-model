@@ -84,6 +84,8 @@ def sample_repository_metrics():
         ],
         has_workflow_integration=True,
         has_distribution_support=True,
+        has_security_policy=True,
+        has_security_scanning=True,
     )
 
 
@@ -158,7 +160,7 @@ def test_map_to_maturity_profile_all_data(
     assert 0.0 <= profile.overall_score <= 1.0
 
     # Check specific dimension values
-    assert profile.security.score == 1.0  # Branch is protected
+    assert profile.security.score == 1.0
     assert profile.fairness.score >= 0.8  # Most FAIR criteria met
 
 
@@ -260,7 +262,7 @@ def test_map_security(sample_repository_metrics):
     score = mapper._map_security(sample_repository_metrics)
 
     assert score.name == "Security"
-    assert score.score == 1.0  # Branch is protected
+    assert score.score == 1.0
 
 
 def test_map_scientific_impact(sample_citation_metrics):

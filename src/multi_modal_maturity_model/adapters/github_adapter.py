@@ -9,6 +9,8 @@ from multi_modal_maturity_model.core.models import Contributor, RepositoryMetric
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
     detect_distribution_support,
+    detect_security_policy,
+    detect_security_scanning,
     detect_workflow_support,
 )
 
@@ -48,6 +50,8 @@ class GitHubAdapter:
         repository_tree = raw_data.get("contents")
         has_workflow_integration = detect_workflow_support(repository_tree)
         has_distribution_support = detect_distribution_support(repository_tree)
+        has_security_policy = detect_security_policy(repository_tree)
+        has_security_scanning = detect_security_scanning(repository_tree)
 
         return RepositoryMetrics(
             platform="github",
@@ -64,6 +68,8 @@ class GitHubAdapter:
             contributors=contributors,
             has_workflow_integration=has_workflow_integration,
             has_distribution_support=has_distribution_support,
+            has_security_policy=has_security_policy,
+            has_security_scanning=has_security_scanning,
         )
 
 

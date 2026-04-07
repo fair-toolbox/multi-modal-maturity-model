@@ -13,6 +13,8 @@ from multi_modal_maturity_model.adapters.github_adapter import (
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
     detect_distribution_support,
+    detect_security_policy,
+    detect_security_scanning,
     detect_workflow_support,
 )
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
@@ -238,6 +240,8 @@ class TestGitHubAdapter:
             "contents": [
                 {"path": "workflow/main.nf", "type": "blob"},
                 {"path": "Dockerfile", "type": "blob"},
+                {"path": "SECURITY.md", "type": "blob"},
+                {"path": ".github/dependabot.yml", "type": "blob"},
             ],
         }
 
@@ -271,6 +275,8 @@ class TestGitHubAdapter:
         assert result.default_branch_is_protected is True
         assert result.has_workflow_integration is True
         assert result.has_distribution_support is True
+        assert result.has_security_policy is True
+        assert result.has_security_scanning is True
 
     def test_to_repository_metrics_contributors(self, complete_raw_data):
         """Test contributor transformation."""
@@ -316,6 +322,8 @@ class TestGitHubAdapter:
         assert result.default_branch_is_protected is None
         assert result.has_workflow_integration is None
         assert result.has_distribution_support is None
+        assert result.has_security_policy is None
+        assert result.has_security_scanning is None
 
     def test_to_repository_metrics_no_license(self, complete_raw_data):
         """Test handling of repositories without license."""
@@ -383,3 +391,21 @@ def test_detect_distribution_support_from_repository_tree():
     ]
 
     assert detect_distribution_support(repository_tree) is True
+
+
+def test_detect_security_policy_from_repository_tree():
+    repository_tree = [
+        {"path": ".github/SECURITY.md", "type": "blob"},
+        {"path": "docs/index.md", "type": "blob"},
+    ]
+
+    assert detect_security_policy(repository_tree) is True
+
+
+def test_detect_security_scanning_from_repository_tree():
+    repository_tree = [
+        {"path": ".github/workflows/codeql-analysis.yml", "type": "blob"},
+        {"path": "docs/index.md", "type": "blob"},
+    ]
+
+    assert detect_security_scanning(repository_tree) is True
