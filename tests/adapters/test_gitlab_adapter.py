@@ -11,6 +11,8 @@ from multi_modal_maturity_model.adapters.gitlab_adapter import (
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
     detect_distribution_support,
+    detect_security_policy,
+    detect_security_scanning,
     detect_workflow_support,
 )
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
@@ -97,10 +99,16 @@ def test_to_repository_metrics_basic():
         "repository_tree": [
             {"type": "blob", "name": "LICENSE", "path": "LICENSE"},
             {"type": "blob", "name": "Snakefile", "path": "Snakefile"},
+            {"type": "blob", "name": "SECURITY.md", "path": "SECURITY.md"},
             {
                 "type": "blob",
                 "name": "environment.yml",
                 "path": "environment.yml",
+            },
+            {
+                "type": "blob",
+                "name": "sast.gitlab-ci.yml",
+                "path": "ci/sast.gitlab-ci.yml",
             },
         ],
     }
@@ -121,6 +129,8 @@ def test_to_repository_metrics_basic():
     assert metrics.has_license is True
     assert metrics.has_workflow_integration is True
     assert metrics.has_distribution_support is True
+    assert metrics.has_security_policy is True
+    assert metrics.has_security_scanning is True
     assert len(metrics.contributors) == 1
     assert metrics.contributors[0] == Contributor(login="alice", total_commits=5)
 
@@ -131,3 +141,16 @@ def test_detect_workflow_support_none_returns_unknown():
 
 def test_detect_distribution_support_none_returns_unknown():
     assert detect_distribution_support(None) is None
+
+
+def test_detect_security_policy_none_returns_unknown():
+    assert detect_security_policy(None) is None
+
+
+def test_detect_security_scanning_from_repository_tree():
+    repository_tree = [
+        {"type": "blob", "name": "sast.gitlab-ci.yml", "path": "ci/sast.gitlab-ci.yml"},
+        {"type": "blob", "name": "README.md", "path": "README.md"},
+    ]
+
+    assert detect_security_scanning(repository_tree) is True
