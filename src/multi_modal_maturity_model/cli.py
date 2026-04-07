@@ -6,12 +6,170 @@ import json
 import logging
 import os
 import sys
-from dataclasses import asdict
 from pathlib import Path
 
 from dotenv import load_dotenv
 
 from . import MaturityAssessor, __version__
+
+
+def load_input_config(config_path: str) -> dict:
+    """Load CLI defaults from a JSON config file."""
+    path = Path(config_path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Config file not found: {path}")
+
+    if path.suffix.lower() != ".json":
+        raise ValueError("Unsupported config file format. Use .json")
+
+    with path.open() as handle:
+        config = json.load(handle)
+
+    if config is None:
+        return {}
+
+    if not isinstance(config, dict):
+        raise ValueError("Config file must contain a top-level object/mapping")
+
+    return config
+
+
+def build_parser() -> argparse.ArgumentParser:
+    """Create the main argument parser."""
+    parser = argparse.ArgumentParser(
+        description="Multi-Modal Maturity Model (M4) - Assess maturity of research software",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # GitHub repository (short format)
+  m4 owner/repo --platform=github
+
+  # GitLab repository (short format)
+  m4 group/project --platform=gitlab
+
+  # Repository URL (no flag needed)
+  m4 https://github.com/owner/repo
+  m4 https://gitlab.com/group/subgroup/project
+
+  # Full assessment with all data sources
+  m4 owner/repo --platform=github --pmid 12345678 --biotools-id blast
+
+  # Use local repository (no cloning)
+  m4 owner/repo --platform=github --local-path /path/to/repo
+
+    # Read defaults from a JSON config file
+  m4 --input config.json
+
+  # Skip code quality analysis (faster, no cloning)
+  m4 owner/repo --platform=github --no-code-quality
+
+Environment Variables:
+  GITHUB_TOKEN    GitHub API token for authenticated requests
+  GITLAB_TOKEN    GitLab API token for authenticated requests
+        """,
+    )
+    parser.add_argument(
+        "repository",
+        nargs="?",
+        default=None,
+        help="Repository identifier (e.g., owner/repo or full URL)",
+    )
+
+    parser.add_argument(
+        "--input",
+        help="Path to a JSON config file with CLI defaults",
+        default=None,
+    )
+
+    parser.add_argument(
+        "--platform",
+        choices=["github", "gitlab"],
+        help="Repository platform (required for short format like owner/repo)",
+        default=None,
+    )
+
+    parser.add_argument(
+        "--pmid",
+        help="PubMed ID for citation metrics",
+        default=None,
+    )
+    parser.add_argument(
+        "--biotools-id",
+        help="bio.tools identifier",
+        default=None,
+        dest="biotools_id",
+    )
+    parser.add_argument(
+        "--local-path",
+        help="Local path to repository (skips cloning)",
+        default=None,
+        dest="local_path",
+    )
+    parser.add_argument(
+        "--output-dir",
+        help="Output directory for results (default: ./results)",
+        default="./results",
+        dest="output_dir",
+    )
+    parser.add_argument(
+        "--no-code-quality",
+        action="store_true",
+        help="Skip code quality analysis (faster, no repository cloning)",
+        dest="no_code_quality",
+    )
+    parser.add_argument(
+        "--max-citations",
+        type=int,
+        help="Maximum citations in corpus for normalization (default: 1000)",
+        default=1000,
+        dest="max_citations",
+    )
+    parser.add_argument(
+        "--verbose",
+        "-v",
+        action="store_true",
+        help="Enable verbose output with detailed metrics",
+    )
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
+    )
+    return parser
+
+
+def normalize_config_keys(
+    parser: argparse.ArgumentParser, config: dict[str, object]
+) -> dict[str, object]:
+    """Map config-file keys onto argparse destination names."""
+    key_map: dict[str, str] = {}
+
+    for action in parser._actions:
+        if action.dest == argparse.SUPPRESS:
+            continue
+
+        key_map[action.dest] = action.dest
+        for option in action.option_strings:
+            normalized_option = option.lstrip("-").replace("-", "_")
+            key_map[normalized_option] = action.dest
+
+    normalized: dict[str, object] = {}
+    unknown_keys: list[str] = []
+    for key, value in config.items():
+        normalized_key = key.replace("-", "_")
+        dest = key_map.get(normalized_key)
+        if dest is None:
+            unknown_keys.append(key)
+            continue
+        normalized[dest] = value
+
+    if unknown_keys:
+        valid_keys = ", ".join(sorted(key_map))
+        unknown = ", ".join(sorted(unknown_keys))
+        raise ValueError(f"Unknown config key(s): {unknown}. Valid keys: {valid_keys}")
+
+    return normalized
 
 
 def setup_logging(verbose: bool) -> None:
@@ -118,114 +276,21 @@ def main():
     # Load environment variables from .env file if it exists
     load_dotenv()
 
-    parser = argparse.ArgumentParser(
-        description="Multi-Modal Maturity Model (M4) - Assess maturity of research software",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # GitHub repository (short format)
-  m4 owner/repo --platform=github
+    bootstrap_parser = argparse.ArgumentParser(add_help=False)
+    bootstrap_parser.add_argument("--input", default=None)
+    bootstrap_args, _ = bootstrap_parser.parse_known_args()
 
-  # GitLab repository (short format)
-  m4 group/project --platform=gitlab
-
-  # Repository URL (no flag needed)
-  m4 https://github.com/owner/repo
-  m4 https://gitlab.com/group/subgroup/project
-
-  # Full assessment with all data sources
-  m4 owner/repo --platform=github --pmid 12345678 --biotools-id blast
-
-  # Use local repository (no cloning)
-  m4 owner/repo --platform=github --local-path /path/to/repo
-
-  # Skip code quality analysis (faster, no cloning)
-  m4 owner/repo --platform=github --no-code-quality
-
-Environment Variables:
-  GITHUB_TOKEN    GitHub API token for authenticated requests
-  GITLAB_TOKEN    GitLab API token for authenticated requests
-        """,
-    )
-    parser.add_argument(
-        "repository",
-        help="Repository identifier (e.g., owner/repo or full URL)",
-    )
-
-    parser.add_argument(
-        "--platform",
-        choices=["github", "gitlab"],
-        help="Repository platform (required for short format like owner/repo)",
-        default=None,
-    )
-
-    parser.add_argument(
-        "--pmid",
-        help="PubMed ID for citation metrics",
-        default=None,
-    )
-    parser.add_argument(
-        "--biotools-id",
-        help="bio.tools identifier",
-        default=None,
-        dest="biotools_id",
-    )
-    parser.add_argument(
-        "--local-path",
-        help="Local path to repository (skips cloning)",
-        default=None,
-        dest="local_path",
-    )
-    parser.add_argument(
-        "--output-dir",
-        help="Output directory for results (default: ./results)",
-        default="./results",
-        dest="output_dir",
-    )
-    parser.add_argument(
-        "--no-code-quality",
-        action="store_true",
-        help="Skip code quality analysis (faster, no repository cloning)",
-        dest="no_code_quality",
-    )
-    parser.add_argument(
-        "--no-fair",
-        action="store_true",
-        help="Skip FAIR compliance assessment",
-        dest="no_fair",
-    )
-    parser.add_argument(
-        "--github-token",
-        help="GitHub API token (or set GITHUB_TOKEN env var)",
-        default=None,
-        dest="github_token",
-    )
-    parser.add_argument(
-        "--gitlab-token",
-        help="GitLab API token (or set GITLAB_TOKEN env var)",
-        default=None,
-        dest="gitlab_token",
-    )
-    parser.add_argument(
-        "--max-citations",
-        type=int,
-        help="Maximum citations in corpus for normalization (default: 1000)",
-        default=1000,
-        dest="max_citations",
-    )
-    parser.add_argument(
-        "--verbose",
-        "-v",
-        action="store_true",
-        help="Enable verbose output with detailed metrics",
-    )
-    parser.add_argument(
-        "--version",
-        action="version",
-        version=f"%(prog)s {__version__}",
-    )
+    parser = build_parser()
+    if bootstrap_args.input:
+        try:
+            config = load_input_config(bootstrap_args.input)
+            parser.set_defaults(**normalize_config_keys(parser, config))
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+            parser.error(str(exc))
 
     args = parser.parse_args()
+    if not args.repository:
+        parser.error("the following arguments are required: repository")
 
     # Setup logging
     setup_logging(args.verbose)
@@ -245,7 +310,6 @@ Environment Variables:
 
     print(f"\nOptions:")
     print(f"  • Code quality analysis: {'No' if args.no_code_quality else 'Yes'}")
-    print(f"  • FAIR compliance: {'No' if args.no_fair else 'Yes'}")
 
     # Validate platform usage
     platform = args.platform
@@ -261,9 +325,9 @@ Environment Variables:
         print("  Or provide a full URL instead\n")
         return 1
 
-    # Get API tokens from arguments or environment
-    github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
-    gitlab_token = args.gitlab_token or os.environ.get("GITLAB_TOKEN")
+    # Get API tokens from environment
+    github_token = os.environ.get("GITHUB_TOKEN")
+    gitlab_token = os.environ.get("GITLAB_TOKEN")
 
     if not github_token and (
         platform == "github" or (is_url and "github" in args.repository.lower())
@@ -291,7 +355,6 @@ Environment Variables:
             pmid=args.pmid,
             platform=platform,
             collect_code_quality=not args.no_code_quality,
-            collect_fair=not args.no_fair,
         )
 
         print_results(profile, verbose=args.verbose)

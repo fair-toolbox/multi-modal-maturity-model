@@ -78,7 +78,6 @@ class MaturityAssessor:
         doi: str | None = None,
         platform: str | None = None,
         collect_code_quality: bool = True,
-        collect_fair: bool = True,
     ) -> MaturityProfile:
         """
         Assess maturity of a research software tool.
@@ -109,8 +108,6 @@ class MaturityAssessor:
             Ignored when repo_url is a full URL
         collect_code_quality : bool
             Whether to collect code quality metrics (requires cloning, default: True)
-        collect_fair : bool
-            Whether to collect FAIR compliance metrics (default: True)
 
         Returns
         -------
@@ -132,7 +129,7 @@ class MaturityAssessor:
 
         # Initialize collectors
         biotools_client = BioToolsClient() if biotools_id else None
-        howfairis_collector = HowfairisCollector() if collect_fair else None
+        howfairis_collector = HowfairisCollector()
         europepmc_client = EuropePMCClient() if pmid else None
         semantic_scholar_client = SemanticScholarClient() if doi else None
 
@@ -230,9 +227,7 @@ class MaturityAssessor:
 
             # ====== Collect FAIR compliance ======
             fair_metrics = None
-            if collect_fair and (
-                repo_url or (repository_metrics and repository_metrics.url)
-            ):
+            if repo_url or (repository_metrics and repository_metrics.url):
                 fair_url = repo_url or repository_metrics.url
                 # Normalize to full URL for howfairis
                 fair_url = self._normalize_repo_url(fair_url, repo_platform)
