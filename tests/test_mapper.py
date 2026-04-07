@@ -13,7 +13,7 @@ from multi_modal_maturity_model.core.models import (
     ToolModel,
     Contributor,
 )
-from multi_modal_maturity_model.scoring import MaturityMapper
+from multi_modal_maturity_model.scoring import DimensionScorer, MaturityMapper
 
 
 @pytest.fixture
@@ -254,6 +254,35 @@ def test_map_sustainability(sample_repository_metrics):
 
     assert score.name == "Sustainability"
     assert 0.0 <= score.score <= 1.0
+    assert score.details["inverse_simpson_index"] == pytest.approx(1.8823529411764706)
+
+
+def test_inverse_simpson_index_balanced_contributors():
+    """Balanced contributors should produce a higher diversity score."""
+    scorer = DimensionScorer()
+
+    inverse_simpson = scorer.calculate_inverse_simpson_index(
+        [
+            Contributor(login="user1", total_commits=10),
+            Contributor(login="user2", total_commits=10),
+            Contributor(login="user3", total_commits=10),
+        ]
+    )
+
+    assert inverse_simpson == pytest.approx(3.0)
+
+
+def test_inverse_simpson_index_returns_none_without_commit_data():
+    """Missing or zero contributor activity should not produce a diversity metric."""
+    scorer = DimensionScorer()
+
+    assert scorer.calculate_inverse_simpson_index([]) is None
+    assert (
+        scorer.calculate_inverse_simpson_index(
+            [Contributor(login="user1", total_commits=0)]
+        )
+        is None
+    )
 
 
 def test_map_security(sample_repository_metrics):
