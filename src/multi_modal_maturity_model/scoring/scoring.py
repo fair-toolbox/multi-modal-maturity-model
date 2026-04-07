@@ -7,13 +7,43 @@ import logging
 import math
 from typing import Any
 
-from ..core.models import DimensionScore, MaturityProfile
+from ..core.models import Contributor, DimensionScore, MaturityProfile
 
 logger = logging.getLogger(__name__)
 
 
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
+
+    @staticmethod
+    def calculate_inverse_simpson_index(
+        contributors: list[Contributor] | None,
+    ) -> float | None:
+        """Calculate contributor diversity from commit shares."""
+        if not contributors:
+            return None
+
+        total_commits = sum(
+            contributor.total_commits
+            for contributor in contributors
+            if contributor.total_commits > 0
+        )
+        if total_commits == 0:
+            return None
+
+        shares = [
+            contributor.total_commits / total_commits
+            for contributor in contributors
+            if contributor.total_commits > 0
+        ]
+        if not shares:
+            return None
+
+        hhi = sum(share**2 for share in shares)
+        if hhi == 0:
+            return None
+
+        return 1 / hhi
 
     @staticmethod
     def calculate_compatibility(
@@ -204,6 +234,7 @@ class DimensionScorer:
         avg_issue_close_time_days: float,
         num_open_issues: int,
         days_since_last_commit: int,
+        inverse_simpson_index: float | None = None,
     ) -> DimensionScore:
         """
         Calculate Sustainability dimension.
@@ -224,6 +255,8 @@ class DimensionScorer:
         num_open_issues : int
             Number of currently open issues
         days_since_last_commit : int
+        inverse_simpson_index : float | None
+            Effective number of contributors based on commit-share diversity
 
         Returns
         -------
@@ -244,8 +277,30 @@ class DimensionScorer:
         # Last commit recency (within 3 months is good)
         recent_score = max(0.0, 1.0 - (days_since_last_commit / 90.0))
 
-        # Weighted combination
-        score = 0.4 * close_time_score + 0.3 * open_issues_score + 0.2 * recent_score
+        diversity_score = None
+        if inverse_simpson_index is not None:
+            diversity_score = max(0.0, min(1.0, 1.0 - (1.0 / inverse_simpson_index)))
+
+        weighted_metrics = {
+            "avg_issue_close_time_days": (close_time_score, 0.4),
+            "num_open_issues": (open_issues_score, 0.3),
+            "days_since_last_commit": (recent_score, 0.2),
+            "inverse_simpson_index": (diversity_score, 0.1),
+        }
+        total_weight = sum(
+            weight for value, weight in weighted_metrics.values() if value is not None
+        )
+        if total_weight == 0:
+            score = 0.0
+        else:
+            score = (
+                sum(
+                    value * weight
+                    for value, weight in weighted_metrics.values()
+                    if value is not None
+                )
+                / total_weight
+            )
 
         return DimensionScore(
             name="Sustainability",
@@ -254,6 +309,7 @@ class DimensionScorer:
                 "avg_issue_close_time_days": avg_issue_close_time_days,
                 "num_open_issues": num_open_issues,
                 "days_since_last_commit": days_since_last_commit,
+                "inverse_simpson_index": inverse_simpson_index,
             },
         )
 

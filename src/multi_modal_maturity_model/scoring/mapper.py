@@ -240,13 +240,15 @@ class MaturityMapper:
         # Calculate days since last commit
         # TODO: This requires commit date data - add to RepositoryMetrics
         days_since_last_commit = 0  # Placeholder
-
-        # TODO BusFactor or Inverse Simpson metric
+        inverse_simpson_index = self.scorer.calculate_inverse_simpson_index(
+            repository_metrics.contributors
+        )
 
         return self.scorer.calculate_sustainability(
             avg_issue_close_time_days=repository_metrics.avg_time_to_close_days or 90.0,
             num_open_issues=repository_metrics.open_issues,
             days_since_last_commit=days_since_last_commit,
+            inverse_simpson_index=inverse_simpson_index,
         )
 
     def _map_security(
