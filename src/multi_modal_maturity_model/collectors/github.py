@@ -70,9 +70,9 @@ class GitHubClient:
             raise
 
     def _fetch_contents(self, repo: Repository) -> list[dict[str, Any]] | None:
-        """Get repository contents (file tree)."""
+        """Get recursive repository file tree for the default branch."""
         try:
-            contents = repo.get_contents("")
+            contents = repo.get_git_tree(repo.default_branch, recursive=True).tree
             return [
                 {"path": content.path, "type": content.type} for content in contents
             ]
