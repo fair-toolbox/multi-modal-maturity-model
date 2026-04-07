@@ -26,6 +26,39 @@ DISTRIBUTION_FILE_PATTERNS = {
     ),
 }
 
+SECURITY_POLICY_FILE_PATTERNS = (
+    "SECURITY.md",
+    "SECURITY.rst",
+    "SECURITY.txt",
+    ".github/SECURITY.md",
+    ".github/SECURITY.rst",
+    ".github/SECURITY.txt",
+    "docs/SECURITY.md",
+    "docs/SECURITY.rst",
+    "docs/SECURITY.txt",
+)
+
+SECURITY_SCANNING_FILE_PATTERNS = (
+    ".github/dependabot.yml",
+    ".github/dependabot.yaml",
+    ".github/workflows/*codeql*.yml",
+    ".github/workflows/*codeql*.yaml",
+    ".github/workflows/*security*.yml",
+    ".github/workflows/*security*.yaml",
+    ".github/workflows/*scorecards*.yml",
+    ".github/workflows/*scorecards*.yaml",
+    "*sast*.gitlab-ci.yml",
+    "*dependency-scanning*.gitlab-ci.yml",
+    "*secret-detection*.gitlab-ci.yml",
+    "*container-scanning*.gitlab-ci.yml",
+    ".gitlab/*sast*.yml",
+    ".gitlab/*dependency-scanning*.yml",
+    ".gitlab/*secret-detection*.yml",
+    "ci/*sast*.yml",
+    "ci/*dependency-scanning*.yml",
+    "ci/*secret-detection*.yml",
+)
+
 
 def parse_iso_datetime(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -126,6 +159,34 @@ def detect_distribution_support(
         for path in file_paths
     )
     return has_container or has_packaging
+
+
+def detect_security_policy(
+    repository_items: list[dict[str, Any]] | None
+) -> bool | None:
+    """Detect whether repository files include a security policy."""
+    if repository_items is None:
+        return None
+
+    file_paths = extract_repository_file_paths(repository_items)
+    return any(
+        _path_matches_patterns(path, SECURITY_POLICY_FILE_PATTERNS)
+        for path in file_paths
+    )
+
+
+def detect_security_scanning(
+    repository_items: list[dict[str, Any]] | None
+) -> bool | None:
+    """Detect whether repository files indicate automated security scanning."""
+    if repository_items is None:
+        return None
+
+    file_paths = extract_repository_file_paths(repository_items)
+    return any(
+        _path_matches_patterns(path, SECURITY_SCANNING_FILE_PATTERNS)
+        for path in file_paths
+    )
 
 
 def _path_matches_patterns(path: str, patterns: tuple[str, ...]) -> bool:
