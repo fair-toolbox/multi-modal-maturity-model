@@ -383,11 +383,9 @@ def test_assess_with_fair_metrics(mock_howfairis, assessor):
     with patch("multi_modal_maturity_model.pipeline.GitHubClient"):
         profile = assessor.assess(
             repo_url="owner/repo",
-            collect_fair=True,
         )
 
     assert profile is not None
-    # FAIR score should be > 0 since we have some FAIR indicators
     assert profile.fairness.score > 0.0
 
 

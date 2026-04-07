@@ -189,24 +189,6 @@ Environment Variables:
         dest="no_code_quality",
     )
     parser.add_argument(
-        "--no-fair",
-        action="store_true",
-        help="Skip FAIR compliance assessment",
-        dest="no_fair",
-    )
-    parser.add_argument(
-        "--github-token",
-        help="GitHub API token (or set GITHUB_TOKEN env var)",
-        default=None,
-        dest="github_token",
-    )
-    parser.add_argument(
-        "--gitlab-token",
-        help="GitLab API token (or set GITLAB_TOKEN env var)",
-        default=None,
-        dest="gitlab_token",
-    )
-    parser.add_argument(
         "--max-citations",
         type=int,
         help="Maximum citations in corpus for normalization (default: 1000)",
@@ -261,9 +243,9 @@ Environment Variables:
         print("  Or provide a full URL instead\n")
         return 1
 
-    # Get API tokens from arguments or environment
-    github_token = args.github_token or os.environ.get("GITHUB_TOKEN")
-    gitlab_token = args.gitlab_token or os.environ.get("GITLAB_TOKEN")
+    # Get API tokens from environment
+    github_token = os.environ.get("GITHUB_TOKEN")
+    gitlab_token = os.environ.get("GITLAB_TOKEN")
 
     if not github_token and (
         platform == "github" or (is_url and "github" in args.repository.lower())
