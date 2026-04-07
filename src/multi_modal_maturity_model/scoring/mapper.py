@@ -73,7 +73,7 @@ class MaturityMapper:
             Complete maturity profile with all dimensions
         """
         # Calculate each dimension
-        compatibility = self._map_compatibility(tool_model)
+        compatibility = self._map_compatibility(tool_model, repository_metrics)
         fairness = self._map_fairness(
             repository_metrics, fair_metrics, citation_metrics
         )
@@ -103,39 +103,57 @@ class MaturityMapper:
             overall_score=overall_score,
         )
 
-    def _map_compatibility(self, tool_model: ToolModel | None) -> DimensionScore:
+    def _map_compatibility(
+        self,
+        tool_model: ToolModel | None,
+        repository_metrics: RepositoryMetrics | None,
+    ) -> DimensionScore:
         """
         Map bio.tools data to Compatibility dimension.
 
         Calculates fraction of input/output formats that are EDAM leaf nodes.
         """
-        if not tool_model or not tool_model.function:
-            logger.warning("No tool model data available for compatibility scoring")
-            return DimensionScore(name="Compatibility", score=0.0)
+        input_fraction = None
+        output_fraction = None
 
-        # Extract all input and output formats
-        all_input_formats = []
-        all_output_formats = []
+        if tool_model and tool_model.function:
+            all_input_formats = []
+            all_output_formats = []
 
-        for function in tool_model.function:
-            if function.input:
-                for input_item in function.input:
-                    if input_item.format:
-                        all_input_formats.extend(input_item.format)
+            for function in tool_model.function:
+                if function.input:
+                    for input_item in function.input:
+                        if input_item.format:
+                            all_input_formats.extend(input_item.format)
 
-            if function.output:
-                for output_item in function.output:
-                    if output_item.format:
-                        all_output_formats.extend(output_item.format)
+                if function.output:
+                    for output_item in function.output:
+                        if output_item.format:
+                            all_output_formats.extend(output_item.format)
 
-        # Calculate fractions
-        # TODO: Implement EDAM leaf node validation using edam_cache
-        input_fraction = 1.0 if all_input_formats else 0.0
-        output_fraction = 1.0 if all_output_formats else 0.0
+            # TODO: Implement EDAM leaf node validation using edam_cache
+            input_fraction = 1.0 if all_input_formats else 0.0
+            output_fraction = 1.0 if all_output_formats else 0.0
+        else:
+            logger.warning(
+                "No tool model data available for bio.tools compatibility scoring"
+            )
+
+        workflow_support = None
+        distribution_support = None
+        if repository_metrics:
+            if repository_metrics.has_workflow_integration is not None:
+                workflow_support = float(repository_metrics.has_workflow_integration)
+            if repository_metrics.has_distribution_support is not None:
+                distribution_support = float(
+                    repository_metrics.has_distribution_support
+                )
 
         return self.scorer.calculate_compatibility(
             input_formats=input_fraction,
             output_formats=output_fraction,
+            workflow_support=workflow_support,
+            distribution_support=distribution_support,
         )
 
     def _map_fairness(
