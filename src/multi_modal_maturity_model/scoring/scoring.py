@@ -17,13 +17,16 @@ class DimensionScorer:
 
     @staticmethod
     def calculate_compatibility(
-        input_formats: float,  # fraction of standard input formats
-        output_formats: float,  # fraction of standard output formats
+        input_formats: float | None = None,
+        output_formats: float | None = None,
+        workflow_support: float | None = None,
+        distribution_support: float | None = None,
     ) -> DimensionScore:
         """
         Calculate Compatibility dimension.
 
-        Formula: 0.5*[fraction of standard input formats] + 0.5*[fraction of standard output formats]
+        Weighted average of bio.tools I/O interoperability and repository-side
+        workflow/distribution support checks, normalized over available inputs.
 
         Parameters
         ----------
@@ -31,12 +34,35 @@ class DimensionScorer:
             Fraction of input formats that are EDAM leaf nodes (0.0-1.0)
         output_formats : float
             Fraction of output formats that are EDAM leaf nodes (0.0-1.0)
+        workflow_support : float | None
+            Workflow integration support signal (0.0-1.0)
+        distribution_support : float | None
+            Runtime portability / distribution support signal (0.0-1.0)
 
         Returns
         -------
         DimensionScore
         """
-        score = 0.5 * input_formats + 0.5 * output_formats
+        weighted_metrics = {
+            "input_formats": (input_formats, 0.25),
+            "output_formats": (output_formats, 0.25),
+            "workflow_support": (workflow_support, 0.25),
+            "distribution_support": (distribution_support, 0.25),
+        }
+        total_weight = sum(
+            weight for value, weight in weighted_metrics.values() if value is not None
+        )
+        if total_weight == 0:
+            score = 0.0
+        else:
+            score = (
+                sum(
+                    value * weight
+                    for value, weight in weighted_metrics.values()
+                    if value is not None
+                )
+                / total_weight
+            )
 
         return DimensionScore(
             name="Compatibility",
@@ -44,6 +70,8 @@ class DimensionScorer:
             details={
                 "input_formats": input_formats,
                 "output_formats": output_formats,
+                "workflow_support": workflow_support,
+                "distribution_support": distribution_support,
             },
         )
 

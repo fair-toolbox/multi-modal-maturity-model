@@ -8,6 +8,8 @@ from typing import Any
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
+    detect_distribution_support,
+    detect_workflow_support,
 )
 
 logger = logging.getLogger(__name__)
@@ -52,7 +54,10 @@ class GitLabAdapter:
         contributors = transform_contributors(raw_data.get("contributors"))
         languages = extract_languages(raw_data.get("languages"))
         avg_time_to_close = calculate_avg_time_to_close(raw_data.get("closed_issues"))
-        has_license = detect_license(raw_data.get("repository_tree", []))
+        repository_tree = raw_data.get("repository_tree")
+        has_license = detect_license(repository_tree or [])
+        has_workflow_integration = detect_workflow_support(repository_tree)
+        has_distribution_support = detect_distribution_support(repository_tree)
 
         return RepositoryMetrics(
             platform="gitlab",
@@ -67,6 +72,8 @@ class GitLabAdapter:
             languages=languages,
             has_license=has_license,
             contributors=contributors,
+            has_workflow_integration=has_workflow_integration,
+            has_distribution_support=has_distribution_support,
         )
 
 

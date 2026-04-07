@@ -43,6 +43,7 @@ class GitHubClient:
         logger.debug(f"Fetching GitHub repository {owner_repo}")
 
         data = self._fetch_repository(owner_repo)
+        contents = self._fetch_contents(data)
         contributors = self._fetch_contributors(data)
         closed_issues = self._fetch_closed_issues(data)
         languages = self._fetch_languages(data)
@@ -52,6 +53,7 @@ class GitHubClient:
 
         result: dict[str, Any] = {
             "repo": data.raw_data,
+            "contents": contents,
             "contributors": contributors,
             "closed_issues": closed_issues,
             "languages": languages,
@@ -66,6 +68,17 @@ class GitHubClient:
         except GithubException as e:
             logger.warning(f"Error fetching GitHub repository {owner_repo}: {e}")
             raise
+
+    def _fetch_contents(self, repo: Repository) -> list[dict[str, Any]] | None:
+        """Get recursive repository file tree for the default branch."""
+        try:
+            contents = repo.get_git_tree(repo.default_branch, recursive=True).tree
+            return [
+                {"path": content.path, "type": content.type} for content in contents
+            ]
+        except GithubException as e:
+            logger.warning(f"Could not get repository contents: {e}")
+            return None
 
     def _fetch_contributors(self, repo: Repository) -> list[dict[str, Any]] | None:
         """Get contributors with their commit counts."""

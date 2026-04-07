@@ -134,7 +134,10 @@ class GitLabClient:
         """Get the repository tree for the default branch."""
         try:
             repository_tree = project.repository_tree(
-                path="", ref=project.default_branch, per_page=100
+                path="",
+                ref=project.default_branch,
+                recursive=True,
+                get_all=True,
             )
             return repository_tree
         except GitlabError as e:

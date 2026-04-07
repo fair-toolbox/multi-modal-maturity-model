@@ -44,6 +44,8 @@ class RepositoryMetrics:
     languages: list[str]
     has_license: bool
     contributors: list[Contributor]
+    has_workflow_integration: bool | None
+    has_distribution_support: bool | None
 
 
 @dataclass
