@@ -82,6 +82,8 @@ def sample_repository_metrics():
             Contributor(login="user1", total_commits=50),
             Contributor(login="user2", total_commits=30),
         ],
+        has_workflow_integration=True,
+        has_distribution_support=True,
     )
 
 
@@ -174,7 +176,7 @@ def test_map_to_maturity_profile_partial_data(sample_repository_metrics):
     assert profile.sustainability.score > 0.0
 
     # Dimensions without data should have score 0.0
-    assert profile.compatibility.score == 0.0
+    assert profile.compatibility.score == 1.0
     assert profile.scientific_impact.score == 0.0
 
 
@@ -198,11 +200,22 @@ def test_map_to_maturity_profile_no_data():
 def test_map_compatibility(sample_tool_model):
     """Test compatibility dimension mapping."""
     mapper = MaturityMapper()
-    score = mapper._map_compatibility(sample_tool_model)
+    score = mapper._map_compatibility(sample_tool_model, None)
 
     assert score.name == "Compatibility"
     assert 0.0 <= score.score <= 1.0
     assert score.score > 0.0  # Has input and output formats
+
+
+def test_map_compatibility_from_repository_metadata(sample_repository_metrics):
+    """Test compatibility mapping from repository metadata checks only."""
+    mapper = MaturityMapper()
+    score = mapper._map_compatibility(None, sample_repository_metrics)
+
+    assert score.name == "Compatibility"
+    assert score.score == 1.0
+    assert score.details["workflow_support"] == 1.0
+    assert score.details["distribution_support"] == 1.0
 
 
 def test_map_fairness(

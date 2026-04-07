@@ -12,6 +12,8 @@ from multi_modal_maturity_model.adapters.github_adapter import (
 )
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
+    detect_distribution_support,
+    detect_workflow_support,
 )
 from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
 
@@ -233,6 +235,10 @@ class TestGitHubAdapter:
             ],
             "languages": {"Python": 75000, "JavaScript": 25000, "Shell": 5000},
             "default_branch_protected": True,
+            "contents": [
+                {"path": "workflow/main.nf", "type": "blob"},
+                {"path": "Dockerfile", "type": "blob"},
+            ],
         }
 
     @pytest.fixture
@@ -263,6 +269,8 @@ class TestGitHubAdapter:
         assert result.open_issues == 10
         assert result.has_license is True
         assert result.default_branch_is_protected is True
+        assert result.has_workflow_integration is True
+        assert result.has_distribution_support is True
 
     def test_to_repository_metrics_contributors(self, complete_raw_data):
         """Test contributor transformation."""
@@ -306,6 +314,8 @@ class TestGitHubAdapter:
         assert result.has_license is False
         assert result.avg_time_to_close_days is None
         assert result.default_branch_is_protected is None
+        assert result.has_workflow_integration is None
+        assert result.has_distribution_support is None
 
     def test_to_repository_metrics_no_license(self, complete_raw_data):
         """Test handling of repositories without license."""
@@ -355,3 +365,21 @@ class TestGitHubAdapter:
         result = GitHubAdapter.to_repository_metrics(complete_raw_data)
 
         assert result.default_branch_is_protected is None
+
+
+def test_detect_workflow_support_from_repository_tree():
+    repository_tree = [
+        {"path": "workflow/main.nf", "type": "blob"},
+        {"path": "docs/index.md", "type": "blob"},
+    ]
+
+    assert detect_workflow_support(repository_tree) is True
+
+
+def test_detect_distribution_support_from_repository_tree():
+    repository_tree = [
+        {"path": "containers/Dockerfile", "type": "blob"},
+        {"path": "pyproject.toml", "type": "blob"},
+    ]
+
+    assert detect_distribution_support(repository_tree) is True
