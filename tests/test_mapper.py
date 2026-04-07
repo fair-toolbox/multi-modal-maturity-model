@@ -77,6 +77,7 @@ def sample_repository_metrics():
         avg_time_to_close_days=10.5,
         default_branch_is_protected=True,
         languages=["Python", "JavaScript"],
+        last_commit_date="2024-01-01",
         has_license=True,
         contributors=[
             Contributor(login="user1", total_commits=50),

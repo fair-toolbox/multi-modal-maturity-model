@@ -80,6 +80,7 @@ class GitLabAdapter:
             has_distribution_support=has_distribution_support,
             has_security_policy=has_security_policy,
             has_security_scanning=has_security_scanning,
+            last_commit_date=repo.get("last_activity_at"),
         )
 
 
