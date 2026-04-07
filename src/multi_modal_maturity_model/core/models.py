@@ -46,6 +46,8 @@ class RepositoryMetrics:
     contributors: list[Contributor]
     has_workflow_integration: bool | None
     has_distribution_support: bool | None
+    has_security_policy: bool | None
+    has_security_scanning: bool | None
 
 
 @dataclass
