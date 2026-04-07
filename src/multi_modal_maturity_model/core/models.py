@@ -42,8 +42,9 @@ class RepositoryMetrics:
     avg_time_to_close_days: float | None
     default_branch_is_protected: bool | None
     languages: list[str]
-    has_license: bool
+    last_commit_date: str | None
     contributors: list[Contributor]
+    has_license: bool
     has_workflow_integration: bool | None
     has_distribution_support: bool | None
     has_security_policy: bool | None

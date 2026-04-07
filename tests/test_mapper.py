@@ -2,6 +2,8 @@
 Tests for the MaturityMapper class.
 """
 
+from datetime import datetime, timedelta, timezone
+
 import pytest
 
 from multi_modal_maturity_model.core.models import (
@@ -13,7 +15,7 @@ from multi_modal_maturity_model.core.models import (
     ToolModel,
     Contributor,
 )
-from multi_modal_maturity_model.scoring import MaturityMapper
+from multi_modal_maturity_model.scoring import DimensionScorer, MaturityMapper
 
 
 @pytest.fixture
@@ -71,6 +73,9 @@ def sample_repository_metrics():
         url="https://github.com/test/repo",
         repo="test/repo",
         default_branch="main",
+        last_commit_date=(datetime.now(timezone.utc) - timedelta(days=10))
+        .isoformat()
+        .replace("+00:00", "Z"),
         stars=100,
         forks=20,
         open_issues=5,
@@ -254,6 +259,49 @@ def test_map_sustainability(sample_repository_metrics):
 
     assert score.name == "Sustainability"
     assert 0.0 <= score.score <= 1.0
+    assert score.details["days_since_last_commit"] == 10
+    assert score.details["inverse_simpson_index"] == pytest.approx(1.8823529411764706)
+
+
+def test_map_sustainability_handles_missing_last_commit_date(
+    sample_repository_metrics,
+):
+    """Missing last commit dates should be excluded from sustainability scoring."""
+    mapper = MaturityMapper()
+    sample_repository_metrics.last_commit_date = None
+
+    score = mapper._map_sustainability(sample_repository_metrics)
+
+    assert score.name == "Sustainability"
+    assert score.details["days_since_last_commit"] is None
+
+
+def test_inverse_simpson_index_balanced_contributors():
+    """Balanced contributors should produce a higher diversity score."""
+    scorer = DimensionScorer()
+
+    inverse_simpson = scorer.calculate_inverse_simpson_index(
+        [
+            Contributor(login="user1", total_commits=10),
+            Contributor(login="user2", total_commits=10),
+            Contributor(login="user3", total_commits=10),
+        ]
+    )
+
+    assert inverse_simpson == pytest.approx(3.0)
+
+
+def test_inverse_simpson_index_returns_none_without_commit_data():
+    """Missing or zero contributor activity should not produce a diversity metric."""
+    scorer = DimensionScorer()
+
+    assert scorer.calculate_inverse_simpson_index([]) is None
+    assert (
+        scorer.calculate_inverse_simpson_index(
+            [Contributor(login="user1", total_commits=0)]
+        )
+        is None
+    )
 
 
 def test_map_security(sample_repository_metrics):
