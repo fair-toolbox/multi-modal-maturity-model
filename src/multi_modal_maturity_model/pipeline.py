@@ -52,7 +52,7 @@ class MaturityAssessor:
     ...     repo_url="https://github.com/ncbi/blast",
     ...     pmid="20003500"
     ... )
-    >>> print(f"Overall score: {profile.overall_score:.2f}")
+    >>> print(f"Overall score: {profile.overall_score.score:.2f}")
     """
 
     def __init__(
@@ -154,7 +154,7 @@ class MaturityAssessor:
         )
 
         logger.info(
-            f"Assessment complete. Overall score: {maturity_profile.overall_score:.2f}"
+            f"Assessment complete. Overall score: {maturity_profile.overall_score.score:.2f}"
         )
         return maturity_profile
 

@@ -84,4 +84,4 @@ class MaturityProfile:
     sustainability: DimensionScore
     security: DimensionScore
     scientific_impact: DimensionScore
-    overall_score: float
+    overall_score: DimensionScore
