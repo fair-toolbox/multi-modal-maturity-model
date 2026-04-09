@@ -41,61 +41,46 @@ def build_parser() -> argparse.ArgumentParser:
         description="Multi-Modal Maturity Model (M4) - Assess maturity of research software",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  # GitHub repository (short format)
-  m4 owner/repo --platform=github
+            Examples:
+              # Repository URL
+              m4 https://github.com/owner/repo
+              m4 https://gitlab.com/group/subgroup/project
 
-  # GitLab repository (short format)
-  m4 group/project --platform=gitlab
+              # Full assessment with all data sources
+              m4 https://github.com/owner/repo --pmid 12345678 --biotools-id blast
 
-  # Repository URL (no flag needed)
-  m4 https://github.com/owner/repo
-  m4 https://gitlab.com/group/subgroup/project
+              # Use local repository (no cloning)
+              m4 https://github.com/owner/repo --local-path /path/to/repo
 
-  # Full assessment with all data sources
-  m4 owner/repo --platform=github --pmid 12345678 --biotools-id blast
+                # Read defaults from a JSON config file
+              m4 --input config.json
 
-  # Use local repository (no cloning)
-  m4 owner/repo --platform=github --local-path /path/to/repo
+              # Skip code quality analysis (faster, no cloning)
+              m4 https://github.com/owner/repo --no-code-quality
 
-    # Read defaults from a JSON config file
-  m4 --input config.json
-
-  # Skip code quality analysis (faster, no cloning)
-  m4 owner/repo --platform=github --no-code-quality
-
-Environment Variables:
-  GITHUB_TOKEN    GitHub API token for authenticated requests
-  GITLAB_TOKEN    GitLab API token for authenticated requests
+            Environment Variables:
+              GITHUB_TOKEN    GitHub API token for authenticated requests
+              GITLAB_TOKEN    GitLab API token for authenticated requests
         """,
     )
     parser.add_argument(
         "repository",
         nargs="?",
         default=None,
-        help="Repository identifier (e.g., owner/repo or full URL)",
+        help="Repository URL",
     )
-
     parser.add_argument(
         "--input",
         help="Path to a JSON config file with CLI defaults",
         default=None,
     )
-
-    parser.add_argument(
-        "--platform",
-        choices=["github", "gitlab"],
-        help="Repository platform (required for short format like owner/repo)",
-        default=None,
-    )
-
     parser.add_argument(
         "--pmid",
         help="PubMed ID for citation metrics",
         default=None,
     )
     parser.add_argument(
-        "--biotools-id",
+        "--biotoolsID",
         help="bio.tools identifier",
         default=None,
         dest="biotools_id",
@@ -202,10 +187,15 @@ def print_results(profile, verbose: bool = False) -> None:
     ]
 
     for name, dim in dimensions:
-        # Create visual bar
-        bar_length = int(dim.score * 20)
-        bar = "█" * bar_length + "░" * (20 - bar_length)
-        print(f"  {name:<20} {bar} {dim.score:>6.1%}")
+        if dim.score is None:
+            # Dimension not available
+            bar = "─" * 20
+            print(f"  {name:<20} {bar} {'N/A':>6}")
+        else:
+            # Create visual bar
+            bar_length = int(dim.score * 20)
+            bar = "█" * bar_length + "░" * (20 - bar_length)
+            print(f"  {name:<20} {bar} {dim.score:>6.1%}")
 
     if verbose and any(dim.details for _, dim in dimensions):
         print("\n" + "-" * 70)
@@ -311,29 +301,9 @@ def main():
     print(f"\nOptions:")
     print(f"  • Code quality analysis: {'No' if args.no_code_quality else 'Yes'}")
 
-    # Validate platform usage
-    platform = args.platform
-    is_url = args.repository.startswith(("http://", "https://", "git@"))
-
-    if platform and is_url:
-        print("\n⚠ Warning: --platform flag ignored when using URL format")
-        platform = None
-    elif not platform and not is_url:
-        print("\n⚠ Error: Short format (owner/repo) requires --platform flag")
-        print("  Use --platform=github for GitHub repositories")
-        print("  Use --platform=gitlab for GitLab repositories")
-        print("  Or provide a full URL instead\n")
-        return 1
-
     # Get API tokens from environment
     github_token = os.environ.get("GITHUB_TOKEN")
     gitlab_token = os.environ.get("GITLAB_TOKEN")
-
-    if not github_token and (
-        platform == "github" or (is_url and "github" in args.repository.lower())
-    ):
-        print("\n⚠ Warning: No GitHub token provided. API rate limits may apply.")
-        print("  Set GITHUB_TOKEN environment variable or use --github-token")
 
     try:
         # Initialize assessor
@@ -353,7 +323,6 @@ def main():
             repo_url=args.repository,
             repo_path=args.local_path,
             pmid=args.pmid,
-            platform=platform,
             collect_code_quality=not args.no_code_quality,
         )
 
