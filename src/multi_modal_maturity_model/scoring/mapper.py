@@ -171,37 +171,20 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        # Default values
-        license_val = False
-        repository_val = False
-        registry_val = False
-        citation_val = False
-        checklist_val = False
-        publication_oa = False
+        fair_metrics = fair_metrics or {}
+        citation_metrics = citation_metrics or {}
 
-        # Get data from howfairis (primary source for FAIR)
-        if fair_metrics:
-            license_val = fair_metrics.get("license", False)
-            repository_val = fair_metrics.get("repository", False)
-            registry_val = fair_metrics.get("registry", False)
-            citation_val = fair_metrics.get("citation", False)
-            checklist_val = fair_metrics.get("checklist", False)
-
-        # Fallback to repository metrics for license if available
-        if repository_metrics and not license_val:
-            license_val = repository_metrics.has_license
-
-        # Get open access status from citation metrics
-        if citation_metrics:
-            publication_oa = citation_metrics.get("is_open_access", False)
+        license_val = fair_metrics.get("license") or (
+            repository_metrics.has_license if repository_metrics else False
+        )
 
         return self.scorer.calculate_fairness(
             license=license_val,
-            repository=repository_val,
-            registry=registry_val,
-            citation=citation_val,
-            checklist=checklist_val,
-            publication_oa=publication_oa,
+            repository=fair_metrics.get("repository", False),
+            registry=fair_metrics.get("registry", False),
+            citation=fair_metrics.get("citation", False),
+            checklist=fair_metrics.get("checklist", False),
+            publication_oa=citation_metrics.get("is_open_access", False),
         )
 
     def _map_maintainability(
