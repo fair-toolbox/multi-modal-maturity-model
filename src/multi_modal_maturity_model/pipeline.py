@@ -1,25 +1,24 @@
 """
 High-level pipeline for end-to-end maturity assessment.
 """
-
 import logging
+from dataclasses import dataclass
 from typing import Any
 
-from .adapters import BioToolsAdapter, GitHubAdapter, GitLabAdapter, LizardAdapter
-from .collectors import (
-    BioToolsClient,
-    EuropePMCClient,
-    GitHubClient,
-    GitLabClient,
-    HowfairisCollector,
-    LizardCollector,
-    SemanticScholarClient,
-)
-from .core.models import MaturityProfile
-from .git_utils import resolve_repo_path
+from .core.models import CodeQualityMetrics, MaturityProfile, RepositoryMetrics, ToolModel
 from .scoring import MaturityMapper
 
+from .collect import collect_biotools, collect_code_quality, collect_howfairis, collect_publications, collect_repository
+
 logger = logging.getLogger(__name__)
+
+@dataclass
+class CollectedMetricsBundle:
+    tool_model: ToolModel | None
+    repository_metrics: RepositoryMetrics | None
+    code_quality_metrics: CodeQualityMetrics | None
+    fair_metrics: dict[str, Any] | None
+    publication_metrics: dict[str, Any] | None
 
 
 class MaturityAssessor:
@@ -77,7 +76,7 @@ class MaturityAssessor:
         pmid: str | None = None,
         doi: str | None = None,
         platform: str | None = None,
-        collect_code_quality: bool = True,
+        include_code_quality: bool = True,
     ) -> MaturityProfile:
         """
         Assess maturity of a research software tool.
@@ -106,8 +105,8 @@ class MaturityAssessor:
             Explicit platform specification: "github" or "gitlab"
             Required when using short format (owner/repo)
             Ignored when repo_url is a full URL
-        collect_code_quality : bool
-            Whether to collect code quality metrics (requires cloning, default: True)
+        include_code_quality : bool
+            Whether to include code quality metrics (requires cloning, default: True)
 
         Returns
         -------
@@ -117,204 +116,48 @@ class MaturityAssessor:
         Raises
         ------
         ValueError
-            If no data sources are provided
+            If repo_url is not provided or invalid.
         """
-        if not any([biotools_id, repo_url, repo_path, pmid, doi]):
-            raise ValueError(
-                "At least one data source must be provided "
-                "(biotools_id, repo_url, repo_path, pmid, or doi)"
-            )
+        if not repo_url:
+            raise ValueError("Repository URL is required.")
+        
 
-        logger.info("Starting maturity assessment...")
+        bundle = self._run_collection(
+            biotools_id=biotools_id,
+            repo_url=repo_url,
+            repo_path=repo_path,
+            pmid=pmid,
+            doi=doi,
+            platform=platform,
+            include_code_quality=include_code_quality,
+        )
 
-        # Initialize collectors
-        biotools_client = BioToolsClient() if biotools_id else None
-        howfairis_collector = HowfairisCollector()
-        europepmc_client = EuropePMCClient() if pmid else None
-        semantic_scholar_client = SemanticScholarClient() if doi else None
+        logger.info("Mapping collected data to maturity dimensions...")
+        maturity_profile = self.mapper.map_to_maturity_profile(
+            tool_model=bundle.tool_model,
+            repository_metrics=bundle.repository_metrics,
+            code_quality_metrics=bundle.code_quality_metrics,
+            fair_metrics=bundle.fair_metrics,
+            citation_metrics=bundle.publication_metrics,
+        )
 
-        # Determine repository platform and initialize client
-        repo_client = None
-        repo_platform = None
-        if repo_url or repo_path:
-            repo_platform = self._detect_platform(repo_url or repo_path, platform)
-
-            if repo_platform == "github":
-                if self.github_token:
-                    repo_client = GitHubClient(token=self.github_token)
-                else:
-                    logger.warning(
-                        "GitHub token not provided. Repository metrics will be limited. "
-                        "Set GITHUB_TOKEN environment variable for full access."
-                    )
-            elif repo_platform == "gitlab":
-                if self.gitlab_token:
-                    repo_client = GitLabClient(token=self.gitlab_token)
-                else:
-                    logger.warning(
-                        "GitLab token not provided. Repository metrics will be limited."
-                    )
-
-        # Track if we need to cleanup
-        cleanup_path = None
-        analysis_path = None
-
-        try:
-            # ====== Collect bio.tools data ======
-            tool_model = None
-            if biotools_client:
-                logger.info(f"Collecting bio.tools data for {biotools_id}...")
-                try:
-                    biotools_raw = biotools_client.fetch(biotools_id)
-                    tool_model = BioToolsAdapter.to_tool_model(biotools_raw)
-                except Exception as e:
-                    logger.warning(f"Failed to collect bio.tools data: {e}")
-
-            # ====== Collect repository data ======
-            repository_metrics = None
-            if repo_client and repo_url:
-                # Extract repo identifier from URL
-                repo_identifier = self._extract_repo_identifier(repo_url, repo_platform)
-                logger.info(f"Collecting {repo_platform} data for {repo_identifier}...")
-                try:
-                    if repo_platform == "github":
-                        repo_raw = repo_client.fetch(repo_identifier)
-                        repository_metrics = GitHubAdapter.to_repository_metrics(
-                            repo_raw
-                        )
-                    elif repo_platform == "gitlab":
-                        repo_raw = repo_client.fetch(repo_identifier)
-                        repository_metrics = GitLabAdapter.to_repository_metrics(
-                            repo_raw
-                        )
-                except Exception as e:
-                    logger.warning(f"Failed to collect repository data: {e}")
-
-            # ====== Resolve repository path for code analysis ======
-            if collect_code_quality and (repo_url or repo_path):
-                if repo_path:
-                    # Use provided local path
-                    analysis_path = repo_path
-                    logger.info(f"Using local repository at {repo_path}")
-                elif repo_url:
-                    # Clone repository
-                    logger.info(f"Cloning repository from {repo_url}...")
-                    try:
-                        # Convert short GitHub format to full URL if needed
-                        full_url = self._normalize_repo_url(repo_url, repo_platform)
-                        analysis_path, should_cleanup = resolve_repo_path(full_url)
-                        if should_cleanup:
-                            cleanup_path = analysis_path
-                            logger.debug(
-                                f"Repository cloned to temporary directory: {analysis_path}"
-                            )
-                    except Exception as e:
-                        logger.warning(f"Failed to clone repository: {e}")
-                        analysis_path = None
-
-            # ====== Collect code quality metrics ======
-            code_quality_metrics = None
-            if collect_code_quality and analysis_path:
-                logger.info(f"Analyzing code quality at {analysis_path}...")
-                try:
-                    lizard_collector = LizardCollector()
-                    lizard_raw = lizard_collector.fetch(analysis_path)
-                    code_quality_metrics = LizardAdapter.to_code_quality_metrics(
-                        lizard_raw
-                    )
-                except Exception as e:
-                    logger.warning(f"Failed to collect code quality metrics: {e}")
-
-            # ====== Collect FAIR compliance ======
-            fair_metrics = None
-            if repo_url or (repository_metrics and repository_metrics.url):
-                fair_url = repo_url or repository_metrics.url
-                # Normalize to full URL for howfairis
-                fair_url = self._normalize_repo_url(fair_url, repo_platform)
-                logger.info(f"Assessing FAIR compliance for {fair_url}...")
-                try:
-                    fair_metrics = howfairis_collector.fetch(fair_url)
-                except Exception as e:
-                    logger.warning(f"Failed to collect FAIR metrics: {e}")
-
-            # ====== Collect citation metrics ======
-            citation_metrics = None
-            if europepmc_client:
-                logger.info(f"Collecting citation data for PMID {pmid}...")
-                try:
-                    citation_metrics = europepmc_client.fetch(pmid)
-                except Exception as e:
-                    logger.warning(f"Failed to collect citation metrics: {e}")
-
-            if semantic_scholar_client:
-                logger.info(f"Collecting Semantic Scholar data for DOI {doi}...")
-                try:
-                    semantic_scholar_metrics = semantic_scholar_client.get_paper_by_doi(
-                        doi
-                    )
-                    citation_metrics = self._merge_citation_metrics(
-                        citation_metrics,
-                        semantic_scholar_metrics,
-                    )
-                except Exception as e:
-                    logger.warning(f"Failed to collect Semantic Scholar metrics: {e}")
-
-            # ====== Map to maturity profile ======
-            logger.info("Mapping collected data to maturity dimensions...")
-            maturity_profile = self.mapper.map_to_maturity_profile(
-                tool_model=tool_model,
-                repository_metrics=repository_metrics,
-                code_quality_metrics=code_quality_metrics,
-                fair_metrics=fair_metrics,
-                citation_metrics=citation_metrics,
-            )
-
-            logger.info(
+        logger.info(
                 f"Assessment complete. Overall score: {maturity_profile.overall_score:.2f}"
             )
-            return maturity_profile
+        return maturity_profile
 
-        finally:
-            # Cleanup temporary clone if needed
-            if cleanup_path:
-                logger.debug(f"Cleaning up temporary clone at {cleanup_path}")
-                import shutil
-
-                try:
-                    shutil.rmtree(cleanup_path)
-                except Exception as e:
-                    logger.warning(f"Failed to cleanup temporary directory: {e}")
-
-    def _detect_platform(
-        self, url_or_path: str, explicit_platform: str | None = None
-    ) -> str | None:
-        """Detect repository platform from URL, path, or explicit specification.
-
-        Parameters
-        ----------
-        url_or_path : str
-            Repository URL, identifier, or local path
-        explicit_platform : str | None
-            Explicitly specified platform ("github" or "gitlab")
-            Takes precedence for short format identifiers
-
-        Returns
-        -------
-        str | None
-            Detected platform ("github" or "gitlab") or None if cannot detect
+    def _detect_platform(self, url: str) -> str | None:
+        """Detect repository platform from URL.
         """
-        if url_or_path.startswith(("http://", "https://", "git@")):
-            url_lower = url_or_path.lower()
+        if url.startswith(("http://", "https://", "git@")):
+            url_lower = url.lower()
             if "github.com" in url_lower:
                 return "github"
             elif "gitlab" in url_lower:
                 return "gitlab"
-            return None
 
-        if explicit_platform:
-            return explicit_platform
+        raise ValueError(f"Could not detect supported platform from URL: {url}")
 
-        return None
 
     def _extract_repo_identifier(self, repo_url: str, platform: str | None) -> str:
         """
@@ -322,14 +165,8 @@ class MaturityAssessor:
 
         Examples:
         - "https://github.com/owner/repo" -> "owner/repo"
-        - "owner/repo" -> "owner/repo"
         - "https://gitlab.com/owner/project" -> "owner/project"
         """
-        # If already in short format (owner/repo), return as-is
-        if "/" in repo_url and not repo_url.startswith(("http://", "https://", "git@")):
-            return repo_url
-
-        # Parse URL
         if platform == "github":
             if "github.com/" in repo_url:
                 parts = repo_url.split("github.com/")[1].split("/")
@@ -347,51 +184,40 @@ class MaturityAssessor:
 
         return repo_url
 
-    def _normalize_repo_url(self, repo_url: str, platform: str | None) -> str:
-        """
-        Normalize repository URL to full HTTPS format.
 
-        Examples:
-        - "owner/repo" -> "https://github.com/owner/repo"
-        - "https://github.com/owner/repo" -> "https://github.com/owner/repo"
-        """
-        if repo_url.startswith(("http://", "https://", "git@")):
-            return repo_url
-
-        if platform == "github":
-            return f"https://github.com/{repo_url}"
-        elif platform == "gitlab":
-            return f"https://gitlab.com/{repo_url}"
-
-        return repo_url
-
-    def _merge_citation_metrics(
+    def _run_collection(
         self,
-        europepmc_metrics: dict[str, Any] | None,
-        semantic_scholar_metrics: dict[str, Any] | None,
-    ) -> dict[str, Any] | None:
-        """Merge citation metrics from Europe PMC and Semantic Scholar."""
-        if not europepmc_metrics and not semantic_scholar_metrics:
-            return None
+        biotools_id: str | None,
+        repo_url: str | None,
+        repo_path: str | None,
+        pmid: str | None,
+        doi: str | None,
+        platform: str | None,
+        include_code_quality: bool,
+    ) -> dict[str, Any]:
+        """
+        Run the data collection pipeline.
 
-        merged_metrics: dict[str, Any] = dict(europepmc_metrics or {})
+        Returns a dictionary with all collected data.
+        """
+        # Determine platform if not provided
+        if repo_url and not platform:
+            platform = self._detect_platform(repo_url)
 
-        if semantic_scholar_metrics:
-            merged_metrics.update(
-                {
-                    "doi": semantic_scholar_metrics.get("externalIds", {}).get("DOI"),
-                    "title": semantic_scholar_metrics.get("title"),
-                    "citation_count": merged_metrics.get(
-                        "citation_count",
-                        semantic_scholar_metrics.get("citationCount"),
-                    ),
-                    "reference_count": semantic_scholar_metrics.get("referenceCount"),
-                    "year": semantic_scholar_metrics.get("year"),
-                    "authors": semantic_scholar_metrics.get("authors"),
-                    "influential_citation_count": semantic_scholar_metrics.get(
-                        "influentialCitationCount"
-                    ),
-                }
-            )
+        # Extract repository identifier for API calls
+        repo_identifier = self._extract_repo_identifier(repo_url, platform) if repo_url else None
 
-        return merged_metrics
+        # Collect data from all sources
+        tool_model = collect_biotools(biotools_id) if biotools_id else None
+        repository_metrics = collect_repository(repo_identifier, platform) if repo_identifier else None
+        code_quality_metrics = collect_code_quality(repo_url, repo_path) if include_code_quality and repo_url else None
+        fair_metrics = collect_howfairis(repo_url)
+        publication_metrics = collect_publications(pmid, doi) if pmid or doi else None
+
+        return CollectedMetricsBundle(
+            tool_model=tool_model,
+            repository_metrics=repository_metrics,
+            code_quality_metrics=code_quality_metrics,
+            fair_metrics=fair_metrics,
+            publication_metrics=publication_metrics,
+        )
