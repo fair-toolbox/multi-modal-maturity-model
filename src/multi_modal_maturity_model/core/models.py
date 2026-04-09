@@ -70,7 +70,7 @@ class DimensionScore:
     """Score for a single maturity dimension."""
 
     name: str
-    score: float
+    score: float | None
     details: dict[str, Any] | None = None
 
 
