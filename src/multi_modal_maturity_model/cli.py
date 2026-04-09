@@ -323,7 +323,7 @@ def main():
             repo_url=args.repository,
             repo_path=args.local_path,
             pmid=args.pmid,
-            collect_code_quality=not args.no_code_quality,
+            include_code_quality=not args.no_code_quality,
         )
 
         print_results(profile, verbose=args.verbose)
