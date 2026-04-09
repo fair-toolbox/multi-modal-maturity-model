@@ -1,16 +1,29 @@
 """
 High-level pipeline for end-to-end maturity assessment.
 """
+
 import logging
 from dataclasses import dataclass
 from typing import Any
 
-from .core.models import CodeQualityMetrics, MaturityProfile, RepositoryMetrics, ToolModel
+from .core.models import (
+    CodeQualityMetrics,
+    MaturityProfile,
+    RepositoryMetrics,
+    ToolModel,
+)
 from .scoring import MaturityMapper
 
-from .collect import collect_biotools, collect_code_quality, collect_howfairis, collect_publications, collect_repository
+from .collect import (
+    collect_biotools,
+    collect_code_quality,
+    collect_howfairis,
+    collect_publications,
+    collect_repository,
+)
 
 logger = logging.getLogger(__name__)
+
 
 @dataclass
 class CollectedMetricsBundle:
@@ -120,7 +133,6 @@ class MaturityAssessor:
         """
         if not repo_url:
             raise ValueError("Repository URL is required.")
-        
 
         bundle = self._run_collection(
             biotools_id=biotools_id,
@@ -142,13 +154,12 @@ class MaturityAssessor:
         )
 
         logger.info(
-                f"Assessment complete. Overall score: {maturity_profile.overall_score:.2f}"
-            )
+            f"Assessment complete. Overall score: {maturity_profile.overall_score:.2f}"
+        )
         return maturity_profile
 
     def _detect_platform(self, url: str) -> str | None:
-        """Detect repository platform from URL.
-        """
+        """Detect repository platform from URL."""
         if url.startswith(("http://", "https://", "git@")):
             url_lower = url.lower()
             if "github.com" in url_lower:
@@ -157,7 +168,6 @@ class MaturityAssessor:
                 return "gitlab"
 
         raise ValueError(f"Could not detect supported platform from URL: {url}")
-
 
     def _extract_repo_identifier(self, repo_url: str, platform: str | None) -> str:
         """
@@ -184,7 +194,6 @@ class MaturityAssessor:
 
         return repo_url
 
-
     def _run_collection(
         self,
         biotools_id: str | None,
@@ -205,12 +214,24 @@ class MaturityAssessor:
             platform = self._detect_platform(repo_url)
 
         # Extract repository identifier for API calls
-        repo_identifier = self._extract_repo_identifier(repo_url, platform) if repo_url else None
+        repo_identifier = (
+            self._extract_repo_identifier(repo_url, platform) if repo_url else None
+        )
 
         # Collect data from all sources
         tool_model = collect_biotools(biotools_id) if biotools_id else None
-        repository_metrics = collect_repository(repo_identifier, platform) if repo_identifier else None
-        code_quality_metrics = collect_code_quality(repo_url, repo_path) if include_code_quality and repo_url else None
+        repository_metrics = (
+            collect_repository(
+                repo_identifier, platform, self.github_token, self.gitlab_token
+            )
+            if repo_identifier
+            else None
+        )
+        code_quality_metrics = (
+            collect_code_quality(repo_url, repo_path)
+            if include_code_quality and repo_url
+            else None
+        )
         fair_metrics = collect_howfairis(repo_url)
         publication_metrics = collect_publications(pmid, doi) if pmid or doi else None
 
