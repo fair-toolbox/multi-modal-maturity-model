@@ -111,32 +111,3 @@ def temporary_clone(repo_url: str) -> Generator[str, None, None]:
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
             logger.debug(f"Cleaned up temp directory: {temp_dir}")
-
-
-def resolve_repo_path(repo_url_or_path: str) -> tuple[str, bool]:
-    """
-    Resolve repository input to a local path.
-
-    Parameters
-    ----------
-    repo_url_or_path : str
-        Either a URL or local path
-
-    Returns
-    -------
-    tuple[str, bool]
-        (path, should_cleanup) - path to use and whether it needs cleanup
-
-    Raises
-    ------
-    FileNotFoundError
-        If local path doesn't exist
-    """
-    if is_local_path(repo_url_or_path):
-        if not os.path.exists(repo_url_or_path):
-            raise FileNotFoundError(f"Local path not found: {repo_url_or_path}")
-        return repo_url_or_path, False
-    else:
-        temp_dir = tempfile.mkdtemp(prefix="m4_repo_")
-        clone_repository(repo_url_or_path, temp_dir)
-        return temp_dir, True
