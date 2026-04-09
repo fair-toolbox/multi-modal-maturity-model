@@ -11,8 +11,8 @@ from .collectors import (
 from .core.models import CodeQualityMetrics, RepositoryMetrics, ToolModel
 from .git_utils import temporary_clone
 
-import os
 import logging
+
 logger = logging.getLogger(__name__)
 
 
@@ -27,7 +27,9 @@ def collect_biotools(biotools_id: str) -> ToolModel | None:
         raise
 
 
-def collect_code_quality(repo_url: str | None, repo_path: str | None) -> CodeQualityMetrics | None:
+def collect_code_quality(
+    repo_url: str | None, repo_path: str | None
+) -> CodeQualityMetrics | None:
     """Collect and normalize code quality metrics."""
     client = LizardCollector()
     try:
@@ -36,7 +38,7 @@ def collect_code_quality(repo_url: str | None, repo_path: str | None) -> CodeQua
                 raw_data = client.fetch(temp_path)
         else:
             raw_data = client.fetch(repo_path)
-        
+
         code_quality_metrics = CodeQualityMetrics(
             total_nloc=raw_data.get("total_nloc"),
             total_ccn=raw_data.get("total_ccn"),
@@ -48,6 +50,7 @@ def collect_code_quality(repo_url: str | None, repo_path: str | None) -> CodeQua
         logger.error(f"Failed to collect code quality metrics: {e}")
         raise
 
+
 def collect_howfairis(repo_url: str) -> dict | None:
     client = HowfairisCollector()
     try:
@@ -57,10 +60,11 @@ def collect_howfairis(repo_url: str) -> dict | None:
         logger.warning(f"Failed to collect HowFairis metrics for {repo_url}: {e}")
         raise
 
+
 def collect_publications(pmid: str, doi: str) -> dict | None:
     epmc_client = EuropePMCClient()
     ss_client = SemanticScholarClient()
-    
+
     try:
         epmc_data = epmc_client.fetch(pmid)
         ss_data = ss_client.fetch(doi)
@@ -68,16 +72,24 @@ def collect_publications(pmid: str, doi: str) -> dict | None:
 
         return {"epmc": epmc_data, "semantic_scholar": ss_data}
     except Exception as e:
-        logger.warning(f"Failed to collect publication metrics for PMID {pmid} and DOI {doi}: {e}")
+        logger.warning(
+            f"Failed to collect publication metrics for PMID {pmid} and DOI {doi}: {e}"
+        )
         raise
 
-def collect_repository(repo_identifier: str, platform: str) -> RepositoryMetrics | None:
+
+def collect_repository(
+    repo_identifier: str,
+    platform: str,
+    github_token: str | None,
+    gitlab_token: str | None,
+) -> RepositoryMetrics | None:
     if platform == "github":
-        client = GitHubClient(token=os.getenv("GITHUB_TOKEN"))
+        client = GitHubClient(token=github_token)
         adapter = GitHubAdapter()
 
     elif platform == "gitlab":
-        client = GitLabClient(token=os.getenv("GITLAB_TOKEN"))
+        client = GitLabClient(token=gitlab_token)
         adapter = GitLabAdapter()
 
     try:
@@ -85,16 +97,16 @@ def collect_repository(repo_identifier: str, platform: str) -> RepositoryMetrics
         repo_model = adapter.to_repository_metrics(raw_data)
         return repo_model
     except Exception as e:
-        logger.warning(f"Failed to collect repository metrics for {repo_identifier} on {platform}: {e}")
+        logger.warning(
+            f"Failed to collect repository metrics for {repo_identifier} on {platform}: {e}"
+        )
         raise
 
-
-
-    #def _merge_citation_metrics(
+    # def _merge_citation_metrics(
     #    self,
     #    europepmc_metrics: dict[str, Any] | None,
     #    semantic_scholar_metrics: dict[str, Any] | None,
-    #) -> dict[str, Any] | None:
+    # ) -> dict[str, Any] | None:
     #    """Merge citation metrics from Europe PMC and Semantic Scholar."""
     #    if not europepmc_metrics and not semantic_scholar_metrics:
     #        return None
