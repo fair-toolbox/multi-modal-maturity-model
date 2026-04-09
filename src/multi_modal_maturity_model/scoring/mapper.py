@@ -215,7 +215,7 @@ class MaturityMapper:
         """
         if not code_quality_metrics:
             logger.warning("No code quality metrics available for maintainability")
-            return DimensionScore(name="Maintainability", score=0.0)
+            return DimensionScore(name="Maintainability", score=None)
 
         # TODO: Detect old/outdated languages
         has_old_languages = False
@@ -236,7 +236,7 @@ class MaturityMapper:
         """
         if not repository_metrics:
             logger.warning("No repository metrics available for sustainability")
-            return DimensionScore(name="Sustainability", score=0.0)
+            return DimensionScore(name="Sustainability", score=None)
 
         days_since_last_commit = None
         if repository_metrics.last_commit_date:
@@ -268,7 +268,7 @@ class MaturityMapper:
         """
         if not repository_metrics:
             logger.warning("No repository metrics available for security")
-            return DimensionScore(name="Security", score=0.0)
+            return DimensionScore(name="Security", score=None)
 
         return self.scorer.calculate_security(
             default_branch_protected=repository_metrics.default_branch_is_protected
@@ -285,7 +285,7 @@ class MaturityMapper:
         """
         if not citation_metrics:
             logger.warning("No citation metrics available for scientific impact")
-            return DimensionScore(name="Scientific Impact", score=0.0)
+            return DimensionScore(name="Scientific Impact", score=None)
 
         citation_count = citation_metrics.get(
             "citation_count",
