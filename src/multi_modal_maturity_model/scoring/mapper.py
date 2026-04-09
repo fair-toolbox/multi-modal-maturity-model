@@ -177,15 +177,15 @@ class MaturityMapper:
         license_val = fair_metrics.get("license") or (
             repository_metrics.has_license if repository_metrics else False
         )
-
-        return self.scorer.calculate_fairness(
-            license=license_val,
-            repository=fair_metrics.get("repository", False),
-            registry=fair_metrics.get("registry", False),
-            citation=fair_metrics.get("citation", False),
-            checklist=fair_metrics.get("checklist", False),
-            publication_oa=citation_metrics.get("is_open_access", False),
-        )
+        values = {
+            "license": license_val,
+            "repository": fair_metrics.get("repository", False),
+            "registry": fair_metrics.get("registry", False),
+            "citation": fair_metrics.get("citation", False),
+            "checklist": fair_metrics.get("checklist", False),
+            "publication_oa": citation_metrics.get("is_open_access", False),
+        }
+        return self.scorer.calculate_fairness(**values)
 
     def _map_maintainability(
         self,
