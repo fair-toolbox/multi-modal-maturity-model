@@ -24,7 +24,7 @@ def collect_biotools(biotools_id: str) -> ToolModel | None:
         return tool_model
     except Exception as e:
         logger.warning(f"Failed to collect metrics for biotoolsID {biotools_id}: {e}")
-        raise
+        return None
 
 
 def collect_code_quality(
@@ -48,7 +48,7 @@ def collect_code_quality(
         return code_quality_metrics
     except Exception as e:
         logger.error(f"Failed to collect code quality metrics: {e}")
-        raise
+        return None
 
 
 def collect_howfairis(repo_url: str) -> dict | None:
@@ -58,7 +58,7 @@ def collect_howfairis(repo_url: str) -> dict | None:
         return fair_metrics
     except Exception as e:
         logger.warning(f"Failed to collect HowFairis metrics for {repo_url}: {e}")
-        raise
+        return None
 
 
 def collect_publications(pmid: str, doi: str) -> dict | None:
@@ -75,7 +75,7 @@ def collect_publications(pmid: str, doi: str) -> dict | None:
         logger.warning(
             f"Failed to collect publication metrics for PMID {pmid} and DOI {doi}: {e}"
         )
-        raise
+        return None
 
 
 def collect_repository(
@@ -100,7 +100,7 @@ def collect_repository(
         logger.warning(
             f"Failed to collect repository metrics for {repo_identifier} on {platform}: {e}"
         )
-        raise
+        return None
 
     # def _merge_citation_metrics(
     #    self,
