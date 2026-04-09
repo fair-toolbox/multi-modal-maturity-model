@@ -7,9 +7,18 @@ import logging
 import math
 from typing import Any
 
-from ..core.models import Contributor, DimensionScore, MaturityProfile
+from ..core.models import Contributor, DimensionScore
 
 logger = logging.getLogger(__name__)
+
+_DIMENSION_NAMES = [
+    "compatibility",
+    "fairness",
+    "maintainability",
+    "sustainability",
+    "security",
+    "scientific_impact",
+]
 
 
 class DimensionScorer:
@@ -394,7 +403,9 @@ class DimensionScorer:
         )
 
     @staticmethod
-    def calculate_overall_score(dimensions: list[DimensionScore]) -> float:
+    def calculate_overall_score(
+        dimensions: list[DimensionScore], weights: dict[str, float] | None = None
+    ) -> DimensionScore:
         """
         Calculate overall maturity score as average of all dimensions.
 
@@ -402,12 +413,36 @@ class DimensionScorer:
         ----------
         dimensions : list[DimensionScore]
             List of dimension scores
+        weights : dict[str, float] | None
+            Optional weights for each dimension. Equal weighting if None.
 
         Returns
         -------
-        float
-            Overall score (0.0-1.0)
+        DimensionScore
         """
         if not dimensions:
-            return 0.0
-        return sum(d.score for d in dimensions) / len(dimensions)
+            return DimensionScore(
+                name="Overall", score=None, details={"note": "No dimensions available."}
+            )
+
+        if all(dim.score is None for dim in dimensions):
+            return DimensionScore(
+                name="Overall",
+                score=None,
+                details={"note": "All dimension scores are None."},
+            )
+
+        available_pairs = [
+            (dim, name)
+            for dim, name in zip(dimensions, _DIMENSION_NAMES)
+            if dim.score is not None
+        ]
+
+        # TODO input weights and normalize
+        # Return if total_weight is zero
+
+        overall_score = sum(dim.score for dim, name in available_pairs) / len(
+            available_pairs
+        )
+
+        return DimensionScore(name="Overall", score=overall_score, details={})
