@@ -172,7 +172,7 @@ def print_results(profile, verbose: bool = False) -> None:
     print("\n" + "=" * 70)
     print("MATURITY ASSESSMENT RESULTS")
     print("=" * 70)
-    print(f"\n{'Overall Maturity Score:':<30} {profile.overall_score:>6.1%}")
+    print(f"\n{'Overall Maturity Score:':<30} {profile.overall_score.score:>6.1%}")
     print("\n" + "-" * 70)
     print("Dimension Breakdown:")
     print("-" * 70)
@@ -226,7 +226,10 @@ def save_results(profile, output_dir: str, repository: str) -> None:
 
     # Convert dataclass to dict
     profile_dict = {
-        "overall_score": profile.overall_score,
+        "overall_score": {
+            "score": profile.overall_score.score,
+            "details": profile.overall_score.details,
+        },
         "dimensions": {
             "compatibility": {
                 "score": profile.compatibility.score,
