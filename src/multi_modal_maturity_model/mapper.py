@@ -9,8 +9,8 @@ import logging
 from datetime import datetime, timezone
 from typing import Any
 
-from ..adapters.adapters_utils import parse_iso_datetime
-from ..models import (
+from .adapters.adapters_utils import parse_iso_datetime
+from .models import (
     CodeQualityMetrics,
     DimensionScore,
     MaturityProfile,

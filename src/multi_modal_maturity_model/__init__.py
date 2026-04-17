@@ -1,7 +1,8 @@
 """Multi-Modal Maturity Model for research software assessment."""
 
 from .pipeline import MaturityAssessor
-from .scoring import DimensionScorer, MaturityMapper
+from .scoring import DimensionScorer
+from .mapper import MaturityMapper
 
 __version__ = "0.1.0"
 

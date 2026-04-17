@@ -7,7 +7,7 @@ import logging
 import math
 from typing import Any
 
-from ..models import Contributor, DimensionScore
+from .models import Contributor, DimensionScore
 
 logger = logging.getLogger(__name__)
 

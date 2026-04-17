@@ -28,7 +28,7 @@ from .models import (
     RepositoryMetrics,
     ToolModel,
 )
-from .scoring import MaturityMapper
+from .mapper import MaturityMapper
 
 from .collect import (
     collect_biotools,

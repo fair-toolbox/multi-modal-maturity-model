@@ -15,7 +15,7 @@ from multi_modal_maturity_model.models import (
     ToolModel,
     Contributor,
 )
-from multi_modal_maturity_model.scoring import DimensionScorer, MaturityMapper
+from multi_modal_maturity_model import DimensionScorer, MaturityMapper
 
 
 @pytest.fixture
