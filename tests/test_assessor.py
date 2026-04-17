@@ -5,7 +5,7 @@ Tests for the MaturityAssessor pipeline.
 import pytest
 from unittest.mock import Mock, patch
 
-from multi_modal_maturity_model.pipeline import MaturityAssessor
+from multi_modal_maturity_model.assessor import MaturityAssessor
 from multi_modal_maturity_model.models import (
     RepositoryMetrics,
     CodeQualityMetrics,
