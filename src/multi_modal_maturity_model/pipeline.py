@@ -32,6 +32,8 @@ from .collect import (
     collect_repository,
 )
 
+from .utils import detect_platform, extract_repo_identifier
+
 logger = logging.getLogger(__name__)
 
 
@@ -196,42 +198,6 @@ class MaturityAssessor:
 
         return profiles
 
-    def _detect_platform(self, url: str) -> str | None:
-        """Detect repository platform from URL."""
-        if url.startswith(("http://", "https://", "git@")):
-            url_lower = url.lower()
-            if "github.com" in url_lower:
-                return "github"
-            elif "gitlab" in url_lower:
-                return "gitlab"
-
-        raise ValueError(f"Could not detect supported platform from URL: {url}")
-
-    def _extract_repo_identifier(self, repo_url: str, platform: str | None) -> str:
-        """
-        Extract repository identifier from URL.
-
-        Examples:
-        - "https://github.com/owner/repo" -> "owner/repo"
-        - "https://gitlab.com/owner/project" -> "owner/project"
-        """
-        if platform == "github":
-            if "github.com/" in repo_url:
-                parts = repo_url.split("github.com/")[1].split("/")
-                repo = parts[1]
-                if repo.endswith(".git"):
-                    repo = repo[:-4]
-                return f"{parts[0]}/{repo}"
-        elif platform == "gitlab":
-            if "gitlab.com/" in repo_url:
-                # GitLab supports nested groups (e.g., group/subgroup/project)
-                path = repo_url.split("gitlab.com/")[1]
-                if path.endswith(".git"):
-                    path = path[:-4]
-                return path.rstrip("/")
-
-        return repo_url
-
     def _get_repository_client_and_adapter(self, platform: str):
         if platform == "github":
             return self.github_client, GitHubAdapter()
@@ -256,10 +222,10 @@ class MaturityAssessor:
         """
         # Repository
         if repo_url and not platform:
-            platform = self._detect_platform(repo_url)
+            platform = detect_platform(repo_url)
 
         repo_identifier = (
-            self._extract_repo_identifier(repo_url, platform) if repo_url else None
+            extract_repo_identifier(repo_url, platform) if repo_url else None
         )
 
         repo_client, repo_adapter = self._get_repository_client_and_adapter(platform)

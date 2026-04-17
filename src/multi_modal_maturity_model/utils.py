@@ -13,6 +13,42 @@ from typing import Generator
 logger = logging.getLogger(__name__)
 
 
+def detect_platform(url: str) -> str:
+    """Detect repository platform (github/gitlab) from URL."""
+    if url.startswith(("http://", "https://", "git@")):
+        url_lower = url.lower()
+        if "github.com" in url_lower:
+            return "github"
+        elif "gitlab" in url_lower:
+            return "gitlab"
+    raise ValueError(f"Could not detect supported platform from URL: {url}")
+
+
+def extract_repo_identifier(repo_url: str, platform: str) -> str:
+    """
+    Extract repository identifier from URL.
+
+    Examples
+    --------
+    - "https://github.com/owner/repo" -> "owner/repo"
+    - "https://gitlab.com/owner/project" -> "owner/project"
+    """
+    if platform == "github":
+        if "github.com/" in repo_url:
+            parts = repo_url.split("github.com/")[1].split("/")
+            repo = parts[1]
+            if repo.endswith(".git"):
+                repo = repo[:-4]
+            return f"{parts[0]}/{repo}"
+    elif platform == "gitlab":
+        if "gitlab.com/" in repo_url:
+            path = repo_url.split("gitlab.com/")[1]
+            if path.endswith(".git"):
+                path = path[:-4]
+            return path.rstrip("/")
+    return repo_url
+
+
 def is_local_path(path: str) -> bool:
     """
     Check if input is a local path vs a URL.
