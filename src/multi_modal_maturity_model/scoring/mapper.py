@@ -161,7 +161,7 @@ class MaturityMapper:
         self,
         repository_metrics: RepositoryMetrics | None,
         fair_metrics: dict[str, Any] | None,
-        citation_metrics: dict[str, Any] | None,
+        publication_metrics: dict[str, Any] | None,
     ) -> DimensionScore:
         """
         Map data from multiple sources to FAIRness dimension.
@@ -171,8 +171,12 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
+        if not repository_metrics and not fair_metrics and not publication_metrics:
+            logger.warning("No data available for FAIRness scoring")
+            return DimensionScore(name="FAIRness", score=None)
+
         fair_metrics = fair_metrics or {}
-        citation_metrics = citation_metrics or {}
+        publication_metrics = publication_metrics or {}
 
         license_val = fair_metrics.get("license") or (
             repository_metrics.has_license if repository_metrics else False
@@ -183,7 +187,7 @@ class MaturityMapper:
             "registry": fair_metrics.get("registry", False),
             "citation": fair_metrics.get("citation", False),
             "checklist": fair_metrics.get("checklist", False),
-            "publication_oa": citation_metrics.get("is_open_access", False),
+            "publication_oa": publication_metrics.get("is_open_access", False),
         }
         return self.scorer.calculate_fairness(**values)
 
