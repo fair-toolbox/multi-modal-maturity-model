@@ -114,6 +114,10 @@ class MaturityMapper:
 
         Calculates fraction of input/output formats that are EDAM leaf nodes.
         """
+        if not tool_model and not repository_metrics:
+            logger.warning("No data available for compatibility scoring")
+            return DimensionScore(name="Compatibility", score=None)
+
         input_fraction = None
         output_fraction = None
 
