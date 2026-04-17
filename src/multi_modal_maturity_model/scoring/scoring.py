@@ -7,7 +7,7 @@ import logging
 import math
 from typing import Any
 
-from ..core.models import Contributor, DimensionScore
+from ..models import Contributor, DimensionScore
 
 logger = logging.getLogger(__name__)
 
@@ -111,7 +111,7 @@ class DimensionScorer:
     def calculate_fairness(
         license: bool,
         repository: bool,
-        registry: bool,  # bio.tools registration
+        registry: bool,
         citation: bool,
         checklist: bool,
         publication_oa: bool,

@@ -8,7 +8,7 @@ from .collectors import (
     LizardCollector,
     SemanticScholarClient,
 )
-from .core.models import CodeQualityMetrics, RepositoryMetrics, ToolModel
+from .models import CodeQualityMetrics, RepositoryMetrics, ToolModel
 from .git_utils import temporary_clone
 
 import logging

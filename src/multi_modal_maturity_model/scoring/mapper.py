@@ -1,7 +1,7 @@
 """
 Map collected metrics to maturity dimensions.
 
-This layer aggregates data from multiple adapters and maps them to the
+This layer aggregates data from multiple adapters and collectors and maps them to the
 appropriate dimension scoring functions.
 """
 
@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from typing import Any
 
 from ..adapters.adapters_utils import parse_iso_datetime
-from ..core.models import (
+from ..models import (
     CodeQualityMetrics,
     DimensionScore,
     MaturityProfile,

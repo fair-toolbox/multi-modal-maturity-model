@@ -5,7 +5,7 @@ Adapter for transforming bio.tools collector data into core models.
 import logging
 from typing import Any
 
-from multi_modal_maturity_model.core.models import (
+from multi_modal_maturity_model.models import (
     DataItem,
     EDAMItem,
     Function,

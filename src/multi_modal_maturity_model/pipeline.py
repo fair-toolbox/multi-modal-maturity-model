@@ -6,7 +6,7 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-from .core.models import (
+from .models import (
     CodeQualityMetrics,
     MaturityProfile,
     RepositoryMetrics,
