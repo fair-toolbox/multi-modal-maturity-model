@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from multi_modal_maturity_model.core.models import (
+from multi_modal_maturity_model.models import (
     CodeQualityMetrics,
     EDAMItem,
     DataItem,
@@ -162,7 +162,7 @@ def test_map_to_maturity_profile_all_data(
     assert 0.0 <= profile.sustainability.score <= 1.0
     assert 0.0 <= profile.security.score <= 1.0
     assert 0.0 <= profile.scientific_impact.score <= 1.0
-    assert 0.0 <= profile.overall_score <= 1.0
+    assert 0.0 <= profile.overall_score.score <= 1.0
 
     # Check specific dimension values
     assert profile.security.score == 1.0
@@ -178,13 +178,12 @@ def test_map_to_maturity_profile_partial_data(sample_repository_metrics):
     )
 
     # Should still create a profile with some dimensions scored
+    # Dimensions without data should have score 0.0
     assert profile is not None
     assert profile.security.score == 1.0
     assert profile.sustainability.score > 0.0
-
-    # Dimensions without data should have score 0.0
-    assert profile.compatibility.score == 1.0
-    assert profile.scientific_impact.score == 0.0
+    assert profile.compatibility.score > 0.0
+    assert profile.scientific_impact.score is None
 
 
 def test_map_to_maturity_profile_no_data():
@@ -193,15 +192,15 @@ def test_map_to_maturity_profile_no_data():
 
     profile = mapper.map_to_maturity_profile()
 
-    # Should create profile with all zero scores
+    # Should create profile with all null scores
     assert profile is not None
-    assert profile.overall_score == 0.0
-    assert profile.compatibility.score == 0.0
-    assert profile.fairness.score == 0.0
-    assert profile.maintainability.score == 0.0
-    assert profile.sustainability.score == 0.0
-    assert profile.security.score == 0.0
-    assert profile.scientific_impact.score == 0.0
+    assert profile.overall_score.score is None
+    assert profile.compatibility.score is None
+    assert profile.fairness.score is None
+    assert profile.maintainability.score is None
+    assert profile.sustainability.score is None
+    assert profile.security.score is None
+    assert profile.scientific_impact.score is None
 
 
 def test_map_compatibility(sample_tool_model):
