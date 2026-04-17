@@ -100,10 +100,7 @@ def calculate_avg_time_to_close(closed_issues: list[Any] | None) -> float | None
                 logger.debug(f"Could not parse issue dates: {e}")
                 continue
 
-    if count == 0:
-        return None
-
-    return round(total_days / count, 2)
+    return round(total_days / count, 2) if count > 0 else None
 
 
 def extract_repository_file_paths(
