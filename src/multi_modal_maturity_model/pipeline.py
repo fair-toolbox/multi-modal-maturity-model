@@ -6,15 +6,21 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-from multi_modal_maturity_model.adapters.github_adapter import GitHubAdapter
-from multi_modal_maturity_model.adapters.gitlab_adapter import GitLabAdapter
-from multi_modal_maturity_model.collectors.biotools import BioToolsClient
-from multi_modal_maturity_model.collectors.europe_pmc import EuropePMCClient
-from multi_modal_maturity_model.collectors.github import GitHubClient
-from multi_modal_maturity_model.collectors.gitlab import GitLabClient
-from multi_modal_maturity_model.collectors.howfairis import HowfairisCollector
-from multi_modal_maturity_model.collectors.lizard import LizardCollector
-from multi_modal_maturity_model.collectors.semantic_scholar import SemanticScholarClient
+from multi_modal_maturity_model.adapters import (
+    BioToolsAdapter,
+    GitHubAdapter,
+    GitLabAdapter,
+)
+
+from multi_modal_maturity_model.collectors import (
+    BioToolsClient,
+    EuropePMCClient,
+    GitHubClient,
+    GitLabClient,
+    HowfairisCollector,
+    LizardCollector,
+    SemanticScholarClient,
+)
 
 from .models import (
     CodeQualityMetrics,
@@ -95,6 +101,7 @@ class MaturityAssessor:
         self.github_client = GitHubClient(token=github_token)
         self.gitlab_client = GitLabClient(token=gitlab_token)
         self.biotools_client = BioToolsClient()
+        self.biotools_adapter = BioToolsAdapter()
         self.europepmc_client = EuropePMCClient()
         self.howfairis_client = HowfairisCollector()
         self.lizard_client = LizardCollector()
@@ -237,7 +244,9 @@ class MaturityAssessor:
         )
 
         tool_model = (
-            collect_biotools(self.biotools_client, biotools_id) if biotools_id else None
+            collect_biotools(self.biotools_client, self.biotools_adapter, biotools_id)
+            if biotools_id
+            else None
         )
 
         code_quality_metrics = (

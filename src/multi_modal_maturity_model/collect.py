@@ -16,11 +16,13 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def collect_biotools(client: BioToolsClient, biotools_id: str) -> ToolModel | None:
+def collect_biotools(
+    client: BioToolsClient, adapter: BioToolsAdapter, biotools_id: str
+) -> ToolModel | None:
     """Collect and normalize tool metrics for given platform."""
     try:
         raw_data = client.fetch(biotools_id)
-        tool_model = BioToolsAdapter().to_tool_model(raw_data)
+        tool_model = adapter.to_tool_model(raw_data)
         return tool_model
     except Exception as e:
         logger.warning(f"Failed to collect metrics for biotoolsID {biotools_id}: {e}")
