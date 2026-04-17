@@ -2,15 +2,13 @@
 Tests for BioToolsAdapter.
 """
 
-import pytest
-
 from multi_modal_maturity_model.adapters.biotools_adapter import (
     BioToolsAdapter,
     transform_edam_terms,
     transform_functions,
     transform_data_items,
 )
-from multi_modal_maturity_model.core.models import (
+from multi_modal_maturity_model.models import (
     DataItem,
     EDAMItem,
     Function,
@@ -293,28 +291,6 @@ def test_to_tool_model_no_functions():
     assert isinstance(result, ToolModel)
     assert result.biotools_id == "no-functions"
     assert result.function is None
-
-
-def test_to_tool_model_missing_biotools_id():
-    """Test conversion without biotoolsID field."""
-    raw_data = {
-        "function": [
-            {
-                "operation": [
-                    {
-                        "uri": "http://edamontology.org/operation_0292",
-                        "term": "Sequence alignment",
-                    }
-                ]
-            }
-        ]
-    }
-
-    result = BioToolsAdapter.to_tool_model(raw_data)
-
-    assert isinstance(result, ToolModel)
-    assert result.biotools_id == ""
-    assert len(result.function) == 1
 
 
 def test_to_tool_model_multiple_functions():

@@ -17,7 +17,7 @@ from multi_modal_maturity_model.adapters.adapters_utils import (
     detect_security_scanning,
     detect_workflow_support,
 )
-from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
+from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 
 
 # ----------------------------
