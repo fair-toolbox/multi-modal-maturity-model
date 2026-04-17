@@ -6,6 +6,16 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
+from multi_modal_maturity_model.adapters.github_adapter import GitHubAdapter
+from multi_modal_maturity_model.adapters.gitlab_adapter import GitLabAdapter
+from multi_modal_maturity_model.collectors.biotools import BioToolsClient
+from multi_modal_maturity_model.collectors.europe_pmc import EuropePMCClient
+from multi_modal_maturity_model.collectors.github import GitHubClient
+from multi_modal_maturity_model.collectors.gitlab import GitLabClient
+from multi_modal_maturity_model.collectors.howfairis import HowfairisCollector
+from multi_modal_maturity_model.collectors.lizard import LizardCollector
+from multi_modal_maturity_model.collectors.semantic_scholar import SemanticScholarClient
+
 from .models import (
     CodeQualityMetrics,
     MaturityProfile,
@@ -78,8 +88,15 @@ class MaturityAssessor:
         self.gitlab_token = gitlab_token
         self.max_citations_corpus = max_citations_corpus
 
-        # Initialize mapper
         self.mapper = MaturityMapper(max_citations_corpus=max_citations_corpus)
+
+        self.github_client = GitHubClient(token=github_token)
+        self.gitlab_client = GitLabClient(token=gitlab_token)
+        self.biotools_client = BioToolsClient()
+        self.europepmc_client = EuropePMCClient()
+        self.howfairis_client = HowfairisCollector()
+        self.lizard_client = LizardCollector()
+        self.semantic_scholar_client = SemanticScholarClient()
 
     def assess(
         self,
@@ -158,6 +175,27 @@ class MaturityAssessor:
         )
         return maturity_profile
 
+    def access_batch(
+        self,
+        tools: list[dict[str, Any]],
+        include_code_quality: bool = True,
+    ) -> list[MaturityProfile]:
+        """Batch assessment for multiple tools."""
+        profiles = []
+        for tool_spec in tools:
+            try:
+                profile = self.assess(
+                    **tool_spec, include_code_quality=include_code_quality
+                )
+                profiles.append(profile)
+            except Exception as e:
+                logger.error(
+                    f"Failed to assess tool {tool_spec.get('biotools_id')}: {e}"
+                )
+                profiles.append(None)
+
+        return profiles
+
     def _detect_platform(self, url: str) -> str | None:
         """Detect repository platform from URL."""
         if url.startswith(("http://", "https://", "git@")):
@@ -219,21 +257,41 @@ class MaturityAssessor:
         )
 
         # Collect data from all sources
-        tool_model = collect_biotools(biotools_id) if biotools_id else None
+        if platform == "github":
+            repo_client = self.github_client
+            repo_adapter = GitHubAdapter()
+        elif platform == "gitlab":
+            repo_client = self.gitlab_client
+            repo_adapter = GitLabAdapter()
+        else:
+            repo_client = None
+            repo_adapter = None
+
         repository_metrics = (
-            collect_repository(
-                repo_identifier, platform, self.github_token, self.gitlab_token
-            )
-            if repo_identifier
+            collect_repository(repo_client, repo_adapter, repo_identifier)
+            if repo_client and repo_identifier
             else None
         )
+
+        tool_model = (
+            collect_biotools(self.biotools_client, biotools_id) if biotools_id else None
+        )
+
         code_quality_metrics = (
-            collect_code_quality(repo_url, repo_path)
+            collect_code_quality(self.lizard_client, repo_url, repo_path)
             if include_code_quality and repo_url
             else None
         )
-        fair_metrics = collect_howfairis(repo_url)
-        publication_metrics = collect_publications(pmid, doi) if pmid or doi else None
+
+        fair_metrics = collect_howfairis(self.howfairis_client, repo_url)
+
+        publication_metrics = (
+            collect_publications(
+                self.europepmc_client, self.semantic_scholar_client, pmid, doi
+            )
+            if pmid or doi
+            else None
+        )
 
         return CollectedMetricsBundle(
             tool_model=tool_model,
