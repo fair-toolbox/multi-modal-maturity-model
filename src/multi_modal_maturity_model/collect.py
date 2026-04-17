@@ -9,7 +9,7 @@ from .collectors import (
     SemanticScholarClient,
 )
 from .models import CodeQualityMetrics, RepositoryMetrics, ToolModel
-from .git_utils import temporary_clone
+from .utils import temporary_clone
 
 import logging
 
