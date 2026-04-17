@@ -175,7 +175,7 @@ class MaturityAssessor:
         )
         return maturity_profile
 
-    def access_batch(
+    def assess_batch(
         self,
         tools: list[dict[str, Any]],
         include_code_quality: bool = True,
@@ -232,6 +232,13 @@ class MaturityAssessor:
 
         return repo_url
 
+    def _get_repository_client_and_adapter(self, platform: str):
+        if platform == "github":
+            return self.github_client, GitHubAdapter()
+        elif platform == "gitlab":
+            return self.gitlab_client, GitLabAdapter()
+        return None, None
+
     def _run_collection(
         self,
         biotools_id: str | None,
@@ -247,25 +254,15 @@ class MaturityAssessor:
 
         Returns a dictionary with all collected data.
         """
-        # Determine platform if not provided
+        # Repository
         if repo_url and not platform:
             platform = self._detect_platform(repo_url)
 
-        # Extract repository identifier for API calls
         repo_identifier = (
             self._extract_repo_identifier(repo_url, platform) if repo_url else None
         )
 
-        # Collect data from all sources
-        if platform == "github":
-            repo_client = self.github_client
-            repo_adapter = GitHubAdapter()
-        elif platform == "gitlab":
-            repo_client = self.gitlab_client
-            repo_adapter = GitLabAdapter()
-        else:
-            repo_client = None
-            repo_adapter = None
+        repo_client, repo_adapter = self._get_repository_client_and_adapter(platform)
 
         repository_metrics = (
             collect_repository(repo_client, repo_adapter, repo_identifier)
