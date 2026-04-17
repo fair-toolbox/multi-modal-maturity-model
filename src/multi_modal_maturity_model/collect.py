@@ -16,10 +16,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def collect_biotools(biotools_id: str) -> ToolModel | None:
+def collect_biotools(client: BioToolsClient, biotools_id: str) -> ToolModel | None:
     """Collect and normalize tool metrics for given platform."""
     try:
-        raw_data = BioToolsClient().fetch(biotools_id)
+        raw_data = client.fetch(biotools_id)
         tool_model = BioToolsAdapter().to_tool_model(raw_data)
         return tool_model
     except Exception as e:
@@ -28,10 +28,9 @@ def collect_biotools(biotools_id: str) -> ToolModel | None:
 
 
 def collect_code_quality(
-    repo_url: str | None, repo_path: str | None
+    client: LizardCollector, repo_url: str | None, repo_path: str | None
 ) -> CodeQualityMetrics | None:
     """Collect and normalize code quality metrics."""
-    client = LizardCollector()
     try:
         if not repo_path:
             with temporary_clone(repo_url) as temp_path:
@@ -51,8 +50,7 @@ def collect_code_quality(
         return None
 
 
-def collect_howfairis(repo_url: str) -> dict | None:
-    client = HowfairisCollector()
+def collect_howfairis(client: HowfairisCollector, repo_url: str) -> dict | None:
     try:
         fair_metrics = client.fetch(repo_url)
         return fair_metrics
@@ -61,10 +59,12 @@ def collect_howfairis(repo_url: str) -> dict | None:
         return None
 
 
-def collect_publications(pmid: str, doi: str) -> dict | None:
-    epmc_client = EuropePMCClient()
-    ss_client = SemanticScholarClient()
-
+def collect_publications(
+    epmc_client: EuropePMCClient,
+    ss_client: SemanticScholarClient,
+    pmid: str | None = None,
+    doi: str | None = None,
+) -> dict | None:
     try:
         epmc_data = epmc_client.fetch(pmid)
         ss_data = ss_client.fetch(doi)
@@ -79,26 +79,18 @@ def collect_publications(pmid: str, doi: str) -> dict | None:
 
 
 def collect_repository(
+    client: GitHubClient | GitLabClient,
+    adapter: GitHubAdapter | GitLabAdapter,
     repo_identifier: str,
-    platform: str,
-    github_token: str | None,
-    gitlab_token: str | None,
 ) -> RepositoryMetrics | None:
-    if platform == "github":
-        client = GitHubClient(token=github_token)
-        adapter = GitHubAdapter()
-
-    elif platform == "gitlab":
-        client = GitLabClient(token=gitlab_token)
-        adapter = GitLabAdapter()
-
+    """Collect and normalize repository metrics."""
     try:
         raw_data = client.fetch(repo_identifier)
         repo_model = adapter.to_repository_metrics(raw_data)
         return repo_model
     except Exception as e:
         logger.warning(
-            f"Failed to collect repository metrics for {repo_identifier} on {platform}: {e}"
+            f"Failed to collect repository metrics for {repo_identifier}: {e}"
         )
         return None
 
