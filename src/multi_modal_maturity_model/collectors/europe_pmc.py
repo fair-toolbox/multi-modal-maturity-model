@@ -41,7 +41,6 @@ class EuropePMCClient:
         """
         self.base_url = base_url
         self.timeout = timeout
-        self._session = requests.Session()
 
     def fetch(self, pmid: str) -> dict[str, Any]:
         """
@@ -122,7 +121,7 @@ class EuropePMCClient:
             "format": "json",
         }
 
-        response = self._session.get(self.base_url, params=params, timeout=self.timeout)
+        response = requests.get(self.base_url, params=params, timeout=self.timeout)
         response.raise_for_status()
 
         return response.json()
@@ -173,16 +172,3 @@ class EuropePMCClient:
 
         logger.warning(f"Unexpected open access value type: {type(is_oa)}")
         return None
-
-    def close(self) -> None:
-        """Close the HTTP session."""
-        self._session.close()
-
-    def __enter__(self):
-        """Context manager entry."""
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        """Context manager exit."""
-        self.close()
-        return False
