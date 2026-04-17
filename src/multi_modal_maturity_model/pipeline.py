@@ -179,9 +179,7 @@ class MaturityAssessor:
             citation_metrics=bundle.publication_metrics,
         )
 
-        logger.info(
-            f"Assessment complete. Overall score: {maturity_profile.overall_score.score:.2f}"
-        )
+        logger.info(f"Assessment complete.")
         return maturity_profile
 
     def assess_batch(

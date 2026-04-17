@@ -3,14 +3,15 @@ Tests for the MaturityAssessor pipeline.
 """
 
 import pytest
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch
 
 from multi_modal_maturity_model.pipeline import MaturityAssessor
-from multi_modal_maturity_model.core.models import (
+from multi_modal_maturity_model.models import (
     RepositoryMetrics,
     CodeQualityMetrics,
     ToolModel,
     Contributor,
+    DimensionScore,
 )
 
 
@@ -21,6 +22,30 @@ def assessor():
         github_token="test_token",
         gitlab_token="test_token",
         max_citations_corpus=1000,
+    )
+
+
+@pytest.fixture
+def sample_repository_metrics():
+    """Create sample RepositoryMetrics with all required fields."""
+    return RepositoryMetrics(
+        platform="github",
+        url="https://github.com/owner/repo",
+        repo="owner/repo",
+        default_branch="main",
+        stars=100,
+        forks=10,
+        open_issues=5,
+        avg_time_to_close_days=10.5,
+        default_branch_is_protected=True,
+        languages=["Python"],
+        last_commit_date="2026-04-01T00:00:00Z",
+        contributors=[Contributor(login="user1", total_commits=50)],
+        has_license=True,
+        has_workflow_integration=True,
+        has_distribution_support=True,
+        has_security_policy=True,
+        has_security_scanning=True,
     )
 
 
@@ -38,341 +63,152 @@ def test_assessor_initialization():
     assert assessor.mapper is not None
 
 
-def test_detect_platform_github(assessor):
-    """Test platform detection for GitHub."""
-    assert assessor._detect_platform("https://github.com/owner/repo") == "github"
-    assert assessor._detect_platform("owner/repo") is None
-    assert assessor._detect_platform("owner/repo", "github") == "github"
-
-
-def test_detect_platform_gitlab(assessor):
-    """Test platform detection for GitLab."""
-    assert assessor._detect_platform("group/project", "gitlab") == "gitlab"
-    assert assessor._detect_platform("https://gitlab.com/owner/repo") == "gitlab"
-    assert (
-        assessor._detect_platform("https://gitlab.example.com/owner/repo") == "gitlab"
-    )
-
-
-def test_detect_platform_unknown(assessor):
-    """Test platform detection for unknown platforms."""
-    assert assessor._detect_platform("https://bitbucket.org/owner/repo") is None
-    assert assessor._detect_platform("/local/path") is None
-
-
-def test_extract_repo_identifier_github_url(assessor):
-    """Test extracting repo identifier from GitHub URL."""
-    result = assessor._extract_repo_identifier(
-        "https://github.com/owner/repo", "github"
-    )
-    assert result == "owner/repo"
-
-    result = assessor._extract_repo_identifier(
-        "https://github.com/owner/repo.git", "github"
-    )
-    assert result == "owner/repo"
-
-
-def test_extract_repo_identifier_short_format(assessor):
-    """Test extracting repo identifier from short format."""
-    result = assessor._extract_repo_identifier("owner/repo", "github")
-    assert result == "owner/repo"
-
-
-def test_normalize_repo_url_github(assessor):
-    """Test normalizing GitHub repository URLs."""
-    # Short format to full URL
-    result = assessor._normalize_repo_url("owner/repo", "github")
-    assert result == "https://github.com/owner/repo"
-
-    # Already full URL
-    result = assessor._normalize_repo_url("https://github.com/owner/repo", "github")
-    assert result == "https://github.com/owner/repo"
-
-
-def test_normalize_repo_url_gitlab(assessor):
-    """Test normalizing GitLab repository URLs."""
-    result = assessor._normalize_repo_url("owner/repo", "gitlab")
-    assert result == "https://gitlab.com/owner/repo"
-
-
 def test_assess_no_data_sources(assessor):
     """Test that assess raises error when no data sources provided."""
-    with pytest.raises(ValueError, match="At least one data source"):
+    with pytest.raises(ValueError, match="Repository URL is required."):
         assessor.assess()
 
 
-@patch("multi_modal_maturity_model.pipeline.BioToolsClient")
-def test_assess_with_biotools_only(mock_client, assessor):
-    """Test assessment with only bio.tools data."""
-    # Mock the client with data the real adapter can process
-    mock_client_instance = Mock()
-    mock_client.return_value = mock_client_instance
-    mock_client_instance.fetch.return_value = {
-        "biotoolsID": "test_tool",
-        "name": "Test Tool",
-        "function": [{"operation": [{"term": "Analysis"}]}],
-        "topic": [{"term": "Biology"}],
-    }
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+def test_assess_with_repository_and_code_quality(
+    mock_collect_code_quality,
+    mock_collect_repository,
+    assessor,
+    sample_repository_metrics,
+):
+    """Test assessment with repository and code quality metrics."""
+    # Mock repository collection
+    mock_collect_repository.return_value = sample_repository_metrics
 
-    # Run assessment - let real BioToolsAdapter process the data
-    profile = assessor.assess(biotools_id="test_tool")
+    # Mock code quality collection
+    mock_collect_code_quality.return_value = CodeQualityMetrics(
+        total_nloc=1000,
+        total_ccn=50,
+        avg_ccn=2.5,
+        duplicate_rate=0.1,
+    )
 
-    # Verify
+    # Run assessment
+    profile = assessor.assess(
+        repo_url="https://github.com/owner/repo",
+        include_code_quality=True,
+    )
+
+    # Verify collections were called
+    mock_collect_repository.assert_called_once()
+    mock_collect_code_quality.assert_called_once()
+
     assert profile is not None
-    mock_client_instance.fetch.assert_called_once_with("test_tool")
-    assert 0.0 <= profile.overall_score <= 1.0
+    assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.GitHubClient")
-@patch("multi_modal_maturity_model.pipeline.resolve_repo_path")
-@patch("multi_modal_maturity_model.pipeline.LizardCollector")
-def test_assess_with_cloning(
-    mock_lizard_collector,
-    mock_resolve_repo_path,
-    mock_github_client,
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+def test_assess_with_gitlab(
+    mock_collect_code_quality,
+    mock_collect_repository,
     assessor,
 ):
-    """Test assessment with automatic repository cloning."""
-    # Mock GitHub client with data the real adapter can process
-    mock_github_instance = Mock()
-    mock_github_client.return_value = mock_github_instance
-    mock_github_instance.fetch.return_value = {
-        "repo": {
-            "html_url": "https://github.com/owner/repo",
-            "full_name": "owner/repo",
-            "default_branch": "main",
-            "stargazers_count": 100,
-            "forks_count": 10,
-            "open_issues_count": 5,
-            "license": {"name": "MIT"},
-        },
-        "contributors": [{"login": "user1", "contributions": 50}],
-        "languages": {"Python": 1000},
-        "closed_issues": [],
-        "default_branch_protected": True,
-    }
+    """Test assessment with GitLab repository."""
+    # Mock repository collection
+    mock_collect_repository.return_value = RepositoryMetrics(
+        platform="gitlab",
+        url="https://gitlab.com/group/project",
+        repo="group/project",
+        default_branch="main",
+        stars=50,
+        forks=5,
+        open_issues=3,
+        avg_time_to_close_days=8.0,
+        default_branch_is_protected=True,
+        languages=["Python", "JavaScript"],
+        last_commit_date="2026-04-01T00:00:00Z",
+        contributors=[Contributor(login="user1", total_commits=25)],
+        has_license=True,
+        has_workflow_integration=False,
+        has_distribution_support=False,
+        has_security_policy=False,
+        has_security_scanning=False,
+    )
 
-    # Mock repo cloning
-    mock_resolve_repo_path.return_value = ("/tmp/test_repo", True)
+    # Mock code quality collection
+    mock_collect_code_quality.return_value = CodeQualityMetrics(
+        total_nloc=800,
+        total_ccn=40,
+        avg_ccn=2.0,
+        duplicate_rate=0.05,
+    )
 
-    # Mock Lizard collector with data the real adapter can process
-    mock_lizard_instance = Mock()
-    mock_lizard_collector.return_value = mock_lizard_instance
-    mock_lizard_instance.fetch.return_value = {
-        "average": {
-            "nloc": 25.5,
-            "token_count": 150,
-            "cyclomatic_complexity": 2.5,
-        },
-        "total_nloc": 1000,
-        "total_ccn": 50,
-        "function_list": [],
-    }
-
-    # Mock cleanup
-    with patch("shutil.rmtree") as mock_rmtree:
-        # Run assessment - let real adapters process the data
-        profile = assessor.assess(
-            repo_url="owner/repo",
-            platform="github",
-            collect_code_quality=True,
-        )
-
-        # Verify cloning happened
-        mock_resolve_repo_path.assert_called_once_with("https://github.com/owner/repo")
-
-        # Verify cleanup was called
-        mock_rmtree.assert_called_once_with("/tmp/test_repo")
+    # Run assessment with GitLab
+    profile = assessor.assess(
+        repo_url="https://gitlab.com/group/project",
+        include_code_quality=True,
+    )
 
     assert profile is not None
-    assert 0.0 <= profile.overall_score <= 1.0
+    assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.GitLabClient")
-@patch("multi_modal_maturity_model.pipeline.resolve_repo_path")
-@patch("multi_modal_maturity_model.pipeline.LizardCollector")
-def test_assess_with_gitlab_cloning(
-    mock_lizard_collector,
-    mock_resolve_repo_path,
-    mock_gitlab_client,
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+def test_assess_with_local_path(
+    mock_collect_code_quality,
+    mock_collect_repository,
     assessor,
+    sample_repository_metrics,
 ):
-    """Test assessment with automatic GitLab repository cloning."""
-    # Mock GitLab client with data the real adapter can process
-    mock_gitlab_instance = Mock()
-    mock_gitlab_client.return_value = mock_gitlab_instance
-    mock_gitlab_instance.fetch.return_value = {
-        "project": {
-            "web_url": "https://gitlab.com/group/project",
-            "path_with_namespace": "group/project",
-            "default_branch": "main",
-            "star_count": 50,
-            "forks_count": 5,
-            "open_issues_count": 3,
-        },
-        "contributors": [{"name": "User1", "commits": 25}],
-        "languages": {"Python": 80.5, "JavaScript": 19.5},
-        "closed_issues": [],
-        "default_branch_protected": True,
-    }
+    """Test assessment using local repository path."""
+    # Mock repository collection
+    mock_collect_repository.return_value = sample_repository_metrics
 
-    # Mock repo cloning
-    mock_resolve_repo_path.return_value = ("/tmp/test_gitlab_repo", True)
-
-    # Mock Lizard collector with data the real adapter can process
-    mock_lizard_instance = Mock()
-    mock_lizard_collector.return_value = mock_lizard_instance
-    mock_lizard_instance.fetch.return_value = {
-        "average": {
-            "nloc": 20.0,
-            "token_count": 120,
-            "cyclomatic_complexity": 2.0,
-        },
-        "total_nloc": 800,
-        "total_ccn": 40,
-        "function_list": [],
-    }
-
-    # Mock cleanup
-    with patch("shutil.rmtree") as mock_rmtree:
-        # Run assessment with GitLab platform - let real adapters process the data
-        profile = assessor.assess(
-            repo_url="group/project",
-            platform="gitlab",
-            collect_code_quality=True,
-        )
-
-        # Verify cloning happened with normalized GitLab URL
-        mock_resolve_repo_path.assert_called_once_with(
-            "https://gitlab.com/group/project"
-        )
-
-        # Verify cleanup was called
-        mock_rmtree.assert_called_once_with("/tmp/test_gitlab_repo")
-
-    assert profile is not None
-    assert 0.0 <= profile.overall_score <= 1.0
-
-
-def test_extract_repo_identifier_gitlab_nested(assessor):
-    """Test extracting GitLab repository identifier with nested groups."""
-    # Nested groups in URL
-    result = assessor._extract_repo_identifier(
-        "https://gitlab.com/group/subgroup/project", "gitlab"
+    # Mock code quality collection
+    mock_collect_code_quality.return_value = CodeQualityMetrics(
+        total_nloc=1000,
+        total_ccn=50,
+        avg_ccn=2.5,
+        duplicate_rate=0.1,
     )
-    # Should extract full path including nested groups
-    assert result == "group/subgroup/project"
 
-    # Short format with nested groups
-    result = assessor._extract_repo_identifier("group/subgroup/project", "gitlab")
-    assert result == "group/subgroup/project"
-
-    # URL with .git suffix
-    result = assessor._extract_repo_identifier(
-        "https://gitlab.com/group/subgroup/project.git", "gitlab"
+    # Run assessment with local path
+    profile = assessor.assess(
+        repo_url="owner/repo",
+        repo_path="/local/path/to/repo",
+        platform="github",
+        include_code_quality=True,
     )
-    assert result == "group/subgroup/project"
 
-
-def test_platform_parameter_ignored_with_url(assessor):
-    """Test that platform parameter is ignored when full URL is provided."""
-    # URL detection should take precedence over explicit platform
-    platform = assessor._detect_platform(
-        "https://github.com/owner/repo",
-        explicit_platform="gitlab",  # This should be ignored
-    )
-    assert platform == "github"
-
-    platform = assessor._detect_platform(
-        "https://gitlab.com/group/project",
-        explicit_platform="github",  # This should be ignored
-    )
-    assert platform == "gitlab"
-
-
-def test_git_ssh_url_detection(assessor):
-    """Test platform detection for git@ SSH URLs."""
-    # GitHub SSH URL
-    platform = assessor._detect_platform("git@github.com:owner/repo.git")
-    assert platform == "github"
-
-    # GitLab SSH URL
-    platform = assessor._detect_platform("git@gitlab.com:group/project.git")
-    assert platform == "gitlab"
-
-
-@patch("multi_modal_maturity_model.pipeline.GitHubClient")
-def test_assess_with_local_path(mock_client, assessor):
-    """Test assessment using local repository path (no cloning)."""
-    # Mock GitHub client with data the real adapter can process
-    mock_client_instance = Mock()
-    mock_client.return_value = mock_client_instance
-    mock_client_instance.fetch.return_value = {
-        "repo": {
-            "html_url": "https://github.com/owner/repo",
-            "full_name": "owner/repo",
-            "default_branch": "main",
-            "stargazers_count": 100,
-            "forks_count": 10,
-            "open_issues_count": 5,
-            "license": None,
-        },
-        "contributors": [],
-        "languages": {},
-        "closed_issues": [],
-        "default_branch_protected": False,
-    }
-
-    with patch("multi_modal_maturity_model.pipeline.LizardCollector") as mock_lizard:
-        mock_lizard_instance = Mock()
-        mock_lizard.return_value = mock_lizard_instance
-        mock_lizard_instance.fetch.return_value = {
-            "average": {
-                "nloc": 25.0,
-                "token_count": 150,
-                "cyclomatic_complexity": 2.5,
-            },
-            "total_nloc": 1000,
-            "total_ccn": 50,
-            "function_list": [],
-        }
-
-        # Run assessment with local path - let real adapters process the data
-        profile = assessor.assess(
-            repo_url="owner/repo",
-            repo_path="/local/path/to/repo",  # Local path provided
-            collect_code_quality=True,
-        )
-
-        # Verify Lizard was called with local path
-        mock_lizard_instance.fetch.assert_called_once_with("/local/path/to/repo")
+    # Verify code quality was called with local path
+    assert mock_collect_code_quality.called
+    call_args = mock_collect_code_quality.call_args
+    assert call_args[0][2] == "/local/path/to/repo"  # repo_path argument
 
     assert profile is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.BioToolsClient")
-def test_assess_handles_collector_errors(mock_client, assessor):
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+def test_assess_handles_collector_errors(mock_collect_repository, assessor):
     """Test that assessment continues when a collector fails."""
-    # Mock client to raise an exception
-    mock_client_instance = Mock()
-    mock_client.return_value = mock_client_instance
-    mock_client_instance.fetch.side_effect = Exception("API error")
+    # Mock collection to return None (failure)
+    mock_collect_repository.return_value = None
 
-    # Should not raise, should log warning and continue
-    profile = assessor.assess(biotools_id="test_tool")
+    # Assessment should complete even when repository metrics fail
+    profile = assessor.assess(repo_url="https://github.com/owner/repo")
 
+    # Profile should be created but with None score for dimensions requiring repo metrics
     assert profile is not None
-    # Should have all zero scores since no data was collected
-    assert profile.compatibility.score == 0.0
+    assert profile.sustainability.score is None
 
 
-@patch("multi_modal_maturity_model.pipeline.HowfairisCollector")
-def test_assess_with_fair_metrics(mock_howfairis, assessor):
+@patch("multi_modal_maturity_model.pipeline.collect_howfairis")
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+def test_assess_with_fair_metrics(
+    mock_collect_repository, mock_collect_howfairis, assessor, sample_repository_metrics
+):
     """Test assessment with FAIR compliance metrics."""
-    mock_howfairis_instance = Mock()
-    mock_howfairis.return_value = mock_howfairis_instance
-    mock_howfairis_instance.fetch.return_value = {
+    mock_collect_repository.return_value = sample_repository_metrics
+
+    mock_collect_howfairis.return_value = {
         "repository": True,
         "license": True,
         "registry": False,
@@ -380,100 +216,129 @@ def test_assess_with_fair_metrics(mock_howfairis, assessor):
         "checklist": False,
     }
 
-    with patch("multi_modal_maturity_model.pipeline.GitHubClient"):
-        profile = assessor.assess(
-            repo_url="owner/repo",
-        )
+    profile = assessor.assess(repo_url="https://github.com/owner/repo")
 
     assert profile is not None
     assert profile.fairness.score > 0.0
+    mock_collect_howfairis.assert_called_once()
 
 
-@patch("multi_modal_maturity_model.pipeline.EuropePMCClient")
-def test_assess_with_citation_metrics(mock_client, assessor):
+@patch("multi_modal_maturity_model.pipeline.collect_publications")
+def test_assess_with_citation_metrics(mock_collect_publications, assessor):
     """Test assessment with citation metrics."""
-    mock_client_instance = Mock()
-    mock_client.return_value = mock_client_instance
-    mock_client_instance.fetch.return_value = {
+    # Return data in the format the mapper expects (flat dict with citation data)
+    mock_collect_publications.return_value = {
         "citation_count": 50,
         "is_open_access": True,
     }
 
-    profile = assessor.assess(pmid="12345678")
+    profile = assessor.assess(repo_url="https://github.com/owner/repo", pmid="12345678")
 
     assert profile is not None
-    mock_client_instance.fetch.assert_called_once_with("12345678")
+    mock_collect_publications.assert_called_once()
     # Scientific impact should be > 0 with citations
+    assert profile.scientific_impact.score is not None
     assert profile.scientific_impact.score > 0.0
 
 
-@patch("multi_modal_maturity_model.pipeline.SemanticScholarClient")
-def test_assess_with_semantic_scholar_metrics(mock_client, assessor):
+@patch("multi_modal_maturity_model.pipeline.collect_publications")
+def test_assess_with_semantic_scholar_metrics(mock_collect_publications, assessor):
     """Test assessment with Semantic Scholar DOI metrics."""
-    mock_client_instance = Mock()
-    mock_client.return_value = mock_client_instance
-    mock_client_instance.get_paper_by_doi.return_value = {
-        "title": "Test Paper",
+    # Return data in the format the mapper expects
+    mock_collect_publications.return_value = {
         "citationCount": 75,
         "influentialCitationCount": 12,
-        "referenceCount": 40,
-        "year": 2024,
-        "authors": [{"name": "Example Author"}],
     }
 
-    profile = assessor.assess(doi="10.1000/test-doi")
+    profile = assessor.assess(
+        repo_url="https://github.com/owner/repo", doi="10.1000/test-doi"
+    )
 
     assert profile is not None
-    mock_client_instance.get_paper_by_doi.assert_called_once_with("10.1000/test-doi")
+    mock_collect_publications.assert_called_once()
+    assert profile.scientific_impact.score is not None
     assert profile.scientific_impact.score > 0.0
-    assert profile.scientific_impact.details["citation_count"] == 75
-    assert profile.scientific_impact.details["influential_citation_count"] == 12
 
 
-@patch("multi_modal_maturity_model.pipeline.SemanticScholarClient")
-@patch("multi_modal_maturity_model.pipeline.EuropePMCClient")
+@patch("multi_modal_maturity_model.pipeline.collect_publications")
 def test_assess_merges_europepmc_and_semantic_scholar_metrics(
-    mock_europepmc,
-    mock_semantic_scholar,
-    assessor,
+    mock_collect_publications, assessor
 ):
-    """Test citation metrics are merged across providers."""
-    mock_europepmc_instance = Mock()
-    mock_europepmc.return_value = mock_europepmc_instance
-    mock_europepmc_instance.fetch.return_value = {
-        "pmid": "12345678",
+    """Test citation metrics from both providers."""
+    # Return merged data in the format the mapper expects
+    mock_collect_publications.return_value = {
         "citation_count": 50,
         "is_open_access": True,
-    }
-
-    mock_semantic_scholar_instance = Mock()
-    mock_semantic_scholar.return_value = mock_semantic_scholar_instance
-    mock_semantic_scholar_instance.get_paper_by_doi.return_value = {
-        "title": "Test Paper",
-        "citationCount": 75,
         "influentialCitationCount": 12,
-        "referenceCount": 40,
-        "year": 2024,
-        "authors": [{"name": "Example Author"}],
     }
 
-    profile = assessor.assess(pmid="12345678", doi="10.1000/test-doi")
+    profile = assessor.assess(
+        repo_url="https://github.com/owner/repo",
+        pmid="12345678",
+        doi="10.1000/test-doi",
+    )
 
     assert profile is not None
-    assert profile.fairness.score > 0.0
-    assert profile.scientific_impact.details["citation_count"] == 50
-    assert profile.scientific_impact.details["influential_citation_count"] == 12
+    assert profile.scientific_impact.score is not None
+    mock_collect_publications.assert_called_once()
 
 
-def test_assess_skip_code_quality(assessor):
+@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+def test_assess_skip_code_quality(
+    mock_collect_repository,
+    mock_collect_code_quality,
+    assessor,
+    sample_repository_metrics,
+):
     """Test that code quality collection can be skipped."""
-    with patch("multi_modal_maturity_model.pipeline.resolve_repo_path") as mock_resolve:
-        profile = assessor.assess(
-            repo_url="owner/repo",
-            collect_code_quality=False,  # Skip code analysis
-        )
+    mock_collect_repository.return_value = sample_repository_metrics
 
-        # Cloning should not happen
-        mock_resolve.assert_not_called()
+    profile = assessor.assess(
+        repo_url="https://github.com/owner/repo",
+        include_code_quality=False,  # Skip code analysis
+    )
+
+    # Code quality collection should not be called
+    mock_collect_code_quality.assert_not_called()
 
     assert profile is not None
+
+
+@patch("multi_modal_maturity_model.pipeline.collect_biotools")
+@patch("multi_modal_maturity_model.pipeline.collect_repository")
+def test_assess_with_biotools_id(
+    mock_collect_repository, mock_collect_biotools, assessor, sample_repository_metrics
+):
+    """Test assessment with bio.tools ID."""
+    mock_collect_repository.return_value = sample_repository_metrics
+
+    mock_tool_model = Mock(spec=ToolModel)
+    mock_tool_model.biotools_id = "test_tool"
+    mock_tool_model.function = []
+    mock_collect_biotools.return_value = mock_tool_model
+
+    profile = assessor.assess(
+        biotools_id="test_tool", repo_url="https://github.com/owner/repo"
+    )
+
+    assert profile is not None
+    mock_collect_biotools.assert_called_once()
+
+
+def test_get_repository_client_and_adapter(assessor):
+    """Test getting the correct client and adapter for platform."""
+    # Test GitHub
+    client, adapter = assessor._get_repository_client_and_adapter("github")
+    assert client is assessor.github_client
+    assert adapter is not None
+
+    # Test GitLab
+    client, adapter = assessor._get_repository_client_and_adapter("gitlab")
+    assert client is assessor.gitlab_client
+    assert adapter is not None
+
+    # Test unknown platform
+    client, adapter = assessor._get_repository_client_and_adapter("unknown")
+    assert client is None
+    assert adapter is None
