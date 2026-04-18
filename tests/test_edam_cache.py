@@ -1,7 +1,7 @@
 """Tests for EDAM data loader functionality."""
 
 import pytest
-from multi_modal_maturity_model.collectors.edam_cache import (
+from multi_modal_maturity_model.edam import (
     edam_cache,
     EDAMCache,
     BUNDLED_CACHE_FILE,

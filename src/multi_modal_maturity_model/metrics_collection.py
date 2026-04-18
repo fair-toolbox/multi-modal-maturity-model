@@ -1,11 +1,10 @@
 from .adapters import BioToolsAdapter, GitHubAdapter, GitLabAdapter
-from .collectors import (
+from .analyzers import HowfairisAnalyzer, LizardAnalyzer
+from .clients import (
     BioToolsClient,
     EuropePMCClient,
     GitHubClient,
     GitLabClient,
-    HowfairisCollector,
-    LizardCollector,
     SemanticScholarClient,
 )
 from .models import CodeQualityMetrics, RepositoryMetrics, ToolModel
@@ -30,7 +29,7 @@ def collect_biotools(
 
 
 def collect_code_quality(
-    client: LizardCollector, repo_url: str | None, repo_path: str | None
+    client: LizardAnalyzer, repo_url: str | None, repo_path: str | None
 ) -> CodeQualityMetrics | None:
     """Collect and normalize code quality metrics."""
     try:
@@ -52,7 +51,8 @@ def collect_code_quality(
         return None
 
 
-def collect_howfairis(client: HowfairisCollector, repo_url: str) -> dict | None:
+def collect_howfairis(client: HowfairisAnalyzer, repo_url: str) -> dict | None:
+    """Collect fairnessmetrics."""
     try:
         fair_metrics = client.fetch(repo_url)
         return fair_metrics
@@ -67,9 +67,11 @@ def collect_publications(
     pmid: str | None = None,
     doi: str | None = None,
 ) -> dict | None:
+    """Collect and normalize publication metrics."""
     try:
         epmc_data = epmc_client.fetch(pmid)
         ss_data = ss_client.fetch(doi)
+        openalex_data = None
         # TODO Process and combine data as needed
 
         return {"epmc": epmc_data, "semantic_scholar": ss_data}

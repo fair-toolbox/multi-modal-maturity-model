@@ -12,15 +12,15 @@ from multi_modal_maturity_model.adapters import (
     GitLabAdapter,
 )
 
-from multi_modal_maturity_model.collectors import (
+from multi_modal_maturity_model.analyzers import HowfairisAnalyzer, LizardAnalyzer
+
+from multi_modal_maturity_model.clients import (
     BioToolsClient,
     EuropePMCClient,
     GitHubClient,
     GitLabClient,
     SemanticScholarClient,
 )
-
-from multi_modal_maturity_model.analyzers import HowfairisAnalyzer, LizardAnalyzer
 
 from .models import (
     CodeQualityMetrics,
