@@ -48,7 +48,7 @@ class OpenAlexClient:
         query = self._build_query(pmid=pmid, doi=doi)
         if not query:
             logger.error("Cannot fetch work without a valid identifier")
-            return None
+            raise ValueError("Must provide either PMID or DOI to fetch work")
 
         url = f"{self.base_url}/{query}"
 
@@ -61,5 +61,8 @@ class OpenAlexClient:
             if e.response.status_code == 404:
                 logger.info(f"Work not found for query: {query}")
                 return None
-            logger.warning(f"Error fetching data from OpenAlex: {e}")
+            logger.error(f"Request error fetching data from OpenAlex: {e}")
+            raise
+        except Exception as e:
+            logger.error(f"Unexpected error fetching work for query {query}: {e}")
             raise

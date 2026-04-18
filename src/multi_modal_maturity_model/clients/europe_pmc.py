@@ -1,27 +1,18 @@
 """
-EuropePMC API client for citation metrics and open access status.
+Client for Europe PMC API.
 """
 
 import logging
-import re
-from typing import Any
-
 import requests
+
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
 
-class EuropePMCError(Exception):
-    """Base exception for EuropePMC client errors."""
-
-    pass
-
-
 class EuropePMCClient:
     """
-    Collect citation counts and open access status from EuropePMC API.
-
-    Uses connection pooling for multiple requests.
+    Fetch publication metadata from EuropePMC API.
     """
 
     def __init__(
@@ -29,97 +20,21 @@ class EuropePMCClient:
         base_url: str = "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
         timeout: int = 30,
     ):
-        """
-        Initialize the EuropePMC client.
-
-        Parameters
-        ----------
-        base_url : str
-            Base URL for EuropePMC API
-        timeout : int
-            Request timeout in seconds (default: 30)
-        """
         self.base_url = base_url
         self.timeout = timeout
 
-    def fetch(self, pmid: str) -> dict[str, Any]:
-        """
-        Collect citation metrics for a single PMID.
+    def _build_query(self, pmid: str | None = None, doi: str | None = None) -> str:
+        if pmid:
+            return f"EXT_ID:{pmid} AND SRC:MED"
+        if doi:
+            return f"DOI:{doi}"
+        return None
 
-        Parameters
-        ----------
-        pmid : str
-            PubMed ID (e.g., "12345678")
-
-        Returns
-        -------
-        dict
-            Dictionary with citation count and open access status
-            Keys: pmid, citation_count, is_open_access
-
-        Raises
-        ------
-        InvalidPMIDError
-            If PMID format is invalid
-        requests.RequestException
-            If API call fails
-        EuropePMCError
-            If data extraction fails
-        """
-        logger.debug(f"Fetching citation data for PMID: {pmid}")
-
-        try:
-            data = self._fetch_publication_data(pmid)
-            result_item = self._get_first_result(data)
-
-            if result_item is None:
-                logger.warning(f"No results found for PMID {pmid}")
-                return {
-                    "pmid": pmid,
-                    "citation_count": None,
-                    "is_open_access": None,
-                }
-
-            result = {
-                "pmid": pmid,
-                "citation_count": self._extract_citation_count(result_item),
-                "is_open_access": self._extract_open_access_status(result_item),
-            }
-
-            logger.info(f"Successfully collected data for PMID {pmid}")
-            return result
-
-        except requests.RequestException as e:
-            logger.error(f"API request failed for PMID {pmid}: {e}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error for PMID {pmid}: {e}")
-            raise EuropePMCError(f"Failed to fetch data for PMID {pmid}") from e
-
-    def _fetch_publication_data(self, pmid: str) -> dict[str, Any]:
+    def _fetch_publication_data(self, query: str) -> dict[str, Any]:
         """
         Fetch raw publication data from EuropePMC API.
-
-        Parameters
-        ----------
-        pmid : str
-            PubMed ID
-
-        Returns
-        -------
-        dict
-            Raw JSON response from API
-
-        Raises
-        ------
-        requests.RequestException
-            If request fails
         """
-        query = f"EXT_ID:{pmid} AND SRC:MED"
-        params = {
-            "query": query,
-            "format": "json",
-        }
+        params = {"query": query, "format": "json"}
 
         response = requests.get(self.base_url, params=params, timeout=self.timeout)
         response.raise_for_status()
@@ -143,32 +58,57 @@ class EuropePMCClient:
         results = payload.get("resultList", {}).get("result") or []
         return results[0] if results else None
 
-    def _extract_citation_count(self, result_item: dict[str, Any]) -> int | None:
+    def fetch(
+        self, pmid: str | None = None, doi: str | None = None
+    ) -> dict[str, Any] | None:
         """
-        Extract citation count from a publication result.
+        Fetch citation metrics for a single DOI or PMID.
+
+        Parameters
+        ----------
+        pmid : str | None
+            PubMed ID (e.g., "12345678")
+        doi : str | None
+            DOI (e.g., "10.1038/nature12373")
+
+        Returns
+        -------
+        dict
+            Raw EuropePMC data for the requested publication.
+
+        Raises
+        ------
+        requests.RequestException
+            If API call fails
+        ValueError
+            If neither PMID nor DOI is provided
         """
-        cited_by = result_item.get("citedByCount")
-        if cited_by is None:
-            return None
+        identifier = pmid or doi
+        identifier_type = "pmid" if pmid else "doi"
+
+        if not identifier:
+            raise ValueError("Must provide either PMID or DOI")
 
         try:
-            return int(cited_by)
-        except (ValueError, TypeError):
-            logger.warning(f"Invalid citation count value: {cited_by}")
-            return None
+            query = self._build_query(pmid=pmid, doi=doi)
+            data = self._fetch_publication_data(query=query)
+            result_item = self._get_first_result(data)
 
-    def _extract_open_access_status(self, result_item: dict[str, Any]) -> bool | None:
-        """
-        Extract open access status from a publication result.
+            if not result_item:
+                logger.info(f"No results found for {identifier_type}:{identifier}")
 
-        """
-        is_oa = result_item.get("isOpenAccess")
-        if is_oa is None:
-            return None
+            return result_item
 
-        # API returns "Y" or "N"
-        if isinstance(is_oa, str):
-            return is_oa.upper() == "Y"
-
-        logger.warning(f"Unexpected open access value type: {type(is_oa)}")
-        return None
+        except requests.RequestException as e:
+            if e.response and e.response.status_code == 404:
+                logger.info(f"Publication not found: {identifier_type}:{identifier}")
+                return None
+            logger.error(
+                f"HTTP error fetching data for {identifier_type}:{identifier}: {e}"
+            )
+            raise
+        except Exception as e:
+            logger.error(
+                f"Unexpected error fetching data for {identifier_type}:{identifier}: {e}"
+            )
+            raise
