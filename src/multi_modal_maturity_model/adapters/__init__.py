@@ -1,5 +1,5 @@
 """
-Adapters transform raw collector data into core domain models.
+Adapters transform raw client data into core domain models.
 """
 
 from .biotools_adapter import BioToolsAdapter

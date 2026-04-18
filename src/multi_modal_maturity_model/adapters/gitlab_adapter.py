@@ -1,5 +1,5 @@
 """
-Adapter for transforming GitLab collector data into core models.
+Adapter for transforming GitLab client data into core models.
 """
 
 import logging

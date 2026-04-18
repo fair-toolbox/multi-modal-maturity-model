@@ -1,5 +1,5 @@
 """
-Adapter for transforming GitHub collector data into core models.
+Adapter for transforming GitHub client data into core models.
 """
 
 import logging

@@ -205,7 +205,7 @@ class TestGitHubAdapter:
 
     @pytest.fixture
     def complete_raw_data(self):
-        """Sample complete raw data from GitHub collector."""
+        """Sample complete raw data from GitHub client."""
         return {
             "repo": {
                 "html_url": "https://github.com/owner/test-repo",

@@ -1,8 +1,7 @@
 """
 Map collected metrics to maturity dimensions.
 
-This layer aggregates data from multiple adapters and collectors and maps them to the
-appropriate dimension scoring functions.
+This layer aggregates data from multiple clients, adapters and analyzers and maps them to the appropriate dimension scoring functions.
 """
 
 import logging
@@ -62,9 +61,9 @@ class MaturityMapper:
         repository_metrics : RepositoryMetrics | None
             From GitHubAdapter/GitLabAdapter (for sustainability, security)
         code_quality_metrics : CodeQualityMetrics | None
-            From LizardAdapter (for maintainability)
+            From LizardAnalyzer (for maintainability)
         fair_metrics : dict[str, Any] | None
-            From HowfairisCollector (for FAIRness)
+            From HowfairisAnalyzer (for FAIRness)
         citation_metrics : dict[str, Any] | None
             From EuropePMCClient (for scientific impact)
 
