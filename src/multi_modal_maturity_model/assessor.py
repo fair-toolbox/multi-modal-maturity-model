@@ -19,6 +19,7 @@ from multi_modal_maturity_model.clients import (
     EuropePMCClient,
     GitHubClient,
     GitLabClient,
+    OpenAlexClient,
     SemanticScholarClient,
 )
 
@@ -103,6 +104,7 @@ class MaturityAssessor:
         self.biotools_client = BioToolsClient()
         self.biotools_adapter = BioToolsAdapter()
         self.europepmc_client = EuropePMCClient()
+        self.openalex_client = OpenAlexClient()
         self.semantic_scholar_client = SemanticScholarClient()
 
         self.howfairis_analyzer = HowfairisAnalyzer()
@@ -258,7 +260,11 @@ class MaturityAssessor:
 
         publication_metrics = (
             collect_publications(
-                self.europepmc_client, self.semantic_scholar_client, pmid, doi
+                self.europepmc_client,
+                self.openalex_client,
+                self.semantic_scholar_client,
+                pmid,
+                doi,
             )
             if pmid or doi
             else None
