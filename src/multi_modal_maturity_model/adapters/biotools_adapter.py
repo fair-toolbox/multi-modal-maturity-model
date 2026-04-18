@@ -1,5 +1,5 @@
 """
-Adapter for transforming bio.tools collector data into core models.
+Adapter for transforming bio.tools client data into core models.
 """
 
 import logging

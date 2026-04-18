@@ -11,7 +11,7 @@ from howfairis import Checker, Repo
 logger = logging.getLogger(__name__)
 
 
-class HowfairisCollector:
+class HowfairisAnalyzer:
     """
     Collect FAIR compliance metrics using howfairis library.
     """
@@ -19,7 +19,7 @@ class HowfairisCollector:
     def __init__(self):
         """Initialize howfairis client."""
 
-    def fetch(self, repo_url: str) -> dict[str, Any]:
+    def analyze(self, repo_url: str) -> dict[str, Any]:
         """
         Assess FAIR compliance for a single repository.
 

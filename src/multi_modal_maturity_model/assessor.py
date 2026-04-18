@@ -17,10 +17,10 @@ from multi_modal_maturity_model.collectors import (
     EuropePMCClient,
     GitHubClient,
     GitLabClient,
-    HowfairisCollector,
-    LizardCollector,
     SemanticScholarClient,
 )
+
+from multi_modal_maturity_model.analyzers import HowfairisAnalyzer, LizardAnalyzer
 
 from .models import (
     CodeQualityMetrics,
@@ -30,7 +30,7 @@ from .models import (
 )
 from .mapper import MaturityMapper
 
-from .collect import (
+from .metrics_collection import (
     collect_biotools,
     collect_code_quality,
     collect_howfairis,
@@ -103,9 +103,10 @@ class MaturityAssessor:
         self.biotools_client = BioToolsClient()
         self.biotools_adapter = BioToolsAdapter()
         self.europepmc_client = EuropePMCClient()
-        self.howfairis_client = HowfairisCollector()
-        self.lizard_client = LizardCollector()
         self.semantic_scholar_client = SemanticScholarClient()
+
+        self.howfairis_analyzer = HowfairisAnalyzer()
+        self.lizard_analyzer = LizardAnalyzer()
 
     def assess(
         self,
@@ -248,12 +249,12 @@ class MaturityAssessor:
         )
 
         code_quality_metrics = (
-            collect_code_quality(self.lizard_client, repo_url, repo_path)
+            collect_code_quality(self.lizard_analyzer, repo_url, repo_path)
             if include_code_quality and repo_url
             else None
         )
 
-        fair_metrics = collect_howfairis(self.howfairis_client, repo_url)
+        fair_metrics = collect_howfairis(self.howfairis_analyzer, repo_url)
 
         publication_metrics = (
             collect_publications(
