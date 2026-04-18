@@ -17,7 +17,6 @@ class SemanticScholarClient:
         """
         self.base_url = base_url
         self.timeout = timeout
-        self._session = requests.Session()
 
     def get_paper_by_doi(self, doi: str) -> dict[str, Any] | None:
         """
@@ -39,7 +38,7 @@ class SemanticScholarClient:
         }
 
         try:
-            response = self._session.get(url, params=params, timeout=self.timeout)
+            response = requests.get(url, params=params, timeout=self.timeout)
             if response.status_code == 404:
                 print(f"Paper not found: {doi}")
                 return None

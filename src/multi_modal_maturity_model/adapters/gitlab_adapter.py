@@ -1,11 +1,11 @@
 """
-Adapter for transforming GitLab collector data into core models.
+Adapter for transforming GitLab client data into core models.
 """
 
 import logging
 from typing import Any
 
-from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
+from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
     detect_distribution_support,

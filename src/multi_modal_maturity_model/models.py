@@ -70,7 +70,7 @@ class DimensionScore:
     """Score for a single maturity dimension."""
 
     name: str
-    score: float
+    score: float | None
     details: dict[str, Any] | None = None
 
 
@@ -84,4 +84,4 @@ class MaturityProfile:
     sustainability: DimensionScore
     security: DimensionScore
     scientific_impact: DimensionScore
-    overall_score: float
+    overall_score: DimensionScore

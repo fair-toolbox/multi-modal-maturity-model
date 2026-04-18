@@ -12,7 +12,7 @@ import lizard
 logger = logging.getLogger(__name__)
 
 
-class LizardCollector:
+class LizardAnalyzer:
     """
     Collect code quality metrics using Lizard static analysis.
     Analyzes complexity, lines of code, and duplicate code.
@@ -21,7 +21,7 @@ class LizardCollector:
     def __init__(self):
         """Initialize the lizard client."""
 
-    def fetch(self, repo_path: str) -> dict[str, Any]:
+    def analyze(self, repo_path: str) -> dict[str, Any]:
         """
         Analyze code quality for a repository.
 

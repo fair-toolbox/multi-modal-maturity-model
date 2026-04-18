@@ -1,11 +1,11 @@
 """
-Adapter for transforming GitHub collector data into core models.
+Adapter for transforming GitHub client data into core models.
 """
 
 import logging
 from typing import Any
 
-from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
+from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
     detect_distribution_support,

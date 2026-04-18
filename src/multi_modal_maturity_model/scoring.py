@@ -7,13 +7,36 @@ import logging
 import math
 from typing import Any
 
-from ..core.models import Contributor, DimensionScore, MaturityProfile
+from .models import Contributor, DimensionScore
 
 logger = logging.getLogger(__name__)
+
+_DIMENSION_NAMES = [
+    "compatibility",
+    "fairness",
+    "maintainability",
+    "sustainability",
+    "security",
+    "scientific_impact",
+]
 
 
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
+
+    def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
+        """Return a weighted average, skipping metrics whose value is None.
+
+        Parameters
+        ----------
+        metrics:
+            Mapping of name → (value, weight). Entries with value=None are excluded
+            and the remaining weights are renormalized automatically.
+        """
+        total_weight = sum(w for v, w in metrics.values() if v is not None)
+        if total_weight == 0:
+            return 0.0
+        return sum(v * w for v, w in metrics.values() if v is not None) / total_weight
 
     @staticmethod
     def calculate_inverse_simpson_index(
@@ -24,26 +47,17 @@ class DimensionScorer:
             return None
 
         total_commits = sum(
-            contributor.total_commits
-            for contributor in contributors
-            if contributor.total_commits > 0
+            c.total_commits for c in contributors if c.total_commits > 0
         )
         if total_commits == 0:
             return None
 
         shares = [
-            contributor.total_commits / total_commits
-            for contributor in contributors
-            if contributor.total_commits > 0
+            c.total_commits / total_commits for c in contributors if c.total_commits > 0
         ]
-        if not shares:
-            return None
+        hhi = sum(s**2 for s in shares)
 
-        hhi = sum(share**2 for share in shares)
-        if hhi == 0:
-            return None
-
-        return 1 / hhi
+        return (1 / hhi) if hhi else None
 
     @staticmethod
     def calculate_compatibility(
@@ -73,26 +87,14 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weighted_metrics = {
-            "input_formats": (input_formats, 0.25),
-            "output_formats": (output_formats, 0.25),
-            "workflow_support": (workflow_support, 0.25),
-            "distribution_support": (distribution_support, 0.25),
-        }
-        total_weight = sum(
-            weight for value, weight in weighted_metrics.values() if value is not None
+        score = DimensionScorer._weighted_average(
+            {
+                "input_formats": (input_formats, 0.25),
+                "output_formats": (output_formats, 0.25),
+                "workflow_support": (workflow_support, 0.25),
+                "distribution_support": (distribution_support, 0.25),
+            }
         )
-        if total_weight == 0:
-            score = 0.0
-        else:
-            score = (
-                sum(
-                    value * weight
-                    for value, weight in weighted_metrics.values()
-                    if value is not None
-                )
-                / total_weight
-            )
 
         return DimensionScore(
             name="Compatibility",
@@ -109,7 +111,7 @@ class DimensionScorer:
     def calculate_fairness(
         license: bool,
         repository: bool,
-        registry: bool,  # bio.tools registration
+        registry: bool,
         citation: bool,
         checklist: bool,
         publication_oa: bool,
@@ -200,15 +202,14 @@ class DimensionScorer:
         DimensionScore
         """
         # Normalize individual metrics (lower is better)
-        nloc_score = max(0.0, 1.0 - (total_nloc / 10000.0))  # 10k NLOC as threshold
-        ccn_score = max(0.0, 1.0 - (total_ccn / 500.0))  # 500 total CCN as threshold
-        avg_ccn_score = max(0.0, 1.0 - (avg_ccn / 10.0))  # 10 avg CCN as threshold
-        dup_score = max(0.0, 1.0 - duplicate_rate)  # 1.0 means 100% duplicates
+        nloc_score = max(0.0, 1.0 - (total_nloc / 10000.0))
+        ccn_score = max(0.0, 1.0 - (total_ccn / 500.0))
+        avg_ccn_score = max(0.0, 1.0 - (avg_ccn / 10.0))
+        dup_score = max(0.0, 1.0 - duplicate_rate)
 
         # Apply penalties
         lang_penalty = 0.1 if has_old_languages else 0.0
 
-        # Weighted combination
         score = (
             0.3 * nloc_score
             + 0.2 * ccn_score
@@ -283,26 +284,14 @@ class DimensionScorer:
         if inverse_simpson_index is not None:
             diversity_score = max(0.0, min(1.0, 1.0 - (1.0 / inverse_simpson_index)))
 
-        weighted_metrics = {
-            "avg_issue_close_time_days": (close_time_score, 0.4),
-            "num_open_issues": (open_issues_score, 0.3),
-            "days_since_last_commit": (recent_score, 0.2),
-            "inverse_simpson_index": (diversity_score, 0.1),
-        }
-        total_weight = sum(
-            weight for value, weight in weighted_metrics.values() if value is not None
+        score = DimensionScorer._weighted_average(
+            {
+                "avg_issue_close_time_days": (close_time_score, 0.4),
+                "num_open_issues": (open_issues_score, 0.3),
+                "days_since_last_commit": (recent_score, 0.2),
+                "inverse_simpson_index": (diversity_score, 0.1),
+            }
         )
-        if total_weight == 0:
-            score = 0.0
-        else:
-            score = (
-                sum(
-                    value * weight
-                    for value, weight in weighted_metrics.values()
-                    if value is not None
-                )
-                / total_weight
-            )
 
         return DimensionScore(
             name="Sustainability",
@@ -345,11 +334,9 @@ class DimensionScorer:
         if has_security_scanning is not None:
             signals.append(float(has_security_scanning))
 
-        score = sum(signals) / len(signals)
-
         return DimensionScore(
             name="Security",
-            score=score,
+            score=sum(signals) / len(signals),
             details={
                 "default_branch_protected": default_branch_protected,
                 "has_security_policy": has_security_policy,
@@ -388,9 +375,11 @@ class DimensionScorer:
             max_citations_in_corpus = 1000  # Default fallback
 
         denominator = math.log(max_citations_in_corpus + 0.5)
-        citation_component = 0.0
-        if denominator > 0:
-            citation_component = math.log(max(citation_count, 0) + 0.5) / denominator
+        citation_component = (
+            math.log(max(citation_count, 0) + 0.5) / denominator
+            if denominator > 0
+            else 0.0
+        )
 
         influential_component = None
         if influential_citation_count is not None and denominator > 0:
@@ -398,11 +387,10 @@ class DimensionScorer:
                 math.log(max(influential_citation_count, 0) + 0.5) / denominator
             )
 
-        score = citation_component
         if influential_component is not None:
-            # Total citations remain the primary signal, while influential
-            # citations add a secondary quality-weighted contribution.
             score = (0.7 * citation_component) + (0.3 * influential_component)
+        else:
+            score = citation_component
 
         return DimensionScore(
             name="Scientific Impact",
@@ -415,7 +403,9 @@ class DimensionScorer:
         )
 
     @staticmethod
-    def calculate_overall_score(dimensions: list[DimensionScore]) -> float:
+    def calculate_overall_score(
+        dimensions: list[DimensionScore], weights: dict[str, float] | None = None
+    ) -> DimensionScore:
         """
         Calculate overall maturity score as average of all dimensions.
 
@@ -423,12 +413,36 @@ class DimensionScorer:
         ----------
         dimensions : list[DimensionScore]
             List of dimension scores
+        weights : dict[str, float] | None
+            Optional weights for each dimension. Equal weighting if None.
 
         Returns
         -------
-        float
-            Overall score (0.0-1.0)
+        DimensionScore
         """
         if not dimensions:
-            return 0.0
-        return sum(d.score for d in dimensions) / len(dimensions)
+            return DimensionScore(
+                name="Overall", score=None, details={"note": "No dimensions available."}
+            )
+
+        if all(dim.score is None for dim in dimensions):
+            return DimensionScore(
+                name="Overall",
+                score=None,
+                details={"note": "All dimension scores are None."},
+            )
+
+        available_pairs = [
+            (dim, name)
+            for dim, name in zip(dimensions, _DIMENSION_NAMES)
+            if dim.score is not None
+        ]
+
+        # TODO input weights and normalize
+        # Return if total_weight is zero
+
+        overall_score = sum(dim.score for dim, name in available_pairs) / len(
+            available_pairs
+        )
+
+        return DimensionScore(name="Overall", score=overall_score, details={})

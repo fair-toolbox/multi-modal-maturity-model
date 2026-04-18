@@ -1,16 +1,15 @@
 """
 Map collected metrics to maturity dimensions.
 
-This layer aggregates data from multiple adapters and maps them to the
-appropriate dimension scoring functions.
+This layer aggregates data from multiple clients, adapters and analyzers and maps them to the appropriate dimension scoring functions.
 """
 
 import logging
 from datetime import datetime, timezone
 from typing import Any
 
-from ..adapters.adapters_utils import parse_iso_datetime
-from ..core.models import (
+from .adapters.adapters_utils import parse_iso_datetime
+from .models import (
     CodeQualityMetrics,
     DimensionScore,
     MaturityProfile,
@@ -62,9 +61,9 @@ class MaturityMapper:
         repository_metrics : RepositoryMetrics | None
             From GitHubAdapter/GitLabAdapter (for sustainability, security)
         code_quality_metrics : CodeQualityMetrics | None
-            From LizardAdapter (for maintainability)
+            From LizardAnalyzer (for maintainability)
         fair_metrics : dict[str, Any] | None
-            From HowfairisCollector (for FAIRness)
+            From HowfairisAnalyzer (for FAIRness)
         citation_metrics : dict[str, Any] | None
             From EuropePMCClient (for scientific impact)
 
@@ -114,6 +113,10 @@ class MaturityMapper:
 
         Calculates fraction of input/output formats that are EDAM leaf nodes.
         """
+        if not tool_model and not repository_metrics:
+            logger.warning("No data available for compatibility scoring")
+            return DimensionScore(name="Compatibility", score=None)
+
         input_fraction = None
         output_fraction = None
 
@@ -161,7 +164,7 @@ class MaturityMapper:
         self,
         repository_metrics: RepositoryMetrics | None,
         fair_metrics: dict[str, Any] | None,
-        citation_metrics: dict[str, Any] | None,
+        publication_metrics: dict[str, Any] | None,
     ) -> DimensionScore:
         """
         Map data from multiple sources to FAIRness dimension.
@@ -171,38 +174,25 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        # Default values
-        license_val = False
-        repository_val = False
-        registry_val = False
-        citation_val = False
-        checklist_val = False
-        publication_oa = False
+        if not repository_metrics and not fair_metrics and not publication_metrics:
+            logger.warning("No data available for FAIRness scoring")
+            return DimensionScore(name="FAIRness", score=None)
 
-        # Get data from howfairis (primary source for FAIR)
-        if fair_metrics:
-            license_val = fair_metrics.get("license", False)
-            repository_val = fair_metrics.get("repository", False)
-            registry_val = fair_metrics.get("registry", False)
-            citation_val = fair_metrics.get("citation", False)
-            checklist_val = fair_metrics.get("checklist", False)
+        fair_metrics = fair_metrics or {}
+        publication_metrics = publication_metrics or {}
 
-        # Fallback to repository metrics for license if available
-        if repository_metrics and not license_val:
-            license_val = repository_metrics.has_license
-
-        # Get open access status from citation metrics
-        if citation_metrics:
-            publication_oa = citation_metrics.get("is_open_access", False)
-
-        return self.scorer.calculate_fairness(
-            license=license_val,
-            repository=repository_val,
-            registry=registry_val,
-            citation=citation_val,
-            checklist=checklist_val,
-            publication_oa=publication_oa,
+        license_val = fair_metrics.get("license") or (
+            repository_metrics.has_license if repository_metrics else False
         )
+        values = {
+            "license": license_val,
+            "repository": fair_metrics.get("repository", False),
+            "registry": fair_metrics.get("registry", False),
+            "citation": fair_metrics.get("citation", False),
+            "checklist": fair_metrics.get("checklist", False),
+            "publication_oa": publication_metrics.get("is_open_access", False),
+        }
+        return self.scorer.calculate_fairness(**values)
 
     def _map_maintainability(
         self,
@@ -215,7 +205,7 @@ class MaturityMapper:
         """
         if not code_quality_metrics:
             logger.warning("No code quality metrics available for maintainability")
-            return DimensionScore(name="Maintainability", score=0.0)
+            return DimensionScore(name="Maintainability", score=None)
 
         # TODO: Detect old/outdated languages
         has_old_languages = False
@@ -236,7 +226,7 @@ class MaturityMapper:
         """
         if not repository_metrics:
             logger.warning("No repository metrics available for sustainability")
-            return DimensionScore(name="Sustainability", score=0.0)
+            return DimensionScore(name="Sustainability", score=None)
 
         days_since_last_commit = None
         if repository_metrics.last_commit_date:
@@ -268,7 +258,7 @@ class MaturityMapper:
         """
         if not repository_metrics:
             logger.warning("No repository metrics available for security")
-            return DimensionScore(name="Security", score=0.0)
+            return DimensionScore(name="Security", score=None)
 
         return self.scorer.calculate_security(
             default_branch_protected=repository_metrics.default_branch_is_protected
@@ -285,7 +275,7 @@ class MaturityMapper:
         """
         if not citation_metrics:
             logger.warning("No citation metrics available for scientific impact")
-            return DimensionScore(name="Scientific Impact", score=0.0)
+            return DimensionScore(name="Scientific Impact", score=None)
 
         citation_count = citation_metrics.get(
             "citation_count",

@@ -1,8 +1,7 @@
 """Tests for EDAM data loader functionality."""
 
 import pytest
-from multi_modal_maturity_model.collectors.edam_cache import (
-    edam_cache,
+from multi_modal_maturity_model.edam import (
     EDAMCache,
     BUNDLED_CACHE_FILE,
 )
@@ -11,13 +10,15 @@ from multi_modal_maturity_model.collectors.edam_cache import (
 class TestEDAMCache:
     """Test EDAM data loader functionality."""
 
+    edam_cache = EDAMCache()
+
     def test_bundled_file_exists(self):
         """Test that bundled EDAM data file exists."""
         assert BUNDLED_CACHE_FILE.exists(), "Bundled EDAM data file should exist"
 
     def test_get_leaf_node_uris(self):
         """Test getting leaf node URIs."""
-        leaf_nodes = edam_cache.get_leaf_node_uris()
+        leaf_nodes = self.edam_cache.get_leaf_node_uris()
 
         assert isinstance(leaf_nodes, set)
         assert len(leaf_nodes) > 0
@@ -29,23 +30,26 @@ class TestEDAMCache:
 
     def test_is_leaf_node(self):
         """Test checking if a URI is a leaf node."""
-        leaf_nodes = edam_cache.get_leaf_node_uris()
+        leaf_nodes = self.edam_cache.get_leaf_node_uris()
 
         # Pick a known leaf node
         if leaf_nodes:
             sample_leaf = next(iter(leaf_nodes))
-            assert edam_cache.is_leaf_node(sample_leaf) is True
+            assert self.edam_cache.is_leaf_node(sample_leaf) is True
 
         # Test with a non-existent URI
-        assert edam_cache.is_leaf_node("http://edamontology.org/format_99999") is False
+        assert (
+            self.edam_cache.is_leaf_node("http://edamontology.org/format_99999")
+            is False
+        )
 
     def test_get_term_info(self):
         """Test getting term information."""
-        leaf_nodes = edam_cache.get_leaf_node_uris()
+        leaf_nodes = self.edam_cache.get_leaf_node_uris()
 
         if leaf_nodes:
             sample_uri = next(iter(leaf_nodes))
-            info = edam_cache.get_term_info(sample_uri)
+            info = self.edam_cache.get_term_info(sample_uri)
 
             assert info is not None
             assert "uri" in info
@@ -57,7 +61,7 @@ class TestEDAMCache:
 
     def test_get_all_terms(self):
         """Test getting all terms."""
-        all_terms = edam_cache.get_all_terms()
+        all_terms = self.edam_cache.get_all_terms()
 
         assert isinstance(all_terms, dict)
         assert len(all_terms) > 0
@@ -71,7 +75,7 @@ class TestEDAMCache:
 
     def test_get_stats(self):
         """Test getting statistics."""
-        stats = edam_cache.get_stats()
+        stats = self.edam_cache.get_stats()
 
         assert isinstance(stats, dict)
         assert "total_terms" in stats
@@ -89,9 +93,9 @@ class TestEDAMCache:
 
     def test_data_consistency(self):
         """Test that data is internally consistent."""
-        leaf_nodes = edam_cache.get_leaf_node_uris()
-        all_terms = edam_cache.get_all_terms()
-        stats = edam_cache.get_stats()
+        leaf_nodes = self.edam_cache.get_leaf_node_uris()
+        all_terms = self.edam_cache.get_all_terms()
+        stats = self.edam_cache.get_stats()
 
         # Leaf nodes should be subset of all terms
         for uri in leaf_nodes:

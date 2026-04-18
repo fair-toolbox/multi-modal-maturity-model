@@ -17,7 +17,7 @@ from multi_modal_maturity_model.adapters.adapters_utils import (
     detect_security_scanning,
     detect_workflow_support,
 )
-from multi_modal_maturity_model.core.models import Contributor, RepositoryMetrics
+from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 
 
 # ----------------------------
@@ -205,7 +205,7 @@ class TestGitHubAdapter:
 
     @pytest.fixture
     def complete_raw_data(self):
-        """Sample complete raw data from GitHub collector."""
+        """Sample complete raw data from GitHub client."""
         return {
             "repo": {
                 "html_url": "https://github.com/owner/test-repo",

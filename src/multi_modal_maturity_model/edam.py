@@ -11,7 +11,7 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 # Bundled data
-PACKAGE_DATA_DIR = Path(__file__).parent.parent / "data"
+PACKAGE_DATA_DIR = Path(__file__).parent / "data"
 BUNDLED_CACHE_FILE = PACKAGE_DATA_DIR / "edam_format.json"
 
 
@@ -122,6 +122,3 @@ class EDAMCache:
             "terms_with_children": len(self._has_children),
             "leaf_nodes": len(self._leaf_node_uris),
         }
-
-
-edam_cache = EDAMCache()
