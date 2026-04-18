@@ -1,5 +1,5 @@
 """
-Tests for the MaturityAssessor pipeline.
+Tests for the MaturityAssessor.
 """
 
 import pytest
@@ -69,8 +69,8 @@ def test_assess_no_data_sources(assessor):
         assessor.assess()
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
-@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_code_quality")
 def test_assess_with_repository_and_code_quality(
     mock_collect_code_quality,
     mock_collect_repository,
@@ -103,8 +103,8 @@ def test_assess_with_repository_and_code_quality(
     assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
-@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_code_quality")
 def test_assess_with_gitlab(
     mock_collect_code_quality,
     mock_collect_repository,
@@ -150,8 +150,8 @@ def test_assess_with_gitlab(
     assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
-@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_code_quality")
 def test_assess_with_local_path(
     mock_collect_code_quality,
     mock_collect_repository,
@@ -186,7 +186,7 @@ def test_assess_with_local_path(
     assert profile is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
 def test_assess_handles_collector_errors(mock_collect_repository, assessor):
     """Test that assessment continues when a collector fails."""
     # Mock collection to return None (failure)
@@ -200,8 +200,8 @@ def test_assess_handles_collector_errors(mock_collect_repository, assessor):
     assert profile.sustainability.score is None
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_howfairis")
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_howfairis")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
 def test_assess_with_fair_metrics(
     mock_collect_repository, mock_collect_howfairis, assessor, sample_repository_metrics
 ):
@@ -223,7 +223,7 @@ def test_assess_with_fair_metrics(
     mock_collect_howfairis.assert_called_once()
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_publications")
+@patch("multi_modal_maturity_model.assessor.collect_publications")
 def test_assess_with_citation_metrics(mock_collect_publications, assessor):
     """Test assessment with citation metrics."""
     # Return data in the format the mapper expects (flat dict with citation data)
@@ -241,7 +241,7 @@ def test_assess_with_citation_metrics(mock_collect_publications, assessor):
     assert profile.scientific_impact.score > 0.0
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_publications")
+@patch("multi_modal_maturity_model.assessor.collect_publications")
 def test_assess_with_semantic_scholar_metrics(mock_collect_publications, assessor):
     """Test assessment with Semantic Scholar DOI metrics."""
     # Return data in the format the mapper expects
@@ -260,7 +260,7 @@ def test_assess_with_semantic_scholar_metrics(mock_collect_publications, assesso
     assert profile.scientific_impact.score > 0.0
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_publications")
+@patch("multi_modal_maturity_model.assessor.collect_publications")
 def test_assess_merges_europepmc_and_semantic_scholar_metrics(
     mock_collect_publications, assessor
 ):
@@ -283,8 +283,8 @@ def test_assess_merges_europepmc_and_semantic_scholar_metrics(
     mock_collect_publications.assert_called_once()
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_code_quality")
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_code_quality")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
 def test_assess_skip_code_quality(
     mock_collect_repository,
     mock_collect_code_quality,
@@ -305,8 +305,8 @@ def test_assess_skip_code_quality(
     assert profile is not None
 
 
-@patch("multi_modal_maturity_model.pipeline.collect_biotools")
-@patch("multi_modal_maturity_model.pipeline.collect_repository")
+@patch("multi_modal_maturity_model.assessor.collect_biotools")
+@patch("multi_modal_maturity_model.assessor.collect_repository")
 def test_assess_with_biotools_id(
     mock_collect_repository, mock_collect_biotools, assessor, sample_repository_metrics
 ):
