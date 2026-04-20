@@ -8,6 +8,7 @@ import math
 from typing import Any
 
 from .models import Contributor, DimensionScore
+from . import weights as default_weights
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +24,32 @@ _DIMENSION_NAMES = [
 
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
+
+    def __init__(self, weights: dict[str, float] | None = None):
+        """
+        Initialize scorer with optional custom weights.
+
+        Parameters
+        ----------
+        weights : dict[str, float] | None
+            Custom weights organized by dimension.
+            If None, uses default from weights.py.
+            Example:
+            {
+                "compatibility": {"input_formats": 0.25, "output_formats": 0.25, ...},
+                "overall": {"compatibility": 0.2, "fairness": 0.2, ...},
+            }
+        """
+
+        self.weights = weights or {
+            "compatibility": default_weights.COMPATIBILITY,
+            "fairness": default_weights.FAIRNESS,
+            "maintainability": default_weights.MAINTAINABILITY,
+            "sustainability": default_weights.SUSTAINABILITY,
+            "security": default_weights.SECURITY,
+            "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
+            "overall": default_weights.OVERALL,
+        }
 
     def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
         """Return a weighted average, skipping metrics whose value is None.
@@ -59,8 +86,8 @@ class DimensionScorer:
 
         return (1 / hhi) if hhi else None
 
-    @staticmethod
     def calculate_compatibility(
+        self,
         input_formats: float | None = None,
         output_formats: float | None = None,
         workflow_support: float | None = None,
@@ -87,12 +114,17 @@ class DimensionScorer:
         -------
         DimensionScore
         """
+        weights = self.weights.get("compatibility", default_weights.COMPATIBILITY)
+
         score = DimensionScorer._weighted_average(
             {
-                "input_formats": (input_formats, 0.25),
-                "output_formats": (output_formats, 0.25),
-                "workflow_support": (workflow_support, 0.25),
-                "distribution_support": (distribution_support, 0.25),
+                "input_formats": (input_formats, weights["input_formats"]),
+                "output_formats": (output_formats, weights["output_formats"]),
+                "workflow_support": (workflow_support, weights["workflow_support"]),
+                "distribution_support": (
+                    distribution_support,
+                    weights["distribution_support"],
+                ),
             }
         )
 
@@ -107,8 +139,8 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_fairness(
+        self,
         license: bool,
         repository: bool,
         registry: bool,
@@ -118,8 +150,6 @@ class DimensionScorer:
     ) -> DimensionScore:
         """
         Calculate FAIRness dimension.
-
-        Formula: 0.2*license + 0.3*repository + 0.2*registry + 0.1*citation + 0.1*checklist + 0.1*publication_oa
 
         Parameters
         ----------
@@ -140,14 +170,16 @@ class DimensionScorer:
         -------
         DimensionScore
         """
+        weights = self.weights.get("fairness", default_weights.FAIRNESS)
+
         # Convert booleans to 0.0 or 1.0
         score = (
-            0.2 * float(license)
-            + 0.3 * float(repository)
-            + 0.2 * float(registry)
-            + 0.1 * float(citation)
-            + 0.1 * float(checklist)
-            + 0.1 * float(publication_oa)
+            weights["license"] * float(license)
+            + weights["repository"] * float(repository)
+            + weights["registry"] * float(registry)
+            + weights["citation"] * float(citation)
+            + weights["checklist"] * float(checklist)
+            + weights["publication_oa"] * float(publication_oa)
         )
 
         return DimensionScore(
@@ -165,6 +197,7 @@ class DimensionScorer:
 
     @staticmethod
     def calculate_maintainability(
+        self,
         total_nloc: int,
         total_ccn: int,
         avg_ccn: float,
@@ -173,9 +206,6 @@ class DimensionScorer:
     ) -> DimensionScore:
         """
         Calculate Maintainability dimension.
-
-        Based on: total NLOC, total CCN, average CCN, duplicates,
-        programming language age, technology stack size.
 
         Heuristics:
         - Lower NLOC is better (normalized to max 10k)
@@ -201,6 +231,8 @@ class DimensionScorer:
         -------
         DimensionScore
         """
+        weights = self.weights.get("maintainability", default_weights.MAINTAINABILITY)
+
         # Normalize individual metrics (lower is better)
         nloc_score = max(0.0, 1.0 - (total_nloc / 10000.0))
         ccn_score = max(0.0, 1.0 - (total_ccn / 500.0))
@@ -211,10 +243,10 @@ class DimensionScorer:
         lang_penalty = 0.1 if has_old_languages else 0.0
 
         score = (
-            0.3 * nloc_score
-            + 0.2 * ccn_score
-            + 0.25 * avg_ccn_score
-            + 0.25 * dup_score
+            weights["nloc"] * nloc_score
+            + weights["ccn"] * ccn_score
+            + weights["avg_ccn"] * avg_ccn_score
+            + weights["duplicate_rate"] * dup_score
             - lang_penalty
         )
 
@@ -230,8 +262,8 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_sustainability(
+        self,
         avg_issue_close_time_days: float,
         num_open_issues: int,
         days_since_last_commit: int | None,
@@ -263,6 +295,8 @@ class DimensionScorer:
         -------
         DimensionScore
         """
+        weights = self.weights.get("sustainability", default_weights.SUSTAINABILITY)
+
         # Normalize issue close time (lower is better, 30 days as good target)
         close_time_score = max(0.0, 1.0 - (avg_issue_close_time_days / 90.0))
 
@@ -286,10 +320,19 @@ class DimensionScorer:
 
         score = DimensionScorer._weighted_average(
             {
-                "avg_issue_close_time_days": (close_time_score, 0.4),
-                "num_open_issues": (open_issues_score, 0.3),
-                "days_since_last_commit": (recent_score, 0.2),
-                "inverse_simpson_index": (diversity_score, 0.1),
+                "avg_issue_close_time_days": (
+                    close_time_score,
+                    weights["avg_issue_close_time_days"],
+                ),
+                "num_open_issues": (open_issues_score, weights["num_open_issues"]),
+                "days_since_last_commit": (
+                    recent_score,
+                    weights["days_since_last_commit"],
+                ),
+                "inverse_simpson_index": (
+                    diversity_score,
+                    weights["inverse_simpson_index"],
+                ),
             }
         )
 
@@ -304,8 +347,8 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_security(
+        self,
         default_branch_protected: bool,
         has_security_policy: bool | None = None,
         has_security_scanning: bool | None = None,
@@ -329,6 +372,7 @@ class DimensionScorer:
         DimensionScore
         """
         signals = [float(default_branch_protected)]
+
         if has_security_policy is not None:
             signals.append(float(has_security_policy))
         if has_security_scanning is not None:
@@ -344,8 +388,8 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_scientific_impact(
+        self,
         citation_count: int,
         influential_citation_count: int | None,
         max_citations_in_corpus: int,
