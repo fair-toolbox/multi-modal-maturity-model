@@ -71,41 +71,6 @@ class DimensionScorer:
                 "overall": default_weights.OVERALL,
             }
 
-    def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
-        """Return a weighted average, skipping metrics whose value is None.
-
-        Parameters
-        ----------
-        metrics:
-            Mapping of name → (value, weight). Entries with value=None are excluded
-            and the remaining weights are renormalized automatically.
-        """
-        total_weight = sum(w for v, w in metrics.values() if v is not None)
-        if total_weight == 0:
-            return 0.0
-        return sum(v * w for v, w in metrics.values() if v is not None) / total_weight
-
-    @staticmethod
-    def calculate_inverse_simpson_index(
-        contributors: list[Contributor] | None,
-    ) -> float | None:
-        """Calculate contributor diversity from commit shares."""
-        if not contributors:
-            return None
-
-        total_commits = sum(
-            c.total_commits for c in contributors if c.total_commits > 0
-        )
-        if total_commits == 0:
-            return None
-
-        shares = [
-            c.total_commits / total_commits for c in contributors if c.total_commits > 0
-        ]
-        hhi = sum(s**2 for s in shares)
-
-        return (1 / hhi) if hhi else None
-
     def calculate_compatibility(
         self,
         input_formats: float | None = None,
@@ -136,7 +101,7 @@ class DimensionScorer:
         """
         weights = self.weights.get("compatibility", default_weights.COMPATIBILITY)
 
-        score = DimensionScorer._weighted_average(
+        score = _weighted_average(
             {
                 "input_formats": (input_formats, weights["input_formats"]),
                 "output_formats": (output_formats, weights["output_formats"]),
@@ -337,7 +302,7 @@ class DimensionScorer:
         if inverse_simpson_index is not None:
             diversity_score = max(0.0, min(1.0, 1.0 - (1.0 / inverse_simpson_index)))
 
-        score = DimensionScorer._weighted_average(
+        score = _weighted_average(
             {
                 "avg_issue_close_time_days": (
                     close_time_score,
@@ -392,7 +357,7 @@ class DimensionScorer:
         """
         weights = self.weights.get("security", default_weights.SECURITY)
 
-        score = DimensionScorer._weighted_average(
+        score = _weighted_average(
             {
                 "default_branch_protected": (
                     float(default_branch_protected),
@@ -553,3 +518,18 @@ class DimensionScorer:
             score=overall_score,
             details={"weights_used": normalized_weights},
         )
+
+
+def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
+    """Return a weighted average, skipping metrics whose value is None.
+
+    Parameters
+    ----------
+    metrics:
+        Mapping of name → (value, weight). Entries with value=None are excluded
+        and the remaining weights are renormalized automatically.
+    """
+    total_weight = sum(w for v, w in metrics.values() if v is not None)
+    if total_weight == 0:
+        return 0.0
+    return sum(v * w for v, w in metrics.values() if v is not None) / total_weight

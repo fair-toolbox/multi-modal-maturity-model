@@ -183,23 +183,24 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        if not repository_metrics and not fair_metrics and not publication_metrics:
+        if fair_metrics and not publication_metrics:
             logger.warning("No data available for FAIRness scoring")
             return DimensionScore(name="FAIRness", score=None)
 
-        fair_metrics = fair_metrics or {}
-        publication_metrics = publication_metrics or {}
-
-        license_val = fair_metrics.get("license") or (
-            repository_metrics.has_license if repository_metrics else False
+        license_val = (
+            fair_metrics.license
+            if fair_metrics
+            else repository_metrics.has_license if repository_metrics else False
         )
         values = {
             "license": license_val,
-            "repository": fair_metrics.get("repository", False),
-            "registry": fair_metrics.get("registry", False),
-            "citation": fair_metrics.get("citation", False),
-            "checklist": fair_metrics.get("checklist", False),
-            "publication_oa": publication_metrics.get("is_open_access", False),
+            "repository": fair_metrics.repository if fair_metrics else False,
+            "registry": fair_metrics.registry if fair_metrics else False,
+            "citation": fair_metrics.citation if fair_metrics else False,
+            "checklist": fair_metrics.checklist if fair_metrics else False,
+            "publication_oa": (
+                publication_metrics.is_open_access if publication_metrics else False
+            ),
         }
         return self.scorer.calculate_fairness(**values)
 
@@ -262,7 +263,7 @@ class MaturityMapper:
         )
 
     def _map_scientific_impact(
-        self, publication_metrics: dict[str, Any] | None
+        self, publication_metrics: PublicationMetrics | None
     ) -> DimensionScore:
         """
         Map citation data to Scientific Impact dimension.
@@ -271,17 +272,9 @@ class MaturityMapper:
             logger.warning("No publication metrics available for scientific impact")
             return DimensionScore(name="Scientific Impact", score=None)
 
-        citation_count = publication_metrics.get(
-            "citation_count",
-            publication_metrics.get("citationCount", 0),
-        )
-        influential_citation_count = publication_metrics.get(
-            "influential_citation_count",
-            publication_metrics.get("influentialCitationCount"),
-        )
-
         return self.scorer.calculate_scientific_impact(
-            citation_count=citation_count,
-            influential_citation_count=influential_citation_count,
+            citation_count=publication_metrics.citation_count or 0,
+            influential_citation_count=publication_metrics.influential_citation_count
+            or 0,
             max_citations_in_corpus=self.max_citations_corpus,
         )
