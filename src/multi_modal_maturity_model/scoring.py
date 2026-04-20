@@ -9,6 +9,7 @@ from typing import Any
 
 from .models import Contributor, DimensionScore
 from . import weights as default_weights
+from .weights import validate_weights
 
 logger = logging.getLogger(__name__)
 
@@ -25,13 +26,13 @@ _DIMENSION_NAMES = [
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
 
-    def __init__(self, weights: dict[str, float] | None = None):
+    def __init__(self, weights: dict[str, dict[str, float]] | None = None):
         """
         Initialize scorer with optional custom weights.
 
         Parameters
         ----------
-        weights : dict[str, float] | None
+        weights : dict[str, dict[str, float]] | None
             Custom weights organized by dimension.
             If None, uses default from weights.py.
             Example:
@@ -39,17 +40,36 @@ class DimensionScorer:
                 "compatibility": {"input_formats": 0.25, "output_formats": 0.25, ...},
                 "overall": {"compatibility": 0.2, "fairness": 0.2, ...},
             }
-        """
 
-        self.weights = weights or {
-            "compatibility": default_weights.COMPATIBILITY,
-            "fairness": default_weights.FAIRNESS,
-            "maintainability": default_weights.MAINTAINABILITY,
-            "sustainability": default_weights.SUSTAINABILITY,
-            "security": default_weights.SECURITY,
-            "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
-            "overall": default_weights.OVERALL,
-        }
+        Raises
+        ------
+        ValueError
+            If custom weights are incomplete for any dimension
+        """
+        if weights is not None:
+            validate_weights(weights)
+
+            self.weights = {
+                "compatibility": default_weights.COMPATIBILITY,
+                "fairness": default_weights.FAIRNESS,
+                "maintainability": default_weights.MAINTAINABILITY,
+                "sustainability": default_weights.SUSTAINABILITY,
+                "security": default_weights.SECURITY,
+                "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
+                "overall": default_weights.OVERALL,
+            }
+            # Override with custom weights
+            self.weights.update(weights)
+        else:
+            self.weights = {
+                "compatibility": default_weights.COMPATIBILITY,
+                "fairness": default_weights.FAIRNESS,
+                "maintainability": default_weights.MAINTAINABILITY,
+                "sustainability": default_weights.SUSTAINABILITY,
+                "security": default_weights.SECURITY,
+                "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
+                "overall": default_weights.OVERALL,
+            }
 
     def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
         """Return a weighted average, skipping metrics whose value is None.
@@ -195,7 +215,6 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_maintainability(
         self,
         total_nloc: int,
@@ -371,16 +390,36 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        signals = [float(default_branch_protected)]
+        weights = self.weights.get("security", default_weights.SECURITY)
 
-        if has_security_policy is not None:
-            signals.append(float(has_security_policy))
-        if has_security_scanning is not None:
-            signals.append(float(has_security_scanning))
+        score = DimensionScorer._weighted_average(
+            {
+                "default_branch_protected": (
+                    float(default_branch_protected),
+                    weights["default_branch_protected"],
+                ),
+                "has_security_policy": (
+                    (
+                        float(has_security_policy)
+                        if has_security_policy is not None
+                        else None
+                    ),
+                    weights["has_security_policy"],
+                ),
+                "has_security_scanning": (
+                    (
+                        float(has_security_scanning)
+                        if has_security_scanning is not None
+                        else None
+                    ),
+                    weights["has_security_scanning"],
+                ),
+            }
+        )
 
         return DimensionScore(
             name="Security",
-            score=sum(signals) / len(signals),
+            score=min(1.0, max(0.0, score)),
             details={
                 "default_branch_protected": default_branch_protected,
                 "has_security_policy": has_security_policy,
@@ -397,7 +436,7 @@ class DimensionScorer:
         """
         Calculate Scientific Impact dimension.
 
-        Formula: log(citation_count + 0.5) / log(max_citations + 0.5)
+        Formula: weighted combination of normalized citation metrics
 
         This normalizes citation counts logarithmically against the maximum
         in the corpus to account for scale differences across research areas.
@@ -415,6 +454,10 @@ class DimensionScorer:
         -------
         DimensionScore
         """
+        weights = self.weights.get(
+            "scientific_impact", default_weights.SCIENTIFIC_IMPACT
+        )
+
         if max_citations_in_corpus <= 0:
             max_citations_in_corpus = 1000  # Default fallback
 
@@ -432,7 +475,10 @@ class DimensionScorer:
             )
 
         if influential_component is not None:
-            score = (0.7 * citation_component) + (0.3 * influential_component)
+            score = (
+                weights["citation_count"] * citation_component
+                + weights["influential_citation_count"] * influential_component
+            )
         else:
             score = citation_component
 
@@ -446,19 +492,17 @@ class DimensionScorer:
             },
         )
 
-    @staticmethod
     def calculate_overall_score(
-        dimensions: list[DimensionScore], weights: dict[str, float] | None = None
+        self,
+        dimensions: list[DimensionScore],
     ) -> DimensionScore:
         """
-        Calculate overall maturity score as average of all dimensions.
+        Calculate overall maturity score as weighted average of all dimensions.
 
         Parameters
         ----------
         dimensions : list[DimensionScore]
             List of dimension scores
-        weights : dict[str, float] | None
-            Optional weights for each dimension. Equal weighting if None.
 
         Returns
         -------
@@ -476,17 +520,36 @@ class DimensionScorer:
                 details={"note": "All dimension scores are None."},
             )
 
+        weights = self.weights.get("overall", default_weights.OVERALL)
+
+        # Build weighted pairs for available dimensions
         available_pairs = [
             (dim, name)
             for dim, name in zip(dimensions, _DIMENSION_NAMES)
             if dim.score is not None
         ]
 
-        # TODO input weights and normalize
-        # Return if total_weight is zero
+        # Normalize weights for available dimensions only
+        available_weights = {
+            name: weights.get(name, 0.0) for dim, name in available_pairs
+        }
 
-        overall_score = sum(dim.score for dim, name in available_pairs) / len(
-            available_pairs
+        total_weight = sum(available_weights.values())
+        if total_weight == 0:
+            return DimensionScore(
+                name="Overall",
+                score=None,
+                details={"note": "All dimension weights are zero."},
+            )
+
+        normalized_weights = {k: v / total_weight for k, v in available_weights.items()}
+
+        overall_score = sum(
+            dim.score * normalized_weights[name] for dim, name in available_pairs
         )
 
-        return DimensionScore(name="Overall", score=overall_score, details={})
+        return DimensionScore(
+            name="Overall",
+            score=overall_score,
+            details={"weights_used": normalized_weights},
+        )
