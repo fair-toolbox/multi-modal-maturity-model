@@ -79,6 +79,7 @@ class MaturityAssessor:
         github_token: str | None = None,
         gitlab_token: str | None = None,
         max_citations_corpus: int = 1000,
+        weights: dict[str, dict[str, float]] | None = None,
     ):
         """
         Initialize the maturity assessor.
@@ -92,12 +93,28 @@ class MaturityAssessor:
         max_citations_corpus : int
             Maximum citations in reference corpus for normalizing
             scientific impact (default: 1000)
+        weights : dict[str, dict[str, float]] | None
+            Custom weights for dimensions and overall score.
+            If None, uses defaults from weights.py.
+            Example:
+            {
+                "compatibility": {"input_formats": 0.3, "output_formats": 0.3, ...},
+                "overall": {"fairness": 0.3, "sustainability": 0.3, ...},
+            }
         """
+
+        if not github_token and not gitlab_token:
+            raise ValueError(
+                "At least one API token (GitHub or GitLab) must be provided."
+            )
+
         self.github_token = github_token
         self.gitlab_token = gitlab_token
         self.max_citations_corpus = max_citations_corpus
 
-        self.mapper = MaturityMapper(max_citations_corpus=max_citations_corpus)
+        self.mapper = MaturityMapper(
+            max_citations_corpus=max_citations_corpus, weights=weights
+        )
 
         self.github_client = GitHubClient(token=github_token)
         self.gitlab_client = GitLabClient(token=gitlab_token)

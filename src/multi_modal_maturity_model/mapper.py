@@ -30,7 +30,11 @@ class MaturityMapper:
     and the dimension scoring functions.
     """
 
-    def __init__(self, max_citations_corpus: int = 1000):
+    def __init__(
+        self,
+        max_citations_corpus: int = 1000,
+        weights: dict[str, dict[str, float]] | None = None,
+    ):
         """
         Initialize the mapper.
 
@@ -39,9 +43,12 @@ class MaturityMapper:
         max_citations_corpus : int
             Maximum citations in reference corpus for normalizing
             scientific impact (default: 1000)
+        weights : dict[str, dict[str, float]] | None
+            Custom weights for dimensions and overall score.
+            If None, uses defaults from weights.py.
         """
         self.max_citations_corpus = max_citations_corpus
-        self.scorer = DimensionScorer()
+        self.scorer = DimensionScorer(weights=weights)
 
     def map_to_maturity_profile(
         self,
