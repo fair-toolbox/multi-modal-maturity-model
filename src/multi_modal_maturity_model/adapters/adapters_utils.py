@@ -1,8 +1,9 @@
 """Shared utility functions for adapters."""
 
-from datetime import datetime
-from fnmatch import fnmatch
 import logging
+
+from datetime import datetime, timezone
+from fnmatch import fnmatch
 from pathlib import PurePosixPath
 from typing import Any
 
@@ -101,6 +102,33 @@ def calculate_avg_time_to_close(closed_issues: list[Any] | None) -> float | None
                 continue
 
     return round(total_days / count, 2) if count > 0 else None
+
+
+def calculate_days_since_commit(last_commit_date: str) -> int | None:
+    """Calculate days since last commit."""
+    try:
+        dt = parse_iso_datetime(last_commit_date)
+        now = datetime.now(dt.tzinfo or timezone.utc)
+        return max(0, (now - dt).days)
+    except ValueError:
+        return None
+
+
+def calculate_inverse_simpson_index(contributors: list[Any]) -> float | None:
+    """Calculate inverse Simpson index for contributor diversity."""
+    if not contributors:
+        return None
+
+    total_commits = sum(c.total_commits for c in contributors if c.total_commits > 0)
+    if total_commits == 0:
+        return None
+
+    shares = [
+        c.total_commits / total_commits for c in contributors if c.total_commits > 0
+    ]
+    hhi = sum(s**2 for s in shares)
+
+    return round(1 / hhi, 2) if hhi else None
 
 
 def extract_repository_file_paths(
