@@ -16,14 +16,13 @@ FAIRNESS = {
 
 MAINTAINABILITY = {
     "nloc": 0.3,
-    "cnn": 0.2,
+    "ccn": 0.2,
     "avg_ccn": 0.25,
     "duplicate_rate": 0.25,
-    "lang_penalty": 0,
 }
 
 SUSTAINABILITY = {
-    "avg_time_to_close": 0.4,
+    "avg_issue_close_time_days": 0.4,
     "num_open_issues": 0.3,
     "days_since_last_commit": 0.2,
     "inverse_simpson_index": 0.1,
@@ -48,3 +47,54 @@ OVERALL = {
     "security": 0.1,
     "sustainability": 0.2,
 }
+
+REQUIRED_METRICS = {
+    "compatibility": set(COMPATIBILITY.keys()),
+    "fairness": set(FAIRNESS.keys()),
+    "maintainability": set(MAINTAINABILITY.keys()),
+    "sustainability": set(SUSTAINABILITY.keys()),
+    "security": set(SECURITY.keys()),
+    "scientific_impact": set(SCIENTIFIC_IMPACT.keys()),
+    "overall": set(OVERALL.keys()),
+}
+
+
+def validate_weights(custom_weights: dict[str, dict[str, float]]) -> None:
+    """
+    Validate that custom weights are complete for each dimension.
+
+    Parameters
+    ----------
+    custom_weights : dict[str, dict[str, float]]
+        Custom weights organized by dimension
+
+    Raises
+    ------
+    ValueError
+        If weights are incomplete for any dimension
+    """
+    for dimension, weights in custom_weights.items():
+        if dimension not in REQUIRED_METRICS:
+            raise ValueError(
+                f"Unknown dimension '{dimension}'. "
+                f"Valid dimensions: {', '.join(REQUIRED_METRICS.keys())}"
+            )
+
+        required = REQUIRED_METRICS[dimension]
+        provided = set(weights.keys())
+
+        if provided != required:
+            missing = required - provided
+            extra = provided - required
+
+            error_parts = [f"Incomplete weights for '{dimension}' dimension."]
+
+            if missing:
+                error_parts.append(f"Missing metrics: {', '.join(sorted(missing))}")
+
+            if extra:
+                error_parts.append(f"Unknown metrics: {', '.join(sorted(extra))}")
+
+            error_parts.append(f"Required metrics: {', '.join(sorted(required))}")
+
+            raise ValueError(" ".join(error_parts))
