@@ -12,7 +12,9 @@ from .adapters.adapters_utils import parse_iso_datetime
 from .models import (
     CodeQualityMetrics,
     DimensionScore,
+    HowfairisMetrics,
     MaturityProfile,
+    PublicationMetrics,
     RepositoryMetrics,
     ToolModel,
 )
@@ -55,8 +57,8 @@ class MaturityMapper:
         tool_model: ToolModel | None = None,
         repository_metrics: RepositoryMetrics | None = None,
         code_quality_metrics: CodeQualityMetrics | None = None,
-        fair_metrics: dict[str, Any] | None = None,
-        citation_metrics: dict[str, Any] | None = None,
+        fair_metrics: HowfairisMetrics | None = None,
+        publication_metrics: PublicationMetrics | None = None,
     ) -> MaturityProfile:
         """
         Map all collected metrics to a complete MaturityProfile.
@@ -69,9 +71,9 @@ class MaturityMapper:
             From GitHubAdapter/GitLabAdapter (for sustainability, security)
         code_quality_metrics : CodeQualityMetrics | None
             From LizardAnalyzer (for maintainability)
-        fair_metrics : dict[str, Any] | None
+        fair_metrics : HowfairisMetrics | None
             From HowfairisAnalyzer (for FAIRness)
-        citation_metrics : dict[str, Any] | None
+        publication_metrics : PublicationMetrics | None
             From EuropePMCClient (for scientific impact)
 
         Returns
@@ -82,12 +84,12 @@ class MaturityMapper:
         # Calculate each dimension
         compatibility = self._map_compatibility(tool_model, repository_metrics)
         fairness = self._map_fairness(
-            repository_metrics, fair_metrics, citation_metrics
+            repository_metrics, fair_metrics, publication_metrics
         )
         maintainability = self._map_maintainability(code_quality_metrics)
         sustainability = self._map_sustainability(repository_metrics)
         security = self._map_security(repository_metrics)
-        scientific_impact = self._map_scientific_impact(citation_metrics)
+        scientific_impact = self._map_scientific_impact(publication_metrics)
 
         # Calculate overall score
         dimensions = [
@@ -170,8 +172,8 @@ class MaturityMapper:
     def _map_fairness(
         self,
         repository_metrics: RepositoryMetrics | None,
-        fair_metrics: dict[str, Any] | None,
-        publication_metrics: dict[str, Any] | None,
+        fair_metrics: HowfairisMetrics | None,
+        publication_metrics: PublicationMetrics | None,
     ) -> DimensionScore:
         """
         Map data from multiple sources to FAIRness dimension.
@@ -275,22 +277,22 @@ class MaturityMapper:
         )
 
     def _map_scientific_impact(
-        self, citation_metrics: dict[str, Any] | None
+        self, publication_metrics: dict[str, Any] | None
     ) -> DimensionScore:
         """
         Map citation data to Scientific Impact dimension.
         """
-        if not citation_metrics:
-            logger.warning("No citation metrics available for scientific impact")
+        if not publication_metrics:
+            logger.warning("No publication metrics available for scientific impact")
             return DimensionScore(name="Scientific Impact", score=None)
 
-        citation_count = citation_metrics.get(
+        citation_count = publication_metrics.get(
             "citation_count",
-            citation_metrics.get("citationCount", 0),
+            publication_metrics.get("citationCount", 0),
         )
-        influential_citation_count = citation_metrics.get(
+        influential_citation_count = publication_metrics.get(
             "influential_citation_count",
-            citation_metrics.get("influentialCitationCount"),
+            publication_metrics.get("influentialCitationCount"),
         )
 
         return self.scorer.calculate_scientific_impact(

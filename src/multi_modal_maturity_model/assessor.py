@@ -25,9 +25,11 @@ from multi_modal_maturity_model.clients import (
 
 from .models import (
     CodeQualityMetrics,
-    MaturityProfile,
+    HowfairisMetrics,
+    PublicationMetrics,
     RepositoryMetrics,
     ToolModel,
+    MaturityProfile,
 )
 from .mapper import MaturityMapper
 
@@ -49,8 +51,8 @@ class CollectedMetricsBundle:
     tool_model: ToolModel | None
     repository_metrics: RepositoryMetrics | None
     code_quality_metrics: CodeQualityMetrics | None
-    fair_metrics: dict[str, Any] | None
-    publication_metrics: dict[str, Any] | None
+    fair_metrics: HowfairisMetrics | None
+    publication_metrics: PublicationMetrics | None
 
 
 class MaturityAssessor:

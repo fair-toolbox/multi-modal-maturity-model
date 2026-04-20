@@ -66,6 +66,15 @@ class CodeQualityMetrics:
 
 
 @dataclass
+class HowfairisMetrics:
+    license: bool
+    repository: bool
+    registry: bool
+    citation: bool
+    checklist: bool
+
+
+@dataclass
 class PublicationMetrics:
     doi: str | None
     pmid: str | None
