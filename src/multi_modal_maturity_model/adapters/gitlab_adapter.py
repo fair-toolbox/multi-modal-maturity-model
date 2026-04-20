@@ -29,9 +29,6 @@ LICENSE_FILENAMES = {
 class GitLabAdapter:
     """
     Transform raw GitLab API data into RepositoryMetrics domain model.
-
-    This adapter takes the dictionary returned by GitLabClient.fetch()
-    and converts it into a structured RepositoryMetrics object.
     """
 
     @staticmethod
