@@ -1,3 +1,7 @@
+import logging
+
+from typing import Any
+
 from .adapters import BioToolsAdapter, GitHubAdapter, GitLabAdapter
 from .analyzers import HowfairisAnalyzer, LizardAnalyzer
 from .clients import (
@@ -5,12 +9,12 @@ from .clients import (
     EuropePMCClient,
     GitHubClient,
     GitLabClient,
+    OpenAlexClient,
     SemanticScholarClient,
 )
-from .models import CodeQualityMetrics, RepositoryMetrics, ToolModel
+from .models import CodeQualityMetrics, PublicationMetrics, RepositoryMetrics, ToolModel
 from .utils import temporary_clone
 
-import logging
 
 logger = logging.getLogger(__name__)
 
@@ -63,18 +67,24 @@ def collect_howfairis(client: HowfairisAnalyzer, repo_url: str) -> dict | None:
 
 def collect_publications(
     epmc_client: EuropePMCClient,
+    openalex_client: OpenAlexClient,
     ss_client: SemanticScholarClient,
     pmid: str | None = None,
     doi: str | None = None,
-) -> dict | None:
+) -> PublicationMetrics | None:
     """Collect and normalize publication metrics."""
     try:
-        epmc_data = epmc_client.fetch(pmid)
+        epmc_data = epmc_client.fetch(pmid=pmid, doi=doi)
         ss_data = ss_client.fetch(doi)
-        openalex_data = None
-        # TODO Process and combine data as needed
+        openalex_data = openalex_client.fetch(pmid=pmid, doi=doi)
 
-        return {"epmc": epmc_data, "semantic_scholar": ss_data}
+        publication_metrics = _merge_publication_metrics(
+            epmc=epmc_data,
+            openalex=openalex_data,
+            semantic_scholar=ss_data,
+        )
+
+        return publication_metrics
     except Exception as e:
         logger.warning(
             f"Failed to collect publication metrics for PMID {pmid} and DOI {doi}: {e}"
@@ -98,30 +108,36 @@ def collect_repository(
         )
         return None
 
-    # def _merge_citation_metrics(
-    #    self,
-    #    europepmc_metrics: dict[str, Any] | None,
-    #    semantic_scholar_metrics: dict[str, Any] | None,
-    # ) -> dict[str, Any] | None:
-    #    """Merge citation metrics from Europe PMC and Semantic Scholar."""
-    #    if not europepmc_metrics and not semantic_scholar_metrics:
-    #        return None
-    #    merged_metrics: dict[str, Any] = dict(europepmc_metrics or {})
-    #    if semantic_scholar_metrics:
-    #        merged_metrics.update(
-    #            {
-    #                "doi": semantic_scholar_metrics.get("externalIds", {}).get("DOI"),
-    #                "title": semantic_scholar_metrics.get("title"),
-    #                "citation_count": merged_metrics.get(
-    #                    "citation_count",
-    #                    semantic_scholar_metrics.get("citationCount"),
-    #                ),
-    #                "reference_count": semantic_scholar_metrics.get("referenceCount"),
-    #                "year": semantic_scholar_metrics.get("year"),
-    #                "authors": semantic_scholar_metrics.get("authors"),
-    #                "influential_citation_count": semantic_scholar_metrics.get(
-    #                    "influentialCitationCount"
-    #                ),
-    #            }
-    #        )
-    #    return merged_metrics
+
+def _merge_publication_metrics(
+    epmc=dict[str, Any] | None,
+    openalex=dict[str, Any] | None,
+    semantic_scholar=dict[str, Any] | None,
+) -> PublicationMetrics | None:
+    """Merge publication metrics from multiple sources."""
+
+    if not epmc and not openalex and not semantic_scholar:
+        return None
+
+    merged_metrics = PublicationMetrics(
+        doi=(
+            semantic_scholar.get("externalIds", {}).get("DOI")
+            if semantic_scholar
+            else epmc.get("doi") if epmc else openalex.get("doi")
+        ),
+        pmid=epmc.get("pmid") if epmc else openalex.get("pmid") if openalex else None,
+        citation_count=(
+            semantic_scholar.get("citationCount")
+            if semantic_scholar
+            else epmc.get("citation_count") if epmc else openalex.get("citation_count")
+        ),
+        fwci=openalex.get("fwci") if openalex else None,
+        influential_citation_count=(
+            semantic_scholar.get("influentialCitationCount")
+            if semantic_scholar
+            else None
+        ),
+        altmetric_score=None,
+    )
+
+    return merged_metrics

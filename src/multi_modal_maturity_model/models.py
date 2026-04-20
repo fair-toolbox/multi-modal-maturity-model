@@ -31,6 +31,12 @@ class EDAMItem:
 
 
 @dataclass
+class Contributor:
+    login: str
+    total_commits: int
+
+
+@dataclass
 class RepositoryMetrics:
     platform: str
     url: str
@@ -60,9 +66,13 @@ class CodeQualityMetrics:
 
 
 @dataclass
-class Contributor:
-    login: str
-    total_commits: int
+class PublicationMetrics:
+    doi: str | None
+    pmid: str | None
+    citation_count: int | None
+    fwci: float | None
+    influential_citation_count: int | None
+    altmetric_score: float | None
 
 
 @dataclass

@@ -7,6 +7,7 @@ from .biotools import BioToolsClient
 from .europe_pmc import EuropePMCClient
 from .github import GitHubClient
 from .gitlab import GitLabClient
+from .openalex import OpenAlexClient
 from .semantic_scholar import SemanticScholarClient
 
 __all__ = [
@@ -14,5 +15,6 @@ __all__ = [
     "EuropePMCClient",
     "GitHubClient",
     "GitLabClient",
+    "OpenAlexClient",
     "SemanticScholarClient",
 ]

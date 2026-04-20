@@ -20,9 +20,6 @@ logger = logging.getLogger(__name__)
 class GitHubAdapter:
     """
     Transform raw GitHub API data into RepositoryMetrics domain model.
-
-    This adapter takes the dictionary returned by GitHubClient.fetch()
-    and converts it into a structured RepositoryMetrics object.
     """
 
     @staticmethod
