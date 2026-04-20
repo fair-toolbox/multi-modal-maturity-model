@@ -99,6 +99,7 @@ class PublicationMetrics:
     fwci: float | None
     influential_citation_count: int | None
     altmetric_score: float | None
+    is_open_access: bool | None
 
 
 @dataclass
