@@ -241,7 +241,7 @@ class MaturityAssessor:
         doi: str | None,
         platform: str | None,
         include_code_quality: bool,
-    ) -> dict[str, Any]:
+    ) -> CollectedMetricsBundle:
         """
         Run the data collection pipeline.
 
