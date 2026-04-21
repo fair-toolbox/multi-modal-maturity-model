@@ -60,18 +60,7 @@ class RepositoryMetrics:
     has_distribution_support: bool | None
     has_security_policy: bool | None
     has_security_scanning: bool | None
-
-    @property
-    def days_since_last_commit(self) -> float | None:
-        if not self.last_commit_date:
-            return None
-        return calculate_days_since_commit(self.last_commit_date)
-
-    @property
-    def contributor_diversity(self) -> float | None:
-        if not self.contributors:
-            return None
-        return calculate_inverse_simpson_index(self.contributors)
+    inverse_simpson_index: float | None
 
 
 @dataclass

@@ -8,6 +8,7 @@ from typing import Any
 from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 from multi_modal_maturity_model.adapters.adapters_utils import (
     calculate_avg_time_to_close,
+    calculate_inverse_simpson_index,
     detect_distribution_support,
     detect_security_policy,
     detect_security_scanning,
@@ -42,13 +43,14 @@ class GitHubAdapter:
 
         contributors = transform_contributors(raw_data.get("contributors"))
         languages = extract_languages(raw_data.get("languages"))
-        avg_time_to_close = calculate_avg_time_to_close(raw_data.get("closed_issues"))
         has_license = repo.get("license") is not None
         repository_tree = raw_data.get("contents")
         has_workflow_integration = detect_workflow_support(repository_tree)
         has_distribution_support = detect_distribution_support(repository_tree)
         has_security_policy = detect_security_policy(repository_tree)
         has_security_scanning = detect_security_scanning(repository_tree)
+        avg_time_to_close = calculate_avg_time_to_close(raw_data.get("closed_issues"))
+        inverse_simpson_index = calculate_inverse_simpson_index(contributors)
 
         return RepositoryMetrics(
             platform="github",
@@ -68,6 +70,7 @@ class GitHubAdapter:
             has_security_policy=has_security_policy,
             has_security_scanning=has_security_scanning,
             last_commit_date=repo.get("pushed_at"),
+            inverse_simpson_index=inverse_simpson_index,
         )
 
 
