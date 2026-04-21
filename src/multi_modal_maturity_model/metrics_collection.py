@@ -152,6 +152,11 @@ def _merge_publication_metrics(
             else None
         ),
         altmetric_score=None,
+        is_open_access=(
+            semantic_scholar.get("isOpenAccess")
+            if semantic_scholar
+            else openalex.get("is_oa") if openalex else None
+        ),
     )
 
     return merged_metrics
