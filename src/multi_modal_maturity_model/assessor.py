@@ -192,7 +192,7 @@ class MaturityAssessor:
             repository_metrics=bundle.repository_metrics,
             code_quality_metrics=bundle.code_quality_metrics,
             fair_metrics=bundle.fair_metrics,
-            citation_metrics=bundle.publication_metrics,
+            publication_metrics=bundle.publication_metrics,
         )
 
         logger.info(f"Assessment complete.")

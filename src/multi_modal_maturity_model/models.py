@@ -1,11 +1,6 @@
 from dataclasses import dataclass
 from typing import Any
 
-from .adapters.adapters_utils import (
-    calculate_days_since_commit,
-    calculate_inverse_simpson_index,
-)
-
 
 @dataclass
 class ToolModel:

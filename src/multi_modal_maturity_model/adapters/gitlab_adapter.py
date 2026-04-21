@@ -5,8 +5,8 @@ Adapter for transforming GitLab client data into core models.
 import logging
 from typing import Any
 
-from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
-from multi_modal_maturity_model.adapters.adapters_utils import (
+from ..models import Contributor, RepositoryMetrics
+from .adapters_utils import (
     calculate_avg_time_to_close,
     calculate_inverse_simpson_index,
     detect_distribution_support,
