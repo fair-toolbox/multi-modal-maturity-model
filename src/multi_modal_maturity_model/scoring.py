@@ -8,8 +8,7 @@ import math
 from typing import Any
 
 from .models import Contributor, DimensionScore
-from . import weights as default_weights
-from .weights import validate_weights
+from .weights import WeightsConfig
 
 logger = logging.getLogger(__name__)
 
@@ -26,16 +25,21 @@ _DIMENSION_NAMES = [
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
 
-    def __init__(self, weights: dict[str, dict[str, float]] | None = None):
+    def __init__(
+        self, weights: dict[str, dict[str, float]] | WeightsConfig | None = None
+    ):
         """
         Initialize scorer with optional custom weights.
 
         Parameters
         ----------
-        weights : dict[str, dict[str, float]] | None
-            Custom weights organized by dimension.
-            If None, uses default from weights.py.
-            Example:
+        weights : dict[str, dict[str, float]] | WeightsConfig | None
+            Custom weights configuration. Can be:
+            - None: use default weights
+            - dict: validate and create WeightsConfig
+            - WeightsConfig: use pre-validated config object
+
+            Example dict:
             {
                 "compatibility": {"input_formats": 0.25, "output_formats": 0.25, ...},
                 "overall": {"compatibility": 0.2, "fairness": 0.2, ...},
@@ -44,32 +48,13 @@ class DimensionScorer:
         Raises
         ------
         ValueError
-            If custom weights are incomplete for any dimension
+            If weights dict is invalid (via WeightsConfig validation)
         """
-        if weights is not None:
-            validate_weights(weights)
-
-            self.weights = {
-                "compatibility": default_weights.COMPATIBILITY,
-                "fairness": default_weights.FAIRNESS,
-                "maintainability": default_weights.MAINTAINABILITY,
-                "sustainability": default_weights.SUSTAINABILITY,
-                "security": default_weights.SECURITY,
-                "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
-                "overall": default_weights.OVERALL,
-            }
-            # Override with custom weights
-            self.weights.update(weights)
+        if isinstance(weights, WeightsConfig):
+            self._config = weights
         else:
-            self.weights = {
-                "compatibility": default_weights.COMPATIBILITY,
-                "fairness": default_weights.FAIRNESS,
-                "maintainability": default_weights.MAINTAINABILITY,
-                "sustainability": default_weights.SUSTAINABILITY,
-                "security": default_weights.SECURITY,
-                "scientific_impact": default_weights.SCIENTIFIC_IMPACT,
-                "overall": default_weights.OVERALL,
-            }
+            # weights is either dict or None
+            self._config = WeightsConfig(weights)
 
     def calculate_compatibility(
         self,
@@ -99,7 +84,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get("compatibility", default_weights.COMPATIBILITY)
+        weights = self._config.get("compatibility")
 
         score = _weighted_average(
             {
@@ -155,7 +140,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get("fairness", default_weights.FAIRNESS)
+        weights = self._config.get("fairness")
 
         # Convert booleans to 0.0 or 1.0
         score = (
@@ -215,7 +200,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get("maintainability", default_weights.MAINTAINABILITY)
+        weights = self._config.get("maintainability")
 
         # Normalize individual metrics (lower is better)
         nloc_score = max(0.0, 1.0 - (total_nloc / 10000.0))
@@ -279,7 +264,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get("sustainability", default_weights.SUSTAINABILITY)
+        weights = self._config.get("sustainability")
 
         # Normalize issue close time (lower is better, 30 days as good target)
         close_time_score = max(0.0, 1.0 - (avg_issue_close_time_days / 90.0))
@@ -355,7 +340,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get("security", default_weights.SECURITY)
+        weights = self._config.get("security")
 
         score = _weighted_average(
             {
@@ -419,9 +404,7 @@ class DimensionScorer:
         -------
         DimensionScore
         """
-        weights = self.weights.get(
-            "scientific_impact", default_weights.SCIENTIFIC_IMPACT
-        )
+        weights = self._config.get("scientific_impact")
 
         if max_citations_in_corpus <= 0:
             max_citations_in_corpus = 1000  # Default fallback
@@ -485,7 +468,7 @@ class DimensionScorer:
                 details={"note": "All dimension scores are None."},
             )
 
-        weights = self.weights.get("overall", default_weights.OVERALL)
+        weights = self._config.get("overall")
 
         # Build weighted pairs for available dimensions
         available_pairs = [

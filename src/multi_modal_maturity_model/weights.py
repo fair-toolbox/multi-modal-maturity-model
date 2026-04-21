@@ -98,3 +98,76 @@ def validate_weights(custom_weights: dict[str, dict[str, float]]) -> None:
             error_parts.append(f"Required metrics: {', '.join(sorted(required))}")
 
             raise ValueError(" ".join(error_parts))
+
+
+class WeightsConfig:
+    """
+    Configuration for dimension and overall score weights.
+
+
+    Example
+    -------
+    >>> # Use defaults
+    >>> config = WeightsConfig()
+    >>> config.get("fairness")
+    {'license': 0.2, 'repository': 0.3, ...}
+
+    >>> # Use custom weights (validated and merged with defaults)
+    >>> custom = {"fairness": {"license": 0.5, "repository": 0.2, ...}}
+    >>> config = WeightsConfig(custom)
+    """
+
+    def __init__(self, custom_weights: dict[str, dict[str, float]] | None = None):
+        """
+        Initialize weights configuration.
+
+        Parameters
+        ----------
+        custom_weights : dict[str, dict[str, float]] | None
+            Custom weights organized by dimension. If None, uses defaults.
+            If provided, validates completeness and merges with defaults.
+
+            Example:
+            {
+                "fairness": {"license": 0.5, "repository": 0.2, ...},
+                "overall": {"compatibility": 0.3, "fairness": 0.3, ...}
+            }
+
+        Raises
+        ------
+        ValueError
+            If custom weights are invalid or incomplete
+        """
+        # Start with defaults
+        self._weights = {
+            "compatibility": COMPATIBILITY.copy(),
+            "fairness": FAIRNESS.copy(),
+            "maintainability": MAINTAINABILITY.copy(),
+            "sustainability": SUSTAINABILITY.copy(),
+            "security": SECURITY.copy(),
+            "scientific_impact": SCIENTIFIC_IMPACT.copy(),
+            "overall": OVERALL.copy(),
+        }
+
+        # Validate and merge custom weights
+        if custom_weights:
+            validate_weights(custom_weights)
+            # Override only the dimensions provided
+            for dimension, weights in custom_weights.items():
+                self._weights[dimension] = weights.copy()
+
+    def get(self, dimension: str) -> dict[str, float]:
+        """
+        Get weights for a specific dimension.
+        """
+        return self._weights[dimension]
+
+    def to_dict(self) -> dict[str, dict[str, float]]:
+        """
+        Export all weights as a dictionary.
+        """
+        return {k: v.copy() for k, v in self._weights.items()}
+
+    def __repr__(self) -> str:
+        """String representation."""
+        return f"WeightsConfig(dimensions={list(self._weights.keys())})"
