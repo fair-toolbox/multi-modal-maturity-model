@@ -59,12 +59,6 @@ class MaturityAssessor:
     """
     High-level orchestrator for complete maturity assessment.
 
-    This class handles the entire pipeline:
-    1. Automatic repository cloning (if URL provided)
-    2. Data collection from all available sources
-    3. Mapping to maturity dimensions
-    4. Cleanup of temporary resources
-
     Example
     -------
     >>> assessor = MaturityAssessor(github_token="your_token")
