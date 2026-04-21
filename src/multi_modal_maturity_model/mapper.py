@@ -5,10 +5,7 @@ This layer aggregates data from multiple clients, adapters and analyzers and map
 """
 
 import logging
-from datetime import datetime, timezone
-from typing import Any
 
-from .adapters.adapters_utils import parse_iso_datetime
 from .models import (
     CodeQualityMetrics,
     DimensionScore,
@@ -19,6 +16,8 @@ from .models import (
     ToolModel,
 )
 from .scoring import DimensionScorer
+from .utils import calculate_days_since_last_commit
+
 
 logger = logging.getLogger(__name__)
 
@@ -238,11 +237,15 @@ class MaturityMapper:
             logger.warning("No repository metrics available for sustainability")
             return DimensionScore(name="Sustainability", score=None)
 
+        days_since_last_commit = calculate_days_since_last_commit(
+            repository_metrics.last_commit_date
+        )
+
         return self.scorer.calculate_sustainability(
             avg_issue_close_time_days=repository_metrics.avg_time_to_close_days or 90.0,
             num_open_issues=repository_metrics.open_issues,
-            days_since_last_commit=repository_metrics.days_since_last_commit,
-            inverse_simpson_index=repository_metrics.contributor_diversity,
+            days_since_last_commit=days_since_last_commit,
+            inverse_simpson_index=repository_metrics.inverse_simpson_index,
         )
 
     def _map_security(
