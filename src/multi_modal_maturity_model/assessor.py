@@ -6,15 +6,15 @@ import logging
 from dataclasses import dataclass
 from typing import Any
 
-from multi_modal_maturity_model.adapters import (
+from .adapters import (
     BioToolsAdapter,
     GitHubAdapter,
     GitLabAdapter,
 )
 
-from multi_modal_maturity_model.analyzers import HowfairisAnalyzer, LizardAnalyzer
+from .analyzers import HowfairisAnalyzer, LizardAnalyzer
 
-from multi_modal_maturity_model.clients import (
+from .clients import (
     BioToolsClient,
     EuropePMCClient,
     GitHubClient,
