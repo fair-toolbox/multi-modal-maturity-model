@@ -183,7 +183,7 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        if fair_metrics and not publication_metrics:
+        if not fair_metrics and not publication_metrics:
             logger.warning("No data available for FAIRness scoring")
             return DimensionScore(name="FAIRness", score=None)
 
