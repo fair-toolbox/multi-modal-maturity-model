@@ -50,30 +50,6 @@ def extract_repo_identifier(repo_url: str, platform: str) -> str:
     return repo_url
 
 
-def is_local_path(path: str) -> bool:
-    """
-    Check if input is a local path vs a URL.
-
-    Parameters
-    ----------
-    path : str
-        Path or URL to check
-
-    Returns
-    -------
-    bool
-        True if path is a local directory, False if it's a URL
-    """
-    if os.path.isdir(path):
-        return True
-
-    url_schemes = ("http://", "https://", "git://", "ssh://", "git@")
-    if path.startswith(url_schemes):
-        return False
-
-    return False
-
-
 def clone_repository(repo_url: str, target_dir: str) -> None:
     """
     Clone a git repository.
