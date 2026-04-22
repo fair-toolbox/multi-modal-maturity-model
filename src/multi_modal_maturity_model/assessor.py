@@ -13,7 +13,10 @@ from .adapters import (
     GitLabAdapter,
 )
 
-from .analyzers import HowfairisAnalyzer, LizardAnalyzer
+from .analyzers import (
+    HowfairisAnalyzer,
+    LizardAnalyzer,
+)
 
 from .clients import (
     BioToolsClient,
