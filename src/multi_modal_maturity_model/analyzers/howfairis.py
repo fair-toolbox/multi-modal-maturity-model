@@ -3,6 +3,7 @@ FAIR compliance usind howfairis.
 """
 
 import logging
+import os
 from typing import Any
 
 from howfairis import Checker, Repo
@@ -16,8 +17,21 @@ class HowfairisAnalyzer:
     Collect FAIR compliance metrics using howfairis library.
     """
 
-    def __init__(self):
-        """Initialize howfairis client."""
+    def __init__(
+        self, github_token: str | None = None, gitlab_token: str | None = None
+    ):
+        """
+        Initialize howfairis client.
+
+        Parameters
+        ----------
+        github_token : str | None
+            GitHub API token for authenticated requests
+        gitlab_token : str | None
+            GitLab API token for authenticated requests
+        """
+        self.github_token = github_token
+        self.gitlab_token = gitlab_token
 
     def analyze(self, repo_url: str) -> dict[str, Any]:
         """
@@ -38,13 +52,17 @@ class HowfairisAnalyzer:
             - citation: bool | None
             - checklist: bool | None
         """
-        logger.debug(f"Assessing FAIR compliance for: {repo_url}")
+        logger.debug(f"Analyzing FAIR compliance for: {repo_url}")
 
         try:
+            if self.github_token:
+                os.environ["APIKEY_GITHUB"] = f"token:{self.github_token}"
+            if self.gitlab_token:
+                os.environ["APIKEY_GITLAB"] = f"token:{self.gitlab_token}"
+
             repo = Repo(repo_url)
             checker = Checker(repo, is_quiet=True)
             compliance = checker.check_five_recommendations()
-
             result = {
                 "repository": compliance.repository,
                 "license": compliance.license,
@@ -52,10 +70,9 @@ class HowfairisAnalyzer:
                 "citation": compliance.citation,
                 "checklist": compliance.checklist,
             }
-
-            logger.info(f"Successfully assessed {repo_url}")
+            logger.info(f"Successfully collected FAIR metrics for {repo_url}")
             return result
 
         except Exception as e:
-            logger.error(f"Error assessing {repo_url}: {e}")
+            logger.error(f"Error analyzing {repo_url}: {e}")
             raise

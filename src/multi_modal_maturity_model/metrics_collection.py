@@ -75,7 +75,7 @@ def collect_howfairis(
             checklist=fair_metrics.get("checklist"),
         )
     except Exception as e:
-        logger.warning(f"Failed to collect HowFairis metrics for {repo_url}: {e}")
+        logger.error(f"Failed to collect FAIR metrics for {repo_url}: {e}")
         return None
 
 

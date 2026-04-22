@@ -116,7 +116,9 @@ class MaturityAssessor:
             max_citations_corpus=max_citations_corpus, weights=weights
         )
 
-        self.howfairis_analyzer = HowfairisAnalyzer()
+        self.howfairis_analyzer = HowfairisAnalyzer(
+            github_token=github_token, gitlab_token=gitlab_token
+        )
         self.lizard_analyzer = LizardAnalyzer()
 
     @cached_property

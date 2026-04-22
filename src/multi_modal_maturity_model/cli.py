@@ -13,6 +13,8 @@ from .assessor import MaturityAssessor
 from .models import MaturityProfile
 from .weights import validate_weights
 
+from . import __version__
+
 load_dotenv()
 
 logger = logging.getLogger(__name__)
@@ -23,7 +25,7 @@ def setup_logging(verbose: bool) -> None:
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
         level=level,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        format="%(module)-18s\t%(levelname)-8s\t%(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
@@ -107,7 +109,7 @@ def write_output(content: str, output_path: str | None) -> None:
 
 
 @click.group()
-@click.version_option(version="0.1.0", prog_name="m4")
+@click.version_option(version=__version__, prog_name="m4")
 def cli():
     """
     Multi-Modal Maturity Model (M4) - Assessment tool for research software.
