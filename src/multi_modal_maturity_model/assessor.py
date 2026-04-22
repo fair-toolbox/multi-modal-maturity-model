@@ -183,7 +183,7 @@ class MaturityAssessor:
             Repository URL or identifier
             - Full URL: https://github.com/owner/repo or https://gitlab.com/group/project
         repo_path : str | None
-            Local path to repository (takes precedence over repo_url)
+            Local path to repository (takes precedence over repo_url for code quality analysis)
         pmid : str | None
             PubMed ID for citation metrics
         doi : str | None
