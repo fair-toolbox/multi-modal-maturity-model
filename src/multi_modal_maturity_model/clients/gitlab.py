@@ -71,7 +71,7 @@ class GitLabClient:
             data = self.gl.projects.get(group_sub_project)
             return data
         except GitlabError as e:
-            logger.warning(f"Error fetching GitLab repository {group_sub_project}: {e}")
+            logger.error(f"Error fetching GitLab repository {group_sub_project}: {e}")
             raise
 
     def _fetch_branches_count(self, project: Project) -> int | None:

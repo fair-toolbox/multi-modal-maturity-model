@@ -29,10 +29,9 @@ class BioToolsClient:
             response = requests.get(url, timeout=10)
             response.raise_for_status()
             data = response.json()
-            logger.debug(f"Fetched data from bio.tools for ID {tool_id} successfully")
             return data
         except requests.RequestException as e:
-            logger.warning(f"Error fetching data from bio.tools for ID {tool_id}: {e}")
+            logger.error(f"Error fetching data from bio.tools for ID {tool_id}: {e}")
             raise
 
     def fetch(self, tool_id: str) -> dict[str, Any]:
@@ -49,7 +48,6 @@ class BioToolsClient:
         dict
             Dictionary containing the tool metadata.
         """
-        logger.debug(f"Fetching bio.tools entry {tool_id}")
         data = self._get(tool_id)
         logger.info(f"Successfully collected bio.tools entry {tool_id}")
         return data
