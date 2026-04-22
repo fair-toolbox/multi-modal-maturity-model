@@ -121,41 +121,16 @@ class MaturityAssessor:
         )
         self.lizard_analyzer = LizardAnalyzer()
 
-    @cached_property
-    def github_client(self) -> GitHubClient:
-        return GitHubClient(token=self.github_token)
+        self.github_client = GitHubClient(token=github_token)
+        self.gitlab_client = GitLabClient(token=gitlab_token)
+        self.biotools_client = BioToolsClient()
+        self.europepmc_client = EuropePMCClient()
+        self.openalex_client = OpenAlexClient()
+        self.semantic_scholar_client = SemanticScholarClient()
 
-    @cached_property
-    def gitlab_client(self) -> GitLabClient:
-        return GitLabClient(token=self.gitlab_token)
-
-    @cached_property
-    def biotools_client(self) -> BioToolsClient:
-        return BioToolsClient()
-
-    @cached_property
-    def europepmc_client(self) -> EuropePMCClient:
-        return EuropePMCClient()
-
-    @cached_property
-    def openalex_client(self) -> OpenAlexClient:
-        return OpenAlexClient()
-
-    @cached_property
-    def semantic_scholar_client(self) -> SemanticScholarClient:
-        return SemanticScholarClient()
-
-    @cached_property
-    def github_adapter(self) -> GitHubAdapter:
-        return GitHubAdapter()
-
-    @cached_property
-    def gitlab_adapter(self) -> GitLabAdapter:
-        return GitLabAdapter()
-
-    @cached_property
-    def biotools_adapter(self) -> BioToolsAdapter:
-        return BioToolsAdapter()
+        self.biotools_adapter = BioToolsAdapter()
+        self.github_adapter = GitHubAdapter()
+        self.gitlab_adapter = GitLabAdapter()
 
     def assess(
         self,
@@ -224,27 +199,6 @@ class MaturityAssessor:
 
         logger.info("Assessment complete.")
         return maturity_profile
-
-    def assess_batch(
-        self,
-        tools: list[dict[str, Any]],
-        include_code_quality: bool = True,
-    ) -> list[MaturityProfile | None]:
-        """Batch assessment for multiple tools."""
-        profiles = []
-        for tool_spec in tools:
-            try:
-                profile = self.assess(
-                    **tool_spec, include_code_quality=include_code_quality
-                )
-                profiles.append(profile)
-            except Exception as e:
-                logger.error(
-                    f"Failed to assess tool {tool_spec.get('biotools_id', 'repo_url')}: {e}"
-                )
-                profiles.append(None)
-
-        return profiles
 
     def _get_repository_client_and_adapter(self, platform: str):
         if platform == "github":
