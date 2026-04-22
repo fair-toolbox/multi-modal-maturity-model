@@ -127,7 +127,7 @@ def cli():
     "-r",
     "repo_url",
     required=True,
-    help="Repository URL (e.g., https://github.com/owner/repo) or owner/repo",
+    help="Repository URL (e.g., https://github.com/owner/repo)",
 )
 @click.option(
     "--biotools",
