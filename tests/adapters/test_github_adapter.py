@@ -7,16 +7,8 @@ from datetime import datetime, timedelta
 
 from multi_modal_maturity_model.adapters.github_adapter import (
     GitHubAdapter,
-    transform_contributors,
-    extract_languages,
 )
-from multi_modal_maturity_model.adapters.adapters_utils import (
-    calculate_avg_time_to_close,
-    detect_distribution_support,
-    detect_security_policy,
-    detect_security_scanning,
-    detect_workflow_support,
-)
+from multi_modal_maturity_model.adapters.base_repo_adapter import BaseRepositoryAdapter
 from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 
 
@@ -30,35 +22,35 @@ def test_transform_contributors():
         {"login": "alice", "contributions": 10},
         {"login": "bob", "contributions": 5},
     ]
-    result = transform_contributors(raw)
+    result = GitHubAdapter._transform_contributors(raw)
     assert len(result) == 2
     assert result[0] == Contributor(login="alice", total_commits=10)
     assert result[1] == Contributor(login="bob", total_commits=5)
 
 
 def test_transform_contributors_empty():
-    result = transform_contributors([])
+    result = GitHubAdapter._transform_contributors([])
     assert result == []
 
 
 def test_transform_contributors_none():
-    result = transform_contributors(None)
+    result = GitHubAdapter._transform_contributors(None)
     assert result == []
 
 
 def test_extract_languages():
     langs = {"Python": 75000, "JavaScript": 25000, "Shell": 5000}
-    result = extract_languages(langs)
+    result = GitHubAdapter._extract_languages(langs)
     assert set(result) == {"Python", "JavaScript", "Shell"}
 
 
 def test_extract_languages_empty():
-    result = extract_languages({})
+    result = GitHubAdapter._extract_languages({})
     assert result == []
 
 
 def test_extract_languages_none():
-    result = extract_languages(None)
+    result = GitHubAdapter._extract_languages(None)
     assert result == []
 
 
@@ -74,19 +66,19 @@ def test_calculate_avg_time_to_close_github_dict_format():
             "closed_at": "2024-01-11T00:00:00Z",
         },  # 6 days
     ]
-    avg_days = calculate_avg_time_to_close(issues)
+    avg_days = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert avg_days == 4.0
 
 
 def test_calculate_avg_time_to_close_none():
     """Test avg time calculation with None."""
-    result = calculate_avg_time_to_close(None)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(None)
     assert result is None
 
 
 def test_calculate_avg_time_to_close_empty():
     """Test avg time calculation with empty list."""
-    result = calculate_avg_time_to_close([])
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close([])
     assert result is None
 
 
@@ -98,7 +90,7 @@ def test_calculate_avg_time_to_close_single_issue():
             "closed_at": "2024-01-06T00:00:00Z",
         }
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result == 5.0
 
 
@@ -118,7 +110,7 @@ def test_calculate_avg_time_to_close_missing_dates():
             "closed_at": "2024-01-11T00:00:00Z",
         },  # Valid: 10 days
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result == 10.0
 
 
@@ -134,7 +126,7 @@ def test_calculate_avg_time_to_close_invalid_format():
             "closed_at": "2024-01-11T00:00:00Z",
         },  # Valid: 10 days
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result == 10.0
 
 
@@ -150,7 +142,7 @@ def test_calculate_avg_time_to_close_all_invalid():
             "closed_at": None,
         },
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result is None
 
 
@@ -166,7 +158,7 @@ def test_calculate_avg_time_to_close_fractional_days():
             "closed_at": "2024-01-02T06:00:00Z",
         },  # 1.25 days
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     # Average: (0.5 + 1.25) / 2 = 0.875, rounded to 0.88
     assert result == 0.88
 
@@ -179,7 +171,7 @@ def test_calculate_avg_time_to_close_with_timezone():
             "closed_at": "2024-01-03T00:00:00+00:00",
         }
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result == 2.0
 
 
@@ -191,7 +183,7 @@ def test_calculate_avg_time_to_close_same_day():
             "closed_at": "2024-01-01T17:00:00Z",
         }  # 8 hours = 0.33 days
     ]
-    result = calculate_avg_time_to_close(issues)
+    result = BaseRepositoryAdapter.calculate_avg_time_to_close(issues)
     assert result == 0.33
 
 
@@ -261,7 +253,7 @@ class TestGitHubAdapter:
 
     def test_to_repository_metrics_complete_data(self, complete_raw_data):
         """Test conversion with complete data."""
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert isinstance(result, RepositoryMetrics)
         assert result.platform == "github"
@@ -280,7 +272,7 @@ class TestGitHubAdapter:
 
     def test_to_repository_metrics_contributors(self, complete_raw_data):
         """Test contributor transformation."""
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert len(result.contributors) == 3
         assert all(isinstance(c, Contributor) for c in result.contributors)
@@ -293,7 +285,7 @@ class TestGitHubAdapter:
 
     def test_to_repository_metrics_languages(self, complete_raw_data):
         """Test language extraction."""
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert len(result.languages) == 3
         assert "Python" in result.languages
@@ -302,14 +294,14 @@ class TestGitHubAdapter:
 
     def test_to_repository_metrics_avg_time_to_close(self, complete_raw_data):
         """Test average time to close calculation."""
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         # Issue 1: 2 days, Issue 2: 6 days, Average: 4 days
         assert result.avg_time_to_close_days == 4.0
 
     def test_to_repository_metrics_minimal_data(self, minimal_raw_data):
         """Test conversion with minimal data."""
-        result = GitHubAdapter.to_repository_metrics(minimal_raw_data)
+        result = GitHubAdapter().to_repository_metrics(minimal_raw_data)
 
         assert result.platform == "github"
         assert result.url == "https://github.com/owner/minimal-repo"
@@ -328,49 +320,49 @@ class TestGitHubAdapter:
     def test_to_repository_metrics_no_license(self, complete_raw_data):
         """Test handling of repositories without license."""
         complete_raw_data["repo"]["license"] = None
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.has_license is False
 
     def test_to_repository_metrics_empty_contributors(self, complete_raw_data):
         """Test handling of empty contributors list."""
         complete_raw_data["contributors"] = []
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.contributors == []
 
     def test_to_repository_metrics_none_contributors(self, complete_raw_data):
         """Test handling of None contributors."""
         complete_raw_data["contributors"] = None
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.contributors == []
 
     def test_to_repository_metrics_empty_languages(self, complete_raw_data):
         """Test handling of empty languages."""
         complete_raw_data["languages"] = {}
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.languages == []
 
     def test_to_repository_metrics_none_languages(self, complete_raw_data):
         """Test handling of None languages."""
         complete_raw_data["languages"] = None
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.languages == []
 
     def test_to_repository_metrics_protected_branch_false(self, complete_raw_data):
         """Test handling when default branch is not protected."""
         complete_raw_data["default_branch_protected"] = False
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.default_branch_is_protected is False
 
     def test_to_repository_metrics_protected_branch_none(self, complete_raw_data):
         """Test handling when branch protection status is unknown."""
         complete_raw_data["default_branch_protected"] = None
-        result = GitHubAdapter.to_repository_metrics(complete_raw_data)
+        result = GitHubAdapter().to_repository_metrics(complete_raw_data)
 
         assert result.default_branch_is_protected is None
 
@@ -381,7 +373,7 @@ def test_detect_workflow_support_from_repository_tree():
         {"path": "docs/index.md", "type": "blob"},
     ]
 
-    assert detect_workflow_support(repository_tree) is True
+    assert BaseRepositoryAdapter.detect_workflow_support(repository_tree) is True
 
 
 def test_detect_distribution_support_from_repository_tree():
@@ -390,7 +382,7 @@ def test_detect_distribution_support_from_repository_tree():
         {"path": "pyproject.toml", "type": "blob"},
     ]
 
-    assert detect_distribution_support(repository_tree) is True
+    assert BaseRepositoryAdapter.detect_distribution_support(repository_tree) is True
 
 
 def test_detect_security_policy_from_repository_tree():
@@ -399,7 +391,7 @@ def test_detect_security_policy_from_repository_tree():
         {"path": "docs/index.md", "type": "blob"},
     ]
 
-    assert detect_security_policy(repository_tree) is True
+    assert BaseRepositoryAdapter.detect_security_policy(repository_tree) is True
 
 
 def test_detect_security_scanning_from_repository_tree():
@@ -408,4 +400,4 @@ def test_detect_security_scanning_from_repository_tree():
         {"path": "docs/index.md", "type": "blob"},
     ]
 
-    assert detect_security_scanning(repository_tree) is True
+    assert BaseRepositoryAdapter.detect_security_scanning(repository_tree) is True

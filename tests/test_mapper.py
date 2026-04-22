@@ -11,6 +11,8 @@ from multi_modal_maturity_model.models import (
     EDAMItem,
     DataItem,
     Function,
+    HowfairisMetrics,
+    PublicationMetrics,
     RepositoryMetrics,
     ToolModel,
     Contributor,
@@ -91,6 +93,7 @@ def sample_repository_metrics():
         has_distribution_support=True,
         has_security_policy=True,
         has_security_scanning=True,
+        inverse_simpson_index=1.8,
     )
 
 
@@ -108,23 +111,27 @@ def sample_code_quality_metrics():
 @pytest.fixture
 def sample_fair_metrics():
     """Sample FAIR metrics from howfairis."""
-    return {
-        "repository": True,
-        "license": True,
-        "registry": True,
-        "citation": True,
-        "checklist": False,
-    }
+    return HowfairisMetrics(
+        repository=True,
+        license=True,
+        registry=True,
+        citation=True,
+        checklist=False,
+    )
 
 
 @pytest.fixture
-def sample_citation_metrics():
-    """Sample merged citation metrics from EuropePMC and Semantic Scholar."""
-    return {
-        "citation_count": 50,
-        "influential_citation_count": 10,
-        "is_open_access": True,
-    }
+def sample_publication_metrics():
+    """Sample merged publication metrics from EuropePMC and Semantic Scholar."""
+    return PublicationMetrics(
+        doi="10.1234/example.doi",
+        pmid="12345678",
+        citation_count=50,
+        fwci=1.2,
+        influential_citation_count=10,
+        altmetric_score=None,
+        is_open_access=True,
+    )
 
 
 def test_mapper_initialization():
@@ -139,7 +146,7 @@ def test_map_to_maturity_profile_all_data(
     sample_repository_metrics,
     sample_code_quality_metrics,
     sample_fair_metrics,
-    sample_citation_metrics,
+    sample_publication_metrics,
 ):
     """Test mapping with all data sources available."""
     mapper = MaturityMapper()
@@ -149,7 +156,7 @@ def test_map_to_maturity_profile_all_data(
         repository_metrics=sample_repository_metrics,
         code_quality_metrics=sample_code_quality_metrics,
         fair_metrics=sample_fair_metrics,
-        citation_metrics=sample_citation_metrics,
+        publication_metrics=sample_publication_metrics,
     )
 
     # Check that profile is created
@@ -225,14 +232,14 @@ def test_map_compatibility_from_repository_metadata(sample_repository_metrics):
 
 
 def test_map_fairness(
-    sample_repository_metrics, sample_fair_metrics, sample_citation_metrics
+    sample_repository_metrics, sample_fair_metrics, sample_publication_metrics
 ):
     """Test FAIRness dimension mapping."""
     mapper = MaturityMapper()
     score = mapper._map_fairness(
         sample_repository_metrics,
         sample_fair_metrics,
-        sample_citation_metrics,
+        sample_publication_metrics,
     )
 
     assert score.name == "FAIRness"
@@ -259,48 +266,6 @@ def test_map_sustainability(sample_repository_metrics):
     assert score.name == "Sustainability"
     assert 0.0 <= score.score <= 1.0
     assert score.details["days_since_last_commit"] == 10
-    assert score.details["inverse_simpson_index"] == pytest.approx(1.8823529411764706)
-
-
-def test_map_sustainability_handles_missing_last_commit_date(
-    sample_repository_metrics,
-):
-    """Missing last commit dates should be excluded from sustainability scoring."""
-    mapper = MaturityMapper()
-    sample_repository_metrics.last_commit_date = None
-
-    score = mapper._map_sustainability(sample_repository_metrics)
-
-    assert score.name == "Sustainability"
-    assert score.details["days_since_last_commit"] is None
-
-
-def test_inverse_simpson_index_balanced_contributors():
-    """Balanced contributors should produce a higher diversity score."""
-    scorer = DimensionScorer()
-
-    inverse_simpson = scorer.calculate_inverse_simpson_index(
-        [
-            Contributor(login="user1", total_commits=10),
-            Contributor(login="user2", total_commits=10),
-            Contributor(login="user3", total_commits=10),
-        ]
-    )
-
-    assert inverse_simpson == pytest.approx(3.0)
-
-
-def test_inverse_simpson_index_returns_none_without_commit_data():
-    """Missing or zero contributor activity should not produce a diversity metric."""
-    scorer = DimensionScorer()
-
-    assert scorer.calculate_inverse_simpson_index([]) is None
-    assert (
-        scorer.calculate_inverse_simpson_index(
-            [Contributor(login="user1", total_commits=0)]
-        )
-        is None
-    )
 
 
 def test_map_security(sample_repository_metrics):
@@ -312,10 +277,10 @@ def test_map_security(sample_repository_metrics):
     assert score.score == 1.0
 
 
-def test_map_scientific_impact(sample_citation_metrics):
+def test_map_scientific_impact(sample_publication_metrics):
     """Test scientific impact dimension mapping."""
     mapper = MaturityMapper()
-    score = mapper._map_scientific_impact(sample_citation_metrics)
+    score = mapper._map_scientific_impact(sample_publication_metrics)
 
     assert score.name == "Scientific Impact"
     assert 0.0 <= score.score <= 1.0

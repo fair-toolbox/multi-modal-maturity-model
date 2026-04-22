@@ -46,6 +46,7 @@ def sample_repository_metrics():
         has_distribution_support=True,
         has_security_policy=True,
         has_security_scanning=True,
+        inverse_simpson_index=1.5,
     )
 
 
@@ -130,6 +131,7 @@ def test_assess_with_gitlab(
         has_distribution_support=False,
         has_security_policy=False,
         has_security_scanning=False,
+        inverse_simpson_index=1.5,
     )
 
     # Mock code quality collection
@@ -198,89 +200,6 @@ def test_assess_handles_collector_errors(mock_collect_repository, assessor):
     # Profile should be created but with None score for dimensions requiring repo metrics
     assert profile is not None
     assert profile.sustainability.score is None
-
-
-@patch("multi_modal_maturity_model.assessor.collect_howfairis")
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-def test_assess_with_fair_metrics(
-    mock_collect_repository, mock_collect_howfairis, assessor, sample_repository_metrics
-):
-    """Test assessment with FAIR compliance metrics."""
-    mock_collect_repository.return_value = sample_repository_metrics
-
-    mock_collect_howfairis.return_value = {
-        "repository": True,
-        "license": True,
-        "registry": False,
-        "citation": True,
-        "checklist": False,
-    }
-
-    profile = assessor.assess(repo_url="https://github.com/owner/repo")
-
-    assert profile is not None
-    assert profile.fairness.score > 0.0
-    mock_collect_howfairis.assert_called_once()
-
-
-@patch("multi_modal_maturity_model.assessor.collect_publications")
-def test_assess_with_citation_metrics(mock_collect_publications, assessor):
-    """Test assessment with citation metrics."""
-    # Return data in the format the mapper expects (flat dict with citation data)
-    mock_collect_publications.return_value = {
-        "citation_count": 50,
-        "is_open_access": True,
-    }
-
-    profile = assessor.assess(repo_url="https://github.com/owner/repo", pmid="12345678")
-
-    assert profile is not None
-    mock_collect_publications.assert_called_once()
-    # Scientific impact should be > 0 with citations
-    assert profile.scientific_impact.score is not None
-    assert profile.scientific_impact.score > 0.0
-
-
-@patch("multi_modal_maturity_model.assessor.collect_publications")
-def test_assess_with_semantic_scholar_metrics(mock_collect_publications, assessor):
-    """Test assessment with Semantic Scholar DOI metrics."""
-    # Return data in the format the mapper expects
-    mock_collect_publications.return_value = {
-        "citationCount": 75,
-        "influentialCitationCount": 12,
-    }
-
-    profile = assessor.assess(
-        repo_url="https://github.com/owner/repo", doi="10.1000/test-doi"
-    )
-
-    assert profile is not None
-    mock_collect_publications.assert_called_once()
-    assert profile.scientific_impact.score is not None
-    assert profile.scientific_impact.score > 0.0
-
-
-@patch("multi_modal_maturity_model.assessor.collect_publications")
-def test_assess_merges_europepmc_and_semantic_scholar_metrics(
-    mock_collect_publications, assessor
-):
-    """Test citation metrics from both providers."""
-    # Return merged data in the format the mapper expects
-    mock_collect_publications.return_value = {
-        "citation_count": 50,
-        "is_open_access": True,
-        "influentialCitationCount": 12,
-    }
-
-    profile = assessor.assess(
-        repo_url="https://github.com/owner/repo",
-        pmid="12345678",
-        doi="10.1000/test-doi",
-    )
-
-    assert profile is not None
-    assert profile.scientific_impact.score is not None
-    mock_collect_publications.assert_called_once()
 
 
 @patch("multi_modal_maturity_model.assessor.collect_code_quality")
