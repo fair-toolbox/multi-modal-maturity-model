@@ -222,14 +222,14 @@ class MaturityAssessor:
             publication_metrics=bundle.publication_metrics,
         )
 
-        logger.info(f"Assessment complete.")
+        logger.info("Assessment complete.")
         return maturity_profile
 
     def assess_batch(
         self,
         tools: list[dict[str, Any]],
         include_code_quality: bool = True,
-    ) -> list[MaturityProfile]:
+    ) -> list[MaturityProfile | None]:
         """Batch assessment for multiple tools."""
         profiles = []
         for tool_spec in tools:
