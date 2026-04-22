@@ -159,7 +159,6 @@ class MaturityAssessor:
         repo_path: str | None = None,
         pmid: str | None = None,
         doi: str | None = None,
-        platform: str | None = None,
         include_code_quality: bool = True,
     ) -> MaturityProfile:
         """
@@ -178,17 +177,12 @@ class MaturityAssessor:
         repo_url : str | None
             Repository URL or identifier
             - Full URL: https://github.com/owner/repo or https://gitlab.com/group/project
-            - Short format: owner/repo (requires platform parameter)
         repo_path : str | None
             Local path to repository (takes precedence over repo_url)
         pmid : str | None
             PubMed ID for citation metrics
         doi : str | None
             DOI for Semantic Scholar citation metrics
-        platform : str | None
-            Explicit platform specification: "github" or "gitlab"
-            Required when using short format (owner/repo)
-            Ignored when repo_url is a full URL
         include_code_quality : bool
             Whether to include code quality metrics (requires cloning, default: True)
 
@@ -211,7 +205,6 @@ class MaturityAssessor:
             repo_path=repo_path,
             pmid=pmid,
             doi=doi,
-            platform=platform,
             include_code_quality=include_code_quality,
         )
 
@@ -242,7 +235,7 @@ class MaturityAssessor:
                 profiles.append(profile)
             except Exception as e:
                 logger.error(
-                    f"Failed to assess tool {tool_spec.get('biotools_id')}: {e}"
+                    f"Failed to assess tool {tool_spec.get('biotools_id', 'repo_url')}: {e}"
                 )
                 profiles.append(None)
 
@@ -262,7 +255,6 @@ class MaturityAssessor:
         repo_path: str | None,
         pmid: str | None,
         doi: str | None,
-        platform: str | None,
         include_code_quality: bool,
     ) -> CollectedMetricsBundle:
         """
@@ -270,9 +262,7 @@ class MaturityAssessor:
 
         Returns a dictionary with all collected data.
         """
-        # Repository
-        if repo_url and not platform:
-            platform = detect_platform(repo_url)
+        platform = detect_platform(repo_url)
 
         repo_identifier = (
             extract_repo_identifier(repo_url, platform) if repo_url else None
