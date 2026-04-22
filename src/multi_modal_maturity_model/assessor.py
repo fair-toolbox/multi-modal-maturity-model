@@ -129,10 +129,6 @@ class MaturityAssessor:
         return BioToolsClient()
 
     @cached_property
-    def biotools_adapter(self) -> BioToolsAdapter:
-        return BioToolsAdapter()
-
-    @cached_property
     def europepmc_client(self) -> EuropePMCClient:
         return EuropePMCClient()
 
@@ -143,6 +139,18 @@ class MaturityAssessor:
     @cached_property
     def semantic_scholar_client(self) -> SemanticScholarClient:
         return SemanticScholarClient()
+
+    @cached_property
+    def github_adapter(self) -> GitHubAdapter:
+        return GitHubAdapter()
+
+    @cached_property
+    def gitlab_adapter(self) -> GitLabAdapter:
+        return GitLabAdapter()
+
+    @cached_property
+    def biotools_adapter(self) -> BioToolsAdapter:
+        return BioToolsAdapter()
 
     def assess(
         self,
@@ -242,9 +250,9 @@ class MaturityAssessor:
 
     def _get_repository_client_and_adapter(self, platform: str):
         if platform == "github":
-            return self.github_client, GitHubAdapter()
+            return self.github_client, self.github_adapter
         elif platform == "gitlab":
-            return self.gitlab_client, GitLabAdapter()
+            return self.gitlab_client, self.gitlab_adapter
         return None, None
 
     def _run_collection(
