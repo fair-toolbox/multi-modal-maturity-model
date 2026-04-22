@@ -21,6 +21,12 @@ _DIMENSION_NAMES = [
     "scientific_impact",
 ]
 
+_MAX_NLOC = 10000
+_MAX_CCN = 500
+_MAX_AVG_CCN = 10.0
+_ISSUE_CLOSE_TIME_DAYS_GOOD = 90.0
+_RECENT_COMMIT_WINDOW_DAYS = 180.0
+
 
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
@@ -206,9 +212,9 @@ class DimensionScorer:
         weights = self._config.get("maintainability")
 
         # Normalize individual metrics (lower is better)
-        nloc_score = max(0.0, 1.0 - (total_nloc / 10000.0))
-        ccn_score = max(0.0, 1.0 - (total_ccn / 500.0))
-        avg_ccn_score = max(0.0, 1.0 - (avg_ccn / 10.0))
+        nloc_score = max(0.0, 1.0 - (total_nloc / _MAX_NLOC))
+        ccn_score = max(0.0, 1.0 - (total_ccn / _MAX_CCN))
+        avg_ccn_score = max(0.0, 1.0 - (avg_ccn / _MAX_AVG_CCN))
         dup_score = max(0.0, 1.0 - duplicate_rate)
 
         # Apply penalties
@@ -272,7 +278,9 @@ class DimensionScorer:
         # Normalize issue close time (lower is better, 30 days as good target)
         close_time_score = None
         if avg_issue_close_time_days is not None:
-            close_time_score = max(0.0, 1.0 - (avg_issue_close_time_days / 90.0))
+            close_time_score = max(
+                0.0, 1.0 - (avg_issue_close_time_days / _ISSUE_CLOSE_TIME_DAYS_GOOD)
+            )
 
         # Normalize open issues (context-dependent, but fewer is better)
         # Use logarithmic scale: 0 issues = 1.0, 100 issues = 0.0
@@ -286,7 +294,9 @@ class DimensionScorer:
         recent_score = None
         if days_since_last_commit is not None:
             # Last commit recency (within 6 months = good?)
-            recent_score = max(0.0, 1.0 - (days_since_last_commit / 180.0))
+            recent_score = max(
+                0.0, 1.0 - (days_since_last_commit / _RECENT_COMMIT_WINDOW_DAYS)
+            )
 
         diversity_score = None
         if inverse_simpson_index is not None:
