@@ -5,12 +5,18 @@ Implements the formulas for each dimension of the maturity model.
 
 import logging
 import math
-from typing import Any
 
-from .models import Contributor, DimensionScore
-from .weights import WeightsConfig
+from .models import DimensionScore
+from .weights import build_weights
 
 logger = logging.getLogger(__name__)
+
+# Normalisation ceilings
+_MAX_NLOC = 10_000
+_MAX_CCN = 500
+_MAX_AVG_CCN = 10.0
+_ISSUE_CLOSE_TIME_CEILING_DAYS = 90.0
+_RECENT_COMMIT_WINDOW_DAYS = 180.0
 
 _DIMENSION_NAMES = [
     "compatibility",
@@ -21,31 +27,19 @@ _DIMENSION_NAMES = [
     "scientific_impact",
 ]
 
-_MAX_NLOC = 10000
-_MAX_CCN = 500
-_MAX_AVG_CCN = 10.0
-_ISSUE_CLOSE_TIME_DAYS_GOOD = 90.0
-_RECENT_COMMIT_WINDOW_DAYS = 180.0
-
 
 class DimensionScorer:
     """Calculate maturity dimensions from collected data."""
 
-    def __init__(
-        self, weights: dict[str, dict[str, float]] | WeightsConfig | None = None
-    ):
+    def __init__(self, weights: dict[str, dict[str, float]] | None = None):
         """
         Initialize scorer with optional custom weights.
 
         Parameters
         ----------
-        weights : dict[str, dict[str, float]] | WeightsConfig | None
-            Custom weights configuration. Can be:
-            - None: use default weights
-            - dict: validate and create WeightsConfig
-            - WeightsConfig: use pre-validated config object
-
-            Example dict:
+        weights : dict[str, dict[str, float]] | None
+            Custom weights configuration. If None, uses defaults.
+            Example:
             {
                 "compatibility": {"input_formats": 0.25, "output_formats": 0.25, ...},
                 "overall": {"compatibility": 0.2, "fairness": 0.2, ...},
@@ -54,13 +48,9 @@ class DimensionScorer:
         Raises
         ------
         ValueError
-            If weights dict is invalid (via WeightsConfig validation)
+            If weights dict is invalid (via validate_weights).
         """
-        if isinstance(weights, WeightsConfig):
-            self._config = weights
-        else:
-            # weights is either dict or None
-            self._config = WeightsConfig(weights)
+        self._weights = build_weights(weights)
 
     def calculate_compatibility(
         self,
@@ -73,40 +63,34 @@ class DimensionScorer:
         Calculate Compatibility dimension.
 
         Weighted average of bio.tools I/O interoperability and repository-side
-        workflow/distribution support checks, normalized over available inputs.
+        workflow/distribution support checks, normalised over available inputs.
 
         Parameters
         ----------
-        input_formats : float
-            Fraction of input formats that are EDAM leaf nodes (0.0-1.0)
-        output_formats : float
-            Fraction of output formats that are EDAM leaf nodes (0.0-1.0)
+        input_formats : float | None
+            Fraction of input formats that are EDAM leaf nodes (0.0–1.0)
+        output_formats : float | None
+            Fraction of output formats that are EDAM leaf nodes (0.0–1.0)
         workflow_support : float | None
-            Workflow integration support signal (0.0-1.0)
+            Workflow integration support signal (0.0–1.0)
         distribution_support : float | None
-            Runtime portability / distribution support signal (0.0-1.0)
-
-        Returns
-        -------
-        DimensionScore
+            Runtime portability / distribution support signal (0.0–1.0)
         """
-        weights = self._config.get("compatibility")
-
+        w = self._weights["compatibility"]
         score = _weighted_average(
             {
-                "input_formats": (input_formats, weights["input_formats"]),
-                "output_formats": (output_formats, weights["output_formats"]),
-                "workflow_support": (workflow_support, weights["workflow_support"]),
+                "input_formats": (input_formats, w["input_formats"]),
+                "output_formats": (output_formats, w["output_formats"]),
+                "workflow_support": (workflow_support, w["workflow_support"]),
                 "distribution_support": (
                     distribution_support,
-                    weights["distribution_support"],
+                    w["distribution_support"],
                 ),
             }
         )
-
         return DimensionScore(
             name="Compatibility",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "input_formats": input_formats,
                 "output_formats": output_formats,
@@ -140,30 +124,21 @@ class DimensionScorer:
         checklist : bool
             Passes FAIR checklist
         publication_oa : bool | None
-            Associated publication is open access
-
-        Returns
-        -------
-        DimensionScore
+            Associated publication is open access (None treated as False)
         """
-        weights = self._config.get("fairness")
-
-        oa_status = (
-            publication_oa if publication_oa is not None else False
-        )  # Treat unknown OA status as False for scoring
-
+        w = self._weights["fairness"]
+        oa = publication_oa if publication_oa is not None else False
         score = (
-            weights["license"] * float(license)
-            + weights["repository"] * float(repository)
-            + weights["registry"] * float(registry)
-            + weights["citation"] * float(citation)
-            + weights["checklist"] * float(checklist)
-            + weights["publication_oa"] * float(oa_status)
+            w["license"] * float(license)
+            + w["repository"] * float(repository)
+            + w["registry"] * float(registry)
+            + w["citation"] * float(citation)
+            + w["checklist"] * float(checklist)
+            + w["publication_oa"] * float(oa)
         )
-
         return DimensionScore(
             name="FAIRness",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "license": license,
                 "repository": repository,
@@ -185,12 +160,8 @@ class DimensionScorer:
         """
         Calculate Maintainability dimension.
 
-        Heuristics:
-        - Lower NLOC is better (normalized to max 10k)
-        - Lower CCN is better (normalized to max 500)
-        - Lower average CCN is better (normalized to max 10)
-        - Lower duplicate rate is better
-        - Penalty for old languages
+        Lower NLOC, CCN, avg CCN, and duplicate rate each produce a higher score.
+        An optional penalty applies when the codebase uses outdated languages.
 
         Parameters
         ----------
@@ -199,38 +170,30 @@ class DimensionScorer:
         total_ccn : int
             Total cyclomatic complexity
         avg_ccn : float
-            Average cyclomatic complexity
+            Average cyclomatic complexity per function
         duplicate_rate : float
-            Fraction of duplicated code (0.0-1.0)
+            Fraction of duplicated code (0.0–1.0)
         has_old_languages : bool
-            Whether codebase uses outdated languages
-
-        Returns
-        -------
-        DimensionScore
+            Whether the codebase uses outdated languages
         """
-        weights = self._config.get("maintainability")
+        w = self._weights["maintainability"]
 
-        # Normalize individual metrics (lower is better)
         nloc_score = max(0.0, 1.0 - (total_nloc / _MAX_NLOC))
         ccn_score = max(0.0, 1.0 - (total_ccn / _MAX_CCN))
         avg_ccn_score = max(0.0, 1.0 - (avg_ccn / _MAX_AVG_CCN))
         dup_score = max(0.0, 1.0 - duplicate_rate)
-
-        # Apply penalties
         lang_penalty = 0.1 if has_old_languages else 0.0
 
         score = (
-            weights["nloc"] * nloc_score
-            + weights["ccn"] * ccn_score
-            + weights["avg_ccn"] * avg_ccn_score
-            + weights["duplicate_rate"] * dup_score
+            w["nloc"] * nloc_score
+            + w["ccn"] * ccn_score
+            + w["avg_ccn"] * avg_ccn_score
+            + w["duplicate_rate"] * dup_score
             - lang_penalty
         )
-
         return DimensionScore(
             name="Maintainability",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "total_nloc": total_nloc,
                 "total_ccn": total_ccn,
@@ -250,14 +213,8 @@ class DimensionScorer:
         """
         Calculate Sustainability dimension.
 
-        Based on: average time to close issues, open issues count,
-        last commit date, commit frequency (Inverse Simpson Index concept).
-
-        Heuristics:
-        - Faster issue closure is better
-        - Fewer open issues is better
-        - Recent commits are better
-        - Regular commit frequency is better
+        Heuristics: faster issue closure, fewer open issues, recent commits,
+        and diverse contributor activity all increase the score.
 
         Parameters
         ----------
@@ -266,63 +223,50 @@ class DimensionScorer:
         num_open_issues : int
             Number of currently open issues
         days_since_last_commit : int | None
+            Days since the most recent commit
         inverse_simpson_index : float | None
             Effective number of contributors based on commit-share diversity
-
-        Returns
-        -------
-        DimensionScore
         """
-        weights = self._config.get("sustainability")
+        w = self._weights["sustainability"]
 
-        # Normalize issue close time (lower is better, 30 days as good target)
-        close_time_score = None
-        if avg_issue_close_time_days is not None:
-            close_time_score = max(
-                0.0, 1.0 - (avg_issue_close_time_days / _ISSUE_CLOSE_TIME_DAYS_GOOD)
-            )
+        close_time_score = (
+            max(0.0, 1.0 - (avg_issue_close_time_days / _ISSUE_CLOSE_TIME_CEILING_DAYS))
+            if avg_issue_close_time_days is not None
+            else None
+        )
 
-        # Normalize open issues (context-dependent, but fewer is better)
-        # Use logarithmic scale: 0 issues = 1.0, 100 issues = 0.0
-        if num_open_issues == 0:
-            open_issues_score = 1.0
-        else:
-            open_issues_score = max(
-                0.0, 1.0 - (math.log(num_open_issues + 1) / math.log(100))
-            )
+        open_issues_score = (
+            1.0
+            if num_open_issues == 0
+            else max(0.0, 1.0 - (math.log(num_open_issues + 1) / math.log(100)))
+        )
 
-        recent_score = None
-        if days_since_last_commit is not None:
-            # Last commit recency (within 6 months = good?)
-            recent_score = max(
-                0.0, 1.0 - (days_since_last_commit / _RECENT_COMMIT_WINDOW_DAYS)
-            )
+        recent_score = (
+            max(0.0, 1.0 - (days_since_last_commit / _RECENT_COMMIT_WINDOW_DAYS))
+            if days_since_last_commit is not None
+            else None
+        )
 
-        diversity_score = None
-        if inverse_simpson_index is not None:
-            diversity_score = max(0.0, min(1.0, 1.0 - (1.0 / inverse_simpson_index)))
+        diversity_score = (
+            max(0.0, min(1.0, 1.0 - (1.0 / inverse_simpson_index)))
+            if inverse_simpson_index is not None
+            else None
+        )
 
         score = _weighted_average(
             {
                 "avg_issue_close_time_days": (
                     close_time_score,
-                    weights["avg_issue_close_time_days"],
+                    w["avg_issue_close_time_days"],
                 ),
-                "num_open_issues": (open_issues_score, weights["num_open_issues"]),
-                "days_since_last_commit": (
-                    recent_score,
-                    weights["days_since_last_commit"],
-                ),
-                "inverse_simpson_index": (
-                    diversity_score,
-                    weights["inverse_simpson_index"],
-                ),
+                "num_open_issues": (open_issues_score, w["num_open_issues"]),
+                "days_since_last_commit": (recent_score, w["days_since_last_commit"]),
+                "inverse_simpson_index": (diversity_score, w["inverse_simpson_index"]),
             }
         )
-
         return DimensionScore(
             name="Sustainability",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "avg_issue_close_time_days": avg_issue_close_time_days,
                 "num_open_issues": num_open_issues,
@@ -340,28 +284,21 @@ class DimensionScorer:
         """
         Calculate Security dimension.
 
-        Based on a small set of repository-level security signals.
-
         Parameters
         ----------
         default_branch_protected : bool
             Whether the default branch is protected
         has_security_policy : bool | None
-            Whether the repository publishes a security policy or disclosure guide
+            Whether the repository publishes a security policy
         has_security_scanning : bool | None
-            Whether repository files indicate automated security scanning
-
-        Returns
-        -------
-        DimensionScore
+            Whether the repository has automated security scanning configured
         """
-        weights = self._config.get("security")
-
+        w = self._weights["security"]
         score = _weighted_average(
             {
                 "default_branch_protected": (
                     float(default_branch_protected),
-                    weights["default_branch_protected"],
+                    w["default_branch_protected"],
                 ),
                 "has_security_policy": (
                     (
@@ -369,7 +306,7 @@ class DimensionScorer:
                         if has_security_policy is not None
                         else None
                     ),
-                    weights["has_security_policy"],
+                    w["has_security_policy"],
                 ),
                 "has_security_scanning": (
                     (
@@ -377,14 +314,13 @@ class DimensionScorer:
                         if has_security_scanning is not None
                         else None
                     ),
-                    weights["has_security_scanning"],
+                    w["has_security_scanning"],
                 ),
             }
         )
-
         return DimensionScore(
             name="Security",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "default_branch_protected": default_branch_protected,
                 "has_security_policy": has_security_policy,
@@ -401,28 +337,22 @@ class DimensionScorer:
         """
         Calculate Scientific Impact dimension.
 
-        Formula: weighted combination of normalized citation metrics
-
-        This normalizes citation counts logarithmically against the maximum
-        in the corpus to account for scale differences across research areas.
+        Citation counts are normalised logarithmically against the corpus maximum
+        to account for scale differences across research areas.
 
         Parameters
         ----------
         citation_count : int
             Number of citations to the publication
         influential_citation_count : int | None
-            Number of influential citations reported by Semantic Scholar
+            Influential citations reported by Semantic Scholar
         max_citations_in_corpus : int
             Maximum citations in the reference corpus (default 1000)
-
-        Returns
-        -------
-        DimensionScore
         """
-        weights = self._config.get("scientific_impact")
+        w = self._weights["scientific_impact"]
 
         if max_citations_in_corpus <= 0:
-            max_citations_in_corpus = 1000  # Default fallback
+            max_citations_in_corpus = 1000
 
         denominator = math.log(max_citations_in_corpus + 0.5)
         citation_component = (
@@ -431,23 +361,24 @@ class DimensionScorer:
             else 0.0
         )
 
-        influential_component = None
-        if influential_citation_count is not None and denominator > 0:
-            influential_component = (
-                math.log(max(influential_citation_count, 0) + 0.5) / denominator
-            )
+        influential_component = (
+            math.log(max(influential_citation_count, 0) + 0.5) / denominator
+            if influential_citation_count is not None and denominator > 0
+            else None
+        )
 
-        if influential_component is not None:
-            score = (
-                weights["citation_count"] * citation_component
-                + weights["influential_citation_count"] * influential_component
-            )
-        else:
-            score = citation_component
-
+        score = _weighted_average(
+            {
+                "citation_count": (citation_component, w["citation_count"]),
+                "influential_citation_count": (
+                    influential_component,
+                    w["influential_citation_count"],
+                ),
+            }
+        )
         return DimensionScore(
             name="Scientific Impact",
-            score=min(1.0, max(0.0, score)),
+            score=_clamp(score),
             details={
                 "citation_count": citation_count,
                 "influential_citation_count": influential_citation_count,
@@ -456,48 +387,34 @@ class DimensionScorer:
         )
 
     def calculate_overall_score(
-        self,
-        dimensions: list[DimensionScore],
+        self, dimensions: list[DimensionScore]
     ) -> DimensionScore:
         """
-        Calculate overall maturity score as weighted average of all dimensions.
+        Calculate overall maturity score as a weighted average of all dimensions.
 
         Parameters
         ----------
         dimensions : list[DimensionScore]
-            List of dimension scores
-
-        Returns
-        -------
-        DimensionScore
+            List of dimension scores (must match _DIMENSION_NAMES order).
         """
-        if not dimensions:
-            return DimensionScore(
-                name="Overall", score=None, details={"note": "No dimensions available."}
-            )
-
-        if all(dim.score is None for dim in dimensions):
+        if not dimensions or all(dim.score is None for dim in dimensions):
             return DimensionScore(
                 name="Overall",
                 score=None,
-                details={"note": "All dimension scores are None."},
+                details={"note": "No dimension scores available."},
             )
 
-        weights = self._config.get("overall")
+        w = self._weights["overall"]
 
-        # Build weighted pairs for available dimensions
         available_pairs = [
             (dim, name)
             for dim, name in zip(dimensions, _DIMENSION_NAMES)
             if dim.score is not None
         ]
 
-        # Normalize weights for available dimensions only
-        available_weights = {
-            name: weights.get(name, 0.0) for dim, name in available_pairs
-        }
-
+        available_weights = {name: w.get(name, 0.0) for _, name in available_pairs}
         total_weight = sum(available_weights.values())
+
         if total_weight == 0:
             return DimensionScore(
                 name="Overall",
@@ -506,7 +423,6 @@ class DimensionScorer:
             )
 
         normalized_weights = {k: v / total_weight for k, v in available_weights.items()}
-
         overall_score = sum(
             dim.score * normalized_weights[name] for dim, name in available_pairs
         )
@@ -518,14 +434,22 @@ class DimensionScorer:
         )
 
 
+# Module-level helpers
+
+
+def _clamp(value: float) -> float:
+    """Clamp a score to [0.0, 1.0]."""
+    return min(1.0, max(0.0, value))
+
+
 def _weighted_average(metrics: dict[str, tuple[float | None, float]]) -> float:
-    """Return a weighted average, skipping metrics whose value is None.
+    """Return a weighted average, skipping entries whose value is None.
 
     Parameters
     ----------
-    metrics:
+    metrics :
         Mapping of name → (value, weight). Entries with value=None are excluded
-        and the remaining weights are renormalized automatically.
+        and the remaining weights are renormalised automatically.
     """
     total_weight = sum(w for v, w in metrics.values() if v is not None)
     if total_weight == 0:
