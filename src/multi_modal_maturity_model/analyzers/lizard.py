@@ -52,7 +52,6 @@ class LizardAnalyzer:
             "duplicate_rate": duplicate_rate,
         }
 
-        logger.info(f"Successfully collected code quality metrics for {repo_path}")
         return result
 
     def _analyze_complexity(self, repo_path: str) -> dict[str, int | float] | None:

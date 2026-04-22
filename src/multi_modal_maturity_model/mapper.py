@@ -6,9 +6,12 @@ This layer aggregates data from multiple clients, adapters and analyzers and map
 
 import logging
 
+from .edam import EDAMCache
+
 from .models import (
     CodeQualityMetrics,
     DimensionScore,
+    EDAMItem,
     HowfairisMetrics,
     MaturityProfile,
     PublicationMetrics,
@@ -46,6 +49,7 @@ class MaturityMapper:
         """
         self.max_citations_corpus = max_citations_corpus
         self.scorer = DimensionScorer(weights=weights)
+        self.edam_cache = EDAMCache()
 
     def map_to_maturity_profile(
         self,
@@ -61,22 +65,16 @@ class MaturityMapper:
         Parameters
         ----------
         tool_model : ToolModel | None
-            From BioToolsAdapter (for compatibility dimension)
         repository_metrics : RepositoryMetrics | None
-            From GitHubAdapter/GitLabAdapter (for sustainability, security)
         code_quality_metrics : CodeQualityMetrics | None
-            From LizardAnalyzer (for maintainability)
         fair_metrics : HowfairisMetrics | None
-            From HowfairisAnalyzer (for FAIRness)
         publication_metrics : PublicationMetrics | None
-            From EuropePMCClient (for scientific impact)
 
         Returns
         -------
         MaturityProfile
             Complete maturity profile with all dimensions
         """
-        # Calculate each dimension
         compatibility = self._map_compatibility(tool_model, repository_metrics)
         fairness = self._map_fairness(
             repository_metrics, fair_metrics, publication_metrics
@@ -86,7 +84,8 @@ class MaturityMapper:
         security = self._map_security(repository_metrics)
         scientific_impact = self._map_scientific_impact(publication_metrics)
 
-        # Calculate overall score
+        logger.info("Mapping complete. Calculating overall score...")
+
         dimensions = [
             compatibility,
             fairness,
@@ -107,6 +106,13 @@ class MaturityMapper:
             overall_score=overall_score,
         )
 
+    def _calculate_edam_leaf_fraction(self, formats: list[EDAMItem]) -> float | None:
+        if not formats:
+            return None
+
+        leaf_count = sum(1 for fmt in formats if self.edam_cache.is_leaf_node(fmt.uri))
+        return leaf_count / len(formats)
+
     def _map_compatibility(
         self,
         tool_model: ToolModel | None,
@@ -118,7 +124,7 @@ class MaturityMapper:
         Calculates fraction of input/output formats that are EDAM leaf nodes.
         """
         if not tool_model and not repository_metrics:
-            logger.warning("No data available for compatibility scoring")
+            logger.warning("No data available for compatibility")
             return DimensionScore(name="Compatibility", score=None)
 
         input_fraction = None
@@ -139,9 +145,9 @@ class MaturityMapper:
                         if output_item.format:
                             all_output_formats.extend(output_item.format)
 
-            # TODO: Implement EDAM leaf node validation using edam_cache
-            input_fraction = 1.0 if all_input_formats else 0.0
-            output_fraction = 1.0 if all_output_formats else 0.0
+            input_fraction = self._calculate_edam_leaf_fraction(all_input_formats)
+            output_fraction = self._calculate_edam_leaf_fraction(all_output_formats)
+
         else:
             logger.warning(
                 "No tool model data available for bio.tools compatibility scoring"
@@ -178,8 +184,8 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        if not fair_metrics and not publication_metrics:
-            logger.warning("No data available for FAIRness scoring")
+        if not fair_metrics:
+            logger.warning("No fair metrics available for FAIRness")
             return DimensionScore(name="FAIRness", score=None)
 
         license_val = (
@@ -189,12 +195,12 @@ class MaturityMapper:
         )
         values = {
             "license": license_val,
-            "repository": fair_metrics.repository if fair_metrics else False,
-            "registry": fair_metrics.registry if fair_metrics else False,
-            "citation": fair_metrics.citation if fair_metrics else False,
-            "checklist": fair_metrics.checklist if fair_metrics else False,
+            "repository": fair_metrics.repository,
+            "registry": fair_metrics.registry,
+            "citation": fair_metrics.citation,
+            "checklist": fair_metrics.checklist,
             "publication_oa": (
-                publication_metrics.is_open_access if publication_metrics else False
+                publication_metrics.is_open_access if publication_metrics else None
             ),
         }
         return self.scorer.calculate_fairness(**values)

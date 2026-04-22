@@ -65,8 +65,7 @@ class GitHubClient:
         try:
             data = self.gh.get_repo(owner_repo)
             return data
-        except GithubException as e:
-            logger.warning(f"Error fetching GitHub repository {owner_repo}: {e}")
+        except GithubException:
             raise
 
     def _fetch_contents(self, repo: Repository) -> list[dict[str, Any]] | None:

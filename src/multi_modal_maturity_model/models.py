@@ -1,4 +1,5 @@
-from dataclasses import dataclass
+import json
+from dataclasses import asdict, dataclass
 from typing import Any
 
 
@@ -106,3 +107,11 @@ class MaturityProfile:
     security: DimensionScore
     scientific_impact: DimensionScore
     overall_score: DimensionScore
+
+    def to_dict(self) -> dict[str, Any]:
+        """Convert MaturityProfile to dictionary."""
+        return asdict(self)
+
+    def to_json(self, indent: int | None = None) -> str:
+        """Convert MaturityProfile to JSON string."""
+        return json.dumps(self.to_dict(), indent=indent)

@@ -174,9 +174,8 @@ def test_assess_with_local_path(
 
     # Run assessment with local path
     profile = assessor.assess(
-        repo_url="owner/repo",
+        repo_url="https://github.com/owner/repo",
         repo_path="/local/path/to/repo",
-        platform="github",
         include_code_quality=True,
     )
 

@@ -116,7 +116,7 @@ class DimensionScorer:
         registry: bool,
         citation: bool,
         checklist: bool,
-        publication_oa: bool,
+        publication_oa: bool | None = None,
     ) -> DimensionScore:
         """
         Calculate FAIRness dimension.
@@ -133,7 +133,7 @@ class DimensionScorer:
             Has citation information
         checklist : bool
             Passes FAIR checklist
-        publication_oa : bool
+        publication_oa : bool | None
             Associated publication is open access
 
         Returns
@@ -142,14 +142,17 @@ class DimensionScorer:
         """
         weights = self._config.get("fairness")
 
-        # Convert booleans to 0.0 or 1.0
+        oa_status = (
+            publication_oa if publication_oa is not None else False
+        )  # Treat unknown OA status as False for scoring
+
         score = (
             weights["license"] * float(license)
             + weights["repository"] * float(repository)
             + weights["registry"] * float(registry)
             + weights["citation"] * float(citation)
             + weights["checklist"] * float(checklist)
-            + weights["publication_oa"] * float(publication_oa)
+            + weights["publication_oa"] * float(oa_status)
         )
 
         return DimensionScore(
@@ -233,7 +236,7 @@ class DimensionScorer:
 
     def calculate_sustainability(
         self,
-        avg_issue_close_time_days: float,
+        avg_issue_close_time_days: float | None,
         num_open_issues: int,
         days_since_last_commit: int | None,
         inverse_simpson_index: float | None = None,
@@ -252,7 +255,7 @@ class DimensionScorer:
 
         Parameters
         ----------
-        avg_issue_close_time_days : float
+        avg_issue_close_time_days : float | None
             Average days to close an issue
         num_open_issues : int
             Number of currently open issues
@@ -267,7 +270,9 @@ class DimensionScorer:
         weights = self._config.get("sustainability")
 
         # Normalize issue close time (lower is better, 30 days as good target)
-        close_time_score = max(0.0, 1.0 - (avg_issue_close_time_days / 90.0))
+        close_time_score = None
+        if avg_issue_close_time_days is not None:
+            close_time_score = max(0.0, 1.0 - (avg_issue_close_time_days / 90.0))
 
         # Normalize open issues (context-dependent, but fewer is better)
         # Use logarithmic scale: 0 issues = 1.0, 100 issues = 0.0

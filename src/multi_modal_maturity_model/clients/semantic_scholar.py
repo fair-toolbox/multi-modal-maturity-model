@@ -1,5 +1,8 @@
+import logging
 import requests
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 
 class SemanticScholarClient:
@@ -40,10 +43,9 @@ class SemanticScholarClient:
         try:
             response = requests.get(url, params=params, timeout=self.timeout)
             if response.status_code == 404:
-                print(f"Paper not found: {doi}")
+                logger.warning(f"Paper not found: {doi}")
                 return None
             response.raise_for_status()
             return response.json()
-        except requests.RequestException as e:
-            print(f"Error fetching paper {doi}: {e}")
-            return None
+        except Exception:
+            raise

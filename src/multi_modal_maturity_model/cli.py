@@ -1,160 +1,23 @@
-#!/usr/bin/env python3
-"""Command-line interface for Multi-Modal Maturity Model (M4)"""
+"""
+Command-line interface for the Multi-Modal Maturity Model.
+"""
 
-import argparse
+import click
 import json
 import logging
-import os
-import sys
-from pathlib import Path
 
 from dotenv import load_dotenv
+from pathlib import Path
 
-from . import MaturityAssessor, __version__
+from .assessor import MaturityAssessor
+from .models import MaturityProfile
+from .weights import validate_weights
 
+from . import __version__
 
-def load_input_config(config_path: str) -> dict:
-    """Load CLI defaults from a JSON config file."""
-    path = Path(config_path)
+load_dotenv()
 
-    if not path.exists():
-        raise FileNotFoundError(f"Config file not found: {path}")
-
-    if path.suffix.lower() != ".json":
-        raise ValueError("Unsupported config file format. Use .json")
-
-    with path.open() as handle:
-        config = json.load(handle)
-
-    if config is None:
-        return {}
-
-    if not isinstance(config, dict):
-        raise ValueError("Config file must contain a top-level object/mapping")
-
-    return config
-
-
-def build_parser() -> argparse.ArgumentParser:
-    """Create the main argument parser."""
-    parser = argparse.ArgumentParser(
-        description="Multi-Modal Maturity Model (M4) - Assess maturity of research software",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-            Examples:
-              # Repository URL
-              m4 https://github.com/owner/repo
-              m4 https://gitlab.com/group/subgroup/project
-
-              # Full assessment with all data sources
-              m4 https://github.com/owner/repo --pmid 12345678 --biotools-id blast
-
-              # Use local repository (no cloning)
-              m4 https://github.com/owner/repo --local-path /path/to/repo
-
-                # Read defaults from a JSON config file
-              m4 --input config.json
-
-              # Skip code quality analysis (faster, no cloning)
-              m4 https://github.com/owner/repo --no-code-quality
-
-            Environment Variables:
-              GITHUB_TOKEN    GitHub API token for authenticated requests
-              GITLAB_TOKEN    GitLab API token for authenticated requests
-        """,
-    )
-    parser.add_argument(
-        "repository",
-        nargs="?",
-        default=None,
-        help="Repository URL",
-    )
-    parser.add_argument(
-        "--input",
-        help="Path to a JSON config file with CLI defaults",
-        default=None,
-    )
-    parser.add_argument(
-        "--pmid",
-        help="PubMed ID for citation metrics",
-        default=None,
-    )
-    parser.add_argument(
-        "--biotoolsID",
-        help="bio.tools identifier",
-        default=None,
-        dest="biotools_id",
-    )
-    parser.add_argument(
-        "--local-path",
-        help="Local path to repository (skips cloning)",
-        default=None,
-        dest="local_path",
-    )
-    parser.add_argument(
-        "--output-dir",
-        help="Output directory for results (default: ./results)",
-        default="./results",
-        dest="output_dir",
-    )
-    parser.add_argument(
-        "--no-code-quality",
-        action="store_true",
-        help="Skip code quality analysis (faster, no repository cloning)",
-        dest="no_code_quality",
-    )
-    parser.add_argument(
-        "--max-citations",
-        type=int,
-        help="Maximum citations in corpus for normalization (default: 1000)",
-        default=1000,
-        dest="max_citations",
-    )
-    parser.add_argument(
-        "--verbose",
-        "-v",
-        action="store_true",
-        help="Enable verbose output with detailed metrics",
-    )
-    parser.add_argument(
-        "--version",
-        action="version",
-        version=f"%(prog)s {__version__}",
-    )
-    return parser
-
-
-def normalize_config_keys(
-    parser: argparse.ArgumentParser, config: dict[str, object]
-) -> dict[str, object]:
-    """Map config-file keys onto argparse destination names."""
-    key_map: dict[str, str] = {}
-
-    for action in parser._actions:
-        if action.dest == argparse.SUPPRESS:
-            continue
-
-        key_map[action.dest] = action.dest
-        for option in action.option_strings:
-            normalized_option = option.lstrip("-").replace("-", "_")
-            key_map[normalized_option] = action.dest
-
-    normalized: dict[str, object] = {}
-    unknown_keys: list[str] = []
-    for key, value in config.items():
-        normalized_key = key.replace("-", "_")
-        dest = key_map.get(normalized_key)
-        if dest is None:
-            unknown_keys.append(key)
-            continue
-        normalized[dest] = value
-
-    if unknown_keys:
-        valid_keys = ", ".join(sorted(key_map))
-        unknown = ", ".join(sorted(unknown_keys))
-        raise ValueError(f"Unknown config key(s): {unknown}. Valid keys: {valid_keys}")
-
-    return normalized
+logger = logging.getLogger(__name__)
 
 
 def setup_logging(verbose: bool) -> None:
@@ -162,188 +25,241 @@ def setup_logging(verbose: bool) -> None:
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
         level=level,
-        format="%(levelname)s: %(message)s",
-        handlers=[logging.StreamHandler()],
+        format="%(module)-18s\t%(levelname)-8s\t%(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
     )
 
 
-def print_results(profile, verbose: bool = False) -> None:
-    """Print assessment results to console in a nice format."""
-    print("\n" + "=" * 70)
-    print("MATURITY ASSESSMENT RESULTS")
-    print("=" * 70)
-    print(f"\n{'Overall Maturity Score:':<30} {profile.overall_score.score:>6.1%}")
-    print("\n" + "-" * 70)
-    print("Dimension Breakdown:")
-    print("-" * 70)
+def load_weights_from_file(weights_path: str) -> dict[str, dict[str, float]]:
+    """
+    Load and validate custom weights from JSON file.
+    """
+    try:
+        with open(weights_path, "r") as f:
+            data = json.load(f)
 
-    dimensions = [
-        ("Compatibility", profile.compatibility),
-        ("FAIRness", profile.fairness),
-        ("Maintainability", profile.maintainability),
-        ("Sustainability", profile.sustainability),
-        ("Security", profile.security),
-        ("Scientific Impact", profile.scientific_impact),
-    ]
+        # Handle case where weights are nested under "weights" key
+        weights = data.get("weights", data)
 
-    for name, dim in dimensions:
-        if dim.score is None:
-            # Dimension not available
-            bar = "─" * 20
-            print(f"  {name:<20} {bar} {'N/A':>6}")
-        else:
-            # Create visual bar
-            bar_length = int(dim.score * 20)
-            bar = "█" * bar_length + "░" * (20 - bar_length)
-            print(f"  {name:<20} {bar} {dim.score:>6.1%}")
+        validate_weights(weights)
+        return weights
 
-    if verbose and any(dim.details for _, dim in dimensions):
-        print("\n" + "-" * 70)
-        print("Detailed Metrics:")
-        print("-" * 70)
-        for name, dim in dimensions:
-            if dim.details:
-                print(f"\n  {name}:")
-                for key, value in dim.details.items():
-                    if isinstance(value, float):
-                        print(f"    • {key}: {value:.2f}")
-                    else:
-                        print(f"    • {key}: {value}")
-
-    print("\n" + "=" * 70)
+    except FileNotFoundError:
+        raise click.ClickException(f"Weights file not found: {weights_path}")
+    except json.JSONDecodeError as e:
+        raise click.ClickException(f"Invalid JSON in weights file: {e}")
+    except ValueError as e:
+        raise click.ClickException(f"Invalid weights: {e}")
 
 
-def save_results(profile, output_dir: str, repository: str) -> None:
-    """Save assessment results to JSON file."""
-    output_path = Path(output_dir)
-    output_path.mkdir(parents=True, exist_ok=True)
+def format_output(profile: MaturityProfile, format_type: str) -> str:
+    """
+    Format MaturityProfile for output (JSON, pretty, or YAML).
+    """
+    if format_type == "json":
+        return profile.to_json(indent=2)
 
-    # Create safe filename from repository name
-    safe_repo_name = (
-        repository.replace("/", "_").replace("https://", "").replace("http://", "")
-    )
-    output_file = output_path / f"{safe_repo_name}_maturity_profile.json"
+    elif format_type == "pretty":
+        lines = []
+        lines.append("=" * 60)
+        lines.append("MATURITY ASSESSMENT REPORT")
+        lines.append("=" * 60)
+        lines.append("")
 
-    # Convert dataclass to dict
-    profile_dict = {
-        "overall_score": {
-            "score": profile.overall_score.score,
-            "details": profile.overall_score.details,
-        },
-        "dimensions": {
-            "compatibility": {
-                "score": profile.compatibility.score,
-                "details": profile.compatibility.details,
-            },
-            "fairness": {
-                "score": profile.fairness.score,
-                "details": profile.fairness.details,
-            },
-            "maintainability": {
-                "score": profile.maintainability.score,
-                "details": profile.maintainability.details,
-            },
-            "sustainability": {
-                "score": profile.sustainability.score,
-                "details": profile.sustainability.details,
-            },
-            "security": {
-                "score": profile.security.score,
-                "details": profile.security.details,
-            },
-            "scientific_impact": {
-                "score": profile.scientific_impact.score,
-                "details": profile.scientific_impact.details,
-            },
-        },
-    }
+        # Overall Score
+        if profile.overall_score:
+            lines.append(f"Overall Score: {profile.overall_score.score:.2f}")
+            lines.append("")
 
-    with open(output_file, "w") as f:
-        json.dump(profile_dict, f, indent=2)
+        # Dimension Scores
+        dimensions = [
+            profile.compatibility,
+            profile.fairness,
+            profile.maintainability,
+            profile.sustainability,
+            profile.security,
+            profile.scientific_impact,
+        ]
 
-    print(f"\n✓ Results saved to: {output_file}")
+        for dim in dimensions:
+            if dim and dim.score is not None:
+                lines.append(f"{dim.name.upper()}: {dim.score:.2f}")
+                if dim.details:
+                    for key, value in dim.details.items():
+                        if value is not None:
+                            lines.append(f"  • {key}: {value}")
+                lines.append("")
+
+        lines.append("=" * 60)
+        return "\n".join(lines)
+
+    else:
+        raise click.ClickException(f"Unknown format: {format_type}")
 
 
-def main():
-    """Main entry point for the CLI."""
-    # Load environment variables from .env file if it exists
-    load_dotenv()
+def write_output(content: str, output_path: str | None) -> None:
+    """Write output to file or stdout."""
+    if output_path:
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "w") as f:
+            f.write(content)
+        click.echo(f"✓ Results written to: {output_path}", err=True)
+    else:
+        click.echo(content)
 
-    bootstrap_parser = argparse.ArgumentParser(add_help=False)
-    bootstrap_parser.add_argument("--input", default=None)
-    bootstrap_args, _ = bootstrap_parser.parse_known_args()
 
-    parser = build_parser()
-    if bootstrap_args.input:
-        try:
-            config = load_input_config(bootstrap_args.input)
-            parser.set_defaults(**normalize_config_keys(parser, config))
-        except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
-            parser.error(str(exc))
+@click.group()
+@click.version_option(version=__version__, prog_name="m4")
+def cli():
+    """
+    Multi-Modal Maturity Model (M4) - Assessment tool for research software.
 
-    args = parser.parse_args()
-    if not args.repository:
-        parser.error("the following arguments are required: repository")
+    Evaluates research software across multiple dimensions:
+    compatibility, fairness, maintainability, sustainability,
+    security, and scientific impact.
+    """
+    pass
 
-    # Setup logging
-    setup_logging(args.verbose)
 
-    # Print header
-    print(f"\n{'=' * 70}")
-    print(f"M4 - Multi-Modal Maturity Model v{__version__}")
-    print(f"{'=' * 70}\n")
-    print(f"Repository: {args.repository}")
+@cli.command()
+@click.option(
+    "--repo",
+    "-r",
+    "repo_url",
+    required=True,
+    help="Repository URL (e.g., https://github.com/owner/repo)",
+)
+@click.option(
+    "--biotools",
+    "-b",
+    "biotools_id",
+    help="bio.tools identifier (e.g., blast)",
+)
+@click.option(
+    "--pmid",
+    "-p",
+    help="PubMed ID for citation metrics",
+)
+@click.option(
+    "--doi",
+    "-d",
+    help="DOI for citation metrics (alternative to PMID)",
+)
+@click.option(
+    "--local-path",
+    "-l",
+    type=click.Path(exists=True, file_okay=False, dir_okay=True),
+    help="Local path to repository (skips cloning)",
+)
+@click.option(
+    "--github-token",
+    envvar="GITHUB_TOKEN",
+    help="GitHub API token (or set GITHUB_TOKEN env var)",
+)
+@click.option(
+    "--gitlab-token",
+    envvar="GITLAB_TOKEN",
+    help="GitLab API token (or set GITLAB_TOKEN env var)",
+)
+@click.option(
+    "--no-code-quality",
+    is_flag=True,
+    help="Skip code quality analysis (faster, no cloning needed)",
+)
+@click.option(
+    "--weights",
+    "-w",
+    type=click.Path(exists=True, file_okay=True, dir_okay=False),
+    help="Path to custom weights JSON file",
+)
+@click.option(
+    "--output",
+    "-o",
+    type=click.Path(),
+    help="Output file path (default: stdout)",
+)
+@click.option(
+    "--format",
+    "-f",
+    "output_format",
+    type=click.Choice(["json", "pretty"], case_sensitive=False),
+    default="json",
+    help="Output format (default: json)",
+)
+@click.option(
+    "--verbose",
+    "-v",
+    is_flag=True,
+    help="Enable verbose logging",
+)
+def assess(
+    repo_url: str,
+    biotools_id: str | None,
+    pmid: str | None,
+    doi: str | None,
+    local_path: str | None,
+    github_token: str | None,
+    gitlab_token: str | None,
+    no_code_quality: bool,
+    weights: str | None,
+    output: str | None,
+    output_format: str,
+    verbose: bool,
+):
+    """
+    Assess maturity of a single research software tool.
 
-    if args.biotools_id:
-        print(f"bio.tools ID: {args.biotools_id}")
-    if args.pmid:
-        print(f"PubMed ID: {args.pmid}")
-    if args.local_path:
-        print(f"Local path: {args.local_path}")
+    Example:
+        m4 assess --repo https://github.com/owner/repo --biotools blast
+    """
+    setup_logging(verbose)
 
-    print(f"\nOptions:")
-    print(f"  • Code quality analysis: {'No' if args.no_code_quality else 'Yes'}")
+    if not github_token and not gitlab_token:
+        raise click.ClickException(
+            "At least one API token is required. "
+            "Provide --github-token, --gitlab-token, or set GITHUB_TOKEN/GITLAB_TOKEN environment variables."
+        )
 
-    # Get API tokens from environment
-    github_token = os.environ.get("GITHUB_TOKEN")
-    gitlab_token = os.environ.get("GITLAB_TOKEN")
+    custom_weights = None
+    if weights:
+        custom_weights = load_weights_from_file(weights)
+        click.echo(f"✓ Loaded custom weights from: {weights}", err=True)
 
     try:
         # Initialize assessor
         assessor = MaturityAssessor(
             github_token=github_token,
             gitlab_token=gitlab_token,
-            max_citations_corpus=args.max_citations,
+            weights=custom_weights,
         )
 
         # Run assessment
-        print(f"\n{'─' * 70}")
-        print("Starting assessment...")
-        print(f"{'─' * 70}\n")
-
+        click.echo("🔍 Starting maturity assessment...", err=True)
         profile = assessor.assess(
-            biotools_id=args.biotools_id,
-            repo_url=args.repository,
-            repo_path=args.local_path,
-            pmid=args.pmid,
-            include_code_quality=not args.no_code_quality,
+            biotools_id=biotools_id,
+            repo_url=repo_url,
+            repo_path=local_path,
+            pmid=pmid,
+            doi=doi,
+            include_code_quality=not no_code_quality,
         )
 
-        print_results(profile, verbose=args.verbose)
+        # Format and output results
+        formatted_output = format_output(profile, output_format)
+        write_output(formatted_output, output)
 
-        save_results(profile, args.output_dir, args.repository)
-
-        print("\n✓ Assessment complete!\n")
-        return 0
-
-    except KeyboardInterrupt:
-        print("\n\n⚠ Assessment interrupted by user")
-        return 130
+        if not output:
+            click.echo("", err=True)
+        click.echo("✅ Assessment complete!", err=True)
 
     except Exception as e:
-        logging.error(f"Assessment failed: {e}", exc_info=args.verbose)
-        return 1
+        logger.exception("Assessment failed")
+        raise click.ClickException(str(e))
+
+
+def main():
+    cli()
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
