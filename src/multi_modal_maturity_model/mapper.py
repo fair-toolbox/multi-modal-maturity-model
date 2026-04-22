@@ -178,7 +178,7 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        if not fair_metrics and not publication_metrics:
+        if not fair_metrics:
             logger.warning("No data available for FAIRness scoring")
             return DimensionScore(name="FAIRness", score=None)
 
@@ -189,12 +189,12 @@ class MaturityMapper:
         )
         values = {
             "license": license_val,
-            "repository": fair_metrics.repository if fair_metrics else False,
-            "registry": fair_metrics.registry if fair_metrics else False,
-            "citation": fair_metrics.citation if fair_metrics else False,
-            "checklist": fair_metrics.checklist if fair_metrics else False,
+            "repository": fair_metrics.repository,
+            "registry": fair_metrics.registry,
+            "citation": fair_metrics.citation,
+            "checklist": fair_metrics.checklist,
             "publication_oa": (
-                publication_metrics.is_open_access if publication_metrics else False
+                publication_metrics.is_open_access if publication_metrics else None
             ),
         }
         return self.scorer.calculate_fairness(**values)

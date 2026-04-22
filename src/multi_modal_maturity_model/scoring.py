@@ -116,7 +116,7 @@ class DimensionScorer:
         registry: bool,
         citation: bool,
         checklist: bool,
-        publication_oa: bool,
+        publication_oa: bool | None = None,
     ) -> DimensionScore:
         """
         Calculate FAIRness dimension.
@@ -133,7 +133,7 @@ class DimensionScorer:
             Has citation information
         checklist : bool
             Passes FAIR checklist
-        publication_oa : bool
+        publication_oa : bool | None
             Associated publication is open access
 
         Returns
@@ -142,14 +142,17 @@ class DimensionScorer:
         """
         weights = self._config.get("fairness")
 
-        # Convert booleans to 0.0 or 1.0
+        oa_status = (
+            publication_oa if publication_oa is not None else False
+        )  # Treat unknown OA status as False for scoring
+
         score = (
             weights["license"] * float(license)
             + weights["repository"] * float(repository)
             + weights["registry"] * float(registry)
             + weights["citation"] * float(citation)
             + weights["checklist"] * float(checklist)
-            + weights["publication_oa"] * float(publication_oa)
+            + weights["publication_oa"] * float(oa_status)
         )
 
         return DimensionScore(
