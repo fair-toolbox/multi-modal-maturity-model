@@ -59,33 +59,6 @@ def transform_edam_terms(terms: list[dict[str, Any]]) -> list[EDAMItem]:
     return result
 
 
-def transform_functions(functions_raw: list[dict[str, Any]]) -> list[Function]:
-    """
-    Transform function list from bio.tools format.
-    """
-    if not functions_raw:
-        return []
-
-    result = []
-    for func in functions_raw:
-        if not isinstance(func, dict):
-            continue
-
-        operations = transform_edam_terms(func.get("operation", []))
-        inputs = transform_data_items(func.get("input", []))
-        outputs = transform_data_items(func.get("output", []))
-
-        result.append(
-            Function(
-                operation=operations,
-                input=inputs if inputs else None,
-                output=outputs if outputs else None,
-            )
-        )
-
-    return result
-
-
 def transform_data_items(data_list: list[dict[str, Any]]) -> list[DataItem]:
     """
     Transform input/output data item specifications.
@@ -112,6 +85,33 @@ def transform_data_items(data_list: list[dict[str, Any]]) -> list[DataItem]:
             DataItem(
                 data=data_term,
                 format=formats if formats else None,
+            )
+        )
+
+    return result
+
+
+def transform_functions(functions_raw: list[dict[str, Any]]) -> list[Function]:
+    """
+    Transform function list from bio.tools format.
+    """
+    if not functions_raw:
+        return []
+
+    result = []
+    for func in functions_raw:
+        if not isinstance(func, dict):
+            continue
+
+        operations = transform_edam_terms(func.get("operation", []))
+        inputs = transform_data_items(func.get("input", []))
+        outputs = transform_data_items(func.get("output", []))
+
+        result.append(
+            Function(
+                operation=operations,
+                input=inputs if inputs else None,
+                output=outputs if outputs else None,
             )
         )
 
