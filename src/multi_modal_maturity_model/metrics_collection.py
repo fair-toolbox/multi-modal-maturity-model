@@ -89,8 +89,8 @@ def collect_publications(
     """Collect and normalize publication metrics."""
     try:
         epmc_data = epmc_client.fetch(pmid=pmid, doi=doi)
-        ss_data = ss_client.get_paper_by_doi(doi)
-        openalex_data = openalex_client.fetch_work(pmid=pmid, doi=doi)
+        ss_data = ss_client.fetch(doi)
+        openalex_data = openalex_client.fetch(pmid=pmid, doi=doi)
 
         publication_metrics = _merge_publication_metrics(
             epmc=epmc_data,

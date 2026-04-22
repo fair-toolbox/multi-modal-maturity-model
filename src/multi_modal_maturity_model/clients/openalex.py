@@ -27,7 +27,7 @@ class OpenAlexClient:
             return f"pmid:{pmid}"
         return None
 
-    def fetch_work(
+    def fetch(
         self, pmid: str | None = None, doi: str | None = None
     ) -> dict[str, Any] | None:
         """
