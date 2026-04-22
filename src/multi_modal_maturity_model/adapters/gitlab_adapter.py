@@ -5,14 +5,8 @@ Adapter for transforming GitLab client data into core models.
 import logging
 from typing import Any
 
-from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
-from multi_modal_maturity_model.adapters.adapters_utils import (
-    calculate_avg_time_to_close,
-    detect_distribution_support,
-    detect_security_policy,
-    detect_security_scanning,
-    detect_workflow_support,
-)
+from ..models import Contributor, RepositoryMetrics
+from .base_repo_adapter import BaseRepositoryAdapter
 
 logger = logging.getLogger(__name__)
 
@@ -26,13 +20,12 @@ LICENSE_FILENAMES = {
 }
 
 
-class GitLabAdapter:
+class GitLabAdapter(BaseRepositoryAdapter):
     """
     Transform raw GitLab API data into RepositoryMetrics domain model.
     """
 
-    @staticmethod
-    def to_repository_metrics(raw_data: dict[str, Any]) -> RepositoryMetrics:
+    def to_repository_metrics(self, raw_data: dict[str, Any]) -> RepositoryMetrics:
         """
         Convert raw GitLab data to RepositoryMetrics model.
 
@@ -50,15 +43,19 @@ class GitLabAdapter:
         open_issues_count = raw_data.get("open_issues_count", 0)
         default_branch_protected = raw_data.get("default_branch_protected")
 
-        contributors = transform_contributors(raw_data.get("contributors"))
-        languages = extract_languages(raw_data.get("languages"))
-        avg_time_to_close = calculate_avg_time_to_close(raw_data.get("closed_issues"))
+        contributors = self._transform_contributors(raw_data.get("contributors"))
+        languages = self._extract_languages(raw_data.get("languages"))
         repository_tree = raw_data.get("repository_tree")
-        has_license = detect_license(repository_tree or [])
-        has_workflow_integration = detect_workflow_support(repository_tree)
-        has_distribution_support = detect_distribution_support(repository_tree)
-        has_security_policy = detect_security_policy(repository_tree)
-        has_security_scanning = detect_security_scanning(repository_tree)
+        has_license = self._detect_license(repository_tree or [])
+
+        has_workflow_integration = self.detect_workflow_support(repository_tree)
+        has_distribution_support = self.detect_distribution_support(repository_tree)
+        has_security_policy = self.detect_security_policy(repository_tree)
+        has_security_scanning = self.detect_security_scanning(repository_tree)
+        avg_time_to_close = self.calculate_avg_time_to_close(
+            raw_data.get("closed_issues")
+        )
+        inverse_simpson_index = self.calculate_inverse_simpson_index(contributors)
 
         return RepositoryMetrics(
             platform="gitlab",
@@ -78,37 +75,34 @@ class GitLabAdapter:
             has_security_policy=has_security_policy,
             has_security_scanning=has_security_scanning,
             last_commit_date=repo.get("last_activity_at"),
+            inverse_simpson_index=inverse_simpson_index,
         )
 
+    @staticmethod
+    def _transform_contributors(
+        contributors_raw: list[dict[str, Any]] | None,
+    ) -> list[Contributor]:
+        if not contributors_raw:
+            return []
+        return [
+            Contributor(
+                login=c.get("name", "unknown"), total_commits=c.get("commits", 0)
+            )
+            for c in contributors_raw
+        ]
 
-def transform_contributors(contributors_raw: list[dict[str, Any]]) -> list[Contributor]:
-    if not contributors_raw:
-        return []
-    return [
-        Contributor(login=c.get("name", "unknown"), total_commits=c.get("commits", 0))
-        for c in contributors_raw
-    ]
+    @staticmethod
+    def _extract_languages(languages: dict[str, Any] | None) -> list[str]:
+        if not languages:
+            return []
+        return list(languages.keys())
 
-
-def extract_languages(languages: dict[str, Any]) -> list[str]:
-    if not languages:
-        return []
-    return list(languages.keys())
-
-
-def detect_license(repository_tree: list[dict[str, Any]]) -> bool:
-    """
-    Check if repository tree has a license file.
-    Parameters
-    ----------
-    repository_tree : list[dict[str, Any]]
-        Repository tree data from GitLab API.
-    Returns
-    -------
-    bool
-        True if license exists, False otherwise.
-    """
-    for file in repository_tree:
-        if file["type"] == "blob" and file["name"].lower() in LICENSE_FILENAMES:
-            return True
-    return False
+    @staticmethod
+    def _detect_license(repository_tree: list[dict[str, Any]]) -> bool:
+        """
+        Check if repository tree has a license file. GitLab does not provide license info in the main repo metadata.
+        """
+        for file in repository_tree:
+            if file["type"] == "blob" and file["name"].lower() in LICENSE_FILENAMES:
+                return True
+        return False

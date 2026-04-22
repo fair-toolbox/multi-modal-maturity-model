@@ -55,6 +55,7 @@ class RepositoryMetrics:
     has_distribution_support: bool | None
     has_security_policy: bool | None
     has_security_scanning: bool | None
+    inverse_simpson_index: float | None
 
 
 @dataclass
@@ -66,6 +67,15 @@ class CodeQualityMetrics:
 
 
 @dataclass
+class HowfairisMetrics:
+    license: bool
+    repository: bool
+    registry: bool
+    citation: bool
+    checklist: bool
+
+
+@dataclass
 class PublicationMetrics:
     doi: str | None
     pmid: str | None
@@ -73,6 +83,7 @@ class PublicationMetrics:
     fwci: float | None
     influential_citation_count: int | None
     altmetric_score: float | None
+    is_open_access: bool | None
 
 
 @dataclass

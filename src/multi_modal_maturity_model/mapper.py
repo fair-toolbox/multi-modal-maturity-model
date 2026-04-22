@@ -5,32 +5,33 @@ This layer aggregates data from multiple clients, adapters and analyzers and map
 """
 
 import logging
-from datetime import datetime, timezone
-from typing import Any
 
-from .adapters.adapters_utils import parse_iso_datetime
 from .models import (
     CodeQualityMetrics,
     DimensionScore,
+    HowfairisMetrics,
     MaturityProfile,
+    PublicationMetrics,
     RepositoryMetrics,
     ToolModel,
 )
 from .scoring import DimensionScorer
+from .utils import calculate_days_since_last_commit
+
 
 logger = logging.getLogger(__name__)
 
 
 class MaturityMapper:
     """
-    Map collected data from multiple sources to maturity dimensions.
-
-    This class orchestrates the mapping between raw collected data
-    (from bio.tools, GitHub/GitLab, Lizard, howfairis, EuropePMC)
-    and the dimension scoring functions.
+    Map collected metrics from sources to maturity dimensions.
     """
 
-    def __init__(self, max_citations_corpus: int = 1000):
+    def __init__(
+        self,
+        max_citations_corpus: int = 1000,
+        weights: dict[str, dict[str, float]] | None = None,
+    ):
         """
         Initialize the mapper.
 
@@ -39,17 +40,20 @@ class MaturityMapper:
         max_citations_corpus : int
             Maximum citations in reference corpus for normalizing
             scientific impact (default: 1000)
+        weights : dict[str, dict[str, float]] | None
+            Custom weights for dimensions and overall score.
+            If None, uses defaults from weights.py.
         """
         self.max_citations_corpus = max_citations_corpus
-        self.scorer = DimensionScorer()
+        self.scorer = DimensionScorer(weights=weights)
 
     def map_to_maturity_profile(
         self,
         tool_model: ToolModel | None = None,
         repository_metrics: RepositoryMetrics | None = None,
         code_quality_metrics: CodeQualityMetrics | None = None,
-        fair_metrics: dict[str, Any] | None = None,
-        citation_metrics: dict[str, Any] | None = None,
+        fair_metrics: HowfairisMetrics | None = None,
+        publication_metrics: PublicationMetrics | None = None,
     ) -> MaturityProfile:
         """
         Map all collected metrics to a complete MaturityProfile.
@@ -62,9 +66,9 @@ class MaturityMapper:
             From GitHubAdapter/GitLabAdapter (for sustainability, security)
         code_quality_metrics : CodeQualityMetrics | None
             From LizardAnalyzer (for maintainability)
-        fair_metrics : dict[str, Any] | None
+        fair_metrics : HowfairisMetrics | None
             From HowfairisAnalyzer (for FAIRness)
-        citation_metrics : dict[str, Any] | None
+        publication_metrics : PublicationMetrics | None
             From EuropePMCClient (for scientific impact)
 
         Returns
@@ -75,12 +79,12 @@ class MaturityMapper:
         # Calculate each dimension
         compatibility = self._map_compatibility(tool_model, repository_metrics)
         fairness = self._map_fairness(
-            repository_metrics, fair_metrics, citation_metrics
+            repository_metrics, fair_metrics, publication_metrics
         )
         maintainability = self._map_maintainability(code_quality_metrics)
         sustainability = self._map_sustainability(repository_metrics)
         security = self._map_security(repository_metrics)
-        scientific_impact = self._map_scientific_impact(citation_metrics)
+        scientific_impact = self._map_scientific_impact(publication_metrics)
 
         # Calculate overall score
         dimensions = [
@@ -163,8 +167,8 @@ class MaturityMapper:
     def _map_fairness(
         self,
         repository_metrics: RepositoryMetrics | None,
-        fair_metrics: dict[str, Any] | None,
-        publication_metrics: dict[str, Any] | None,
+        fair_metrics: HowfairisMetrics | None,
+        publication_metrics: PublicationMetrics | None,
     ) -> DimensionScore:
         """
         Map data from multiple sources to FAIRness dimension.
@@ -174,23 +178,24 @@ class MaturityMapper:
         - howfairis (all FAIR indicators)
         - EuropePMC (open access status)
         """
-        if not repository_metrics and not fair_metrics and not publication_metrics:
+        if not fair_metrics and not publication_metrics:
             logger.warning("No data available for FAIRness scoring")
             return DimensionScore(name="FAIRness", score=None)
 
-        fair_metrics = fair_metrics or {}
-        publication_metrics = publication_metrics or {}
-
-        license_val = fair_metrics.get("license") or (
-            repository_metrics.has_license if repository_metrics else False
+        license_val = (
+            fair_metrics.license
+            if fair_metrics
+            else repository_metrics.has_license if repository_metrics else False
         )
         values = {
             "license": license_val,
-            "repository": fair_metrics.get("repository", False),
-            "registry": fair_metrics.get("registry", False),
-            "citation": fair_metrics.get("citation", False),
-            "checklist": fair_metrics.get("checklist", False),
-            "publication_oa": publication_metrics.get("is_open_access", False),
+            "repository": fair_metrics.repository if fair_metrics else False,
+            "registry": fair_metrics.registry if fair_metrics else False,
+            "citation": fair_metrics.citation if fair_metrics else False,
+            "checklist": fair_metrics.checklist if fair_metrics else False,
+            "publication_oa": (
+                publication_metrics.is_open_access if publication_metrics else False
+            ),
         }
         return self.scorer.calculate_fairness(**values)
 
@@ -228,26 +233,15 @@ class MaturityMapper:
             logger.warning("No repository metrics available for sustainability")
             return DimensionScore(name="Sustainability", score=None)
 
-        days_since_last_commit = None
-        if repository_metrics.last_commit_date:
-            try:
-                last_commit_date = parse_iso_datetime(
-                    repository_metrics.last_commit_date
-                )
-                now = datetime.now(last_commit_date.tzinfo or timezone.utc)
-                days_since_last_commit = max(0, (now - last_commit_date).days)
-            except ValueError as error:
-                logger.debug(f"Could not parse last commit date: {error}")
-
-        inverse_simpson_index = self.scorer.calculate_inverse_simpson_index(
-            repository_metrics.contributors
+        days_since_last_commit = calculate_days_since_last_commit(
+            repository_metrics.last_commit_date
         )
 
         return self.scorer.calculate_sustainability(
-            avg_issue_close_time_days=repository_metrics.avg_time_to_close_days or 90.0,
+            avg_issue_close_time_days=repository_metrics.avg_time_to_close_days,
             num_open_issues=repository_metrics.open_issues,
             days_since_last_commit=days_since_last_commit,
-            inverse_simpson_index=inverse_simpson_index,
+            inverse_simpson_index=repository_metrics.inverse_simpson_index,
         )
 
     def _map_security(
@@ -268,26 +262,18 @@ class MaturityMapper:
         )
 
     def _map_scientific_impact(
-        self, citation_metrics: dict[str, Any] | None
+        self, publication_metrics: PublicationMetrics | None
     ) -> DimensionScore:
         """
         Map citation data to Scientific Impact dimension.
         """
-        if not citation_metrics:
-            logger.warning("No citation metrics available for scientific impact")
+        if not publication_metrics:
+            logger.warning("No publication metrics available for scientific impact")
             return DimensionScore(name="Scientific Impact", score=None)
 
-        citation_count = citation_metrics.get(
-            "citation_count",
-            citation_metrics.get("citationCount", 0),
-        )
-        influential_citation_count = citation_metrics.get(
-            "influential_citation_count",
-            citation_metrics.get("influentialCitationCount"),
-        )
-
         return self.scorer.calculate_scientific_impact(
-            citation_count=citation_count,
-            influential_citation_count=influential_citation_count,
+            citation_count=publication_metrics.citation_count or 0,
+            influential_citation_count=publication_metrics.influential_citation_count
+            or None,
             max_citations_in_corpus=self.max_citations_corpus,
         )

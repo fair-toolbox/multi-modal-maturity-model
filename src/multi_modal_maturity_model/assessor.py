@@ -4,17 +4,18 @@ High-level pipeline for end-to-end maturity assessment.
 
 import logging
 from dataclasses import dataclass
+from functools import cached_property
 from typing import Any
 
-from multi_modal_maturity_model.adapters import (
+from .adapters import (
     BioToolsAdapter,
     GitHubAdapter,
     GitLabAdapter,
 )
 
-from multi_modal_maturity_model.analyzers import HowfairisAnalyzer, LizardAnalyzer
+from .analyzers import HowfairisAnalyzer, LizardAnalyzer
 
-from multi_modal_maturity_model.clients import (
+from .clients import (
     BioToolsClient,
     EuropePMCClient,
     GitHubClient,
@@ -25,9 +26,11 @@ from multi_modal_maturity_model.clients import (
 
 from .models import (
     CodeQualityMetrics,
-    MaturityProfile,
+    HowfairisMetrics,
+    PublicationMetrics,
     RepositoryMetrics,
     ToolModel,
+    MaturityProfile,
 )
 from .mapper import MaturityMapper
 
@@ -49,19 +52,13 @@ class CollectedMetricsBundle:
     tool_model: ToolModel | None
     repository_metrics: RepositoryMetrics | None
     code_quality_metrics: CodeQualityMetrics | None
-    fair_metrics: dict[str, Any] | None
-    publication_metrics: dict[str, Any] | None
+    fair_metrics: HowfairisMetrics | None
+    publication_metrics: PublicationMetrics | None
 
 
 class MaturityAssessor:
     """
     High-level orchestrator for complete maturity assessment.
-
-    This class handles the entire pipeline:
-    1. Automatic repository cloning (if URL provided)
-    2. Data collection from all available sources
-    3. Mapping to maturity dimensions
-    4. Cleanup of temporary resources
 
     Example
     -------
@@ -79,6 +76,7 @@ class MaturityAssessor:
         github_token: str | None = None,
         gitlab_token: str | None = None,
         max_citations_corpus: int = 1000,
+        weights: dict[str, dict[str, float]] | None = None,
     ):
         """
         Initialize the maturity assessor.
@@ -92,23 +90,67 @@ class MaturityAssessor:
         max_citations_corpus : int
             Maximum citations in reference corpus for normalizing
             scientific impact (default: 1000)
+        weights : dict[str, dict[str, float]] | None
+            Custom weights for dimensions and overall score.
+            If None, uses defaults from weights.py.
+            Example:
+            {
+                "compatibility": {"input_formats": 0.3, "output_formats": 0.3, ...},
+                "overall": {"fairness": 0.3, "sustainability": 0.3, ...},
+            }
         """
+
+        if not github_token and not gitlab_token:
+            raise ValueError(
+                "At least one API token (GitHub or GitLab) must be provided."
+            )
+
         self.github_token = github_token
         self.gitlab_token = gitlab_token
         self.max_citations_corpus = max_citations_corpus
 
-        self.mapper = MaturityMapper(max_citations_corpus=max_citations_corpus)
-
-        self.github_client = GitHubClient(token=github_token)
-        self.gitlab_client = GitLabClient(token=gitlab_token)
-        self.biotools_client = BioToolsClient()
-        self.biotools_adapter = BioToolsAdapter()
-        self.europepmc_client = EuropePMCClient()
-        self.openalex_client = OpenAlexClient()
-        self.semantic_scholar_client = SemanticScholarClient()
+        self.mapper = MaturityMapper(
+            max_citations_corpus=max_citations_corpus, weights=weights
+        )
 
         self.howfairis_analyzer = HowfairisAnalyzer()
         self.lizard_analyzer = LizardAnalyzer()
+
+    @cached_property
+    def github_client(self) -> GitHubClient:
+        return GitHubClient(token=self.github_token)
+
+    @cached_property
+    def gitlab_client(self) -> GitLabClient:
+        return GitLabClient(token=self.gitlab_token)
+
+    @cached_property
+    def biotools_client(self) -> BioToolsClient:
+        return BioToolsClient()
+
+    @cached_property
+    def europepmc_client(self) -> EuropePMCClient:
+        return EuropePMCClient()
+
+    @cached_property
+    def openalex_client(self) -> OpenAlexClient:
+        return OpenAlexClient()
+
+    @cached_property
+    def semantic_scholar_client(self) -> SemanticScholarClient:
+        return SemanticScholarClient()
+
+    @cached_property
+    def github_adapter(self) -> GitHubAdapter:
+        return GitHubAdapter()
+
+    @cached_property
+    def gitlab_adapter(self) -> GitLabAdapter:
+        return GitLabAdapter()
+
+    @cached_property
+    def biotools_adapter(self) -> BioToolsAdapter:
+        return BioToolsAdapter()
 
     def assess(
         self,
@@ -179,7 +221,7 @@ class MaturityAssessor:
             repository_metrics=bundle.repository_metrics,
             code_quality_metrics=bundle.code_quality_metrics,
             fair_metrics=bundle.fair_metrics,
-            citation_metrics=bundle.publication_metrics,
+            publication_metrics=bundle.publication_metrics,
         )
 
         logger.info(f"Assessment complete.")
@@ -208,9 +250,9 @@ class MaturityAssessor:
 
     def _get_repository_client_and_adapter(self, platform: str):
         if platform == "github":
-            return self.github_client, GitHubAdapter()
+            return self.github_client, self.github_adapter
         elif platform == "gitlab":
-            return self.gitlab_client, GitLabAdapter()
+            return self.gitlab_client, self.gitlab_adapter
         return None, None
 
     def _run_collection(
@@ -222,7 +264,7 @@ class MaturityAssessor:
         doi: str | None,
         platform: str | None,
         include_code_quality: bool,
-    ) -> dict[str, Any]:
+    ) -> CollectedMetricsBundle:
         """
         Run the data collection pipeline.
 

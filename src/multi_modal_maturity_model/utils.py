@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import tempfile
 from contextlib import contextmanager
+from datetime import datetime, timezone
 from typing import Generator
 
 logger = logging.getLogger(__name__)
@@ -147,3 +148,13 @@ def temporary_clone(repo_url: str) -> Generator[str, None, None]:
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
             logger.debug(f"Cleaned up temp directory: {temp_dir}")
+
+
+def calculate_days_since_last_commit(last_commit_date: str) -> int | None:
+    """Calculate days since last commit."""
+    try:
+        dt = datetime.fromisoformat(last_commit_date.replace("Z", "+00:00"))
+        now = datetime.now(dt.tzinfo or timezone.utc)
+        return max(0, (now - dt).days)
+    except ValueError:
+        return None

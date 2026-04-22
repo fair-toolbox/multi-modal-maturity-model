@@ -12,7 +12,13 @@ from .clients import (
     OpenAlexClient,
     SemanticScholarClient,
 )
-from .models import CodeQualityMetrics, PublicationMetrics, RepositoryMetrics, ToolModel
+from .models import (
+    CodeQualityMetrics,
+    HowfairisMetrics,
+    PublicationMetrics,
+    RepositoryMetrics,
+    ToolModel,
+)
 from .utils import temporary_clone
 
 
@@ -55,11 +61,19 @@ def collect_code_quality(
         return None
 
 
-def collect_howfairis(client: HowfairisAnalyzer, repo_url: str) -> dict | None:
+def collect_howfairis(
+    client: HowfairisAnalyzer, repo_url: str
+) -> HowfairisMetrics | None:
     """Collect fairnessmetrics."""
     try:
         fair_metrics = client.fetch(repo_url)
-        return fair_metrics
+        return HowfairisMetrics(
+            license=fair_metrics.get("license"),
+            repository=fair_metrics.get("repository"),
+            registry=fair_metrics.get("registry"),
+            citation=fair_metrics.get("citation"),
+            checklist=fair_metrics.get("checklist"),
+        )
     except Exception as e:
         logger.warning(f"Failed to collect HowFairis metrics for {repo_url}: {e}")
         return None
@@ -138,6 +152,11 @@ def _merge_publication_metrics(
             else None
         ),
         altmetric_score=None,
+        is_open_access=(
+            semantic_scholar.get("isOpenAccess")
+            if semantic_scholar
+            else openalex.get("is_oa") if openalex else None
+        ),
     )
 
     return merged_metrics

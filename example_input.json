@@ -1,0 +1,22 @@
+{
+	"repository": "https://github.com/owner/repo",
+	"biotoolsID": "your-tool-id",
+	"pmid": "12345678",
+	"local-path": "/home/user/path-to-local-repo",
+	"no-code-quality": false,
+	"weights": {
+		"security": {
+			"default_branch_protected": 0.5,
+			"has_security_policy": 0.3,
+			"has_security_scanning": 0.2
+		},
+		"overall": {
+			"compatibility": 0.15,
+			"fairness": 0.25,
+			"maintainability": 0.15,
+			"sustainability": 0.25,
+			"security": 0.15,
+			"scientific_impact": 0.05
+		}
+	}
+}

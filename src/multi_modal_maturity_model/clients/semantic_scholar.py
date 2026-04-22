@@ -18,7 +18,7 @@ class SemanticScholarClient:
         self.base_url = base_url
         self.timeout = timeout
 
-    def get_paper_by_doi(self, doi: str) -> dict[str, Any] | None:
+    def fetch(self, doi: str) -> dict[str, Any] | None:
         """
         Get paper metrics by DOI.
 
