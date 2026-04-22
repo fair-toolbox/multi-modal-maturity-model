@@ -4,6 +4,7 @@ High-level pipeline for end-to-end maturity assessment.
 
 import logging
 from dataclasses import dataclass
+from functools import cached_property
 from typing import Any
 
 from .adapters import (
@@ -112,16 +113,36 @@ class MaturityAssessor:
             max_citations_corpus=max_citations_corpus, weights=weights
         )
 
-        self.github_client = GitHubClient(token=github_token)
-        self.gitlab_client = GitLabClient(token=gitlab_token)
-        self.biotools_client = BioToolsClient()
-        self.biotools_adapter = BioToolsAdapter()
-        self.europepmc_client = EuropePMCClient()
-        self.openalex_client = OpenAlexClient()
-        self.semantic_scholar_client = SemanticScholarClient()
-
         self.howfairis_analyzer = HowfairisAnalyzer()
         self.lizard_analyzer = LizardAnalyzer()
+
+    @cached_property
+    def github_client(self) -> GitHubClient:
+        return GitHubClient(token=self.github_token)
+
+    @cached_property
+    def gitlab_client(self) -> GitLabClient:
+        return GitLabClient(token=self.gitlab_token)
+
+    @cached_property
+    def biotools_client(self) -> BioToolsClient:
+        return BioToolsClient()
+
+    @cached_property
+    def biotools_adapter(self) -> BioToolsAdapter:
+        return BioToolsAdapter()
+
+    @cached_property
+    def europepmc_client(self) -> EuropePMCClient:
+        return EuropePMCClient()
+
+    @cached_property
+    def openalex_client(self) -> OpenAlexClient:
+        return OpenAlexClient()
+
+    @cached_property
+    def semantic_scholar_client(self) -> SemanticScholarClient:
+        return SemanticScholarClient()
 
     def assess(
         self,

@@ -24,11 +24,7 @@ logger = logging.getLogger(__name__)
 
 class MaturityMapper:
     """
-    Map collected data from multiple sources to maturity dimensions.
-
-    This class orchestrates the mapping between raw collected data
-    (from bio.tools, GitHub/GitLab, Lizard, howfairis, EuropePMC)
-    and the dimension scoring functions.
+    Map collected metrics from sources to maturity dimensions.
     """
 
     def __init__(
@@ -242,7 +238,7 @@ class MaturityMapper:
         )
 
         return self.scorer.calculate_sustainability(
-            avg_issue_close_time_days=repository_metrics.avg_time_to_close_days or 90.0,
+            avg_issue_close_time_days=repository_metrics.avg_time_to_close_days,
             num_open_issues=repository_metrics.open_issues,
             days_since_last_commit=days_since_last_commit,
             inverse_simpson_index=repository_metrics.inverse_simpson_index,
