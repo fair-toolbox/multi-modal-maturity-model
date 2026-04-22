@@ -45,9 +45,9 @@ def collect_code_quality(
     try:
         if not repo_path:
             with temporary_clone(repo_url) as temp_path:
-                raw_data = client.fetch(temp_path)
+                raw_data = client.analyze(temp_path)
         else:
-            raw_data = client.fetch(repo_path)
+            raw_data = client.analyze(repo_path)
 
         code_quality_metrics = CodeQualityMetrics(
             total_nloc=raw_data.get("total_nloc"),
@@ -66,7 +66,7 @@ def collect_howfairis(
 ) -> HowfairisMetrics | None:
     """Collect fairnessmetrics."""
     try:
-        fair_metrics = client.fetch(repo_url)
+        fair_metrics = client.analyze(repo_url)
         return HowfairisMetrics(
             license=fair_metrics.get("license"),
             repository=fair_metrics.get("repository"),
