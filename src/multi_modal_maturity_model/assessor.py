@@ -50,15 +50,6 @@ from .utils import detect_platform, extract_repo_identifier
 logger = logging.getLogger(__name__)
 
 
-@dataclass
-class CollectedMetricsBundle:
-    tool_model: ToolModel | None
-    repository_metrics: RepositoryMetrics | None
-    code_quality_metrics: CodeQualityMetrics | None
-    fair_metrics: HowfairisMetrics | None
-    publication_metrics: PublicationMetrics | None
-
-
 class MaturityAssessor:
     """
     High-level orchestrator for complete maturity assessment.
@@ -190,11 +181,11 @@ class MaturityAssessor:
 
         logger.info("Mapping collected data to maturity dimensions...")
         maturity_profile = self.mapper.map_to_maturity_profile(
-            tool_model=bundle.tool_model,
-            repository_metrics=bundle.repository_metrics,
-            code_quality_metrics=bundle.code_quality_metrics,
-            fair_metrics=bundle.fair_metrics,
-            publication_metrics=bundle.publication_metrics,
+            tool_model=bundle["tool_model"],
+            repository_metrics=bundle["repository_metrics"],
+            code_quality_metrics=bundle["code_quality_metrics"],
+            fair_metrics=bundle["fair_metrics"],
+            publication_metrics=bundle["publication_metrics"],
         )
 
         logger.info("Assessment complete.")
@@ -215,7 +206,7 @@ class MaturityAssessor:
         pmid: str | None,
         doi: str | None,
         include_code_quality: bool,
-    ) -> CollectedMetricsBundle:
+    ) -> dict[str, Any]:
         """
         Run the data collection pipeline.
 
@@ -261,10 +252,10 @@ class MaturityAssessor:
             else None
         )
 
-        return CollectedMetricsBundle(
-            tool_model=tool_model,
-            repository_metrics=repository_metrics,
-            code_quality_metrics=code_quality_metrics,
-            fair_metrics=fair_metrics,
-            publication_metrics=publication_metrics,
-        )
+        return {
+            "tool_model": tool_model,
+            "repository_metrics": repository_metrics,
+            "code_quality_metrics": code_quality_metrics,
+            "fair_metrics": fair_metrics,
+            "publication_metrics": publication_metrics,
+        }
