@@ -4,17 +4,8 @@ from types import SimpleNamespace
 
 from multi_modal_maturity_model.adapters.gitlab_adapter import (
     GitLabAdapter,
-    transform_contributors,
-    extract_languages,
-    detect_license,
 )
-from multi_modal_maturity_model.adapters.adapters_utils import (
-    calculate_avg_time_to_close,
-    detect_distribution_support,
-    detect_security_policy,
-    detect_security_scanning,
-    detect_workflow_support,
-)
+from multi_modal_maturity_model.adapters.base_repo_adapter import BaseRepositoryAdapter
 from multi_modal_maturity_model.models import Contributor, RepositoryMetrics
 
 
@@ -29,7 +20,7 @@ def test_transform_contributors():
         {"name": "bob", "commits": 0},
         {},  # should default to "unknown" and 0
     ]
-    result = transform_contributors(raw)
+    result = GitLabAdapter._transform_contributors(raw)
     assert len(result) == 3
     assert result[0] == Contributor(login="alice", total_commits=5)
     assert result[1] == Contributor(login="bob", total_commits=0)
@@ -38,10 +29,10 @@ def test_transform_contributors():
 
 def test_extract_languages():
     langs = {"Python": 1000, "JS": 500}
-    result = extract_languages(langs)
+    result = GitLabAdapter._extract_languages(langs)
     assert set(result) == {"Python", "JS"}
 
-    result_empty = extract_languages(None)
+    result_empty = GitLabAdapter._extract_languages(None)
     assert result_empty == []
 
 
@@ -59,7 +50,7 @@ def test_calculate_avg_time_to_close():
 
     closed_issues = [issue1, issue2]
 
-    avg_days = calculate_avg_time_to_close(closed_issues)
+    avg_days = BaseRepositoryAdapter.calculate_avg_time_to_close(closed_issues)
     assert avg_days == pytest.approx(2.5, 0.01)
 
 
@@ -68,13 +59,13 @@ def test_detect_license():
         {"type": "blob", "name": "README.md"},
         {"type": "blob", "name": "LICENSE"},
     ]
-    assert detect_license(tree) is True
+    assert GitLabAdapter._detect_license(tree) is True
 
     tree_no_license = [{"type": "blob", "name": "README.md"}]
-    assert detect_license(tree_no_license) is False
+    assert GitLabAdapter._detect_license(tree_no_license) is False
 
     tree_empty = []
-    assert detect_license(tree_empty) is False
+    assert GitLabAdapter._detect_license(tree_empty) is False
 
 
 # ----------------------------
@@ -113,7 +104,7 @@ def test_to_repository_metrics_basic():
         ],
     }
 
-    metrics = GitLabAdapter.to_repository_metrics(raw_data)
+    metrics = GitLabAdapter().to_repository_metrics(raw_data)
 
     assert isinstance(metrics, RepositoryMetrics)
     assert metrics.platform == "gitlab"
@@ -136,15 +127,15 @@ def test_to_repository_metrics_basic():
 
 
 def test_detect_workflow_support_none_returns_unknown():
-    assert detect_workflow_support(None) is None
+    assert BaseRepositoryAdapter.detect_workflow_support(None) is None
 
 
 def test_detect_distribution_support_none_returns_unknown():
-    assert detect_distribution_support(None) is None
+    assert BaseRepositoryAdapter.detect_distribution_support(None) is None
 
 
 def test_detect_security_policy_none_returns_unknown():
-    assert detect_security_policy(None) is None
+    assert BaseRepositoryAdapter.detect_security_policy(None) is None
 
 
 def test_detect_security_scanning_from_repository_tree():
@@ -153,4 +144,4 @@ def test_detect_security_scanning_from_repository_tree():
         {"type": "blob", "name": "README.md", "path": "README.md"},
     ]
 
-    assert detect_security_scanning(repository_tree) is True
+    assert BaseRepositoryAdapter.detect_security_scanning(repository_tree) is True
