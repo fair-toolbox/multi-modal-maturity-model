@@ -73,6 +73,5 @@ class HowfairisAnalyzer:
             logger.info(f"Successfully collected FAIR metrics for {repo_url}")
             return result
 
-        except Exception as e:
-            logger.error(f"Error analyzing {repo_url}: {e}")
+        except Exception:
             raise

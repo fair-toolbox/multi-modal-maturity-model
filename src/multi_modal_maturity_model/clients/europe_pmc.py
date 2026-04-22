@@ -103,12 +103,6 @@ class EuropePMCClient:
             if e.response and e.response.status_code == 404:
                 logger.info(f"Publication not found: {identifier_type}:{identifier}")
                 return None
-            logger.error(
-                f"HTTP error fetching data for {identifier_type}:{identifier}: {e}"
-            )
             raise
-        except Exception as e:
-            logger.error(
-                f"Unexpected error fetching data for {identifier_type}:{identifier}: {e}"
-            )
+        except Exception:
             raise

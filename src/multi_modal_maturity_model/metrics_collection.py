@@ -117,9 +117,7 @@ def collect_repository(
         repo_model = adapter.to_repository_metrics(raw_data)
         return repo_model
     except Exception as e:
-        logger.warning(
-            f"Failed to collect repository metrics for {repo_identifier}: {e}"
-        )
+        logger.error(f"Failed to collect repository metrics for {repo_identifier}: {e}")
         return None
 
 

@@ -54,15 +54,11 @@ class OpenAlexClient:
 
         try:
             response = requests.get(url, timeout=30)
+            if response.status_code == 404:
+                logger.info(f"Work not found for query: {query}")
+                return None
             response.raise_for_status()
             data = response.json()
             return data
-        except requests.RequestException as e:
-            if e.response.status_code == 404:
-                logger.info(f"Work not found for query: {query}")
-                return None
-            logger.error(f"Request error fetching data from OpenAlex: {e}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error fetching work for query {query}: {e}")
+        except Exception:
             raise

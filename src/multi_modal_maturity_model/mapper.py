@@ -86,7 +86,8 @@ class MaturityMapper:
         security = self._map_security(repository_metrics)
         scientific_impact = self._map_scientific_impact(publication_metrics)
 
-        # Calculate overall score
+        logger.info("Mapping complete. Calculating overall score...")
+
         dimensions = [
             compatibility,
             fairness,
@@ -118,7 +119,7 @@ class MaturityMapper:
         Calculates fraction of input/output formats that are EDAM leaf nodes.
         """
         if not tool_model and not repository_metrics:
-            logger.warning("No data available for compatibility scoring")
+            logger.warning("No data available for compatibility")
             return DimensionScore(name="Compatibility", score=None)
 
         input_fraction = None
@@ -179,7 +180,7 @@ class MaturityMapper:
         - EuropePMC (open access status)
         """
         if not fair_metrics:
-            logger.warning("No data available for FAIRness scoring")
+            logger.warning("No fair metrics available for FAIRness")
             return DimensionScore(name="FAIRness", score=None)
 
         license_val = (

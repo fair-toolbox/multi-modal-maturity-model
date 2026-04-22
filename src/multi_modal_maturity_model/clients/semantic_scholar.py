@@ -47,6 +47,5 @@ class SemanticScholarClient:
                 return None
             response.raise_for_status()
             return response.json()
-        except requests.RequestException as e:
-            logger.error(f"Error fetching paper {doi}: {e}")
-            return None
+        except Exception:
+            raise

@@ -44,6 +44,5 @@ class BioToolsClient:
             response.raise_for_status()
             data = response.json()
             return data
-        except requests.RequestException as e:
-            logger.error(f"Error fetching data from bio.tools for ID {tool_id}: {e}")
+        except Exception as e:
             raise
