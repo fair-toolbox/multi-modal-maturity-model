@@ -122,9 +122,9 @@ def collect_repository(
 
 
 def _merge_publication_metrics(
-    epmc=dict[str, Any] | None,
-    openalex=dict[str, Any] | None,
-    semantic_scholar=dict[str, Any] | None,
+    epmc: dict[str, Any] | None = None,
+    openalex: dict[str, Any] | None = None,
+    semantic_scholar: dict[str, Any] | None = None,
 ) -> PublicationMetrics | None:
     """Merge publication metrics from multiple sources."""
 
