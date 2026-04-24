@@ -1,13 +1,13 @@
-"""Multi-Modal Maturity Model for research software assessment."""
+"""Multi-Modal Maturity Model for research software."""
 
-from .assessor import MaturityAssessor
+from .service import MaturityService
 from .scoring import DimensionScorer
 from .mapper import MaturityMapper
 
 __version__ = "0.1.0"
 
 __all__ = [
-    "MaturityAssessor",
+    "MaturityService",
     "MaturityMapper",
     "DimensionScorer",
 ]

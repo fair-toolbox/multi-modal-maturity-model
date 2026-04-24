@@ -1,11 +1,11 @@
 """
-Tests for the MaturityAssessor.
+Tests for the MaturityService.
 """
 
 import pytest
 from unittest.mock import Mock, patch
 
-from multi_modal_maturity_model.assessor import MaturityAssessor
+from multi_modal_maturity_model.service import MaturityService
 from multi_modal_maturity_model.models import (
     RepositoryMetrics,
     CodeQualityMetrics,
@@ -16,9 +16,9 @@ from multi_modal_maturity_model.models import (
 
 
 @pytest.fixture
-def assessor():
-    """Create a MaturityAssessor instance."""
-    return MaturityAssessor(
+def service():
+    """Create a MaturityService instance."""
+    return MaturityService(
         github_token="test_token",
         gitlab_token="test_token",
         max_citations_corpus=1000,
@@ -50,35 +50,37 @@ def sample_repository_metrics():
     )
 
 
-def test_assessor_initialization():
-    """Test MaturityAssessor initialization."""
-    assessor = MaturityAssessor(
+def test_service_initialization():
+    """Test MaturityService initialization."""
+    service = MaturityService(
         github_token="gh_token",
         gitlab_token="gl_token",
         max_citations_corpus=2000,
     )
 
-    assert assessor.github_token == "gh_token"
-    assert assessor.gitlab_token == "gl_token"
-    assert assessor.max_citations_corpus == 2000
-    assert assessor.mapper is not None
+    assert service.github_token == "gh_token"
+    assert service.gitlab_token == "gl_token"
+    assert service.max_citations_corpus == 2000
+    assert service.mapper is not None
 
 
-def test_assess_no_data_sources(assessor):
-    """Test that assess raises error when no data sources provided."""
+def test_evaluate_no_data_sources(service):
+    """Test that evaluate raises error when no data sources provided."""
     with pytest.raises(ValueError, match="Repository URL is required."):
-        assessor.assess()
+        service.evaluate()
 
 
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-@patch("multi_modal_maturity_model.assessor.collect_code_quality")
-def test_assess_with_repository_and_code_quality(
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_code_quality")
+def test_evaluate_with_repository_and_code_quality(
     mock_collect_code_quality,
     mock_collect_repository,
-    assessor,
+    mock_collect_howfairis,
+    service,
     sample_repository_metrics,
 ):
-    """Test assessment with repository and code quality metrics."""
+    """Test evaluation with repository and code quality metrics."""
     # Mock repository collection
     mock_collect_repository.return_value = sample_repository_metrics
 
@@ -90,8 +92,11 @@ def test_assess_with_repository_and_code_quality(
         duplicate_rate=0.1,
     )
 
-    # Run assessment
-    profile = assessor.assess(
+    # Mock howfairis collection
+    mock_collect_howfairis.return_value = None
+
+    # Run evaluation
+    profile = service.evaluate(
         repo_url="https://github.com/owner/repo",
         include_code_quality=True,
     )
@@ -104,14 +109,16 @@ def test_assess_with_repository_and_code_quality(
     assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-@patch("multi_modal_maturity_model.assessor.collect_code_quality")
-def test_assess_with_gitlab(
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_code_quality")
+def test_evaluate_with_gitlab(
     mock_collect_code_quality,
     mock_collect_repository,
-    assessor,
+    mock_collect_howfairis,
+    service,
 ):
-    """Test assessment with GitLab repository."""
+    """Test evaluation with GitLab repository."""
     # Mock repository collection
     mock_collect_repository.return_value = RepositoryMetrics(
         platform="gitlab",
@@ -142,8 +149,11 @@ def test_assess_with_gitlab(
         duplicate_rate=0.05,
     )
 
-    # Run assessment with GitLab
-    profile = assessor.assess(
+    # Mock howfairis collection
+    mock_collect_howfairis.return_value = None
+
+    # Run evaluation with GitLab
+    profile = service.evaluate(
         repo_url="https://gitlab.com/group/project",
         include_code_quality=True,
     )
@@ -152,15 +162,17 @@ def test_assess_with_gitlab(
     assert profile.overall_score.score is not None
 
 
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-@patch("multi_modal_maturity_model.assessor.collect_code_quality")
-def test_assess_with_local_path(
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_code_quality")
+def test_evaluate_with_local_path(
     mock_collect_code_quality,
     mock_collect_repository,
-    assessor,
+    mock_collect_howfairis,
+    service,
     sample_repository_metrics,
 ):
-    """Test assessment using local repository path."""
+    """Test evaluation using local repository path."""
     # Mock repository collection
     mock_collect_repository.return_value = sample_repository_metrics
 
@@ -172,8 +184,11 @@ def test_assess_with_local_path(
         duplicate_rate=0.1,
     )
 
-    # Run assessment with local path
-    profile = assessor.assess(
+    # Mock howfairis collection
+    mock_collect_howfairis.return_value = None
+
+    # Run evaluation with local path
+    profile = service.evaluate(
         repo_url="https://github.com/owner/repo",
         repo_path="/local/path/to/repo",
         include_code_quality=True,
@@ -182,37 +197,45 @@ def test_assess_with_local_path(
     # Verify code quality was called with local path
     assert mock_collect_code_quality.called
     call_args = mock_collect_code_quality.call_args
-    assert call_args[0][2] == "/local/path/to/repo"  # repo_path argument
+    assert call_args[0][0] == "https://github.com/owner/repo"  # repo_url argument
+    assert call_args[0][1] == "/local/path/to/repo"  # repo_path argument
 
     assert profile is not None
 
 
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-def test_assess_handles_collector_errors(mock_collect_repository, assessor):
-    """Test that assessment continues when a collector fails."""
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+def test_evaluate_handles_collector_errors(
+    mock_collect_repository, mock_collect_howfairis, service
+):
+    """Test that evaluation continues when a collector fails."""
     # Mock collection to return None (failure)
     mock_collect_repository.return_value = None
+    mock_collect_howfairis.return_value = None
 
-    # Assessment should complete even when repository metrics fail
-    profile = assessor.assess(repo_url="https://github.com/owner/repo")
+    # Evaluation should complete even when repository metrics fail
+    profile = service.evaluate(repo_url="https://github.com/owner/repo")
 
     # Profile should be created but with None score for dimensions requiring repo metrics
     assert profile is not None
     assert profile.sustainability.score is None
 
 
-@patch("multi_modal_maturity_model.assessor.collect_code_quality")
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-def test_assess_skip_code_quality(
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_code_quality")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+def test_evaluate_skip_code_quality(
     mock_collect_repository,
     mock_collect_code_quality,
-    assessor,
+    mock_collect_howfairis,
+    service,
     sample_repository_metrics,
 ):
     """Test that code quality collection can be skipped."""
     mock_collect_repository.return_value = sample_repository_metrics
+    mock_collect_howfairis.return_value = None
 
-    profile = assessor.assess(
+    profile = service.evaluate(
         repo_url="https://github.com/owner/repo",
         include_code_quality=False,  # Skip code analysis
     )
@@ -223,20 +246,26 @@ def test_assess_skip_code_quality(
     assert profile is not None
 
 
-@patch("multi_modal_maturity_model.assessor.collect_biotools")
-@patch("multi_modal_maturity_model.assessor.collect_repository")
-def test_assess_with_biotools_id(
-    mock_collect_repository, mock_collect_biotools, assessor, sample_repository_metrics
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_biotools")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+def test_evaluate_with_biotools_id(
+    mock_collect_repository,
+    mock_collect_biotools,
+    mock_collect_howfairis,
+    service,
+    sample_repository_metrics,
 ):
-    """Test assessment with bio.tools ID."""
+    """Test evaluation with bio.tools ID."""
     mock_collect_repository.return_value = sample_repository_metrics
+    mock_collect_howfairis.return_value = None
 
     mock_tool_model = Mock(spec=ToolModel)
     mock_tool_model.biotools_id = "test_tool"
     mock_tool_model.function = []
     mock_collect_biotools.return_value = mock_tool_model
 
-    profile = assessor.assess(
+    profile = service.evaluate(
         biotools_id="test_tool", repo_url="https://github.com/owner/repo"
     )
 
@@ -244,19 +273,19 @@ def test_assess_with_biotools_id(
     mock_collect_biotools.assert_called_once()
 
 
-def test_get_repository_client_and_adapter(assessor):
+def test_get_repository_client_and_adapter(service):
     """Test getting the correct client and adapter for platform."""
     # Test GitHub
-    client, adapter = assessor._get_repository_client_and_adapter("github")
-    assert client is assessor.github_client
+    client, adapter = service._get_repository_client_and_adapter("github")
+    assert client is service.github_client
     assert adapter is not None
 
     # Test GitLab
-    client, adapter = assessor._get_repository_client_and_adapter("gitlab")
-    assert client is assessor.gitlab_client
+    client, adapter = service._get_repository_client_and_adapter("gitlab")
+    assert client is service.gitlab_client
     assert adapter is not None
 
     # Test unknown platform
-    client, adapter = assessor._get_repository_client_and_adapter("unknown")
+    client, adapter = service._get_repository_client_and_adapter("unknown")
     assert client is None
     assert adapter is None
