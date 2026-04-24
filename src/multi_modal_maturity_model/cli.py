@@ -9,7 +9,7 @@ import logging
 from dotenv import load_dotenv
 from pathlib import Path
 
-from .assessor import MaturityAssessor
+from .service import MaturityService
 from .models import MaturityProfile
 from .weights import validate_weights
 
@@ -62,7 +62,7 @@ def format_output(profile: MaturityProfile, format_type: str) -> str:
     elif format_type == "pretty":
         lines = []
         lines.append("=" * 60)
-        lines.append("MATURITY ASSESSMENT REPORT")
+        lines.append("MATURITY EVALUATION REPORT")
         lines.append("=" * 60)
         lines.append("")
 
@@ -112,7 +112,7 @@ def write_output(content: str, output_path: str | None) -> None:
 @click.version_option(version=__version__, prog_name="m4")
 def cli():
     """
-    Multi-Modal Maturity Model (M4) - Assessment tool for research software.
+    Multi-Modal Maturity Model (M4)
 
     Evaluates research software across multiple dimensions:
     compatibility, fairness, maintainability, sustainability,
@@ -192,7 +192,7 @@ def cli():
     is_flag=True,
     help="Enable verbose logging",
 )
-def assess(
+def evaluate(
     repo_url: str,
     biotools_id: str | None,
     pmid: str | None,
@@ -207,10 +207,10 @@ def assess(
     verbose: bool,
 ):
     """
-    Assess maturity of a single research software tool.
+    Evaluate maturity of a single research software tool.
 
     Example:
-        m4 assess --repo https://github.com/owner/repo --biotools blast
+        m4 evaluate --repo https://github.com/owner/repo --biotools blast
     """
     setup_logging(verbose)
 
@@ -226,16 +226,16 @@ def assess(
         click.echo(f"✓ Loaded custom weights from: {weights}", err=True)
 
     try:
-        # Initialize assessor
-        assessor = MaturityAssessor(
+        # Initialize service
+        service = MaturityService(
             github_token=github_token,
             gitlab_token=gitlab_token,
             weights=custom_weights,
         )
 
-        # Run assessment
-        click.echo("🔍 Starting maturity assessment...", err=True)
-        profile = assessor.assess(
+        # Run evaluation
+        click.echo("🔍 Starting maturity evaluation...", err=True)
+        profile = service.evaluate(
             biotools_id=biotools_id,
             repo_url=repo_url,
             repo_path=local_path,
@@ -250,10 +250,10 @@ def assess(
 
         if not output:
             click.echo("", err=True)
-        click.echo("✅ Assessment complete!", err=True)
+        click.echo("✅ Evaluation complete!", err=True)
 
     except Exception as e:
-        logger.exception("Assessment failed")
+        logger.exception("Evaluation failed")
         raise click.ClickException(str(e))
 
 

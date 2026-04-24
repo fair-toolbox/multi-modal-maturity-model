@@ -35,7 +35,7 @@ class HowfairisAnalyzer:
 
     def analyze(self, repo_url: str) -> dict[str, Any]:
         """
-        Assess FAIR compliance for a single repository.
+        Check FAIR compliance for a single repository.
 
         Parameters
         ----------
