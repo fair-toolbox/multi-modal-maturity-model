@@ -89,7 +89,7 @@ class PublicationMetrics:
     records: list[PublicationRecord]
     total_citation_count: int | None
     total_influential_citation_count: int | None
-    mean_fwci: float | None
+    total_fwci: float | None
     altmetric_score: float | None
     any_open_access: bool | None
     all_open_access: bool | None

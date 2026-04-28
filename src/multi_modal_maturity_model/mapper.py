@@ -282,4 +282,5 @@ class MaturityMapper:
             influential_citation_count=publication_metrics.total_influential_citation_count
             or None,
             max_citations_in_corpus=self.max_citations_corpus,
+            fwci=publication_metrics.total_fwci,
         )

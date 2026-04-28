@@ -350,11 +350,7 @@ def _aggregate_publication_metrics(
     total_influential_citation_count = sum(
         r.influential_citation_count for r in records if r.influential_citation_count
     )
-    mean_fwci = (
-        sum(r.fwci for r in records if r.fwci) / len(records)
-        if any(r.fwci for r in records)
-        else None
-    )
+    total_fwci = sum(r.fwci for r in records if r.fwci)
     altmetric_score = (
         max(r.altmetric_score for r in records if r.altmetric_score)
         if any(r.altmetric_score for r in records)
@@ -372,7 +368,7 @@ def _aggregate_publication_metrics(
         publication_count=len(records),
         total_citation_count=total_citation_count,
         total_influential_citation_count=total_influential_citation_count,
-        mean_fwci=mean_fwci,
+        total_fwci=total_fwci,
         altmetric_score=altmetric_score,
         any_open_access=any_open_access,
         all_open_access=all_open_access,

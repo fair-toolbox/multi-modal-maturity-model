@@ -142,7 +142,7 @@ def sample_publication_metrics():
         publication_count=1,
         total_citation_count=50,
         total_influential_citation_count=10,
-        mean_fwci=1.2,
+        total_fwci=1.2,
         altmetric_score=None,
         any_open_access=True,
         all_open_access=True,
@@ -539,3 +539,4 @@ def test_map_scientific_impact(sample_publication_metrics):
     assert score.score > 0.0  # Has citations
     assert score.details["total_citation_count"] == 50
     assert score.details["total_influential_citation_count"] == 10
+    assert score.details["total_fwci"] == 1.2

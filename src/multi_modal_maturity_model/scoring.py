@@ -332,6 +332,7 @@ class DimensionScorer:
         self,
         citation_count: int,
         influential_citation_count: int | None,
+        fwci: float | None,
         max_citations_in_corpus: int,
     ) -> DimensionScore:
         """
@@ -357,6 +358,7 @@ class DimensionScorer:
             max_citations_in_corpus = 1000
 
         denominator = math.log(max_citations_in_corpus + 0.5)
+
         citation_component = (
             math.log(max(citation_count, 0) + 0.5) / denominator
             if citation_count is not None and denominator > 0
@@ -369,6 +371,8 @@ class DimensionScorer:
             else None
         )
 
+        fwci_component = min(1.0, fwci / 2.0) if fwci is not None else None
+
         score = _weighted_average(
             {
                 "citation_count": (citation_component, w["citation_count"]),
@@ -376,6 +380,7 @@ class DimensionScorer:
                     influential_component,
                     w["influential_citation_count"],
                 ),
+                "fwci": (fwci_component, w["fwci"]),
             }
         )
         return DimensionScore(
@@ -385,7 +390,7 @@ class DimensionScorer:
                 "total_citation_count": citation_count,
                 "total_influential_citation_count": influential_citation_count,
                 "max_citations_in_corpus": max_citations_in_corpus,
-                "fwci": None,  # Placeholder for future FWCI integration
+                "total_fwci": fwci,
                 "altmetric_score": None,  # Placeholder for future Altmetric integration
                 "publication_count": None,  # Placeholder for future publication count integration
             },

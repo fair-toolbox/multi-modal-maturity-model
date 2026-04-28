@@ -35,8 +35,8 @@ SECURITY = {
 }
 
 SCIENTIFIC_IMPACT = {
-    "fwci": 0.4,
-    "citation_count": 0.3,
+    "fwci": 0.5,
+    "citation_count": 0.2,
     "influential_citation_count": 0.2,
     "altmetric_score": 0.1,
 }

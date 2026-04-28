@@ -371,7 +371,7 @@ def test_aggregate_publication_metrics_multiple_records():
     assert metrics.publication_count == 2
     assert metrics.total_citation_count == 80
     assert metrics.total_influential_citation_count == 15
-    assert metrics.mean_fwci == 1.0  # (1.2 + 0.8) / 2
+    assert metrics.total_fwci == 2.0
     assert metrics.altmetric_score == 15.0
     assert metrics.any_open_access is True
     assert metrics.all_open_access is True
@@ -439,7 +439,7 @@ def test_evaluate_with_publications(
         publication_count=1,
         total_citation_count=100,
         total_influential_citation_count=20,
-        mean_fwci=2.0,
+        total_fwci=2.0,
         altmetric_score=None,
         any_open_access=True,
         all_open_access=True,
