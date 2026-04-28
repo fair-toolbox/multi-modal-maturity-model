@@ -342,10 +342,12 @@ class DimensionScorer:
 
         Parameters
         ----------
-        citation_count : int
-            Number of citations to the publication
+        citation_count : int | None
+            Number of citations to the publication(s)
         influential_citation_count : int | None
             Influential citations reported by Semantic Scholar
+        fwci: float | None
+            Field-Weighted Citation Impact (FWCI) from OpenAlex
         max_citations_in_corpus : int
             Maximum citations in the reference corpus (default 1000)
         """
@@ -357,7 +359,7 @@ class DimensionScorer:
         denominator = math.log(max_citations_in_corpus + 0.5)
         citation_component = (
             math.log(max(citation_count, 0) + 0.5) / denominator
-            if denominator > 0
+            if citation_count is not None and denominator > 0
             else 0.0
         )
 
@@ -380,9 +382,12 @@ class DimensionScorer:
             name="Scientific Impact",
             score=_clamp(score),
             details={
-                "citation_count": citation_count,
-                "influential_citation_count": influential_citation_count,
+                "total_citation_count": citation_count,
+                "total_influential_citation_count": influential_citation_count,
                 "max_citations_in_corpus": max_citations_in_corpus,
+                "fwci": None,  # Placeholder for future FWCI integration
+                "altmetric_score": None,  # Placeholder for future Altmetric integration
+                "publication_count": None,  # Placeholder for future publication count integration
             },
         )
 
@@ -432,9 +437,6 @@ class DimensionScorer:
             score=overall_score,
             details={"weights_used": normalized_weights},
         )
-
-
-# Module-level helpers
 
 
 def _clamp(value: float) -> float:
