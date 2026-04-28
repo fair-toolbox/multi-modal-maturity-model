@@ -136,14 +136,9 @@ def cli():
     help="bio.tools identifier (e.g., blast)",
 )
 @click.option(
-    "--pmid",
-    "-p",
-    help="PubMed ID for citation metrics",
-)
-@click.option(
     "--doi",
     "-d",
-    help="DOI for citation metrics (alternative to PMID)",
+    help="DOI for citation metrics",
 )
 @click.option(
     "--local-path",
@@ -195,7 +190,6 @@ def cli():
 def evaluate(
     repo_url: str,
     biotools_id: str | None,
-    pmid: str | None,
     doi: str | None,
     local_path: str | None,
     github_token: str | None,
@@ -239,7 +233,6 @@ def evaluate(
             biotools_id=biotools_id,
             repo_url=repo_url,
             repo_path=local_path,
-            pmid=pmid,
             doi=doi,
             include_code_quality=not no_code_quality,
         )
