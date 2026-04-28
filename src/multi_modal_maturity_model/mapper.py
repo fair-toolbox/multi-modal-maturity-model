@@ -200,7 +200,7 @@ class MaturityMapper:
             "citation": fair_metrics.citation,
             "checklist": fair_metrics.checklist,
             "publication_oa": (
-                publication_metrics.is_open_access if publication_metrics else None
+                publication_metrics.any_open_access if publication_metrics else None
             ),
         }
         return self.scorer.calculate_fairness(**values)
@@ -278,8 +278,8 @@ class MaturityMapper:
             return DimensionScore(name="Scientific Impact", score=None)
 
         return self.scorer.calculate_scientific_impact(
-            citation_count=publication_metrics.citation_count or 0,
-            influential_citation_count=publication_metrics.influential_citation_count
+            citation_count=publication_metrics.total_citation_count,
+            influential_citation_count=publication_metrics.total_influential_citation_count
             or None,
             max_citations_in_corpus=self.max_citations_corpus,
         )
