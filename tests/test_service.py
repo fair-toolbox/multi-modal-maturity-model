@@ -289,3 +289,167 @@ def test_get_repository_client_and_adapter(service):
     client, adapter = service._get_repository_client_and_adapter("unknown")
     assert client is None
     assert adapter is None
+
+
+################
+# Publications #
+################
+
+
+def test_merge_publication_record_from_all_sources():
+    """Test merging publication record from all sources."""
+    from multi_modal_maturity_model.service import _merge_publication_record
+
+    epmc = {"doi": "10.1234/test", "pmid": "12345678", "citation_count": 50}
+    openalex = {"doi": "10.1234/test", "cited_by_count": 55, "fwci": 1.5, "is_oa": True}
+    semantic_scholar = {
+        "externalIds": {"DOI": "10.1234/test"},
+        "citationCount": 52,
+        "influentialCitationCount": 10,
+        "isOpenAccess": True,
+    }
+
+    record = _merge_publication_record(
+        epmc=epmc, openalex=openalex, semantic_scholar=semantic_scholar
+    )
+
+    assert record.doi == "10.1234/test"
+    assert record.pmid == "12345678"
+    assert record.citation_count == 55  # Takes openalex
+    assert record.fwci == 1.5
+    assert record.influential_citation_count == 10
+    assert record.is_open_access is True
+
+
+def test_merge_publication_record_partial_sources():
+    """Test merging when only some sources available."""
+    from multi_modal_maturity_model.service import _merge_publication_record
+
+    semantic_scholar = {
+        "externalIds": {"DOI": "10.1234/partial"},
+        "citationCount": 25,
+        "influentialCitationCount": 5,
+        "isOpenAccess": False,
+    }
+
+    record = _merge_publication_record(semantic_scholar=semantic_scholar)
+
+    assert record.doi == "10.1234/partial"
+    assert record.citation_count == 25
+    assert record.influential_citation_count == 5
+    assert record.fwci is None
+
+
+def test_aggregate_publication_metrics_multiple_records():
+    """Test aggregating multiple publication records."""
+    from multi_modal_maturity_model.service import _aggregate_publication_metrics
+    from multi_modal_maturity_model.models import PublicationRecord
+
+    records = [
+        PublicationRecord(
+            doi="10.1234/first",
+            pmid="11111",
+            citation_count=50,
+            fwci=1.2,
+            influential_citation_count=10,
+            altmetric_score=None,
+            is_open_access=True,
+        ),
+        PublicationRecord(
+            doi="10.1234/second",
+            pmid="22222",
+            citation_count=30,
+            fwci=0.8,
+            influential_citation_count=5,
+            altmetric_score=15.0,
+            is_open_access=True,
+        ),
+    ]
+
+    metrics = _aggregate_publication_metrics(records)
+
+    assert metrics.publication_count == 2
+    assert metrics.total_citation_count == 80
+    assert metrics.total_influential_citation_count == 15
+    assert metrics.mean_fwci == 1.0  # (1.2 + 0.8) / 2
+    assert metrics.altmetric_score == 15.0
+    assert metrics.any_open_access is True
+    assert metrics.all_open_access is True
+
+
+def test_aggregate_publication_metrics_empty():
+    """Test aggregating with no records."""
+    from multi_modal_maturity_model.service import _aggregate_publication_metrics
+
+    metrics = _aggregate_publication_metrics([])
+
+    assert metrics is None
+
+
+def test_collect_publications_with_dois(service):
+    """Test publication collection with DOIs."""
+    service.europepmc_client.fetch = Mock(
+        return_value={"doi": "10.1234/test", "citation_count": 50}
+    )
+    service.openalex_client.fetch = Mock(
+        return_value={"doi": "10.1234/test", "cited_by_count": 55, "fwci": 1.5}
+    )
+    service.semantic_scholar_client.fetch = Mock(
+        return_value={
+            "externalIds": {"DOI": "10.1234/test"},
+            "citationCount": 52,
+        }
+    )
+
+    metrics = service._collect_publications(dois=["10.1234/test"])
+
+    assert metrics is not None
+    assert metrics.publication_count == 1
+    assert metrics.total_citation_count == 55
+
+
+@patch("multi_modal_maturity_model.service.MaturityService._collect_publications")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_howfairis")
+@patch("multi_modal_maturity_model.service.MaturityService._collect_repository")
+def test_evaluate_with_publications(
+    mock_collect_repository,
+    mock_collect_howfairis,
+    mock_collect_publications,
+    service,
+    sample_repository_metrics,
+):
+    """Test evaluation with publication metrics."""
+    from multi_modal_maturity_model.models import PublicationMetrics, PublicationRecord
+
+    mock_collect_repository.return_value = sample_repository_metrics
+    mock_collect_howfairis.return_value = None
+
+    record = PublicationRecord(
+        doi="10.1234/test",
+        pmid="12345",
+        citation_count=100,
+        fwci=2.0,
+        influential_citation_count=20,
+        altmetric_score=None,
+        is_open_access=True,
+    )
+
+    mock_collect_publications.return_value = PublicationMetrics(
+        records=[record],
+        publication_count=1,
+        total_citation_count=100,
+        total_influential_citation_count=20,
+        mean_fwci=2.0,
+        altmetric_score=None,
+        any_open_access=True,
+        all_open_access=True,
+    )
+
+    profile = service.evaluate(
+        repo_url="https://github.com/owner/repo",
+        dois=["10.1234/test"],
+        include_code_quality=False,
+    )
+
+    assert profile is not None
+    mock_collect_publications.assert_called_once_with(dois=["10.1234/test"])
