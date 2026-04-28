@@ -28,9 +28,6 @@ class EDAMItem:
     term: str
 
 
-#####################
-
-
 @dataclass
 class Contributor:
     login: str
@@ -77,7 +74,7 @@ class HowfairisMetrics:
 
 
 @dataclass
-class PublicationMetrics:
+class PublicationRecord:
     doi: str | None
     pmid: str | None
     citation_count: int | None
@@ -85,6 +82,18 @@ class PublicationMetrics:
     influential_citation_count: int | None
     altmetric_score: float | None
     is_open_access: bool | None
+
+
+@dataclass
+class PublicationMetrics:
+    records: list[PublicationRecord]
+    total_citation_count: int | None
+    total_influential_citation_count: int | None
+    mean_fwci: float | None
+    altmetric_score: float | None
+    any_open_access: bool | None
+    all_open_access: bool | None
+    publication_count: int
 
 
 @dataclass
