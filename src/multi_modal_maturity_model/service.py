@@ -25,6 +25,7 @@ from .models import (
     CodeQualityMetrics,
     HowfairisMetrics,
     PublicationMetrics,
+    PublicationRecord,
     RepositoryMetrics,
     ToolModel,
     MaturityProfile,
@@ -44,9 +45,9 @@ class MaturityService:
     -------
     >>> service = MaturityService(github_token="your_token")
     >>> profile = service.evaluate(
-    ...     biotools_id="blast",
-    ...     repo_url="https://github.com/ncbi/blast",
-    ...     pmid="20003500"
+    ...     biotools_id="tool",
+    ...     repo_url="https://github.com/owner/repo",
+    ...     doi="10.1093/test/paper",
     ... )
     >>> print(f"Overall score: {profile.overall_score.score:.2f}")
     """
@@ -114,8 +115,7 @@ class MaturityService:
         biotools_id: str | None = None,
         repo_url: str | None = None,
         repo_path: str | None = None,
-        pmid: str | None = None,
-        doi: str | None = None,
+        dois: list[str] | None = None,
         include_code_quality: bool = True,
     ) -> MaturityProfile:
         """
@@ -136,10 +136,8 @@ class MaturityService:
             - Full URL: https://github.com/owner/repo or https://gitlab.com/group/project
         repo_path : str | None
             Local path to repository (takes precedence over repo_url for code quality analysis)
-        pmid : str | None
-            PubMed ID for citation metrics
-        doi : str | None
-            DOI for Semantic Scholar citation metrics
+        dois : list[str] | None
+            List of DOIs for Semantic Scholar citation metrics
         include_code_quality : bool
             Whether to include code quality metrics (requires cloning, default: True)
 
@@ -172,9 +170,7 @@ class MaturityService:
             else None
         )
         fair_metrics = self._collect_howfairis(repo_url)
-        publication_metrics = (
-            self._collect_publications(pmid, doi) if pmid or doi else None
-        )
+        publication_metrics = self._collect_publications(dois=dois) if dois else None
 
         logger.info("Mapping collected data to maturity dimensions...")
 
@@ -259,26 +255,40 @@ class MaturityService:
             return None
 
     def _collect_publications(
-        self, pmid: str | None, doi: str | None
+        self, dois: list[str] | None
     ) -> PublicationMetrics | None:
-        try:
-            epmc = self.europepmc_client.fetch(pmid=pmid, doi=doi)
-            openalex = self.openalex_client.fetch(pmid=pmid, doi=doi)
-            semantic_scholar = self.semantic_scholar_client.fetch(doi=doi)
 
-            return _merge_publication_metrics(
-                epmc=epmc, openalex=openalex, semantic_scholar=semantic_scholar
-            )
-        except Exception as e:
-            logger.error(f"Error occurred while collecting publication metrics: {e}")
-            return None
+        records: list[PublicationRecord] = []
+
+        for doi in dois:
+            try:
+                epmc = self.europepmc_client.fetch(doi=doi)
+                openalex = self.openalex_client.fetch(doi=doi)
+                semantic_scholar = self.semantic_scholar_client.fetch(doi=doi)
+
+                record = _merge_publication_record(
+                    epmc=epmc,
+                    openalex=openalex,
+                    semantic_scholar=semantic_scholar,
+                    doi=doi,
+                )
+                if record:
+                    records.append(record)
+
+            except Exception as e:
+                logger.error(
+                    f"Error occurred while collecting publication metrics for DOI {doi}: {e}"
+                )
+
+        return _aggregate_publication_metrics(records)
 
 
-def _merge_publication_metrics(
+def _merge_publication_record(
     epmc: dict[str, Any] | None = None,
     openalex: dict[str, Any] | None = None,
     semantic_scholar: dict[str, Any] | None = None,
-) -> PublicationMetrics:
+    doi: str | None = None,
+) -> PublicationRecord:
     """Merge publication metrics from multiple sources."""
     if not epmc and not openalex and not semantic_scholar:
         return None
@@ -288,13 +298,9 @@ def _merge_publication_metrics(
         if semantic_scholar
         else epmc.get("doi") if epmc else openalex.get("doi")
     )
+
     pmid = epmc.get("pmid") if epmc else openalex.get("pmid") if openalex else None
 
-    citation_count = (
-        semantic_scholar.get("citationCount")
-        if semantic_scholar
-        else epmc.get("citation_count") if epmc else openalex.get("citation_count")
-    )
     fwci = openalex.get("fwci") if openalex else None
 
     influential_citation_count = (
@@ -310,11 +316,19 @@ def _merge_publication_metrics(
     )
 
     # Simple heuristic: take the maximum citation count across sources
-    # citations = max(
-    #    filter(None, [epmc.get("citations"), openalex.get("cited_by_count"), semantic_scholar.get("citationCount")])
-    # )
+    citation_count = max(
+        filter(
+            None,
+            [
+                epmc.get("citation_count") if epmc else None,
+                openalex.get("cited_by_count") if openalex else None,
+                semantic_scholar.get("citationCount") if semantic_scholar else None,
+            ],
+        ),
+        default=None,
+    )
 
-    return PublicationMetrics(
+    return PublicationRecord(
         doi=doi,
         pmid=pmid,
         citation_count=citation_count,
@@ -322,4 +336,40 @@ def _merge_publication_metrics(
         influential_citation_count=influential_citation_count,
         altmetric_score=altmetric_score,
         is_open_access=is_open_access,
+    )
+
+
+def _aggregate_publication_metrics(
+    records: list[PublicationRecord],
+) -> PublicationMetrics | None:
+    """Aggregate publication records into overall metrics."""
+    if not records:
+        return None
+
+    total_citation_count = sum(r.citation_count for r in records if r.citation_count)
+    total_influential_citation_count = sum(
+        r.influential_citation_count for r in records if r.influential_citation_count
+    )
+    total_fwci = sum(r.fwci for r in records if r.fwci)
+    altmetric_score = (
+        max(r.altmetric_score for r in records if r.altmetric_score)
+        if any(r.altmetric_score for r in records)
+        else None
+    )
+    any_open_access = any(
+        r.is_open_access for r in records if r.is_open_access is not None
+    )
+    all_open_access = all(
+        r.is_open_access for r in records if r.is_open_access is not None
+    )
+
+    return PublicationMetrics(
+        records=records,
+        publication_count=len(records),
+        total_citation_count=total_citation_count,
+        total_influential_citation_count=total_influential_citation_count,
+        total_fwci=total_fwci,
+        altmetric_score=altmetric_score,
+        any_open_access=any_open_access,
+        all_open_access=all_open_access,
     )

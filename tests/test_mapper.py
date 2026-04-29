@@ -122,15 +122,30 @@ def sample_fair_metrics():
 
 @pytest.fixture
 def sample_publication_metrics():
-    """Sample merged publication metrics from EuropePMC and Semantic Scholar."""
+    """Sample aggregated publication metrics from multiple records."""
+    from multi_modal_maturity_model.models import PublicationRecord
+
+    records = [
+        PublicationRecord(
+            doi="10.1234/example.doi",
+            pmid="12345678",
+            citation_count=50,
+            fwci=1.2,
+            influential_citation_count=10,
+            altmetric_score=None,
+            is_open_access=True,
+        )
+    ]
+
     return PublicationMetrics(
-        doi="10.1234/example.doi",
-        pmid="12345678",
-        citation_count=50,
-        fwci=1.2,
-        influential_citation_count=10,
+        records=records,
+        publication_count=1,
+        total_citation_count=50,
+        total_influential_citation_count=10,
+        total_fwci=1.2,
         altmetric_score=None,
-        is_open_access=True,
+        any_open_access=True,
+        all_open_access=True,
     )
 
 
@@ -522,5 +537,6 @@ def test_map_scientific_impact(sample_publication_metrics):
     assert score.name == "Scientific Impact"
     assert 0.0 <= score.score <= 1.0
     assert score.score > 0.0  # Has citations
-    assert score.details["citation_count"] == 50
-    assert score.details["influential_citation_count"] == 10
+    assert score.details["total_citation_count"] == 50
+    assert score.details["total_influential_citation_count"] == 10
+    assert score.details["total_fwci"] == 1.2
