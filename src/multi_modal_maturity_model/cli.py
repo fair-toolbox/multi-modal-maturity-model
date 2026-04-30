@@ -138,7 +138,8 @@ def cli():
 @click.option(
     "--doi",
     "-d",
-    help="DOI for citation metrics",
+    multiple=True,
+    help="DOI(s) for citation metrics",
 )
 @click.option(
     "--local-path",
@@ -190,7 +191,7 @@ def cli():
 def evaluate(
     repo_url: str,
     biotools_id: str | None,
-    doi: str | None,
+    doi: tuple[str, ...],
     local_path: str | None,
     github_token: str | None,
     gitlab_token: str | None,
@@ -233,7 +234,7 @@ def evaluate(
             biotools_id=biotools_id,
             repo_url=repo_url,
             repo_path=local_path,
-            doi=doi,
+            dois=doi,
             include_code_quality=not no_code_quality,
         )
 
