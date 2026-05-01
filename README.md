@@ -38,7 +38,9 @@ pip install .
 
 ### Using the tool
 
-Use the CLI:
+**Use the CLI**
+
+With poetry:
 
 ```bash
 poetry run m4 evaluate --help
