@@ -310,8 +310,8 @@ def _merge_publication_record(
     altmetric_score = None  # Placeholder for future integration
 
     is_open_access = (
-        semantic_scholar.get("isOpenAccess")
-        if semantic_scholar
+        epmc.get("isOpenAccess") == "Y"
+        if epmc
         else openalex.get("is_oa") if openalex else None
     )
 
