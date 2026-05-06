@@ -279,8 +279,7 @@ class MaturityMapper:
 
         return self.scorer.calculate_scientific_impact(
             citation_count=publication_metrics.total_citation_count,
-            influential_citation_count=publication_metrics.total_influential_citation_count
-            or None,
+            influential_citation_count=publication_metrics.total_influential_citation_count,
             max_citations_in_corpus=self.max_citations_corpus,
             fwci=publication_metrics.total_fwci,
         )
