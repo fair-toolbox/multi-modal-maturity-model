@@ -310,8 +310,8 @@ def _merge_publication_record(
     altmetric_score = None  # Placeholder for future integration
 
     is_open_access = (
-        semantic_scholar.get("isOpenAccess")
-        if semantic_scholar
+        epmc.get("isOpenAccess") == "Y"
+        if epmc
         else openalex.get("is_oa") if openalex else None
     )
 
@@ -346,14 +346,18 @@ def _aggregate_publication_metrics(
     if not records:
         return None
 
-    total_citation_count = sum(r.citation_count for r in records if r.citation_count)
-    total_influential_citation_count = sum(
-        r.influential_citation_count for r in records if r.influential_citation_count
+    total_citation_count = sum(
+        r.citation_count for r in records if r.citation_count is not None
     )
-    total_fwci = sum(r.fwci for r in records if r.fwci)
+    total_influential_citation_count = sum(
+        r.influential_citation_count
+        for r in records
+        if r.influential_citation_count is not None
+    )
+    total_fwci = sum(r.fwci for r in records if r.fwci is not None)
     altmetric_score = (
-        max(r.altmetric_score for r in records if r.altmetric_score)
-        if any(r.altmetric_score for r in records)
+        max(r.altmetric_score for r in records if r.altmetric_score is not None)
+        if any(r.altmetric_score is not None for r in records)
         else None
     )
     any_open_access = any(
