@@ -300,13 +300,17 @@ def test_merge_publication_record_from_all_sources():
     """Test merging publication record from all sources."""
     from multi_modal_maturity_model.service import _merge_publication_record
 
-    epmc = {"doi": "10.1234/test", "pmid": "12345678", "citation_count": 50}
+    epmc = {
+        "doi": "10.1234/test",
+        "pmid": "12345678",
+        "citation_count": 50,
+        "isOpenAccess": "Y",
+    }
     openalex = {"doi": "10.1234/test", "cited_by_count": 55, "fwci": 1.5, "is_oa": True}
     semantic_scholar = {
         "externalIds": {"DOI": "10.1234/test"},
         "citationCount": 52,
         "influentialCitationCount": 10,
-        "isOpenAccess": True,
     }
 
     record = _merge_publication_record(
