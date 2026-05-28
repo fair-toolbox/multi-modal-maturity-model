@@ -1,0 +1,407 @@
+# Metrics Definition Configuration
+# Defines how to extract, normalize, and deduplicate metrics from various sources
+
+metrics:
+  # ---------------------------------------------------------------------------
+  # Repository Metrics (GitHub/GitLab)
+  # ---------------------------------------------------------------------------
+
+  default_branch_protected:
+    type: boolean
+    description: "Whether the default branch has protection rules enabled"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "default_branch_protected"
+        gitlab:
+          path: "default_branch_protected"
+
+  star_count:
+    type: numeric
+    description: "Number of repository stars indicating popularity"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "repository.stargazers_count"
+        gitlab:
+          path: "repository.star_count"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 100.0
+      invert: false
+
+  fork_count:
+    type: numeric
+    description: "Number of repository forks indicating reuse"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "repository.forks_count"
+        gitlab:
+          path: "repository.forks_count"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 100.0
+      invert: false
+
+  num_open_issues:
+    type: numeric
+    description: "Number of currently open issues (lower is better when normalized)"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "repository.open_issues_count"
+        gitlab:
+          path: "open_issues_count"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 200.0
+      invert: true
+
+  has_workflow_support:
+    type: boolean
+    description: "Presence of workflow system files (CWL, Nextflow, Snakemake, WDL)"
+    extraction:
+      method: pattern_match
+      pattern_group: workflow_files
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
+
+  has_distribution_support:
+    type: boolean
+    description: "Presence of packaging/distribution files (Docker, Python package, Conda)"
+    extraction:
+      method: pattern_match
+      pattern_group: distribution_files
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
+
+  has_security_policy:
+    type: boolean
+    description: "Presence of a documented security policy"
+    extraction:
+      method: pattern_match
+      pattern_group: security_policy_files
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
+
+  has_security_scanning:
+    type: boolean
+    description: "Presence of automated security scanning configuration"
+    extraction:
+      method: pattern_match
+      pattern_group: security_scanning_files
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
+
+  days_since_last_commit:
+    type: numeric
+    description: "Number of days since the last commit (lower is better)"
+    extraction:
+      method: calculated
+      function: calculate_days_since_last_commit
+      sources:
+        github:
+          path: "repository.pushed_at"
+        gitlab:
+          path: "repository.last_activity_at"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 180.0
+      invert: true
+
+  avg_issue_close_time_days:
+    type: numeric
+    description: "Average time to close issues in days (lower is better)"
+    extraction:
+      method: calculated
+      function: calculate_avg_time_to_close
+      sources:
+        github:
+          path: "closed_issues"
+        gitlab:
+          path: "closed_issues"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 90.0
+      invert: true
+
+  inverse_simpson_index:
+    type: numeric
+    description: "Contributor diversity index (higher indicates more diverse contributions)"
+    extraction:
+      method: calculated
+      function: calculate_inverse_simpson_index
+      sources:
+        github:
+          path: "contributors"
+          params:
+            login_key: "login"
+            commits_key: "contributions"
+        gitlab:
+          path: "contributors"
+          params:
+            login_key: "name"
+            commits_key: "commits"
+    normalization:
+      scaler: clamp
+      lo: 1.0
+      hi: 20.0
+      invert: false
+
+  # ---------------------------------------------------------------------------
+  # bio.tools Metrics
+  # ---------------------------------------------------------------------------
+
+  input_formats:
+    type: numeric
+    description: "Count or fraction of supported input data formats (EDAM leaf nodes)"
+    extraction:
+      method: calculated
+      function: calculate_edam_leaf_fraction
+      sources:
+        biotools:
+          path: "function"
+          data_type: "input"
+    normalization:
+      scaler: fraction
+      lo: 0.0
+      hi: 1.0
+
+  output_formats:
+    type: numeric
+    description: "Count or fraction of supported output data formats (EDAM leaf nodes)"
+    extraction:
+      method: calculated
+      function: calculate_edam_leaf_fraction
+      sources:
+        biotools:
+          path: "function"
+          data_type: "output"
+    normalization:
+      scaler: fraction
+      lo: 0.0
+      hi: 1.0
+
+  biotools_registry:
+    type: boolean
+    description: "Whether tool is registered in bio.tools"
+    extraction:
+      method: existence_check
+      sources:
+        biotools:
+          path: "biotoolsID"
+
+  # ---------------------------------------------------------------------------
+  # HowFAIRis Metrics
+  # ---------------------------------------------------------------------------
+
+  license:
+    type: boolean
+    description: "Presence of a software license"
+    extraction:
+      method: direct
+      sources:
+        howfairis:
+          path: "license"
+
+  repository:
+    type: boolean
+    description: "Code available in a public repository"
+    extraction:
+      method: direct
+      sources:
+        howfairis:
+          path: "repository"
+
+  registry:
+    type: boolean
+    description: "Whether tool is registered in a registry"
+    extraction:
+      method: direct
+      sources:
+        howfairis:
+          path: "registry"
+
+  citation:
+    type: boolean
+    description: "Presence of citation information"
+    extraction:
+      method: direct
+      sources:
+        howfairis:
+          path: "citation"
+
+  checklist:
+    type: boolean
+    description: "Presence of a development checklist"
+    extraction:
+      method: direct
+      sources:
+        howfairis:
+          path: "checklist"
+
+  # ---------------------------------------------------------------------------
+  # Publication Metrics
+  # ---------------------------------------------------------------------------
+
+  publication_open_access:
+    type: boolean
+    description: "Whether publication is available as open access"
+    extraction:
+      method: publication
+      aggregation: any
+      sources:
+        openalex:
+          path: "open_access.is_oa"
+
+  fwci:
+    type: numeric
+    description: "Field-Weighted Citation Impact score"
+    extraction:
+      method: publication
+      aggregation: mean
+      sources:
+        openalex:
+          path: "fwci"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 2.0
+      invert: false
+
+  citation_count:
+    type: numeric
+    description: "Total number of citations received"
+    extraction:
+      method: publication
+      aggregation: sum
+      sources:
+        openalex:
+          path: "cited_by_count"
+    normalization:
+      scaler: log
+      cap: 200.0
+
+  # ---------------------------------------------------------------------------
+  # Code Quality Metrics (Lizard)
+  # ---------------------------------------------------------------------------
+
+  nloc_per_file:
+    type: numeric
+    description: "Average number of lines of code per file"
+    extraction:
+      method: direct
+      sources:
+        lizard:
+          path: "nloc_per_file"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 1000.0
+      invert: true
+
+  avg_ccn:
+    type: numeric
+    description: "Average cyclomatic complexity number per function"
+    extraction:
+      method: direct
+      sources:
+        lizard:
+          path: "avg_ccn"
+    normalization:
+      scaler: clamp
+      lo: 1.0
+      hi: 10.0
+      invert: true
+
+  duplicate_rate:
+    type: numeric
+    description: "Code duplication percentage"
+    extraction:
+      method: direct
+      sources:
+        lizard:
+          path: "duplicate_rate"
+    normalization:
+      scaler: clamp
+      lo: 0.0
+      hi: 100.0
+      invert: true
+
+# =============================================================================
+# EXTRACTION METHOD DOCUMENTATION
+# =============================================================================
+
+extraction_methods:
+  direct:
+    description: "Direct field access using dot notation path"
+    parameters:
+      - path: "JSONPath-style accessor (e.g., 'repository.stargazers_count')"
+
+  pattern_match:
+    description: "Check for file patterns in repository tree"
+    parameters:
+      - pattern_group: "Reference to pattern group in patterns.yaml"
+      - path: "Path to file list in source data"
+
+  calculated:
+    description: "Custom calculation function"
+    parameters:
+      - function: "Name of calculation function to invoke"
+      - additional_params: "Function-specific parameters"
+
+  existence_check:
+    description: "Check if a field exists and is non-null/non-empty"
+    parameters:
+      - path: "Field path to check"
+
+  publication:
+    description: "Aggregate multiple papers per source"
+    parameters:
+      - path: "JSONPath to the field within a single paper object"
+      - aggregation: "How to merge values across papers per source: sum | any | max | mean"
+
+# =============================================================================
+# NORMALIZATION METHOD DOCUMENTATION
+# =============================================================================
+
+normalization_methods:
+  clamp:
+    description: "Linear scaling between lo and hi bounds, clamped to [0,1]"
+    parameters:
+      - lo: "Lower bound (maps to 0 or 1 depending on invert)"
+      - hi: "Upper bound (maps to 1 or 0 depending on invert)"
+      - invert: "If true, higher values map to lower scores"
+
+  log:
+    description: "Logarithmic scaling with optional cap"
+    parameters:
+      - cap: "Maximum value for log scaling"
+
+  fraction:
+    description: "Already a fraction in [0,1], no transformation needed"
+    parameters:
+      - lo: "Expected minimum (usually 0.0)"
+      - hi: "Expected maximum (usually 1.0)"

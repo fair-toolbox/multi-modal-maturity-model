@@ -1,0 +1,26 @@
+[project]
+name = "mmmm"
+version = "0.1.0"
+description = "Multi-modal maturity model for research software and services developed as part of the TDCC-LSH project \"A FAIR tool framework for bioinformatics services, tools and workflows in digital Life Sciences and Health (LSH) research\"."
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gidgethub (>=5.4.0,<6.0.0)",
+    "gidgetlab (>=2.1.1,<3.0.0)",
+    "pydantic (>=2.13.4,<3.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)",
+    "pre-commit (>=4.6.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
