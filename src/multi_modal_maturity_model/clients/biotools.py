@@ -25,14 +25,14 @@ class BioToolsClient(BaseClient):
     def __init__(self, biotools_id: str):
         self.biotools_id = biotools_id
 
-    async def fetch(self) -> dict[str, Any]:
+    async def fetch(self) -> dict[str, Any] | None:
         """
         Collect tool metadata from bio.tools.
 
         Returns
         -------
-        dict
-            Dictionary with raw bio.tools API response
+        dict | None
+            Dictionary with raw bio.tools API response or None if fetch fails
         """
         url = f"{self.BASE_URL}{self.biotools_id}?format=json"
 
@@ -45,7 +45,7 @@ class BioToolsClient(BaseClient):
 
         except httpx.RequestError as e:
             logger.error(f"Error while fetching {url}: {e}")
-            raise
+            return None
         except httpx.HTTPStatusError as e:
             logger.error(f"HTTP error code {e.response.status_code} for {url}")
-            raise
+            return None
