@@ -36,7 +36,7 @@ class AltmetricClient(BaseClient):
         url = f"{self.BASE_URL}{doi}"
 
         try:
-            response = await session.get(url, params=self.params, timeout=30)
+            response = await session.get(url)
             response.raise_for_status()
             data = response.json()
             return doi, data
@@ -62,7 +62,7 @@ class AltmetricClient(BaseClient):
         dict
             Dictionary with raw altmetric API response
         """
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient(timeout=30, params=self.params) as client:
             tasks = [self._fetch_doi(client, doi) for doi in self.dois]
             results = await asyncio.gather(*tasks, return_exceptions=False)
 

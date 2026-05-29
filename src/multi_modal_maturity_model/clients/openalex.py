@@ -60,7 +60,7 @@ class OpenAlexClient(BaseClient):
         """
         results = {}
 
-        async with httpx.AsyncClient() as session:
+        async with httpx.AsyncClient(timeout=30) as session:
             tasks = [self._fetch_doi(session, doi) for doi in self.dois]
             results = await asyncio.gather(*tasks, return_exceptions=False)
 
