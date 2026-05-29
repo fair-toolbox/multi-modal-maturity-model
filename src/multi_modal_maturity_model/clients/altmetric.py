@@ -1,8 +1,10 @@
-"""Async client for OpenAlex API."""
+"""altmetric asynchronous API client."""
 
 import asyncio
+
 import httpx
 import logging
+
 from typing import Any
 
 from .base import BaseClient
@@ -10,20 +12,22 @@ from .base import BaseClient
 logger = logging.getLogger(__name__)
 
 
-class OpenAlexClient(BaseClient):
+class AltmetricClient(BaseClient):
     """
-    Fetch publication metadata from OpenAlex API.
+    Collect raw altmetric data.
 
     Parameters
     ----------
-    dois : list[str]
-        List of DOIs to fetch data for.
+    doi : str
+        The DOI of the publication for which to fetch altmetric data.
     """
 
-    BASE_URL = "https://api.openalex.org/works/doi:"
+    BASE_URL = "https://api.altmetric.com/v1/doi/"
 
-    def __init__(self, dois: list[str]):
+    def __init__(self, dois: list[str], api_key: str):
         self.dois = dois
+        self.api_key = api_key
+        self.params = {"key": self.api_key}
 
     async def _fetch_doi(
         self, session: httpx.AsyncClient, doi: str
@@ -32,7 +36,7 @@ class OpenAlexClient(BaseClient):
         url = f"{self.BASE_URL}{doi}"
 
         try:
-            response = await session.get(url, timeout=30)
+            response = await session.get(url, params=self.params, timeout=30)
             response.raise_for_status()
             data = response.json()
             return doi, data
@@ -51,17 +55,15 @@ class OpenAlexClient(BaseClient):
 
     async def fetch(self) -> dict[str, Any]:
         """
-        Collect publication data from OpenAlex.
+        Collect altmetric data for a given DOI.
 
-        Returns:
+        Returns
         -------
         dict
-            Dictionary with raw OpenAlex API responses for each DOI
+            Dictionary with raw altmetric API response
         """
-        results = {}
-
-        async with httpx.AsyncClient() as session:
-            tasks = [self._fetch_doi(session, doi) for doi in self.dois]
+        async with httpx.AsyncClient() as client:
+            tasks = [self._fetch_doi(client, doi) for doi in self.dois]
             results = await asyncio.gather(*tasks, return_exceptions=False)
 
         return dict(results)
