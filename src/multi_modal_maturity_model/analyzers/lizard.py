@@ -22,23 +22,23 @@ class LizardAnalyzer:
     def __init__(self, repo_path: str):
         self.repo_path = repo_path
 
-    def analyze(self) -> dict[str, Any]:
+    def analyze(self) -> dict[str, Any] | None:
         """
         Analyze code quality for a repository.
 
         Returns
         -------
-        dict[str, Any]
-            Dictionary with code quality metrics:
-            - path: str
-            - total_nloc: int | None
-            - total_ccn: int | None
-            - avg_ccn: float | None
-            - duplicate_rate: float | None
+        dict[str, Any] | None
+            Dictionary with code quality metrics
         """
         logger.debug(f"Analyzing code quality for: {self.repo_path}")
 
         complexity_metrics = self._analyze_complexity()
+
+        if complexity_metrics is None:
+            logger.warning(f"Lizard analysis failed for: {self.repo_path}")
+            return None
+
         duplicate_rate = self._analyze_duplicates()
 
         result = {

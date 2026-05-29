@@ -1,9 +1,20 @@
 """High-level pipeline for maturity analysis of research software."""
 
 import asyncio
+import logging
 
 from .analyzers import HowfairisAnalyzer, LizardAnalyzer
-from .clients import BioToolsClient, GitHubClient, GitLabClient, OpenAlexClient
+from .clients import (
+    AltmetricClient,
+    BioToolsClient,
+    EuropePMCClient,
+    GitHubClient,
+    GitLabClient,
+    OpenAlexClient,
+)
+from .git_utils import detect_platform, temporary_clone
+
+logger = logging.getLogger(__name__)
 
 
 class MaturityPipeline:
@@ -24,9 +35,11 @@ class MaturityPipeline:
         self,
         github_token: str | None = None,
         gitlab_token: str | None = None,
+        altmetric_api_key: str | None = None,
     ):
         self.github_token = github_token
         self.gitlab_token = gitlab_token
+        self.altmetric_api_key = altmetric_api_key
 
     async def run(
         self,
@@ -46,18 +59,16 @@ class MaturityPipeline:
 
         results_by_source = await self._fetch_all(repo_url, biotools_id, dois)
 
-        howfairis_analyzer = HowfairisAnalyzer(
-            self.repo_url, self.github_token, self.gitlab_token
-        )
-        results_by_source["howfairis"] = howfairis_analyzer.analyze()
+        # Only run analyzers if we have valid repo data
+        repo_is_valid = "github" in results_by_source or "gitlab" in results_by_source
 
-        # TODO: clone repository if repo_path is not provided
-        # lizard_analyzer = LizardAnalyzer(self.repo_path)
-        # results_by_source["lizard"] = lizard_analyzer.analyze()
+        if repo_is_valid:
+            analysis_results = self._analyze_all(repo_url, repo_path)
+            results_by_source.update(analysis_results)
 
         return results_by_source
 
-    async def _collect_all(
+    async def _fetch_all(
         self,
         repo_url: str,
         biotools_id: str | None = None,
@@ -66,14 +77,17 @@ class MaturityPipeline:
         """Collect data from all sources in parallel."""
         tasks = {}
 
-        platform = detect_platform(repo_url)
+        try:
+            platform = detect_platform(repo_url)
 
-        if platform == "github":
-            github_client = GitHubClient(repo_url, self.github_token)
-            tasks["github"] = await github_client.fetch()
-        elif platform == "gitlab":
-            gitlab_client = GitLabClient(repo_url, self.gitlab_token)
-            tasks["gitlab"] = await gitlab_client.fetch()
+            if platform == "github":
+                github_client = GitHubClient(repo_url, self.github_token)
+                tasks["github"] = github_client.fetch()
+            elif platform == "gitlab":
+                gitlab_client = GitLabClient(repo_url, self.gitlab_token)
+                tasks["gitlab"] = gitlab_client.fetch()
+        except ValueError as e:
+            logger.warning(f"Could not detect platform for {repo_url}: {e}")
 
         if biotools_id:
             biotools_client = BioToolsClient(biotools_id=biotools_id)
@@ -81,7 +95,16 @@ class MaturityPipeline:
 
         if dois:
             openalex_client = OpenAlexClient(dois=dois)
-            tasks["openalex"] = await openalex_client.fetch()
+            tasks["openalex"] = openalex_client.fetch()
+
+            europepmc_client = EuropePMCClient(dois=dois)
+            tasks["europepmc"] = europepmc_client.fetch()
+
+            if self.altmetric_api_key:
+                altmetric_client = AltmetricClient(
+                    dois=dois, api_key=self.altmetric_api_key
+                )
+                tasks["altmetric"] = altmetric_client.fetch()
 
         results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
@@ -91,13 +114,23 @@ class MaturityPipeline:
             if not isinstance(result, Exception)
         }
 
+    def _analyze_all(
+        self, repo_url: str, repo_path: str | None = None
+    ) -> dict[str, dict]:
+        """Run all analyzers on the repository."""
+        results = {}
 
-def detect_platform(url: str) -> str:
-    """Detect repository platform from URL."""
-    if url.startswith(("http://", "https://", "git@")):
-        url_lower = url.lower()
-        if "github.com" in url_lower:
-            return "github"
-        elif "gitlab.com" in url_lower:
-            return "gitlab"
-    raise ValueError("Unsupported repository URL.")
+        howfairis_analyzer = HowfairisAnalyzer(
+            repo_url, self.github_token, self.gitlab_token
+        )
+        results["howfairis"] = howfairis_analyzer.analyze()
+
+        if not repo_path:
+            with temporary_clone(repo_url) as temp_path:
+                lizard_analyzer = LizardAnalyzer(temp_path)
+                results["lizard"] = lizard_analyzer.analyze()
+        else:
+            lizard_analyzer = LizardAnalyzer(repo_path)
+            results["lizard"] = lizard_analyzer.analyze()
+
+        return {key: value for key, value in results.items() if value is not None}

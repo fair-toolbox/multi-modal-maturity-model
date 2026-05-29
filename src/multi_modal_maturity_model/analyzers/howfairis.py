@@ -32,13 +32,13 @@ class HowfairisAnalyzer:
         self.gitlab_token = gitlab_token
         self.repo_url = repo_url
 
-    def analyze(self) -> dict[str, Any]:
+    def analyze(self) -> dict[str, Any] | None:
         """
         Check FAIR compliance for a single repository.
 
         Returns
         -------
-        dict[str, Any]
+        dict[str, Any] | None
             Dictionary with FAIR compliance indicators:
             - repository: bool
             - license: bool
@@ -67,8 +67,8 @@ class HowfairisAnalyzer:
             logger.info(f"Successfully collected FAIR metrics for {self.repo_url}")
             return result
 
-        except Exception:
+        except Exception as e:
             logger.error(
-                f"Error occurred while analyzing FAIR compliance for {self.repo_url}"
+                f"Error occurred while analyzing FAIR compliance for {self.repo_url}: {e}"
             )
-            raise
+            return None
