@@ -67,8 +67,8 @@ class HowfairisAnalyzer:
             logger.info(f"Successfully collected FAIR metrics for {self.repo_url}")
             return result
 
-        except Exception:
+        except Exception as e:
             logger.error(
-                f"Error occurred while analyzing FAIR compliance for {self.repo_url}"
+                f"Error occurred while analyzing FAIR compliance for {self.repo_url}: {e}"
             )
             return None
