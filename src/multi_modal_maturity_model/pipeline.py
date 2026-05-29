@@ -1,9 +1,20 @@
 """High-level pipeline for maturity analysis of research software."""
 
 import asyncio
+import logging
 
 from .analyzers import HowfairisAnalyzer, LizardAnalyzer
-from .clients import BioToolsClient, GitHubClient, GitLabClient, OpenAlexClient
+from .clients import (
+    AltmetricClient,
+    BioToolsClient,
+    EuropePMCClient,
+    GitHubClient,
+    GitLabClient,
+    OpenAlexClient,
+)
+from .git_utils import detect_platform, temporary_clone
+
+logger = logging.getLogger(__name__)
 
 
 class MaturityPipeline:
@@ -24,9 +35,11 @@ class MaturityPipeline:
         self,
         github_token: str | None = None,
         gitlab_token: str | None = None,
+        altmetric_api_key: str | None = None,
     ):
         self.github_token = github_token
         self.gitlab_token = gitlab_token
+        self.altmetric_api_key = altmetric_api_key
 
     async def run(
         self,
@@ -51,9 +64,13 @@ class MaturityPipeline:
         )
         results_by_source["howfairis"] = howfairis_analyzer.analyze()
 
-        # TODO: clone repository if repo_path is not provided
-        # lizard_analyzer = LizardAnalyzer(self.repo_path)
-        # results_by_source["lizard"] = lizard_analyzer.analyze()
+        if not repo_path:
+            with temporary_clone(repo_url) as temp_path:
+                lizard_analyzer = LizardAnalyzer(temp_path)
+                results_by_source["lizard"] = lizard_analyzer.analyze()
+        else:
+            lizard_analyzer = LizardAnalyzer(repo_path)
+            results_by_source["lizard"] = lizard_analyzer.analyze()
 
         return results_by_source
 
@@ -83,6 +100,15 @@ class MaturityPipeline:
             openalex_client = OpenAlexClient(dois=dois)
             tasks["openalex"] = await openalex_client.fetch()
 
+            europepmc_client = EuropePMCClient(dois=dois)
+            tasks["europepmc"] = await europepmc_client.fetch()
+
+            if self.altmetric_api_key:
+                altmetric_client = AltmetricClient(
+                    dois=dois, api_key=self.altmetric_api_key
+                )
+                tasks["altmetric"] = await altmetric_client.fetch()
+
         results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
         return {
@@ -90,14 +116,3 @@ class MaturityPipeline:
             for source, result in zip(tasks.keys(), results)
             if not isinstance(result, Exception)
         }
-
-
-def detect_platform(url: str) -> str:
-    """Detect repository platform from URL."""
-    if url.startswith(("http://", "https://", "git@")):
-        url_lower = url.lower()
-        if "github.com" in url_lower:
-            return "github"
-        elif "gitlab.com" in url_lower:
-            return "gitlab"
-    raise ValueError("Unsupported repository URL.")
