@@ -13,6 +13,7 @@ from .clients import (
     GitLabClient,
     OpenAlexClient,
 )
+from .extraction import extract_all_metrics
 from .git_utils import detect_platform, temporary_clone
 
 if TYPE_CHECKING:
@@ -54,7 +55,9 @@ class MaturityPipeline:
         Returns
         -------
         dict[str, dict]
-            Dictionary containing results from all analyzers.
+            Dictionary containing:
+            - 'raw_results': Raw data from all sources
+            - 'extracted_metrics': Extracted metrics by metric name and source
         """
 
         results_by_source = await self._fetch_all(repo_url, biotools_id, dois)
@@ -66,7 +69,33 @@ class MaturityPipeline:
             analysis_results = self._analyze_all(repo_url, repo_path)
             results_by_source.update(analysis_results)
 
-        return results_by_source
+        # Extract metrics using configuration
+        publication_sources = ["openalex", "europepmc", "altmetric"]
+        publication_results = {
+            source: results_by_source.get(source, [])
+            for source in publication_sources
+            if source in results_by_source
+        }
+
+        # Convert patterns config to dict format
+        patterns_dict = {
+            "workflow_files": self.config.patterns.workflow_files,
+            "distribution_files": self.config.patterns.distribution_files,
+            "security_policy_files": self.config.patterns.security_policy_files,
+            "security_scanning_files": self.config.patterns.security_scanning_files,
+        }
+
+        extracted_metrics = extract_all_metrics(
+            metrics_cfg=self.config.metrics.metrics,
+            results=results_by_source,
+            patterns=patterns_dict,
+            publication_results=publication_results if publication_results else None,
+        )
+
+        return {
+            "raw_results": results_by_source,
+            "extracted_metrics": extracted_metrics,
+        }
 
     async def _fetch_all(
         self,
