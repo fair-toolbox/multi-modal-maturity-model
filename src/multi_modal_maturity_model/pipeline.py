@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+from typing import TYPE_CHECKING
 
 from .analyzers import HowfairisAnalyzer, LizardAnalyzer
 from .clients import (
@@ -14,6 +15,9 @@ from .clients import (
 )
 from .git_utils import detect_platform, temporary_clone
 
+if TYPE_CHECKING:
+    from .config import AppConfig
+
 logger = logging.getLogger(__name__)
 
 
@@ -23,23 +27,19 @@ class MaturityPipeline:
 
     Parameters
     ----------
-    repo_url : str
-        URL of the repository to analyze.
-    github_token : str | None, optional
-        GitHub API token for authentication (default: None).
-    gitlab_token : str | None, optional
-        GitLab API token for authentication (default: None).
+    config : AppConfig
+        Application configuration object.
     """
 
     def __init__(
         self,
-        github_token: str | None = None,
-        gitlab_token: str | None = None,
-        altmetric_api_key: str | None = None,
+        config: AppConfig,
     ):
-        self.github_token = github_token
-        self.gitlab_token = gitlab_token
-        self.altmetric_api_key = altmetric_api_key
+        if config:
+            self.config = config
+            self.github_token = config.api.github_token
+            self.gitlab_token = config.api.gitlab_token
+            self.altmetric_api_key = config.api.altmetric_api_key
 
     async def run(
         self,
@@ -80,10 +80,11 @@ class MaturityPipeline:
         try:
             platform = detect_platform(repo_url)
 
-            if platform == "github":
+            if platform == "github" and self.github_token:
                 github_client = GitHubClient(repo_url, self.github_token)
                 tasks["github"] = github_client.fetch()
-            elif platform == "gitlab":
+
+            elif platform == "gitlab" and self.gitlab_token:
                 gitlab_client = GitLabClient(repo_url, self.gitlab_token)
                 tasks["gitlab"] = gitlab_client.fetch()
         except ValueError as e:
