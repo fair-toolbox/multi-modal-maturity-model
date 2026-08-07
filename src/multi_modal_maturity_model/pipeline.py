@@ -15,6 +15,7 @@ from .clients import (
 )
 from .extraction import extract_all_metrics
 from .git_utils import detect_platform, temporary_clone
+from .normalization import normalize_metrics
 
 if TYPE_CHECKING:
     from .config import AppConfig
@@ -58,6 +59,7 @@ class MaturityPipeline:
             Dictionary containing:
             - 'raw_results': Raw data from all sources
             - 'extracted_metrics': Extracted metrics by metric name and source
+            - 'normalized_metrics': Normalized metrics in [0, 1] scale
         """
 
         results_by_source = await self._fetch_all(repo_url, biotools_id, dois)
@@ -92,9 +94,16 @@ class MaturityPipeline:
             publication_results=publication_results if publication_results else None,
         )
 
+        # Normalize extracted metrics to [0, 1] scale
+        normalized_metrics = normalize_metrics(
+            extracted_metrics=extracted_metrics,
+            metrics_cfg=self.config.metrics.metrics,
+        )
+
         return {
             "raw_results": results_by_source,
             "extracted_metrics": extracted_metrics,
+            "normalized_metrics": normalized_metrics,
         }
 
     async def _fetch_all(
