@@ -1,5 +1,5 @@
 # Metrics Definition Configuration
-# Defines how to extract, normalize, and deduplicate metrics from various sources
+# Defines how to extract and normalize metrics from various sources
 
 metrics:
   # ---------------------------------------------------------------------------
@@ -169,6 +169,18 @@ metrics:
       lo: 1.0
       hi: 20.0
       invert: false
+
+  git_ignore_present:
+    type: boolean
+    description: "Presence of a .gitignore file in the repository"
+    extraction:
+      method: pattern_match
+      pattern_group: gitignore_file
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
 
   # ---------------------------------------------------------------------------
   # bio.tools Metrics
