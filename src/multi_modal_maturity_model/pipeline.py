@@ -16,6 +16,8 @@ from .clients import (
 from .extraction import extract_all_metrics
 from .git_utils import detect_platform, temporary_clone
 from .normalization import normalize_metrics
+from .models import MaturityProfile
+from .scoring import DimensionScorer, OverallScorer
 
 if TYPE_CHECKING:
     from .config import AppConfig
@@ -42,6 +44,9 @@ class MaturityPipeline:
             self.github_token = config.api.github_token
             self.gitlab_token = config.api.gitlab_token
             self.altmetric_api_key = config.api.altmetric_api_key
+
+            self.dimension_scorer = DimensionScorer(config.weights)
+            self.overall_scorer = OverallScorer(config.weights)
 
     async def run(
         self,
@@ -100,10 +105,18 @@ class MaturityPipeline:
             metrics_cfg=self.config.metrics.metrics,
         )
 
+        dim_scores = self.dimension_scorer.score(normalized_metrics)
+        overall_score = self.overall_scorer.aggregate(dim_scores)
+
         return {
             "raw_results": results_by_source,
             "extracted_metrics": extracted_metrics,
             "normalized_metrics": normalized_metrics,
+            "maturity_profile": MaturityProfile(
+                overall_score=overall_score,
+                dimensions=dim_scores,
+                metrics=normalized_metrics,
+            ),
         }
 
     async def _fetch_all(
