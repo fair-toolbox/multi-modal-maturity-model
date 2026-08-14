@@ -1,10 +1,12 @@
 """
 Loader for configuration files (weights, metrics, patterns).
-Validates the files, including cross-references between them."""
+Validates the files, including cross-references between them.
+"""
+
+from __future__ import annotations
 
 import yaml
 
-from __future__ import annotations
 from importlib import resources
 from pathlib import Path
 
@@ -21,7 +23,9 @@ def _read_yaml(path: Path) -> dict:
 
 
 def _default_config_name(filename: str) -> str:
-    return resources.files("multi_modal_maturity_model.config").joinpath(filename)
+    return resources.files("multi_modal_maturity_model.config.default").joinpath(
+        filename
+    )
 
 
 def load_weights_config(path: Path | str | None = None) -> WeightsConfig:

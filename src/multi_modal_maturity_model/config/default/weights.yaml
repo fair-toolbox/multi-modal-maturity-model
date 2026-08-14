@@ -1,0 +1,48 @@
+# Dimension configuration: defines maturity dimensions and their weights
+
+dimensions:
+  compatibility:
+    input_formats: 0.25
+    output_formats: 0.25
+    has_workflow_support: 0.25
+    has_distribution_support: 0.25
+
+  fairness:
+    license: 0.20
+    repository: 0.30
+    registry: 0.20
+    citation: 0.10
+    checklist: 0.10
+    publication_open_access: 0.10
+
+  maintainability:
+    nloc_per_file: 0.30
+    avg_ccn: 0.40
+    duplicate_rate: 0.30
+
+  sustainability:
+    avg_issue_close_time_days: 0.40
+    num_open_issues: 0.30
+    days_since_last_commit: 0.20
+    inverse_simpson_index: 0.10
+
+  security:
+    default_branch_protected: 0.34
+    has_security_policy: 0.33
+    has_security_scanning: 0.33
+    gitignore_present: 0.00
+
+  scientific_impact:
+    fwci: 0.30
+    citation_count: 0.20
+    star_count: 0.20
+    fork_count: 0.10
+
+# Overall score weights
+overall:
+  compatibility: 0.20
+  fairness: 0.20
+  maintainability: 0.20
+  scientific_impact: 0.10
+  security: 0.10
+  sustainability: 0.20

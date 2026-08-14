@@ -1,5 +1,4 @@
 # Metrics Definition Configuration
-# Defines how to extract and normalize metrics from various sources
 
 metrics:
   # ---------------------------------------------------------------------------
@@ -170,7 +169,7 @@ metrics:
       hi: 20.0
       invert: false
 
-  git_ignore_present:
+  gitignore_present:
     type: boolean
     description: "Presence of a .gitignore file in the repository"
     extraction:
@@ -195,7 +194,8 @@ metrics:
       sources:
         biotools:
           path: "function"
-          data_type: "input"
+          params:
+            data_type: "input"
     normalization:
       scaler: fraction
       lo: 0.0
@@ -210,7 +210,8 @@ metrics:
       sources:
         biotools:
           path: "function"
-          data_type: "output"
+          params:
+            data_type: "output"
     normalization:
       scaler: fraction
       lo: 0.0
@@ -315,6 +316,19 @@ metrics:
     normalization:
       scaler: log
       cap: 200.0
+
+  altmetric_score:
+    type: numeric
+    description: "Altmetric Attention Score"
+    extraction:
+      method: publication
+      aggregation: sum
+      sources:
+        altmetric:
+          path: "score"
+    normalization:
+      scaler: log
+      cap: 100.0
 
   # ---------------------------------------------------------------------------
   # Code Quality Metrics (Lizard)

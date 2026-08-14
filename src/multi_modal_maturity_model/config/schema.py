@@ -88,11 +88,18 @@ AggregationFn = Literal["sum", "any", "mean", "max"]
 Scaler = Literal["clamp", "log", "fraction"]
 
 
+class SourceConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    path: str
+    params: dict[str, Any] | None = None
+
+
 class ExtractionConfig(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     method: ExtractionMethod
-    sources: dict[str, Any] | None = None
+    sources: dict[str, SourceConfig]
     pattern_group: str | None = None
     function: str | None = None
     aggregation: AggregationFn | None = None
@@ -146,17 +153,17 @@ class NormalizationConfig(BaseModel):
         return self
 
 
-class MetricConfig(BaseModel):
+class MetricSpec(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     name: str = Field(exclude=True)
     type: MetricType
     description: str
-    extraction: dict[str, Any]
-    normalization: dict[str, Any] | None = None
+    extraction: ExtractionConfig
+    normalization: NormalizationConfig | None = None
 
     @model_validator(mode="after")
-    def _check_normalization_matches_type(self) -> "MetricConfig":
+    def _check_normalization_matches_type(self) -> "MetricSpec":
         if self.type == "numeric" and self.normalization is None:
             raise ValueError(f"metric '{self.name}' requires a normalization block")
         if self.type == "boolean" and self.normalization is not None:
@@ -170,7 +177,7 @@ class MetricsConfig(BaseModel):
 
     model_config = ConfigDict(extra="ignore")
 
-    metrics: dict[str, MetricConfig]
+    metrics: dict[str, MetricSpec]
 
     @model_validator(mode="before")
     @classmethod
@@ -182,7 +189,7 @@ class MetricsConfig(BaseModel):
             }
         return data
 
-    def __getitem__(self, name: str) -> MetricConfig:
+    def __getitem__(self, name: str) -> MetricSpec:
         return self.metrics[name]
 
     def __contains__(self, name: str) -> bool:

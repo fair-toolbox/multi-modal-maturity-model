@@ -18,7 +18,7 @@ class Settings(BaseSettings):
         token = self.github_token if host == "github" else self.gitlab_token
         if not token:
             raise ValueError(
-                f"No API token configured for host '{host}'. "
+                f"no API token configured for host '{host}'. "
                 f"Set {'GITHUB_TOKEN' if host=="github" else 'GITLAB_TOKEN'}."
             )
         return token

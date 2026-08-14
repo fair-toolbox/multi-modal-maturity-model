@@ -1,46 +1,44 @@
 # File pattern definitions for repository metrics extraction
 
-# Workflow management system file patterns
-workflow_files:
-  cwl:
+pattern_groups:
+
+  # Workflow management system file patterns
+  workflow_files:
     - "*.cwl"
-  nextflow:
     - "main.nf"
     - "nextflow.config"
     - "*.nf"
-  snakemake:
     - "Snakefile"
     - "*.smk"
-  wdl:
     - "*.wdl"
 
-# Distribution and packaging file patterns
-distribution_files:
-  container:
+  # Distribution and packaging file patterns
+  distribution_files:
+    # containers
     - "Dockerfile"
     - "Containerfile"
     - "apptainer.def"
     - "Singularity"
     - "*.dockerfile"
-  python_package:
+    # python_package:
     - "pyproject.toml"
     - "setup.py"
     - "requirements.txt"
-  conda:
+    # conda:
     - "environment.yml"
     - "environment.yaml"
     - "conda/meta.yaml"
     - "meta.yaml"
 
-# Security policy file patterns
-security_policy_files:
-  - "**/SECURITY.md"
-  - "**/SECURITY.rst"
-  - "**/SECURITY.txt"
+  # Security policy file patterns
+  security_policy_files:
+    - "**/SECURITY.md"
+    - "**/SECURITY.rst"
+    - "**/SECURITY.txt"
 
-# Security scanning configuration file patterns
-security_scanning_files:
-  github:
+  # Security scanning configuration file patterns
+  security_scanning_files:
+    # github:
     - ".github/dependabot.yml"
     - ".github/dependabot.yaml"
     - ".github/workflows/*codeql*.yml"
@@ -49,7 +47,7 @@ security_scanning_files:
     - ".github/workflows/*security*.yaml"
     - ".github/workflows/*scorecards*.yml"
     - ".github/workflows/*scorecards*.yaml"
-  gitlab:
+    # gitlab:
     - "*sast*.gitlab-ci.yml"
     - "*dependency-scanning*.gitlab-ci.yml"
     - "*secret-detection*.gitlab-ci.yml"
@@ -62,5 +60,5 @@ security_scanning_files:
     - "ci/*secret-detection*.yml"
 
 
-git_ignore_file:
-  - ".gitignore"
+  gitignore_file:
+    - ".gitignore"
