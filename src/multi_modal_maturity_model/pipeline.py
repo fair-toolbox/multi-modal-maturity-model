@@ -2,7 +2,6 @@
 
 import asyncio
 import logging
-from typing import TYPE_CHECKING
 
 from .analyzers import HowfairisAnalyzer, LizardAnalyzer
 from .clients import (
@@ -13,14 +12,12 @@ from .clients import (
     GitLabClient,
     OpenAlexClient,
 )
-from .extraction import extract_all_metrics
+from multi_modal_maturity_model.extraction.extractor import MetricExtractor
 from .git_utils import detect_platform, temporary_clone
 from .normalization import normalize_metrics
 from .models import MaturityProfile
-from .scoring import DimensionScorer, OverallScorer
-
-if TYPE_CHECKING:
-    from .config import AppConfig
+from .config import Settings
+from .config import load_config
 
 logger = logging.getLogger(__name__)
 
@@ -31,22 +28,32 @@ class MaturityPipeline:
 
     Parameters
     ----------
-    config : AppConfig
-        Application configuration object.
+    settings : Settings
+        Application API settings.
+    weights_path : str | None
+        Path to weights.yaml file. If None, default path is used.
+    metrics_path : str | None
+        Path to metrics.yaml file. If None, default path is used.
+    patterns_path : str | None
+        Path to patterns.yaml file. If None, default path is used.
     """
 
     def __init__(
         self,
-        config: AppConfig,
+        settings: Settings | None = None,
+        weights_path=None,
+        metrics_path=None,
+        patterns_path=None,
     ):
-        if config:
-            self.config = config
-            self.github_token = config.api.github_token
-            self.gitlab_token = config.api.gitlab_token
-            self.altmetric_api_key = config.api.altmetric_api_key
+        self.settings = settings or Settings()
 
-            self.dimension_scorer = DimensionScorer(config.weights)
-            self.overall_scorer = OverallScorer(config.weights)
+        self.weights_cfg, self.metrics_cfg, self.patterns_cfg = load_config(
+            weights_path=weights_path,
+            metrics_path=metrics_path,
+            patterns_path=patterns_path,
+        )
+
+        self.extractor = MetricExtractor(self.metrics_cfg, self.patterns_cfg)
 
     async def run(
         self,
@@ -66,7 +73,6 @@ class MaturityPipeline:
             - 'extracted_metrics': Extracted metrics by metric name and source
             - 'normalized_metrics': Normalized metrics in [0, 1] scale
         """
-
         results_by_source = await self._fetch_all(repo_url, biotools_id, dois)
 
         # Only run analyzers if we have valid repo data
@@ -84,39 +90,33 @@ class MaturityPipeline:
             if source in results_by_source
         }
 
-        # Convert patterns config to dict format
-        patterns_dict = {
-            "workflow_files": self.config.patterns.workflow_files,
-            "distribution_files": self.config.patterns.distribution_files,
-            "security_policy_files": self.config.patterns.security_policy_files,
-            "security_scanning_files": self.config.patterns.security_scanning_files,
-        }
-
-        extracted_metrics = extract_all_metrics(
-            metrics_cfg=self.config.metrics.metrics,
-            results=results_by_source,
-            patterns=patterns_dict,
-            publication_results=publication_results if publication_results else None,
+        extracted_metrics = (
+            self.extractor.extract_all(
+                results=results_by_source,
+                #            publication_results=publication_results if publication_results else None,
+            )
+            if results_by_source
+            else {}
         )
 
         # Normalize extracted metrics to [0, 1] scale
-        normalized_metrics = normalize_metrics(
-            extracted_metrics=extracted_metrics,
-            metrics_cfg=self.config.metrics.metrics,
-        )
+        # normalized_metrics = normalize_metrics(
+        #    extracted_metrics=extracted_metrics,
+        #    metrics_cfg=self.config.metrics.metrics,
+        # )
 
-        dim_scores = self.dimension_scorer.score(normalized_metrics)
-        overall_score = self.overall_scorer.aggregate(dim_scores)
+        # dim_scores = self.dimension_scorer.score(normalized_metrics)
+        # overall_score = self.overall_scorer.aggregate(dim_scores)
 
         return {
             "raw_results": results_by_source,
             "extracted_metrics": extracted_metrics,
-            "normalized_metrics": normalized_metrics,
-            "maturity_profile": MaturityProfile(
-                overall_score=overall_score,
-                dimensions=dim_scores,
-                metrics=normalized_metrics,
-            ),
+            # "normalized_metrics": normalized_metrics,
+            # "maturity_profile": MaturityProfile(
+            #    overall_score=overall_score,
+            #    dimensions=dim_scores,
+            #    metrics=normalized_metrics,
+            # ),
         }
 
     async def _fetch_all(
@@ -130,16 +130,17 @@ class MaturityPipeline:
 
         try:
             platform = detect_platform(repo_url)
+            self.settings.token_for_host(platform)
 
-            if platform == "github" and self.github_token:
-                github_client = GitHubClient(repo_url, self.github_token)
+            if platform == "github" and self.settings.github_token:
+                github_client = GitHubClient(repo_url, self.settings.github_token)
                 tasks["github"] = github_client.fetch()
 
-            elif platform == "gitlab" and self.gitlab_token:
-                gitlab_client = GitLabClient(repo_url, self.gitlab_token)
+            elif platform == "gitlab" and self.settings.gitlab_token:
+                gitlab_client = GitLabClient(repo_url, self.settings.gitlab_token)
                 tasks["gitlab"] = gitlab_client.fetch()
         except ValueError as e:
-            logger.warning(f"Could not detect platform for {repo_url}: {e}")
+            logger.error(f"Repository: {e}")
 
         if biotools_id:
             biotools_client = BioToolsClient(biotools_id=biotools_id)
@@ -152,9 +153,9 @@ class MaturityPipeline:
             europepmc_client = EuropePMCClient(dois=dois)
             tasks["europepmc"] = europepmc_client.fetch()
 
-            if self.altmetric_api_key:
+            if self.settings.altmetric_token:
                 altmetric_client = AltmetricClient(
-                    dois=dois, api_key=self.altmetric_api_key
+                    dois=dois, api_key=self.settings.altmetric_token
                 )
                 tasks["altmetric"] = altmetric_client.fetch()
 
@@ -173,7 +174,7 @@ class MaturityPipeline:
         results = {}
 
         howfairis_analyzer = HowfairisAnalyzer(
-            repo_url, self.github_token, self.gitlab_token
+            repo_url, self.settings.github_token, self.settings.gitlab_token
         )
         results["howfairis"] = howfairis_analyzer.analyze()
 
