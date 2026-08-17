@@ -69,6 +69,6 @@ class HowfairisAnalyzer:
 
         except Exception as e:
             logger.error(
-                f"Error occurred while analyzing FAIR compliance for {self.repo_url}: {e}"
+                f"Error occurred analyzing FAIR compliance for {self.repo_url}: {e}"
             )
             return None

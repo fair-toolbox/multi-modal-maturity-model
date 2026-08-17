@@ -39,15 +39,15 @@ class EuropePMCClient(BaseClient):
             return doi, data
 
         except httpx.RequestError:
-            logger.error(f"Request error while fetching data for DOI {doi}")
+            logger.error(f"Request error fetching data for DOI {doi}")
             return doi, None
 
         except httpx.HTTPStatusError:
-            logger.error(f"HTTP error while fetching data for DOI {doi}")
+            logger.error(f"HTTP error fetching data for DOI {doi}")
             return doi, None
 
         except Exception as e:
-            logger.error(f"Unexpected error while fetching data for DOI {doi}: {e}")
+            logger.error(f"Unexpected error fetching data for DOI {doi}: {e}")
             return doi, None
 
     async def fetch(self) -> dict[str, Any]:

@@ -44,7 +44,7 @@ class BioToolsClient(BaseClient):
                 return tool
 
         except httpx.RequestError as e:
-            logger.error(f"Error while fetching {url}: {e}")
+            logger.error(f"Error fetching {url}: {e}")
             return None
         except httpx.HTTPStatusError as e:
             logger.error(f"HTTP error code {e.response.status_code} for {url}")
