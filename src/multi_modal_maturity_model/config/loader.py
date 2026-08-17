@@ -9,6 +9,7 @@ import yaml
 
 from importlib import resources
 from pathlib import Path
+from typing import Any
 
 from .schema import MetricsConfig, PatternsConfig, WeightsConfig
 
@@ -17,15 +18,13 @@ class ConfigError(Exception):
     """Custom exception for configuration errors."""
 
 
-def _read_yaml(path: Path) -> dict:
+def _read_yaml(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
-def _default_config_name(filename: str) -> str:
-    return resources.files("multi_modal_maturity_model.config.default").joinpath(
-        filename
-    )
+def _default_config_name(filename: str) -> Path:
+    return Path(resources.files("multi_modal_maturity_model.config.default") / filename)
 
 
 def load_weights_config(path: Path | str | None = None) -> WeightsConfig:
@@ -46,14 +45,6 @@ def load_patterns_config(path: Path | str | None = None) -> PatternsConfig:
 def validate_cross_references(
     weights_cfg: WeightsConfig, metrics_cfg: MetricsConfig, patterns_cfg: PatternsConfig
 ) -> list[str]:
-    """
-    Checks if the three configs are consistent. Returns a list of error messages if any inconsistencies are found.
-
-    Raises
-    ------
-    ConfigError
-        If any cross-reference is invalid.
-    """
     errors: list[str] = []
 
     # Metrics referenced by a dimension must exist in metrics config

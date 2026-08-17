@@ -30,15 +30,7 @@ class WeightMap(RootModel[dict[str, float]]):
 
 
 class WeightsConfig(BaseModel):
-    """Configuration for weights used in the Multi-Modal Maturity Model.
-
-    Attributes
-    ----------
-    dimensions : dict[str, WeightMap]
-        Weights for each dimension (e.g., 'data', 'model', 'deployment')
-    overall : WeightMap
-        Overall weight for the model
-    """
+    model_config = ConfigDict(extra="forbid")
 
     dimensions: dict[str, WeightMap]
     overall: WeightMap
@@ -53,31 +45,6 @@ class WeightsConfig(BaseModel):
                 f"Overall weight references unknown dimensions: {', '.join(unknown)}"
             )
         return self
-
-    def weight_sum_warnings(self, tolerance: float = 1e-6) -> list[str]:
-        """
-        Check if the sum of weights for each dimension and overall is 1.0.
-
-        Non-fatal, weighted averagees only need relative weights but a large drift from 1.0 may indicate a misconfiguration.
-
-        Returns
-        -------
-        list[str]
-            List of warnings for dimensions or overall weights that do not sum to 1.0 within the specified tolerance.
-        """
-        warnings = []
-        for name, weight_map in self.dimensions.items():
-            total = weight_map.sum()
-            if abs(total - 1.0) > tolerance:
-                warnings.append(
-                    f"Sum of weights for dimension '{name}' is {total:.4f}, expected 1.0"
-                )
-        overall_total = self.overall.sum()
-        if abs(overall_total - 1.0) > tolerance:
-            warnings.append(
-                f"Sum of overall weights is {overall_total:.4f}, expected 1.0"
-            )
-        return warnings
 
 
 MetricType = Literal["boolean", "numeric"]

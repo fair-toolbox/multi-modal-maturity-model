@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     def token_for_host(self, host: Literal["github", "gitlab"]) -> str:
         token = self.github_token if host == "github" else self.gitlab_token
         if not token:
+            env_var = "GITHUB_TOKEN" if host == "github" else "GITLAB_TOKEN"
             raise ValueError(
-                f"no API token configured for host '{host}'. "
-                f"Set {'GITHUB_TOKEN' if host=="github" else 'GITLAB_TOKEN'}."
+                f"no API token configured for host '{host}'. Set {env_var}."
             )
         return token
