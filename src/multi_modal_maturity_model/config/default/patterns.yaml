@@ -32,33 +32,9 @@ pattern_groups:
 
   # Security policy file patterns
   security_policy_files:
-    - "**/SECURITY.md"
-    - "**/SECURITY.rst"
-    - "**/SECURITY.txt"
-
-  # Security scanning configuration file patterns
-  security_scanning_files:
-    # github:
-    - ".github/dependabot.yml"
-    - ".github/dependabot.yaml"
-    - ".github/workflows/*codeql*.yml"
-    - ".github/workflows/*codeql*.yaml"
-    - ".github/workflows/*security*.yml"
-    - ".github/workflows/*security*.yaml"
-    - ".github/workflows/*scorecards*.yml"
-    - ".github/workflows/*scorecards*.yaml"
-    # gitlab:
-    - "*sast*.gitlab-ci.yml"
-    - "*dependency-scanning*.gitlab-ci.yml"
-    - "*secret-detection*.gitlab-ci.yml"
-    - "*container-scanning*.gitlab-ci.yml"
-    - ".gitlab/*sast*.yml"
-    - ".gitlab/*dependency-scanning*.yml"
-    - ".gitlab/*secret-detection*.yml"
-    - "ci/*sast*.yml"
-    - "ci/*dependency-scanning*.yml"
-    - "ci/*secret-detection*.yml"
-
+    - "SECURITY.md"
+    - "SECURITY.rst"
+    - "SECURITY.txt"
 
   gitignore_file:
     - ".gitignore"

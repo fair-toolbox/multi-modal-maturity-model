@@ -100,18 +100,6 @@ metrics:
         gitlab:
           path: "repository_tree"
 
-  has_security_scanning:
-    type: boolean
-    description: "Presence of automated security scanning configuration"
-    extraction:
-      method: pattern_match
-      pattern_group: security_scanning_files
-      sources:
-        github:
-          path: "contents"
-        gitlab:
-          path: "repository_tree"
-
   days_since_last_commit:
     type: numeric
     description: "Number of days since the last commit (lower is better)"
@@ -156,12 +144,10 @@ metrics:
         github:
           path: "contributors"
           params:
-            login_key: "login"
             commits_key: "contributions"
         gitlab:
           path: "contributors"
           params:
-            login_key: "name"
             commits_key: "commits"
     normalization:
       scaler: clamp
@@ -181,6 +167,23 @@ metrics:
         gitlab:
           path: "repository_tree"
 
+  security_updates: # enabled / disabled
+    type: boolean
+    description: "Whether security updates are being applied (e.g., Dependabot)"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "repository.security_and_analysis.dependabot_security_updates"
+
+  secret_scanning:  # enabled / disabled
+    type: boolean
+    description: "Whether secret scanning is enabled in the repository"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "repository.security_and_analysis.secret_scanning"
   # ---------------------------------------------------------------------------
   # bio.tools Metrics
   # ---------------------------------------------------------------------------
