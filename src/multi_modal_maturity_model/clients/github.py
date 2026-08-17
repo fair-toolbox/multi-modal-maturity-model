@@ -59,12 +59,12 @@ class GitHubClient(BaseClient):
         """Get recursive repository file tree for the default branch."""
         try:
             data = await gh.getitem(
-                f"/repos/{self.owner}/{self.repo}/git/trees/{default_branch}",
-                {"recursive": "1"},
+                f"/repos/{self.owner}/{self.repo}/git/trees/{default_branch}?recursive=1"
             )
             return [
                 {"path": item["path"], "type": item["type"]}
                 for item in data.get("tree", [])
+                if item["type"] == "blob"  # Only include files
             ]
         except GitHubException as e:
             logger.warning(f"Could not get repository contents: {e}")
