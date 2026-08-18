@@ -12,12 +12,11 @@ from .clients import (
     GitLabClient,
     OpenAlexClient,
 )
-from multi_modal_maturity_model.extraction.extractor import MetricExtractor
+from .extraction import MetricExtractor
 from .git_utils import detect_platform, temporary_clone
 from .normalization import normalize_metrics
 from .models import MaturityProfile
-from .config import Settings
-from .config import load_config
+from .config import Settings, load_config
 
 logger = logging.getLogger(__name__)
 

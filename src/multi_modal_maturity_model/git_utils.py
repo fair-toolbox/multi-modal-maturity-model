@@ -20,7 +20,7 @@ def detect_platform(url: str) -> str:
             return "github"
         elif "gitlab.com" in url_lower:
             return "gitlab"
-    raise ValueError("Unsupported repository URL.")
+    raise ValueError("unsupported URL. URL must start with http://, https://, or git@.")
 
 
 def clone_repository(repo_url: str, target_dir: str) -> None:
