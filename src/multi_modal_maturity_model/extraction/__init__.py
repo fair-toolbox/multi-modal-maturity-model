@@ -1,4 +1,4 @@
 from .calculators import CALCULATORS
-from .extractor import Extractor
+from .extractor import MetricExtractor
 
-__all__ = ["CALCULATORS", "Extractor"]
+__all__ = ["CALCULATORS", "MetricExtractor"]
