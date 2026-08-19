@@ -101,7 +101,7 @@ class NormalizationConfig(BaseModel):
 
     @model_validator(mode="after")
     def _check_scaler_specific_fields(self) -> "NormalizationConfig":
-        if self.scaler in ("clamp", "fraction"):
+        if self.scaler == "clamp":
             if self.lo is None or self.hi is None:
                 raise ValueError(
                     f"normalization.lo and normalization.hi are required when scaler='{self.scaler}'"
