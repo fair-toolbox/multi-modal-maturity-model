@@ -1,41 +1,86 @@
-from .config import WeightsConfig
-from .models import DimensionScore
+"""Dimension and overall maturity scoring."""
+
+import logging
+from typing import Any
+
+from .config import WeightsConfig, WeightMap
+
+logger = logging.getLogger(__name__)
 
 
-class DimensionScorer:
-    def __init__(self, weights_cfg: WeightsConfig):
-        self.dimensions = weights_cfg.dimensions
+def weighted_average(
+    values: dict[str, float], weights: WeightMap | dict[str, float]
+) -> float | None:
+    """
+    Compute the weighted average over whichever keys in `weights` are also present in `values`. Missing keys are skipped and the result is renormalized against the weight actually present.
 
-    def score(self, normalized: dict[str, float | None]) -> dict[str, DimensionScore]:
-        out = {}
-        for dim, metric_weights in self.dimensions.items():
-            available = {
-                m: (normalized.get(m), w)
-                for m, w in metric_weights.items()
-                if normalized.get(m) is not None
-            }
-            if not available:
-                out[dim] = DimensionScore(dim, None, 0.0, [])
-                continue
-            weight_sum = sum(w for _, w in available.values())
-            score = sum(v * w for v, w in available.values()) / weight_sum
-            out[dim] = DimensionScore(
-                dim, score, len(available) / len(metric_weights), list(available)
+    Parameters
+    ----------
+    values : dict[str, float]
+        Available scores keyed by metric or dimension name.
+    weights : WeightMap | dict[str, float]
+        (name, weight) pairs.
+
+    Returns
+    -------
+    float | None
+        Weighted average, or None if no valid values are provided.
+    """
+    present = [(name, weight) for name, weight in weights.items() if name in values]
+
+    if not present:
+        return None
+
+    weight_sum = sum(weight for _, weight in present)
+    if weight_sum == 0:
+        return None
+
+    return sum(values[name] * weight for name, weight in present) / weight_sum
+
+
+def score_dimensions(
+    normalized_metrics: dict[str, float],
+    weights_cfg: WeightsConfig,
+) -> dict[str, float | None]:
+    """
+    Score each dimension using the weighted average of its metrics.
+    """
+    scores = {}
+    for dim_name, weight_map in weights_cfg.dimensions.items():
+        score = weighted_average(normalized_metrics, weight_map)
+        if score is None:
+            logger.warning(
+                f"No valid metrics found for dimension '{dim_name}', skipping scoring."
             )
-        return out
+        scores[dim_name] = score
+    return scores
 
 
-class OverallScorer:
-    def __init__(self, weights_cfg: WeightsConfig):
-        self.overall_weights = weights_cfg.overall
+def score_overall(
+    dimension_scores: dict[str, float | None],
+    weights_cfg: WeightsConfig,
+) -> float | None:
+    """
+    Score overall maturity using the weighted average of dimension scores.
+    """
+    available = {
+        dim: score for dim, score in dimension_scores.items() if score is not None
+    }
+    return weighted_average(available, weights_cfg.overall)
 
-    def aggregate(self, dims: dict[str, DimensionScore]) -> float | None:
-        available = {
-            d: (ds.score, self.overall_weights[d])
-            for d, ds in dims.items()
-            if ds.score is not None
-        }
-        if not available:
-            return None
-        weight_sum = sum(w for _, w in available.values())
-        return sum(s * w for s, w in available.values()) / weight_sum
+
+def score_all(
+    normalized_metrics: dict[str, float],
+    weights_cfg: WeightsConfig,
+) -> dict[str, Any]:
+    """
+    Score all dimensions and overall maturity.
+
+    Returns
+    -------
+    dict[str, Any]
+        A dictionary containing the scores for each dimension and the overall score.
+    """
+    dimension_scores = score_dimensions(normalized_metrics, weights_cfg)
+    overall_score = score_overall(dimension_scores, weights_cfg)
+    return {"dimensions": dimension_scores, "overall": overall_score}
