@@ -174,7 +174,7 @@ metrics:
       method: direct
       sources:
         github:
-          path: "repository.security_and_analysis.dependabot_security_updates"
+          path: "repository.security_and_analysis.dependabot_security_updates.status"
 
   secret_scanning:  # enabled / disabled
     type: boolean
@@ -183,14 +183,14 @@ metrics:
       method: direct
       sources:
         github:
-          path: "repository.security_and_analysis.secret_scanning"
+          path: "repository.security_and_analysis.secret_scanning.status"
   # ---------------------------------------------------------------------------
   # bio.tools Metrics
   # ---------------------------------------------------------------------------
 
   input_formats:
     type: numeric
-    description: "Count or fraction of supported input data formats (EDAM leaf nodes)"
+    description: "Fraction of supported input data formats (EDAM leaf nodes)"
     extraction:
       method: calculated
       function: calculate_edam_leaf_fraction
@@ -201,12 +201,10 @@ metrics:
             data_type: "input"
     normalization:
       scaler: fraction
-      lo: 0.0
-      hi: 1.0
 
   output_formats:
     type: numeric
-    description: "Count or fraction of supported output data formats (EDAM leaf nodes)"
+    description: "Fraction of supported output data formats (EDAM leaf nodes)"
     extraction:
       method: calculated
       function: calculate_edam_leaf_fraction
@@ -217,8 +215,6 @@ metrics:
             data_type: "output"
     normalization:
       scaler: fraction
-      lo: 0.0
-      hi: 1.0
 
   biotools_registry:
     type: boolean
