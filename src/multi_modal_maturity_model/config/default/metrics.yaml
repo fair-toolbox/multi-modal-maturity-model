@@ -174,7 +174,7 @@ metrics:
       method: direct
       sources:
         github:
-          path: "repository.security_and_analysis.dependabot_security_updates.status"
+          path: "security_updates"
 
   secret_scanning:  # enabled / disabled
     type: boolean
@@ -183,7 +183,7 @@ metrics:
       method: direct
       sources:
         github:
-          path: "repository.security_and_analysis.secret_scanning.status"
+          path: "secret_scanning"
   # ---------------------------------------------------------------------------
   # bio.tools Metrics
   # ---------------------------------------------------------------------------

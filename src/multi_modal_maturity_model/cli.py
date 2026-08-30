@@ -97,7 +97,6 @@ def analyze(
         # output_str = json.dumps(results, indent=2)
         output_str = yaml.dump(results, default_flow_style=False)
 
-        # Write output
         if output:
             Path(output).write_text(output_str)
             click.echo(f"Results written to {output}", err=True)
@@ -105,7 +104,7 @@ def analyze(
             click.echo(output_str)
 
     except Exception as e:
-        logger.error(f"Analysis failed: {e}")
+        logger.exception("Analysis failed")
         sys.exit(1)
 
 

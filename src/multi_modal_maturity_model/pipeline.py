@@ -110,7 +110,7 @@ class MaturityPipeline:
             "raw_results": results_by_source,
             "extracted_metrics": extracted_metrics,
             "normalized_metrics": normalized_metrics,
-            "scores": scores,
+            "scores": scores.model_dump(),
         }
 
     async def _fetch_all(

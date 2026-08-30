@@ -19,6 +19,12 @@ class WeightMap(RootModel[dict[str, float]]):
                 raise ValueError(f"Weight for {key} must be non-negative, got {weight}")
         return self
 
+    def __iter__(self):
+        return iter(self.root)
+
+    def __getitem__(self, key: str) -> float:
+        return self.root[key]
+
     def sum(self) -> float:
         return sum(self.root.values())
 
