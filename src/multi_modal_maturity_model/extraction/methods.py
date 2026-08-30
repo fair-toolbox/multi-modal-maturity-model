@@ -93,10 +93,8 @@ def extract_calculated(
     return fn(value, **(params or {}))
 
 
-def extract_publication(
-    papers: list[dict[str, Any]], path: str, aggregation: str
-) -> Any:
-    values = [_get_nested(p, path) for p in papers]
+def extract_publication(papers: dict[str, Any], path: str, aggregation: str) -> Any:
+    values = [_get_nested(papers[doi], path) for doi in papers]
     values = [v for v in values if v is not None]
 
     if not values:
