@@ -12,11 +12,11 @@ from .clients import (
     GitLabClient,
     OpenAlexClient,
 )
+from .config import Settings, load_config
 from .extraction import MetricExtractor
 from .git_utils import detect_platform, temporary_clone
-from .normalization import normalize_metrics
-from .models import MaturityProfile
-from .config import Settings, load_config
+from .normalization import normalize_all
+from .scoring import score_all
 
 logger = logging.getLogger(__name__)
 
@@ -97,25 +97,20 @@ class MaturityPipeline:
             if results_by_source
             else {}
         )
-
-        # Normalize extracted metrics to [0, 1] scale
-        # normalized_metrics = normalize_metrics(
-        #    extracted_metrics=extracted_metrics,
-        #    metrics_cfg=self.config.metrics.metrics,
-        # )
-
-        # dim_scores = self.dimension_scorer.score(normalized_metrics)
-        # overall_score = self.overall_scorer.aggregate(dim_scores)
+        normalized_metrics = normalize_all(
+            extracted_metrics=extracted_metrics, metrics_cfg=self.metrics_cfg
+        )
+        scores = score_all(
+            extracted_metrics=extracted_metrics,
+            normalized_metrics=normalized_metrics,
+            weights_cfg=self.weights_cfg,
+        )
 
         return {
             "raw_results": results_by_source,
             "extracted_metrics": extracted_metrics,
-            # "normalized_metrics": normalized_metrics,
-            # "maturity_profile": MaturityProfile(
-            #    overall_score=overall_score,
-            #    dimensions=dim_scores,
-            #    metrics=normalized_metrics,
-            # ),
+            "normalized_metrics": normalized_metrics,
+            "scores": scores,
         }
 
     async def _fetch_all(

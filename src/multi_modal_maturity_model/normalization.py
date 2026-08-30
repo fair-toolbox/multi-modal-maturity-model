@@ -109,12 +109,9 @@ def normalize_all(
     """
     normalized = {}
 
-    for metric_name, raw_value in extracted_metrics:
+    for metric_name, raw_value in extracted_metrics.items():
         metric_spec = metrics_cfg[metric_name]
         normalized_value = normalize_metric(metric_name, raw_value, metric_spec)
-
-        # Only include non-None values in result
-        if normalized_value is not None:
-            normalized[metric_name] = normalized_value
+        normalized[metric_name] = normalized_value
 
     return normalized
