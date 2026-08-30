@@ -30,26 +30,18 @@ class MaturityPipeline:
     settings : Settings
         Application API settings.
     weights_path : str | None
-        Path to weights.yaml file. If None, default path is used.
-    metrics_path : str | None
-        Path to metrics.yaml file. If None, default path is used.
-    patterns_path : str | None
-        Path to patterns.yaml file. If None, default path is used.
+        Path to weights.yaml file. If None, default weights are used.
     """
 
     def __init__(
         self,
         settings: Settings | None = None,
-        weights_path=None,
-        metrics_path=None,
-        patterns_path=None,
+        weights_path: str | None = None,
     ):
         self.settings = settings or Settings()
 
         self.weights_cfg, self.metrics_cfg, self.patterns_cfg = load_config(
             weights_path=weights_path,
-            metrics_path=metrics_path,
-            patterns_path=patterns_path,
         )
 
         self.extractor = MetricExtractor(self.metrics_cfg, self.patterns_cfg)

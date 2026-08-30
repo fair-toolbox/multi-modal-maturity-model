@@ -43,7 +43,6 @@ def main():
 )
 @click.option(
     "--doi",
-    "-d",
     "dois",
     multiple=True,
     help="Publication DOI (can specify multiple)",
@@ -55,9 +54,9 @@ def main():
     help="Local path to repository (skip cloning)",
 )
 @click.option(
-    "--config",
-    "-c",
-    "config_path",
+    "--weights",
+    "-w",
+    "weights_path",
     type=click.Path(exists=True),
     help="Custom weights config file path",
 )
@@ -75,14 +74,14 @@ def analyze(
     biotools_id: Optional[str],
     dois: tuple[str, ...],
     local_repo_path: Optional[str],
-    config_path: Optional[str],
+    weights_path: Optional[str],
     output: Optional[str],
     verbose: bool,
 ) -> None:
 
     setup_logging(verbose=verbose)
 
-    pipeline = MaturityPipeline()
+    pipeline = MaturityPipeline(weights_path=weights_path)
 
     try:
         results = asyncio.run(
@@ -94,7 +93,6 @@ def analyze(
             )
         )
 
-        # output_str = json.dumps(results, indent=2)
         output_str = yaml.dump(results, default_flow_style=False)
 
         if output:
