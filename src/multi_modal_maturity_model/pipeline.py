@@ -97,13 +97,13 @@ class MaturityPipeline:
             if results_by_source
             else {}
         )
-
         normalized_metrics = normalize_all(
             extracted_metrics=extracted_metrics, metrics_cfg=self.metrics_cfg
         )
-
         scores = score_all(
-            normalized_metrics=normalized_metrics, weights_cfg=self.weights_cfg
+            extracted_metrics=extracted_metrics,
+            normalized_metrics=normalized_metrics,
+            weights_cfg=self.weights_cfg,
         )
 
         return {
