@@ -36,6 +36,14 @@ class GitHubClient(BaseClient):
         owner, repo = self.repo_url.split("github.com/")[1].split("/")[:2]
         return owner, repo
 
+    def _security_feature_status(
+        self, repository: dict[str, Any], feature: str
+    ) -> bool | None:
+        """Check if a security feature is enabled in the repository."""
+        analysis = repository.get("security_and_analysis", {})
+        status = analysis.get(feature, {}).get("status")
+        return status == "enabled" if status is not None else None
+
     async def _fetch_paginated(
         self, gh: GitHubAPI, url: str, **params
     ) -> list[dict[str, Any]]:
@@ -160,4 +168,10 @@ class GitHubClient(BaseClient):
                 "closed_issues": closed_issues,
                 "languages": languages,
                 "default_branch_protected": branch_protected,
+                "security_updates": self._security_feature_status(
+                    repository, "dependabot_security_updates"
+                ),
+                "secret_scanning": self._security_feature_status(
+                    repository, "secret_scanning"
+                ),
             }
