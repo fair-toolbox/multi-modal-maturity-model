@@ -63,7 +63,7 @@ def clone_repository(repo_url: str, target_dir: str) -> None:
             result.returncode, result.args, result.stdout, result.stderr
         )
 
-    logger.info(f"Successfully cloned {repo_url}")
+    logger.debug(f"Successfully cloned {repo_url}")
 
 
 @contextmanager
