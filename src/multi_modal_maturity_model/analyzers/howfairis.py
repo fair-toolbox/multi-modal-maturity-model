@@ -64,11 +64,11 @@ class HowfairisAnalyzer:
                 "citation": compliance.citation,
                 "checklist": compliance.checklist,
             }
-            logger.info(f"Successfully collected FAIR metrics for {self.repo_url}")
+            logger.debug(f"Successfully collected FAIR metrics for {self.repo_url}")
             return result
 
         except Exception as e:
-            logger.error(
-                f"Error occurred while analyzing FAIR compliance for {self.repo_url}: {e}"
+            logger.warning(
+                f"Error occurred analyzing FAIR compliance for {self.repo_url}: {e}"
             )
             return None

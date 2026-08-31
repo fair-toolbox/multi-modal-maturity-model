@@ -36,7 +36,6 @@ class LizardAnalyzer:
         complexity_metrics = self._analyze_complexity()
 
         if complexity_metrics is None:
-            logger.warning(f"Lizard analysis failed for: {self.repo_path}")
             return None
 
         duplicate_rate = self._analyze_duplicates()
@@ -77,8 +76,6 @@ class LizardAnalyzer:
             avg_ccn = (
                 round(total_ccn / function_count, 2) if function_count > 0 else 0.0
             )
-
-            logger.debug(f"Complexity analysis complete.")
 
             return {
                 "total_nloc": total_nloc,

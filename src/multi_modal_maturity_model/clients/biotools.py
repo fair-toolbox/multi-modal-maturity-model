@@ -43,9 +43,12 @@ class BioToolsClient(BaseClient):
                 tool = response.json()
                 return tool
 
+        except httpx.NetworkError as e:
+            logger.warning(f"Network error fetching {url}: {e}")
+            return None
         except httpx.RequestError as e:
-            logger.error(f"Error while fetching {url}: {e}")
+            logger.warning(f"Error fetching {url}: {e}")
             return None
         except httpx.HTTPStatusError as e:
-            logger.error(f"HTTP error code {e.response.status_code} for {url}")
+            logger.warning(f"HTTP error code {e.response.status_code} for {url}")
             return None

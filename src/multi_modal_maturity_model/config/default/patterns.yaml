@@ -1,0 +1,39 @@
+# File pattern definitions for repository metrics extraction
+
+pattern_groups:
+
+  # Workflow management system file patterns
+  workflow_files:
+    - "*.cwl"
+    - "main.nf"
+    - "nextflow.config"
+    - "*.nf"
+    - "Snakefile"
+    - "*.smk"
+    - "*.wdl"
+
+  # Distribution and packaging file patterns
+  distribution_files:
+    # containers
+    - "Dockerfile"
+    - "Containerfile"
+    - "apptainer.def"
+    - "Singularity"
+    - "*.dockerfile"
+    # python_package:
+    - "pyproject.toml"
+    - "setup.py"
+    - "requirements.txt"
+    # conda:
+    - "environment.yml"
+    - "environment.yaml"
+    - "meta.yaml"
+
+  # Security policy file patterns
+  security_policy_files:
+    - "SECURITY.md"
+    - "SECURITY.rst"
+    - "SECURITY.txt"
+
+  gitignore_file:
+    - ".gitignore"

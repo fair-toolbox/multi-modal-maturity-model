@@ -1,5 +1,4 @@
 # Metrics Definition Configuration
-# Defines how to extract, normalize, and deduplicate metrics from various sources
 
 metrics:
   # ---------------------------------------------------------------------------
@@ -101,18 +100,6 @@ metrics:
         gitlab:
           path: "repository_tree"
 
-  has_security_scanning:
-    type: boolean
-    description: "Presence of automated security scanning configuration"
-    extraction:
-      method: pattern_match
-      pattern_group: security_scanning_files
-      sources:
-        github:
-          path: "contents"
-        gitlab:
-          path: "repository_tree"
-
   days_since_last_commit:
     type: numeric
     description: "Number of days since the last commit (lower is better)"
@@ -157,12 +144,10 @@ metrics:
         github:
           path: "contributors"
           params:
-            login_key: "login"
             commits_key: "contributions"
         gitlab:
           path: "contributors"
           params:
-            login_key: "name"
             commits_key: "commits"
     normalization:
       scaler: clamp
@@ -170,39 +155,66 @@ metrics:
       hi: 20.0
       invert: false
 
+  gitignore_present:
+    type: boolean
+    description: "Presence of a .gitignore file in the repository"
+    extraction:
+      method: pattern_match
+      pattern_group: gitignore_file
+      sources:
+        github:
+          path: "contents"
+        gitlab:
+          path: "repository_tree"
+
+  security_updates: # enabled / disabled
+    type: boolean
+    description: "Whether security updates are being applied (e.g., Dependabot)"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "security_updates"
+
+  secret_scanning:  # enabled / disabled
+    type: boolean
+    description: "Whether secret scanning is enabled in the repository"
+    extraction:
+      method: direct
+      sources:
+        github:
+          path: "secret_scanning"
   # ---------------------------------------------------------------------------
   # bio.tools Metrics
   # ---------------------------------------------------------------------------
 
   input_formats:
     type: numeric
-    description: "Count or fraction of supported input data formats (EDAM leaf nodes)"
+    description: "Fraction of supported input data formats (EDAM leaf nodes)"
     extraction:
       method: calculated
       function: calculate_edam_leaf_fraction
       sources:
         biotools:
           path: "function"
-          data_type: "input"
+          params:
+            data_type: "input"
     normalization:
       scaler: fraction
-      lo: 0.0
-      hi: 1.0
 
   output_formats:
     type: numeric
-    description: "Count or fraction of supported output data formats (EDAM leaf nodes)"
+    description: "Fraction of supported output data formats (EDAM leaf nodes)"
     extraction:
       method: calculated
       function: calculate_edam_leaf_fraction
       sources:
         biotools:
           path: "function"
-          data_type: "output"
+          params:
+            data_type: "output"
     normalization:
       scaler: fraction
-      lo: 0.0
-      hi: 1.0
 
   biotools_registry:
     type: boolean
@@ -303,6 +315,19 @@ metrics:
     normalization:
       scaler: log
       cap: 200.0
+
+  altmetric_score:
+    type: numeric
+    description: "Altmetric Attention Score"
+    extraction:
+      method: publication
+      aggregation: sum
+      sources:
+        altmetric:
+          path: "score"
+    normalization:
+      scaler: log
+      cap: 100.0
 
   # ---------------------------------------------------------------------------
   # Code Quality Metrics (Lizard)
