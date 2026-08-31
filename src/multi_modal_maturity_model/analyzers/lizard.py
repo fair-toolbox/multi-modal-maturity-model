@@ -85,7 +85,7 @@ class LizardAnalyzer:
             }
 
         except Exception as e:
-            logger.error(f"Complexity analysis failed: {e}")
+            logger.warning(f"Complexity analysis failed: {e}")
             return None
 
     def _analyze_duplicates(self) -> float | None:
@@ -116,5 +116,5 @@ class LizardAnalyzer:
                 return None
 
         except Exception as e:
-            logger.error(f"Duplicate analysis failed: {e}")
+            logger.warning(f"Duplicate analysis failed: {e}")
             return None

@@ -84,7 +84,7 @@ def normalize_metric(
             return normalize_fraction(raw_value)
 
     except (TypeError, ValueError) as e:
-        logger.error(f"[{metric_name}] Error normalizing value {raw_value}: {e}")
+        logger.warning(f"[{metric_name}] Error normalizing value {raw_value}: {e}")
         return None
 
 

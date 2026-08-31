@@ -37,16 +37,20 @@ class OpenAlexClient(BaseClient):
             data = response.json()
             return doi, data
 
+        except httpx.NetworkError:
+            logger.warning(f"Network error fetching data for DOI {doi}")
+            return doi, None
+
         except httpx.RequestError:
-            logger.error(f"Request error fetching data for DOI {doi}")
+            logger.warning(f"Request error fetching data for DOI {doi}")
             return doi, None
 
         except httpx.HTTPStatusError:
-            logger.error(f"HTTP error fetching data for DOI {doi}")
+            logger.warning(f"HTTP error fetching data for DOI {doi}")
             return doi, None
 
         except Exception as e:
-            logger.error(f"Unexpected error fetching data for DOI {doi}: {e}")
+            logger.warning(f"Unexpected error fetching data for DOI {doi}: {e}")
             return doi, None
 
     async def fetch(self) -> dict[str, Any]:

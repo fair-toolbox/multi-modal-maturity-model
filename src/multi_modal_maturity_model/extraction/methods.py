@@ -80,7 +80,7 @@ def extract_calculated(
 ) -> Any:
     fn = CALCULATORS.get(fn_name)
     if fn is None:
-        logger.error(f"Unknown calculator '{fn_name}'. Returning None.")
+        logger.warning(f"Unknown calculator '{fn_name}'. Returning None.")
         return None
 
     value = _get_nested(source_data, path)

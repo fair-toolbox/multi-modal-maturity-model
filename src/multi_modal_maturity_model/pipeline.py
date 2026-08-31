@@ -1,4 +1,4 @@
-"""High-level pipeline for maturity analysis of research software."""
+"""High-level pipeline for maturity analysis."""
 
 import asyncio
 import logging
@@ -64,27 +64,25 @@ class MaturityPipeline:
             - 'extracted_metrics': Extracted metrics by metric name and source
             - 'normalized_metrics': Normalized metrics in [0, 1] scale
         """
+        logger.info(f"Starting maturity analysis for {repo_url}")
+
         results_by_source = await self._fetch_all(repo_url, biotools_id, dois)
 
         # Only run analyzers if we have valid repo data
         repo_is_valid = "github" in results_by_source or "gitlab" in results_by_source
 
         if repo_is_valid:
+            logger.info(f"Running analyzers for {repo_url}")
             analysis_results = self._analyze_all(repo_url, repo_path)
             results_by_source.update(analysis_results)
-
-        # Extract metrics using configuration
-        publication_sources = ["openalex", "europepmc", "altmetric"]
-        publication_results = {
-            source: results_by_source.get(source, [])
-            for source in publication_sources
-            if source in results_by_source
-        }
+        else:
+            logger.warning(
+                f"No valid repository data found for {repo_url}. Skipping analyzers."
+            )
 
         extracted_metrics = (
             self.extractor.extract_all(
                 results=results_by_source,
-                #            publication_results=publication_results if publication_results else None,
             )
             if results_by_source
             else {}
@@ -98,12 +96,7 @@ class MaturityPipeline:
             weights_cfg=self.weights_cfg,
         )
 
-        return {
-            "raw_results": results_by_source,
-            "extracted_metrics": extracted_metrics,
-            "normalized_metrics": normalized_metrics,
-            "scores": scores.model_dump(),
-        }
+        return scores.model_dump()
 
     async def _fetch_all(
         self,
@@ -145,13 +138,19 @@ class MaturityPipeline:
                 )
                 tasks["altmetric"] = altmetric_client.fetch()
 
+        logger.info(f"Fetching data from sources: {list(tasks.keys())}")
+
         results = await asyncio.gather(*tasks.values(), return_exceptions=True)
 
-        return {
-            source: result
-            for source, result in zip(tasks.keys(), results)
-            if not isinstance(result, Exception)
-        }
+        successful_results = {}
+        for source, result in zip(tasks.keys(), results):
+            if isinstance(result, Exception):
+                logger.warning(f"Error fetching data from {source}: {result}")
+                continue
+
+            successful_results[source] = result
+
+        return successful_results
 
     def _analyze_all(
         self, repo_url: str, repo_path: str | None = None
