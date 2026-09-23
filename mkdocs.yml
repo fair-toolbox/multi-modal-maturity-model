@@ -1,0 +1,50 @@
+site_name: Multi-Modal Maturity Model
+site_description: Multi-modal maturity model for research software and services
+site_author: Ana Mendes, Magnus Palmblad
+site_url: https://fair-toolbox.github.io/multi-modal-maturity-model
+repo_url: https://github.com/fair-toolbox/multi-modal-maturity-model
+
+theme:
+  name: material
+  # logo: assets/logo.png
+  # favicon: assets/logo.png
+  palette:
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - User Guide: user_guide.md
+  - Documentation:
+    - Dimensions and Metrics: maturity_model.md
+    - Configuration: configuration.md
+  - Contributing: contributing.md
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fair-toolbox/multi-modal-maturity-model
+
+copyright: Copyright &copy; 2026, Ana Mendes, Magnus Palmblad.
