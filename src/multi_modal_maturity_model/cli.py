@@ -10,7 +10,7 @@ from typing import Optional
 import click
 import yaml
 
-from .pipeline import MaturityPipeline
+from multi_modal_maturity_model import __version__, MaturityPipeline
 
 logger = logging.getLogger(__name__)
 
@@ -59,7 +59,7 @@ def format_output(results: dict) -> str:
 
 
 @click.group()
-@click.version_option(version="0.1.0", prog_name="Multi-Modal Maturity Model")
+@click.version_option(version=__version__, prog_name="Multi-Modal Maturity Model")
 def main():
     """Command-line interface for the Multi-Modal Maturity Model."""
     pass
