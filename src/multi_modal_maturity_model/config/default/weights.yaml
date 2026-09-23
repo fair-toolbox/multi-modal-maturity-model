@@ -21,10 +21,11 @@ dimensions:
     duplicate_rate: 0.30
 
   sustainability:
-    avg_issue_close_time_days: 0.40
+    avg_issue_close_time_days: 0.30
     num_open_issues: 0.30
     days_since_last_commit: 0.20
     inverse_simpson_index: 0.10
+    has_releases: 0.10
 
   security:
     default_branch_protected: 0.34
