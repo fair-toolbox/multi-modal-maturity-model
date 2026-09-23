@@ -53,7 +53,7 @@ class GitHubClient(BaseClient):
             results.append(item)
         return results
 
-    async def _fetch_repository(self, gh: GitHubAPI) -> dict[str, Any] | None:
+    async def _fetch_repository(self, gh: GitHubAPI) -> dict[str, Any]:
         """Fetch repository data from GitHub."""
         try:
             return await gh.getitem(f"/repos/{self.owner}/{self.repo}")
@@ -121,6 +121,17 @@ class GitHubClient(BaseClient):
             logger.warning(f"Could not get repository languages: {e}")
             return None
 
+    async def _fetch_releases(self, gh: GitHubAPI) -> list[dict[str, Any]] | None:
+        """Get releases list."""
+        try:
+            releases = await self._fetch_paginated(
+                gh, f"/repos/{self.owner}/{self.repo}/releases"
+            )
+            return releases
+        except GitHubException as e:
+            logger.warning(f"Could not get repository releases: {e}")
+            return None
+
     async def _is_default_branch_protected(
         self, gh: GitHubAPI, default_branch: str
     ) -> bool | None:
@@ -150,15 +161,21 @@ class GitHubClient(BaseClient):
             repository = await self._fetch_repository(gh)
             default_branch = repository.get("default_branch", "main")
 
-            contents, contributors, closed_issues, languages, branch_protected = (
-                await asyncio.gather(
-                    self._fetch_contents(gh, default_branch),
-                    self._fetch_contributors(gh),
-                    self._fetch_closed_issues(gh),
-                    self._fetch_languages(gh),
-                    self._is_default_branch_protected(gh, default_branch),
-                    return_exceptions=False,
-                )
+            (
+                contents,
+                contributors,
+                closed_issues,
+                languages,
+                releases,
+                branch_protected,
+            ) = await asyncio.gather(
+                self._fetch_contents(gh, default_branch),
+                self._fetch_contributors(gh),
+                self._fetch_closed_issues(gh),
+                self._fetch_languages(gh),
+                self._fetch_releases(gh),
+                self._is_default_branch_protected(gh, default_branch),
+                return_exceptions=False,
             )
 
             return {
@@ -167,6 +184,7 @@ class GitHubClient(BaseClient):
                 "contributors": contributors,
                 "closed_issues": closed_issues,
                 "languages": languages,
+                "releases": releases,
                 "default_branch_protected": branch_protected,
                 "security_updates": self._security_feature_status(
                     repository, "dependabot_security_updates"

@@ -53,7 +53,7 @@ class GitLabClient(BaseClient):
             results.append(item)
         return results
 
-    async def _fetch_project(self, gl: GitLabAPI) -> dict[str, Any] | None:
+    async def _fetch_project(self, gl: GitLabAPI) -> dict[str, Any]:
         """Fetch project data from GitLab."""
         try:
             project_id = self._get_project_id_encoded()
@@ -137,6 +137,18 @@ class GitLabClient(BaseClient):
             logger.warning(f"Error fetching repository tree: {e}")
             return None
 
+    async def _fetch_releases(
+        self, gl: GitLabAPI, project_id: str
+    ) -> list[dict[str, Any]] | None:
+        """Get a list of releases."""
+        try:
+            return await self._fetch_paginated(
+                gl, f"/projects/{project_id}/releases?per_page=100"
+            )
+        except GitLabException as e:
+            logger.warning(f"Could not get repository releases: {e}")
+            return None
+
     async def _is_default_branch_protected(
         self, gl: GitLabAPI, project_id: str, default_branch: str
     ) -> bool | None:
@@ -177,6 +189,7 @@ class GitLabClient(BaseClient):
                 open_issues_count,
                 languages,
                 repository_tree,
+                releases,
                 default_branch_protected,
             ) = await asyncio.gather(
                 self._fetch_branches_count(gl, project_id),
@@ -185,6 +198,7 @@ class GitLabClient(BaseClient):
                 self._fetch_open_issues_count(gl, project_id),
                 self._fetch_languages(gl, project_id),
                 self._fetch_repository_tree(gl, project_id, default_branch),
+                self._fetch_releases(gl, project_id),
                 self._is_default_branch_protected(gl, project_id, default_branch),
                 return_exceptions=False,
             )
@@ -197,5 +211,6 @@ class GitLabClient(BaseClient):
                 "open_issues_count": open_issues_count,
                 "languages": languages,
                 "repository_tree": repository_tree,
+                "releases": releases,
                 "default_branch_protected": default_branch_protected,
             }
