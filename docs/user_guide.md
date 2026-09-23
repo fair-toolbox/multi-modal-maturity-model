@@ -4,7 +4,7 @@ This guide shows how to install and use the Multi-Modal Maturity Model (MMMM) to
 
 ## Installation
 
-Requires Python 3.11+.
+Requires Python 3.12+.
 
 ```bash
 pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git

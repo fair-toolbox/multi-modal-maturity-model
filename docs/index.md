@@ -30,7 +30,7 @@ M4 automatically collects data from:
 
 ## Quick Start
 
-Install (Python 3.11+):
+Install (Python 3.12+):
 
 ```bash
 pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git

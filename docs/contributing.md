@@ -8,7 +8,7 @@ Contributions are welcome! This project lives at [github.com/fair-toolbox/multi-
 git clone https://github.com/fair-toolbox/multi-modal-maturity-model.git
 cd multi-modal-maturity-model
 
-# Install with dev dependencies (Python 3.11+)
+# Install with dev dependencies (Python 3.12+)
 pip install -e . --group dev
 
 # Run the tests

@@ -11,7 +11,7 @@ The maturity model is truly multi-modal in that it combines several orthogonal a
 
 ## Installation
 
-Requires Python 3.11+.
+Requires Python 3.12+.
 
 ```bash
 pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git
