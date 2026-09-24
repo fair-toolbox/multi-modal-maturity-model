@@ -1,0 +1,1444 @@
+{
+    "MS2Rescore": {
+        "tool_name": "MS2Rescore",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 101978052,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMDE5NzgwNTI=",
+                "name": "ms2rescore",
+                "full_name": "CompOmics/ms2rescore",
+                "private": false,
+                "owner": {
+                    "login": "CompOmics",
+                    "id": 11630937,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjExNjMwOTM3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/11630937?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CompOmics",
+                    "html_url": "https://github.com/CompOmics",
+                    "followers_url": "https://api.github.com/users/CompOmics/followers",
+                    "following_url": "https://api.github.com/users/CompOmics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CompOmics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CompOmics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CompOmics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CompOmics/orgs",
+                    "repos_url": "https://api.github.com/users/CompOmics/repos",
+                    "events_url": "https://api.github.com/users/CompOmics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CompOmics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/CompOmics/ms2rescore",
+                "description": "Modular and user-friendly platform for AI-assisted rescoring of peptide identifications",
+                "fork": false,
+                "url": "https://api.github.com/repos/CompOmics/ms2rescore",
+                "forks_url": "https://api.github.com/repos/CompOmics/ms2rescore/forks",
+                "keys_url": "https://api.github.com/repos/CompOmics/ms2rescore/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/CompOmics/ms2rescore/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/CompOmics/ms2rescore/teams",
+                "hooks_url": "https://api.github.com/repos/CompOmics/ms2rescore/hooks",
+                "issue_events_url": "https://api.github.com/repos/CompOmics/ms2rescore/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/CompOmics/ms2rescore/events",
+                "assignees_url": "https://api.github.com/repos/CompOmics/ms2rescore/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/CompOmics/ms2rescore/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/CompOmics/ms2rescore/tags",
+                "blobs_url": "https://api.github.com/repos/CompOmics/ms2rescore/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/CompOmics/ms2rescore/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/CompOmics/ms2rescore/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/CompOmics/ms2rescore/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/CompOmics/ms2rescore/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/CompOmics/ms2rescore/languages",
+                "stargazers_url": "https://api.github.com/repos/CompOmics/ms2rescore/stargazers",
+                "contributors_url": "https://api.github.com/repos/CompOmics/ms2rescore/contributors",
+                "subscribers_url": "https://api.github.com/repos/CompOmics/ms2rescore/subscribers",
+                "subscription_url": "https://api.github.com/repos/CompOmics/ms2rescore/subscription",
+                "commits_url": "https://api.github.com/repos/CompOmics/ms2rescore/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/CompOmics/ms2rescore/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/CompOmics/ms2rescore/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/CompOmics/ms2rescore/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/CompOmics/ms2rescore/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/CompOmics/ms2rescore/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/CompOmics/ms2rescore/merges",
+                "archive_url": "https://api.github.com/repos/CompOmics/ms2rescore/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/CompOmics/ms2rescore/downloads",
+                "issues_url": "https://api.github.com/repos/CompOmics/ms2rescore/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/CompOmics/ms2rescore/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/CompOmics/ms2rescore/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/CompOmics/ms2rescore/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/CompOmics/ms2rescore/labels{/name}",
+                "releases_url": "https://api.github.com/repos/CompOmics/ms2rescore/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/CompOmics/ms2rescore/deployments",
+                "created_at": "2017-08-31T08:28:17Z",
+                "updated_at": "2026-07-30T08:57:20Z",
+                "pushed_at": "2026-08-01T10:54:00Z",
+                "git_url": "git://github.com/CompOmics/ms2rescore.git",
+                "ssh_url": "git@github.com:CompOmics/ms2rescore.git",
+                "clone_url": "https://github.com/CompOmics/ms2rescore.git",
+                "svn_url": "https://github.com/CompOmics/ms2rescore",
+                "homepage": "https://ms2rescore.readthedocs.io",
+                "size": 326120,
+                "stargazers_count": 67,
+                "watchers_count": 67,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": false,
+                "has_wiki": false,
+                "has_pages": false,
+                "has_discussions": true,
+                "forks_count": 23,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 15,
+                "license": {
+                    "key": "apache-2.0",
+                    "name": "Apache License 2.0",
+                    "spdx_id": "Apache-2.0",
+                    "url": "https://api.github.com/licenses/apache-2.0",
+                    "node_id": "MDc6TGljZW5zZTI="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "deeplc",
+                    "ms2pip",
+                    "peptide-identification",
+                    "percolator",
+                    "proteomics"
+                ],
+                "visibility": "public",
+                "forks": 23,
+                "open_issues": 15,
+                "watchers": 67,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "CompOmics",
+                    "id": 11630937,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjExNjMwOTM3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/11630937?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CompOmics",
+                    "html_url": "https://github.com/CompOmics",
+                    "followers_url": "https://api.github.com/users/CompOmics/followers",
+                    "following_url": "https://api.github.com/users/CompOmics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CompOmics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CompOmics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CompOmics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CompOmics/orgs",
+                    "repos_url": "https://api.github.com/users/CompOmics/repos",
+                    "events_url": "https://api.github.com/users/CompOmics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CompOmics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 23,
+                "subscribers_count": 6
+            },
+            "contents": [
+                {
+                    "path": ".github/workflows/publish.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/test.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".pre-commit-config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".readthedocs.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "CONTRIBUTING.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "Dockerfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/LICENSE.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/css/custom.css",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-advanced.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-finished.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-modifications-before.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-modifications-filled.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-output-files.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-processes.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-progress.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-psm-file.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-psm-filetype.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-spectra.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-example-xtandem-start.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-fixed-modifications.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-modification-mapping.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-overview.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-screenshot-old.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/gui-screenshot.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/ms2rescore_logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/img/qc-reports.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/_static/js/badge.min.js",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/api/ms2rescore.feature_generators.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/api/ms2rescore.report.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/api/ms2rescore.rescoring.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/api/ms2rescore.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/cli.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/conf.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/config_schema.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/contributing.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/gui.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/index.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/installation.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/tutorials/in-depth-python-api.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/configuration.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/input-files.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/migrating-to-4.0.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/mumble.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/output-files.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/search-engine-notes.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/source/userguide/tims2rescore.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/mascot-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/mascot-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/maxquant-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/maxquant-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/msgfplus-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/msgfplus-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/peptideshaker-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/peptideshaker-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/sage-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/sage-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/xtandem-ms2rescore.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/xtandem-ms2rescore.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "img/gui-screenshot.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "img/ms2rescore.ico",
+                    "type": "blob"
+                },
+                {
+                    "path": "img/ms2rescore_logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "img/ms2rescore_logo.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore.spec",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/__main__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/_ristretto_utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/_utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/_version.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/config_parser.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/constants.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/core.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/exceptions.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/base.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/basic.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/deeplc.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/im2deep.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/ms2.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/feature_generators/ms2pip.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/gui/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/gui/__main__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/gui/app.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/gui/function2ctk.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/gui/widgets.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/config_default.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/config_default_tims.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/config_schema.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/comments_icon_black.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/comments_icon_white.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/config_icon.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/docs_icon_black.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/docs_icon_white.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/github_icon_black.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/github_icon_white.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/ms2rescore_logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/package_data/img/program_icon.ico",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/parse_psms.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/parse_spectra.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/__main__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/charts.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/data.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/generate.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/about.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/base.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/config.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/features.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/log.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/metadata.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/overview.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/stats-card.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/style.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/target-decoy.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/templates/texts.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/report/utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore/rescoring.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "ms2rescore_innosetup.iss",
+                    "type": "blob"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_config_parser.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_data/msms-psms.tsv",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_data/test.mgf",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_end_to_end.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_feature_generators_basic.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_feature_generators_deeplc.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_feature_generators_im2deep.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_feature_generators_ms2.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_feature_generators_ms2pip.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_gui.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_parse_psms.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_parse_spectra.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_report.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_rescoring.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/test_version.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "uv.lock",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "RalfG",
+                    "contributions": 545
+                },
+                {
+                    "login": "ArthurDeclercq",
+                    "contributions": 368
+                },
+                {
+                    "login": "anasilviacs",
+                    "contributions": 145
+                },
+                {
+                    "login": "rodvrees",
+                    "contributions": 27
+                },
+                {
+                    "login": "paretje",
+                    "contributions": 14
+                },
+                {
+                    "login": "tivdnbos",
+                    "contributions": 11
+                },
+                {
+                    "login": "SamvPy",
+                    "contributions": 5
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 274,
+                    "title": "Report doesn't show \"Feature usage in rescoring model\" after migration to ristretto",
+                    "created_at": "2026-07-23T10:04:51Z",
+                    "closed_at": "2026-07-24T17:00:15Z"
+                },
+                {
+                    "number": 273,
+                    "title": "Configuration file for `deeplc_retrain` is still `true` by default, but should be `false`",
+                    "created_at": "2026-07-22T10:42:54Z",
+                    "closed_at": "2026-07-24T21:20:00Z"
+                },
+                {
+                    "number": 244,
+                    "title": "pandas/numpy version incompatibility",
+                    "created_at": "2026-01-06T03:12:45Z",
+                    "closed_at": "2026-02-09T14:11:53Z"
+                },
+                {
+                    "number": 235,
+                    "title": "ms2pip feature generator file identification",
+                    "created_at": "2025-09-11T06:56:05Z",
+                    "closed_at": "2025-12-22T15:43:39Z"
+                },
+                {
+                    "number": 234,
+                    "title": "Exception in GUI: multiprocessing/reduction.py: PermissionError: [WinError 5]",
+                    "created_at": "2025-09-11T06:21:13Z",
+                    "closed_at": "2026-03-19T09:40:26Z"
+                },
+                {
+                    "number": 233,
+                    "title": "Rescoring with MS2Rescore on MetaMorpheus .mZID file shows no PSM improvement",
+                    "created_at": "2025-08-08T10:56:55Z",
+                    "closed_at": "2025-12-18T13:34:54Z"
+                },
+                {
+                    "number": 232,
+                    "title": "Runtime Error : cannot import name 'im2ccs'",
+                    "created_at": "2025-08-02T17:57:45Z",
+                    "closed_at": "2025-12-18T12:54:20Z"
+                },
+                {
+                    "number": 231,
+                    "title": "Report generation fails with \"IndexError: single positional indexer is out-of-bounds\"",
+                    "created_at": "2025-07-22T08:23:30Z",
+                    "closed_at": "2025-12-22T16:45:41Z"
+                },
+                {
+                    "number": 229,
+                    "title": "Settings for OpenMS",
+                    "created_at": "2025-05-14T00:02:27Z",
+                    "closed_at": "2025-12-18T13:23:14Z"
+                },
+                {
+                    "number": 228,
+                    "title": "Any specific settings for immunopeptidome data?",
+                    "created_at": "2025-05-06T20:42:35Z",
+                    "closed_at": "2026-02-09T14:14:11Z"
+                },
+                {
+                    "number": 226,
+                    "title": "problem SAGE result reprocessing",
+                    "created_at": "2025-04-22T12:16:18Z",
+                    "closed_at": "2025-12-18T13:19:35Z"
+                },
+                {
+                    "number": 221,
+                    "title": "np.Inf removed in numpy 2.0",
+                    "created_at": "2025-04-10T21:54:19Z",
+                    "closed_at": "2025-04-15T15:34:30Z"
+                },
+                {
+                    "number": 219,
+                    "title": "np.Inf removed in numpy 2.0",
+                    "created_at": "2025-04-04T14:05:18Z",
+                    "closed_at": "2025-04-15T15:43:36Z"
+                },
+                {
+                    "number": 213,
+                    "title": "Error with Rust mzml library",
+                    "created_at": "2025-03-15T12:41:42Z",
+                    "closed_at": "2025-04-02T08:41:10Z"
+                },
+                {
+                    "number": 211,
+                    "title": "Update upload-artifact in test windows installer action",
+                    "created_at": "2025-03-07T10:12:18Z",
+                    "closed_at": "2025-03-07T10:21:24Z"
+                },
+                {
+                    "number": 210,
+                    "title": "Output",
+                    "created_at": "2025-03-05T19:09:33Z",
+                    "closed_at": "2025-03-07T10:20:23Z"
+                },
+                {
+                    "number": 208,
+                    "title": "AttributeError: `'PercolatorTabWriter' object has no attribute 'style'` during rescoring",
+                    "created_at": "2024-12-16T13:18:25Z",
+                    "closed_at": "2025-03-07T10:14:07Z"
+                },
+                {
+                    "number": 207,
+                    "title": "Error when filling in missing precursor info: ufunc 'isnan' not supported for the input types",
+                    "created_at": "2024-12-10T22:14:28Z",
+                    "closed_at": "2025-03-06T14:28:30Z"
+                },
+                {
+                    "number": 206,
+                    "title": "Update to v4 of the artifact actions",
+                    "created_at": "2024-12-09T09:25:44Z",
+                    "closed_at": "2025-04-15T15:58:20Z"
+                },
+                {
+                    "number": 204,
+                    "title": "im2deep dependency broken",
+                    "created_at": "2024-11-26T12:36:26Z",
+                    "closed_at": "2024-12-04T16:45:36Z"
+                },
+                {
+                    "number": 194,
+                    "title": "which column to use for mokapot generated rescoring results?",
+                    "created_at": "2024-09-24T18:09:00Z",
+                    "closed_at": "2024-10-01T06:54:21Z"
+                },
+                {
+                    "number": 193,
+                    "title": "pyo3_runtime.PanicException: called `Result::unwrap()` on an `Err` value: NotCentroided",
+                    "created_at": "2024-09-24T17:36:50Z",
+                    "closed_at": "2024-10-01T14:20:07Z"
+                },
+                {
+                    "number": 190,
+                    "title": "Logging bug in GUI in debug mode",
+                    "created_at": "2024-09-18T15:34:39Z",
+                    "closed_at": "2025-12-18T13:02:21Z"
+                },
+                {
+                    "number": 185,
+                    "title": " UnicodeEncodeError: 'ascii' codec can't encode characters in position ...",
+                    "created_at": "2024-09-04T00:11:05Z",
+                    "closed_at": "2024-09-17T12:57:44Z"
+                },
+                {
+                    "number": 183,
+                    "title": "'charmap' codec can't encode characters in position XX",
+                    "created_at": "2024-08-22T00:36:21Z",
+                    "closed_at": "2024-09-18T15:28:01Z"
+                },
+                {
+                    "number": 171,
+                    "title": "im2deep not working with the GUI",
+                    "created_at": "2024-08-08T13:48:37Z",
+                    "closed_at": "2024-08-14T09:47:42Z"
+                },
+                {
+                    "number": 170,
+                    "title": "SSL certificate error",
+                    "created_at": "2024-08-08T00:07:33Z",
+                    "closed_at": "2024-08-14T04:28:11Z"
+                },
+                {
+                    "number": 165,
+                    "title": "Various issues while processing PeptideShaker mzIdentML results",
+                    "created_at": "2024-08-01T23:20:54Z",
+                    "closed_at": "2024-08-21T15:38:44Z"
+                },
+                {
+                    "number": 157,
+                    "title": "Command line tool should pass in fasta file to the rescoring engine (mokapot) to enable the use of other named parameters",
+                    "created_at": "2024-07-15T08:29:09Z",
+                    "closed_at": "2024-08-02T09:13:34Z"
+                },
+                {
+                    "number": 154,
+                    "title": "Reports of error in `freeze_support` with Windows installer",
+                    "created_at": "2024-07-01T07:25:17Z",
+                    "closed_at": "2025-12-18T12:55:28Z"
+                },
+                {
+                    "number": 153,
+                    "title": "Target-decoy competition settings",
+                    "created_at": "2024-06-04T09:15:55Z",
+                    "closed_at": "2024-07-09T11:51:35Z"
+                },
+                {
+                    "number": 151,
+                    "title": "DeepLCFeatureGenerator multiprocessing issue when number of processes is more than 1",
+                    "created_at": "2024-05-23T10:22:10Z",
+                    "closed_at": "2025-12-18T13:00:37Z"
+                },
+                {
+                    "number": 149,
+                    "title": "pyopenms DLL issue",
+                    "created_at": "2024-05-22T12:30:44Z",
+                    "closed_at": "2024-08-21T15:40:07Z"
+                },
+                {
+                    "number": 148,
+                    "title": "Parameters for rescoring peptidomics data",
+                    "created_at": "2024-05-06T10:07:50Z",
+                    "closed_at": "2024-08-03T10:57:42Z"
+                },
+                {
+                    "number": 147,
+                    "title": "error running rescore - tries to download something?",
+                    "created_at": "2024-05-05T14:55:38Z",
+                    "closed_at": "2024-08-19T10:54:49Z"
+                },
+                {
+                    "number": 146,
+                    "title": "MemoryError with input file containing multiple million PSMs (DIA data)",
+                    "created_at": "2024-04-23T13:15:13Z",
+                    "closed_at": "2025-12-18T13:00:25Z"
+                },
+                {
+                    "number": 145,
+                    "title": "Scipy dependency issue in Windows Installer for v3.0.3",
+                    "created_at": "2024-04-09T15:25:23Z",
+                    "closed_at": "2024-08-14T08:41:14Z"
+                },
+                {
+                    "number": 140,
+                    "title": "Could not find matching spectra",
+                    "created_at": "2024-04-05T20:59:49Z",
+                    "closed_at": "2024-08-14T08:42:57Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Model slowly downloaded",
+                    "created_at": "2024-04-03T12:27:52Z",
+                    "closed_at": "2024-04-09T03:28:48Z"
+                },
+                {
+                    "number": 136,
+                    "title": "MSMS Parsing with MaxQuant ",
+                    "created_at": "2024-03-23T20:27:56Z",
+                    "closed_at": "2024-07-31T16:28:52Z"
+                },
+                {
+                    "number": 134,
+                    "title": "Specify custom model directory in MS2PIPFeatureGenerator",
+                    "created_at": "2024-03-22T15:00:31Z",
+                    "closed_at": "2024-03-28T14:50:06Z"
+                },
+                {
+                    "number": 130,
+                    "title": "Uncaught exception in DeepLCFeatureGenerator if not enough peptides for calibration set",
+                    "created_at": "2024-03-22T11:33:06Z",
+                    "closed_at": "2024-09-19T10:09:47Z"
+                },
+                {
+                    "number": 129,
+                    "title": "Persistent warning about OPENMS_DATA_PATH",
+                    "created_at": "2024-03-22T10:30:56Z",
+                    "closed_at": "2024-03-29T09:31:31Z"
+                },
+                {
+                    "number": 128,
+                    "title": "Fatal pickling exception when using [UNIMOD:nn] identifier in ProForma string",
+                    "created_at": "2024-03-22T10:14:15Z",
+                    "closed_at": "2024-03-29T10:04:14Z"
+                },
+                {
+                    "number": 126,
+                    "title": "Cannot resolve mass for invalid amino acid ",
+                    "created_at": "2024-03-15T10:32:29Z",
+                    "closed_at": "2024-03-28T10:27:25Z"
+                },
+                {
+                    "number": 125,
+                    "title": "Adding peptide n-terminal fixed modification",
+                    "created_at": "2024-03-02T10:36:15Z",
+                    "closed_at": "2024-03-28T09:44:49Z"
+                },
+                {
+                    "number": 124,
+                    "title": "Add feature descriptions to documentation",
+                    "created_at": "2024-02-27T10:44:01Z",
+                    "closed_at": "2024-03-18T16:44:35Z"
+                },
+                {
+                    "number": 118,
+                    "title": "GUI crashes on linux system",
+                    "created_at": "2024-01-17T15:03:57Z",
+                    "closed_at": "2024-02-22T10:06:57Z"
+                },
+                {
+                    "number": 117,
+                    "title": "When using Percolator with more than 128 threads, MS2Rescore returns empty pout files",
+                    "created_at": "2024-01-04T15:19:45Z",
+                    "closed_at": "2024-08-14T08:40:39Z"
+                },
+                {
+                    "number": 116,
+                    "title": "ms2rescore graphical user interface ",
+                    "created_at": "2023-12-28T10:16:46Z",
+                    "closed_at": "2024-01-05T16:47:38Z"
+                },
+                {
+                    "number": 114,
+                    "title": "Issue with QC report for percolator",
+                    "created_at": "2023-12-14T13:20:20Z",
+                    "closed_at": "2024-04-10T11:49:31Z"
+                },
+                {
+                    "number": 113,
+                    "title": "Update DeepLC integration to send PSMList object instead of peprec dataframe",
+                    "created_at": "2023-11-30T15:12:20Z",
+                    "closed_at": "2024-07-17T11:20:55Z"
+                },
+                {
+                    "number": 112,
+                    "title": "Support different levels of confidence estimates when using mokapot",
+                    "created_at": "2023-11-28T09:57:36Z",
+                    "closed_at": "2026-07-17T20:42:23Z"
+                },
+                {
+                    "number": 111,
+                    "title": "Lack of documentation on the command line interface",
+                    "created_at": "2023-11-24T14:49:54Z",
+                    "closed_at": "2023-11-30T16:50:56Z"
+                },
+                {
+                    "number": 109,
+                    "title": "Percolator [WinError 2] The system cannot find the file specified with the .pin",
+                    "created_at": "2023-11-16T21:20:46Z",
+                    "closed_at": "2023-11-30T12:36:06Z"
+                },
+                {
+                    "number": 108,
+                    "title": "Prepec modification error: Multiple modifications per site not supported in Peptide Record format.",
+                    "created_at": "2023-11-16T14:41:54Z",
+                    "closed_at": "2024-07-17T11:20:55Z"
+                },
+                {
+                    "number": 107,
+                    "title": "Cannot resolve mass for modification",
+                    "created_at": "2023-11-10T13:16:43Z",
+                    "closed_at": "2024-03-18T18:12:03Z"
+                },
+                {
+                    "number": 106,
+                    "title": "Correctly handle peptides with invalid residues (BJOUXZ)",
+                    "created_at": "2023-11-07T22:34:30Z",
+                    "closed_at": "2024-04-08T15:43:33Z"
+                },
+                {
+                    "number": 105,
+                    "title": "Add lower-rank filtering option",
+                    "created_at": "2023-11-07T16:50:27Z",
+                    "closed_at": "2024-07-17T11:19:35Z"
+                },
+                {
+                    "number": 104,
+                    "title": "Improve logging of modification mapping functionality",
+                    "created_at": "2023-11-01T19:17:17Z",
+                    "closed_at": "2024-09-19T10:05:25Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Install v3.0.0b4 from Windows .exe, failed to run with \"Cannot find XGBoost Library in the candidate path\"",
+                    "created_at": "2023-10-24T13:53:49Z",
+                    "closed_at": "2023-11-07T16:59:46Z"
+                },
+                {
+                    "number": 100,
+                    "title": "Suggestions for Ion mobility MS data",
+                    "created_at": "2023-10-22T22:02:32Z",
+                    "closed_at": "2024-09-19T09:58:55Z"
+                },
+                {
+                    "number": 98,
+                    "title": "Config file for maxquant example in v3.0.0-dev4",
+                    "created_at": "2023-10-03T10:01:24Z",
+                    "closed_at": "2024-07-31T16:29:09Z"
+                },
+                {
+                    "number": 94,
+                    "title": "MS-GF+ms2rescore pipeline doesn't run",
+                    "created_at": "2023-08-23T19:38:54Z",
+                    "closed_at": "2023-11-08T00:53:38Z"
+                },
+                {
+                    "number": 93,
+                    "title": "issue with installation",
+                    "created_at": "2023-08-23T06:40:28Z",
+                    "closed_at": "2023-11-08T00:53:31Z"
+                },
+                {
+                    "number": 92,
+                    "title": "Modification and flanking amino acid information absent from final output (pout) file",
+                    "created_at": "2023-08-22T21:14:29Z",
+                    "closed_at": "2023-10-13T19:38:07Z"
+                },
+                {
+                    "number": 90,
+                    "title": "Couldn't parse MaxQuant modifications in \"Modified Sequence\" column in CLI",
+                    "created_at": "2023-08-07T17:47:42Z",
+                    "closed_at": "2023-11-08T00:53:26Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Not able to run ms2resore through command line for this repo examples",
+                    "created_at": "2023-07-05T13:13:37Z",
+                    "closed_at": "2023-10-16T18:29:53Z"
+                },
+                {
+                    "number": 86,
+                    "title": "Suggest correction for comet pin file",
+                    "created_at": "2023-01-21T22:37:58Z",
+                    "closed_at": "2023-10-13T19:48:14Z"
+                },
+                {
+                    "number": 85,
+                    "title": "Issue in selecting the mgf file of the spectrum file in GUI",
+                    "created_at": "2023-01-19T05:26:48Z",
+                    "closed_at": "2023-11-08T00:53:13Z"
+                },
+                {
+                    "number": 83,
+                    "title": "Allow rescoring of multiple hits per spectrum",
+                    "created_at": "2022-10-26T09:40:00Z",
+                    "closed_at": "2024-07-31T16:30:49Z"
+                },
+                {
+                    "number": 82,
+                    "title": "Error parsing scan number from mgf file",
+                    "created_at": "2022-10-25T13:38:48Z",
+                    "closed_at": "2023-10-15T18:48:57Z"
+                },
+                {
+                    "number": 81,
+                    "title": "PTM information is lost in pin and pout",
+                    "created_at": "2022-10-21T09:30:29Z",
+                    "closed_at": "2023-10-15T18:45:00Z"
+                },
+                {
+                    "number": 80,
+                    "title": "Wrong indexing during parsing MGF titles and retention times",
+                    "created_at": "2022-10-13T18:14:00Z",
+                    "closed_at": "2023-10-15T18:46:13Z"
+                },
+                {
+                    "number": 79,
+                    "title": "IDFileParserError: Could not map all MGF retention times to spectrum indices (using MSGF+ pipeline)",
+                    "created_at": "2022-09-22T20:40:11Z",
+                    "closed_at": "2023-10-15T18:48:27Z"
+                },
+                {
+                    "number": 78,
+                    "title": "Error while running command line ms2rescore",
+                    "created_at": "2022-09-05T14:03:06Z",
+                    "closed_at": "2022-11-03T15:48:39Z"
+                },
+                {
+                    "number": 74,
+                    "title": "Filtering of PSMs from MaxQuant Search",
+                    "created_at": "2022-08-01T13:49:24Z",
+                    "closed_at": "2023-10-15T18:52:19Z"
+                },
+                {
+                    "number": 73,
+                    "title": "Proteome Discoverer node / PSM file support",
+                    "created_at": "2022-07-22T10:01:18Z",
+                    "closed_at": "2023-10-15T18:37:48Z"
+                },
+                {
+                    "number": 69,
+                    "title": "MS\u00b2Rescore ignores false run percolator flag",
+                    "created_at": "2022-06-17T07:39:26Z",
+                    "closed_at": "2023-10-15T18:27:43Z"
+                },
+                {
+                    "number": 68,
+                    "title": "Remove temporary setting of NUMEXPR_MAX_THREADS in ms2rescore ",
+                    "created_at": "2022-06-04T11:20:32Z",
+                    "closed_at": "2023-10-13T19:58:20Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Add weights plotting to figure plots",
+                    "created_at": "2022-05-04T07:47:39Z",
+                    "closed_at": "2022-08-09T11:36:07Z"
+                },
+                {
+                    "number": 64,
+                    "title": "remove redundancy mgf title parser",
+                    "created_at": "2022-05-04T07:46:19Z",
+                    "closed_at": "2023-10-13T19:50:11Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Ignore FutureWarning and DeprecationWarning in GUI logs",
+                    "created_at": "2022-04-08T17:18:35Z",
+                    "closed_at": "2022-04-19T11:54:52Z"
+                },
+                {
+                    "number": 60,
+                    "title": "Refactor modification parsing in PeptideShaker pipeline",
+                    "created_at": "2022-04-08T15:28:27Z",
+                    "closed_at": "2023-10-13T19:51:33Z"
+                },
+                {
+                    "number": 59,
+                    "title": "install without gui?",
+                    "created_at": "2022-04-05T23:11:27Z",
+                    "closed_at": "2022-04-06T11:53:24Z"
+                },
+                {
+                    "number": 55,
+                    "title": "Percolator subprocess does not run in CLI",
+                    "created_at": "2022-03-30T10:10:14Z",
+                    "closed_at": "2022-04-08T10:42:54Z"
+                },
+                {
+                    "number": 54,
+                    "title": "PIN pipeline title matching: `ValueError: cannot convert float NaN to integer`",
+                    "created_at": "2022-03-18T08:36:25Z",
+                    "closed_at": "2023-10-13T19:49:33Z"
+                },
+                {
+                    "number": 53,
+                    "title": "Error with PEAKS mzid file",
+                    "created_at": "2022-03-11T08:03:25Z",
+                    "closed_at": "2023-10-16T23:06:21Z"
+                },
+                {
+                    "number": 52,
+                    "title": "GUI Windows installation error",
+                    "created_at": "2022-03-11T07:52:15Z",
+                    "closed_at": "2022-04-04T08:03:22Z"
+                },
+                {
+                    "number": 51,
+                    "title": "Limit charge for one-hot encoded features for charge to limited range ",
+                    "created_at": "2022-03-09T10:22:22Z",
+                    "closed_at": "2023-10-15T18:26:48Z"
+                },
+                {
+                    "number": 44,
+                    "title": "Processing PEAKS XPro output using ms2rescore",
+                    "created_at": "2022-02-24T17:13:21Z",
+                    "closed_at": "2022-04-08T10:42:54Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Failed to install ms2rescore",
+                    "created_at": "2021-11-14T08:49:34Z",
+                    "closed_at": "2021-12-13T14:49:12Z"
+                },
+                {
+                    "number": 36,
+                    "title": "MS\u00b2Rescore requires at least cascade_config version v0.2.0",
+                    "created_at": "2021-11-08T22:29:03Z",
+                    "closed_at": "2021-11-22T00:02:40Z"
+                },
+                {
+                    "number": 33,
+                    "title": "Implementation of get_search_engine_features for PeptideShaker input",
+                    "created_at": "2021-05-03T13:06:50Z",
+                    "closed_at": "2023-10-13T19:53:28Z"
+                },
+                {
+                    "number": 41,
+                    "title": "MaxQuant can have long-format modification notations; does not work in current implementation",
+                    "created_at": "2021-04-27T20:03:20Z",
+                    "closed_at": "2022-03-03T17:46:31Z"
+                },
+                {
+                    "number": 31,
+                    "title": "Streamline handling of invalid amino acids (B, J, O, U, X, Z)",
+                    "created_at": "2021-02-22T11:51:59Z",
+                    "closed_at": "2021-03-04T20:14:49Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Add flanking amino acids to PIN output",
+                    "created_at": "2021-02-10T10:03:37Z",
+                    "closed_at": "2023-10-13T19:53:54Z"
+                },
+                {
+                    "number": 26,
+                    "title": "[Bug] Use Percolator protein-decoy-pattern to generate pin files if provided by user",
+                    "created_at": "2021-02-05T08:34:15Z",
+                    "closed_at": "2021-02-10T09:58:50Z"
+                },
+                {
+                    "number": 25,
+                    "title": "num_cpus used by MS2PIP",
+                    "created_at": "2021-02-05T08:19:25Z",
+                    "closed_at": "2021-02-08T11:47:22Z"
+                },
+                {
+                    "number": 24,
+                    "title": "Percolator \"Picked protein FDR (-f)\" option requires flanking amino acids in PIN peptide column",
+                    "created_at": "2021-01-31T09:02:43Z",
+                    "closed_at": "2021-02-10T10:17:25Z"
+                },
+                {
+                    "number": 21,
+                    "title": "Support for C-terminal modifications",
+                    "created_at": "2021-01-21T15:22:16Z",
+                    "closed_at": "2023-10-13T19:54:21Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Update documentation to reflect changes in #14",
+                    "created_at": "2020-08-24T14:15:05Z",
+                    "closed_at": "2021-01-26T23:40:03Z"
+                },
+                {
+                    "number": 13,
+                    "title": "[FeatureRequest] add decoy flag to config file",
+                    "created_at": "2020-08-04T12:21:45Z",
+                    "closed_at": "2021-01-26T23:39:43Z"
+                },
+                {
+                    "number": 11,
+                    "title": "ms2rescore error: ms2rescore/tandem_to_rescore.py\", line 71, in make_pepfile ; KeyError: '57.02147'",
+                    "created_at": "2020-07-09T02:19:50Z",
+                    "closed_at": "2021-03-04T20:03:02Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Add generic PIN pipeline",
+                    "created_at": "2020-06-29T14:14:27Z",
+                    "closed_at": "2021-01-26T23:41:16Z"
+                },
+                {
+                    "number": 8,
+                    "title": "PeptideShaker pipeline: Propagate observed retention time",
+                    "created_at": "2020-06-29T13:47:46Z",
+                    "closed_at": "2021-01-26T23:41:30Z"
+                },
+                {
+                    "number": 7,
+                    "title": "PeptideShaker pipeline: Parse XLS Extended PSM reports",
+                    "created_at": "2020-06-29T13:46:55Z",
+                    "closed_at": "2021-01-26T23:41:42Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Path should be based on peprec file instead of mgf",
+                    "created_at": "2018-10-30T15:56:03Z",
+                    "closed_at": "2018-11-07T08:56:51Z"
+                },
+                {
+                    "number": 3,
+                    "title": "N-terminal modifications should be added according old version of MS2PIP",
+                    "created_at": "2018-10-30T15:54:21Z",
+                    "closed_at": "2018-11-07T08:57:40Z"
+                }
+            ],
+            "languages": {
+                "Python": 337807,
+                "HTML": 8903,
+                "Dockerfile": 1302,
+                "Inno Setup": 1259
+            },
+            "default_branch_protected": true,
+            "security_updates": null,
+            "secret_scanning": null
+        },
+        "publications": {
+            "europepmc": null,
+            "openalex": null,
+            "altmetric": null
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 5907,
+            "total_ccn": 1314,
+            "avg_ccn": 2.57,
+            "nloc_per_file": 131.27,
+            "duplicate_rate": 2.39
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}
