@@ -2,49 +2,50 @@
 
 dimensions:
   compatibility:
-    input_formats: 0.25
-    output_formats: 0.25
-    has_workflow_support: 0.25
-    has_distribution_support: 0.25
+    input_formats: 0.218349
+    output_formats: 0.214679
+    has_workflow_support: 0.193578
+    has_distribution_support: 0.373394
 
   fairness:
-    license: 0.20
-    repository: 0.30
-    registry: 0.20
-    citation: 0.10
-    checklist: 0.10
-    publication_open_access: 0.10
+    license: 0.249446
+    repository: 0.313747
+    registry: 0.115299
+    citation: 0.090909
+    checklist: 0.078714
+    publication_open_access: 0.151885
 
   maintainability:
-    nloc_per_file: 0.30
-    avg_ccn: 0.40
-    duplicate_rate: 0.30
+    nloc_per_file: 0.342201
+    avg_ccn: 0.324063
+    duplicate_rate: 0.333736
 
   sustainability:
-    avg_issue_close_time_days: 0.30
-    num_open_issues: 0.30
-    days_since_last_commit: 0.20
-    inverse_simpson_index: 0.10
-    has_releases: 0.10
+    avg_issue_close_time_days: 0.199091
+    num_open_issues: 0.127273
+    days_since_last_commit: 0.114545
+    inverse_simpson_index: 0.241818
+    has_releases: 0.149091
+    has_contribution_guidelines: 0.168182
 
   security:
-    default_branch_protected: 0.34
-    has_security_policy: 0.33
-    gitignore_present: 0.01
-    security_updates: 0.01
-    secret_scanning: 0.01
+    default_branch_protected: 0.247067
+    has_security_policy: 0.15528
+    gitignore_present: 0.115942
+    security_updates: 0.240856
+    secret_scanning: 0.240856
 
   scientific_impact:
-    fwci: 0.30
-    citation_count: 0.20
-    star_count: 0.20
-    fork_count: 0.10
+    fwci: 0.28
+    citation_count: 0.212727
+    star_count: 0.163636
+    fork_count: 0.13
+    altmetric_score: 0.213636
 
-# Overall score weights
 overall:
-  compatibility: 0.20
-  fairness: 0.20
-  maintainability: 0.20
-  scientific_impact: 0.10
-  security: 0.10
-  sustainability: 0.20
+  compatibility: 0.154545
+  fairness: 0.224545
+  maintainability: 0.202727
+  scientific_impact: 0.114545
+  security: 0.12
+  sustainability: 0.183636
