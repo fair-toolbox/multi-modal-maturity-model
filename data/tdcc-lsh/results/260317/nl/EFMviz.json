@@ -1,0 +1,2191 @@
+{
+    "EFMviz": {
+        "papers": {
+            "id": "32059585",
+            "source": "MED",
+            "pmid": "32059585",
+            "pmcid": "PMC7074156",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC7074156"
+                ]
+            },
+            "doi": "10.3390/metabo10020066",
+            "title": "EFMviz: A COBRA Toolbox extension to visualize Elementary Flux Modes in Genome-Scale Metabolic Models.",
+            "authorString": "Sarathy C, Kutmon M, Lenz M, Adriaens ME, Evelo CT, Arts ICW.",
+            "journalTitle": "Metabolites",
+            "issue": "2",
+            "journalVolume": "10",
+            "pubYear": "2020",
+            "journalIssn": "2218-1989",
+            "pageInfo": "E66",
+            "pubType": "research-article; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 4,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2020-02-16",
+            "firstPublicationDate": "2020-02-12"
+        },
+        "github": {
+            "repo": {
+                "id": 6512296,
+                "node_id": "MDEwOlJlcG9zaXRvcnk2NTEyMjk2",
+                "name": "cobratoolbox",
+                "full_name": "opencobra/cobratoolbox",
+                "private": false,
+                "owner": {
+                    "login": "opencobra",
+                    "id": 2708410,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjI3MDg0MTA=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/2708410?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/opencobra",
+                    "html_url": "https://github.com/opencobra",
+                    "followers_url": "https://api.github.com/users/opencobra/followers",
+                    "following_url": "https://api.github.com/users/opencobra/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/opencobra/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/opencobra/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/opencobra/subscriptions",
+                    "organizations_url": "https://api.github.com/users/opencobra/orgs",
+                    "repos_url": "https://api.github.com/users/opencobra/repos",
+                    "events_url": "https://api.github.com/users/opencobra/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/opencobra/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/opencobra/cobratoolbox",
+                "description": "The COnstraint-Based Reconstruction and Analysis Toolbox.              Documentation: ",
+                "fork": false,
+                "url": "https://api.github.com/repos/opencobra/cobratoolbox",
+                "forks_url": "https://api.github.com/repos/opencobra/cobratoolbox/forks",
+                "keys_url": "https://api.github.com/repos/opencobra/cobratoolbox/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/opencobra/cobratoolbox/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/opencobra/cobratoolbox/teams",
+                "hooks_url": "https://api.github.com/repos/opencobra/cobratoolbox/hooks",
+                "issue_events_url": "https://api.github.com/repos/opencobra/cobratoolbox/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/opencobra/cobratoolbox/events",
+                "assignees_url": "https://api.github.com/repos/opencobra/cobratoolbox/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/opencobra/cobratoolbox/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/opencobra/cobratoolbox/tags",
+                "blobs_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/opencobra/cobratoolbox/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/opencobra/cobratoolbox/languages",
+                "stargazers_url": "https://api.github.com/repos/opencobra/cobratoolbox/stargazers",
+                "contributors_url": "https://api.github.com/repos/opencobra/cobratoolbox/contributors",
+                "subscribers_url": "https://api.github.com/repos/opencobra/cobratoolbox/subscribers",
+                "subscription_url": "https://api.github.com/repos/opencobra/cobratoolbox/subscription",
+                "commits_url": "https://api.github.com/repos/opencobra/cobratoolbox/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/opencobra/cobratoolbox/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/opencobra/cobratoolbox/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/opencobra/cobratoolbox/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/opencobra/cobratoolbox/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/opencobra/cobratoolbox/merges",
+                "archive_url": "https://api.github.com/repos/opencobra/cobratoolbox/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/opencobra/cobratoolbox/downloads",
+                "issues_url": "https://api.github.com/repos/opencobra/cobratoolbox/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/opencobra/cobratoolbox/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/opencobra/cobratoolbox/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/opencobra/cobratoolbox/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/opencobra/cobratoolbox/labels{/name}",
+                "releases_url": "https://api.github.com/repos/opencobra/cobratoolbox/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/opencobra/cobratoolbox/deployments",
+                "created_at": "2012-11-02T20:38:05Z",
+                "updated_at": "2026-03-17T22:37:45Z",
+                "pushed_at": "2026-03-16T10:57:50Z",
+                "git_url": "git://github.com/opencobra/cobratoolbox.git",
+                "ssh_url": "git@github.com:opencobra/cobratoolbox.git",
+                "clone_url": "https://github.com/opencobra/cobratoolbox.git",
+                "svn_url": "https://github.com/opencobra/cobratoolbox",
+                "homepage": "https://opencobra.github.io/cobratoolbox",
+                "size": 1766964,
+                "stargazers_count": 279,
+                "watchers_count": 279,
+                "language": "MATLAB",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 336,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 61,
+                "license": {
+                    "key": "other",
+                    "name": "Other",
+                    "spdx_id": "NOASSERTION",
+                    "url": null,
+                    "node_id": "MDc6TGljZW5zZTA="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "cobra",
+                    "cobra-toolbox",
+                    "constraint-based-modeling",
+                    "gap-filling",
+                    "human-metabolism",
+                    "metabolic-engineering",
+                    "metabolic-models",
+                    "metabolic-reconstruction",
+                    "metabolomics",
+                    "microbiome-analysis",
+                    "omics-data-integration",
+                    "reconstruction",
+                    "strain-engineering",
+                    "transcriptomics",
+                    "tutorial"
+                ],
+                "visibility": "public",
+                "forks": 336,
+                "open_issues": 61,
+                "watchers": 279,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "opencobra",
+                    "id": 2708410,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjI3MDg0MTA=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/2708410?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/opencobra",
+                    "html_url": "https://github.com/opencobra",
+                    "followers_url": "https://api.github.com/users/opencobra/followers",
+                    "following_url": "https://api.github.com/users/opencobra/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/opencobra/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/opencobra/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/opencobra/subscriptions",
+                    "organizations_url": "https://api.github.com/users/opencobra/orgs",
+                    "repos_url": "https://api.github.com/users/opencobra/repos",
+                    "events_url": "https://api.github.com/users/opencobra/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/opencobra/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 336,
+                "subscribers_count": 30
+            },
+            "contributors": [
+                {
+                    "login": "laurentheirendt",
+                    "contributions": 2567
+                },
+                {
+                    "login": "rmtfleming",
+                    "contributions": 1309
+                },
+                {
+                    "login": "tpfau",
+                    "contributions": 1221
+                },
+                {
+                    "login": "syarra",
+                    "contributions": 929
+                },
+                {
+                    "login": "farid-zare",
+                    "contributions": 595
+                },
+                {
+                    "login": "jacekwachowiak",
+                    "contributions": 277
+                },
+                {
+                    "login": "shjchan",
+                    "contributions": 205
+                },
+                {
+                    "login": "NicolasSompairac",
+                    "contributions": 186
+                },
+                {
+                    "login": "ithiele",
+                    "contributions": 152
+                },
+                {
+                    "login": "marouenbg",
+                    "contributions": 142
+                },
+                {
+                    "login": "snmendoz",
+                    "contributions": 129
+                },
+                {
+                    "login": "AaronBrennan1",
+                    "contributions": 119
+                },
+                {
+                    "login": "huldash",
+                    "contributions": 99
+                },
+                {
+                    "login": "arichelle",
+                    "contributions": 90
+                },
+                {
+                    "login": "pavan-kumar-s",
+                    "contributions": 74
+                },
+                {
+                    "login": "akaviaLab",
+                    "contributions": 64
+                },
+                {
+                    "login": "loicmarx",
+                    "contributions": 60
+                },
+                {
+                    "login": "bramnap",
+                    "contributions": 56
+                },
+                {
+                    "login": "longfeimao",
+                    "contributions": 52
+                },
+                {
+                    "login": "jennmodamio",
+                    "contributions": 51
+                },
+                {
+                    "login": "jdesbonnet",
+                    "contributions": 51
+                },
+                {
+                    "login": "Gpreciat",
+                    "contributions": 45
+                },
+                {
+                    "login": "lvalcarcel",
+                    "contributions": 42
+                },
+                {
+                    "login": "wbryant",
+                    "contributions": 34
+                },
+                {
+                    "login": "YinTat",
+                    "contributions": 30
+                },
+                {
+                    "login": "vlasovv",
+                    "contributions": 27
+                },
+                {
+                    "login": "TheWileyB",
+                    "contributions": 24
+                },
+                {
+                    "login": "Kretaks",
+                    "contributions": 23
+                },
+                {
+                    "login": "Yanjun2021",
+                    "contributions": 22
+                },
+                {
+                    "login": "jtsauls",
+                    "contributions": 22
+                },
+                {
+                    "login": "mtefagh",
+                    "contributions": 22
+                },
+                {
+                    "login": "mapoliveira",
+                    "contributions": 19
+                },
+                {
+                    "login": "rosieluo2021",
+                    "contributions": 19
+                },
+                {
+                    "login": "bertonoronha",
+                    "contributions": 19
+                },
+                {
+                    "login": "maikeaurich",
+                    "contributions": 18
+                },
+                {
+                    "login": "mlehoai",
+                    "contributions": 18
+                },
+                {
+                    "login": "trjhensen",
+                    "contributions": 17
+                },
+                {
+                    "login": "dayena",
+                    "contributions": 16
+                },
+                {
+                    "login": "JinghengHuang",
+                    "contributions": 16
+                },
+                {
+                    "login": "karthikraman",
+                    "contributions": 16
+                },
+                {
+                    "login": "susanGhaderi",
+                    "contributions": 14
+                },
+                {
+                    "login": "ThummaratPaklao",
+                    "contributions": 14
+                },
+                {
+                    "login": "github-actions[bot]",
+                    "contributions": 13
+                },
+                {
+                    "login": "danielhyduke",
+                    "contributions": 13
+                },
+                {
+                    "login": "gitCathClancy",
+                    "contributions": 13
+                },
+                {
+                    "login": "axelvonkamp",
+                    "contributions": 11
+                },
+                {
+                    "login": "chaitrasarathy",
+                    "contributions": 11
+                },
+                {
+                    "login": "Sami990",
+                    "contributions": 11
+                },
+                {
+                    "login": "dfaess",
+                    "contributions": 10
+                },
+                {
+                    "login": "annasheehy",
+                    "contributions": 9
+                },
+                {
+                    "login": "SomyaVerma27",
+                    "contributions": 8
+                },
+                {
+                    "login": "hhefzi",
+                    "contributions": 8
+                },
+                {
+                    "login": "cladelpino",
+                    "contributions": 8
+                },
+                {
+                    "login": "PkiwiBird",
+                    "contributions": 8
+                },
+                {
+                    "login": "KadirKcbs",
+                    "contributions": 8
+                },
+                {
+                    "login": "edkerk",
+                    "contributions": 8
+                },
+                {
+                    "login": "CCThinnes",
+                    "contributions": 6
+                },
+                {
+                    "login": "MasoudAhoo",
+                    "contributions": 6
+                },
+                {
+                    "login": "artenobot",
+                    "contributions": 6
+                },
+                {
+                    "login": "MetNetComp",
+                    "contributions": 6
+                },
+                {
+                    "login": "ThierryMondeel",
+                    "contributions": 6
+                },
+                {
+                    "login": "WegrzynAB",
+                    "contributions": 5
+                },
+                {
+                    "login": "fplanes",
+                    "contributions": 5
+                },
+                {
+                    "login": "shyamsrinivasan",
+                    "contributions": 5
+                },
+                {
+                    "login": "BenjaSanchez",
+                    "contributions": 5
+                },
+                {
+                    "login": "kostromins",
+                    "contributions": 5
+                },
+                {
+                    "login": "bheavner",
+                    "contributions": 4
+                },
+                {
+                    "login": "NebulaKit",
+                    "contributions": 4
+                },
+                {
+                    "login": "Averinix",
+                    "contributions": 4
+                },
+                {
+                    "login": "nignatiadis",
+                    "contributions": 4
+                },
+                {
+                    "login": "sriki18",
+                    "contributions": 4
+                },
+                {
+                    "login": "fernweh-3",
+                    "contributions": 4
+                },
+                {
+                    "login": "hadjar11",
+                    "contributions": 4
+                },
+                {
+                    "login": "nmendozam",
+                    "contributions": 3
+                },
+                {
+                    "login": "zappingseb",
+                    "contributions": 3
+                },
+                {
+                    "login": "mfarshada",
+                    "contributions": 3
+                },
+                {
+                    "login": "aebrahim",
+                    "contributions": 2
+                },
+                {
+                    "login": "silvtal",
+                    "contributions": 2
+                },
+                {
+                    "login": "rxpavan",
+                    "contributions": 2
+                },
+                {
+                    "login": "iaemparanza",
+                    "contributions": 2
+                },
+                {
+                    "login": "fromseto",
+                    "contributions": 2
+                },
+                {
+                    "login": "akinsse",
+                    "contributions": 2
+                },
+                {
+                    "login": "bronsonweston",
+                    "contributions": 2
+                },
+                {
+                    "login": "Bounciness",
+                    "contributions": 2
+                },
+                {
+                    "login": "pablormier",
+                    "contributions": 1
+                },
+                {
+                    "login": "PandengWang",
+                    "contributions": 1
+                },
+                {
+                    "login": "pauljensen",
+                    "contributions": 1
+                },
+                {
+                    "login": "PaulaWalsh1",
+                    "contributions": 1
+                },
+                {
+                    "login": "yjarosz",
+                    "contributions": 1
+                },
+                {
+                    "login": "yhbae6022",
+                    "contributions": 1
+                },
+                {
+                    "login": "amnag",
+                    "contributions": 1
+                },
+                {
+                    "login": "emilpaulitz",
+                    "contributions": 1
+                },
+                {
+                    "login": "gogo1988",
+                    "contributions": 1
+                },
+                {
+                    "login": "hariszaf",
+                    "contributions": 1
+                },
+                {
+                    "login": "hsnguyen",
+                    "contributions": 1
+                },
+                {
+                    "login": "jacobmartin2022",
+                    "contributions": 1
+                },
+                {
+                    "login": "meiya-laksh",
+                    "contributions": 1
+                },
+                {
+                    "login": "FaizLAB",
+                    "contributions": 1
+                },
+                {
+                    "login": "parir",
+                    "contributions": 1
+                },
+                {
+                    "login": "andre-schultz",
+                    "contributions": 1
+                },
+                {
+                    "login": "sowmyamanojna",
+                    "contributions": 1
+                },
+                {
+                    "login": "pavaoa",
+                    "contributions": 1
+                },
+                {
+                    "login": "AndrasHartmann",
+                    "contributions": 1
+                },
+                {
+                    "login": "BethWest",
+                    "contributions": 1
+                },
+                {
+                    "login": "BhushanDhamale",
+                    "contributions": 1
+                },
+                {
+                    "login": "bbarker",
+                    "contributions": 1
+                },
+                {
+                    "login": "CodeGeasrb",
+                    "contributions": 1
+                },
+                {
+                    "login": "dana-luong",
+                    "contributions": 1
+                },
+                {
+                    "login": "david-maseda",
+                    "contributions": 1
+                },
+                {
+                    "login": "FilippoMart",
+                    "contributions": 1
+                },
+                {
+                    "login": "hleegwater",
+                    "contributions": 1
+                },
+                {
+                    "login": "jarlemag",
+                    "contributions": 1
+                },
+                {
+                    "login": "djinnome",
+                    "contributions": 1
+                },
+                {
+                    "login": "qks1lver",
+                    "contributions": 1
+                },
+                {
+                    "login": "mariapirespacheco",
+                    "contributions": 1
+                },
+                {
+                    "login": "ScarabMonkey",
+                    "contributions": 1
+                },
+                {
+                    "login": "Moremo1996",
+                    "contributions": 1
+                },
+                {
+                    "login": "nigiord",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 2602,
+                    "title": "initCobraToolbox problem",
+                    "created_at": "2025-12-30T15:09:17+00:00",
+                    "closed_at": "2026-01-04T06:58:26+00:00"
+                },
+                {
+                    "number": 2449,
+                    "title": "Using Microbiome Modelling Toolbox with Gurobi?",
+                    "created_at": "2025-03-03T16:22:36+00:00",
+                    "closed_at": "2025-03-13T12:22:45+00:00"
+                },
+                {
+                    "number": 2445,
+                    "title": "mgPipe too many input arguments",
+                    "created_at": "2025-02-20T14:40:04+00:00",
+                    "closed_at": "2025-02-24T14:24:37+00:00"
+                },
+                {
+                    "number": 2380,
+                    "title": "Question in Microbiome Modeling Toolbox -- Metabolites by Taxa Level Production",
+                    "created_at": "2024-12-10T04:51:47+00:00",
+                    "closed_at": "2025-02-06T12:23:28+00:00"
+                },
+                {
+                    "number": 2378,
+                    "title": "Question in Microbiome Modeling Toolbox -- AGORA InfoFile",
+                    "created_at": "2024-11-22T04:26:10+00:00",
+                    "closed_at": "2024-12-09T18:59:30+00:00"
+                },
+                {
+                    "number": 2377,
+                    "title": "Incorrect size(model.rhs) error when running loopless FVA with LLC-NS method",
+                    "created_at": "2024-11-10T17:38:57+00:00",
+                    "closed_at": "2025-02-06T12:23:11+00:00"
+                },
+                {
+                    "number": 2363,
+                    "title": "Multiple versions of Polytope is in the COBRA toolbox",
+                    "created_at": "2024-11-03T17:37:32+00:00",
+                    "closed_at": "2025-02-06T12:23:45+00:00"
+                },
+                {
+                    "number": 2348,
+                    "title": "initCobraToolbox problem",
+                    "created_at": "2024-10-08T05:48:20+00:00",
+                    "closed_at": "2025-02-06T12:24:11+00:00"
+                },
+                {
+                    "number": 2313,
+                    "title": "initCobraToolbox",
+                    "created_at": "2024-09-26T01:26:13+00:00",
+                    "closed_at": "2024-10-07T11:40:07+00:00"
+                },
+                {
+                    "number": 2306,
+                    "title": "parseMskResult error with changeCobraSolver('mosek', 'all') on MacBook Pro (Apple M3, macOS Sonoma)",
+                    "created_at": "2024-09-23T15:34:39+00:00",
+                    "closed_at": "2024-09-23T16:38:20+00:00"
+                },
+                {
+                    "number": 2250,
+                    "title": "DEMETER can be used for metabolic network optimization beyond intestinal microbiota?",
+                    "created_at": "2024-03-22T15:56:04+00:00",
+                    "closed_at": "2024-03-22T18:47:44+00:00"
+                },
+                {
+                    "number": 2245,
+                    "title": "Cobratoolbox crashes during initialisation on windows 10 (Matlab 2022b)",
+                    "created_at": "2024-03-04T10:09:24+00:00",
+                    "closed_at": "2025-02-24T11:51:22+00:00"
+                },
+                {
+                    "number": 2237,
+                    "title": "Missing Function \"lrsInputHalfSpace\"",
+                    "created_at": "2024-02-26T14:07:45+00:00",
+                    "closed_at": "2024-10-07T11:46:06+00:00"
+                },
+                {
+                    "number": 2232,
+                    "title": "Error in findRxnsFromMet.m",
+                    "created_at": "2024-02-17T21:50:52+00:00",
+                    "closed_at": "2024-02-17T21:55:01+00:00"
+                },
+                {
+                    "number": 2231,
+                    "title": "Error using initCobraToolbox ",
+                    "created_at": "2024-02-14T11:47:21+00:00",
+                    "closed_at": "2024-02-22T07:25:58+00:00"
+                },
+                {
+                    "number": 2215,
+                    "title": "How can the result file be converted to a readable file?",
+                    "created_at": "2024-01-15T07:27:20+00:00",
+                    "closed_at": "2024-01-30T00:22:08+00:00"
+                },
+                {
+                    "number": 2213,
+                    "title": "'Infeasible' results from simulatePairwiseInteractions",
+                    "created_at": "2024-01-10T11:25:37+00:00",
+                    "closed_at": "2025-03-06T12:53:40+00:00"
+                },
+                {
+                    "number": 2192,
+                    "title": "remove curl dependency",
+                    "created_at": "2023-11-22T10:01:50+00:00",
+                    "closed_at": "2025-03-06T12:49:42+00:00"
+                },
+                {
+                    "number": 2176,
+                    "title": "Update numpy dependency",
+                    "created_at": "2023-09-10T15:48:06+00:00",
+                    "closed_at": "2025-02-24T11:51:35+00:00"
+                },
+                {
+                    "number": 2122,
+                    "title": "bug in writeSBML line 496",
+                    "created_at": "2023-06-05T10:33:13+00:00",
+                    "closed_at": "2025-03-06T12:44:36+00:00"
+                },
+                {
+                    "number": 2119,
+                    "title": "To create .CompartmentData for a model",
+                    "created_at": "2023-05-19T10:33:42+00:00",
+                    "closed_at": "2025-02-24T11:52:05+00:00"
+                },
+                {
+                    "number": 2108,
+                    "title": "writeCbModel without addition of '[c]'",
+                    "created_at": "2023-02-22T06:06:35+00:00",
+                    "closed_at": "2023-03-10T04:50:19+00:00"
+                },
+                {
+                    "number": 2104,
+                    "title": "importing \".omex\" models",
+                    "created_at": "2022-12-28T12:07:38+00:00",
+                    "closed_at": "2025-03-06T12:46:44+00:00"
+                },
+                {
+                    "number": 2093,
+                    "title": "scenario for a bug in pareto optimality ",
+                    "created_at": "2022-12-09T12:01:57+00:00",
+                    "closed_at": "2025-03-06T12:52:58+00:00"
+                },
+                {
+                    "number": 2088,
+                    "title": "How to compute the C stoichiometric matrix with Julia",
+                    "created_at": "2022-12-06T12:11:16+00:00",
+                    "closed_at": "2022-12-06T12:25:04+00:00"
+                },
+                {
+                    "number": 2071,
+                    "title": "Error when using writeCbModel",
+                    "created_at": "2022-11-19T19:24:33+00:00",
+                    "closed_at": "2022-11-20T16:13:18+00:00"
+                },
+                {
+                    "number": 2058,
+                    "title": "#Error : unrecognized field name \"dual\"",
+                    "created_at": "2022-11-02T08:12:46+00:00",
+                    "closed_at": "2022-11-24T19:11:06+00:00"
+                },
+                {
+                    "number": 2049,
+                    "title": "FastGapFill did not return valid results ",
+                    "created_at": "2022-10-20T06:32:58+00:00",
+                    "closed_at": "2022-10-24T09:06:15+00:00"
+                },
+                {
+                    "number": 2012,
+                    "title": "Error in initCobraToolbox (line 358, 460)",
+                    "created_at": "2022-08-05T05:08:32+00:00",
+                    "closed_at": "2023-03-10T04:50:40+00:00"
+                },
+                {
+                    "number": 2009,
+                    "title": "simulatePairwiseInteractions not returning expected values?",
+                    "created_at": "2022-07-27T18:57:57+00:00",
+                    "closed_at": "2025-03-06T14:20:17+00:00"
+                },
+                {
+                    "number": 1998,
+                    "title": "COBRA Not able to install MATLAB",
+                    "created_at": "2022-06-10T10:26:55+00:00",
+                    "closed_at": "2025-03-06T14:22:08+00:00"
+                },
+                {
+                    "number": 1989,
+                    "title": "Can't undrestand why luLI and LuSI are not considered as a compartment in Harvey and Harvetta models ",
+                    "created_at": "2022-05-10T13:29:28+00:00",
+                    "closed_at": "2025-02-24T11:54:51+00:00"
+                },
+                {
+                    "number": 1975,
+                    "title": "Error in initCobraToolbox (line 212)",
+                    "created_at": "2022-04-11T13:10:45+00:00",
+                    "closed_at": "2025-09-12T11:20:38+00:00"
+                },
+                {
+                    "number": 1945,
+                    "title": "rMTA gives more bMTA scores than expected",
+                    "created_at": "2022-02-25T03:36:07+00:00",
+                    "closed_at": "2022-05-02T04:30:47+00:00"
+                },
+                {
+                    "number": 1938,
+                    "title": "Error trying to preprocess RNA-Seq data using mapExpressionToReactions",
+                    "created_at": "2022-02-16T16:39:12+00:00",
+                    "closed_at": "2022-02-23T11:16:23+00:00"
+                },
+                {
+                    "number": 1937,
+                    "title": "Cobra unable to run optimizeCbModel",
+                    "created_at": "2022-02-16T15:16:12+00:00",
+                    "closed_at": "2022-02-17T11:45:32+00:00"
+                },
+                {
+                    "number": 1936,
+                    "title": "COBRA Toolbox submodules",
+                    "created_at": "2022-02-16T14:02:23+00:00",
+                    "closed_at": "2022-02-22T11:09:20+00:00"
+                },
+                {
+                    "number": 1927,
+                    "title": "Problem with simulation of pairwise interaction",
+                    "created_at": "2022-01-25T16:29:58+00:00",
+                    "closed_at": "2022-01-31T17:00:44+00:00"
+                },
+                {
+                    "number": 1924,
+                    "title": "Shadow Prices",
+                    "created_at": "2022-01-24T09:16:59+00:00",
+                    "closed_at": "2022-05-12T14:17:40+00:00"
+                },
+                {
+                    "number": 1923,
+                    "title": "Microbe Microbe Interactions Tutorial with XML files",
+                    "created_at": "2022-01-24T03:04:11+00:00",
+                    "closed_at": "2022-01-25T03:58:33+00:00"
+                },
+                {
+                    "number": 1915,
+                    "title": "Error in FBAsol.y length when running optimizeCbModel(model, 'max', 1e-6)",
+                    "created_at": "2022-01-16T11:05:30+00:00",
+                    "closed_at": "2022-02-17T11:45:21+00:00"
+                },
+                {
+                    "number": 1914,
+                    "title": "Path to mosek",
+                    "created_at": "2022-01-15T21:00:49+00:00",
+                    "closed_at": "2022-01-19T13:24:12+00:00"
+                },
+                {
+                    "number": 1911,
+                    "title": "\"Could not find installation of matlab, so it cannot be tested\"",
+                    "created_at": "2022-01-07T18:26:06+00:00",
+                    "closed_at": "2022-01-11T19:28:33+00:00"
+                },
+                {
+                    "number": 1900,
+                    "title": "box.m conflicts with a matlab built-in function",
+                    "created_at": "2021-12-09T21:17:11+00:00",
+                    "closed_at": "2025-02-24T11:53:51+00:00"
+                },
+                {
+                    "number": 1889,
+                    "title": "findBlockedReaction",
+                    "created_at": "2021-11-29T13:16:27+00:00",
+                    "closed_at": "2021-11-30T09:03:07+00:00"
+                },
+                {
+                    "number": 1880,
+                    "title": "changeCobraSolver('ibm_cplex') crashes MATLAB",
+                    "created_at": "2021-11-23T10:26:55+00:00",
+                    "closed_at": "2021-11-25T13:13:33+00:00"
+                },
+                {
+                    "number": 1877,
+                    "title": "ModelBorgifier GUI error",
+                    "created_at": "2021-11-19T18:19:00+00:00",
+                    "closed_at": "2021-11-23T20:12:34+00:00"
+                },
+                {
+                    "number": 1874,
+                    "title": "initCobraToolbox",
+                    "created_at": "2021-11-18T11:54:20+00:00",
+                    "closed_at": "2024-10-07T11:47:28+00:00"
+                },
+                {
+                    "number": 1868,
+                    "title": "CPLEX not detecet by COBRA Toolbox",
+                    "created_at": "2021-11-12T16:47:09+00:00",
+                    "closed_at": "2021-11-18T14:02:57+00:00"
+                },
+                {
+                    "number": 1862,
+                    "title": "ExportModel error",
+                    "created_at": "2021-11-03T15:26:41+00:00",
+                    "closed_at": "2025-02-24T11:53:38+00:00"
+                },
+                {
+                    "number": 1861,
+                    "title": "Incorrect initialization + slow fastFVA",
+                    "created_at": "2021-11-02T21:21:14+00:00",
+                    "closed_at": "2025-02-24T11:52:46+00:00"
+                },
+                {
+                    "number": 1851,
+                    "title": "Reversible (_r) reactions in pFBA",
+                    "created_at": "2021-10-17T12:20:39+00:00",
+                    "closed_at": "2025-02-24T11:54:27+00:00"
+                },
+                {
+                    "number": 1833,
+                    "title": "Problems with initCobraToolbox since update",
+                    "created_at": "2021-10-05T08:11:07+00:00",
+                    "closed_at": "2025-02-24T11:53:20+00:00"
+                },
+                {
+                    "number": 1829,
+                    "title": "initializaitone error (dirContent)",
+                    "created_at": "2021-10-03T07:57:23+00:00",
+                    "closed_at": "2021-10-03T10:08:22+00:00"
+                },
+                {
+                    "number": 1799,
+                    "title": "changeCobraSolver: Solver ibm_cplex is installed but not working properly.",
+                    "created_at": "2021-09-15T13:56:59+00:00",
+                    "closed_at": "2021-09-15T15:32:00+00:00"
+                },
+                {
+                    "number": 1795,
+                    "title": "problem initializing and updating problem",
+                    "created_at": "2021-09-01T11:13:47+00:00",
+                    "closed_at": "2021-09-12T12:34:57+00:00"
+                },
+                {
+                    "number": 1769,
+                    "title": "Consider using a cloud CI service",
+                    "created_at": "2021-05-12T21:05:59+00:00",
+                    "closed_at": "2025-02-24T13:25:56+00:00"
+                },
+                {
+                    "number": 1768,
+                    "title": "verifyModel:PropertiesNotMatched",
+                    "created_at": "2021-05-12T13:38:09+00:00",
+                    "closed_at": "2025-03-06T14:30:28+00:00"
+                },
+                {
+                    "number": 1767,
+                    "title": "Excel Import Example doesn't work",
+                    "created_at": "2021-05-11T07:10:16+00:00",
+                    "closed_at": "2025-03-06T14:24:27+00:00"
+                },
+                {
+                    "number": 1763,
+                    "title": "Issue with parseCVTerms.m for models generated through gapseq",
+                    "created_at": "2021-05-02T16:27:48+00:00",
+                    "closed_at": "2021-05-03T09:21:24+00:00"
+                },
+                {
+                    "number": 1762,
+                    "title": "Problem synchronisation",
+                    "created_at": "2021-04-27T09:31:25+00:00",
+                    "closed_at": "2025-03-06T14:23:10+00:00"
+                },
+                {
+                    "number": 1752,
+                    "title": "mCADRE stops with error if reaction removal returns infeasible solution",
+                    "created_at": "2021-04-08T16:58:46+00:00",
+                    "closed_at": "2021-04-12T14:40:04+00:00"
+                },
+                {
+                    "number": 1745,
+                    "title": "Error in 'tutorial_microbeMicrobeInteractions' ",
+                    "created_at": "2021-04-01T07:24:22+00:00",
+                    "closed_at": "2025-03-06T14:19:00+00:00"
+                },
+                {
+                    "number": 1699,
+                    "title": "CPLEX V12.8.0 not working after COBRA update",
+                    "created_at": "2020-12-28T16:04:45+00:00",
+                    "closed_at": "2025-03-06T12:45:19+00:00"
+                },
+                {
+                    "number": 1691,
+                    "title": "modelling gut bacteria",
+                    "created_at": "2020-12-07T13:36:59+00:00",
+                    "closed_at": "2025-03-06T12:50:40+00:00"
+                },
+                {
+                    "number": 1690,
+                    "title": "Undefined variable in solveCobraQP",
+                    "created_at": "2020-12-04T20:45:05+00:00",
+                    "closed_at": "2025-09-12T11:22:23+00:00"
+                },
+                {
+                    "number": 1688,
+                    "title": "simulating gut microbiome using recon 3d",
+                    "created_at": "2020-12-01T14:05:10+00:00",
+                    "closed_at": "2025-03-06T13:03:15+00:00"
+                },
+                {
+                    "number": 1664,
+                    "title": "fastFVA error",
+                    "created_at": "2020-11-10T13:41:05+00:00",
+                    "closed_at": "2025-03-06T14:10:06+00:00"
+                },
+                {
+                    "number": 1650,
+                    "title": "Problem initializing and updating submodule Binary",
+                    "created_at": "2020-11-04T19:00:48+00:00",
+                    "closed_at": "2025-09-12T11:18:56+00:00"
+                },
+                {
+                    "number": 1637,
+                    "title": "Error in function fluxVariability.",
+                    "created_at": "2020-10-21T19:07:34+00:00",
+                    "closed_at": "2025-03-06T14:12:19+00:00"
+                },
+                {
+                    "number": 1635,
+                    "title": "cobra toolbox matlab installation ",
+                    "created_at": "2020-10-19T13:00:16+00:00",
+                    "closed_at": "2025-03-06T13:04:00+00:00"
+                },
+                {
+                    "number": 1627,
+                    "title": "Question: How to perform pFBA 10000 times with sampling by optGpSampler",
+                    "created_at": "2020-09-25T07:50:52+00:00",
+                    "closed_at": "2020-09-30T15:34:50+00:00"
+                },
+                {
+                    "number": 1625,
+                    "title": "fastGapFill Error",
+                    "created_at": "2020-09-24T15:26:10+00:00",
+                    "closed_at": "2025-02-24T11:45:22+00:00"
+                },
+                {
+                    "number": 1619,
+                    "title": "About mapExpressionToReactions.m function",
+                    "created_at": "2020-09-10T11:14:14+00:00",
+                    "closed_at": "2024-04-05T17:40:16+00:00"
+                },
+                {
+                    "number": 1611,
+                    "title": "readCbMap with .json map format",
+                    "created_at": "2020-09-09T19:34:17+00:00",
+                    "closed_at": "2025-02-24T11:45:42+00:00"
+                },
+                {
+                    "number": 1610,
+                    "title": "Draw the flux of tuberculosis organism with e.coli map",
+                    "created_at": "2020-09-09T18:03:16+00:00",
+                    "closed_at": "2025-02-24T11:46:05+00:00"
+                },
+                {
+                    "number": 1606,
+                    "title": "Error using FVAOptForce",
+                    "created_at": "2020-09-04T13:21:58+00:00",
+                    "closed_at": "2020-09-25T07:51:23+00:00"
+                },
+                {
+                    "number": 1605,
+                    "title": "Determine missing media component to enable growth",
+                    "created_at": "2020-09-03T21:50:19+00:00",
+                    "closed_at": "2020-09-24T15:20:22+00:00"
+                },
+                {
+                    "number": 1603,
+                    "title": ".mat model doesn't have \"rules\" structure",
+                    "created_at": "2020-08-28T16:39:08+00:00",
+                    "closed_at": "2025-03-06T14:14:23+00:00"
+                },
+                {
+                    "number": 1593,
+                    "title": "Bug in testFVA.m",
+                    "created_at": "2020-05-10T11:03:44+00:00",
+                    "closed_at": "2025-03-06T12:46:00+00:00"
+                },
+                {
+                    "number": 1584,
+                    "title": "initCobraToolbox problem with submodules",
+                    "created_at": "2020-03-24T10:16:34+00:00",
+                    "closed_at": "2020-04-24T10:29:59+00:00"
+                },
+                {
+                    "number": 1568,
+                    "title": "coupleRxnList2Rxn documentation",
+                    "created_at": "2020-02-28T09:24:59+00:00",
+                    "closed_at": "2025-02-24T11:46:13+00:00"
+                },
+                {
+                    "number": 1544,
+                    "title": "bug in printRxnFormula.m",
+                    "created_at": "2020-01-16T18:31:10+00:00",
+                    "closed_at": "2025-03-06T12:43:45+00:00"
+                },
+                {
+                    "number": 1542,
+                    "title": "Possible Regression Bug in preprocess.m",
+                    "created_at": "2020-01-14T12:43:00+00:00",
+                    "closed_at": "2020-08-10T09:15:39+00:00"
+                },
+                {
+                    "number": 1540,
+                    "title": "long time Microbiome modeling ",
+                    "created_at": "2020-01-11T17:40:25+00:00",
+                    "closed_at": "2025-03-06T12:43:05+00:00"
+                },
+                {
+                    "number": 1524,
+                    "title": "Error using minNorm",
+                    "created_at": "2019-12-03T10:37:32+00:00",
+                    "closed_at": "2019-12-19T13:08:38+00:00"
+                },
+                {
+                    "number": 1521,
+                    "title": "gurobi seems not to be working on macOS",
+                    "created_at": "2019-11-20T20:44:14+00:00",
+                    "closed_at": "2020-02-06T08:30:56+00:00"
+                },
+                {
+                    "number": 1509,
+                    "title": "error in initializing submodules",
+                    "created_at": "2019-10-16T13:46:10+00:00",
+                    "closed_at": "2019-10-17T08:14:05+00:00"
+                },
+                {
+                    "number": 1507,
+                    "title": "Disable CPLEX clone logs using the CPLEX params",
+                    "created_at": "2019-10-03T15:35:10+00:00",
+                    "closed_at": "2025-03-06T12:23:56+00:00"
+                },
+                {
+                    "number": 1505,
+                    "title": "error in mergeTwoModels",
+                    "created_at": "2019-09-24T19:16:07+00:00",
+                    "closed_at": "2025-03-06T12:25:56+00:00"
+                },
+                {
+                    "number": 1500,
+                    "title": "writeCbModel not writing model.b and model.c correctly",
+                    "created_at": "2019-09-08T11:51:44+00:00",
+                    "closed_at": "2025-03-06T12:28:48+00:00"
+                },
+                {
+                    "number": 1498,
+                    "title": "Pan models",
+                    "created_at": "2019-08-10T20:20:37+00:00",
+                    "closed_at": "2025-02-24T11:49:30+00:00"
+                },
+                {
+                    "number": 1497,
+                    "title": "Transport response is not recognized",
+                    "created_at": "2019-08-06T07:19:01+00:00",
+                    "closed_at": "2019-08-11T18:03:43+00:00"
+                },
+                {
+                    "number": 1495,
+                    "title": "Scaled reduced cost",
+                    "created_at": "2019-07-22T13:34:53+00:00",
+                    "closed_at": "2025-02-24T11:50:57+00:00"
+                },
+                {
+                    "number": 1493,
+                    "title": "How to prevent creation of log files?",
+                    "created_at": "2019-07-17T09:11:17+00:00",
+                    "closed_at": "2019-07-18T08:26:34+00:00"
+                },
+                {
+                    "number": 1492,
+                    "title": "Potential Error in fluxVariability.m",
+                    "created_at": "2019-07-15T07:40:45+00:00",
+                    "closed_at": "2025-03-06T12:26:29+00:00"
+                },
+                {
+                    "number": 1491,
+                    "title": "Error in creating Pan models",
+                    "created_at": "2019-07-14T11:45:28+00:00",
+                    "closed_at": "2019-07-28T06:39:32+00:00"
+                },
+                {
+                    "number": 1490,
+                    "title": "Matlab installation error",
+                    "created_at": "2019-07-10T09:34:02+00:00",
+                    "closed_at": "2025-02-24T11:50:23+00:00"
+                },
+                {
+                    "number": 1487,
+                    "title": "Microbiome analysis by models over AGORA",
+                    "created_at": "2019-06-24T08:44:33+00:00",
+                    "closed_at": "2025-02-24T11:48:11+00:00"
+                },
+                {
+                    "number": 1486,
+                    "title": "fastGapFill error ",
+                    "created_at": "2019-06-20T13:11:56+00:00",
+                    "closed_at": "2025-02-24T11:47:54+00:00"
+                },
+                {
+                    "number": 1485,
+                    "title": "isSameCobraModel does not check subSystems",
+                    "created_at": "2019-06-06T17:50:10+00:00",
+                    "closed_at": "2025-02-24T11:42:23+00:00"
+                },
+                {
+                    "number": 1480,
+                    "title": "potential issue in parseSolverParameters.m",
+                    "created_at": "2019-05-31T08:44:19+00:00",
+                    "closed_at": "2025-02-24T11:43:07+00:00"
+                },
+                {
+                    "number": 1473,
+                    "title": "Why is rxn.mat loaded in neighborRxn2data",
+                    "created_at": "2019-05-13T15:35:17+00:00",
+                    "closed_at": "2025-03-06T12:27:42+00:00"
+                },
+                {
+                    "number": 1464,
+                    "title": "CPlex fails solveCobraQP when result is infeasible",
+                    "created_at": "2019-04-25T12:01:04+00:00",
+                    "closed_at": "2019-05-03T20:36:46+00:00"
+                },
+                {
+                    "number": 1463,
+                    "title": "addMultipleMetabolites error",
+                    "created_at": "2019-04-25T10:16:21+00:00",
+                    "closed_at": "2019-04-26T07:05:35+00:00"
+                },
+                {
+                    "number": 1457,
+                    "title": "Issues using rMTA function, needed tutorial",
+                    "created_at": "2019-04-06T14:18:24+00:00",
+                    "closed_at": "2025-02-24T11:49:03+00:00"
+                },
+                {
+                    "number": 1452,
+                    "title": "Puzzle on GapFind results",
+                    "created_at": "2019-03-23T11:56:04+00:00",
+                    "closed_at": "2025-02-24T11:42:05+00:00"
+                },
+                {
+                    "number": 1449,
+                    "title": "Tomlab_cplex doesn't work in CT > 3.0.0",
+                    "created_at": "2019-03-19T13:07:19+00:00",
+                    "closed_at": "2020-02-11T20:34:18+00:00"
+                },
+                {
+                    "number": 1447,
+                    "title": "Feasibility of supporting .NET, Java, etc through the MATLAB Compiler SDK ",
+                    "created_at": "2019-03-16T21:08:43+00:00",
+                    "closed_at": "2025-03-06T12:22:58+00:00"
+                },
+                {
+                    "number": 1437,
+                    "title": "iMAT Fluxes as per the paper",
+                    "created_at": "2019-03-03T17:15:35+00:00",
+                    "closed_at": "2019-03-04T11:51:37+00:00"
+                },
+                {
+                    "number": 1436,
+                    "title": "Reference to non-existent  'geneKO.matrix'.",
+                    "created_at": "2019-03-01T04:20:48+00:00",
+                    "closed_at": "2019-03-11T04:58:48+00:00"
+                },
+                {
+                    "number": 1432,
+                    "title": "Getting different errors using CHRR",
+                    "created_at": "2019-02-21T14:49:12+00:00",
+                    "closed_at": "2019-02-25T09:26:08+00:00"
+                },
+                {
+                    "number": 1422,
+                    "title": "CHRR vs ACHR in cobratoolbox ",
+                    "created_at": "2019-02-07T21:33:25+00:00",
+                    "closed_at": "2019-03-11T06:35:19+00:00"
+                },
+                {
+                    "number": 1413,
+                    "title": "Error using optGene",
+                    "created_at": "2018-12-23T18:15:01+00:00",
+                    "closed_at": "2019-03-11T06:33:53+00:00"
+                },
+                {
+                    "number": 1386,
+                    "title": "GPR Rules with irrelevant genes",
+                    "created_at": "2018-11-22T09:28:13+00:00",
+                    "closed_at": "2025-02-24T11:49:59+00:00"
+                },
+                {
+                    "number": 1383,
+                    "title": "How i should create a fit input for mgPipe?",
+                    "created_at": "2018-11-17T17:05:54+00:00",
+                    "closed_at": "2018-11-27T06:52:38+00:00"
+                },
+                {
+                    "number": 1355,
+                    "title": "problem with [missingMets,presentMets] = biomassPrecursorCheck(model)",
+                    "created_at": "2018-10-13T02:03:12+00:00",
+                    "closed_at": "2018-10-14T16:35:51+00:00"
+                },
+                {
+                    "number": 1329,
+                    "title": "empty folders when downloading as zip or cloning",
+                    "created_at": "2018-09-14T09:15:45+00:00",
+                    "closed_at": "2018-09-14T13:17:08+00:00"
+                },
+                {
+                    "number": 1325,
+                    "title": "difference in f when using glpk and pdco solvers.",
+                    "created_at": "2018-09-10T14:57:26+00:00",
+                    "closed_at": "2018-11-30T15:28:30+00:00"
+                },
+                {
+                    "number": 1316,
+                    "title": "Problem with removing reactions",
+                    "created_at": "2018-08-24T10:01:09+00:00",
+                    "closed_at": "2018-09-03T05:37:38+00:00"
+                },
+                {
+                    "number": 1315,
+                    "title": "issue with xls2model",
+                    "created_at": "2018-08-24T07:35:42+00:00",
+                    "closed_at": "2018-08-24T10:17:21+00:00"
+                },
+                {
+                    "number": 1299,
+                    "title": "problem with OptKnock",
+                    "created_at": "2018-07-18T12:40:54+00:00",
+                    "closed_at": "2018-11-30T15:24:46+00:00"
+                },
+                {
+                    "number": 1290,
+                    "title": "problem in installing sbml",
+                    "created_at": "2018-06-30T11:39:21+00:00",
+                    "closed_at": "2018-06-30T13:03:55+00:00"
+                },
+                {
+                    "number": 1283,
+                    "title": "problem with optknock",
+                    "created_at": "2018-06-28T10:00:35+00:00",
+                    "closed_at": "2018-06-28T13:54:45+00:00"
+                },
+                {
+                    "number": 1267,
+                    "title": "In sequential mode, fvamin and fvamax are always zeros in fastFVA",
+                    "created_at": "2018-06-25T15:18:07+00:00",
+                    "closed_at": "2018-06-26T09:53:30+00:00"
+                },
+                {
+                    "number": 1252,
+                    "title": "GLPK, Gurobi, CPLEX give differing results on LP problem",
+                    "created_at": "2018-06-14T16:12:22+00:00",
+                    "closed_at": "2018-06-18T10:30:17+00:00"
+                },
+                {
+                    "number": 1247,
+                    "title": "SBO terms get redundantly stored as notes",
+                    "created_at": "2018-06-08T13:41:59+00:00",
+                    "closed_at": "2018-06-11T08:57:08+00:00"
+                },
+                {
+                    "number": 1244,
+                    "title": "initCobraToolbox not functioning on CentOS",
+                    "created_at": "2018-06-07T16:30:59+00:00",
+                    "closed_at": "2018-06-27T05:21:33+00:00"
+                },
+                {
+                    "number": 1228,
+                    "title": "createMultipleSpeciesModel run on a single model produces model that appears to allow additional influx",
+                    "created_at": "2018-06-03T20:52:10+00:00",
+                    "closed_at": "2025-02-24T11:41:17+00:00"
+                },
+                {
+                    "number": 1227,
+                    "title": "Recent createMultipleSpeciesModel doesn't adjust csense",
+                    "created_at": "2018-06-03T20:38:40+00:00",
+                    "closed_at": "2018-10-16T12:55:11+00:00"
+                },
+                {
+                    "number": 1200,
+                    "title": "Inconsistent use of osense in solveCobraQP",
+                    "created_at": "2018-05-11T14:34:10+00:00",
+                    "closed_at": "2018-05-27T11:38:01+00:00"
+                },
+                {
+                    "number": 1195,
+                    "title": "upload a metabolic model in excel format into Matlab CobraToolbox",
+                    "created_at": "2018-05-09T07:58:48+00:00",
+                    "closed_at": "2018-05-09T13:08:44+00:00"
+                },
+                {
+                    "number": 1188,
+                    "title": "optimizeCbModel fails after the last updates to solveCobraLP",
+                    "created_at": "2018-04-26T15:26:58+00:00",
+                    "closed_at": "2018-06-26T14:15:24+00:00"
+                },
+                {
+                    "number": 1154,
+                    "title": "checkMetabolicTasks",
+                    "created_at": "2018-04-01T13:38:07+00:00",
+                    "closed_at": "2018-06-05T13:34:43+00:00"
+                },
+                {
+                    "number": 1149,
+                    "title": "Create a rxnGenMat field when loading the model",
+                    "created_at": "2018-03-28T21:47:00+00:00",
+                    "closed_at": "2018-03-29T13:55:57+00:00"
+                },
+                {
+                    "number": 1131,
+                    "title": "rdir is defined twice",
+                    "created_at": "2018-03-14T20:31:32+00:00",
+                    "closed_at": "2018-04-04T16:01:35+00:00"
+                },
+                {
+                    "number": 1130,
+                    "title": "removeGitIgnoredNewFiles seems to crash on my Mac",
+                    "created_at": "2018-03-14T20:28:37+00:00",
+                    "closed_at": "2018-03-26T07:58:13+00:00"
+                },
+                {
+                    "number": 1128,
+                    "title": "getGroupVectorFromInchi seems to be defined twice",
+                    "created_at": "2018-03-12T16:48:55+00:00",
+                    "closed_at": "2018-06-05T13:43:19+00:00"
+                },
+                {
+                    "number": 1125,
+                    "title": "Under certain situations, ibm_cplex solver cannot get a solution in MILP",
+                    "created_at": "2018-02-27T13:31:34+00:00",
+                    "closed_at": "2018-03-08T06:32:47+00:00"
+                },
+                {
+                    "number": 1117,
+                    "title": "Slightly confusing description of host organization in createMultipleSpeciesModel",
+                    "created_at": "2018-02-21T21:20:07+00:00",
+                    "closed_at": "2018-03-23T08:49:50+00:00"
+                },
+                {
+                    "number": 1115,
+                    "title": "rBioNet tutorial",
+                    "created_at": "2018-02-19T16:34:03+00:00",
+                    "closed_at": "2018-02-27T15:14:05+00:00"
+                },
+                {
+                    "number": 1089,
+                    "title": "ReadSBML does not replace LPAREN RPAERN with ( )",
+                    "created_at": "2018-01-24T23:25:32+00:00",
+                    "closed_at": "2018-02-01T06:47:02+00:00"
+                },
+                {
+                    "number": 1078,
+                    "title": "createModel should create osenseStr field and not model.osense",
+                    "created_at": "2018-01-04T13:29:38+00:00",
+                    "closed_at": "2018-03-08T07:20:02+00:00"
+                },
+                {
+                    "number": 1076,
+                    "title": "Crash when \"initCobraToolbox\"",
+                    "created_at": "2018-01-02T10:57:09+00:00",
+                    "closed_at": "2018-01-03T13:34:33+00:00"
+                },
+                {
+                    "number": 1070,
+                    "title": "Issue About getDistributedModelFolder",
+                    "created_at": "2017-12-20T18:21:03+00:00",
+                    "closed_at": "2017-12-21T07:57:45+00:00"
+                },
+                {
+                    "number": 1059,
+                    "title": "CHRR bug with Recon2",
+                    "created_at": "2017-12-13T13:06:39+00:00",
+                    "closed_at": "2018-01-25T14:20:26+00:00"
+                },
+                {
+                    "number": 1058,
+                    "title": "Problem Literal nodes in FormulaParser",
+                    "created_at": "2017-12-13T11:36:57+00:00",
+                    "closed_at": "2017-12-15T11:53:36+00:00"
+                },
+                {
+                    "number": 1039,
+                    "title": "generateIsotopomerSolver (in testFitC13Data) is very slow",
+                    "created_at": "2017-11-30T18:10:39+00:00",
+                    "closed_at": "2017-12-07T14:56:39+00:00"
+                },
+                {
+                    "number": 1030,
+                    "title": "initCobraToolbox messes up my git",
+                    "created_at": "2017-11-27T20:51:36+00:00",
+                    "closed_at": "2017-11-29T23:52:08+00:00"
+                },
+                {
+                    "number": 1028,
+                    "title": "buildPairwiseModels creates invalid model structures",
+                    "created_at": "2017-11-27T12:31:56+00:00",
+                    "closed_at": "2018-10-16T04:46:17+00:00"
+                },
+                {
+                    "number": 1005,
+                    "title": "Bug in `optimizeCbModel`?",
+                    "created_at": "2017-11-10T17:02:42+00:00",
+                    "closed_at": "2018-11-30T15:26:31+00:00"
+                },
+                {
+                    "number": 989,
+                    "title": "addReaction",
+                    "created_at": "2017-10-31T14:04:05+00:00",
+                    "closed_at": "2017-12-07T10:00:42+00:00"
+                },
+                {
+                    "number": 946,
+                    "title": "Error with generating mex file from cplexFVA.c (for fastFVA)",
+                    "created_at": "2017-09-26T18:58:34+00:00",
+                    "closed_at": "2017-09-26T20:50:31+00:00"
+                },
+                {
+                    "number": 923,
+                    "title": "Incorrect GPR parsing",
+                    "created_at": "2017-09-14T19:25:24+00:00",
+                    "closed_at": "2017-10-10T13:38:48+00:00"
+                },
+                {
+                    "number": 913,
+                    "title": "checkStoichiometricConsistency and findStoichConsistentSubset indicate inconsistent metabolites as consistent",
+                    "created_at": "2017-09-12T11:48:44+00:00",
+                    "closed_at": "2025-02-24T11:40:40+00:00"
+                },
+                {
+                    "number": 887,
+                    "title": "testGenerateRules fails",
+                    "created_at": "2017-08-29T22:15:23+00:00",
+                    "closed_at": "2017-08-31T10:36:12+00:00"
+                },
+                {
+                    "number": 876,
+                    "title": "use -e option when calling babel in sdf2inchi.m",
+                    "created_at": "2017-08-21T07:56:30+00:00",
+                    "closed_at": "2018-06-05T14:17:56+00:00"
+                },
+                {
+                    "number": 874,
+                    "title": "Error when opening certain SBML files",
+                    "created_at": "2017-08-16T20:12:20+00:00",
+                    "closed_at": "2017-09-04T12:33:33+00:00"
+                },
+                {
+                    "number": 870,
+                    "title": "No MILP solver found",
+                    "created_at": "2017-08-16T03:36:01+00:00",
+                    "closed_at": "2017-08-16T14:48:12+00:00"
+                },
+                {
+                    "number": 862,
+                    "title": "readCbModel/TranslateSBML doesn't recognize filepath correctly when using pop-up/dialog",
+                    "created_at": "2017-08-09T19:22:52+00:00",
+                    "closed_at": "2017-08-11T11:04:48+00:00"
+                },
+                {
+                    "number": 861,
+                    "title": "readCbModel doesn't read rules correctly from SBML file",
+                    "created_at": "2017-08-09T19:09:05+00:00",
+                    "closed_at": "2017-08-16T14:47:27+00:00"
+                },
+                {
+                    "number": 852,
+                    "title": "Problems with distributed models - mistmatch grRules/rules",
+                    "created_at": "2017-08-06T21:54:28+00:00",
+                    "closed_at": "2018-04-17T20:50:08+00:00"
+                },
+                {
+                    "number": 844,
+                    "title": "RemoveRxns does not always update model fields correctly",
+                    "created_at": "2017-07-31T11:07:37+00:00",
+                    "closed_at": "2017-09-04T12:32:27+00:00"
+                },
+                {
+                    "number": 836,
+                    "title": "Bug in writeCbModel (documentation)",
+                    "created_at": "2017-07-27T00:12:34+00:00",
+                    "closed_at": "2017-09-01T13:10:48+00:00"
+                },
+                {
+                    "number": 831,
+                    "title": "COBRA update initialisations error updateCobraToolbox",
+                    "created_at": "2017-07-25T13:42:49+00:00",
+                    "closed_at": "2017-07-26T16:12:21+00:00"
+                },
+                {
+                    "number": 825,
+                    "title": "grRules is optimal is some functions, mandatory in others",
+                    "created_at": "2017-07-24T20:17:00+00:00",
+                    "closed_at": "2017-10-19T12:07:35+00:00"
+                },
+                {
+                    "number": 802,
+                    "title": "initCobraToolbox crashes Matlab 2016b",
+                    "created_at": "2017-07-18T14:52:33+00:00",
+                    "closed_at": "2017-07-20T09:03:35+00:00"
+                },
+                {
+                    "number": 800,
+                    "title": "Cannot find 'Contributing to the Cobra Toolbox' tutorial",
+                    "created_at": "2017-07-18T10:50:58+00:00",
+                    "closed_at": "2017-07-18T11:57:18+00:00"
+                },
+                {
+                    "number": 795,
+                    "title": "checkDuplicate in addReaction seems to be set to 1",
+                    "created_at": "2017-07-16T15:33:27+00:00",
+                    "closed_at": "2017-07-27T11:05:46+00:00"
+                },
+                {
+                    "number": 778,
+                    "title": "Bugs in tutorial sparse_FBA_freeATPtest",
+                    "created_at": "2017-07-14T10:46:13+00:00",
+                    "closed_at": "2017-07-21T18:03:59+00:00"
+                },
+                {
+                    "number": 777,
+                    "title": "Missing file in rBioNet",
+                    "created_at": "2017-07-14T10:30:48+00:00",
+                    "closed_at": "2017-07-15T14:39:44+00:00"
+                },
+                {
+                    "number": 775,
+                    "title": "Problems converting models to .xls format with writeCbModel",
+                    "created_at": "2017-07-14T09:02:14+00:00",
+                    "closed_at": "2017-07-18T13:24:12+00:00"
+                },
+                {
+                    "number": 760,
+                    "title": "tutorial_uniformSampling.m bugs",
+                    "created_at": "2017-07-13T09:35:25+00:00",
+                    "closed_at": "2017-07-14T14:12:50+00:00"
+                },
+                {
+                    "number": 756,
+                    "title": "RelaxedFBA tutorial bugs",
+                    "created_at": "2017-07-12T22:08:56+00:00",
+                    "closed_at": "2025-02-06T12:24:36+00:00"
+                },
+                {
+                    "number": 723,
+                    "title": "oldindices variable used before it is defined",
+                    "created_at": "2017-07-11T17:31:11+00:00",
+                    "closed_at": "2017-07-25T14:13:18+00:00"
+                },
+                {
+                    "number": 688,
+                    "title": "incorrect model path in relaxFBA",
+                    "created_at": "2017-07-10T14:50:50+00:00",
+                    "closed_at": "2017-07-11T05:07:43+00:00"
+                },
+                {
+                    "number": 627,
+                    "title": "extractSubNetwork and extractCompModel do not reduce the model.genes and model.rxnGeneMat",
+                    "created_at": "2017-06-28T11:46:14+00:00",
+                    "closed_at": "2017-07-11T12:58:52+00:00"
+                },
+                {
+                    "number": 624,
+                    "title": "model.rev & old model fields",
+                    "created_at": "2017-06-27T21:43:03+00:00",
+                    "closed_at": "2018-06-05T13:45:00+00:00"
+                },
+                {
+                    "number": 623,
+                    "title": "resultCell = FEA(model, rxnSet, group)",
+                    "created_at": "2017-06-27T20:58:17+00:00",
+                    "closed_at": "2017-07-05T03:32:03+00:00"
+                },
+                {
+                    "number": 622,
+                    "title": "function matchingFields = getRelevantModelFields(model, type, varargin)",
+                    "created_at": "2017-06-27T20:09:23+00:00",
+                    "closed_at": "2017-07-07T10:58:38+00:00"
+                },
+                {
+                    "number": 619,
+                    "title": "typo in optimizeCbModel?",
+                    "created_at": "2017-06-27T15:53:09+00:00",
+                    "closed_at": "2017-07-07T14:09:04+00:00"
+                },
+                {
+                    "number": 602,
+                    "title": "TranslateSBML due to hard coded path in TranslateSBML.mexmaci64",
+                    "created_at": "2017-06-25T06:27:13+00:00",
+                    "closed_at": "2017-07-07T11:06:53+00:00"
+                },
+                {
+                    "number": 590,
+                    "title": "No subSystem added",
+                    "created_at": "2017-06-20T14:05:22+00:00",
+                    "closed_at": "2017-06-22T07:15:17+00:00"
+                },
+                {
+                    "number": 580,
+                    "title": "buildRxnGeneMat vs removeUnusedGenes",
+                    "created_at": "2017-06-19T22:49:14+00:00",
+                    "closed_at": "2017-06-22T09:51:14+00:00"
+                },
+                {
+                    "number": 558,
+                    "title": "constrainRxnListAboveBound doesn't create correct C matrix",
+                    "created_at": "2017-06-16T06:34:48+00:00",
+                    "closed_at": "2017-06-16T06:42:30+00:00"
+                },
+                {
+                    "number": 551,
+                    "title": "relaxFBA doesn't give minimal relaxation",
+                    "created_at": "2017-06-15T08:31:31+00:00",
+                    "closed_at": "2018-04-17T12:34:43+00:00"
+                },
+                {
+                    "number": 545,
+                    "title": "Using box constraints (+-1000) versus using infinity constraints (+-inf) for unknown bounds can lead to different results",
+                    "created_at": "2017-06-12T22:34:15+00:00",
+                    "closed_at": "2017-06-20T07:59:23+00:00"
+                },
+                {
+                    "number": 532,
+                    "title": "runTimeLimit in MILP problem",
+                    "created_at": "2017-06-09T16:49:47+00:00",
+                    "closed_at": "2018-06-08T06:35:48+00:00"
+                },
+                {
+                    "number": 521,
+                    "title": "Error trying to use changeCobraSolver- please help!",
+                    "created_at": "2017-06-07T13:28:49+00:00",
+                    "closed_at": "2017-06-08T18:50:08+00:00"
+                },
+                {
+                    "number": 515,
+                    "title": "Duplicate fastcore.m function",
+                    "created_at": "2017-06-06T13:26:25+00:00",
+                    "closed_at": "2017-06-07T19:07:19+00:00"
+                },
+                {
+                    "number": 466,
+                    "title": "Improper call to external function Volume() from MFE sampling",
+                    "created_at": "2017-05-31T09:11:59+00:00",
+                    "closed_at": "2017-05-31T09:39:06+00:00"
+                },
+                {
+                    "number": 412,
+                    "title": "Bug in updateCobraToolbox.m",
+                    "created_at": "2017-05-04T00:57:01+00:00",
+                    "closed_at": "2017-05-04T05:42:01+00:00"
+                },
+                {
+                    "number": 376,
+                    "title": "setQuantConstraints.m - variable `epsilon` is not used",
+                    "created_at": "2017-04-11T10:05:37+00:00",
+                    "closed_at": "2017-05-23T11:44:19+00:00"
+                },
+                {
+                    "number": 363,
+                    "title": "New Section: Iss",
+                    "created_at": "2017-04-03T08:32:18+00:00",
+                    "closed_at": "2017-04-03T08:56:41+00:00"
+                },
+                {
+                    "number": 343,
+                    "title": "some functions (like extractSubNetwork) miss model fields",
+                    "created_at": "2017-03-27T00:45:59+00:00",
+                    "closed_at": "2017-06-08T08:36:48+00:00"
+                },
+                {
+                    "number": 333,
+                    "title": "optimizeCbModelNLP calls solveCobraNLP with invalid parameter",
+                    "created_at": "2017-03-22T07:35:00+00:00",
+                    "closed_at": "2017-03-27T14:09:18+00:00"
+                },
+                {
+                    "number": 273,
+                    "title": "dynamicFBA substrate reactions need to be in alphabetical order",
+                    "created_at": "2017-02-24T02:37:16+00:00",
+                    "closed_at": "2017-03-27T14:12:55+00:00"
+                },
+                {
+                    "number": 265,
+                    "title": "readCbModel error",
+                    "created_at": "2017-02-18T13:42:34+00:00",
+                    "closed_at": "2017-02-18T14:35:20+00:00"
+                },
+                {
+                    "number": 258,
+                    "title": "change default branch to develop",
+                    "created_at": "2017-02-10T10:34:11+00:00",
+                    "closed_at": "2017-02-12T19:39:07+00:00"
+                },
+                {
+                    "number": 241,
+                    "title": "spelling error in removeRxns",
+                    "created_at": "2017-02-04T17:20:44+00:00",
+                    "closed_at": "2017-02-07T15:25:17+00:00"
+                },
+                {
+                    "number": 232,
+                    "title": "delete rFBA folder",
+                    "created_at": "2017-02-01T16:38:52+00:00",
+                    "closed_at": "2017-02-01T17:55:48+00:00"
+                },
+                {
+                    "number": 224,
+                    "title": "bug adding metCHEBIDD in addMetabolite.m",
+                    "created_at": "2017-01-28T10:55:57+00:00",
+                    "closed_at": "2017-02-28T06:28:06+00:00"
+                },
+                {
+                    "number": 200,
+                    "title": "checkMassAndChargeBalance does not show unknown formulas as unbalanced",
+                    "created_at": "2017-01-05T13:51:15+00:00",
+                    "closed_at": "2017-03-08T13:44:09+00:00"
+                },
+                {
+                    "number": 199,
+                    "title": "GIMME uses discretized values, in contradiction to the paper",
+                    "created_at": "2016-12-30T03:05:58+00:00",
+                    "closed_at": "2017-06-02T07:39:31+00:00"
+                },
+                {
+                    "number": 190,
+                    "title": "cplex incompatibility with matlab",
+                    "created_at": "2016-12-13T16:38:59+00:00",
+                    "closed_at": "2016-12-14T14:02:28+00:00"
+                },
+                {
+                    "number": 173,
+                    "title": "solveCOBRALPCPLEX comment remarks",
+                    "created_at": "2016-11-21T16:45:01+00:00",
+                    "closed_at": "2016-11-22T10:11:06+00:00"
+                },
+                {
+                    "number": 167,
+                    "title": "Potential Bug in design/createBilevelMILPproblem.m",
+                    "created_at": "2016-11-10T17:32:18+00:00",
+                    "closed_at": "2017-06-20T15:00:03+00:00"
+                },
+                {
+                    "number": 165,
+                    "title": "solveCobraLPCPLEX - make sure that these errors are actually thrown as errors",
+                    "created_at": "2016-11-07T11:26:17+00:00",
+                    "closed_at": "2017-03-31T15:52:32+00:00"
+                },
+                {
+                    "number": 161,
+                    "title": "Bug in writeCbModel/writeSBML",
+                    "created_at": "2016-10-12T21:54:36+00:00",
+                    "closed_at": "2017-06-22T09:51:30+00:00"
+                },
+                {
+                    "number": 147,
+                    "title": "what is DM_coumpound ID after running [missingMets,presentMets] = biomassPrecursorCheck(model)",
+                    "created_at": "2016-08-05T05:55:02+00:00",
+                    "closed_at": "2017-01-31T13:41:28+00:00"
+                },
+                {
+                    "number": 146,
+                    "title": "I cannot use xls2read command in MATLAB using COBRA toolbox",
+                    "created_at": "2016-07-27T20:54:15+00:00",
+                    "closed_at": "2017-06-02T09:32:52+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "Bug in readSBML",
+                    "created_at": "2016-06-30T15:11:37+00:00",
+                    "closed_at": "2016-11-04T08:29:54+00:00"
+                },
+                {
+                    "number": 129,
+                    "title": "test13CFitting is not working",
+                    "created_at": "2016-05-08T23:06:01+00:00",
+                    "closed_at": "2017-03-27T14:10:05+00:00"
+                },
+                {
+                    "number": 128,
+                    "title": "LPproblem.A not defiend in optimizeCbModel()",
+                    "created_at": "2016-05-08T17:01:33+00:00",
+                    "closed_at": "2016-05-08T19:31:06+00:00"
+                },
+                {
+                    "number": 119,
+                    "title": "Incorrect multiplier for time units in SBML export",
+                    "created_at": "2016-03-08T09:56:34+00:00",
+                    "closed_at": "2017-02-12T20:06:55+00:00"
+                },
+                {
+                    "number": 118,
+                    "title": "MOMA",
+                    "created_at": "2016-02-20T17:44:29+00:00",
+                    "closed_at": "2016-11-04T09:36:49+00:00"
+                },
+                {
+                    "number": 115,
+                    "title": "convertToIrreversible() bug",
+                    "created_at": "2016-02-18T18:26:01+00:00",
+                    "closed_at": "2016-02-18T20:39:00+00:00"
+                },
+                {
+                    "number": 114,
+                    "title": "addReaction() bug",
+                    "created_at": "2016-02-18T18:16:33+00:00",
+                    "closed_at": "2016-02-18T20:36:37+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "optKnock",
+                    "created_at": "2016-02-13T21:38:52+00:00",
+                    "closed_at": "2017-03-21T12:50:55+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "sampleScatterMatrix",
+                    "created_at": "2016-02-13T16:01:02+00:00",
+                    "closed_at": "2017-02-13T12:32:19+00:00"
+                },
+                {
+                    "number": 109,
+                    "title": "cplexoptimset file in cobra toolbox conflicts with CPLEX",
+                    "created_at": "2016-02-09T06:13:36+00:00",
+                    "closed_at": "2016-12-16T07:45:41+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "optimizeCbModel",
+                    "created_at": "2016-01-30T17:24:49+00:00",
+                    "closed_at": "2017-03-08T13:44:55+00:00"
+                },
+                {
+                    "number": 106,
+                    "title": "optimizeCbModel & shadow prices",
+                    "created_at": "2016-01-28T16:59:47+00:00",
+                    "closed_at": "2016-01-29T10:44:06+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "identifyCorrelSets outputs sets of size = 1",
+                    "created_at": "2015-12-23T07:20:31+00:00",
+                    "closed_at": "2017-06-08T08:47:16+00:00"
+                },
+                {
+                    "number": 100,
+                    "title": "changeCobraSolver avoid global variables",
+                    "created_at": "2015-12-16T10:57:21+00:00",
+                    "closed_at": "2017-04-26T12:39:38+00:00"
+                },
+                {
+                    "number": 92,
+                    "title": "issue with metsCharges in xls2model",
+                    "created_at": "2015-12-10T06:50:37+00:00",
+                    "closed_at": "2017-03-15T07:54:47+00:00"
+                },
+                {
+                    "number": 86,
+                    "title": "Always the same objective function value (f)",
+                    "created_at": "2015-11-18T09:57:00+00:00",
+                    "closed_at": "2017-03-15T19:58:09+00:00"
+                },
+                {
+                    "number": 84,
+                    "title": "Why has singleGeneDeletion.m been renamed to singleGeneDeletion_old.m ?",
+                    "created_at": "2015-11-09T20:28:41+00:00",
+                    "closed_at": "2017-03-13T11:39:07+00:00"
+                },
+                {
+                    "number": 82,
+                    "title": "checkObjective",
+                    "created_at": "2015-10-23T14:00:43+00:00",
+                    "closed_at": "2017-01-30T22:00:15+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "problem with Cobra testAll testModels (forwarded by Dr. Ronan M.T. Fleming)",
+                    "created_at": "2015-10-22T12:43:40+00:00",
+                    "closed_at": "2016-11-04T09:58:22+00:00"
+                },
+                {
+                    "number": 76,
+                    "title": "lusolMex64bit git submodule",
+                    "created_at": "2015-10-21T00:17:52+00:00",
+                    "closed_at": "2017-01-31T13:36:42+00:00"
+                },
+                {
+                    "number": 55,
+                    "title": "Thermodynamic Documentation",
+                    "created_at": "2015-06-26T15:22:18+00:00",
+                    "closed_at": "2017-11-13T09:19:32+00:00"
+                },
+                {
+                    "number": 49,
+                    "title": "testSolvers MILP fails because of incorrect merge",
+                    "created_at": "2015-05-11T21:21:49+00:00",
+                    "closed_at": "2017-03-15T08:56:58+00:00"
+                },
+                {
+                    "number": 45,
+                    "title": "`testAll()` fails due to `solverName` not being a scalar or string constant",
+                    "created_at": "2015-04-27T13:50:34+00:00",
+                    "closed_at": "2017-03-14T15:20:49+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "convertSBMLToCobra can't close missing handle",
+                    "created_at": "2015-03-20T18:03:31+00:00",
+                    "closed_at": "2016-11-11T14:14:12+00:00"
+                },
+                {
+                    "number": 40,
+                    "title": "Redundant information in model structure",
+                    "created_at": "2015-03-12T16:40:54+00:00",
+                    "closed_at": "2017-03-07T13:04:55+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "File existence failure when using cplex_direct in solveCobraLP.m",
+                    "created_at": "2015-03-05T08:41:02+00:00",
+                    "closed_at": "2016-11-25T11:19:10+00:00"
+                },
+                {
+                    "number": 37,
+                    "title": "detectDeadEnds has buggy behavior when removeExternalMets=1",
+                    "created_at": "2015-02-01T16:32:21+00:00",
+                    "closed_at": "2017-04-26T12:15:49+00:00"
+                },
+                {
+                    "number": 35,
+                    "title": "Gurobi 6 doesn't seem to be fully supported",
+                    "created_at": "2015-01-29T00:08:49+00:00",
+                    "closed_at": "2015-01-30T12:20:32+00:00"
+                },
+                {
+                    "number": 32,
+                    "title": "parseSBMLNotesField assigns a blank SUBSYSTEM to 'Exchange'",
+                    "created_at": "2014-12-29T17:55:02+00:00",
+                    "closed_at": "2017-03-15T07:52:33+00:00"
+                },
+                {
+                    "number": 25,
+                    "title": "optimizeCbModelNLP",
+                    "created_at": "2014-06-19T17:33:08+00:00",
+                    "closed_at": "2015-01-30T12:22:57+00:00"
+                },
+                {
+                    "number": 24,
+                    "title": "extractSubNetwork doesn't return rxnNames",
+                    "created_at": "2014-06-05T17:51:38+00:00",
+                    "closed_at": "2017-03-14T19:32:44+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "extractSubNetwork uses \"rxnNames\" where it means rxns",
+                    "created_at": "2014-06-05T17:50:56+00:00",
+                    "closed_at": "2017-02-12T19:48:44+00:00"
+                },
+                {
+                    "number": 21,
+                    "title": "Faulty metabolite renaming in checkCobraModelUnique",
+                    "created_at": "2014-05-19T12:56:00+00:00",
+                    "closed_at": "2017-02-07T15:40:50+00:00"
+                },
+                {
+                    "number": 20,
+                    "title": "gapFind doesnt work with gurobi",
+                    "created_at": "2014-04-04T23:39:57+00:00",
+                    "closed_at": "2017-06-02T07:38:21+00:00"
+                },
+                {
+                    "number": 19,
+                    "title": "bug in addReaction() function",
+                    "created_at": "2014-01-28T20:39:36+00:00",
+                    "closed_at": "2017-06-02T13:02:40+00:00"
+                },
+                {
+                    "number": 16,
+                    "title": "Hardcoded reaction constraint in optimizeCbModel can cause unexpected FBA behavior",
+                    "created_at": "2013-12-17T22:01:50+00:00",
+                    "closed_at": "2017-02-07T15:27:25+00:00"
+                },
+                {
+                    "number": 12,
+                    "title": "convertSBMLToCobra - bug SBML models without kineticLaws",
+                    "created_at": "2013-08-06T08:36:02+00:00",
+                    "closed_at": "2013-08-27T23:53:10+00:00"
+                }
+            ],
+            "languages": {
+                "MATLAB": 13309526,
+                "C++": 265737,
+                "Python": 254395,
+                "JavaScript": 253958,
+                "C": 251394,
+                "Shell": 183084,
+                "Perl": 46314,
+                "Jupyter Notebook": 24255,
+                "Dockerfile": 14305,
+                "Java": 9197,
+                "CSS": 6012
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 56033,
+            "total_ccn": 16494,
+            "avg_ccn": 1.51,
+            "nloc_per_file": 23.21,
+            "duplicate_rate": 20.04
+        },
+        "howfairis": {
+            "checklist": 0,
+            "license": 1,
+            "citation": 0,
+            "registry": 0,
+            "repository": 1
+        }
+    }
+}

@@ -1,0 +1,2466 @@
+{
+    "NACHO": {
+        "tool_name": "NACHO",
+        "biotools": {
+            "name": "NACHO",
+            "description": "An R package for quality control of NanoString nCounter data | NACHO: NAnostring quality Control dasHbOard | NACHO does this by visualising quality control metrics, expression of control genes, principal components and sample specific size factors in an interactive web application",
+            "homepage": "https://github.com/mcanouil/NACHO",
+            "biotoolsID": "NACHO",
+            "biotoolsCURIE": "biotools:NACHO",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2939",
+                            "term": "Principal component visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0571",
+                            "term": "Expression data visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3218",
+                            "term": "Sequencing quality control"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0659",
+                    "term": "Functional, regulatory and non-coding RNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0092",
+                    "term": "Data visualisation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0632",
+                    "term": "Probes and primers"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "LGPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1093/bioinformatics/btz647",
+                    "pmid": "31504159",
+                    "pmcid": "PMC9883715",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "NACHO: An R package for quality control of NanoString nCounter data",
+                        "abstract": "Summary: The NanoStringTM nCounter\u00ae is a platform for the targeted quantification of expression data in biofluids and tissues. While software by the manufacturer is available in addition to third parties packages, they do not provide a complete quality control (QC) pipeline. Here, we present NACHO ('NAnostring quality Control dasHbOard'), a comprehensive QC R-package. The package consists of three subsequent steps: summarize, visualize and normalize. The summarize function collects all the relevant data and stores it in a tidy format, the visualize function initiates a dashboard with plots of the relevant QC outcomes. It contains QC metrics that are measured by default by the manufacturer, but also calculates other insightful measures, including the scaling factors that are needed in the normalization step. In this normalization step, different normalization methods can be chosen to optimally preprocess data. Together, NACHO is a comprehensive method that optimizes insight and preprocessing of nCounter\u00ae data.",
+                        "date": "2020-02-01T00:00:00Z",
+                        "citationCount": 13,
+                        "authors": [
+                            {
+                                "name": "Canouil M."
+                            },
+                            {
+                                "name": "Bouland G.A."
+                            },
+                            {
+                                "name": "Bonnefond A."
+                            },
+                            {
+                                "name": "Froguel P."
+                            },
+                            {
+                                "name": "T'Hart L.M."
+                            },
+                            {
+                                "name": "Slieker R.C."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [],
+            "owner": "Pub2Tools",
+            "additionDate": "2019-11-14T19:39:24Z",
+            "lastUpdate": "2024-11-24T20:51:00.697654Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 177137375,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxNzcxMzczNzU=",
+                "name": "NACHO",
+                "full_name": "mcanouil/NACHO",
+                "private": false,
+                "owner": {
+                    "login": "mcanouil",
+                    "id": 8896044,
+                    "node_id": "MDQ6VXNlcjg4OTYwNDQ=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/8896044?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/mcanouil",
+                    "html_url": "https://github.com/mcanouil",
+                    "followers_url": "https://api.github.com/users/mcanouil/followers",
+                    "following_url": "https://api.github.com/users/mcanouil/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/mcanouil/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/mcanouil/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/mcanouil/subscriptions",
+                    "organizations_url": "https://api.github.com/users/mcanouil/orgs",
+                    "repos_url": "https://api.github.com/users/mcanouil/repos",
+                    "events_url": "https://api.github.com/users/mcanouil/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/mcanouil/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/mcanouil/NACHO",
+                "description": "NAnostring quality Control dasHbOard.",
+                "fork": false,
+                "url": "https://api.github.com/repos/mcanouil/NACHO",
+                "forks_url": "https://api.github.com/repos/mcanouil/NACHO/forks",
+                "keys_url": "https://api.github.com/repos/mcanouil/NACHO/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/mcanouil/NACHO/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/mcanouil/NACHO/teams",
+                "hooks_url": "https://api.github.com/repos/mcanouil/NACHO/hooks",
+                "issue_events_url": "https://api.github.com/repos/mcanouil/NACHO/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/mcanouil/NACHO/events",
+                "assignees_url": "https://api.github.com/repos/mcanouil/NACHO/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/mcanouil/NACHO/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/mcanouil/NACHO/tags",
+                "blobs_url": "https://api.github.com/repos/mcanouil/NACHO/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/mcanouil/NACHO/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/mcanouil/NACHO/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/mcanouil/NACHO/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/mcanouil/NACHO/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/mcanouil/NACHO/languages",
+                "stargazers_url": "https://api.github.com/repos/mcanouil/NACHO/stargazers",
+                "contributors_url": "https://api.github.com/repos/mcanouil/NACHO/contributors",
+                "subscribers_url": "https://api.github.com/repos/mcanouil/NACHO/subscribers",
+                "subscription_url": "https://api.github.com/repos/mcanouil/NACHO/subscription",
+                "commits_url": "https://api.github.com/repos/mcanouil/NACHO/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/mcanouil/NACHO/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/mcanouil/NACHO/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/mcanouil/NACHO/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/mcanouil/NACHO/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/mcanouil/NACHO/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/mcanouil/NACHO/merges",
+                "archive_url": "https://api.github.com/repos/mcanouil/NACHO/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/mcanouil/NACHO/downloads",
+                "issues_url": "https://api.github.com/repos/mcanouil/NACHO/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/mcanouil/NACHO/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/mcanouil/NACHO/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/mcanouil/NACHO/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/mcanouil/NACHO/labels{/name}",
+                "releases_url": "https://api.github.com/repos/mcanouil/NACHO/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/mcanouil/NACHO/deployments",
+                "created_at": "2019-03-22T12:37:13Z",
+                "updated_at": "2025-12-22T09:55:29Z",
+                "pushed_at": "2024-01-12T19:25:36Z",
+                "git_url": "git://github.com/mcanouil/NACHO.git",
+                "ssh_url": "git@github.com:mcanouil/NACHO.git",
+                "clone_url": "https://github.com/mcanouil/NACHO.git",
+                "svn_url": "https://github.com/mcanouil/NACHO",
+                "homepage": "https://m.canouil.dev/NACHO/",
+                "size": 76757,
+                "stargazers_count": 9,
+                "watchers_count": 9,
+                "language": "R",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": true,
+                "forks_count": 4,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "mirna",
+                    "mrna",
+                    "nanostring",
+                    "normalisation",
+                    "quality-control",
+                    "r-package",
+                    "r-stats",
+                    "rstats",
+                    "shiny"
+                ],
+                "visibility": "public",
+                "forks": 4,
+                "open_issues": 0,
+                "watchers": 9,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 4,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".Rbuildignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "DESCRIPTION",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "NAMESPACE",
+                    "type": "blob"
+                },
+                {
+                    "path": "NEWS.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "R",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.Rmd",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "codecov.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "data-raw",
+                    "type": "tree"
+                },
+                {
+                    "path": "data",
+                    "type": "tree"
+                },
+                {
+                    "path": "inst",
+                    "type": "tree"
+                },
+                {
+                    "path": "man",
+                    "type": "tree"
+                },
+                {
+                    "path": "pkgdown",
+                    "type": "tree"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                },
+                {
+                    "path": "vignettes",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "mcanouil",
+                    "contributions": 721
+                },
+                {
+                    "login": "roderickslieker",
+                    "contributions": 8
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 51,
+                    "title": "excluding POS_F from positive control linearity calculation",
+                    "created_at": "2024-02-13T15:42:25Z",
+                    "closed_at": "2024-02-14T21:08:04Z"
+                },
+                {
+                    "number": 50,
+                    "title": "Release NACHO 2.0.6",
+                    "created_at": "2023-12-26T20:48:40Z",
+                    "closed_at": "2024-01-12T19:20:36Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Question about R^2 values in positive control linearity QC",
+                    "created_at": "2023-12-21T09:43:33Z",
+                    "closed_at": "2023-12-26T20:48:01Z"
+                },
+                {
+                    "number": 45,
+                    "title": "Differing Values in QC plots ",
+                    "created_at": "2023-08-04T14:52:21Z",
+                    "closed_at": "2023-08-06T12:45:58Z"
+                },
+                {
+                    "number": 40,
+                    "title": "Change to new cran checks badge URL",
+                    "created_at": "2022-12-07T05:39:55Z",
+                    "closed_at": "2022-12-07T17:58:30Z"
+                },
+                {
+                    "number": 37,
+                    "title": "Release NACHO 2.0.0",
+                    "created_at": "2022-05-30T19:23:57Z",
+                    "closed_at": "2022-05-31T14:43:14Z"
+                },
+                {
+                    "number": 35,
+                    "title": "Is it possible to upload a sample sheet using the NACHO shiny app?",
+                    "created_at": "2022-03-22T18:35:34Z",
+                    "closed_at": "2022-05-30T11:40:58Z"
+                },
+                {
+                    "number": 33,
+                    "title": "Allow named vector for RCC file in `load_rcc`?",
+                    "created_at": "2021-12-20T17:29:51Z",
+                    "closed_at": "2022-05-30T11:40:57Z"
+                },
+                {
+                    "number": 32,
+                    "title": "Pos and neg controls in RCC file",
+                    "created_at": "2021-12-20T13:57:23Z",
+                    "closed_at": "2022-03-08T08:49:13Z"
+                },
+                {
+                    "number": 31,
+                    "title": "load_rcc doesnt recognize subfolder ",
+                    "created_at": "2021-12-20T13:54:58Z",
+                    "closed_at": "2022-03-08T08:48:52Z"
+                },
+                {
+                    "number": 30,
+                    "title": "PlexSet Analysis",
+                    "created_at": "2021-11-05T20:32:09Z",
+                    "closed_at": "2022-03-08T08:48:19Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Release NACHO 1.1.0",
+                    "created_at": "2021-01-07T09:20:57Z",
+                    "closed_at": "2021-01-14T15:29:19Z"
+                },
+                {
+                    "number": 28,
+                    "title": "Release NACHO 1.0.2",
+                    "created_at": "2020-12-21T12:36:05Z",
+                    "closed_at": "2021-01-06T11:20:06Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Error: invalid first argument",
+                    "created_at": "2020-12-15T23:24:54Z",
+                    "closed_at": "2020-12-16T20:03:38Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Visualisation after normalise function",
+                    "created_at": "2020-12-15T19:01:11Z",
+                    "closed_at": "2020-12-16T12:45:43Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Move to `data.table` framework",
+                    "created_at": "2020-09-30T16:14:57Z",
+                    "closed_at": "2022-05-30T11:44:15Z"
+                },
+                {
+                    "number": 24,
+                    "title": "Release NACHO 1.0.1",
+                    "created_at": "2020-05-25T15:34:38Z",
+                    "closed_at": "2020-05-26T22:37:37Z"
+                },
+                {
+                    "number": 23,
+                    "title": "Question about sample sheet contents and formatting",
+                    "created_at": "2020-05-24T20:59:23Z",
+                    "closed_at": "2020-05-25T16:43:18Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Background normalization?",
+                    "created_at": "2020-03-17T14:23:45Z",
+                    "closed_at": "2020-05-24T10:29:21Z"
+                },
+                {
+                    "number": 21,
+                    "title": "Using NACHO for single catridge assays",
+                    "created_at": "2020-03-16T06:52:58Z",
+                    "closed_at": "2022-03-08T08:48:35Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Add Sanity check for files homogeneity",
+                    "created_at": "2020-03-11T14:25:45Z",
+                    "closed_at": "2022-05-30T11:40:57Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Keys are shared for 2 rows",
+                    "created_at": "2020-03-11T11:23:09Z",
+                    "closed_at": "2022-05-30T10:54:45Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Documentation / Interface Mismatch",
+                    "created_at": "2020-02-19T08:59:04Z",
+                    "closed_at": "2020-02-19T09:11:56Z"
+                },
+                {
+                    "number": 17,
+                    "title": "Provide easy means to export normalized Counts",
+                    "created_at": "2020-02-19T08:58:05Z",
+                    "closed_at": "2022-05-30T10:40:45Z"
+                },
+                {
+                    "number": 16,
+                    "title": "Release NACHO 1.0.0",
+                    "created_at": "2019-12-20T09:54:46Z",
+                    "closed_at": "2020-01-13T09:01:32Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Column `cols` must be length 1 (the number of rows), not 3 while running Summarize",
+                    "created_at": "2019-11-27T10:30:53Z",
+                    "closed_at": "2019-12-11T15:37:26Z"
+                },
+                {
+                    "number": 14,
+                    "title": "input in `visualise()` are wrongly updated when switching tabs",
+                    "created_at": "2019-11-20T14:04:31Z",
+                    "closed_at": "2019-12-19T12:55:39Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Issue with \"Outliers Table\"",
+                    "created_at": "2019-11-20T13:58:29Z",
+                    "closed_at": "2019-12-11T15:39:18Z"
+                },
+                {
+                    "number": 12,
+                    "title": "example in vignette error",
+                    "created_at": "2019-11-15T07:56:52Z",
+                    "closed_at": "2019-11-15T10:40:37Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Release NACHO 0.6.0 / 0.6.1",
+                    "created_at": "2019-10-03T13:42:13Z",
+                    "closed_at": "2019-10-14T10:39:10Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Changing housekeeping genes seems effectless",
+                    "created_at": "2019-09-17T09:00:46Z",
+                    "closed_at": "2019-10-03T13:11:55Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Update to tidyr 1.0.0",
+                    "created_at": "2019-09-17T08:59:58Z",
+                    "closed_at": "2019-10-03T13:31:35Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Add citation details",
+                    "created_at": "2019-08-13T08:23:49Z",
+                    "closed_at": "2019-09-09T13:20:51Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Update the vignette with `render()` and `autoplot()` functions",
+                    "created_at": "2019-07-17T11:23:02Z",
+                    "closed_at": "2019-07-17T16:02:41Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Function template for custom `norm_` functions",
+                    "created_at": "2019-07-17T11:11:47Z",
+                    "closed_at": "2022-05-30T11:34:16Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Recode `visualise()` to make it simpler to maintain",
+                    "created_at": "2019-07-11T07:49:50Z",
+                    "closed_at": "2019-12-19T12:55:35Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Unified plotting between `visualise()` and `render()` (using new autoplot)",
+                    "created_at": "2019-07-11T07:46:03Z",
+                    "closed_at": "2019-12-19T09:08:33Z"
+                },
+                {
+                    "number": 3,
+                    "title": "CRAN checks notes (\"Undefined global functions or variables\")",
+                    "created_at": "2019-07-08T15:38:20Z",
+                    "closed_at": "2019-07-10T14:40:53Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Function to render a report based on the results from `visualise()`",
+                    "created_at": "2019-07-02T10:21:49Z",
+                    "closed_at": "2019-07-17T11:15:09Z"
+                },
+                {
+                    "number": 1,
+                    "title": "RCC files not read properly for NanoString PlexSet data",
+                    "created_at": "2019-07-02T10:17:34Z",
+                    "closed_at": "2019-07-02T13:47:45Z"
+                }
+            ],
+            "languages": {
+                "R": 141502,
+                "TeX": 6910
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btz647",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "31504159",
+                            "source": "MED",
+                            "pmid": "31504159",
+                            "pmcid": "PMC9883715",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9883715"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btz647",
+                            "title": "NACHO: an R package for quality control of NanoString nCounter data.",
+                            "authorString": "Canouil M, Bouland GA, Bonnefond A, Froguel P, 't Hart LM, Slieker RC.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "3",
+                            "journalVolume": "36",
+                            "pubYear": "2020",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "970-971",
+                            "pubType": "brief-report; research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 21,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "geo"
+                                ]
+                            },
+                            "firstIndexDate": "2019-09-11",
+                            "firstPublicationDate": "2020-02-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2969514086",
+                "doi": "https://doi.org/10.1093/bioinformatics/btz647",
+                "title": "<i>NACHO:</i> an R package for quality control of NanoString nCounter data",
+                "display_name": "<i>NACHO:</i> an R package for quality control of NanoString nCounter data",
+                "publication_year": 2019,
+                "publication_date": "2019-08-15",
+                "ids": {
+                    "openalex": "https://openalex.org/W2969514086",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btz647",
+                    "mag": "2969514086",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/31504159"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btz647",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz647",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/970/32369594/btz647.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/970/32369594/btz647.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5038262522",
+                            "display_name": "Micka\u00ebl Canouil",
+                            "orcid": "https://orcid.org/0000-0002-3396-4549"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1294671590",
+                                "display_name": "Centre National de la Recherche Scientifique",
+                                "ror": "https://ror.org/02feahw73",
+                                "country_code": "FR",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2279609970",
+                                "display_name": "Universit\u00e9 de Lille",
+                                "ror": "https://ror.org/02kzqn938",
+                                "country_code": "FR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I2279609970"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800921988",
+                                "display_name": "Institut Pasteur de Lille",
+                                "ror": "https://ror.org/05k9skc85",
+                                "country_code": "FR",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800921988"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "FR"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Micka\u00ebl Canouil",
+                        "raw_affiliation_strings": [
+                            "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3396-4549",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800921988",
+                                    "https://openalex.org/I2279609970",
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5014034688",
+                            "display_name": "Gerard A. Bouland",
+                            "orcid": "https://orcid.org/0000-0002-4311-8725"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Gerard A Bouland",
+                        "raw_affiliation_strings": [
+                            "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5025636710",
+                            "display_name": "Am\u00e9lie Bonnefond",
+                            "orcid": "https://orcid.org/0000-0001-9976-3005"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1294671590",
+                                "display_name": "Centre National de la Recherche Scientifique",
+                                "ror": "https://ror.org/02feahw73",
+                                "country_code": "FR",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2279609970",
+                                "display_name": "Universit\u00e9 de Lille",
+                                "ror": "https://ror.org/02kzqn938",
+                                "country_code": "FR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I2279609970"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800921988",
+                                "display_name": "Institut Pasteur de Lille",
+                                "ror": "https://ror.org/05k9skc85",
+                                "country_code": "FR",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800921988"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210151791",
+                                "display_name": "Genomics (United Kingdom)",
+                                "ror": "https://ror.org/053a6xa29",
+                                "country_code": "GB",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210151791"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I47508984",
+                                "display_name": "Imperial College London",
+                                "ror": "https://ror.org/041kmwe10",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I47508984"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "FR",
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Am\u00e9lie Bonnefond",
+                        "raw_affiliation_strings": [
+                            "Department of Medicine, Section of Genomics of Common Disease, Imperial College London , London SW7 2AZ, UK",
+                            "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Medicine, Section of Genomics of Common Disease, Imperial College London , London SW7 2AZ, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210151791",
+                                    "https://openalex.org/I47508984"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800921988",
+                                    "https://openalex.org/I2279609970",
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5009611870",
+                            "display_name": "Philippe Froguel",
+                            "orcid": "https://orcid.org/0000-0003-2972-0784"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1294671590",
+                                "display_name": "Centre National de la Recherche Scientifique",
+                                "ror": "https://ror.org/02feahw73",
+                                "country_code": "FR",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2279609970",
+                                "display_name": "Universit\u00e9 de Lille",
+                                "ror": "https://ror.org/02kzqn938",
+                                "country_code": "FR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I2279609970"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800921988",
+                                "display_name": "Institut Pasteur de Lille",
+                                "ror": "https://ror.org/05k9skc85",
+                                "country_code": "FR",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800921988"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210151791",
+                                "display_name": "Genomics (United Kingdom)",
+                                "ror": "https://ror.org/053a6xa29",
+                                "country_code": "GB",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210151791"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I47508984",
+                                "display_name": "Imperial College London",
+                                "ror": "https://ror.org/041kmwe10",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I47508984"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "FR",
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Philippe Froguel",
+                        "raw_affiliation_strings": [
+                            "Department of Medicine, Section of Genomics of Common Disease, Imperial College London , London SW7 2AZ, UK",
+                            "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Medicine, Section of Genomics of Common Disease, Imperial College London , London SW7 2AZ, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210151791",
+                                    "https://openalex.org/I47508984"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universit\u00e9 de Lille, CNRS, Institut Pasteur de Lille , UMR 8199 - EGID, F-59000 Lille, France",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800921988",
+                                    "https://openalex.org/I2279609970",
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5015404078",
+                            "display_name": "Leen M. \u2018t Hart",
+                            "orcid": "https://orcid.org/0000-0003-4401-2938"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I911458345",
+                                "display_name": "Amsterdam UMC Location Vrije Universiteit Amsterdam",
+                                "ror": "https://ror.org/00q6h8f30",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210151833",
+                                    "https://openalex.org/I911458345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Leen M \u2019t Hart",
+                        "raw_affiliation_strings": [
+                            "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands",
+                            "Department of Epidemiology and Biostatistics, Amsterdam Public Health Institute, Amsterdam UMC, VU University Medical Center , Amsterdam 1081 HV, The Netherlands",
+                            "Molecular Epidemiology Section, Department of Biomedical Data Sciences, Leiden University Medical Center , Leiden 2333 ZC, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Epidemiology and Biostatistics, Amsterdam Public Health Institute, Amsterdam UMC, VU University Medical Center , Amsterdam 1081 HV, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I911458345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Molecular Epidemiology Section, Department of Biomedical Data Sciences, Leiden University Medical Center , Leiden 2333 ZC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5032505274",
+                            "display_name": "Roderick C. Slieker",
+                            "orcid": "https://orcid.org/0000-0003-0961-9152"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I911458345",
+                                "display_name": "Amsterdam UMC Location Vrije Universiteit Amsterdam",
+                                "ror": "https://ror.org/00q6h8f30",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210151833",
+                                    "https://openalex.org/I911458345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Roderick C Slieker",
+                        "raw_affiliation_strings": [
+                            "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands",
+                            "Department of Epidemiology and Biostatistics, Amsterdam Public Health Institute, Amsterdam UMC, VU University Medical Center , Amsterdam 1081 HV, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-0961-9152",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cell and Chemical Biology, Leiden University Medical Center , 2333 ZC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Epidemiology and Biostatistics, Amsterdam Public Health Institute, Amsterdam UMC, VU University Medical Center , Amsterdam 1081 HV, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I911458345"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5032505274",
+                    "https://openalex.org/A5038262522"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I1294671590",
+                    "https://openalex.org/I2279609970",
+                    "https://openalex.org/I2800006345",
+                    "https://openalex.org/I2800921988",
+                    "https://openalex.org/I911458345"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 0.9896,
+                "has_fulltext": true,
+                "cited_by_count": 23,
+                "citation_normalized_percentile": {
+                    "value": 0.72057954,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "36",
+                    "issue": "3",
+                    "first_page": "970",
+                    "last_page": "971"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10519",
+                    "display_name": "Advanced Proteomics Techniques and Applications",
+                    "score": 0.23759999871253967,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1607",
+                        "display_name": "Spectroscopy"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/16",
+                        "display_name": "Chemistry"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10519",
+                        "display_name": "Advanced Proteomics Techniques and Applications",
+                        "score": 0.23759999871253967,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1607",
+                            "display_name": "Spectroscopy"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/16",
+                            "display_name": "Chemistry"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12859",
+                        "display_name": "Cell Image Analysis Techniques",
+                        "score": 0.20890000462532043,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1304",
+                            "display_name": "Biophysics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10885",
+                        "display_name": "Gene expression and cancer classification",
+                        "score": 0.15289999544620514,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/normalization",
+                        "display_name": "Normalization (sociology)",
+                        "score": 0.8094806671142578
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7968281507492065
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/preprocessor",
+                        "display_name": "Preprocessor",
+                        "score": 0.7736969590187073
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/r-package",
+                        "display_name": "R package",
+                        "score": 0.7012383937835693
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5477849245071411
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dashboard",
+                        "display_name": "Dashboard",
+                        "score": 0.5440366864204407
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pipeline",
+                        "display_name": "Pipeline (software)",
+                        "score": 0.5392159223556519
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.5174303650856018
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-pre-processing",
+                        "display_name": "Data pre-processing",
+                        "score": 0.5153383612632751
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-package",
+                        "display_name": "Software package",
+                        "score": 0.4506634473800659
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-engineering",
+                        "display_name": "Software engineering",
+                        "score": 0.30079972743988037
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.1674777865409851
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.15458330512046814
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C136886441",
+                        "wikidata": "https://www.wikidata.org/wiki/Q926129",
+                        "display_name": "Normalization (sociology)",
+                        "level": 2,
+                        "score": 0.8094806671142578
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7968281507492065
+                    },
+                    {
+                        "id": "https://openalex.org/C34736171",
+                        "wikidata": "https://www.wikidata.org/wiki/Q918333",
+                        "display_name": "Preprocessor",
+                        "level": 2,
+                        "score": 0.7736969590187073
+                    },
+                    {
+                        "id": "https://openalex.org/C2984074130",
+                        "wikidata": "https://www.wikidata.org/wiki/Q73539779",
+                        "display_name": "R package",
+                        "level": 2,
+                        "score": 0.7012383937835693
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5477849245071411
+                    },
+                    {
+                        "id": "https://openalex.org/C33499554",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1417134",
+                        "display_name": "Dashboard",
+                        "level": 2,
+                        "score": 0.5440366864204407
+                    },
+                    {
+                        "id": "https://openalex.org/C43521106",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+                        "display_name": "Pipeline (software)",
+                        "level": 2,
+                        "score": 0.5392159223556519
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.5174303650856018
+                    },
+                    {
+                        "id": "https://openalex.org/C10551718",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5227332",
+                        "display_name": "Data pre-processing",
+                        "level": 2,
+                        "score": 0.5153383612632751
+                    },
+                    {
+                        "id": "https://openalex.org/C3020440742",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1176855",
+                        "display_name": "Software package",
+                        "level": 3,
+                        "score": 0.4506634473800659
+                    },
+                    {
+                        "id": "https://openalex.org/C115903868",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+                        "display_name": "Software engineering",
+                        "level": 1,
+                        "score": 0.30079972743988037
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.1674777865409851
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.15458330512046814
+                    },
+                    {
+                        "id": "https://openalex.org/C19165224",
+                        "wikidata": "https://www.wikidata.org/wiki/Q23404",
+                        "display_name": "Anthropology",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C144024400",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21201",
+                        "display_name": "Sociology",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btz647",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz647",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/970/32369594/btz647.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:31504159",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31504159",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9883715",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9883715",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.amsterdamumc.nl:publications/177ce55c-b00d-47a3-893a-428f89da792a",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/177ce55c-b00d-47a3-893a-428f89da792a",
+                        "pdf_url": "https://pure.amsterdamumc.nl/ws/files/139385579/Nacho.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S7407055222",
+                            "display_name": "Pure Amsterdam UMC",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Canouil, M, Bouland, G A, Bonnefond, A, Froguel, P, 't Hart, L M & Slieker, R C 2020, 'NACHO : an R package for quality control of NanoString nCounter data', Bioinformatics, vol. 36, no. 3, pp. 970-971. https://doi.org/10.1093/bioinformatics/btz647",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3182655",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3182655",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(3), 970 - 971. OXFORD UNIV PRESS",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:HAL:hal-04535808v1",
+                        "is_oa": false,
+                        "landing_page_url": "https://hal.science/hal-04535808",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402512",
+                            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1294671590",
+                            "host_organization_name": "Centre National de la Recherche Scientifique",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1294671590"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 2020, 36 (3), pp.970-971. &#x27E8;10.1093/bioinformatics/btz647&#x27E9;",
+                        "raw_type": "Journal articles"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3182655",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3182655",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Article / Letter to editor"
+                    },
+                    {
+                        "id": "pmh:vumc:oai:pure.atira.dk:publications/1bb631e7-61ed-48fd-a690-9bef9395e341",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.vumc.nl/en/publications/1bb631e7-61ed-48fd-a690-9bef9395e341",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(3), 970 - 971. Oxford University Press",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btz647",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz647",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/970/32369594/btz647.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/9",
+                        "score": 0.4300000071525574,
+                        "display_name": "Industry, innovation and infrastructure"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G3533229685",
+                        "display_name": null,
+                        "funder_award_id": "10-LABX-46",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G3680621784",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10-EQPX-07-01",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G3876910485",
+                        "display_name": null,
+                        "funder_award_id": "16.0097-2",
+                        "funder_id": "https://openalex.org/F4320335238",
+                        "funder_display_name": "Staatssekretariat f\u00fcr Bildung, Forschung und Innovation"
+                    },
+                    {
+                        "id": "https://openalex.org/G4373937310",
+                        "display_name": null,
+                        "funder_award_id": "115881",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G4815328311",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10-LABX-46",
+                        "funder_id": "https://openalex.org/F4320317224",
+                        "funder_display_name": "European Genomic Institute for Diabetes"
+                    },
+                    {
+                        "id": "https://openalex.org/G5829796202",
+                        "display_name": null,
+                        "funder_award_id": "16.0097",
+                        "funder_id": "https://openalex.org/F4320335238",
+                        "funder_display_name": "Staatssekretariat f\u00fcr Bildung, Forschung und Innovation"
+                    },
+                    {
+                        "id": "https://openalex.org/G6105209832",
+                        "display_name": null,
+                        "funder_award_id": "GEPIDIAB-294785",
+                        "funder_id": "https://openalex.org/F4320338335",
+                        "funder_display_name": "H2020 European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G6865802051",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10-LABX-46",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G7240651115",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G7717891192",
+                        "display_name": null,
+                        "funder_award_id": "115881",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G8041914798",
+                        "display_name": null,
+                        "funder_award_id": "16.0097",
+                        "funder_id": "https://openalex.org/F4320314178",
+                        "funder_display_name": "European Federation of Pharmaceutical Industries and Associations"
+                    },
+                    {
+                        "id": "https://openalex.org/G8420440563",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10-LABX-46",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G8510727784",
+                        "display_name": null,
+                        "funder_award_id": "ANR-10-EQPX",
+                        "funder_id": "https://openalex.org/F4320320883",
+                        "funder_display_name": "Agence Nationale de la Recherche"
+                    },
+                    {
+                        "id": "https://openalex.org/G8681608620",
+                        "display_name": "Genetics and epigenetics of Type 2 Diabetes physiology",
+                        "funder_award_id": "294785",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320314178",
+                        "display_name": "European Federation of Pharmaceutical Industries and Associations",
+                        "ror": "https://ror.org/00g1x4v36"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320316862",
+                        "display_name": "Equipex",
+                        "ror": null
+                    },
+                    {
+                        "id": "https://openalex.org/F4320317224",
+                        "display_name": "European Genomic Institute for Diabetes",
+                        "ror": "https://ror.org/05n2c8735"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320883",
+                        "display_name": "Agence Nationale de la Recherche",
+                        "ror": "https://ror.org/00rbzpz17"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322892",
+                        "display_name": "Centre National de la Recherche Scientifique",
+                        "ror": "https://ror.org/02feahw73"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320335238",
+                        "display_name": "Staatssekretariat f\u00fcr Bildung, Forschung und Innovation",
+                        "ror": "https://ror.org/01kw63t33"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338335",
+                        "display_name": "H2020 European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2969514086.pdf"
+                },
+                "referenced_works_count": 9,
+                "referenced_works": [
+                    "https://openalex.org/W1512000979",
+                    "https://openalex.org/W1577577364",
+                    "https://openalex.org/W1587026990",
+                    "https://openalex.org/W2104956231",
+                    "https://openalex.org/W2135061646",
+                    "https://openalex.org/W2500951036",
+                    "https://openalex.org/W2946046628",
+                    "https://openalex.org/W4254687493",
+                    "https://openalex.org/W6724262999"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2582603276",
+                    "https://openalex.org/W4312138714",
+                    "https://openalex.org/W4389426664",
+                    "https://openalex.org/W3008797681",
+                    "https://openalex.org/W2566205467",
+                    "https://openalex.org/W3012616639",
+                    "https://openalex.org/W3126000805",
+                    "https://openalex.org/W3198565742",
+                    "https://openalex.org/W2010064959",
+                    "https://openalex.org/W2157390150"
+                ],
+                "abstract_inverted_index": {
+                    "SUMMARY:": [
+                        0
+                    ],
+                    "The": [
+                        1,
+                        53,
+                        64
+                    ],
+                    "NanoStringTM": [
+                        2
+                    ],
+                    "nCounter\u00ae": [
+                        3,
+                        147
+                    ],
+                    "is": [
+                        4,
+                        23,
+                        137,
+                        153
+                    ],
+                    "a": [
+                        5,
+                        35,
+                        49,
+                        76,
+                        83,
+                        138
+                    ],
+                    "platform": [
+                        6
+                    ],
+                    "for": [
+                        7
+                    ],
+                    "the": [
+                        8,
+                        21,
+                        69,
+                        79,
+                        88,
+                        102,
+                        111,
+                        118,
+                        161
+                    ],
+                    "targeted": [
+                        9
+                    ],
+                    "quantification": [
+                        10
+                    ],
+                    "of": [
+                        11,
+                        56,
+                        87,
+                        146
+                    ],
+                    "expression": [
+                        12
+                    ],
+                    "data": [
+                        13,
+                        71,
+                        170
+                    ],
+                    "in": [
+                        14,
+                        25,
+                        75,
+                        117
+                    ],
+                    "biofluids": [
+                        15
+                    ],
+                    "and": [
+                        16,
+                        62,
+                        72,
+                        144,
+                        160
+                    ],
+                    "tissues.": [
+                        17
+                    ],
+                    "While": [
+                        18
+                    ],
+                    "software": [
+                        19
+                    ],
+                    "by": [
+                        20,
+                        99,
+                        101
+                    ],
+                    "manufacturer": [
+                        22
+                    ],
+                    "available": [
+                        24,
+                        154,
+                        172
+                    ],
+                    "addition": [
+                        26
+                    ],
+                    "to": [
+                        27,
+                        131
+                    ],
+                    "third": [
+                        28
+                    ],
+                    "parties": [
+                        29
+                    ],
+                    "packages,": [
+                        30
+                    ],
+                    "they": [
+                        31
+                    ],
+                    "do": [
+                        32
+                    ],
+                    "not": [
+                        33
+                    ],
+                    "provide": [
+                        34
+                    ],
+                    "complete": [
+                        36
+                    ],
+                    "quality": [
+                        37,
+                        46
+                    ],
+                    "control": [
+                        38
+                    ],
+                    "(QC)": [
+                        39
+                    ],
+                    "pipeline.": [
+                        40
+                    ],
+                    "Here,": [
+                        41
+                    ],
+                    "we": [
+                        42
+                    ],
+                    "present": [
+                        43
+                    ],
+                    "NACHO": [
+                        44,
+                        136,
+                        152
+                    ],
+                    "('NAnostring": [
+                        45
+                    ],
+                    "Control": [
+                        47
+                    ],
+                    "dasHbOard'),": [
+                        48
+                    ],
+                    "comprehensive": [
+                        50,
+                        139
+                    ],
+                    "QC": [
+                        51,
+                        90,
+                        94
+                    ],
+                    "R-package.": [
+                        52
+                    ],
+                    "package": [
+                        54
+                    ],
+                    "consists": [
+                        55
+                    ],
+                    "three": [
+                        57
+                    ],
+                    "subsequent": [
+                        58
+                    ],
+                    "steps:": [
+                        59
+                    ],
+                    "summarize,": [
+                        60
+                    ],
+                    "visualize": [
+                        61,
+                        80
+                    ],
+                    "normalize.": [
+                        63
+                    ],
+                    "summarize": [
+                        65
+                    ],
+                    "function": [
+                        66,
+                        81
+                    ],
+                    "collects": [
+                        67
+                    ],
+                    "all": [
+                        68
+                    ],
+                    "relevant": [
+                        70,
+                        89
+                    ],
+                    "stores": [
+                        73
+                    ],
+                    "it": [
+                        74
+                    ],
+                    "tidy": [
+                        77
+                    ],
+                    "format,": [
+                        78
+                    ],
+                    "initiates": [
+                        82
+                    ],
+                    "dashboard": [
+                        84
+                    ],
+                    "with": [
+                        85
+                    ],
+                    "plots": [
+                        86
+                    ],
+                    "outcomes.": [
+                        91
+                    ],
+                    "It": [
+                        92
+                    ],
+                    "contains": [
+                        93
+                    ],
+                    "metrics": [
+                        95
+                    ],
+                    "that": [
+                        96,
+                        114,
+                        141
+                    ],
+                    "are": [
+                        97,
+                        115,
+                        171
+                    ],
+                    "measured": [
+                        98
+                    ],
+                    "default": [
+                        100
+                    ],
+                    "manufacturer,": [
+                        103
+                    ],
+                    "but": [
+                        104
+                    ],
+                    "also": [
+                        105
+                    ],
+                    "calculates": [
+                        106
+                    ],
+                    "other": [
+                        107
+                    ],
+                    "insightful": [
+                        108
+                    ],
+                    "measures,": [
+                        109
+                    ],
+                    "including": [
+                        110
+                    ],
+                    "scaling": [
+                        112
+                    ],
+                    "factors": [
+                        113
+                    ],
+                    "needed": [
+                        116
+                    ],
+                    "normalization": [
+                        119,
+                        123,
+                        126
+                    ],
+                    "step.": [
+                        120
+                    ],
+                    "In": [
+                        121
+                    ],
+                    "this": [
+                        122
+                    ],
+                    "step,": [
+                        124
+                    ],
+                    "different": [
+                        125
+                    ],
+                    "methods": [
+                        127
+                    ],
+                    "can": [
+                        128
+                    ],
+                    "be": [
+                        129
+                    ],
+                    "chosen": [
+                        130
+                    ],
+                    "optimally": [
+                        132
+                    ],
+                    "preprocess": [
+                        133
+                    ],
+                    "data.": [
+                        134,
+                        148
+                    ],
+                    "Together,": [
+                        135
+                    ],
+                    "method": [
+                        140
+                    ],
+                    "optimizes": [
+                        142
+                    ],
+                    "insight": [
+                        143
+                    ],
+                    "preprocessing": [
+                        145
+                    ],
+                    "AVAILABILITY": [
+                        149
+                    ],
+                    "AND": [
+                        150
+                    ],
+                    "IMPLEMENTATION:": [
+                        151
+                    ],
+                    "as": [
+                        155
+                    ],
+                    "an": [
+                        156
+                    ],
+                    "R-package": [
+                        157
+                    ],
+                    "on": [
+                        158,
+                        164
+                    ],
+                    "CRAN": [
+                        159
+                    ],
+                    "development": [
+                        162
+                    ],
+                    "version": [
+                        163
+                    ],
+                    "GitHub": [
+                        165
+                    ],
+                    "https://github.com/mcanouil/NACHO.": [
+                        166
+                    ],
+                    "SUPPLEMENTARY": [
+                        167
+                    ],
+                    "INFORMATION:": [
+                        168
+                    ],
+                    "Supplementary": [
+                        169
+                    ],
+                    "at": [
+                        173
+                    ],
+                    "Bioinformatics": [
+                        174
+                    ],
+                    "online.": [
+                        175
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 10
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2019-08-29T00:00:00"
+            },
+            "altmetric": {
+                "title": "NACHO: an R package for quality control of NanoString nCounter data",
+                "doi": "10.1093/bioinformatics/btz647",
+                "pmid": "31504159",
+                "pmc": "PMC9883715",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "sci": 2,
+                    "pub": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 30058545,
+                        "mean": 10.808801871414603,
+                        "rank": 17951406,
+                        "pct": 39,
+                        "higher_than": 11842273
+                    },
+                    "journal": {
+                        "count": 13586,
+                        "mean": 7.989448697188282,
+                        "rank": 9105,
+                        "pct": 30,
+                        "higher_than": 4192
+                    },
+                    "similar_age_3m": {
+                        "count": 357431,
+                        "mean": 12.920990065215385,
+                        "rank": 182418,
+                        "pct": 47,
+                        "higher_than": 171528
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 191,
+                        "mean": 8.884816753926701,
+                        "rank": 119,
+                        "pct": 35,
+                        "higher_than": 67
+                    }
+                },
+                "authors": [
+                    "Micka\u00ebl Canouil",
+                    "Gerard A Bouland",
+                    "Am\u00e9lie Bonnefond",
+                    "Philippe Froguel",
+                    "Leen M \u2019t Hart",
+                    "Roderick C Slieker"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1580515200,
+                "epubdate": 1566518400,
+                "dimensions_publication_id": "pub.1120358504",
+                "altmetric_id": 65329157,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 3,
+                "cited_by_tweeters_count": 3,
+                "cited_by_accounts_count": 3,
+                "last_updated": 1566836563,
+                "score": 2.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.5
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btz647",
+                "added_on": 1566543040,
+                "published_on": 1566518400,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "36",
+                    "connotea": "0"
+                },
+                "readers_count": 36,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=65329157"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 2378,
+            "total_ccn": 231,
+            "avg_ccn": 3.35,
+            "nloc_per_file": 55.3,
+            "duplicate_rate": 28.2
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

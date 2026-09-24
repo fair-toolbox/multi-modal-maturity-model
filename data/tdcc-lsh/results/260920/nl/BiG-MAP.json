@@ -1,0 +1,2051 @@
+{
+    "BiG-MAP": {
+        "tool_name": "BiG-MAP",
+        "biotools": {
+            "name": "BiG-MAP",
+            "description": "The Biosynthetic Gene cluster Meta\u2019omics abundance Profiler (BiG-MAP). A command-line tool that it is able to profile the abundance and expression of a collection of gene clusters across metagenomic and metatranscriptomic data from any kind of biome, including human, plant, animal, marine, and soil microbiomes.",
+            "homepage": "https://github.com/medema-group/BiG-MAP",
+            "biotoolsID": "big-map",
+            "biotoolsCURIE": "biotools:big-map",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0313",
+                            "term": "Expression profile clustering"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3223",
+                            "term": "Differential gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3459",
+                            "term": "Functional clustering"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Workflow",
+                "Command-line tool",
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3941",
+                    "term": "Metatranscriptomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3697",
+                    "term": "Microbial ecology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3174",
+                    "term": "Metagenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3407",
+                    "term": "Endocrinology and metabolism"
+                }
+            ],
+            "operatingSystem": [
+                "Linux"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1128/MSYSTEMS.00937-21",
+                    "pmid": "34581602",
+                    "pmcid": "PMC8547482",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Big-map: An automated pipeline to profile metabolic gene cluster abundance and expression in microbiomes",
+                        "abstract": "\u00a9 2021 Pascal Andreu et al.Microbial gene clusters encoding the biosynthesis of primary and secondary metabolites play key roles in shaping microbial ecosystems and driving microbiome-associated phenotypes. Although effective approaches exist to evaluate the metabolic potential of such bacteria through identification of these metabolic gene clusters in their genomes, no automated pipelines exist to profile the abundance and expression levels of such gene clusters in microbiome samples to generate hypotheses about their functional roles, and to find associations with phenotypes of interest. Here, we describe BiG-MAP, a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data and evaluate their differential abundance and expression under different conditions. To illustrate its usefulness, we analyzed 96 metagenomic samples from healthy and caries-associated human oral microbiome samples and identified 252 gene clusters, including unreported ones, that were significantly more abundant in either phenotype. Among them, we found the muc operon, a gene cluster known to be associated with tooth decay. Additionally, we found a putative reuterin biosynthetic gene cluster from a Streptococcus strain to be enriched but not exclusively found in healthy samples; metabolomic data from the same samples showed masses with fragmentation patterns consistent with (poly)acrolein, which is known to spontaneously form from the products of the reuterin pathway and has been previously shown to inhibit pathogenic Streptococcus mutans strains. Thus, we show how BiG-MAP can be used to generate new hypotheses on potential drivers of microbiome-associated phenotypes and prioritize the experimental characterization of relevant gene clusters that may mediate them.",
+                        "date": "2021-09-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Andreu V.P."
+                            },
+                            {
+                                "name": "Augustijn H.E."
+                            },
+                            {
+                                "name": "van den Berg K."
+                            },
+                            {
+                                "name": "van der Hooft J.J.J."
+                            },
+                            {
+                                "name": "Fischbach M.A."
+                            },
+                            {
+                                "name": "Medema M.H."
+                            }
+                        ],
+                        "journal": "mSystems"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Michael A. Fischbach",
+                    "email": "fischbach@fischbachgroup.org",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-3079-8247",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Marnix H. Medema",
+                    "email": "marnix.medema@wur.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-2191-2821",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Chan019",
+            "additionDate": "2022-01-28T15:28:30.934047Z",
+            "lastUpdate": "2022-01-28T15:28:30.936597Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 244655566,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNDQ2NTU1NjY=",
+                "name": "BiG-MAP",
+                "full_name": "medema-group/BiG-MAP",
+                "private": false,
+                "owner": {
+                    "login": "medema-group",
+                    "id": 60616973,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNjE2OTcz",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/60616973?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/medema-group",
+                    "html_url": "https://github.com/medema-group",
+                    "followers_url": "https://api.github.com/users/medema-group/followers",
+                    "following_url": "https://api.github.com/users/medema-group/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/medema-group/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/medema-group/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/medema-group/subscriptions",
+                    "organizations_url": "https://api.github.com/users/medema-group/orgs",
+                    "repos_url": "https://api.github.com/users/medema-group/repos",
+                    "events_url": "https://api.github.com/users/medema-group/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/medema-group/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/medema-group/BiG-MAP",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/medema-group/BiG-MAP",
+                "forks_url": "https://api.github.com/repos/medema-group/BiG-MAP/forks",
+                "keys_url": "https://api.github.com/repos/medema-group/BiG-MAP/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/medema-group/BiG-MAP/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/medema-group/BiG-MAP/teams",
+                "hooks_url": "https://api.github.com/repos/medema-group/BiG-MAP/hooks",
+                "issue_events_url": "https://api.github.com/repos/medema-group/BiG-MAP/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/medema-group/BiG-MAP/events",
+                "assignees_url": "https://api.github.com/repos/medema-group/BiG-MAP/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/medema-group/BiG-MAP/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/medema-group/BiG-MAP/tags",
+                "blobs_url": "https://api.github.com/repos/medema-group/BiG-MAP/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/medema-group/BiG-MAP/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/medema-group/BiG-MAP/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/medema-group/BiG-MAP/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/medema-group/BiG-MAP/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/medema-group/BiG-MAP/languages",
+                "stargazers_url": "https://api.github.com/repos/medema-group/BiG-MAP/stargazers",
+                "contributors_url": "https://api.github.com/repos/medema-group/BiG-MAP/contributors",
+                "subscribers_url": "https://api.github.com/repos/medema-group/BiG-MAP/subscribers",
+                "subscription_url": "https://api.github.com/repos/medema-group/BiG-MAP/subscription",
+                "commits_url": "https://api.github.com/repos/medema-group/BiG-MAP/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/medema-group/BiG-MAP/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/medema-group/BiG-MAP/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/medema-group/BiG-MAP/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/medema-group/BiG-MAP/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/medema-group/BiG-MAP/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/medema-group/BiG-MAP/merges",
+                "archive_url": "https://api.github.com/repos/medema-group/BiG-MAP/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/medema-group/BiG-MAP/downloads",
+                "issues_url": "https://api.github.com/repos/medema-group/BiG-MAP/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/medema-group/BiG-MAP/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/medema-group/BiG-MAP/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/medema-group/BiG-MAP/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/medema-group/BiG-MAP/labels{/name}",
+                "releases_url": "https://api.github.com/repos/medema-group/BiG-MAP/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/medema-group/BiG-MAP/deployments",
+                "created_at": "2020-03-03T14:20:44Z",
+                "updated_at": "2026-05-23T12:16:58Z",
+                "pushed_at": "2026-01-27T12:57:03Z",
+                "git_url": "git://github.com/medema-group/BiG-MAP.git",
+                "ssh_url": "git@github.com:medema-group/BiG-MAP.git",
+                "clone_url": "https://github.com/medema-group/BiG-MAP.git",
+                "svn_url": "https://github.com/medema-group/BiG-MAP",
+                "homepage": null,
+                "size": 178292,
+                "stargazers_count": 33,
+                "watchers_count": 33,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 8,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 13,
+                "license": {
+                    "key": "other",
+                    "name": "Other",
+                    "spdx_id": "NOASSERTION",
+                    "url": null,
+                    "node_id": "MDc6TGljZW5zZTA="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 8,
+                "open_issues": 13,
+                "watchers": 33,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "medema-group",
+                    "id": 60616973,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNjE2OTcz",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/60616973?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/medema-group",
+                    "html_url": "https://github.com/medema-group",
+                    "followers_url": "https://api.github.com/users/medema-group/followers",
+                    "following_url": "https://api.github.com/users/medema-group/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/medema-group/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/medema-group/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/medema-group/subscriptions",
+                    "organizations_url": "https://api.github.com/users/medema-group/orgs",
+                    "repos_url": "https://api.github.com/users/medema-group/repos",
+                    "events_url": "https://api.github.com/users/medema-group/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/medema-group/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 8,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": "BiG-MAP_snakemake",
+                    "type": "tree"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "Pipeline_overview.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.org",
+                    "type": "blob"
+                },
+                {
+                    "path": "bigmap",
+                    "type": "tree"
+                },
+                {
+                    "path": "environment.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "example_data",
+                    "type": "tree"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "HAugustijn",
+                    "contributions": 78
+                },
+                {
+                    "login": "KoenVBerg",
+                    "contributions": 49
+                },
+                {
+                    "login": "nlouwen",
+                    "contributions": 31
+                },
+                {
+                    "login": "victoriapascal",
+                    "contributions": 19
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 32,
+                    "title": "\"BiG-MAP/src/BiG-MAP.map.py\" ---> \"ValueError: not enough values to unpack (expected 2, got 1)\"",
+                    "created_at": "2025-09-27T21:14:33Z",
+                    "closed_at": "2025-10-14T15:31:37Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Empty .corrected.count files and RPKM files",
+                    "created_at": "2025-01-07T12:47:41Z",
+                    "closed_at": "2025-08-29T13:23:39Z"
+                },
+                {
+                    "number": 27,
+                    "title": "ERROR: could not open \"mash_sketch.msh\" for reading.",
+                    "created_at": "2024-03-28T01:47:49Z",
+                    "closed_at": "2024-03-28T02:26:15Z"
+                },
+                {
+                    "number": 26,
+                    "title": "BiG-MAP.map.py type error",
+                    "created_at": "2024-03-19T22:16:48Z",
+                    "closed_at": "2025-08-29T13:13:37Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Possible to make a release for bioconda recipe?",
+                    "created_at": "2024-01-24T10:20:10Z",
+                    "closed_at": "2024-02-23T16:04:35Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Make output directory if it doesn't already exist",
+                    "created_at": "2023-05-11T06:11:57Z",
+                    "closed_at": "2025-08-29T13:26:00Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Add one in, have to re-run BiG-MAP.map.py?",
+                    "created_at": "2023-05-10T08:24:09Z",
+                    "closed_at": "2023-05-11T15:08:51Z"
+                },
+                {
+                    "number": 16,
+                    "title": "fastq naming pattern hard coded?",
+                    "created_at": "2023-05-02T06:46:35Z",
+                    "closed_at": "2025-08-29T13:17:45Z"
+                },
+                {
+                    "number": 13,
+                    "title": "stringent protein similarity results in less clusters",
+                    "created_at": "2021-11-09T07:29:37Z",
+                    "closed_at": "2021-11-17T10:35:31Z"
+                },
+                {
+                    "number": 12,
+                    "title": "ERROR: could not open \"01.identity_0.8/mash_sketch.msh\" for reading.",
+                    "created_at": "2021-10-23T13:36:59Z",
+                    "closed_at": "2021-10-26T11:11:29Z"
+                },
+                {
+                    "number": 11,
+                    "title": "normalization to control group for log2 fold change",
+                    "created_at": "2021-09-28T09:10:07Z",
+                    "closed_at": "2021-11-17T10:36:55Z"
+                },
+                {
+                    "number": 10,
+                    "title": "2 errors with using BiG-MAP snakemake",
+                    "created_at": "2021-09-24T04:09:28Z",
+                    "closed_at": "2021-09-24T13:25:18Z"
+                },
+                {
+                    "number": 9,
+                    "title": "metagenome_contigs",
+                    "created_at": "2021-07-15T07:50:13Z",
+                    "closed_at": "2021-11-17T10:41:43Z"
+                },
+                {
+                    "number": 8,
+                    "title": "BiG-MAP.analyse- ERROR reading BIOM file",
+                    "created_at": "2021-06-30T06:19:15Z",
+                    "closed_at": "2021-11-17T10:40:19Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Error in BiG-MAP.family.py with --metatranscriptomes option",
+                    "created_at": "2021-06-29T19:03:59Z",
+                    "closed_at": "2021-11-17T10:38:16Z"
+                },
+                {
+                    "number": 6,
+                    "title": "SameFileError while running BiG-MAP.family.py ",
+                    "created_at": "2021-06-28T01:24:05Z",
+                    "closed_at": "2021-06-29T06:37:06Z"
+                },
+                {
+                    "number": 5,
+                    "title": "error while running BiG-MAP.family.py:ValueError: substring not found",
+                    "created_at": "2021-06-05T02:31:43Z",
+                    "closed_at": "2021-06-26T12:40:38Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Readme: unclear steps for BiG-MAP.family.py",
+                    "created_at": "2020-11-02T16:01:32Z",
+                    "closed_at": "2020-11-25T09:24:04Z"
+                },
+                {
+                    "number": 1,
+                    "title": "environment dependencies (yaml-files) are not downloadable ",
+                    "created_at": "2020-11-02T15:47:50Z",
+                    "closed_at": "2020-12-03T09:52:58Z"
+                }
+            ],
+            "languages": {
+                "Python": 159854
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1128/msystems.00937-21",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34581602",
+                            "source": "MED",
+                            "pmid": "34581602",
+                            "pmcid": "PMC8547482",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8547482"
+                                ]
+                            },
+                            "doi": "10.1128/msystems.00937-21",
+                            "title": "BiG-MAP: an Automated Pipeline To Profile Metabolic Gene Cluster Abundance and Expression in Microbiomes.",
+                            "authorString": "Pascal Andreu V, Augustijn HE, van den Berg K, van der Hooft JJJ, Fischbach MA, Medema MH.",
+                            "journalTitle": "mSystems",
+                            "issue": "5",
+                            "journalVolume": "6",
+                            "pubYear": "2021",
+                            "journalIssn": "2379-5077",
+                            "pageInfo": "e0093721",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 36,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "bioproject",
+                                    "gca"
+                                ]
+                            },
+                            "firstIndexDate": "2021-09-29",
+                            "firstPublicationDate": "2021-09-28"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3204672378",
+                "doi": "https://doi.org/10.1128/msystems.00937-21",
+                "title": "BiG-MAP: an Automated Pipeline To Profile Metabolic Gene Cluster Abundance and Expression in Microbiomes",
+                "display_name": "BiG-MAP: an Automated Pipeline To Profile Metabolic Gene Cluster Abundance and Expression in Microbiomes",
+                "publication_year": 2021,
+                "publication_date": "2021-09-28",
+                "ids": {
+                    "openalex": "https://openalex.org/W3204672378",
+                    "doi": "https://doi.org/10.1128/msystems.00937-21",
+                    "mag": "3204672378",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34581602"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1128/msystems.00937-21",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1128/msystems.00937-21",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210181942",
+                        "display_name": "mSystems",
+                        "issn_l": "2379-5077",
+                        "issn": [
+                            "2379-5077"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320263",
+                        "host_organization_name": "American Society for Microbiology",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320263"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Society for Microbiology"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "mSystems",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1128/msystems.00937-21",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5077593852",
+                            "display_name": "Vict\u00f2ria Andreu",
+                            "orcid": "https://orcid.org/0000-0001-9609-9401"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Vict\u00f3ria Pascal Andreu",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9609-9401",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5011227155",
+                            "display_name": "Hannah E. Augustijn",
+                            "orcid": "https://orcid.org/0000-0002-1862-6699"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Hannah E. Augustijn",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1862-6699",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5091465770",
+                            "display_name": "Koen van den Berg",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Koen van den Berg",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5075156076",
+                            "display_name": "Justin J. J. van der Hooft",
+                            "orcid": "https://orcid.org/0000-0002-9340-5511"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Justin J. J. van der Hooft",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9340-5511",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050241478",
+                            "display_name": "Michael A. Fischbach",
+                            "orcid": "https://orcid.org/0000-0003-3079-8247"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I97018004",
+                                "display_name": "Stanford University",
+                                "ror": "https://ror.org/00f54p054",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I97018004"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Michael A. Fischbach",
+                        "raw_affiliation_strings": [
+                            "ChEM-H, Stanford University, Stanford, California, USA",
+                            "Department of Bioengineering, Stanford University, Stanford, California, USA",
+                            "Department of Microbiology and Immunology, Stanford University, Stanford, California, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3079-8247",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "ChEM-H, Stanford University, Stanford, California, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I97018004"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Bioengineering, Stanford University, Stanford, California, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I97018004"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Microbiology and Immunology, Stanford University, Stanford, California, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I97018004"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5034845813",
+                            "display_name": "Marnix H. Medema",
+                            "orcid": "https://orcid.org/0000-0002-2191-2821"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Marnix H. Medema",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2191-2821",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University, Wageningen, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5034845813",
+                    "https://openalex.org/A5050241478"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I913481162",
+                    "https://openalex.org/I97018004"
+                ],
+                "apc_list": {
+                    "value": 3500,
+                    "currency": "USD",
+                    "value_usd": 3500
+                },
+                "apc_paid": {
+                    "value": 3500,
+                    "currency": "USD",
+                    "value_usd": 3500
+                },
+                "fwci": 2.5237,
+                "has_fulltext": false,
+                "cited_by_count": 43,
+                "citation_normalized_percentile": {
+                    "value": 0.90628603,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "6",
+                    "issue": "5",
+                    "first_page": "e0093721",
+                    "last_page": "e0093721"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10015",
+                    "display_name": "Genomics and Phylogenetic Studies",
+                    "score": 0.9994000196456909,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9994000196456909,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10932",
+                        "display_name": "Microbial Metabolic Engineering and Bioproduction",
+                        "score": 0.9984999895095825,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11791",
+                        "display_name": "Microbial Community Ecology and Physiology",
+                        "score": 0.9980000257492065,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.684077262878418
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/abundance",
+                        "display_name": "Abundance (ecology)",
+                        "score": 0.6133462190628052
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/synteny",
+                        "display_name": "Synteny",
+                        "score": 0.5984426140785217
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/microbiome",
+                        "display_name": "Microbiome",
+                        "score": 0.5874617695808411
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene-cluster",
+                        "display_name": "Gene cluster",
+                        "score": 0.576339602470398
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.571329653263092
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5240557193756104
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/host",
+                        "display_name": "Host (biology)",
+                        "score": 0.5035387873649597
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/phenotype",
+                        "display_name": "Phenotype",
+                        "score": 0.477586030960083
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene-expression",
+                        "display_name": "Gene expression",
+                        "score": 0.47416841983795166
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.43342190980911255
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cluster",
+                        "display_name": "Cluster (spacecraft)",
+                        "score": 0.4188902974128723
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/evolutionary-biology",
+                        "display_name": "Evolutionary biology",
+                        "score": 0.40789344906806946
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.2302619218826294
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/ecology",
+                        "display_name": "Ecology",
+                        "score": 0.1919282078742981
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.06406852602958679
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.684077262878418
+                    },
+                    {
+                        "id": "https://openalex.org/C77077793",
+                        "wikidata": "https://www.wikidata.org/wiki/Q336019",
+                        "display_name": "Abundance (ecology)",
+                        "level": 2,
+                        "score": 0.6133462190628052
+                    },
+                    {
+                        "id": "https://openalex.org/C53702515",
+                        "wikidata": "https://www.wikidata.org/wiki/Q971246",
+                        "display_name": "Synteny",
+                        "level": 4,
+                        "score": 0.5984426140785217
+                    },
+                    {
+                        "id": "https://openalex.org/C143121216",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1330402",
+                        "display_name": "Microbiome",
+                        "level": 2,
+                        "score": 0.5874617695808411
+                    },
+                    {
+                        "id": "https://openalex.org/C36857842",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1501261",
+                        "display_name": "Gene cluster",
+                        "level": 3,
+                        "score": 0.576339602470398
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.571329653263092
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5240557193756104
+                    },
+                    {
+                        "id": "https://openalex.org/C126831891",
+                        "wikidata": "https://www.wikidata.org/wiki/Q221673",
+                        "display_name": "Host (biology)",
+                        "level": 2,
+                        "score": 0.5035387873649597
+                    },
+                    {
+                        "id": "https://openalex.org/C127716648",
+                        "wikidata": "https://www.wikidata.org/wiki/Q104053",
+                        "display_name": "Phenotype",
+                        "level": 3,
+                        "score": 0.477586030960083
+                    },
+                    {
+                        "id": "https://openalex.org/C150194340",
+                        "wikidata": "https://www.wikidata.org/wiki/Q26972",
+                        "display_name": "Gene expression",
+                        "level": 3,
+                        "score": 0.47416841983795166
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.43342190980911255
+                    },
+                    {
+                        "id": "https://openalex.org/C164866538",
+                        "wikidata": "https://www.wikidata.org/wiki/Q367351",
+                        "display_name": "Cluster (spacecraft)",
+                        "level": 2,
+                        "score": 0.4188902974128723
+                    },
+                    {
+                        "id": "https://openalex.org/C78458016",
+                        "wikidata": "https://www.wikidata.org/wiki/Q840400",
+                        "display_name": "Evolutionary biology",
+                        "level": 1,
+                        "score": 0.40789344906806946
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.2302619218826294
+                    },
+                    {
+                        "id": "https://openalex.org/C18903297",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7150",
+                        "display_name": "Ecology",
+                        "level": 1,
+                        "score": 0.1919282078742981
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.06406852602958679
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 7,
+                "locations": [
+                    {
+                        "id": "doi:10.1128/msystems.00937-21",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1128/msystems.00937-21",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4210181942",
+                            "display_name": "mSystems",
+                            "issn_l": "2379-5077",
+                            "issn": [
+                                "2379-5077"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320263",
+                            "host_organization_name": "American Society for Microbiology",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320263"
+                            ],
+                            "host_organization_lineage_names": [
+                                "American Society for Microbiology"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "mSystems",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34581602",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34581602",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "mSystems",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:36246458631c463292a7bd6febbb49f1",
+                        "is_oa": false,
+                        "landing_page_url": "https://doaj.org/article/36246458631c463292a7bd6febbb49f1",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "mSystems, Vol 6, Iss 5 (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:55e66c120e474c9fae27347bacf1a13a",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/55e66c120e474c9fae27347bacf1a13a",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "mSystems, Vol 6, Iss 5 (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:7437357",
+                        "is_oa": true,
+                        "landing_page_url": "http://europepmc.org/pmc/articles/PMC8547482",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8547482",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8547482",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "mSystems",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:wur:oai:library.wur.nl:wurpubs/588329",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.wur.nl/en/publications/big-map-an-automated-pipeline-to-profile-metabolic-gene-cluster-a",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "mSystems, 6(5)",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1128/msystems.00937-21",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1128/msystems.00937-21",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210181942",
+                        "display_name": "mSystems",
+                        "issn_l": "2379-5077",
+                        "issn": [
+                            "2379-5077"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320263",
+                        "host_organization_name": "American Society for Microbiology",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320263"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Society for Microbiology"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "mSystems",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/15",
+                        "display_name": "Life in Land",
+                        "score": 0.6399999856948853
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G4368164343",
+                        "display_name": null,
+                        "funder_award_id": "ASDI.2017.030",
+                        "funder_id": "https://openalex.org/F4320314239",
+                        "funder_display_name": "Netherlands eScience Center"
+                    },
+                    {
+                        "id": "https://openalex.org/G4799549128",
+                        "display_name": null,
+                        "funder_award_id": "ASDI.2017.030",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G5879863979",
+                        "display_name": null,
+                        "funder_award_id": "HR0011-15-C-0084",
+                        "funder_id": "https://openalex.org/F4320332180",
+                        "funder_display_name": "Defense Advanced Research Projects Agency"
+                    },
+                    {
+                        "id": "https://openalex.org/G6800288988",
+                        "display_name": null,
+                        "funder_award_id": "2017.030",
+                        "funder_id": "https://openalex.org/F4320314239",
+                        "funder_display_name": "Netherlands eScience Center"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320314239",
+                        "display_name": "Netherlands eScience Center",
+                        "ror": "https://ror.org/00rbjv475"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320315474",
+                        "display_name": "Chan Zuckerberg Initiative",
+                        "ror": "https://ror.org/02qenvm24"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320318895",
+                        "display_name": "NGM Biopharmaceuticals",
+                        "ror": "https://ror.org/01x8fkj71"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320318921",
+                        "display_name": "Revolution Medicines",
+                        "ror": "https://ror.org/00mny1y94"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332180",
+                        "display_name": "Defense Advanced Research Projects Agency",
+                        "ror": "https://ror.org/02caytj08"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332815",
+                        "display_name": "Advanced Research Projects Agency",
+                        "ror": "https://ror.org/02caytj08"
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 59,
+                "referenced_works": [
+                    "https://openalex.org/W802740667",
+                    "https://openalex.org/W1715339469",
+                    "https://openalex.org/W1998767819",
+                    "https://openalex.org/W1998827818",
+                    "https://openalex.org/W2015854884",
+                    "https://openalex.org/W2017387862",
+                    "https://openalex.org/W2019075610",
+                    "https://openalex.org/W2026006003",
+                    "https://openalex.org/W2040539560",
+                    "https://openalex.org/W2056215168",
+                    "https://openalex.org/W2088822458",
+                    "https://openalex.org/W2102619694",
+                    "https://openalex.org/W2108234281",
+                    "https://openalex.org/W2118334191",
+                    "https://openalex.org/W2119494786",
+                    "https://openalex.org/W2121748291",
+                    "https://openalex.org/W2123009189",
+                    "https://openalex.org/W2130731460",
+                    "https://openalex.org/W2135639274",
+                    "https://openalex.org/W2145448069",
+                    "https://openalex.org/W2146146835",
+                    "https://openalex.org/W2148316079",
+                    "https://openalex.org/W2158384363",
+                    "https://openalex.org/W2170551349",
+                    "https://openalex.org/W2171908015",
+                    "https://openalex.org/W2406250479",
+                    "https://openalex.org/W2408489451",
+                    "https://openalex.org/W2504691963",
+                    "https://openalex.org/W2531227267",
+                    "https://openalex.org/W2553097248",
+                    "https://openalex.org/W2555606342",
+                    "https://openalex.org/W2592344710",
+                    "https://openalex.org/W2607053856",
+                    "https://openalex.org/W2739475138",
+                    "https://openalex.org/W2751128104",
+                    "https://openalex.org/W2767088268",
+                    "https://openalex.org/W2776445964",
+                    "https://openalex.org/W2784198620",
+                    "https://openalex.org/W2885374389",
+                    "https://openalex.org/W2887564657",
+                    "https://openalex.org/W2897611961",
+                    "https://openalex.org/W2898140240",
+                    "https://openalex.org/W2899070097",
+                    "https://openalex.org/W2912990896",
+                    "https://openalex.org/W2942829220",
+                    "https://openalex.org/W2950150251",
+                    "https://openalex.org/W2951980953",
+                    "https://openalex.org/W2952216579",
+                    "https://openalex.org/W2967671156",
+                    "https://openalex.org/W2967688728",
+                    "https://openalex.org/W2978901899",
+                    "https://openalex.org/W2990471452",
+                    "https://openalex.org/W2997345427",
+                    "https://openalex.org/W2999138060",
+                    "https://openalex.org/W3034150637",
+                    "https://openalex.org/W3080789666",
+                    "https://openalex.org/W3128461805",
+                    "https://openalex.org/W3134710234",
+                    "https://openalex.org/W4320486508"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1969010119",
+                    "https://openalex.org/W4395463268",
+                    "https://openalex.org/W2626545547",
+                    "https://openalex.org/W2167155214",
+                    "https://openalex.org/W2124599625",
+                    "https://openalex.org/W2952105401",
+                    "https://openalex.org/W2347154653",
+                    "https://openalex.org/W2733127495",
+                    "https://openalex.org/W2898754462",
+                    "https://openalex.org/W2755865775"
+                ],
+                "abstract_inverted_index": {
+                    "Microbes": [
+                        0
+                    ],
+                    "play": [
+                        1
+                    ],
+                    "an": [
+                        2,
+                        124
+                    ],
+                    "increasingly": [
+                        3
+                    ],
+                    "recognized": [
+                        4
+                    ],
+                    "role": [
+                        5
+                    ],
+                    "in": [
+                        6,
+                        30,
+                        50,
+                        97,
+                        146
+                    ],
+                    "determining": [
+                        7
+                    ],
+                    "host-associated": [
+                        8
+                    ],
+                    "phenotypes": [
+                        9
+                    ],
+                    "by": [
+                        10
+                    ],
+                    "producing": [
+                        11
+                    ],
+                    "small": [
+                        12
+                    ],
+                    "molecules": [
+                        13,
+                        26
+                    ],
+                    "that": [
+                        14,
+                        47,
+                        66
+                    ],
+                    "interact": [
+                        15
+                    ],
+                    "with": [
+                        16
+                    ],
+                    "other": [
+                        17
+                    ],
+                    "microorganisms": [
+                        18
+                    ],
+                    "or": [
+                        19
+                    ],
+                    "host": [
+                        20,
+                        148
+                    ],
+                    "cells.": [
+                        21
+                    ],
+                    "The": [
+                        22
+                    ],
+                    "production": [
+                        23
+                    ],
+                    "of": [
+                        24,
+                        43,
+                        71,
+                        143
+                    ],
+                    "these": [
+                        25,
+                        73
+                    ],
+                    "is": [
+                        27,
+                        60
+                    ],
+                    "often": [
+                        28
+                    ],
+                    "encoded": [
+                        29
+                    ],
+                    "syntenic": [
+                        31
+                    ],
+                    "genomic": [
+                        32
+                    ],
+                    "regions,": [
+                        33
+                    ],
+                    "also": [
+                        34
+                    ],
+                    "known": [
+                        35
+                    ],
+                    "as": [
+                        36,
+                        113,
+                        115
+                    ],
+                    "gene": [
+                        37,
+                        74,
+                        92,
+                        144
+                    ],
+                    "clusters.": [
+                        38
+                    ],
+                    "With": [
+                        39
+                    ],
+                    "the": [
+                        40,
+                        69,
+                        108,
+                        140
+                    ],
+                    "increasing": [
+                        41
+                    ],
+                    "numbers": [
+                        42
+                    ],
+                    "(multi)omics": [
+                        44
+                    ],
+                    "data": [
+                        45,
+                        78,
+                        127
+                    ],
+                    "sets": [
+                        46
+                    ],
+                    "can": [
+                        48,
+                        67,
+                        133
+                    ],
+                    "help": [
+                        49
+                    ],
+                    "understanding": [
+                        51
+                    ],
+                    "complex": [
+                        52
+                    ],
+                    "ecosystems": [
+                        53
+                    ],
+                    "at": [
+                        54
+                    ],
+                    "a": [
+                        55,
+                        61,
+                        83,
+                        119
+                    ],
+                    "much": [
+                        56
+                    ],
+                    "deeper": [
+                        57
+                    ],
+                    "level,": [
+                        58
+                    ],
+                    "there": [
+                        59
+                    ],
+                    "need": [
+                        62
+                    ],
+                    "to": [
+                        63,
+                        136
+                    ],
+                    "create": [
+                        64
+                    ],
+                    "tools": [
+                        65
+                    ],
+                    "automate": [
+                        68
+                    ],
+                    "process": [
+                        70
+                    ],
+                    "analyzing": [
+                        72
+                    ],
+                    "clusters": [
+                        75,
+                        145
+                    ],
+                    "across": [
+                        76
+                    ],
+                    "omics": [
+                        77
+                    ],
+                    "sets.": [
+                        79
+                    ],
+                    "This": [
+                        80
+                    ],
+                    "report": [
+                        81
+                    ],
+                    "presents": [
+                        82
+                    ],
+                    "new": [
+                        84
+                    ],
+                    "software": [
+                        85
+                    ],
+                    "tool": [
+                        86,
+                        109
+                    ],
+                    "called": [
+                        87
+                    ],
+                    "BiG-MAP,": [
+                        88
+                    ],
+                    "which": [
+                        89
+                    ],
+                    "allows": [
+                        90
+                    ],
+                    "assessing": [
+                        91
+                    ],
+                    "cluster": [
+                        93
+                    ],
+                    "abundance": [
+                        94
+                    ],
+                    "and": [
+                        95,
+                        102,
+                        110
+                    ],
+                    "expression": [
+                        96
+                    ],
+                    "microbiome": [
+                        98,
+                        126
+                    ],
+                    "samples": [
+                        99
+                    ],
+                    "using": [
+                        100,
+                        118,
+                        123
+                    ],
+                    "metagenomic": [
+                        101
+                    ],
+                    "metatranscriptomic": [
+                        103
+                    ],
+                    "data.": [
+                        104
+                    ],
+                    "Here,": [
+                        105
+                    ],
+                    "we": [
+                        106,
+                        129
+                    ],
+                    "describe": [
+                        107
+                    ],
+                    "its": [
+                        111,
+                        116
+                    ],
+                    "functionalities,": [
+                        112
+                    ],
+                    "well": [
+                        114
+                    ],
+                    "validation": [
+                        117
+                    ],
+                    "mock": [
+                        120
+                    ],
+                    "community.": [
+                        121
+                    ],
+                    "Finally,": [
+                        122
+                    ],
+                    "oral": [
+                        125
+                    ],
+                    "set,": [
+                        128
+                    ],
+                    "show": [
+                        130
+                    ],
+                    "how": [
+                        131
+                    ],
+                    "it": [
+                        132
+                    ],
+                    "be": [
+                        134
+                    ],
+                    "used": [
+                        135
+                    ],
+                    "generate": [
+                        137
+                    ],
+                    "hypotheses": [
+                        138
+                    ],
+                    "regarding": [
+                        139
+                    ],
+                    "functional": [
+                        141
+                    ],
+                    "roles": [
+                        142
+                    ],
+                    "mediating": [
+                        147
+                    ],
+                    "phenotypes.": [
+                        149
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 10
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 7
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2021-10-11T00:00:00"
+            },
+            "altmetric": {
+                "title": "BiG-MAP: an Automated Pipeline To Profile Metabolic Gene Cluster Abundance and Expression in Microbiomes",
+                "doi": "10.1128/msystems.00937-21",
+                "pmid": "34581602",
+                "pmc": "PMC8547482",
+                "isbns": [],
+                "altmetric_jid": "5c6be5b371831b48a148c65d",
+                "issns": [
+                    "2379-5077"
+                ],
+                "journal": "mSystems",
+                "cohorts": {
+                    "sci": 28,
+                    "pub": 24
+                },
+                "context": {
+                    "all": {
+                        "count": 32439973,
+                        "mean": 10.49587047085397,
+                        "rank": 993571,
+                        "pct": 96,
+                        "higher_than": 31447013
+                    },
+                    "journal": {
+                        "count": 2415,
+                        "mean": 16.98751552795031,
+                        "rank": 131,
+                        "pct": 94,
+                        "higher_than": 2284
+                    },
+                    "similar_age_3m": {
+                        "count": 455874,
+                        "mean": 14.777775766988213,
+                        "rank": 18884,
+                        "pct": 95,
+                        "higher_than": 436992
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 159,
+                        "mean": 15.780817610062892,
+                        "rank": 4,
+                        "pct": 97,
+                        "higher_than": 155
+                    }
+                },
+                "authors": [
+                    "Vict\u00f3ria Pascal Andreu",
+                    "Hannah E. Augustijn",
+                    "Koen van den Berg",
+                    "Justin J. J. van der Hooft",
+                    "Michael A. Fischbach",
+                    "Marnix H. Medema"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1635206400,
+                "epubdate": 1632787200,
+                "dimensions_publication_id": "pub.1141446599",
+                "altmetric_id": 114189016,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 69,
+                "cited_by_tweeters_count": 52,
+                "cited_by_wikipedia_count": 3,
+                "cited_by_msm_count": 1,
+                "cited_by_feeds_count": 2,
+                "cited_by_accounts_count": 58,
+                "last_updated": 1700916534,
+                "score": 51.05000000000001,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 51.05000000000001
+                },
+                "url": "http://dx.doi.org/10.1128/msystems.00937-21",
+                "added_on": 1632862992,
+                "published_on": 1632787200,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "105",
+                    "connotea": "0"
+                },
+                "readers_count": 105,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=52&types=mbtttttw",
+                    "medium": "https://badges.altmetric.com/?size=100&score=52&types=mbtttttw",
+                    "large": "https://badges.altmetric.com/?size=180&score=52&types=mbtttttw"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=114189016"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 2196,
+            "total_ccn": 532,
+            "avg_ccn": 5.66,
+            "nloc_per_file": 549.0,
+            "duplicate_rate": 6.51
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

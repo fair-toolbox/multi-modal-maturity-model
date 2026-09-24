@@ -1,0 +1,3411 @@
+{
+    "LOVD": {
+        "tool_name": "LOVD",
+        "biotools": {
+            "name": "LOVD",
+            "description": "The Leiden Open Variation Database (LOVD) provides a flexible, freely available tool for gene-centered collection and display of DNA variations. LOVD 3.0 extends this idea to also provide patient-centered data storage and storage of NGS data, even of variants outside of genes.",
+            "homepage": "http://www.lovd.nl/3.0/home",
+            "biotoolsID": "lovd",
+            "biotoolsCURIE": "biotools:lovd",
+            "version": [
+                "3.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3197",
+                            "term": "Genetic variation analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Web application",
+                "Database portal"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3574",
+                    "term": "Human genetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0085",
+                    "term": "Functional genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0199",
+                    "term": "Genetic variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3325",
+                    "term": "Rare diseases"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Windows",
+                "Mac"
+            ],
+            "language": [
+                "PHP"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [
+                "NBIC",
+                "Rare Disease",
+                "ELIXIR-NL"
+            ],
+            "maturity": "Mature",
+            "cost": "Free of charge (with restrictions)",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [
+                {
+                    "url": "http://www.lovd.nl/3.0/download",
+                    "type": "Downloads page",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "http://www.lovd.nl/3.0/docs/",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1002/humu.21438",
+                    "pmid": "21520333",
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "LOVD v.2.0: The next generation in gene variant databases",
+                        "abstract": "Locus-Specific DataBases (LSDBs) store information on gene sequence variation associated with human phenotypes and are frequently used as a reference by researchers and clinicians. We developed the Leiden Open-source Variation Database (LOVD) as a platform-independent Web-based LSDB-in-a-Box package. LOVD was designed to be easy to set up and maintain and follows the Human Genome Variation Society (HGVS) recommendations. Here we describe LOVD v.2.0, which adds enhanced flexibility and functionality and has the capacity to store sequence variants in multiple genes per patient. To reduce redundancy, patient and sequence variant data are stored in separate tables. Tables are linked to generate connections between sequence variant data for each gene and every patient. The dynamic structure allows database managers to add custom columns. The database structure supports fast queries and allows storage of sequence variants from high-throughput sequence analysis, as demonstrated by the X-chromosomal Mental Retardation LOVD installation. LOVD contains measures to ensure database security from unauthorized access. Currently, the LOVD Website () lists 71 public LOVD installations hosting 3,294 gene variant databases with 199,000 variants in 84,000 patients. To promote LSDB standardization and thereby database interoperability, we offer free server space and help to establish an LSDB on our Leiden server. \u00a9 2011 Wiley-Liss, Inc.",
+                        "date": "2011-05-01T00:00:00Z",
+                        "citationCount": 817,
+                        "authors": [
+                            {
+                                "name": "Fokkema I.F.A.C."
+                            },
+                            {
+                                "name": "Taschner P.E.M."
+                            },
+                            {
+                                "name": "Schaafsma G.C.P."
+                            },
+                            {
+                                "name": "Celli J."
+                            },
+                            {
+                                "name": "Laros J.F.J."
+                            },
+                            {
+                                "name": "den Dunnen J.T."
+                            }
+                        ],
+                        "journal": "Human Mutation"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "ELIXIR-NL",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Institute",
+                    "typeRole": [
+                        "Provider"
+                    ],
+                    "note": null
+                },
+                {
+                    "name": null,
+                    "email": null,
+                    "url": "http://www.lovd.nl/3.0/contact",
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "ELIXIR-NL",
+            "additionDate": "2015-12-01T15:59:44Z",
+            "lastUpdate": "2024-11-24T21:08:42.537394Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "ELIXIR-EE"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 49880307,
+                "node_id": "MDEwOlJlcG9zaXRvcnk0OTg4MDMwNw==",
+                "name": "LOVD3",
+                "full_name": "LOVDnl/LOVD3",
+                "private": false,
+                "owner": {
+                    "login": "LOVDnl",
+                    "id": 16760192,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2NzYwMTky",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/16760192?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/LOVDnl",
+                    "html_url": "https://github.com/LOVDnl",
+                    "followers_url": "https://api.github.com/users/LOVDnl/followers",
+                    "following_url": "https://api.github.com/users/LOVDnl/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/LOVDnl/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/LOVDnl/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/LOVDnl/subscriptions",
+                    "organizations_url": "https://api.github.com/users/LOVDnl/orgs",
+                    "repos_url": "https://api.github.com/users/LOVDnl/repos",
+                    "events_url": "https://api.github.com/users/LOVDnl/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/LOVDnl/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/LOVDnl/LOVD3",
+                "description": "LOVD3 development repository",
+                "fork": false,
+                "url": "https://api.github.com/repos/LOVDnl/LOVD3",
+                "forks_url": "https://api.github.com/repos/LOVDnl/LOVD3/forks",
+                "keys_url": "https://api.github.com/repos/LOVDnl/LOVD3/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/LOVDnl/LOVD3/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/LOVDnl/LOVD3/teams",
+                "hooks_url": "https://api.github.com/repos/LOVDnl/LOVD3/hooks",
+                "issue_events_url": "https://api.github.com/repos/LOVDnl/LOVD3/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/LOVDnl/LOVD3/events",
+                "assignees_url": "https://api.github.com/repos/LOVDnl/LOVD3/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/LOVDnl/LOVD3/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/LOVDnl/LOVD3/tags",
+                "blobs_url": "https://api.github.com/repos/LOVDnl/LOVD3/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/LOVDnl/LOVD3/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/LOVDnl/LOVD3/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/LOVDnl/LOVD3/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/LOVDnl/LOVD3/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/LOVDnl/LOVD3/languages",
+                "stargazers_url": "https://api.github.com/repos/LOVDnl/LOVD3/stargazers",
+                "contributors_url": "https://api.github.com/repos/LOVDnl/LOVD3/contributors",
+                "subscribers_url": "https://api.github.com/repos/LOVDnl/LOVD3/subscribers",
+                "subscription_url": "https://api.github.com/repos/LOVDnl/LOVD3/subscription",
+                "commits_url": "https://api.github.com/repos/LOVDnl/LOVD3/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/LOVDnl/LOVD3/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/LOVDnl/LOVD3/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/LOVDnl/LOVD3/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/LOVDnl/LOVD3/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/LOVDnl/LOVD3/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/LOVDnl/LOVD3/merges",
+                "archive_url": "https://api.github.com/repos/LOVDnl/LOVD3/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/LOVDnl/LOVD3/downloads",
+                "issues_url": "https://api.github.com/repos/LOVDnl/LOVD3/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/LOVDnl/LOVD3/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/LOVDnl/LOVD3/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/LOVDnl/LOVD3/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/LOVDnl/LOVD3/labels{/name}",
+                "releases_url": "https://api.github.com/repos/LOVDnl/LOVD3/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/LOVDnl/LOVD3/deployments",
+                "created_at": "2016-01-18T14:00:18Z",
+                "updated_at": "2025-10-13T10:50:26Z",
+                "pushed_at": "2025-10-13T10:50:54Z",
+                "git_url": "git://github.com/LOVDnl/LOVD3.git",
+                "ssh_url": "git@github.com:LOVDnl/LOVD3.git",
+                "clone_url": "https://github.com/LOVDnl/LOVD3.git",
+                "svn_url": "https://github.com/LOVDnl/LOVD3",
+                "homepage": "http://www.LOVD.nl",
+                "size": 73415,
+                "stargazers_count": 25,
+                "watchers_count": 25,
+                "language": "PHP",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 4,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 88,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 4,
+                "open_issues": 88,
+                "watchers": 25,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "LOVDnl",
+                    "id": 16760192,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2NzYwMTky",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/16760192?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/LOVDnl",
+                    "html_url": "https://github.com/LOVDnl",
+                    "followers_url": "https://api.github.com/users/LOVDnl/followers",
+                    "following_url": "https://api.github.com/users/LOVDnl/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/LOVDnl/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/LOVDnl/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/LOVDnl/subscriptions",
+                    "organizations_url": "https://api.github.com/users/LOVDnl/orgs",
+                    "repos_url": "https://api.github.com/users/LOVDnl/repos",
+                    "events_url": "https://api.github.com/users/LOVDnl/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/LOVDnl/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 4,
+                "subscribers_count": 6
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".travis.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CODE_OF_CONDUCT.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "CONTRIBUTING.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "composer.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "doc",
+                    "type": "tree"
+                },
+                {
+                    "path": "git_hooks",
+                    "type": "tree"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "ifokkema",
+                    "contributions": 3503
+                },
+                {
+                    "login": "mkroon1",
+                    "contributions": 488
+                },
+                {
+                    "login": "lugte098",
+                    "contributions": 78
+                },
+                {
+                    "login": "loeswerkman",
+                    "contributions": 72
+                },
+                {
+                    "login": "dasscheman",
+                    "contributions": 22
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 657,
+                    "title": "GeneTests should be GTR",
+                    "created_at": "2024-07-22T19:54:03Z",
+                    "closed_at": "2024-08-01T13:09:57Z"
+                },
+                {
+                    "number": 645,
+                    "title": "Links to Orphanet no longer work",
+                    "created_at": "2024-04-16T11:51:55Z",
+                    "closed_at": "2024-04-16T12:12:41Z"
+                },
+                {
+                    "number": 639,
+                    "title": "Use VV for the creation of all transcripts, remove the Mutalyzer code",
+                    "created_at": "2024-01-23T11:00:49Z",
+                    "closed_at": "2024-01-26T14:16:17Z"
+                },
+                {
+                    "number": 618,
+                    "title": "LOVD is not compatible with PHP 8.1",
+                    "created_at": "2022-11-22T15:36:21Z",
+                    "closed_at": "2022-11-24T07:21:21Z"
+                },
+                {
+                    "number": 610,
+                    "title": "Improve the presentation of genomic locations",
+                    "created_at": "2022-08-17T07:59:05Z",
+                    "closed_at": "2022-08-17T08:15:32Z"
+                },
+                {
+                    "number": 602,
+                    "title": "LOVD 3 banner displays wrong gene symbol",
+                    "created_at": "2022-06-02T15:22:10Z",
+                    "closed_at": "2022-06-03T20:24:18Z"
+                },
+                {
+                    "number": 599,
+                    "title": "LOVD uses wrong protocol to open LRG web pages",
+                    "created_at": "2022-05-02T12:29:23Z",
+                    "closed_at": "2022-07-06T11:51:03Z"
+                },
+                {
+                    "number": 598,
+                    "title": "getVariantInfo's HGVS check does not recognise white spaces",
+                    "created_at": "2022-04-20T12:47:18Z",
+                    "closed_at": "2022-06-10T11:06:21Z"
+                },
+                {
+                    "number": 593,
+                    "title": "Found two typos in the code; empty() not run on variables but on a boolean and a static string.",
+                    "created_at": "2022-03-29T02:48:47Z",
+                    "closed_at": "2022-07-11T12:28:08Z"
+                },
+                {
+                    "number": 592,
+                    "title": "Custom columns displayed in API retrieval call",
+                    "created_at": "2022-03-22T06:58:14Z",
+                    "closed_at": "2022-03-29T02:41:59Z"
+                },
+                {
+                    "number": 591,
+                    "title": "Allow for `/diseases/[OMIMID]` forwards.",
+                    "created_at": "2022-03-21T14:35:51Z",
+                    "closed_at": "2022-07-06T12:27:28Z"
+                },
+                {
+                    "number": 590,
+                    "title": "REST JSON API includes hidden curator names",
+                    "created_at": "2022-03-18T14:59:36Z",
+                    "closed_at": "2022-07-06T11:51:01Z"
+                },
+                {
+                    "number": 585,
+                    "title": "expired certificate for https://databases.lovd.nl/",
+                    "created_at": "2022-02-02T15:12:13Z",
+                    "closed_at": "2022-02-02T15:25:16Z"
+                },
+                {
+                    "number": 583,
+                    "title": "Adapt VV library for recent change that throws warnings for silent corrections",
+                    "created_at": "2022-01-27T09:09:21Z",
+                    "closed_at": "2022-07-15T14:29:37Z"
+                },
+                {
+                    "number": 581,
+                    "title": "Current issues with `lovd_getVariantInfo()`",
+                    "created_at": "2022-01-10T16:32:11Z",
+                    "closed_at": "2025-01-31T16:25:58Z"
+                },
+                {
+                    "number": 580,
+                    "title": "Current issues with `lovd_fixHGVS()`",
+                    "created_at": "2022-01-10T16:20:58Z",
+                    "closed_at": "2025-01-31T16:25:57Z"
+                },
+                {
+                    "number": 579,
+                    "title": "Variants.php syntax error  ('search_VariantOnTranscript/DNA') ",
+                    "created_at": "2022-01-04T03:43:32Z",
+                    "closed_at": "2022-01-28T15:25:55Z"
+                },
+                {
+                    "number": 577,
+                    "title": "Blind SSRF vulnrability on lovd3 database url",
+                    "created_at": "2021-12-01T04:29:49Z",
+                    "closed_at": "2022-01-17T15:44:14Z"
+                },
+                {
+                    "number": 575,
+                    "title": "Batch syntax / variant checker on LOVD.nl",
+                    "created_at": "2021-11-24T11:55:24Z",
+                    "closed_at": "2022-09-09T12:47:07Z"
+                },
+                {
+                    "number": 571,
+                    "title": "LOVD incompatible with PHP8",
+                    "created_at": "2021-11-10T10:32:21Z",
+                    "closed_at": "2021-11-11T14:55:58Z"
+                },
+                {
+                    "number": 570,
+                    "title": "Pre-selected items are not visible in multiple-selection list when list is not in focus",
+                    "created_at": "2021-11-05T13:35:10Z",
+                    "closed_at": "2022-01-17T15:44:14Z"
+                },
+                {
+                    "number": 568,
+                    "title": "Make it easier to provide the classification method when using the submission API",
+                    "created_at": "2021-10-25T15:00:36Z",
+                    "closed_at": "2021-10-27T10:22:45Z"
+                },
+                {
+                    "number": 566,
+                    "title": "Improve `lovd_getVariantInfo()` and `lovd_fixHGVS()`.",
+                    "created_at": "2021-10-15T09:54:19Z",
+                    "closed_at": "2022-02-10T10:46:11Z"
+                },
+                {
+                    "number": 564,
+                    "title": "LOVD light's status page crashes",
+                    "created_at": "2021-10-11T16:05:39Z",
+                    "closed_at": "2021-10-14T14:27:58Z"
+                },
+                {
+                    "number": 560,
+                    "title": "Store genome build or transcript on which the variant was found.",
+                    "created_at": "2021-10-01T10:19:04Z",
+                    "closed_at": "2021-10-05T21:47:56Z"
+                },
+                {
+                    "number": 557,
+                    "title": "Allow users to deactivate a genome build",
+                    "created_at": "2021-09-29T07:39:09Z",
+                    "closed_at": "2021-10-01T11:29:28Z"
+                },
+                {
+                    "number": 553,
+                    "title": "Add/enable new GB",
+                    "created_at": "2021-09-24T09:06:55Z",
+                    "closed_at": "2021-10-01T11:30:38Z"
+                },
+                {
+                    "number": 548,
+                    "title": "LOVD2-style API showing unique variant view with JSON output picks random entries for alternative genome build",
+                    "created_at": "2021-09-16T15:14:02Z",
+                    "closed_at": "2021-09-17T14:01:49Z"
+                },
+                {
+                    "number": 542,
+                    "title": "Warn Curators not to overwrite data from Submitters",
+                    "created_at": "2021-08-13T08:23:36Z",
+                    "closed_at": "2021-08-16T09:07:18Z"
+                },
+                {
+                    "number": 540,
+                    "title": "bulk import",
+                    "created_at": "2021-08-11T02:52:34Z",
+                    "closed_at": "2021-08-16T09:12:18Z"
+                },
+                {
+                    "number": 539,
+                    "title": "Selection list values surrounded with spaces are not cleaned when importing",
+                    "created_at": "2021-08-10T13:28:35Z",
+                    "closed_at": "2021-08-16T09:03:52Z"
+                },
+                {
+                    "number": 537,
+                    "title": "Improve the inheritance in the Diseases VE",
+                    "created_at": "2021-08-10T12:11:59Z",
+                    "closed_at": "2021-08-10T13:05:24Z"
+                },
+                {
+                    "number": 536,
+                    "title": "How to submit or store CNV varitation",
+                    "created_at": "2021-08-09T08:49:07Z",
+                    "closed_at": "2021-08-10T08:42:05Z"
+                },
+                {
+                    "number": 533,
+                    "title": "Entries owned by LOVD don't show an owner.",
+                    "created_at": "2021-07-27T14:52:04Z",
+                    "closed_at": "2021-07-27T16:03:01Z"
+                },
+                {
+                    "number": 528,
+                    "title": "Tests are failing: migrate to Travis.com",
+                    "created_at": "2021-07-12T11:21:12Z",
+                    "closed_at": "2021-07-13T15:36:21Z"
+                },
+                {
+                    "number": 527,
+                    "title": "Query error: \"Invalid parameter number: number of bound variables does not match number of tokens\"",
+                    "created_at": "2021-07-12T10:58:51Z",
+                    "closed_at": "2021-07-12T13:39:03Z"
+                },
+                {
+                    "number": 526,
+                    "title": "Query error: \"Out of range value for column 'position_c_start' at row 1\"",
+                    "created_at": "2021-07-12T10:49:00Z",
+                    "closed_at": "2023-02-15T10:54:28Z"
+                },
+                {
+                    "number": 525,
+                    "title": "Add PubMed custom link to Remarks field in an Individual entry",
+                    "created_at": "2021-07-12T10:15:52Z",
+                    "closed_at": "2021-07-13T18:42:32Z"
+                },
+                {
+                    "number": 521,
+                    "title": "Load MANE transcript info from HGNC",
+                    "created_at": "2021-05-31T09:22:23Z",
+                    "closed_at": "2024-09-10T07:46:02Z"
+                },
+                {
+                    "number": 518,
+                    "title": "Build GA4GH Data Connect API",
+                    "created_at": "2021-04-22T11:58:00Z",
+                    "closed_at": "2021-07-09T15:21:30Z"
+                },
+                {
+                    "number": 515,
+                    "title": "Creating a gene that already exists under a different symbol can cause a query error",
+                    "created_at": "2021-04-16T08:30:40Z",
+                    "closed_at": "2021-04-16T08:54:01Z"
+                },
+                {
+                    "number": 513,
+                    "title": "Invalid transcripts for G6PC1",
+                    "created_at": "2021-04-15T13:26:52Z",
+                    "closed_at": "2021-04-15T18:33:17Z"
+                },
+                {
+                    "number": 508,
+                    "title": "Local gene custom columns requirement .",
+                    "created_at": "2021-04-07T01:39:51Z",
+                    "closed_at": "2021-08-10T07:00:28Z"
+                },
+                {
+                    "number": 507,
+                    "title": "Resetting password doesn't unlock account",
+                    "created_at": "2021-03-30T08:27:19Z",
+                    "closed_at": "2021-04-14T10:35:11Z"
+                },
+                {
+                    "number": 506,
+                    "title": "how to import variants on transcripts",
+                    "created_at": "2021-03-29T03:17:49Z",
+                    "closed_at": "2021-04-30T12:55:24Z"
+                },
+                {
+                    "number": 505,
+                    "title": "Page titles not always correct",
+                    "created_at": "2021-03-22T11:43:01Z",
+                    "closed_at": "2021-04-14T10:31:14Z"
+                },
+                {
+                    "number": 503,
+                    "title": "delete multiple individuals or other items in batch mode",
+                    "created_at": "2021-02-24T07:11:44Z",
+                    "closed_at": "2021-02-27T03:29:23Z"
+                },
+                {
+                    "number": 502,
+                    "title": "Allow submitters to choose license applying to their data",
+                    "created_at": "2021-02-23T15:58:15Z",
+                    "closed_at": "2021-05-11T13:49:40Z"
+                },
+                {
+                    "number": 497,
+                    "title": "'lovd3_whole_genome.lovd_v3_variants_on_transcripts' doesn't exist",
+                    "created_at": "2021-01-29T21:06:19Z",
+                    "closed_at": "2021-02-01T13:40:14Z"
+                },
+                {
+                    "number": 495,
+                    "title": "Can't add or register new user account",
+                    "created_at": "2021-01-28T07:48:09Z",
+                    "closed_at": "2021-02-22T10:03:38Z"
+                },
+                {
+                    "number": 492,
+                    "title": "Submission API: Providing HGNC IDs as integers causes unpredictable results",
+                    "created_at": "2021-01-07T12:34:22Z",
+                    "closed_at": "2021-01-07T12:57:11Z"
+                },
+                {
+                    "number": 489,
+                    "title": "Query error upon editing an entry while leaving a decimal field empty.",
+                    "created_at": "2020-12-30T12:35:20Z",
+                    "closed_at": "2021-01-04T08:36:01Z"
+                },
+                {
+                    "number": 488,
+                    "title": "Add links to Orphanet from the gene home pages.",
+                    "created_at": "2020-12-17T21:03:56Z",
+                    "closed_at": "2021-01-06T09:56:12Z"
+                },
+                {
+                    "number": 484,
+                    "title": "Curators and up can create variant submissions without classification.",
+                    "created_at": "2020-12-03T16:25:54Z",
+                    "closed_at": "2021-08-16T09:03:50Z"
+                },
+                {
+                    "number": 483,
+                    "title": "Not all information can be added to a gene once created",
+                    "created_at": "2020-12-02T16:19:38Z",
+                    "closed_at": "2020-12-16T13:00:56Z"
+                },
+                {
+                    "number": 482,
+                    "title": "Fix randomly failing tests",
+                    "created_at": "2020-12-01T15:26:55Z",
+                    "closed_at": "2020-12-10T12:31:50Z"
+                },
+                {
+                    "number": 480,
+                    "title": "Disallow semicolons to be used as a selection option for fields",
+                    "created_at": "2020-11-24T17:44:16Z",
+                    "closed_at": "2020-11-26T11:42:02Z"
+                },
+                {
+                    "number": 471,
+                    "title": "Improve link to MobiDetails",
+                    "created_at": "2020-10-20T13:34:36Z",
+                    "closed_at": "2020-10-21T09:31:36Z"
+                },
+                {
+                    "number": 469,
+                    "title": "Selectively send the NC to VV whenever using the transcript-based nomenclature.",
+                    "created_at": "2020-10-13T15:10:04Z",
+                    "closed_at": "2020-10-15T09:45:57Z"
+                },
+                {
+                    "number": 466,
+                    "title": "Add the option for submitting HGNC IDs instead of gene symbols for the submission API.",
+                    "created_at": "2020-10-06T15:29:14Z",
+                    "closed_at": "2020-10-09T10:19:14Z"
+                },
+                {
+                    "number": 464,
+                    "title": "Extend search capabilities.",
+                    "created_at": "2020-09-29T11:19:10Z",
+                    "closed_at": "2020-09-29T12:05:28Z"
+                },
+                {
+                    "number": 462,
+                    "title": "Allow processing variant-only submissions through the API",
+                    "created_at": "2020-09-21T16:18:55Z",
+                    "closed_at": "2020-09-28T12:54:06Z"
+                },
+                {
+                    "number": 460,
+                    "title": "LOVD generates DBIDs that are already in use under certain circumstances",
+                    "created_at": "2020-09-17T14:22:46Z",
+                    "closed_at": "2020-09-18T13:43:37Z"
+                },
+                {
+                    "number": 457,
+                    "title": "Fix MySQL weirdness in grouping variants.",
+                    "created_at": "2020-09-10T15:29:55Z",
+                    "closed_at": "2020-09-11T10:26:38Z"
+                },
+                {
+                    "number": 455,
+                    "title": "Add a link to MobiDetails",
+                    "created_at": "2020-09-07T10:26:20Z",
+                    "closed_at": "2020-10-05T09:39:55Z"
+                },
+                {
+                    "number": 454,
+                    "title": "LOVD2 Converter: LOVD2 records with multiple disease values do not get disease values converted individually",
+                    "created_at": "2020-09-01T07:58:03Z",
+                    "closed_at": "2020-09-10T13:29:25Z"
+                },
+                {
+                    "number": 452,
+                    "title": "Improve variant page's titles with variant information.",
+                    "created_at": "2020-07-31T10:23:47Z",
+                    "closed_at": "2020-09-17T13:56:48Z"
+                },
+                {
+                    "number": 450,
+                    "title": "Add feature to merge entries.",
+                    "created_at": "2020-07-30T07:47:20Z",
+                    "closed_at": "2020-07-31T09:18:26Z"
+                },
+                {
+                    "number": 448,
+                    "title": "Add username to password reset email.",
+                    "created_at": "2020-07-27T09:35:18Z",
+                    "closed_at": "2020-07-28T08:08:40Z"
+                },
+                {
+                    "number": 447,
+                    "title": "lovd.nl api version",
+                    "created_at": "2020-07-24T14:45:01Z",
+                    "closed_at": "2020-07-27T08:41:00Z"
+                },
+                {
+                    "number": 444,
+                    "title": "Mapping transcript to genome doesn't work if you empty the genomic field first.",
+                    "created_at": "2020-07-22T13:37:14Z",
+                    "closed_at": "2020-07-23T11:44:39Z"
+                },
+                {
+                    "number": 439,
+                    "title": "Fix link to NCBI sequence viewer",
+                    "created_at": "2020-07-20T12:48:43Z",
+                    "closed_at": "2020-07-22T12:33:39Z"
+                },
+                {
+                    "number": 438,
+                    "title": "Fix link to Ensembl genome browser",
+                    "created_at": "2020-07-20T12:45:44Z",
+                    "closed_at": "2020-07-22T11:24:02Z"
+                },
+                {
+                    "number": 437,
+                    "title": "LOVD2 converter: Warning: linked \"Variant/DbSNP\" to non-existing column \"VariantOnTranscript/DbSNP\" in output section \"Variants_On_Transcripts\".",
+                    "created_at": "2020-07-20T12:18:11Z",
+                    "closed_at": "2020-07-24T08:51:24Z"
+                },
+                {
+                    "number": 436,
+                    "title": "Add feature to download single submission in the LOVD3 format.",
+                    "created_at": "2020-07-17T11:52:34Z",
+                    "closed_at": "2020-07-21T07:40:14Z"
+                },
+                {
+                    "number": 435,
+                    "title": "Graphical display links don't work",
+                    "created_at": "2020-07-16T18:21:11Z",
+                    "closed_at": "2020-07-17T09:46:49Z"
+                },
+                {
+                    "number": 432,
+                    "title": "Improve the \"forgot my password\" feature.",
+                    "created_at": "2020-07-09T08:44:13Z",
+                    "closed_at": "2020-07-13T08:42:49Z"
+                },
+                {
+                    "number": 430,
+                    "title": "Custom links on the gene homepage are hard coded",
+                    "created_at": "2020-07-08T12:18:45Z",
+                    "closed_at": "2020-07-09T07:25:20Z"
+                },
+                {
+                    "number": 428,
+                    "title": "Spam registration filter is too strict",
+                    "created_at": "2020-07-07T13:42:45Z",
+                    "closed_at": "2020-07-08T11:43:31Z"
+                },
+                {
+                    "number": 420,
+                    "title": "API not returning EXT2 result for primary transcript that is present in UI",
+                    "created_at": "2020-06-11T16:39:09Z",
+                    "closed_at": "2020-06-16T07:40:39Z"
+                },
+                {
+                    "number": 394,
+                    "title": "How to remove LOVD when the uninstall lock is set",
+                    "created_at": "2019-08-30T15:56:45Z",
+                    "closed_at": "2019-09-02T11:23:15Z"
+                },
+                {
+                    "number": 386,
+                    "title": "The `variants/in_gene` page is extremely slow on the GV shared.",
+                    "created_at": "2019-08-01T15:57:08Z",
+                    "closed_at": "2019-08-06T14:28:41Z"
+                },
+                {
+                    "number": 367,
+                    "title": "after install  step 4, click [continue to setup area]  show \u3010404 ERROR, Page not found]",
+                    "created_at": "2018-10-18T03:11:12Z",
+                    "closed_at": "2018-10-24T00:27:11Z"
+                },
+                {
+                    "number": 348,
+                    "title": "Make current REST API reply in JSON, too",
+                    "created_at": "2018-03-19T23:18:51Z",
+                    "closed_at": "2018-04-19T01:59:10Z"
+                },
+                {
+                    "number": 340,
+                    "title": "ORCID returning ID not found error when creating new user",
+                    "created_at": "2018-03-06T05:25:41Z",
+                    "closed_at": "2018-03-09T03:27:02Z"
+                },
+                {
+                    "number": 327,
+                    "title": "Create new view: Individuals and Phenotypes",
+                    "created_at": "2017-12-19T11:44:57Z",
+                    "closed_at": "2018-01-25T16:02:24Z"
+                },
+                {
+                    "number": 314,
+                    "title": "Refseq parser widget hangs in Firefox 57",
+                    "created_at": "2017-11-17T09:11:46Z",
+                    "closed_at": "2018-05-15T15:03:09Z"
+                },
+                {
+                    "number": 313,
+                    "title": "Cannot click through on transcripts viewlist",
+                    "created_at": "2017-11-16T14:42:16Z",
+                    "closed_at": "2017-11-21T12:32:03Z"
+                },
+                {
+                    "number": 308,
+                    "title": "Error inserting gene",
+                    "created_at": "2017-10-25T15:51:40Z",
+                    "closed_at": "2018-01-29T11:29:59Z"
+                },
+                {
+                    "number": 307,
+                    "title": "Owner field doesn't always show tooltip",
+                    "created_at": "2017-10-20T08:09:27Z",
+                    "closed_at": "2018-01-12T18:51:41Z"
+                },
+                {
+                    "number": 305,
+                    "title": "Don't duplicate the \"Variant effect\" fields unnecessarily.",
+                    "created_at": "2017-10-19T14:01:19Z",
+                    "closed_at": "2018-02-01T09:04:38Z"
+                },
+                {
+                    "number": 292,
+                    "title": "Some viewlists lose filters when using browser back button",
+                    "created_at": "2017-09-28T12:29:24Z",
+                    "closed_at": "2017-10-09T12:06:15Z"
+                },
+                {
+                    "number": 291,
+                    "title": "Query error on sorting unique variants viewlist.",
+                    "created_at": "2017-09-28T11:52:35Z",
+                    "closed_at": "2017-10-09T13:15:45Z"
+                },
+                {
+                    "number": 289,
+                    "title": "Improve confirming a variant with a screening",
+                    "created_at": "2017-09-26T11:53:25Z",
+                    "closed_at": "2018-08-09T16:06:31Z"
+                },
+                {
+                    "number": 284,
+                    "title": "Upgrade Travis environment and simplify setup",
+                    "created_at": "2017-09-06T09:58:43Z",
+                    "closed_at": "2020-05-26T08:13:12Z"
+                },
+                {
+                    "number": 283,
+                    "title": "Can not add colleagues that are not allowed to edit with MySQL's strict mode enabled",
+                    "created_at": "2017-09-05T13:51:37Z",
+                    "closed_at": "2017-09-20T13:37:25Z"
+                },
+                {
+                    "number": 277,
+                    "title": "The page header isn't properly displayed when system logo is changed.",
+                    "created_at": "2017-08-16T20:39:05Z",
+                    "closed_at": "2017-08-18T12:50:23Z"
+                },
+                {
+                    "number": 275,
+                    "title": "Copy the inheritance field feature from LOVD+",
+                    "created_at": "2017-08-11T18:09:55Z",
+                    "closed_at": "2019-09-05T11:53:11Z"
+                },
+                {
+                    "number": 270,
+                    "title": "Redirect genes/HGNC_ID to genes/SYMBOL",
+                    "created_at": "2017-08-09T15:03:41Z",
+                    "closed_at": "2018-01-15T10:13:10Z"
+                },
+                {
+                    "number": 261,
+                    "title": "Additional variant effect values",
+                    "created_at": "2017-08-02T15:28:36Z",
+                    "closed_at": "2017-09-28T10:43:23Z"
+                },
+                {
+                    "number": 257,
+                    "title": "Make DOI reference search be partial if requested",
+                    "created_at": "2017-07-24T12:59:21Z",
+                    "closed_at": "2019-07-31T05:55:18Z"
+                },
+                {
+                    "number": 255,
+                    "title": "Unique variant view doesn't have proper links for genes with multiple transcripts",
+                    "created_at": "2017-07-24T11:02:00Z",
+                    "closed_at": "2019-07-30T15:06:33Z"
+                },
+                {
+                    "number": 254,
+                    "title": "Gene symbol filter on public list of LOVD installations not working",
+                    "created_at": "2017-07-24T09:47:46Z",
+                    "closed_at": "2017-07-24T10:41:21Z"
+                },
+                {
+                    "number": 251,
+                    "title": "VariantOnGenome/DNA\tfield in lovd_variants table too small by default",
+                    "created_at": "2017-07-20T21:21:16Z",
+                    "closed_at": "2019-07-31T05:51:12Z"
+                },
+                {
+                    "number": 248,
+                    "title": "Show LOVD is an IRDiRC recognized resource",
+                    "created_at": "2017-07-19T11:00:50Z",
+                    "closed_at": "2019-07-22T15:08:12Z"
+                },
+                {
+                    "number": 247,
+                    "title": "Feature shared database prominently on lovd homepage",
+                    "created_at": "2017-07-19T10:37:20Z",
+                    "closed_at": "2019-07-25T09:38:40Z"
+                },
+                {
+                    "number": 246,
+                    "title": "List of installations on version 2.0 on website.",
+                    "created_at": "2017-07-19T09:54:58Z",
+                    "closed_at": "2017-07-24T09:44:34Z"
+                },
+                {
+                    "number": 245,
+                    "title": "Import file parsing fails with a fatal error when the diseaseid field is left empty for a phenotype record",
+                    "created_at": "2017-07-19T08:34:40Z",
+                    "closed_at": "2017-09-18T13:03:44Z"
+                },
+                {
+                    "number": 244,
+                    "title": "Support multiple genome builds",
+                    "created_at": "2017-07-11T13:13:18Z",
+                    "closed_at": "2021-09-29T15:49:55Z"
+                },
+                {
+                    "number": 243,
+                    "title": "variants_found missing in LOVD2 to LOVD3 conversion output",
+                    "created_at": "2017-07-10T13:53:32Z",
+                    "closed_at": "2017-07-20T13:02:34Z"
+                },
+                {
+                    "number": 242,
+                    "title": "Display of screening with linked variants",
+                    "created_at": "2017-07-07T13:11:50Z",
+                    "closed_at": "2017-09-13T13:52:03Z"
+                },
+                {
+                    "number": 238,
+                    "title": "Submitter IDs not translated in LOVD2 conversion",
+                    "created_at": "2017-06-27T15:00:05Z",
+                    "closed_at": "2017-07-06T13:26:47Z"
+                },
+                {
+                    "number": 237,
+                    "title": "Link to reading frame checker improperly displayed for some genes",
+                    "created_at": "2017-06-26T13:29:19Z",
+                    "closed_at": "2017-07-05T10:09:10Z"
+                },
+                {
+                    "number": 233,
+                    "title": "Deadlocks in ViewLists",
+                    "created_at": "2017-06-19T13:30:13Z",
+                    "closed_at": "2017-06-19T14:35:51Z"
+                },
+                {
+                    "number": 230,
+                    "title": "Working with custom columns",
+                    "created_at": "2017-06-06T11:45:28Z",
+                    "closed_at": "2017-06-06T20:40:03Z"
+                },
+                {
+                    "number": 226,
+                    "title": "Set config.ini.php through environment variables",
+                    "created_at": "2017-05-31T16:12:59Z",
+                    "closed_at": "2017-06-06T09:46:05Z"
+                },
+                {
+                    "number": 225,
+                    "title": "Allow multiple entries to be published (curated) at the same time",
+                    "created_at": "2017-05-23T14:02:41Z",
+                    "closed_at": "2020-03-11T12:35:54Z"
+                },
+                {
+                    "number": 219,
+                    "title": "The Reference Sequence Parser no longer downloads GenBank files over a proxy server.",
+                    "created_at": "2017-05-15T18:09:33Z",
+                    "closed_at": "2017-05-31T14:29:06Z"
+                },
+                {
+                    "number": 217,
+                    "title": "Set Reply-To header for submission emails",
+                    "created_at": "2017-05-12T12:27:04Z",
+                    "closed_at": "2017-05-24T11:24:02Z"
+                },
+                {
+                    "number": 214,
+                    "title": "Custom links not shown properly during find & replace.",
+                    "created_at": "2017-05-04T14:03:04Z",
+                    "closed_at": "2018-01-26T18:37:31Z"
+                },
+                {
+                    "number": 213,
+                    "title": "Curator is allowed to leave `effect_reported` set to unclassified.",
+                    "created_at": "2017-05-02T09:53:46Z",
+                    "closed_at": "2017-08-14T15:40:44Z"
+                },
+                {
+                    "number": 210,
+                    "title": "Default values for non-essential NOT NULL database fields",
+                    "created_at": "2017-04-20T15:10:02Z",
+                    "closed_at": "2017-06-16T17:42:32Z"
+                },
+                {
+                    "number": 208,
+                    "title": "Links to deprecated HGVS nomenclature website",
+                    "created_at": "2017-04-20T09:35:28Z",
+                    "closed_at": "2017-05-12T11:31:08Z"
+                },
+                {
+                    "number": 207,
+                    "title": "Link to Exon/Intron table missing on gene homepage",
+                    "created_at": "2017-04-20T09:31:40Z",
+                    "closed_at": "2017-05-12T11:42:01Z"
+                },
+                {
+                    "number": 206,
+                    "title": "Gene homepage title has unnecessary word \"view\"",
+                    "created_at": "2017-04-20T09:21:52Z",
+                    "closed_at": "2017-08-14T16:22:56Z"
+                },
+                {
+                    "number": 205,
+                    "title": "The \"select all\" feature in the options menu is not working",
+                    "created_at": "2017-04-13T07:07:24Z",
+                    "closed_at": "2017-06-19T19:49:06Z"
+                },
+                {
+                    "number": 203,
+                    "title": "Import fails on column name containing `-`",
+                    "created_at": "2017-03-23T09:39:14Z",
+                    "closed_at": "2017-04-10T10:06:27Z"
+                },
+                {
+                    "number": 202,
+                    "title": "Overview of variants with multiple classifications",
+                    "created_at": "2017-03-08T13:42:18Z",
+                    "closed_at": "2017-10-06T17:52:50Z"
+                },
+                {
+                    "number": 200,
+                    "title": "Fatal error on editing particular gene (on shared installation)",
+                    "created_at": "2017-03-06T10:43:23Z",
+                    "closed_at": "2017-03-10T00:17:17Z"
+                },
+                {
+                    "number": 196,
+                    "title": "Rows in viewlist can't be opened in new tab.",
+                    "created_at": "2017-03-02T10:43:36Z",
+                    "closed_at": "2017-06-19T12:36:58Z"
+                },
+                {
+                    "number": 193,
+                    "title": "Individual with many diseases takes up much space in viewlist.",
+                    "created_at": "2017-02-23T10:44:47Z",
+                    "closed_at": "2017-09-14T15:21:25Z"
+                },
+                {
+                    "number": 192,
+                    "title": "Changes to individual not saved",
+                    "created_at": "2017-02-23T10:37:39Z",
+                    "closed_at": "2017-06-19T13:23:25Z"
+                },
+                {
+                    "number": 191,
+                    "title": "Panel size description could be improved",
+                    "created_at": "2017-02-22T15:24:51Z",
+                    "closed_at": "2017-08-14T15:14:23Z"
+                },
+                {
+                    "number": 190,
+                    "title": "Add links to records created by user on user's profile page",
+                    "created_at": "2017-02-22T15:16:02Z",
+                    "closed_at": "2017-08-14T14:55:21Z"
+                },
+                {
+                    "number": 189,
+                    "title": "Viewlist 'no results' warning message sometimes unclear.",
+                    "created_at": "2017-02-22T10:32:35Z",
+                    "closed_at": "2017-09-29T16:56:04Z"
+                },
+                {
+                    "number": 187,
+                    "title": "Find & replace error on searching for \"*\"",
+                    "created_at": "2017-02-17T12:46:21Z",
+                    "closed_at": "2018-03-14T02:04:20Z"
+                },
+                {
+                    "number": 185,
+                    "title": "SQL only full group by error in DBID check.",
+                    "created_at": "2017-02-16T09:34:30Z",
+                    "closed_at": "2017-04-24T12:16:00Z"
+                },
+                {
+                    "number": 180,
+                    "title": "Browser's password autofill fills wrong text field with username",
+                    "created_at": "2017-02-01T10:18:05Z",
+                    "closed_at": "2017-05-19T13:46:21Z"
+                },
+                {
+                    "number": 176,
+                    "title": "Viewlist entry count differs from what is displayed",
+                    "created_at": "2017-01-24T14:46:15Z",
+                    "closed_at": "2017-01-26T09:39:54Z"
+                },
+                {
+                    "number": 175,
+                    "title": "Download link missing from gene homepage for public, even if setting is enabled",
+                    "created_at": "2017-01-19T21:38:13Z",
+                    "closed_at": "2017-06-15T19:36:53Z"
+                },
+                {
+                    "number": 174,
+                    "title": "Let test installations identify themselves correctly",
+                    "created_at": "2017-01-18T21:48:54Z",
+                    "closed_at": "2017-02-20T03:12:48Z"
+                },
+                {
+                    "number": 173,
+                    "title": "Installation failed on ubuntu 16",
+                    "created_at": "2017-01-16T16:01:57Z",
+                    "closed_at": "2017-01-31T14:59:54Z"
+                },
+                {
+                    "number": 167,
+                    "title": "Manage transcripts feature doesn't allow addition of transcript anymore",
+                    "created_at": "2017-01-09T18:41:58Z",
+                    "closed_at": "2017-01-13T15:55:51Z"
+                },
+                {
+                    "number": 166,
+                    "title": "New header does not take full width on Firefox",
+                    "created_at": "2017-01-09T18:39:48Z",
+                    "closed_at": "2017-01-25T10:00:40Z"
+                },
+                {
+                    "number": 165,
+                    "title": "Custom link is not active on the variant annotation page while active in variants table",
+                    "created_at": "2016-12-23T15:23:45Z",
+                    "closed_at": "2017-10-06T13:41:50Z"
+                },
+                {
+                    "number": 164,
+                    "title": "Created custom link is not displayed in variants table ",
+                    "created_at": "2016-12-14T11:35:56Z",
+                    "closed_at": "2016-12-19T10:17:32Z"
+                },
+                {
+                    "number": 162,
+                    "title": "Confusing message when curator disables custom column",
+                    "created_at": "2016-12-08T15:32:07Z",
+                    "closed_at": "2017-08-08T15:30:45Z"
+                },
+                {
+                    "number": 157,
+                    "title": "Query error when viewing the unique variant list in the whole genome installation",
+                    "created_at": "2016-11-29T16:21:08Z",
+                    "closed_at": "2016-11-30T14:26:22Z"
+                },
+                {
+                    "number": 156,
+                    "title": "LOVD uses old-style constructors.",
+                    "created_at": "2016-11-24T10:41:55Z",
+                    "closed_at": "2017-01-27T09:02:12Z"
+                },
+                {
+                    "number": 155,
+                    "title": "Undefined index notice in LOVD_Custom::checkFields()",
+                    "created_at": "2016-11-23T10:02:39Z",
+                    "closed_at": "2017-06-15T14:49:53Z"
+                },
+                {
+                    "number": 149,
+                    "title": "Create API to submit data into",
+                    "created_at": "2016-11-11T20:05:03Z",
+                    "closed_at": "2017-12-13T15:19:21Z"
+                },
+                {
+                    "number": 144,
+                    "title": "Make LOVD compatible with the `ONLY_FULL_GROUP_BY` MySQL setting.",
+                    "created_at": "2016-11-09T10:36:00Z",
+                    "closed_at": "2016-12-15T12:31:48Z"
+                },
+                {
+                    "number": 143,
+                    "title": "LOVD won't install with error \"Invalid default value for 'start_date'\"",
+                    "created_at": "2016-11-09T09:11:51Z",
+                    "closed_at": "2017-01-31T14:59:54Z"
+                },
+                {
+                    "number": 142,
+                    "title": "Upgrade reCAPTCHA",
+                    "created_at": "2016-11-02T16:33:57Z",
+                    "closed_at": "2017-06-16T17:35:09Z"
+                },
+                {
+                    "number": 140,
+                    "title": "Position fields during import sometimes left as NULL",
+                    "created_at": "2016-10-24T13:41:47Z",
+                    "closed_at": "2016-12-22T10:48:53Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Port reading frame checker from LOVD2",
+                    "created_at": "2016-10-14T09:22:52Z",
+                    "closed_at": "2017-06-16T17:31:30Z"
+                },
+                {
+                    "number": 136,
+                    "title": "LOVD 3.0-17 broke editing a custom column",
+                    "created_at": "2016-09-26T18:00:01Z",
+                    "closed_at": "2016-09-27T15:09:10Z"
+                },
+                {
+                    "number": 134,
+                    "title": "LOVD 3.0-17 broke rowlinks for custom VLs with VOGs w/o VOTs",
+                    "created_at": "2016-09-23T14:49:26Z",
+                    "closed_at": "2016-09-27T15:07:37Z"
+                },
+                {
+                    "number": 127,
+                    "title": "Find & Replace improvements",
+                    "created_at": "2016-09-09T15:00:11Z",
+                    "closed_at": "2018-01-26T18:37:31Z"
+                },
+                {
+                    "number": 124,
+                    "title": "Query optimizer doesn't like the new Diseases VL.",
+                    "created_at": "2016-09-07T11:30:34Z",
+                    "closed_at": "2016-09-09T13:13:40Z"
+                },
+                {
+                    "number": 121,
+                    "title": "Default values for TEXT fields in mysql",
+                    "created_at": "2016-09-05T13:19:03Z",
+                    "closed_at": "2016-09-05T14:25:21Z"
+                },
+                {
+                    "number": 113,
+                    "title": "Improve tests to be less cluttered",
+                    "created_at": "2016-08-31T14:44:10Z",
+                    "closed_at": "2020-05-26T08:18:13Z"
+                },
+                {
+                    "number": 112,
+                    "title": "SOAP using HTTPS over proxy using PHP 5.6.0 doesn't work",
+                    "created_at": "2016-08-28T10:02:50Z",
+                    "closed_at": "2016-09-05T14:00:15Z"
+                },
+                {
+                    "number": 109,
+                    "title": "Change default options custom column VariantOnGenome/Genetic_origin",
+                    "created_at": "2016-08-12T14:42:11Z",
+                    "closed_at": "2016-09-16T10:59:24Z"
+                },
+                {
+                    "number": 107,
+                    "title": "Link on disease page to HPO",
+                    "created_at": "2016-08-08T08:18:11Z",
+                    "closed_at": "2017-07-24T16:12:32Z"
+                },
+                {
+                    "number": 106,
+                    "title": "Single-letter gene \"T\" is not fully supported",
+                    "created_at": "2016-08-05T09:19:33Z",
+                    "closed_at": "2017-03-10T01:10:42Z"
+                },
+                {
+                    "number": 105,
+                    "title": "Assigned colleagues can't see non-public fields in ViewEntries.",
+                    "created_at": "2016-08-03T14:12:42Z",
+                    "closed_at": "2016-09-01T17:14:28Z"
+                },
+                {
+                    "number": 102,
+                    "title": "Slow query for full data view without gene in selected",
+                    "created_at": "2016-07-20T14:45:59Z",
+                    "closed_at": "2017-10-11T11:03:58Z"
+                },
+                {
+                    "number": 101,
+                    "title": "New columns for diseases viewlist: tissue, alias, remarks",
+                    "created_at": "2016-07-19T15:23:53Z",
+                    "closed_at": "2016-09-02T09:24:32Z"
+                },
+                {
+                    "number": 98,
+                    "title": "Configurable homepage",
+                    "created_at": "2016-07-18T13:12:51Z",
+                    "closed_at": "2017-07-24T16:18:50Z"
+                },
+                {
+                    "number": 96,
+                    "title": "Include script to convert the LOVD2 download format to the LOVD3 format",
+                    "created_at": "2016-07-14T17:49:44Z",
+                    "closed_at": "2017-06-15T14:49:53Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Misleading text \"No transcripts or variants found\"",
+                    "created_at": "2016-06-30T11:52:47Z",
+                    "closed_at": "2017-04-24T12:05:31Z"
+                },
+                {
+                    "number": 88,
+                    "title": "Tex files are executable",
+                    "created_at": "2016-06-28T16:00:58Z",
+                    "closed_at": "2016-07-11T11:30:20Z"
+                },
+                {
+                    "number": 87,
+                    "title": "Describe the new access sharing feature in the manual",
+                    "created_at": "2016-06-24T13:06:43Z",
+                    "closed_at": "2016-08-24T14:51:07Z"
+                },
+                {
+                    "number": 82,
+                    "title": "Minor improvements to import.php regarding the `variants_found` column",
+                    "created_at": "2016-06-15T10:37:56Z",
+                    "closed_at": "2017-04-24T13:00:25Z"
+                },
+                {
+                    "number": 80,
+                    "title": "Let Selenium tests use test.mutalyzer.nl and not www.mutalyzer.nl",
+                    "created_at": "2016-06-09T17:59:48Z",
+                    "closed_at": "2016-08-24T13:54:29Z"
+                },
+                {
+                    "number": 79,
+                    "title": "[Website] Mention <genesymbol>.lovd.nl more prominent on lovd.nl homepage",
+                    "created_at": "2016-06-09T14:04:11Z",
+                    "closed_at": "2017-06-15T11:53:37Z"
+                },
+                {
+                    "number": 78,
+                    "title": "Download link missing on gene homepage",
+                    "created_at": "2016-06-09T13:54:10Z",
+                    "closed_at": "2017-06-15T19:35:09Z"
+                },
+                {
+                    "number": 77,
+                    "title": "Comment on transcript",
+                    "created_at": "2016-06-09T04:08:02Z",
+                    "closed_at": "2016-07-19T07:21:39Z"
+                },
+                {
+                    "number": 76,
+                    "title": "Unstable identifiers for transcript variants",
+                    "created_at": "2016-06-01T09:44:36Z",
+                    "closed_at": "2016-06-24T12:53:33Z"
+                },
+                {
+                    "number": 73,
+                    "title": "Adapt for new Mutalyzer namechecker API",
+                    "created_at": "2016-05-27T13:43:59Z",
+                    "closed_at": "2016-06-01T09:45:38Z"
+                },
+                {
+                    "number": 72,
+                    "title": "Upgrade Selenium tests to Selenium Webdriver",
+                    "created_at": "2016-05-20T09:33:04Z",
+                    "closed_at": "2016-08-15T14:41:34Z"
+                },
+                {
+                    "number": 70,
+                    "title": "uncorrect order of custom columns",
+                    "created_at": "2016-05-19T14:11:13Z",
+                    "closed_at": "2016-05-20T21:38:38Z"
+                },
+                {
+                    "number": 69,
+                    "title": "Clarify IP allow list functionality on form and confirmation email",
+                    "created_at": "2016-05-17T11:18:11Z",
+                    "closed_at": "2016-06-10T15:03:58Z"
+                },
+                {
+                    "number": 67,
+                    "title": "Import: Panel_size of individual in panelid field not checked properly",
+                    "created_at": "2016-05-09T09:14:03Z",
+                    "closed_at": "2016-07-22T20:33:20Z"
+                },
+                {
+                    "number": 66,
+                    "title": "Update import always wants to edit the owned_by field",
+                    "created_at": "2016-05-04T10:52:44Z",
+                    "closed_at": "2016-06-22T14:18:42Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Restrict length of owned_by selection field",
+                    "created_at": "2016-05-04T08:04:31Z",
+                    "closed_at": "2016-08-24T14:23:08Z"
+                },
+                {
+                    "number": 64,
+                    "title": "Turn off xdebug on travis",
+                    "created_at": "2016-05-02T15:12:01Z",
+                    "closed_at": "2016-05-13T09:12:58Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Add some features making LOVD more customizable, leading to fewer differences between installations",
+                    "created_at": "2016-04-28T09:33:11Z",
+                    "closed_at": "2016-09-01T10:30:51Z"
+                },
+                {
+                    "number": 60,
+                    "title": "Batch addition of genes",
+                    "created_at": "2016-04-27T06:37:32Z",
+                    "closed_at": "2016-04-28T19:29:22Z"
+                },
+                {
+                    "number": 59,
+                    "title": "Add phenotype entries to list of \"Data owner for...\" information",
+                    "created_at": "2016-04-26T18:17:49Z",
+                    "closed_at": "2017-07-20T13:40:21Z"
+                },
+                {
+                    "number": 58,
+                    "title": "Extract positions from variant description",
+                    "created_at": "2016-04-19T14:54:33Z",
+                    "closed_at": "2017-09-29T16:33:13Z"
+                },
+                {
+                    "number": 57,
+                    "title": "Make all variants within a genomic range viewable",
+                    "created_at": "2016-04-19T14:44:14Z",
+                    "closed_at": "2017-04-24T11:16:21Z"
+                },
+                {
+                    "number": 54,
+                    "title": "Tooltip fails to display if quotes are present",
+                    "created_at": "2016-04-18T05:43:34Z",
+                    "closed_at": "2016-04-28T13:45:48Z"
+                },
+                {
+                    "number": 53,
+                    "title": "Importing records fails on existing fields in database",
+                    "created_at": "2016-04-08T12:33:56Z",
+                    "closed_at": "2016-06-22T16:53:22Z"
+                },
+                {
+                    "number": 52,
+                    "title": "Import fails for records with user id = 0",
+                    "created_at": "2016-04-08T12:25:51Z",
+                    "closed_at": "2016-04-20T12:06:36Z"
+                },
+                {
+                    "number": 51,
+                    "title": "Sharing permissions",
+                    "created_at": "2016-04-04T14:54:45Z",
+                    "closed_at": "2016-06-24T09:40:10Z"
+                },
+                {
+                    "number": 43,
+                    "title": "Viewlist of submissions for user does not link anywhere",
+                    "created_at": "2016-03-16T15:24:12Z",
+                    "closed_at": "2016-03-21T15:26:37Z"
+                },
+                {
+                    "number": 42,
+                    "title": "Message report error links to old ticket system. ",
+                    "created_at": "2016-03-16T14:49:44Z",
+                    "closed_at": "2016-03-17T03:41:42Z"
+                },
+                {
+                    "number": 39,
+                    "title": "Transcript variant entry form: warning on empty *Genomic DNA change* unclear",
+                    "created_at": "2016-03-04T12:24:54Z",
+                    "closed_at": "2016-03-15T13:53:06Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Obsolete Selenium tests files",
+                    "created_at": "2016-03-01T15:47:43Z",
+                    "closed_at": "2016-04-01T12:43:30Z"
+                },
+                {
+                    "number": 37,
+                    "title": "Generalized combineFetchAssoc()",
+                    "created_at": "2016-02-25T13:46:20Z",
+                    "closed_at": "2016-04-20T14:59:51Z"
+                },
+                {
+                    "number": 36,
+                    "title": "Find & Replace in viewlists",
+                    "created_at": "2016-02-24T09:48:38Z",
+                    "closed_at": "2016-09-16T10:32:19Z"
+                },
+                {
+                    "number": 35,
+                    "title": "Test fails due to timeout",
+                    "created_at": "2016-02-24T09:40:16Z",
+                    "closed_at": "2016-08-31T14:41:03Z"
+                },
+                {
+                    "number": 29,
+                    "title": "No proper warnings when deleting a gene or a disease",
+                    "created_at": "2016-02-16T13:53:53Z",
+                    "closed_at": "2016-02-29T16:27:16Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Issues with browsers remembering user's username and password",
+                    "created_at": "2016-02-15T15:51:10Z",
+                    "closed_at": "2016-02-24T11:57:13Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Wrong link for uncurated variants in drop-down menu Configuration area",
+                    "created_at": "2016-02-15T14:13:14Z",
+                    "closed_at": "2016-02-16T22:20:30Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Improve logging when changing curator rights",
+                    "created_at": "2016-02-11T15:58:44Z",
+                    "closed_at": "2016-02-26T12:42:23Z"
+                },
+                {
+                    "number": 17,
+                    "title": "Your search column contains incorrect search expression syntax at: Protein.",
+                    "created_at": "2016-02-03T11:40:17Z",
+                    "closed_at": "2016-04-29T13:19:04Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Refactoring inc-js-variant.php",
+                    "created_at": "2016-01-20T15:05:44Z",
+                    "closed_at": "2016-02-05T14:07:24Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Update objects.php to optimize ViewList queries so we can get rid of the SQL_CALC_FOUND_ROWS as much as possible",
+                    "created_at": "2016-01-20T15:05:15Z",
+                    "closed_at": "2016-05-02T11:05:25Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Refactor import code",
+                    "created_at": "2016-01-20T15:03:41Z",
+                    "closed_at": "2024-10-08T11:50:57Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Check referring numeric IDs in import files",
+                    "created_at": "2016-01-20T15:02:54Z",
+                    "closed_at": "2016-05-02T11:44:30Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Mesage: Please select a valid entry from the 'refseq_genomic' selection box should not be displayed.",
+                    "created_at": "2016-01-20T15:00:59Z",
+                    "closed_at": "2016-04-20T12:35:28Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Documentation about the new unique variant view.",
+                    "created_at": "2016-01-20T14:59:41Z",
+                    "closed_at": "2016-02-05T10:25:10Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Create chapters on public usage, views, search data, meaning of the tabs.",
+                    "created_at": "2016-01-20T14:59:11Z",
+                    "closed_at": "2016-02-05T10:25:10Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Update documentation, warning about spreadsheet software.",
+                    "created_at": "2016-01-20T14:58:28Z",
+                    "closed_at": "2016-02-05T10:25:10Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Status pending is allowed for import.",
+                    "created_at": "2016-01-20T14:56:44Z",
+                    "closed_at": "2016-02-05T10:25:10Z"
+                }
+            ],
+            "languages": {
+                "PHP": 4350784,
+                "CSS": 17167,
+                "Shell": 11803,
+                "Python": 4328,
+                "JavaScript": 1679
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1038/s41431-021-00959-x",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34521998",
+                            "source": "MED",
+                            "pmid": "34521998",
+                            "pmcid": "PMC8632977",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8632977"
+                                ]
+                            },
+                            "doi": "10.1038/s41431-021-00959-x",
+                            "title": "The LOVD3 platform: efficient genome-wide sharing of genetic variants.",
+                            "authorString": "Fokkema IFAC, Kroon M, L\u00f3pez Hern\u00e1ndez JA, Asscheman D, Lugtenburg I, Hoogenboom J, den Dunnen JT.",
+                            "journalTitle": "Eur J Hum Genet",
+                            "issue": "12",
+                            "journalVolume": "29",
+                            "pubYear": "2021",
+                            "journalIssn": "1018-4813; 1476-5438; ",
+                            "pageInfo": "1796-1803",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 100,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-09-16",
+                            "firstPublicationDate": "2021-09-15"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3199859456",
+                "doi": "https://doi.org/10.1038/s41431-021-00959-x",
+                "title": "The LOVD3 platform: efficient genome-wide sharing of genetic variants",
+                "display_name": "The LOVD3 platform: efficient genome-wide sharing of genetic variants",
+                "publication_year": 2021,
+                "publication_date": "2021-09-15",
+                "ids": {
+                    "openalex": "https://openalex.org/W3199859456",
+                    "doi": "https://doi.org/10.1038/s41431-021-00959-x",
+                    "mag": "3199859456",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34521998"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1038/s41431-021-00959-x",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41431-021-00959-x",
+                    "pdf_url": "https://www.nature.com/articles/s41431-021-00959-x.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S121703463",
+                        "display_name": "European Journal of Human Genetics",
+                        "issn_l": "1018-4813",
+                        "issn": [
+                            "1018-4813",
+                            "1476-5438"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319965",
+                        "host_organization_name": "Springer Nature",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "European Journal of Human Genetics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "datacite",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://www.nature.com/articles/s41431-021-00959-x.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5022230161",
+                            "display_name": "Ivo F.A.C. Fokkema",
+                            "orcid": "https://orcid.org/0000-0002-1368-1939"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Ivo F.A.C. Fokkema",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands. I.F.A.C.Fokkema@LUMC.nl",
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1368-1939",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands. I.F.A.C.Fokkema@LUMC.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5054863072",
+                            "display_name": "Mark Kroon",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Mark Kroon",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5033121029",
+                            "display_name": "J. Hernandez",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Julia A. L\u00f3pez Hern\u00e1ndez",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5009633958",
+                            "display_name": "Daan Asscheman",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Daan Asscheman",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5078036451",
+                            "display_name": "Ivar Lugtenburg",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ivar Lugtenburg",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5005819729",
+                            "display_name": "Jerry Hoogenboom",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jerry Hoogenboom",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5040120668",
+                            "display_name": "Johan T. den Dunnen",
+                            "orcid": "https://orcid.org/0000-0002-6304-1710"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Johan T. den Dunnen",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                            "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Leiden, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 7,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5022230161"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800006345"
+                ],
+                "apc_list": {
+                    "value": 2990,
+                    "currency": "EUR",
+                    "value_usd": 3690
+                },
+                "apc_paid": {
+                    "value": 2990,
+                    "currency": "EUR",
+                    "value_usd": 3690
+                },
+                "fwci": 15.5386,
+                "has_fulltext": true,
+                "cited_by_count": 140,
+                "citation_normalized_percentile": {
+                    "value": 0.99414663,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 95,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "29",
+                    "issue": "12",
+                    "first_page": "1796",
+                    "last_page": "1803"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11642",
+                    "display_name": "Genomics and Rare Diseases",
+                    "score": 0.9994000196456909,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.9994000196456909,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11213",
+                        "display_name": "Genomic variations and chromosomal abnormalities",
+                        "score": 0.9965000152587891,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9957000017166138,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.6426075100898743
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/personalization",
+                        "display_name": "Personalization",
+                        "score": 0.5563183426856995
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5386488437652588
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5221869349479675
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.41963356733322144
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genomics",
+                        "display_name": "Genomics",
+                        "score": 0.416208416223526
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.4139992594718933
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.37651747465133667
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.3703743815422058
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.3389738202095032
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/world-wide-web",
+                        "display_name": "World Wide Web",
+                        "score": 0.32206064462661743
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.6426075100898743
+                    },
+                    {
+                        "id": "https://openalex.org/C183003079",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1000371",
+                        "display_name": "Personalization",
+                        "level": 2,
+                        "score": 0.5563183426856995
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5386488437652588
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5221869349479675
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.41963356733322144
+                    },
+                    {
+                        "id": "https://openalex.org/C189206191",
+                        "wikidata": "https://www.wikidata.org/wiki/Q222046",
+                        "display_name": "Genomics",
+                        "level": 4,
+                        "score": 0.416208416223526
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.4139992594718933
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.37651747465133667
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.3703743815422058
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.3389738202095032
+                    },
+                    {
+                        "id": "https://openalex.org/C136764020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466",
+                        "display_name": "World Wide Web",
+                        "level": 1,
+                        "score": 0.32206064462661743
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011110",
+                        "descriptor_name": "Polymorphism, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011110",
+                        "descriptor_name": "Polymorphism, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011110",
+                        "descriptor_name": "Polymorphism, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1038/s41431-021-00959-x",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1038/s41431-021-00959-x",
+                        "pdf_url": "https://www.nature.com/articles/s41431-021-00959-x.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S121703463",
+                            "display_name": "European Journal of Human Genetics",
+                            "issn_l": "1018-4813",
+                            "issn": [
+                                "1018-4813",
+                                "1476-5438"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310319965",
+                            "host_organization_name": "Springer Nature",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "European Journal of Human Genetics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34521998",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34521998",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "European journal of human genetics : EJHG",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3256620",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3256620",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "European Journal of Human Genetics, 29(12), 1796 - 1803. SPRINGERNATURE",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8632977",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8632977",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Eur J Hum Genet",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3256620",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3256620",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "European Journal of Human Genetics",
+                        "raw_type": "Article / Letter to editor"
+                    },
+                    {
+                        "id": "doi:10.25504/fairsharing.21tjj7",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.25504/fairsharing.21tjj7",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S7407053452",
+                            "display_name": "FAIRsharing.org",
+                            "issn_l": null,
+                            "issn": [],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": null,
+                        "is_accepted": false,
+                        "is_published": null,
+                        "raw_source_name": null,
+                        "raw_type": "dataset"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1038/s41431-021-00959-x",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41431-021-00959-x",
+                    "pdf_url": "https://www.nature.com/articles/s41431-021-00959-x.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S121703463",
+                        "display_name": "European Journal of Human Genetics",
+                        "issn_l": "1018-4813",
+                        "issn": [
+                            "1018-4813",
+                            "1476-5438"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319965",
+                        "host_organization_name": "Springer Nature",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "European Journal of Human Genetics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3199859456.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3199859456.grobid-xml"
+                },
+                "referenced_works_count": 15,
+                "referenced_works": [
+                    "https://openalex.org/W1968003842",
+                    "https://openalex.org/W2013919595",
+                    "https://openalex.org/W2036841261",
+                    "https://openalex.org/W2059600528",
+                    "https://openalex.org/W2140638683",
+                    "https://openalex.org/W2417483443",
+                    "https://openalex.org/W2756892369",
+                    "https://openalex.org/W2770026599",
+                    "https://openalex.org/W2968258899",
+                    "https://openalex.org/W2969889518",
+                    "https://openalex.org/W3089630552",
+                    "https://openalex.org/W3105801940",
+                    "https://openalex.org/W3199859456",
+                    "https://openalex.org/W6717041367",
+                    "https://openalex.org/W6785735021"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2109940557",
+                    "https://openalex.org/W2466832359",
+                    "https://openalex.org/W3172493050",
+                    "https://openalex.org/W1582019636",
+                    "https://openalex.org/W1499005795",
+                    "https://openalex.org/W1536183945",
+                    "https://openalex.org/W2593798266",
+                    "https://openalex.org/W2070126461",
+                    "https://openalex.org/W4385420271",
+                    "https://openalex.org/W4312192618"
+                ],
+                "abstract_inverted_index": {
+                    "Gene": [
+                        0
+                    ],
+                    "variant": [
+                        1,
+                        68,
+                        118,
+                        177
+                    ],
+                    "databases": [
+                        2,
+                        34
+                    ],
+                    "are": [
+                        3,
+                        168
+                    ],
+                    "the": [
+                        4,
+                        21,
+                        25,
+                        36,
+                        45,
+                        55,
+                        90,
+                        101,
+                        127,
+                        133,
+                        142,
+                        188
+                    ],
+                    "backbone": [
+                        5
+                    ],
+                    "of": [
+                        6,
+                        32,
+                        105,
+                        123,
+                        129,
+                        162
+                    ],
+                    "DNA-based": [
+                        7
+                    ],
+                    "diagnostics.": [
+                        8
+                    ],
+                    "These": [
+                        9
+                    ],
+                    "databases,": [
+                        10,
+                        50,
+                        161
+                    ],
+                    "also": [
+                        11
+                    ],
+                    "called": [
+                        12
+                    ],
+                    "Locus-Specific": [
+                        13
+                    ],
+                    "DataBases": [
+                        14
+                    ],
+                    "(LSDBs),": [
+                        15
+                    ],
+                    "store": [
+                        16,
+                        66
+                    ],
+                    "information": [
+                        17,
+                        77,
+                        212
+                    ],
+                    "on": [
+                        18,
+                        78,
+                        86,
+                        132,
+                        170,
+                        213
+                    ],
+                    "variants": [
+                        19,
+                        196
+                    ],
+                    "in": [
+                        20,
+                        141,
+                        179,
+                        197
+                    ],
+                    "human": [
+                        22
+                    ],
+                    "genome": [
+                        23
+                    ],
+                    "and": [
+                        24,
+                        61,
+                        82,
+                        95,
+                        113,
+                        136,
+                        151,
+                        173
+                    ],
+                    "observed": [
+                        26
+                    ],
+                    "phenotypic": [
+                        27
+                    ],
+                    "consequences.": [
+                        28
+                    ],
+                    "The": [
+                        29,
+                        154
+                    ],
+                    "largest": [
+                        30
+                    ],
+                    "collection": [
+                        31
+                    ],
+                    "public": [
+                        33,
+                        165
+                    ],
+                    "uses": [
+                        35
+                    ],
+                    "free,": [
+                        37
+                    ],
+                    "open-source": [
+                        38
+                    ],
+                    "LOVD": [
+                        39,
+                        56,
+                        166,
+                        183,
+                        190,
+                        208
+                    ],
+                    "software": [
+                        40,
+                        91,
+                        155
+                    ],
+                    "platform.": [
+                        41
+                    ],
+                    "To": [
+                        42
+                    ],
+                    "cope": [
+                        43,
+                        99
+                    ],
+                    "with": [
+                        44,
+                        76,
+                        100,
+                        187
+                    ],
+                    "current": [
+                        46,
+                        111
+                    ],
+                    "demand": [
+                        47
+                    ],
+                    "for": [
+                        48
+                    ],
+                    "online": [
+                        49
+                    ],
+                    "we": [
+                        51
+                    ],
+                    "have": [
+                        52
+                    ],
+                    "entirely": [
+                        53
+                    ],
+                    "redesigned": [
+                        54
+                    ],
+                    "software.": [
+                        57
+                    ],
+                    "LOVD3": [
+                        58,
+                        109
+                    ],
+                    "is": [
+                        59,
+                        92,
+                        156
+                    ],
+                    "genome-centered": [
+                        60
+                    ],
+                    "can": [
+                        62,
+                        202
+                    ],
+                    "be": [
+                        63,
+                        203
+                    ],
+                    "used": [
+                        64,
+                        157
+                    ],
+                    "to": [
+                        65,
+                        98,
+                        116,
+                        138,
+                        149
+                    ],
+                    "summary": [
+                        67
+                    ],
+                    "data,": [
+                        69
+                    ],
+                    "as": [
+                        70,
+                        72
+                    ],
+                    "well": [
+                        71
+                    ],
+                    "full": [
+                        73
+                    ],
+                    "case-level": [
+                        74
+                    ],
+                    "data": [
+                        75,
+                        186,
+                        191
+                    ],
+                    "individuals,": [
+                        79
+                    ],
+                    "phenotypes,": [
+                        80
+                    ],
+                    "screenings,": [
+                        81
+                    ],
+                    "variants.": [
+                        83
+                    ],
+                    "While": [
+                        84
+                    ],
+                    "built": [
+                        85
+                    ],
+                    "a": [
+                        87,
+                        214
+                    ],
+                    "standard": [
+                        88
+                    ],
+                    "core,": [
+                        89
+                    ],
+                    "highly": [
+                        93
+                    ],
+                    "flexible": [
+                        94
+                    ],
+                    "allows": [
+                        96
+                    ],
+                    "personalization": [
+                        97
+                    ],
+                    "largely": [
+                        102
+                    ],
+                    "different": [
+                        103,
+                        143
+                    ],
+                    "demands": [
+                        104
+                    ],
+                    "gene/disease": [
+                        106
+                    ],
+                    "database": [
+                        107
+                    ],
+                    "curators.": [
+                        108
+                    ],
+                    "follows": [
+                        110
+                    ],
+                    "standards": [
+                        112
+                    ],
+                    "includes": [
+                        114,
+                        147
+                    ],
+                    "tools": [
+                        115
+                    ],
+                    "check": [
+                        117
+                    ],
+                    "descriptions,": [
+                        119
+                    ],
+                    "generate": [
+                        120
+                    ],
+                    "HTML": [
+                        121
+                    ],
+                    "files": [
+                        122
+                    ],
+                    "reference": [
+                        124
+                    ],
+                    "sequences,": [
+                        125
+                    ],
+                    "predict": [
+                        126
+                    ],
+                    "consequences": [
+                        128
+                    ],
+                    "exon": [
+                        130
+                    ],
+                    "deletions/duplications": [
+                        131
+                    ],
+                    "reading": [
+                        134
+                    ],
+                    "frame,": [
+                        135
+                    ],
+                    "link": [
+                        137
+                    ],
+                    "genomic": [
+                        139
+                    ],
+                    "views": [
+                        140
+                    ],
+                    "genomes": [
+                        144
+                    ],
+                    "browsers.": [
+                        145
+                    ],
+                    "It": [
+                        146
+                    ],
+                    "APIs": [
+                        148
+                    ],
+                    "collect": [
+                        150
+                    ],
+                    "submit": [
+                        152
+                    ],
+                    "data.": [
+                        153
+                    ],
+                    "by": [
+                        158
+                    ],
+                    "about": [
+                        159
+                    ],
+                    "100": [
+                        160
+                    ],
+                    "which": [
+                        163
+                    ],
+                    "56": [
+                        164
+                    ],
+                    "instances": [
+                        167,
+                        184,
+                        209
+                    ],
+                    "registered": [
+                        169
+                    ],
+                    "our": [
+                        171
+                    ],
+                    "website": [
+                        172
+                    ],
+                    "together": [
+                        174
+                    ],
+                    "contain": [
+                        175
+                    ],
+                    "1,000,000,000": [
+                        176
+                    ],
+                    "observations": [
+                        178
+                    ],
+                    "1,500,000": [
+                        180
+                    ],
+                    "individuals.": [
+                        181
+                    ],
+                    "42": [
+                        182
+                    ],
+                    "share": [
+                        185
+                    ],
+                    "federated": [
+                        189
+                    ],
+                    "network": [
+                        192,
+                        201
+                    ],
+                    "containing": [
+                        193,
+                        210
+                    ],
+                    "3,000,000": [
+                        194
+                    ],
+                    "unique": [
+                        195
+                    ],
+                    "23,000": [
+                        198
+                    ],
+                    "genes.": [
+                        199
+                    ],
+                    "This": [
+                        200
+                    ],
+                    "queried": [
+                        204
+                    ],
+                    "directly,": [
+                        205
+                    ],
+                    "quickly": [
+                        206
+                    ],
+                    "identifying": [
+                        207
+                    ],
+                    "relevant": [
+                        211
+                    ],
+                    "searched": [
+                        215
+                    ],
+                    "variant.": [
+                        216
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 17
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 29
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 46
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 28
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 17
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2021-09-27T00:00:00"
+            },
+            "altmetric": {
+                "title": "The LOVD3 platform: efficient genome-wide sharing of genetic variants",
+                "doi": "10.1038/s41431-021-00959-x",
+                "pmid": "34521998",
+                "pmc": "PMC8632977",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4eb3cf058f610002836",
+                "issns": [
+                    "1018-4813",
+                    "1476-5438"
+                ],
+                "journal": "European Journal of Human Genetics",
+                "cohorts": {
+                    "pub": 6,
+                    "sci": 2
+                },
+                "context": {
+                    "all": {
+                        "count": 27292778,
+                        "mean": 10.871447178077661,
+                        "rank": 6936858,
+                        "pct": 74,
+                        "higher_than": 20347724
+                    },
+                    "journal": {
+                        "count": 3902,
+                        "mean": 10.293445412608918,
+                        "rank": 1564,
+                        "pct": 59,
+                        "higher_than": 2336
+                    },
+                    "similar_age_3m": {
+                        "count": 440728,
+                        "mean": 15.754660529850625,
+                        "rank": 120461,
+                        "pct": 72,
+                        "higher_than": 320028
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 44,
+                        "mean": 6.814045454545455,
+                        "rank": 19,
+                        "pct": 56,
+                        "higher_than": 25
+                    }
+                },
+                "authors": [
+                    "Ivo F.A.C. Fokkema",
+                    "Mark Kroon",
+                    "Julia A. L\u00f3pez Hern\u00e1ndez",
+                    "Daan Asscheman",
+                    "Ivar Lugtenburg",
+                    "Jerry Hoogenboom",
+                    "Johan T. den Dunnen"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1638316800,
+                "epubdate": 1631664000,
+                "dimensions_publication_id": "pub.1141115564",
+                "altmetric_id": 113475423,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Genetics",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 10,
+                "cited_by_tweeters_count": 8,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_accounts_count": 9,
+                "last_updated": 1638743806,
+                "score": 5.8,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 5.8
+                },
+                "url": "http://dx.doi.org/10.1038/s41431-021-00959-x",
+                "added_on": 1631696233,
+                "published_on": 1631664000,
+                "scopus_subjects": [
+                    "Medicine",
+                    "Life Sciences",
+                    "Health Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "84",
+                    "connotea": "0"
+                },
+                "readers_count": 84,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=6&types=tttttttf",
+                    "medium": "https://badges.altmetric.com/?size=100&score=6&types=tttttttf",
+                    "large": "https://badges.altmetric.com/?size=180&score=6&types=tttttttf"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=113475423"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 32731,
+            "total_ccn": 7973,
+            "avg_ccn": 9.59,
+            "nloc_per_file": 163.66,
+            "duplicate_rate": 11.68
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

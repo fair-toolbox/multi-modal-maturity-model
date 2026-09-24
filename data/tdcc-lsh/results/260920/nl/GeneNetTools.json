@@ -1,0 +1,2061 @@
+{
+    "GeneNetTools": {
+        "tool_name": "GeneNetTools",
+        "biotools": {
+            "name": "GeneNetTools",
+            "description": "Tests for Gaussian graphical models with shrinkage.",
+            "homepage": "https://github.com/V-Bernal/GeneNetTools",
+            "biotoolsID": "genenettools",
+            "biotoolsCURIE": "biotools:genenettools",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3927",
+                            "term": "Network analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0602",
+                    "term": "Molecular interactions, pathways and networks"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3518",
+                    "term": "Microarray experiment"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "R"
+            ],
+            "license": "Not licensed",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1093/bioinformatics/btac657",
+                    "pmid": "36179082",
+                    "pmcid": "PMC9665865",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "GeneNetTools: tests for Gaussian graphical models with shrinkage",
+                        "abstract": "Motivation: Gaussian graphical models (GGMs) are network representations of random variables (as nodes) and their partial correlations (as edges). GGMs overcome the challenges of high-dimensional data analysis by using shrinkage methodologies. Therefore, they have become useful to reconstruct gene regulatory networks from gene-expression profiles. However, it is often ignored that the partial correlations are \u2018shrunk\u2019 and that they cannot be compared/assessed directly. Therefore, accurate (differential) network analyses need to account for the number of variables, the sample size, and also the shrinkage value, otherwise, the analysis and its biological interpretation would turn biased. To date, there are no appropriate methods to account for these factors and address these issues. Results: We derive the statistical properties of the partial correlation obtained with the Ledoit\u2013Wolf shrinkage. Our result provides a toolbox for (differential) network analyses as (i) confidence intervals, (ii) a test for zero partial correlation (null-effects) and (iii) a test to compare partial correlations. Our novel (parametric) methods account for the number of variables, the sample size and the shrinkage values. Additionally, they are computationally fast, simple to implement and require only basic statistical knowledge. Our simulations show that the novel tests perform better than DiffNetFDR\u2014a recently published alternative\u2014in terms of the trade-off between true and false positives. The methods are demonstrated on synthetic data and two gene-expression datasets from Escherichia coli and Mus musculus.",
+                        "date": "2022-11-15T00:00:00Z",
+                        "citationCount": 1,
+                        "authors": [
+                            {
+                                "name": "Bernal V."
+                            },
+                            {
+                                "name": "Soancatl-Aguilar V."
+                            },
+                            {
+                                "name": "Bulthuis J."
+                            },
+                            {
+                                "name": "Guryev V."
+                            },
+                            {
+                                "name": "Horvatovich P."
+                            },
+                            {
+                                "name": "Grzegorczyk M."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Peter Horvatovich",
+                    "email": "p.l.horvatovich@rug.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-2218-1140",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Marco Grzegorczyk",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Victor Bernal",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-9134-7186",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2022-12-31T15:42:16.791143Z",
+            "lastUpdate": "2024-11-24T15:14:15.246061Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 498079238,
+                "node_id": "R_kgDOHbAWBg",
+                "name": "GeneNetTools",
+                "full_name": "V-Bernal/GeneNetTools",
+                "private": false,
+                "owner": {
+                    "login": "V-Bernal",
+                    "id": 44974039,
+                    "node_id": "MDQ6VXNlcjQ0OTc0MDM5",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/44974039?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/V-Bernal",
+                    "html_url": "https://github.com/V-Bernal",
+                    "followers_url": "https://api.github.com/users/V-Bernal/followers",
+                    "following_url": "https://api.github.com/users/V-Bernal/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/V-Bernal/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/V-Bernal/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/V-Bernal/subscriptions",
+                    "organizations_url": "https://api.github.com/users/V-Bernal/orgs",
+                    "repos_url": "https://api.github.com/users/V-Bernal/repos",
+                    "events_url": "https://api.github.com/users/V-Bernal/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/V-Bernal/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/V-Bernal/GeneNetTools",
+                "description": "R package for Gaussian graphical models with (Ledoit Wolf) shrinkage ",
+                "fork": false,
+                "url": "https://api.github.com/repos/V-Bernal/GeneNetTools",
+                "forks_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/forks",
+                "keys_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/teams",
+                "hooks_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/hooks",
+                "issue_events_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/events",
+                "assignees_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/tags",
+                "blobs_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/languages",
+                "stargazers_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/stargazers",
+                "contributors_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/contributors",
+                "subscribers_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/subscribers",
+                "subscription_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/subscription",
+                "commits_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/merges",
+                "archive_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/downloads",
+                "issues_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/labels{/name}",
+                "releases_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/V-Bernal/GeneNetTools/deployments",
+                "created_at": "2022-05-30T19:53:18Z",
+                "updated_at": "2022-06-22T09:56:12Z",
+                "pushed_at": "2022-11-24T14:15:56Z",
+                "git_url": "git://github.com/V-Bernal/GeneNetTools.git",
+                "ssh_url": "git@github.com:V-Bernal/GeneNetTools.git",
+                "clone_url": "https://github.com/V-Bernal/GeneNetTools.git",
+                "svn_url": "https://github.com/V-Bernal/GeneNetTools",
+                "homepage": null,
+                "size": 447,
+                "stargazers_count": 0,
+                "watchers_count": 0,
+                "language": "HTML",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 1,
+                "watchers": 0,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "Analysis_GeneNetTools.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "GeneNetTools",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "V-Bernal",
+                    "contributions": 5
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "HTML": 724327,
+                "R": 50157
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btac657",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36179082",
+                            "source": "MED",
+                            "pmid": "36179082",
+                            "pmcid": "PMC9665865",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9665865"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btac657",
+                            "title": "GeneNetTools: tests for Gaussian graphical models with shrinkage.",
+                            "authorString": "Bernal V, Soancatl-Aguilar V, Bulthuis J, Guryev V, Horvatovich P, Grzegorczyk M.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "22",
+                            "journalVolume": "38",
+                            "pubYear": "2022",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "5049-5054",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 2,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2022-10-02",
+                            "firstPublicationDate": "2022-11-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4298326526",
+                "doi": "https://doi.org/10.1093/bioinformatics/btac657",
+                "title": "GeneNetTools: tests for Gaussian graphical models with shrinkage",
+                "display_name": "GeneNetTools: tests for Gaussian graphical models with shrinkage",
+                "publication_year": 2022,
+                "publication_date": "2022-09-30",
+                "ids": {
+                    "openalex": "https://openalex.org/W4298326526",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btac657",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36179082"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btac657",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btac657",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/38/22/5049/47153855/btac657.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/38/22/5049/47153855/btac657.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5004451723",
+                            "display_name": "Victor Bernal",
+                            "orcid": "https://orcid.org/0000-0002-9134-7186"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Victor Bernal",
+                        "raw_affiliation_strings": [
+                            "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands",
+                            "Department of Mathematics, Bernoulli Institute, University of Groningen , Groningen 9747 AG, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9134-7186",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Mathematics, Bernoulli Institute, University of Groningen , Groningen 9747 AG, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5081916717",
+                            "display_name": "Venustiano Soancatl-Aguilar",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Venustiano Soancatl-Aguilar",
+                        "raw_affiliation_strings": [
+                            "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5077251817",
+                            "display_name": "Jonas Bulthuis",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jonas Bulthuis",
+                        "raw_affiliation_strings": [
+                            "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center of Information Technology, University of Groningen , Groningen 9747 AJ, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050979301",
+                            "display_name": "Victor Guryev",
+                            "orcid": "https://orcid.org/0000-0002-5810-6022"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Victor Guryev",
+                        "raw_affiliation_strings": [
+                            "European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen , Groningen 9713 AV, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen , Groningen 9713 AV, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384",
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5087131640",
+                            "display_name": "P\u00e9ter Horvatovich",
+                            "orcid": "https://orcid.org/0000-0003-2218-1140"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Peter Horvatovich",
+                        "raw_affiliation_strings": [
+                            "Department of Analytical Biochemistry, Groningen Research Institute of Pharmacy, University of Groningen , Groningen 9713 AV, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2218-1140",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Analytical Biochemistry, Groningen Research Institute of Pharmacy, University of Groningen , Groningen 9713 AV, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5068721139",
+                            "display_name": "Marco Grzegorczyk",
+                            "orcid": "https://orcid.org/0000-0002-2604-9270"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marco Grzegorczyk",
+                        "raw_affiliation_strings": [
+                            "Department of Mathematics, Bernoulli Institute, University of Groningen , Groningen 9747 AG, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Mathematics, Bernoulli Institute, University of Groningen , Groningen 9747 AG, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5087131640"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I169381384"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 0.5549,
+                "has_fulltext": false,
+                "cited_by_count": 4,
+                "citation_normalized_percentile": {
+                    "value": 0.72487967,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 91,
+                    "max": 97
+                },
+                "biblio": {
+                    "volume": "38",
+                    "issue": "22",
+                    "first_page": "5049",
+                    "last_page": "5054"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11303",
+                    "display_name": "Bayesian Modeling and Causal Inference",
+                    "score": 0.26429998874664307,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1702",
+                        "display_name": "Artificial Intelligence"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/17",
+                        "display_name": "Computer Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11303",
+                        "display_name": "Bayesian Modeling and Causal Inference",
+                        "score": 0.26429998874664307,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1702",
+                            "display_name": "Artificial Intelligence"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10136",
+                        "display_name": "Statistical Methods and Inference",
+                        "score": 0.1371999979019165,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2613",
+                            "display_name": "Statistics and Probability"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/26",
+                            "display_name": "Mathematics"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10885",
+                        "display_name": "Gene expression and cancer classification",
+                        "score": 0.1256999969482422,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/partial-correlation",
+                        "display_name": "Partial correlation",
+                        "score": 0.6848495006561279
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gaussian",
+                        "display_name": "Gaussian",
+                        "score": 0.5956719517707825
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.538698136806488
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/parametric-statistics",
+                        "display_name": "Parametric statistics",
+                        "score": 0.5312841534614563
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/shrinkage",
+                        "display_name": "Shrinkage",
+                        "score": 0.5059744715690613
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphical-model",
+                        "display_name": "Graphical model",
+                        "score": 0.4749890863895416
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/toolbox",
+                        "display_name": "Toolbox",
+                        "score": 0.4748803973197937
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/false-positive-paradox",
+                        "display_name": "False positive paradox",
+                        "score": 0.47270938754081726
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/sample-size-determination",
+                        "display_name": "Sample size determination",
+                        "score": 0.44048407673835754
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/null-hypothesis",
+                        "display_name": "Null hypothesis",
+                        "score": 0.4128614068031311
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/conditional-dependence",
+                        "display_name": "Conditional dependence",
+                        "score": 0.41033878922462463
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/algorithm",
+                        "display_name": "Algorithm",
+                        "score": 0.39837056398391724
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/statistics",
+                        "display_name": "Statistics",
+                        "score": 0.39704057574272156
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.3784070611000061
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/correlation",
+                        "display_name": "Correlation",
+                        "score": 0.35554587841033936
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mathematics",
+                        "display_name": "Mathematics",
+                        "score": 0.34988972544670105
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.25501108169555664
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C64708745",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2998010",
+                        "display_name": "Partial correlation",
+                        "level": 3,
+                        "score": 0.6848495006561279
+                    },
+                    {
+                        "id": "https://openalex.org/C163716315",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901177",
+                        "display_name": "Gaussian",
+                        "level": 2,
+                        "score": 0.5956719517707825
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.538698136806488
+                    },
+                    {
+                        "id": "https://openalex.org/C117251300",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1849855",
+                        "display_name": "Parametric statistics",
+                        "level": 2,
+                        "score": 0.5312841534614563
+                    },
+                    {
+                        "id": "https://openalex.org/C180145272",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7504144",
+                        "display_name": "Shrinkage",
+                        "level": 2,
+                        "score": 0.5059744715690613
+                    },
+                    {
+                        "id": "https://openalex.org/C155846161",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1143367",
+                        "display_name": "Graphical model",
+                        "level": 2,
+                        "score": 0.4749890863895416
+                    },
+                    {
+                        "id": "https://openalex.org/C2777655017",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1501161",
+                        "display_name": "Toolbox",
+                        "level": 2,
+                        "score": 0.4748803973197937
+                    },
+                    {
+                        "id": "https://openalex.org/C64869954",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1859747",
+                        "display_name": "False positive paradox",
+                        "level": 2,
+                        "score": 0.47270938754081726
+                    },
+                    {
+                        "id": "https://openalex.org/C129848803",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2564360",
+                        "display_name": "Sample size determination",
+                        "level": 2,
+                        "score": 0.44048407673835754
+                    },
+                    {
+                        "id": "https://openalex.org/C191988596",
+                        "wikidata": "https://www.wikidata.org/wiki/Q628374",
+                        "display_name": "Null hypothesis",
+                        "level": 2,
+                        "score": 0.4128614068031311
+                    },
+                    {
+                        "id": "https://openalex.org/C174920663",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5159256",
+                        "display_name": "Conditional dependence",
+                        "level": 2,
+                        "score": 0.41033878922462463
+                    },
+                    {
+                        "id": "https://openalex.org/C11413529",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8366",
+                        "display_name": "Algorithm",
+                        "level": 1,
+                        "score": 0.39837056398391724
+                    },
+                    {
+                        "id": "https://openalex.org/C105795698",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12483",
+                        "display_name": "Statistics",
+                        "level": 1,
+                        "score": 0.39704057574272156
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.3784070611000061
+                    },
+                    {
+                        "id": "https://openalex.org/C117220453",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5172842",
+                        "display_name": "Correlation",
+                        "level": 2,
+                        "score": 0.35554587841033936
+                    },
+                    {
+                        "id": "https://openalex.org/C33923547",
+                        "wikidata": "https://www.wikidata.org/wiki/Q395",
+                        "display_name": "Mathematics",
+                        "level": 0,
+                        "score": 0.34988972544670105
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.25501108169555664
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C2524010",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8087",
+                        "display_name": "Geometry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C62520636",
+                        "wikidata": "https://www.wikidata.org/wiki/Q944",
+                        "display_name": "Quantum mechanics",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015870",
+                        "descriptor_name": "Gene Expression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015870",
+                        "descriptor_name": "Gene Expression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015870",
+                        "descriptor_name": "Gene Expression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016011",
+                        "descriptor_name": "Normal Distribution",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016011",
+                        "descriptor_name": "Normal Distribution",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016011",
+                        "descriptor_name": "Normal Distribution",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018401",
+                        "descriptor_name": "Sample Size",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018401",
+                        "descriptor_name": "Sample Size",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018401",
+                        "descriptor_name": "Sample Size",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D051379",
+                        "descriptor_name": "Mice",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D051379",
+                        "descriptor_name": "Mice",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D051379",
+                        "descriptor_name": "Mice",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D053263",
+                        "descriptor_name": "Gene Regulatory Networks",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D053263",
+                        "descriptor_name": "Gene Regulatory Networks",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D053263",
+                        "descriptor_name": "Gene Regulatory Networks",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 3,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btac657",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btac657",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/38/22/5049/47153855/btac657.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36179082",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36179082",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9665865",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9665865",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btac657",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btac657",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/38/22/5049/47153855/btac657.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.5799999833106995,
+                        "id": "https://metadata.un.org/sdg/17",
+                        "display_name": "Partnerships for the goals"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320933",
+                        "display_name": "Rijksuniversiteit Groningen",
+                        "ror": "https://ror.org/012p63287"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 25,
+                "referenced_works": [
+                    "https://openalex.org/W1494413412",
+                    "https://openalex.org/W1968055555",
+                    "https://openalex.org/W1990512452",
+                    "https://openalex.org/W2025930196",
+                    "https://openalex.org/W2062125287",
+                    "https://openalex.org/W2062533676",
+                    "https://openalex.org/W2072602203",
+                    "https://openalex.org/W2109860416",
+                    "https://openalex.org/W2110065044",
+                    "https://openalex.org/W2132555912",
+                    "https://openalex.org/W2146512944",
+                    "https://openalex.org/W2165408259",
+                    "https://openalex.org/W2320090061",
+                    "https://openalex.org/W2330284537",
+                    "https://openalex.org/W2575497268",
+                    "https://openalex.org/W2767244594",
+                    "https://openalex.org/W2769478615",
+                    "https://openalex.org/W2772433889",
+                    "https://openalex.org/W2777527666",
+                    "https://openalex.org/W2913868028",
+                    "https://openalex.org/W2944922548",
+                    "https://openalex.org/W2952327506",
+                    "https://openalex.org/W2963269830",
+                    "https://openalex.org/W2989212261",
+                    "https://openalex.org/W6700160510"
+                ],
+                "related_works": [
+                    "https://openalex.org/W3137029931",
+                    "https://openalex.org/W2159423517",
+                    "https://openalex.org/W4247004236",
+                    "https://openalex.org/W4245099416",
+                    "https://openalex.org/W4295441906",
+                    "https://openalex.org/W3090624304",
+                    "https://openalex.org/W1988774945",
+                    "https://openalex.org/W4213316674",
+                    "https://openalex.org/W3090988770",
+                    "https://openalex.org/W2151923789"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "Gaussian": [
+                        1
+                    ],
+                    "graphical": [
+                        2
+                    ],
+                    "models": [
+                        3
+                    ],
+                    "(GGMs)": [
+                        4
+                    ],
+                    "are": [
+                        5,
+                        53,
+                        96,
+                        172,
+                        209,
+                        240,
+                        248
+                    ],
+                    "network": [
+                        6,
+                        65,
+                        131
+                    ],
+                    "representations": [
+                        7
+                    ],
+                    "of": [
+                        8,
+                        23,
+                        73,
+                        115,
+                        161,
+                        199
+                    ],
+                    "random": [
+                        9
+                    ],
+                    "variables": [
+                        10
+                    ],
+                    "(as": [
+                        11,
+                        17
+                    ],
+                    "nodes)": [
+                        12
+                    ],
+                    "and": [
+                        13,
+                        55,
+                        78,
+                        86,
+                        105,
+                        145,
+                        166,
+                        178,
+                        204,
+                        214,
+                        221,
+                        233
+                    ],
+                    "their": [
+                        14
+                    ],
+                    "partial": [
+                        15,
+                        51,
+                        117,
+                        142,
+                        151
+                    ],
+                    "correlations": [
+                        16,
+                        52
+                    ],
+                    "edges).": [
+                        18
+                    ],
+                    "GGMs": [
+                        19
+                    ],
+                    "overcome": [
+                        20
+                    ],
+                    "the": [
+                        21,
+                        50,
+                        71,
+                        75,
+                        80,
+                        84,
+                        112,
+                        116,
+                        121,
+                        159,
+                        163,
+                        167,
+                        188,
+                        200,
+                        231,
+                        234,
+                        238
+                    ],
+                    "challenges": [
+                        22
+                    ],
+                    "high-dimensional": [
+                        24
+                    ],
+                    "data": [
+                        25,
+                        213,
+                        247
+                    ],
+                    "analysis": [
+                        26,
+                        85,
+                        239
+                    ],
+                    "by": [
+                        27
+                    ],
+                    "using": [
+                        28
+                    ],
+                    "shrinkage": [
+                        29,
+                        81,
+                        168
+                    ],
+                    "methodologies.": [
+                        30
+                    ],
+                    "Therefore,": [
+                        31,
+                        62
+                    ],
+                    "they": [
+                        32,
+                        57,
+                        171
+                    ],
+                    "have": [
+                        33
+                    ],
+                    "become": [
+                        34
+                    ],
+                    "useful": [
+                        35
+                    ],
+                    "to": [
+                        36,
+                        68,
+                        100,
+                        149,
+                        176
+                    ],
+                    "reconstruct": [
+                        37
+                    ],
+                    "gene": [
+                        38
+                    ],
+                    "regulatory": [
+                        39
+                    ],
+                    "networks": [
+                        40
+                    ],
+                    "from": [
+                        41,
+                        218
+                    ],
+                    "gene-expression": [
+                        42,
+                        216
+                    ],
+                    "profiles.": [
+                        43
+                    ],
+                    "However,": [
+                        44
+                    ],
+                    "it": [
+                        45
+                    ],
+                    "is": [
+                        46
+                    ],
+                    "often": [
+                        47
+                    ],
+                    "ignored": [
+                        48
+                    ],
+                    "that": [
+                        49,
+                        56,
+                        187
+                    ],
+                    "'shrunk'": [
+                        54
+                    ],
+                    "cannot": [
+                        58
+                    ],
+                    "be": [
+                        59
+                    ],
+                    "compared/assessed": [
+                        60
+                    ],
+                    "directly.": [
+                        61
+                    ],
+                    "accurate": [
+                        63
+                    ],
+                    "(differential)": [
+                        64,
+                        130
+                    ],
+                    "analyses": [
+                        66,
+                        132
+                    ],
+                    "need": [
+                        67
+                    ],
+                    "account": [
+                        69,
+                        101,
+                        157
+                    ],
+                    "for": [
+                        70,
+                        102,
+                        129,
+                        140,
+                        158
+                    ],
+                    "number": [
+                        72,
+                        160
+                    ],
+                    "variables,": [
+                        74,
+                        162
+                    ],
+                    "sample": [
+                        76,
+                        164
+                    ],
+                    "size,": [
+                        77
+                    ],
+                    "also": [
+                        79
+                    ],
+                    "value,": [
+                        82
+                    ],
+                    "otherwise,": [
+                        83
+                    ],
+                    "its": [
+                        87
+                    ],
+                    "biological": [
+                        88
+                    ],
+                    "interpretation": [
+                        89
+                    ],
+                    "would": [
+                        90
+                    ],
+                    "turn": [
+                        91
+                    ],
+                    "biased.": [
+                        92
+                    ],
+                    "To": [
+                        93
+                    ],
+                    "date,": [
+                        94
+                    ],
+                    "there": [
+                        95
+                    ],
+                    "no": [
+                        97
+                    ],
+                    "appropriate": [
+                        98
+                    ],
+                    "methods": [
+                        99,
+                        156,
+                        208,
+                        232
+                    ],
+                    "these": [
+                        103,
+                        107
+                    ],
+                    "factors": [
+                        104
+                    ],
+                    "address": [
+                        106
+                    ],
+                    "issues.": [
+                        108
+                    ],
+                    "RESULTS:": [
+                        109
+                    ],
+                    "We": [
+                        110
+                    ],
+                    "derive": [
+                        111
+                    ],
+                    "statistical": [
+                        113,
+                        182
+                    ],
+                    "properties": [
+                        114
+                    ],
+                    "correlation": [
+                        118,
+                        143
+                    ],
+                    "obtained": [
+                        119
+                    ],
+                    "with": [
+                        120,
+                        230,
+                        237
+                    ],
+                    "Ledoit-Wolf": [
+                        122
+                    ],
+                    "shrinkage.": [
+                        123
+                    ],
+                    "Our": [
+                        124,
+                        153,
+                        184
+                    ],
+                    "result": [
+                        125
+                    ],
+                    "provides": [
+                        126
+                    ],
+                    "a": [
+                        127,
+                        138,
+                        147
+                    ],
+                    "toolbox": [
+                        128
+                    ],
+                    "as": [
+                        133
+                    ],
+                    "(i)": [
+                        134
+                    ],
+                    "confidence": [
+                        135
+                    ],
+                    "intervals,": [
+                        136
+                    ],
+                    "(ii)": [
+                        137
+                    ],
+                    "test": [
+                        139,
+                        148
+                    ],
+                    "zero": [
+                        141
+                    ],
+                    "(null-effects)": [
+                        144
+                    ],
+                    "(iii)": [
+                        146
+                    ],
+                    "compare": [
+                        150
+                    ],
+                    "correlations.": [
+                        152
+                    ],
+                    "novel": [
+                        154,
+                        189
+                    ],
+                    "(parametric)": [
+                        155
+                    ],
+                    "size": [
+                        165
+                    ],
+                    "values.": [
+                        169
+                    ],
+                    "Additionally,": [
+                        170
+                    ],
+                    "computationally": [
+                        173
+                    ],
+                    "fast,": [
+                        174
+                    ],
+                    "simple": [
+                        175
+                    ],
+                    "implement": [
+                        177
+                    ],
+                    "require": [
+                        179
+                    ],
+                    "only": [
+                        180
+                    ],
+                    "basic": [
+                        181
+                    ],
+                    "knowledge.": [
+                        183
+                    ],
+                    "simulations": [
+                        185
+                    ],
+                    "show": [
+                        186
+                    ],
+                    "tests": [
+                        190
+                    ],
+                    "perform": [
+                        191
+                    ],
+                    "better": [
+                        192
+                    ],
+                    "than": [
+                        193
+                    ],
+                    "DiffNetFDR-a": [
+                        194
+                    ],
+                    "recently": [
+                        195
+                    ],
+                    "published": [
+                        196
+                    ],
+                    "alternative-in": [
+                        197
+                    ],
+                    "terms": [
+                        198
+                    ],
+                    "trade-off": [
+                        201
+                    ],
+                    "between": [
+                        202
+                    ],
+                    "true": [
+                        203
+                    ],
+                    "false": [
+                        205
+                    ],
+                    "positives.": [
+                        206
+                    ],
+                    "The": [
+                        207,
+                        227
+                    ],
+                    "demonstrated": [
+                        210
+                    ],
+                    "on": [
+                        211
+                    ],
+                    "synthetic": [
+                        212
+                    ],
+                    "two": [
+                        215
+                    ],
+                    "datasets": [
+                        217
+                    ],
+                    "Escherichia": [
+                        219
+                    ],
+                    "coli": [
+                        220
+                    ],
+                    "Mus": [
+                        222
+                    ],
+                    "musculus.": [
+                        223
+                    ],
+                    "AVAILABILITY": [
+                        224
+                    ],
+                    "AND": [
+                        225
+                    ],
+                    "IMPLEMENTATION:": [
+                        226
+                    ],
+                    "R": [
+                        228,
+                        235
+                    ],
+                    "package": [
+                        229
+                    ],
+                    "script": [
+                        236
+                    ],
+                    "available": [
+                        241,
+                        249
+                    ],
+                    "in": [
+                        242
+                    ],
+                    "https://github.com/V-Bernal/GeneNetTools.": [
+                        243
+                    ],
+                    "SUPPLEMENTARY": [
+                        244
+                    ],
+                    "INFORMATION:": [
+                        245
+                    ],
+                    "Supplementary": [
+                        246
+                    ],
+                    "at": [
+                        250
+                    ],
+                    "Bioinformatics": [
+                        251
+                    ],
+                    "online.": [
+                        252
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "GeneNetTools: tests for Gaussian graphical models with shrinkage",
+                "doi": "10.1093/bioinformatics/btac657",
+                "pmid": "36179082",
+                "pmc": "PMC9665865",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "pub": 5,
+                    "sci": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 32434533,
+                        "mean": 10.496447073432506,
+                        "rank": 9663761,
+                        "pct": 70,
+                        "higher_than": 22716950
+                    },
+                    "journal": {
+                        "count": 14099,
+                        "mean": 8.159741825661396,
+                        "rank": 6777,
+                        "pct": 51,
+                        "higher_than": 7285
+                    },
+                    "similar_age_3m": {
+                        "count": 453595,
+                        "mean": 14.101850549499016,
+                        "rank": 133316,
+                        "pct": 70,
+                        "higher_than": 319016
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 163,
+                        "mean": 8.810736196319018,
+                        "rank": 79,
+                        "pct": 51,
+                        "higher_than": 84
+                    }
+                },
+                "authors": [
+                    "Victor Bernal",
+                    "Venustiano Soancatl-Aguilar",
+                    "Jonas Bulthuis",
+                    "Victor Guryev",
+                    "Peter Horvatovich",
+                    "Marco Grzegorczyk"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1668470400,
+                "epubdate": 1664496000,
+                "dimensions_publication_id": "pub.1151490786",
+                "altmetric_id": 136664187,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 11,
+                "cited_by_tweeters_count": 8,
+                "cited_by_accounts_count": 8,
+                "last_updated": 1666324872,
+                "score": 4.35,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 4.35
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btac657",
+                "added_on": 1664579927,
+                "published_on": 1664496000,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "4",
+                    "connotea": "0"
+                },
+                "readers_count": 4,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=5&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=5&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=5&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=136664187"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 507,
+            "total_ccn": 46,
+            "avg_ccn": 1.64,
+            "nloc_per_file": 39.0,
+            "duplicate_rate": 11.47
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,1933 @@
+{
+    "PPNID": {
+        "tool_name": "PPNID",
+        "biotools": {
+            "name": "PPNID",
+            "description": "PPNID: a manually curated reference database and identification tool for plant-parasitic nematode.",
+            "homepage": "https://github.com/xueqing4083/PPNID",
+            "biotoolsID": "PPNID",
+            "biotoolsCURIE": "biotools:PPNID",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0084",
+                    "term": "Phylogeny"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3810",
+                    "term": "Agricultural science"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/xueqing4083/PPNID/blob/master/Tutorial.pdf",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/BIOINFORMATICS/BTZ707",
+                    "pmid": "31529041",
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "PPNID: A reference database and molecular identification pipeline for plant-parasitic nematodes",
+                        "abstract": "\u00a9 2020 Oxford University Press. All rights reserved.Motivation: The phylum Nematoda comprises the most cosmopolitan and abundant metazoans on Earth and plant-parasitic nematodes represent one of the most significant nematode groups, causing severe losses in agriculture. Practically, the demands for accurate nematode identification are high for ecological, agricultural, taxonomic and phylogenetic researches. Despite their importance, the morphological diagnosis is often a difficult task due to phenotypic plasticity and the absence of clear diagnostic characters while molecular identification is very difficult due to the problematic database and complex genetic background. Results: The present study attempts to make up for currently available databases by creating a manually-curated database including all up-to-date authentic barcoding sequences. To facilitate the laborious process associated with the interpretation and identification of a given query sequence, we developed an automatic software pipeline for rapid species identification. The incorporated alignment function facilitates the examination of mutation distribution and therefore also reveals nucleotide autapomorphies, which are important in species delimitation. The implementation of genetic distance, plot and maximum likelihood phylogeny analysis provides more powerful optimality criteria than similarity searching and facilitates species delimitation using evolutionary or phylogeny species concepts. The pipeline streamlines several functions to facilitate more precise data analyses, and the subsequent interpretation is easy and straightforward.",
+                        "date": "2020-02-15T00:00:00Z",
+                        "citationCount": 7,
+                        "authors": [
+                            {
+                                "name": "Qing X."
+                            },
+                            {
+                                "name": "Wang M."
+                            },
+                            {
+                                "name": "Karssen G."
+                            },
+                            {
+                                "name": "Bucki P."
+                            },
+                            {
+                                "name": "Bert W."
+                            },
+                            {
+                                "name": "Braun-Miyara S."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [],
+            "owner": "Pub2Tools",
+            "additionDate": "2019-11-14T19:48:27Z",
+            "lastUpdate": "2021-01-17T20:14:06Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 176977007,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxNzY5NzcwMDc=",
+                "name": "PPNID",
+                "full_name": "xueqing4083/PPNID",
+                "private": false,
+                "owner": {
+                    "login": "xueqing4083",
+                    "id": 38262200,
+                    "node_id": "MDQ6VXNlcjM4MjYyMjAw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/38262200?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/xueqing4083",
+                    "html_url": "https://github.com/xueqing4083",
+                    "followers_url": "https://api.github.com/users/xueqing4083/followers",
+                    "following_url": "https://api.github.com/users/xueqing4083/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/xueqing4083/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/xueqing4083/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/xueqing4083/subscriptions",
+                    "organizations_url": "https://api.github.com/users/xueqing4083/orgs",
+                    "repos_url": "https://api.github.com/users/xueqing4083/repos",
+                    "events_url": "https://api.github.com/users/xueqing4083/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/xueqing4083/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/xueqing4083/PPNID",
+                "description": "PPNID: a manually curated reference database and identification tool for plant-parasitic nematode",
+                "fork": false,
+                "url": "https://api.github.com/repos/xueqing4083/PPNID",
+                "forks_url": "https://api.github.com/repos/xueqing4083/PPNID/forks",
+                "keys_url": "https://api.github.com/repos/xueqing4083/PPNID/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/xueqing4083/PPNID/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/xueqing4083/PPNID/teams",
+                "hooks_url": "https://api.github.com/repos/xueqing4083/PPNID/hooks",
+                "issue_events_url": "https://api.github.com/repos/xueqing4083/PPNID/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/xueqing4083/PPNID/events",
+                "assignees_url": "https://api.github.com/repos/xueqing4083/PPNID/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/xueqing4083/PPNID/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/xueqing4083/PPNID/tags",
+                "blobs_url": "https://api.github.com/repos/xueqing4083/PPNID/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/xueqing4083/PPNID/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/xueqing4083/PPNID/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/xueqing4083/PPNID/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/xueqing4083/PPNID/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/xueqing4083/PPNID/languages",
+                "stargazers_url": "https://api.github.com/repos/xueqing4083/PPNID/stargazers",
+                "contributors_url": "https://api.github.com/repos/xueqing4083/PPNID/contributors",
+                "subscribers_url": "https://api.github.com/repos/xueqing4083/PPNID/subscribers",
+                "subscription_url": "https://api.github.com/repos/xueqing4083/PPNID/subscription",
+                "commits_url": "https://api.github.com/repos/xueqing4083/PPNID/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/xueqing4083/PPNID/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/xueqing4083/PPNID/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/xueqing4083/PPNID/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/xueqing4083/PPNID/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/xueqing4083/PPNID/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/xueqing4083/PPNID/merges",
+                "archive_url": "https://api.github.com/repos/xueqing4083/PPNID/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/xueqing4083/PPNID/downloads",
+                "issues_url": "https://api.github.com/repos/xueqing4083/PPNID/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/xueqing4083/PPNID/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/xueqing4083/PPNID/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/xueqing4083/PPNID/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/xueqing4083/PPNID/labels{/name}",
+                "releases_url": "https://api.github.com/repos/xueqing4083/PPNID/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/xueqing4083/PPNID/deployments",
+                "created_at": "2019-03-21T15:47:17Z",
+                "updated_at": "2024-10-17T02:09:37Z",
+                "pushed_at": "2020-03-01T03:30:00Z",
+                "git_url": "git://github.com/xueqing4083/PPNID.git",
+                "ssh_url": "git@github.com:xueqing4083/PPNID.git",
+                "clone_url": "https://github.com/xueqing4083/PPNID.git",
+                "svn_url": "https://github.com/xueqing4083/PPNID",
+                "homepage": null,
+                "size": 6649,
+                "stargazers_count": 3,
+                "watchers_count": 3,
+                "language": null,
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 1,
+                "watchers": 3,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 1,
+                "subscribers_count": 0
+            },
+            "contents": [
+                {
+                    "path": "Link ofTutorial video.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "PPNIDQing2.24",
+                    "type": "tree"
+                },
+                {
+                    "path": "PPNIDQing7.26",
+                    "type": "tree"
+                },
+                {
+                    "path": "PPNIDv0.30 code.rar",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "Tutorial.pdf",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "xueqing4083",
+                    "contributions": 9
+                }
+            ],
+            "closed_issues": [],
+            "languages": {},
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btz707",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "31529041",
+                            "source": "MED",
+                            "pmid": "31529041",
+                            "doi": "10.1093/bioinformatics/btz707",
+                            "title": "PPNID: a reference database and molecular identification pipeline for plant-parasitic nematodes.",
+                            "authorString": "Qing X, Wang M, Karssen G, Bucki P, Bert W, Braun-Miyara S.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "4",
+                            "journalVolume": "36",
+                            "pubYear": "2020",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "1052-1056",
+                            "pubType": "research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "N",
+                            "inEPMC": "N",
+                            "inPMC": "N",
+                            "hasPDF": "N",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 6,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2019-09-19",
+                            "firstPublicationDate": "2020-02-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2973233547",
+                "doi": "https://doi.org/10.1093/bioinformatics/btz707",
+                "title": "PPNID: a reference database and molecular identification pipeline for plant-parasitic nematodes",
+                "display_name": "PPNID: a reference database and molecular identification pipeline for plant-parasitic nematodes",
+                "publication_year": 2019,
+                "publication_date": "2019-09-11",
+                "ids": {
+                    "openalex": "https://openalex.org/W2973233547",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btz707",
+                    "mag": "2973233547",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/31529041"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btz707",
+                    "is_oa": false,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz707",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "green",
+                    "oa_url": "https://research.wur.nl/en/publications/ppnid-a-reference-database-and-molecular-identification-pipeline-",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5065765548",
+                            "display_name": "Xue Qing",
+                            "orcid": "https://orcid.org/0000-0002-0355-9956"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I376102",
+                                "display_name": "Agricultural Research Organization",
+                                "ror": "https://ror.org/05hbrxp80",
+                                "country_code": "IL",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "IL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Xue Qing",
+                        "raw_affiliation_strings": [
+                            "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel",
+                                "institution_ids": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5100377187",
+                            "display_name": "Meng Wang",
+                            "orcid": "https://orcid.org/0000-0002-7481-1856"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I376102",
+                                "display_name": "Agricultural Research Organization",
+                                "ror": "https://ror.org/05hbrxp80",
+                                "country_code": "IL",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "IL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Meng Wang",
+                        "raw_affiliation_strings": [
+                            "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel",
+                                "institution_ids": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5112355230",
+                            "display_name": "Gerrit Karssen",
+                            "orcid": null
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Gerrit Karssen",
+                        "raw_affiliation_strings": [
+                            "National Plant Protection Organization, Wageningen Nematode Collection , Wageningen 6700 HC, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "National Plant Protection Organization, Wageningen Nematode Collection , Wageningen 6700 HC, The Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5079168972",
+                            "display_name": "Patricia Bucki",
+                            "orcid": "https://orcid.org/0000-0002-5988-8740"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I376102",
+                                "display_name": "Agricultural Research Organization",
+                                "ror": "https://ror.org/05hbrxp80",
+                                "country_code": "IL",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "IL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Patricia Bucki",
+                        "raw_affiliation_strings": [
+                            "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel",
+                                "institution_ids": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5020667786",
+                            "display_name": "Wim Bert",
+                            "orcid": "https://orcid.org/0000-0002-5864-412X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I32597200",
+                                "display_name": "Ghent University",
+                                "ror": "https://ror.org/00cv9y106",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I32597200"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Wim Bert",
+                        "raw_affiliation_strings": [
+                            "Department of Biology, Nematology Research Unit, Ghent University , Ghent 9000, Belgium"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology, Nematology Research Unit, Ghent University , Ghent 9000, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I32597200"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5003941761",
+                            "display_name": "Sigal Brown Miyara",
+                            "orcid": "https://orcid.org/0000-0002-4888-4410"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I376102",
+                                "display_name": "Agricultural Research Organization",
+                                "ror": "https://ror.org/05hbrxp80",
+                                "country_code": "IL",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "IL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Sigal Braun-Miyara",
+                        "raw_affiliation_strings": [
+                            "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Entomology, Nematology and Chemistry Units, Agricultural Research Organization (ARO), The Volcani Center , Rishon LeZion 7505101, Israel",
+                                "institution_ids": [
+                                    "https://openalex.org/I376102"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5003941761",
+                    "https://openalex.org/A5065765548"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I376102"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": null,
+                "fwci": 2.0281,
+                "has_fulltext": false,
+                "cited_by_count": 16,
+                "citation_normalized_percentile": {
+                    "value": 0.88585516,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 95,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "36",
+                    "issue": "4",
+                    "first_page": "1052",
+                    "last_page": "1056"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11179",
+                    "display_name": "Nematode management and characterization studies",
+                    "score": 0.9819999933242798,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1110",
+                        "display_name": "Plant Science"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/11",
+                        "display_name": "Agricultural and Biological Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11179",
+                        "display_name": "Nematode management and characterization studies",
+                        "score": 0.9819999933242798,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1110",
+                            "display_name": "Plant Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10815",
+                        "display_name": "Parasite Biology and Host Interactions",
+                        "score": 0.00430000014603138,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11074",
+                        "display_name": "Helminth infection and control",
+                        "score": 0.0038999998942017555,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/3404",
+                            "display_name": "Small Animals"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/34",
+                            "display_name": "Veterinary"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/identification",
+                        "display_name": "Identification (biology)",
+                        "score": 0.7250477075576782
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pipeline",
+                        "display_name": "Pipeline (software)",
+                        "score": 0.5543721914291382
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5341424345970154
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/executable",
+                        "display_name": "Executable",
+                        "score": 0.5285540819168091
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/phylogenetics",
+                        "display_name": "Phylogenetics",
+                        "score": 0.4849293529987335
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.46740370988845825
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/source-code",
+                        "display_name": "Source code",
+                        "score": 0.4543622136116028
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/phylogenetic-tree",
+                        "display_name": "Phylogenetic tree",
+                        "score": 0.4467346668243408
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.3526553809642792
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/ecology",
+                        "display_name": "Ecology",
+                        "score": 0.23499268293380737
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.1508665382862091
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.09010940790176392
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C116834253",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+                        "display_name": "Identification (biology)",
+                        "level": 2,
+                        "score": 0.7250477075576782
+                    },
+                    {
+                        "id": "https://openalex.org/C43521106",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+                        "display_name": "Pipeline (software)",
+                        "level": 2,
+                        "score": 0.5543721914291382
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5341424345970154
+                    },
+                    {
+                        "id": "https://openalex.org/C160145156",
+                        "wikidata": "https://www.wikidata.org/wiki/Q778586",
+                        "display_name": "Executable",
+                        "level": 2,
+                        "score": 0.5285540819168091
+                    },
+                    {
+                        "id": "https://openalex.org/C90132467",
+                        "wikidata": "https://www.wikidata.org/wiki/Q171184",
+                        "display_name": "Phylogenetics",
+                        "level": 3,
+                        "score": 0.4849293529987335
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.46740370988845825
+                    },
+                    {
+                        "id": "https://openalex.org/C43126263",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128751",
+                        "display_name": "Source code",
+                        "level": 2,
+                        "score": 0.4543622136116028
+                    },
+                    {
+                        "id": "https://openalex.org/C193252679",
+                        "wikidata": "https://www.wikidata.org/wiki/Q242125",
+                        "display_name": "Phylogenetic tree",
+                        "level": 3,
+                        "score": 0.4467346668243408
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.3526553809642792
+                    },
+                    {
+                        "id": "https://openalex.org/C18903297",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7150",
+                        "display_name": "Ecology",
+                        "level": 1,
+                        "score": 0.23499268293380737
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.1508665382862091
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.09010940790176392
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009348",
+                        "descriptor_name": "Nematoda",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009348",
+                        "descriptor_name": "Nematoda",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009348",
+                        "descriptor_name": "Nematoda",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010944",
+                        "descriptor_name": "Plants",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010944",
+                        "descriptor_name": "Plants",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010944",
+                        "descriptor_name": "Plants",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 4,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btz707",
+                        "is_oa": false,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz707",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:31529041",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31529041",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:archive.ugent.be:8644432",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/1854/LU-8644432",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400478",
+                            "display_name": "Ghent University Academic Bibliography (Ghent University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I32597200",
+                            "host_organization_name": "Ghent University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I32597200"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BIOINFORMATICS",
+                        "raw_type": "journalArticle"
+                    },
+                    {
+                        "id": "pmh:wur:oai:library.wur.nl:wurpubs/592236",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.wur.nl/en/publications/ppnid-a-reference-database-and-molecular-identification-pipeline-",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(4), 1052 - 1056",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "pmh:wur:oai:library.wur.nl:wurpubs/592236",
+                    "is_oa": true,
+                    "landing_page_url": "https://research.wur.nl/en/publications/ppnid-a-reference-database-and-molecular-identification-pipeline-",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306401843",
+                        "display_name": "Data Archiving and Networked Services (DANS)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "host_organization": "https://openalex.org/I1322597698",
+                        "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I1322597698"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "other-oa",
+                    "license_id": "https://openalex.org/licenses/other-oa",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Bioinformatics, 36(4), 1052 - 1056",
+                    "raw_type": "info:eu-repo/semantics/article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/2",
+                        "score": 0.5400000214576721,
+                        "display_name": "Zero hunger"
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 39,
+                "referenced_works": [
+                    "https://openalex.org/W36320680",
+                    "https://openalex.org/W568958565",
+                    "https://openalex.org/W1267673132",
+                    "https://openalex.org/W1578260240",
+                    "https://openalex.org/W1820060557",
+                    "https://openalex.org/W2005176497",
+                    "https://openalex.org/W2039824012",
+                    "https://openalex.org/W2044876288",
+                    "https://openalex.org/W2048784595",
+                    "https://openalex.org/W2053885906",
+                    "https://openalex.org/W2058186675",
+                    "https://openalex.org/W2061354930",
+                    "https://openalex.org/W2069445330",
+                    "https://openalex.org/W2077441292",
+                    "https://openalex.org/W2080887020",
+                    "https://openalex.org/W2099901798",
+                    "https://openalex.org/W2103546861",
+                    "https://openalex.org/W2103961200",
+                    "https://openalex.org/W2108973989",
+                    "https://openalex.org/W2113206173",
+                    "https://openalex.org/W2115387350",
+                    "https://openalex.org/W2118179655",
+                    "https://openalex.org/W2119083836",
+                    "https://openalex.org/W2132297686",
+                    "https://openalex.org/W2132926880",
+                    "https://openalex.org/W2144361423",
+                    "https://openalex.org/W2145397665",
+                    "https://openalex.org/W2154819422",
+                    "https://openalex.org/W2160388710",
+                    "https://openalex.org/W2168105736",
+                    "https://openalex.org/W2308066056",
+                    "https://openalex.org/W2596897939",
+                    "https://openalex.org/W2765311541",
+                    "https://openalex.org/W2801815683",
+                    "https://openalex.org/W2901833019",
+                    "https://openalex.org/W4235612683",
+                    "https://openalex.org/W6638423856",
+                    "https://openalex.org/W6675224184",
+                    "https://openalex.org/W6679995361"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2174809885",
+                    "https://openalex.org/W2598672065",
+                    "https://openalex.org/W2883025420",
+                    "https://openalex.org/W2057191541",
+                    "https://openalex.org/W2949296710",
+                    "https://openalex.org/W1992658754",
+                    "https://openalex.org/W1993817217",
+                    "https://openalex.org/W3120610872",
+                    "https://openalex.org/W2111939425",
+                    "https://openalex.org/W2065083790"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "The": [
+                        1,
+                        83,
+                        131,
+                        153,
+                        182,
+                        204,
+                        224,
+                        235
+                    ],
+                    "phylum": [
+                        2
+                    ],
+                    "Nematoda": [
+                        3
+                    ],
+                    "comprises": [
+                        4
+                    ],
+                    "the": [
+                        5,
+                        19,
+                        30,
+                        48,
+                        61,
+                        75,
+                        107,
+                        112,
+                        136,
+                        194,
+                        229
+                    ],
+                    "most": [
+                        6,
+                        20
+                    ],
+                    "cosmopolitan": [
+                        7
+                    ],
+                    "and": [
+                        8,
+                        13,
+                        42,
+                        60,
+                        78,
+                        114,
+                        141,
+                        159,
+                        172,
+                        193,
+                        199,
+                        216
+                    ],
+                    "abundant": [
+                        9
+                    ],
+                    "metazoans": [
+                        10
+                    ],
+                    "on": [
+                        11,
+                        211
+                    ],
+                    "Earth": [
+                        12
+                    ],
+                    "plant-parasitic": [
+                        14
+                    ],
+                    "nematodes": [
+                        15
+                    ],
+                    "represent": [
+                        16
+                    ],
+                    "one": [
+                        17
+                    ],
+                    "of": [
+                        18,
+                        63,
+                        116,
+                        138,
+                        155
+                    ],
+                    "significant": [
+                        21
+                    ],
+                    "nematode": [
+                        22,
+                        34
+                    ],
+                    "groups,": [
+                        23
+                    ],
+                    "causing": [
+                        24
+                    ],
+                    "severe": [
+                        25
+                    ],
+                    "losses": [
+                        26
+                    ],
+                    "in": [
+                        27,
+                        150,
+                        208,
+                        220
+                    ],
+                    "agriculture.": [
+                        28
+                    ],
+                    "Practically,": [
+                        29
+                    ],
+                    "demands": [
+                        31
+                    ],
+                    "for": [
+                        32,
+                        38,
+                        90,
+                        127
+                    ],
+                    "accurate": [
+                        33
+                    ],
+                    "identification": [
+                        35,
+                        69,
+                        115
+                    ],
+                    "are": [
+                        36,
+                        148,
+                        249
+                    ],
+                    "high": [
+                        37
+                    ],
+                    "ecological,": [
+                        39
+                    ],
+                    "agricultural,": [
+                        40
+                    ],
+                    "taxonomic": [
+                        41
+                    ],
+                    "phylogenetic": [
+                        43
+                    ],
+                    "researches.": [
+                        44
+                    ],
+                    "Despite": [
+                        45
+                    ],
+                    "their": [
+                        46
+                    ],
+                    "importance,": [
+                        47
+                    ],
+                    "morphological": [
+                        49
+                    ],
+                    "diagnosis": [
+                        50
+                    ],
+                    "is": [
+                        51,
+                        70,
+                        197,
+                        226,
+                        241
+                    ],
+                    "often": [
+                        52
+                    ],
+                    "a": [
+                        53,
+                        96,
+                        117
+                    ],
+                    "difficult": [
+                        54,
+                        72
+                    ],
+                    "task": [
+                        55
+                    ],
+                    "due": [
+                        56,
+                        73
+                    ],
+                    "to": [
+                        57,
+                        74,
+                        87,
+                        187,
+                        218
+                    ],
+                    "phenotypic": [
+                        58
+                    ],
+                    "plasticity": [
+                        59
+                    ],
+                    "absence": [
+                        62
+                    ],
+                    "clear": [
+                        64
+                    ],
+                    "diagnostic": [
+                        65
+                    ],
+                    "characters": [
+                        66
+                    ],
+                    "while": [
+                        67
+                    ],
+                    "molecular": [
+                        68
+                    ],
+                    "very": [
+                        71
+                    ],
+                    "problematic": [
+                        76
+                    ],
+                    "database": [
+                        77,
+                        98
+                    ],
+                    "complex": [
+                        79
+                    ],
+                    "genetic": [
+                        80,
+                        156
+                    ],
+                    "background.": [
+                        81
+                    ],
+                    "RESULTS:": [
+                        82
+                    ],
+                    "present": [
+                        84
+                    ],
+                    "study": [
+                        85
+                    ],
+                    "attempts": [
+                        86
+                    ],
+                    "make": [
+                        88
+                    ],
+                    "up": [
+                        89
+                    ],
+                    "currently": [
+                        91
+                    ],
+                    "available": [
+                        92,
+                        242,
+                        250
+                    ],
+                    "databases": [
+                        93
+                    ],
+                    "by": [
+                        94
+                    ],
+                    "creating": [
+                        95
+                    ],
+                    "manually-curated": [
+                        97
+                    ],
+                    "including": [
+                        99
+                    ],
+                    "all": [
+                        100
+                    ],
+                    "up-to-date": [
+                        101
+                    ],
+                    "authentic": [
+                        102
+                    ],
+                    "barcoding": [
+                        103
+                    ],
+                    "sequences.": [
+                        104
+                    ],
+                    "To": [
+                        105
+                    ],
+                    "facilitate": [
+                        106,
+                        188
+                    ],
+                    "laborious": [
+                        108
+                    ],
+                    "process": [
+                        109
+                    ],
+                    "associated": [
+                        110
+                    ],
+                    "with": [
+                        111,
+                        239
+                    ],
+                    "interpretation": [
+                        113,
+                        196
+                    ],
+                    "given": [
+                        118
+                    ],
+                    "query": [
+                        119
+                    ],
+                    "sequence,": [
+                        120
+                    ],
+                    "we": [
+                        121
+                    ],
+                    "developed": [
+                        122,
+                        210
+                    ],
+                    "an": [
+                        123
+                    ],
+                    "automatic": [
+                        124
+                    ],
+                    "software": [
+                        125
+                    ],
+                    "pipeline": [
+                        126,
+                        183,
+                        205
+                    ],
+                    "rapid": [
+                        128
+                    ],
+                    "species": [
+                        129,
+                        151,
+                        174,
+                        180
+                    ],
+                    "identification.": [
+                        130
+                    ],
+                    "incorporated": [
+                        132
+                    ],
+                    "alignment": [
+                        133
+                    ],
+                    "function": [
+                        134
+                    ],
+                    "facilitates": [
+                        135,
+                        173
+                    ],
+                    "examination": [
+                        137
+                    ],
+                    "mutation": [
+                        139
+                    ],
+                    "distribution": [
+                        140
+                    ],
+                    "therefore": [
+                        142
+                    ],
+                    "also": [
+                        143
+                    ],
+                    "reveals": [
+                        144
+                    ],
+                    "nucleotide": [
+                        145
+                    ],
+                    "autapomorphies,": [
+                        146
+                    ],
+                    "which": [
+                        147
+                    ],
+                    "important": [
+                        149
+                    ],
+                    "delimitation.": [
+                        152
+                    ],
+                    "implementation": [
+                        154
+                    ],
+                    "distance,": [
+                        157
+                    ],
+                    "plot": [
+                        158
+                    ],
+                    "maximum": [
+                        160
+                    ],
+                    "likelihood": [
+                        161
+                    ],
+                    "phylogeny": [
+                        162,
+                        179
+                    ],
+                    "analysis": [
+                        163
+                    ],
+                    "provides": [
+                        164
+                    ],
+                    "more": [
+                        165,
+                        189
+                    ],
+                    "powerful": [
+                        166
+                    ],
+                    "optimality": [
+                        167
+                    ],
+                    "criteria": [
+                        168
+                    ],
+                    "than": [
+                        169
+                    ],
+                    "similarity": [
+                        170
+                    ],
+                    "searching": [
+                        171
+                    ],
+                    "delimitation": [
+                        175
+                    ],
+                    "using": [
+                        176
+                    ],
+                    "evolutionary": [
+                        177
+                    ],
+                    "or": [
+                        178
+                    ],
+                    "concepts.": [
+                        181
+                    ],
+                    "streamlines": [
+                        184
+                    ],
+                    "several": [
+                        185
+                    ],
+                    "functions": [
+                        186
+                    ],
+                    "precise": [
+                        190
+                    ],
+                    "data": [
+                        191,
+                        248
+                    ],
+                    "analyses,": [
+                        192
+                    ],
+                    "subsequent": [
+                        195
+                    ],
+                    "easy": [
+                        198
+                    ],
+                    "straightforward.": [
+                        200
+                    ],
+                    "AVAILABILITY": [
+                        201
+                    ],
+                    "AND": [
+                        202
+                    ],
+                    "IMPLEMENTATION:": [
+                        203
+                    ],
+                    "was": [
+                        206
+                    ],
+                    "written": [
+                        207
+                    ],
+                    "vb.net,": [
+                        209
+                    ],
+                    "Microsoft": [
+                        212
+                    ],
+                    "Visual": [
+                        213
+                    ],
+                    "Studio": [
+                        214
+                    ],
+                    "2017": [
+                        215
+                    ],
+                    "designed": [
+                        217
+                    ],
+                    "work": [
+                        219
+                    ],
+                    "any": [
+                        221
+                    ],
+                    "Windows": [
+                        222
+                    ],
+                    "environment.": [
+                        223
+                    ],
+                    "PPNID": [
+                        225
+                    ],
+                    "distributed": [
+                        227
+                    ],
+                    "under": [
+                        228
+                    ],
+                    "GNU": [
+                        230
+                    ],
+                    "General": [
+                        231
+                    ],
+                    "Public": [
+                        232
+                    ],
+                    "License": [
+                        233
+                    ],
+                    "(GPL).": [
+                        234
+                    ],
+                    "executable": [
+                        236
+                    ],
+                    "file": [
+                        237
+                    ],
+                    "along": [
+                        238
+                    ],
+                    "tutorials": [
+                        240
+                    ],
+                    "at": [
+                        243,
+                        251
+                    ],
+                    "https://github.com/xueqing4083/PPNID.": [
+                        244
+                    ],
+                    "SUPPLEMENTARY": [
+                        245
+                    ],
+                    "INFORMATION:": [
+                        246
+                    ],
+                    "Supplementary": [
+                        247
+                    ],
+                    "Bioinformatics": [
+                        252
+                    ],
+                    "online.": [
+                        253
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "PPNID: a reference database and molecular identification pipeline for plant-parasitic nematodes",
+                "doi": "10.1093/bioinformatics/btz707",
+                "pmid": "31529041",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "com": 1,
+                    "pub": 2,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 28169479,
+                        "mean": 10.848987079881741,
+                        "rank": 16365530,
+                        "pct": 41,
+                        "higher_than": 11717325
+                    },
+                    "journal": {
+                        "count": 10819,
+                        "mean": 8.266410389130234,
+                        "rank": 6973,
+                        "pct": 34,
+                        "higher_than": 3721
+                    },
+                    "similar_age_3m": {
+                        "count": 355481,
+                        "mean": 13.893176242893432,
+                        "rank": 173939,
+                        "pct": 50,
+                        "higher_than": 179603
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 159,
+                        "mean": 7.7364528301886795,
+                        "rank": 88,
+                        "pct": 44,
+                        "higher_than": 70
+                    }
+                },
+                "authors": [
+                    "Xue Qing",
+                    "Meng Wang",
+                    "Gerrit Karssen",
+                    "Patricia Bucki",
+                    "Wim Bert",
+                    "Sigal Braun-Miyara"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1581724800,
+                "epubdate": 1568419200,
+                "dimensions_publication_id": "pub.1121018586",
+                "altmetric_id": 66604995,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 4,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1575265478,
+                "score": 2.75,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.75
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btz707",
+                "added_on": 1568468904,
+                "published_on": 1568419200,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "35",
+                    "connotea": "0"
+                },
+                "readers_count": 35,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=66604995"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 0,
+            "total_ccn": 0,
+            "avg_ccn": 0.0,
+            "nloc_per_file": 0.0,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

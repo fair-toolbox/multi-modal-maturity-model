@@ -1,0 +1,1773 @@
+{
+    "RRE-Finder": {
+        "tool_name": "RRE-Finder",
+        "biotools": {
+            "name": "RRE-Finder",
+            "description": "A Genome-Mining Tool for Class-Independent RiPP Discovery.\n\nBioinformatic application for the detection of RREs in protein sequences of interest.\n\nInstall the included conda environment with \"conda env create -f RREfinder.yml\" Or make sure the following packages/programs are installed and in your path.\n\nDatabases need to be downloaded independently from https://zenodo.org/record/3733240#.XoRkIUEzbCI. Please download all the files, except the folder with the seed sequences, and place them into the data/database folder within the downloaded repository.\n\nRREFinder accepts both protein .fasta files and .genbank files. Alternatively, you can use '--antismash ripp' and let the --infile point to a .final.gbk file from antiSMASH analysis. This way all the antiSMASH RiPP gene clusters will be analyzed.",
+            "homepage": "https://github.com/Alexamk/RREFinder",
+            "biotoolsID": "rre-finder",
+            "biotoolsCURIE": "biotools:rre-finder",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0246",
+                            "term": "Protein domain recognition"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0303",
+                            "term": "Fold recognition"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0601",
+                    "term": "Protein modifications"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0632",
+                    "term": "Probes and primers"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0821",
+                    "term": "Enzymes"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0736",
+                    "term": "Protein folds and structural domains"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": null,
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1101/2020.03.14.992123",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Gilles P. van Wezel",
+                    "email": "douglasm@illinois.edu",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Marnix H. Medema",
+                    "email": "marnix.medema@wur.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Douglas A. Mitchell",
+                    "email": "g.wezel@biology.leidenuniv.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "zsmag19",
+            "additionDate": "2021-01-18T08:03:49Z",
+            "lastUpdate": "2021-02-08T13:29:57Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 242789301,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNDI3ODkzMDE=",
+                "name": "RREFinder",
+                "full_name": "Alexamk/RREFinder",
+                "private": false,
+                "owner": {
+                    "login": "Alexamk",
+                    "id": 27502292,
+                    "node_id": "MDQ6VXNlcjI3NTAyMjky",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/27502292?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Alexamk",
+                    "html_url": "https://github.com/Alexamk",
+                    "followers_url": "https://api.github.com/users/Alexamk/followers",
+                    "following_url": "https://api.github.com/users/Alexamk/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Alexamk/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Alexamk/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Alexamk/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Alexamk/orgs",
+                    "repos_url": "https://api.github.com/users/Alexamk/repos",
+                    "events_url": "https://api.github.com/users/Alexamk/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Alexamk/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/Alexamk/RREFinder",
+                "description": "Bioinfromatic application for the detection of RREs in protein sequences of interest",
+                "fork": false,
+                "url": "https://api.github.com/repos/Alexamk/RREFinder",
+                "forks_url": "https://api.github.com/repos/Alexamk/RREFinder/forks",
+                "keys_url": "https://api.github.com/repos/Alexamk/RREFinder/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/Alexamk/RREFinder/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/Alexamk/RREFinder/teams",
+                "hooks_url": "https://api.github.com/repos/Alexamk/RREFinder/hooks",
+                "issue_events_url": "https://api.github.com/repos/Alexamk/RREFinder/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/Alexamk/RREFinder/events",
+                "assignees_url": "https://api.github.com/repos/Alexamk/RREFinder/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/Alexamk/RREFinder/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/Alexamk/RREFinder/tags",
+                "blobs_url": "https://api.github.com/repos/Alexamk/RREFinder/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/Alexamk/RREFinder/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/Alexamk/RREFinder/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/Alexamk/RREFinder/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/Alexamk/RREFinder/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/Alexamk/RREFinder/languages",
+                "stargazers_url": "https://api.github.com/repos/Alexamk/RREFinder/stargazers",
+                "contributors_url": "https://api.github.com/repos/Alexamk/RREFinder/contributors",
+                "subscribers_url": "https://api.github.com/repos/Alexamk/RREFinder/subscribers",
+                "subscription_url": "https://api.github.com/repos/Alexamk/RREFinder/subscription",
+                "commits_url": "https://api.github.com/repos/Alexamk/RREFinder/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/Alexamk/RREFinder/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/Alexamk/RREFinder/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/Alexamk/RREFinder/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/Alexamk/RREFinder/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/Alexamk/RREFinder/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/Alexamk/RREFinder/merges",
+                "archive_url": "https://api.github.com/repos/Alexamk/RREFinder/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/Alexamk/RREFinder/downloads",
+                "issues_url": "https://api.github.com/repos/Alexamk/RREFinder/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/Alexamk/RREFinder/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/Alexamk/RREFinder/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/Alexamk/RREFinder/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/Alexamk/RREFinder/labels{/name}",
+                "releases_url": "https://api.github.com/repos/Alexamk/RREFinder/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/Alexamk/RREFinder/deployments",
+                "created_at": "2020-02-24T16:44:31Z",
+                "updated_at": "2023-04-09T16:48:11Z",
+                "pushed_at": "2023-02-17T13:40:36Z",
+                "git_url": "git://github.com/Alexamk/RREFinder.git",
+                "ssh_url": "git@github.com:Alexamk/RREFinder.git",
+                "clone_url": "https://github.com/Alexamk/RREFinder.git",
+                "svn_url": "https://github.com/Alexamk/RREFinder",
+                "homepage": null,
+                "size": 30613,
+                "stargazers_count": 7,
+                "watchers_count": 7,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 4,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 2,
+                "license": {
+                    "key": "agpl-3.0",
+                    "name": "GNU Affero General Public License v3.0",
+                    "spdx_id": "AGPL-3.0",
+                    "url": "https://api.github.com/licenses/agpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTE="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 4,
+                "open_issues": 2,
+                "watchers": 7,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 4,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "RRE.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "RREfinder.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "config.ini",
+                    "type": "blob"
+                },
+                {
+                    "path": "data",
+                    "type": "tree"
+                },
+                {
+                    "path": "download_RRE_databases.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib",
+                    "type": "tree"
+                },
+                {
+                    "path": "sample_input",
+                    "type": "tree"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup_RRE_exploratory.py",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "Alexamk",
+                    "contributions": 65
+                },
+                {
+                    "login": "loraine-gueguen",
+                    "contributions": 5
+                },
+                {
+                    "login": "prihoda",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 14,
+                    "title": "Cannot find file RRE.py in package built with setuptools",
+                    "created_at": "2023-02-02T16:52:25Z",
+                    "closed_at": "2023-02-17T13:39:04Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Failing automatic package discovery with setuptools",
+                    "created_at": "2022-04-14T10:41:38Z",
+                    "closed_at": "2023-01-27T10:18:58Z"
+                },
+                {
+                    "number": 10,
+                    "title": "No _fas.ffindex files in Uniclust database",
+                    "created_at": "2022-03-29T11:58:08Z",
+                    "closed_at": "2022-04-05T08:37:51Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Problem with installation (\"FileNotFoundError: [Errno 2] No such file or directory\" for .a3m file)",
+                    "created_at": "2022-03-28T13:10:58Z",
+                    "closed_at": "2022-03-29T11:48:16Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Problems parsing gbk files - 'illegal characters'",
+                    "created_at": "2021-06-10T04:31:21Z",
+                    "closed_at": "2021-06-22T00:43:33Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Missing files in exploratory mode",
+                    "created_at": "2020-07-05T10:59:56Z",
+                    "closed_at": "2020-07-07T20:08:33Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Support AntiSMASH 5 output format",
+                    "created_at": "2020-03-30T14:31:30Z",
+                    "closed_at": "2020-03-31T11:57:22Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Environment is missing Biopython",
+                    "created_at": "2020-03-30T14:21:52Z",
+                    "closed_at": "2020-03-30T21:08:30Z"
+                }
+            ],
+            "languages": {
+                "Python": 69974,
+                "Shell": 485
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1128/msystems.00267-20",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "32873609",
+                            "source": "MED",
+                            "pmid": "32873609",
+                            "pmcid": "PMC7470986",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7470986"
+                                ]
+                            },
+                            "doi": "10.1128/msystems.00267-20",
+                            "title": "RRE-Finder: a Genome-Mining Tool for Class-Independent RiPP Discovery.",
+                            "authorString": "Kloosterman AM, Shelton KE, van Wezel GP, Medema MH, Mitchell DA.",
+                            "journalTitle": "mSystems",
+                            "issue": "5",
+                            "journalVolume": "5",
+                            "pubYear": "2020",
+                            "journalIssn": "2379-5077",
+                            "pageInfo": "e00267-20",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 94,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "pfam",
+                                    "pdb"
+                                ]
+                            },
+                            "firstIndexDate": "2020-09-03",
+                            "firstPublicationDate": "2020-09-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W32873609",
+                "doi": "https://doi.org/10.1128/msystems.00267-20",
+                "title": "[Metformin and kidneys].",
+                "display_name": "[Metformin and kidneys].",
+                "publication_year": 2008,
+                "publication_date": "2008-05-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W32873609",
+                    "doi": "https://doi.org/10.1128/msystems.00267-20",
+                    "mag": "32873609"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "mag:32873609",
+                    "is_oa": false,
+                    "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/18630642",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306525036",
+                        "display_name": "PubMed",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "host_organization": "https://openalex.org/I1299303238",
+                        "host_organization_name": "National Institutes of Health",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I1299303238"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "PubMed",
+                    "raw_type": null
+                },
+                "type": "article",
+                "indexed_in": [
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": false,
+                    "oa_status": "closed",
+                    "oa_url": null,
+                    "any_repository_has_fulltext": false
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5006351915",
+                            "display_name": "Alena \u0160mahelov\u00e1",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210150096",
+                                "display_name": "Ocn\u00ed klinika",
+                                "ror": "https://ror.org/05qgz5a90",
+                                "country_code": "CZ",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210150096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "CZ"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Alena \u0160mahelov\u00e1",
+                        "raw_affiliation_strings": [
+                            "Diabetologick\u00e9 centrum Kliniky gerontologick\u00e9 a metabolick\u00e9 L\u00e9karsk\u00e9 fakulty UKa FN Hradec Kr\u00e1lov\u00e9. smahelov@lfhk.cuni.cz"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Diabetologick\u00e9 centrum Kliniky gerontologick\u00e9 a metabolick\u00e9 L\u00e9karsk\u00e9 fakulty UKa FN Hradec Kr\u00e1lov\u00e9. smahelov@lfhk.cuni.cz",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210150096"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 1,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5006351915"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I4210150096"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 0.191,
+                "has_fulltext": false,
+                "cited_by_count": 1,
+                "citation_normalized_percentile": {
+                    "value": 0.6012741,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": null,
+                "biblio": {
+                    "volume": "54",
+                    "issue": "5",
+                    "first_page": "535",
+                    "last_page": "40"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11171",
+                    "display_name": "Diabetes and associated disorders",
+                    "score": 0.6762999892234802,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11171",
+                        "display_name": "Diabetes and associated disorders",
+                        "score": 0.6762999892234802,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10560",
+                        "display_name": "Diabetes Management and Research",
+                        "score": 0.5861999988555908,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2712",
+                            "display_name": "Endocrinology, Diabetes and Metabolism"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10401",
+                        "display_name": "Diabetes Treatment and Management",
+                        "score": 0.5834000110626221,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2712",
+                            "display_name": "Endocrinology, Diabetes and Metabolism"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/metformin",
+                        "display_name": "Metformin",
+                        "score": 0.9677296876907349
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/medicine",
+                        "display_name": "Medicine",
+                        "score": 0.8515521287918091
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/incidence",
+                        "display_name": "Incidence (geometry)",
+                        "score": 0.6712662577629089
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/type-2-diabetes",
+                        "display_name": "Type 2 diabetes",
+                        "score": 0.5372217893600464
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/acidosis",
+                        "display_name": "Acidosis",
+                        "score": 0.5090638995170593
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/internal-medicine",
+                        "display_name": "Internal medicine",
+                        "score": 0.5003154277801514
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/intensive-care-medicine",
+                        "display_name": "Intensive care medicine",
+                        "score": 0.4890924096107483
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/lactic-acidosis",
+                        "display_name": "Lactic acidosis",
+                        "score": 0.45605960488319397
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/drug",
+                        "display_name": "Drug",
+                        "score": 0.43018990755081177
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/disease",
+                        "display_name": "Disease",
+                        "score": 0.4123656153678894
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/diabetes-mellitus",
+                        "display_name": "Diabetes mellitus",
+                        "score": 0.4021061658859253
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/endocrinology",
+                        "display_name": "Endocrinology",
+                        "score": 0.260126531124115
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pharmacology",
+                        "display_name": "Pharmacology",
+                        "score": 0.20166856050491333
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/insulin",
+                        "display_name": "Insulin",
+                        "score": 0.19339507818222046
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2780323712",
+                        "wikidata": "https://www.wikidata.org/wiki/Q19484",
+                        "display_name": "Metformin",
+                        "level": 3,
+                        "score": 0.9677296876907349
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.8515521287918091
+                    },
+                    {
+                        "id": "https://openalex.org/C61511704",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1671857",
+                        "display_name": "Incidence (geometry)",
+                        "level": 2,
+                        "score": 0.6712662577629089
+                    },
+                    {
+                        "id": "https://openalex.org/C2777180221",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3025883",
+                        "display_name": "Type 2 diabetes",
+                        "level": 3,
+                        "score": 0.5372217893600464
+                    },
+                    {
+                        "id": "https://openalex.org/C2778553927",
+                        "wikidata": "https://www.wikidata.org/wiki/Q185089",
+                        "display_name": "Acidosis",
+                        "level": 2,
+                        "score": 0.5090638995170593
+                    },
+                    {
+                        "id": "https://openalex.org/C126322002",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11180",
+                        "display_name": "Internal medicine",
+                        "level": 1,
+                        "score": 0.5003154277801514
+                    },
+                    {
+                        "id": "https://openalex.org/C177713679",
+                        "wikidata": "https://www.wikidata.org/wiki/Q679690",
+                        "display_name": "Intensive care medicine",
+                        "level": 1,
+                        "score": 0.4890924096107483
+                    },
+                    {
+                        "id": "https://openalex.org/C2780317664",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1500373",
+                        "display_name": "Lactic acidosis",
+                        "level": 2,
+                        "score": 0.45605960488319397
+                    },
+                    {
+                        "id": "https://openalex.org/C2780035454",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8386",
+                        "display_name": "Drug",
+                        "level": 2,
+                        "score": 0.43018990755081177
+                    },
+                    {
+                        "id": "https://openalex.org/C2779134260",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12136",
+                        "display_name": "Disease",
+                        "level": 2,
+                        "score": 0.4123656153678894
+                    },
+                    {
+                        "id": "https://openalex.org/C555293320",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12206",
+                        "display_name": "Diabetes mellitus",
+                        "level": 2,
+                        "score": 0.4021061658859253
+                    },
+                    {
+                        "id": "https://openalex.org/C134018914",
+                        "wikidata": "https://www.wikidata.org/wiki/Q162606",
+                        "display_name": "Endocrinology",
+                        "level": 1,
+                        "score": 0.260126531124115
+                    },
+                    {
+                        "id": "https://openalex.org/C98274493",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128406",
+                        "display_name": "Pharmacology",
+                        "level": 1,
+                        "score": 0.20166856050491333
+                    },
+                    {
+                        "id": "https://openalex.org/C2779306644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2002370",
+                        "display_name": "Insulin",
+                        "level": 2,
+                        "score": 0.19339507818222046
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C120665830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q14620",
+                        "display_name": "Optics",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 1,
+                "locations": [
+                    {
+                        "id": "mag:32873609",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/18630642",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "PubMed",
+                        "raw_type": null
+                    }
+                ],
+                "best_oa_location": null,
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/3",
+                        "display_name": "Good health and well-being",
+                        "score": 0.8500000238418579
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 0,
+                "referenced_works": [],
+                "related_works": [
+                    "https://openalex.org/W2078508655",
+                    "https://openalex.org/W2077814385",
+                    "https://openalex.org/W2979494601",
+                    "https://openalex.org/W154543211",
+                    "https://openalex.org/W2991507401",
+                    "https://openalex.org/W2071095614",
+                    "https://openalex.org/W2062092530",
+                    "https://openalex.org/W2102572665",
+                    "https://openalex.org/W2616136882",
+                    "https://openalex.org/W2366752763",
+                    "https://openalex.org/W134379521",
+                    "https://openalex.org/W1496965451",
+                    "https://openalex.org/W2468666309",
+                    "https://openalex.org/W2032488508",
+                    "https://openalex.org/W2062659757",
+                    "https://openalex.org/W2065032254",
+                    "https://openalex.org/W2318589120",
+                    "https://openalex.org/W1496583266",
+                    "https://openalex.org/W2416506496",
+                    "https://openalex.org/W268441505"
+                ],
+                "abstract_inverted_index": {
+                    "Many": [
+                        0
+                    ],
+                    "ribosomally": [
+                        1
+                    ],
+                    "synthesized": [
+                        2
+                    ],
+                    "and": [
+                        3,
+                        28,
+                        72,
+                        224,
+                        245
+                    ],
+                    "posttranslationally": [
+                        4
+                    ],
+                    "modified": [
+                        5
+                    ],
+                    "peptide": [
+                        6,
+                        27,
+                        77
+                    ],
+                    "classes": [
+                        7,
+                        62,
+                        99,
+                        177,
+                        330,
+                        360
+                    ],
+                    "(RiPPs)": [
+                        8,
+                        256
+                    ],
+                    "are": [
+                        9,
+                        283
+                    ],
+                    "reliant": [
+                        10
+                    ],
+                    "on": [
+                        11,
+                        106,
+                        156,
+                        307,
+                        313,
+                        343
+                    ],
+                    "a": [
+                        12,
+                        25,
+                        56,
+                        79,
+                        113,
+                        135,
+                        192,
+                        206,
+                        215,
+                        226,
+                        236,
+                        265,
+                        276,
+                        286
+                    ],
+                    "domain": [
+                        13,
+                        85
+                    ],
+                    "called": [
+                        14
+                    ],
+                    "the": [
+                        15,
+                        30,
+                        49,
+                        69,
+                        83,
+                        145,
+                        157,
+                        197,
+                        262,
+                        344
+                    ],
+                    "RiPP": [
+                        16,
+                        44,
+                        98,
+                        149,
+                        169,
+                        176,
+                        221,
+                        270,
+                        290,
+                        329,
+                        339,
+                        359
+                    ],
+                    "recognition": [
+                        17
+                    ],
+                    "element": [
+                        18
+                    ],
+                    "(RRE).": [
+                        19
+                    ],
+                    "The": [
+                        20,
+                        200
+                    ],
+                    "RRE": [
+                        21,
+                        50,
+                        84,
+                        118,
+                        198,
+                        231,
+                        280,
+                        297
+                    ],
+                    "binds": [
+                        22
+                    ],
+                    "specifically": [
+                        23
+                    ],
+                    "to": [
+                        24,
+                        34,
+                        59,
+                        68,
+                        130,
+                        142,
+                        190,
+                        219,
+                        322,
+                        335,
+                        362
+                    ],
+                    "precursor": [
+                        26
+                    ],
+                    "directs": [
+                        29
+                    ],
+                    "posttranslational": [
+                        31
+                    ],
+                    "modification": [
+                        32
+                    ],
+                    "enzymes": [
+                        33
+                    ],
+                    "their": [
+                        35
+                    ],
+                    "substrates.": [
+                        36
+                    ],
+                    "Given": [
+                        37
+                    ],
+                    "its": [
+                        38
+                    ],
+                    "prevalence": [
+                        39
+                    ],
+                    "across": [
+                        40,
+                        97,
+                        269
+                    ],
+                    "various": [
+                        41
+                    ],
+                    "types": [
+                        42
+                    ],
+                    "of": [
+                        43,
+                        63,
+                        74,
+                        82,
+                        95,
+                        147,
+                        196,
+                        230,
+                        251,
+                        264,
+                        288
+                    ],
+                    "biosynthetic": [
+                        45,
+                        222,
+                        291
+                    ],
+                    "gene": [
+                        46,
+                        292
+                    ],
+                    "clusters": [
+                        47,
+                        293
+                    ],
+                    "(BGCs),": [
+                        48
+                    ],
+                    "could": [
+                        51,
+                        86
+                    ],
+                    "theoretically": [
+                        52
+                    ],
+                    "be": [
+                        53,
+                        87,
+                        125,
+                        363
+                    ],
+                    "used": [
+                        54,
+                        126,
+                        186
+                    ],
+                    "as": [
+                        55,
+                        171,
+                        173
+                    ],
+                    "bioinformatic": [
+                        57
+                    ],
+                    "handle": [
+                        58
+                    ],
+                    "identify": [
+                        60,
+                        132,
+                        324
+                    ],
+                    "novel": [
+                        61,
+                        148,
+                        252,
+                        338,
+                        352
+                    ],
+                    "RiPPs.": [
+                        64
+                    ],
+                    "In": [
+                        65
+                    ],
+                    "addition,": [
+                        66
+                    ],
+                    "due": [
+                        67
+                    ],
+                    "high": [
+                        70,
+                        121
+                    ],
+                    "affinity": [
+                        71
+                    ],
+                    "specificity": [
+                        73
+                    ],
+                    "most": [
+                        75
+                    ],
+                    "RRE-precursor": [
+                        76
+                    ],
+                    "complexes,": [
+                        78
+                    ],
+                    "thorough": [
+                        80
+                    ],
+                    "understanding": [
+                        81
+                    ],
+                    "exploited": [
+                        88
+                    ],
+                    "for": [
+                        89,
+                        116,
+                        238,
+                        278
+                    ],
+                    "biotechnological": [
+                        90
+                    ],
+                    "applications.": [
+                        91
+                    ],
+                    "However,": [
+                        92
+                    ],
+                    "sequence": [
+                        93,
+                        107
+                    ],
+                    "divergence": [
+                        94
+                    ],
+                    "RREs": [
+                        96,
+                        133,
+                        164,
+                        203,
+                        325,
+                        350
+                    ],
+                    "has": [
+                        100,
+                        257
+                    ],
+                    "precluded": [
+                        101
+                    ],
+                    "automated": [
+                        102
+                    ],
+                    "identification": [
+                        103
+                    ],
+                    "based": [
+                        104
+                    ],
+                    "solely": [
+                        105
+                    ],
+                    "similarity.": [
+                        108
+                    ],
+                    "Here,": [
+                        109
+                    ],
+                    "we": [
+                        110,
+                        273
+                    ],
+                    "introduce": [
+                        111,
+                        274
+                    ],
+                    "RRE-Finder,": [
+                        112,
+                        275
+                    ],
+                    "new": [
+                        114,
+                        217,
+                        358
+                    ],
+                    "tool": [
+                        115
+                    ],
+                    "identifying": [
+                        117,
+                        279
+                    ],
+                    "domains": [
+                        119,
+                        298
+                    ],
+                    "with": [
+                        120,
+                        337
+                    ],
+                    "sensitivity.": [
+                        122
+                    ],
+                    "RRE-Finder": [
+                        123,
+                        151,
+                        184,
+                        213,
+                        295,
+                        316,
+                        342
+                    ],
+                    "can": [
+                        124,
+                        317
+                    ],
+                    "in": [
+                        127,
+                        134,
+                        139,
+                        144,
+                        153,
+                        187,
+                        285,
+                        319,
+                        327,
+                        332,
+                        351
+                    ],
+                    "precision": [
+                        128,
+                        154,
+                        188,
+                        320
+                    ],
+                    "mode": [
+                        129,
+                        141,
+                        155,
+                        189,
+                        321,
+                        334
+                    ],
+                    "confidently": [
+                        131
+                    ],
+                    "class-specific": [
+                        136
+                    ],
+                    "manner": [
+                        137
+                    ],
+                    "or": [
+                        138,
+                        331
+                    ],
+                    "exploratory": [
+                        140,
+                        333
+                    ],
+                    "assist": [
+                        143,
+                        336
+                    ],
+                    "discovery": [
+                        146,
+                        250
+                    ],
+                    "classes.": [
+                        150,
+                        271
+                    ],
+                    "operating": [
+                        152
+                    ],
+                    "UniProtKB": [
+                        158,
+                        345
+                    ],
+                    "protein": [
+                        159,
+                        247
+                    ],
+                    "database": [
+                        160,
+                        346
+                    ],
+                    "retrieved": [
+                        161
+                    ],
+                    "\u223c25,000": [
+                        162
+                    ],
+                    "high-confidence": [
+                        163,
+                        349
+                    ],
+                    "spanning": [
+                        165
+                    ],
+                    "all": [
+                        166
+                    ],
+                    "characterized": [
+                        167
+                    ],
+                    "RRE-dependent": [
+                        168
+                    ],
+                    "classes,": [
+                        170
+                    ],
+                    "well": [
+                        172
+                    ],
+                    "several": [
+                        174,
+                        348
+                    ],
+                    "yet-uncharacterized": [
+                        175
+                    ],
+                    "that": [
+                        178,
+                        233,
+                        356
+                    ],
+                    "require": [
+                        179
+                    ],
+                    "future": [
+                        180
+                    ],
+                    "experimental": [
+                        181
+                    ],
+                    "confirmation.": [
+                        182
+                    ],
+                    "Finally,": [
+                        183
+                    ],
+                    "was": [
+                        185
+                    ],
+                    "explore": [
+                        191
+                    ],
+                    "possible": [
+                        193
+                    ],
+                    "evolutionary": [
+                        194
+                    ],
+                    "origin": [
+                        195
+                    ],
+                    "domain.": [
+                        199,
+                        211
+                    ],
+                    "results": [
+                        201
+                    ],
+                    "suggest": [
+                        202
+                    ],
+                    "originated": [
+                        204
+                    ],
+                    "from": [
+                        205
+                    ],
+                    "co-opted": [
+                        207
+                    ],
+                    "DNA-binding": [
+                        208
+                    ],
+                    "transcriptional": [
+                        209
+                    ],
+                    "regulator": [
+                        210
+                    ],
+                    "Altogether,": [
+                        212
+                    ],
+                    "provides": [
+                        214
+                    ],
+                    "powerful": [
+                        216
+                    ],
+                    "method": [
+                        218,
+                        277
+                    ],
+                    "probe": [
+                        220
+                    ],
+                    "diversity": [
+                        223
+                    ],
+                    "delivers": [
+                        225
+                    ],
+                    "rich": [
+                        227
+                    ],
+                    "data": [
+                        228
+                    ],
+                    "set": [
+                        229
+                    ],
+                    "sequences": [
+                        232
+                    ],
+                    "will": [
+                        234
+                    ],
+                    "provide": [
+                        235
+                    ],
+                    "foundation": [
+                        237
+                    ],
+                    "deeper": [
+                        239
+                    ],
+                    "biochemical": [
+                        240
+                    ],
+                    "studies": [
+                        241
+                    ],
+                    "into": [
+                        242
+                    ],
+                    "this": [
+                        243
+                    ],
+                    "intriguing": [
+                        244
+                    ],
+                    "versatile": [
+                        246
+                    ],
+                    "domain.<b>IMPORTANCE</b>": [
+                        248
+                    ],
+                    "Bioinformatics-powered": [
+                        249
+                    ],
+                    "ribosomal": [
+                        253
+                    ],
+                    "natural": [
+                        254
+                    ],
+                    "products": [
+                        255
+                    ],
+                    "historically": [
+                        258
+                    ],
+                    "been": [
+                        259
+                    ],
+                    "hindered": [
+                        260
+                    ],
+                    "by": [
+                        261
+                    ],
+                    "lack": [
+                        263
+                    ],
+                    "common": [
+                        266
+                    ],
+                    "genetic": [
+                        267
+                    ],
+                    "feature": [
+                        268
+                    ],
+                    "Herein,": [
+                        272
+                    ],
+                    "domains,": [
+                        281
+                    ],
+                    "which": [
+                        282,
+                        305
+                    ],
+                    "present": [
+                        284,
+                        326
+                    ],
+                    "majority": [
+                        287
+                    ],
+                    "prokaryotic": [
+                        289
+                    ],
+                    "(BGCs).": [
+                        294
+                    ],
+                    "identifies": [
+                        296
+                    ],
+                    "3,000": [
+                        299
+                    ],
+                    "times": [
+                        300
+                    ],
+                    "faster": [
+                        301
+                    ],
+                    "than": [
+                        302
+                    ],
+                    "current": [
+                        303
+                    ],
+                    "methods,": [
+                        304
+                    ],
+                    "rely": [
+                        306
+                    ],
+                    "time-consuming": [
+                        308
+                    ],
+                    "secondary": [
+                        309
+                    ],
+                    "structure": [
+                        310
+                    ],
+                    "prediction.": [
+                        311
+                    ],
+                    "Depending": [
+                        312
+                    ],
+                    "user": [
+                        314
+                    ],
+                    "goals,": [
+                        315
+                    ],
+                    "operate": [
+                        318
+                    ],
+                    "accurately": [
+                        323
+                    ],
+                    "known": [
+                        328
+                    ],
+                    "discovery.": [
+                        340
+                    ],
+                    "Employing": [
+                        341
+                    ],
+                    "revealed": [
+                        347
+                    ],
+                    "RiPP-like": [
+                        353
+                    ],
+                    "clusters,": [
+                        354
+                    ],
+                    "suggesting": [
+                        355
+                    ],
+                    "many": [
+                        357
+                    ],
+                    "remain": [
+                        361
+                    ],
+                    "discovered.": [
+                        364
+                    ]
+                },
+                "counts_by_year": [],
+                "updated_date": "2026-04-28T14:05:53.105641",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "RRE-Finder: a Genome-Mining Tool for Class-Independent RiPP Discovery",
+                "doi": "10.1128/msystems.00267-20",
+                "pmid": "32873609",
+                "pmc": "PMC7470986",
+                "isbns": [],
+                "altmetric_jid": "5c6be5b371831b48a148c65d",
+                "issns": [
+                    "2379-5077"
+                ],
+                "journal": "mSystems",
+                "cohorts": {
+                    "pub": 10,
+                    "sci": 6
+                },
+                "context": {
+                    "all": {
+                        "count": 28075036,
+                        "mean": 10.845267602933797,
+                        "rank": 4753107,
+                        "pct": 83,
+                        "higher_than": 23314464
+                    },
+                    "journal": {
+                        "count": 2167,
+                        "mean": 17.700335948315644,
+                        "rank": 934,
+                        "pct": 56,
+                        "higher_than": 1230
+                    },
+                    "similar_age_3m": {
+                        "count": 430361,
+                        "mean": 17.679580547493863,
+                        "rank": 99668,
+                        "pct": 76,
+                        "higher_than": 330443
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 87,
+                        "mean": 14.975977011494253,
+                        "rank": 43,
+                        "pct": 49,
+                        "higher_than": 43
+                    }
+                },
+                "authors": [
+                    "Alexander M. Kloosterman",
+                    "Kyle E. Shelton",
+                    "Gilles P. van Wezel",
+                    "Marnix H. Medema",
+                    "Douglas A. Mitchell"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1603756800,
+                "epubdate": 1598918400,
+                "dimensions_publication_id": "pub.1130482270",
+                "altmetric_id": 89276880,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 17,
+                "cited_by_tweeters_count": 16,
+                "cited_by_accounts_count": 16,
+                "last_updated": 1691528696,
+                "score": 8.45,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 8.45
+                },
+                "url": "http://dx.doi.org/10.1128/msystems.00267-20",
+                "added_on": 1598973762,
+                "published_on": 1598918400,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "125",
+                    "connotea": "0"
+                },
+                "readers_count": 125,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=9&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=9&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=9&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=89276880"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1158,
+            "total_ccn": 461,
+            "avg_ccn": 6.15,
+            "nloc_per_file": 193.0,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

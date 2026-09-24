@@ -1,0 +1,825 @@
+{
+    "CompareM2": {
+        "papers": {
+            "id": "40971807",
+            "source": "MED",
+            "pmid": "40971807",
+            "pmcid": "PMC12466929",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC12466929"
+                ]
+            },
+            "doi": "10.1093/bioinformatics/btaf517",
+            "title": "CompareM2 is a genomes-to-report pipeline for comparing microbial genomes.",
+            "authorString": "Kobel CM, Aho VTE, \u00d8y\u00e5s O, N\u00f8rskov-Lauritsen N, Woodcroft BJ, Pope PB.",
+            "journalTitle": "Bioinformatics",
+            "issue": "9",
+            "journalVolume": "41",
+            "pubYear": "2025",
+            "journalIssn": "1367-4803; 1367-4811; ",
+            "pageInfo": "btaf517",
+            "pubType": "brief-report; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 0,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2025-09-20",
+            "firstPublicationDate": "2025-09-01"
+        },
+        "github": {
+            "repo": {
+                "id": 227202333,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyMjcyMDIzMzM=",
+                "name": "CompareM2",
+                "full_name": "cmkobel/CompareM2",
+                "private": false,
+                "owner": {
+                    "login": "cmkobel",
+                    "id": 5913696,
+                    "node_id": "MDQ6VXNlcjU5MTM2OTY=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/5913696?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/cmkobel",
+                    "html_url": "https://github.com/cmkobel",
+                    "followers_url": "https://api.github.com/users/cmkobel/followers",
+                    "following_url": "https://api.github.com/users/cmkobel/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/cmkobel/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/cmkobel/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/cmkobel/subscriptions",
+                    "organizations_url": "https://api.github.com/users/cmkobel/orgs",
+                    "repos_url": "https://api.github.com/users/cmkobel/repos",
+                    "events_url": "https://api.github.com/users/cmkobel/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/cmkobel/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/cmkobel/CompareM2",
+                "description": "\ud83e\udda0\ud83e\uddec\ud83e\uddd1\u200d\ud83d\udcbb\ud83d\udcc7 Microbial genomes-to-report pipeline",
+                "fork": false,
+                "url": "https://api.github.com/repos/cmkobel/CompareM2",
+                "forks_url": "https://api.github.com/repos/cmkobel/CompareM2/forks",
+                "keys_url": "https://api.github.com/repos/cmkobel/CompareM2/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/cmkobel/CompareM2/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/cmkobel/CompareM2/teams",
+                "hooks_url": "https://api.github.com/repos/cmkobel/CompareM2/hooks",
+                "issue_events_url": "https://api.github.com/repos/cmkobel/CompareM2/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/cmkobel/CompareM2/events",
+                "assignees_url": "https://api.github.com/repos/cmkobel/CompareM2/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/cmkobel/CompareM2/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/cmkobel/CompareM2/tags",
+                "blobs_url": "https://api.github.com/repos/cmkobel/CompareM2/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/cmkobel/CompareM2/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/cmkobel/CompareM2/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/cmkobel/CompareM2/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/cmkobel/CompareM2/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/cmkobel/CompareM2/languages",
+                "stargazers_url": "https://api.github.com/repos/cmkobel/CompareM2/stargazers",
+                "contributors_url": "https://api.github.com/repos/cmkobel/CompareM2/contributors",
+                "subscribers_url": "https://api.github.com/repos/cmkobel/CompareM2/subscribers",
+                "subscription_url": "https://api.github.com/repos/cmkobel/CompareM2/subscription",
+                "commits_url": "https://api.github.com/repos/cmkobel/CompareM2/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/cmkobel/CompareM2/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/cmkobel/CompareM2/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/cmkobel/CompareM2/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/cmkobel/CompareM2/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/cmkobel/CompareM2/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/cmkobel/CompareM2/merges",
+                "archive_url": "https://api.github.com/repos/cmkobel/CompareM2/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/cmkobel/CompareM2/downloads",
+                "issues_url": "https://api.github.com/repos/cmkobel/CompareM2/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/cmkobel/CompareM2/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/cmkobel/CompareM2/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/cmkobel/CompareM2/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/cmkobel/CompareM2/labels{/name}",
+                "releases_url": "https://api.github.com/repos/cmkobel/CompareM2/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/cmkobel/CompareM2/deployments",
+                "created_at": "2019-12-10T19:46:41Z",
+                "updated_at": "2026-03-14T19:58:55Z",
+                "pushed_at": "2026-03-14T19:58:52Z",
+                "git_url": "git://github.com/cmkobel/CompareM2.git",
+                "ssh_url": "git@github.com:cmkobel/CompareM2.git",
+                "clone_url": "https://github.com/cmkobel/CompareM2.git",
+                "svn_url": "https://github.com/cmkobel/CompareM2",
+                "homepage": "https://CompareM2.readthedocs.io",
+                "size": 115918,
+                "stargazers_count": 74,
+                "watchers_count": 74,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": false,
+                "has_discussions": true,
+                "forks_count": 3,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 33,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "apptainer",
+                    "archaea",
+                    "bacteria",
+                    "bioconda",
+                    "bioinformatics",
+                    "clinical-research",
+                    "conda",
+                    "genomes-to-report",
+                    "hpc",
+                    "metagenomics",
+                    "microbial-genomics",
+                    "pbs",
+                    "prokaryotes",
+                    "slurm",
+                    "snakemake"
+                ],
+                "visibility": "public",
+                "forks": 3,
+                "open_issues": 33,
+                "watchers": 74,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 3,
+                "subscribers_count": 1
+            },
+            "contributors": [
+                {
+                    "login": "OliverKjHansen",
+                    "contributions": 3
+                },
+                {
+                    "login": "cmkobel",
+                    "contributions": 2
+                },
+                {
+                    "login": "wwood",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 142,
+                    "title": "Refactor: Consolidate duplicated memory allocation functions",
+                    "created_at": "2026-03-13T11:17:15+00:00",
+                    "closed_at": "2026-03-13T11:39:17+00:00"
+                },
+                {
+                    "number": 141,
+                    "title": "Refactor: Replace try/except KeyError config pattern with dict.get()",
+                    "created_at": "2026-03-13T11:17:11+00:00",
+                    "closed_at": "2026-03-13T11:39:16+00:00"
+                },
+                {
+                    "number": 136,
+                    "title": "Mashtree runs even when there is only one input genome",
+                    "created_at": "2025-10-28T18:49:02+00:00",
+                    "closed_at": "2025-11-13T10:09:18+00:00"
+                },
+                {
+                    "number": 132,
+                    "title": "Edge case:\u00a0ncbi dataset not redownloaded when changing the list of accessions for later runs",
+                    "created_at": "2025-09-02T21:27:02+00:00",
+                    "closed_at": "2025-09-04T19:39:43+00:00"
+                },
+                {
+                    "number": 130,
+                    "title": "Solve all environments in conda strict mode",
+                    "created_at": "2025-08-11T09:29:32+00:00",
+                    "closed_at": "2025-09-07T18:18:01+00:00"
+                },
+                {
+                    "number": 128,
+                    "title": "gapseq_fill seems to fail when running on add_refseq genomes",
+                    "created_at": "2025-08-05T16:56:46+00:00",
+                    "closed_at": "2025-08-10T09:03:15+00:00"
+                },
+                {
+                    "number": 127,
+                    "title": "Publish in peer-reviewed journal",
+                    "created_at": "2025-08-05T14:45:10+00:00",
+                    "closed_at": "2025-09-15T20:32:48+00:00"
+                },
+                {
+                    "number": 125,
+                    "title": "Missing test of duplicate sample names after merging local and refseq samples",
+                    "created_at": "2025-08-04T13:36:25+00:00",
+                    "closed_at": "2025-08-13T21:01:23+00:00"
+                },
+                {
+                    "number": 122,
+                    "title": "`--status` doesn't show the intended output when different input genomes are given.",
+                    "created_at": "2025-07-22T10:41:19+00:00",
+                    "closed_at": "2025-08-03T12:22:50+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "Bakta should be default",
+                    "created_at": "2025-07-21T17:46:08+00:00",
+                    "closed_at": "2025-08-13T22:06:24+00:00"
+                },
+                {
+                    "number": 119,
+                    "title": "Add information on how a system admin can set a default path for the databases",
+                    "created_at": "2025-07-17T21:30:26+00:00",
+                    "closed_at": "2025-07-22T19:12:18+00:00"
+                },
+                {
+                    "number": 118,
+                    "title": "Add more documentation on how to use the powerful `--until` argument",
+                    "created_at": "2025-07-17T21:28:39+00:00",
+                    "closed_at": "2025-08-03T17:45:50+00:00"
+                },
+                {
+                    "number": 117,
+                    "title": "An option for higher resolution figures that can be suitbale for publication (i.e. tiff/eps/pdf)",
+                    "created_at": "2025-07-17T21:27:08+00:00",
+                    "closed_at": "2025-08-10T19:01:56+00:00"
+                },
+                {
+                    "number": 116,
+                    "title": "An option for a lateral entry point for already annotated genomes (such as reference genomes)",
+                    "created_at": "2025-07-17T21:23:13+00:00",
+                    "closed_at": "2025-07-22T13:06:10+00:00"
+                },
+                {
+                    "number": 114,
+                    "title": "Is only generated if `set_eggnog--decorate_gff=no` which is not default",
+                    "created_at": "2024-10-31T21:39:52+00:00",
+                    "closed_at": "2024-12-02T12:52:24+00:00"
+                },
+                {
+                    "number": 112,
+                    "title": "Busco and antismash",
+                    "created_at": "2024-10-19T12:23:45+00:00",
+                    "closed_at": "2024-12-10T12:08:19+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "Insatlling comparem2",
+                    "created_at": "2024-10-01T11:33:53+00:00",
+                    "closed_at": "2024-10-03T18:41:05+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "installation issue",
+                    "created_at": "2024-08-04T20:57:25+00:00",
+                    "closed_at": "2024-08-05T10:35:30+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "Eggnog fails if version installed is above or equal to 2.1.7",
+                    "created_at": "2024-07-23T07:27:00+00:00",
+                    "closed_at": "2024-07-23T08:53:18+00:00"
+                },
+                {
+                    "number": 107,
+                    "title": "URL to manually download the databases?",
+                    "created_at": "2024-07-22T20:10:48+00:00",
+                    "closed_at": "2024-08-16T23:51:54+00:00"
+                },
+                {
+                    "number": 106,
+                    "title": "both bakta and prokka are run despite specify an annotator",
+                    "created_at": "2024-07-19T13:27:44+00:00",
+                    "closed_at": "2024-07-19T20:21:30+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "Can't add more than a single string (file or glob) to the input_genomes parameter.",
+                    "created_at": "2024-05-14T16:30:31+00:00",
+                    "closed_at": "2024-05-15T11:58:45+00:00"
+                },
+                {
+                    "number": 98,
+                    "title": "--help",
+                    "created_at": "2024-05-06T10:45:19+00:00",
+                    "closed_at": "2024-05-14T16:06:23+00:00"
+                },
+                {
+                    "number": 97,
+                    "title": "Returns exit code 0 on error. ",
+                    "created_at": "2024-05-06T08:23:33+00:00",
+                    "closed_at": "2024-05-14T16:07:02+00:00"
+                },
+                {
+                    "number": 96,
+                    "title": "Benchmarking",
+                    "created_at": "2024-04-25T09:32:17+00:00",
+                    "closed_at": "2024-05-23T21:09:01+00:00"
+                },
+                {
+                    "number": 95,
+                    "title": "Follow the standard file hierarchy for a snakemake pipeline.",
+                    "created_at": "2024-03-20T11:54:28+00:00",
+                    "closed_at": "2024-05-02T12:52:40+00:00"
+                },
+                {
+                    "number": 94,
+                    "title": "Remove mamba as dependency from bioconda recipe?",
+                    "created_at": "2024-03-19T11:38:31+00:00",
+                    "closed_at": "2024-05-14T16:07:33+00:00"
+                },
+                {
+                    "number": 93,
+                    "title": "Migrate to codeberg",
+                    "created_at": "2024-03-06T10:48:11+00:00",
+                    "closed_at": "2024-04-25T11:10:52+00:00"
+                },
+                {
+                    "number": 92,
+                    "title": "hat?",
+                    "created_at": "2024-03-04T09:42:44+00:00",
+                    "closed_at": "2024-03-18T13:38:15+00:00"
+                },
+                {
+                    "number": 91,
+                    "title": "Option to add .faa files for analysis downstream of gene calling",
+                    "created_at": "2024-02-08T19:01:00+00:00",
+                    "closed_at": "2025-08-03T17:47:22+00:00"
+                },
+                {
+                    "number": 90,
+                    "title": "Implement downloading ko00001.json",
+                    "created_at": "2024-02-08T13:40:02+00:00",
+                    "closed_at": "2024-03-23T17:06:37+00:00"
+                },
+                {
+                    "number": 89,
+                    "title": "Roary policy",
+                    "created_at": "2024-02-07T11:39:56+00:00",
+                    "closed_at": "2024-03-18T13:33:54+00:00"
+                },
+                {
+                    "number": 88,
+                    "title": "Naming of output directory.",
+                    "created_at": "2024-02-05T21:39:36+00:00",
+                    "closed_at": "2024-05-23T21:17:32+00:00"
+                },
+                {
+                    "number": 86,
+                    "title": "gtdbtk: mash: error while loading shared libraries: libgsl.so.25: cannot open shared object file: No such file or directory ",
+                    "created_at": "2024-02-02T17:45:40+00:00",
+                    "closed_at": "2024-05-14T16:08:50+00:00"
+                },
+                {
+                    "number": 85,
+                    "title": "N<4, iqtree: ERROR: It makes no sense to perform bootstrap with less than 4 sequences.",
+                    "created_at": "2024-02-02T12:04:19+00:00",
+                    "closed_at": "2024-05-14T16:09:29+00:00"
+                },
+                {
+                    "number": 83,
+                    "title": "Remove busco?",
+                    "created_at": "2024-01-27T00:12:43+00:00",
+                    "closed_at": "2024-06-11T09:26:28+00:00"
+                },
+                {
+                    "number": 82,
+                    "title": "Prune test datasets",
+                    "created_at": "2024-01-26T13:25:22+00:00",
+                    "closed_at": "2024-06-11T09:26:39+00:00"
+                },
+                {
+                    "number": 81,
+                    "title": "mamba requirement is unnecessarily specific",
+                    "created_at": "2024-01-26T13:23:43+00:00",
+                    "closed_at": "2024-06-11T09:26:22+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "rule gtdb_download: curl: (77) error setting certificate file: /etc/ssl/certs/ca-bundle.crt                                                                                                       ",
+                    "created_at": "2024-01-24T11:46:29+00:00",
+                    "closed_at": "2024-01-24T13:06:35+00:00"
+                },
+                {
+                    "number": 78,
+                    "title": "Use newer uniref 100 database for kegg calling",
+                    "created_at": "2024-01-22T14:46:05+00:00",
+                    "closed_at": "2024-05-23T09:15:32+00:00"
+                },
+                {
+                    "number": 77,
+                    "title": "-v and --version unexpected incongruency",
+                    "created_at": "2024-01-19T13:38:26+00:00",
+                    "closed_at": "2024-01-23T11:44:42+00:00"
+                },
+                {
+                    "number": 75,
+                    "title": "Portable disk image",
+                    "created_at": "2024-01-15T15:02:33+00:00",
+                    "closed_at": "2024-01-23T11:45:15+00:00"
+                },
+                {
+                    "number": 74,
+                    "title": "! dev.control() called without an open graphics device                                                                                                                      ",
+                    "created_at": "2024-01-05T12:36:46+00:00",
+                    "closed_at": "2024-03-18T13:37:02+00:00"
+                },
+                {
+                    "number": 71,
+                    "title": "Syntenic core genome",
+                    "created_at": "2023-11-14T12:15:14+00:00",
+                    "closed_at": "2024-06-11T09:26:56+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "Alternative genome annotation",
+                    "created_at": "2023-11-07T16:37:26+00:00",
+                    "closed_at": "2024-05-14T09:21:19+00:00"
+                },
+                {
+                    "number": 67,
+                    "title": "Download databases without a dummy file being present",
+                    "created_at": "2023-11-03T19:56:52+00:00",
+                    "closed_at": "2024-06-11T09:28:00+00:00"
+                },
+                {
+                    "number": 66,
+                    "title": "Bioconda recipe simplification",
+                    "created_at": "2023-11-01T09:12:36+00:00",
+                    "closed_at": "2024-06-11T09:28:17+00:00"
+                },
+                {
+                    "number": 65,
+                    "title": "Reuse checkm2s output in kegg_pathway",
+                    "created_at": "2023-10-31T18:16:03+00:00",
+                    "closed_at": "2024-01-23T11:47:39+00:00"
+                },
+                {
+                    "number": 64,
+                    "title": "(roary) Could not solve for environment space",
+                    "created_at": "2023-10-20T11:06:37+00:00",
+                    "closed_at": "2023-10-20T11:08:58+00:00"
+                },
+                {
+                    "number": 63,
+                    "title": "Present snakefile in header",
+                    "created_at": "2023-10-17T19:36:18+00:00",
+                    "closed_at": "2023-11-08T13:25:25+00:00"
+                },
+                {
+                    "number": 62,
+                    "title": "Feature request",
+                    "created_at": "2023-10-11T12:24:00+00:00",
+                    "closed_at": "2025-08-05T14:17:49+00:00"
+                },
+                {
+                    "number": 61,
+                    "title": "Beer bug bounty \ud83c\udf7b\ud83e\udeb2\ud83d\udc1b",
+                    "created_at": "2023-10-11T11:53:42+00:00",
+                    "closed_at": "2024-06-11T09:29:39+00:00"
+                },
+                {
+                    "number": 60,
+                    "title": "Dry run fails when apptainer-compatible docker image is not already downloaded.",
+                    "created_at": "2023-10-11T09:10:32+00:00",
+                    "closed_at": "2023-10-11T09:11:38+00:00"
+                },
+                {
+                    "number": 59,
+                    "title": "User should be actively warned when not using apptainer.",
+                    "created_at": "2023-10-11T07:36:00+00:00",
+                    "closed_at": "2024-06-11T09:30:44+00:00"
+                },
+                {
+                    "number": 58,
+                    "title": "--configure input_files=\"genome.fna\"",
+                    "created_at": "2023-10-11T07:20:22+00:00",
+                    "closed_at": "2024-02-07T15:19:23+00:00"
+                },
+                {
+                    "number": 57,
+                    "title": "Rename assemblycomparator2?",
+                    "created_at": "2023-10-10T08:16:43+00:00",
+                    "closed_at": "2024-06-11T09:31:06+00:00"
+                },
+                {
+                    "number": 56,
+                    "title": "Files inaccessible inside apptainer environment when working in a symlinked directory",
+                    "created_at": "2023-09-29T11:31:40+00:00",
+                    "closed_at": "2024-02-02T14:53:50+00:00"
+                },
+                {
+                    "number": 55,
+                    "title": "copied input files should be named *.fna, not *.fa",
+                    "created_at": "2023-09-29T11:26:35+00:00",
+                    "closed_at": "2024-06-11T09:31:36+00:00"
+                },
+                {
+                    "number": 54,
+                    "title": "Remove Card and Plasmidfinder from report",
+                    "created_at": "2023-08-30T08:17:14+00:00",
+                    "closed_at": "2023-09-29T09:21:36+00:00"
+                },
+                {
+                    "number": 52,
+                    "title": "Neat conda package ",
+                    "created_at": "2023-08-28T13:26:08+00:00",
+                    "closed_at": "2023-10-10T08:16:04+00:00"
+                },
+                {
+                    "number": 51,
+                    "title": "checkm2_download fails when using apptainer",
+                    "created_at": "2023-08-20T21:02:48+00:00",
+                    "closed_at": "2023-11-08T14:50:27+00:00"
+                },
+                {
+                    "number": 50,
+                    "title": "Parametrize databases path",
+                    "created_at": "2023-07-30T09:37:32+00:00",
+                    "closed_at": "2023-09-29T09:22:24+00:00"
+                },
+                {
+                    "number": 48,
+                    "title": "Pseudo rules like interproscan and prokka could be removed ",
+                    "created_at": "2023-06-14T11:58:45+00:00",
+                    "closed_at": "2023-08-09T20:27:21+00:00"
+                },
+                {
+                    "number": 47,
+                    "title": "header should write the version number",
+                    "created_at": "2023-06-02T19:33:14+00:00",
+                    "closed_at": "2023-09-29T11:13:55+00:00"
+                },
+                {
+                    "number": 46,
+                    "title": "add option to skip any2fasta",
+                    "created_at": "2023-05-24T13:06:40+00:00",
+                    "closed_at": "2023-09-29T11:14:20+00:00"
+                },
+                {
+                    "number": 45,
+                    "title": "rule sequence_lengths (collector) does not void the report",
+                    "created_at": "2023-04-13T14:27:33+00:00",
+                    "closed_at": "2024-06-11T09:31:27+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "pseudotargets",
+                    "created_at": "2023-02-14T15:17:13+00:00",
+                    "closed_at": "2023-04-05T12:48:46+00:00"
+                },
+                {
+                    "number": 41,
+                    "title": "Some rules should not run when there is only one sample.",
+                    "created_at": "2022-10-17T07:29:30+00:00",
+                    "closed_at": "2025-08-17T17:49:40+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "The report will fail if the metadata has not been created",
+                    "created_at": "2022-10-16T06:58:05+00:00",
+                    "closed_at": "2023-04-05T12:49:44+00:00"
+                },
+                {
+                    "number": 38,
+                    "title": "Roary hack",
+                    "created_at": "2022-10-15T01:32:48+00:00",
+                    "closed_at": "2022-10-15T04:32:19+00:00"
+                },
+                {
+                    "number": 37,
+                    "title": "Sliding k-mer frequency visualization.",
+                    "created_at": "2022-10-14T13:02:17+00:00",
+                    "closed_at": "2023-04-05T12:50:05+00:00"
+                },
+                {
+                    "number": 36,
+                    "title": "use conda run instead of conda activate ...",
+                    "created_at": "2022-09-27T23:54:04+00:00",
+                    "closed_at": "2022-10-16T07:12:39+00:00"
+                },
+                {
+                    "number": 35,
+                    "title": "Continuous integration with some testing?",
+                    "created_at": "2022-09-23T12:49:06+00:00",
+                    "closed_at": "2024-06-11T09:28:31+00:00"
+                },
+                {
+                    "number": 34,
+                    "title": "GTDBtk",
+                    "created_at": "2022-09-23T12:27:20+00:00",
+                    "closed_at": "2022-10-16T07:12:25+00:00"
+                },
+                {
+                    "number": 33,
+                    "title": "Use python script instead of bash alias",
+                    "created_at": "2022-09-23T12:20:34+00:00",
+                    "closed_at": "2023-10-10T08:14:51+00:00"
+                },
+                {
+                    "number": 32,
+                    "title": "versioning of packages",
+                    "created_at": "2022-09-13T10:28:31+00:00",
+                    "closed_at": "2024-06-11T09:23:04+00:00"
+                },
+                {
+                    "number": 31,
+                    "title": "spaces",
+                    "created_at": "2022-03-03T19:47:37+00:00",
+                    "closed_at": "2024-02-07T15:19:06+00:00"
+                },
+                {
+                    "number": 30,
+                    "title": "Ide til l\u00f8sning af rapport-caveat",
+                    "created_at": "2022-03-03T09:52:32+00:00",
+                    "closed_at": "2022-09-23T12:21:18+00:00"
+                },
+                {
+                    "number": 28,
+                    "title": "pseudo reads-ize the genomes for kraken2",
+                    "created_at": "2022-02-25T15:31:09+00:00",
+                    "closed_at": "2023-04-05T12:52:19+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "CheckM",
+                    "created_at": "2022-02-11T10:34:34+00:00",
+                    "closed_at": "2023-04-05T12:52:28+00:00"
+                },
+                {
+                    "number": 26,
+                    "title": "Considering to remove singularity support and just go with conda.",
+                    "created_at": "2022-02-10T10:53:19+00:00",
+                    "closed_at": "2022-09-23T12:24:23+00:00"
+                },
+                {
+                    "number": 25,
+                    "title": "Check that kraken path exists before starting the workflow",
+                    "created_at": "2022-02-07T12:55:04+00:00",
+                    "closed_at": "2023-04-05T12:52:42+00:00"
+                },
+                {
+                    "number": 24,
+                    "title": "Functional enrichment for plasmids",
+                    "created_at": "2022-01-31T21:42:36+00:00",
+                    "closed_at": "2023-09-29T11:19:58+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "Should only pass if the dir exists already.",
+                    "created_at": "2021-12-09T09:43:45+00:00",
+                    "closed_at": "2023-04-05T12:55:59+00:00"
+                },
+                {
+                    "number": 22,
+                    "title": "Visualization of GC content throughout contigs",
+                    "created_at": "2021-07-18T11:38:17+00:00",
+                    "closed_at": "2024-06-11T09:22:00+00:00"
+                },
+                {
+                    "number": 21,
+                    "title": "kraken2 access on genomedk",
+                    "created_at": "2021-06-22T12:43:24+00:00",
+                    "closed_at": "2023-04-05T12:56:43+00:00"
+                },
+                {
+                    "number": 20,
+                    "title": "Weird keyerror when --untilling",
+                    "created_at": "2021-06-15T07:34:31+00:00",
+                    "closed_at": "2022-10-16T23:31:56+00:00"
+                },
+                {
+                    "number": 19,
+                    "title": "Add some form of clustering",
+                    "created_at": "2021-06-14T22:16:49+00:00",
+                    "closed_at": "2024-06-11T09:20:15+00:00"
+                },
+                {
+                    "number": 18,
+                    "title": "Pan/core legend is way too big",
+                    "created_at": "2021-06-13T10:49:29+00:00",
+                    "closed_at": "2024-06-11T09:20:40+00:00"
+                },
+                {
+                    "number": 17,
+                    "title": "Resistance tables are much too wide",
+                    "created_at": "2021-06-10T12:34:49+00:00",
+                    "closed_at": "2024-06-11T09:22:34+00:00"
+                },
+                {
+                    "number": 14,
+                    "title": "Confusing dirnames",
+                    "created_at": "2021-06-01T10:05:18+00:00",
+                    "closed_at": "2022-09-23T12:24:43+00:00"
+                },
+                {
+                    "number": 13,
+                    "title": "perl root and perl moo fails when the snakemake conda prefix variable is set",
+                    "created_at": "2021-05-07T21:19:04+00:00",
+                    "closed_at": "2021-05-13T13:37:00+00:00"
+                },
+                {
+                    "number": 11,
+                    "title": "Press ctrl-c to skip validation",
+                    "created_at": "2020-08-04T12:40:24+00:00",
+                    "closed_at": "2021-03-08T14:25:01+00:00"
+                },
+                {
+                    "number": 10,
+                    "title": "roary dir overwrites on change of thresholds",
+                    "created_at": "2020-07-31T06:53:50+00:00",
+                    "closed_at": "2021-03-08T14:26:11+00:00"
+                },
+                {
+                    "number": 9,
+                    "title": "`read` in shell is confusing",
+                    "created_at": "2020-07-28T09:19:13+00:00",
+                    "closed_at": "2021-03-08T14:37:16+00:00"
+                },
+                {
+                    "number": 8,
+                    "title": "assemblycomparator (shell) and workflow (py) don't agree on the files included",
+                    "created_at": "2020-07-28T09:16:12+00:00",
+                    "closed_at": "2021-03-08T14:37:32+00:00"
+                },
+                {
+                    "number": 7,
+                    "title": "Use a hash table to check if an assembly has already been annotated (prokka).",
+                    "created_at": "2020-07-28T09:04:17+00:00",
+                    "closed_at": "2021-03-08T14:38:10+00:00"
+                },
+                {
+                    "number": 6,
+                    "title": "Resume analysis on error",
+                    "created_at": "2020-07-27T06:50:22+00:00",
+                    "closed_at": "2020-07-28T09:05:56+00:00"
+                },
+                {
+                    "number": 5,
+                    "title": "Timed report",
+                    "created_at": "2020-07-24T13:24:22+00:00",
+                    "closed_at": "2021-03-08T14:38:27+00:00"
+                },
+                {
+                    "number": 4,
+                    "title": "Support for different sub analyses",
+                    "created_at": "2020-07-24T13:06:30+00:00",
+                    "closed_at": "2021-03-08T14:38:44+00:00"
+                },
+                {
+                    "number": 3,
+                    "title": "Bootstrap the tree",
+                    "created_at": "2020-07-23T12:58:20+00:00",
+                    "closed_at": "2021-03-08T14:39:08+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "Refer to fasttree paper in apescript",
+                    "created_at": "2020-07-23T12:57:54+00:00",
+                    "closed_at": "2021-03-08T14:38:52+00:00"
+                },
+                {
+                    "number": 1,
+                    "title": "Why is there a || ?",
+                    "created_at": "2020-07-23T12:56:50+00:00",
+                    "closed_at": "2021-03-08T14:39:34+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 129434,
+                "Dockerfile": 14120,
+                "R": 6367,
+                "Shell": 499
+            },
+            "default_branch_protected": false
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 46,
+            "total_ccn": 2,
+            "avg_ccn": 2.0,
+            "nloc_per_file": 23.0,
+            "duplicate_rate": 0.0
+        }
+    }
+}

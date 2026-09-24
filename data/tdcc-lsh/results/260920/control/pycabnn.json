@@ -1,0 +1,2022 @@
+{
+    "pycabnn": {
+        "tool_name": "pycabnn",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 107494953,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMDc0OTQ5NTM=",
+                "name": "pycabnn",
+                "full_name": "CNS-OIST/pycabnn",
+                "private": false,
+                "owner": {
+                    "login": "CNS-OIST",
+                    "id": 8110360,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxMTAzNjA=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/8110360?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CNS-OIST",
+                    "html_url": "https://github.com/CNS-OIST",
+                    "followers_url": "https://api.github.com/users/CNS-OIST/followers",
+                    "following_url": "https://api.github.com/users/CNS-OIST/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CNS-OIST/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CNS-OIST/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CNS-OIST/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CNS-OIST/orgs",
+                    "repos_url": "https://api.github.com/users/CNS-OIST/repos",
+                    "events_url": "https://api.github.com/users/CNS-OIST/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CNS-OIST/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/CNS-OIST/pycabnn",
+                "description": "Python tool for constructing an anatomical basis of a neural network",
+                "fork": false,
+                "url": "https://api.github.com/repos/CNS-OIST/pycabnn",
+                "forks_url": "https://api.github.com/repos/CNS-OIST/pycabnn/forks",
+                "keys_url": "https://api.github.com/repos/CNS-OIST/pycabnn/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/CNS-OIST/pycabnn/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/CNS-OIST/pycabnn/teams",
+                "hooks_url": "https://api.github.com/repos/CNS-OIST/pycabnn/hooks",
+                "issue_events_url": "https://api.github.com/repos/CNS-OIST/pycabnn/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/CNS-OIST/pycabnn/events",
+                "assignees_url": "https://api.github.com/repos/CNS-OIST/pycabnn/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/CNS-OIST/pycabnn/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/CNS-OIST/pycabnn/tags",
+                "blobs_url": "https://api.github.com/repos/CNS-OIST/pycabnn/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/CNS-OIST/pycabnn/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/CNS-OIST/pycabnn/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/CNS-OIST/pycabnn/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/CNS-OIST/pycabnn/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/CNS-OIST/pycabnn/languages",
+                "stargazers_url": "https://api.github.com/repos/CNS-OIST/pycabnn/stargazers",
+                "contributors_url": "https://api.github.com/repos/CNS-OIST/pycabnn/contributors",
+                "subscribers_url": "https://api.github.com/repos/CNS-OIST/pycabnn/subscribers",
+                "subscription_url": "https://api.github.com/repos/CNS-OIST/pycabnn/subscription",
+                "commits_url": "https://api.github.com/repos/CNS-OIST/pycabnn/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/CNS-OIST/pycabnn/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/CNS-OIST/pycabnn/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/CNS-OIST/pycabnn/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/CNS-OIST/pycabnn/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/CNS-OIST/pycabnn/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/CNS-OIST/pycabnn/merges",
+                "archive_url": "https://api.github.com/repos/CNS-OIST/pycabnn/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/CNS-OIST/pycabnn/downloads",
+                "issues_url": "https://api.github.com/repos/CNS-OIST/pycabnn/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/CNS-OIST/pycabnn/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/CNS-OIST/pycabnn/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/CNS-OIST/pycabnn/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/CNS-OIST/pycabnn/labels{/name}",
+                "releases_url": "https://api.github.com/repos/CNS-OIST/pycabnn/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/CNS-OIST/pycabnn/deployments",
+                "created_at": "2017-10-19T03:41:32Z",
+                "updated_at": "2022-10-09T04:13:15Z",
+                "pushed_at": "2022-10-09T07:44:23Z",
+                "git_url": "git://github.com/CNS-OIST/pycabnn.git",
+                "ssh_url": "git@github.com:CNS-OIST/pycabnn.git",
+                "clone_url": "https://github.com/CNS-OIST/pycabnn.git",
+                "svn_url": "https://github.com/CNS-OIST/pycabnn",
+                "homepage": "",
+                "size": 500960,
+                "stargazers_count": 2,
+                "watchers_count": 2,
+                "language": "Jupyter Notebook",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": false,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 3,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 2,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 3,
+                "open_issues": 2,
+                "watchers": 2,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "CNS-OIST",
+                    "id": 8110360,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxMTAzNjA=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/8110360?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CNS-OIST",
+                    "html_url": "https://github.com/CNS-OIST",
+                    "followers_url": "https://api.github.com/users/CNS-OIST/followers",
+                    "following_url": "https://api.github.com/users/CNS-OIST/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CNS-OIST/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CNS-OIST/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CNS-OIST/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CNS-OIST/orgs",
+                    "repos_url": "https://api.github.com/users/CNS-OIST/repos",
+                    "events_url": "https://api.github.com/users/CNS-OIST/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CNS-OIST/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 3,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "environment.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "generate_cell_position.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/Check_connections.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/Check_connections.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_aa.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_aa.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_aa_p.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_cloud.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_cloud.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_pf.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_pf.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_GOCEX/goc_pf_p.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/Compare_simulation_results.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/Compare_simulation_results.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/aa_goc.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/aa_goc.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/data_io/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/data_io/geometry.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/data_io/nrnvector.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/goc_x.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/goc_x.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/goc_y.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/goc_y.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/pf_goc.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_NETSIM/pf_goc.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/all_sag.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/all_topview.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/cc2_grc.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/cc2_grc_human.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/coords_20190626_1_6.stat.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/fig_stats_cell_position.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/fig_stats_cell_position.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/goc+glo_sag.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/goc+glo_topview.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/goc_sag.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/goc_topview.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/human_data.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/mf.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/mf_vor.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/nn_dist_hist.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/nn_dist_hist_human.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/pds_plots.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/plot_cell_position_figures.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/plot_cell_position_figures.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_POPGEN/var_conns.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_PROJ/project.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_PROJ/project.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_PROJ/projection_method.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/fig_PROJ/projection_method.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200679 Name=GL_BREP Ended, Run time 00_13_56, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200683 Name=GL_BREP Ended, Run time 00_14_01, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200701 Name=GL_BREP Ended, Run time 00_14_07, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200726 Name=GL_BREP Ended, Run time 00_14_07, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200733 Name=GL_BREP Ended, Run time 00_14_02, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200737 Name=GL_BREP Ended, Run time 00_14_07, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200751 Name=GL_BREP Ended, Run time 00_14_08, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200756 Name=GL_BREP Ended, Run time 00_14_06, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200763 Name=GL_BREP Ended, Run time 00_14_20, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200767 Name=GL_BREP Ended, Run time 00_14_03, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200770 Name=GL_BREP Ended, Run time 00_14_03, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200774 Name=GL_BREP Ended, Run time 00_14_21, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200779 Name=GL_BREP Ended, Run time 00_14_07, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200782 Name=GL_BREP Ended, Run time 00_15_19, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200785 Name=GL_BREP Ended, Run time 00_14_12, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200788 Name=GL_BREP Ended, Run time 00_15_47, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/SLURM Job_id=14200800 Name=GL_BREP Ended, Run time 00_16_06, COMPLETED, ExitCode 0.eml",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/brep_runtime.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/BREP/comp_brep_runtime.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/pybrep.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/pybrep_parallel.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/pybrep_parallel_runtime.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/pybrep_serial.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebooks/run_time/pybrep_serial_runtime.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "optional-requirements.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/cell_population.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/connector.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/parallel_util.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/pop_generation/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/pop_generation/bridson.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/pop_generation/ebeida.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/pop_generation/utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/util.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pycabnn/version.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "requirements.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "run_connector.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "start_ipcluster.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/BCcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/GCTcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/GCcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/GLpoints.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/GoCcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/MFcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/cell_position/SCcoordinates.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/generated_positions/coords_20190626_1_6.npz",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/params/GLpoints.dat",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/params/Parameters.hoc",
+                    "type": "blob"
+                },
+                {
+                    "path": "test_data/simulation_data/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "unpack_db.py",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "shhong",
+                    "contributions": 271
+                },
+                {
+                    "login": "inesw",
+                    "contributions": 122
+                },
+                {
+                    "login": "Alexji9494",
+                    "contributions": 21
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 1,
+                    "title": "Parameter PFzoffset overwritten",
+                    "created_at": "2017-11-13T06:41:08Z",
+                    "closed_at": "2017-12-23T11:18:16Z"
+                }
+            ],
+            "languages": {
+                "Jupyter Notebook": 1151412,
+                "Python": 140834,
+                "Shell": 1043
+            },
+            "default_branch_protected": true,
+            "security_updates": null,
+            "secret_scanning": null
+        },
+        "publications": {
+            "europepmc": null,
+            "openalex": {
+                "id": "https://openalex.org/W3039925616",
+                "doi": "https://doi.org/10.3389/fninf.2020.00031",
+                "title": "Pycabnn: Efficient and Extensible Software to Construct an Anatomical Basis for a Physiologically Realistic Neural Network Model",
+                "display_name": "Pycabnn: Efficient and Extensible Software to Construct an Anatomical Basis for a Physiologically Realistic Neural Network Model",
+                "publication_year": 2020,
+                "publication_date": "2020-07-07",
+                "ids": {
+                    "openalex": "https://openalex.org/W3039925616",
+                    "doi": "https://doi.org/10.3389/fninf.2020.00031",
+                    "mag": "3039925616",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/32733226"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.3389/fninf.2020.00031",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3389/fninf.2020.00031",
+                    "pdf_url": "https://www.frontiersin.org/articles/10.3389/fninf.2020.00031/pdf",
+                    "source": {
+                        "id": "https://openalex.org/S179816892",
+                        "display_name": "Frontiers in Neuroinformatics",
+                        "issn_l": "1662-5196",
+                        "issn": [
+                            "1662-5196"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320527",
+                        "host_organization_name": "Frontiers Media",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320527"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Frontiers Media"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Frontiers in Neuroinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://www.frontiersin.org/articles/10.3389/fninf.2020.00031/pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5022213445",
+                            "display_name": "Ines Wichert",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I142637625",
+                                "display_name": "Okinawa Institute of Science and Technology Graduate University",
+                                "ror": "https://ror.org/02qg15b79",
+                                "country_code": "JP",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210152641",
+                                "display_name": "Bernstein Center for Computational Neuroscience Berlin",
+                                "ror": "https://ror.org/05ewdps05",
+                                "country_code": "DE",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I4210092532",
+                                    "https://openalex.org/I4210152641"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "JP"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ines Wichert",
+                        "raw_affiliation_strings": [
+                            "Bernstein Center for Computational Neuroscience Berlin, Berlin, Germany",
+                            "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bernstein Center for Computational Neuroscience Berlin, Berlin, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210152641"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                                "institution_ids": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5035322978",
+                            "display_name": "Sanghun Jee",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I142637625",
+                                "display_name": "Okinawa Institute of Science and Technology Graduate University",
+                                "ror": "https://ror.org/02qg15b79",
+                                "country_code": "JP",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I197347611",
+                                "display_name": "Korea University",
+                                "ror": "https://ror.org/047dqcg40",
+                                "country_code": "KR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I197347611"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "JP",
+                            "KR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sanghun Jee",
+                        "raw_affiliation_strings": [
+                            "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                            "Department of Life Science, Korea University, Seoul, South Korea"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                                "institution_ids": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Life Science, Korea University, Seoul, South Korea",
+                                "institution_ids": [
+                                    "https://openalex.org/I197347611"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5089780814",
+                            "display_name": "Erik De Schutter",
+                            "orcid": "https://orcid.org/0000-0001-8618-5138"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I142637625",
+                                "display_name": "Okinawa Institute of Science and Technology Graduate University",
+                                "ror": "https://ror.org/02qg15b79",
+                                "country_code": "JP",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I149213910",
+                                "display_name": "University of Antwerp",
+                                "ror": "https://ror.org/008x57b05",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I149213910"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "JP"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Erik De Schutter",
+                        "raw_affiliation_strings": [
+                            "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                            "Theoretical Neurobiology, University of Antwerp, Antwerpen, Belgium"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                                "institution_ids": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Theoretical Neurobiology, University of Antwerp, Antwerpen, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I149213910"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5084974365",
+                            "display_name": "Sungho Hong",
+                            "orcid": "https://orcid.org/0000-0002-6905-7932"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I142637625",
+                                "display_name": "Okinawa Institute of Science and Technology Graduate University",
+                                "ror": "https://ror.org/02qg15b79",
+                                "country_code": "JP",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "JP"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Sungho Hong",
+                        "raw_affiliation_strings": [
+                            "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Computational Neuroscience Unit, Okinawa Institute of Science and Technology, Onna, Japan",
+                                "institution_ids": [
+                                    "https://openalex.org/I142637625"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 4,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5084974365"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I142637625"
+                ],
+                "apc_list": {
+                    "value": 2950,
+                    "currency": "USD",
+                    "value_usd": 2950
+                },
+                "apc_paid": {
+                    "value": 2950,
+                    "currency": "USD",
+                    "value_usd": 2950
+                },
+                "fwci": 0.4006,
+                "has_fulltext": true,
+                "cited_by_count": 7,
+                "citation_normalized_percentile": {
+                    "value": 0.55814178,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 97
+                },
+                "biblio": {
+                    "volume": "14",
+                    "issue": null,
+                    "first_page": "31",
+                    "last_page": "31"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10581",
+                    "display_name": "Neural dynamics and brain function",
+                    "score": 0.9973000288009644,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2805",
+                        "display_name": "Cognitive Neuroscience"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/28",
+                        "display_name": "Neuroscience"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10581",
+                        "display_name": "Neural dynamics and brain function",
+                        "score": 0.9973000288009644,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2805",
+                            "display_name": "Cognitive Neuroscience"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11304",
+                        "display_name": "Advanced Neuroimaging Techniques and Applications",
+                        "score": 0.9941999912261963,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2741",
+                            "display_name": "Radiology, Nuclear Medicine and Imaging"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10241",
+                        "display_name": "Functional Brain Connectivity Studies",
+                        "score": 0.9847999811172485,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2805",
+                            "display_name": "Cognitive Neuroscience"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.8421919345855713
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.7935891151428223
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/laptop",
+                        "display_name": "Laptop",
+                        "score": 0.6219865679740906
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-neural-network",
+                        "display_name": "Artificial neural network",
+                        "score": 0.6122990250587463
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5931156873703003
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/extensibility",
+                        "display_name": "Extensibility",
+                        "score": 0.5044585466384888
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/basis",
+                        "display_name": "Basis (linear algebra)",
+                        "score": 0.47728481888771057
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.3977821469306946
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/distributed-computing",
+                        "display_name": "Distributed computing",
+                        "score": 0.3646315336227417
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.14716944098472595
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.8421919345855713
+                    },
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.7935891151428223
+                    },
+                    {
+                        "id": "https://openalex.org/C2780008327",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3962",
+                        "display_name": "Laptop",
+                        "level": 2,
+                        "score": 0.6219865679740906
+                    },
+                    {
+                        "id": "https://openalex.org/C50644808",
+                        "wikidata": "https://www.wikidata.org/wiki/Q192776",
+                        "display_name": "Artificial neural network",
+                        "level": 2,
+                        "score": 0.6122990250587463
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5931156873703003
+                    },
+                    {
+                        "id": "https://openalex.org/C32833848",
+                        "wikidata": "https://www.wikidata.org/wiki/Q4115054",
+                        "display_name": "Extensibility",
+                        "level": 2,
+                        "score": 0.5044585466384888
+                    },
+                    {
+                        "id": "https://openalex.org/C12426560",
+                        "wikidata": "https://www.wikidata.org/wiki/Q189569",
+                        "display_name": "Basis (linear algebra)",
+                        "level": 2,
+                        "score": 0.47728481888771057
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.3977821469306946
+                    },
+                    {
+                        "id": "https://openalex.org/C120314980",
+                        "wikidata": "https://www.wikidata.org/wiki/Q180634",
+                        "display_name": "Distributed computing",
+                        "level": 1,
+                        "score": 0.3646315336227417
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.14716944098472595
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C2524010",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8087",
+                        "display_name": "Geometry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C33923547",
+                        "wikidata": "https://www.wikidata.org/wiki/Q395",
+                        "display_name": "Mathematics",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 7,
+                "locations": [
+                    {
+                        "id": "doi:10.3389/fninf.2020.00031",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.3389/fninf.2020.00031",
+                        "pdf_url": "https://www.frontiersin.org/articles/10.3389/fninf.2020.00031/pdf",
+                        "source": {
+                            "id": "https://openalex.org/S179816892",
+                            "display_name": "Frontiers in Neuroinformatics",
+                            "issn_l": "1662-5196",
+                            "issn": [
+                                "1662-5196"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320527",
+                            "host_organization_name": "Frontiers Media",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320527"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Frontiers Media"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Frontiers in Neuroinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:32733226",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32733226",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Frontiers in neuroinformatics",
+                        "raw_type": "Journal Article"
+                    },
+                    {
+                        "id": "pmh:oai:irdb.nii.ac.jp:01076:0004581613",
+                        "is_oa": true,
+                        "landing_page_url": "https://oist.repo.nii.ac.jp/records/1667",
+                        "pdf_url": "https://oist.repo.nii.ac.jp/record/1667/files/Wichert-2020-Pycabnn_%20Efficient%20and%20Extensible.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S7407056385",
+                            "display_name": "Institutional Repositories DataBase (IRDB)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I184597095",
+                            "host_organization_name": "National Institute of Informatics",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I184597095"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Frontiers in Neuroinformatics",
+                        "raw_type": "journal article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7358899",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7358899",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Front Neuroinform",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:c:irua:171259",
+                        "is_oa": false,
+                        "landing_page_url": "https://hdl.handle.net/10067/1712590151162165141",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401849",
+                            "display_name": "Institutional Repository University of Antwerp (University of Antwerp)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I149213910",
+                            "host_organization_name": "University of Antwerp",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I149213910"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": ""
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:aec4b29a23ed40309340e421691d879f",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/aec4b29a23ed40309340e421691d879f",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Frontiers in Neuroinformatics, Vol 14 (2020)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:oist.repo.nii.ac.jp:00001667",
+                        "is_oa": true,
+                        "landing_page_url": "https://oist.repo.nii.ac.jp/?action=repository_uri&item_id=1667",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402452",
+                            "display_name": "Okinawa Institute of Science and Technology Graduate University (Okinawa Institute of Science and Technology Graduate University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I142637625",
+                            "host_organization_name": "Okinawa Institute of Science and Technology Graduate University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I142637625"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "https://creativecommons.org/licenses/by/4.0/",
+                        "raw_type": "Journal Article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.3389/fninf.2020.00031",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3389/fninf.2020.00031",
+                    "pdf_url": "https://www.frontiersin.org/articles/10.3389/fninf.2020.00031/pdf",
+                    "source": {
+                        "id": "https://openalex.org/S179816892",
+                        "display_name": "Frontiers in Neuroinformatics",
+                        "issn_l": "1662-5196",
+                        "issn": [
+                            "1662-5196"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320527",
+                        "host_organization_name": "Frontiers Media",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320527"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Frontiers Media"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Frontiers in Neuroinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320322443",
+                        "display_name": "Okinawa Institute of Science and Technology Graduate University",
+                        "ror": "https://ror.org/02qg15b79"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3039925616.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3039925616.grobid-xml"
+                },
+                "referenced_works_count": 29,
+                "referenced_works": [
+                    "https://openalex.org/W76462521",
+                    "https://openalex.org/W1984915453",
+                    "https://openalex.org/W2029732186",
+                    "https://openalex.org/W2032824428",
+                    "https://openalex.org/W2049181052",
+                    "https://openalex.org/W2057443286",
+                    "https://openalex.org/W2061987443",
+                    "https://openalex.org/W2065575763",
+                    "https://openalex.org/W2068306188",
+                    "https://openalex.org/W2074987446",
+                    "https://openalex.org/W2075498034",
+                    "https://openalex.org/W2117120818",
+                    "https://openalex.org/W2118805711",
+                    "https://openalex.org/W2155051950",
+                    "https://openalex.org/W2155332440",
+                    "https://openalex.org/W2155741587",
+                    "https://openalex.org/W2161008043",
+                    "https://openalex.org/W2545883516",
+                    "https://openalex.org/W2549298134",
+                    "https://openalex.org/W2562589097",
+                    "https://openalex.org/W2588048611",
+                    "https://openalex.org/W2606442840",
+                    "https://openalex.org/W2756765409",
+                    "https://openalex.org/W2766383269",
+                    "https://openalex.org/W2790439218",
+                    "https://openalex.org/W2808914147",
+                    "https://openalex.org/W2911965397",
+                    "https://openalex.org/W2945174113",
+                    "https://openalex.org/W4245552230"
+                ],
+                "related_works": [
+                    "https://openalex.org/W3153292769",
+                    "https://openalex.org/W2045444909",
+                    "https://openalex.org/W1516398359",
+                    "https://openalex.org/W1901656956",
+                    "https://openalex.org/W2990805456",
+                    "https://openalex.org/W2941659365",
+                    "https://openalex.org/W4239210160",
+                    "https://openalex.org/W2376300433",
+                    "https://openalex.org/W1948607442",
+                    "https://openalex.org/W4242605858"
+                ],
+                "abstract_inverted_index": {
+                    "Physiologically": [
+                        0
+                    ],
+                    "detailed": [
+                        1
+                    ],
+                    "models": [
+                        2
+                    ],
+                    "of": [
+                        3,
+                        73,
+                        111,
+                        120
+                    ],
+                    "neural": [
+                        4,
+                        16,
+                        194
+                    ],
+                    "networks": [
+                        5
+                    ],
+                    "are": [
+                        6,
+                        32
+                    ],
+                    "an": [
+                        7,
+                        55,
+                        65,
+                        115
+                    ],
+                    "important": [
+                        8
+                    ],
+                    "tool": [
+                        9,
+                        191
+                    ],
+                    "for": [
+                        10,
+                        84,
+                        91,
+                        192
+                    ],
+                    "studying": [
+                        11
+                    ],
+                    "how": [
+                        12,
+                        35
+                    ],
+                    "biophysical": [
+                        13
+                    ],
+                    "mechanisms": [
+                        14
+                    ],
+                    "impact": [
+                        15
+                    ],
+                    "information": [
+                        17
+                    ],
+                    "processing.": [
+                        18
+                    ],
+                    "An": [
+                        19
+                    ],
+                    "important,": [
+                        20
+                    ],
+                    "fundamental": [
+                        21
+                    ],
+                    "step": [
+                        22
+                    ],
+                    "in": [
+                        23,
+                        165,
+                        172,
+                        197
+                    ],
+                    "constructing": [
+                        24
+                    ],
+                    "such": [
+                        25,
+                        99
+                    ],
+                    "a": [
+                        26,
+                        74,
+                        117,
+                        131,
+                        154,
+                        166,
+                        189
+                    ],
+                    "model": [
+                        27,
+                        119
+                    ],
+                    "is": [
+                        28,
+                        61,
+                        143,
+                        179
+                    ],
+                    "determining": [
+                        29,
+                        92
+                    ],
+                    "where": [
+                        30
+                    ],
+                    "neurons": [
+                        31
+                    ],
+                    "placed": [
+                        33
+                    ],
+                    "and": [
+                        34,
+                        46,
+                        90,
+                        102,
+                        109,
+                        134,
+                        183,
+                        185
+                    ],
+                    "they": [
+                        36
+                    ],
+                    "connect": [
+                        37
+                    ],
+                    "to": [
+                        38,
+                        63,
+                        146,
+                        181
+                    ],
+                    "each": [
+                        39
+                    ],
+                    "other,": [
+                        40
+                    ],
+                    "based": [
+                        41,
+                        94
+                    ],
+                    "on": [
+                        42,
+                        95,
+                        153
+                    ],
+                    "known": [
+                        43
+                    ],
+                    "anatomical": [
+                        44,
+                        66
+                    ],
+                    "properties": [
+                        45
+                    ],
+                    "constraints": [
+                        47
+                    ],
+                    "given": [
+                        48
+                    ],
+                    "by": [
+                        49,
+                        113
+                    ],
+                    "experimental": [
+                        50
+                    ],
+                    "data.": [
+                        51
+                    ],
+                    "Here": [
+                        52
+                    ],
+                    "we": [
+                        53,
+                        80
+                    ],
+                    "present": [
+                        54
+                    ],
+                    "open-source": [
+                        56
+                    ],
+                    "software": [
+                        57
+                    ],
+                    "tool,": [
+                        58
+                    ],
+                    "pycabnn,": [
+                        59,
+                        79
+                    ],
+                    "that": [
+                        60,
+                        141
+                    ],
+                    "dedicated": [
+                        62
+                    ],
+                    "generating": [
+                        64,
+                        85,
+                        127
+                    ],
+                    "model,": [
+                        67
+                    ],
+                    "which": [
+                        68,
+                        125
+                    ],
+                    "serves": [
+                        69
+                    ],
+                    "as": [
+                        70,
+                        100
+                    ],
+                    "the": [
+                        71,
+                        107,
+                        121,
+                        150,
+                        198
+                    ],
+                    "basis": [
+                        72
+                    ],
+                    "full": [
+                        75
+                    ],
+                    "network": [
+                        76,
+                        118,
+                        195
+                    ],
+                    "model.": [
+                        77
+                    ],
+                    "In": [
+                        78
+                    ],
+                    "implemented": [
+                        81
+                    ],
+                    "efficient": [
+                        82,
+                        144
+                    ],
+                    "algorithms": [
+                        83
+                    ],
+                    "physiologically": [
+                        86
+                    ],
+                    "realistic": [
+                        87
+                    ],
+                    "cell": [
+                        88
+                    ],
+                    "positions": [
+                        89
+                    ],
+                    "connectivity": [
+                        93
+                    ],
+                    "extended": [
+                        96
+                    ],
+                    "geometrical": [
+                        97
+                    ],
+                    "structures": [
+                        98
+                    ],
+                    "axonal": [
+                        101
+                    ],
+                    "dendritic": [
+                        103
+                    ],
+                    "morphology.": [
+                        104
+                    ],
+                    "We": [
+                        105,
+                        139
+                    ],
+                    "demonstrate": [
+                        106
+                    ],
+                    "capabilities": [
+                        108
+                    ],
+                    "performance": [
+                        110
+                    ],
+                    "pycabnn": [
+                        112,
+                        142,
+                        178
+                    ],
+                    "using": [
+                        114
+                    ],
+                    "example,": [
+                        116
+                    ],
+                    "cerebellar": [
+                        122
+                    ],
+                    "granular": [
+                        123
+                    ],
+                    "layer,": [
+                        124
+                    ],
+                    "requires": [
+                        126
+                    ],
+                    "more": [
+                        128
+                    ],
+                    "than": [
+                        129
+                    ],
+                    "half": [
+                        130
+                    ],
+                    "million": [
+                        132
+                    ],
+                    "cells": [
+                        133
+                    ],
+                    "computing": [
+                        135,
+                        168
+                    ],
+                    "their": [
+                        136
+                    ],
+                    "mutual": [
+                        137
+                    ],
+                    "connectivity.": [
+                        138
+                    ],
+                    "show": [
+                        140
+                    ],
+                    "enough": [
+                        145
+                    ],
+                    "carry": [
+                        147
+                    ],
+                    "out": [
+                        148
+                    ],
+                    "all": [
+                        149
+                    ],
+                    "required": [
+                        151
+                    ],
+                    "tasks": [
+                        152
+                    ],
+                    "laptop": [
+                        155
+                    ],
+                    "computer": [
+                        156
+                    ],
+                    "within": [
+                        157
+                    ],
+                    "reasonable": [
+                        158
+                    ],
+                    "runtime,": [
+                        159
+                    ],
+                    "although": [
+                        160
+                    ],
+                    "it": [
+                        161,
+                        186
+                    ],
+                    "can": [
+                        162,
+                        187
+                    ],
+                    "also": [
+                        163
+                    ],
+                    "run": [
+                        164
+                    ],
+                    "parallel": [
+                        167
+                    ],
+                    "environment.": [
+                        169
+                    ],
+                    "Written": [
+                        170
+                    ],
+                    "purely": [
+                        171
+                    ],
+                    "Python": [
+                        173
+                    ],
+                    "with": [
+                        174
+                    ],
+                    "limited": [
+                        175
+                    ],
+                    "external": [
+                        176
+                    ],
+                    "dependencies,": [
+                        177
+                    ],
+                    "easy": [
+                        180
+                    ],
+                    "use": [
+                        182
+                    ],
+                    "extend,": [
+                        184
+                    ],
+                    "be": [
+                        188
+                    ],
+                    "useful": [
+                        190
+                    ],
+                    "computational": [
+                        193
+                    ],
+                    "studies": [
+                        196
+                    ],
+                    "future.": [
+                        199
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-08-28T12:50:07.497085",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Pycabnn: Efficient and Extensible Software to Construct an Anatomical Basis for a Physiologically Realistic Neural Network Model",
+                "doi": "10.3389/fninf.2020.00031",
+                "pmid": "32733226",
+                "pmc": "PMC7358899",
+                "isbns": [],
+                "altmetric_jid": "4f6fa81f3cf058f61000bc16",
+                "issns": [
+                    "1662-5196"
+                ],
+                "journal": "Frontiers in Neuroinformatics",
+                "cohorts": {
+                    "pub": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 32624845,
+                        "mean": 10.44650865271544,
+                        "rank": 4121951,
+                        "pct": 87,
+                        "higher_than": 28494489
+                    },
+                    "journal": {
+                        "count": 953,
+                        "mean": 7.183420776495277,
+                        "rank": 149,
+                        "pct": 83,
+                        "higher_than": 800
+                    },
+                    "similar_age_3m": {
+                        "count": 449265,
+                        "mean": 17.115422189576332,
+                        "rank": 82932,
+                        "pct": 81,
+                        "higher_than": 366098
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 15,
+                        "mean": 11.653333333333334,
+                        "rank": 7,
+                        "pct": 46,
+                        "higher_than": 7
+                    }
+                },
+                "authors": [
+                    "Ines Wichert",
+                    "Sanghun Jee",
+                    "Erik De Schutter",
+                    "Sungho Hong"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1594080000,
+                "epubdate": 1594080000,
+                "dimensions_publication_id": "pub.1129032232",
+                "altmetric_id": 85356435,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_msm_count": 1,
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 3,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1595204487,
+                "score": 10.6,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 10.6
+                },
+                "url": "http://dx.doi.org/10.3389/fninf.2020.00031",
+                "added_on": 1594112903,
+                "published_on": 1594080000,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "10",
+                    "connotea": "0"
+                },
+                "readers_count": 10,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=11&types=mmtttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=11&types=mmtttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=11&types=mmtttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=85356435"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 2132,
+            "total_ccn": 460,
+            "avg_ccn": 3.11,
+            "nloc_per_file": 82.0,
+            "duplicate_rate": 6.82
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

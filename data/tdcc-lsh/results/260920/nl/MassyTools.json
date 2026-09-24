@@ -1,0 +1,2559 @@
+{
+    "MassyTools": {
+        "tool_name": "MassyTools",
+        "biotools": {
+            "name": "MassyTools",
+            "description": "Data processing tool for targeted high-throughput MALDI-MS data extraction.",
+            "homepage": "https://github.com/Tarskin/MassyTools",
+            "biotoolsID": "massytools",
+            "biotoolsCURIE": "biotools:massytools",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2409",
+                            "term": "Data handling"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3071",
+                    "term": "Data management"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": null,
+            "collectionID": [
+                "Proteomics"
+            ],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "http://www.mybiosoftware.com/massytools-high-throughput-targeted-data-processing-tool.html",
+                    "type": [
+                        "Software catalogue"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/Tarskin/MassyTools",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1021/acs.jproteome.5b00658",
+                    "pmid": "26565759",
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS",
+                        "abstract": "The study of N-linked glycosylation has long been complicated by a lack of bioinformatics tools. In particular, there is still a lack of fast and robust data processing tools for targeted (relative) quantitation. We have developed modular, high-throughput data processing software, MassyTools, that is capable of calibrating spectra, extracting data, and performing quality control calculations based on a user-defined list of glycan or glycopeptide compositions. Typical examples of output include relative areas after background subtraction, isotopic pattern-based quality scores, spectral quality scores, and signal-to-noise ratios. We demonstrated MassyTools' performance on MALDI-TOF-MS glycan and glycopeptide data from different samples. MassyTools yielded better calibration than the commercial software flexAnalysis, generally showing 2-fold better ppm errors after internal calibration. Relative quantitation using MassyTools and flexAnalysis gave similar results, yielding a relative standard deviation (RSD) of the main glycan of \u223c6%. However, MassyTools yielded 2- to 5-fold lower RSD values for low-abundant analytes than flexAnalysis. Additionally, feature curation based on the computed quality criteria improved the data quality. In conclusion, we show that MassyTools is a robust automated data processing tool for high-throughput, high-performance glycosylation analysis. The package is released under the Apache 2.0 license and is freely available on GitHub (https://github.com/Tarskin/MassyTools).",
+                        "date": "2015-12-04T00:00:00Z",
+                        "citationCount": 96,
+                        "authors": [
+                            {
+                                "name": "Jansen B.C."
+                            },
+                            {
+                                "name": "Reiding K.R."
+                            },
+                            {
+                                "name": "Bondt A."
+                            },
+                            {
+                                "name": "Hipgrave Ederveen A.L."
+                            },
+                            {
+                                "name": "Palmblad M."
+                            },
+                            {
+                                "name": "Falck D."
+                            },
+                            {
+                                "name": "Wuhrer M."
+                            }
+                        ],
+                        "journal": "Journal of Proteome Research"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": null,
+                    "email": "m.wuhrer@lumc.nl",
+                    "url": "https://github.com/Tarskin",
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "mbs_import",
+            "additionDate": "2017-08-03T18:50:41Z",
+            "lastUpdate": "2024-11-25T14:14:15.100043Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "proteomics.bio.tools"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 35873160,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNTg3MzE2MA==",
+                "name": "MassyTools",
+                "full_name": "Tarskin/MassyTools",
+                "private": false,
+                "owner": {
+                    "login": "Tarskin",
+                    "id": 4366212,
+                    "node_id": "MDQ6VXNlcjQzNjYyMTI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/4366212?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Tarskin",
+                    "html_url": "https://github.com/Tarskin",
+                    "followers_url": "https://api.github.com/users/Tarskin/followers",
+                    "following_url": "https://api.github.com/users/Tarskin/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Tarskin/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Tarskin/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Tarskin/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Tarskin/orgs",
+                    "repos_url": "https://api.github.com/users/Tarskin/repos",
+                    "events_url": "https://api.github.com/users/Tarskin/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Tarskin/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/Tarskin/MassyTools",
+                "description": "A data processing tool for targeted high-throughput MALDI-MS data extraction.",
+                "fork": false,
+                "url": "https://api.github.com/repos/Tarskin/MassyTools",
+                "forks_url": "https://api.github.com/repos/Tarskin/MassyTools/forks",
+                "keys_url": "https://api.github.com/repos/Tarskin/MassyTools/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/Tarskin/MassyTools/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/Tarskin/MassyTools/teams",
+                "hooks_url": "https://api.github.com/repos/Tarskin/MassyTools/hooks",
+                "issue_events_url": "https://api.github.com/repos/Tarskin/MassyTools/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/Tarskin/MassyTools/events",
+                "assignees_url": "https://api.github.com/repos/Tarskin/MassyTools/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/Tarskin/MassyTools/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/Tarskin/MassyTools/tags",
+                "blobs_url": "https://api.github.com/repos/Tarskin/MassyTools/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/Tarskin/MassyTools/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/Tarskin/MassyTools/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/Tarskin/MassyTools/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/Tarskin/MassyTools/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/Tarskin/MassyTools/languages",
+                "stargazers_url": "https://api.github.com/repos/Tarskin/MassyTools/stargazers",
+                "contributors_url": "https://api.github.com/repos/Tarskin/MassyTools/contributors",
+                "subscribers_url": "https://api.github.com/repos/Tarskin/MassyTools/subscribers",
+                "subscription_url": "https://api.github.com/repos/Tarskin/MassyTools/subscription",
+                "commits_url": "https://api.github.com/repos/Tarskin/MassyTools/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/Tarskin/MassyTools/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/Tarskin/MassyTools/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/Tarskin/MassyTools/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/Tarskin/MassyTools/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/Tarskin/MassyTools/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/Tarskin/MassyTools/merges",
+                "archive_url": "https://api.github.com/repos/Tarskin/MassyTools/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/Tarskin/MassyTools/downloads",
+                "issues_url": "https://api.github.com/repos/Tarskin/MassyTools/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/Tarskin/MassyTools/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/Tarskin/MassyTools/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/Tarskin/MassyTools/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/Tarskin/MassyTools/labels{/name}",
+                "releases_url": "https://api.github.com/repos/Tarskin/MassyTools/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/Tarskin/MassyTools/deployments",
+                "created_at": "2015-05-19T09:40:26Z",
+                "updated_at": "2023-08-01T13:20:56Z",
+                "pushed_at": "2026-05-13T14:06:26Z",
+                "git_url": "git://github.com/Tarskin/MassyTools.git",
+                "ssh_url": "git@github.com:Tarskin/MassyTools.git",
+                "clone_url": "https://github.com/Tarskin/MassyTools.git",
+                "svn_url": "https://github.com/Tarskin/MassyTools",
+                "homepage": "",
+                "size": 13020,
+                "stargazers_count": 3,
+                "watchers_count": 3,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 8,
+                "license": {
+                    "key": "apache-2.0",
+                    "name": "Apache License 2.0",
+                    "spdx_id": "Apache-2.0",
+                    "url": "https://api.github.com/licenses/apache-2.0",
+                    "node_id": "MDc6TGljZW5zZTI="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 8,
+                "watchers": 3,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 5,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": ".gitattributes",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".idea",
+                    "type": "tree"
+                },
+                {
+                    "path": "LICENSE.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "MassyTools.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "MassyTools",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "blocks",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo data",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "Tarskin",
+                    "contributions": 132
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 33,
+                    "title": "Fraction of isotopic pattern in output",
+                    "created_at": "2025-04-25T14:23:44Z",
+                    "closed_at": "2026-02-16T10:36:42Z"
+                },
+                {
+                    "number": 29,
+                    "title": "PDF generation can fail on blanks",
+                    "created_at": "2020-03-16T08:33:50Z",
+                    "closed_at": "2020-03-16T08:50:45Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Indicate mass spectra that did not calibrate in GUI",
+                    "created_at": "2019-04-24T08:38:08Z",
+                    "closed_at": "2019-04-24T09:14:21Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Restructure internal storage from lists to dicts",
+                    "created_at": "2018-06-27T10:38:03Z",
+                    "closed_at": "2019-04-24T08:32:42Z"
+                },
+                {
+                    "number": 21,
+                    "title": "Program can't function properly if no read/write access",
+                    "created_at": "2018-05-21T10:35:27Z",
+                    "closed_at": "2019-04-24T08:33:07Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Allow option to quantify MS2 fragments",
+                    "created_at": "2018-05-04T13:27:15Z",
+                    "closed_at": "2018-05-04T13:27:26Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Allow m/z calibration to use compositions as well",
+                    "created_at": "2018-03-27T11:20:58Z",
+                    "closed_at": "2018-07-03T09:55:47Z"
+                },
+                {
+                    "number": 17,
+                    "title": "Add tickbox to overwrite (or not) the analytes.ref",
+                    "created_at": "2018-03-27T11:19:31Z",
+                    "closed_at": "2018-06-26T15:05:49Z"
+                },
+                {
+                    "number": 16,
+                    "title": "The S/N reported by MassyTools should be changed from highest observed to value for theoretically highest isotope",
+                    "created_at": "2018-02-19T15:35:14Z",
+                    "closed_at": "2018-06-27T10:35:38Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Add automated data curation ",
+                    "created_at": "2017-07-24T15:16:52Z",
+                    "closed_at": "2017-07-24T15:27:39Z"
+                },
+                {
+                    "number": 13,
+                    "title": "QC zero-values ",
+                    "created_at": "2016-12-02T12:15:32Z",
+                    "closed_at": "2018-06-27T10:36:57Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Add legend to plot or multiplot",
+                    "created_at": "2016-05-11T11:45:19Z",
+                    "closed_at": "2016-05-11T11:54:58Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Negative values in compositions are being ignored",
+                    "created_at": "2015-09-16T08:54:44Z",
+                    "closed_at": "2015-09-16T09:03:00Z"
+                },
+                {
+                    "number": 9,
+                    "title": "(Re)Integrate mz(X)ML support",
+                    "created_at": "2015-09-07T13:22:24Z",
+                    "closed_at": "2015-10-01T11:19:53Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Tagging versions/releases",
+                    "created_at": "2015-07-24T15:01:51Z",
+                    "closed_at": "2015-09-07T12:58:11Z"
+                },
+                {
+                    "number": 7,
+                    "title": "UI.png not being displayed in canvas",
+                    "created_at": "2015-07-24T12:27:54Z",
+                    "closed_at": "2015-07-24T13:09:27Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Restructure outputPopup window",
+                    "created_at": "2015-07-17T09:43:49Z",
+                    "closed_at": "2019-04-24T08:32:49Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Sodium/Potassium add incorrect mass as mass modifier",
+                    "created_at": "2015-07-13T16:55:06Z",
+                    "closed_at": "2015-07-24T13:56:47Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Measurement saving adds duplicate value",
+                    "created_at": "2015-07-13T16:52:34Z",
+                    "closed_at": "2015-07-13T16:55:18Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Compliance with PEP8",
+                    "created_at": "2015-07-08T19:25:46Z",
+                    "closed_at": "2017-07-24T15:27:55Z"
+                },
+                {
+                    "number": 2,
+                    "title": "UI.png missing from the git repo",
+                    "created_at": "2015-07-08T19:16:32Z",
+                    "closed_at": "2015-07-17T09:42:45Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Tkinter and matplotlib.pyplot combination results in infinite loop",
+                    "created_at": "2015-07-08T19:13:24Z",
+                    "closed_at": "2015-07-08T19:22:24Z"
+                }
+            ],
+            "languages": {
+                "Python": 102707
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1021/acs.jproteome.5b00658",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "26565759",
+                            "source": "MED",
+                            "pmid": "26565759",
+                            "doi": "10.1021/acs.jproteome.5b00658",
+                            "title": "MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS.",
+                            "authorString": "Jansen BC, Reiding KR, Bondt A, Hipgrave Ederveen AL, Palmblad M, Falck D, Wuhrer M.",
+                            "journalTitle": "J Proteome Res",
+                            "issue": "12",
+                            "journalVolume": "14",
+                            "pubYear": "2015",
+                            "journalIssn": "1535-3893; 1535-3907; ",
+                            "pageInfo": "5088-5098",
+                            "pubType": "research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "N",
+                            "inEPMC": "N",
+                            "inPMC": "N",
+                            "hasPDF": "N",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 92,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2015-11-14",
+                            "firstPublicationDate": "2015-11-13"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2317030694",
+                "doi": "https://doi.org/10.1021/acs.jproteome.5b00658",
+                "title": "MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS",
+                "display_name": "MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS",
+                "publication_year": 2015,
+                "publication_date": "2015-11-02",
+                "ids": {
+                    "openalex": "https://openalex.org/W2317030694",
+                    "doi": "https://doi.org/10.1021/acs.jproteome.5b00658",
+                    "mag": "2317030694",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/26565759"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1021/acs.jproteome.5b00658",
+                    "is_oa": false,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jproteome.5b00658",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S74367812",
+                        "display_name": "Journal of Proteome Research",
+                        "issn_l": "1535-3893",
+                        "issn": [
+                            "1535-3893",
+                            "1535-3907"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Proteome Research",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "green",
+                    "oa_url": "https://pure.amsterdamumc.nl/files/168287888/Massytools-a-high-throughput-targeted-data-processing-tool-for-relative-quantitation-and-quality-control-developed-for-.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5033784017",
+                            "display_name": "Bas C. Jansen",
+                            "orcid": "https://orcid.org/0000-0001-8617-0980"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Bas C. Jansen",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5022702230",
+                            "display_name": "Karli R. Reiding",
+                            "orcid": "https://orcid.org/0000-0003-3695-5274"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Karli R. Reiding",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5019883858",
+                            "display_name": "Albert Bondt",
+                            "orcid": "https://orcid.org/0000-0002-0985-7903"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Albert Bondt",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                            "Department\rof Rheumatology, Erasmus University Medical Center, 3000 CA Rotterdam, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department\rof Rheumatology, Erasmus University Medical Center, 3000 CA Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5079303423",
+                            "display_name": "Agnes L. Hipgrave Ederveen",
+                            "orcid": "https://orcid.org/0000-0003-1689-0442"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Agnes L. Hipgrave Ederveen",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5059772295",
+                            "display_name": "Magnus Palmblad",
+                            "orcid": "https://orcid.org/0000-0002-5865-8994"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Magnus Palmblad",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052968814",
+                            "display_name": "David Falck",
+                            "orcid": "https://orcid.org/0000-0003-3908-2376"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "David Falck",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5065397150",
+                            "display_name": "Manfred Wuhrer",
+                            "orcid": "https://orcid.org/0000-0002-0814-4995"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I865915315",
+                                "display_name": "Vrije Universiteit Amsterdam",
+                                "ror": "https://ror.org/008xxew50",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Manfred Wuhrer",
+                        "raw_affiliation_strings": [
+                            "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                            "Division\rof BioAnalytical Chemistry, VU University Amsterdam, 1081 HV Amsterdam, The Netherlands"
+                        ],
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center\rfor Proteomics and Metabolomics, Leiden University Medical Center, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Division\rof BioAnalytical Chemistry, VU University Amsterdam, 1081 HV Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 7,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5033784017"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800006345",
+                    "https://openalex.org/I4210101928"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 5.734,
+                "has_fulltext": true,
+                "cited_by_count": 111,
+                "citation_normalized_percentile": {
+                    "value": 0.96824028,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 97,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "14",
+                    "issue": "12",
+                    "first_page": "5088",
+                    "last_page": "5098"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10602",
+                    "display_name": "Glycosylation and Glycoproteins Research",
+                    "score": 0.9997000098228455,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10602",
+                        "display_name": "Glycosylation and Glycoproteins Research",
+                        "score": 0.9997000098228455,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9991000294685364,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10519",
+                        "display_name": "Advanced Proteomics Techniques and Applications",
+                        "score": 0.9984999895095825,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1607",
+                            "display_name": "Spectroscopy"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/16",
+                            "display_name": "Chemistry"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.6188854575157166
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/analyte",
+                        "display_name": "Analyte",
+                        "score": 0.53713458776474
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/glycan",
+                        "display_name": "Glycan",
+                        "score": 0.5143600702285767
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5079806447029114
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/throughput",
+                        "display_name": "Throughput",
+                        "score": 0.4758957624435425
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/calibration",
+                        "display_name": "Calibration",
+                        "score": 0.43150442838668823
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.4098215699195862
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.34611016511917114
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.320793479681015
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chromatography",
+                        "display_name": "Chromatography",
+                        "score": 0.2329326868057251
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chemistry",
+                        "display_name": "Chemistry",
+                        "score": 0.22572433948516846
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mathematics",
+                        "display_name": "Mathematics",
+                        "score": 0.1548376977443695
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.13910064101219177
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/statistics",
+                        "display_name": "Statistics",
+                        "score": 0.08463054895401001
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6188854575157166
+                    },
+                    {
+                        "id": "https://openalex.org/C10390740",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2282401",
+                        "display_name": "Analyte",
+                        "level": 2,
+                        "score": 0.53713458776474
+                    },
+                    {
+                        "id": "https://openalex.org/C206212055",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2553138",
+                        "display_name": "Glycan",
+                        "level": 3,
+                        "score": 0.5143600702285767
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5079806447029114
+                    },
+                    {
+                        "id": "https://openalex.org/C157764524",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1383412",
+                        "display_name": "Throughput",
+                        "level": 3,
+                        "score": 0.4758957624435425
+                    },
+                    {
+                        "id": "https://openalex.org/C165838908",
+                        "wikidata": "https://www.wikidata.org/wiki/Q736777",
+                        "display_name": "Calibration",
+                        "level": 2,
+                        "score": 0.43150442838668823
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.4098215699195862
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.34611016511917114
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.320793479681015
+                    },
+                    {
+                        "id": "https://openalex.org/C43617362",
+                        "wikidata": "https://www.wikidata.org/wiki/Q170050",
+                        "display_name": "Chromatography",
+                        "level": 1,
+                        "score": 0.2329326868057251
+                    },
+                    {
+                        "id": "https://openalex.org/C185592680",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+                        "display_name": "Chemistry",
+                        "level": 0,
+                        "score": 0.22572433948516846
+                    },
+                    {
+                        "id": "https://openalex.org/C33923547",
+                        "wikidata": "https://www.wikidata.org/wiki/Q395",
+                        "display_name": "Mathematics",
+                        "level": 0,
+                        "score": 0.1548376977443695
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.13910064101219177
+                    },
+                    {
+                        "id": "https://openalex.org/C105795698",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12483",
+                        "display_name": "Statistics",
+                        "level": 1,
+                        "score": 0.08463054895401001
+                    },
+                    {
+                        "id": "https://openalex.org/C76155785",
+                        "wikidata": "https://www.wikidata.org/wiki/Q418",
+                        "display_name": "Telecommunications",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C108625454",
+                        "wikidata": "https://www.wikidata.org/wiki/Q187126",
+                        "display_name": "Glycoprotein",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C555944384",
+                        "wikidata": "https://www.wikidata.org/wiki/Q249",
+                        "display_name": "Wireless",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000911",
+                        "descriptor_name": "Antibodies, Monoclonal",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000911",
+                        "descriptor_name": "Antibodies, Monoclonal",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000911",
+                        "descriptor_name": "Antibodies, Monoclonal",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001330",
+                        "descriptor_name": "Electronic Data Processing",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001330",
+                        "descriptor_name": "Electronic Data Processing",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001330",
+                        "descriptor_name": "Electronic Data Processing",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D002138",
+                        "descriptor_name": "Calibration",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D002138",
+                        "descriptor_name": "Calibration",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D002138",
+                        "descriptor_name": "Calibration",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006020",
+                        "descriptor_name": "Glycopeptides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006020",
+                        "descriptor_name": "Glycopeptides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006020",
+                        "descriptor_name": "Glycopeptides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006031",
+                        "descriptor_name": "Glycosylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006031",
+                        "descriptor_name": "Glycosylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006031",
+                        "descriptor_name": "Glycosylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011134",
+                        "descriptor_name": "Polysaccharides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011134",
+                        "descriptor_name": "Polysaccharides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011134",
+                        "descriptor_name": "Polysaccharides",
+                        "qualifier_ui": "Q000032",
+                        "qualifier_name": "analysis",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019032",
+                        "descriptor_name": "Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019032",
+                        "descriptor_name": "Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019032",
+                        "descriptor_name": "Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054794",
+                        "descriptor_name": "Glycomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054794",
+                        "descriptor_name": "Glycomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054794",
+                        "descriptor_name": "Glycomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D059629",
+                        "descriptor_name": "Signal-To-Noise Ratio",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D059629",
+                        "descriptor_name": "Signal-To-Noise Ratio",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D059629",
+                        "descriptor_name": "Signal-To-Noise Ratio",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 9,
+                "locations": [
+                    {
+                        "id": "doi:10.1021/acs.jproteome.5b00658",
+                        "is_oa": false,
+                        "landing_page_url": "https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S74367812",
+                            "display_name": "Journal of Proteome Research",
+                            "issn_l": "1535-3893",
+                            "issn": [
+                                "1535-3893",
+                                "1535-3907"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320006",
+                            "host_organization_name": "American Chemical Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320006"
+                            ],
+                            "host_organization_lineage_names": [
+                                "American Chemical Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:26565759",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/26565759",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of proteome research",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.atira.dk:openaire_cris_publications/2acad65a-d3cf-4e83-b2ce-e6d7847816ec",
+                        "is_oa": false,
+                        "landing_page_url": "https://research.vumc.nl/en/publications/2acad65a-d3cf-4e83-b2ce-e6d7847816ec",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S7407055350",
+                            "display_name": "Amsterdam UMC (VU Amsterdam) - Institutional Repository",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Jansen, B C, Reiding, K R, Bondt, A, Hipgrave Ederveen, A, Palmbald, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of Proteome Research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pure.eur.nl:openaire_cris_publications/390945c9-e837-4249-a23f-192d90b2ed92",
+                        "is_oa": false,
+                        "landing_page_url": "https://pure.eur.nl/en/publications/390945c9-e837-4249-a23f-192d90b2ed92",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401266",
+                            "display_name": "EUR Research Repository (Erasmus University Rotterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I913958620",
+                            "host_organization_name": "Erasmus University Rotterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I913958620"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Jansen, BC, Reiding, KR, Bondt, A, Ederveen, ALH, Palmblad, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of Proteome Research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:openaire_cris_publications/08e0a4ff-299b-4a93-95a9-5e39e5b10daf",
+                        "is_oa": false,
+                        "landing_page_url": "https://research.vu.nl/en/publications/08e0a4ff-299b-4a93-95a9-5e39e5b10daf",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Jansen, B C, Reiding, K R, Bondt, A, Hipgrave Ederveen, A, Palmbald, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of Proteome Research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pure.amsterdamumc.nl:openaire_cris_publications/d9f46776-1b42-42ba-8a76-8689c4123f66",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/d9f46776-1b42-42ba-8a76-8689c4123f66",
+                        "pdf_url": "https://pure.amsterdamumc.nl/files/168287888/Massytools-a-high-throughput-targeted-data-processing-tool-for-relative-quantitation-and-quality-control-developed-for-.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S7407055222",
+                            "display_name": "Pure Amsterdam UMC",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Jansen, B C, Reiding, K R, Bondt, A, Hipgrave Ederveen, A, Palmbald, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of proteome research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:lumc:oai:openaccess.leidenuniv.nl:1887/101923",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/1887/101923",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "VOLUME=14;ISSUE=12;STARTPAGE=5088;ENDPAGE=5098;TITLE=None",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:publications/08e0a4ff-299b-4a93-95a9-5e39e5b10daf",
+                        "is_oa": false,
+                        "landing_page_url": "https://hdl.handle.net/1871.1/08e0a4ff-299b-4a93-95a9-5e39e5b10daf",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Jansen, B C, Reiding, K R, Bondt, A, Hipgrave Ederveen, A, Palmbald, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of Proteome Research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_2995344",
+                        "is_oa": false,
+                        "landing_page_url": "https://hdl.handle.net/1887/101923",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "Article / Letter to editor"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "pmh:oai:pure.amsterdamumc.nl:openaire_cris_publications/d9f46776-1b42-42ba-8a76-8689c4123f66",
+                    "is_oa": true,
+                    "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/d9f46776-1b42-42ba-8a76-8689c4123f66",
+                    "pdf_url": "https://pure.amsterdamumc.nl/files/168287888/Massytools-a-high-throughput-targeted-data-processing-tool-for-relative-quantitation-and-quality-control-developed-for-.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S7407055222",
+                        "display_name": "Pure Amsterdam UMC",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "other-oa",
+                    "license_id": "https://openalex.org/licenses/other-oa",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Jansen, B C, Reiding, K R, Bondt, A, Hipgrave Ederveen, A, Palmbald, M, Falck, D & Wuhrer, M 2015, 'MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS', Journal of proteome research, vol. 14, no. 12, pp. 5088-5098. https://doi.org/10.1021/acs.jproteome.5b00658",
+                    "raw_type": "info:eu-repo/semantics/publishedVersion"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.5199999809265137,
+                        "display_name": "Industry, innovation and infrastructure",
+                        "id": "https://metadata.un.org/sdg/9"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G2411013249",
+                        "display_name": null,
+                        "funder_award_id": "93511033",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G5902406966",
+                        "display_name": null,
+                        "funder_award_id": "278535",
+                        "funder_id": "https://openalex.org/F4320334960",
+                        "funder_display_name": "Seventh Framework Programme"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320309432",
+                        "display_name": "F. Hoffmann-La Roche",
+                        "ror": "https://ror.org/00by1q217"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334960",
+                        "display_name": "Seventh Framework Programme",
+                        "ror": "https://ror.org/00k4n6c32"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2317030694.pdf"
+                },
+                "referenced_works_count": 44,
+                "referenced_works": [
+                    "https://openalex.org/W52620269",
+                    "https://openalex.org/W142176591",
+                    "https://openalex.org/W1565269665",
+                    "https://openalex.org/W1974605172",
+                    "https://openalex.org/W1976484683",
+                    "https://openalex.org/W1978022224",
+                    "https://openalex.org/W1978124145",
+                    "https://openalex.org/W1988536357",
+                    "https://openalex.org/W1989299822",
+                    "https://openalex.org/W1995599358",
+                    "https://openalex.org/W1999812289",
+                    "https://openalex.org/W2009117616",
+                    "https://openalex.org/W2011301426",
+                    "https://openalex.org/W2019094578",
+                    "https://openalex.org/W2024166319",
+                    "https://openalex.org/W2030068202",
+                    "https://openalex.org/W2031077831",
+                    "https://openalex.org/W2043123654",
+                    "https://openalex.org/W2045462835",
+                    "https://openalex.org/W2054577224",
+                    "https://openalex.org/W2055507506",
+                    "https://openalex.org/W2067851411",
+                    "https://openalex.org/W2087306031",
+                    "https://openalex.org/W2087310128",
+                    "https://openalex.org/W2091229935",
+                    "https://openalex.org/W2100491586",
+                    "https://openalex.org/W2100518445",
+                    "https://openalex.org/W2109218908",
+                    "https://openalex.org/W2110114082",
+                    "https://openalex.org/W2114770700",
+                    "https://openalex.org/W2121376057",
+                    "https://openalex.org/W2128316367",
+                    "https://openalex.org/W2129135821",
+                    "https://openalex.org/W2129232972",
+                    "https://openalex.org/W2146292423",
+                    "https://openalex.org/W2146612842",
+                    "https://openalex.org/W2147214095",
+                    "https://openalex.org/W2152708819",
+                    "https://openalex.org/W2154100133",
+                    "https://openalex.org/W2155628978",
+                    "https://openalex.org/W2162510332",
+                    "https://openalex.org/W2164743616",
+                    "https://openalex.org/W2242464395",
+                    "https://openalex.org/W2321180610"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1944150046",
+                    "https://openalex.org/W2082761856",
+                    "https://openalex.org/W1991280445",
+                    "https://openalex.org/W1995472698",
+                    "https://openalex.org/W2501505803",
+                    "https://openalex.org/W2016341282",
+                    "https://openalex.org/W2067044389",
+                    "https://openalex.org/W2315273856",
+                    "https://openalex.org/W1969072535",
+                    "https://openalex.org/W2071390337"
+                ],
+                "abstract_inverted_index": {
+                    "The": [
+                        0,
+                        182
+                    ],
+                    "study": [
+                        1
+                    ],
+                    "of": [
+                        2,
+                        12,
+                        22,
+                        45,
+                        60,
+                        67,
+                        131,
+                        135
+                    ],
+                    "N-linked": [
+                        3
+                    ],
+                    "glycosylation": [
+                        4,
+                        180
+                    ],
+                    "has": [
+                        5
+                    ],
+                    "long": [
+                        6
+                    ],
+                    "been": [
+                        7
+                    ],
+                    "complicated": [
+                        8
+                    ],
+                    "by": [
+                        9
+                    ],
+                    "a": [
+                        10,
+                        20,
+                        57,
+                        126,
+                        171
+                    ],
+                    "lack": [
+                        11,
+                        21
+                    ],
+                    "bioinformatics": [
+                        13
+                    ],
+                    "tools.": [
+                        14
+                    ],
+                    "In": [
+                        15,
+                        164
+                    ],
+                    "particular,": [
+                        16
+                    ],
+                    "there": [
+                        17
+                    ],
+                    "is": [
+                        18,
+                        43,
+                        170,
+                        184,
+                        192
+                    ],
+                    "still": [
+                        19
+                    ],
+                    "fast": [
+                        23
+                    ],
+                    "and": [
+                        24,
+                        50,
+                        82,
+                        92,
+                        120,
+                        191
+                    ],
+                    "robust": [
+                        25,
+                        172
+                    ],
+                    "data": [
+                        26,
+                        38,
+                        94,
+                        162,
+                        174
+                    ],
+                    "processing": [
+                        27,
+                        39,
+                        175
+                    ],
+                    "tools": [
+                        28
+                    ],
+                    "for": [
+                        29,
+                        146,
+                        177
+                    ],
+                    "targeted": [
+                        30
+                    ],
+                    "(relative)": [
+                        31
+                    ],
+                    "quantitation.": [
+                        32
+                    ],
+                    "We": [
+                        33,
+                        85
+                    ],
+                    "have": [
+                        34
+                    ],
+                    "developed": [
+                        35
+                    ],
+                    "modular,": [
+                        36
+                    ],
+                    "high-throughput": [
+                        37
+                    ],
+                    "software,": [
+                        40
+                    ],
+                    "MassyTools,": [
+                        41
+                    ],
+                    "that": [
+                        42,
+                        168
+                    ],
+                    "capable": [
+                        44
+                    ],
+                    "calibrating": [
+                        46
+                    ],
+                    "spectra,": [
+                        47
+                    ],
+                    "extracting": [
+                        48
+                    ],
+                    "data,": [
+                        49
+                    ],
+                    "performing": [
+                        51
+                    ],
+                    "quality": [
+                        52,
+                        77,
+                        80,
+                        158
+                    ],
+                    "control": [
+                        53
+                    ],
+                    "calculations": [
+                        54
+                    ],
+                    "based": [
+                        55,
+                        154
+                    ],
+                    "on": [
+                        56,
+                        89,
+                        155,
+                        195
+                    ],
+                    "user-defined": [
+                        58
+                    ],
+                    "list": [
+                        59
+                    ],
+                    "glycan": [
+                        61,
+                        91,
+                        134
+                    ],
+                    "or": [
+                        62
+                    ],
+                    "glycopeptide": [
+                        63,
+                        93
+                    ],
+                    "compositions.": [
+                        64
+                    ],
+                    "Typical": [
+                        65
+                    ],
+                    "examples": [
+                        66
+                    ],
+                    "output": [
+                        68
+                    ],
+                    "include": [
+                        69
+                    ],
+                    "relative": [
+                        70,
+                        127
+                    ],
+                    "areas": [
+                        71
+                    ],
+                    "after": [
+                        72,
+                        113
+                    ],
+                    "background": [
+                        73
+                    ],
+                    "subtraction,": [
+                        74
+                    ],
+                    "isotopic": [
+                        75
+                    ],
+                    "pattern-based": [
+                        76
+                    ],
+                    "scores,": [
+                        78,
+                        81
+                    ],
+                    "spectral": [
+                        79
+                    ],
+                    "signal-to-noise": [
+                        83
+                    ],
+                    "ratios.": [
+                        84
+                    ],
+                    "demonstrated": [
+                        86
+                    ],
+                    "MassyTools'": [
+                        87
+                    ],
+                    "performance": [
+                        88
+                    ],
+                    "MALDI-TOF-MS": [
+                        90
+                    ],
+                    "from": [
+                        95
+                    ],
+                    "different": [
+                        96
+                    ],
+                    "samples.": [
+                        97
+                    ],
+                    "MassyTools": [
+                        98,
+                        119,
+                        138,
+                        169
+                    ],
+                    "yielded": [
+                        99,
+                        139
+                    ],
+                    "better": [
+                        100,
+                        110
+                    ],
+                    "calibration": [
+                        101
+                    ],
+                    "than": [
+                        102,
+                        149
+                    ],
+                    "the": [
+                        103,
+                        132,
+                        156,
+                        161,
+                        187
+                    ],
+                    "commercial": [
+                        104
+                    ],
+                    "software": [
+                        105
+                    ],
+                    "flexAnalysis,": [
+                        106
+                    ],
+                    "generally": [
+                        107
+                    ],
+                    "showing": [
+                        108
+                    ],
+                    "2-fold": [
+                        109
+                    ],
+                    "ppm": [
+                        111
+                    ],
+                    "errors": [
+                        112
+                    ],
+                    "internal": [
+                        114
+                    ],
+                    "calibration.": [
+                        115
+                    ],
+                    "Relative": [
+                        116
+                    ],
+                    "quantitation": [
+                        117
+                    ],
+                    "using": [
+                        118
+                    ],
+                    "flexAnalysis": [
+                        121
+                    ],
+                    "gave": [
+                        122
+                    ],
+                    "similar": [
+                        123
+                    ],
+                    "results,": [
+                        124
+                    ],
+                    "yielding": [
+                        125
+                    ],
+                    "standard": [
+                        128
+                    ],
+                    "deviation": [
+                        129
+                    ],
+                    "(RSD)": [
+                        130
+                    ],
+                    "main": [
+                        133
+                    ],
+                    "~6%.": [
+                        136
+                    ],
+                    "However,": [
+                        137
+                    ],
+                    "2-": [
+                        140
+                    ],
+                    "to": [
+                        141
+                    ],
+                    "5-fold": [
+                        142
+                    ],
+                    "lower": [
+                        143
+                    ],
+                    "RSD": [
+                        144
+                    ],
+                    "values": [
+                        145
+                    ],
+                    "low-abundant": [
+                        147
+                    ],
+                    "analytes": [
+                        148
+                    ],
+                    "flexAnalysis.": [
+                        150
+                    ],
+                    "Additionally,": [
+                        151
+                    ],
+                    "feature": [
+                        152
+                    ],
+                    "curation": [
+                        153
+                    ],
+                    "computed": [
+                        157
+                    ],
+                    "criteria": [
+                        159
+                    ],
+                    "improved": [
+                        160
+                    ],
+                    "quality.": [
+                        163
+                    ],
+                    "conclusion,": [
+                        165
+                    ],
+                    "we": [
+                        166
+                    ],
+                    "show": [
+                        167
+                    ],
+                    "automated": [
+                        173
+                    ],
+                    "tool": [
+                        176
+                    ],
+                    "high-throughput,": [
+                        178
+                    ],
+                    "high-performance": [
+                        179
+                    ],
+                    "analysis.": [
+                        181
+                    ],
+                    "package": [
+                        183
+                    ],
+                    "released": [
+                        185
+                    ],
+                    "under": [
+                        186
+                    ],
+                    "Apache": [
+                        188
+                    ],
+                    "2.0": [
+                        189
+                    ],
+                    "license": [
+                        190
+                    ],
+                    "freely": [
+                        193
+                    ],
+                    "available": [
+                        194
+                    ],
+                    "GitHub": [
+                        196
+                    ],
+                    "(": [
+                        197
+                    ],
+                    "https://github.com/Tarskin/MassyTools": [
+                        198
+                    ],
+                    ").": [
+                        199
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 11
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 13
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 7
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 13
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 11
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 11
+                    },
+                    {
+                        "year": 2018,
+                        "cited_by_count": 15
+                    },
+                    {
+                        "year": 2017,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2016,
+                        "cited_by_count": 15
+                    }
+                ],
+                "updated_date": "2026-04-04T16:13:02.066488",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "MassyTools: A High-Throughput Targeted Data Processing Tool for Relative Quantitation and Quality Control Developed for Glycomic and Glycoproteomic MALDI-MS",
+                "doi": "10.1021/acs.jproteome.5b00658",
+                "pmid": "26565759",
+                "isbns": [],
+                "altmetric_jid": "4f6fa62a3cf058f610007e0f",
+                "issns": [
+                    "1535-3893",
+                    "1535-3907"
+                ],
+                "journal": "Journal of Proteome Research",
+                "cohorts": {
+                    "pub": 3
+                },
+                "abstract": "The study of N-linked glycosylation has long been complicated by a lack of bioinformatics tools. In particular, there is still a lack of fast and robust data processing tools for targeted (relative) quantitation. We have developed modular, high-throughput data processing software, MassyTools, that is capable of calibrating spectra, extracting data, and performing quality control calculations based on a user-defined list of glycan or glycopeptide compositions. Typical examples of output include relative areas after background subtraction, isotopic pattern-based quality scores, spectral quality scores, and signal-to-noise ratios. We demonstrated MassyTools' performance on MALDI-TOF-MS glycan and glycopeptide data from different samples. MassyTools yielded better calibration than the commercial software flexAnalysis, generally showing 2-fold better ppm errors after internal calibration. Relative quantitation using MassyTools and flexAnalysis gave similar results, yielding a relative standard deviation (RSD) of the main glycan of \u223c6%. However, MassyTools yielded 2- to 5-fold lower RSD values for low-abundant analytes than flexAnalysis. Additionally, feature curation based on the computed quality criteria improved the data quality. In conclusion, we show that MassyTools is a robust automated data processing tool for high-throughput, high-performance glycosylation analysis. The package is released under the Apache 2.0 license and is freely available on GitHub ( https://github.com/Tarskin/MassyTools ).",
+                "context": {
+                    "all": {
+                        "count": 30730385,
+                        "mean": 10.711564100091818,
+                        "rank": 3116633,
+                        "pct": 89,
+                        "higher_than": 27600657
+                    },
+                    "journal": {
+                        "count": 7272,
+                        "mean": 6.763366336633663,
+                        "rank": 644,
+                        "pct": 90,
+                        "higher_than": 6610
+                    },
+                    "similar_age_3m": {
+                        "count": 303607,
+                        "mean": 10.901396641052422,
+                        "rank": 34342,
+                        "pct": 88,
+                        "higher_than": 268938
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 122,
+                        "mean": 9.397131147540984,
+                        "rank": 15,
+                        "pct": 86,
+                        "higher_than": 106
+                    }
+                },
+                "authors": [
+                    "Bas C. Jansen",
+                    "Karli R. Reiding",
+                    "Albert Bondt",
+                    "Agnes L. Hipgrave Ederveen",
+                    "Magnus Palmblad",
+                    "David Falck",
+                    "Manfred Wuhrer"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1449187200,
+                "epubdate": 1447372800,
+                "dimensions_publication_id": "pub.1055115169",
+                "altmetric_id": 4759314,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Chemical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 5,
+                "cited_by_msm_count": 1,
+                "cited_by_tweeters_count": 3,
+                "cited_by_patents_count": 1,
+                "cited_by_accounts_count": 5,
+                "last_updated": 1678320000,
+                "score": 13.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 13.5
+                },
+                "url": "http://dx.doi.org/10.1021/acs.jproteome.5b00658",
+                "added_on": 1447440667,
+                "published_on": 1447372800,
+                "subjects": [
+                    "biochemistry"
+                ],
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Chemistry"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "72",
+                    "connotea": "0"
+                },
+                "readers_count": 72,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=14&types=mmattttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=14&types=mmattttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=14&types=mmattttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=4759314"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1950,
+            "total_ccn": 357,
+            "avg_ccn": 2.79,
+            "nloc_per_file": 75.0,
+            "duplicate_rate": 6.17
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

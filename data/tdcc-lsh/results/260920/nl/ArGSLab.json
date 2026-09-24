@@ -1,0 +1,1665 @@
+{
+    "ArGSLab": {
+        "tool_name": "ArGSLab",
+        "biotools": {
+            "name": "ArGSLab",
+            "description": "Tool for analyzing experimental or simulated particle networks.",
+            "homepage": "http://github.com/jimmink/argslab",
+            "biotoolsID": "argslab",
+            "biotoolsCURIE": "biotools:argslab",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3927",
+                            "term": "Network analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3524",
+                    "term": "Simulation experiment"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "MATLAB"
+            ],
+            "license": null,
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1039/D1SM00692D",
+                    "pmid": "34550148",
+                    "pmcid": "PMC8457054",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "ArGSLab: a tool for analyzing experimental or simulated particle networks",
+                        "abstract": "\u00a9 The Royal Society of Chemistry 2021.Microscopy and particle-based simulations are both powerful techniques to study aggregated particulate matter such as colloidal gels. The data provided by these techniques often contains information on a wide array of length scales, but structural analysis methods typically focus on the local particle arrangement, even though the data also contains information about the particle network on the mesoscopic length scale. In this paper, we present a MATLAB software package for quantifying mesoscopic network structures in colloidal samples. ArGSLab (Arrested and Gelated Structures Laboratory) extracts a network backbone from the input data, which is in turn transformed into a set of nodes and links for graph theory-based analysis. The routines can process both image stacks from microscopy as well as explicit coordinate data, and thus allows quantitative comparison between simulations and experiments. ArGSLab furthermore enables the accurate analysis of microscopy data where,e.g., an extended point spread function prohibits the resolution of individual particles. We demonstrate the resulting output for example datasets from both microscopy and simulation of colloidal gels, in order to showcase the capability of ArGSLab to quantitatively analyze data from various sources. The freely available software package can be used either with a provided graphical user interface or directly as a MATLAB script.",
+                        "date": "2021-09-28T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Immink J.N."
+                            },
+                            {
+                                "name": "Maris J.J.E."
+                            },
+                            {
+                                "name": "Capellmann R.F."
+                            },
+                            {
+                                "name": "Egelhaaf S.U."
+                            },
+                            {
+                                "name": "Schurtenberger P."
+                            },
+                            {
+                                "name": "Stenhammar J."
+                            }
+                        ],
+                        "journal": "Soft Matter"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Jasper N. Immink",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-1251-5442",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Chan019",
+            "additionDate": "2022-01-22T17:04:45.457270Z",
+            "lastUpdate": "2022-01-22T17:04:45.460233Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 347927101,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNDc5MjcxMDE=",
+                "name": "argslab",
+                "full_name": "jimmink/argslab",
+                "private": false,
+                "owner": {
+                    "login": "jimmink",
+                    "id": 80682535,
+                    "node_id": "MDQ6VXNlcjgwNjgyNTM1",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/80682535?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/jimmink",
+                    "html_url": "https://github.com/jimmink",
+                    "followers_url": "https://api.github.com/users/jimmink/followers",
+                    "following_url": "https://api.github.com/users/jimmink/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jimmink/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jimmink/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jimmink/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jimmink/orgs",
+                    "repos_url": "https://api.github.com/users/jimmink/repos",
+                    "events_url": "https://api.github.com/users/jimmink/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jimmink/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/jimmink/argslab",
+                "description": "Repository for ArGSLab, Arrested and Gelated Structures Laboratory.",
+                "fork": false,
+                "url": "https://api.github.com/repos/jimmink/argslab",
+                "forks_url": "https://api.github.com/repos/jimmink/argslab/forks",
+                "keys_url": "https://api.github.com/repos/jimmink/argslab/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/jimmink/argslab/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/jimmink/argslab/teams",
+                "hooks_url": "https://api.github.com/repos/jimmink/argslab/hooks",
+                "issue_events_url": "https://api.github.com/repos/jimmink/argslab/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/jimmink/argslab/events",
+                "assignees_url": "https://api.github.com/repos/jimmink/argslab/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/jimmink/argslab/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/jimmink/argslab/tags",
+                "blobs_url": "https://api.github.com/repos/jimmink/argslab/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/jimmink/argslab/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/jimmink/argslab/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/jimmink/argslab/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/jimmink/argslab/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/jimmink/argslab/languages",
+                "stargazers_url": "https://api.github.com/repos/jimmink/argslab/stargazers",
+                "contributors_url": "https://api.github.com/repos/jimmink/argslab/contributors",
+                "subscribers_url": "https://api.github.com/repos/jimmink/argslab/subscribers",
+                "subscription_url": "https://api.github.com/repos/jimmink/argslab/subscription",
+                "commits_url": "https://api.github.com/repos/jimmink/argslab/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/jimmink/argslab/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/jimmink/argslab/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/jimmink/argslab/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/jimmink/argslab/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/jimmink/argslab/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/jimmink/argslab/merges",
+                "archive_url": "https://api.github.com/repos/jimmink/argslab/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/jimmink/argslab/downloads",
+                "issues_url": "https://api.github.com/repos/jimmink/argslab/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/jimmink/argslab/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/jimmink/argslab/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/jimmink/argslab/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/jimmink/argslab/labels{/name}",
+                "releases_url": "https://api.github.com/repos/jimmink/argslab/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/jimmink/argslab/deployments",
+                "created_at": "2021-03-15T10:33:10Z",
+                "updated_at": "2021-12-15T13:14:14Z",
+                "pushed_at": "2022-04-25T08:01:04Z",
+                "git_url": "git://github.com/jimmink/argslab.git",
+                "ssh_url": "git@github.com:jimmink/argslab.git",
+                "clone_url": "https://github.com/jimmink/argslab.git",
+                "svn_url": "https://github.com/jimmink/argslab",
+                "homepage": null,
+                "size": 31356,
+                "stargazers_count": 0,
+                "watchers_count": 0,
+                "language": "MATLAB",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 1,
+                "watchers": 0,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "Example data",
+                    "type": "tree"
+                },
+                {
+                    "path": "Example_Walkthrough.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "Example_image.tif",
+                    "type": "blob"
+                },
+                {
+                    "path": "Gelscripts_GUI",
+                    "type": "tree"
+                },
+                {
+                    "path": "Gelscripts_Standalone",
+                    "type": "tree"
+                },
+                {
+                    "path": "Manual.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "readme.md",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "jimmink",
+                    "contributions": 81
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "MATLAB": 381710
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1039/d1sm00692d",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34550148",
+                            "source": "MED",
+                            "pmid": "34550148",
+                            "pmcid": "PMC8457054",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8457054"
+                                ]
+                            },
+                            "doi": "10.1039/d1sm00692d",
+                            "title": "ArGSLab: a tool for analyzing experimental or simulated particle networks.",
+                            "authorString": "Immink JN, Maris JJE, Capellmann RF, Egelhaaf SU, Schurtenberger P, Stenhammar J.",
+                            "journalTitle": "Soft Matter",
+                            "issue": "36",
+                            "journalVolume": "17",
+                            "pubYear": "2021",
+                            "journalIssn": "1744-683x; 1744-6848; ",
+                            "pageInfo": "8354-8362",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "N",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 3,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-09-23",
+                            "firstPublicationDate": "2021-09-22"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3193948099",
+                "doi": "https://doi.org/10.1039/d1sm00692d",
+                "title": "ArGSLab: a tool for analyzing experimental or simulated particle networks",
+                "display_name": "ArGSLab: a tool for analyzing experimental or simulated particle networks",
+                "publication_year": 2021,
+                "publication_date": "2021-01-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W3193948099",
+                    "doi": "https://doi.org/10.1039/d1sm00692d",
+                    "mag": "3193948099",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34550148"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1039/d1sm00692d",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1039/d1sm00692d",
+                    "pdf_url": "https://pubs.rsc.org/en/content/articlepdf/2021/sm/d1sm00692d",
+                    "source": {
+                        "id": "https://openalex.org/S6377669",
+                        "display_name": "Soft Matter",
+                        "issn_l": "1744-683X",
+                        "issn": [
+                            "1744-683X",
+                            "1744-6848"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320556",
+                        "host_organization_name": "Royal Society of Chemistry",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320556"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Royal Society of Chemistry"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Soft Matter",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "arxiv",
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://pubs.rsc.org/en/content/articlepdf/2021/sm/d1sm00692d",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": null,
+                            "display_name": "Jasper N. Immink",
+                            "orcid": "https://orcid.org/0000-0003-1251-5442"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I187531555",
+                                "display_name": "Lund University",
+                                "ror": "https://ror.org/012a77v79",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I44260953",
+                                "display_name": "Heinrich Heine University D\u00fcsseldorf",
+                                "ror": "https://ror.org/024z2rq82",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "SE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Jasper N. Immink",
+                        "raw_affiliation_strings": [
+                            "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany",
+                            "Division of Physical Chemistry, Lund University, Lund, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1251-5442",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Division of Physical Chemistry, Lund University, Lund, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": null,
+                            "display_name": "J. J. Erik Maris",
+                            "orcid": "https://orcid.org/0000-0003-2591-4864"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "J. J. Erik Maris",
+                        "raw_affiliation_strings": [
+                            "Inorganic Chemistry and Catalysis Group, Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2591-4864",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis Group, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": null,
+                            "display_name": "Ronja F. Capellmann",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I44260953",
+                                "display_name": "Heinrich Heine University D\u00fcsseldorf",
+                                "ror": "https://ror.org/024z2rq82",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ronja F. Capellmann",
+                        "raw_affiliation_strings": [
+                            "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": null,
+                            "display_name": "Stefan U. Egelhaaf",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I44260953",
+                                "display_name": "Heinrich Heine University D\u00fcsseldorf",
+                                "ror": "https://ror.org/024z2rq82",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Stefan U. Egelhaaf",
+                        "raw_affiliation_strings": [
+                            "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Condensed Matter Physics Laboratory, Heinrich-Heine-University D\u00fcsseldorf, D\u00fcsseldorf, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I44260953"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": null,
+                            "display_name": "Peter Schurtenberger",
+                            "orcid": "https://orcid.org/0000-0002-2790-8831"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I187531555",
+                                "display_name": "Lund University",
+                                "ror": "https://ror.org/012a77v79",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Peter Schurtenberger",
+                        "raw_affiliation_strings": [
+                            "Division of Physical Chemistry, Lund University, Lund, Sweden",
+                            "Lund Institute of advanced Neutron and X-ray Science (LINXS), Lund University, Lund, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2790-8831",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Physical Chemistry, Lund University, Lund, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Lund Institute of advanced Neutron and X-ray Science (LINXS), Lund University, Lund, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": null,
+                            "display_name": "Joakim Stenhammar",
+                            "orcid": "https://orcid.org/0000-0002-7543-5549"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I187531555",
+                                "display_name": "Lund University",
+                                "ror": "https://ror.org/012a77v79",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Joakim Stenhammar",
+                        "raw_affiliation_strings": [
+                            "Division of Physical Chemistry, Lund University, Lund, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7543-5549",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Physical Chemistry, Lund University, Lund, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I187531555",
+                    "https://openalex.org/I44260953"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 0.2402,
+                "has_fulltext": true,
+                "cited_by_count": 4,
+                "citation_normalized_percentile": {
+                    "value": 0.45710349,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 96
+                },
+                "biblio": {
+                    "volume": "17",
+                    "issue": "36",
+                    "first_page": "8354",
+                    "last_page": "8362"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11915",
+                    "display_name": "Pickering emulsions and particle stabilization",
+                    "score": 0.16990000009536743,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2505",
+                        "display_name": "Materials Chemistry"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/25",
+                        "display_name": "Materials Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11915",
+                        "display_name": "Pickering emulsions and particle stabilization",
+                        "score": 0.16990000009536743,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2505",
+                            "display_name": "Materials Chemistry"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/25",
+                            "display_name": "Materials Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10540",
+                        "display_name": "Advanced Fluorescence Microscopy Techniques",
+                        "score": 0.07699999958276749,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1304",
+                            "display_name": "Biophysics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10474",
+                        "display_name": "Material Dynamics and Properties",
+                        "score": 0.0723000019788742,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2505",
+                            "display_name": "Materials Chemistry"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/25",
+                            "display_name": "Materials Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/mesoscopic-physics",
+                        "display_name": "Mesoscopic physics",
+                        "score": 0.6615999937057495
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/matlab",
+                        "display_name": "MATLAB",
+                        "score": 0.6333000063896179
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5947999954223633
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphical-user-interface",
+                        "display_name": "Graphical user interface",
+                        "score": 0.5418000221252441
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/focus",
+                        "display_name": "Focus (optics)",
+                        "score": 0.5379999876022339
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/microscopy",
+                        "display_name": "Microscopy",
+                        "score": 0.461899995803833
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/process",
+                        "display_name": "Process (computing)",
+                        "score": 0.4350999891757965
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/resolution",
+                        "display_name": "Resolution (logic)",
+                        "score": 0.4300999939441681
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graph",
+                        "display_name": "Graph",
+                        "score": 0.40209999680519104
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6927000284194946
+                    },
+                    {
+                        "id": "https://openalex.org/C177731217",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2622244",
+                        "display_name": "Mesoscopic physics",
+                        "level": 2,
+                        "score": 0.6615999937057495
+                    },
+                    {
+                        "id": "https://openalex.org/C2780365114",
+                        "wikidata": "https://www.wikidata.org/wiki/Q169478",
+                        "display_name": "MATLAB",
+                        "level": 2,
+                        "score": 0.6333000063896179
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5947999954223633
+                    },
+                    {
+                        "id": "https://openalex.org/C37789001",
+                        "wikidata": "https://www.wikidata.org/wiki/Q782543",
+                        "display_name": "Graphical user interface",
+                        "level": 2,
+                        "score": 0.5418000221252441
+                    },
+                    {
+                        "id": "https://openalex.org/C192209626",
+                        "wikidata": "https://www.wikidata.org/wiki/Q190909",
+                        "display_name": "Focus (optics)",
+                        "level": 2,
+                        "score": 0.5379999876022339
+                    },
+                    {
+                        "id": "https://openalex.org/C459310",
+                        "wikidata": "https://www.wikidata.org/wiki/Q117801",
+                        "display_name": "Computational science",
+                        "level": 1,
+                        "score": 0.4803999960422516
+                    },
+                    {
+                        "id": "https://openalex.org/C147080431",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1074953",
+                        "display_name": "Microscopy",
+                        "level": 2,
+                        "score": 0.461899995803833
+                    },
+                    {
+                        "id": "https://openalex.org/C98045186",
+                        "wikidata": "https://www.wikidata.org/wiki/Q205663",
+                        "display_name": "Process (computing)",
+                        "level": 2,
+                        "score": 0.4350999891757965
+                    },
+                    {
+                        "id": "https://openalex.org/C138268822",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1051925",
+                        "display_name": "Resolution (logic)",
+                        "level": 2,
+                        "score": 0.4300999939441681
+                    },
+                    {
+                        "id": "https://openalex.org/C132525143",
+                        "wikidata": "https://www.wikidata.org/wiki/Q141488",
+                        "display_name": "Graph",
+                        "level": 2,
+                        "score": 0.40209999680519104
+                    },
+                    {
+                        "id": "https://openalex.org/C186060115",
+                        "wikidata": "https://www.wikidata.org/wiki/Q30336093",
+                        "display_name": "Biological system",
+                        "level": 1,
+                        "score": 0.3889000117778778
+                    },
+                    {
+                        "id": "https://openalex.org/C28719098",
+                        "wikidata": "https://www.wikidata.org/wiki/Q44946",
+                        "display_name": "Point (geometry)",
+                        "level": 2,
+                        "score": 0.3874000012874603
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.3824000060558319
+                    },
+                    {
+                        "id": "https://openalex.org/C2778517922",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7140482",
+                        "display_name": "Particle (ecology)",
+                        "level": 2,
+                        "score": 0.376800000667572
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.35929998755455017
+                    },
+                    {
+                        "id": "https://openalex.org/C11413529",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8366",
+                        "display_name": "Algorithm",
+                        "level": 1,
+                        "score": 0.35519999265670776
+                    },
+                    {
+                        "id": "https://openalex.org/C177264268",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+                        "display_name": "Set (abstract data type)",
+                        "level": 2,
+                        "score": 0.3343000113964081
+                    },
+                    {
+                        "id": "https://openalex.org/C14036430",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+                        "display_name": "Function (biology)",
+                        "level": 2,
+                        "score": 0.3303000032901764
+                    },
+                    {
+                        "id": "https://openalex.org/C197445215",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7140503",
+                        "display_name": "Colloidal particle",
+                        "level": 3,
+                        "score": 0.30250000953674316
+                    },
+                    {
+                        "id": "https://openalex.org/C55037315",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5421151",
+                        "display_name": "Experimental data",
+                        "level": 2,
+                        "score": 0.2930000126361847
+                    },
+                    {
+                        "id": "https://openalex.org/C104122410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1416406",
+                        "display_name": "Network model",
+                        "level": 2,
+                        "score": 0.2773999869823456
+                    },
+                    {
+                        "id": "https://openalex.org/C32946077",
+                        "wikidata": "https://www.wikidata.org/wiki/Q618079",
+                        "display_name": "Network analysis",
+                        "level": 2,
+                        "score": 0.27709999680519104
+                    },
+                    {
+                        "id": "https://openalex.org/C91757755",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11121294",
+                        "display_name": "Simulation software",
+                        "level": 3,
+                        "score": 0.2768000066280365
+                    },
+                    {
+                        "id": "https://openalex.org/C2776214188",
+                        "wikidata": "https://www.wikidata.org/wiki/Q408386",
+                        "display_name": "Inference",
+                        "level": 2,
+                        "score": 0.2754000127315521
+                    },
+                    {
+                        "id": "https://openalex.org/C21080849",
+                        "wikidata": "https://www.wikidata.org/wiki/Q13611879",
+                        "display_name": "Data point",
+                        "level": 2,
+                        "score": 0.27459999918937683
+                    },
+                    {
+                        "id": "https://openalex.org/C58489278",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1172284",
+                        "display_name": "Data set",
+                        "level": 2,
+                        "score": 0.265500009059906
+                    },
+                    {
+                        "id": "https://openalex.org/C205372480",
+                        "wikidata": "https://www.wikidata.org/wiki/Q210521",
+                        "display_name": "Image resolution",
+                        "level": 2,
+                        "score": 0.26420000195503235
+                    },
+                    {
+                        "id": "https://openalex.org/C80444323",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+                        "display_name": "Theoretical computer science",
+                        "level": 1,
+                        "score": 0.26030001044273376
+                    },
+                    {
+                        "id": "https://openalex.org/C175801342",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1988917",
+                        "display_name": "Data analysis",
+                        "level": 2,
+                        "score": 0.2572999894618988
+                    },
+                    {
+                        "id": "https://openalex.org/C69179731",
+                        "wikidata": "https://www.wikidata.org/wiki/Q510427",
+                        "display_name": "Point spread function",
+                        "level": 2,
+                        "score": 0.25380000472068787
+                    },
+                    {
+                        "id": "https://openalex.org/C67649825",
+                        "wikidata": "https://www.wikidata.org/wiki/Q196538",
+                        "display_name": "Microscope",
+                        "level": 2,
+                        "score": 0.2513999938964844
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1039/d1sm00692d",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1039/d1sm00692d",
+                        "pdf_url": "https://pubs.rsc.org/en/content/articlepdf/2021/sm/d1sm00692d",
+                        "source": {
+                            "id": "https://openalex.org/S6377669",
+                            "display_name": "Soft Matter",
+                            "issn_l": "1744-683X",
+                            "issn": [
+                                "1744-683X",
+                                "1744-6848"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320556",
+                            "host_organization_name": "Royal Society of Chemistry",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320556"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Royal Society of Chemistry"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Soft Matter",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34550148",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34550148",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Soft matter",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:arXiv.org:2108.13690",
+                        "is_oa": true,
+                        "landing_page_url": "http://arxiv.org/abs/2108.13690",
+                        "pdf_url": "https://arxiv.org/pdf/2108.13690",
+                        "source": {
+                            "id": "https://openalex.org/S4306400194",
+                            "display_name": "arXiv (Cornell University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I205783295",
+                            "host_organization_name": "Cornell University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I205783295"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "text"
+                    },
+                    {
+                        "id": "pmh:oai:lup.lub.lu.se:10b7b64a-3aaf-44f6-b3ee-f805947d5908",
+                        "is_oa": false,
+                        "landing_page_url": "https://lup.lub.lu.se/record/10b7b64a-3aaf-44f6-b3ee-f805947d5908",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400536",
+                            "display_name": "Lund University Publications (Lund University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I187531555",
+                            "host_organization_name": "Lund University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I187531555"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "ISSN: 1744-683X",
+                        "raw_type": "text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8457054",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8457054",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Soft Matter",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1039/d1sm00692d",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1039/d1sm00692d",
+                    "pdf_url": "https://pubs.rsc.org/en/content/articlepdf/2021/sm/d1sm00692d",
+                    "source": {
+                        "id": "https://openalex.org/S6377669",
+                        "display_name": "Soft Matter",
+                        "issn_l": "1744-683X",
+                        "issn": [
+                            "1744-683X",
+                            "1744-6848"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320556",
+                        "host_organization_name": "Royal Society of Chemistry",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320556"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Royal Society of Chemistry"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Soft Matter",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G3117098341",
+                        "display_name": null,
+                        "funder_award_id": "ERC-339678-COMPASS",
+                        "funder_id": "https://openalex.org/F4320338335",
+                        "funder_display_name": "H2020 European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G4853267045",
+                        "display_name": null,
+                        "funder_award_id": "2019-03718",
+                        "funder_id": "https://openalex.org/F4320322581",
+                        "funder_display_name": "Vetenskapsr\u00e5det"
+                    },
+                    {
+                        "id": "https://openalex.org/G6134068725",
+                        "display_name": null,
+                        "funder_award_id": "2018-04627",
+                        "funder_id": "https://openalex.org/F4320322581",
+                        "funder_display_name": "Vetenskapsr\u00e5det"
+                    },
+                    {
+                        "id": "https://openalex.org/G712881263",
+                        "display_name": null,
+                        "funder_award_id": "2018-",
+                        "funder_id": "https://openalex.org/F4320322581",
+                        "funder_display_name": "Vetenskapsr\u00e5det"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320308269",
+                        "display_name": "Alexander von Humboldt-Stiftung",
+                        "ror": "https://ror.org/012kf4317"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322581",
+                        "display_name": "Vetenskapsr\u00e5det",
+                        "ror": "https://ror.org/03zttf063"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338335",
+                        "display_name": "H2020 European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3193948099.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3193948099.grobid-xml"
+                },
+                "referenced_works_count": 64,
+                "referenced_works": [
+                    "https://openalex.org/W1851316340",
+                    "https://openalex.org/W1853290995",
+                    "https://openalex.org/W1864027209",
+                    "https://openalex.org/W1964047689",
+                    "https://openalex.org/W1965905769",
+                    "https://openalex.org/W1966732809",
+                    "https://openalex.org/W1966756168",
+                    "https://openalex.org/W1969498402",
+                    "https://openalex.org/W1970892264",
+                    "https://openalex.org/W1980780385",
+                    "https://openalex.org/W1998123154",
+                    "https://openalex.org/W2005850569",
+                    "https://openalex.org/W2024926385",
+                    "https://openalex.org/W2029049340",
+                    "https://openalex.org/W2035821929",
+                    "https://openalex.org/W2036322673",
+                    "https://openalex.org/W2042629182",
+                    "https://openalex.org/W2048482079",
+                    "https://openalex.org/W2048733914",
+                    "https://openalex.org/W2055718534",
+                    "https://openalex.org/W2055856481",
+                    "https://openalex.org/W2060461339",
+                    "https://openalex.org/W2066295790",
+                    "https://openalex.org/W2068131454",
+                    "https://openalex.org/W2071837796",
+                    "https://openalex.org/W2072620800",
+                    "https://openalex.org/W2077346030",
+                    "https://openalex.org/W2081323562",
+                    "https://openalex.org/W2106990937",
+                    "https://openalex.org/W2122729077",
+                    "https://openalex.org/W2124356544",
+                    "https://openalex.org/W2133059825",
+                    "https://openalex.org/W2139801251",
+                    "https://openalex.org/W2141294778",
+                    "https://openalex.org/W2144835432",
+                    "https://openalex.org/W2147356670",
+                    "https://openalex.org/W2157152728",
+                    "https://openalex.org/W2168816122",
+                    "https://openalex.org/W2185797808",
+                    "https://openalex.org/W2346896995",
+                    "https://openalex.org/W2419250039",
+                    "https://openalex.org/W2557164932",
+                    "https://openalex.org/W2560327910",
+                    "https://openalex.org/W2567359288",
+                    "https://openalex.org/W2590925679",
+                    "https://openalex.org/W2742335709",
+                    "https://openalex.org/W2766560289",
+                    "https://openalex.org/W2794385706",
+                    "https://openalex.org/W2794922812",
+                    "https://openalex.org/W2801000977",
+                    "https://openalex.org/W2803153381",
+                    "https://openalex.org/W2820891404",
+                    "https://openalex.org/W2886390249",
+                    "https://openalex.org/W2905362316",
+                    "https://openalex.org/W2930056986",
+                    "https://openalex.org/W2932735606",
+                    "https://openalex.org/W2945696174",
+                    "https://openalex.org/W2953268526",
+                    "https://openalex.org/W2990051788",
+                    "https://openalex.org/W3004184596",
+                    "https://openalex.org/W3025500370",
+                    "https://openalex.org/W3100029921",
+                    "https://openalex.org/W4232076827",
+                    "https://openalex.org/W6634515916"
+                ],
+                "related_works": [],
+                "abstract_inverted_index": {
+                    ",": [
+                        0
+                    ],
+                    "an": [
+                        1
+                    ],
+                    "extended": [
+                        2
+                    ],
+                    "point": [
+                        3
+                    ],
+                    "spread": [
+                        4
+                    ],
+                    "function": [
+                        5
+                    ],
+                    "prohibits": [
+                        6
+                    ],
+                    "the": [
+                        7,
+                        14,
+                        32
+                    ],
+                    "resolution": [
+                        8
+                    ],
+                    "of": [
+                        9,
+                        25,
+                        34
+                    ],
+                    "individual": [
+                        10
+                    ],
+                    "particles.": [
+                        11
+                    ],
+                    "We": [
+                        12
+                    ],
+                    "demonstrate": [
+                        13
+                    ],
+                    "resulting": [
+                        15
+                    ],
+                    "output": [
+                        16
+                    ],
+                    "for": [
+                        17
+                    ],
+                    "example": [
+                        18
+                    ],
+                    "datasets": [
+                        19
+                    ],
+                    "from": [
+                        20,
+                        40
+                    ],
+                    "both": [
+                        21
+                    ],
+                    "microscopy": [
+                        22
+                    ],
+                    "and": [
+                        23
+                    ],
+                    "simulation": [
+                        24
+                    ],
+                    "colloidal": [
+                        26
+                    ],
+                    "gels,": [
+                        27
+                    ],
+                    "in": [
+                        28
+                    ],
+                    "order": [
+                        29
+                    ],
+                    "to": [
+                        30,
+                        36
+                    ],
+                    "showcase": [
+                        31
+                    ],
+                    "capability": [
+                        33
+                    ],
+                    "ArGSLab": [
+                        35
+                    ],
+                    "quantitatively": [
+                        37
+                    ],
+                    "analyze": [
+                        38
+                    ],
+                    "data": [
+                        39
+                    ],
+                    "various": [
+                        41
+                    ],
+                    "sources.": [
+                        42
+                    ],
+                    "The": [
+                        43
+                    ],
+                    "freely": [
+                        44
+                    ],
+                    "available": [
+                        45
+                    ],
+                    "software": [
+                        46
+                    ],
+                    "package": [
+                        47
+                    ],
+                    "can": [
+                        48
+                    ],
+                    "be": [
+                        49
+                    ],
+                    "used": [
+                        50
+                    ],
+                    "either": [
+                        51
+                    ],
+                    "with": [
+                        52
+                    ],
+                    "a": [
+                        53,
+                        61
+                    ],
+                    "provided": [
+                        54
+                    ],
+                    "graphical": [
+                        55
+                    ],
+                    "user": [
+                        56
+                    ],
+                    "interface": [
+                        57
+                    ],
+                    "or": [
+                        58
+                    ],
+                    "directly": [
+                        59
+                    ],
+                    "as": [
+                        60
+                    ],
+                    "MATLAB": [
+                        62
+                    ],
+                    "script.": [
+                        63
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2021-08-30T00:00:00"
+            },
+            "altmetric": {
+                "title": "ArGSLab: a tool for analyzing experimental or simulated particle networks",
+                "doi": "10.1039/d1sm00692d",
+                "pmid": "34550148",
+                "pmc": "PMC8457054",
+                "arxiv_id": "2108.13690",
+                "isbns": [],
+                "altmetric_jid": "4f6fa6383cf058f61000898b",
+                "issns": [
+                    "1744-683X",
+                    "1744-6848"
+                ],
+                "journal": "Soft Matter",
+                "cohorts": {
+                    "pub": 4,
+                    "sci": 1,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 23310485,
+                        "mean": 10.30517826336212,
+                        "rank": 13165668,
+                        "pct": 43,
+                        "higher_than": 10083555
+                    },
+                    "journal": {
+                        "count": 8233,
+                        "mean": 3.404711283857649,
+                        "rank": 2609,
+                        "pct": 67,
+                        "higher_than": 5576
+                    },
+                    "similar_age_3m": {
+                        "count": 502968,
+                        "mean": 13.967995192535412,
+                        "rank": 223209,
+                        "pct": 55,
+                        "higher_than": 277602
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 952,
+                        "mean": 5.496644957983192,
+                        "rank": 332,
+                        "pct": 63,
+                        "higher_than": 605
+                    }
+                },
+                "authors": [
+                    "Jasper N. Immink",
+                    "J. J. Erik Maris",
+                    "Ronja F. Capellmann",
+                    "Stefan U. Egelhaaf",
+                    "Peter Schurtenberger",
+                    "Joakim Stenhammar"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1632268800,
+                "epubdate": 1609459200,
+                "dimensions_publication_id": "pub.1140614471",
+                "altmetric_id": 112337258,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Chemical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Engineering",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Physical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 7,
+                "cited_by_tweeters_count": 6,
+                "cited_by_accounts_count": 6,
+                "last_updated": 1632753333,
+                "score": 2.6,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.6
+                },
+                "url": "http://dx.doi.org/10.1039/d1sm00692d",
+                "added_on": 1629849162,
+                "published_on": 1609459200,
+                "scopus_subjects": [
+                    "Physics and Astronomy",
+                    "Physical Sciences",
+                    "Chemistry"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "6",
+                    "connotea": "0"
+                },
+                "readers_count": 6,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=112337258"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 179,
+            "total_ccn": 92,
+            "avg_ccn": 1.21,
+            "nloc_per_file": 1.86,
+            "duplicate_rate": 36.58
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

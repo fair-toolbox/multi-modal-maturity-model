@@ -1,0 +1,2749 @@
+{
+    "NPOmix": {
+        "tool_name": "NPOmix",
+        "biotools": {
+            "name": "NPOmix",
+            "description": "A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters.",
+            "homepage": "https://github.com/tiagolbiotech/NPOmix_python",
+            "biotoolsID": "npomix",
+            "biotoolsCURIE": "biotools:npomix",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3860",
+                            "term": "Spectrum calculation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3432",
+                            "term": "Clustering"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2495",
+                            "term": "Expression analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Workflow"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3174",
+                    "term": "Metagenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3697",
+                    "term": "Microbial ecology"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1093/pnasnexus/pgac257",
+                    "pmid": "36712343",
+                    "pmcid": "PMC9802219",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "NPOmix: A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters",
+                        "abstract": "Microbial specialized metabolites are an important source of and inspiration for many pharmaceuticals, biotechnological products and play key roles in ecological processes. Untargeted metabolomics using liquid chromatography coupled with tandem mass spectrometry is an efficient technique to access metabolites from fractions and even environmental crude extracts. Nevertheless, metabolomics is limited in predicting structures or bioactivities for cryptic metabolites. Efficiently linking the biosynthetic potential inferred from (meta)genomics to the specialized metabolome would accelerate drug discovery programs by allowing metabolomics to make use of genetic predictions. Here, we present a k-nearest neighbor classifier to systematically connect mass spectrometry fragmentation spectra to their corresponding biosynthetic gene clusters (independent of their chemical class). Our new pattern-based genome mining pipeline links biosynthetic genes to metabolites that they encode for, as detected via mass spectrometry from bacterial cultures or environmental microbiomes. Using paired datasets that include validated genes-mass spectral links from the Paired Omics Data Platform, we demonstrate this approach by automatically linking 18 previously known mass spectra (17 for which the biosynthesis gene clusters can be found at the MIBiG database plus palmyramide A) to their corresponding previously experimentally validated biosynthetic genes (e.g., via nuclear magnetic resonance or genetic engineering). We illustrated a computational example of how to use our Natural Products Mixed Omics (NPOmix) tool for siderophore mining that can be reproduced by the users. We conclude that NPOmix minimizes the need for culturing (it worked well on microbiomes) and facilitates specialized metabolite prioritization based on integrative omics mining.",
+                        "date": "2022-11-01T00:00:00Z",
+                        "citationCount": 9,
+                        "authors": [
+                            {
+                                "name": "Leao T.F."
+                            },
+                            {
+                                "name": "Wang M."
+                            },
+                            {
+                                "name": "da Silva R."
+                            },
+                            {
+                                "name": "Gurevich A."
+                            },
+                            {
+                                "name": "Bauermeister A."
+                            },
+                            {
+                                "name": "Gomes P.W.P."
+                            },
+                            {
+                                "name": "Brejnrod A."
+                            },
+                            {
+                                "name": "Glukhov E."
+                            },
+                            {
+                                "name": "Aron A.T."
+                            },
+                            {
+                                "name": "Louwen J.J.R."
+                            },
+                            {
+                                "name": "Kim H.W."
+                            },
+                            {
+                                "name": "Reher R."
+                            },
+                            {
+                                "name": "Fiore M.F."
+                            },
+                            {
+                                "name": "van der Hooft J.J.J."
+                            },
+                            {
+                                "name": "Gerwick L."
+                            },
+                            {
+                                "name": "Gerwick W.H."
+                            },
+                            {
+                                "name": "Bandeira N."
+                            },
+                            {
+                                "name": "Dorrestein C.P."
+                            }
+                        ],
+                        "journal": "PNAS Nexus"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Justin J J van der Hooft",
+                    "email": "justin.vanderhooft@wur.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-9340-5511",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Pieter C Dorrestein",
+                    "email": "pdorrestein@health.ucsd.edu",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-3003-1030",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Pub2Tools",
+            "additionDate": "2023-12-11T20:03:08.899705Z",
+            "lastUpdate": "2024-11-24T14:28:40.235380Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 424021530,
+                "node_id": "R_kgDOGUYOGg",
+                "name": "NPOmix_python",
+                "full_name": "tiagolbiotech/NPOmix_python",
+                "private": false,
+                "owner": {
+                    "login": "tiagolbiotech",
+                    "id": 12102722,
+                    "node_id": "MDQ6VXNlcjEyMTAyNzIy",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12102722?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/tiagolbiotech",
+                    "html_url": "https://github.com/tiagolbiotech",
+                    "followers_url": "https://api.github.com/users/tiagolbiotech/followers",
+                    "following_url": "https://api.github.com/users/tiagolbiotech/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/tiagolbiotech/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/tiagolbiotech/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/tiagolbiotech/subscriptions",
+                    "organizations_url": "https://api.github.com/users/tiagolbiotech/orgs",
+                    "repos_url": "https://api.github.com/users/tiagolbiotech/repos",
+                    "events_url": "https://api.github.com/users/tiagolbiotech/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/tiagolbiotech/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/tiagolbiotech/NPOmix_python",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python",
+                "forks_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/forks",
+                "keys_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/teams",
+                "hooks_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/hooks",
+                "issue_events_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/events",
+                "assignees_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/tags",
+                "blobs_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/languages",
+                "stargazers_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/stargazers",
+                "contributors_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/contributors",
+                "subscribers_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/subscribers",
+                "subscription_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/subscription",
+                "commits_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/merges",
+                "archive_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/downloads",
+                "issues_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/labels{/name}",
+                "releases_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/tiagolbiotech/NPOmix_python/deployments",
+                "created_at": "2021-11-02T22:44:46Z",
+                "updated_at": "2025-07-11T08:35:56Z",
+                "pushed_at": "2023-07-04T14:41:03Z",
+                "git_url": "git://github.com/tiagolbiotech/NPOmix_python.git",
+                "ssh_url": "git@github.com:tiagolbiotech/NPOmix_python.git",
+                "clone_url": "https://github.com/tiagolbiotech/NPOmix_python.git",
+                "svn_url": "https://github.com/tiagolbiotech/NPOmix_python",
+                "homepage": null,
+                "size": 39467,
+                "stargazers_count": 14,
+                "watchers_count": 14,
+                "language": "Jupyter Notebook",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 6,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 5,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 6,
+                "open_issues": 5,
+                "watchers": 14,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 6,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MIBiG_products.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bigscape_all_c030.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "ccmsid_smiles.tsv",
+                    "type": "blob"
+                },
+                {
+                    "path": "concat_bigscape.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "ena_dict-210315.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "expanded_gnps_names_list-220204.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "gnps_names_list-220116.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "inputs",
+                    "type": "tree"
+                },
+                {
+                    "path": "matched_mibig_gnps_update.tsv",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebook_advanced-npomix1-ntw_all_AC.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebook_advanced-npomix1-ntw_derep_AC.ipynb.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebook_basic-npomix1-gnps_mode-derep-TFL221219.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebook_basic-npomix1-gnps_mode-derep-explode-TFL230405.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "notebook_dev-npomix2-gnps_mode-notderep-221219.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "npomix.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "packages",
+                    "type": "tree"
+                },
+                {
+                    "path": "parse_mzmine_mgfs.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pnrpdb_summary.tsv",
+                    "type": "blob"
+                },
+                {
+                    "path": "podp_metadata_ftps-221118.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "spectrum_alignment.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "test",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "tiagolbiotech",
+                    "contributions": 30
+                },
+                {
+                    "login": "AndresICM",
+                    "contributions": 15
+                },
+                {
+                    "login": "mwang87",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 7,
+                    "title": "Package not possible to install in macos or linux",
+                    "created_at": "2023-03-24T08:47:03Z",
+                    "closed_at": "2023-03-24T23:25:22Z"
+                },
+                {
+                    "number": 4,
+                    "title": "KeyError: \"None of [Index(['PosNeg_MS2filter20'], dtype='object')] are in the [index]\"",
+                    "created_at": "2023-01-30T11:56:56Z",
+                    "closed_at": "2023-01-31T08:56:59Z"
+                }
+            ],
+            "languages": {
+                "Jupyter Notebook": 174124174,
+                "Shell": 504996,
+                "Python": 51069
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/pnasnexus/pgac257",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36712343",
+                            "source": "MED",
+                            "pmid": "36712343",
+                            "pmcid": "PMC9802219",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9802219"
+                                ]
+                            },
+                            "doi": "10.1093/pnasnexus/pgac257",
+                            "title": "NPOmix: A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters.",
+                            "authorString": "Le\u00e3o TF, Wang M, da Silva R, Gurevich A, Bauermeister A, Gomes PWP, Brejnrod A, Glukhov E, Aron AT, Louwen JJR, Kim HW, Reher R, Fiore MF, van der Hooft JJJ, Gerwick L, Gerwick WH, Bandeira N, Dorrestein PC.",
+                            "journalTitle": "PNAS Nexus",
+                            "issue": "5",
+                            "journalVolume": "1",
+                            "pubYear": "2022",
+                            "journalIssn": "2752-6542",
+                            "pageInfo": "pgac257",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 21,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-01-31",
+                            "firstPublicationDate": "2022-11-16"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4309976130",
+                "doi": "https://doi.org/10.1093/pnasnexus/pgac257",
+                "title": "NPOmix: A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters",
+                "display_name": "NPOmix: A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters",
+                "publication_year": 2022,
+                "publication_date": "2022-11-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W4309976130",
+                    "doi": "https://doi.org/10.1093/pnasnexus/pgac257",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36712343"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/pnasnexus/pgac257",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgac257",
+                    "pdf_url": "https://academic.oup.com/pnasnexus/article-pdf/1/5/pgac257/48422104/pgac257.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4220651275",
+                        "display_name": "PNAS Nexus",
+                        "issn_l": "2752-6542",
+                        "issn": [
+                            "2752-6542"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "PNAS Nexus",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://academic.oup.com/pnasnexus/article-pdf/1/5/pgac257/48422104/pgac257.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5009980520",
+                            "display_name": "Tiago Le\u00e3o",
+                            "orcid": "https://orcid.org/0000-0003-1034-9153"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I17974374",
+                                "display_name": "Universidade de S\u00e3o Paulo",
+                                "ror": "https://ror.org/036rp1748",
+                                "country_code": "BR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BR",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Tiago F Le\u00e3o",
+                        "raw_affiliation_strings": [
+                            "Center for Nuclear Energy in Agriculture, University of S\u00e3o Paulo , Piracicaba 13400-970, SP , Brazil",
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1034-9153",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Nuclear Energy in Agriculture, University of S\u00e3o Paulo , Piracicaba 13400-970, SP , Brazil",
+                                "institution_ids": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5058074901",
+                            "display_name": "Mingxun Wang",
+                            "orcid": "https://orcid.org/0000-0001-7647-6097"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Mingxun Wang",
+                        "raw_affiliation_strings": [
+                            "Center for Computational Mass Spectrometry, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7647-6097",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Computational Mass Spectrometry, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5063348766",
+                            "display_name": "Ricardo Silva",
+                            "orcid": "https://orcid.org/0000-0001-6378-0479"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I17974374",
+                                "display_name": "Universidade de S\u00e3o Paulo",
+                                "ror": "https://ror.org/036rp1748",
+                                "country_code": "BR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ricardo da\u00a0Silva",
+                        "raw_affiliation_strings": [
+                            "NPPNS, Physic and Chemistry Department, School of Pharmaceutical Sciences of Ribeir\u00e3o Preto, University of S\u00e3o Paulo , Ribeir\u00e3o Preto 14040-900 , Brazil"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6378-0479",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "NPPNS, Physic and Chemistry Department, School of Pharmaceutical Sciences of Ribeir\u00e3o Preto, University of S\u00e3o Paulo , Ribeir\u00e3o Preto 14040-900 , Brazil",
+                                "institution_ids": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5030895995",
+                            "display_name": "Alexey Gurevich",
+                            "orcid": "https://orcid.org/0000-0002-5855-3519"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I172901346",
+                                "display_name": "St Petersburg University",
+                                "ror": "https://ror.org/023znxa73",
+                                "country_code": "RU",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I172901346"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "RU"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alexey Gurevich",
+                        "raw_affiliation_strings": [
+                            "Center for Algorithmic Biotechnology, St. Petersburg State University , St Petersburg 199004 , Russia"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5855-3519",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Algorithmic Biotechnology, St. Petersburg State University , St Petersburg 199004 , Russia",
+                                "institution_ids": [
+                                    "https://openalex.org/I172901346"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5004879227",
+                            "display_name": "Anelize Bauermeister",
+                            "orcid": "https://orcid.org/0000-0001-9731-6172"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anelize Bauermeister",
+                        "raw_affiliation_strings": [
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9731-6172",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5061998404",
+                            "display_name": "Paulo Wender Portal Gomes",
+                            "orcid": "https://orcid.org/0000-0001-5478-2448"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Paulo Wender P Gomes",
+                        "raw_affiliation_strings": [
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-5478-2448",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5051319454",
+                            "display_name": "Asker Brejnrod",
+                            "orcid": "https://orcid.org/0000-0002-1327-2051"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Asker Brejnrod",
+                        "raw_affiliation_strings": [
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1327-2051",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5044292766",
+                            "display_name": "Evgenia Glukhov",
+                            "orcid": "https://orcid.org/0000-0001-6513-9909"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I150209017",
+                                "display_name": "Scripps Institution of Oceanography",
+                                "ror": "https://ror.org/04v7hvq31",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Evgenia Glukhov",
+                        "raw_affiliation_strings": [
+                            "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6513-9909",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5069291692",
+                            "display_name": "Allegra T. Aron",
+                            "orcid": "https://orcid.org/0000-0002-9596-021X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I131651094",
+                                "display_name": "University of Denver",
+                                "ror": "https://ror.org/04w7skc03",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I131651094"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Allegra T Aron",
+                        "raw_affiliation_strings": [
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Department of Chemistry and Biochemistry, University of Denver , Denver, CO 80210 , USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Chemistry and Biochemistry, University of Denver , Denver, CO 80210 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I131651094"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050633498",
+                            "display_name": "Joris J. R. Louwen",
+                            "orcid": "https://orcid.org/0000-0003-4887-9109"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Joris J R Louwen",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University , 6708 PB Wageningen , The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-4887-9109",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University , 6708 PB Wageningen , The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5100330218",
+                            "display_name": "Hyun Woo Kim",
+                            "orcid": "https://orcid.org/0000-0003-2473-8360"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I205490536",
+                                "display_name": "Dongguk University",
+                                "ror": "https://ror.org/057q6n778",
+                                "country_code": "KR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I205490536"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "KR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Hyun Woo Kim",
+                        "raw_affiliation_strings": [
+                            "College of Pharmacy and Integrated Research Institute for Drug Development, Dongguk University , Gyeonggi-do 10326 , Korea"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "College of Pharmacy and Integrated Research Institute for Drug Development, Dongguk University , Gyeonggi-do 10326 , Korea",
+                                "institution_ids": [
+                                    "https://openalex.org/I205490536"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5077768594",
+                            "display_name": "Raphael Reher",
+                            "orcid": "https://orcid.org/0000-0002-5858-1173"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I161103922",
+                                "display_name": "Philipps University of Marburg",
+                                "ror": "https://ror.org/01rdrb571",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I161103922"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Raphael Reher",
+                        "raw_affiliation_strings": [
+                            "Institute of Pharmaceutical Biology and Biotechnology, University of Marburg , 35043 Marburg , Germany"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5858-1173",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute of Pharmaceutical Biology and Biotechnology, University of Marburg , 35043 Marburg , Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I161103922"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5061134964",
+                            "display_name": "Marli F\u00e1tima Fiore",
+                            "orcid": "https://orcid.org/0000-0003-2555-7967"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I17974374",
+                                "display_name": "Universidade de S\u00e3o Paulo",
+                                "ror": "https://ror.org/036rp1748",
+                                "country_code": "BR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marli F Fiore",
+                        "raw_affiliation_strings": [
+                            "Center for Nuclear Energy in Agriculture, University of S\u00e3o Paulo , Piracicaba 13400-970, SP , Brazil"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2555-7967",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Nuclear Energy in Agriculture, University of S\u00e3o Paulo , Piracicaba 13400-970, SP , Brazil",
+                                "institution_ids": [
+                                    "https://openalex.org/I17974374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5075156076",
+                            "display_name": "Justin J. J. van der Hooft",
+                            "orcid": "https://orcid.org/0000-0002-9340-5511"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I24027795",
+                                "display_name": "University of Johannesburg",
+                                "ror": "https://ror.org/04z6c2n17",
+                                "country_code": "ZA",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I24027795"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "ZA"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Justin J J van\u00a0der\u00a0Hooft",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Group, Wageningen University , 6708 PB Wageningen , The Netherlands",
+                            "Department of Biochemistry, University of Johannesburg , Auckland Park, Johannesburg 2006 , South Africa"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9340-5511",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Group, Wageningen University , 6708 PB Wageningen , The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Biochemistry, University of Johannesburg , Auckland Park, Johannesburg 2006 , South Africa",
+                                "institution_ids": [
+                                    "https://openalex.org/I24027795"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5053272809",
+                            "display_name": "Lena Gerwick",
+                            "orcid": "https://orcid.org/0000-0001-6108-9000"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I150209017",
+                                "display_name": "Scripps Institution of Oceanography",
+                                "ror": "https://ror.org/04v7hvq31",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Lena Gerwick",
+                        "raw_affiliation_strings": [
+                            "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6108-9000",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5078651116",
+                            "display_name": "William H. Gerwick",
+                            "orcid": "https://orcid.org/0000-0003-1403-4458"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I150209017",
+                                "display_name": "Scripps Institution of Oceanography",
+                                "ror": "https://ror.org/04v7hvq31",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "William H Gerwick",
+                        "raw_affiliation_strings": [
+                            "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1403-4458",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Marine Biotechnology and Biomedicine, Scripps Institution of Oceanography, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I150209017",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5087034314",
+                            "display_name": "Nuno Bandeira",
+                            "orcid": "https://orcid.org/0000-0001-8385-3655"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nuno Bandeira",
+                        "raw_affiliation_strings": [
+                            "Center for Computational Mass Spectrometry, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8385-3655",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Computational Mass Spectrometry, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5082720301",
+                            "display_name": "Pieter C. Dorrestein",
+                            "orcid": "https://orcid.org/0000-0002-3003-1030"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I36258959",
+                                "display_name": "University of California San Diego",
+                                "ror": "https://ror.org/0168r3w48",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I6750721",
+                                "display_name": "University of Montana",
+                                "ror": "https://ror.org/0078xmk34",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I6750721"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Pieter C Dorrestein",
+                        "raw_affiliation_strings": [
+                            "Center for Microbiome Innovation, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                            "Departments of Pharmacology and Pediatrics, University of California San Diego , La Jolla, CA 92093 , USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3003-1030",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Microbiome Innovation, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Collaborative Mass Spectrometry Innovation Center, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I6750721",
+                                    "https://openalex.org/I36258959"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Departments of Pharmacology and Pediatrics, University of California San Diego , La Jolla, CA 92093 , USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I36258959"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 7,
+                "institutions_distinct_count": 18,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5075156076",
+                    "https://openalex.org/A5082720301"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I24027795",
+                    "https://openalex.org/I36258959",
+                    "https://openalex.org/I6750721",
+                    "https://openalex.org/I913481162"
+                ],
+                "apc_list": {
+                    "value": 4000,
+                    "currency": "USD",
+                    "value_usd": 4000
+                },
+                "apc_paid": {
+                    "value": 4000,
+                    "currency": "USD",
+                    "value_usd": 4000
+                },
+                "fwci": 1.8191,
+                "has_fulltext": false,
+                "cited_by_count": 27,
+                "citation_normalized_percentile": {
+                    "value": 0.85804881,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 98,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "1",
+                    "issue": "5",
+                    "first_page": "pgac257",
+                    "last_page": "pgac257"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10836",
+                    "display_name": "Metabolomics and Mass Spectrometry Studies",
+                    "score": 0.9990000128746033,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10836",
+                        "display_name": "Metabolomics and Mass Spectrometry Studies",
+                        "score": 0.9990000128746033,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10932",
+                        "display_name": "Microbial Metabolic Engineering and Bioproduction",
+                        "score": 0.9980000257492065,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9936000108718872,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/fragmentation",
+                        "display_name": "Fragmentation (computing)",
+                        "score": 0.631747841835022
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/classifier",
+                        "display_name": "Classifier (UML)",
+                        "score": 0.5514963865280151
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5059706568717957
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mass-spectrometry",
+                        "display_name": "Mass spectrometry",
+                        "score": 0.48614832758903503
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.47231054306030273
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.3841853737831116
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chemistry",
+                        "display_name": "Chemistry",
+                        "score": 0.27791160345077515
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.26651740074157715
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chromatography",
+                        "display_name": "Chromatography",
+                        "score": 0.1810796856880188
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C191015642",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1132459",
+                        "display_name": "Fragmentation (computing)",
+                        "level": 2,
+                        "score": 0.631747841835022
+                    },
+                    {
+                        "id": "https://openalex.org/C95623464",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1096149",
+                        "display_name": "Classifier (UML)",
+                        "level": 2,
+                        "score": 0.5514963865280151
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5059706568717957
+                    },
+                    {
+                        "id": "https://openalex.org/C162356407",
+                        "wikidata": "https://www.wikidata.org/wiki/Q180809",
+                        "display_name": "Mass spectrometry",
+                        "level": 2,
+                        "score": 0.48614832758903503
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.47231054306030273
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.3841853737831116
+                    },
+                    {
+                        "id": "https://openalex.org/C185592680",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+                        "display_name": "Chemistry",
+                        "level": 0,
+                        "score": 0.27791160345077515
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.26651740074157715
+                    },
+                    {
+                        "id": "https://openalex.org/C43617362",
+                        "wikidata": "https://www.wikidata.org/wiki/Q170050",
+                        "display_name": "Chromatography",
+                        "level": 1,
+                        "score": 0.1810796856880188
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/pnasnexus/pgac257",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgac257",
+                        "pdf_url": "https://academic.oup.com/pnasnexus/article-pdf/1/5/pgac257/48422104/pgac257.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4220651275",
+                            "display_name": "PNAS Nexus",
+                            "issn_l": "2752-6542",
+                            "issn": [
+                                "2752-6542"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "PNAS Nexus",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36712343",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36712343",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "PNAS nexus",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:escholarship.org:ark:/13030/qt47c9p5cn",
+                        "is_oa": true,
+                        "landing_page_url": "https://escholarship.org/uc/item/47c9p5cn",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400115",
+                            "display_name": "eScholarship (California Digital Library)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I2801248553",
+                            "host_organization_name": "California Digital Library",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I2801248553"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "PNAS Nexus, vol 1, iss 5",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9802219",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9802219",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "PNAS Nexus",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:wur:oai:library.wur.nl:wurpubs/607397",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.wur.nl/en/publications/npomix-a-machine-learning-classifier-to-connect-mass-spectrometry",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "PNAS Nexus, 1(5)",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/pnasnexus/pgac257",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/pnasnexus/pgac257",
+                    "pdf_url": "https://academic.oup.com/pnasnexus/article-pdf/1/5/pgac257/48422104/pgac257.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4220651275",
+                        "display_name": "PNAS Nexus",
+                        "issn_l": "2752-6542",
+                        "issn": [
+                            "2752-6542"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "PNAS Nexus",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "display_name": "Responsible consumption and production",
+                        "id": "https://metadata.un.org/sdg/12",
+                        "score": 0.4699999988079071
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G3958522020",
+                        "display_name": null,
+                        "funder_award_id": "2017/18922\u20132",
+                        "funder_id": "https://openalex.org/F4320320997",
+                        "funder_display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo"
+                    },
+                    {
+                        "id": "https://openalex.org/G3981840862",
+                        "display_name": null,
+                        "funder_award_id": "2017/18922-2",
+                        "funder_id": "https://openalex.org/F4320320997",
+                        "funder_display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo"
+                    },
+                    {
+                        "id": "https://openalex.org/G4284652280",
+                        "display_name": null,
+                        "funder_award_id": "GM118815",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G6000170888",
+                        "display_name": null,
+                        "funder_award_id": "GM107550",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G7039274141",
+                        "display_name": null,
+                        "funder_award_id": "2019/05026\u20134",
+                        "funder_id": "https://openalex.org/F4320320997",
+                        "funder_display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo"
+                    },
+                    {
+                        "id": "https://openalex.org/G7553837599",
+                        "display_name": null,
+                        "funder_award_id": "FAPESP 2017/18922-2",
+                        "funder_id": "https://openalex.org/F4320320997",
+                        "funder_display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320308590",
+                        "display_name": "University of California",
+                        "ror": "https://ror.org/00pjdza24"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320997",
+                        "display_name": "Funda\u00e7\u00e3o de Amparo \u00e0 Pesquisa do Estado de S\u00e3o Paulo",
+                        "ror": "https://ror.org/02ddkpn78"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332161",
+                        "display_name": "National Institutes of Health",
+                        "ror": "https://ror.org/01cwqze88"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332603",
+                        "display_name": "University of California, San Diego",
+                        "ror": "https://ror.org/0168r3w48"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4309976130.pdf"
+                },
+                "referenced_works_count": 54,
+                "referenced_works": [
+                    "https://openalex.org/W1989299822",
+                    "https://openalex.org/W1991002380",
+                    "https://openalex.org/W2012960603",
+                    "https://openalex.org/W2029677871",
+                    "https://openalex.org/W2041537722",
+                    "https://openalex.org/W2043472907",
+                    "https://openalex.org/W2071408971",
+                    "https://openalex.org/W2102754716",
+                    "https://openalex.org/W2155687799",
+                    "https://openalex.org/W2319095867",
+                    "https://openalex.org/W2332821092",
+                    "https://openalex.org/W2504691963",
+                    "https://openalex.org/W2513540210",
+                    "https://openalex.org/W2529113939",
+                    "https://openalex.org/W2551876238",
+                    "https://openalex.org/W2593127685",
+                    "https://openalex.org/W2626886916",
+                    "https://openalex.org/W2794407684",
+                    "https://openalex.org/W2893437991",
+                    "https://openalex.org/W2922522932",
+                    "https://openalex.org/W2942829220",
+                    "https://openalex.org/W2956419562",
+                    "https://openalex.org/W2980832688",
+                    "https://openalex.org/W2981262779",
+                    "https://openalex.org/W2990471452",
+                    "https://openalex.org/W2997918501",
+                    "https://openalex.org/W3006044405",
+                    "https://openalex.org/W3011922312",
+                    "https://openalex.org/W3023444868",
+                    "https://openalex.org/W3024192869",
+                    "https://openalex.org/W3025883815",
+                    "https://openalex.org/W3026412036",
+                    "https://openalex.org/W3049521594",
+                    "https://openalex.org/W3108604517",
+                    "https://openalex.org/W3118274032",
+                    "https://openalex.org/W3121081543",
+                    "https://openalex.org/W3129424480",
+                    "https://openalex.org/W3131765257",
+                    "https://openalex.org/W3158208374",
+                    "https://openalex.org/W3164648732",
+                    "https://openalex.org/W3165680398",
+                    "https://openalex.org/W3206284847",
+                    "https://openalex.org/W3206742358",
+                    "https://openalex.org/W3209680996",
+                    "https://openalex.org/W4286785973",
+                    "https://openalex.org/W4290000880",
+                    "https://openalex.org/W4290547242",
+                    "https://openalex.org/W4317811065",
+                    "https://openalex.org/W4319662820",
+                    "https://openalex.org/W6769413408",
+                    "https://openalex.org/W6777388765",
+                    "https://openalex.org/W6782115932",
+                    "https://openalex.org/W6809510472",
+                    "https://openalex.org/W6841919973"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1997209091",
+                    "https://openalex.org/W2003827594",
+                    "https://openalex.org/W1989087147",
+                    "https://openalex.org/W1971760828",
+                    "https://openalex.org/W2141977832",
+                    "https://openalex.org/W2091447320",
+                    "https://openalex.org/W2130134604",
+                    "https://openalex.org/W2097586012",
+                    "https://openalex.org/W2169364714",
+                    "https://openalex.org/W2368425549"
+                ],
+                "abstract_inverted_index": {
+                    "Abstract": [
+                        0
+                    ],
+                    "Microbial": [
+                        1
+                    ],
+                    "specialized": [
+                        2,
+                        69,
+                        238
+                    ],
+                    "metabolites": [
+                        3,
+                        39,
+                        120
+                    ],
+                    "are": [
+                        4
+                    ],
+                    "an": [
+                        5,
+                        34
+                    ],
+                    "important": [
+                        6
+                    ],
+                    "source": [
+                        7
+                    ],
+                    "of": [
+                        8,
+                        82,
+                        106,
+                        201
+                    ],
+                    "and": [
+                        9,
+                        16,
+                        42,
+                        236
+                    ],
+                    "inspiration": [
+                        10
+                    ],
+                    "for": [
+                        11,
+                        56,
+                        164,
+                        212,
+                        229
+                    ],
+                    "many": [
+                        12
+                    ],
+                    "pharmaceuticals,": [
+                        13
+                    ],
+                    "biotechnological": [
+                        14
+                    ],
+                    "products": [
+                        15
+                    ],
+                    "play": [
+                        17
+                    ],
+                    "key": [
+                        18
+                    ],
+                    "roles": [
+                        19
+                    ],
+                    "in": [
+                        20,
+                        51
+                    ],
+                    "ecological": [
+                        21
+                    ],
+                    "processes.": [
+                        22
+                    ],
+                    "Untargeted": [
+                        23
+                    ],
+                    "metabolomics": [
+                        24,
+                        48,
+                        78
+                    ],
+                    "using": [
+                        25
+                    ],
+                    "liquid": [
+                        26
+                    ],
+                    "chromatography": [
+                        27
+                    ],
+                    "coupled": [
+                        28
+                    ],
+                    "with": [
+                        29
+                    ],
+                    "tandem": [
+                        30
+                    ],
+                    "mass": [
+                        31,
+                        95,
+                        128,
+                        161
+                    ],
+                    "spectrometry": [
+                        32,
+                        96,
+                        129
+                    ],
+                    "is": [
+                        33,
+                        49
+                    ],
+                    "efficient": [
+                        35
+                    ],
+                    "technique": [
+                        36
+                    ],
+                    "to": [
+                        37,
+                        67,
+                        79,
+                        92,
+                        99,
+                        119,
+                        180,
+                        203
+                    ],
+                    "access": [
+                        38
+                    ],
+                    "from": [
+                        40,
+                        65,
+                        130,
+                        145
+                    ],
+                    "fractions": [
+                        41
+                    ],
+                    "even": [
+                        43
+                    ],
+                    "environmental": [
+                        44,
+                        134
+                    ],
+                    "crude": [
+                        45
+                    ],
+                    "extracts.": [
+                        46
+                    ],
+                    "Nevertheless,": [
+                        47
+                    ],
+                    "limited": [
+                        50
+                    ],
+                    "predicting": [
+                        52
+                    ],
+                    "structures": [
+                        53
+                    ],
+                    "or": [
+                        54,
+                        133,
+                        193
+                    ],
+                    "bioactivities": [
+                        55
+                    ],
+                    "cryptic": [
+                        57
+                    ],
+                    "metabolites.": [
+                        58
+                    ],
+                    "Efficiently": [
+                        59
+                    ],
+                    "linking": [
+                        60,
+                        157
+                    ],
+                    "the": [
+                        61,
+                        68,
+                        146,
+                        166,
+                        174,
+                        220,
+                        227
+                    ],
+                    "biosynthetic": [
+                        62,
+                        102,
+                        117,
+                        186
+                    ],
+                    "potential": [
+                        63
+                    ],
+                    "inferred": [
+                        64
+                    ],
+                    "(meta)genomics": [
+                        66
+                    ],
+                    "metabolome": [
+                        70
+                    ],
+                    "would": [
+                        71
+                    ],
+                    "accelerate": [
+                        72
+                    ],
+                    "drug": [
+                        73
+                    ],
+                    "discovery": [
+                        74
+                    ],
+                    "programs": [
+                        75
+                    ],
+                    "by": [
+                        76,
+                        155,
+                        219
+                    ],
+                    "allowing": [
+                        77
+                    ],
+                    "make": [
+                        80
+                    ],
+                    "use": [
+                        81,
+                        204
+                    ],
+                    "genetic": [
+                        83,
+                        194
+                    ],
+                    "predictions.": [
+                        84
+                    ],
+                    "Here,": [
+                        85
+                    ],
+                    "we": [
+                        86,
+                        151
+                    ],
+                    "present": [
+                        87
+                    ],
+                    "a": [
+                        88,
+                        198
+                    ],
+                    "k-nearest": [
+                        89
+                    ],
+                    "neighbor": [
+                        90
+                    ],
+                    "classifier": [
+                        91
+                    ],
+                    "systematically": [
+                        93
+                    ],
+                    "connect": [
+                        94
+                    ],
+                    "fragmentation": [
+                        97
+                    ],
+                    "spectra": [
+                        98,
+                        162
+                    ],
+                    "their": [
+                        100,
+                        107,
+                        181
+                    ],
+                    "corresponding": [
+                        101,
+                        182
+                    ],
+                    "gene": [
+                        103,
+                        168
+                    ],
+                    "clusters": [
+                        104,
+                        169
+                    ],
+                    "(independent": [
+                        105
+                    ],
+                    "chemical": [
+                        108
+                    ],
+                    "class).": [
+                        109
+                    ],
+                    "Our": [
+                        110
+                    ],
+                    "new": [
+                        111
+                    ],
+                    "pattern-based": [
+                        112
+                    ],
+                    "genome": [
+                        113
+                    ],
+                    "mining": [
+                        114,
+                        214
+                    ],
+                    "pipeline": [
+                        115
+                    ],
+                    "links": [
+                        116,
+                        144
+                    ],
+                    "genes": [
+                        118,
+                        187
+                    ],
+                    "that": [
+                        121,
+                        139,
+                        215,
+                        224
+                    ],
+                    "they": [
+                        122
+                    ],
+                    "encode": [
+                        123
+                    ],
+                    "for,": [
+                        124
+                    ],
+                    "as": [
+                        125
+                    ],
+                    "detected": [
+                        126
+                    ],
+                    "via": [
+                        127,
+                        189
+                    ],
+                    "bacterial": [
+                        131
+                    ],
+                    "cultures": [
+                        132
+                    ],
+                    "microbiomes.": [
+                        135
+                    ],
+                    "Using": [
+                        136
+                    ],
+                    "paired": [
+                        137
+                    ],
+                    "datasets": [
+                        138
+                    ],
+                    "include": [
+                        140
+                    ],
+                    "validated": [
+                        141,
+                        185
+                    ],
+                    "genes-mass": [
+                        142
+                    ],
+                    "spectral": [
+                        143
+                    ],
+                    "Paired": [
+                        147
+                    ],
+                    "Omics": [
+                        148,
+                        209
+                    ],
+                    "Data": [
+                        149
+                    ],
+                    "Platform,": [
+                        150
+                    ],
+                    "demonstrate": [
+                        152
+                    ],
+                    "this": [
+                        153
+                    ],
+                    "approach": [
+                        154
+                    ],
+                    "automatically": [
+                        156
+                    ],
+                    "18": [
+                        158
+                    ],
+                    "previously": [
+                        159,
+                        183
+                    ],
+                    "known": [
+                        160
+                    ],
+                    "(17": [
+                        163
+                    ],
+                    "which": [
+                        165
+                    ],
+                    "biosynthesis": [
+                        167
+                    ],
+                    "can": [
+                        170,
+                        216
+                    ],
+                    "be": [
+                        171,
+                        217
+                    ],
+                    "found": [
+                        172
+                    ],
+                    "at": [
+                        173
+                    ],
+                    "MIBiG": [
+                        175
+                    ],
+                    "database": [
+                        176
+                    ],
+                    "plus": [
+                        177
+                    ],
+                    "palmyramide": [
+                        178
+                    ],
+                    "A)": [
+                        179
+                    ],
+                    "experimentally": [
+                        184
+                    ],
+                    "(e.g.,": [
+                        188
+                    ],
+                    "nuclear": [
+                        190
+                    ],
+                    "magnetic": [
+                        191
+                    ],
+                    "resonance": [
+                        192
+                    ],
+                    "engineering).": [
+                        195
+                    ],
+                    "We": [
+                        196,
+                        222
+                    ],
+                    "illustrated": [
+                        197
+                    ],
+                    "computational": [
+                        199
+                    ],
+                    "example": [
+                        200
+                    ],
+                    "how": [
+                        202
+                    ],
+                    "our": [
+                        205
+                    ],
+                    "Natural": [
+                        206
+                    ],
+                    "Products": [
+                        207
+                    ],
+                    "Mixed": [
+                        208
+                    ],
+                    "(NPOmix)": [
+                        210
+                    ],
+                    "tool": [
+                        211
+                    ],
+                    "siderophore": [
+                        213
+                    ],
+                    "reproduced": [
+                        218
+                    ],
+                    "users.": [
+                        221
+                    ],
+                    "conclude": [
+                        223
+                    ],
+                    "NPOmix": [
+                        225
+                    ],
+                    "minimizes": [
+                        226
+                    ],
+                    "need": [
+                        228
+                    ],
+                    "culturing": [
+                        230
+                    ],
+                    "(it": [
+                        231
+                    ],
+                    "worked": [
+                        232
+                    ],
+                    "well": [
+                        233
+                    ],
+                    "on": [
+                        234,
+                        242
+                    ],
+                    "microbiomes)": [
+                        235
+                    ],
+                    "facilitates": [
+                        237
+                    ],
+                    "metabolite": [
+                        239
+                    ],
+                    "prioritization": [
+                        240
+                    ],
+                    "based": [
+                        241
+                    ],
+                    "integrative": [
+                        243
+                    ],
+                    "omics": [
+                        244
+                    ],
+                    "mining.": [
+                        245
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 9
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 7
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "NPOmix: A machine learning classifier to connect mass spectrometry fragmentation data to biosynthetic gene clusters",
+                "doi": "10.1093/pnasnexus/pgac257",
+                "pmid": "36712343",
+                "pmc": "PMC9802219",
+                "isbns": [],
+                "altmetric_jid": "631afe852903880009a8bd7d",
+                "issns": [
+                    "2752-6542"
+                ],
+                "journal": "PNAS Nexus",
+                "cohorts": {
+                    "sci": 29,
+                    "pub": 21,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32403291,
+                        "mean": 10.499826430778283,
+                        "rank": 1542593,
+                        "pct": 95,
+                        "higher_than": 30864362
+                    },
+                    "journal": {
+                        "count": 1461,
+                        "mean": 57.240109514031495,
+                        "rank": 464,
+                        "pct": 68,
+                        "higher_than": 997
+                    },
+                    "similar_age_3m": {
+                        "count": 431420,
+                        "mean": 13.42380580408885,
+                        "rank": 25485,
+                        "pct": 94,
+                        "higher_than": 405931
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 82,
+                        "mean": 37.231097560975606,
+                        "rank": 24,
+                        "pct": 70,
+                        "higher_than": 58
+                    }
+                },
+                "authors": [
+                    "Tiago F Le\u00e3o",
+                    "Mingxun Wang",
+                    "Ricardo da Silva",
+                    "Alexey Gurevich",
+                    "Anelize Bauermeister",
+                    "Paulo Wender P Gomes",
+                    "Asker Brejnrod",
+                    "Evgenia Glukhov",
+                    "Allegra T Aron",
+                    "Joris J R Louwen",
+                    "Hyun Woo Kim",
+                    "Raphael Reher",
+                    "Marli F Fiore",
+                    "Justin J J van der Hooft",
+                    "Lena Gerwick",
+                    "William H Gerwick",
+                    "Nuno Bandeira",
+                    "Pieter C Dorrestein"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1667260800,
+                "epubdate": 1668556800,
+                "dimensions_publication_id": "pub.1153147991",
+                "altmetric_id": 139566254,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 57,
+                "cited_by_tweeters_count": 51,
+                "cited_by_accounts_count": 51,
+                "last_updated": 1675410414,
+                "score": 30.550000000000004,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 30.550000000000004
+                },
+                "url": "http://dx.doi.org/10.1093/pnasnexus/pgac257",
+                "added_on": 1669923248,
+                "published_on": 1668556800,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "82",
+                    "connotea": "0"
+                },
+                "readers_count": 82,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=31&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=31&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=31&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=139566254"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 888,
+            "total_ccn": 246,
+            "avg_ccn": 3.62,
+            "nloc_per_file": 177.6,
+            "duplicate_rate": 55.53
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

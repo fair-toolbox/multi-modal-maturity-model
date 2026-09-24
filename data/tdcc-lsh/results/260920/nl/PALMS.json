@@ -1,0 +1,1819 @@
+{
+    "PALMS": {
+        "tool_name": "PALMS",
+        "biotools": {
+            "name": "PALMS",
+            "description": "Platform for Analysis and Labeling of Medical Time Series.",
+            "homepage": "https://github.com/PALMS-gui/PALMS",
+            "biotoolsID": "palms",
+            "biotoolsCURIE": "biotools:palms",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3215",
+                            "term": "Peak detection"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Desktop application",
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0219",
+                    "term": "Data submission, annotation and curation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.3390/S20247302",
+                    "pmid": "33352643",
+                    "pmcid": "PMC7766988",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Platform for analysis and labeling of medical time series",
+                        "abstract": "\u00a9 2020 by the authors. Licensee MDPI, Basel, Switzerland.Reliable and diverse labeled reference data are essential for the development of high-quality processing algorithms for medical signals, such as electrocardiogram (ECG) and photoplethysmogram (PPG). Here, we present the Platform for Analysis and Labeling of Medical time Series (PALMS) designed in Python. Its graphical user interface (GUI) facilitates three main types of manual annotations\u2014(1) fiducials, e.g., R-peaks of ECG; (2) events with an adjustable duration, e.g., arrhythmic episodes; and (3) signal quality, e.g., data parts corrupted by motion artifacts. All annotations can be attributed to the same signal simultaneously in an ergonomic and user-friendly manner. Configuration for different data and annotation types is straightforward and flexible in order to use a wide range of data sources and to address many different use cases. Above all, configuration of PALMS allows plugging-in existing algorithms to display outcomes of automated processing, such as automatic R-peak detection, and to manually correct them where needed. This enables fast annotation and can be used to further improve algorithms. The GUI is currently complemented by ECG and PPG algorithms that detect characteristic points with high accuracy. The ECG algorithm reached 99% on the MIT/BIH arrhythmia database. The PPG algorithm was validated on two public databases with an F1-score above 98%. The GUI and optional algorithms result in an advanced software tool that allows the creation of diverse reference sets for existing datasets.",
+                        "date": "2020-12-02T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Fedjajevs A."
+                            },
+                            {
+                                "name": "Groenendaal W."
+                            },
+                            {
+                                "name": "Agell C."
+                            },
+                            {
+                                "name": "Hermeling E."
+                            }
+                        ],
+                        "journal": "Sensors (Switzerland)"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Andrejs Fedjajevs",
+                    "email": "andrejs.fedjajevs@imec.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-3047-9329",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-01-18T12:34:25Z",
+            "lastUpdate": "2021-03-15T14:49:31Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 300850967,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzMDA4NTA5Njc=",
+                "name": "PALMS",
+                "full_name": "PALMS-gui/PALMS",
+                "private": false,
+                "owner": {
+                    "login": "PALMS-gui",
+                    "id": 72300527,
+                    "node_id": "MDQ6VXNlcjcyMzAwNTI3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/72300527?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/PALMS-gui",
+                    "html_url": "https://github.com/PALMS-gui",
+                    "followers_url": "https://api.github.com/users/PALMS-gui/followers",
+                    "following_url": "https://api.github.com/users/PALMS-gui/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/PALMS-gui/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/PALMS-gui/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/PALMS-gui/subscriptions",
+                    "organizations_url": "https://api.github.com/users/PALMS-gui/orgs",
+                    "repos_url": "https://api.github.com/users/PALMS-gui/repos",
+                    "events_url": "https://api.github.com/users/PALMS-gui/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/PALMS-gui/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/PALMS-gui/PALMS",
+                "description": "Platform for Analysis and Labeling of Medical Time Series",
+                "fork": false,
+                "url": "https://api.github.com/repos/PALMS-gui/PALMS",
+                "forks_url": "https://api.github.com/repos/PALMS-gui/PALMS/forks",
+                "keys_url": "https://api.github.com/repos/PALMS-gui/PALMS/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/PALMS-gui/PALMS/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/PALMS-gui/PALMS/teams",
+                "hooks_url": "https://api.github.com/repos/PALMS-gui/PALMS/hooks",
+                "issue_events_url": "https://api.github.com/repos/PALMS-gui/PALMS/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/PALMS-gui/PALMS/events",
+                "assignees_url": "https://api.github.com/repos/PALMS-gui/PALMS/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/PALMS-gui/PALMS/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/PALMS-gui/PALMS/tags",
+                "blobs_url": "https://api.github.com/repos/PALMS-gui/PALMS/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/PALMS-gui/PALMS/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/PALMS-gui/PALMS/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/PALMS-gui/PALMS/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/PALMS-gui/PALMS/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/PALMS-gui/PALMS/languages",
+                "stargazers_url": "https://api.github.com/repos/PALMS-gui/PALMS/stargazers",
+                "contributors_url": "https://api.github.com/repos/PALMS-gui/PALMS/contributors",
+                "subscribers_url": "https://api.github.com/repos/PALMS-gui/PALMS/subscribers",
+                "subscription_url": "https://api.github.com/repos/PALMS-gui/PALMS/subscription",
+                "commits_url": "https://api.github.com/repos/PALMS-gui/PALMS/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/PALMS-gui/PALMS/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/PALMS-gui/PALMS/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/PALMS-gui/PALMS/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/PALMS-gui/PALMS/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/PALMS-gui/PALMS/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/PALMS-gui/PALMS/merges",
+                "archive_url": "https://api.github.com/repos/PALMS-gui/PALMS/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/PALMS-gui/PALMS/downloads",
+                "issues_url": "https://api.github.com/repos/PALMS-gui/PALMS/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/PALMS-gui/PALMS/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/PALMS-gui/PALMS/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/PALMS-gui/PALMS/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/PALMS-gui/PALMS/labels{/name}",
+                "releases_url": "https://api.github.com/repos/PALMS-gui/PALMS/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/PALMS-gui/PALMS/deployments",
+                "created_at": "2020-10-03T10:12:23Z",
+                "updated_at": "2026-01-11T12:33:51Z",
+                "pushed_at": "2020-12-19T10:30:30Z",
+                "git_url": "git://github.com/PALMS-gui/PALMS.git",
+                "ssh_url": "git@github.com:PALMS-gui/PALMS.git",
+                "clone_url": "https://github.com/PALMS-gui/PALMS.git",
+                "svn_url": "https://github.com/PALMS-gui/PALMS",
+                "homepage": "",
+                "size": 94502,
+                "stargazers_count": 25,
+                "watchers_count": 25,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 2,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 2,
+                "watchers": 25,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 5,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "!portable",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "COPYING.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "__main__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "config.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "config",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "gui",
+                    "type": "tree"
+                },
+                {
+                    "path": "logic",
+                    "type": "tree"
+                },
+                {
+                    "path": "matlab",
+                    "type": "tree"
+                },
+                {
+                    "path": "requirements.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "PALMS-gui",
+                    "contributions": 3
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Python": 324291,
+                "MATLAB": 3573
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.3390/s20247302",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33352643",
+                            "source": "MED",
+                            "pmid": "33352643",
+                            "pmcid": "PMC7766988",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7766988"
+                                ]
+                            },
+                            "doi": "10.3390/s20247302",
+                            "title": "Platform for Analysis and Labeling of Medical Time Series.",
+                            "authorString": "Fedjajevs A, Groenendaal W, Agell C, Hermeling E.",
+                            "journalTitle": "Sensors (Basel)",
+                            "issue": "24",
+                            "journalVolume": "20",
+                            "pubYear": "2020",
+                            "journalIssn": "1424-8220",
+                            "pageInfo": "E7302",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 6,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "N",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2020-12-25",
+                            "firstPublicationDate": "2020-12-19"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3113322178",
+                "doi": "https://doi.org/10.3390/s20247302",
+                "title": "Platform for Analysis and Labeling of Medical Time Series",
+                "display_name": "Platform for Analysis and Labeling of Medical Time Series",
+                "publication_year": 2020,
+                "publication_date": "2020-12-19",
+                "ids": {
+                    "openalex": "https://openalex.org/W3113322178",
+                    "doi": "https://doi.org/10.3390/s20247302",
+                    "mag": "3113322178",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33352643"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.3390/s20247302",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3390/s20247302",
+                    "pdf_url": "https://www.mdpi.com/1424-8220/20/24/7302/pdf?version=1608601844",
+                    "source": {
+                        "id": "https://openalex.org/S101949793",
+                        "display_name": "Sensors",
+                        "issn_l": "1424-8220",
+                        "issn": [
+                            "1424-8220"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310310987",
+                        "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310310987"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Multidisciplinary Digital Publishing Institute"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Sensors",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://www.mdpi.com/1424-8220/20/24/7302/pdf?version=1608601844",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5008200460",
+                            "display_name": "Andrejs Fedjajevs",
+                            "orcid": "https://orcid.org/0000-0002-3047-9329"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I196972281",
+                                "display_name": "Imec the Netherlands",
+                                "ror": "https://ror.org/01ezq2j76",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Andrejs Fedjajevs",
+                        "raw_affiliation_strings": [
+                            "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3047-9329",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039835510",
+                            "display_name": "Willemijn Groenendaal",
+                            "orcid": "https://orcid.org/0000-0003-1024-0756"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I196972281",
+                                "display_name": "Imec the Netherlands",
+                                "ror": "https://ror.org/01ezq2j76",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Willemijn Groenendaal",
+                        "raw_affiliation_strings": [
+                            "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5073953183",
+                            "display_name": "Carlos Agell",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I196972281",
+                                "display_name": "Imec the Netherlands",
+                                "ror": "https://ror.org/01ezq2j76",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Carlos Agell",
+                        "raw_affiliation_strings": [
+                            "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5077723414",
+                            "display_name": "Evelien Hermeling",
+                            "orcid": "https://orcid.org/0000-0003-1206-9710"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I196972281",
+                                "display_name": "Imec the Netherlands",
+                                "ror": "https://ror.org/01ezq2j76",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Evelien Hermeling",
+                        "raw_affiliation_strings": [
+                            "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Stichting Imec the Netherlands, 5656 AE Eindhoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I196972281"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5008200460"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I196972281"
+                ],
+                "apc_list": {
+                    "value": 2400,
+                    "currency": "CHF",
+                    "value_usd": 2598
+                },
+                "apc_paid": {
+                    "value": 2400,
+                    "currency": "CHF",
+                    "value_usd": 2598
+                },
+                "fwci": 0.9234,
+                "has_fulltext": true,
+                "cited_by_count": 12,
+                "citation_normalized_percentile": {
+                    "value": 0.787652,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "20",
+                    "issue": "24",
+                    "first_page": "7302",
+                    "last_page": "7302"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11021",
+                    "display_name": "ECG Monitoring and Analysis",
+                    "score": 0.9998000264167786,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2705",
+                        "display_name": "Cardiology and Cardiovascular Medicine"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/27",
+                        "display_name": "Medicine"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/4",
+                        "display_name": "Health Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11021",
+                        "display_name": "ECG Monitoring and Analysis",
+                        "score": 0.9998000264167786,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2705",
+                            "display_name": "Cardiology and Cardiovascular Medicine"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11196",
+                        "display_name": "Non-Invasive Vital Sign Monitoring",
+                        "score": 0.9997000098228455,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2204",
+                            "display_name": "Biomedical Engineering"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/22",
+                            "display_name": "Engineering"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10745",
+                        "display_name": "Heart Rate Variability and Autonomic Control",
+                        "score": 0.9995999932289124,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2705",
+                            "display_name": "Cardiology and Cardiovascular Medicine"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.756248414516449
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.7255648970603943
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphical-user-interface",
+                        "display_name": "Graphical user interface",
+                        "score": 0.6170117855072021
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/annotation",
+                        "display_name": "Annotation",
+                        "score": 0.6169671416282654
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/fiducial-marker",
+                        "display_name": "Fiducial marker",
+                        "score": 0.5837149024009705
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5066643357276917
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.44646477699279785
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.442010760307312
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/photoplethysmogram",
+                        "display_name": "Photoplethysmogram",
+                        "score": 0.41055411100387573
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-vision",
+                        "display_name": "Computer vision",
+                        "score": 0.21127250790596008
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.09004420042037964
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.756248414516449
+                    },
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.7255648970603943
+                    },
+                    {
+                        "id": "https://openalex.org/C37789001",
+                        "wikidata": "https://www.wikidata.org/wiki/Q782543",
+                        "display_name": "Graphical user interface",
+                        "level": 2,
+                        "score": 0.6170117855072021
+                    },
+                    {
+                        "id": "https://openalex.org/C2776321320",
+                        "wikidata": "https://www.wikidata.org/wiki/Q857525",
+                        "display_name": "Annotation",
+                        "level": 2,
+                        "score": 0.6169671416282654
+                    },
+                    {
+                        "id": "https://openalex.org/C173974348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1469893",
+                        "display_name": "Fiducial marker",
+                        "level": 2,
+                        "score": 0.5837149024009705
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5066643357276917
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.44646477699279785
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.442010760307312
+                    },
+                    {
+                        "id": "https://openalex.org/C116390426",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187885",
+                        "display_name": "Photoplethysmogram",
+                        "level": 3,
+                        "score": 0.41055411100387573
+                    },
+                    {
+                        "id": "https://openalex.org/C31972630",
+                        "wikidata": "https://www.wikidata.org/wiki/Q844240",
+                        "display_name": "Computer vision",
+                        "level": 1,
+                        "score": 0.21127250790596008
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.09004420042037964
+                    },
+                    {
+                        "id": "https://openalex.org/C106131492",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3072260",
+                        "display_name": "Filter (signal processing)",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004562",
+                        "descriptor_name": "Electrocardiography",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004562",
+                        "descriptor_name": "Electrocardiography",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004562",
+                        "descriptor_name": "Electrocardiography",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004562",
+                        "descriptor_name": "Electrocardiography",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D006339",
+                        "descriptor_name": "Heart Rate",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006339",
+                        "descriptor_name": "Heart Rate",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006339",
+                        "descriptor_name": "Heart Rate",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006339",
+                        "descriptor_name": "Heart Rate",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012815",
+                        "descriptor_name": "Signal Processing, Computer-Assisted",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012815",
+                        "descriptor_name": "Signal Processing, Computer-Assisted",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012815",
+                        "descriptor_name": "Signal Processing, Computer-Assisted",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012815",
+                        "descriptor_name": "Signal Processing, Computer-Assisted",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016477",
+                        "descriptor_name": "Artifacts",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016477",
+                        "descriptor_name": "Artifacts",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016477",
+                        "descriptor_name": "Artifacts",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016477",
+                        "descriptor_name": "Artifacts",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.3390/s20247302",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.3390/s20247302",
+                        "pdf_url": "https://www.mdpi.com/1424-8220/20/24/7302/pdf?version=1608601844",
+                        "source": {
+                            "id": "https://openalex.org/S101949793",
+                            "display_name": "Sensors",
+                            "issn_l": "1424-8220",
+                            "issn": [
+                                "1424-8220"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310310987",
+                            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310310987"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Multidisciplinary Digital Publishing Institute"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Sensors",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33352643",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33352643",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Sensors (Basel, Switzerland)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:410edf5d49af4125bd468a3737cd5695",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/410edf5d49af4125bd468a3737cd5695",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Sensors, Vol 20, Iss 24, p 7302 (2020)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:mdpi.com:/1424-8220/20/24/7302/",
+                        "is_oa": true,
+                        "landing_page_url": "https://dx.doi.org/10.3390/s20247302",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400947",
+                            "display_name": "MDPI (MDPI AG)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210097602",
+                            "host_organization_name": "Multidisciplinary Digital Publishing Institute (Switzerland)",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210097602"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Sensors; Volume 20; Issue 24; Pages: 7302",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7766988",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7766988",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Sensors (Basel)",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.3390/s20247302",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3390/s20247302",
+                    "pdf_url": "https://www.mdpi.com/1424-8220/20/24/7302/pdf?version=1608601844",
+                    "source": {
+                        "id": "https://openalex.org/S101949793",
+                        "display_name": "Sensors",
+                        "issn_l": "1424-8220",
+                        "issn": [
+                            "1424-8220"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310310987",
+                        "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310310987"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Multidisciplinary Digital Publishing Institute"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Sensors",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G7911937366",
+                        "display_name": null,
+                        "funder_award_id": "INNO4HEALTH 19008",
+                        "funder_id": "https://openalex.org/F4320313144",
+                        "funder_display_name": "ITEA"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320313144",
+                        "display_name": "ITEA",
+                        "ror": null
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321016",
+                        "display_name": "Universiteit Maastricht",
+                        "ror": "https://ror.org/02jz4aj89"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3113322178.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3113322178.grobid-xml"
+                },
+                "referenced_works_count": 51,
+                "referenced_works": [
+                    "https://openalex.org/W79139011",
+                    "https://openalex.org/W188715143",
+                    "https://openalex.org/W1767708321",
+                    "https://openalex.org/W1973163442",
+                    "https://openalex.org/W2020633821",
+                    "https://openalex.org/W2022778022",
+                    "https://openalex.org/W2036371089",
+                    "https://openalex.org/W2046002943",
+                    "https://openalex.org/W2050877737",
+                    "https://openalex.org/W2064190936",
+                    "https://openalex.org/W2064789255",
+                    "https://openalex.org/W2069636918",
+                    "https://openalex.org/W2080883481",
+                    "https://openalex.org/W2084896424",
+                    "https://openalex.org/W2095409369",
+                    "https://openalex.org/W2099619765",
+                    "https://openalex.org/W2102323544",
+                    "https://openalex.org/W2124952639",
+                    "https://openalex.org/W2133589238",
+                    "https://openalex.org/W2135533595",
+                    "https://openalex.org/W2141643549",
+                    "https://openalex.org/W2145433315",
+                    "https://openalex.org/W2146254945",
+                    "https://openalex.org/W2147904307",
+                    "https://openalex.org/W2155520195",
+                    "https://openalex.org/W2162273778",
+                    "https://openalex.org/W2162800060",
+                    "https://openalex.org/W2163430278",
+                    "https://openalex.org/W2313797383",
+                    "https://openalex.org/W2319288498",
+                    "https://openalex.org/W2507336144",
+                    "https://openalex.org/W2551646966",
+                    "https://openalex.org/W2552408385",
+                    "https://openalex.org/W2754143208",
+                    "https://openalex.org/W2758325014",
+                    "https://openalex.org/W2759190050",
+                    "https://openalex.org/W2768109716",
+                    "https://openalex.org/W2794237759",
+                    "https://openalex.org/W2794311625",
+                    "https://openalex.org/W2904966308",
+                    "https://openalex.org/W2937543702",
+                    "https://openalex.org/W2976079229",
+                    "https://openalex.org/W2981056159",
+                    "https://openalex.org/W2998946690",
+                    "https://openalex.org/W3001200936",
+                    "https://openalex.org/W3015620020",
+                    "https://openalex.org/W3031679542",
+                    "https://openalex.org/W3040849424",
+                    "https://openalex.org/W3217261033",
+                    "https://openalex.org/W6681808377",
+                    "https://openalex.org/W6979037891"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2732360296",
+                    "https://openalex.org/W1994871954",
+                    "https://openalex.org/W4297152434",
+                    "https://openalex.org/W2072858761",
+                    "https://openalex.org/W1540261775",
+                    "https://openalex.org/W4239033438",
+                    "https://openalex.org/W1968279762",
+                    "https://openalex.org/W4318970012",
+                    "https://openalex.org/W2525537761",
+                    "https://openalex.org/W2170552210"
+                ],
+                "abstract_inverted_index": {
+                    "Reliable": [
+                        0
+                    ],
+                    "and": [
+                        1,
+                        22,
+                        32,
+                        68,
+                        92,
+                        99,
+                        104,
+                        116,
+                        143,
+                        154,
+                        169,
+                        205
+                    ],
+                    "diverse": [
+                        2,
+                        219
+                    ],
+                    "labeled": [
+                        3
+                    ],
+                    "reference": [
+                        4,
+                        220
+                    ],
+                    "data": [
+                        5,
+                        73,
+                        98,
+                        114
+                    ],
+                    "are": [
+                        6
+                    ],
+                    "essential": [
+                        7
+                    ],
+                    "for": [
+                        8,
+                        15,
+                        30,
+                        96,
+                        222
+                    ],
+                    "the": [
+                        9,
+                        28,
+                        85,
+                        185,
+                        216
+                    ],
+                    "development": [
+                        10
+                    ],
+                    "of": [
+                        11,
+                        34,
+                        51,
+                        57,
+                        113,
+                        126,
+                        135,
+                        218
+                    ],
+                    "high-quality": [
+                        12
+                    ],
+                    "processing": [
+                        13
+                    ],
+                    "algorithms": [
+                        14,
+                        131,
+                        171,
+                        207
+                    ],
+                    "medical": [
+                        16
+                    ],
+                    "signals,": [
+                        17
+                    ],
+                    "such": [
+                        18,
+                        138
+                    ],
+                    "as": [
+                        19,
+                        139
+                    ],
+                    "electrocardiogram": [
+                        20
+                    ],
+                    "(ECG)": [
+                        21
+                    ],
+                    "photoplethysmogram": [
+                        23
+                    ],
+                    "(PPG).": [
+                        24
+                    ],
+                    "Here,": [
+                        25
+                    ],
+                    "we": [
+                        26
+                    ],
+                    "present": [
+                        27
+                    ],
+                    "Platform": [
+                        29
+                    ],
+                    "Analysis": [
+                        31
+                    ],
+                    "Labeling": [
+                        33
+                    ],
+                    "Medical": [
+                        35
+                    ],
+                    "time": [
+                        36
+                    ],
+                    "Series": [
+                        37
+                    ],
+                    "(PALMS)": [
+                        38
+                    ],
+                    "designed": [
+                        39
+                    ],
+                    "in": [
+                        40,
+                        89,
+                        106,
+                        209
+                    ],
+                    "Python.": [
+                        41
+                    ],
+                    "Its": [
+                        42
+                    ],
+                    "graphical": [
+                        43
+                    ],
+                    "user": [
+                        44
+                    ],
+                    "interface": [
+                        45
+                    ],
+                    "(GUI)": [
+                        46
+                    ],
+                    "facilitates": [
+                        47
+                    ],
+                    "three": [
+                        48
+                    ],
+                    "main": [
+                        49
+                    ],
+                    "types": [
+                        50,
+                        101
+                    ],
+                    "manual": [
+                        52
+                    ],
+                    "annotations-(1)": [
+                        53
+                    ],
+                    "fiducials,": [
+                        54
+                    ],
+                    "e.g.,": [
+                        55,
+                        65,
+                        72
+                    ],
+                    "R-peaks": [
+                        56
+                    ],
+                    "ECG;": [
+                        58
+                    ],
+                    "(2)": [
+                        59
+                    ],
+                    "events": [
+                        60
+                    ],
+                    "with": [
+                        61,
+                        176,
+                        198
+                    ],
+                    "an": [
+                        62,
+                        90,
+                        199,
+                        210
+                    ],
+                    "adjustable": [
+                        63
+                    ],
+                    "duration,": [
+                        64
+                    ],
+                    "arrhythmic": [
+                        66
+                    ],
+                    "episodes;": [
+                        67
+                    ],
+                    "(3)": [
+                        69
+                    ],
+                    "signal": [
+                        70,
+                        87
+                    ],
+                    "quality,": [
+                        71
+                    ],
+                    "parts": [
+                        74
+                    ],
+                    "corrupted": [
+                        75
+                    ],
+                    "by": [
+                        76,
+                        167
+                    ],
+                    "motion": [
+                        77
+                    ],
+                    "artifacts.": [
+                        78
+                    ],
+                    "All": [
+                        79
+                    ],
+                    "annotations": [
+                        80
+                    ],
+                    "can": [
+                        81,
+                        155
+                    ],
+                    "be": [
+                        82,
+                        156
+                    ],
+                    "attributed": [
+                        83
+                    ],
+                    "to": [
+                        84,
+                        108,
+                        117,
+                        132,
+                        144,
+                        158
+                    ],
+                    "same": [
+                        86
+                    ],
+                    "simultaneously": [
+                        88
+                    ],
+                    "ergonomic": [
+                        91
+                    ],
+                    "user-friendly": [
+                        93
+                    ],
+                    "manner.": [
+                        94
+                    ],
+                    "Configuration": [
+                        95
+                    ],
+                    "different": [
+                        97,
+                        120
+                    ],
+                    "annotation": [
+                        100,
+                        153
+                    ],
+                    "is": [
+                        102,
+                        164
+                    ],
+                    "straightforward": [
+                        103
+                    ],
+                    "flexible": [
+                        105
+                    ],
+                    "order": [
+                        107
+                    ],
+                    "use": [
+                        109,
+                        121
+                    ],
+                    "a": [
+                        110
+                    ],
+                    "wide": [
+                        111
+                    ],
+                    "range": [
+                        112
+                    ],
+                    "sources": [
+                        115
+                    ],
+                    "address": [
+                        118
+                    ],
+                    "many": [
+                        119
+                    ],
+                    "cases.": [
+                        122
+                    ],
+                    "Above": [
+                        123
+                    ],
+                    "all,": [
+                        124
+                    ],
+                    "configuration": [
+                        125
+                    ],
+                    "PALMS": [
+                        127
+                    ],
+                    "allows": [
+                        128,
+                        215
+                    ],
+                    "plugging-in": [
+                        129
+                    ],
+                    "existing": [
+                        130,
+                        223
+                    ],
+                    "display": [
+                        133
+                    ],
+                    "outcomes": [
+                        134
+                    ],
+                    "automated": [
+                        136
+                    ],
+                    "processing,": [
+                        137
+                    ],
+                    "automatic": [
+                        140
+                    ],
+                    "R-peak": [
+                        141
+                    ],
+                    "detection,": [
+                        142
+                    ],
+                    "manually": [
+                        145
+                    ],
+                    "correct": [
+                        146
+                    ],
+                    "them": [
+                        147
+                    ],
+                    "where": [
+                        148
+                    ],
+                    "needed.": [
+                        149
+                    ],
+                    "This": [
+                        150
+                    ],
+                    "enables": [
+                        151
+                    ],
+                    "fast": [
+                        152
+                    ],
+                    "used": [
+                        157
+                    ],
+                    "further": [
+                        159
+                    ],
+                    "improve": [
+                        160
+                    ],
+                    "algorithms.": [
+                        161
+                    ],
+                    "The": [
+                        162,
+                        179,
+                        189,
+                        203
+                    ],
+                    "GUI": [
+                        163,
+                        204
+                    ],
+                    "currently": [
+                        165
+                    ],
+                    "complemented": [
+                        166
+                    ],
+                    "ECG": [
+                        168,
+                        180
+                    ],
+                    "PPG": [
+                        170,
+                        190
+                    ],
+                    "that": [
+                        172,
+                        214
+                    ],
+                    "detect": [
+                        173
+                    ],
+                    "characteristic": [
+                        174
+                    ],
+                    "points": [
+                        175
+                    ],
+                    "high": [
+                        177
+                    ],
+                    "accuracy.": [
+                        178
+                    ],
+                    "algorithm": [
+                        181,
+                        191
+                    ],
+                    "reached": [
+                        182
+                    ],
+                    "99%": [
+                        183
+                    ],
+                    "on": [
+                        184,
+                        194
+                    ],
+                    "MIT/BIH": [
+                        186
+                    ],
+                    "arrhythmia": [
+                        187
+                    ],
+                    "database.": [
+                        188
+                    ],
+                    "was": [
+                        192
+                    ],
+                    "validated": [
+                        193
+                    ],
+                    "two": [
+                        195
+                    ],
+                    "public": [
+                        196
+                    ],
+                    "databases": [
+                        197
+                    ],
+                    "F1-score": [
+                        200
+                    ],
+                    "above": [
+                        201
+                    ],
+                    "98%.": [
+                        202
+                    ],
+                    "optional": [
+                        206
+                    ],
+                    "result": [
+                        208
+                    ],
+                    "advanced": [
+                        211
+                    ],
+                    "software": [
+                        212
+                    ],
+                    "tool": [
+                        213
+                    ],
+                    "creation": [
+                        217
+                    ],
+                    "sets": [
+                        221
+                    ],
+                    "datasets.": [
+                        224
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 4
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": null
+        },
+        "errors": [
+            "altmetric: HTTP error while fetching data for DOI 10.3390/s20247302"
+        ],
+        "lizard": {
+            "total_nloc": 4710,
+            "total_ccn": 1248,
+            "avg_ccn": 2.54,
+            "nloc_per_file": 142.73,
+            "duplicate_rate": 5.11
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

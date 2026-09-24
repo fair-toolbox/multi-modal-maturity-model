@@ -1,0 +1,2823 @@
+{
+    "LayNii": {
+        "tool_name": "LayNii",
+        "biotools": {
+            "name": "LayNii",
+            "description": "A software suite for layer-fMRI. Revision 1.\n\nLayNii_extras (work in progress...).\n\nHere are some extra scripts that we use in combination with LayNii.",
+            "homepage": "https://github.com/ofgulban/LayNii_extras",
+            "biotoolsID": "laynii",
+            "biotoolsCURIE": "biotools:laynii",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3435",
+                            "term": "Standardisation and normalisation"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3444",
+                    "term": "MRI"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3304",
+                    "term": "Neurobiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Shell",
+                "Python",
+                "MATLAB",
+                "C",
+                "C++"
+            ],
+            "license": "BSD-3-Clause",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1101/2020.06.12.148080",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Laurentius (Renzo) Huber",
+                    "email": "renzohuber@gmail.com",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-01-18T09:40:24Z",
+            "lastUpdate": "2021-02-12T11:17:58Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 239339756,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyMzkzMzk3NTY=",
+                "name": "LAYNII_extras",
+                "full_name": "ofgulban/LAYNII_extras",
+                "private": false,
+                "owner": {
+                    "login": "ofgulban",
+                    "id": 4668327,
+                    "node_id": "MDQ6VXNlcjQ2NjgzMjc=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/4668327?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ofgulban",
+                    "html_url": "https://github.com/ofgulban",
+                    "followers_url": "https://api.github.com/users/ofgulban/followers",
+                    "following_url": "https://api.github.com/users/ofgulban/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ofgulban/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ofgulban/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ofgulban/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ofgulban/orgs",
+                    "repos_url": "https://api.github.com/users/ofgulban/repos",
+                    "events_url": "https://api.github.com/users/ofgulban/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ofgulban/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/ofgulban/LAYNII_extras",
+                "description": "Auxiliary scripts, bits & pieces built around LayNii",
+                "fork": false,
+                "url": "https://api.github.com/repos/ofgulban/LAYNII_extras",
+                "forks_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/forks",
+                "keys_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/teams",
+                "hooks_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/hooks",
+                "issue_events_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/events",
+                "assignees_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/tags",
+                "blobs_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/languages",
+                "stargazers_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/stargazers",
+                "contributors_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/contributors",
+                "subscribers_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/subscribers",
+                "subscription_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/subscription",
+                "commits_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/merges",
+                "archive_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/downloads",
+                "issues_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/labels{/name}",
+                "releases_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/ofgulban/LAYNII_extras/deployments",
+                "created_at": "2020-02-09T16:56:58Z",
+                "updated_at": "2026-02-11T09:09:18Z",
+                "pushed_at": "2025-07-24T11:53:27Z",
+                "git_url": "git://github.com/ofgulban/LAYNII_extras.git",
+                "ssh_url": "git@github.com:ofgulban/LAYNII_extras.git",
+                "clone_url": "https://github.com/ofgulban/LAYNII_extras.git",
+                "svn_url": "https://github.com/ofgulban/LAYNII_extras",
+                "homepage": "",
+                "size": 125,
+                "stargazers_count": 6,
+                "watchers_count": 6,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": {
+                    "key": "bsd-3-clause",
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "spdx_id": "BSD-3-Clause",
+                    "url": "https://api.github.com/licenses/bsd-3-clause",
+                    "node_id": "MDc6TGljZW5zZTU="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 1,
+                "watchers": 6,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 1,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "BICO_4_GRADDSMOOTH",
+                    "type": "tree"
+                },
+                {
+                    "path": "EXTRACT_LAYERPROFILES",
+                    "type": "tree"
+                },
+                {
+                    "path": "GET_RIM_from_FREESURFER",
+                    "type": "tree"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "RIMIFY",
+                    "type": "tree"
+                },
+                {
+                    "path": "Upsamp_2rimify",
+                    "type": "tree"
+                },
+                {
+                    "path": "VASO_MOCO_BOCO_ANTS",
+                    "type": "tree"
+                },
+                {
+                    "path": "VASO_pipe_SPM_BOCO",
+                    "type": "tree"
+                },
+                {
+                    "path": "VASO_pipe_SPM_MOCO",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-B0_angular_difference",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-correlation",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-extract_custom_ROI",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-fmr_to_nifti",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-freesurfer_segmentation_to_rim",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-layers_columns_devein",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-morphology_operations",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-nifti_header_swap",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-noise_test_UVD_filters",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-patch_flatten_animation",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-plot_layer_profiles",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-separate_bold_and_nulled",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-svs_file",
+                    "type": "tree"
+                },
+                {
+                    "path": "demo-upsample_segmentations",
+                    "type": "tree"
+                },
+                {
+                    "path": "fix_TR_header",
+                    "type": "tree"
+                },
+                {
+                    "path": "get_rim_from_FARUKsegm",
+                    "type": "tree"
+                },
+                {
+                    "path": "getting_ALF",
+                    "type": "tree"
+                },
+                {
+                    "path": "image_to_nifti.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "nifti_quantize.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "nifti_swap_affine.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "old",
+                    "type": "tree"
+                },
+                {
+                    "path": "smoothing_manual_segmentations",
+                    "type": "tree"
+                },
+                {
+                    "path": "stream_line_scripts",
+                    "type": "tree"
+                },
+                {
+                    "path": "wip-tuneup",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "ofgulban",
+                    "contributions": 60
+                },
+                {
+                    "login": "layerfMRI",
+                    "contributions": 10
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Python": 45520,
+                "Shell": 32483,
+                "MATLAB": 2638
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1016/j.neuroimage.2021.118091",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33991698",
+                            "source": "MED",
+                            "pmid": "33991698",
+                            "pmcid": "PMC7615890",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7615890"
+                                ]
+                            },
+                            "doi": "10.1016/j.neuroimage.2021.118091",
+                            "title": "LayNii: A software suite for layer-fMRI.",
+                            "authorString": "Huber LR, Poser BA, Bandettini PA, Arora K, Wagstyl K, Cho S, Goense J, Nothnagel N, Morgan AT, van den Hurk J, M\u00fcller AK, Reynolds RC, Glen DR, Goebel R, Gulban OF.",
+                            "journalTitle": "Neuroimage",
+                            "journalVolume": "237",
+                            "pubYear": "2021",
+                            "journalIssn": "1053-8119; 1095-9572; ",
+                            "pageInfo": "118091",
+                            "pubType": "research support, n.i.h., intramural; research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 130,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-05-16",
+                            "firstPublicationDate": "2021-05-12"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3163496149",
+                "doi": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                "title": "LayNii: A software suite for layer-fMRI",
+                "display_name": "LayNii: A software suite for layer-fMRI",
+                "publication_year": 2021,
+                "publication_date": "2021-05-12",
+                "ids": {
+                    "openalex": "https://openalex.org/W3163496149",
+                    "doi": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                    "mag": "3163496149",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33991698"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1016/j.neuroimage.2021.118091",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S103225281",
+                        "display_name": "NeuroImage",
+                        "issn_l": "1053-8119",
+                        "issn": [
+                            "1053-8119",
+                            "1095-9572"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320990",
+                        "host_organization_name": "Elsevier BV",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320990"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Elsevier BV"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NeuroImage",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5075033995",
+                            "display_name": "Laurentius Huber",
+                            "orcid": "https://orcid.org/0000-0002-3291-2202"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Laurentius\u202f(Renzo) Huber",
+                        "raw_affiliation_strings": [
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands. Electronic address: renzohuber@gmail.com",
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3291-2202",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands. Electronic address: renzohuber@gmail.com",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5089922303",
+                            "display_name": "Benedikt A. Poser",
+                            "orcid": "https://orcid.org/0000-0001-8190-4367"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Benedikt A. Poser",
+                        "raw_affiliation_strings": [
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5036171512",
+                            "display_name": "Peter A. Bandettini",
+                            "orcid": "https://orcid.org/0000-0001-9038-4746"
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Peter A. Bandettini",
+                        "raw_affiliation_strings": [
+                            "NIMH, NIH, Bethesda, MD, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "NIMH, NIH, Bethesda, MD, USA",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037728880",
+                            "display_name": "Kabir Arora",
+                            "orcid": "https://orcid.org/0000-0003-3978-9443"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kabir Arora",
+                        "raw_affiliation_strings": [
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3978-9443",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064225406",
+                            "display_name": "Konrad Wagstyl",
+                            "orcid": "https://orcid.org/0000-0003-3439-5808"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I165524941",
+                                "display_name": "Wellcome Centre for Human Neuroimaging",
+                                "ror": "https://ror.org/02704qw51",
+                                "country_code": "GB",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I165524941",
+                                    "https://openalex.org/I45129253",
+                                    "https://openalex.org/I87048295"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I45129253",
+                                "display_name": "University College London",
+                                "ror": "https://ror.org/02jx3x895",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Konrad Wagstyl",
+                        "raw_affiliation_strings": [
+                            "Wellcome Centre for Human Neuroimaging, University College London, London, UK"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3439-5808",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Wellcome Centre for Human Neuroimaging, University College London, London, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I165524941",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5102743519",
+                            "display_name": "Shinho Cho",
+                            "orcid": "https://orcid.org/0000-0002-3886-3106"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I130238516",
+                                "display_name": "University of Minnesota",
+                                "ror": "https://ror.org/017zqws13",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I130238516"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Shinho Cho",
+                        "raw_affiliation_strings": [
+                            "CMRR, University of Minneapolis, MN, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3886-3106",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "CMRR, University of Minneapolis, MN, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130238516"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5111738742",
+                            "display_name": "Jozien Goense",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I7882870",
+                                "display_name": "University of Glasgow",
+                                "ror": "https://ror.org/00vtgdb53",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jozien Goense",
+                        "raw_affiliation_strings": [
+                            "University of Glasgow, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Glasgow, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5035502456",
+                            "display_name": "Nils Nothnagel",
+                            "orcid": "https://orcid.org/0000-0002-7027-3368"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I7882870",
+                                "display_name": "University of Glasgow",
+                                "ror": "https://ror.org/00vtgdb53",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nils Nothnagel",
+                        "raw_affiliation_strings": [
+                            "University of Glasgow, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Glasgow, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5047843082",
+                            "display_name": "Andrew Morgan",
+                            "orcid": "https://orcid.org/0000-0001-6017-2179"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I7882870",
+                                "display_name": "University of Glasgow",
+                                "ror": "https://ror.org/00vtgdb53",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Andrew Tyler Morgan",
+                        "raw_affiliation_strings": [
+                            "University of Glasgow, UK"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6017-2179",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Glasgow, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I7882870"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5034829675",
+                            "display_name": "Job van den Hurk",
+                            "orcid": "https://orcid.org/0000-0002-5507-7860"
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Job van den Hurk",
+                        "raw_affiliation_strings": [
+                            "Scannexus, Maastricht, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Scannexus, Maastricht, the Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5023458954",
+                            "display_name": "Anna K M\u00fcller",
+                            "orcid": "https://orcid.org/0000-0003-2176-0861"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I114090438",
+                                "display_name": "Goethe University Frankfurt",
+                                "ror": "https://ror.org/04cvxnb49",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I114090438"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anna K M\u00fcller",
+                        "raw_affiliation_strings": [
+                            "Goethe University Frankfurt, Frankfurt, Germany"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2176-0861",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Goethe University Frankfurt, Frankfurt, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I114090438"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5025001284",
+                            "display_name": "Richard C. Reynolds",
+                            "orcid": "https://orcid.org/0000-0002-7267-5563"
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Richard C. Reynolds",
+                        "raw_affiliation_strings": [
+                            "NIMH, NIH, Bethesda, MD, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7267-5563",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "NIMH, NIH, Bethesda, MD, USA",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5048446779",
+                            "display_name": "Daniel Glen",
+                            "orcid": null
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Daniel R. Glen",
+                        "raw_affiliation_strings": [
+                            "NIMH, NIH, Bethesda, MD, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "NIMH, NIH, Bethesda, MD, USA",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5026206233",
+                            "display_name": "Rainer Goebel",
+                            "orcid": "https://orcid.org/0000-0003-1780-2467"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210138057",
+                                "display_name": "Brain Innovation (Netherlands)",
+                                "ror": "https://ror.org/03nbnyc28",
+                                "country_code": "NL",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Rainer Goebel",
+                        "raw_affiliation_strings": [
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands; Brain Innovation, Maastricht, the Netherlands",
+                            "Brain Innovation, Maastricht, the Netherlands",
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1780-2467",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands; Brain Innovation, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Brain Innovation, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5069845113",
+                            "display_name": "\u00d6mer Faruk G\u00fclban",
+                            "orcid": "https://orcid.org/0000-0001-7761-3727"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210138057",
+                                "display_name": "Brain Innovation (Netherlands)",
+                                "ror": "https://ror.org/03nbnyc28",
+                                "country_code": "NL",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Omer Faruk Gulban",
+                        "raw_affiliation_strings": [
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands; Brain Innovation, Maastricht, the Netherlands",
+                            "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                            "Brain Innovation, Maastricht, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7761-3727",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands; Brain Innovation, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "MBIC, Faculty of Psychology and Neuroscience, Maastricht University, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Brain Innovation, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210138057"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 4,
+                "institutions_distinct_count": 15,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5075033995"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I34352273"
+                ],
+                "apc_list": {
+                    "value": 3450,
+                    "currency": "USD",
+                    "value_usd": 3450
+                },
+                "apc_paid": {
+                    "value": 3450,
+                    "currency": "USD",
+                    "value_usd": 3450
+                },
+                "fwci": 13.567,
+                "has_fulltext": false,
+                "cited_by_count": 169,
+                "citation_normalized_percentile": {
+                    "value": 0.99528608,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "237",
+                    "issue": null,
+                    "first_page": "118091",
+                    "last_page": "118091"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10241",
+                    "display_name": "Functional Brain Connectivity Studies",
+                    "score": 0.9998999834060669,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2805",
+                        "display_name": "Cognitive Neuroscience"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/28",
+                        "display_name": "Neuroscience"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10241",
+                        "display_name": "Functional Brain Connectivity Studies",
+                        "score": 0.9998999834060669,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2805",
+                            "display_name": "Cognitive Neuroscience"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10378",
+                        "display_name": "Advanced MRI Techniques and Applications",
+                        "score": 0.9998000264167786,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2741",
+                            "display_name": "Radiology, Nuclear Medicine and Imaging"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10522",
+                        "display_name": "Medical Imaging Techniques and Applications",
+                        "score": 0.9979000091552734,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2741",
+                            "display_name": "Radiology, Nuclear Medicine and Imaging"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/suite",
+                        "display_name": "Suite",
+                        "score": 0.8634668588638306
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5837714076042175
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-suite",
+                        "display_name": "Software suite",
+                        "score": 0.5761621594429016
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5575392246246338
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/layer",
+                        "display_name": "Layer (electronics)",
+                        "score": 0.5292206406593323
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.1610870659351349
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/geography",
+                        "display_name": "Geography",
+                        "score": 0.08433607220649719
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/materials-science",
+                        "display_name": "Materials science",
+                        "score": 0.07560119032859802
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/archaeology",
+                        "display_name": "Archaeology",
+                        "score": 0.04766842722892761
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/nanotechnology",
+                        "display_name": "Nanotechnology",
+                        "score": 0.03876253962516785
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C79581498",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+                        "display_name": "Suite",
+                        "level": 2,
+                        "score": 0.8634668588638306
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5837714076042175
+                    },
+                    {
+                        "id": "https://openalex.org/C2778736646",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1143070",
+                        "display_name": "Software suite",
+                        "level": 3,
+                        "score": 0.5761621594429016
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5575392246246338
+                    },
+                    {
+                        "id": "https://openalex.org/C2779227376",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6505497",
+                        "display_name": "Layer (electronics)",
+                        "level": 2,
+                        "score": 0.5292206406593323
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.1610870659351349
+                    },
+                    {
+                        "id": "https://openalex.org/C205649164",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1071",
+                        "display_name": "Geography",
+                        "level": 0,
+                        "score": 0.08433607220649719
+                    },
+                    {
+                        "id": "https://openalex.org/C192562407",
+                        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+                        "display_name": "Materials science",
+                        "level": 0,
+                        "score": 0.07560119032859802
+                    },
+                    {
+                        "id": "https://openalex.org/C166957645",
+                        "wikidata": "https://www.wikidata.org/wiki/Q23498",
+                        "display_name": "Archaeology",
+                        "level": 1,
+                        "score": 0.04766842722892761
+                    },
+                    {
+                        "id": "https://openalex.org/C171250308",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11468",
+                        "display_name": "Nanotechnology",
+                        "level": 1,
+                        "score": 0.03876253962516785
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000502",
+                        "qualifier_name": "physiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059907",
+                        "descriptor_name": "Functional Neuroimaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 7,
+                "locations": [
+                    {
+                        "id": "doi:10.1016/j.neuroimage.2021.118091",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S103225281",
+                            "display_name": "NeuroImage",
+                            "issn_l": "1053-8119",
+                            "issn": [
+                                "1053-8119",
+                                "1095-9572"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320990",
+                            "host_organization_name": "Elsevier BV",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320990"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Elsevier BV"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NeuroImage",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33991698",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33991698",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NeuroImage",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire/294af47f-38ff-41cd-bc50-0bb0649c72f7",
+                        "is_oa": true,
+                        "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/294af47f-38ff-41cd-bc50-0bb0649c72f7",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402616",
+                            "display_name": "Research Publications (Maastricht University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I34352273",
+                            "host_organization_name": "Maastricht University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I34352273"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Huber, L R, Poser, B A, Bandettini, P A, Arora, K, Wagstyl, K, Cho, S, Goense, J, Nothnagel, N, Morgan, A T, van den Hurk, J, M\u00fcller, A K, Reynolds, R C, Glen, D R, Goebel, R & Gulban, O F 2021, 'LayNii : A software suite for layer-fMRI', Neuroimage, vol. 237, 118091, pp. 1-29. https://doi.org/10.1016/j.neuroimage.2021.118091",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:eprints.gla.ac.uk:303982",
+                        "is_oa": true,
+                        "landing_page_url": null,
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4210235606",
+                            "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+                            "issn_l": "2622-8912",
+                            "issn": [
+                                "2622-8912",
+                                "2622-8920"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "acceptedVersion",
+                        "is_accepted": true,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Articles"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:af11e955ff2346acb47332512ef5d0ec",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/af11e955ff2346acb47332512ef5d0ec",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "NeuroImage, Vol 237, Iss , Pp 118091- (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:publikationen.ub.uni-frankfurt.de:63075",
+                        "is_oa": true,
+                        "landing_page_url": "http://publikationen.ub.uni-frankfurt.de/frontdoor/index/index/docId/63075",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400432",
+                            "display_name": "Publication Server of Goethe University Frankfurt am Main (Goethe University Frankfurt)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I114090438",
+                            "host_organization_name": "Goethe University Frankfurt",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I114090438"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7615890",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7615890",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Neuroimage",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1016/j.neuroimage.2021.118091",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.118091",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S103225281",
+                        "display_name": "NeuroImage",
+                        "issn_l": "1053-8119",
+                        "issn": [
+                            "1053-8119",
+                            "1095-9572"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320990",
+                        "host_organization_name": "Elsevier BV",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320990"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Elsevier BV"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NeuroImage",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1606837972",
+                        "display_name": null,
+                        "funder_award_id": "ZIA-MH002783",
+                        "funder_id": "https://openalex.org/F4320337346",
+                        "funder_display_name": "National Institute of Mental Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G2508945630",
+                        "display_name": null,
+                        "funder_award_id": "MR/N008537/1",
+                        "funder_id": "https://openalex.org/F4320334626",
+                        "funder_display_name": "Medical Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G358049434",
+                        "display_name": null,
+                        "funder_award_id": "R01MH/111444",
+                        "funder_id": "https://openalex.org/F4320337346",
+                        "funder_display_name": "National Institute of Mental Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G4688460240",
+                        "display_name": "Laminar fMRI and resting state fMRI in the somatosensory system - effect of peripheral nerve injury on cortical circuits",
+                        "funder_award_id": "MR/R005745/1",
+                        "funder_id": "https://openalex.org/F4320334626",
+                        "funder_display_name": "Medical Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G4733314678",
+                        "display_name": null,
+                        "funder_award_id": "ERC-2010-AdG 269853",
+                        "funder_id": "https://openalex.org/F4320338335",
+                        "funder_display_name": "H2020 European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G4912065892",
+                        "display_name": null,
+                        "funder_award_id": "MR/R005745/1",
+                        "funder_id": "https://openalex.org/F4320334626",
+                        "funder_display_name": "Medical Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G5686360218",
+                        "display_name": null,
+                        "funder_award_id": "MR/N003403/1",
+                        "funder_id": "https://openalex.org/F4320334626",
+                        "funder_display_name": "Medical Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G7449791479",
+                        "display_name": null,
+                        "funder_award_id": "FP7-ICT-2013-FET-F/604102",
+                        "funder_id": "https://openalex.org/F4320334678",
+                        "funder_display_name": "European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G8259981375",
+                        "display_name": null,
+                        "funder_award_id": "215901/Z/19",
+                        "funder_id": "https://openalex.org/F4320311904",
+                        "funder_display_name": "Wellcome Trust"
+                    },
+                    {
+                        "id": "https://openalex.org/G8657498471",
+                        "display_name": "The UK7T Network: developing the ultra-high field MRI platform for biomedical research.",
+                        "funder_award_id": "MR/N008537/1",
+                        "funder_id": "https://openalex.org/F4320334626",
+                        "funder_display_name": "Medical Research Council"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320311904",
+                        "display_name": "Wellcome Trust",
+                        "ror": "https://ror.org/029chgv08"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320319990",
+                        "display_name": "National Institute for Health and Care Research",
+                        "ror": "https://ror.org/0187kwz08"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332161",
+                        "display_name": "National Institutes of Health",
+                        "ror": "https://ror.org/01cwqze88"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334626",
+                        "display_name": "Medical Research Council",
+                        "ror": "https://ror.org/03x94j517"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334678",
+                        "display_name": "European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320337346",
+                        "display_name": "National Institute of Mental Health",
+                        "ror": "https://ror.org/04xeg9z08"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338335",
+                        "display_name": "H2020 European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 132,
+                "referenced_works": [
+                    "https://openalex.org/W910660817",
+                    "https://openalex.org/W1855614323",
+                    "https://openalex.org/W1865036235",
+                    "https://openalex.org/W1919395887",
+                    "https://openalex.org/W1925396657",
+                    "https://openalex.org/W1935171607",
+                    "https://openalex.org/W1937872394",
+                    "https://openalex.org/W1970928383",
+                    "https://openalex.org/W1989266964",
+                    "https://openalex.org/W1992952800",
+                    "https://openalex.org/W2000790011",
+                    "https://openalex.org/W2009985448",
+                    "https://openalex.org/W2026260729",
+                    "https://openalex.org/W2028033087",
+                    "https://openalex.org/W2037192432",
+                    "https://openalex.org/W2039623954",
+                    "https://openalex.org/W2041045861",
+                    "https://openalex.org/W2042243302",
+                    "https://openalex.org/W2048911249",
+                    "https://openalex.org/W2062819254",
+                    "https://openalex.org/W2064968052",
+                    "https://openalex.org/W2069734928",
+                    "https://openalex.org/W2074036832",
+                    "https://openalex.org/W2078462329",
+                    "https://openalex.org/W2085407877",
+                    "https://openalex.org/W2096496735",
+                    "https://openalex.org/W2096701050",
+                    "https://openalex.org/W2099046646",
+                    "https://openalex.org/W2113916316",
+                    "https://openalex.org/W2117140276",
+                    "https://openalex.org/W2126018978",
+                    "https://openalex.org/W2127890285",
+                    "https://openalex.org/W2134718188",
+                    "https://openalex.org/W2137676365",
+                    "https://openalex.org/W2142467442",
+                    "https://openalex.org/W2150448849",
+                    "https://openalex.org/W2166325326",
+                    "https://openalex.org/W2172043203",
+                    "https://openalex.org/W2204971839",
+                    "https://openalex.org/W2290212599",
+                    "https://openalex.org/W2293135833",
+                    "https://openalex.org/W2297915641",
+                    "https://openalex.org/W2438753676",
+                    "https://openalex.org/W2460298459",
+                    "https://openalex.org/W2467177553",
+                    "https://openalex.org/W2504912000",
+                    "https://openalex.org/W2546515806",
+                    "https://openalex.org/W2549492489",
+                    "https://openalex.org/W2551237976",
+                    "https://openalex.org/W2585024384",
+                    "https://openalex.org/W2588185719",
+                    "https://openalex.org/W2599745456",
+                    "https://openalex.org/W2606122882",
+                    "https://openalex.org/W2607265129",
+                    "https://openalex.org/W2608349373",
+                    "https://openalex.org/W2614034520",
+                    "https://openalex.org/W2737093872",
+                    "https://openalex.org/W2739367073",
+                    "https://openalex.org/W2774953329",
+                    "https://openalex.org/W2787773054",
+                    "https://openalex.org/W2789852756",
+                    "https://openalex.org/W2793288166",
+                    "https://openalex.org/W2801394998",
+                    "https://openalex.org/W2802076729",
+                    "https://openalex.org/W2806827043",
+                    "https://openalex.org/W2883121292",
+                    "https://openalex.org/W2885609555",
+                    "https://openalex.org/W2886798927",
+                    "https://openalex.org/W2890332633",
+                    "https://openalex.org/W2894009023",
+                    "https://openalex.org/W2905368799",
+                    "https://openalex.org/W2912544111",
+                    "https://openalex.org/W2916918396",
+                    "https://openalex.org/W2940150911",
+                    "https://openalex.org/W2946484570",
+                    "https://openalex.org/W2950587369",
+                    "https://openalex.org/W2950739346",
+                    "https://openalex.org/W2951054376",
+                    "https://openalex.org/W2951583631",
+                    "https://openalex.org/W2956017375",
+                    "https://openalex.org/W2973240128",
+                    "https://openalex.org/W2974310305",
+                    "https://openalex.org/W2974880216",
+                    "https://openalex.org/W2977883299",
+                    "https://openalex.org/W2983467498",
+                    "https://openalex.org/W2984991252",
+                    "https://openalex.org/W2994262411",
+                    "https://openalex.org/W2995619261",
+                    "https://openalex.org/W3000614361",
+                    "https://openalex.org/W3001401881",
+                    "https://openalex.org/W3005986676",
+                    "https://openalex.org/W3007823925",
+                    "https://openalex.org/W3011966406",
+                    "https://openalex.org/W3014930333",
+                    "https://openalex.org/W3015877343",
+                    "https://openalex.org/W3023173447",
+                    "https://openalex.org/W3032928286",
+                    "https://openalex.org/W3033275828",
+                    "https://openalex.org/W3036497252",
+                    "https://openalex.org/W3036745480",
+                    "https://openalex.org/W3047254709",
+                    "https://openalex.org/W3087472936",
+                    "https://openalex.org/W3092715419",
+                    "https://openalex.org/W3094540277",
+                    "https://openalex.org/W3096356411",
+                    "https://openalex.org/W3104076566",
+                    "https://openalex.org/W3105395007",
+                    "https://openalex.org/W3105669385",
+                    "https://openalex.org/W3128157455",
+                    "https://openalex.org/W3129465862",
+                    "https://openalex.org/W4225905324",
+                    "https://openalex.org/W4241074797",
+                    "https://openalex.org/W6624131412",
+                    "https://openalex.org/W6719688891",
+                    "https://openalex.org/W6729332570",
+                    "https://openalex.org/W6756758549",
+                    "https://openalex.org/W6757575114",
+                    "https://openalex.org/W6760099825",
+                    "https://openalex.org/W6761419906",
+                    "https://openalex.org/W6765491739",
+                    "https://openalex.org/W6767821747",
+                    "https://openalex.org/W6769659719",
+                    "https://openalex.org/W6772042518",
+                    "https://openalex.org/W6773759547",
+                    "https://openalex.org/W6775363148",
+                    "https://openalex.org/W6779819554",
+                    "https://openalex.org/W6781122015",
+                    "https://openalex.org/W6784175020",
+                    "https://openalex.org/W6784763829",
+                    "https://openalex.org/W6785565232",
+                    "https://openalex.org/W6785687171",
+                    "https://openalex.org/W6786387265"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1516095885",
+                    "https://openalex.org/W2158573927",
+                    "https://openalex.org/W4231704780",
+                    "https://openalex.org/W2108921801",
+                    "https://openalex.org/W4206079007",
+                    "https://openalex.org/W2398058485",
+                    "https://openalex.org/W254965819",
+                    "https://openalex.org/W4205365843",
+                    "https://openalex.org/W3156231268",
+                    "https://openalex.org/W3101967630"
+                ],
+                "abstract_inverted_index": {
+                    "High-resolution": [
+                        0
+                    ],
+                    "fMRI": [
+                        1
+                    ],
+                    "in": [
+                        2,
+                        61,
+                        95,
+                        129,
+                        145
+                    ],
+                    "the": [
+                        3,
+                        38,
+                        135,
+                        146
+                    ],
+                    "sub-millimeter": [
+                        4,
+                        175
+                    ],
+                    "regime": [
+                        5
+                    ],
+                    "allows": [
+                        6
+                    ],
+                    "researchers": [
+                        7
+                    ],
+                    "to": [
+                        8,
+                        25
+                    ],
+                    "resolve": [
+                        9
+                    ],
+                    "brain": [
+                        10,
+                        36
+                    ],
+                    "activity": [
+                        11
+                    ],
+                    "across": [
+                        12,
+                        35
+                    ],
+                    "cortical": [
+                        13
+                    ],
+                    "layers": [
+                        14
+                    ],
+                    "and": [
+                        15,
+                        34,
+                        54,
+                        97,
+                        101,
+                        108,
+                        120,
+                        123,
+                        143
+                    ],
+                    "columns": [
+                        16
+                    ],
+                    "non-invasively.": [
+                        17
+                    ],
+                    "While": [
+                        18
+                    ],
+                    "these": [
+                        19
+                    ],
+                    "high-resolution": [
+                        20
+                    ],
+                    "data": [
+                        21,
+                        40,
+                        115,
+                        152
+                    ],
+                    "make": [
+                        22
+                    ],
+                    "it": [
+                        23
+                    ],
+                    "possible": [
+                        24
+                    ],
+                    "address": [
+                        26
+                    ],
+                    "novel": [
+                        27
+                    ],
+                    "questions": [
+                        28
+                    ],
+                    "of": [
+                        29,
+                        65,
+                        90,
+                        134,
+                        139,
+                        150,
+                        167,
+                        172,
+                        181
+                    ],
+                    "directional": [
+                        30
+                    ],
+                    "information": [
+                        31
+                    ],
+                    "flow": [
+                        32
+                    ],
+                    "within": [
+                        33
+                    ],
+                    "circuits,": [
+                        37
+                    ],
+                    "corresponding": [
+                        39
+                    ],
+                    "analyses": [
+                        41,
+                        180
+                    ],
+                    "are": [
+                        42
+                    ],
+                    "challenged": [
+                        43
+                    ],
+                    "by": [
+                        44
+                    ],
+                    "MRI": [
+                        45
+                    ],
+                    "artifacts,": [
+                        46
+                    ],
+                    "including": [
+                        47
+                    ],
+                    "image": [
+                        48,
+                        50
+                    ],
+                    "blurring,": [
+                        49
+                    ],
+                    "distortions,": [
+                        51
+                    ],
+                    "low": [
+                        52
+                    ],
+                    "SNR,": [
+                        53
+                    ],
+                    "restricted": [
+                        55
+                    ],
+                    "coverage.": [
+                        56
+                    ],
+                    "These": [
+                        57
+                    ],
+                    "challenges": [
+                        58
+                    ],
+                    "often": [
+                        59
+                    ],
+                    "result": [
+                        60
+                    ],
+                    "insufficient": [
+                        62
+                    ],
+                    "spatial": [
+                        63
+                    ],
+                    "accuracy": [
+                        64
+                    ],
+                    "conventional": [
+                        66
+                    ],
+                    "analysis": [
+                        67,
+                        160
+                    ],
+                    "pipelines.": [
+                        68
+                    ],
+                    "Here": [
+                        69
+                    ],
+                    "we": [
+                        70
+                    ],
+                    "introduce": [
+                        71
+                    ],
+                    "a": [
+                        72,
+                        88
+                    ],
+                    "new": [
+                        73
+                    ],
+                    "software": [
+                        74,
+                        131
+                    ],
+                    "suite": [
+                        75
+                    ],
+                    "that": [
+                        76,
+                        116
+                    ],
+                    "is": [
+                        77,
+                        87,
+                        98,
+                        111
+                    ],
+                    "specifically": [
+                        78
+                    ],
+                    "designed": [
+                        79,
+                        112
+                    ],
+                    "for": [
+                        80,
+                        105,
+                        113
+                    ],
+                    "layer-specific": [
+                        81,
+                        162
+                    ],
+                    "functional": [
+                        82,
+                        151
+                    ],
+                    "MRI:": [
+                        83
+                    ],
+                    "LayNii.": [
+                        84
+                    ],
+                    "This": [
+                        85
+                    ],
+                    "toolbox": [
+                        86
+                    ],
+                    "collection": [
+                        89
+                    ],
+                    "command-line": [
+                        91
+                    ],
+                    "executable": [
+                        92
+                    ],
+                    "programs": [
+                        93,
+                        138
+                    ],
+                    "written": [
+                        94
+                    ],
+                    "C/C++": [
+                        96
+                    ],
+                    "distributed": [
+                        99
+                    ],
+                    "opensource": [
+                        100
+                    ],
+                    "as": [
+                        102,
+                        153,
+                        155,
+                        177,
+                        179
+                    ],
+                    "pre-compiled": [
+                        103
+                    ],
+                    "binaries": [
+                        104
+                    ],
+                    "Linux,": [
+                        106
+                    ],
+                    "Windows,": [
+                        107
+                    ],
+                    "macOS.": [
+                        109
+                    ],
+                    "LayNii": [
+                        110,
+                        140
+                    ],
+                    "layer-fMRI": [
+                        114,
+                        158
+                    ],
+                    "suffer": [
+                        117
+                    ],
+                    "from": [
+                        118
+                    ],
+                    "SNR": [
+                        119
+                    ],
+                    "coverage": [
+                        121
+                    ],
+                    "constraints": [
+                        122
+                    ],
+                    "thus": [
+                        124
+                    ],
+                    "cannot": [
+                        125
+                    ],
+                    "be": [
+                        126
+                    ],
+                    "straightforwardly": [
+                        127
+                    ],
+                    "analyzed": [
+                        128
+                    ],
+                    "alternative": [
+                        130
+                    ],
+                    "packages.": [
+                        132
+                    ],
+                    "Some": [
+                        133
+                    ],
+                    "most": [
+                        136
+                    ],
+                    "popular": [
+                        137
+                    ],
+                    "contain": [
+                        141
+                    ],
+                    "'layerification'": [
+                        142
+                    ],
+                    "columnarization": [
+                        144
+                    ],
+                    "native": [
+                        147
+                    ],
+                    "voxel": [
+                        148
+                    ],
+                    "space": [
+                        149
+                    ],
+                    "well": [
+                        154,
+                        178
+                    ],
+                    "many": [
+                        156
+                    ],
+                    "other": [
+                        157
+                    ],
+                    "specific": [
+                        159
+                    ],
+                    "tasks:": [
+                        161
+                    ],
+                    "smoothing,": [
+                        163
+                    ],
+                    "model-based": [
+                        164
+                    ],
+                    "vein": [
+                        165
+                    ],
+                    "mitigation": [
+                        166
+                    ],
+                    "GE-BOLD": [
+                        168
+                    ],
+                    "data,": [
+                        169
+                    ],
+                    "quality": [
+                        170
+                    ],
+                    "assessment": [
+                        171
+                    ],
+                    "artifact": [
+                        173
+                    ],
+                    "dominated": [
+                        174
+                    ],
+                    "fMRI,": [
+                        176
+                    ],
+                    "VASO": [
+                        182
+                    ],
+                    "data.": [
+                        183
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 16
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 37
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 43
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 38
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 19
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-19T08:33:51.333923",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "LayNii: A software suite for layer-fMRI",
+                "doi": "10.1016/j.neuroimage.2021.118091",
+                "pmid": "33991698",
+                "pmc": "PMC7615890",
+                "isbns": [],
+                "altmetric_jid": "4f6fa50c3cf058f610003196",
+                "issns": [
+                    "1053-8119",
+                    "1095-9572"
+                ],
+                "journal": "NeuroImage",
+                "cohorts": {
+                    "pub": 16,
+                    "sci": 12,
+                    "doc": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 27703685,
+                        "mean": 10.834038724090316,
+                        "rank": 2410797,
+                        "pct": 91,
+                        "higher_than": 25291511
+                    },
+                    "journal": {
+                        "count": 12522,
+                        "mean": 11.352715221210671,
+                        "rank": 1644,
+                        "pct": 86,
+                        "higher_than": 10876
+                    },
+                    "similar_age_3m": {
+                        "count": 462082,
+                        "mean": 16.211218839946188,
+                        "rank": 56602,
+                        "pct": 87,
+                        "higher_than": 405395
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 264,
+                        "mean": 14.638628787878789,
+                        "rank": 49,
+                        "pct": 81,
+                        "higher_than": 215
+                    }
+                },
+                "authors": [
+                    "Laurentius Huber",
+                    "Benedikt A. Poser",
+                    "Peter A. Bandettini",
+                    "Kabir Arora",
+                    "Konrad Wagstyl",
+                    "Shinho Cho",
+                    "Jozien Goense",
+                    "Nils Nothnagel",
+                    "Andrew Tyler Morgan",
+                    "Job van den Hurk",
+                    "Anna K M\u00fcller",
+                    "Richard C. Reynolds",
+                    "Daniel R. Glen",
+                    "Rainer Goebel",
+                    "Omer Faruk Gulban"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1627776000,
+                "epubdate": 1620777600,
+                "dimensions_publication_id": "pub.1137969923",
+                "altmetric_id": 105765469,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Medical And Health Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Psychology And Cognitive Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 30,
+                "cited_by_tweeters_count": 29,
+                "cited_by_accounts_count": 29,
+                "last_updated": 1621513113,
+                "score": 16.15,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 16.15
+                },
+                "url": "http://dx.doi.org/10.1016/j.neuroimage.2021.118091",
+                "added_on": 1620842313,
+                "published_on": 1620777600,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Neuroscience"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "125",
+                    "connotea": "0"
+                },
+                "readers_count": 125,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=17&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=17&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=17&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=105765469"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 5,
+            "total_ccn": 4,
+            "avg_ccn": 1.0,
+            "nloc_per_file": 0.16,
+            "duplicate_rate": 3.44
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,2581 @@
+{
+    "AiZynthFinder": {
+        "tool_name": "AiZynthFinder",
+        "biotools": {
+            "name": "AiZynthFinder",
+            "description": "Aizynthfinder is a tool for retrosynthetic planning. The algorithm is based on a Monte Carlo tree search that recursively breaks down a molecule to purchasable precursors. The tree search is guided by a policy that suggests possible precursors by utilizing a neural network trained on a library of known reaction templates.",
+            "homepage": "http://www.github.com/MolecularAI/aizynthfinder",
+            "biotoolsID": "aizynthfinder",
+            "biotoolsCURIE": "biotools:aizynthfinder",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [],
+            "toolType": [
+                "Desktop application",
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3047",
+                    "term": "Molecular biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3314",
+                    "term": "Chemistry"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://molecularai.github.io/aizynthfinder/html/index.html",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.26434/CHEMRXIV.12465371.V1",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "Kigaard",
+            "additionDate": "2021-01-18T09:34:30Z",
+            "lastUpdate": "2021-01-21T16:16:36Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 271546468,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNzE1NDY0Njg=",
+                "name": "aizynthfinder",
+                "full_name": "MolecularAI/aizynthfinder",
+                "private": false,
+                "owner": {
+                    "login": "MolecularAI",
+                    "id": 62212926,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYyMjEyOTI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/62212926?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/MolecularAI",
+                    "html_url": "https://github.com/MolecularAI",
+                    "followers_url": "https://api.github.com/users/MolecularAI/followers",
+                    "following_url": "https://api.github.com/users/MolecularAI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/MolecularAI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/MolecularAI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/MolecularAI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/MolecularAI/orgs",
+                    "repos_url": "https://api.github.com/users/MolecularAI/repos",
+                    "events_url": "https://api.github.com/users/MolecularAI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/MolecularAI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/MolecularAI/aizynthfinder",
+                "description": "A tool for retrosynthetic planning",
+                "fork": false,
+                "url": "https://api.github.com/repos/MolecularAI/aizynthfinder",
+                "forks_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/forks",
+                "keys_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/teams",
+                "hooks_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/hooks",
+                "issue_events_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/events",
+                "assignees_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/tags",
+                "blobs_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/languages",
+                "stargazers_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/stargazers",
+                "contributors_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/contributors",
+                "subscribers_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/subscribers",
+                "subscription_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/subscription",
+                "commits_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/merges",
+                "archive_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/downloads",
+                "issues_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/labels{/name}",
+                "releases_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/deployments",
+                "created_at": "2020-06-11T12:57:07Z",
+                "updated_at": "2026-05-27T01:24:42Z",
+                "pushed_at": "2026-04-13T08:06:57Z",
+                "git_url": "git://github.com/MolecularAI/aizynthfinder.git",
+                "ssh_url": "git@github.com:MolecularAI/aizynthfinder.git",
+                "clone_url": "https://github.com/MolecularAI/aizynthfinder.git",
+                "svn_url": "https://github.com/MolecularAI/aizynthfinder",
+                "homepage": "https://molecularai.github.io/aizynthfinder/",
+                "size": 4227,
+                "stargazers_count": 839,
+                "watchers_count": 839,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 177,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 9,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "astrazeneca",
+                    "chemical-reactions",
+                    "cheminformatics",
+                    "monte-carlo-tree-search",
+                    "neural-networks",
+                    "reaction-informatics"
+                ],
+                "visibility": "public",
+                "forks": 177,
+                "open_issues": 9,
+                "watchers": 839,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "MolecularAI",
+                    "id": 62212926,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYyMjEyOTI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/62212926?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/MolecularAI",
+                    "html_url": "https://github.com/MolecularAI",
+                    "followers_url": "https://api.github.com/users/MolecularAI/followers",
+                    "following_url": "https://api.github.com/users/MolecularAI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/MolecularAI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/MolecularAI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/MolecularAI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/MolecularAI/orgs",
+                    "repos_url": "https://api.github.com/users/MolecularAI/repos",
+                    "events_url": "https://api.github.com/users/MolecularAI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/MolecularAI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 177,
+                "subscribers_count": 27
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "aizynthfinder",
+                    "type": "tree"
+                },
+                {
+                    "path": "contrib",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "env-dev.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "plugins",
+                    "type": "tree"
+                },
+                {
+                    "path": "poetry.lock",
+                    "type": "blob"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "tasks.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "SGenheden",
+                    "contributions": 95
+                },
+                {
+                    "login": "Lakshidaa",
+                    "contributions": 36
+                },
+                {
+                    "login": "dependabot[bot]",
+                    "contributions": 4
+                },
+                {
+                    "login": "0x2b3bfa0",
+                    "contributions": 3
+                },
+                {
+                    "login": "n-yoshikawa",
+                    "contributions": 1
+                },
+                {
+                    "login": "churnikov",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 200,
+                    "title": "how could i get the full_uspto_03_05_19_unique_templates.hdf5 corresponding with uspto_model.onnx",
+                    "created_at": "2026-01-22T09:09:45Z",
+                    "closed_at": "2026-04-13T08:05:15Z"
+                },
+                {
+                    "number": 196,
+                    "title": "Adding a Software License",
+                    "created_at": "2025-12-03T11:19:58Z",
+                    "closed_at": "2025-12-05T14:13:10Z"
+                },
+                {
+                    "number": 195,
+                    "title": "retrain filter policy and use in AizynthFinder",
+                    "created_at": "2025-10-24T08:35:20Z",
+                    "closed_at": "2025-12-09T08:19:42Z"
+                },
+                {
+                    "number": 194,
+                    "title": "Problem: cannot enable executable stack as shared object requires: Invalid argument",
+                    "created_at": "2025-09-08T18:24:55Z",
+                    "closed_at": "2025-12-09T08:18:10Z"
+                },
+                {
+                    "number": 193,
+                    "title": "running ```poetry install --all-extras```, there raise an error \"zipfile-deflate64 (0.2.0) not supporting PEP 517 builds\"",
+                    "created_at": "2025-09-01T07:14:54Z",
+                    "closed_at": "2026-02-09T09:07:19Z"
+                },
+                {
+                    "number": 192,
+                    "title": "How to get the file \u201cuspto_expansion.onnx\u201d,\"uspto_templates.csv.gz\" and \"zinc_stock.hdf5\"",
+                    "created_at": "2025-08-29T09:38:19Z",
+                    "closed_at": "2025-12-09T08:17:07Z"
+                },
+                {
+                    "number": 191,
+                    "title": "Reaction conditions",
+                    "created_at": "2025-08-18T08:02:15Z",
+                    "closed_at": "2025-12-09T08:16:54Z"
+                },
+                {
+                    "number": 190,
+                    "title": "use cases",
+                    "created_at": "2025-08-01T08:52:46Z",
+                    "closed_at": "2025-12-09T08:16:13Z"
+                },
+                {
+                    "number": 189,
+                    "title": "python version",
+                    "created_at": "2025-07-08T07:03:44Z",
+                    "closed_at": "2025-12-09T09:16:26Z"
+                },
+                {
+                    "number": 188,
+                    "title": "Retrain aizynthfinder",
+                    "created_at": "2025-07-08T05:33:37Z",
+                    "closed_at": "2025-12-09T08:15:22Z"
+                },
+                {
+                    "number": 185,
+                    "title": "Obtain the ONNX and template of Chemformer/MHNreact/LocalRetro",
+                    "created_at": "2025-06-26T09:25:39Z",
+                    "closed_at": "2026-04-13T08:04:47Z"
+                },
+                {
+                    "number": 184,
+                    "title": "Request: Access to Pre-trained Model Files (uspto_model.onnx, templates, zinc_stock.hdf5)",
+                    "created_at": "2025-05-19T10:33:40Z",
+                    "closed_at": "2025-07-18T09:35:43Z"
+                },
+                {
+                    "number": 183,
+                    "title": "Compatibility error with Python 3.9 due to | operator in molbloom + incorrect documentation requirements",
+                    "created_at": "2025-04-12T11:50:02Z",
+                    "closed_at": "2025-12-09T09:16:26Z"
+                },
+                {
+                    "number": 180,
+                    "title": "the aizynthfinder.training is not in the folder and how can i train own data?",
+                    "created_at": "2025-02-23T06:23:34Z",
+                    "closed_at": "2025-03-31T12:29:30Z"
+                },
+                {
+                    "number": 179,
+                    "title": "How can I use own reaction dataset to create model. hdf5 and template.hdf5 ( i.e. completely new)? After that I wants to use it in config.yml. Requesting you to give some example/steps.  Thanks in advance",
+                    "created_at": "2025-02-23T03:49:08Z",
+                    "closed_at": "2025-03-31T12:30:07Z"
+                },
+                {
+                    "number": 178,
+                    "title": "Issue with Jupyter GUI",
+                    "created_at": "2025-02-07T18:05:27Z",
+                    "closed_at": "2025-02-07T19:07:04Z"
+                },
+                {
+                    "number": 170,
+                    "title": "A issue about running the expander.",
+                    "created_at": "2024-11-27T11:22:32Z",
+                    "closed_at": "2025-01-02T07:22:38Z"
+                },
+                {
+                    "number": 169,
+                    "title": "Pydantic version",
+                    "created_at": "2024-11-20T10:58:19Z",
+                    "closed_at": "2024-12-05T12:55:29Z"
+                },
+                {
+                    "number": 168,
+                    "title": "Issues creating config file in ringbreaker_templates",
+                    "created_at": "2024-10-24T19:16:35Z",
+                    "closed_at": "2025-01-02T07:22:24Z"
+                },
+                {
+                    "number": 167,
+                    "title": "Interpret results using python",
+                    "created_at": "2024-10-24T05:18:08Z",
+                    "closed_at": "2025-01-02T07:22:13Z"
+                },
+                {
+                    "number": 166,
+                    "title": "Acceleration on AiZynthFinder",
+                    "created_at": "2024-10-13T09:20:47Z",
+                    "closed_at": "2024-10-20T13:54:31Z"
+                },
+                {
+                    "number": 165,
+                    "title": "Confidence Score",
+                    "created_at": "2024-08-22T22:29:49Z",
+                    "closed_at": "2024-09-11T15:11:46Z"
+                },
+                {
+                    "number": 164,
+                    "title": "Error while using `route cost` scorer",
+                    "created_at": "2024-08-22T22:03:00Z",
+                    "closed_at": "2024-08-23T07:58:23Z"
+                },
+                {
+                    "number": 163,
+                    "title": "Numpy 2.0 and GUI",
+                    "created_at": "2024-08-16T18:25:10Z",
+                    "closed_at": "2024-08-16T18:53:36Z"
+                },
+                {
+                    "number": 162,
+                    "title": "Tarball Version Needs Update for Python 3.10+",
+                    "created_at": "2024-07-29T16:50:14Z",
+                    "closed_at": "2024-12-04T15:33:41Z"
+                },
+                {
+                    "number": 161,
+                    "title": "Could not download stock files by \"download_public_data\"",
+                    "created_at": "2024-07-08T04:33:41Z",
+                    "closed_at": "2024-07-11T05:49:53Z"
+                },
+                {
+                    "number": 160,
+                    "title": "Confusion regarding output and options",
+                    "created_at": "2024-07-07T05:19:12Z",
+                    "closed_at": "2024-10-31T11:53:39Z"
+                },
+                {
+                    "number": 159,
+                    "title": "zsh: illegal hardware instruction  aizynthcli",
+                    "created_at": "2024-06-11T19:43:05Z",
+                    "closed_at": "2024-10-31T11:52:52Z"
+                },
+                {
+                    "number": 157,
+                    "title": "Regarding with the error from performing download_public_data my_folder",
+                    "created_at": "2024-05-24T03:28:28Z",
+                    "closed_at": "2024-12-04T15:34:24Z"
+                },
+                {
+                    "number": 154,
+                    "title": "regarding functional groups or protecting groups added with more reasonable or supervisable way ",
+                    "created_at": "2024-04-25T05:31:10Z",
+                    "closed_at": "2024-05-31T09:44:03Z"
+                },
+                {
+                    "number": 153,
+                    "title": "aizynthfinder process is killed after loading config.yml",
+                    "created_at": "2024-04-11T18:47:13Z",
+                    "closed_at": "2024-05-31T09:43:30Z"
+                },
+                {
+                    "number": 152,
+                    "title": "regarding ringbreaker template, neither _apply_with_rdchiral or _apply_with_rdkit return null reactants list",
+                    "created_at": "2024-04-09T08:13:27Z",
+                    "closed_at": "2024-04-25T03:02:03Z"
+                },
+                {
+                    "number": 151,
+                    "title": "Some Questions Regarding Expansion Strategies",
+                    "created_at": "2024-03-13T13:25:13Z",
+                    "closed_at": "2024-03-19T05:51:21Z"
+                },
+                {
+                    "number": 150,
+                    "title": "DEPRECATION problem when install the tool",
+                    "created_at": "2024-02-26T10:11:43Z",
+                    "closed_at": "2024-03-01T05:47:39Z"
+                },
+                {
+                    "number": 149,
+                    "title": "PolicyException: A QuickKerasFilter class needs to be initiated with keyword arguments: model\"",
+                    "created_at": "2024-02-20T01:56:34Z",
+                    "closed_at": "2024-02-22T08:23:48Z"
+                },
+                {
+                    "number": 144,
+                    "title": "The request for grouping sibling nodes for retro* algorithm",
+                    "created_at": "2023-12-06T07:18:35Z",
+                    "closed_at": "2024-11-27T00:49:58Z"
+                },
+                {
+                    "number": 140,
+                    "title": "parsing the json output",
+                    "created_at": "2023-10-18T17:07:57Z",
+                    "closed_at": "2023-12-05T15:08:16Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Error displaying widget in Jupyter notebook",
+                    "created_at": "2023-10-17T16:22:39Z",
+                    "closed_at": "2023-12-05T15:07:18Z"
+                },
+                {
+                    "number": 138,
+                    "title": "different result using python interface with using third party website",
+                    "created_at": "2023-09-25T20:08:33Z",
+                    "closed_at": "2023-09-27T20:43:14Z"
+                },
+                {
+                    "number": 136,
+                    "title": "create stock: Failed to convert  to inchi key. Probably due to sanitation.",
+                    "created_at": "2023-09-08T21:04:37Z",
+                    "closed_at": "2023-09-12T01:40:23Z"
+                },
+                {
+                    "number": 135,
+                    "title": "How to get raw dataset",
+                    "created_at": "2023-09-05T03:17:05Z",
+                    "closed_at": "2023-09-13T02:23:35Z"
+                },
+                {
+                    "number": 134,
+                    "title": "not work",
+                    "created_at": "2023-08-28T15:29:30Z",
+                    "closed_at": "2023-08-28T17:41:53Z"
+                },
+                {
+                    "number": 133,
+                    "title": "Incorrect labels in USPTO templates data",
+                    "created_at": "2023-08-24T13:29:09Z",
+                    "closed_at": "2023-10-20T12:01:20Z"
+                },
+                {
+                    "number": 131,
+                    "title": "Unable to open/create file hdf5 files",
+                    "created_at": "2023-08-04T01:59:13Z",
+                    "closed_at": "2023-08-20T10:39:29Z"
+                },
+                {
+                    "number": 130,
+                    "title": "Cant download the models  (automatically, through UI of figshare )",
+                    "created_at": "2023-07-27T12:27:17Z",
+                    "closed_at": "2023-09-11T11:51:39Z"
+                },
+                {
+                    "number": 128,
+                    "title": "Recurring Issue with Jupyter interface",
+                    "created_at": "2023-07-23T03:33:05Z",
+                    "closed_at": "2023-07-25T01:39:47Z"
+                },
+                {
+                    "number": 125,
+                    "title": "A question regarding cleaning training data with rxnutils package",
+                    "created_at": "2023-07-11T06:28:14Z",
+                    "closed_at": "2023-07-11T07:42:33Z"
+                },
+                {
+                    "number": 124,
+                    "title": "how to add stock molecules?",
+                    "created_at": "2023-07-05T19:35:32Z",
+                    "closed_at": "2023-08-28T05:08:08Z"
+                },
+                {
+                    "number": 123,
+                    "title": "A question regarding how to get template_hash column in trainning data?",
+                    "created_at": "2023-06-23T14:15:41Z",
+                    "closed_at": "2023-06-29T08:51:47Z"
+                },
+                {
+                    "number": 122,
+                    "title": "A question regarding the modeling generalization ability",
+                    "created_at": "2023-06-23T13:51:20Z",
+                    "closed_at": "2023-06-29T08:52:46Z"
+                },
+                {
+                    "number": 121,
+                    "title": "Can't Install aizynthfinder",
+                    "created_at": "2023-06-08T05:46:59Z",
+                    "closed_at": "2023-07-06T14:46:04Z"
+                },
+                {
+                    "number": 117,
+                    "title": "Memory use accumulates when analysing numerous SMILES",
+                    "created_at": "2023-05-15T16:02:26Z",
+                    "closed_at": "2023-05-24T12:25:55Z"
+                },
+                {
+                    "number": 115,
+                    "title": "question about python interface",
+                    "created_at": "2023-04-20T22:51:10Z",
+                    "closed_at": "2023-04-21T19:39:57Z"
+                },
+                {
+                    "number": 114,
+                    "title": "error when using CLI for molecules from file",
+                    "created_at": "2023-04-20T22:21:00Z",
+                    "closed_at": "2023-04-21T19:40:55Z"
+                },
+                {
+                    "number": 113,
+                    "title": "can not see json file for tree",
+                    "created_at": "2023-04-18T20:32:20Z",
+                    "closed_at": "2023-04-21T19:42:04Z"
+                },
+                {
+                    "number": 111,
+                    "title": "AiZynthFinder does not work.",
+                    "created_at": "2023-04-11T08:38:31Z",
+                    "closed_at": "2023-04-12T02:31:28Z"
+                },
+                {
+                    "number": 110,
+                    "title": "MCTS not giving what is expected",
+                    "created_at": "2023-03-29T03:22:52Z",
+                    "closed_at": "2023-04-14T00:54:16Z"
+                },
+                {
+                    "number": 108,
+                    "title": "Colab Notebook Import Error",
+                    "created_at": "2023-03-26T05:32:42Z",
+                    "closed_at": "2023-03-27T08:28:29Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Colab notebook doesn't work. rdkit not found",
+                    "created_at": "2023-01-25T11:55:02Z",
+                    "closed_at": "2023-03-27T07:01:38Z"
+                },
+                {
+                    "number": 100,
+                    "title": "Is there any code provided to retrain the template applicability filter policy?",
+                    "created_at": "2023-01-13T07:51:22Z",
+                    "closed_at": "2023-01-29T00:40:57Z"
+                },
+                {
+                    "number": 99,
+                    "title": "MacOS tensorflow",
+                    "created_at": "2022-12-25T23:35:02Z",
+                    "closed_at": "2023-06-01T08:24:26Z"
+                },
+                {
+                    "number": 98,
+                    "title": "Can't open uspto_templates.csv.gz",
+                    "created_at": "2022-12-15T07:58:43Z",
+                    "closed_at": "2022-12-15T08:11:12Z"
+                },
+                {
+                    "number": 94,
+                    "title": "Add documentation for aizynthcli output",
+                    "created_at": "2022-11-22T17:40:21Z",
+                    "closed_at": "2022-11-28T14:50:22Z"
+                },
+                {
+                    "number": 90,
+                    "title": "`train_expansion_keras_model` yields error in dimensions of logits and labels",
+                    "created_at": "2022-10-12T03:17:22Z",
+                    "closed_at": "2022-11-03T16:21:29Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Going over the max transforms limit ",
+                    "created_at": "2022-10-11T22:14:28Z",
+                    "closed_at": "2023-12-05T15:06:59Z"
+                },
+                {
+                    "number": 87,
+                    "title": "Problem with graphviz when running under a webserver environment",
+                    "created_at": "2022-09-30T20:38:13Z",
+                    "closed_at": "2022-11-28T15:04:23Z"
+                },
+                {
+                    "number": 85,
+                    "title": "Hierarchy routes image not displaying",
+                    "created_at": "2022-09-21T17:12:18Z",
+                    "closed_at": "2022-11-28T18:14:25Z"
+                },
+                {
+                    "number": 81,
+                    "title": "Problem with debugging simple linear policy network model",
+                    "created_at": "2022-08-14T11:28:01Z",
+                    "closed_at": "2022-09-27T10:54:54Z"
+                },
+                {
+                    "number": 80,
+                    "title": "How to train own data set?",
+                    "created_at": "2022-08-11T20:01:09Z",
+                    "closed_at": "2022-09-27T18:32:38Z"
+                },
+                {
+                    "number": 79,
+                    "title": "Progress is displayed using multiple bars with one iteration",
+                    "created_at": "2022-08-10T12:57:47Z",
+                    "closed_at": "2022-08-19T09:20:34Z"
+                },
+                {
+                    "number": 78,
+                    "title": "Using Voila to run the notebook",
+                    "created_at": "2022-08-02T12:39:56Z",
+                    "closed_at": "2022-12-11T17:56:52Z"
+                },
+                {
+                    "number": 76,
+                    "title": " ChemicalParserException: Number of reactants provided does not match number of reactant templates.",
+                    "created_at": "2022-07-28T05:52:06Z",
+                    "closed_at": "2022-08-02T08:03:59Z"
+                },
+                {
+                    "number": 75,
+                    "title": "about gpu",
+                    "created_at": "2022-07-21T03:38:14Z",
+                    "closed_at": "2022-07-22T06:26:40Z"
+                },
+                {
+                    "number": 74,
+                    "title": "error when installing the aizynthcli and aizynthapp tools ",
+                    "created_at": "2022-06-22T18:45:05Z",
+                    "closed_at": "2022-08-19T08:46:29Z"
+                },
+                {
+                    "number": 72,
+                    "title": "Mac OS Monterey",
+                    "created_at": "2022-06-06T13:42:58Z",
+                    "closed_at": "2022-06-23T11:49:59Z"
+                },
+                {
+                    "number": 69,
+                    "title": "TensorFlow library and AVX instructions error",
+                    "created_at": "2022-05-17T10:24:37Z",
+                    "closed_at": "2022-07-22T06:27:12Z"
+                },
+                {
+                    "number": 68,
+                    "title": "Scanner Error",
+                    "created_at": "2022-05-05T14:58:23Z",
+                    "closed_at": "2022-05-06T06:48:33Z"
+                },
+                {
+                    "number": 67,
+                    "title": "Viewing Reaction Tree",
+                    "created_at": "2022-04-26T18:24:03Z",
+                    "closed_at": "2022-04-28T09:57:19Z"
+                },
+                {
+                    "number": 66,
+                    "title": "Might be better to skip incorrect molecules?",
+                    "created_at": "2022-04-24T16:18:45Z",
+                    "closed_at": "2022-04-28T09:57:59Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Apple Silicon",
+                    "created_at": "2022-04-19T20:04:22Z",
+                    "closed_at": "2022-05-20T12:31:12Z"
+                },
+                {
+                    "number": 63,
+                    "title": "pandas warning",
+                    "created_at": "2022-04-19T06:21:28Z",
+                    "closed_at": "2022-04-28T09:58:10Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Simple Environment?",
+                    "created_at": "2022-03-31T16:37:35Z",
+                    "closed_at": "2022-04-06T15:02:38Z"
+                },
+                {
+                    "number": 59,
+                    "title": "Pytables Dependency Issue on Windows 11",
+                    "created_at": "2022-03-18T21:27:17Z",
+                    "closed_at": "2022-03-22T12:47:42Z"
+                },
+                {
+                    "number": 58,
+                    "title": "Conda Environment YML Points to Old Version of Code",
+                    "created_at": "2022-03-18T21:07:23Z",
+                    "closed_at": "2022-03-22T12:49:05Z"
+                },
+                {
+                    "number": 57,
+                    "title": "issue with importing from markupsafe",
+                    "created_at": "2022-03-09T09:34:51Z",
+                    "closed_at": "2022-03-09T11:37:22Z"
+                },
+                {
+                    "number": 52,
+                    "title": "could you provide the template applicability filter policy to help speed up the search time?",
+                    "created_at": "2022-01-21T09:05:56Z",
+                    "closed_at": "2022-01-26T08:44:43Z"
+                },
+                {
+                    "number": 50,
+                    "title": "how to set the atom occurrences limitations correctly ",
+                    "created_at": "2021-12-08T05:24:32Z",
+                    "closed_at": "2021-12-10T01:08:25Z"
+                },
+                {
+                    "number": 49,
+                    "title": "Incorparate AiZynthFinder in to own python script",
+                    "created_at": "2021-12-01T14:58:49Z",
+                    "closed_at": "2021-12-06T08:39:11Z"
+                },
+                {
+                    "number": 48,
+                    "title": "uspto_model.hdf5 is missing in the fileshare",
+                    "created_at": "2021-10-30T07:14:07Z",
+                    "closed_at": "2021-11-01T13:50:26Z"
+                },
+                {
+                    "number": 47,
+                    "title": "Route starts to cycle when run search complicated target compound.",
+                    "created_at": "2021-10-14T08:14:08Z",
+                    "closed_at": "2021-10-15T00:40:30Z"
+                },
+                {
+                    "number": 46,
+                    "title": "ModuleNotFoundError: No module named 'route_distances'",
+                    "created_at": "2021-10-13T15:43:48Z",
+                    "closed_at": "2021-11-01T06:59:24Z"
+                },
+                {
+                    "number": 45,
+                    "title": "Install instructions lead to installing old version",
+                    "created_at": "2021-09-20T10:02:09Z",
+                    "closed_at": "2021-09-20T10:57:23Z"
+                },
+                {
+                    "number": 43,
+                    "title": "Python kernel do not launch in Jupyter",
+                    "created_at": "2021-08-28T18:27:05Z",
+                    "closed_at": "2021-08-30T09:43:57Z"
+                },
+                {
+                    "number": 42,
+                    "title": "Issue with template application",
+                    "created_at": "2021-08-23T13:23:11Z",
+                    "closed_at": "2021-09-13T17:01:42Z"
+                },
+                {
+                    "number": 41,
+                    "title": "How to train a reaction involving two simultaneous reaction steps?",
+                    "created_at": "2021-08-20T02:56:40Z",
+                    "closed_at": "2021-08-23T00:44:59Z"
+                },
+                {
+                    "number": 40,
+                    "title": "Can Tree Search run on GPU?",
+                    "created_at": "2021-06-30T02:59:20Z",
+                    "closed_at": "2021-07-02T00:14:45Z"
+                },
+                {
+                    "number": 39,
+                    "title": "Can Tree Search run on GPU?",
+                    "created_at": "2021-06-30T02:57:51Z",
+                    "closed_at": "2021-06-30T03:00:34Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Molecule with difficulties",
+                    "created_at": "2021-06-17T08:15:27Z",
+                    "closed_at": "2021-07-26T08:57:14Z"
+                },
+                {
+                    "number": 37,
+                    "title": "ImportError: DLL load failed while importing win32api: The specified program could not be found",
+                    "created_at": "2021-06-16T09:50:39Z",
+                    "closed_at": "2021-06-17T00:43:55Z"
+                },
+                {
+                    "number": 36,
+                    "title": "AttributeError: 'str' object has no attribute 'items'",
+                    "created_at": "2021-05-31T05:22:24Z",
+                    "closed_at": "2021-05-31T07:04:03Z"
+                },
+                {
+                    "number": 35,
+                    "title": "AttributeError: 'str' object has no attribute 'items' happened\uff0cwhen",
+                    "created_at": "2021-05-31T04:38:56Z",
+                    "closed_at": "2021-05-31T05:11:54Z"
+                },
+                {
+                    "number": 34,
+                    "title": "CUDA warnings when running aizynthcli (previously known as: The batch mode doesn't work.)",
+                    "created_at": "2021-05-10T09:46:51Z",
+                    "closed_at": "2021-06-14T07:02:37Z"
+                },
+                {
+                    "number": 33,
+                    "title": "ValueError: Atomic identity should not change in a reaction!",
+                    "created_at": "2021-04-30T10:09:03Z",
+                    "closed_at": "2021-05-07T01:42:00Z"
+                },
+                {
+                    "number": 32,
+                    "title": "How to get the Reaxys data to retrain aizynthfinder?",
+                    "created_at": "2021-04-09T09:11:41Z",
+                    "closed_at": "2021-04-10T00:33:28Z"
+                },
+                {
+                    "number": 31,
+                    "title": "Could not Reorder by 'Sum of prices' in the GUI?",
+                    "created_at": "2021-03-18T09:17:28Z",
+                    "closed_at": "2021-03-19T00:44:31Z"
+                },
+                {
+                    "number": 30,
+                    "title": "ImportError: dlopen: cannot load any more object with static TLS",
+                    "created_at": "2021-03-16T08:28:51Z",
+                    "closed_at": "2021-06-14T07:02:19Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Compounds to Procure doesn't shown",
+                    "created_at": "2021-03-15T15:04:35Z",
+                    "closed_at": "2021-03-17T13:58:22Z"
+                },
+                {
+                    "number": 28,
+                    "title": "'preprocess_expansion config.yml' command can not create a file that ends with unique_templates.hdf5",
+                    "created_at": "2021-03-04T03:41:16Z",
+                    "closed_at": "2021-03-11T00:54:57Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Are there any detailed instructions to get those trained policy network from scratch?",
+                    "created_at": "2021-02-24T03:22:50Z",
+                    "closed_at": "2021-03-01T03:32:27Z"
+                },
+                {
+                    "number": 23,
+                    "title": "Long-term binary artifact storage",
+                    "created_at": "2021-02-01T16:03:06Z",
+                    "closed_at": "2021-02-02T12:45:55Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Search procedure stuck",
+                    "created_at": "2021-02-01T08:15:46Z",
+                    "closed_at": "2021-02-01T09:29:08Z"
+                },
+                {
+                    "number": 20,
+                    "title": "DeepChem",
+                    "created_at": "2021-02-01T02:42:22Z",
+                    "closed_at": "2021-02-01T07:41:46Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Hard dependency on anaconda",
+                    "created_at": "2021-02-01T01:37:05Z",
+                    "closed_at": "2021-02-22T09:01:05Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Incompatibility with python 3.8",
+                    "created_at": "2021-01-21T20:03:14Z",
+                    "closed_at": "2021-01-22T06:48:13Z"
+                },
+                {
+                    "number": 14,
+                    "title": "filter select bug",
+                    "created_at": "2021-01-16T07:56:07Z",
+                    "closed_at": "2021-01-19T07:13:08Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Steps \"None\" are displayed (Jupyter)",
+                    "created_at": "2020-12-17T15:40:17Z",
+                    "closed_at": "2020-12-21T08:35:40Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Keras model",
+                    "created_at": "2020-12-17T11:49:04Z",
+                    "closed_at": "2021-02-22T10:47:39Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Retraining Aizynthfinder ",
+                    "created_at": "2020-11-17T17:29:54Z",
+                    "closed_at": "2020-11-23T15:23:37Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Issue with checking stock and cyclic condition",
+                    "created_at": "2020-10-14T15:43:00Z",
+                    "closed_at": "2021-01-22T12:47:30Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Suggestion for preprocess_rollout",
+                    "created_at": "2020-09-10T13:46:40Z",
+                    "closed_at": "2020-09-15T06:42:56Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Error when applying retro_template to product",
+                    "created_at": "2020-09-07T18:10:18Z",
+                    "closed_at": "2020-09-09T06:45:18Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Graphviz installation description in Readme",
+                    "created_at": "2020-08-28T05:38:06Z",
+                    "closed_at": "2020-08-28T06:12:44Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Python and rdkit versions",
+                    "created_at": "2020-08-14T15:18:27Z",
+                    "closed_at": "2020-08-17T07:02:58Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Reading in raw template library",
+                    "created_at": "2020-08-14T15:10:17Z",
+                    "closed_at": "2020-08-17T07:53:36Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Minor bug in preprocess_rollout.py",
+                    "created_at": "2020-08-14T14:50:42Z",
+                    "closed_at": "2020-09-07T12:19:54Z"
+                }
+            ],
+            "languages": {
+                "Python": 688811,
+                "Jupyter Notebook": 2943
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s13321-024-00860-x",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "38778382",
+                            "source": "MED",
+                            "pmid": "38778382",
+                            "pmcid": "PMC11112899",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC11112899"
+                                ]
+                            },
+                            "doi": "10.1186/s13321-024-00860-x",
+                            "title": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application.",
+                            "authorString": "Saigiridharan L, Hassen AK, Lai H, Torren-Peraire P, Engkvist O, Genheden S.",
+                            "journalTitle": "J Cheminform",
+                            "issue": "1",
+                            "journalVolume": "16",
+                            "pubYear": "2024",
+                            "journalIssn": "1758-2946",
+                            "pageInfo": "57",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 25,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2024-05-24",
+                            "firstPublicationDate": "2024-05-23"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4398255643",
+                "doi": "https://doi.org/10.1186/s13321-024-00860-x",
+                "title": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application",
+                "display_name": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application",
+                "publication_year": 2024,
+                "publication_date": "2024-05-23",
+                "ids": {
+                    "openalex": "https://openalex.org/W4398255643",
+                    "doi": "https://doi.org/10.1186/s13321-024-00860-x",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/38778382"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s13321-024-00860-x",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13321-024-00860-x",
+                    "pdf_url": "https://jcheminf.biomedcentral.com/counter/pdf/10.1186/s13321-024-00860-x",
+                    "source": {
+                        "id": "https://openalex.org/S180838163",
+                        "display_name": "Journal of Cheminformatics",
+                        "issn_l": "1758-2946",
+                        "issn": [
+                            "1758-2946"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Cheminformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://jcheminf.biomedcentral.com/counter/pdf/10.1186/s13321-024-00860-x",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5091131479",
+                            "display_name": "Lakshidaa Saigiridharan",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210128490",
+                                "display_name": "AstraZeneca (Japan)",
+                                "ror": "https://ror.org/047k23798",
+                                "country_code": "JP",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210128490"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210137263",
+                                "display_name": "AstraZeneca (Finland)",
+                                "ror": "https://ror.org/035n56j11",
+                                "country_code": "FI",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210137263"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210143795",
+                                "display_name": "AstraZeneca (Sweden)",
+                                "ror": "https://ror.org/04wwrrg31",
+                                "country_code": "SE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "FI",
+                            "JP",
+                            "SE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Lakshidaa Saigiridharan",
+                        "raw_affiliation_strings": [
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden. lakshidaa.saigiridharan@astrazeneca.com",
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden. lakshidaa.saigiridharan@astrazeneca.com",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210143795",
+                                    "https://openalex.org/I4210128490",
+                                    "https://openalex.org/I4210137263"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5000516032",
+                            "display_name": "Alan Kai Hassen",
+                            "orcid": "https://orcid.org/0000-0001-6639-1508"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alan Kai Hassen",
+                        "raw_affiliation_strings": [
+                            "Leiden Institute of Advanced Computer Science, Leiden University, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Institute of Advanced Computer Science, Leiden University, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5114167419",
+                            "display_name": "Helen Lai",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I105036370",
+                                "display_name": "AstraZeneca (United Kingdom)",
+                                "ror": "https://ror.org/04r9x1a08",
+                                "country_code": "GB",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Helen Lai",
+                        "raw_affiliation_strings": [
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Cambridge, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Cambridge, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I105036370"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5038749408",
+                            "display_name": "Paula Torren-Peraire",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I3018134672",
+                                "display_name": "Helmholtz Zentrum M\u00fcnchen",
+                                "ror": "https://ror.org/00cfam450",
+                                "country_code": "DE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1305996414",
+                                    "https://openalex.org/I3018134672"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210149356",
+                                "display_name": "Target (Germany)",
+                                "ror": "https://ror.org/04kmxp840",
+                                "country_code": "DE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I1320354487",
+                                    "https://openalex.org/I4210149356"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Paula Torren-Peraire",
+                        "raw_affiliation_strings": [
+                            "Institute of Structural Biology, Molecular Targets and Therapeutics Center, Helmholtz Zentrum M\u00fcnchen, Neuherberg, Germany"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute of Structural Biology, Molecular Targets and Therapeutics Center, Helmholtz Zentrum M\u00fcnchen, Neuherberg, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I3018134672",
+                                    "https://openalex.org/I4210149356"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5076975589",
+                            "display_name": "Ola Engkvist",
+                            "orcid": "https://orcid.org/0000-0003-4970-6461"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210143795",
+                                "display_name": "AstraZeneca (Sweden)",
+                                "ror": "https://ror.org/04wwrrg31",
+                                "country_code": "SE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ola Engkvist",
+                        "raw_affiliation_strings": [
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5006219866",
+                            "display_name": "Samuel Genheden",
+                            "orcid": "https://orcid.org/0000-0002-7624-7363"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210137263",
+                                "display_name": "AstraZeneca (Finland)",
+                                "ror": "https://ror.org/035n56j11",
+                                "country_code": "FI",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210137263"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210143795",
+                                "display_name": "AstraZeneca (Sweden)",
+                                "ror": "https://ror.org/04wwrrg31",
+                                "country_code": "SE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210159719",
+                                "display_name": "AstraZeneca (Germany)",
+                                "ror": "https://ror.org/054q96n74",
+                                "country_code": "DE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I105036370",
+                                    "https://openalex.org/I4210159719"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "FI",
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Samuel Genheden",
+                        "raw_affiliation_strings": [
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden. samuel.genheden@astrazeneca.com",
+                            "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden. samuel.genheden@astrazeneca.com",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210137263",
+                                    "https://openalex.org/I4210159719",
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Molecular AI, Discovery Sciences, R&D, AstraZeneca, Gothenburg, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210143795"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 6,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5091131479"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I4210128490",
+                    "https://openalex.org/I4210137263",
+                    "https://openalex.org/I4210143795"
+                ],
+                "apc_list": {
+                    "value": 1290,
+                    "currency": "GBP",
+                    "value_usd": 1582
+                },
+                "apc_paid": {
+                    "value": 1290,
+                    "currency": "GBP",
+                    "value_usd": 1582
+                },
+                "fwci": 13.9129,
+                "has_fulltext": true,
+                "cited_by_count": 42,
+                "citation_normalized_percentile": {
+                    "value": 0.99242851,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 97,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "16",
+                    "issue": "1",
+                    "first_page": "57",
+                    "last_page": "57"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10211",
+                    "display_name": "Computational Drug Discovery Methods",
+                    "score": 0.9997000098228455,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1703",
+                        "display_name": "Computational Theory and Mathematics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/17",
+                        "display_name": "Computer Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10211",
+                        "display_name": "Computational Drug Discovery Methods",
+                        "score": 0.9997000098228455,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1703",
+                            "display_name": "Computational Theory and Mathematics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11948",
+                        "display_name": "Machine Learning in Materials Science",
+                        "score": 0.9995999932289124,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2505",
+                            "display_name": "Materials Chemistry"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/25",
+                            "display_name": "Materials Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10911",
+                        "display_name": "Chemical Synthesis and Analysis",
+                        "score": 0.9970999956130981,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7711499929428101
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/retrosynthetic-analysis",
+                        "display_name": "Retrosynthetic analysis",
+                        "score": 0.7363835573196411
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.6511272192001343
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/open-source-software",
+                        "display_name": "Open source software",
+                        "score": 0.5772738456726074
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/open-source",
+                        "display_name": "Open source",
+                        "score": 0.5681182146072388
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-engineering",
+                        "display_name": "Software engineering",
+                        "score": 0.5330784320831299
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-science",
+                        "display_name": "Data science",
+                        "score": 0.4142616391181946
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.3867516815662384
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.08172556757926941
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7711499929428101
+                    },
+                    {
+                        "id": "https://openalex.org/C42437451",
+                        "wikidata": "https://www.wikidata.org/wiki/Q902227",
+                        "display_name": "Retrosynthetic analysis",
+                        "level": 3,
+                        "score": 0.7363835573196411
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.6511272192001343
+                    },
+                    {
+                        "id": "https://openalex.org/C2988343187",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1130645",
+                        "display_name": "Open source software",
+                        "level": 3,
+                        "score": 0.5772738456726074
+                    },
+                    {
+                        "id": "https://openalex.org/C3018397939",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3644502",
+                        "display_name": "Open source",
+                        "level": 3,
+                        "score": 0.5681182146072388
+                    },
+                    {
+                        "id": "https://openalex.org/C115903868",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+                        "display_name": "Software engineering",
+                        "level": 1,
+                        "score": 0.5330784320831299
+                    },
+                    {
+                        "id": "https://openalex.org/C2522767166",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+                        "display_name": "Data science",
+                        "level": 1,
+                        "score": 0.4142616391181946
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.3867516815662384
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.08172556757926941
+                    },
+                    {
+                        "id": "https://openalex.org/C185592680",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+                        "display_name": "Chemistry",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C178790620",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11351",
+                        "display_name": "Organic chemistry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C35753019",
+                        "wikidata": "https://www.wikidata.org/wiki/Q644785",
+                        "display_name": "Total synthesis",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s13321-024-00860-x",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s13321-024-00860-x",
+                        "pdf_url": "https://jcheminf.biomedcentral.com/counter/pdf/10.1186/s13321-024-00860-x",
+                        "source": {
+                            "id": "https://openalex.org/S180838163",
+                            "display_name": "Journal of Cheminformatics",
+                            "issn_l": "1758-2946",
+                            "issn": [
+                                "1758-2946"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Cheminformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:38778382",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38778382",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of cheminformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:11112899",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11112899",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11112899/pdf/13321_2024_Article_860.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Cheminform",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:e108db6d41a54ae9911ac63540ba4e54",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/e108db6d41a54ae9911ac63540ba4e54",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Cheminformatics, Vol 16, Iss 1, Pp 1-11 (2024)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:push-zb.helmholtz-munich.de:70732",
+                        "is_oa": true,
+                        "landing_page_url": "https://push-zb.helmholtz-munich.de/frontdoor.php?source_opus=70732",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S7407055352",
+                            "display_name": "PuSH - Publication Server of Helmholtz Zentrum M\u00fcnchen",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J. Cheminformatics 16:57 (2024)",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s13321-024-00860-x",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13321-024-00860-x",
+                    "pdf_url": "https://jcheminf.biomedcentral.com/counter/pdf/10.1186/s13321-024-00860-x",
+                    "source": {
+                        "id": "https://openalex.org/S180838163",
+                        "display_name": "Journal of Cheminformatics",
+                        "issn_l": "1758-2946",
+                        "issn": [
+                            "1758-2946"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Cheminformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.6299999952316284,
+                        "display_name": "Industry, innovation and infrastructure",
+                        "id": "https://metadata.un.org/sdg/9"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G223242278",
+                        "display_name": null,
+                        "funder_award_id": "956832",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320307770",
+                        "display_name": "AstraZeneca",
+                        "ror": "https://ror.org/04r9x1a08"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4398255643.pdf"
+                },
+                "referenced_works_count": 48,
+                "referenced_works": [
+                    "https://openalex.org/W2041548070",
+                    "https://openalex.org/W2096541451",
+                    "https://openalex.org/W2126316555",
+                    "https://openalex.org/W2326892341",
+                    "https://openalex.org/W2606363443",
+                    "https://openalex.org/W2621742623",
+                    "https://openalex.org/W2747592475",
+                    "https://openalex.org/W2789913372",
+                    "https://openalex.org/W2907657781",
+                    "https://openalex.org/W2915930794",
+                    "https://openalex.org/W2927270655",
+                    "https://openalex.org/W2947423323",
+                    "https://openalex.org/W2971060656",
+                    "https://openalex.org/W2987091515",
+                    "https://openalex.org/W3023658436",
+                    "https://openalex.org/W3036578548",
+                    "https://openalex.org/W3040975947",
+                    "https://openalex.org/W3097758405",
+                    "https://openalex.org/W3101155908",
+                    "https://openalex.org/W3103092523",
+                    "https://openalex.org/W3113340804",
+                    "https://openalex.org/W3120686965",
+                    "https://openalex.org/W3123775255",
+                    "https://openalex.org/W3155267227",
+                    "https://openalex.org/W3189262114",
+                    "https://openalex.org/W3202979417",
+                    "https://openalex.org/W4200030022",
+                    "https://openalex.org/W4205455490",
+                    "https://openalex.org/W4220933119",
+                    "https://openalex.org/W4225865908",
+                    "https://openalex.org/W4226159083",
+                    "https://openalex.org/W4285193863",
+                    "https://openalex.org/W4286602941",
+                    "https://openalex.org/W4292362226",
+                    "https://openalex.org/W4316095903",
+                    "https://openalex.org/W4360810381",
+                    "https://openalex.org/W4362507415",
+                    "https://openalex.org/W4380202354",
+                    "https://openalex.org/W4386528010",
+                    "https://openalex.org/W4386845728",
+                    "https://openalex.org/W4387567938",
+                    "https://openalex.org/W4387814399",
+                    "https://openalex.org/W4388124362",
+                    "https://openalex.org/W4391826941",
+                    "https://openalex.org/W4391891968",
+                    "https://openalex.org/W4392015344",
+                    "https://openalex.org/W4394716772",
+                    "https://openalex.org/W6600882715"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4376877853",
+                    "https://openalex.org/W1493891899",
+                    "https://openalex.org/W4250928611",
+                    "https://openalex.org/W166480398",
+                    "https://openalex.org/W1612808768",
+                    "https://openalex.org/W167327709",
+                    "https://openalex.org/W1977393088",
+                    "https://openalex.org/W4387839566",
+                    "https://openalex.org/W4210922265",
+                    "https://openalex.org/W2491403535"
+                ],
+                "abstract_inverted_index": {
+                    "We": [
+                        0,
+                        129
+                    ],
+                    "present": [
+                        1
+                    ],
+                    "an": [
+                        2
+                    ],
+                    "updated": [
+                        3
+                    ],
+                    "overview": [
+                        4
+                    ],
+                    "of": [
+                        5,
+                        26,
+                        59,
+                        92,
+                        101,
+                        122
+                    ],
+                    "the": [
+                        6,
+                        13,
+                        56,
+                        60,
+                        123,
+                        133
+                    ],
+                    "AiZynthFinder": [
+                        7,
+                        149
+                    ],
+                    "package": [
+                        8
+                    ],
+                    "for": [
+                        9,
+                        37,
+                        41,
+                        84,
+                        111,
+                        126,
+                        145
+                    ],
+                    "retrosynthesis": [
+                        10,
+                        44,
+                        103
+                    ],
+                    "planning.": [
+                        11
+                    ],
+                    "Since": [
+                        12
+                    ],
+                    "first": [
+                        14
+                    ],
+                    "version": [
+                        15
+                    ],
+                    "was": [
+                        16
+                    ],
+                    "released": [
+                        17,
+                        108
+                    ],
+                    "in": [
+                        18,
+                        141
+                    ],
+                    "2020,": [
+                        19
+                    ],
+                    "we": [
+                        20,
+                        66
+                    ],
+                    "have": [
+                        21
+                    ],
+                    "added": [
+                        22
+                    ],
+                    "a": [
+                        23,
+                        46,
+                        68,
+                        119,
+                        151
+                    ],
+                    "substantial": [
+                        24
+                    ],
+                    "number": [
+                        25
+                    ],
+                    "new": [
+                        27
+                    ],
+                    "features": [
+                        28
+                    ],
+                    "based": [
+                        29
+                    ],
+                    "on": [
+                        30,
+                        71
+                    ],
+                    "user": [
+                        31
+                    ],
+                    "feedback.": [
+                        32
+                    ],
+                    "Feature": [
+                        33
+                    ],
+                    "enhancements": [
+                        34
+                    ],
+                    "include": [
+                        35
+                    ],
+                    "policies": [
+                        36
+                    ],
+                    "filter": [
+                        38
+                    ],
+                    "reactions,": [
+                        39
+                    ],
+                    "support": [
+                        40
+                    ],
+                    "any": [
+                        42
+                    ],
+                    "one-step": [
+                        43
+                    ],
+                    "model,": [
+                        45
+                    ],
+                    "scoring": [
+                        47
+                    ],
+                    "framework": [
+                        48
+                    ],
+                    "and": [
+                        49,
+                        62,
+                        90,
+                        95,
+                        99,
+                        154,
+                        158
+                    ],
+                    "several": [
+                        50,
+                        72
+                    ],
+                    "additional": [
+                        51
+                    ],
+                    "search": [
+                        52
+                    ],
+                    "algorithms.": [
+                        53
+                    ],
+                    "To": [
+                        54
+                    ],
+                    "exemplify": [
+                        55
+                    ],
+                    "typical": [
+                        57
+                    ],
+                    "use-cases": [
+                        58
+                    ],
+                    "software": [
+                        61,
+                        106,
+                        134,
+                        157
+                    ],
+                    "highlight": [
+                        63
+                    ],
+                    "some": [
+                        64
+                    ],
+                    "learnings,": [
+                        65
+                    ],
+                    "perform": [
+                        67
+                    ],
+                    "large-scale": [
+                        69
+                    ],
+                    "analysis": [
+                        70,
+                        81
+                    ],
+                    "hundred": [
+                        73
+                    ],
+                    "thousand": [
+                        74
+                    ],
+                    "target": [
+                        75
+                    ],
+                    "molecules": [
+                        76
+                    ],
+                    "from": [
+                        77,
+                        162
+                    ],
+                    "diverse": [
+                        78
+                    ],
+                    "sources.": [
+                        79
+                    ],
+                    "This": [
+                        80
+                    ],
+                    "looks": [
+                        82
+                    ],
+                    "at": [
+                        83
+                    ],
+                    "instance": [
+                        85
+                    ],
+                    "route": [
+                        86,
+                        147
+                    ],
+                    "shape,": [
+                        87
+                    ],
+                    "stock": [
+                        88
+                    ],
+                    "usage": [
+                        89
+                    ],
+                    "exploitation": [
+                        91
+                    ],
+                    "reaction": [
+                        93
+                    ],
+                    "space,": [
+                        94
+                    ],
+                    "points": [
+                        96
+                    ],
+                    "out": [
+                        97
+                    ],
+                    "strengths": [
+                        98
+                    ],
+                    "weaknesses": [
+                        100
+                    ],
+                    "our": [
+                        102
+                    ],
+                    "approach.": [
+                        104
+                    ],
+                    "The": [
+                        105
+                    ],
+                    "is": [
+                        107,
+                        150
+                    ],
+                    "as": [
+                        109,
+                        114,
+                        116,
+                        135
+                    ],
+                    "open-source": [
+                        110,
+                        136,
+                        156
+                    ],
+                    "educational": [
+                        112
+                    ],
+                    "purposes": [
+                        113
+                    ],
+                    "well": [
+                        115
+                    ],
+                    "to": [
+                        117
+                    ],
+                    "provide": [
+                        118
+                    ],
+                    "reference": [
+                        120
+                    ],
+                    "implementation": [
+                        121
+                    ],
+                    "core": [
+                        124
+                    ],
+                    "algorithms": [
+                        125
+                    ],
+                    "synthesis": [
+                        127
+                    ],
+                    "prediction.": [
+                        128,
+                        148
+                    ],
+                    "hope": [
+                        130
+                    ],
+                    "that": [
+                        131
+                    ],
+                    "releasing": [
+                        132
+                    ],
+                    "will": [
+                        137
+                    ],
+                    "further": [
+                        138
+                    ],
+                    "facilitate": [
+                        139
+                    ],
+                    "innovation": [
+                        140
+                    ],
+                    "developing": [
+                        142
+                    ],
+                    "novel": [
+                        143
+                    ],
+                    "methods": [
+                        144
+                    ],
+                    "synthetic": [
+                        146
+                    ],
+                    "fast,": [
+                        152
+                    ],
+                    "robust": [
+                        153
+                    ],
+                    "extensible": [
+                        155
+                    ],
+                    "can": [
+                        159
+                    ],
+                    "be": [
+                        160
+                    ],
+                    "downloaded": [
+                        161
+                    ],
+                    "https://github.com/MolecularAI/aizynthfinder": [
+                        163
+                    ],
+                    ".": [
+                        164
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 10
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 28
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 4
+                    }
+                ],
+                "updated_date": "2026-05-24T08:33:08.758527",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application",
+                "doi": "10.1186/s13321-024-00860-x",
+                "pmid": "38778382",
+                "pmc": "PMC11112899",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f61000084c",
+                "issns": [
+                    "1758-2946"
+                ],
+                "journal": "Journal of Cheminformatics",
+                "cohorts": {
+                    "pub": 9,
+                    "com": 1,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 31727040,
+                        "mean": 10.577936526634696,
+                        "rank": 8417657,
+                        "pct": 73,
+                        "higher_than": 23289348
+                    },
+                    "journal": {
+                        "count": 1254,
+                        "mean": 8.744138755980861,
+                        "rank": 527,
+                        "pct": 57,
+                        "higher_than": 724
+                    },
+                    "similar_age_3m": {
+                        "count": 346974,
+                        "mean": 12.293477176964275,
+                        "rank": 85281,
+                        "pct": 75,
+                        "higher_than": 261381
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 35,
+                        "mean": 2.9014285714285712,
+                        "rank": 7,
+                        "pct": 80,
+                        "higher_than": 28
+                    }
+                },
+                "authors": [
+                    "Lakshidaa Saigiridharan",
+                    "Alan Kai Hassen",
+                    "Helen Lai",
+                    "Paula Torren-Peraire",
+                    "Ola Engkvist",
+                    "Samuel Genheden"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1716422400,
+                "epubdate": 1716422400,
+                "dimensions_publication_id": "pub.1171898155",
+                "altmetric_id": 163758721,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Applications in Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Documentation and Information in Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Theoretical and Computational Chemistry",
+                        "scheme": "springer"
+                    }
+                ],
+                "cited_by_posts_count": 11,
+                "cited_by_tweeters_count": 11,
+                "cited_by_accounts_count": 11,
+                "last_updated": 1718295947,
+                "score": 5.6,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 5.6
+                },
+                "url": "http://dx.doi.org/10.1186/s13321-024-00860-x",
+                "added_on": 1716522714,
+                "published_on": 1716422400,
+                "scopus_subjects": [
+                    "Physical Sciences",
+                    "Social Sciences",
+                    "Chemistry",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "40",
+                    "connotea": "0"
+                },
+                "readers_count": 40,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=6&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=6&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=6&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=163758721"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 11943,
+            "total_ccn": 2534,
+            "avg_ccn": 2.15,
+            "nloc_per_file": 109.57,
+            "duplicate_rate": 5.29
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

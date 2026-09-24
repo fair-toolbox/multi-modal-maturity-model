@@ -1,0 +1,975 @@
+{
+    "AiZynthFinder": {
+        "papers": {
+            "id": "38778382",
+            "source": "MED",
+            "pmid": "38778382",
+            "pmcid": "PMC11112899",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC11112899"
+                ]
+            },
+            "doi": "10.1186/s13321-024-00860-x",
+            "title": "AiZynthFinder 4.0: developments based on learnings from 3 years of industrial application.",
+            "authorString": "Saigiridharan L, Hassen AK, Lai H, Torren-Peraire P, Engkvist O, Genheden S.",
+            "journalTitle": "J Cheminform",
+            "issue": "1",
+            "journalVolume": "16",
+            "pubYear": "2024",
+            "journalIssn": "1758-2946",
+            "pageInfo": "57",
+            "pubType": "research-article; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 22,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2024-05-24",
+            "firstPublicationDate": "2024-05-23"
+        },
+        "github": {
+            "repo": {
+                "id": 271546468,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNzE1NDY0Njg=",
+                "name": "aizynthfinder",
+                "full_name": "MolecularAI/aizynthfinder",
+                "private": false,
+                "owner": {
+                    "login": "MolecularAI",
+                    "id": 62212926,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYyMjEyOTI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/62212926?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/MolecularAI",
+                    "html_url": "https://github.com/MolecularAI",
+                    "followers_url": "https://api.github.com/users/MolecularAI/followers",
+                    "following_url": "https://api.github.com/users/MolecularAI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/MolecularAI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/MolecularAI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/MolecularAI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/MolecularAI/orgs",
+                    "repos_url": "https://api.github.com/users/MolecularAI/repos",
+                    "events_url": "https://api.github.com/users/MolecularAI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/MolecularAI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/MolecularAI/aizynthfinder",
+                "description": "A tool for retrosynthetic planning",
+                "fork": false,
+                "url": "https://api.github.com/repos/MolecularAI/aizynthfinder",
+                "forks_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/forks",
+                "keys_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/teams",
+                "hooks_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/hooks",
+                "issue_events_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/events",
+                "assignees_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/tags",
+                "blobs_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/languages",
+                "stargazers_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/stargazers",
+                "contributors_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/contributors",
+                "subscribers_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/subscribers",
+                "subscription_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/subscription",
+                "commits_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/merges",
+                "archive_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/downloads",
+                "issues_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/labels{/name}",
+                "releases_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/MolecularAI/aizynthfinder/deployments",
+                "created_at": "2020-06-11T12:57:07Z",
+                "updated_at": "2026-03-17T05:16:26Z",
+                "pushed_at": "2026-03-11T14:02:06Z",
+                "git_url": "git://github.com/MolecularAI/aizynthfinder.git",
+                "ssh_url": "git@github.com:MolecularAI/aizynthfinder.git",
+                "clone_url": "https://github.com/MolecularAI/aizynthfinder.git",
+                "svn_url": "https://github.com/MolecularAI/aizynthfinder",
+                "homepage": "https://molecularai.github.io/aizynthfinder/",
+                "size": 4248,
+                "stargazers_count": 803,
+                "watchers_count": 803,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 171,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 12,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "astrazeneca",
+                    "chemical-reactions",
+                    "cheminformatics",
+                    "monte-carlo-tree-search",
+                    "neural-networks",
+                    "reaction-informatics"
+                ],
+                "visibility": "public",
+                "forks": 171,
+                "open_issues": 12,
+                "watchers": 803,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "MolecularAI",
+                    "id": 62212926,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYyMjEyOTI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/62212926?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/MolecularAI",
+                    "html_url": "https://github.com/MolecularAI",
+                    "followers_url": "https://api.github.com/users/MolecularAI/followers",
+                    "following_url": "https://api.github.com/users/MolecularAI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/MolecularAI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/MolecularAI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/MolecularAI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/MolecularAI/orgs",
+                    "repos_url": "https://api.github.com/users/MolecularAI/repos",
+                    "events_url": "https://api.github.com/users/MolecularAI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/MolecularAI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 171,
+                "subscribers_count": 28
+            },
+            "contributors": [
+                {
+                    "login": "SGenheden",
+                    "contributions": 94
+                },
+                {
+                    "login": "Lakshidaa",
+                    "contributions": 36
+                },
+                {
+                    "login": "dependabot[bot]",
+                    "contributions": 4
+                },
+                {
+                    "login": "0x2b3bfa0",
+                    "contributions": 3
+                },
+                {
+                    "login": "n-yoshikawa",
+                    "contributions": 1
+                },
+                {
+                    "login": "churnikov",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 196,
+                    "title": "Adding a Software License",
+                    "created_at": "2025-12-03T11:19:58+00:00",
+                    "closed_at": "2025-12-05T14:13:10+00:00"
+                },
+                {
+                    "number": 195,
+                    "title": "retrain filter policy and use in AizynthFinder",
+                    "created_at": "2025-10-24T08:35:20+00:00",
+                    "closed_at": "2025-12-09T08:19:42+00:00"
+                },
+                {
+                    "number": 194,
+                    "title": "Problem: cannot enable executable stack as shared object requires: Invalid argument",
+                    "created_at": "2025-09-08T18:24:55+00:00",
+                    "closed_at": "2025-12-09T08:18:10+00:00"
+                },
+                {
+                    "number": 193,
+                    "title": "running ```poetry install --all-extras```, there raise an error \"zipfile-deflate64 (0.2.0) not supporting PEP 517 builds\"",
+                    "created_at": "2025-09-01T07:14:54+00:00",
+                    "closed_at": "2026-02-09T09:07:19+00:00"
+                },
+                {
+                    "number": 192,
+                    "title": "How to get the file \u201cuspto_expansion.onnx\u201d,\"uspto_templates.csv.gz\" and \"zinc_stock.hdf5\"",
+                    "created_at": "2025-08-29T09:38:19+00:00",
+                    "closed_at": "2025-12-09T08:17:07+00:00"
+                },
+                {
+                    "number": 191,
+                    "title": "Reaction conditions",
+                    "created_at": "2025-08-18T08:02:15+00:00",
+                    "closed_at": "2025-12-09T08:16:54+00:00"
+                },
+                {
+                    "number": 190,
+                    "title": "use cases",
+                    "created_at": "2025-08-01T08:52:46+00:00",
+                    "closed_at": "2025-12-09T08:16:13+00:00"
+                },
+                {
+                    "number": 189,
+                    "title": "python version",
+                    "created_at": "2025-07-08T07:03:44+00:00",
+                    "closed_at": "2025-12-09T09:16:26+00:00"
+                },
+                {
+                    "number": 188,
+                    "title": "Retrain aizynthfinder",
+                    "created_at": "2025-07-08T05:33:37+00:00",
+                    "closed_at": "2025-12-09T08:15:22+00:00"
+                },
+                {
+                    "number": 184,
+                    "title": "Request: Access to Pre-trained Model Files (uspto_model.onnx, templates, zinc_stock.hdf5)",
+                    "created_at": "2025-05-19T10:33:40+00:00",
+                    "closed_at": "2025-07-18T09:35:43+00:00"
+                },
+                {
+                    "number": 183,
+                    "title": "Compatibility error with Python 3.9 due to | operator in molbloom + incorrect documentation requirements",
+                    "created_at": "2025-04-12T11:50:02+00:00",
+                    "closed_at": "2025-12-09T09:16:26+00:00"
+                },
+                {
+                    "number": 180,
+                    "title": "the aizynthfinder.training is not in the folder and how can i train own data?",
+                    "created_at": "2025-02-23T06:23:34+00:00",
+                    "closed_at": "2025-03-31T12:29:30+00:00"
+                },
+                {
+                    "number": 179,
+                    "title": "How can I use own reaction dataset to create model. hdf5 and template.hdf5 ( i.e. completely new)? After that I wants to use it in config.yml. Requesting you to give some example/steps.  Thanks in advance",
+                    "created_at": "2025-02-23T03:49:08+00:00",
+                    "closed_at": "2025-03-31T12:30:07+00:00"
+                },
+                {
+                    "number": 178,
+                    "title": "Issue with Jupyter GUI",
+                    "created_at": "2025-02-07T18:05:27+00:00",
+                    "closed_at": "2025-02-07T19:07:04+00:00"
+                },
+                {
+                    "number": 170,
+                    "title": "A issue about running the expander.",
+                    "created_at": "2024-11-27T11:22:32+00:00",
+                    "closed_at": "2025-01-02T07:22:38+00:00"
+                },
+                {
+                    "number": 169,
+                    "title": "Pydantic version",
+                    "created_at": "2024-11-20T10:58:19+00:00",
+                    "closed_at": "2024-12-05T12:55:29+00:00"
+                },
+                {
+                    "number": 168,
+                    "title": "Issues creating config file in ringbreaker_templates",
+                    "created_at": "2024-10-24T19:16:35+00:00",
+                    "closed_at": "2025-01-02T07:22:24+00:00"
+                },
+                {
+                    "number": 167,
+                    "title": "Interpret results using python",
+                    "created_at": "2024-10-24T05:18:08+00:00",
+                    "closed_at": "2025-01-02T07:22:13+00:00"
+                },
+                {
+                    "number": 166,
+                    "title": "Acceleration on AiZynthFinder",
+                    "created_at": "2024-10-13T09:20:47+00:00",
+                    "closed_at": "2024-10-20T13:54:31+00:00"
+                },
+                {
+                    "number": 165,
+                    "title": "Confidence Score",
+                    "created_at": "2024-08-22T22:29:49+00:00",
+                    "closed_at": "2024-09-11T15:11:46+00:00"
+                },
+                {
+                    "number": 164,
+                    "title": "Error while using `route cost` scorer",
+                    "created_at": "2024-08-22T22:03:00+00:00",
+                    "closed_at": "2024-08-23T07:58:23+00:00"
+                },
+                {
+                    "number": 163,
+                    "title": "Numpy 2.0 and GUI",
+                    "created_at": "2024-08-16T18:25:10+00:00",
+                    "closed_at": "2024-08-16T18:53:36+00:00"
+                },
+                {
+                    "number": 162,
+                    "title": "Tarball Version Needs Update for Python 3.10+",
+                    "created_at": "2024-07-29T16:50:14+00:00",
+                    "closed_at": "2024-12-04T15:33:41+00:00"
+                },
+                {
+                    "number": 161,
+                    "title": "Could not download stock files by \"download_public_data\"",
+                    "created_at": "2024-07-08T04:33:41+00:00",
+                    "closed_at": "2024-07-11T05:49:53+00:00"
+                },
+                {
+                    "number": 160,
+                    "title": "Confusion regarding output and options",
+                    "created_at": "2024-07-07T05:19:12+00:00",
+                    "closed_at": "2024-10-31T11:53:39+00:00"
+                },
+                {
+                    "number": 159,
+                    "title": "zsh: illegal hardware instruction  aizynthcli",
+                    "created_at": "2024-06-11T19:43:05+00:00",
+                    "closed_at": "2024-10-31T11:52:52+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "Regarding with the error from performing download_public_data my_folder",
+                    "created_at": "2024-05-24T03:28:28+00:00",
+                    "closed_at": "2024-12-04T15:34:24+00:00"
+                },
+                {
+                    "number": 154,
+                    "title": "regarding functional groups or protecting groups added with more reasonable or supervisable way ",
+                    "created_at": "2024-04-25T05:31:10+00:00",
+                    "closed_at": "2024-05-31T09:44:03+00:00"
+                },
+                {
+                    "number": 153,
+                    "title": "aizynthfinder process is killed after loading config.yml",
+                    "created_at": "2024-04-11T18:47:13+00:00",
+                    "closed_at": "2024-05-31T09:43:30+00:00"
+                },
+                {
+                    "number": 152,
+                    "title": "regarding ringbreaker template, neither _apply_with_rdchiral or _apply_with_rdkit return null reactants list",
+                    "created_at": "2024-04-09T08:13:27+00:00",
+                    "closed_at": "2024-04-25T03:02:03+00:00"
+                },
+                {
+                    "number": 151,
+                    "title": "Some Questions Regarding Expansion Strategies",
+                    "created_at": "2024-03-13T13:25:13+00:00",
+                    "closed_at": "2024-03-19T05:51:21+00:00"
+                },
+                {
+                    "number": 150,
+                    "title": "DEPRECATION problem when install the tool",
+                    "created_at": "2024-02-26T10:11:43+00:00",
+                    "closed_at": "2024-03-01T05:47:39+00:00"
+                },
+                {
+                    "number": 149,
+                    "title": "PolicyException: A QuickKerasFilter class needs to be initiated with keyword arguments: model\"",
+                    "created_at": "2024-02-20T01:56:34+00:00",
+                    "closed_at": "2024-02-22T08:23:48+00:00"
+                },
+                {
+                    "number": 144,
+                    "title": "The request for grouping sibling nodes for retro* algorithm",
+                    "created_at": "2023-12-06T07:18:35+00:00",
+                    "closed_at": "2024-11-27T00:49:58+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "parsing the json output",
+                    "created_at": "2023-10-18T17:07:57+00:00",
+                    "closed_at": "2023-12-05T15:08:16+00:00"
+                },
+                {
+                    "number": 139,
+                    "title": "Error displaying widget in Jupyter notebook",
+                    "created_at": "2023-10-17T16:22:39+00:00",
+                    "closed_at": "2023-12-05T15:07:18+00:00"
+                },
+                {
+                    "number": 138,
+                    "title": "different result using python interface with using third party website",
+                    "created_at": "2023-09-25T20:08:33+00:00",
+                    "closed_at": "2023-09-27T20:43:14+00:00"
+                },
+                {
+                    "number": 136,
+                    "title": "create stock: Failed to convert  to inchi key. Probably due to sanitation.",
+                    "created_at": "2023-09-08T21:04:37+00:00",
+                    "closed_at": "2023-09-12T01:40:23+00:00"
+                },
+                {
+                    "number": 135,
+                    "title": "How to get raw dataset",
+                    "created_at": "2023-09-05T03:17:05+00:00",
+                    "closed_at": "2023-09-13T02:23:35+00:00"
+                },
+                {
+                    "number": 134,
+                    "title": "not work",
+                    "created_at": "2023-08-28T15:29:30+00:00",
+                    "closed_at": "2023-08-28T17:41:53+00:00"
+                },
+                {
+                    "number": 133,
+                    "title": "Incorrect labels in USPTO templates data",
+                    "created_at": "2023-08-24T13:29:09+00:00",
+                    "closed_at": "2023-10-20T12:01:20+00:00"
+                },
+                {
+                    "number": 131,
+                    "title": "Unable to open/create file hdf5 files",
+                    "created_at": "2023-08-04T01:59:13+00:00",
+                    "closed_at": "2023-08-20T10:39:29+00:00"
+                },
+                {
+                    "number": 130,
+                    "title": "Cant download the models  (automatically, through UI of figshare )",
+                    "created_at": "2023-07-27T12:27:17+00:00",
+                    "closed_at": "2023-09-11T11:51:39+00:00"
+                },
+                {
+                    "number": 128,
+                    "title": "Recurring Issue with Jupyter interface",
+                    "created_at": "2023-07-23T03:33:05+00:00",
+                    "closed_at": "2023-07-25T01:39:47+00:00"
+                },
+                {
+                    "number": 125,
+                    "title": "A question regarding cleaning training data with rxnutils package",
+                    "created_at": "2023-07-11T06:28:14+00:00",
+                    "closed_at": "2023-07-11T07:42:33+00:00"
+                },
+                {
+                    "number": 124,
+                    "title": "how to add stock molecules?",
+                    "created_at": "2023-07-05T19:35:32+00:00",
+                    "closed_at": "2023-08-28T05:08:08+00:00"
+                },
+                {
+                    "number": 123,
+                    "title": "A question regarding how to get template_hash column in trainning data?",
+                    "created_at": "2023-06-23T14:15:41+00:00",
+                    "closed_at": "2023-06-29T08:51:47+00:00"
+                },
+                {
+                    "number": 122,
+                    "title": "A question regarding the modeling generalization ability",
+                    "created_at": "2023-06-23T13:51:20+00:00",
+                    "closed_at": "2023-06-29T08:52:46+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "Can't Install aizynthfinder",
+                    "created_at": "2023-06-08T05:46:59+00:00",
+                    "closed_at": "2023-07-06T14:46:04+00:00"
+                },
+                {
+                    "number": 117,
+                    "title": "Memory use accumulates when analysing numerous SMILES",
+                    "created_at": "2023-05-15T16:02:26+00:00",
+                    "closed_at": "2023-05-24T12:25:55+00:00"
+                },
+                {
+                    "number": 115,
+                    "title": "question about python interface",
+                    "created_at": "2023-04-20T22:51:10+00:00",
+                    "closed_at": "2023-04-21T19:39:57+00:00"
+                },
+                {
+                    "number": 114,
+                    "title": "error when using CLI for molecules from file",
+                    "created_at": "2023-04-20T22:21:00+00:00",
+                    "closed_at": "2023-04-21T19:40:55+00:00"
+                },
+                {
+                    "number": 113,
+                    "title": "can not see json file for tree",
+                    "created_at": "2023-04-18T20:32:20+00:00",
+                    "closed_at": "2023-04-21T19:42:04+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "AiZynthFinder does not work.",
+                    "created_at": "2023-04-11T08:38:31+00:00",
+                    "closed_at": "2023-04-12T02:31:28+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "MCTS not giving what is expected",
+                    "created_at": "2023-03-29T03:22:52+00:00",
+                    "closed_at": "2023-04-14T00:54:16+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "Colab Notebook Import Error",
+                    "created_at": "2023-03-26T05:32:42+00:00",
+                    "closed_at": "2023-03-27T08:28:29+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "Colab notebook doesn't work. rdkit not found",
+                    "created_at": "2023-01-25T11:55:02+00:00",
+                    "closed_at": "2023-03-27T07:01:38+00:00"
+                },
+                {
+                    "number": 100,
+                    "title": "Is there any code provided to retrain the template applicability filter policy?",
+                    "created_at": "2023-01-13T07:51:22+00:00",
+                    "closed_at": "2023-01-29T00:40:57+00:00"
+                },
+                {
+                    "number": 99,
+                    "title": "MacOS tensorflow",
+                    "created_at": "2022-12-25T23:35:02+00:00",
+                    "closed_at": "2023-06-01T08:24:26+00:00"
+                },
+                {
+                    "number": 98,
+                    "title": "Can't open uspto_templates.csv.gz",
+                    "created_at": "2022-12-15T07:58:43+00:00",
+                    "closed_at": "2022-12-15T08:11:12+00:00"
+                },
+                {
+                    "number": 94,
+                    "title": "Add documentation for aizynthcli output",
+                    "created_at": "2022-11-22T17:40:21+00:00",
+                    "closed_at": "2022-11-28T14:50:22+00:00"
+                },
+                {
+                    "number": 90,
+                    "title": "`train_expansion_keras_model` yields error in dimensions of logits and labels",
+                    "created_at": "2022-10-12T03:17:22+00:00",
+                    "closed_at": "2022-11-03T16:21:29+00:00"
+                },
+                {
+                    "number": 89,
+                    "title": "Going over the max transforms limit ",
+                    "created_at": "2022-10-11T22:14:28+00:00",
+                    "closed_at": "2023-12-05T15:06:59+00:00"
+                },
+                {
+                    "number": 87,
+                    "title": "Problem with graphviz when running under a webserver environment",
+                    "created_at": "2022-09-30T20:38:13+00:00",
+                    "closed_at": "2022-11-28T15:04:23+00:00"
+                },
+                {
+                    "number": 85,
+                    "title": "Hierarchy routes image not displaying",
+                    "created_at": "2022-09-21T17:12:18+00:00",
+                    "closed_at": "2022-11-28T18:14:25+00:00"
+                },
+                {
+                    "number": 81,
+                    "title": "Problem with debugging simple linear policy network model",
+                    "created_at": "2022-08-14T11:28:01+00:00",
+                    "closed_at": "2022-09-27T10:54:54+00:00"
+                },
+                {
+                    "number": 80,
+                    "title": "How to train own data set?",
+                    "created_at": "2022-08-11T20:01:09+00:00",
+                    "closed_at": "2022-09-27T18:32:38+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "Progress is displayed using multiple bars with one iteration",
+                    "created_at": "2022-08-10T12:57:47+00:00",
+                    "closed_at": "2022-08-19T09:20:34+00:00"
+                },
+                {
+                    "number": 78,
+                    "title": "Using Voila to run the notebook",
+                    "created_at": "2022-08-02T12:39:56+00:00",
+                    "closed_at": "2022-12-11T17:56:52+00:00"
+                },
+                {
+                    "number": 76,
+                    "title": " ChemicalParserException: Number of reactants provided does not match number of reactant templates.",
+                    "created_at": "2022-07-28T05:52:06+00:00",
+                    "closed_at": "2022-08-02T08:03:59+00:00"
+                },
+                {
+                    "number": 75,
+                    "title": "about gpu",
+                    "created_at": "2022-07-21T03:38:14+00:00",
+                    "closed_at": "2022-07-22T06:26:40+00:00"
+                },
+                {
+                    "number": 74,
+                    "title": "error when installing the aizynthcli and aizynthapp tools ",
+                    "created_at": "2022-06-22T18:45:05+00:00",
+                    "closed_at": "2022-08-19T08:46:29+00:00"
+                },
+                {
+                    "number": 72,
+                    "title": "Mac OS Monterey",
+                    "created_at": "2022-06-06T13:42:58+00:00",
+                    "closed_at": "2022-06-23T11:49:59+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "TensorFlow library and AVX instructions error",
+                    "created_at": "2022-05-17T10:24:37+00:00",
+                    "closed_at": "2022-07-22T06:27:12+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "Scanner Error",
+                    "created_at": "2022-05-05T14:58:23+00:00",
+                    "closed_at": "2022-05-06T06:48:33+00:00"
+                },
+                {
+                    "number": 67,
+                    "title": "Viewing Reaction Tree",
+                    "created_at": "2022-04-26T18:24:03+00:00",
+                    "closed_at": "2022-04-28T09:57:19+00:00"
+                },
+                {
+                    "number": 66,
+                    "title": "Might be better to skip incorrect molecules?",
+                    "created_at": "2022-04-24T16:18:45+00:00",
+                    "closed_at": "2022-04-28T09:57:59+00:00"
+                },
+                {
+                    "number": 65,
+                    "title": "Apple Silicon",
+                    "created_at": "2022-04-19T20:04:22+00:00",
+                    "closed_at": "2022-05-20T12:31:12+00:00"
+                },
+                {
+                    "number": 63,
+                    "title": "pandas warning",
+                    "created_at": "2022-04-19T06:21:28+00:00",
+                    "closed_at": "2022-04-28T09:58:10+00:00"
+                },
+                {
+                    "number": 61,
+                    "title": "Simple Environment?",
+                    "created_at": "2022-03-31T16:37:35+00:00",
+                    "closed_at": "2022-04-06T15:02:38+00:00"
+                },
+                {
+                    "number": 59,
+                    "title": "Pytables Dependency Issue on Windows 11",
+                    "created_at": "2022-03-18T21:27:17+00:00",
+                    "closed_at": "2022-03-22T12:47:42+00:00"
+                },
+                {
+                    "number": 58,
+                    "title": "Conda Environment YML Points to Old Version of Code",
+                    "created_at": "2022-03-18T21:07:23+00:00",
+                    "closed_at": "2022-03-22T12:49:05+00:00"
+                },
+                {
+                    "number": 57,
+                    "title": "issue with importing from markupsafe",
+                    "created_at": "2022-03-09T09:34:51+00:00",
+                    "closed_at": "2022-03-09T11:37:22+00:00"
+                },
+                {
+                    "number": 52,
+                    "title": "could you provide the template applicability filter policy to help speed up the search time?",
+                    "created_at": "2022-01-21T09:05:56+00:00",
+                    "closed_at": "2022-01-26T08:44:43+00:00"
+                },
+                {
+                    "number": 50,
+                    "title": "how to set the atom occurrences limitations correctly ",
+                    "created_at": "2021-12-08T05:24:32+00:00",
+                    "closed_at": "2021-12-10T01:08:25+00:00"
+                },
+                {
+                    "number": 49,
+                    "title": "Incorparate AiZynthFinder in to own python script",
+                    "created_at": "2021-12-01T14:58:49+00:00",
+                    "closed_at": "2021-12-06T08:39:11+00:00"
+                },
+                {
+                    "number": 48,
+                    "title": "uspto_model.hdf5 is missing in the fileshare",
+                    "created_at": "2021-10-30T07:14:07+00:00",
+                    "closed_at": "2021-11-01T13:50:26+00:00"
+                },
+                {
+                    "number": 47,
+                    "title": "Route starts to cycle when run search complicated target compound.",
+                    "created_at": "2021-10-14T08:14:08+00:00",
+                    "closed_at": "2021-10-15T00:40:30+00:00"
+                },
+                {
+                    "number": 46,
+                    "title": "ModuleNotFoundError: No module named 'route_distances'",
+                    "created_at": "2021-10-13T15:43:48+00:00",
+                    "closed_at": "2021-11-01T06:59:24+00:00"
+                },
+                {
+                    "number": 45,
+                    "title": "Install instructions lead to installing old version",
+                    "created_at": "2021-09-20T10:02:09+00:00",
+                    "closed_at": "2021-09-20T10:57:23+00:00"
+                },
+                {
+                    "number": 43,
+                    "title": "Python kernel do not launch in Jupyter",
+                    "created_at": "2021-08-28T18:27:05+00:00",
+                    "closed_at": "2021-08-30T09:43:57+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "Issue with template application",
+                    "created_at": "2021-08-23T13:23:11+00:00",
+                    "closed_at": "2021-09-13T17:01:42+00:00"
+                },
+                {
+                    "number": 41,
+                    "title": "How to train a reaction involving two simultaneous reaction steps?",
+                    "created_at": "2021-08-20T02:56:40+00:00",
+                    "closed_at": "2021-08-23T00:44:59+00:00"
+                },
+                {
+                    "number": 40,
+                    "title": "Can Tree Search run on GPU?",
+                    "created_at": "2021-06-30T02:59:20+00:00",
+                    "closed_at": "2021-07-02T00:14:45+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "Can Tree Search run on GPU?",
+                    "created_at": "2021-06-30T02:57:51+00:00",
+                    "closed_at": "2021-06-30T03:00:34+00:00"
+                },
+                {
+                    "number": 38,
+                    "title": "Molecule with difficulties",
+                    "created_at": "2021-06-17T08:15:27+00:00",
+                    "closed_at": "2021-07-26T08:57:14+00:00"
+                },
+                {
+                    "number": 37,
+                    "title": "ImportError: DLL load failed while importing win32api: The specified program could not be found",
+                    "created_at": "2021-06-16T09:50:39+00:00",
+                    "closed_at": "2021-06-17T00:43:55+00:00"
+                },
+                {
+                    "number": 36,
+                    "title": "AttributeError: 'str' object has no attribute 'items'",
+                    "created_at": "2021-05-31T05:22:24+00:00",
+                    "closed_at": "2021-05-31T07:04:03+00:00"
+                },
+                {
+                    "number": 35,
+                    "title": "AttributeError: 'str' object has no attribute 'items' happened\uff0cwhen",
+                    "created_at": "2021-05-31T04:38:56+00:00",
+                    "closed_at": "2021-05-31T05:11:54+00:00"
+                },
+                {
+                    "number": 34,
+                    "title": "CUDA warnings when running aizynthcli (previously known as: The batch mode doesn't work.)",
+                    "created_at": "2021-05-10T09:46:51+00:00",
+                    "closed_at": "2021-06-14T07:02:37+00:00"
+                },
+                {
+                    "number": 33,
+                    "title": "ValueError: Atomic identity should not change in a reaction!",
+                    "created_at": "2021-04-30T10:09:03+00:00",
+                    "closed_at": "2021-05-07T01:42:00+00:00"
+                },
+                {
+                    "number": 32,
+                    "title": "How to get the Reaxys data to retrain aizynthfinder?",
+                    "created_at": "2021-04-09T09:11:41+00:00",
+                    "closed_at": "2021-04-10T00:33:28+00:00"
+                },
+                {
+                    "number": 31,
+                    "title": "Could not Reorder by 'Sum of prices' in the GUI?",
+                    "created_at": "2021-03-18T09:17:28+00:00",
+                    "closed_at": "2021-03-19T00:44:31+00:00"
+                },
+                {
+                    "number": 30,
+                    "title": "ImportError: dlopen: cannot load any more object with static TLS",
+                    "created_at": "2021-03-16T08:28:51+00:00",
+                    "closed_at": "2021-06-14T07:02:19+00:00"
+                },
+                {
+                    "number": 29,
+                    "title": "Compounds to Procure doesn't shown",
+                    "created_at": "2021-03-15T15:04:35+00:00",
+                    "closed_at": "2021-03-17T13:58:22+00:00"
+                },
+                {
+                    "number": 28,
+                    "title": "'preprocess_expansion config.yml' command can not create a file that ends with unique_templates.hdf5",
+                    "created_at": "2021-03-04T03:41:16+00:00",
+                    "closed_at": "2021-03-11T00:54:57+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "Are there any detailed instructions to get those trained policy network from scratch?",
+                    "created_at": "2021-02-24T03:22:50+00:00",
+                    "closed_at": "2021-03-01T03:32:27+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "Long-term binary artifact storage",
+                    "created_at": "2021-02-01T16:03:06+00:00",
+                    "closed_at": "2021-02-02T12:45:55+00:00"
+                },
+                {
+                    "number": 22,
+                    "title": "Search procedure stuck",
+                    "created_at": "2021-02-01T08:15:46+00:00",
+                    "closed_at": "2021-02-01T09:29:08+00:00"
+                },
+                {
+                    "number": 20,
+                    "title": "DeepChem",
+                    "created_at": "2021-02-01T02:42:22+00:00",
+                    "closed_at": "2021-02-01T07:41:46+00:00"
+                },
+                {
+                    "number": 19,
+                    "title": "Hard dependency on anaconda",
+                    "created_at": "2021-02-01T01:37:05+00:00",
+                    "closed_at": "2021-02-22T09:01:05+00:00"
+                },
+                {
+                    "number": 15,
+                    "title": "Incompatibility with python 3.8",
+                    "created_at": "2021-01-21T20:03:14+00:00",
+                    "closed_at": "2021-01-22T06:48:13+00:00"
+                },
+                {
+                    "number": 14,
+                    "title": "filter select bug",
+                    "created_at": "2021-01-16T07:56:07+00:00",
+                    "closed_at": "2021-01-19T07:13:08+00:00"
+                },
+                {
+                    "number": 13,
+                    "title": "Steps \"None\" are displayed (Jupyter)",
+                    "created_at": "2020-12-17T15:40:17+00:00",
+                    "closed_at": "2020-12-21T08:35:40+00:00"
+                },
+                {
+                    "number": 12,
+                    "title": "Keras model",
+                    "created_at": "2020-12-17T11:49:04+00:00",
+                    "closed_at": "2021-02-22T10:47:39+00:00"
+                },
+                {
+                    "number": 10,
+                    "title": "Retraining Aizynthfinder ",
+                    "created_at": "2020-11-17T17:29:54+00:00",
+                    "closed_at": "2020-11-23T15:23:37+00:00"
+                },
+                {
+                    "number": 9,
+                    "title": "Issue with checking stock and cyclic condition",
+                    "created_at": "2020-10-14T15:43:00+00:00",
+                    "closed_at": "2021-01-22T12:47:30+00:00"
+                },
+                {
+                    "number": 7,
+                    "title": "Suggestion for preprocess_rollout",
+                    "created_at": "2020-09-10T13:46:40+00:00",
+                    "closed_at": "2020-09-15T06:42:56+00:00"
+                },
+                {
+                    "number": 5,
+                    "title": "Error when applying retro_template to product",
+                    "created_at": "2020-09-07T18:10:18+00:00",
+                    "closed_at": "2020-09-09T06:45:18+00:00"
+                },
+                {
+                    "number": 4,
+                    "title": "Graphviz installation description in Readme",
+                    "created_at": "2020-08-28T05:38:06+00:00",
+                    "closed_at": "2020-08-28T06:12:44+00:00"
+                },
+                {
+                    "number": 3,
+                    "title": "Python and rdkit versions",
+                    "created_at": "2020-08-14T15:18:27+00:00",
+                    "closed_at": "2020-08-17T07:02:58+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "Reading in raw template library",
+                    "created_at": "2020-08-14T15:10:17+00:00",
+                    "closed_at": "2020-08-17T07:53:36+00:00"
+                },
+                {
+                    "number": 1,
+                    "title": "Minor bug in preprocess_rollout.py",
+                    "created_at": "2020-08-14T14:50:42+00:00",
+                    "closed_at": "2020-09-07T12:19:54+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 685047,
+                "Jupyter Notebook": 2943
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 11871,
+            "total_ccn": 2521,
+            "avg_ccn": 2.14,
+            "nloc_per_file": 108.91,
+            "duplicate_rate": 5.32
+        },
+        "howfairis": {
+            "checklist": 0,
+            "license": 0,
+            "citation": 1,
+            "registry": 0,
+            "repository": 0
+        }
+    }
+}

@@ -1,0 +1,1880 @@
+{
+    "DiffusionLab": {
+        "tool_name": "DiffusionLab",
+        "biotools": {
+            "name": "DiffusionLab",
+            "description": "DiffusionLab is software designed to extract valuable information about the motion from single-molecule or particle trajectories obtained with e.g. super-resolution localization microscopy.",
+            "homepage": "https://github.com/ErikMaris/DiffusionLab",
+            "biotoolsID": "diffusionlab",
+            "biotoolsCURIE": "biotools:diffusionlab",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0244",
+                            "term": "Simulation analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3890",
+                            "term": "Trajectory visualization"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3457",
+                            "term": "Single particle analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library",
+                "Desktop application"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3370",
+                    "term": "Analytical chemistry"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0176",
+                    "term": "Molecular dynamics"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "MATLAB"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://diffusionlab.readthedocs.io/en/latest/",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1038/s41598-022-13446-0",
+                    "pmid": "35689015",
+                    "pmcid": "PMC9187757",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Classification-based motion analysis of single-molecule trajectories using DiffusionLab",
+                        "abstract": "Single-particle tracking is a powerful approach to study the motion of individual molecules and particles. It can uncover heterogeneities that are invisible to ensemble techniques, which places it uniquely among techniques to study mass transport. Analysis of the trajectories obtained with single-particle tracking in inorganic porous hosts is often challenging, because trajectories are short and/or motion is heterogeneous. We present the DiffusionLab software package for motion analysis of such challenging data sets. Trajectories are first classified into populations with similar characteristics to which the motion analysis is tailored in a second step. DiffusionLab provides tools to classify trajectories based on the motion type either with machine learning or manually. It also offers quantitative mean squared displacement analysis of the trajectories. The software can compute the diffusion constant for an individual trajectory if it is sufficiently long, or the average diffusion constant for multiple shorter trajectories. We demonstrate the DiffusionLab approach via the analysis of a simulated data set with motion types frequently observed in inorganic porous hosts, such as zeolites. The software package with graphical user interface and its documentation are freely available.",
+                        "date": "2022-12-01T00:00:00Z",
+                        "citationCount": 6,
+                        "authors": [
+                            {
+                                "name": "Maris J.J.E."
+                            },
+                            {
+                                "name": "Rabouw F.T."
+                            },
+                            {
+                                "name": "Weckhuysen B.M."
+                            },
+                            {
+                                "name": "Meirer F."
+                            }
+                        ],
+                        "journal": "Scientific Reports"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Florian Meirer",
+                    "email": "f.meirer@uu.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Bert M. Weckhuysen",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "J. J. Erik Maris",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Chan019",
+            "additionDate": "2022-09-12T06:20:07.555711Z",
+            "lastUpdate": "2024-11-24T15:39:59.754191Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 373959074,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNzM5NTkwNzQ=",
+                "name": "DiffusionLab",
+                "full_name": "fmeirer/DiffusionLab",
+                "private": false,
+                "owner": {
+                    "login": "fmeirer",
+                    "id": 64073076,
+                    "node_id": "MDQ6VXNlcjY0MDczMDc2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/64073076?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/fmeirer",
+                    "html_url": "https://github.com/fmeirer",
+                    "followers_url": "https://api.github.com/users/fmeirer/followers",
+                    "following_url": "https://api.github.com/users/fmeirer/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/fmeirer/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/fmeirer/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/fmeirer/subscriptions",
+                    "organizations_url": "https://api.github.com/users/fmeirer/orgs",
+                    "repos_url": "https://api.github.com/users/fmeirer/repos",
+                    "events_url": "https://api.github.com/users/fmeirer/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/fmeirer/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/fmeirer/DiffusionLab",
+                "description": "Single-molecule trajectory analysis",
+                "fork": false,
+                "url": "https://api.github.com/repos/fmeirer/DiffusionLab",
+                "forks_url": "https://api.github.com/repos/fmeirer/DiffusionLab/forks",
+                "keys_url": "https://api.github.com/repos/fmeirer/DiffusionLab/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/fmeirer/DiffusionLab/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/fmeirer/DiffusionLab/teams",
+                "hooks_url": "https://api.github.com/repos/fmeirer/DiffusionLab/hooks",
+                "issue_events_url": "https://api.github.com/repos/fmeirer/DiffusionLab/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/fmeirer/DiffusionLab/events",
+                "assignees_url": "https://api.github.com/repos/fmeirer/DiffusionLab/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/fmeirer/DiffusionLab/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/fmeirer/DiffusionLab/tags",
+                "blobs_url": "https://api.github.com/repos/fmeirer/DiffusionLab/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/fmeirer/DiffusionLab/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/fmeirer/DiffusionLab/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/fmeirer/DiffusionLab/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/fmeirer/DiffusionLab/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/fmeirer/DiffusionLab/languages",
+                "stargazers_url": "https://api.github.com/repos/fmeirer/DiffusionLab/stargazers",
+                "contributors_url": "https://api.github.com/repos/fmeirer/DiffusionLab/contributors",
+                "subscribers_url": "https://api.github.com/repos/fmeirer/DiffusionLab/subscribers",
+                "subscription_url": "https://api.github.com/repos/fmeirer/DiffusionLab/subscription",
+                "commits_url": "https://api.github.com/repos/fmeirer/DiffusionLab/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/fmeirer/DiffusionLab/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/fmeirer/DiffusionLab/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/fmeirer/DiffusionLab/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/fmeirer/DiffusionLab/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/fmeirer/DiffusionLab/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/fmeirer/DiffusionLab/merges",
+                "archive_url": "https://api.github.com/repos/fmeirer/DiffusionLab/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/fmeirer/DiffusionLab/downloads",
+                "issues_url": "https://api.github.com/repos/fmeirer/DiffusionLab/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/fmeirer/DiffusionLab/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/fmeirer/DiffusionLab/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/fmeirer/DiffusionLab/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/fmeirer/DiffusionLab/labels{/name}",
+                "releases_url": "https://api.github.com/repos/fmeirer/DiffusionLab/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/fmeirer/DiffusionLab/deployments",
+                "created_at": "2021-06-04T21:03:24Z",
+                "updated_at": "2026-01-16T17:07:12Z",
+                "pushed_at": "2024-11-18T13:31:58Z",
+                "git_url": "git://github.com/fmeirer/DiffusionLab.git",
+                "ssh_url": "git@github.com:fmeirer/DiffusionLab.git",
+                "clone_url": "https://github.com/fmeirer/DiffusionLab.git",
+                "svn_url": "https://github.com/fmeirer/DiffusionLab",
+                "homepage": null,
+                "size": 19588,
+                "stargazers_count": 8,
+                "watchers_count": 8,
+                "language": "MATLAB",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 0,
+                "watchers": 8,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 1,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".readthedocs.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "config",
+                    "type": "tree"
+                },
+                {
+                    "path": "data",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "results",
+                    "type": "tree"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "ErikMaris",
+                    "contributions": 66
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 5,
+                    "title": "the app installation ",
+                    "created_at": "2023-12-27T07:37:37Z",
+                    "closed_at": "2024-01-02T10:38:14Z"
+                }
+            ],
+            "languages": {
+                "MATLAB": 400641,
+                "HTML": 21599
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1038/s41598-022-13446-0",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "35689015",
+                            "source": "MED",
+                            "pmid": "35689015",
+                            "pmcid": "PMC9187757",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9187757"
+                                ]
+                            },
+                            "doi": "10.1038/s41598-022-13446-0",
+                            "title": "Classification-based motion analysis of single-molecule trajectories using DiffusionLab.",
+                            "authorString": "Maris JJE, Rabouw FT, Weckhuysen BM, Meirer F.",
+                            "journalTitle": "Sci Rep",
+                            "issue": "1",
+                            "journalVolume": "12",
+                            "pubYear": "2022",
+                            "journalIssn": "2045-2322",
+                            "pageInfo": "9595",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 5,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2022-06-11",
+                            "firstPublicationDate": "2022-06-10"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4281739312",
+                "doi": "https://doi.org/10.1038/s41598-022-13446-0",
+                "title": "Classification-based motion analysis of single-molecule trajectories using DiffusionLab",
+                "display_name": "Classification-based motion analysis of single-molecule trajectories using DiffusionLab",
+                "publication_year": 2022,
+                "publication_date": "2022-06-10",
+                "ids": {
+                    "openalex": "https://openalex.org/W4281739312",
+                    "doi": "https://doi.org/10.1038/s41598-022-13446-0",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/35689015"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1038/s41598-022-13446-0",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41598-022-13446-0",
+                    "pdf_url": "https://www.nature.com/articles/s41598-022-13446-0.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S196734849",
+                        "display_name": "Scientific Reports",
+                        "issn_l": "2045-2322",
+                        "issn": [
+                            "2045-2322"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319908",
+                        "host_organization_name": "Nature Portfolio",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319908",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Nature Portfolio",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Scientific Reports",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://www.nature.com/articles/s41598-022-13446-0.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5091500271",
+                            "display_name": "J. J. Erik Maris",
+                            "orcid": "https://orcid.org/0000-0003-2591-4864"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "J. J. Erik Maris",
+                        "raw_affiliation_strings": [
+                            "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5076760149",
+                            "display_name": "Freddy T. Rabouw",
+                            "orcid": "https://orcid.org/0000-0002-4775-0859"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210108106",
+                                "display_name": "Nanomaterials Research (United States)",
+                                "ror": "https://ror.org/01e5t7e46",
+                                "country_code": "US",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210108106"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Freddy T. Rabouw",
+                        "raw_affiliation_strings": [
+                            "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands",
+                            "Soft Condensed Matter and Biophysics, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CC, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Soft Condensed Matter and Biophysics, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CC, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210108106",
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5053188243",
+                            "display_name": "Bert M. Weckhuysen",
+                            "orcid": "https://orcid.org/0000-0001-5245-1426"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Bert M. Weckhuysen",
+                        "raw_affiliation_strings": [
+                            "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5013544617",
+                            "display_name": "Florian Meirer",
+                            "orcid": "https://orcid.org/0000-0001-5581-5790"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Florian Meirer",
+                        "raw_affiliation_strings": [
+                            "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands. f.meirer@uu.nl",
+                            "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands. f.meirer@uu.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Inorganic Chemistry and Catalysis, Debye Institute for Nanomaterials Science, Utrecht University, 3584 CG, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5091500271"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I193662353"
+                ],
+                "apc_list": {
+                    "value": 1890,
+                    "currency": "EUR",
+                    "value_usd": 2190
+                },
+                "apc_paid": {
+                    "value": 1890,
+                    "currency": "EUR",
+                    "value_usd": 2190
+                },
+                "fwci": 2.1402,
+                "has_fulltext": true,
+                "cited_by_count": 15,
+                "citation_normalized_percentile": {
+                    "value": 0.87291712,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "12",
+                    "issue": "1",
+                    "first_page": "9595",
+                    "last_page": "9595"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11177",
+                    "display_name": "Spectroscopy and Quantum Chemical Studies",
+                    "score": 0.9972000122070312,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3107",
+                        "display_name": "Atomic and Molecular Physics, and Optics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/31",
+                        "display_name": "Physics and Astronomy"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11177",
+                        "display_name": "Spectroscopy and Quantum Chemical Studies",
+                        "score": 0.9972000122070312,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/3107",
+                            "display_name": "Atomic and Molecular Physics, and Optics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/31",
+                            "display_name": "Physics and Astronomy"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11582",
+                        "display_name": "Nanopore and Nanochannel Transport Studies",
+                        "score": 0.9894000291824341,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2204",
+                            "display_name": "Biomedical Engineering"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/22",
+                            "display_name": "Engineering"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12603",
+                        "display_name": "NMR spectroscopy and applications",
+                        "score": 0.9869999885559082,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/3106",
+                            "display_name": "Nuclear and High Energy Physics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/31",
+                            "display_name": "Physics and Astronomy"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.699964702129364
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/trajectory",
+                        "display_name": "Trajectory",
+                        "score": 0.6787760257720947
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/tracking",
+                        "display_name": "Tracking (education)",
+                        "score": 0.6735669374465942
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/motion",
+                        "display_name": "Motion (physics)",
+                        "score": 0.6586986184120178
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5815611481666565
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/motion-analysis",
+                        "display_name": "Motion analysis",
+                        "score": 0.5530463457107544
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/displacement",
+                        "display_name": "Displacement (psychology)",
+                        "score": 0.5236808061599731
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/diffusion",
+                        "display_name": "Diffusion",
+                        "score": 0.5104236006736755
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/set",
+                        "display_name": "Set (abstract data type)",
+                        "score": 0.5082413554191589
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.4703158438205719
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/constant",
+                        "display_name": "Constant (computer programming)",
+                        "score": 0.45544883608818054
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.35519546270370483
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/algorithm",
+                        "display_name": "Algorithm",
+                        "score": 0.3455401659011841
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/physics",
+                        "display_name": "Physics",
+                        "score": 0.1522921919822693
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.699964702129364
+                    },
+                    {
+                        "id": "https://openalex.org/C13662910",
+                        "wikidata": "https://www.wikidata.org/wiki/Q193139",
+                        "display_name": "Trajectory",
+                        "level": 2,
+                        "score": 0.6787760257720947
+                    },
+                    {
+                        "id": "https://openalex.org/C2775936607",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466845",
+                        "display_name": "Tracking (education)",
+                        "level": 2,
+                        "score": 0.6735669374465942
+                    },
+                    {
+                        "id": "https://openalex.org/C104114177",
+                        "wikidata": "https://www.wikidata.org/wiki/Q79782",
+                        "display_name": "Motion (physics)",
+                        "level": 2,
+                        "score": 0.6586986184120178
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5815611481666565
+                    },
+                    {
+                        "id": "https://openalex.org/C2777036941",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6917771",
+                        "display_name": "Motion analysis",
+                        "level": 2,
+                        "score": 0.5530463457107544
+                    },
+                    {
+                        "id": "https://openalex.org/C107551265",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1458245",
+                        "display_name": "Displacement (psychology)",
+                        "level": 2,
+                        "score": 0.5236808061599731
+                    },
+                    {
+                        "id": "https://openalex.org/C69357855",
+                        "wikidata": "https://www.wikidata.org/wiki/Q163214",
+                        "display_name": "Diffusion",
+                        "level": 2,
+                        "score": 0.5104236006736755
+                    },
+                    {
+                        "id": "https://openalex.org/C177264268",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+                        "display_name": "Set (abstract data type)",
+                        "level": 2,
+                        "score": 0.5082413554191589
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.4703158438205719
+                    },
+                    {
+                        "id": "https://openalex.org/C2777027219",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1284190",
+                        "display_name": "Constant (computer programming)",
+                        "level": 2,
+                        "score": 0.45544883608818054
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.35519546270370483
+                    },
+                    {
+                        "id": "https://openalex.org/C11413529",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8366",
+                        "display_name": "Algorithm",
+                        "level": 1,
+                        "score": 0.3455401659011841
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.1522921919822693
+                    },
+                    {
+                        "id": "https://openalex.org/C19417346",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7922",
+                        "display_name": "Pedagogy",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C15744967",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9418",
+                        "display_name": "Psychology",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C97355855",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11473",
+                        "display_name": "Thermodynamics",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C1276947",
+                        "wikidata": "https://www.wikidata.org/wiki/Q333",
+                        "display_name": "Astronomy",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C542102704",
+                        "wikidata": "https://www.wikidata.org/wiki/Q183257",
+                        "display_name": "Psychotherapist",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000072760",
+                        "descriptor_name": "Single Molecule Imaging",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000072760",
+                        "descriptor_name": "Single Molecule Imaging",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000072760",
+                        "descriptor_name": "Single Molecule Imaging",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004058",
+                        "descriptor_name": "Diffusion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004058",
+                        "descriptor_name": "Diffusion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004058",
+                        "descriptor_name": "Diffusion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009038",
+                        "descriptor_name": "Motion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009038",
+                        "descriptor_name": "Motion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009038",
+                        "descriptor_name": "Motion",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1038/s41598-022-13446-0",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1038/s41598-022-13446-0",
+                        "pdf_url": "https://www.nature.com/articles/s41598-022-13446-0.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S196734849",
+                            "display_name": "Scientific Reports",
+                            "issn_l": "2045-2322",
+                            "issn": [
+                                "2045-2322"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310319908",
+                            "host_organization_name": "Nature Portfolio",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310319908",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Nature Portfolio",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Scientific Reports",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:35689015",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35689015",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Scientific reports",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:5e92d23713cc474eae8f61b3fda3ff33",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/5e92d23713cc474eae8f61b3fda3ff33",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Scientific Reports, Vol 12, Iss 1, Pp 1-10 (2022)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9187757",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9187757",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Sci Rep",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/423260",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/423260",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Scientific Reports, 12(1). NLM (Medline)",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1038/s41598-022-13446-0",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41598-022-13446-0",
+                    "pdf_url": "https://www.nature.com/articles/s41598-022-13446-0.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S196734849",
+                        "display_name": "Scientific Reports",
+                        "issn_l": "2045-2322",
+                        "issn": [
+                            "2045-2322"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319908",
+                        "host_organization_name": "Nature Portfolio",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319908",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Nature Portfolio",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Scientific Reports",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G2257739110",
+                        "display_name": null,
+                        "funder_award_id": "723.015.007",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G252480066",
+                        "display_name": null,
+                        "funder_award_id": "VENI Grant 722.017.002",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G3559418360",
+                        "display_name": null,
+                        "funder_award_id": "722.017.002",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G6530563858",
+                        "display_name": null,
+                        "funder_award_id": "VIDI Grant 723.015.007",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4281739312.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4281739312.grobid-xml"
+                },
+                "referenced_works_count": 47,
+                "referenced_works": [
+                    "https://openalex.org/W617663733",
+                    "https://openalex.org/W1980424624",
+                    "https://openalex.org/W1986141440",
+                    "https://openalex.org/W1986490461",
+                    "https://openalex.org/W1987434946",
+                    "https://openalex.org/W2016533177",
+                    "https://openalex.org/W2017038627",
+                    "https://openalex.org/W2023890536",
+                    "https://openalex.org/W2042629182",
+                    "https://openalex.org/W2050188638",
+                    "https://openalex.org/W2061040818",
+                    "https://openalex.org/W2070353646",
+                    "https://openalex.org/W2073805463",
+                    "https://openalex.org/W2096964087",
+                    "https://openalex.org/W2100056576",
+                    "https://openalex.org/W2101699124",
+                    "https://openalex.org/W2135438092",
+                    "https://openalex.org/W2167892316",
+                    "https://openalex.org/W2315265924",
+                    "https://openalex.org/W2316439739",
+                    "https://openalex.org/W2316685521",
+                    "https://openalex.org/W2346473394",
+                    "https://openalex.org/W2411534500",
+                    "https://openalex.org/W2487770199",
+                    "https://openalex.org/W2529052661",
+                    "https://openalex.org/W2615256066",
+                    "https://openalex.org/W2756417922",
+                    "https://openalex.org/W2781628200",
+                    "https://openalex.org/W2781956863",
+                    "https://openalex.org/W2790871781",
+                    "https://openalex.org/W2896737075",
+                    "https://openalex.org/W2916919706",
+                    "https://openalex.org/W2934437784",
+                    "https://openalex.org/W2951085983",
+                    "https://openalex.org/W2952500106",
+                    "https://openalex.org/W3104368962",
+                    "https://openalex.org/W3108730575",
+                    "https://openalex.org/W3112519727",
+                    "https://openalex.org/W3131840170",
+                    "https://openalex.org/W3139354032",
+                    "https://openalex.org/W3157439211",
+                    "https://openalex.org/W3159486912",
+                    "https://openalex.org/W3170355938",
+                    "https://openalex.org/W3201127149",
+                    "https://openalex.org/W3208295289",
+                    "https://openalex.org/W3212206298",
+                    "https://openalex.org/W6699278358"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4323768008",
+                    "https://openalex.org/W1941703695",
+                    "https://openalex.org/W3131574667",
+                    "https://openalex.org/W4360995134",
+                    "https://openalex.org/W2373557848",
+                    "https://openalex.org/W2002488624",
+                    "https://openalex.org/W2088970451",
+                    "https://openalex.org/W4309225183",
+                    "https://openalex.org/W2157008402",
+                    "https://openalex.org/W2038954347"
+                ],
+                "abstract_inverted_index": {
+                    "Single-particle": [
+                        0
+                    ],
+                    "tracking": [
+                        1,
+                        42
+                    ],
+                    "is": [
+                        2,
+                        47,
+                        56,
+                        86,
+                        133
+                    ],
+                    "a": [
+                        3,
+                        89,
+                        154
+                    ],
+                    "powerful": [
+                        4
+                    ],
+                    "approach": [
+                        5,
+                        149
+                    ],
+                    "to": [
+                        6,
+                        22,
+                        31,
+                        81,
+                        95
+                    ],
+                    "study": [
+                        7,
+                        32
+                    ],
+                    "the": [
+                        8,
+                        37,
+                        60,
+                        83,
+                        100,
+                        118,
+                        124,
+                        137,
+                        147,
+                        151
+                    ],
+                    "motion": [
+                        9,
+                        55,
+                        65,
+                        84,
+                        101,
+                        159
+                    ],
+                    "of": [
+                        10,
+                        36,
+                        67,
+                        117,
+                        153
+                    ],
+                    "individual": [
+                        11,
+                        129
+                    ],
+                    "molecules": [
+                        12
+                    ],
+                    "and": [
+                        13,
+                        177
+                    ],
+                    "particles.": [
+                        14
+                    ],
+                    "It": [
+                        15,
+                        109
+                    ],
+                    "can": [
+                        16,
+                        122
+                    ],
+                    "uncover": [
+                        17
+                    ],
+                    "heterogeneities": [
+                        18
+                    ],
+                    "that": [
+                        19
+                    ],
+                    "are": [
+                        20,
+                        52,
+                        73,
+                        180
+                    ],
+                    "invisible": [
+                        21
+                    ],
+                    "ensemble": [
+                        23
+                    ],
+                    "techniques,": [
+                        24
+                    ],
+                    "which": [
+                        25,
+                        82
+                    ],
+                    "places": [
+                        26
+                    ],
+                    "it": [
+                        27,
+                        132
+                    ],
+                    "uniquely": [
+                        28
+                    ],
+                    "among": [
+                        29
+                    ],
+                    "techniques": [
+                        30
+                    ],
+                    "mass": [
+                        33
+                    ],
+                    "transport.": [
+                        34
+                    ],
+                    "Analysis": [
+                        35
+                    ],
+                    "trajectories": [
+                        38,
+                        51,
+                        97
+                    ],
+                    "obtained": [
+                        39
+                    ],
+                    "with": [
+                        40,
+                        78,
+                        104,
+                        158,
+                        173
+                    ],
+                    "single-particle": [
+                        41
+                    ],
+                    "in": [
+                        43,
+                        88,
+                        163
+                    ],
+                    "inorganic": [
+                        44,
+                        164
+                    ],
+                    "porous": [
+                        45,
+                        165
+                    ],
+                    "hosts": [
+                        46
+                    ],
+                    "often": [
+                        48
+                    ],
+                    "challenging,": [
+                        49
+                    ],
+                    "because": [
+                        50
+                    ],
+                    "short": [
+                        53
+                    ],
+                    "and/or": [
+                        54
+                    ],
+                    "heterogeneous.": [
+                        57
+                    ],
+                    "We": [
+                        58,
+                        145
+                    ],
+                    "present": [
+                        59
+                    ],
+                    "DiffusionLab": [
+                        61,
+                        92,
+                        148
+                    ],
+                    "software": [
+                        62,
+                        121,
+                        171
+                    ],
+                    "package": [
+                        63,
+                        172
+                    ],
+                    "for": [
+                        64,
+                        127,
+                        141
+                    ],
+                    "analysis": [
+                        66,
+                        85,
+                        116,
+                        152
+                    ],
+                    "such": [
+                        68,
+                        167
+                    ],
+                    "challenging": [
+                        69
+                    ],
+                    "data": [
+                        70,
+                        156
+                    ],
+                    "sets.": [
+                        71
+                    ],
+                    "Trajectories": [
+                        72
+                    ],
+                    "first": [
+                        74
+                    ],
+                    "classified": [
+                        75
+                    ],
+                    "into": [
+                        76
+                    ],
+                    "populations": [
+                        77
+                    ],
+                    "similar": [
+                        79
+                    ],
+                    "characteristics": [
+                        80
+                    ],
+                    "tailored": [
+                        87
+                    ],
+                    "second": [
+                        90
+                    ],
+                    "step.": [
+                        91
+                    ],
+                    "provides": [
+                        93
+                    ],
+                    "tools": [
+                        94
+                    ],
+                    "classify": [
+                        96
+                    ],
+                    "based": [
+                        98
+                    ],
+                    "on": [
+                        99
+                    ],
+                    "type": [
+                        102
+                    ],
+                    "either": [
+                        103
+                    ],
+                    "machine": [
+                        105
+                    ],
+                    "learning": [
+                        106
+                    ],
+                    "or": [
+                        107,
+                        136
+                    ],
+                    "manually.": [
+                        108
+                    ],
+                    "also": [
+                        110
+                    ],
+                    "offers": [
+                        111
+                    ],
+                    "quantitative": [
+                        112
+                    ],
+                    "mean": [
+                        113
+                    ],
+                    "squared": [
+                        114
+                    ],
+                    "displacement": [
+                        115
+                    ],
+                    "trajectories.": [
+                        119,
+                        144
+                    ],
+                    "The": [
+                        120,
+                        170
+                    ],
+                    "compute": [
+                        123
+                    ],
+                    "diffusion": [
+                        125,
+                        139
+                    ],
+                    "constant": [
+                        126,
+                        140
+                    ],
+                    "an": [
+                        128
+                    ],
+                    "trajectory": [
+                        130
+                    ],
+                    "if": [
+                        131
+                    ],
+                    "sufficiently": [
+                        134
+                    ],
+                    "long,": [
+                        135
+                    ],
+                    "average": [
+                        138
+                    ],
+                    "multiple": [
+                        142
+                    ],
+                    "shorter": [
+                        143
+                    ],
+                    "demonstrate": [
+                        146
+                    ],
+                    "via": [
+                        150
+                    ],
+                    "simulated": [
+                        155
+                    ],
+                    "set": [
+                        157
+                    ],
+                    "types": [
+                        160
+                    ],
+                    "frequently": [
+                        161
+                    ],
+                    "observed": [
+                        162
+                    ],
+                    "hosts,": [
+                        166
+                    ],
+                    "as": [
+                        168
+                    ],
+                    "zeolites.": [
+                        169
+                    ],
+                    "graphical": [
+                        174
+                    ],
+                    "user": [
+                        175
+                    ],
+                    "interface": [
+                        176
+                    ],
+                    "its": [
+                        178
+                    ],
+                    "documentation": [
+                        179
+                    ],
+                    "freely": [
+                        181
+                    ],
+                    "available.": [
+                        182
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Classification-based motion analysis of single-molecule trajectories using DiffusionLab",
+                "doi": "10.1038/s41598-022-13446-0",
+                "pmid": "35689015",
+                "pmc": "PMC9187757",
+                "isbns": [],
+                "altmetric_jid": "4f6fa8213cf058f61000bc80",
+                "issns": [
+                    "2045-2322"
+                ],
+                "journal": "Scientific Reports",
+                "cohorts": {
+                    "sci": 4,
+                    "pub": 10,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 23861036,
+                        "mean": 10.50610647335319,
+                        "rank": 4316674,
+                        "pct": 81,
+                        "higher_than": 19538305
+                    },
+                    "journal": {
+                        "count": 129609,
+                        "mean": 18.518516291307183,
+                        "rank": 33700,
+                        "pct": 73,
+                        "higher_than": 95870
+                    },
+                    "similar_age_3m": {
+                        "count": 432527,
+                        "mean": 14.195878439957493,
+                        "rank": 91516,
+                        "pct": 78,
+                        "higher_than": 340856
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 4288,
+                        "mean": 24.707729944030387,
+                        "rank": 1004,
+                        "pct": 76,
+                        "higher_than": 3283
+                    }
+                },
+                "authors": [
+                    "J. J. Erik Maris",
+                    "Freddy T. Rabouw",
+                    "Bert M. Weckhuysen",
+                    "Florian Meirer"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1654819200,
+                "epubdate": 1654819200,
+                "dimensions_publication_id": "pub.1148547311",
+                "altmetric_id": 129538569,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 16,
+                "cited_by_tweeters_count": 15,
+                "cited_by_accounts_count": 15,
+                "last_updated": 1655140034,
+                "score": 7.45,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 7.45
+                },
+                "url": "http://dx.doi.org/10.1038/s41598-022-13446-0",
+                "added_on": 1654867097,
+                "published_on": 1654819200,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "19",
+                    "connotea": "0"
+                },
+                "readers_count": 19,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=8&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=8&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=8&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=129538569"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1455,
+            "total_ccn": 468,
+            "avg_ccn": 3.18,
+            "nloc_per_file": 17.74,
+            "duplicate_rate": 26.03
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

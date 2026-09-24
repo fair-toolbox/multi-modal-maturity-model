@@ -1,0 +1,2236 @@
+{
+    "WGDTree": {
+        "tool_name": "WGDTree",
+        "biotools": {
+            "name": "WGDTree",
+            "description": "A phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events.",
+            "homepage": "https://github.com/cnickh/wgdtree",
+            "biotoolsID": "wgdtree",
+            "biotoolsCURIE": "biotools:wgdtree",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3947",
+                            "term": "Phylogenetic tree reconciliation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0553",
+                            "term": "Gene tree construction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3942",
+                            "term": "Tree dating"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0544",
+                            "term": "Species tree construction"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3293",
+                    "term": "Phylogenetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1186/s12859-022-05042-w",
+                    "pmid": "36434497",
+                    "pmcid": "PMC9701042",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "WGDTree: a phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events",
+                        "abstract": "Background: Multiple processes impact the probability of retention of individual genes following whole genome duplication (WGD) events. In analyzing two consecutive whole genome duplication events that occurred in the lineage leading to Atlantic salmon, a new phylogenetic statistical analysis was developed to examine the contingency of retention in one event based upon retention in a previous event. This analysis is intended to evaluate mechanisms of duplicate gene retention and to provide software to generate the test statistic for any genome with pairs of WGDs in its history. Results: Here a software package written in Python, \u2018WGDTree\u2019 for the analysis of duplicate gene retention following whole genome duplication events is presented. Using gene tree-species tree reconciliation to label gene duplicate nodes and differentiate between WGD and SSD duplicates, the tool calculates a statistic based upon the conditional probability of a gene duplicate being retained after a second whole genome duplication dependent upon the retention status after the first event. The package also contains methods for the simulation of gene trees with WGD events. After running simulations, the accuracy of the placement of events has been determined to be high. The conditional probability statistic has been calculated for Phalaenopsis equestris on a monocot species tree with a pair of consecutive WGD events on its lineage, showing the applicability of the method. Conclusions: A new software tool has been created for the analysis of duplicate genes in examination of retention mechanisms. The software tool has been made available on the Python package index and the source code can be found on GitHub here: https://github.com/cnickh/wgdtree.",
+                        "date": "2022-12-01T00:00:00Z",
+                        "citationCount": 3,
+                        "authors": [
+                            {
+                                "name": "Henry C.N."
+                            },
+                            {
+                                "name": "Piper K."
+                            },
+                            {
+                                "name": "Wilson A.E."
+                            },
+                            {
+                                "name": "Miraszek J.L."
+                            },
+                            {
+                                "name": "Probst C.S."
+                            },
+                            {
+                                "name": "Rong Y."
+                            },
+                            {
+                                "name": "Liberles D.A."
+                            }
+                        ],
+                        "journal": "BMC Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "David A. Liberles",
+                    "email": "daliberles@temple.edu",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-3487-8826",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "C. Nicholas Henry",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Yuying Rong",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Claire S. Probst",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2023-01-24T15:27:22.780978Z",
+            "lastUpdate": "2024-11-24T15:10:30.790071Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 374210571,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNzQyMTA1NzE=",
+                "name": "wgdtree",
+                "full_name": "cnickh/wgdtree",
+                "private": false,
+                "owner": {
+                    "login": "cnickh",
+                    "id": 36873138,
+                    "node_id": "MDQ6VXNlcjM2ODczMTM4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/36873138?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/cnickh",
+                    "html_url": "https://github.com/cnickh",
+                    "followers_url": "https://api.github.com/users/cnickh/followers",
+                    "following_url": "https://api.github.com/users/cnickh/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/cnickh/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/cnickh/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/cnickh/subscriptions",
+                    "organizations_url": "https://api.github.com/users/cnickh/orgs",
+                    "repos_url": "https://api.github.com/users/cnickh/repos",
+                    "events_url": "https://api.github.com/users/cnickh/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/cnickh/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/cnickh/wgdtree",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/cnickh/wgdtree",
+                "forks_url": "https://api.github.com/repos/cnickh/wgdtree/forks",
+                "keys_url": "https://api.github.com/repos/cnickh/wgdtree/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/cnickh/wgdtree/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/cnickh/wgdtree/teams",
+                "hooks_url": "https://api.github.com/repos/cnickh/wgdtree/hooks",
+                "issue_events_url": "https://api.github.com/repos/cnickh/wgdtree/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/cnickh/wgdtree/events",
+                "assignees_url": "https://api.github.com/repos/cnickh/wgdtree/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/cnickh/wgdtree/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/cnickh/wgdtree/tags",
+                "blobs_url": "https://api.github.com/repos/cnickh/wgdtree/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/cnickh/wgdtree/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/cnickh/wgdtree/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/cnickh/wgdtree/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/cnickh/wgdtree/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/cnickh/wgdtree/languages",
+                "stargazers_url": "https://api.github.com/repos/cnickh/wgdtree/stargazers",
+                "contributors_url": "https://api.github.com/repos/cnickh/wgdtree/contributors",
+                "subscribers_url": "https://api.github.com/repos/cnickh/wgdtree/subscribers",
+                "subscription_url": "https://api.github.com/repos/cnickh/wgdtree/subscription",
+                "commits_url": "https://api.github.com/repos/cnickh/wgdtree/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/cnickh/wgdtree/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/cnickh/wgdtree/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/cnickh/wgdtree/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/cnickh/wgdtree/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/cnickh/wgdtree/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/cnickh/wgdtree/merges",
+                "archive_url": "https://api.github.com/repos/cnickh/wgdtree/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/cnickh/wgdtree/downloads",
+                "issues_url": "https://api.github.com/repos/cnickh/wgdtree/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/cnickh/wgdtree/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/cnickh/wgdtree/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/cnickh/wgdtree/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/cnickh/wgdtree/labels{/name}",
+                "releases_url": "https://api.github.com/repos/cnickh/wgdtree/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/cnickh/wgdtree/deployments",
+                "created_at": "2021-06-05T20:55:38Z",
+                "updated_at": "2024-05-02T16:26:08Z",
+                "pushed_at": "2024-05-02T16:26:04Z",
+                "git_url": "git://github.com/cnickh/wgdtree.git",
+                "ssh_url": "git@github.com:cnickh/wgdtree.git",
+                "clone_url": "https://github.com/cnickh/wgdtree.git",
+                "svn_url": "https://github.com/cnickh/wgdtree",
+                "homepage": null,
+                "size": 2611,
+                "stargazers_count": 2,
+                "watchers_count": 2,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 0,
+                "watchers": 2,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 1,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "build",
+                    "type": "tree"
+                },
+                {
+                    "path": "dist",
+                    "type": "tree"
+                },
+                {
+                    "path": "ete3.citation",
+                    "type": "blob"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.cfg",
+                    "type": "blob"
+                },
+                {
+                    "path": "small.newick",
+                    "type": "blob"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "cnickh",
+                    "contributions": 18
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Python": 33702
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s12859-022-05042-w",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36434497",
+                            "source": "MED",
+                            "pmid": "36434497",
+                            "pmcid": "PMC9701042",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9701042"
+                                ]
+                            },
+                            "doi": "10.1186/s12859-022-05042-w",
+                            "title": "WGDTree: a phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events.",
+                            "authorString": "Henry CN, Piper K, Wilson AE, Miraszek JL, Probst CS, Rong Y, Liberles DA.",
+                            "journalTitle": "BMC Bioinformatics",
+                            "issue": "1",
+                            "journalVolume": "23",
+                            "pubYear": "2022",
+                            "journalIssn": "1471-2105",
+                            "pageInfo": "505",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 5,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2022-11-28",
+                            "firstPublicationDate": "2022-11-24"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4309958149",
+                "doi": "https://doi.org/10.1186/s12859-022-05042-w",
+                "title": "WGDTree: a phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events",
+                "display_name": "WGDTree: a phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events",
+                "publication_year": 2022,
+                "publication_date": "2022-11-24",
+                "ids": {
+                    "openalex": "https://openalex.org/W4309958149",
+                    "doi": "https://doi.org/10.1186/s12859-022-05042-w",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36434497"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s12859-022-05042-w",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-022-05042-w",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-022-05042-w",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-022-05042-w",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5014875441",
+                            "display_name": "Camille Henry",
+                            "orcid": "https://orcid.org/0000-0002-4011-6767"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "C. Nicholas Henry",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5019002281",
+                            "display_name": "Kathryn R. Piper",
+                            "orcid": "https://orcid.org/0000-0003-2711-2347"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I392282",
+                                "display_name": "University at Albany, State University of New York",
+                                "ror": "https://ror.org/012zs8222",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I392282"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kathryn Piper",
+                        "raw_affiliation_strings": [
+                            "Department of Biological Sciences, University at Albany, Albany, NY, 12222, USA",
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biological Sciences, University at Albany, Albany, NY, 12222, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I392282"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037254896",
+                            "display_name": "Amanda E. Wilson",
+                            "orcid": "https://orcid.org/0000-0002-4711-377X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Amanda E. Wilson",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5013623299",
+                            "display_name": "John L. Miraszek",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I76835614",
+                                "display_name": "University of Missouri",
+                                "ror": "https://ror.org/02ymw8z06",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I76835614"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "John L. Miraszek",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                            "Genetics Area Program, University of Missouri, Columbia, MO, 65211, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genetics Area Program, University of Missouri, Columbia, MO, 65211, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I76835614"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5010126441",
+                            "display_name": "Claire S. Probst",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Claire S. Probst",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5016557129",
+                            "display_name": "Yuying Rong",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I155707491",
+                                "display_name": "Haverford College",
+                                "ror": "https://ror.org/04fnrxr62",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I155707491"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Yuying Rong",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                            "Department of Biology, Haverford College, Haverford, PA, 19041, USA",
+                            "Groningen Institute for Evolutionary Life Sciences, University of Groningen, 9747 AG, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Biology, Haverford College, Haverford, PA, 19041, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I155707491"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Groningen Institute for Evolutionary Life Sciences, University of Groningen, 9747 AG, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5075418921",
+                            "display_name": "David A. Liberles",
+                            "orcid": "https://orcid.org/0000-0003-3487-8826"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I84392919",
+                                "display_name": "Temple University",
+                                "ror": "https://ror.org/00kx1jb78",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "David A. Liberles",
+                        "raw_affiliation_strings": [
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA. daliberles@temple.edu",
+                            "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3487-8826",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA. daliberles@temple.edu",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Biology and Center for Computational Genetics and Genomics, Temple University, Philadelphia, PA, 19122, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I84392919"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 7,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5014875441"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I84392919"
+                ],
+                "apc_list": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "apc_paid": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "fwci": 0.6064,
+                "has_fulltext": true,
+                "cited_by_count": 7,
+                "citation_normalized_percentile": {
+                    "value": 0.65113155,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 91,
+                    "max": 97
+                },
+                "biblio": {
+                    "volume": "23",
+                    "issue": "1",
+                    "first_page": "505",
+                    "last_page": "505"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10015",
+                    "display_name": "Genomics and Phylogenetic Studies",
+                    "score": 0.5888000130653381,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.5888000130653381,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T13664",
+                        "display_name": "Genome Rearrangement Algorithms",
+                        "score": 0.383899986743927,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11213",
+                        "display_name": "Genomic variations and chromosomal abnormalities",
+                        "score": 0.007300000172108412,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/gene-duplication",
+                        "display_name": "Gene duplication",
+                        "score": 0.7589516043663025
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.7038276195526123
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.5602446794509888
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/phylogenetic-tree",
+                        "display_name": "Phylogenetic tree",
+                        "score": 0.5584088563919067
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.5281662344932556
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/statistic",
+                        "display_name": "Statistic",
+                        "score": 0.502061128616333
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.4779263138771057
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.4603308439254761
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4554235339164734
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/lineage",
+                        "display_name": "Lineage (genetic)",
+                        "score": 0.45459675788879395
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.4302479028701782
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/event",
+                        "display_name": "Event (particle physics)",
+                        "score": 0.41489145159721375
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.35005417466163635
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/statistics",
+                        "display_name": "Statistics",
+                        "score": 0.2153070867061615
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mathematics",
+                        "display_name": "Mathematics",
+                        "score": 0.16040921211242676
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C7602840",
+                        "wikidata": "https://www.wikidata.org/wiki/Q746284",
+                        "display_name": "Gene duplication",
+                        "level": 3,
+                        "score": 0.7589516043663025
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.7038276195526123
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.5602446794509888
+                    },
+                    {
+                        "id": "https://openalex.org/C193252679",
+                        "wikidata": "https://www.wikidata.org/wiki/Q242125",
+                        "display_name": "Phylogenetic tree",
+                        "level": 3,
+                        "score": 0.5584088563919067
+                    },
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.5281662344932556
+                    },
+                    {
+                        "id": "https://openalex.org/C89128539",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1949963",
+                        "display_name": "Statistic",
+                        "level": 2,
+                        "score": 0.502061128616333
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.4779263138771057
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.4603308439254761
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4554235339164734
+                    },
+                    {
+                        "id": "https://openalex.org/C2776817793",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6553369",
+                        "display_name": "Lineage (genetic)",
+                        "level": 3,
+                        "score": 0.45459675788879395
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.4302479028701782
+                    },
+                    {
+                        "id": "https://openalex.org/C2779662365",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5416694",
+                        "display_name": "Event (particle physics)",
+                        "level": 2,
+                        "score": 0.41489145159721375
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.35005417466163635
+                    },
+                    {
+                        "id": "https://openalex.org/C105795698",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12483",
+                        "display_name": "Statistics",
+                        "level": 1,
+                        "score": 0.2153070867061615
+                    },
+                    {
+                        "id": "https://openalex.org/C33923547",
+                        "wikidata": "https://www.wikidata.org/wiki/Q395",
+                        "display_name": "Mathematics",
+                        "level": 0,
+                        "score": 0.16040921211242676
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C62520636",
+                        "wikidata": "https://www.wikidata.org/wiki/Q944",
+                        "display_name": "Quantum mechanics",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010802",
+                        "descriptor_name": "Phylogeny",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011336",
+                        "descriptor_name": "Probability",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011336",
+                        "descriptor_name": "Probability",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011336",
+                        "descriptor_name": "Probability",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016678",
+                        "descriptor_name": "Genome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016678",
+                        "descriptor_name": "Genome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016678",
+                        "descriptor_name": "Genome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020440",
+                        "descriptor_name": "Gene Duplication",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020440",
+                        "descriptor_name": "Gene Duplication",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020440",
+                        "descriptor_name": "Gene Duplication",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s12859-022-05042-w",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s12859-022-05042-w",
+                        "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-022-05042-w",
+                        "source": {
+                            "id": "https://openalex.org/S19032547",
+                            "display_name": "BMC Bioinformatics",
+                            "issn_l": "1471-2105",
+                            "issn": [
+                                "1471-2105"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36434497",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36434497",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC bioinformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:53894a2446ae4d7eb634b72e26f7697e",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/53894a2446ae4d7eb634b72e26f7697e",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, Vol 23, Iss 1, Pp 1-15 (2022)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9701042",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9701042",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:publications/37ee5105-0b97-462a-801d-4b2a3edd0e5d",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.rug.nl/en/publications/37ee5105-0b97-462a-801d-4b2a3edd0e5d",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": ""
+                    },
+                    {
+                        "id": "pmh:oai:scholarshare.temple.edu:20.500.12613/10043",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/20.500.12613/10043",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402624",
+                            "display_name": "TUScholarShare (Temple University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I84392919",
+                            "host_organization_name": "Temple University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I84392919"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Journal article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s12859-022-05042-w",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-022-05042-w",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-022-05042-w",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.800000011920929,
+                        "id": "https://metadata.un.org/sdg/14",
+                        "display_name": "Life below water"
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4309958149.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4309958149.grobid-xml"
+                },
+                "referenced_works_count": 51,
+                "referenced_works": [
+                    "https://openalex.org/W1533994827",
+                    "https://openalex.org/W1975996842",
+                    "https://openalex.org/W1982337658",
+                    "https://openalex.org/W1985535920",
+                    "https://openalex.org/W1988471037",
+                    "https://openalex.org/W1995521133",
+                    "https://openalex.org/W2008208329",
+                    "https://openalex.org/W2019591778",
+                    "https://openalex.org/W2034499270",
+                    "https://openalex.org/W2035733413",
+                    "https://openalex.org/W2039944075",
+                    "https://openalex.org/W2044689670",
+                    "https://openalex.org/W2044992198",
+                    "https://openalex.org/W2052051563",
+                    "https://openalex.org/W2054755820",
+                    "https://openalex.org/W2071325036",
+                    "https://openalex.org/W2091918228",
+                    "https://openalex.org/W2096525273",
+                    "https://openalex.org/W2098522644",
+                    "https://openalex.org/W2101286315",
+                    "https://openalex.org/W2110762658",
+                    "https://openalex.org/W2111211467",
+                    "https://openalex.org/W2116829288",
+                    "https://openalex.org/W2122243716",
+                    "https://openalex.org/W2122821321",
+                    "https://openalex.org/W2133398395",
+                    "https://openalex.org/W2152075687",
+                    "https://openalex.org/W2158292347",
+                    "https://openalex.org/W2158692417",
+                    "https://openalex.org/W2160378127",
+                    "https://openalex.org/W2164094120",
+                    "https://openalex.org/W2178552215",
+                    "https://openalex.org/W2235513962",
+                    "https://openalex.org/W2276689003",
+                    "https://openalex.org/W2277953252",
+                    "https://openalex.org/W2332462668",
+                    "https://openalex.org/W2337283254",
+                    "https://openalex.org/W2346036277",
+                    "https://openalex.org/W2580314654",
+                    "https://openalex.org/W2604308930",
+                    "https://openalex.org/W2610994034",
+                    "https://openalex.org/W2952970864",
+                    "https://openalex.org/W2976303698",
+                    "https://openalex.org/W3036538006",
+                    "https://openalex.org/W3128830634",
+                    "https://openalex.org/W3153987633",
+                    "https://openalex.org/W3164953386",
+                    "https://openalex.org/W3203926233",
+                    "https://openalex.org/W4205440119",
+                    "https://openalex.org/W4229487902",
+                    "https://openalex.org/W4289274885"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2341492732",
+                    "https://openalex.org/W3187193180",
+                    "https://openalex.org/W106542691",
+                    "https://openalex.org/W1699080303",
+                    "https://openalex.org/W4388014327",
+                    "https://openalex.org/W4297799326",
+                    "https://openalex.org/W3116064965",
+                    "https://openalex.org/W2115382138",
+                    "https://openalex.org/W4287027380",
+                    "https://openalex.org/W3193760048"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Multiple": [
+                        1
+                    ],
+                    "processes": [
+                        2
+                    ],
+                    "impact": [
+                        3
+                    ],
+                    "the": [
+                        4,
+                        28,
+                        43,
+                        74,
+                        97,
+                        127,
+                        134,
+                        151,
+                        155,
+                        164,
+                        175,
+                        178,
+                        214,
+                        217,
+                        228,
+                        246,
+                        251
+                    ],
+                    "probability": [
+                        5,
+                        136,
+                        190
+                    ],
+                    "of": [
+                        6,
+                        8,
+                        45,
+                        64,
+                        82,
+                        99,
+                        137,
+                        166,
+                        177,
+                        180,
+                        206,
+                        216,
+                        230,
+                        235
+                    ],
+                    "retention": [
+                        7,
+                        46,
+                        52,
+                        67,
+                        102,
+                        152,
+                        236
+                    ],
+                    "individual": [
+                        9
+                    ],
+                    "genes": [
+                        10,
+                        232
+                    ],
+                    "following": [
+                        11,
+                        103
+                    ],
+                    "whole": [
+                        12,
+                        21,
+                        104,
+                        146
+                    ],
+                    "genome": [
+                        13,
+                        22,
+                        79,
+                        105,
+                        147
+                    ],
+                    "duplication": [
+                        14,
+                        23,
+                        106,
+                        148
+                    ],
+                    "(WGD)": [
+                        15
+                    ],
+                    "events.": [
+                        16,
+                        171
+                    ],
+                    "In": [
+                        17
+                    ],
+                    "analyzing": [
+                        18
+                    ],
+                    "two": [
+                        19
+                    ],
+                    "consecutive": [
+                        20,
+                        207
+                    ],
+                    "events": [
+                        24,
+                        107,
+                        181,
+                        209
+                    ],
+                    "that": [
+                        25
+                    ],
+                    "occurred": [
+                        26
+                    ],
+                    "in": [
+                        27,
+                        47,
+                        53,
+                        84,
+                        93,
+                        233
+                    ],
+                    "lineage": [
+                        29
+                    ],
+                    "leading": [
+                        30
+                    ],
+                    "to": [
+                        31,
+                        41,
+                        61,
+                        69,
+                        72,
+                        115,
+                        185
+                    ],
+                    "Atlantic": [
+                        32
+                    ],
+                    "salmon,": [
+                        33
+                    ],
+                    "a": [
+                        34,
+                        54,
+                        89,
+                        130,
+                        138,
+                        144,
+                        199,
+                        204
+                    ],
+                    "new": [
+                        35,
+                        221
+                    ],
+                    "phylogenetic": [
+                        36
+                    ],
+                    "statistical": [
+                        37
+                    ],
+                    "analysis": [
+                        38,
+                        58,
+                        98,
+                        229
+                    ],
+                    "was": [
+                        39
+                    ],
+                    "developed": [
+                        40
+                    ],
+                    "examine": [
+                        42
+                    ],
+                    "contingency": [
+                        44
+                    ],
+                    "one": [
+                        48
+                    ],
+                    "event": [
+                        49
+                    ],
+                    "based": [
+                        50,
+                        132
+                    ],
+                    "upon": [
+                        51,
+                        133,
+                        150
+                    ],
+                    "previous": [
+                        55
+                    ],
+                    "event.": [
+                        56,
+                        157
+                    ],
+                    "This": [
+                        57
+                    ],
+                    "is": [
+                        59,
+                        108
+                    ],
+                    "intended": [
+                        60
+                    ],
+                    "evaluate": [
+                        62
+                    ],
+                    "mechanisms": [
+                        63
+                    ],
+                    "duplicate": [
+                        65,
+                        100,
+                        118,
+                        140,
+                        231
+                    ],
+                    "gene": [
+                        66,
+                        101,
+                        111,
+                        117,
+                        139,
+                        167
+                    ],
+                    "and": [
+                        68,
+                        120,
+                        124,
+                        250
+                    ],
+                    "provide": [
+                        70
+                    ],
+                    "software": [
+                        71,
+                        90,
+                        222,
+                        239
+                    ],
+                    "generate": [
+                        73
+                    ],
+                    "test": [
+                        75
+                    ],
+                    "statistic": [
+                        76,
+                        131,
+                        191
+                    ],
+                    "for": [
+                        77,
+                        96,
+                        163,
+                        195,
+                        227
+                    ],
+                    "any": [
+                        78
+                    ],
+                    "with": [
+                        80,
+                        169,
+                        203
+                    ],
+                    "pairs": [
+                        81
+                    ],
+                    "WGDs": [
+                        83
+                    ],
+                    "its": [
+                        85,
+                        211
+                    ],
+                    "history.": [
+                        86
+                    ],
+                    "RESULTS:": [
+                        87
+                    ],
+                    "Here": [
+                        88
+                    ],
+                    "package": [
+                        91,
+                        159,
+                        248
+                    ],
+                    "written": [
+                        92
+                    ],
+                    "Python,": [
+                        94
+                    ],
+                    "'WGDTree'": [
+                        95
+                    ],
+                    "presented.": [
+                        109
+                    ],
+                    "Using": [
+                        110
+                    ],
+                    "tree-species": [
+                        112
+                    ],
+                    "tree": [
+                        113,
+                        202
+                    ],
+                    "reconciliation": [
+                        114
+                    ],
+                    "label": [
+                        116
+                    ],
+                    "nodes": [
+                        119
+                    ],
+                    "differentiate": [
+                        121
+                    ],
+                    "between": [
+                        122
+                    ],
+                    "WGD": [
+                        123,
+                        170,
+                        208
+                    ],
+                    "SSD": [
+                        125
+                    ],
+                    "duplicates,": [
+                        126
+                    ],
+                    "tool": [
+                        128,
+                        223,
+                        240
+                    ],
+                    "calculates": [
+                        129
+                    ],
+                    "conditional": [
+                        135,
+                        189
+                    ],
+                    "being": [
+                        141
+                    ],
+                    "retained": [
+                        142
+                    ],
+                    "after": [
+                        143,
+                        154
+                    ],
+                    "second": [
+                        145
+                    ],
+                    "dependent": [
+                        149
+                    ],
+                    "status": [
+                        153
+                    ],
+                    "first": [
+                        156
+                    ],
+                    "The": [
+                        158,
+                        188,
+                        238
+                    ],
+                    "also": [
+                        160
+                    ],
+                    "contains": [
+                        161
+                    ],
+                    "methods": [
+                        162
+                    ],
+                    "simulation": [
+                        165
+                    ],
+                    "trees": [
+                        168
+                    ],
+                    "After": [
+                        172
+                    ],
+                    "running": [
+                        173
+                    ],
+                    "simulations,": [
+                        174
+                    ],
+                    "accuracy": [
+                        176
+                    ],
+                    "placement": [
+                        179
+                    ],
+                    "has": [
+                        182,
+                        192,
+                        224,
+                        241
+                    ],
+                    "been": [
+                        183,
+                        193,
+                        225,
+                        242
+                    ],
+                    "determined": [
+                        184
+                    ],
+                    "be": [
+                        186,
+                        255
+                    ],
+                    "high.": [
+                        187
+                    ],
+                    "calculated": [
+                        194
+                    ],
+                    "Phalaenopsis": [
+                        196
+                    ],
+                    "equestris": [
+                        197
+                    ],
+                    "on": [
+                        198,
+                        210,
+                        245,
+                        257
+                    ],
+                    "monocot": [
+                        200
+                    ],
+                    "species": [
+                        201
+                    ],
+                    "pair": [
+                        205
+                    ],
+                    "lineage,": [
+                        212
+                    ],
+                    "showing": [
+                        213
+                    ],
+                    "applicability": [
+                        215
+                    ],
+                    "method.": [
+                        218
+                    ],
+                    "CONCLUSIONS:": [
+                        219
+                    ],
+                    "A": [
+                        220
+                    ],
+                    "created": [
+                        226
+                    ],
+                    "examination": [
+                        234
+                    ],
+                    "mechanisms.": [
+                        237
+                    ],
+                    "made": [
+                        243
+                    ],
+                    "available": [
+                        244
+                    ],
+                    "Python": [
+                        247
+                    ],
+                    "index": [
+                        249
+                    ],
+                    "source": [
+                        252
+                    ],
+                    "code": [
+                        253
+                    ],
+                    "can": [
+                        254
+                    ],
+                    "found": [
+                        256
+                    ],
+                    "GitHub": [
+                        258
+                    ],
+                    "here:": [
+                        259
+                    ],
+                    "https://github.com/cnickh/wgdtree": [
+                        260
+                    ],
+                    ".": [
+                        261
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "WGDTree: a phylogenetic software tool to examine conditional probabilities of retention following whole genome duplication events",
+                "doi": "10.1186/s12859-022-05042-w",
+                "pmid": "36434497",
+                "pmc": "PMC9701042",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007a9",
+                "issns": [
+                    "1471-2105"
+                ],
+                "journal": "BMC Bioinformatics",
+                "cohorts": {
+                    "sci": 4,
+                    "pub": 4
+                },
+                "context": {
+                    "all": {
+                        "count": 32472916,
+                        "mean": 10.444509219190543,
+                        "rank": 11414335,
+                        "pct": 39,
+                        "higher_than": 12823539
+                    },
+                    "journal": {
+                        "count": 8291,
+                        "mean": 5.771704257628754,
+                        "rank": 3750,
+                        "pct": 44,
+                        "higher_than": 3668
+                    },
+                    "similar_age_3m": {
+                        "count": 527070,
+                        "mean": 12.123551046350604,
+                        "rank": 178953,
+                        "pct": 57,
+                        "higher_than": 302879
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 138,
+                        "mean": 5.654347826086957,
+                        "rank": 43,
+                        "pct": 66,
+                        "higher_than": 92
+                    }
+                },
+                "authors": [
+                    "C. Nicholas Henry",
+                    "Kathryn Piper",
+                    "Amanda E. Wilson",
+                    "John L. Miraszek",
+                    "Claire S. Probst",
+                    "Yuying Rong",
+                    "David A. Liberles"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1669248000,
+                "epubdate": 1669248000,
+                "dimensions_publication_id": "pub.1153129820",
+                "altmetric_id": 138985895,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Algorithms",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Appl. in Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Microarrays",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 10,
+                "cited_by_tweeters_count": 7,
+                "cited_by_bluesky_count": 1,
+                "cited_by_accounts_count": 8,
+                "last_updated": 1755782754,
+                "score": 3,
+                "history": {
+                    "1y": 0.5,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 3
+                },
+                "url": "http://dx.doi.org/10.1186/s12859-022-05042-w",
+                "added_on": 1669470156,
+                "published_on": 1669248000,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "11",
+                    "connotea": "0"
+                },
+                "readers_count": 11,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=ttttttuu",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=ttttttuu",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=ttttttuu"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=138985895"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 371,
+            "total_ccn": 138,
+            "avg_ccn": 8.12,
+            "nloc_per_file": 61.83,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

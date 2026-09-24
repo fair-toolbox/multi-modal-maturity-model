@@ -1,0 +1,1816 @@
+{
+    "sequali": {
+        "tool_name": "sequali",
+        "biotools": {
+            "name": "Sequali",
+            "description": "Fast sequencing data quality metrics",
+            "homepage": "https://github.com/rhpvorderman/sequali",
+            "biotoolsID": "sequali",
+            "biotoolsCURIE": "biotools:sequali",
+            "version": [
+                "0.12.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3218",
+                            "term": "Sequencing quality control"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2238",
+                            "term": "Statistical calculation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3494",
+                                "term": "DNA sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2182",
+                                    "term": "FASTQ-like format (text)"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_2572",
+                                    "term": "BAM"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3914",
+                                "term": "Quality control report"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3464",
+                                    "term": "JSON"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_2331",
+                                    "term": "HTML"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3572",
+                    "term": "Data quality management"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0080",
+                    "term": "Sequence analysis"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [],
+            "license": null,
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1093/bioadv/vbaf010",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "agnesbarnabe",
+            "additionDate": "2025-02-14T14:25:37.282808Z",
+            "lastUpdate": "2025-02-14T14:25:37.285085Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 613270250,
+                "node_id": "R_kgDOJI3C6g",
+                "name": "sequali",
+                "full_name": "rhpvorderman/sequali",
+                "private": false,
+                "owner": {
+                    "login": "rhpvorderman",
+                    "id": 26142226,
+                    "node_id": "MDQ6VXNlcjI2MTQyMjI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/26142226?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/rhpvorderman",
+                    "html_url": "https://github.com/rhpvorderman",
+                    "followers_url": "https://api.github.com/users/rhpvorderman/followers",
+                    "following_url": "https://api.github.com/users/rhpvorderman/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/rhpvorderman/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/rhpvorderman/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/rhpvorderman/subscriptions",
+                    "organizations_url": "https://api.github.com/users/rhpvorderman/orgs",
+                    "repos_url": "https://api.github.com/users/rhpvorderman/repos",
+                    "events_url": "https://api.github.com/users/rhpvorderman/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/rhpvorderman/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/rhpvorderman/sequali",
+                "description": "Fast sequencing data quality metrics",
+                "fork": false,
+                "url": "https://api.github.com/repos/rhpvorderman/sequali",
+                "forks_url": "https://api.github.com/repos/rhpvorderman/sequali/forks",
+                "keys_url": "https://api.github.com/repos/rhpvorderman/sequali/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/rhpvorderman/sequali/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/rhpvorderman/sequali/teams",
+                "hooks_url": "https://api.github.com/repos/rhpvorderman/sequali/hooks",
+                "issue_events_url": "https://api.github.com/repos/rhpvorderman/sequali/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/rhpvorderman/sequali/events",
+                "assignees_url": "https://api.github.com/repos/rhpvorderman/sequali/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/rhpvorderman/sequali/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/rhpvorderman/sequali/tags",
+                "blobs_url": "https://api.github.com/repos/rhpvorderman/sequali/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/rhpvorderman/sequali/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/rhpvorderman/sequali/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/rhpvorderman/sequali/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/rhpvorderman/sequali/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/rhpvorderman/sequali/languages",
+                "stargazers_url": "https://api.github.com/repos/rhpvorderman/sequali/stargazers",
+                "contributors_url": "https://api.github.com/repos/rhpvorderman/sequali/contributors",
+                "subscribers_url": "https://api.github.com/repos/rhpvorderman/sequali/subscribers",
+                "subscription_url": "https://api.github.com/repos/rhpvorderman/sequali/subscription",
+                "commits_url": "https://api.github.com/repos/rhpvorderman/sequali/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/rhpvorderman/sequali/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/rhpvorderman/sequali/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/rhpvorderman/sequali/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/rhpvorderman/sequali/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/rhpvorderman/sequali/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/rhpvorderman/sequali/merges",
+                "archive_url": "https://api.github.com/repos/rhpvorderman/sequali/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/rhpvorderman/sequali/downloads",
+                "issues_url": "https://api.github.com/repos/rhpvorderman/sequali/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/rhpvorderman/sequali/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/rhpvorderman/sequali/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/rhpvorderman/sequali/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/rhpvorderman/sequali/labels{/name}",
+                "releases_url": "https://api.github.com/repos/rhpvorderman/sequali/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/rhpvorderman/sequali/deployments",
+                "created_at": "2023-03-13T08:45:16Z",
+                "updated_at": "2026-04-10T11:50:20Z",
+                "pushed_at": "2026-04-21T13:43:18Z",
+                "git_url": "git://github.com/rhpvorderman/sequali.git",
+                "ssh_url": "git@github.com:rhpvorderman/sequali.git",
+                "clone_url": "https://github.com/rhpvorderman/sequali.git",
+                "svn_url": "https://github.com/rhpvorderman/sequali",
+                "homepage": "",
+                "size": 10107,
+                "stargazers_count": 33,
+                "watchers_count": 33,
+                "language": "C",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 14,
+                "license": {
+                    "key": "agpl-3.0",
+                    "name": "GNU Affero General Public License v3.0",
+                    "spdx_id": "AGPL-3.0",
+                    "url": "https://api.github.com/licenses/agpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTE="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "bam",
+                    "fastq",
+                    "illumina",
+                    "nanopore",
+                    "qc",
+                    "quality-control"
+                ],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 14,
+                "watchers": 33,
+                "default_branch": "develop",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 1,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".clang-format",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitattributes",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitmodules",
+                    "type": "blob"
+                },
+                {
+                    "path": ".pre-commit-config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".readthedocs.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "codecov.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "scripts",
+                    "type": "tree"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                },
+                {
+                    "path": "tox.ini",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "rhpvorderman",
+                    "contributions": 1396
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 250,
+                    "title": "Release 1.0.2",
+                    "created_at": "2025-09-09T09:26:05Z",
+                    "closed_at": "2025-09-19T10:16:40Z"
+                },
+                {
+                    "number": 248,
+                    "title": "Fix memory leaks",
+                    "created_at": "2025-09-09T06:32:30Z",
+                    "closed_at": "2025-09-09T09:18:06Z"
+                },
+                {
+                    "number": 245,
+                    "title": "pi tag should have a valid uuid4 format with 36 characters.  Counted 3",
+                    "created_at": "2025-09-05T07:30:49Z",
+                    "closed_at": "2025-09-05T14:31:04Z"
+                },
+                {
+                    "number": 244,
+                    "title": "free(): corrupted unsorted chunks",
+                    "created_at": "2025-09-01T08:41:05Z",
+                    "closed_at": "2025-09-05T13:26:22Z"
+                },
+                {
+                    "number": 240,
+                    "title": "Strip debug information from wheel builds",
+                    "created_at": "2025-05-26T16:36:37Z",
+                    "closed_at": "2025-05-27T09:28:15Z"
+                },
+                {
+                    "number": 238,
+                    "title": "Release 1.0.1",
+                    "created_at": "2025-05-26T16:24:49Z",
+                    "closed_at": "2025-05-26T17:20:59Z"
+                },
+                {
+                    "number": 234,
+                    "title": "Release 1.0.0",
+                    "created_at": "2025-05-26T06:20:11Z",
+                    "closed_at": "2025-05-26T13:45:27Z"
+                },
+                {
+                    "number": 228,
+                    "title": "Reproducible HTML",
+                    "created_at": "2025-05-21T09:00:45Z",
+                    "closed_at": "2025-05-23T11:28:02Z"
+                },
+                {
+                    "number": 227,
+                    "title": "proper accession number for GM24385",
+                    "created_at": "2025-03-19T21:08:57Z",
+                    "closed_at": "2025-05-23T10:13:01Z"
+                },
+                {
+                    "number": 226,
+                    "title": "Separate figure generation",
+                    "created_at": "2025-03-05T16:45:17Z",
+                    "closed_at": "2025-05-26T13:47:01Z"
+                },
+                {
+                    "number": 225,
+                    "title": "Galaxy wrapper",
+                    "created_at": "2025-03-05T10:56:11Z",
+                    "closed_at": "2025-03-19T15:22:50Z"
+                },
+                {
+                    "number": 224,
+                    "title": "Error in \"Per tile quality\" section",
+                    "created_at": "2025-02-25T09:20:33Z",
+                    "closed_at": "2025-03-03T15:04:57Z"
+                },
+                {
+                    "number": 219,
+                    "title": "End-anchored plots",
+                    "created_at": "2024-12-15T08:20:25Z",
+                    "closed_at": "2025-05-23T09:45:02Z"
+                },
+                {
+                    "number": 211,
+                    "title": "Refactor AdapterCounter",
+                    "created_at": "2024-11-29T08:21:43Z",
+                    "closed_at": "2024-12-17T08:25:35Z"
+                },
+                {
+                    "number": 207,
+                    "title": "Python 3.13 support",
+                    "created_at": "2024-11-20T10:36:37Z",
+                    "closed_at": "2024-11-20T10:50:23Z"
+                },
+                {
+                    "number": 204,
+                    "title": "Investigate the CPython limited ABI",
+                    "created_at": "2024-11-13T08:42:57Z",
+                    "closed_at": "2024-11-29T09:27:09Z"
+                },
+                {
+                    "number": 203,
+                    "title": "Use alignment flags like samtools fastq",
+                    "created_at": "2024-11-01T11:28:47Z",
+                    "closed_at": "2024-11-22T14:09:33Z"
+                },
+                {
+                    "number": 202,
+                    "title": "Small typo under Adapter content section",
+                    "created_at": "2024-10-21T09:35:39Z",
+                    "closed_at": "2024-11-20T10:44:28Z"
+                },
+                {
+                    "number": 200,
+                    "title": "Release 0.12.0",
+                    "created_at": "2024-10-09T09:11:24Z",
+                    "closed_at": "2024-10-11T08:17:30Z"
+                },
+                {
+                    "number": 199,
+                    "title": "Add support for read splitting tags",
+                    "created_at": "2024-10-09T09:02:12Z",
+                    "closed_at": "2024-12-13T13:20:07Z"
+                },
+                {
+                    "number": 197,
+                    "title": "Add N50 and N90 as summary statistics",
+                    "created_at": "2024-10-04T10:00:05Z",
+                    "closed_at": "2024-12-04T08:05:44Z"
+                },
+                {
+                    "number": 194,
+                    "title": "N50 is not a median",
+                    "created_at": "2024-10-03T13:09:36Z",
+                    "closed_at": "2024-10-04T12:17:20Z"
+                },
+                {
+                    "number": 191,
+                    "title": "Release 0.11.1",
+                    "created_at": "2024-08-12T08:33:53Z",
+                    "closed_at": "2024-08-13T07:06:42Z"
+                },
+                {
+                    "number": 188,
+                    "title": "Intermittent increased memory usage on CPython 3.12",
+                    "created_at": "2024-08-10T09:05:06Z",
+                    "closed_at": "2024-08-12T08:30:24Z"
+                },
+                {
+                    "number": 185,
+                    "title": "Release 0.11.0",
+                    "created_at": "2024-08-09T11:41:12Z",
+                    "closed_at": "2024-08-10T09:03:25Z"
+                },
+                {
+                    "number": 182,
+                    "title": "Make HTML reports more reproducible.",
+                    "created_at": "2024-07-09T12:21:59Z",
+                    "closed_at": "2024-07-10T04:52:31Z"
+                },
+                {
+                    "number": 176,
+                    "title": "Add FastQC-like \"judgements\" on the quality of the library",
+                    "created_at": "2024-06-21T11:56:05Z",
+                    "closed_at": "2025-05-23T14:29:06Z"
+                },
+                {
+                    "number": 174,
+                    "title": "\"Solve\" the insert size distribution in order to extrapolate the estimate. ",
+                    "created_at": "2024-06-10T06:20:13Z",
+                    "closed_at": "2024-11-20T10:46:38Z"
+                },
+                {
+                    "number": 171,
+                    "title": "Rewrite shift-AND algorithm to enable compiler auto vectorization when GCC 14.1 becomes available. ",
+                    "created_at": "2024-06-04T10:28:53Z",
+                    "closed_at": "2026-03-31T08:40:58Z"
+                },
+                {
+                    "number": 169,
+                    "title": "Release 0.10.0",
+                    "created_at": "2024-06-03T06:39:34Z",
+                    "closed_at": "2024-06-04T09:28:47Z"
+                },
+                {
+                    "number": 166,
+                    "title": "Check if sequences occur multiple times in the same read.",
+                    "created_at": "2024-05-27T08:01:11Z",
+                    "closed_at": "2024-06-03T06:37:20Z"
+                },
+                {
+                    "number": 162,
+                    "title": "Release 0.9.1",
+                    "created_at": "2024-05-22T10:19:24Z",
+                    "closed_at": "2024-05-24T08:52:43Z"
+                },
+                {
+                    "number": 159,
+                    "title": "sequali crashes when no adapters are found",
+                    "created_at": "2024-05-22T09:53:51Z",
+                    "closed_at": "2024-05-22T10:17:31Z"
+                },
+                {
+                    "number": 157,
+                    "title": "Release 0.9.0",
+                    "created_at": "2024-05-21T09:51:37Z",
+                    "closed_at": "2024-05-24T08:52:28Z"
+                },
+                {
+                    "number": 153,
+                    "title": "Add very common repeats in the human genome.",
+                    "created_at": "2024-05-17T09:49:51Z",
+                    "closed_at": "2024-11-20T10:47:49Z"
+                },
+                {
+                    "number": 152,
+                    "title": "Paired report order is hideous",
+                    "created_at": "2024-05-15T12:26:55Z",
+                    "closed_at": "2024-05-21T05:19:10Z"
+                },
+                {
+                    "number": 151,
+                    "title": "Add polyA and PolyG to contaminants",
+                    "created_at": "2024-05-15T12:26:13Z",
+                    "closed_at": "2024-05-18T06:33:39Z"
+                },
+                {
+                    "number": 146,
+                    "title": "Release 0.8.0",
+                    "created_at": "2024-05-08T14:02:57Z",
+                    "closed_at": "2024-05-08T15:21:18Z"
+                },
+                {
+                    "number": 140,
+                    "title": "Add a citation info file or chapter",
+                    "created_at": "2024-05-07T11:23:43Z",
+                    "closed_at": "2024-05-08T13:50:46Z"
+                },
+                {
+                    "number": 135,
+                    "title": "Make sequali paired-end aware",
+                    "created_at": "2024-04-19T06:20:03Z",
+                    "closed_at": "2024-05-10T10:18:18Z"
+                },
+                {
+                    "number": 133,
+                    "title": "Release 0.7.1",
+                    "created_at": "2024-04-17T04:48:45Z",
+                    "closed_at": "2024-04-19T04:57:27Z"
+                },
+                {
+                    "number": 129,
+                    "title": "Release 0.7.0",
+                    "created_at": "2024-04-10T10:54:56Z",
+                    "closed_at": "2024-04-10T12:20:45Z"
+                },
+                {
+                    "number": 121,
+                    "title": "MultiQC integration improvement suggestion",
+                    "created_at": "2024-04-02T11:24:44Z",
+                    "closed_at": "2024-05-21T06:16:14Z"
+                },
+                {
+                    "number": 119,
+                    "title": "Release 0.6.0",
+                    "created_at": "2024-03-29T13:40:26Z",
+                    "closed_at": "2024-04-02T11:23:42Z"
+                },
+                {
+                    "number": 111,
+                    "title": "Per read quality score distribution table",
+                    "created_at": "2024-03-25T14:23:02Z",
+                    "closed_at": "2024-03-26T14:52:35Z"
+                },
+                {
+                    "number": 109,
+                    "title": "Add used version to the html report.",
+                    "created_at": "2024-03-22T16:05:30Z",
+                    "closed_at": "2024-03-25T14:50:57Z"
+                },
+                {
+                    "number": 106,
+                    "title": "Release 0.5.1",
+                    "created_at": "2024-03-22T13:53:40Z",
+                    "closed_at": "2024-03-22T16:02:25Z"
+                },
+                {
+                    "number": 102,
+                    "title": "Release 0.5.0",
+                    "created_at": "2024-03-15T13:28:09Z",
+                    "closed_at": "2024-03-19T10:46:40Z"
+                },
+                {
+                    "number": 99,
+                    "title": "Investigate byte pair encoding for less error-prone sequence classification.",
+                    "created_at": "2024-03-12T13:40:14Z",
+                    "closed_at": "2024-06-05T10:30:19Z"
+                },
+                {
+                    "number": 97,
+                    "title": "Add example reports",
+                    "created_at": "2024-03-04T10:55:31Z",
+                    "closed_at": "2024-03-04T10:58:45Z"
+                },
+                {
+                    "number": 96,
+                    "title": "ValueError: not enough values to unpack",
+                    "created_at": "2024-01-08T01:29:41Z",
+                    "closed_at": "2024-04-17T07:20:48Z"
+                },
+                {
+                    "number": 94,
+                    "title": "Multi-sample support and statistics",
+                    "created_at": "2023-12-04T10:18:36Z",
+                    "closed_at": "2024-05-22T10:42:22Z"
+                },
+                {
+                    "number": 93,
+                    "title": "Release 0.4.1",
+                    "created_at": "2023-12-01T18:47:42Z",
+                    "closed_at": "2023-12-04T07:17:39Z"
+                },
+                {
+                    "number": 90,
+                    "title": "IndexError if a later read was sequenced earlier",
+                    "created_at": "2023-12-01T14:11:28Z",
+                    "closed_at": "2023-12-01T18:38:38Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Move documentation to readthedocs",
+                    "created_at": "2023-12-01T09:59:08Z",
+                    "closed_at": "2024-03-29T06:08:28Z"
+                },
+                {
+                    "number": 88,
+                    "title": "_qc.pyi stub is not up to date.",
+                    "created_at": "2023-12-01T09:49:06Z",
+                    "closed_at": "2024-03-26T12:11:06Z"
+                },
+                {
+                    "number": 87,
+                    "title": "Modern package layout centered around pyproject.toml and setuptools_scm",
+                    "created_at": "2023-12-01T09:34:26Z",
+                    "closed_at": "2024-03-25T14:19:16Z"
+                },
+                {
+                    "number": 86,
+                    "title": "MultiQC integration",
+                    "created_at": "2023-12-01T09:33:34Z",
+                    "closed_at": "2024-05-21T06:14:35Z"
+                },
+                {
+                    "number": 84,
+                    "title": "Release 0.4.0",
+                    "created_at": "2023-12-01T09:13:02Z",
+                    "closed_at": "2023-12-01T18:47:13Z"
+                },
+                {
+                    "number": 81,
+                    "title": "Crash on empty read with metadata",
+                    "created_at": "2023-11-30T12:38:50Z",
+                    "closed_at": "2023-12-01T09:11:21Z"
+                },
+                {
+                    "number": 80,
+                    "title": "IndexError with single input read",
+                    "created_at": "2023-11-30T12:25:06Z",
+                    "closed_at": "2023-12-01T09:11:20Z"
+                },
+                {
+                    "number": 79,
+                    "title": "Add a --version command-line option",
+                    "created_at": "2023-11-30T12:10:11Z",
+                    "closed_at": "2023-12-01T08:16:35Z"
+                },
+                {
+                    "number": 76,
+                    "title": "Release 0.3.0",
+                    "created_at": "2023-11-22T13:33:30Z",
+                    "closed_at": "2023-11-29T11:23:12Z"
+                },
+                {
+                    "number": 71,
+                    "title": "Fingerprint might not work very well for nanopore reads",
+                    "created_at": "2023-11-20T11:25:08Z",
+                    "closed_at": "2023-11-22T13:07:28Z"
+                },
+                {
+                    "number": 69,
+                    "title": "Current adapter searcher does not work well for nanopore adapters",
+                    "created_at": "2023-11-17T19:27:44Z",
+                    "closed_at": "2023-11-21T13:55:48Z"
+                },
+                {
+                    "number": 68,
+                    "title": "Pygal has some issues with proper installation.",
+                    "created_at": "2023-11-17T11:59:11Z",
+                    "closed_at": "2023-11-22T10:10:33Z"
+                },
+                {
+                    "number": 67,
+                    "title": "Suggestion: Add a link to the homepage/repo to the report",
+                    "created_at": "2023-11-16T10:05:53Z",
+                    "closed_at": "2023-11-22T10:32:31Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Crash on empty read",
+                    "created_at": "2023-11-15T16:18:00Z",
+                    "closed_at": "2023-11-17T11:57:57Z"
+                },
+                {
+                    "number": 64,
+                    "title": "Crash on empty input",
+                    "created_at": "2023-11-15T16:15:14Z",
+                    "closed_at": "2023-11-17T11:57:57Z"
+                },
+                {
+                    "number": 62,
+                    "title": "ZeroDivisionError",
+                    "created_at": "2023-11-15T13:48:58Z",
+                    "closed_at": "2023-11-15T19:51:40Z"
+                },
+                {
+                    "number": 59,
+                    "title": "Release 0.2.0",
+                    "created_at": "2023-11-15T08:49:07Z",
+                    "closed_at": "2023-11-15T14:07:11Z"
+                },
+                {
+                    "number": 57,
+                    "title": "Display the total sequences and the number of subsampled sequences as well as the sampling rate for overrepresented sequences.",
+                    "created_at": "2023-11-14T15:30:28Z",
+                    "closed_at": "2023-11-15T08:48:49Z"
+                },
+                {
+                    "number": 52,
+                    "title": "make threads configurable through the CLI",
+                    "created_at": "2023-11-09T20:37:44Z",
+                    "closed_at": "2023-11-10T09:31:09Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Release 0.1.0",
+                    "created_at": "2023-11-09T19:16:30Z",
+                    "closed_at": "2023-11-10T15:40:00Z"
+                }
+            ],
+            "languages": {
+                "C": 254746,
+                "Python": 238422,
+                "CSS": 1889,
+                "JavaScript": 612
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioadv/vbaf010",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "39927290",
+                            "source": "MED",
+                            "pmid": "39927290",
+                            "pmcid": "PMC11802474",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC11802474"
+                                ]
+                            },
+                            "doi": "10.1093/bioadv/vbaf010",
+                            "title": "Sequali: efficient and comprehensive quality control of short- and long-read sequencing data.",
+                            "authorString": "Vorderman RHP.",
+                            "journalTitle": "Bioinform Adv",
+                            "issue": "1",
+                            "journalVolume": "5",
+                            "pubYear": "2025",
+                            "journalIssn": "2635-0041",
+                            "pageInfo": "vbaf010",
+                            "pubType": "brief-report; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 1,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "gen"
+                                ]
+                            },
+                            "firstIndexDate": "2025-02-10",
+                            "firstPublicationDate": "2025-01-29"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4406958115",
+                "doi": "https://doi.org/10.1093/bioadv/vbaf010",
+                "title": "Sequali: efficient and comprehensive quality control of short- and long-read sequencing data",
+                "display_name": "Sequali: efficient and comprehensive quality control of short- and long-read sequencing data",
+                "publication_year": 2024,
+                "publication_date": "2024-12-26",
+                "ids": {
+                    "openalex": "https://openalex.org/W4406958115",
+                    "doi": "https://doi.org/10.1093/bioadv/vbaf010",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/39927290"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioadv/vbaf010",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioadv/vbaf010",
+                    "pdf_url": "https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbaf010/61683840/vbaf010.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4210234069",
+                        "display_name": "Bioinformatics Advances",
+                        "issn_l": "2635-0041",
+                        "issn": [
+                            "2635-0041"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics Advances",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbaf010/61683840/vbaf010.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5077343559",
+                            "display_name": "Ruben H.P. Vorderman",
+                            "orcid": "https://orcid.org/0000-0002-8813-1528"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Ruben H P Vorderman",
+                        "raw_affiliation_strings": [
+                            "Sequencing Analysis Support Core, Department of Biomedical Data Sciences, Leiden University Medical Center , Leiden 2300RC,",
+                            "Sequencing Analysis Support Core, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, 9600, 2300RC, Netherlands Postbus"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8813-1528",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Sequencing Analysis Support Core, Department of Biomedical Data Sciences, Leiden University Medical Center , Leiden 2300RC,",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Sequencing Analysis Support Core, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, 9600, 2300RC, Netherlands Postbus",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 1,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5077343559"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800006345"
+                ],
+                "apc_list": {
+                    "value": 1765,
+                    "currency": "GBP",
+                    "value_usd": 2164
+                },
+                "apc_paid": {
+                    "value": 1765,
+                    "currency": "GBP",
+                    "value_usd": 2164
+                },
+                "fwci": 0.4221,
+                "has_fulltext": true,
+                "cited_by_count": 2,
+                "citation_normalized_percentile": {
+                    "value": 0.65341598,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 91,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "5",
+                    "issue": "1",
+                    "first_page": "vbaf010",
+                    "last_page": "vbaf010"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10015",
+                    "display_name": "Genomics and Phylogenetic Studies",
+                    "score": 0.9350000023841858,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9350000023841858,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.03020000085234642,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11287",
+                        "display_name": "Cancer Genomics and Diagnostics",
+                        "score": 0.00279999990016222,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1306",
+                            "display_name": "Cancer Research"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/quality",
+                        "display_name": "Quality (philosophy)",
+                        "score": 0.5308761596679688
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/control",
+                        "display_name": "Control (management)",
+                        "score": 0.508873462677002
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4958725869655609
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.44126033782958984
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.2655401825904846
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.12595686316490173
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2779530757",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+                        "display_name": "Quality (philosophy)",
+                        "level": 2,
+                        "score": 0.5308761596679688
+                    },
+                    {
+                        "id": "https://openalex.org/C2775924081",
+                        "wikidata": "https://www.wikidata.org/wiki/Q55608371",
+                        "display_name": "Control (management)",
+                        "level": 2,
+                        "score": 0.508873462677002
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4958725869655609
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.44126033782958984
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.2655401825904846
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.12595686316490173
+                    },
+                    {
+                        "id": "https://openalex.org/C138885662",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5891",
+                        "display_name": "Philosophy",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C111472728",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9471",
+                        "display_name": "Epistemology",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 3,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioadv/vbaf010",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioadv/vbaf010",
+                        "pdf_url": "https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbaf010/61683840/vbaf010.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4210234069",
+                            "display_name": "Bioinformatics Advances",
+                            "issn_l": "2635-0041",
+                            "issn": [
+                                "2635-0041"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics Advances",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:39927290",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39927290",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics advances",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:11802474",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11802474",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11802474/pdf/vbaf010.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinform Adv",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioadv/vbaf010",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioadv/vbaf010",
+                    "pdf_url": "https://academic.oup.com/bioinformaticsadvances/advance-article-pdf/doi/10.1093/bioadv/vbaf010/61683840/vbaf010.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4210234069",
+                        "display_name": "Bioinformatics Advances",
+                        "issn_l": "2635-0041",
+                        "issn": [
+                            "2635-0041"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics Advances",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/9",
+                        "display_name": "Industry, innovation and infrastructure",
+                        "score": 0.5
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320312414",
+                        "display_name": "Oxford Nanopore Technologies",
+                        "ror": "https://ror.org/04hyfx005"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320929",
+                        "display_name": "Universiteit Leiden",
+                        "ror": "https://ror.org/027bh9e22"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322516",
+                        "display_name": "Santen",
+                        "ror": "https://ror.org/032msy923"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320323080",
+                        "display_name": "Leids Universitair Medisch Centrum",
+                        "ror": "https://ror.org/05xvt9f17"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4406958115.pdf"
+                },
+                "referenced_works_count": 18,
+                "referenced_works": [
+                    "https://openalex.org/W2108234281",
+                    "https://openalex.org/W2117608012",
+                    "https://openalex.org/W2153602357",
+                    "https://openalex.org/W2162667876",
+                    "https://openalex.org/W2432815617",
+                    "https://openalex.org/W2602661691",
+                    "https://openalex.org/W2604622795",
+                    "https://openalex.org/W2765745983",
+                    "https://openalex.org/W2883984851",
+                    "https://openalex.org/W2919601071",
+                    "https://openalex.org/W2951912016",
+                    "https://openalex.org/W2985045444",
+                    "https://openalex.org/W3022783334",
+                    "https://openalex.org/W3202060848",
+                    "https://openalex.org/W4248656187",
+                    "https://openalex.org/W4320503024",
+                    "https://openalex.org/W4376256177",
+                    "https://openalex.org/W6676286517"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2384667405",
+                    "https://openalex.org/W2389266787",
+                    "https://openalex.org/W2363885542",
+                    "https://openalex.org/W2387206255",
+                    "https://openalex.org/W2355570285",
+                    "https://openalex.org/W2364958354",
+                    "https://openalex.org/W2352797113",
+                    "https://openalex.org/W2372137583",
+                    "https://openalex.org/W2374872591",
+                    "https://openalex.org/W1548050717"
+                ],
+                "abstract_inverted_index": {
+                    "Motivation:": [
+                        0
+                    ],
+                    "Quality": [
+                        1,
+                        44
+                    ],
+                    "control": [
+                        2,
+                        29,
+                        45,
+                        74,
+                        106
+                    ],
+                    "of": [
+                        3
+                    ],
+                    "sequencing": [
+                        4,
+                        12,
+                        17,
+                        52,
+                        72,
+                        80,
+                        104,
+                        113
+                    ],
+                    "data": [
+                        5
+                    ],
+                    "is": [
+                        6,
+                        39,
+                        99,
+                        119,
+                        128,
+                        143
+                    ],
+                    "the": [
+                        7,
+                        132
+                    ],
+                    "first": [
+                        8
+                    ],
+                    "step": [
+                        9
+                    ],
+                    "in": [
+                        10
+                    ],
+                    "many": [
+                        11,
+                        20
+                    ],
+                    "workflows.": [
+                        13
+                    ],
+                    "Short-": [
+                        14
+                    ],
+                    "and": [
+                        15,
+                        63,
+                        78,
+                        89,
+                        92,
+                        95,
+                        111,
+                        116,
+                        127
+                    ],
+                    "long-read": [
+                        16,
+                        79,
+                        112
+                    ],
+                    "technologies": [
+                        18
+                    ],
+                    "have": [
+                        19
+                    ],
+                    "commonalities": [
+                        21
+                    ],
+                    "with": [
+                        22
+                    ],
+                    "regard": [
+                        23
+                    ],
+                    "to": [
+                        24,
+                        70
+                    ],
+                    "quality": [
+                        25,
+                        28,
+                        73,
+                        105
+                    ],
+                    "control.": [
+                        26
+                    ],
+                    "Several": [
+                        27
+                    ],
+                    "programs": [
+                        30,
+                        46,
+                        107
+                    ],
+                    "exist;": [
+                        31
+                    ],
+                    "however,": [
+                        32
+                    ],
+                    "none": [
+                        33
+                    ],
+                    "possess": [
+                        34
+                    ],
+                    "a": [
+                        35
+                    ],
+                    "feature": [
+                        36
+                    ],
+                    "set": [
+                        37
+                    ],
+                    "that": [
+                        38
+                    ],
+                    "adequate": [
+                        40
+                    ],
+                    "for": [
+                        41,
+                        75,
+                        108,
+                        140
+                    ],
+                    "both": [
+                        42,
+                        76,
+                        109
+                    ],
+                    "technologies.": [
+                        43,
+                        81,
+                        114
+                    ],
+                    "aimed": [
+                        47
+                    ],
+                    "at": [
+                        48,
+                        135,
+                        145
+                    ],
+                    "Oxford": [
+                        49
+                    ],
+                    "Nanopore": [
+                        50
+                    ],
+                    "Technologies": [
+                        51
+                    ],
+                    "lack": [
+                        53
+                    ],
+                    "vital": [
+                        54
+                    ],
+                    "features,": [
+                        55
+                    ],
+                    "such": [
+                        56
+                    ],
+                    "as": [
+                        57
+                    ],
+                    "adapter": [
+                        58,
+                        84
+                    ],
+                    "searching,": [
+                        59
+                    ],
+                    "overrepresented": [
+                        60,
+                        86
+                    ],
+                    "sequence": [
+                        61,
+                        87
+                    ],
+                    "analysis,": [
+                        62,
+                        88
+                    ],
+                    "duplication": [
+                        64,
+                        90
+                    ],
+                    "analysis.": [
+                        65
+                    ],
+                    "Results:": [
+                        66
+                    ],
+                    "Sequali": [
+                        67,
+                        118
+                    ],
+                    "was": [
+                        68
+                    ],
+                    "developed": [
+                        69
+                    ],
+                    "provide": [
+                        71
+                    ],
+                    "short-": [
+                        77,
+                        110
+                    ],
+                    "It": [
+                        82,
+                        98
+                    ],
+                    "features": [
+                        83
+                    ],
+                    "search,": [
+                        85
+                    ],
+                    "analysis": [
+                        91
+                    ],
+                    "supports": [
+                        93
+                    ],
+                    "FASTQ": [
+                        94
+                    ],
+                    "uBAM": [
+                        96
+                    ],
+                    "inputs.": [
+                        97
+                    ],
+                    "significantly": [
+                        100
+                    ],
+                    "faster": [
+                        101
+                    ],
+                    "than": [
+                        102
+                    ],
+                    "comparable": [
+                        103
+                    ],
+                    "Availability": [
+                        115
+                    ],
+                    "Implementation:": [
+                        117
+                    ],
+                    "an": [
+                        120
+                    ],
+                    "open-source": [
+                        121
+                    ],
+                    "Python": [
+                        122
+                    ],
+                    "application": [
+                        123
+                    ],
+                    "using": [
+                        124
+                    ],
+                    "C": [
+                        125
+                    ],
+                    "extensions": [
+                        126
+                    ],
+                    "freely": [
+                        129
+                    ],
+                    "available": [
+                        130
+                    ],
+                    "under": [
+                        131
+                    ],
+                    "AGPL-3.0": [
+                        133
+                    ],
+                    "license": [
+                        134
+                    ],
+                    "https://github.com/rhpvorderman/sequali.": [
+                        136
+                    ],
+                    "The": [
+                        137
+                    ],
+                    "source": [
+                        138
+                    ],
+                    "code": [
+                        139
+                    ],
+                    "each": [
+                        141
+                    ],
+                    "release": [
+                        142
+                    ],
+                    "archived": [
+                        144
+                    ],
+                    "zenodo:": [
+                        146
+                    ],
+                    "https://zenodo.org/doi/10.5281/zenodo.10822485.": [
+                        147
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Sequali: efficient and comprehensive quality control of short- and long-read sequencing data",
+                "doi": "10.1093/bioadv/vbaf010",
+                "pmid": "39927290",
+                "pmc": "PMC11802474",
+                "isbns": [],
+                "altmetric_jid": "6655ad66d714020001acb05c",
+                "issns": [
+                    "2635-0041"
+                ],
+                "journal": "Bioinformatics Advances",
+                "cohorts": {
+                    "pub": 2,
+                    "com": 1,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 31520336,
+                        "mean": 10.572694363029637,
+                        "rank": 20827122,
+                        "pct": 33,
+                        "higher_than": 10434997
+                    },
+                    "journal": {
+                        "count": 828,
+                        "mean": 4.997101449275363,
+                        "rank": 454,
+                        "pct": 41,
+                        "higher_than": 344
+                    },
+                    "similar_age_3m": {
+                        "count": 375022,
+                        "mean": 9.957676749630687,
+                        "rank": 168343,
+                        "pct": 53,
+                        "higher_than": 201683
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 60,
+                        "mean": 4.848333333333333,
+                        "rank": 27,
+                        "pct": 53,
+                        "higher_than": 32
+                    }
+                },
+                "authors": [
+                    "Ruben H P Vorderman"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1735171200,
+                "epubdate": 1738108800,
+                "dimensions_publication_id": "pub.1184997581",
+                "altmetric_id": 173776976,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_bluesky_count": 3,
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 1,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1738726388,
+                "score": 1.75,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1.75
+                },
+                "url": "http://dx.doi.org/10.1093/bioadv/vbaf010",
+                "added_on": 1738591592,
+                "published_on": 1738108800,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "13",
+                    "connotea": "0"
+                },
+                "readers_count": 13,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=2&types=ttuuuuuu",
+                    "medium": "https://badges.altmetric.com/?size=100&score=2&types=ttuuuuuu",
+                    "large": "https://badges.altmetric.com/?size=180&score=2&types=ttuuuuuu"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=173776976"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 8081,
+            "total_ccn": 1441,
+            "avg_ccn": 3.42,
+            "nloc_per_file": 192.4,
+            "duplicate_rate": 5.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

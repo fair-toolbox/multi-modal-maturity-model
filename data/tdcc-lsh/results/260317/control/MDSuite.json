@@ -1,0 +1,1663 @@
+{
+    "MDSuite": {
+        "papers": {
+            "id": "36774469",
+            "source": "MED",
+            "pmid": "36774469",
+            "pmcid": "PMC9921696",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC9921696"
+                ]
+            },
+            "doi": "10.1186/s13321-023-00687-y",
+            "title": "MDSuite: comprehensive post-processing tool for particle simulations.",
+            "authorString": "Tovey S, Zills F, Torres-Herrador F, Lohrmann C, Br\u00fcckner M, Holm C.",
+            "journalTitle": "J Cheminform",
+            "issue": "1",
+            "journalVolume": "15",
+            "pubYear": "2023",
+            "journalIssn": "1758-2946",
+            "pageInfo": "19",
+            "pubType": "research-article; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 3,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2023-02-12",
+            "firstPublicationDate": "2023-02-11"
+        },
+        "github": {
+            "repo": {
+                "id": 268630527,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNjg2MzA1Mjc=",
+                "name": "MDSuite",
+                "full_name": "zincware/MDSuite",
+                "private": false,
+                "owner": {
+                    "login": "zincware",
+                    "id": 82644327,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgyNjQ0MzI3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/82644327?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/zincware",
+                    "html_url": "https://github.com/zincware",
+                    "followers_url": "https://api.github.com/users/zincware/followers",
+                    "following_url": "https://api.github.com/users/zincware/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/zincware/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/zincware/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/zincware/subscriptions",
+                    "organizations_url": "https://api.github.com/users/zincware/orgs",
+                    "repos_url": "https://api.github.com/users/zincware/repos",
+                    "events_url": "https://api.github.com/users/zincware/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/zincware/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/zincware/MDSuite",
+                "description": "A post-processing engine for particle simulations",
+                "fork": false,
+                "url": "https://api.github.com/repos/zincware/MDSuite",
+                "forks_url": "https://api.github.com/repos/zincware/MDSuite/forks",
+                "keys_url": "https://api.github.com/repos/zincware/MDSuite/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/zincware/MDSuite/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/zincware/MDSuite/teams",
+                "hooks_url": "https://api.github.com/repos/zincware/MDSuite/hooks",
+                "issue_events_url": "https://api.github.com/repos/zincware/MDSuite/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/zincware/MDSuite/events",
+                "assignees_url": "https://api.github.com/repos/zincware/MDSuite/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/zincware/MDSuite/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/zincware/MDSuite/tags",
+                "blobs_url": "https://api.github.com/repos/zincware/MDSuite/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/zincware/MDSuite/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/zincware/MDSuite/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/zincware/MDSuite/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/zincware/MDSuite/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/zincware/MDSuite/languages",
+                "stargazers_url": "https://api.github.com/repos/zincware/MDSuite/stargazers",
+                "contributors_url": "https://api.github.com/repos/zincware/MDSuite/contributors",
+                "subscribers_url": "https://api.github.com/repos/zincware/MDSuite/subscribers",
+                "subscription_url": "https://api.github.com/repos/zincware/MDSuite/subscription",
+                "commits_url": "https://api.github.com/repos/zincware/MDSuite/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/zincware/MDSuite/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/zincware/MDSuite/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/zincware/MDSuite/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/zincware/MDSuite/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/zincware/MDSuite/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/zincware/MDSuite/merges",
+                "archive_url": "https://api.github.com/repos/zincware/MDSuite/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/zincware/MDSuite/downloads",
+                "issues_url": "https://api.github.com/repos/zincware/MDSuite/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/zincware/MDSuite/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/zincware/MDSuite/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/zincware/MDSuite/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/zincware/MDSuite/labels{/name}",
+                "releases_url": "https://api.github.com/repos/zincware/MDSuite/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/zincware/MDSuite/deployments",
+                "created_at": "2020-06-01T20:56:20Z",
+                "updated_at": "2026-03-11T03:51:14Z",
+                "pushed_at": "2025-08-20T10:24:34Z",
+                "git_url": "git://github.com/zincware/MDSuite.git",
+                "ssh_url": "git@github.com:zincware/MDSuite.git",
+                "clone_url": "https://github.com/zincware/MDSuite.git",
+                "svn_url": "https://github.com/zincware/MDSuite",
+                "homepage": "https://mdsuite.readthedocs.io/",
+                "size": 54755,
+                "stargazers_count": 46,
+                "watchers_count": 46,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": true,
+                "forks_count": 10,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 70,
+                "license": {
+                    "key": "epl-2.0",
+                    "name": "Eclipse Public License 2.0",
+                    "spdx_id": "EPL-2.0",
+                    "url": "https://api.github.com/licenses/epl-2.0",
+                    "node_id": "MDc6TGljZW5zZTMy"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "hdf5",
+                    "molecular-dynamics",
+                    "particle-simulation",
+                    "python",
+                    "tensorflow"
+                ],
+                "visibility": "public",
+                "forks": 10,
+                "open_issues": 70,
+                "watchers": 46,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "zincware",
+                    "id": 82644327,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgyNjQ0MzI3",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/82644327?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/zincware",
+                    "html_url": "https://github.com/zincware",
+                    "followers_url": "https://api.github.com/users/zincware/followers",
+                    "following_url": "https://api.github.com/users/zincware/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/zincware/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/zincware/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/zincware/subscriptions",
+                    "organizations_url": "https://api.github.com/users/zincware/orgs",
+                    "repos_url": "https://api.github.com/users/zincware/repos",
+                    "events_url": "https://api.github.com/users/zincware/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/zincware/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 10,
+                "subscribers_count": 2
+            },
+            "contributors": [
+                {
+                    "login": "SamTov",
+                    "contributions": 921
+                },
+                {
+                    "login": "PythonFZ",
+                    "contributions": 506
+                },
+                {
+                    "login": "christophlohrmann",
+                    "contributions": 69
+                },
+                {
+                    "login": "MarcBrueck",
+                    "contributions": 37
+                },
+                {
+                    "login": "tobiasmerkt",
+                    "contributions": 8
+                },
+                {
+                    "login": "Fratorhe",
+                    "contributions": 6
+                },
+                {
+                    "login": "dependabot[bot]",
+                    "contributions": 4
+                },
+                {
+                    "login": "psomers3",
+                    "contributions": 2
+                },
+                {
+                    "login": "KaiSzuttor",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 607,
+                    "title": "Zero GreenKubo/EinsteinHelfand Ionic Conductivity in NaCl_walkthrough MDSuite-0.2.0",
+                    "created_at": "2024-06-29T11:02:30+00:00",
+                    "closed_at": "2024-06-29T23:32:52+00:00"
+                },
+                {
+                    "number": 603,
+                    "title": "On the error for RadialDistributionFunciton",
+                    "created_at": "2023-12-19T01:50:54+00:00",
+                    "closed_at": "2023-12-20T09:28:09+00:00"
+                },
+                {
+                    "number": 602,
+                    "title": "Error in Molten_Salt_comparison : 'Dataset' object has no attribute 'nbytes'",
+                    "created_at": "2023-12-12T00:33:01+00:00",
+                    "closed_at": "2023-12-15T13:21:56+00:00"
+                },
+                {
+                    "number": 585,
+                    "title": "Plots are not displayed properly in jupyter",
+                    "created_at": "2023-02-02T16:29:20+00:00",
+                    "closed_at": "2023-02-13T10:08:56+00:00"
+                },
+                {
+                    "number": 570,
+                    "title": "Adding new data in different group impossible after first run",
+                    "created_at": "2022-12-05T17:07:02+00:00",
+                    "closed_at": "2023-02-13T20:14:27+00:00"
+                },
+                {
+                    "number": 568,
+                    "title": "System wide observables and data loading",
+                    "created_at": "2022-12-05T10:10:39+00:00",
+                    "closed_at": "2023-02-01T15:34:34+00:00"
+                },
+                {
+                    "number": 546,
+                    "title": "Number of atoms not showing in lammpstraj read",
+                    "created_at": "2022-07-27T14:12:32+00:00",
+                    "closed_at": "2022-08-08T07:15:54+00:00"
+                },
+                {
+                    "number": 540,
+                    "title": "Remove Experiments not easily possible",
+                    "created_at": "2022-07-20T14:22:02+00:00",
+                    "closed_at": "2023-02-14T12:03:58+00:00"
+                },
+                {
+                    "number": 537,
+                    "title": "prohibit experiment names starting with a number",
+                    "created_at": "2022-07-20T08:55:56+00:00",
+                    "closed_at": "2022-07-28T14:29:25+00:00"
+                },
+                {
+                    "number": 533,
+                    "title": "Add `mds.units.METAL`",
+                    "created_at": "2022-07-01T08:19:33+00:00",
+                    "closed_at": "2022-08-16T11:04:19+00:00"
+                },
+                {
+                    "number": 531,
+                    "title": "Add a set of MDSuite colours",
+                    "created_at": "2022-07-01T07:58:50+00:00",
+                    "closed_at": "2022-07-04T13:49:53+00:00"
+                },
+                {
+                    "number": 530,
+                    "title": "Look into Jax vmap and pmap for some calculators",
+                    "created_at": "2022-06-29T17:55:30+00:00",
+                    "closed_at": "2022-08-10T16:39:22+00:00"
+                },
+                {
+                    "number": 527,
+                    "title": "Remove pubchempy dependency",
+                    "created_at": "2022-06-29T13:19:44+00:00",
+                    "closed_at": "2023-01-27T08:50:35+00:00"
+                },
+                {
+                    "number": 524,
+                    "title": "Integration range parameter is not what get's stored in the SQL database",
+                    "created_at": "2022-06-01T12:31:51+00:00",
+                    "closed_at": "2022-07-03T13:00:54+00:00"
+                },
+                {
+                    "number": 510,
+                    "title": "tests fail on main",
+                    "created_at": "2022-03-10T13:33:57+00:00",
+                    "closed_at": "2022-03-14T16:10:41+00:00"
+                },
+                {
+                    "number": 509,
+                    "title": "VACF wrong in GK diffusion calculator",
+                    "created_at": "2022-03-09T16:49:25+00:00",
+                    "closed_at": "2022-03-11T13:14:29+00:00"
+                },
+                {
+                    "number": 503,
+                    "title": "Use stable black release",
+                    "created_at": "2022-02-22T16:46:14+00:00",
+                    "closed_at": "2022-04-04T16:54:33+00:00"
+                },
+                {
+                    "number": 499,
+                    "title": "Compute Volume dynamically and don't store it",
+                    "created_at": "2022-02-15T09:22:19+00:00",
+                    "closed_at": "2022-02-15T13:17:06+00:00"
+                },
+                {
+                    "number": 498,
+                    "title": "Issue with reading `extxyz` files produced by ASE",
+                    "created_at": "2022-02-15T07:55:50+00:00",
+                    "closed_at": "2022-02-21T09:52:56+00:00"
+                },
+                {
+                    "number": 494,
+                    "title": "how to adjust mdsuite logging?",
+                    "created_at": "2022-02-02T15:17:52+00:00",
+                    "closed_at": "2022-08-17T06:25:20+00:00"
+                },
+                {
+                    "number": 492,
+                    "title": "MSD wrong",
+                    "created_at": "2022-02-02T13:40:03+00:00",
+                    "closed_at": "2022-03-16T16:14:40+00:00"
+                },
+                {
+                    "number": 488,
+                    "title": "MDSuite could use ZnJSON",
+                    "created_at": "2022-01-31T13:45:49+00:00",
+                    "closed_at": "2022-02-21T12:03:06+00:00"
+                },
+                {
+                    "number": 482,
+                    "title": "Check log Level for log file",
+                    "created_at": "2022-01-28T08:29:08+00:00",
+                    "closed_at": "2022-01-28T13:14:34+00:00"
+                },
+                {
+                    "number": 481,
+                    "title": "Passing arguments post-operation calculators",
+                    "created_at": "2022-01-27T16:09:37+00:00",
+                    "closed_at": "2022-03-16T16:15:40+00:00"
+                },
+                {
+                    "number": 479,
+                    "title": "fix `_ang_to_nm` in RDF calculator",
+                    "created_at": "2022-01-27T09:58:21+00:00",
+                    "closed_at": "2022-03-21T10:36:50+00:00"
+                },
+                {
+                    "number": 477,
+                    "title": "Decide how to manager particle groups such as molecules",
+                    "created_at": "2022-01-26T13:53:47+00:00",
+                    "closed_at": "2022-03-16T16:17:03+00:00"
+                },
+                {
+                    "number": 465,
+                    "title": "Box vector not read in by Chemfiles reader for xtc+gro file combination",
+                    "created_at": "2022-01-14T15:19:48+00:00",
+                    "closed_at": "2022-01-19T09:40:02+00:00"
+                },
+                {
+                    "number": 463,
+                    "title": "Improve distinct coefficient speed",
+                    "created_at": "2022-01-14T13:47:29+00:00",
+                    "closed_at": "2022-08-10T16:39:22+00:00"
+                },
+                {
+                    "number": 462,
+                    "title": "``test_green_kubo_distinct_diffusion_coefficients.py`` is slow",
+                    "created_at": "2022-01-14T13:12:06+00:00",
+                    "closed_at": "2022-08-10T16:39:22+00:00"
+                },
+                {
+                    "number": 459,
+                    "title": "position property naming",
+                    "created_at": "2022-01-13T12:43:17+00:00",
+                    "closed_at": "2022-01-24T09:28:37+00:00"
+                },
+                {
+                    "number": 458,
+                    "title": "`ase.Atoms`-like object for HDF5",
+                    "created_at": "2022-01-13T08:49:37+00:00",
+                    "closed_at": "2022-01-31T16:54:33+00:00"
+                },
+                {
+                    "number": 449,
+                    "title": "pathlib support in simulation_database",
+                    "created_at": "2021-12-17T17:22:15+00:00",
+                    "closed_at": "2021-12-22T10:13:46+00:00"
+                },
+                {
+                    "number": 444,
+                    "title": "add_experiment() should return the experiment",
+                    "created_at": "2021-12-15T10:49:16+00:00",
+                    "closed_at": "2021-12-21T17:20:35+00:00"
+                },
+                {
+                    "number": 434,
+                    "title": "Molecules should be attached to the atoms",
+                    "created_at": "2021-12-08T17:18:48+00:00",
+                    "closed_at": "2022-03-16T16:17:08+00:00"
+                },
+                {
+                    "number": 432,
+                    "title": "Check missing indicies",
+                    "created_at": "2021-12-08T17:09:09+00:00",
+                    "closed_at": "2022-01-31T14:45:40+00:00"
+                },
+                {
+                    "number": 428,
+                    "title": "Documentation: Isothermal compressibility empty",
+                    "created_at": "2021-12-08T15:11:32+00:00",
+                    "closed_at": "2021-12-08T15:13:56+00:00"
+                },
+                {
+                    "number": 427,
+                    "title": "Documentation issues",
+                    "created_at": "2021-12-08T15:05:25+00:00",
+                    "closed_at": "2022-07-29T09:36:15+00:00"
+                },
+                {
+                    "number": 424,
+                    "title": "Documentation: Coordinate Unwrapper code does not work",
+                    "created_at": "2021-12-08T14:00:22+00:00",
+                    "closed_at": "2022-07-29T09:36:15+00:00"
+                },
+                {
+                    "number": 411,
+                    "title": "remove RDF state",
+                    "created_at": "2021-12-08T09:46:42+00:00",
+                    "closed_at": "2021-12-08T10:00:46+00:00"
+                },
+                {
+                    "number": 409,
+                    "title": "We could implement TensorFlow in the distinct diffusion coefficients calculation.",
+                    "created_at": "2021-12-08T08:46:00+00:00",
+                    "closed_at": "2022-07-28T15:31:53+00:00"
+                },
+                {
+                    "number": 408,
+                    "title": "fix isort ciruclar import[database]",
+                    "created_at": "2021-12-08T07:32:33+00:00",
+                    "closed_at": "2022-01-18T12:49:53+00:00"
+                },
+                {
+                    "number": 407,
+                    "title": "Fix kirkwood_buff_integrals",
+                    "created_at": "2021-12-07T18:53:55+00:00",
+                    "closed_at": "2021-12-08T16:48:42+00:00"
+                },
+                {
+                    "number": 406,
+                    "title": "fix isort ciruclar import hotfix[calculators]",
+                    "created_at": "2021-12-07T16:35:44+00:00",
+                    "closed_at": "2021-12-08T15:54:46+00:00"
+                },
+                {
+                    "number": 402,
+                    "title": "check logfiles",
+                    "created_at": "2021-12-07T08:07:46+00:00",
+                    "closed_at": "2021-12-21T14:19:19+00:00"
+                },
+                {
+                    "number": 401,
+                    "title": "Save bokeh html file",
+                    "created_at": "2021-12-07T08:06:44+00:00",
+                    "closed_at": "2021-12-08T17:34:50+00:00"
+                },
+                {
+                    "number": 400,
+                    "title": "simulation_database should use a context manager",
+                    "created_at": "2021-12-07T08:03:41+00:00",
+                    "closed_at": "2021-12-22T10:13:46+00:00"
+                },
+                {
+                    "number": 399,
+                    "title": "what was the resoning behind simulation_database.get_database_summary(self):",
+                    "created_at": "2021-12-06T15:16:59+00:00",
+                    "closed_at": "2022-01-18T12:15:41+00:00"
+                },
+                {
+                    "number": 398,
+                    "title": "SVG export for Bokeh",
+                    "created_at": "2021-12-03T14:11:44+00:00",
+                    "closed_at": "2022-03-10T16:23:47+00:00"
+                },
+                {
+                    "number": 397,
+                    "title": "Use `tf.data.Dataset` and prefetching in the file readers",
+                    "created_at": "2021-12-03T10:20:09+00:00",
+                    "closed_at": "2023-01-27T14:54:53+00:00"
+                },
+                {
+                    "number": 395,
+                    "title": "`perform_transformation` should work similar to `run`",
+                    "created_at": "2021-12-03T07:57:44+00:00",
+                    "closed_at": "2021-12-17T17:19:15+00:00"
+                },
+                {
+                    "number": 393,
+                    "title": "remove the `project/<project>/databases` directory",
+                    "created_at": "2021-12-03T07:18:10+00:00",
+                    "closed_at": "2021-12-08T16:05:55+00:00"
+                },
+                {
+                    "number": 392,
+                    "title": "experiment.species should be a dataclass",
+                    "created_at": "2021-12-02T16:23:15+00:00",
+                    "closed_at": "2022-02-23T20:13:24+00:00"
+                },
+                {
+                    "number": 390,
+                    "title": "Atom-wise batching for dynamics is broken.",
+                    "created_at": "2021-12-02T11:18:38+00:00",
+                    "closed_at": "2021-12-08T16:48:42+00:00"
+                },
+                {
+                    "number": 389,
+                    "title": "CI data sources are wrong",
+                    "created_at": "2021-12-01T16:02:26+00:00",
+                    "closed_at": "2021-12-08T15:55:04+00:00"
+                },
+                {
+                    "number": 381,
+                    "title": "Fix gk self diffusion test",
+                    "created_at": "2021-11-25T08:40:03+00:00",
+                    "closed_at": "2022-03-11T13:14:29+00:00"
+                },
+                {
+                    "number": 379,
+                    "title": "Handle single snapshot trajectories",
+                    "created_at": "2021-11-24T13:33:06+00:00",
+                    "closed_at": "2022-03-12T14:09:26+00:00"
+                },
+                {
+                    "number": 378,
+                    "title": "Einstein diffusion coefficient: the exported and the plotted data are not the same",
+                    "created_at": "2021-11-22T17:19:00+00:00",
+                    "closed_at": "2022-03-16T16:17:16+00:00"
+                },
+                {
+                    "number": 377,
+                    "title": "publish package on PyPi",
+                    "created_at": "2021-11-17T13:48:16+00:00",
+                    "closed_at": "2022-06-29T09:40:02+00:00"
+                },
+                {
+                    "number": 375,
+                    "title": "Bokeh plots should be smaller.",
+                    "created_at": "2021-11-05T14:15:18+00:00",
+                    "closed_at": "2021-12-01T17:44:55+00:00"
+                },
+                {
+                    "number": 374,
+                    "title": "LaTeX rendering does not work properly (in Jupyter?)",
+                    "created_at": "2021-11-05T14:14:09+00:00",
+                    "closed_at": "2021-12-01T10:58:23+00:00"
+                },
+                {
+                    "number": 373,
+                    "title": "Definition of autocorrelation in TF",
+                    "created_at": "2021-11-04T16:10:23+00:00",
+                    "closed_at": "2021-11-24T20:50:45+00:00"
+                },
+                {
+                    "number": 367,
+                    "title": "Resolve added file path when checking read_files",
+                    "created_at": "2021-10-29T15:05:39+00:00",
+                    "closed_at": "2021-12-01T08:21:59+00:00"
+                },
+                {
+                    "number": 366,
+                    "title": "self.update_user_args should not set the database",
+                    "created_at": "2021-10-29T14:11:21+00:00",
+                    "closed_at": "2021-11-05T17:08:53+00:00"
+                },
+                {
+                    "number": 356,
+                    "title": "Would it be benefitial to store the HDF5 data differently",
+                    "created_at": "2021-10-04T08:55:59+00:00",
+                    "closed_at": "2022-02-03T11:42:00+00:00"
+                },
+                {
+                    "number": 339,
+                    "title": "update_user_args overwrites attributes",
+                    "created_at": "2021-09-28T08:32:33+00:00",
+                    "closed_at": "2021-09-28T11:08:02+00:00"
+                },
+                {
+                    "number": 338,
+                    "title": "include `experiment.molecule` into the database",
+                    "created_at": "2021-09-24T08:25:15+00:00",
+                    "closed_at": "2021-09-28T05:55:06+00:00"
+                },
+                {
+                    "number": 336,
+                    "title": "make `GPU` a global setting",
+                    "created_at": "2021-09-22T13:17:43+00:00",
+                    "closed_at": "2022-01-25T09:19:17+00:00"
+                },
+                {
+                    "number": 334,
+                    "title": "Inconsistent units with the RDF/ADF/SDF calculators",
+                    "created_at": "2021-09-21T12:50:05+00:00",
+                    "closed_at": "2021-11-05T16:51:13+00:00"
+                },
+                {
+                    "number": 332,
+                    "title": "Add a tutorial data method.",
+                    "created_at": "2021-09-21T09:38:14+00:00",
+                    "closed_at": "2021-12-01T09:31:42+00:00"
+                },
+                {
+                    "number": 327,
+                    "title": "CN, StructureFactor, POMF should have the same args as RDF",
+                    "created_at": "2021-09-20T08:58:31+00:00",
+                    "closed_at": "2022-03-16T16:17:24+00:00"
+                },
+                {
+                    "number": 325,
+                    "title": "experiment.load_matrix return",
+                    "created_at": "2021-09-17T13:50:51+00:00",
+                    "closed_at": "2021-11-05T16:49:21+00:00"
+                },
+                {
+                    "number": 324,
+                    "title": "experiment.load_matrix signature",
+                    "created_at": "2021-09-17T13:49:45+00:00",
+                    "closed_at": "2021-11-05T16:49:48+00:00"
+                },
+                {
+                    "number": 323,
+                    "title": "do not repeat calculations",
+                    "created_at": "2021-09-17T12:49:57+00:00",
+                    "closed_at": "2021-09-28T05:55:31+00:00"
+                },
+                {
+                    "number": 322,
+                    "title": "load data returns",
+                    "created_at": "2021-09-17T12:48:35+00:00",
+                    "closed_at": "2021-09-28T05:55:49+00:00"
+                },
+                {
+                    "number": 318,
+                    "title": "bump pandas version",
+                    "created_at": "2021-09-17T09:57:30+00:00",
+                    "closed_at": "2021-12-04T15:15:21+00:00"
+                },
+                {
+                    "number": 315,
+                    "title": "Transformations: Move batching to parent class ",
+                    "created_at": "2021-09-16T08:51:07+00:00",
+                    "closed_at": "2022-01-18T12:19:19+00:00"
+                },
+                {
+                    "number": 312,
+                    "title": "Make unit tests easy",
+                    "created_at": "2021-09-15T15:56:50+00:00",
+                    "closed_at": "2021-12-08T12:43:26+00:00"
+                },
+                {
+                    "number": 310,
+                    "title": "fix simulation_data",
+                    "created_at": "2021-09-15T13:46:53+00:00",
+                    "closed_at": "2021-09-17T09:27:26+00:00"
+                },
+                {
+                    "number": 309,
+                    "title": "fix custom units",
+                    "created_at": "2021-09-15T13:46:19+00:00",
+                    "closed_at": "2021-09-17T09:27:36+00:00"
+                },
+                {
+                    "number": 307,
+                    "title": "MDsuite changes non-mdsuite logger",
+                    "created_at": "2021-09-15T11:37:09+00:00",
+                    "closed_at": "2021-09-17T09:27:50+00:00"
+                },
+                {
+                    "number": 306,
+                    "title": "Add Data is slow",
+                    "created_at": "2021-09-13T09:32:33+00:00",
+                    "closed_at": "2021-10-26T07:31:01+00:00"
+                },
+                {
+                    "number": 303,
+                    "title": "`run_computation` autocomplete does not work outside of jupyter notebooks",
+                    "created_at": "2021-09-01T08:49:46+00:00",
+                    "closed_at": "2021-09-13T16:23:29+00:00"
+                },
+                {
+                    "number": 302,
+                    "title": "add_data does not support `pathlib.Path`",
+                    "created_at": "2021-09-01T08:19:28+00:00",
+                    "closed_at": "2021-12-08T12:43:26+00:00"
+                },
+                {
+                    "number": 300,
+                    "title": "rename `analysis_name` to `experiment_name` at all occasions",
+                    "created_at": "2021-08-28T17:18:18+00:00",
+                    "closed_at": "2021-09-13T16:23:37+00:00"
+                },
+                {
+                    "number": 297,
+                    "title": "Add self.dtype to calculators",
+                    "created_at": "2021-08-12T16:24:27+00:00",
+                    "closed_at": "2021-11-05T16:50:45+00:00"
+                },
+                {
+                    "number": 295,
+                    "title": "Fix GK integration and move to TF",
+                    "created_at": "2021-08-11T11:29:47+00:00",
+                    "closed_at": "2021-08-13T11:09:14+00:00"
+                },
+                {
+                    "number": 291,
+                    "title": "Logging with Loguru",
+                    "created_at": "2021-08-06T09:23:27+00:00",
+                    "closed_at": "2021-09-21T15:07:28+00:00"
+                },
+                {
+                    "number": 289,
+                    "title": "Display the PMF in units of eV instead of J",
+                    "created_at": "2021-08-02T06:42:42+00:00",
+                    "closed_at": "2021-11-05T16:51:01+00:00"
+                },
+                {
+                    "number": 288,
+                    "title": "Issue while plotting RDF directly after PMF",
+                    "created_at": "2021-08-02T06:28:49+00:00",
+                    "closed_at": "2021-09-21T15:05:02+00:00"
+                },
+                {
+                    "number": 287,
+                    "title": "Reduction of the calculator class.",
+                    "created_at": "2021-07-28T20:02:38+00:00",
+                    "closed_at": "2021-11-05T16:50:07+00:00"
+                },
+                {
+                    "number": 282,
+                    "title": ".read_files is not in the storage directory",
+                    "created_at": "2021-07-22T08:13:47+00:00",
+                    "closed_at": "2021-07-22T09:55:52+00:00"
+                },
+                {
+                    "number": 278,
+                    "title": "Code Coverage",
+                    "created_at": "2021-07-16T12:29:57+00:00",
+                    "closed_at": "2021-12-08T13:19:24+00:00"
+                },
+                {
+                    "number": 275,
+                    "title": "Inconsistent arguments",
+                    "created_at": "2021-07-15T14:37:50+00:00",
+                    "closed_at": "2021-11-05T16:50:32+00:00"
+                },
+                {
+                    "number": 273,
+                    "title": "Three database built on experiment instantiation",
+                    "created_at": "2021-07-13T12:52:41+00:00",
+                    "closed_at": "2021-09-13T16:23:53+00:00"
+                },
+                {
+                    "number": 272,
+                    "title": "Make reading from the SQL database easier",
+                    "created_at": "2021-07-13T12:51:45+00:00",
+                    "closed_at": "2021-12-01T11:10:58+00:00"
+                },
+                {
+                    "number": 260,
+                    "title": "Improving RDF",
+                    "created_at": "2021-06-28T21:37:40+00:00",
+                    "closed_at": "2021-07-12T13:25:18+00:00"
+                },
+                {
+                    "number": 257,
+                    "title": "Add support for not adding the same file path twice.",
+                    "created_at": "2021-06-24T14:48:52+00:00",
+                    "closed_at": "2021-07-05T12:08:32+00:00"
+                },
+                {
+                    "number": 254,
+                    "title": "MDSuite modules docs are not there for the calculators.",
+                    "created_at": "2021-06-24T13:30:53+00:00",
+                    "closed_at": "2021-06-24T15:58:49+00:00"
+                },
+                {
+                    "number": 248,
+                    "title": "Clean ADF/RDF code.",
+                    "created_at": "2021-06-22T07:03:40+00:00",
+                    "closed_at": "2021-06-22T15:04:42+00:00"
+                },
+                {
+                    "number": 247,
+                    "title": "Allow for arbitrary tau selection in MSD calculations.",
+                    "created_at": "2021-06-21T15:57:17+00:00",
+                    "closed_at": "2021-06-23T15:09:33+00:00"
+                },
+                {
+                    "number": 246,
+                    "title": "mdsuite changes matplotlib style",
+                    "created_at": "2021-06-14T10:17:15+00:00",
+                    "closed_at": "2021-06-24T15:57:17+00:00"
+                },
+                {
+                    "number": 242,
+                    "title": "metadata for experiments",
+                    "created_at": "2021-06-07T17:45:39+00:00",
+                    "closed_at": "2023-02-14T12:04:43+00:00"
+                },
+                {
+                    "number": 238,
+                    "title": "mean square displacement plot has the wrong scaling",
+                    "created_at": "2021-06-07T14:30:42+00:00",
+                    "closed_at": "2021-06-07T14:40:01+00:00"
+                },
+                {
+                    "number": 237,
+                    "title": "MDSuite_Binary_Salt_Walkthrough does not work",
+                    "created_at": "2021-06-07T14:09:45+00:00",
+                    "closed_at": "2021-06-08T05:47:56+00:00"
+                },
+                {
+                    "number": 236,
+                    "title": "Mac M1 install.",
+                    "created_at": "2021-06-04T16:12:19+00:00",
+                    "closed_at": "2021-06-28T16:55:36+00:00"
+                },
+                {
+                    "number": 234,
+                    "title": "How to get time average MSD from numpy arrays",
+                    "created_at": "2021-06-01T12:23:18+00:00",
+                    "closed_at": "2021-06-23T15:10:33+00:00"
+                },
+                {
+                    "number": 232,
+                    "title": "XYZ file reader.",
+                    "created_at": "2021-05-28T17:31:54+00:00",
+                    "closed_at": "2021-06-22T06:59:42+00:00"
+                },
+                {
+                    "number": 231,
+                    "title": "Reading extxyz files without lattice information",
+                    "created_at": "2021-05-28T16:00:33+00:00",
+                    "closed_at": "2022-01-25T14:13:55+00:00"
+                },
+                {
+                    "number": 230,
+                    "title": "Add descriptions to all loading bars.",
+                    "created_at": "2021-05-27T14:48:23+00:00",
+                    "closed_at": "2021-07-16T12:11:00+00:00"
+                },
+                {
+                    "number": 229,
+                    "title": "Move all global variables to data file.",
+                    "created_at": "2021-05-27T14:01:17+00:00",
+                    "closed_at": "2022-03-10T16:15:44+00:00"
+                },
+                {
+                    "number": 227,
+                    "title": "Golden-Section search appears to converge slightly off.",
+                    "created_at": "2021-05-27T10:07:15+00:00",
+                    "closed_at": "2021-07-22T10:27:48+00:00"
+                },
+                {
+                    "number": 223,
+                    "title": "SQL update fails on distinct diffusion coefficients.",
+                    "created_at": "2021-05-26T09:13:18+00:00",
+                    "closed_at": "2021-05-26T11:15:11+00:00"
+                },
+                {
+                    "number": 221,
+                    "title": "Improve file reading options.",
+                    "created_at": "2021-05-26T07:40:53+00:00",
+                    "closed_at": "2021-12-15T12:11:09+00:00"
+                },
+                {
+                    "number": 219,
+                    "title": "Returned series data is not what is fit during operations",
+                    "created_at": "2021-05-15T08:23:12+00:00",
+                    "closed_at": "2021-06-08T05:47:40+00:00"
+                },
+                {
+                    "number": 218,
+                    "title": "Optional curve fitting for linear fits",
+                    "created_at": "2021-05-15T08:17:28+00:00",
+                    "closed_at": "2022-03-10T16:13:24+00:00"
+                },
+                {
+                    "number": 217,
+                    "title": "Add sql logging to debug mode",
+                    "created_at": "2021-05-05T12:47:27+00:00",
+                    "closed_at": "2022-08-17T06:28:07+00:00"
+                },
+                {
+                    "number": 215,
+                    "title": "Improve Quickstart Guide",
+                    "created_at": "2021-05-05T11:06:56+00:00",
+                    "closed_at": "2022-03-10T16:12:46+00:00"
+                },
+                {
+                    "number": 213,
+                    "title": "add_data does not detect file type and tries to always load lammps",
+                    "created_at": "2021-05-05T06:49:37+00:00",
+                    "closed_at": "2021-05-05T10:11:21+00:00"
+                },
+                {
+                    "number": 211,
+                    "title": "Add GIF of autocompletion",
+                    "created_at": "2021-05-04T14:00:14+00:00",
+                    "closed_at": "2021-05-05T10:11:21+00:00"
+                },
+                {
+                    "number": 210,
+                    "title": "RDF minibatching does seem to use less data than without.",
+                    "created_at": "2021-05-04T12:20:17+00:00",
+                    "closed_at": "2021-05-05T10:21:20+00:00"
+                },
+                {
+                    "number": 202,
+                    "title": "EinsteinDiffusionCoefficients add warning for small data range",
+                    "created_at": "2021-04-30T08:29:13+00:00",
+                    "closed_at": "2022-03-16T19:23:48+00:00"
+                },
+                {
+                    "number": 199,
+                    "title": "Update all calculators to use __call__ method",
+                    "created_at": "2021-04-26T15:16:24+00:00",
+                    "closed_at": "2021-05-03T14:57:25+00:00"
+                },
+                {
+                    "number": 198,
+                    "title": "Investigate the inclusion of openbabel",
+                    "created_at": "2021-04-26T11:47:09+00:00",
+                    "closed_at": "2021-05-26T07:38:13+00:00"
+                },
+                {
+                    "number": 197,
+                    "title": "Interface to graphical SQL interface.",
+                    "created_at": "2021-04-26T11:30:18+00:00",
+                    "closed_at": "2021-06-23T15:11:33+00:00"
+                },
+                {
+                    "number": 193,
+                    "title": "Docs issues",
+                    "created_at": "2021-04-22T16:14:02+00:00",
+                    "closed_at": "2021-05-01T17:49:06+00:00"
+                },
+                {
+                    "number": 189,
+                    "title": "FAQ in Docs / Developer docs",
+                    "created_at": "2021-04-21T08:54:08+00:00",
+                    "closed_at": "2021-04-23T07:20:06+00:00"
+                },
+                {
+                    "number": 187,
+                    "title": "H5 gives an error when batching data from transformation",
+                    "created_at": "2021-04-20T12:18:52+00:00",
+                    "closed_at": "2021-04-23T09:00:26+00:00"
+                },
+                {
+                    "number": 184,
+                    "title": "Batch Kinaci's computation",
+                    "created_at": "2021-04-19T12:07:59+00:00",
+                    "closed_at": "2021-04-23T08:07:45+00:00"
+                },
+                {
+                    "number": 177,
+                    "title": "Experiment summary",
+                    "created_at": "2021-04-12T08:05:52+00:00",
+                    "closed_at": "2021-04-12T09:03:19+00:00"
+                },
+                {
+                    "number": 175,
+                    "title": "Update print statements to use logging.",
+                    "created_at": "2021-04-10T13:43:03+00:00",
+                    "closed_at": "2022-01-18T12:22:25+00:00"
+                },
+                {
+                    "number": 168,
+                    "title": "Distance scaling on ADF",
+                    "created_at": "2021-04-08T15:57:00+00:00",
+                    "closed_at": "2021-06-23T15:11:33+00:00"
+                },
+                {
+                    "number": 164,
+                    "title": "Load experiment fails if calculator is missing",
+                    "created_at": "2021-04-08T11:52:35+00:00",
+                    "closed_at": "2021-04-20T12:37:47+00:00"
+                },
+                {
+                    "number": 161,
+                    "title": "Add tf.data pipeline for RDF/ADF ",
+                    "created_at": "2021-04-08T10:02:32+00:00",
+                    "closed_at": "2021-10-26T07:32:24+00:00"
+                },
+                {
+                    "number": 159,
+                    "title": "extxyz Reader failes on LiF.extxyz",
+                    "created_at": "2021-04-08T09:23:29+00:00",
+                    "closed_at": "2021-04-09T10:51:29+00:00"
+                },
+                {
+                    "number": 158,
+                    "title": "Add function for additional trajectory data",
+                    "created_at": "2021-04-08T08:46:25+00:00",
+                    "closed_at": "2021-04-08T11:47:21+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "Enable species specific or simulation specific properties to be tensor calcualtions",
+                    "created_at": "2021-04-07T18:44:13+00:00",
+                    "closed_at": "2021-04-08T17:46:42+00:00"
+                },
+                {
+                    "number": 156,
+                    "title": "Selected atom computations",
+                    "created_at": "2021-04-07T15:13:33+00:00",
+                    "closed_at": "2021-04-09T09:27:51+00:00"
+                },
+                {
+                    "number": 155,
+                    "title": "Issue butler",
+                    "created_at": "2021-04-07T14:16:07+00:00",
+                    "closed_at": "2021-04-08T08:49:03+00:00"
+                },
+                {
+                    "number": 154,
+                    "title": "Add report method",
+                    "created_at": "2021-04-07T14:13:24+00:00",
+                    "closed_at": "2021-04-09T14:25:36+00:00"
+                },
+                {
+                    "number": 153,
+                    "title": "Check ADF arguments",
+                    "created_at": "2021-04-07T12:57:55+00:00",
+                    "closed_at": "2021-04-08T16:21:10+00:00"
+                },
+                {
+                    "number": 152,
+                    "title": "Measure complexity scaling of calculations",
+                    "created_at": "2021-04-07T12:56:34+00:00",
+                    "closed_at": "2021-04-14T16:44:36+00:00"
+                },
+                {
+                    "number": 151,
+                    "title": "Memory safety on unwrapping",
+                    "created_at": "2021-04-07T05:06:31+00:00",
+                    "closed_at": "2021-04-22T07:25:53+00:00"
+                },
+                {
+                    "number": 150,
+                    "title": "Atom-wise minibatching for dynamics calculations",
+                    "created_at": "2021-04-07T05:05:23+00:00",
+                    "closed_at": "2021-04-28T15:29:42+00:00"
+                },
+                {
+                    "number": 148,
+                    "title": "Record box size in LAMMPS and extxyz files",
+                    "created_at": "2021-04-06T11:05:01+00:00",
+                    "closed_at": "2022-03-10T16:12:19+00:00"
+                },
+                {
+                    "number": 147,
+                    "title": "Store saved data based on analysis parameters",
+                    "created_at": "2021-04-06T11:03:24+00:00",
+                    "closed_at": "2021-04-10T14:55:38+00:00"
+                },
+                {
+                    "number": 146,
+                    "title": "Mini-batching in the RDF calculation",
+                    "created_at": "2021-04-06T11:00:19+00:00",
+                    "closed_at": "2021-04-14T14:02:37+00:00"
+                },
+                {
+                    "number": 145,
+                    "title": "Intelligent memory management",
+                    "created_at": "2021-04-06T10:57:35+00:00",
+                    "closed_at": "2022-03-10T16:15:05+00:00"
+                },
+                {
+                    "number": 144,
+                    "title": "Memory management scaling",
+                    "created_at": "2021-04-06T10:52:49+00:00",
+                    "closed_at": "2021-04-09T13:35:04+00:00"
+                },
+                {
+                    "number": 143,
+                    "title": "Log files ",
+                    "created_at": "2021-04-06T10:50:37+00:00",
+                    "closed_at": "2021-04-10T13:06:34+00:00"
+                },
+                {
+                    "number": 142,
+                    "title": "Analysis ends when any exception reached.",
+                    "created_at": "2021-04-06T10:45:23+00:00",
+                    "closed_at": "2021-04-10T15:15:52+00:00"
+                },
+                {
+                    "number": 141,
+                    "title": "Fix setup.py",
+                    "created_at": "2021-04-06T10:39:52+00:00",
+                    "closed_at": "2021-04-08T09:14:44+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "Export RDF Data as npz/csv",
+                    "created_at": "2021-04-05T20:05:24+00:00",
+                    "closed_at": "2021-04-10T14:49:51+00:00"
+                },
+                {
+                    "number": 137,
+                    "title": "Sorting not working properly",
+                    "created_at": "2021-04-01T13:26:20+00:00",
+                    "closed_at": "2021-04-28T16:11:14+00:00"
+                },
+                {
+                    "number": 136,
+                    "title": "Create reader for h5 files ",
+                    "created_at": "2021-04-01T10:26:59+00:00",
+                    "closed_at": "2021-04-19T11:45:20+00:00"
+                },
+                {
+                    "number": 135,
+                    "title": "check_existence is prone to errors",
+                    "created_at": "2021-04-01T08:50:59+00:00",
+                    "closed_at": "2021-04-08T06:54:15+00:00"
+                },
+                {
+                    "number": 134,
+                    "title": "Move switcher transformations",
+                    "created_at": "2021-04-01T08:11:03+00:00",
+                    "closed_at": "2021-04-02T14:48:41+00:00"
+                },
+                {
+                    "number": 133,
+                    "title": "Plots in Jupyter have a gray background",
+                    "created_at": "2021-03-24T14:02:31+00:00",
+                    "closed_at": "2021-04-08T16:23:19+00:00"
+                },
+                {
+                    "number": 132,
+                    "title": "Update parent class for the transformations",
+                    "created_at": "2021-03-23T17:22:00+00:00",
+                    "closed_at": "2021-04-09T08:10:30+00:00"
+                },
+                {
+                    "number": 131,
+                    "title": "Distinct diffusion coefficients",
+                    "created_at": "2021-03-23T17:21:10+00:00",
+                    "closed_at": "2021-04-09T15:46:04+00:00"
+                },
+                {
+                    "number": 130,
+                    "title": "Add remainders to batch method",
+                    "created_at": "2021-03-23T17:20:31+00:00",
+                    "closed_at": "2021-04-09T08:44:27+00:00"
+                },
+                {
+                    "number": 129,
+                    "title": "Fix RDF and ADF with new structure",
+                    "created_at": "2021-03-23T17:19:21+00:00",
+                    "closed_at": "2021-03-24T14:05:23+00:00"
+                },
+                {
+                    "number": 127,
+                    "title": "None of the flux examples work.",
+                    "created_at": "2021-03-19T12:29:19+00:00",
+                    "closed_at": "2021-03-24T09:12:19+00:00"
+                },
+                {
+                    "number": 126,
+                    "title": "Volume attribute not loaded when using flux files",
+                    "created_at": "2021-03-19T12:12:05+00:00",
+                    "closed_at": "2021-03-31T13:04:29+00:00"
+                },
+                {
+                    "number": 124,
+                    "title": "start index autocorrelation",
+                    "created_at": "2021-03-17T12:32:15+00:00",
+                    "closed_at": "2021-03-17T15:24:14+00:00"
+                },
+                {
+                    "number": 123,
+                    "title": "batch_loop is incorrect",
+                    "created_at": "2021-03-15T10:51:34+00:00",
+                    "closed_at": "2021-03-18T08:48:23+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "Values ionic conductivity /100",
+                    "created_at": "2021-03-15T08:30:55+00:00",
+                    "closed_at": "2021-03-15T08:59:43+00:00"
+                },
+                {
+                    "number": 120,
+                    "title": "Incorrect type in Experiment class",
+                    "created_at": "2021-03-11T20:54:37+00:00",
+                    "closed_at": "2021-03-18T08:52:00+00:00"
+                },
+                {
+                    "number": 116,
+                    "title": "Experiment class: merge YAML system and DB system properites",
+                    "created_at": "2021-03-11T07:59:22+00:00",
+                    "closed_at": "2021-03-11T20:28:42+00:00"
+                },
+                {
+                    "number": 115,
+                    "title": "System current repeat calculation",
+                    "created_at": "2021-03-11T07:45:22+00:00",
+                    "closed_at": "2021-03-11T09:59:34+00:00"
+                },
+                {
+                    "number": 113,
+                    "title": "GK analysis does not cover full loop range",
+                    "created_at": "2021-03-10T19:58:28+00:00",
+                    "closed_at": "2021-03-24T09:12:07+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "TF Data functionality on all data loading",
+                    "created_at": "2021-03-09T10:58:47+00:00",
+                    "closed_at": "2021-03-18T13:10:51+00:00"
+                },
+                {
+                    "number": 106,
+                    "title": "Interface improvement",
+                    "created_at": "2021-03-05T14:23:02+00:00",
+                    "closed_at": "2021-04-23T07:23:48+00:00"
+                },
+                {
+                    "number": 102,
+                    "title": "requirements.txt file",
+                    "created_at": "2021-03-05T09:17:13+00:00",
+                    "closed_at": "2021-03-05T11:05:32+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "Docs won't build",
+                    "created_at": "2021-03-05T08:51:07+00:00",
+                    "closed_at": "2021-03-05T09:11:41+00:00"
+                },
+                {
+                    "number": 100,
+                    "title": "Database Generation on Windows raises TypeError",
+                    "created_at": "2021-02-24T15:05:02+00:00",
+                    "closed_at": "2021-03-05T13:18:03+00:00"
+                },
+                {
+                    "number": 99,
+                    "title": "moving of the database directory on the filesystem",
+                    "created_at": "2021-02-24T14:56:20+00:00",
+                    "closed_at": "2021-03-10T20:12:34+00:00"
+                },
+                {
+                    "number": 98,
+                    "title": "Scaling issue with RadiaDistributionFunction",
+                    "created_at": "2021-02-24T14:52:12+00:00",
+                    "closed_at": "2021-02-25T16:59:22+00:00"
+                },
+                {
+                    "number": 97,
+                    "title": "Decide on License ",
+                    "created_at": "2021-02-11T08:41:22+00:00",
+                    "closed_at": "2021-02-25T17:01:52+00:00"
+                },
+                {
+                    "number": 91,
+                    "title": "Database generation has less time steps than file",
+                    "created_at": "2021-02-04T15:37:28+00:00",
+                    "closed_at": "2021-03-11T09:53:04+00:00"
+                },
+                {
+                    "number": 88,
+                    "title": "Custom simulation dump parameters",
+                    "created_at": "2021-01-27T15:54:24+00:00",
+                    "closed_at": "2021-02-04T10:37:55+00:00"
+                },
+                {
+                    "number": 87,
+                    "title": "return -1 in calculators",
+                    "created_at": "2021-01-27T13:19:09+00:00",
+                    "closed_at": "2021-02-03T16:03:42+00:00"
+                },
+                {
+                    "number": 85,
+                    "title": "time_step in Experiment",
+                    "created_at": "2021-01-19T16:05:21+00:00",
+                    "closed_at": "2021-01-29T10:13:26+00:00"
+                },
+                {
+                    "number": 83,
+                    "title": "Refactor file_io",
+                    "created_at": "2021-01-16T10:49:41+00:00",
+                    "closed_at": "2021-01-25T11:18:53+00:00"
+                },
+                {
+                    "number": 81,
+                    "title": "Distinct Diffusion Coefficients",
+                    "created_at": "2021-01-16T09:46:52+00:00",
+                    "closed_at": "2021-02-16T15:47:57+00:00"
+                },
+                {
+                    "number": 80,
+                    "title": "Nernst-Einstein and CNE ionic conductivity",
+                    "created_at": "2021-01-16T09:46:10+00:00",
+                    "closed_at": "2021-02-16T15:47:53+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "Einstein curve fits are unreliable",
+                    "created_at": "2021-01-16T09:43:54+00:00",
+                    "closed_at": "2021-01-19T15:53:46+00:00"
+                },
+                {
+                    "number": 78,
+                    "title": "RDF Normalization is wrong",
+                    "created_at": "2021-01-16T09:42:46+00:00",
+                    "closed_at": "2021-02-10T13:46:37+00:00"
+                },
+                {
+                    "number": 77,
+                    "title": "collect_memory_information cannot handle scalar properties",
+                    "created_at": "2021-01-14T12:26:11+00:00",
+                    "closed_at": "2021-01-16T13:29:32+00:00"
+                },
+                {
+                    "number": 75,
+                    "title": "Rename Analysis class to Calculator",
+                    "created_at": "2021-01-13T19:32:51+00:00",
+                    "closed_at": "2021-01-16T13:29:34+00:00"
+                },
+                {
+                    "number": 72,
+                    "title": "move lammps_properties_dict",
+                    "created_at": "2021-01-12T09:56:43+00:00",
+                    "closed_at": "2021-01-16T13:29:32+00:00"
+                },
+                {
+                    "number": 70,
+                    "title": "Test JAX for correlation computation",
+                    "created_at": "2021-01-11T15:38:16+00:00",
+                    "closed_at": "2021-02-06T10:19:32+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "Merge experiment files",
+                    "created_at": "2021-01-11T15:33:49+00:00",
+                    "closed_at": "2021-01-16T13:29:32+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "can not find GPU",
+                    "created_at": "2021-01-11T07:38:36+00:00",
+                    "closed_at": "2021-01-11T07:54:47+00:00"
+                },
+                {
+                    "number": 66,
+                    "title": "Parallelization",
+                    "created_at": "2021-01-09T11:22:41+00:00",
+                    "closed_at": "2021-03-17T14:52:55+00:00"
+                },
+                {
+                    "number": 64,
+                    "title": "Improve units management",
+                    "created_at": "2021-01-08T12:09:47+00:00",
+                    "closed_at": "2021-01-13T16:12:56+00:00"
+                },
+                {
+                    "number": 63,
+                    "title": "Invalid Input needs to be checked",
+                    "created_at": "2021-01-07T16:22:34+00:00",
+                    "closed_at": "2021-01-17T19:55:55+00:00"
+                },
+                {
+                    "number": 61,
+                    "title": "Angular Distribution Function",
+                    "created_at": "2021-01-06T11:55:40+00:00",
+                    "closed_at": "2021-02-16T15:47:46+00:00"
+                },
+                {
+                    "number": 60,
+                    "title": "Sorting atoms in database generation",
+                    "created_at": "2021-01-06T11:45:49+00:00",
+                    "closed_at": "2021-03-10T23:23:30+00:00"
+                },
+                {
+                    "number": 56,
+                    "title": "Put together properties of experiment",
+                    "created_at": "2020-12-16T12:29:03+00:00",
+                    "closed_at": "2020-12-30T08:35:41+00:00"
+                },
+                {
+                    "number": 55,
+                    "title": "Error GK diffusion",
+                    "created_at": "2020-12-11T16:48:57+00:00",
+                    "closed_at": "2020-12-15T14:32:02+00:00"
+                },
+                {
+                    "number": 50,
+                    "title": "Add potential of mean-force calculation",
+                    "created_at": "2020-12-02T08:09:32+00:00",
+                    "closed_at": "2020-12-02T09:52:15+00:00"
+                },
+                {
+                    "number": 49,
+                    "title": "Dump results to a json file",
+                    "created_at": "2020-11-26T11:09:10+00:00",
+                    "closed_at": "2020-12-30T08:35:41+00:00"
+                },
+                {
+                    "number": 48,
+                    "title": "Create a plotting class",
+                    "created_at": "2020-11-26T10:31:25+00:00",
+                    "closed_at": "2021-03-11T20:29:28+00:00"
+                },
+                {
+                    "number": 43,
+                    "title": "Add Kirkwood-Buff integrals",
+                    "created_at": "2020-11-23T14:55:39+00:00",
+                    "closed_at": "2020-12-08T15:36:43+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "Add coordinated Numbers",
+                    "created_at": "2020-11-23T14:54:51+00:00",
+                    "closed_at": "2020-11-25T20:47:20+00:00"
+                },
+                {
+                    "number": 41,
+                    "title": "Add a common method for adding data to the hdf5 database",
+                    "created_at": "2020-11-23T13:46:09+00:00",
+                    "closed_at": "2021-02-03T16:04:40+00:00"
+                },
+                {
+                    "number": 40,
+                    "title": "Add the functionality for unwraping added data",
+                    "created_at": "2020-11-23T13:42:17+00:00",
+                    "closed_at": "2022-03-10T16:13:01+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "Add database generation for unwrapping via indices",
+                    "created_at": "2020-11-20T08:57:07+00:00",
+                    "closed_at": "2021-03-17T14:49:30+00:00"
+                },
+                {
+                    "number": 38,
+                    "title": "Add database generation for scaled coordinates",
+                    "created_at": "2020-11-20T08:54:56+00:00",
+                    "closed_at": "2021-03-17T16:52:26+00:00"
+                },
+                {
+                    "number": 33,
+                    "title": "Make all load bars the same length",
+                    "created_at": "2020-11-17T17:50:17+00:00",
+                    "closed_at": "2020-11-19T19:14:42+00:00"
+                },
+                {
+                    "number": 31,
+                    "title": "Add custom data loading to the add_data method",
+                    "created_at": "2020-11-12T19:47:10+00:00",
+                    "closed_at": "2020-12-22T08:56:47+00:00"
+                },
+                {
+                    "number": 30,
+                    "title": "Add command line arguments for selected operations.",
+                    "created_at": "2020-11-01T16:52:49+00:00",
+                    "closed_at": "2021-03-11T20:44:55+00:00"
+                },
+                {
+                    "number": 29,
+                    "title": "Add method for the addition of data to a database, with class state updates.",
+                    "created_at": "2020-11-01T16:50:51+00:00",
+                    "closed_at": "2020-11-11T18:22:19+00:00"
+                },
+                {
+                    "number": 28,
+                    "title": "Update documentation theory",
+                    "created_at": "2020-11-01T14:59:39+00:00",
+                    "closed_at": "2021-01-05T09:34:51+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "Update class documentation",
+                    "created_at": "2020-11-01T14:59:14+00:00",
+                    "closed_at": "2021-01-06T11:56:48+00:00"
+                },
+                {
+                    "number": 26,
+                    "title": "Implement Neighbour list and triple neighbour list calculations in PyTorch",
+                    "created_at": "2020-11-01T14:58:19+00:00",
+                    "closed_at": "2020-11-18T15:24:10+00:00"
+                },
+                {
+                    "number": 25,
+                    "title": "Implement Angular distribution functions",
+                    "created_at": "2020-11-01T14:55:08+00:00",
+                    "closed_at": "2021-01-06T11:53:12+00:00"
+                },
+                {
+                    "number": 24,
+                    "title": "Implement autocorrelation on pytorch tensors",
+                    "created_at": "2020-11-01T14:54:21+00:00",
+                    "closed_at": "2020-11-19T19:14:52+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "Implement einstein calculations with tensor operations",
+                    "created_at": "2020-11-01T14:53:23+00:00",
+                    "closed_at": "2020-12-07T16:02:24+00:00"
+                },
+                {
+                    "number": 22,
+                    "title": "Restructure project for easier enhancement ",
+                    "created_at": "2020-11-01T14:51:12+00:00",
+                    "closed_at": "2020-11-12T17:07:09+00:00"
+                },
+                {
+                    "number": 21,
+                    "title": "Structure Factors",
+                    "created_at": "2020-11-01T14:46:32+00:00",
+                    "closed_at": "2021-01-05T08:53:20+00:00"
+                },
+                {
+                    "number": 20,
+                    "title": "Garbage collection for used variables.",
+                    "created_at": "2020-10-30T14:13:59+00:00",
+                    "closed_at": "2020-12-22T08:56:33+00:00"
+                },
+                {
+                    "number": 19,
+                    "title": "Fix documentation links to link only to readthedocs. ",
+                    "created_at": "2020-10-18T16:08:11+00:00",
+                    "closed_at": "2020-10-19T16:44:35+00:00"
+                },
+                {
+                    "number": 18,
+                    "title": "TypeError in  Classes.py",
+                    "created_at": "2020-09-25T12:00:33+00:00",
+                    "closed_at": "2020-09-25T16:13:39+00:00"
+                },
+                {
+                    "number": 16,
+                    "title": "Convert naming to PEP8",
+                    "created_at": "2020-09-24T12:56:04+00:00",
+                    "closed_at": "2020-09-29T07:52:14+00:00"
+                },
+                {
+                    "number": 15,
+                    "title": "Implement units in other way",
+                    "created_at": "2020-09-24T07:05:58+00:00",
+                    "closed_at": "2020-11-11T18:22:37+00:00"
+                },
+                {
+                    "number": 13,
+                    "title": "Implement distinct diffusion efficiently for both Einstein and GK",
+                    "created_at": "2020-09-16T14:24:05+00:00",
+                    "closed_at": "2020-10-18T16:07:49+00:00"
+                },
+                {
+                    "number": 11,
+                    "title": "Write_XYZ uses pre-defined species",
+                    "created_at": "2020-09-16T07:15:20+00:00",
+                    "closed_at": "2020-09-16T11:33:28+00:00"
+                },
+                {
+                    "number": 10,
+                    "title": "Parallelization of all methods over species specific calculations",
+                    "created_at": "2020-09-15T12:13:57+00:00",
+                    "closed_at": "2020-12-07T15:49:15+00:00"
+                },
+                {
+                    "number": 9,
+                    "title": "GK Diffusion with sampling is too slow",
+                    "created_at": "2020-09-15T12:13:29+00:00",
+                    "closed_at": "2020-09-16T15:39:46+00:00"
+                },
+                {
+                    "number": 8,
+                    "title": "Add periodic table database to aid in charge assignment for atomic species",
+                    "created_at": "2020-09-14T16:05:52+00:00",
+                    "closed_at": "2020-09-17T11:34:48+00:00"
+                },
+                {
+                    "number": 7,
+                    "title": "Add checks for the hdf5 functions",
+                    "created_at": "2020-09-14T08:01:15+00:00",
+                    "closed_at": "2020-09-24T12:25:04+00:00"
+                },
+                {
+                    "number": 6,
+                    "title": "Add correlation time sampling to GK",
+                    "created_at": "2020-09-14T07:54:18+00:00",
+                    "closed_at": "2020-09-16T15:39:46+00:00"
+                },
+                {
+                    "number": 5,
+                    "title": "Fix README",
+                    "created_at": "2020-09-14T07:24:59+00:00",
+                    "closed_at": "2020-09-14T08:08:35+00:00"
+                },
+                {
+                    "number": 4,
+                    "title": "Nernst-Einstein method",
+                    "created_at": "2020-09-14T07:24:11+00:00",
+                    "closed_at": "2020-09-14T16:04:21+00:00"
+                },
+                {
+                    "number": 3,
+                    "title": "Radial Distribution Function",
+                    "created_at": "2020-09-14T07:23:50+00:00",
+                    "closed_at": "2020-11-18T15:24:27+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "Parallelization of database generation",
+                    "created_at": "2020-09-14T07:23:05+00:00",
+                    "closed_at": "2021-01-09T11:05:53+00:00"
+                },
+                {
+                    "number": 1,
+                    "title": "Print class attribute functionality",
+                    "created_at": "2020-09-14T07:22:00+00:00",
+                    "closed_at": "2020-09-14T11:57:23+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 747030,
+                "Shell": 49
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": null
+    }
+}

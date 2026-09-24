@@ -1,0 +1,4020 @@
+{
+    "cis-mQTL": {
+        "tool_name": "cis-mQTL",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 304346824,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzMDQzNDY4MjQ=",
+                "name": "Cis-mQTL-mapping-protocol-for-methylome",
+                "full_name": "ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome",
+                "private": false,
+                "owner": {
+                    "login": "ariadnacilleros",
+                    "id": 43587721,
+                    "node_id": "MDQ6VXNlcjQzNTg3NzIx",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/43587721?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ariadnacilleros",
+                    "html_url": "https://github.com/ariadnacilleros",
+                    "followers_url": "https://api.github.com/users/ariadnacilleros/followers",
+                    "following_url": "https://api.github.com/users/ariadnacilleros/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ariadnacilleros/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ariadnacilleros/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ariadnacilleros/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ariadnacilleros/orgs",
+                    "repos_url": "https://api.github.com/users/ariadnacilleros/repos",
+                    "events_url": "https://api.github.com/users/ariadnacilleros/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ariadnacilleros/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome",
+                "forks_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/forks",
+                "keys_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/teams",
+                "hooks_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/hooks",
+                "issue_events_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/events",
+                "assignees_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/tags",
+                "blobs_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/languages",
+                "stargazers_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/stargazers",
+                "contributors_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/contributors",
+                "subscribers_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/subscribers",
+                "subscription_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/subscription",
+                "commits_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/merges",
+                "archive_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/downloads",
+                "issues_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/labels{/name}",
+                "releases_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/deployments",
+                "created_at": "2020-10-15T14:10:13Z",
+                "updated_at": "2025-11-02T14:13:53Z",
+                "pushed_at": "2024-11-21T14:49:27Z",
+                "git_url": "git://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome.git",
+                "ssh_url": "git@github.com:ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome.git",
+                "clone_url": "https://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome.git",
+                "svn_url": "https://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome",
+                "homepage": "",
+                "size": 2988,
+                "stargazers_count": 5,
+                "watchers_count": 5,
+                "language": "Perl",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 2,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "genotype",
+                    "methylome",
+                    "mqtl",
+                    "placenta"
+                ],
+                "visibility": "public",
+                "forks": 2,
+                "open_issues": 1,
+                "watchers": 5,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 2,
+                "subscribers_count": 0
+            },
+            "contents": [
+                {
+                    "path": "GSet_to_BED.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "GSet_to_BED_RNT.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "HRC-1000G-check-bim.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "PACEanalysis.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "add-sex.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "change-rsid.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "covariates.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "covariates_RNT.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "diagram_protocol.gif",
+                    "type": "blob"
+                },
+                {
+                    "path": "directory_diagram_v2_21112023.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "example_bed_file_format.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "example_covariates_file.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "get_residualized_mPCs.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "gwas_mPCs.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "ic.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "imiss-vs-het.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "plot-IBD.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "plot-PCA.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "rm-pihat018.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "vcfparse.pl",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "ariadnacilleros",
+                    "contributions": 356
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Perl": 80541,
+                "R": 26781
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1038/s41467-025-57760-3",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "40087310",
+                            "source": "MED",
+                            "pmid": "40087310",
+                            "pmcid": "PMC11909199",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC11909199"
+                                ]
+                            },
+                            "doi": "10.1038/s41467-025-57760-3",
+                            "title": "Potentially causal associations between placental DNA methylation and schizophrenia and other neuropsychiatric disorders.",
+                            "authorString": "Cilleros-Portet A, Lesseur C, Mar\u00ed S, Cosin-Tomas M, Lozano M, Irizar A, Burt A, Garc\u00eda-Santisteban I, Garrido-Mart\u00edn D, Escaram\u00eds G, Hernangomez-Laderas A, Soler-Blasco R, Breeze CE, Gonzalez-Garcia BP, Santa-Marina L, Chen J, Llop S, Fern\u00e1ndez MF, Vrijheid M, Ibarluzea J, Guxens M, Marsit C, Bustamante M, Bilbao JR, Fernandez-Jimenez N.",
+                            "journalTitle": "Nat Commun",
+                            "issue": "1",
+                            "journalVolume": "16",
+                            "pubYear": "2025",
+                            "journalIssn": "2041-1723",
+                            "pageInfo": "2431",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 11,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "refsnp"
+                                ]
+                            },
+                            "firstIndexDate": "2025-03-16",
+                            "firstPublicationDate": "2025-03-14"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4408459093",
+                "doi": "https://doi.org/10.1038/s41467-025-57760-3",
+                "title": "Potentially causal associations between placental DNA methylation and schizophrenia and other neuropsychiatric disorders",
+                "display_name": "Potentially causal associations between placental DNA methylation and schizophrenia and other neuropsychiatric disorders",
+                "publication_year": 2025,
+                "publication_date": "2025-03-14",
+                "ids": {
+                    "openalex": "https://openalex.org/W4408459093",
+                    "doi": "https://doi.org/10.1038/s41467-025-57760-3",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/40087310"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1038/s41467-025-57760-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41467-025-57760-3",
+                    "pdf_url": "https://www.nature.com/articles/s41467-025-57760-3.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S64187185",
+                        "display_name": "Nature Communications",
+                        "issn_l": "2041-1723",
+                        "issn": [
+                            "2041-1723"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319908",
+                        "host_organization_name": "Nature Portfolio",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319908",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Nature Portfolio",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Nature Communications",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://www.nature.com/articles/s41467-025-57760-3.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5005219923",
+                            "display_name": "Ariadna Cilleros\u2010Portet",
+                            "orcid": "https://orcid.org/0000-0001-7564-6840"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Ariadna Cilleros-Portet",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7564-6840",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037549775",
+                            "display_name": "Corina Lesseur",
+                            "orcid": "https://orcid.org/0000-0001-6744-6750"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I98704320",
+                                "display_name": "Icahn School of Medicine at Mount Sinai",
+                                "ror": "https://ror.org/04a9tmd77",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I1320796813",
+                                    "https://openalex.org/I98704320"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Corina Lesseur",
+                        "raw_affiliation_strings": [
+                            "Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai, New York, NY, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6744-6750",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai, New York, NY, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I98704320"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5027217588",
+                            "display_name": "Sergi Mar\u00ed",
+                            "orcid": "https://orcid.org/0000-0003-2023-195X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sergi Mar\u00ed",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2023-195X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039522742",
+                            "display_name": "Marta Cos\u00edn\u2010Tom\u00e1s",
+                            "orcid": "https://orcid.org/0000-0001-5012-8983"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I170486558",
+                                "display_name": "Universitat Pompeu Fabra",
+                                "ror": "https://ror.org/04n0g0b29",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210148332",
+                                "display_name": "Barcelona Institute for Global Health",
+                                "ror": "https://ror.org/03hjgt059",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210148332",
+                                    "https://openalex.org/I4387153040"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marta Cosin-Tomas",
+                        "raw_affiliation_strings": [
+                            "ISGlobal, Barcelona, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                            "Universitat Pompeu Fabra, Barcelona, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "ISGlobal, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210148332"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat Pompeu Fabra, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5023389205",
+                            "display_name": "Manuel Lozano",
+                            "orcid": "https://orcid.org/0000-0003-2046-5959"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I10902133",
+                                "display_name": "Universitat Jaume I",
+                                "ror": "https://ror.org/02ws1xc11",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I10902133"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I16097986",
+                                "display_name": "Universitat de Val\u00e8ncia",
+                                "ror": "https://ror.org/043nxc105",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I16097986"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210097149",
+                                "display_name": "Fundaci\u00f3n para el Fomento de la Investigaci\u00f3n Sanitaria y Biom\u00e9dica de la Comunitat Valenciana",
+                                "ror": "https://ror.org/0116vew40",
+                                "country_code": "ES",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Manuel Lozano",
+                        "raw_affiliation_strings": [
+                            "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                            "Preventive Medicine and Public Health, Food Sciences, Toxicology and Forensic Medicine Department, Universitat de Val\u00e8ncia, Valencia, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2046-5959",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I10902133",
+                                    "https://openalex.org/I16097986",
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Preventive Medicine and Public Health, Food Sciences, Toxicology and Forensic Medicine Department, Universitat de Val\u00e8ncia, Valencia, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I16097986"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5084524062",
+                            "display_name": "Amaia Irizar",
+                            "orcid": "https://orcid.org/0000-0003-0307-3558"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Amaia Irizar",
+                        "raw_affiliation_strings": [
+                            "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                            "Department of Preventive Medicine and Public Health, University of the Basque Country (UPV/EHU), Leioa, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                                "institution_ids": []
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Preventive Medicine and Public Health, University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5055332509",
+                            "display_name": "Amber Burt",
+                            "orcid": "https://orcid.org/0000-0003-1813-6726"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I150468666",
+                                "display_name": "Emory University",
+                                "ror": "https://ror.org/03czfpz43",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I150468666"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Amber Burt",
+                        "raw_affiliation_strings": [
+                            "Gangarosa Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1813-6726",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gangarosa Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I150468666"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052769351",
+                            "display_name": "Iraia Garc\u00eda\u2010Santisteban",
+                            "orcid": "https://orcid.org/0000-0002-7912-385X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Iraia Garc\u00eda-Santisteban",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5019284276",
+                            "display_name": "Diego Garrido-Mart\u00edn",
+                            "orcid": "https://orcid.org/0000-0002-4131-4458"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I71999127",
+                                "display_name": "Universitat de Barcelona",
+                                "ror": "https://ror.org/021018s57",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Diego Garrido-Mart\u00edn",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Microbiology and Statistics, Faculty of Biology, Universitat de Barcelona (UB), Barcelona, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Microbiology and Statistics, Faculty of Biology, Universitat de Barcelona (UB), Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050917806",
+                            "display_name": "Ge\u00f2rgia Escaram\u00eds",
+                            "orcid": "https://orcid.org/0000-0002-5416-3177"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I71999127",
+                                "display_name": "Universitat de Barcelona",
+                                "ror": "https://ror.org/021018s57",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ge\u00f2rgia Escaram\u00eds",
+                        "raw_affiliation_strings": [
+                            "Departament de Biomedicina, Facultat de Medicina i Ci\u00e8ncies de la Salut, Institut de Neuroci\u00e8ncies, Universitat de Barcelona, Barcelona, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Departament de Biomedicina, Facultat de Medicina i Ci\u00e8ncies de la Salut, Institut de Neuroci\u00e8ncies, Universitat de Barcelona, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5077972176",
+                            "display_name": "Alba Hernangomez\u2010Laderas",
+                            "orcid": "https://orcid.org/0009-0001-9948-5399"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alba Hernangomez-Laderas",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0009-0001-9948-5399",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064775466",
+                            "display_name": "Raquel Soler-Blasco",
+                            "orcid": "https://orcid.org/0000-0002-4603-6784"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I10902133",
+                                "display_name": "Universitat Jaume I",
+                                "ror": "https://ror.org/02ws1xc11",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I10902133"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I16097986",
+                                "display_name": "Universitat de Val\u00e8ncia",
+                                "ror": "https://ror.org/043nxc105",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I16097986"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210097149",
+                                "display_name": "Fundaci\u00f3n para el Fomento de la Investigaci\u00f3n Sanitaria y Biom\u00e9dica de la Comunitat Valenciana",
+                                "ror": "https://ror.org/0116vew40",
+                                "country_code": "ES",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Raquel Soler-Blasco",
+                        "raw_affiliation_strings": [
+                            "Department of Nursing, Universitat de Val\u00e8ncia, Valencia, Spain",
+                            "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Nursing, Universitat de Val\u00e8ncia, Valencia, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I16097986"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I10902133",
+                                    "https://openalex.org/I16097986",
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5091599023",
+                            "display_name": "Charles E. Breeze",
+                            "orcid": "https://orcid.org/0000-0002-5294-915X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210147892",
+                                "display_name": "CRUK Lung Cancer Centre of Excellence",
+                                "ror": "https://ror.org/04nm2mq63",
+                                "country_code": "GB",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210147892"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I45129253",
+                                "display_name": "University College London",
+                                "ror": "https://ror.org/02jx3x895",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Charles E. Breeze",
+                        "raw_affiliation_strings": [
+                            "UCL Cancer Institute, University College London, London, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "UCL Cancer Institute, University College London, London, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147892",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5040286941",
+                            "display_name": "B\u00e1rbara P. Gonz\u00e1lez\u2010Garc\u00eda",
+                            "orcid": "https://orcid.org/0000-0002-9287-6047"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "B\u00e1rbara P. Gonzalez-Garcia",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050226882",
+                            "display_name": "Loreto Santa\u2010Marina",
+                            "orcid": "https://orcid.org/0000-0003-1405-9751"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800374234",
+                                "display_name": "Basque Government",
+                                "ror": "https://ror.org/00pz2fp31",
+                                "country_code": "ES",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I2800374234"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Loreto Santa-Marina",
+                        "raw_affiliation_strings": [
+                            "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                            "Department of Health of the Basque Government, Subdirectorate of Public Health of Gipuzkoa, San Sebastian, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1405-9751",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                                "institution_ids": []
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Health of the Basque Government, Subdirectorate of Public Health of Gipuzkoa, San Sebastian, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800374234"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5100416010",
+                            "display_name": "Jia Chen",
+                            "orcid": "https://orcid.org/0000-0001-6597-8577"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I98704320",
+                                "display_name": "Icahn School of Medicine at Mount Sinai",
+                                "ror": "https://ror.org/04a9tmd77",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I1320796813",
+                                    "https://openalex.org/I98704320"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jia Chen",
+                        "raw_affiliation_strings": [
+                            "Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai, New York, NY, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai, New York, NY, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I98704320"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5033361935",
+                            "display_name": "Sabrina Llop",
+                            "orcid": "https://orcid.org/0000-0002-6784-4211"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I10902133",
+                                "display_name": "Universitat Jaume I",
+                                "ror": "https://ror.org/02ws1xc11",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I10902133"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I16097986",
+                                "display_name": "Universitat de Val\u00e8ncia",
+                                "ror": "https://ror.org/043nxc105",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I16097986"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210097149",
+                                "display_name": "Fundaci\u00f3n para el Fomento de la Investigaci\u00f3n Sanitaria y Biom\u00e9dica de la Comunitat Valenciana",
+                                "ror": "https://ror.org/0116vew40",
+                                "country_code": "ES",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sabrina Llop",
+                        "raw_affiliation_strings": [
+                            "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Epidemiology and Environmental Health Joint Research Unit, FISABIO-Universitat Jaume I-Universitat de Val\u00e8ncia, Valencia, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I10902133",
+                                    "https://openalex.org/I16097986",
+                                    "https://openalex.org/I4210097149"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5015855770",
+                            "display_name": "Mariana F. Fern\u00e1ndez",
+                            "orcid": "https://orcid.org/0000-0001-6417-8914"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I173304897",
+                                "display_name": "Universidad de Granada",
+                                "ror": "https://ror.org/04njjy449",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I173304897"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210113665",
+                                "display_name": "Instituto de Investigaci\u00f3n Biosanitaria de Granada",
+                                "ror": "https://ror.org/026yy9j15",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210113665"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Mariana F. Fern\u00e1ndez",
+                        "raw_affiliation_strings": [
+                            "Department of Radiology and Physical Medicine, Biomedical Research Center (CIBM), School of Medicine, University of Granada, Granada, Spain",
+                            "Instituto de Investigaci\u00f3n Biosanitaria de Granada (ibs.GRANADA), Granada, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6417-8914",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Radiology and Physical Medicine, Biomedical Research Center (CIBM), School of Medicine, University of Granada, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I173304897"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Instituto de Investigaci\u00f3n Biosanitaria de Granada (ibs.GRANADA), Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210113665"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5075679536",
+                            "display_name": "Martine Vrijheid",
+                            "orcid": "https://orcid.org/0000-0002-7090-1758"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I170486558",
+                                "display_name": "Universitat Pompeu Fabra",
+                                "ror": "https://ror.org/04n0g0b29",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210148332",
+                                "display_name": "Barcelona Institute for Global Health",
+                                "ror": "https://ror.org/03hjgt059",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210148332",
+                                    "https://openalex.org/I4387153040"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Martine Vrijheid",
+                        "raw_affiliation_strings": [
+                            "ISGlobal, Barcelona, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                            "Universitat Pompeu Fabra, Barcelona, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7090-1758",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "ISGlobal, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210148332"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat Pompeu Fabra, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5068014717",
+                            "display_name": "Jes\u00fas Ibarluzea",
+                            "orcid": "https://orcid.org/0000-0002-6933-5373"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800374234",
+                                "display_name": "Basque Government",
+                                "ror": "https://ror.org/00pz2fp31",
+                                "country_code": "ES",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I2800374234"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jes\u00fas Ibarluzea",
+                        "raw_affiliation_strings": [
+                            "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                            "Department of Health of the Basque Government, Subdirectorate of Public Health of Gipuzkoa, San Sebastian, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6933-5373",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Biogipuzkoa Health Research Institute, San Sebastian, Spain",
+                                "institution_ids": []
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Health of the Basque Government, Subdirectorate of Public Health of Gipuzkoa, San Sebastian, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800374234"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5053903866",
+                            "display_name": "M\u00f2nica Guxens",
+                            "orcid": "https://orcid.org/0000-0002-8624-0333"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I11932220",
+                                "display_name": "Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats",
+                                "ror": "https://ror.org/0371hy230",
+                                "country_code": "ES",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I11932220"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I170486558",
+                                "display_name": "Universitat Pompeu Fabra",
+                                "ror": "https://ror.org/04n0g0b29",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210148332",
+                                "display_name": "Barcelona Institute for Global Health",
+                                "ror": "https://ror.org/03hjgt059",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210148332",
+                                    "https://openalex.org/I4387153040"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913958620",
+                                "display_name": "Erasmus University Rotterdam",
+                                "ror": "https://ror.org/057w15z03",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913958620"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES",
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "M\u00f2nica Guxens",
+                        "raw_affiliation_strings": [
+                            "Department of Child and Adolescent Psychiatry/Psychology, Erasmus MC, University Medical Centre, Rotterdam, The Netherlands",
+                            "ICREA, Barcelona, Spain",
+                            "ISGlobal, Barcelona, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                            "Universitat Pompeu Fabra, Barcelona, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8624-0333",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Child and Adolescent Psychiatry/Psychology, Erasmus MC, University Medical Centre, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913958620",
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "ICREA, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I11932220"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "ISGlobal, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210148332"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat Pompeu Fabra, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5012121180",
+                            "display_name": "Carmen J. Marsit",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I150468666",
+                                "display_name": "Emory University",
+                                "ror": "https://ror.org/03czfpz43",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I150468666"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Carmen Marsit",
+                        "raw_affiliation_strings": [
+                            "Gangarosa Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-4566-150X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gangarosa Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I150468666"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052680269",
+                            "display_name": "Mariona Bustamante",
+                            "orcid": "https://orcid.org/0000-0003-0127-2860"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I170486558",
+                                "display_name": "Universitat Pompeu Fabra",
+                                "ror": "https://ror.org/04n0g0b29",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2801357902",
+                                "display_name": "Instituto de Salud Carlos III",
+                                "ror": "https://ror.org/00ca2c886",
+                                "country_code": "ES",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210148332",
+                                "display_name": "Barcelona Institute for Global Health",
+                                "ror": "https://ror.org/03hjgt059",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210148332",
+                                    "https://openalex.org/I4387153040"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210154894",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red de Epidemiolog\u00eda y Salud P\u00fablica",
+                                "ror": "https://ror.org/050q0kv47",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210115082",
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Mariona Bustamante",
+                        "raw_affiliation_strings": [
+                            "ISGlobal, Barcelona, Spain",
+                            "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                            "Universitat Pompeu Fabra, Barcelona, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-0127-2860",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "ISGlobal, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210148332"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Spanish Consortium for Research on Epidemiology and Public Health (CIBERESP), Instituto de Salud Carlos III, Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210154894",
+                                    "https://openalex.org/I2801357902"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat Pompeu Fabra, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I170486558"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5085536761",
+                            "display_name": "Jos\u00e9 Ram\u00f3n Bilbao",
+                            "orcid": "https://orcid.org/0000-0002-3176-501X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210092133",
+                                "display_name": "Centro de Investigaci\u00f3n Biom\u00e9dica en Red Diabetes y Enfermedades Metab\u00f3licas Asociadas",
+                                "ror": "https://ror.org/00dwgct76",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2801357902",
+                                    "https://openalex.org/I4210092133",
+                                    "https://openalex.org/I4387152914"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jose Ramon Bilbao",
+                        "raw_affiliation_strings": [
+                            "CIBER de Diabetes y Enfermedades Metab\u00f3licas Asociadas (CIBERDEM), Madrid, Spain",
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3176-501X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "CIBER de Diabetes y Enfermedades Metab\u00f3licas Asociadas (CIBERDEM), Madrid, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210092133"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5040688274",
+                            "display_name": "Nora Fern\u00e1ndez\u2010Jim\u00e9nez",
+                            "orcid": "https://orcid.org/0000-0001-6307-0880"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169108374",
+                                "display_name": "University of the Basque Country",
+                                "ror": "https://ror.org/000xsnr85",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nora Fernandez-Jimenez",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain. nora.fernandez@ehu.eus",
+                            "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6307-0880",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain. nora.fernandez@ehu.eus",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Physical Anthropology and Animal Physiology, Biobizkaia Health Research Institute and University of the Basque Country (UPV/EHU), Leioa, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I169108374"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 4,
+                "institutions_distinct_count": 25,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5005219923"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I169108374"
+                ],
+                "apc_list": {
+                    "value": 3920,
+                    "currency": "GBP",
+                    "value_usd": 4808
+                },
+                "apc_paid": {
+                    "value": 3920,
+                    "currency": "GBP",
+                    "value_usd": 4808
+                },
+                "fwci": 8.5299,
+                "has_fulltext": true,
+                "cited_by_count": 14,
+                "citation_normalized_percentile": {
+                    "value": 0.98078723,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 95,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "16",
+                    "issue": "1",
+                    "first_page": "2431",
+                    "last_page": "2431"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10269",
+                    "display_name": "Epigenetics and DNA Methylation",
+                    "score": 0.9968000054359436,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10269",
+                        "display_name": "Epigenetics and DNA Methylation",
+                        "score": 0.9968000054359436,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11928",
+                        "display_name": "Genetic Syndromes and Imprinting",
+                        "score": 0.9739000201225281,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11629",
+                        "display_name": "Birth, Development, and Health",
+                        "score": 0.9271000027656555,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2735",
+                            "display_name": "Pediatrics, Perinatology and Child Health"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/schizophrenia",
+                        "display_name": "Schizophrenia (object-oriented programming)",
+                        "score": 0.7970017790794373
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna-methylation",
+                        "display_name": "DNA methylation",
+                        "score": 0.7699538469314575
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/methylation",
+                        "display_name": "Methylation",
+                        "score": 0.5005695819854736
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/psychiatry",
+                        "display_name": "Psychiatry",
+                        "score": 0.45474621653556824
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/medicine",
+                        "display_name": "Medicine",
+                        "score": 0.42711806297302246
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.40527427196502686
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.3781089782714844
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.3712439239025116
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.3616291284561157
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna",
+                        "display_name": "DNA",
+                        "score": 0.3227175176143646
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.1802082359790802
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2776412080",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7431605",
+                        "display_name": "Schizophrenia (object-oriented programming)",
+                        "level": 2,
+                        "score": 0.7970017790794373
+                    },
+                    {
+                        "id": "https://openalex.org/C190727270",
+                        "wikidata": "https://www.wikidata.org/wiki/Q874745",
+                        "display_name": "DNA methylation",
+                        "level": 4,
+                        "score": 0.7699538469314575
+                    },
+                    {
+                        "id": "https://openalex.org/C33288867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q518328",
+                        "display_name": "Methylation",
+                        "level": 3,
+                        "score": 0.5005695819854736
+                    },
+                    {
+                        "id": "https://openalex.org/C118552586",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7867",
+                        "display_name": "Psychiatry",
+                        "level": 1,
+                        "score": 0.45474621653556824
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.42711806297302246
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.40527427196502686
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.3781089782714844
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.3712439239025116
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.3616291284561157
+                    },
+                    {
+                        "id": "https://openalex.org/C552990157",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7430",
+                        "display_name": "DNA",
+                        "level": 2,
+                        "score": 0.3227175176143646
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.1802082359790802
+                    },
+                    {
+                        "id": "https://openalex.org/C150194340",
+                        "wikidata": "https://www.wikidata.org/wiki/Q26972",
+                        "display_name": "Gene expression",
+                        "level": 3,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001714",
+                        "descriptor_name": "Bipolar Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Depressive Disorder, Major",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Depressive Disorder, Major",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Major Depressive Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Major Depressive Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Depressive Disorder, Major",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Major Depressive Disorder",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Depressive Disorder, Major",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003865",
+                        "descriptor_name": "Depressive Disorder, Major",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010920",
+                        "descriptor_name": "Placenta",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011247",
+                        "descriptor_name": "Pregnancy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012559",
+                        "descriptor_name": "Schizophrenia",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D018899",
+                        "descriptor_name": "CpG Islands",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019175",
+                        "descriptor_name": "DNA Methylation",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020641",
+                        "descriptor_name": "Polymorphism, Single Nucleotide",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040641",
+                        "descriptor_name": "Quantitative Trait Loci",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055106",
+                        "descriptor_name": "Genome-Wide Association Study",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057182",
+                        "descriptor_name": "Mendelian Randomization Analysis",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1038/s41467-025-57760-3",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1038/s41467-025-57760-3",
+                        "pdf_url": "https://www.nature.com/articles/s41467-025-57760-3.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S64187185",
+                            "display_name": "Nature Communications",
+                            "issn_l": "2041-1723",
+                            "issn": [
+                                "2041-1723"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310319908",
+                            "host_organization_name": "Nature Portfolio",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310319908",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Nature Portfolio",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Nature Communications",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:40087310",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40087310",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Nature communications",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:roderic.uv.es:10550/108514",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/10550/108514",
+                        "pdf_url": "https://roderic.uv.es/bitstreams/f673d600-a2c4-4db7-bc8e-d66a2b0e410d/download",
+                        "source": {
+                            "id": "https://openalex.org/S4306400245",
+                            "display_name": "Repository of Digital Objects for Teaching Research and Culture (University of Valencia)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I16097986",
+                            "host_organization_name": "Universitat de Val\u00e8ncia",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I16097986"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Cilleros-Portet, Ariadna Lozano, Manuel Soler Blasco, Raquel Llop P\u00e9rez, Sabrina Fern\u00e1ndez Jim\u00e9nez, Nora 2025 Potentially causal associations between placental DNA methylation and schizophrenia and other neuropsychiatric disorders Nature Communications 16 Art. 2431",
+                        "raw_type": "journal article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:eeb98e98f77641ffab7b1f4eaab25dcd",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/eeb98e98f77641ffab7b1f4eaab25dcd",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Nature Communications, Vol 16, Iss 1, Pp 1-21 (2025)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:10725148",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11909199",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:repositori-api.upf.edu:10230/70362",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/10230/70362",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402615",
+                            "display_name": "Repositori digital de la UPF (Universitat Pompeu Fabra)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I170486558",
+                            "host_organization_name": "Universitat Pompeu Fabra",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I170486558"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1038/s41467-025-57760-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1038/s41467-025-57760-3",
+                    "pdf_url": "https://www.nature.com/articles/s41467-025-57760-3.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S64187185",
+                        "display_name": "Nature Communications",
+                        "issn_l": "2041-1723",
+                        "issn": [
+                            "2041-1723"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319908",
+                        "host_organization_name": "Nature Portfolio",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319908",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Nature Portfolio",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Nature Communications",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/2",
+                        "score": 0.4300000071525574,
+                        "display_name": "Zero hunger"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G5914931418",
+                        "display_name": null,
+                        "funder_award_id": "PI06/0867",
+                        "funder_id": "https://openalex.org/F4320334923",
+                        "funder_display_name": "Instituto de Salud Carlos III"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320334923",
+                        "display_name": "Instituto de Salud Carlos III",
+                        "ror": "https://ror.org/00ca2c886"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4408459093.pdf"
+                },
+                "referenced_works_count": 126,
+                "referenced_works": [
+                    "https://openalex.org/W1897931464",
+                    "https://openalex.org/W1963480915",
+                    "https://openalex.org/W1964895626",
+                    "https://openalex.org/W1978611831",
+                    "https://openalex.org/W1981221457",
+                    "https://openalex.org/W1988631315",
+                    "https://openalex.org/W1997950587",
+                    "https://openalex.org/W2009995715",
+                    "https://openalex.org/W2014500978",
+                    "https://openalex.org/W2015455880",
+                    "https://openalex.org/W2017097604",
+                    "https://openalex.org/W2020651859",
+                    "https://openalex.org/W2028260332",
+                    "https://openalex.org/W2033151532",
+                    "https://openalex.org/W2035060237",
+                    "https://openalex.org/W2035293214",
+                    "https://openalex.org/W2049993412",
+                    "https://openalex.org/W2052636781",
+                    "https://openalex.org/W2065020285",
+                    "https://openalex.org/W2067589028",
+                    "https://openalex.org/W2069947776",
+                    "https://openalex.org/W2073836327",
+                    "https://openalex.org/W2076154138",
+                    "https://openalex.org/W2076507942",
+                    "https://openalex.org/W2077932112",
+                    "https://openalex.org/W2077976642",
+                    "https://openalex.org/W2081182312",
+                    "https://openalex.org/W2099085143",
+                    "https://openalex.org/W2100697281",
+                    "https://openalex.org/W2107665951",
+                    "https://openalex.org/W2108165606",
+                    "https://openalex.org/W2113079741",
+                    "https://openalex.org/W2113668968",
+                    "https://openalex.org/W2127054925",
+                    "https://openalex.org/W2127431419",
+                    "https://openalex.org/W2128016314",
+                    "https://openalex.org/W2128130893",
+                    "https://openalex.org/W2128939801",
+                    "https://openalex.org/W2129915465",
+                    "https://openalex.org/W2130796694",
+                    "https://openalex.org/W2134987326",
+                    "https://openalex.org/W2140099276",
+                    "https://openalex.org/W2145188829",
+                    "https://openalex.org/W2152885121",
+                    "https://openalex.org/W2161633633",
+                    "https://openalex.org/W2163104142",
+                    "https://openalex.org/W2181445041",
+                    "https://openalex.org/W2208592559",
+                    "https://openalex.org/W2219957567",
+                    "https://openalex.org/W2241686927",
+                    "https://openalex.org/W2261451134",
+                    "https://openalex.org/W2308543768",
+                    "https://openalex.org/W2328393125",
+                    "https://openalex.org/W2346832371",
+                    "https://openalex.org/W2399037801",
+                    "https://openalex.org/W2405422208",
+                    "https://openalex.org/W2407182836",
+                    "https://openalex.org/W2510973425",
+                    "https://openalex.org/W2511515754",
+                    "https://openalex.org/W2515897135",
+                    "https://openalex.org/W2518262616",
+                    "https://openalex.org/W2529241974",
+                    "https://openalex.org/W2551476694",
+                    "https://openalex.org/W2560666503",
+                    "https://openalex.org/W2567721002",
+                    "https://openalex.org/W2611766868",
+                    "https://openalex.org/W2619972691",
+                    "https://openalex.org/W2623056867",
+                    "https://openalex.org/W2732904266",
+                    "https://openalex.org/W2739834351",
+                    "https://openalex.org/W2758404344",
+                    "https://openalex.org/W2760464541",
+                    "https://openalex.org/W2761275051",
+                    "https://openalex.org/W2788609121",
+                    "https://openalex.org/W2789305195",
+                    "https://openalex.org/W2791022714",
+                    "https://openalex.org/W2802815532",
+                    "https://openalex.org/W2803229193",
+                    "https://openalex.org/W2891845522",
+                    "https://openalex.org/W2899915536",
+                    "https://openalex.org/W2909496885",
+                    "https://openalex.org/W2911487850",
+                    "https://openalex.org/W2939635423",
+                    "https://openalex.org/W2949023387",
+                    "https://openalex.org/W2949785910",
+                    "https://openalex.org/W2956136191",
+                    "https://openalex.org/W2983423072",
+                    "https://openalex.org/W2983859156",
+                    "https://openalex.org/W2990959498",
+                    "https://openalex.org/W3041386879",
+                    "https://openalex.org/W3084033366",
+                    "https://openalex.org/W3111064764",
+                    "https://openalex.org/W3113754461",
+                    "https://openalex.org/W3126281164",
+                    "https://openalex.org/W3127496866",
+                    "https://openalex.org/W3138513807",
+                    "https://openalex.org/W3157460159",
+                    "https://openalex.org/W3162259891",
+                    "https://openalex.org/W3187226810",
+                    "https://openalex.org/W3190942531",
+                    "https://openalex.org/W3194732439",
+                    "https://openalex.org/W3210382439",
+                    "https://openalex.org/W3211402536",
+                    "https://openalex.org/W4210566036",
+                    "https://openalex.org/W4213179335",
+                    "https://openalex.org/W4213324539",
+                    "https://openalex.org/W4220918829",
+                    "https://openalex.org/W4223520055",
+                    "https://openalex.org/W4225156289",
+                    "https://openalex.org/W4225274956",
+                    "https://openalex.org/W4225813429",
+                    "https://openalex.org/W4229010457",
+                    "https://openalex.org/W4281781117",
+                    "https://openalex.org/W4283751233",
+                    "https://openalex.org/W4285158447",
+                    "https://openalex.org/W4310368196",
+                    "https://openalex.org/W4311577408",
+                    "https://openalex.org/W4312064742",
+                    "https://openalex.org/W4313544615",
+                    "https://openalex.org/W4320496883",
+                    "https://openalex.org/W4376642122",
+                    "https://openalex.org/W4387542240",
+                    "https://openalex.org/W4387578597",
+                    "https://openalex.org/W4391247439",
+                    "https://openalex.org/W6925613548",
+                    "https://openalex.org/W6968134298"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2902329290",
+                    "https://openalex.org/W2139872319",
+                    "https://openalex.org/W2052355316",
+                    "https://openalex.org/W2046964473",
+                    "https://openalex.org/W2107880877",
+                    "https://openalex.org/W2151182744",
+                    "https://openalex.org/W2024490794",
+                    "https://openalex.org/W1998349112",
+                    "https://openalex.org/W2054863651",
+                    "https://openalex.org/W2887851388"
+                ],
+                "abstract_inverted_index": {
+                    "Increasing": [
+                        0
+                    ],
+                    "evidence": [
+                        1
+                    ],
+                    "supports": [
+                        2
+                    ],
+                    "the": [
+                        3,
+                        6,
+                        12,
+                        46,
+                        77,
+                        111,
+                        123,
+                        143,
+                        166,
+                        179,
+                        185,
+                        193,
+                        200
+                    ],
+                    "role": [
+                        4
+                    ],
+                    "of": [
+                        5,
+                        14,
+                        45,
+                        96,
+                        113,
+                        142,
+                        163,
+                        165,
+                        181,
+                        187,
+                        196
+                    ],
+                    "placenta": [
+                        7,
+                        73
+                    ],
+                    "in": [
+                        8,
+                        11,
+                        25,
+                        70,
+                        122,
+                        133,
+                        176,
+                        199
+                    ],
+                    "neurodevelopment": [
+                        9
+                    ],
+                    "and": [
+                        10,
+                        19,
+                        30,
+                        80,
+                        86,
+                        106,
+                        138,
+                        150,
+                        184
+                    ],
+                    "onset": [
+                        13
+                    ],
+                    "neuropsychiatric": [
+                        15,
+                        51,
+                        100
+                    ],
+                    "disorders.": [
+                        16
+                    ],
+                    "Recently,": [
+                        17
+                    ],
+                    "mQTL": [
+                        18
+                    ],
+                    "iQTL": [
+                        20
+                    ],
+                    "maps": [
+                        21
+                    ],
+                    "have": [
+                        22
+                    ],
+                    "proven": [
+                        23
+                    ],
+                    "useful": [
+                        24
+                    ],
+                    "understanding": [
+                        26
+                    ],
+                    "relationships": [
+                        27
+                    ],
+                    "between": [
+                        28
+                    ],
+                    "SNPs": [
+                        29
+                    ],
+                    "GWAS": [
+                        31,
+                        97
+                    ],
+                    "that": [
+                        32,
+                        43,
+                        128,
+                        140
+                    ],
+                    "are": [
+                        33,
+                        131
+                    ],
+                    "not": [
+                        34
+                    ],
+                    "captured": [
+                        35
+                    ],
+                    "by": [
+                        36,
+                        171
+                    ],
+                    "eQTL.": [
+                        37
+                    ],
+                    "In": [
+                        38
+                    ],
+                    "this": [
+                        39
+                    ],
+                    "context,": [
+                        40
+                    ],
+                    "we": [
+                        41
+                    ],
+                    "propose": [
+                        42
+                    ],
+                    "part": [
+                        44,
+                        141
+                    ],
+                    "genetic": [
+                        47,
+                        144
+                    ],
+                    "predisposition": [
+                        48
+                    ],
+                    "to": [
+                        49
+                    ],
+                    "complex": [
+                        50
+                    ],
+                    "disorders": [
+                        52,
+                        101
+                    ],
+                    "acts": [
+                        53
+                    ],
+                    "through": [
+                        54,
+                        156
+                    ],
+                    "placental": [
+                        55,
+                        62,
+                        119,
+                        129,
+                        157
+                    ],
+                    "DNA": [
+                        56,
+                        74,
+                        115,
+                        158,
+                        189
+                    ],
+                    "methylation.": [
+                        57,
+                        159
+                    ],
+                    "We": [
+                        58,
+                        89,
+                        108,
+                        126
+                    ],
+                    "construct": [
+                        59
+                    ],
+                    "a": [
+                        60
+                    ],
+                    "public": [
+                        61
+                    ],
+                    "cis-mQTL": [
+                        63
+                    ],
+                    "database": [
+                        64
+                    ],
+                    "including": [
+                        65
+                    ],
+                    "214,830": [
+                        66
+                    ],
+                    "CpG": [
+                        67
+                    ],
+                    "sites": [
+                        68,
+                        117,
+                        191
+                    ],
+                    "calculated": [
+                        69
+                    ],
+                    "368": [
+                        71
+                    ],
+                    "fetal": [
+                        72
+                    ],
+                    "samples": [
+                        75
+                    ],
+                    "from": [
+                        76
+                    ],
+                    "INMA": [
+                        78
+                    ],
+                    "project,": [
+                        79
+                    ],
+                    "run": [
+                        81
+                    ],
+                    "cell": [
+                        82,
+                        182
+                    ],
+                    "type-,": [
+                        83
+                    ],
+                    "gestational": [
+                        84
+                    ],
+                    "age-": [
+                        85
+                    ],
+                    "sex-imQTL": [
+                        87
+                    ],
+                    "models.": [
+                        88
+                    ],
+                    "combine": [
+                        90
+                    ],
+                    "these": [
+                        91
+                    ],
+                    "data": [
+                        92
+                    ],
+                    "with": [
+                        93,
+                        192
+                    ],
+                    "summary": [
+                        94
+                    ],
+                    "statistics": [
+                        95
+                    ],
+                    "on": [
+                        98,
+                        118
+                    ],
+                    "ten": [
+                        99
+                    ],
+                    "using": [
+                        102
+                    ],
+                    "summary-based": [
+                        103
+                    ],
+                    "Mendelian": [
+                        104
+                    ],
+                    "randomization": [
+                        105
+                    ],
+                    "colocalization.": [
+                        107
+                    ],
+                    "also": [
+                        109
+                    ],
+                    "evaluate": [
+                        110
+                    ],
+                    "influence": [
+                        112
+                    ],
+                    "identified": [
+                        114,
+                        175,
+                        188
+                    ],
+                    "methylation": [
+                        116,
+                        190
+                    ],
+                    "gene": [
+                        120
+                    ],
+                    "expression": [
+                        121,
+                        194
+                    ],
+                    "RICHS": [
+                        124
+                    ],
+                    "cohort.": [
+                        125
+                    ],
+                    "find": [
+                        127
+                    ],
+                    "cis-mQTLs": [
+                        130
+                    ],
+                    "enriched": [
+                        132
+                    ],
+                    "placenta-specific": [
+                        134
+                    ],
+                    "active": [
+                        135
+                    ],
+                    "chromatin": [
+                        136
+                    ],
+                    "regions,": [
+                        137
+                    ],
+                    "establish": [
+                        139
+                    ],
+                    "burden": [
+                        145
+                    ],
+                    "for": [
+                        146
+                    ],
+                    "schizophrenia,": [
+                        147
+                    ],
+                    "bipolar": [
+                        148
+                    ],
+                    "disorder,": [
+                        149
+                    ],
+                    "major": [
+                        151
+                    ],
+                    "depressive": [
+                        152
+                    ],
+                    "disorder": [
+                        153
+                    ],
+                    "confers": [
+                        154
+                    ],
+                    "risk": [
+                        155
+                    ],
+                    "The": [
+                        160
+                    ],
+                    "potential": [
+                        161
+                    ],
+                    "causality": [
+                        162
+                    ],
+                    "several": [
+                        164
+                    ],
+                    "observed": [
+                        167
+                    ],
+                    "associations": [
+                        168
+                    ],
+                    "is": [
+                        169
+                    ],
+                    "reinforced": [
+                        170
+                    ],
+                    "secondary": [
+                        172
+                    ],
+                    "association": [
+                        173
+                    ],
+                    "signals": [
+                        174
+                    ],
+                    "conditional": [
+                        177
+                    ],
+                    "analyses,": [
+                        178
+                    ],
+                    "involvement": [
+                        180
+                    ],
+                    "type-imQTLs,": [
+                        183
+                    ],
+                    "correlation": [
+                        186
+                    ],
+                    "levels": [
+                        195
+                    ],
+                    "relevant": [
+                        197
+                    ],
+                    "genes": [
+                        198
+                    ],
+                    "placenta.": [
+                        201
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 13
+                    }
+                ],
+                "updated_date": "2026-05-29T09:21:14.243279",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Potentially causal associations between placental DNA methylation and schizophrenia and other neuropsychiatric disorders",
+                "doi": "10.1038/s41467-025-57760-3",
+                "pmid": "40087310",
+                "pmc": "PMC11909199",
+                "altmetric_jid": "4f6fa62f3cf058f610008259",
+                "issns": [
+                    "2041-1723"
+                ],
+                "journal": "Nature Communications",
+                "cohorts": {
+                    "pub": 18,
+                    "sci": 5,
+                    "doc": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32624845,
+                        "mean": 10.446511774569354,
+                        "rank": 451562,
+                        "pct": 98,
+                        "higher_than": 32174267
+                    },
+                    "journal": {
+                        "count": 78712,
+                        "mean": 49.93728275231223,
+                        "rank": 6987,
+                        "pct": 91,
+                        "higher_than": 71725
+                    },
+                    "similar_age_3m": {
+                        "count": 350005,
+                        "mean": 11.131592120112568,
+                        "rank": 5767,
+                        "pct": 98,
+                        "higher_than": 344251
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 2499,
+                        "mean": 35.514965986394564,
+                        "rank": 132,
+                        "pct": 94,
+                        "higher_than": 2367
+                    }
+                },
+                "authors": [
+                    "Ariadna Cilleros-Portet",
+                    "Corina Lesseur",
+                    "Sergi Mar\u00ed",
+                    "Marta Cosin-Tomas",
+                    "Manuel Lozano",
+                    "Amaia Irizar",
+                    "Amber Burt",
+                    "Iraia Garc\u00eda-Santisteban",
+                    "Diego Garrido-Mart\u00edn",
+                    "Ge\u00f2rgia Escaram\u00eds",
+                    "Alba Hernangomez-Laderas",
+                    "Raquel Soler-Blasco",
+                    "Charles E. Breeze",
+                    "B\u00e1rbara P. Gonzalez-Garcia",
+                    "Loreto Santa-Marina",
+                    "Jia Chen",
+                    "Sabrina Llop",
+                    "Mariana F. Fern\u00e1ndez",
+                    "Martine Vrijheid",
+                    "Jes\u00fas Ibarluzea",
+                    "M\u00f2nica Guxens",
+                    "Carmen Marsit",
+                    "Mariona Bustamante",
+                    "Jose Ramon Bilbao",
+                    "Nora Fernandez-Jimenez"
+                ],
+                "type": "article",
+                "pubdate": 1741910400,
+                "epubdate": 1741910400,
+                "dimensions_publication_id": "pub.1186569828",
+                "altmetric_id": 175240740,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Multidisciplinary",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_msm_count": 12,
+                "cited_by_posts_count": 43,
+                "cited_by_tweeters_count": 17,
+                "cited_by_bluesky_count": 7,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_feeds_count": 3,
+                "cited_by_rdts_count": 1,
+                "cited_by_accounts_count": 41,
+                "last_updated": 1757544820,
+                "score": 112.45,
+                "history": {
+                    "1y": 1.25,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 112.45
+                },
+                "url": "http://dx.doi.org/10.1038/s41467-025-57760-3",
+                "added_on": 1742214784,
+                "published_on": 1741910400,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "45",
+                    "connotea": "0"
+                },
+                "readers_count": 45,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=113&types=mmbrttfu",
+                    "medium": "https://badges.altmetric.com/?size=100&score=113&types=mmbrttfu",
+                    "large": "https://badges.altmetric.com/?size=180&score=113&types=mmbrttfu"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=175240740"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1813,
+            "total_ccn": 209,
+            "avg_ccn": 5.36,
+            "nloc_per_file": 113.31,
+            "duplicate_rate": 17.07
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

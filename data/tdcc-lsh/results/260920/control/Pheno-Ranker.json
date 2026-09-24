@@ -1,0 +1,3494 @@
+{
+    "Pheno-Ranker": {
+        "tool_name": "Pheno-Ranker",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 623544010,
+                "node_id": "R_kgDOJSqGyg",
+                "name": "pheno-ranker",
+                "full_name": "CNAG-Biomedical-Informatics/pheno-ranker",
+                "private": false,
+                "owner": {
+                    "login": "CNAG-Biomedical-Informatics",
+                    "id": 129385775,
+                    "node_id": "O_kgDOB7ZFLw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/129385775?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CNAG-Biomedical-Informatics",
+                    "html_url": "https://github.com/CNAG-Biomedical-Informatics",
+                    "followers_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/followers",
+                    "following_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/orgs",
+                    "repos_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/repos",
+                    "events_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/CNAG-Biomedical-Informatics/pheno-ranker",
+                "description": "Pheno-Ranker is a tool for comparing phenotypic data structured in JSON/YAML format, such as Beacon v2 Models or Phenopackets v2, as well as CSV.",
+                "fork": false,
+                "url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker",
+                "forks_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/forks",
+                "keys_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/teams",
+                "hooks_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/hooks",
+                "issue_events_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/events",
+                "assignees_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/tags",
+                "blobs_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/languages",
+                "stargazers_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/stargazers",
+                "contributors_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/contributors",
+                "subscribers_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/subscribers",
+                "subscription_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/subscription",
+                "commits_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/merges",
+                "archive_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/downloads",
+                "issues_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/labels{/name}",
+                "releases_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/CNAG-Biomedical-Informatics/pheno-ranker/deployments",
+                "created_at": "2023-04-04T15:24:15Z",
+                "updated_at": "2026-08-14T10:38:34Z",
+                "pushed_at": "2026-08-14T10:38:30Z",
+                "git_url": "git://github.com/CNAG-Biomedical-Informatics/pheno-ranker.git",
+                "ssh_url": "git@github.com:CNAG-Biomedical-Informatics/pheno-ranker.git",
+                "clone_url": "https://github.com/CNAG-Biomedical-Informatics/pheno-ranker.git",
+                "svn_url": "https://github.com/CNAG-Biomedical-Informatics/pheno-ranker",
+                "homepage": "https://cnag-biomedical-informatics.github.io/pheno-ranker/",
+                "size": 47522,
+                "stargazers_count": 9,
+                "watchers_count": 9,
+                "language": "Perl",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": false,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "artistic-2.0",
+                    "name": "Artistic License 2.0",
+                    "spdx_id": "Artistic-2.0",
+                    "url": "https://api.github.com/licenses/artistic-2.0",
+                    "node_id": "MDc6TGljZW5zZTM="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "beacon-v2",
+                    "bff",
+                    "bioinformatics",
+                    "biomedical-informatics",
+                    "cnag",
+                    "csv",
+                    "data-exploration",
+                    "ehr",
+                    "ga4gh",
+                    "genomics",
+                    "health-data",
+                    "json",
+                    "phenopackets-v2",
+                    "pxf",
+                    "qrcode",
+                    "semantic-similarity",
+                    "semantic-similarity-measures",
+                    "vcf",
+                    "yaml"
+                ],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 0,
+                "watchers": 9,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "CNAG-Biomedical-Informatics",
+                    "id": 129385775,
+                    "node_id": "O_kgDOB7ZFLw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/129385775?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CNAG-Biomedical-Informatics",
+                    "html_url": "https://github.com/CNAG-Biomedical-Informatics",
+                    "followers_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/followers",
+                    "following_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/orgs",
+                    "repos_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/repos",
+                    "events_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CNAG-Biomedical-Informatics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 1,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": ".gitattributes",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/build-and-test-windows.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/build-and-test.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/cpan-publish.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/cpan-test.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/docker-build-multi-arch.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/docker-build.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/documentation.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/test-docker-build-multi-arch.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "AGENTS.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "Changes",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.SKIP",
+                    "type": "blob"
+                },
+                {
+                    "path": "Makefile.PL",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "VERSION",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin/pheno-ranker",
+                    "type": "blob"
+                },
+                {
+                    "path": "cpanfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "docker/Dockerfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "docker/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/.gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/about.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/algorithm.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/bff-pxf-plot.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/bff-pxf-simulator.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/bff.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/citation.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/clinical-formats.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/cohort.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/csv-import.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/download-and-installation.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/faq.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/federated-version-proposal.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/generic-json.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/implementation.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/omim-database.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/other-formats.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/overview.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/patient.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/phenopackets-corpus.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/pxf.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/qr-code-generator.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/tcga-clinical.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/usage.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/use-from-r.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/user-workflow.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/vcf.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docs/what-is-pheno-ranker.mdx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/docusaurus.config.ts",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/package-lock.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/package.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/scripts/check-docs.mjs",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/sidebars.ts",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/src/components/CytoscapeGraph.tsx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/src/css/custom.css",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/src/pages/index.module.css",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/src/pages/index.tsx",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/combined.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/corpus_cytoscape.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/graph_stats.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/movies_cytoscape.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/omim_cytoscape.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/data/schema.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/107_week_0_arm_1.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/3tr-funding.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/PR-logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/beacon-v2-models.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/bff-format.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/clinical-formats-workflow.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/cnag-logo-white.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/cnag-logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/cohort1.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/cohort2.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/csv-format.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/favicon-2x.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/federated-matching.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/heatmap.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/iconhex.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/igraph.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/mds.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/moviepackets-logo.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies1.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies2.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies3.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies4.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies5.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/movies6.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/omim-database/histogram_with_mean_median.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/omim-database/mds-phenotypicFeatures.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pdf.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-comparison-modes-mobile.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-comparison-modes.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-feature-space-mobile.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-feature-space.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-objective.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-utilities-map-mobile.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pheno-ranker-utilities-map.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/histogram_with_mean_median.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/mds-phenotypicFeatures.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/mds.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/mds_color_by_disease.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/output_plots.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/phenopackets-corpus/phenopackets-corpus-qr.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/pxf-format.svg",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/qgraph-cohort.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/qgraph-patient.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/tcga-clinical/mds.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/umap.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/vcf-heatmap.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/vcf-mds.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/img/vcf-qr.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/count_phenotypicFeatures.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/graph.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/graph_patient.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/histogram.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/mds_color_by_disease.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/static/scripts/shortest_path.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs-site/tsconfig.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/quickstart/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/quickstart/individuals.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "examples/quickstart/patient.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/CLI.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Alignment.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Encoding.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Matrix.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Ontology.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Prepare.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Prune.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Rank.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Compare/Remap.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Config.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Context.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Graph.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/IO.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Metrics.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Options.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib/Pheno/Ranker/Version.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "makefile.docker",
+                    "type": "blob"
+                },
+                {
+                    "path": "makefile.install",
+                    "type": "blob"
+                },
+                {
+                    "path": "nb/pheno_ranker_cli_tutorial.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "non-containerized/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "requirements.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/conf/config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/db/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/db/hp.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/omim.bff.json.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/omim.pxf.json.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/orpha.bff.json.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/orpha.pxf.json.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/diseases/hpo/scripts/hpo_disease_converter.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/ex/individuals_random_100.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/ex/movies.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/ex/movies_config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/ex/pxf_random_100.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/ex/weights.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/fig/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/fig/weights_fig4.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/fig/weights_sex.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/fig/weights_sex_treatments.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/heatmap.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/heatmap_scale.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/mds.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/mds_color.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/pheno_anova_code.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "share/r/umap.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/00-modules.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/01-ranker.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/02-json-ranking.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/03-graph-cli.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/04-errors.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/05-weights.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/06-csv2pheno-ranker.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/07-bff-pxf-simulator.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/09-cli.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/cars.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/cars_config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/cars_matrix.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/example.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/example_config_ref.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/example_ref.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/export.coverage_stats.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/export.glob_hash.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/export.ref_binary_hash.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/export.ref_hash.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/graph.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/graph_stats.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/individuals.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/individuals.json.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/individuals_random_100.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/individuals_random_100_ontologies.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/inter_cohort_matrix_ref.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/interpretations_pxf.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/matrix_ref.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/matrix_ref_interpretations_pxf.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/matrix_ref_jaccard.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/matrix_ref_weights_zero.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/movies.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/movies_config.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/movies_weights.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ontologies.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/output.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/patient.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/pxf_excluded_true.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/pxf_excluded_true_matrix.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/pxf_random_100.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/qr_codes/107_week_0_arm_1.compressed.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/qr_codes/107_week_0_arm_1.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/qr_codes/107_week_0_arm_1.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/qr_codes/output.compressed.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/qr_codes/output.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/rank.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_align.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_align.target.csv",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_align.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_movies_include_matrix.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_movies_matrix.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/ref_movies_weights_matrix.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/weights.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/weights_err1.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/weights_err2.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/data/weights_zero.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "t/lib/Test/PhenoRanker.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/barcode2pheno-ranker",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/pdf_generator.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/pheno-ranker2barcode",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/pheno-ranker2pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/qr_code_utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/tests/test_pdf_generator.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/barcode/tests/test_qr_code_utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_plot/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_plot/bff-pxf-plot",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_plot/bff_pxf_plot_utils.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/Ontologies.pm",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/bff-pxf-simulator",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/cpanfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/ontologies.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/bff_pxf_simulator/pm2yaml.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/csv2pheno_ranker/README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/csv2pheno_ranker/cpanfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/csv2pheno_ranker/csv2pheno-ranker",
+                    "type": "blob"
+                },
+                {
+                    "path": "utils/csv2pheno_ranker/vcf/vcf2pheno-ranker.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/barcode.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/plot.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/plot/bff.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/plot/pxf.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/poi.t",
+                    "type": "blob"
+                },
+                {
+                    "path": "xt/poi/107%3Aweek_0_arm_1.json",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "mrueda",
+                    "contributions": 541
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Perl": 309536,
+                "Python": 46955,
+                "R": 12318,
+                "Dockerfile": 1965,
+                "Makefile": 578
+            },
+            "default_branch_protected": false,
+            "security_updates": null,
+            "secret_scanning": null
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s12859-024-05993-2",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "39633268",
+                            "source": "MED",
+                            "pmid": "39633268",
+                            "pmcid": "PMC11616229",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC11616229"
+                                ]
+                            },
+                            "doi": "10.1186/s12859-024-05993-2",
+                            "title": "Pheno-Ranker: a toolkit for comparison of phenotypic data stored in GA4GH standards and beyond.",
+                            "authorString": "Leist IC, Rivas-Torrubia M, Alarc\u00f3n-Riquelme ME, Barturen G, Consortium PC, Gut IG, Rueda M.",
+                            "journalTitle": "BMC Bioinformatics",
+                            "issue": "1",
+                            "journalVolume": "25",
+                            "pubYear": "2024",
+                            "journalIssn": "1471-2105",
+                            "pageInfo": "373",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 6,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "gen",
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2024-12-05",
+                            "firstPublicationDate": "2024-12-04"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4405015324",
+                "doi": "https://doi.org/10.1186/s12859-024-05993-2",
+                "title": "Pheno-Ranker: a toolkit for comparison of phenotypic data stored in GA4GH standards and beyond",
+                "display_name": "Pheno-Ranker: a toolkit for comparison of phenotypic data stored in GA4GH standards and beyond",
+                "publication_year": 2024,
+                "publication_date": "2024-12-04",
+                "ids": {
+                    "openalex": "https://openalex.org/W4405015324",
+                    "doi": "https://doi.org/10.1186/s12859-024-05993-2",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/39633268"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s12859-024-05993-2",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-024-05993-2",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-024-05993-2",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-024-05993-2",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5020145010",
+                            "display_name": "Ivo C. Leist",
+                            "orcid": "https://orcid.org/0000-0002-9772-443X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210142206",
+                                "display_name": "Centro Nacional de An\u00e1lisis Gen\u00f3mico",
+                                "ror": "https://ror.org/03mynna02",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I71999127",
+                                "display_name": "Universitat de Barcelona",
+                                "ror": "https://ror.org/021018s57",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ivo C. Leist",
+                        "raw_affiliation_strings": [
+                            "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain",
+                            "Universitat de Barcelona (UB), Barcelona, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat de Barcelona (UB), Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5002411069",
+                            "display_name": "Mar\u00eda Rivas-Torrubia",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210142177",
+                                "display_name": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research",
+                                "ror": "https://ror.org/04hr99439",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Mar\u00eda Rivas-Torrubia",
+                        "raw_affiliation_strings": [
+                            "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                            "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052973247",
+                            "display_name": "Marta E. Alarc\u00f3n\u2010Riquelme",
+                            "orcid": "https://orcid.org/0000-0002-7632-4154"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210142177",
+                                "display_name": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research",
+                                "ror": "https://ror.org/04hr99439",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES",
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marta E. Alarc\u00f3n-Riquelme",
+                        "raw_affiliation_strings": [
+                            "Institute of Environmental Medicine, Karolinska Institute, Stockholm, Sweden",
+                            "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                            "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute of Environmental Medicine, Karolinska Institute, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039320926",
+                            "display_name": "Guillermo Barturen",
+                            "orcid": "https://orcid.org/0000-0003-2103-1028"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I173304897",
+                                "display_name": "Universidad de Granada",
+                                "ror": "https://ror.org/04njjy449",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I173304897"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210142177",
+                                "display_name": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research",
+                                "ror": "https://ror.org/04hr99439",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210150145",
+                                "display_name": "Parque Tecnol\u00f3gico de la Salud",
+                                "ror": "https://ror.org/0503gyy63",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210150145"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Guillermo Barturen",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Laboratory, Centro de Investigaci\u00f3n Biom\u00e9dica, Biotechnology Institute, PTS, Avda del Conocimiento S/N, 18100, Granada, Spain",
+                            "Department of Genetics, Faculty of Science, University of Granada, 18071, Granada, Spain",
+                            "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                            "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Laboratory, Centro de Investigaci\u00f3n Biom\u00e9dica, Biotechnology Institute, PTS, Avda del Conocimiento S/N, 18100, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210150145"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, Faculty of Science, University of Granada, 18071, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I173304897"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5066760172",
+                            "display_name": "Marta Gut",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210142177",
+                                "display_name": "Pfizer-University of Granada-Junta de Andaluc\u00eda Centre for Genomics and Oncological Research",
+                                "ror": "https://ror.org/04hr99439",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210142206",
+                                "display_name": "Centro Nacional de An\u00e1lisis Gen\u00f3mico",
+                                "ror": "https://ror.org/03mynna02",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I71999127",
+                                "display_name": "Universitat de Barcelona",
+                                "ror": "https://ror.org/021018s57",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ivo G. Gut",
+                        "raw_affiliation_strings": [
+                            "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain",
+                            "Universitat de Barcelona (UB), Barcelona, Spain",
+                            "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat de Barcelona (UB), Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Pfizer\u2013University of Granada\u2013Junta de Andaluc\u00eda Centre for Genomics and Oncological Research, Granada, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142177"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5023487324",
+                            "display_name": "Manuel Rueda",
+                            "orcid": "https://orcid.org/0000-0001-9280-058X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210142206",
+                                "display_name": "Centro Nacional de An\u00e1lisis Gen\u00f3mico",
+                                "ror": "https://ror.org/03mynna02",
+                                "country_code": "ES",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I71999127",
+                                "display_name": "Universitat de Barcelona",
+                                "ror": "https://ror.org/021018s57",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Manuel Rueda",
+                        "raw_affiliation_strings": [
+                            "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain. manuel.rueda@cnag.eu",
+                            "Universitat de Barcelona (UB), Barcelona, Spain. manuel.rueda@cnag.eu",
+                            "Universitat de Barcelona (UB), Barcelona, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centro Nacional de An\u00e1lisis Gen\u00f3mico, C/Baldiri Reixac 4, 08028, Barcelona, Spain. manuel.rueda@cnag.eu",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142206"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat de Barcelona (UB), Barcelona, Spain. manuel.rueda@cnag.eu",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Universitat de Barcelona (UB), Barcelona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I71999127"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5023487324"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I4210142206",
+                    "https://openalex.org/I71999127"
+                ],
+                "apc_list": {
+                    "value": 2890,
+                    "currency": "USD",
+                    "value_usd": 2890
+                },
+                "apc_paid": {
+                    "value": 2890,
+                    "currency": "USD",
+                    "value_usd": 2890
+                },
+                "fwci": 1.499,
+                "has_fulltext": true,
+                "cited_by_count": 4,
+                "citation_normalized_percentile": {
+                    "value": 0.84182728,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "25",
+                    "issue": "1",
+                    "first_page": "373",
+                    "last_page": "373"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10261",
+                    "display_name": "Genetic Associations and Epidemiology",
+                    "score": 0.7502999901771545,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10261",
+                        "display_name": "Genetic Associations and Epidemiology",
+                        "score": 0.7502999901771545,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.0674000009894371,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T13702",
+                        "display_name": "Machine Learning in Healthcare",
+                        "score": 0.033799998462200165,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1702",
+                            "display_name": "Artificial Intelligence"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/json",
+                        "display_name": "JSON",
+                        "score": 0.757826566696167
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7039793133735657
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pairwise-comparison",
+                        "display_name": "Pairwise comparison",
+                        "score": 0.5967035293579102
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.5116248726844788
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.4860685169696808
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cluster-analysis",
+                        "display_name": "Cluster analysis",
+                        "score": 0.46421387791633606
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-sharing",
+                        "display_name": "Data sharing",
+                        "score": 0.4317846894264221
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.23941758275032043
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.16833466291427612
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2780416260",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2063",
+                        "display_name": "JSON",
+                        "level": 2,
+                        "score": 0.757826566696167
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7039793133735657
+                    },
+                    {
+                        "id": "https://openalex.org/C184898388",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1435712",
+                        "display_name": "Pairwise comparison",
+                        "level": 2,
+                        "score": 0.5967035293579102
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.5116248726844788
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.4860685169696808
+                    },
+                    {
+                        "id": "https://openalex.org/C73555534",
+                        "wikidata": "https://www.wikidata.org/wiki/Q622825",
+                        "display_name": "Cluster analysis",
+                        "level": 2,
+                        "score": 0.46421387791633606
+                    },
+                    {
+                        "id": "https://openalex.org/C2779965156",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5227350",
+                        "display_name": "Data sharing",
+                        "level": 3,
+                        "score": 0.4317846894264221
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.23941758275032043
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.16833466291427612
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C142724271",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7208",
+                        "display_name": "Pathology",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C204787440",
+                        "wikidata": "https://www.wikidata.org/wiki/Q188504",
+                        "display_name": "Alternative medicine",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010641",
+                        "descriptor_name": "Phenotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010641",
+                        "descriptor_name": "Phenotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010641",
+                        "descriptor_name": "Phenotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010641",
+                        "descriptor_name": "Phenotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D023281",
+                        "descriptor_name": "Genomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D023281",
+                        "descriptor_name": "Genomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D023281",
+                        "descriptor_name": "Genomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D023281",
+                        "descriptor_name": "Genomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s12859-024-05993-2",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s12859-024-05993-2",
+                        "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-024-05993-2",
+                        "source": {
+                            "id": "https://openalex.org/S19032547",
+                            "display_name": "BMC Bioinformatics",
+                            "issn_l": "1471-2105",
+                            "issn": [
+                                "1471-2105"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:39633268",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39633268",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC bioinformatics",
+                        "raw_type": "Journal Article"
+                    },
+                    {
+                        "id": "pmh:oai:digibug.ugr.es:10481/98317",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/10481/98317",
+                        "pdf_url": "https://digibug.ugr.es/bitstream/10481/98317/1/s12859-024-05993-2.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306400567",
+                            "display_name": "Institutional Repository of the University of Granada (University of Granada)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I173304897",
+                            "host_organization_name": "Universidad de Granada",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I173304897"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "journal article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:11616229",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11616229",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11616229/pdf/12859_2024_Article_5993.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:1ddfc97fee254534a532307451969e63",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/1ddfc97fee254534a532307451969e63",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, Vol 25, Iss 1, Pp 1-20 (2024)",
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s12859-024-05993-2",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-024-05993-2",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-024-05993-2",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.5,
+                        "display_name": "Partnerships for the goals",
+                        "id": "https://metadata.un.org/sdg/17"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1888088267",
+                        "display_name": null,
+                        "funder_award_id": "2014-2020\u2019",
+                        "funder_id": "https://openalex.org/F4320335322",
+                        "funder_display_name": "European Regional Development Fund"
+                    },
+                    {
+                        "id": "https://openalex.org/G1953887145",
+                        "display_name": null,
+                        "funder_award_id": "2014\u20102020",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G302172212",
+                        "display_name": null,
+                        "funder_award_id": "115565",
+                        "funder_id": "https://openalex.org/F4320314178",
+                        "funder_display_name": "European Federation of Pharmaceutical Industries and Associations"
+                    },
+                    {
+                        "id": "https://openalex.org/G327417459",
+                        "display_name": "Molecular Reclassification to Find Clinically Useful Biomarkers for Systemic Autoimmune Diseases",
+                        "funder_award_id": "115565",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G3529220450",
+                        "display_name": null,
+                        "funder_award_id": "BIO2015-71792-P",
+                        "funder_id": "https://openalex.org/F4320335322",
+                        "funder_display_name": "European Regional Development Fund"
+                    },
+                    {
+                        "id": "https://openalex.org/G4316730327",
+                        "display_name": "Identification of the Molecular Mechanisms of non-response to Treatments, Relapses and Remission in Autoimmune, Inflammatory, and Allergic Conditions",
+                        "funder_award_id": "831434",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G434337789",
+                        "display_name": null,
+                        "funder_award_id": "HORIZON2020",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G6409848911",
+                        "display_name": "Validaci\u00f3n funcional de variantes en el genoma mitocondrial y nuclear en pacientes con patologia mitocondrial",
+                        "funder_award_id": "PI19/01772",
+                        "funder_id": "https://openalex.org/F4320334923",
+                        "funder_display_name": "Instituto de Salud Carlos III"
+                    },
+                    {
+                        "id": "https://openalex.org/G7194725915",
+                        "display_name": null,
+                        "funder_award_id": "PI19/01772",
+                        "funder_id": "https://openalex.org/F4320335322",
+                        "funder_display_name": "European Regional Development Fund"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320314178",
+                        "display_name": "European Federation of Pharmaceutical Industries and Associations",
+                        "ror": "https://ror.org/00g1x4v36"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321505",
+                        "display_name": "Generalitat de Catalunya",
+                        "ror": "https://ror.org/01bg62x04"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322930",
+                        "display_name": "Ministerio de Ciencia e Innovaci\u00f3n",
+                        "ror": "https://ror.org/034900433"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334923",
+                        "display_name": "Instituto de Salud Carlos III",
+                        "ror": "https://ror.org/00ca2c886"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320335322",
+                        "display_name": "European Regional Development Fund",
+                        "ror": "https://ror.org/00k4n6c32"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4405015324.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4405015324.grobid-xml"
+                },
+                "referenced_works_count": 75,
+                "referenced_works": [
+                    "https://openalex.org/W954754213",
+                    "https://openalex.org/W1617386893",
+                    "https://openalex.org/W1931908328",
+                    "https://openalex.org/W1967653863",
+                    "https://openalex.org/W1980073965",
+                    "https://openalex.org/W1986613416",
+                    "https://openalex.org/W1996599952",
+                    "https://openalex.org/W2000963751",
+                    "https://openalex.org/W2006233587",
+                    "https://openalex.org/W2012361142",
+                    "https://openalex.org/W2019315587",
+                    "https://openalex.org/W2048495389",
+                    "https://openalex.org/W2050070834",
+                    "https://openalex.org/W2052477699",
+                    "https://openalex.org/W2055043387",
+                    "https://openalex.org/W2080770151",
+                    "https://openalex.org/W2082704080",
+                    "https://openalex.org/W2084168100",
+                    "https://openalex.org/W2084377579",
+                    "https://openalex.org/W2094500541",
+                    "https://openalex.org/W2100364461",
+                    "https://openalex.org/W2104549677",
+                    "https://openalex.org/W2130011177",
+                    "https://openalex.org/W2146495783",
+                    "https://openalex.org/W2157150618",
+                    "https://openalex.org/W2159675211",
+                    "https://openalex.org/W2162151166",
+                    "https://openalex.org/W2162896254",
+                    "https://openalex.org/W2172197437",
+                    "https://openalex.org/W2179127114",
+                    "https://openalex.org/W2237564809",
+                    "https://openalex.org/W2246559112",
+                    "https://openalex.org/W2279010923",
+                    "https://openalex.org/W2486559230",
+                    "https://openalex.org/W2493311319",
+                    "https://openalex.org/W2500109981",
+                    "https://openalex.org/W2553758616",
+                    "https://openalex.org/W2754903026",
+                    "https://openalex.org/W2795007297",
+                    "https://openalex.org/W2800915484",
+                    "https://openalex.org/W2804985352",
+                    "https://openalex.org/W2805893819",
+                    "https://openalex.org/W2808672056",
+                    "https://openalex.org/W2886653650",
+                    "https://openalex.org/W2926140117",
+                    "https://openalex.org/W2951752341",
+                    "https://openalex.org/W2954820957",
+                    "https://openalex.org/W2963322438",
+                    "https://openalex.org/W2973215195",
+                    "https://openalex.org/W2991157178",
+                    "https://openalex.org/W2997323475",
+                    "https://openalex.org/W2997462854",
+                    "https://openalex.org/W3081121630",
+                    "https://openalex.org/W3213819329",
+                    "https://openalex.org/W4206839115",
+                    "https://openalex.org/W4212853299",
+                    "https://openalex.org/W4224997429",
+                    "https://openalex.org/W4254687493",
+                    "https://openalex.org/W4282918066",
+                    "https://openalex.org/W4292210254",
+                    "https://openalex.org/W4294578352",
+                    "https://openalex.org/W4321020604",
+                    "https://openalex.org/W4321378989",
+                    "https://openalex.org/W4366981460",
+                    "https://openalex.org/W4376958588",
+                    "https://openalex.org/W4384942607",
+                    "https://openalex.org/W4385858553",
+                    "https://openalex.org/W4386305468",
+                    "https://openalex.org/W4388398879",
+                    "https://openalex.org/W4389004870",
+                    "https://openalex.org/W4389004882",
+                    "https://openalex.org/W4389151941",
+                    "https://openalex.org/W4389570496",
+                    "https://openalex.org/W4389674515",
+                    "https://openalex.org/W4403287043"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2753132265",
+                    "https://openalex.org/W4234766820",
+                    "https://openalex.org/W4321232174",
+                    "https://openalex.org/W3117520771",
+                    "https://openalex.org/W2482048793",
+                    "https://openalex.org/W4388027365",
+                    "https://openalex.org/W2938860153",
+                    "https://openalex.org/W4312551432",
+                    "https://openalex.org/W2365783963",
+                    "https://openalex.org/W3113257914"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Phenotypic": [
+                        1
+                    ],
+                    "data": [
+                        2,
+                        98,
+                        107,
+                        113,
+                        125,
+                        226,
+                        230,
+                        257,
+                        268,
+                        303
+                    ],
+                    "comparison": [
+                        3,
+                        89,
+                        273
+                    ],
+                    "is": [
+                        4,
+                        127,
+                        246,
+                        291
+                    ],
+                    "essential": [
+                        5
+                    ],
+                    "for": [
+                        6,
+                        23,
+                        35,
+                        50,
+                        87,
+                        140,
+                        148,
+                        251,
+                        300
+                    ],
+                    "disease": [
+                        7
+                    ],
+                    "association": [
+                        8
+                    ],
+                    "studies,": [
+                        9
+                    ],
+                    "patient": [
+                        10
+                    ],
+                    "stratification,": [
+                        11
+                    ],
+                    "and": [
+                        12,
+                        25,
+                        31,
+                        38,
+                        41,
+                        104,
+                        132,
+                        173,
+                        179,
+                        203,
+                        214,
+                        221,
+                        261,
+                        308,
+                        336
+                    ],
+                    "genotype-phenotype": [
+                        13
+                    ],
+                    "correlation": [
+                        14
+                    ],
+                    "analysis.": [
+                        15
+                    ],
+                    "To": [
+                        16
+                    ],
+                    "support": [
+                        17
+                    ],
+                    "these": [
+                        18
+                    ],
+                    "efforts,": [
+                        19
+                    ],
+                    "the": [
+                        20,
+                        123,
+                        158,
+                        234,
+                        272,
+                        328,
+                        337,
+                        344
+                    ],
+                    "Global": [
+                        21
+                    ],
+                    "Alliance": [
+                        22
+                    ],
+                    "Genomics": [
+                        24
+                    ],
+                    "Health": [
+                        26
+                    ],
+                    "(GA4GH)": [
+                        27
+                    ],
+                    "established": [
+                        28
+                    ],
+                    "Phenopackets": [
+                        29,
+                        105,
+                        262
+                    ],
+                    "v2": [
+                        30,
+                        33,
+                        103,
+                        106,
+                        260,
+                        263
+                    ],
+                    "Beacon": [
+                        32,
+                        102,
+                        259
+                    ],
+                    "standards": [
+                        34,
+                        45
+                    ],
+                    "storing,": [
+                        36
+                    ],
+                    "sharing,": [
+                        37
+                    ],
+                    "discovering": [
+                        39
+                    ],
+                    "genomic": [
+                        40
+                    ],
+                    "phenotypic": [
+                        42,
+                        91,
+                        256
+                    ],
+                    "data.": [
+                        43,
+                        92
+                    ],
+                    "These": [
+                        44
+                    ],
+                    "provide": [
+                        46
+                    ],
+                    "a": [
+                        47,
+                        151,
+                        247,
+                        275,
+                        294,
+                        318,
+                        332
+                    ],
+                    "consistent": [
+                        48
+                    ],
+                    "framework": [
+                        49
+                    ],
+                    "organizing": [
+                        51
+                    ],
+                    "biological": [
+                        52
+                    ],
+                    "data,": [
+                        53,
+                        216
+                    ],
+                    "simplifying": [
+                        54
+                    ],
+                    "their": [
+                        55,
+                        76,
+                        162
+                    ],
+                    "transformation": [
+                        56
+                    ],
+                    "into": [
+                        57
+                    ],
+                    "computer-friendly": [
+                        58
+                    ],
+                    "formats.": [
+                        59,
+                        121
+                    ],
+                    "However,": [
+                        60
+                    ],
+                    "matching": [
+                        61,
+                        149
+                    ],
+                    "participants": [
+                        62
+                    ],
+                    "using": [
+                        63,
+                        192
+                    ],
+                    "GA4GH-based": [
+                        64
+                    ],
+                    "formats": [
+                        65,
+                        100
+                    ],
+                    "remains": [
+                        66
+                    ],
+                    "challenging,": [
+                        67
+                    ],
+                    "as": [
+                        68,
+                        109,
+                        111,
+                        197,
+                        293
+                    ],
+                    "current": [
+                        69
+                    ],
+                    "methods": [
+                        70
+                    ],
+                    "are": [
+                        71,
+                        341
+                    ],
+                    "not": [
+                        72
+                    ],
+                    "fully": [
+                        73
+                    ],
+                    "compatible,": [
+                        74
+                    ],
+                    "limiting": [
+                        75
+                    ],
+                    "effectiveness.": [
+                        77
+                    ],
+                    "RESULTS:": [
+                        78
+                    ],
+                    "Here,": [
+                        79
+                    ],
+                    "we": [
+                        80
+                    ],
+                    "introduce": [
+                        81
+                    ],
+                    "Pheno-Ranker,": [
+                        82
+                    ],
+                    "an": [
+                        83
+                    ],
+                    "open-source": [
+                        84
+                    ],
+                    "software": [
+                        85,
+                        250,
+                        290
+                    ],
+                    "toolkit": [
+                        86
+                    ],
+                    "individual-level": [
+                        88
+                    ],
+                    "of": [
+                        90,
+                        150,
+                        184,
+                        255,
+                        274,
+                        278
+                    ],
+                    "As": [
+                        93
+                    ],
+                    "input,": [
+                        94
+                    ],
+                    "it": [
+                        95,
+                        315
+                    ],
+                    "accepts": [
+                        96
+                    ],
+                    "JSON/YAML": [
+                        97
+                    ],
+                    "exchange": [
+                        99
+                    ],
+                    "from": [
+                        101,
+                        233
+                    ],
+                    "models,": [
+                        108
+                    ],
+                    "well": [
+                        110
+                    ],
+                    "any": [
+                        112
+                    ],
+                    "structure": [
+                        114,
+                        126
+                    ],
+                    "encoded": [
+                        115
+                    ],
+                    "in": [
+                        116,
+                        154,
+                        241,
+                        258
+                    ],
+                    "JSON,": [
+                        117
+                    ],
+                    "YAML,": [
+                        118
+                    ],
+                    "or": [
+                        119,
+                        147,
+                        166,
+                        199,
+                        282
+                    ],
+                    "CSV": [
+                        120,
+                        301
+                    ],
+                    "Internally,": [
+                        122
+                    ],
+                    "hierarchical": [
+                        124
+                    ],
+                    "flattened": [
+                        128
+                    ],
+                    "to": [
+                        129,
+                        160,
+                        171,
+                        266,
+                        327
+                    ],
+                    "one": [
+                        130
+                    ],
+                    "dimension": [
+                        131
+                    ],
+                    "then": [
+                        133
+                    ],
+                    "transformed": [
+                        134
+                    ],
+                    "through": [
+                        135,
+                        177
+                    ],
+                    "one-hot": [
+                        136
+                    ],
+                    "encoding.": [
+                        137
+                    ],
+                    "This": [
+                        138
+                    ],
+                    "allows": [
+                        139
+                    ],
+                    "efficient": [
+                        141
+                    ],
+                    "pairwise": [
+                        142
+                    ],
+                    "(all-to-all)": [
+                        143
+                    ],
+                    "comparisons": [
+                        144,
+                        163
+                    ],
+                    "within": [
+                        145
+                    ],
+                    "cohorts": [
+                        146
+                    ],
+                    "patient's": [
+                        152
+                    ],
+                    "profile": [
+                        153
+                    ],
+                    "cohorts.": [
+                        155
+                    ],
+                    "Users": [
+                        156
+                    ],
+                    "have": [
+                        157
+                    ],
+                    "flexibility": [
+                        159
+                    ],
+                    "refine": [
+                        161
+                    ],
+                    "by": [
+                        164
+                    ],
+                    "including": [
+                        165,
+                        331
+                    ],
+                    "excluding": [
+                        167
+                    ],
+                    "terms,": [
+                        168
+                    ],
+                    "applying": [
+                        169
+                    ],
+                    "weights": [
+                        170
+                    ],
+                    "variables,": [
+                        172
+                    ],
+                    "obtaining": [
+                        174
+                    ],
+                    "statistical": [
+                        175
+                    ],
+                    "significance": [
+                        176
+                    ],
+                    "Z-scores": [
+                        178
+                    ],
+                    "p-values.": [
+                        180
+                    ],
+                    "The": [
+                        181,
+                        289
+                    ],
+                    "output": [
+                        182
+                    ],
+                    "consists": [
+                        183
+                    ],
+                    "text": [
+                        185
+                    ],
+                    "files,": [
+                        186
+                    ],
+                    "which": [
+                        187
+                    ],
+                    "can": [
+                        188
+                    ],
+                    "be": [
+                        189
+                    ],
+                    "further": [
+                        190
+                    ],
+                    "analyzed": [
+                        191
+                    ],
+                    "unsupervised": [
+                        193
+                    ],
+                    "learning": [
+                        194
+                    ],
+                    "techniques,": [
+                        195
+                    ],
+                    "such": [
+                        196
+                    ],
+                    "clustering": [
+                        198
+                    ],
+                    "multidimensional": [
+                        200
+                    ],
+                    "scaling": [
+                        201
+                    ],
+                    "(MDS),": [
+                        202
+                    ],
+                    "with": [
+                        204,
+                        212,
+                        297,
+                        323
+                    ],
+                    "graph": [
+                        205
+                    ],
+                    "analytics.": [
+                        206
+                    ],
+                    "Pheno-Ranker's": [
+                        207
+                    ],
+                    "performance": [
+                        208
+                    ],
+                    "has": [
+                        209
+                    ],
+                    "been": [
+                        210
+                    ],
+                    "validated": [
+                        211
+                    ],
+                    "simulated": [
+                        213
+                    ],
+                    "synthetic": [
+                        215
+                    ],
+                    "showing": [
+                        217
+                    ],
+                    "its": [
+                        218,
+                        238
+                    ],
+                    "accuracy,": [
+                        219
+                    ],
+                    "robustness,": [
+                        220
+                    ],
+                    "efficiency": [
+                        222
+                    ],
+                    "across": [
+                        223
+                    ],
+                    "various": [
+                        224
+                    ],
+                    "health": [
+                        225
+                    ],
+                    "scenarios.": [
+                        227
+                    ],
+                    "A": [
+                        228
+                    ],
+                    "real": [
+                        229
+                    ],
+                    "use": [
+                        231
+                    ],
+                    "case": [
+                        232
+                    ],
+                    "PRECISESADS": [
+                        235
+                    ],
+                    "study": [
+                        236
+                    ],
+                    "highlights": [
+                        237
+                    ],
+                    "practical": [
+                        239
+                    ],
+                    "utility": [
+                        240
+                    ],
+                    "clinical": [
+                        242
+                    ],
+                    "research.": [
+                        243
+                    ],
+                    "CONCLUSIONS:": [
+                        244
+                    ],
+                    "Pheno-Ranker": [
+                        245
+                    ],
+                    "user-friendly,": [
+                        248
+                    ],
+                    "lightweight": [
+                        249
+                    ],
+                    "semantic": [
+                        252
+                    ],
+                    "similarity": [
+                        253
+                    ],
+                    "analysis": [
+                        254
+                    ],
+                    "formats,": [
+                        264
+                    ],
+                    "extendable": [
+                        265
+                    ],
+                    "other": [
+                        267
+                    ],
+                    "types.": [
+                        269
+                    ],
+                    "It": [
+                        270
+                    ],
+                    "enables": [
+                        271
+                    ],
+                    "wide": [
+                        276
+                    ],
+                    "range": [
+                        277
+                    ],
+                    "variables": [
+                        279
+                    ],
+                    "beyond": [
+                        280
+                    ],
+                    "HPO": [
+                        281
+                    ],
+                    "OMIM": [
+                        283
+                    ],
+                    "terms": [
+                        284
+                    ],
+                    "while": [
+                        285
+                    ],
+                    "preserving": [
+                        286
+                    ],
+                    "full": [
+                        287
+                    ],
+                    "context.": [
+                        288
+                    ],
+                    "designed": [
+                        292
+                    ],
+                    "command-line": [
+                        295
+                    ],
+                    "tool": [
+                        296
+                    ],
+                    "additional": [
+                        298
+                    ],
+                    "utilities": [
+                        299
+                    ],
+                    "import,": [
+                        302
+                    ],
+                    "simulation,": [
+                        304
+                    ],
+                    "summary": [
+                        305
+                    ],
+                    "statistics": [
+                        306
+                    ],
+                    "plotting,": [
+                        307
+                    ],
+                    "QR": [
+                        309
+                    ],
+                    "code": [
+                        310,
+                        340
+                    ],
+                    "generation.": [
+                        311
+                    ],
+                    "For": [
+                        312
+                    ],
+                    "interactive": [
+                        313
+                    ],
+                    "analysis,": [
+                        314
+                    ],
+                    "also": [
+                        316
+                    ],
+                    "includes": [
+                        317
+                    ],
+                    "web-based": [
+                        319
+                    ],
+                    "user": [
+                        320
+                    ],
+                    "interface": [
+                        321
+                    ],
+                    "built": [
+                        322
+                    ],
+                    "R": [
+                        324
+                    ],
+                    "Shiny.": [
+                        325
+                    ],
+                    "Links": [
+                        326
+                    ],
+                    "online": [
+                        329
+                    ],
+                    "documentation,": [
+                        330
+                    ],
+                    "Google": [
+                        333
+                    ],
+                    "Colab": [
+                        334
+                    ],
+                    "tutorial,": [
+                        335
+                    ],
+                    "tool's": [
+                        338
+                    ],
+                    "source": [
+                        339
+                    ],
+                    "available": [
+                        342
+                    ],
+                    "on": [
+                        343
+                    ],
+                    "project": [
+                        345
+                    ],
+                    "home": [
+                        346
+                    ],
+                    "page:": [
+                        347
+                    ],
+                    "https://github.com/CNAG-Biomedical-Informatics/pheno-ranker": [
+                        348
+                    ],
+                    ".": [
+                        349
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-08-28T12:50:07.497085",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Pheno-Ranker: a toolkit for comparison of phenotypic data stored in GA4GH standards and beyond",
+                "doi": "10.1186/s12859-024-05993-2",
+                "pmid": "39633268",
+                "pmc": "PMC11616229",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007a9",
+                "issns": [
+                    "1471-2105"
+                ],
+                "journal": "BMC Bioinformatics",
+                "cohorts": {
+                    "sci": 5,
+                    "pub": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32889333,
+                        "mean": 10.485638815965045,
+                        "rank": 9828795,
+                        "pct": 69,
+                        "higher_than": 22963987
+                    },
+                    "journal": {
+                        "count": 8321,
+                        "mean": 5.784370868885951,
+                        "rank": 3086,
+                        "pct": 62,
+                        "higher_than": 5178
+                    },
+                    "similar_age_3m": {
+                        "count": 392529,
+                        "mean": 10.068727660886202,
+                        "rank": 107950,
+                        "pct": 72,
+                        "higher_than": 283903
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 42,
+                        "mean": 4.761904761904762,
+                        "rank": 10,
+                        "pct": 73,
+                        "higher_than": 31
+                    }
+                },
+                "authors": [
+                    "Ivo C. Leist",
+                    "Mar\u00eda Rivas-Torrubia",
+                    "Marta E. Alarc\u00f3n-Riquelme",
+                    "Guillermo Barturen",
+                    "PRECISESADS Clinical Consortium",
+                    "Ivo G. Gut",
+                    "Manuel Rueda"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1733270400,
+                "epubdate": 1733270400,
+                "dimensions_publication_id": "pub.1182996866",
+                "altmetric_id": 171512634,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 9,
+                "cited_by_tweeters_count": 4,
+                "cited_by_bluesky_count": 2,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_accounts_count": 7,
+                "last_updated": 1749201019,
+                "score": 4.25,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 4.25
+                },
+                "url": "http://dx.doi.org/10.1186/s12859-024-05993-2",
+                "added_on": 1733303964,
+                "published_on": 1733270400,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "13",
+                    "connotea": "0"
+                },
+                "readers_count": 13,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=5&types=ttttffuu",
+                    "medium": "https://badges.altmetric.com/?size=100&score=5&types=ttttffuu",
+                    "large": "https://badges.altmetric.com/?size=180&score=5&types=ttttffuu"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=171512634"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 3128,
+            "total_ccn": 771,
+            "avg_ccn": 3.64,
+            "nloc_per_file": 68.0,
+            "duplicate_rate": 16.11
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

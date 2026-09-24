@@ -1,0 +1,3633 @@
+{
+    "PatientMatcher": {
+        "tool_name": "PatientMatcher",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 162555142,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxNjI1NTUxNDI=",
+                "name": "patientMatcher",
+                "full_name": "Clinical-Genomics/patientMatcher",
+                "private": false,
+                "owner": {
+                    "login": "Clinical-Genomics",
+                    "id": 6412433,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjY0MTI0MzM=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/6412433?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Clinical-Genomics",
+                    "html_url": "https://github.com/Clinical-Genomics",
+                    "followers_url": "https://api.github.com/users/Clinical-Genomics/followers",
+                    "following_url": "https://api.github.com/users/Clinical-Genomics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Clinical-Genomics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Clinical-Genomics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Clinical-Genomics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Clinical-Genomics/orgs",
+                    "repos_url": "https://api.github.com/users/Clinical-Genomics/repos",
+                    "events_url": "https://api.github.com/users/Clinical-Genomics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Clinical-Genomics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/Clinical-Genomics/patientMatcher",
+                "description": "A MatchMaker Exchange server",
+                "fork": false,
+                "url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher",
+                "forks_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/forks",
+                "keys_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/teams",
+                "hooks_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/hooks",
+                "issue_events_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/events",
+                "assignees_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/tags",
+                "blobs_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/languages",
+                "stargazers_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/stargazers",
+                "contributors_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/contributors",
+                "subscribers_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/subscribers",
+                "subscription_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/subscription",
+                "commits_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/merges",
+                "archive_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/downloads",
+                "issues_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/labels{/name}",
+                "releases_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/Clinical-Genomics/patientMatcher/deployments",
+                "created_at": "2018-12-20T09:15:07Z",
+                "updated_at": "2026-06-01T07:05:37Z",
+                "pushed_at": "2026-06-01T07:09:13Z",
+                "git_url": "git://github.com/Clinical-Genomics/patientMatcher.git",
+                "ssh_url": "git@github.com:Clinical-Genomics/patientMatcher.git",
+                "clone_url": "https://github.com/Clinical-Genomics/patientMatcher.git",
+                "svn_url": "https://github.com/Clinical-Genomics/patientMatcher",
+                "homepage": "https://clinical-genomics.github.io/patientMatcher/",
+                "size": 28869,
+                "stargazers_count": 12,
+                "watchers_count": 12,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": false,
+                "has_wiki": true,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 7,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 6,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "diagnosis",
+                    "gene",
+                    "hpo-similarity",
+                    "matching-algorithm",
+                    "matchmaker",
+                    "matchmaking",
+                    "matchmaking-server",
+                    "omim",
+                    "patient-matching",
+                    "patients",
+                    "score",
+                    "similarity-score",
+                    "variants"
+                ],
+                "visibility": "public",
+                "forks": 7,
+                "open_issues": 6,
+                "watchers": 12,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "Clinical-Genomics",
+                    "id": 6412433,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjY0MTI0MzM=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/6412433?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Clinical-Genomics",
+                    "html_url": "https://github.com/Clinical-Genomics",
+                    "followers_url": "https://api.github.com/users/Clinical-Genomics/followers",
+                    "following_url": "https://api.github.com/users/Clinical-Genomics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Clinical-Genomics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Clinical-Genomics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Clinical-Genomics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Clinical-Genomics/orgs",
+                    "repos_url": "https://api.github.com/users/Clinical-Genomics/repos",
+                    "events_url": "https://api.github.com/users/Clinical-Genomics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Clinical-Genomics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 7,
+                "subscribers_count": 4
+            },
+            "contents": [
+                {
+                    "path": ".dockerignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/CODEOWNERS",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/ISSUE_TEMPLATE/other_issue.md",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/PULL_REQUEST_TEMPLATE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/autodeploy_mkdocs.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/black.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/docker_build_n_publish.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/docker_build_n_publish_stage.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/flake8.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/pypi_publish.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/pytest_codecov.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/vulture.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github/workflows/woke.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "Dockerfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "Dockerfile-server",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "RELEASE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "codecov.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "containers/docker-compose_auth_server_with_2_nodes.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "containers/mongo-init.js",
+                    "type": "blob"
+                },
+                {
+                    "path": "docker-compose.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/algorithm.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/cli.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/conda_inst.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/data_types.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/docker_app.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/endpoints.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/error_emails.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/index.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/matching_emails.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs/phenotype_resources.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "mkdocs.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/__version__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/auth/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/auth/auth.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/cli/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/cli/add.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/cli/commands.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/cli/remove.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/cli/update.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/constants/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/instance/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/instance/config.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/match/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/match/genotype_matcher.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/match/handler.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/match/phenotype_matcher.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/parse/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/parse/patient.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/resources/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/resources/api.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/resources/benchmark_patients.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/resources/hp.obo.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/resources/phenotype.hpoa",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/auto.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/controllers.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/extensions.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/static/favicon.ico",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/templates/index.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/server/views.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/add.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/delete.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/disease.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/ensembl_rest_client.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/gene.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/hpo.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/notify.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/patient.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/stats.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/update.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "patientMatcher/utils/variant.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/backend/test_backend_patient.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/backend/test_nodes.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/cli/test_add.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/cli/test_commands.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/cli/test_remove.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/cli/test_update.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/conftest.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/match/test_GT_matching.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/match/test_matching_handler.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/match/test_pheno_matching.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/parse/test_parse_patient.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/server/test_create_app.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/server/test_extensions.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/server/test_server_responses.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_delete.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_ensembl_rest_api.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_gene.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_notify.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_patient.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests/utils/test_variant.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "uv.lock",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "northwestwitch",
+                    "contributions": 815
+                },
+                {
+                    "login": "tsnowlan",
+                    "contributions": 20
+                },
+                {
+                    "login": "dependabot[bot]",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 387,
+                    "title": "Refactor endpoint tests to avoid code duplication",
+                    "created_at": "2026-04-09T12:21:42Z",
+                    "closed_at": "2026-04-13T13:14:36Z"
+                },
+                {
+                    "number": 382,
+                    "title": "\"roles\" field is also missing for patient's contact",
+                    "created_at": "2026-03-26T12:59:22Z",
+                    "closed_at": "2026-03-26T14:07:34Z"
+                },
+                {
+                    "number": 379,
+                    "title": "Allow updating contact email and href separately using the CLI",
+                    "created_at": "2026-03-25T09:50:08Z",
+                    "closed_at": "2026-03-26T12:38:56Z"
+                },
+                {
+                    "number": 374,
+                    "title": "Update python version used in actions",
+                    "created_at": "2026-03-25T08:25:30Z",
+                    "closed_at": "2026-03-25T09:06:47Z"
+                },
+                {
+                    "number": 372,
+                    "title": "Change in API: additionalContacts",
+                    "created_at": "2026-03-25T07:51:56Z",
+                    "closed_at": "2026-05-28T07:32:28Z"
+                },
+                {
+                    "number": 369,
+                    "title": "Publish to PyPI on a new release event is broken",
+                    "created_at": "2025-07-24T09:21:53Z",
+                    "closed_at": "2025-07-24T09:39:01Z"
+                },
+                {
+                    "number": 367,
+                    "title": "Improve Dockerfiles by adding supply chain attestation",
+                    "created_at": "2025-07-24T08:34:28Z",
+                    "closed_at": "2025-07-24T09:07:06Z"
+                },
+                {
+                    "number": 364,
+                    "title": "Patientmatcher server not starting when using docker image",
+                    "created_at": "2025-07-24T06:43:08Z",
+                    "closed_at": "2025-07-24T07:56:10Z"
+                },
+                {
+                    "number": 363,
+                    "title": "Invalid escape sequence warnings",
+                    "created_at": "2025-07-24T06:41:47Z",
+                    "closed_at": "2025-07-24T08:20:37Z"
+                },
+                {
+                    "number": 359,
+                    "title": "Update the resource files",
+                    "created_at": "2025-07-22T09:41:29Z",
+                    "closed_at": "2025-07-22T09:54:14Z"
+                },
+                {
+                    "number": 355,
+                    "title": "Release instructions",
+                    "created_at": "2025-07-21T06:16:13Z",
+                    "closed_at": "2025-07-22T08:49:05Z"
+                },
+                {
+                    "number": 353,
+                    "title": "Create custom templates for issues and PRs",
+                    "created_at": "2025-07-21T05:41:53Z",
+                    "closed_at": "2025-07-21T07:19:45Z"
+                },
+                {
+                    "number": 351,
+                    "title": "Switch from pkg_resources to setuptools",
+                    "created_at": "2025-07-21T05:24:16Z",
+                    "closed_at": "2025-07-21T05:49:08Z"
+                },
+                {
+                    "number": 349,
+                    "title": "Update Dockerfiles",
+                    "created_at": "2025-07-18T08:07:45Z",
+                    "closed_at": "2025-07-21T10:04:07Z"
+                },
+                {
+                    "number": 348,
+                    "title": "Editable install param \"-e\" will be deprecated",
+                    "created_at": "2025-04-02T08:13:02Z",
+                    "closed_at": "2025-07-21T06:15:32Z"
+                },
+                {
+                    "number": 345,
+                    "title": "Build & Push to Docker Hub failing",
+                    "created_at": "2024-05-14T13:18:33Z",
+                    "closed_at": "2024-05-14T13:19:35Z"
+                },
+                {
+                    "number": 344,
+                    "title": "remove many info logs",
+                    "created_at": "2024-02-15T16:38:23Z",
+                    "closed_at": "2025-07-23T13:36:38Z"
+                },
+                {
+                    "number": 341,
+                    "title": "Gunicorn worker not booting",
+                    "created_at": "2023-11-14T06:42:58Z",
+                    "closed_at": "2023-11-14T08:55:52Z"
+                },
+                {
+                    "number": 337,
+                    "title": "unfreeze PyMongo",
+                    "created_at": "2023-10-25T08:35:05Z",
+                    "closed_at": "2023-12-06T06:30:36Z"
+                },
+                {
+                    "number": 334,
+                    "title": "How to use docker image to run commands for interacting with the database",
+                    "created_at": "2023-08-14T07:32:28Z",
+                    "closed_at": "2023-08-14T07:33:48Z"
+                },
+                {
+                    "number": 330,
+                    "title": "Gunicorn workers not loading",
+                    "created_at": "2023-08-11T09:29:43Z",
+                    "closed_at": "2023-08-11T13:47:47Z"
+                },
+                {
+                    "number": 327,
+                    "title": "Newest resource file not correctly parsed",
+                    "created_at": "2023-08-11T06:42:03Z",
+                    "closed_at": "2023-08-11T07:58:27Z"
+                },
+                {
+                    "number": 325,
+                    "title": "Display connected details on landing page",
+                    "created_at": "2023-06-20T09:27:57Z",
+                    "closed_at": "2023-08-14T05:29:28Z"
+                },
+                {
+                    "number": 324,
+                    "title": "Broken badge on readme page",
+                    "created_at": "2023-06-20T09:20:46Z",
+                    "closed_at": "2023-06-20T09:56:40Z"
+                },
+                {
+                    "number": 319,
+                    "title": "Do not start the server if resource files can't be parsed properly",
+                    "created_at": "2023-03-16T07:34:45Z",
+                    "closed_at": "2023-03-16T14:27:40Z"
+                },
+                {
+                    "number": 318,
+                    "title": "Can't download phenotype_annotation.tab",
+                    "created_at": "2023-03-16T06:55:21Z",
+                    "closed_at": "2023-03-16T10:33:33Z"
+                },
+                {
+                    "number": 317,
+                    "title": "Deprecated Ubuntu version 18.04 in GitHub actions",
+                    "created_at": "2023-03-16T06:45:20Z",
+                    "closed_at": "2023-03-16T13:24:57Z"
+                },
+                {
+                    "number": 313,
+                    "title": "Parsed 0 disease/phenotypes from resource file",
+                    "created_at": "2022-09-22T07:00:18Z",
+                    "closed_at": "2022-09-22T08:18:54Z"
+                },
+                {
+                    "number": 309,
+                    "title": "Phenotype annotations link is not working any more",
+                    "created_at": "2022-09-21T12:21:14Z",
+                    "closed_at": "2022-09-21T12:44:22Z"
+                },
+                {
+                    "number": 307,
+                    "title": "Add this repo to Sonarcloud",
+                    "created_at": "2022-08-23T06:43:13Z",
+                    "closed_at": "2022-08-23T09:06:33Z"
+                },
+                {
+                    "number": 302,
+                    "title": "Docs link doesn't work",
+                    "created_at": "2022-05-18T12:42:15Z",
+                    "closed_at": "2022-05-18T12:45:49Z"
+                },
+                {
+                    "number": 298,
+                    "title": "Wrong port serving the app in readme file",
+                    "created_at": "2022-05-18T09:07:49Z",
+                    "closed_at": "2022-05-18T09:43:05Z"
+                },
+                {
+                    "number": 296,
+                    "title": "Remove asynchronous responses from server views",
+                    "created_at": "2022-05-16T11:33:33Z",
+                    "closed_at": "2022-05-18T09:00:14Z"
+                },
+                {
+                    "number": 295,
+                    "title": "Update database (diagnoses and phenotypes) both for demo and prod instances",
+                    "created_at": "2022-04-29T11:48:08Z",
+                    "closed_at": "2022-06-27T08:46:42Z"
+                },
+                {
+                    "number": 291,
+                    "title": "cannot import name '_unicodefun' from 'click' ",
+                    "created_at": "2022-04-25T12:03:29Z",
+                    "closed_at": "2022-04-25T12:28:11Z"
+                },
+                {
+                    "number": 289,
+                    "title": "Create a config file with settings for codecov action v.2",
+                    "created_at": "2022-03-25T13:17:08Z",
+                    "closed_at": "2022-04-25T12:33:00Z"
+                },
+                {
+                    "number": 287,
+                    "title": "Codecov action v.1 got deprecated, switch to v.2",
+                    "created_at": "2022-03-11T13:42:56Z",
+                    "closed_at": "2022-03-15T12:10:07Z"
+                },
+                {
+                    "number": 284,
+                    "title": "Add favicon to index page",
+                    "created_at": "2022-03-09T14:16:27Z",
+                    "closed_at": "2022-03-09T14:58:50Z"
+                },
+                {
+                    "number": 283,
+                    "title": "Add cite info on index page",
+                    "created_at": "2022-03-09T14:10:20Z",
+                    "closed_at": "2022-03-09T15:47:56Z"
+                },
+                {
+                    "number": 281,
+                    "title": "Modify references to point to our new paper",
+                    "created_at": "2022-03-07T13:51:56Z",
+                    "closed_at": "2022-03-09T09:53:28Z"
+                },
+                {
+                    "number": 279,
+                    "title": "Add more info on crash report email, to understand which server has crashed (prod or stage)",
+                    "created_at": "2022-02-15T13:07:52Z",
+                    "closed_at": "2022-02-15T13:35:37Z"
+                },
+                {
+                    "number": 278,
+                    "title": "Move documentation to dedicated docs pages (mkdocs)",
+                    "created_at": "2022-02-01T06:18:25Z",
+                    "closed_at": "2022-05-18T12:14:10Z"
+                },
+                {
+                    "number": 276,
+                    "title": "Email notifications triggered by server errors are not tested",
+                    "created_at": "2022-01-19T09:50:52Z",
+                    "closed_at": "2022-01-20T16:28:41Z"
+                },
+                {
+                    "number": 271,
+                    "title": "Flask-Mail is not sending emails even if the app states that notifications are sent",
+                    "created_at": "2022-01-17T08:53:42Z",
+                    "closed_at": "2022-01-17T10:32:57Z"
+                },
+                {
+                    "number": 268,
+                    "title": "Env vars that are numbers are read as strings, causing bugs in patient matching",
+                    "created_at": "2022-01-14T15:59:58Z",
+                    "closed_at": "2022-01-15T10:25:23Z"
+                },
+                {
+                    "number": 265,
+                    "title": "Change ALL tests that rely on internet services to use mock services ",
+                    "created_at": "2022-01-13T09:01:52Z",
+                    "closed_at": "2022-01-13T12:43:36Z"
+                },
+                {
+                    "number": 258,
+                    "title": "Speed up tests",
+                    "created_at": "2021-12-27T07:48:20Z",
+                    "closed_at": "2022-01-12T07:40:20Z"
+                },
+                {
+                    "number": 254,
+                    "title": "Heartbeat should return True or False if instance is Prod or Stage",
+                    "created_at": "2021-12-23T08:05:49Z",
+                    "closed_at": "2021-12-27T11:05:44Z"
+                },
+                {
+                    "number": 252,
+                    "title": "Same number of matches sent and matches received in metrics",
+                    "created_at": "2021-12-22T12:28:35Z",
+                    "closed_at": "2021-12-22T14:16:39Z"
+                },
+                {
+                    "number": 251,
+                    "title": "Refactor cli options and params to be compliant with the GNU coding standards",
+                    "created_at": "2021-12-21T11:53:01Z",
+                    "closed_at": "2021-12-27T14:00:37Z"
+                },
+                {
+                    "number": 245,
+                    "title": "Deprecated werkzeug.contrib error with werkzeug>=1.0.0",
+                    "created_at": "2021-12-06T09:08:45Z",
+                    "closed_at": "2021-12-06T14:36:50Z"
+                },
+                {
+                    "number": 243,
+                    "title": "Freeze PyMongo to version < 4.0",
+                    "created_at": "2021-11-30T11:57:33Z",
+                    "closed_at": "2021-11-30T14:11:27Z"
+                },
+                {
+                    "number": 242,
+                    "title": "Include PatientMatcher version in matching emails sent to the users",
+                    "created_at": "2021-11-24T14:25:59Z",
+                    "closed_at": "2021-12-27T07:58:26Z"
+                },
+                {
+                    "number": 239,
+                    "title": "Fix code to move the app on the VM",
+                    "created_at": "2021-11-24T12:40:18Z",
+                    "closed_at": "2021-12-14T06:33:10Z"
+                },
+                {
+                    "number": 238,
+                    "title": "Rename \"master\" branch to \"main\"",
+                    "created_at": "2021-11-22T08:48:14Z",
+                    "closed_at": "2021-11-22T08:54:37Z"
+                },
+                {
+                    "number": 237,
+                    "title": "Prepare repo for installation on Server farm VM",
+                    "created_at": "2021-11-22T08:35:07Z",
+                    "closed_at": "2021-12-14T06:33:27Z"
+                },
+                {
+                    "number": 229,
+                    "title": "Introduce contact info (href) string validation",
+                    "created_at": "2021-11-15T12:33:12Z",
+                    "closed_at": "2021-11-16T10:31:23Z"
+                },
+                {
+                    "number": 228,
+                    "title": "Reassign patients to another user.",
+                    "created_at": "2021-11-15T08:24:03Z",
+                    "closed_at": "2021-11-15T14:43:26Z"
+                },
+                {
+                    "number": 224,
+                    "title": "Param missing in overridden FlaskGroup method",
+                    "created_at": "2021-10-12T15:00:59Z",
+                    "closed_at": "2021-10-12T15:29:10Z"
+                },
+                {
+                    "number": 221,
+                    "title": "Test (and fix) connectivity to a MongoDB replica set",
+                    "created_at": "2021-10-08T13:30:47Z",
+                    "closed_at": "2021-10-12T13:58:25Z"
+                },
+                {
+                    "number": 218,
+                    "title": "Change the Docker-compose and actions files to use a MongoDB version 4.4",
+                    "created_at": "2021-09-30T08:29:29Z",
+                    "closed_at": "2021-09-30T12:00:45Z"
+                },
+                {
+                    "number": 214,
+                    "title": "Deprecated functions",
+                    "created_at": "2021-09-20T12:55:32Z",
+                    "closed_at": "2021-11-16T10:56:06Z"
+                },
+                {
+                    "number": 213,
+                    "title": "HGNC symbol to Ensembl ID conversion might return more than 1 gene Ensembl ID",
+                    "created_at": "2021-09-20T10:04:39Z",
+                    "closed_at": "2021-09-22T10:15:55Z"
+                },
+                {
+                    "number": 211,
+                    "title": "Save Ensembl ID for genes in the demo data automatically",
+                    "created_at": "2021-09-20T08:55:26Z",
+                    "closed_at": "2021-09-20T13:02:20Z"
+                },
+                {
+                    "number": 209,
+                    "title": "Adjust the syntax present in disclaimer",
+                    "created_at": "2021-09-19T19:32:03Z",
+                    "closed_at": "2021-09-20T07:32:52Z"
+                },
+                {
+                    "number": 204,
+                    "title": "Create a github action to push the repp to PyPi on a new release event",
+                    "created_at": "2021-09-16T15:15:03Z",
+                    "closed_at": "2021-09-17T07:56:47Z"
+                },
+                {
+                    "number": 203,
+                    "title": "docker-compose port is wrong in readme file",
+                    "created_at": "2021-09-16T13:26:23Z",
+                    "closed_at": "2021-09-17T07:06:31Z"
+                },
+                {
+                    "number": 199,
+                    "title": "Create a docker-compose demo with at least 2 (demo) connected nodes",
+                    "created_at": "2021-08-11T11:53:44Z",
+                    "closed_at": "2021-08-12T13:39:45Z"
+                },
+                {
+                    "number": 195,
+                    "title": "Demo client has wrong token key name and auth queries don't work",
+                    "created_at": "2021-08-11T06:56:02Z",
+                    "closed_at": "2021-08-11T07:10:41Z"
+                },
+                {
+                    "number": 193,
+                    "title": "Drop demo data and create new documents when the \"add demodata\" command is run",
+                    "created_at": "2021-08-10T11:25:09Z",
+                    "closed_at": "2021-08-10T12:57:32Z"
+                },
+                {
+                    "number": 188,
+                    "title": "Docker-compose network clashes with ports used in other containers (Scout)",
+                    "created_at": "2021-05-11T06:54:08Z",
+                    "closed_at": "2021-05-11T08:35:48Z"
+                },
+                {
+                    "number": 183,
+                    "title": "Do not start server if resources needed for phenotype matching are not available",
+                    "created_at": "2021-03-23T07:08:39Z",
+                    "closed_at": "2021-03-23T09:47:00Z"
+                },
+                {
+                    "number": 181,
+                    "title": "ZeroDivisionError: division by zero in simgic algorithm when comparing HPO terms",
+                    "created_at": "2021-03-22T16:21:56Z",
+                    "closed_at": "2021-03-23T07:04:37Z"
+                },
+                {
+                    "number": 180,
+                    "title": "Create instructions and systemd files to run the app as a service",
+                    "created_at": "2021-03-18T12:19:26Z",
+                    "closed_at": "2021-12-22T11:40:31Z"
+                },
+                {
+                    "number": 178,
+                    "title": "Remove coveralls bagde and add codecov badge instead",
+                    "created_at": "2021-01-20T07:51:10Z",
+                    "closed_at": "2021-04-30T06:18:02Z"
+                },
+                {
+                    "number": 176,
+                    "title": "Update documentation with instructions how to receive error emails",
+                    "created_at": "2021-01-20T07:44:38Z",
+                    "closed_at": "2021-01-21T08:38:06Z"
+                },
+                {
+                    "number": 174,
+                    "title": "Coveralls github action fails",
+                    "created_at": "2021-01-18T10:23:36Z",
+                    "closed_at": "2021-01-18T10:42:44Z"
+                },
+                {
+                    "number": 172,
+                    "title": "Include code for comparing ontology terms in the repo",
+                    "created_at": "2021-01-15T10:15:39Z",
+                    "closed_at": "2021-08-11T10:19:33Z"
+                },
+                {
+                    "number": 171,
+                    "title": "Create diagnosis similarity comparison tool",
+                    "created_at": "2021-01-15T10:12:51Z",
+                    "closed_at": "2021-07-09T08:04:32Z"
+                },
+                {
+                    "number": 170,
+                    "title": "Send an email notification when app crashes",
+                    "created_at": "2021-01-07T07:52:43Z",
+                    "closed_at": "2021-01-20T07:39:23Z"
+                },
+                {
+                    "number": 167,
+                    "title": "Unsupported operand type(s) for +: 'NoneType' and 'int' in genome matcher module",
+                    "created_at": "2021-01-05T17:14:05Z",
+                    "closed_at": "2021-01-07T07:02:46Z"
+                },
+                {
+                    "number": 162,
+                    "title": "Remove old docker folder",
+                    "created_at": "2020-12-03T15:59:12Z",
+                    "closed_at": "2020-12-04T10:58:07Z"
+                },
+                {
+                    "number": 161,
+                    "title": "Liftover functionality",
+                    "created_at": "2020-12-03T13:54:02Z",
+                    "closed_at": "2020-12-29T15:04:12Z"
+                },
+                {
+                    "number": 159,
+                    "title": " Authentication failed while testing the new version on scout stage",
+                    "created_at": "2020-12-01T15:10:08Z",
+                    "closed_at": "2020-12-03T12:01:16Z"
+                },
+                {
+                    "number": 157,
+                    "title": "Rewrite tests to work without the availability of Ensembl services or the internet in general",
+                    "created_at": "2020-12-01T12:12:11Z",
+                    "closed_at": "2022-01-12T13:45:53Z"
+                },
+                {
+                    "number": 155,
+                    "title": "AttributeError: 'HTTPResponse' object has no attribute 'get' when Ensembl is down",
+                    "created_at": "2020-11-30T13:05:05Z",
+                    "closed_at": "2020-12-01T14:09:13Z"
+                },
+                {
+                    "number": 154,
+                    "title": "Many 500 errors sent to the Matchbox node this week",
+                    "created_at": "2020-11-25T16:42:20Z",
+                    "closed_at": "2020-11-30T13:03:11Z"
+                },
+                {
+                    "number": 151,
+                    "title": "Move tests to github actions and add some more action for checking code quality",
+                    "created_at": "2020-11-03T08:46:30Z",
+                    "closed_at": "2020-11-03T12:52:59Z"
+                },
+                {
+                    "number": 147,
+                    "title": "Error while converting gene names to to Ensembl genes prevents loading patients in the demo",
+                    "created_at": "2020-10-28T09:13:22Z",
+                    "closed_at": "2020-10-28T12:04:20Z"
+                },
+                {
+                    "number": 146,
+                    "title": "Rewrite docker file to something that can be used in production",
+                    "created_at": "2020-10-28T07:41:12Z",
+                    "closed_at": "2020-10-29T05:47:07Z"
+                },
+                {
+                    "number": 143,
+                    "title": "Installing error due some dependency problems",
+                    "created_at": "2020-10-19T08:26:59Z",
+                    "closed_at": "2020-10-19T12:49:17Z"
+                },
+                {
+                    "number": 142,
+                    "title": "Remove pymongo<3.7 dependency",
+                    "created_at": "2020-10-19T06:36:57Z",
+                    "closed_at": "2020-10-19T12:49:17Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Update HPO terms definitions on clinical-db stage and prod",
+                    "created_at": "2020-04-02T07:33:18Z",
+                    "closed_at": "2020-04-02T09:40:50Z"
+                },
+                {
+                    "number": 135,
+                    "title": "HPO files from Jenkins lab have changed so phenotypes can't be parsed any more.",
+                    "created_at": "2020-04-01T13:32:13Z",
+                    "closed_at": "2020-04-02T07:07:11Z"
+                },
+                {
+                    "number": 133,
+                    "title": "Open \"metrics\" endpoint to the public",
+                    "created_at": "2020-03-17T12:25:29Z",
+                    "closed_at": "2020-04-02T07:28:53Z"
+                },
+                {
+                    "number": 132,
+                    "title": "Fine-tuning of the SCORE_THRESHOLD param for Scout matching results",
+                    "created_at": "2019-12-06T12:39:30Z",
+                    "closed_at": "2019-12-06T14:07:44Z"
+                },
+                {
+                    "number": 131,
+                    "title": "Add patientMatcher to the list of the available ga4gh MME software",
+                    "created_at": "2019-12-06T09:40:26Z",
+                    "closed_at": "2020-10-24T08:07:42Z"
+                },
+                {
+                    "number": 130,
+                    "title": "Upload our disclaimer in ga4gh MME disclaimers list",
+                    "created_at": "2019-12-04T06:45:37Z",
+                    "closed_at": "2020-01-10T14:30:57Z"
+                },
+                {
+                    "number": 127,
+                    "title": "Do not save to database matches with no results or no error message",
+                    "created_at": "2019-11-17T14:18:19Z",
+                    "closed_at": "2019-11-17T19:00:09Z"
+                },
+                {
+                    "number": 124,
+                    "title": "Feedback from MyGene2",
+                    "created_at": "2019-11-13T08:41:40Z",
+                    "closed_at": "2019-11-17T20:08:50Z"
+                },
+                {
+                    "number": 122,
+                    "title": "Use ensembl gene id as main gene id",
+                    "created_at": "2019-11-07T13:42:33Z",
+                    "closed_at": "2019-11-16T06:18:18Z"
+                },
+                {
+                    "number": 118,
+                    "title": "Many warnings from phenotype matching library",
+                    "created_at": "2019-11-06T07:49:58Z",
+                    "closed_at": "2019-11-16T08:36:52Z"
+                },
+                {
+                    "number": 117,
+                    "title": "Match genes using not only official symbol but also ensembl id",
+                    "created_at": "2019-11-05T21:51:45Z",
+                    "closed_at": "2019-11-07T13:40:45Z"
+                },
+                {
+                    "number": 114,
+                    "title": "matches endpoint is not returning result patients ID",
+                    "created_at": "2019-10-31T11:22:11Z",
+                    "closed_at": "2019-10-31T11:46:57Z"
+                },
+                {
+                    "number": 112,
+                    "title": "Capture HTML error messages from other nodes responses ",
+                    "created_at": "2019-10-31T07:11:16Z",
+                    "closed_at": "2019-10-31T10:34:59Z"
+                },
+                {
+                    "number": 111,
+                    "title": "Look into why some servers don't like extra stuff in request headers",
+                    "created_at": "2019-10-30T21:13:01Z",
+                    "closed_at": "2019-10-31T10:34:59Z"
+                },
+                {
+                    "number": 105,
+                    "title": "Introduce a result score threshold to limit the number of returned low score results",
+                    "created_at": "2019-10-29T08:17:16Z",
+                    "closed_at": "2019-10-29T10:29:10Z"
+                },
+                {
+                    "number": 104,
+                    "title": "Display patientMatcher version",
+                    "created_at": "2019-08-06T07:40:47Z",
+                    "closed_at": "2019-10-29T11:24:19Z"
+                },
+                {
+                    "number": 103,
+                    "title": "Create an html index page for the service",
+                    "created_at": "2019-08-06T07:24:04Z",
+                    "closed_at": "2021-12-23T13:17:21Z"
+                },
+                {
+                    "number": 102,
+                    "title": "Scale-up simulation",
+                    "created_at": "2019-05-10T09:38:54Z",
+                    "closed_at": "2019-05-13T09:50:19Z"
+                },
+                {
+                    "number": 99,
+                    "title": "Genotype similarity bug",
+                    "created_at": "2019-04-26T07:57:36Z",
+                    "closed_at": "2019-04-26T08:36:03Z"
+                },
+                {
+                    "number": 96,
+                    "title": "Improve phenotype matching by ranking all patients in MME node by similarity with query patient",
+                    "created_at": "2019-04-24T15:26:22Z",
+                    "closed_at": "2019-04-25T10:47:18Z"
+                },
+                {
+                    "number": 93,
+                    "title": "Create script to update resources",
+                    "created_at": "2019-04-23T06:46:52Z",
+                    "closed_at": "2019-04-24T09:36:09Z"
+                },
+                {
+                    "number": 80,
+                    "title": "Improve phenotype matching algorithm ",
+                    "created_at": "2019-04-11T07:37:29Z",
+                    "closed_at": "2019-04-18T06:15:30Z"
+                },
+                {
+                    "number": 77,
+                    "title": "Endpoints that should be reachable thru a firewall and endpoints to be used from within the server",
+                    "created_at": "2019-04-02T10:38:08Z",
+                    "closed_at": "2019-07-02T12:23:26Z"
+                },
+                {
+                    "number": 74,
+                    "title": "Add option to notify minimal or complete matching info by emails",
+                    "created_at": "2019-03-12T13:48:05Z",
+                    "closed_at": "2019-03-14T10:43:25Z"
+                },
+                {
+                    "number": 73,
+                    "title": "Check external matches using refServer",
+                    "created_at": "2019-03-05T15:14:10Z",
+                    "closed_at": "2019-03-06T11:05:03Z"
+                },
+                {
+                    "number": 70,
+                    "title": "patientMatcher MUST have a heartbeat",
+                    "created_at": "2019-02-28T09:40:40Z",
+                    "closed_at": "2019-02-28T13:27:05Z"
+                },
+                {
+                    "number": 67,
+                    "title": "MatchMaker updated requirements n.3 --> metrics!",
+                    "created_at": "2019-02-25T10:10:34Z",
+                    "closed_at": "2019-02-27T13:46:44Z"
+                },
+                {
+                    "number": 66,
+                    "title": "MatchMaker updated requirements n.2 --> Disclaimer!",
+                    "created_at": "2019-02-25T10:05:04Z",
+                    "closed_at": "2019-02-28T10:20:28Z"
+                },
+                {
+                    "number": 65,
+                    "title": "MatchMaker updated requirements n.1 --> notification email should be exaustive",
+                    "created_at": "2019-02-25T10:02:51Z",
+                    "closed_at": "2019-02-26T15:01:41Z"
+                },
+                {
+                    "number": 62,
+                    "title": "Return non-canonical score values prefixed with _",
+                    "created_at": "2019-02-15T18:23:06Z",
+                    "closed_at": "2019-02-16T07:54:25Z"
+                },
+                {
+                    "number": 61,
+                    "title": "patientMatcher is safe to use and GDPR compliant",
+                    "created_at": "2019-02-15T09:32:23Z",
+                    "closed_at": "2019-02-15T09:44:09Z"
+                },
+                {
+                    "number": 60,
+                    "title": "Update script for patientMatcher",
+                    "created_at": "2019-02-15T09:30:09Z",
+                    "closed_at": "2019-02-15T09:44:00Z"
+                },
+                {
+                    "number": 59,
+                    "title": "patientMatcher Conda environment created",
+                    "created_at": "2019-02-15T09:29:50Z",
+                    "closed_at": "2019-02-15T09:43:57Z"
+                },
+                {
+                    "number": 58,
+                    "title": "Elastic Search is set up",
+                    "created_at": "2019-02-15T09:29:22Z",
+                    "closed_at": "2019-02-15T09:43:54Z"
+                },
+                {
+                    "number": 57,
+                    "title": "MongoDB is set up",
+                    "created_at": "2019-02-15T09:29:08Z",
+                    "closed_at": "2019-02-15T09:43:52Z"
+                },
+                {
+                    "number": 56,
+                    "title": "URL is provided by IT",
+                    "created_at": "2019-02-15T09:28:42Z",
+                    "closed_at": "2019-02-15T09:43:46Z"
+                },
+                {
+                    "number": 54,
+                    "title": "Group match results by searched node",
+                    "created_at": "2019-02-14T09:19:12Z",
+                    "closed_at": "2019-02-14T10:44:49Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Introduce the possibility to choose the external node to send a request to",
+                    "created_at": "2019-01-30T06:38:43Z",
+                    "closed_at": "2019-01-30T11:54:44Z"
+                },
+                {
+                    "number": 44,
+                    "title": "Create the code to notify patient contact when a match happens. ",
+                    "created_at": "2019-01-25T11:14:45Z",
+                    "closed_at": "2019-01-29T14:22:46Z"
+                },
+                {
+                    "number": 39,
+                    "title": "Code for patient matching should only do patient matching",
+                    "created_at": "2019-01-24T13:43:52Z",
+                    "closed_at": "2019-01-24T14:27:50Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Add CLI to remove client or connected node from database",
+                    "created_at": "2019-01-24T11:37:54Z",
+                    "closed_at": "2019-01-25T09:33:39Z"
+                },
+                {
+                    "number": 36,
+                    "title": "Write code to capture indirect matches ",
+                    "created_at": "2019-01-24T07:27:12Z",
+                    "closed_at": "2019-01-24T13:38:51Z"
+                },
+                {
+                    "number": 35,
+                    "title": "Let admin decide the maximum number of matches the server will return ",
+                    "created_at": "2019-01-24T07:20:48Z",
+                    "closed_at": "2019-01-25T11:07:21Z"
+                },
+                {
+                    "number": 34,
+                    "title": "Use HTTPS",
+                    "created_at": "2019-01-24T06:40:38Z",
+                    "closed_at": "2019-02-28T10:21:01Z"
+                },
+                {
+                    "number": 33,
+                    "title": "API views should produce and consume well formatted json data",
+                    "created_at": "2019-01-23T15:06:04Z",
+                    "closed_at": "2019-01-24T11:12:58Z"
+                },
+                {
+                    "number": 29,
+                    "title": "delete patient should delete its matches as well",
+                    "created_at": "2019-01-23T10:13:30Z",
+                    "closed_at": "2019-01-25T08:14:58Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Create specific user and password for connection to the database",
+                    "created_at": "2019-01-07T15:25:41Z",
+                    "closed_at": "2019-01-23T10:13:52Z"
+                }
+            ],
+            "languages": {
+                "Python": 198548,
+                "HTML": 6573,
+                "Dockerfile": 1340,
+                "JavaScript": 207
+            },
+            "default_branch_protected": true,
+            "security_updates": null,
+            "secret_scanning": null
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1002/humu.24358",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "35192731",
+                            "source": "MED",
+                            "pmid": "35192731",
+                            "pmcid": "PMC9311682",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9311682"
+                                ]
+                            },
+                            "doi": "10.1002/humu.24358",
+                            "title": "PatientMatcher: A customizable Python-based open-source tool for matching undiagnosed rare disease patients via the Matchmaker Exchange network.",
+                            "authorString": "Rasi C, Nilsson D, Magnusson M, Lesko N, Lagerstedt-Robinson K, Wedell A, Lindstrand A, Wirta V, Stranneheim H.",
+                            "journalTitle": "Hum Mutat",
+                            "issue": "6",
+                            "journalVolume": "43",
+                            "pubYear": "2022",
+                            "journalIssn": "1059-7794; 1098-1004; ",
+                            "pageInfo": "708-716",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 7,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "ensembl",
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2022-02-24",
+                            "firstPublicationDate": "2022-03-07"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4221107860",
+                "doi": "https://doi.org/10.1002/humu.24358",
+                "title": "PatientMatcher: A customizable Python\u2010based open\u2010source tool for matching undiagnosed rare disease patients via the Matchmaker Exchange network",
+                "display_name": "PatientMatcher: A customizable Python\u2010based open\u2010source tool for matching undiagnosed rare disease patients via the Matchmaker Exchange network",
+                "publication_year": 2022,
+                "publication_date": "2022-02-22",
+                "ids": {
+                    "openalex": "https://openalex.org/W4221107860",
+                    "doi": "https://doi.org/10.1002/humu.24358",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/35192731"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1002/humu.24358",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1002/humu.24358",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/humu.24358",
+                    "source": {
+                        "id": "https://openalex.org/S98809561",
+                        "display_name": "Human Mutation",
+                        "issn_l": "1059-7794",
+                        "issn": [
+                            "1059-7794",
+                            "1098-1004"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Human Mutation",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/humu.24358",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5072900237",
+                            "display_name": "Chiara Rasi",
+                            "orcid": "https://orcid.org/0000-0002-7001-3988"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Chiara Rasi",
+                        "raw_affiliation_strings": [
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7001-3988",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5038489096",
+                            "display_name": "Daniel Nilsson",
+                            "orcid": "https://orcid.org/0000-0001-5831-385X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Daniel Nilsson",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-5831-385X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037231816",
+                            "display_name": "M\u00e5ns Magnusson",
+                            "orcid": "https://orcid.org/0000-0002-0001-1047"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I86987016",
+                                "display_name": "KTH Royal Institute of Technology",
+                                "ror": "https://ror.org/026vcq606",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I86987016"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "M\u00e5ns Magnusson",
+                        "raw_affiliation_strings": [
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Science for Life Laboratory School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                            "Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-0001-1047",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I86987016"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I86987016"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5021900383",
+                            "display_name": "Nicole Lesko",
+                            "orcid": "https://orcid.org/0000-0001-8770-1878"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nicole Lesko",
+                        "raw_affiliation_strings": [
+                            "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5065998717",
+                            "display_name": "Kristina Lagerstedt\u2010Robinson",
+                            "orcid": "https://orcid.org/0000-0001-9848-0468"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kristina Lagerstedt\u2010Robinson",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9848-0468",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5103227920",
+                            "display_name": "Anna Wedell",
+                            "orcid": "https://orcid.org/0000-0002-2612-6301"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anna Wedell",
+                        "raw_affiliation_strings": [
+                            "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Science for Life Laboratory, Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                            "Science for Life Laboratory, Department of Molecular Medicine and Surgery Karolinska Institutet Stockholm Sweden",
+                            "Science for Life Laboratory, Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2612-6301",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Molecular Medicine and Surgery Karolinska Institutet Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5082800617",
+                            "display_name": "Anna Lindstrand",
+                            "orcid": "https://orcid.org/0000-0003-0806-5602"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anna Lindstrand",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-0806-5602",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5108562305",
+                            "display_name": "Valtteri Wirta",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I86987016",
+                                "display_name": "KTH Royal Institute of Technology",
+                                "ror": "https://ror.org/026vcq606",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I86987016"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Valtteri Wirta",
+                        "raw_affiliation_strings": [
+                            "Genomic Medicine Center Karolinska University Hospital  Stockholm Sweden",
+                            "Science for Life Laboratory School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology  Stockholm Sweden",
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                            "Genomic Medicine Center, Karolinska University Hospital, Stockholm, Sweden",
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden",
+                            "Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3811-5439",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Genomic Medicine Center Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I86987016"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomic Medicine Center, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, KTH Royal Institute of Technology, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I86987016"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5015506237",
+                            "display_name": "Henrik Stranneheim",
+                            "orcid": "https://orcid.org/0009-0009-1335-8021"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1335113835",
+                                "display_name": "Karolinska University Hospital",
+                                "ror": "https://ror.org/00m8d6786",
+                                "country_code": "SE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I28166907",
+                                "display_name": "Karolinska Institutet",
+                                "ror": "https://ror.org/056d84691",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Henrik Stranneheim",
+                        "raw_affiliation_strings": [
+                            "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                            "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                            "Genomic Medicine Center Karolinska University Hospital  Stockholm Sweden",
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                            "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                            "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                            "Genomic Medicine Center, Karolinska University Hospital, Stockholm, Sweden",
+                            "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery Karolinska Institutet  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomic Medicine Center Karolinska University Hospital  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology Karolinska Institute  Stockholm Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Centre for Inherited Metabolic Diseases, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I28166907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomic Medicine Center, Karolinska University Hospital, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I1335113835"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, Department of Microbiology, Tumor and Cell Biology, Karolinska Institute, Stockholm, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800139495",
+                                    "https://openalex.org/I28166907"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5072900237"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800139495",
+                    "https://openalex.org/I28166907"
+                ],
+                "apc_list": {
+                    "value": 4700,
+                    "currency": "USD",
+                    "value_usd": 4700
+                },
+                "apc_paid": {
+                    "value": 4700,
+                    "currency": "USD",
+                    "value_usd": 4700
+                },
+                "fwci": 1.1979,
+                "has_fulltext": true,
+                "cited_by_count": 7,
+                "citation_normalized_percentile": {
+                    "value": 0.79196263,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 97
+                },
+                "biblio": {
+                    "volume": "43",
+                    "issue": "6",
+                    "first_page": "708",
+                    "last_page": "716"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11642",
+                    "display_name": "Genomics and Rare Diseases",
+                    "score": 0.9993000030517578,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.9993000030517578,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11287",
+                        "display_name": "Cancer Genomics and Diagnostics",
+                        "score": 0.9962000250816345,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1306",
+                            "display_name": "Cancer Research"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11213",
+                        "display_name": "Genomic variations and chromosomal abnormalities",
+                        "score": 0.995199978351593,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.7789222002029419
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5698435306549072
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/personalized-medicine",
+                        "display_name": "Personalized medicine",
+                        "score": 0.5187240242958069
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genomics",
+                        "display_name": "Genomics",
+                        "score": 0.4901788830757141
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/server",
+                        "display_name": "Server",
+                        "score": 0.4897336959838867
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/rare-disease",
+                        "display_name": "Rare disease",
+                        "score": 0.4888724684715271
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/context",
+                        "display_name": "Context (archaeology)",
+                        "score": 0.47582700848579407
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/open-source",
+                        "display_name": "Open source",
+                        "score": 0.44432199001312256
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/precision-medicine",
+                        "display_name": "Precision medicine",
+                        "score": 0.4353945851325989
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.40179646015167236
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.35799044370651245
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/disease",
+                        "display_name": "Disease",
+                        "score": 0.3425719738006592
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.28973662853240967
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/world-wide-web",
+                        "display_name": "World Wide Web",
+                        "score": 0.2547299563884735
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.24509525299072266
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/medicine",
+                        "display_name": "Medicine",
+                        "score": 0.1749720573425293
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.14486956596374512
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.12088015675544739
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pathology",
+                        "display_name": "Pathology",
+                        "score": 0.10654318332672119
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.7789222002029419
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5698435306549072
+                    },
+                    {
+                        "id": "https://openalex.org/C32220436",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2072214",
+                        "display_name": "Personalized medicine",
+                        "level": 2,
+                        "score": 0.5187240242958069
+                    },
+                    {
+                        "id": "https://openalex.org/C189206191",
+                        "wikidata": "https://www.wikidata.org/wiki/Q222046",
+                        "display_name": "Genomics",
+                        "level": 4,
+                        "score": 0.4901788830757141
+                    },
+                    {
+                        "id": "https://openalex.org/C93996380",
+                        "wikidata": "https://www.wikidata.org/wiki/Q44127",
+                        "display_name": "Server",
+                        "level": 2,
+                        "score": 0.4897336959838867
+                    },
+                    {
+                        "id": "https://openalex.org/C2779701055",
+                        "wikidata": "https://www.wikidata.org/wiki/Q929833",
+                        "display_name": "Rare disease",
+                        "level": 3,
+                        "score": 0.4888724684715271
+                    },
+                    {
+                        "id": "https://openalex.org/C2779343474",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+                        "display_name": "Context (archaeology)",
+                        "level": 2,
+                        "score": 0.47582700848579407
+                    },
+                    {
+                        "id": "https://openalex.org/C3018397939",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3644502",
+                        "display_name": "Open source",
+                        "level": 3,
+                        "score": 0.44432199001312256
+                    },
+                    {
+                        "id": "https://openalex.org/C163763905",
+                        "wikidata": "https://www.wikidata.org/wiki/Q17075943",
+                        "display_name": "Precision medicine",
+                        "level": 2,
+                        "score": 0.4353945851325989
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.40179646015167236
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.35799044370651245
+                    },
+                    {
+                        "id": "https://openalex.org/C2779134260",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12136",
+                        "display_name": "Disease",
+                        "level": 2,
+                        "score": 0.3425719738006592
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.28973662853240967
+                    },
+                    {
+                        "id": "https://openalex.org/C136764020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466",
+                        "display_name": "World Wide Web",
+                        "level": 1,
+                        "score": 0.2547299563884735
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.24509525299072266
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.1749720573425293
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.14486956596374512
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.12088015675544739
+                    },
+                    {
+                        "id": "https://openalex.org/C142724271",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7208",
+                        "display_name": "Pathology",
+                        "level": 1,
+                        "score": 0.10654318332672119
+                    },
+                    {
+                        "id": "https://openalex.org/C151730666",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7205",
+                        "display_name": "Paleontology",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000080842",
+                        "descriptor_name": "Undiagnosed Diseases",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000080842",
+                        "descriptor_name": "Undiagnosed Diseases",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000080842",
+                        "descriptor_name": "Undiagnosed Diseases",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020022",
+                        "descriptor_name": "Genetic Predisposition to Disease",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000175",
+                        "qualifier_name": "diagnosis",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000175",
+                        "qualifier_name": "diagnosis",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000175",
+                        "qualifier_name": "diagnosis",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D035583",
+                        "descriptor_name": "Rare Diseases",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D056726",
+                        "descriptor_name": "Genetic Association Studies",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D056726",
+                        "descriptor_name": "Genetic Association Studies",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D056726",
+                        "descriptor_name": "Genetic Association Studies",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 4,
+                "locations": [
+                    {
+                        "id": "doi:10.1002/humu.24358",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1002/humu.24358",
+                        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/humu.24358",
+                        "source": {
+                            "id": "https://openalex.org/S98809561",
+                            "display_name": "Human Mutation",
+                            "issn_l": "1059-7794",
+                            "issn": [
+                                "1059-7794",
+                                "1098-1004"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320595",
+                            "host_organization_name": "Wiley",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320595"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Wiley"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Human Mutation",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:35192731",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35192731",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Human mutation",
+                        "raw_type": "Journal Article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9311682",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9311682",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Hum Mutat",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:zenodo.org:6340057",
+                        "is_oa": true,
+                        "landing_page_url": "https://zenodo.org/record/6340057",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400562",
+                            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I67311998",
+                            "host_organization_name": "European Organization for Nuclear Research",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I67311998"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1002/humu.24358",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1002/humu.24358",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/humu.24358",
+                    "source": {
+                        "id": "https://openalex.org/S98809561",
+                        "display_name": "Human Mutation",
+                        "issn_l": "1059-7794",
+                        "issn": [
+                            "1059-7794",
+                            "1098-1004"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Human Mutation",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.4699999988079071,
+                        "display_name": "Partnerships for the goals",
+                        "id": "https://metadata.un.org/sdg/17"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320323299",
+                        "display_name": "Norges Forskningsr\u00e5d",
+                        "ror": "https://ror.org/00epmv149"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4221107860.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4221107860.grobid-xml"
+                },
+                "referenced_works_count": 19,
+                "referenced_works": [
+                    "https://openalex.org/W1980171391",
+                    "https://openalex.org/W1980948656",
+                    "https://openalex.org/W2036841261",
+                    "https://openalex.org/W2061680337",
+                    "https://openalex.org/W2110586068",
+                    "https://openalex.org/W2118526609",
+                    "https://openalex.org/W2136941319",
+                    "https://openalex.org/W2138956466",
+                    "https://openalex.org/W2143887298",
+                    "https://openalex.org/W2161360183",
+                    "https://openalex.org/W2162151166",
+                    "https://openalex.org/W2170282111",
+                    "https://openalex.org/W2577502906",
+                    "https://openalex.org/W2885437164",
+                    "https://openalex.org/W3007189093",
+                    "https://openalex.org/W3018248019",
+                    "https://openalex.org/W3037882675",
+                    "https://openalex.org/W3138612854",
+                    "https://openalex.org/W4221107860"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4292582672",
+                    "https://openalex.org/W4387568191",
+                    "https://openalex.org/W3082935376",
+                    "https://openalex.org/W4401741136",
+                    "https://openalex.org/W2557718140",
+                    "https://openalex.org/W4386470600",
+                    "https://openalex.org/W4399651953",
+                    "https://openalex.org/W4386960999",
+                    "https://openalex.org/W2899657781",
+                    "https://openalex.org/W4322484660"
+                ],
+                "abstract_inverted_index": {
+                    "The": [
+                        0,
+                        20,
+                        150
+                    ],
+                    "amount": [
+                        1
+                    ],
+                    "of": [
+                        2,
+                        22,
+                        44,
+                        84,
+                        87
+                    ],
+                    "data": [
+                        3,
+                        91
+                    ],
+                    "available": [
+                        4,
+                        92
+                    ],
+                    "from": [
+                        5
+                    ],
+                    "genomic": [
+                        6
+                    ],
+                    "medicine": [
+                        7
+                    ],
+                    "has": [
+                        8,
+                        50,
+                        68
+                    ],
+                    "revolutionized": [
+                        9
+                    ],
+                    "the": [
+                        10,
+                        14,
+                        42,
+                        45,
+                        79,
+                        99,
+                        119,
+                        162,
+                        168,
+                        177
+                    ],
+                    "approach": [
+                        11
+                    ],
+                    "to": [
+                        12,
+                        72,
+                        175
+                    ],
+                    "identify": [
+                        13
+                    ],
+                    "determinants": [
+                        15
+                    ],
+                    "underlying": [
+                        16
+                    ],
+                    "many": [
+                        17
+                    ],
+                    "rare": [
+                        18,
+                        33,
+                        74
+                    ],
+                    "diseases.": [
+                        19
+                    ],
+                    "task": [
+                        21
+                    ],
+                    "confirming": [
+                        23
+                    ],
+                    "a": [
+                        24,
+                        28,
+                        32,
+                        52,
+                        85,
+                        130,
+                        186
+                    ],
+                    "genotype-phenotype": [
+                        25
+                    ],
+                    "causality": [
+                        26
+                    ],
+                    "for": [
+                        27,
+                        121
+                    ],
+                    "patient": [
+                        29,
+                        58,
+                        86,
+                        90,
+                        148
+                    ],
+                    "affected": [
+                        30
+                    ],
+                    "with": [
+                        31,
+                        89,
+                        141,
+                        161
+                    ],
+                    "genetic": [
+                        34,
+                        145
+                    ],
+                    "disease": [
+                        35,
+                        75
+                    ],
+                    "is": [
+                        36,
+                        127,
+                        153,
+                        173
+                    ],
+                    "often": [
+                        37
+                    ],
+                    "challenging.": [
+                        38
+                    ],
+                    "In": [
+                        39
+                    ],
+                    "this": [
+                        40
+                    ],
+                    "context,": [
+                        41
+                    ],
+                    "establishment": [
+                        43
+                    ],
+                    "Matchmaker": [
+                        46
+                    ],
+                    "Exchange": [
+                        47
+                    ],
+                    "(MME)": [
+                        48
+                    ],
+                    "network": [
+                        49
+                    ],
+                    "assumed": [
+                        51
+                    ],
+                    "pivotal": [
+                        53
+                    ],
+                    "role": [
+                        54
+                    ],
+                    "in": [
+                        55,
+                        98,
+                        124,
+                        156,
+                        159
+                    ],
+                    "bridging": [
+                        56
+                    ],
+                    "heterogeneous": [
+                        57
+                    ],
+                    "information": [
+                        59
+                    ],
+                    "stored": [
+                        60
+                    ],
+                    "on": [
+                        61
+                    ],
+                    "different": [
+                        62
+                    ],
+                    "medical": [
+                        63
+                    ],
+                    "and": [
+                        64,
+                        81,
+                        109,
+                        147,
+                        180,
+                        191
+                    ],
+                    "research": [
+                        65
+                    ],
+                    "servers.": [
+                        66
+                    ],
+                    "MME": [
+                        67,
+                        132,
+                        151,
+                        178
+                    ],
+                    "made": [
+                        69
+                    ],
+                    "it": [
+                        70
+                    ],
+                    "possible": [
+                        71
+                    ],
+                    "solve": [
+                        73
+                    ],
+                    "cases": [
+                        76
+                    ],
+                    "by": [
+                        77,
+                        114
+                    ],
+                    "\"matching\"": [
+                        78
+                    ],
+                    "genotypic": [
+                        80
+                    ],
+                    "phenotypic": [
+                        82
+                    ],
+                    "characteristics": [
+                        83
+                    ],
+                    "interest": [
+                        88
+                    ],
+                    "at": [
+                        93,
+                        118,
+                        167
+                    ],
+                    "other": [
+                        94
+                    ],
+                    "clinical": [
+                        95,
+                        157
+                    ],
+                    "facilities": [
+                        96
+                    ],
+                    "participating": [
+                        97
+                    ],
+                    "network.": [
+                        100
+                    ],
+                    "Here,": [
+                        101
+                    ],
+                    "we": [
+                        102
+                    ],
+                    "present": [
+                        103
+                    ],
+                    "PatientMatcher": [
+                        104,
+                        126,
+                        172
+                    ],
+                    "(https://github.com/Clinical-Genomics/patientMatcher),": [
+                        105
+                    ],
+                    "an": [
+                        106
+                    ],
+                    "open-source": [
+                        107
+                    ],
+                    "Python": [
+                        108
+                    ],
+                    "MongoDB-based": [
+                        110
+                    ],
+                    "software": [
+                        111
+                    ],
+                    "solution": [
+                        112
+                    ],
+                    "developed": [
+                        113
+                    ],
+                    "Clinical": [
+                        115
+                    ],
+                    "Genomics": [
+                        116
+                    ],
+                    "facility": [
+                        117
+                    ],
+                    "Science": [
+                        120
+                    ],
+                    "Life": [
+                        122
+                    ],
+                    "Laboratory": [
+                        123
+                    ],
+                    "Stockholm.": [
+                        125
+                    ],
+                    "designed": [
+                        128
+                    ],
+                    "as": [
+                        129
+                    ],
+                    "standalone": [
+                        131
+                    ],
+                    "server,": [
+                        133
+                    ],
+                    "but": [
+                        134
+                    ],
+                    "can": [
+                        135
+                    ],
+                    "easily": [
+                        136
+                    ],
+                    "communicate": [
+                        137
+                    ],
+                    "via": [
+                        138
+                    ],
+                    "REST": [
+                        139
+                    ],
+                    "API": [
+                        140,
+                        179
+                    ],
+                    "external": [
+                        142
+                    ],
+                    "applications": [
+                        143
+                    ],
+                    "managing": [
+                        144
+                    ],
+                    "analyses": [
+                        146
+                    ],
+                    "data.": [
+                        149
+                    ],
+                    "node": [
+                        152
+                    ],
+                    "being": [
+                        154
+                    ],
+                    "implemented": [
+                        155
+                    ],
+                    "routine": [
+                        158
+                    ],
+                    "collaboration": [
+                        160
+                    ],
+                    "Genomic": [
+                        163
+                    ],
+                    "Medicine": [
+                        164
+                    ],
+                    "Center": [
+                        165
+                    ],
+                    "Karolinska": [
+                        166,
+                        169
+                    ],
+                    "University": [
+                        170
+                    ],
+                    "Hospital.": [
+                        171
+                    ],
+                    "written": [
+                        174
+                    ],
+                    "implement": [
+                        176
+                    ],
+                    "provides": [
+                        181
+                    ],
+                    "several": [
+                        182
+                    ],
+                    "customizable": [
+                        183
+                    ],
+                    "settings,": [
+                        184
+                    ],
+                    "including": [
+                        185
+                    ],
+                    "custom-fit": [
+                        187
+                    ],
+                    "similarity": [
+                        188
+                    ],
+                    "score": [
+                        189
+                    ],
+                    "algorithm": [
+                        190
+                    ],
+                    "adjustable": [
+                        192
+                    ],
+                    "matching": [
+                        193
+                    ],
+                    "results": [
+                        194
+                    ],
+                    "notifications.": [
+                        195
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2024,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 4
+                    }
+                ],
+                "updated_date": "2026-08-28T12:50:07.497085",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "PatientMatcher: A customizable Python\u2010based open\u2010source tool for matching undiagnosed rare disease patients via the Matchmaker Exchange network",
+                "doi": "10.1002/humu.24358",
+                "pmid": "35192731",
+                "pmc": "PMC9311682",
+                "isbns": [],
+                "altmetric_jid": "4f6fa61b3cf058f61000767d",
+                "issns": [
+                    "1059-7794",
+                    "1098-1004"
+                ],
+                "journal": "Human Mutation",
+                "cohorts": {
+                    "sci": 1,
+                    "pub": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 23577761,
+                        "mean": 10.375313420060321,
+                        "rank": 14717488,
+                        "pct": 35,
+                        "higher_than": 8376362
+                    },
+                    "journal": {
+                        "count": 2933,
+                        "mean": 4.703356972383221,
+                        "rank": 2146,
+                        "pct": 24,
+                        "higher_than": 723
+                    },
+                    "similar_age_3m": {
+                        "count": 441767,
+                        "mean": 14.632645915153358,
+                        "rank": 218492,
+                        "pct": 47,
+                        "higher_than": 208917
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 33,
+                        "mean": 16.569393939393937,
+                        "rank": 25,
+                        "pct": 24,
+                        "higher_than": 8
+                    }
+                },
+                "authors": [
+                    "Chiara Rasi",
+                    "Daniel Nilsson",
+                    "M\u00e5ns Magnusson",
+                    "Nicole Lesko",
+                    "Kristina Lagerstedt\u2010Robinson",
+                    "Anna Wedell",
+                    "Anna Lindstrand",
+                    "Valtteri Wirta",
+                    "Henrik Stranneheim"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1654041600,
+                "epubdate": 1646611200,
+                "dimensions_publication_id": "pub.1145742392",
+                "altmetric_id": 123518440,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Genetics",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Clinical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 2,
+                "cited_by_tweeters_count": 2,
+                "cited_by_accounts_count": 2,
+                "last_updated": 1653402487,
+                "score": 1.25,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1.25
+                },
+                "url": "http://dx.doi.org/10.1002/humu.24358",
+                "added_on": 1645580211,
+                "published_on": 1646611200,
+                "scopus_subjects": [
+                    "Medicine",
+                    "Life Sciences",
+                    "Health Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "10",
+                    "connotea": "0"
+                },
+                "readers_count": 10,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=2&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=2&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=2&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=123518440"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 3156,
+            "total_ccn": 539,
+            "avg_ccn": 2.42,
+            "nloc_per_file": 59.55,
+            "duplicate_rate": 4.84
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

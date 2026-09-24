@@ -1,0 +1,1693 @@
+{
+    "M2R": {
+        "tool_name": "M2R",
+        "biotools": {
+            "name": "M2R",
+            "description": "A Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models.\n\nMicrobiota-to-Recon (M2R) program.",
+            "homepage": "https://github.com/e-weglarz-tomczak/m2r",
+            "biotoolsID": "m2r",
+            "biotoolsCURIE": "biotools:m2r",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3660",
+                            "term": "Metabolic network modelling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3407",
+                    "term": "Endocrinology and metabolism"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3300",
+                    "term": "Physiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1093/bioinformatics/btab060",
+                    "pmid": "33523116",
+                    "pmcid": "PMC8428599",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "M2R: A Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models",
+                        "abstract": "Motivation: The gut microbiota is the human body's largest population of microorganisms that interact with human intestinal cells. They use ingested nutrients for fundamental biological processes and have important impacts on human physiology, immunity and metabolome in the gastrointestinal tract. Results: Here, we present M2R, a Python add-on to cobrapy that allows incorporating information about the gut microbiota metabolism models to human genome-scale metabolic models (GEMs) like RECON3D. The idea behind the software is to modify the lower bounds of the exchange reactions in the model using aggregated in- and out-fluxes from selected microbes. M2R enables users to quickly and easily modify the pool of the metabolites that enter and leave the GEM, which is particularly important for those looking into an analysis of the metabolic interaction between the gut microbiota and human cells and its dysregulation.",
+                        "date": "2021-09-01T00:00:00Z",
+                        "citationCount": 1,
+                        "authors": [
+                            {
+                                "name": "Weglarz-Tomczak E."
+                            },
+                            {
+                                "name": "Tomczak J.M."
+                            },
+                            {
+                                "name": "Brul S."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Ewelina Weglarz-Tomczak",
+                    "email": "ewelina.weglarz.tomczak@gmail.com",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-03-19T09:07:30Z",
+            "lastUpdate": "2024-11-24T20:37:13.191245Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 286850278,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyODY4NTAyNzg=",
+                "name": "m2r",
+                "full_name": "e-weglarz-tomczak/m2r",
+                "private": false,
+                "owner": {
+                    "login": "e-weglarz-tomczak",
+                    "id": 47297398,
+                    "node_id": "MDQ6VXNlcjQ3Mjk3Mzk4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/47297398?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/e-weglarz-tomczak",
+                    "html_url": "https://github.com/e-weglarz-tomczak",
+                    "followers_url": "https://api.github.com/users/e-weglarz-tomczak/followers",
+                    "following_url": "https://api.github.com/users/e-weglarz-tomczak/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/e-weglarz-tomczak/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/e-weglarz-tomczak/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/e-weglarz-tomczak/subscriptions",
+                    "organizations_url": "https://api.github.com/users/e-weglarz-tomczak/orgs",
+                    "repos_url": "https://api.github.com/users/e-weglarz-tomczak/repos",
+                    "events_url": "https://api.github.com/users/e-weglarz-tomczak/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/e-weglarz-tomczak/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/e-weglarz-tomczak/m2r",
+                "description": "Microbiota-to-Recon (M2R) program",
+                "fork": false,
+                "url": "https://api.github.com/repos/e-weglarz-tomczak/m2r",
+                "forks_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/forks",
+                "keys_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/teams",
+                "hooks_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/hooks",
+                "issue_events_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/events",
+                "assignees_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/tags",
+                "blobs_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/languages",
+                "stargazers_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/stargazers",
+                "contributors_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/contributors",
+                "subscribers_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/subscribers",
+                "subscription_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/subscription",
+                "commits_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/merges",
+                "archive_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/downloads",
+                "issues_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/labels{/name}",
+                "releases_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/e-weglarz-tomczak/m2r/deployments",
+                "created_at": "2020-08-11T21:20:44Z",
+                "updated_at": "2021-02-15T08:00:22Z",
+                "pushed_at": "2020-12-31T11:23:55Z",
+                "git_url": "git://github.com/e-weglarz-tomczak/m2r.git",
+                "ssh_url": "git@github.com:e-weglarz-tomczak/m2r.git",
+                "clone_url": "https://github.com/e-weglarz-tomczak/m2r.git",
+                "svn_url": "https://github.com/e-weglarz-tomczak/m2r",
+                "homepage": null,
+                "size": 4778,
+                "stargazers_count": 1,
+                "watchers_count": 1,
+                "language": "Jupyter Notebook",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 1,
+                "watchers": 1,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "m2r.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "m2r_example.ipynb",
+                    "type": "blob"
+                },
+                {
+                    "path": "microbiota",
+                    "type": "tree"
+                },
+                {
+                    "path": "models",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "e-weglarz-tomczak",
+                    "contributions": 18
+                },
+                {
+                    "login": "jmtomczak",
+                    "contributions": 6
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Jupyter Notebook": 13348,
+                "Python": 8778
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btab060",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33523116",
+                            "source": "MED",
+                            "pmid": "33523116",
+                            "pmcid": "PMC8428599",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8428599"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btab060",
+                            "title": "M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models.",
+                            "authorString": "Weglarz-Tomczak E, Tomczak JM, Brul S.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "17",
+                            "journalVolume": "37",
+                            "pubYear": "2021",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "2785-2786",
+                            "pubType": "brief-report; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 0,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-02-02",
+                            "firstPublicationDate": "2021-09-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3127781076",
+                "doi": "https://doi.org/10.1093/bioinformatics/btab060",
+                "title": "M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models",
+                "display_name": "M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models",
+                "publication_year": 2021,
+                "publication_date": "2021-01-27",
+                "ids": {
+                    "openalex": "https://openalex.org/W3127781076",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btab060",
+                    "mag": "3127781076",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33523116"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btab060",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab060",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/17/2785/40342563/btab060.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/37/17/2785/40342563/btab060.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5063868367",
+                            "display_name": "Ewelina W\u0119glarz\u2010Tomczak",
+                            "orcid": "https://orcid.org/0000-0001-8080-2801"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Ewelina Weglarz-Tomczak",
+                        "raw_affiliation_strings": [
+                            "Swammerdam Institute for Life Sciences, Faculty of Science, University of Amsterdam , Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Swammerdam Institute for Life Sciences, Faculty of Science, University of Amsterdam , Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5004385039",
+                            "display_name": "Jakub M. Tomczak",
+                            "orcid": "https://orcid.org/0000-0001-8634-694X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I865915315",
+                                "display_name": "Vrije Universiteit Amsterdam",
+                                "ror": "https://ror.org/008xxew50",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jakub M. Tomczak",
+                        "raw_affiliation_strings": [
+                            "Department of Computer Science, Faculty of Science, Vrije Universiteit Amsterdam , Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8634-694X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Computer Science, Faculty of Science, Vrije Universiteit Amsterdam , Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5017791828",
+                            "display_name": "Stanley Brul",
+                            "orcid": "https://orcid.org/0000-0001-5706-8768"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Stanley Brul",
+                        "raw_affiliation_strings": [
+                            "Swammerdam Institute for Life Sciences, Faculty of Science, University of Amsterdam , Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Swammerdam Institute for Life Sciences, Faculty of Science, University of Amsterdam , Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5063868367"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I887064364"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 0.0814,
+                "has_fulltext": true,
+                "cited_by_count": 1,
+                "citation_normalized_percentile": {
+                    "value": 0.41780977,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 94
+                },
+                "biblio": {
+                    "volume": "37",
+                    "issue": "17",
+                    "first_page": "2785",
+                    "last_page": "2786"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10932",
+                    "display_name": "Microbial Metabolic Engineering and Bioproduction",
+                    "score": 0.6173999905586243,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10932",
+                        "display_name": "Microbial Metabolic Engineering and Bioproduction",
+                        "score": 0.6173999905586243,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10066",
+                        "display_name": "Gut microbiota and health",
+                        "score": 0.34310001134872437,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10836",
+                        "display_name": "Metabolomics and Mass Spectrometry Studies",
+                        "score": 0.0044999998062849045,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.709636926651001
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/metabolome",
+                        "display_name": "Metabolome",
+                        "score": 0.601013720035553
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.5533836483955383
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/human-gastrointestinal-tract",
+                        "display_name": "Human gastrointestinal tract",
+                        "score": 0.5500980615615845
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/population",
+                        "display_name": "Population",
+                        "score": 0.4808710217475891
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gut-flora",
+                        "display_name": "Gut flora",
+                        "score": 0.46785882115364075
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.4242589473724365
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/human-health",
+                        "display_name": "Human health",
+                        "score": 0.4208770990371704
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gastrointestinal-tract",
+                        "display_name": "Gastrointestinal tract",
+                        "score": 0.3746859133243561
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.33673667907714844
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.2679159343242645
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/metabolomics",
+                        "display_name": "Metabolomics",
+                        "score": 0.1263664960861206
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biochemistry",
+                        "display_name": "Biochemistry",
+                        "score": 0.1130819320678711
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.10305076837539673
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.709636926651001
+                    },
+                    {
+                        "id": "https://openalex.org/C135870905",
+                        "wikidata": "https://www.wikidata.org/wiki/Q903667",
+                        "display_name": "Metabolome",
+                        "level": 3,
+                        "score": 0.601013720035553
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.5533836483955383
+                    },
+                    {
+                        "id": "https://openalex.org/C2778546792",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11829360",
+                        "display_name": "Human gastrointestinal tract",
+                        "level": 3,
+                        "score": 0.5500980615615845
+                    },
+                    {
+                        "id": "https://openalex.org/C2908647359",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+                        "display_name": "Population",
+                        "level": 2,
+                        "score": 0.4808710217475891
+                    },
+                    {
+                        "id": "https://openalex.org/C539455810",
+                        "wikidata": "https://www.wikidata.org/wiki/Q739734",
+                        "display_name": "Gut flora",
+                        "level": 2,
+                        "score": 0.46785882115364075
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.4242589473724365
+                    },
+                    {
+                        "id": "https://openalex.org/C2987857752",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12147",
+                        "display_name": "Human health",
+                        "level": 2,
+                        "score": 0.4208770990371704
+                    },
+                    {
+                        "id": "https://openalex.org/C2780512811",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11829360",
+                        "display_name": "Gastrointestinal tract",
+                        "level": 2,
+                        "score": 0.3746859133243561
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.33673667907714844
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.2679159343242645
+                    },
+                    {
+                        "id": "https://openalex.org/C21565614",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12149006",
+                        "display_name": "Metabolomics",
+                        "level": 2,
+                        "score": 0.1263664960861206
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.1130819320678711
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.10305076837539673
+                    },
+                    {
+                        "id": "https://openalex.org/C99454951",
+                        "wikidata": "https://www.wikidata.org/wiki/Q932068",
+                        "display_name": "Environmental health",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C149923435",
+                        "wikidata": "https://www.wikidata.org/wiki/Q37732",
+                        "display_name": "Demography",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C144024400",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21201",
+                        "display_name": "Sociology",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 9,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btab060",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab060",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/17/2785/40342563/btab060.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33523116",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33523116",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:dare.uva.nl:openaire/fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c",
+                        "is_oa": true,
+                        "landing_page_url": "https://handle.uba.uva.nl/personal/pure/en/publications/m2r-a-python-addon-to-cobrapy-for-modifying-human-genomescale-metabolic-reconstruction-using-the-gut-microbiota-models(fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400088",
+                            "display_name": "UvA-DARE (University of Amsterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I887064364",
+                            "host_organization_name": "University of Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I887064364"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Weglarz-Tomczak, E, Tomczak, J M & Brul, S 2021, 'M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models', Bioinformatics, vol. 37, no. 17, pp. 2785-2786. https://doi.org/10.1093/bioinformatics/btab060",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:dare.uva.nl:openaire_cris_publications/fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c",
+                        "is_oa": true,
+                        "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/m2r-a-python-addon-to-cobrapy-for-modifying-human-genomescale-metabolic-reconstruction-using-the-gut-microbiota-models(fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400088",
+                            "display_name": "UvA-DARE (University of Amsterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I887064364",
+                            "host_organization_name": "University of Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I887064364"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Weglarz-Tomczak , E , Tomczak , J M &amp; Brul , S 2021 , ' M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models ' , Bioinformatics , vol. 37 , no. 17 , pp. 2785-2786 . https://doi.org/10.1093/bioinformatics/btab060",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:dare.uva.nl:publications/fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/11245.1/fa4dbb5e-d4fb-4bcf-9c91-33c1c748c36c",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400088",
+                            "display_name": "UvA-DARE (University of Amsterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I887064364",
+                            "host_organization_name": "University of Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I887064364"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": ""
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:7322588",
+                        "is_oa": true,
+                        "landing_page_url": "http://europepmc.org/pmc/articles/PMC8428599",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8428599",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8428599",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:openaire_cris_publications/de0164db-0c39-4ef1-84b7-899512092fb9",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.vu.nl/en/publications/de0164db-0c39-4ef1-84b7-899512092fb9",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Weglarz-Tomczak , E , Tomczak , J M &amp; Brul , S 2021 , ' M2R : A Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models ' , Bioinformatics , vol. 37 , no. 17 , pp. 2785-2786 . https://doi.org/10.1093/bioinformatics/btab060",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:publications/de0164db-0c39-4ef1-84b7-899512092fb9",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1871.1/de0164db-0c39-4ef1-84b7-899512092fb9",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Weglarz-Tomczak , E , Tomczak , J M &amp; Brul , S 2021 , ' M2R : A Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models ' , Bioinformatics , vol. 37 , no. 17 , pp. 2785-2786 . https://doi.org/10.1093/bioinformatics/btab060",
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btab060",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab060",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/17/2785/40342563/btab060.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3127781076.pdf"
+                },
+                "referenced_works_count": 13,
+                "referenced_works": [
+                    "https://openalex.org/W2048465561",
+                    "https://openalex.org/W2078355959",
+                    "https://openalex.org/W2789128799",
+                    "https://openalex.org/W2900697674",
+                    "https://openalex.org/W2912664120",
+                    "https://openalex.org/W2949066452",
+                    "https://openalex.org/W2950093550",
+                    "https://openalex.org/W2951327715",
+                    "https://openalex.org/W2962724228",
+                    "https://openalex.org/W2966440819",
+                    "https://openalex.org/W2976007626",
+                    "https://openalex.org/W3029912146",
+                    "https://openalex.org/W3116469221"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2137167731",
+                    "https://openalex.org/W2363754722",
+                    "https://openalex.org/W2915377520",
+                    "https://openalex.org/W4207080598",
+                    "https://openalex.org/W3186471562",
+                    "https://openalex.org/W4237797525",
+                    "https://openalex.org/W2419200918",
+                    "https://openalex.org/W3015360552",
+                    "https://openalex.org/W1969582610",
+                    "https://openalex.org/W2404326989"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "The": [
+                        1,
+                        68
+                    ],
+                    "gut": [
+                        2,
+                        56,
+                        129
+                    ],
+                    "microbiota": [
+                        3,
+                        57,
+                        130
+                    ],
+                    "is": [
+                        4,
+                        73,
+                        114,
+                        141
+                    ],
+                    "the": [
+                        5,
+                        37,
+                        55,
+                        71,
+                        76,
+                        80,
+                        84,
+                        102,
+                        105,
+                        111,
+                        124,
+                        128
+                    ],
+                    "human": [
+                        6,
+                        15,
+                        31,
+                        61,
+                        132
+                    ],
+                    "body's": [
+                        7
+                    ],
+                    "largest": [
+                        8
+                    ],
+                    "population": [
+                        9
+                    ],
+                    "of": [
+                        10,
+                        79,
+                        104,
+                        123
+                    ],
+                    "microorganisms": [
+                        11
+                    ],
+                    "that": [
+                        12,
+                        50,
+                        107
+                    ],
+                    "interact": [
+                        13
+                    ],
+                    "with": [
+                        14
+                    ],
+                    "intestinal": [
+                        16
+                    ],
+                    "cells.": [
+                        17
+                    ],
+                    "They": [
+                        18
+                    ],
+                    "use": [
+                        19
+                    ],
+                    "ingested": [
+                        20
+                    ],
+                    "nutrients": [
+                        21
+                    ],
+                    "for": [
+                        22,
+                        117
+                    ],
+                    "fundamental": [
+                        23
+                    ],
+                    "biological": [
+                        24
+                    ],
+                    "processes": [
+                        25
+                    ],
+                    "and": [
+                        26,
+                        34,
+                        89,
+                        99,
+                        109,
+                        131,
+                        134
+                    ],
+                    "have": [
+                        27
+                    ],
+                    "important": [
+                        28,
+                        116
+                    ],
+                    "impacts": [
+                        29
+                    ],
+                    "on": [
+                        30
+                    ],
+                    "physiology,": [
+                        32
+                    ],
+                    "immunity": [
+                        33
+                    ],
+                    "metabolome": [
+                        35
+                    ],
+                    "in": [
+                        36,
+                        83
+                    ],
+                    "gastrointestinal": [
+                        38
+                    ],
+                    "tract.": [
+                        39
+                    ],
+                    "RESULTS:": [
+                        40
+                    ],
+                    "Here,": [
+                        41
+                    ],
+                    "we": [
+                        42
+                    ],
+                    "present": [
+                        43
+                    ],
+                    "M2R,": [
+                        44
+                    ],
+                    "a": [
+                        45
+                    ],
+                    "Python": [
+                        46
+                    ],
+                    "add-on": [
+                        47
+                    ],
+                    "to": [
+                        48,
+                        60,
+                        74,
+                        97
+                    ],
+                    "cobrapy": [
+                        49
+                    ],
+                    "allows": [
+                        51
+                    ],
+                    "incorporating": [
+                        52
+                    ],
+                    "information": [
+                        53
+                    ],
+                    "about": [
+                        54
+                    ],
+                    "metabolism": [
+                        58
+                    ],
+                    "models": [
+                        59,
+                        64
+                    ],
+                    "genome-scale": [
+                        62
+                    ],
+                    "metabolic": [
+                        63,
+                        125
+                    ],
+                    "(GEMs)": [
+                        65
+                    ],
+                    "like": [
+                        66
+                    ],
+                    "RECON3D.": [
+                        67
+                    ],
+                    "idea": [
+                        69
+                    ],
+                    "behind": [
+                        70
+                    ],
+                    "software": [
+                        72
+                    ],
+                    "modify": [
+                        75,
+                        101
+                    ],
+                    "lower": [
+                        77
+                    ],
+                    "bounds": [
+                        78
+                    ],
+                    "exchange": [
+                        81
+                    ],
+                    "reactions": [
+                        82
+                    ],
+                    "model": [
+                        85
+                    ],
+                    "using": [
+                        86
+                    ],
+                    "aggregated": [
+                        87
+                    ],
+                    "in-": [
+                        88
+                    ],
+                    "out-fluxes": [
+                        90
+                    ],
+                    "from": [
+                        91
+                    ],
+                    "selected": [
+                        92
+                    ],
+                    "microbes.": [
+                        93
+                    ],
+                    "M2R": [
+                        94,
+                        140
+                    ],
+                    "enables": [
+                        95
+                    ],
+                    "users": [
+                        96
+                    ],
+                    "quickly": [
+                        98
+                    ],
+                    "easily": [
+                        100
+                    ],
+                    "pool": [
+                        103
+                    ],
+                    "metabolites": [
+                        106
+                    ],
+                    "enter": [
+                        108
+                    ],
+                    "leave": [
+                        110
+                    ],
+                    "GEM,": [
+                        112
+                    ],
+                    "which": [
+                        113
+                    ],
+                    "particularly": [
+                        115
+                    ],
+                    "those": [
+                        118
+                    ],
+                    "looking": [
+                        119
+                    ],
+                    "into": [
+                        120
+                    ],
+                    "an": [
+                        121,
+                        145
+                    ],
+                    "analysis": [
+                        122
+                    ],
+                    "interaction": [
+                        126
+                    ],
+                    "between": [
+                        127
+                    ],
+                    "cells": [
+                        133
+                    ],
+                    "its": [
+                        135
+                    ],
+                    "dysregulation.": [
+                        136
+                    ],
+                    "AVAILABILITY": [
+                        137
+                    ],
+                    "AND": [
+                        138
+                    ],
+                    "IMPLEMENTATION:": [
+                        139
+                    ],
+                    "freely": [
+                        142
+                    ],
+                    "available": [
+                        143,
+                        155
+                    ],
+                    "under": [
+                        144
+                    ],
+                    "MIT": [
+                        146
+                    ],
+                    "License": [
+                        147
+                    ],
+                    "at": [
+                        148,
+                        156
+                    ],
+                    "https://github.com/e-weglarz-tomczak/m2r.": [
+                        149
+                    ],
+                    "SUPPLEMENTARY": [
+                        150
+                    ],
+                    "INFORMATION:": [
+                        151
+                    ],
+                    "Supplementary": [
+                        152
+                    ],
+                    "data": [
+                        153
+                    ],
+                    "are": [
+                        154
+                    ],
+                    "Bioinformatics": [
+                        157
+                    ],
+                    "online.": [
+                        158
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "M2R: a Python add-on to cobrapy for modifying human genome-scale metabolic reconstruction using the gut microbiota models",
+                "doi": "10.1093/bioinformatics/btab060",
+                "pmid": "33523116",
+                "pmc": "PMC8428599",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "pub": 4,
+                    "sci": 4
+                },
+                "context": {
+                    "all": {
+                        "count": 32393211,
+                        "mean": 10.500436970759091,
+                        "rank": 9653858,
+                        "pct": 70,
+                        "higher_than": 22685993
+                    },
+                    "journal": {
+                        "count": 14093,
+                        "mean": 8.181352444475982,
+                        "rank": 6789,
+                        "pct": 51,
+                        "higher_than": 7268
+                    },
+                    "similar_age_3m": {
+                        "count": 565621,
+                        "mean": 14.056241812096808,
+                        "rank": 183176,
+                        "pct": 67,
+                        "higher_than": 380883
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 287,
+                        "mean": 7.703484320557492,
+                        "rank": 124,
+                        "pct": 56,
+                        "higher_than": 161
+                    }
+                },
+                "authors": [
+                    "Ewelina Weglarz-Tomczak",
+                    "Jakub M. Tomczak",
+                    "Stanley Brul"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1631145600,
+                "epubdate": 1612137600,
+                "dimensions_publication_id": "pub.1134894538",
+                "altmetric_id": 99222012,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 8,
+                "cited_by_tweeters_count": 8,
+                "cited_by_accounts_count": 8,
+                "last_updated": 1612290749,
+                "score": 4.35,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 4.35
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btab060",
+                "added_on": 1612226963,
+                "published_on": 1612137600,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "14",
+                    "connotea": "0"
+                },
+                "readers_count": 14,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=5&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=5&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=5&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=99222012"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 154,
+            "total_ccn": 47,
+            "avg_ccn": 7.83,
+            "nloc_per_file": 154.0,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,2532 @@
+{
+    "DEN-IM": {
+        "tool_name": "DEN-IM",
+        "biotools": {
+            "name": "DEN-IM",
+            "description": "Dengue Virus identification from shotgun and targeted metagenomics.",
+            "homepage": "https://github.com/B-UMMI/DEN-IM",
+            "biotoolsID": "DEN-IM",
+            "biotoolsCURIE": "biotools:DEN-IM",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0310",
+                            "term": "Sequence assembly"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2495",
+                            "term": "Expression analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3174",
+                    "term": "Metagenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3837",
+                    "term": "Metagenomic sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3293",
+                    "term": "Phylogenetics"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Windows",
+                "Mac"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/B-UMMI/DEN-IM/issues",
+                    "type": [
+                        "Issue tracker"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [
+                {
+                    "url": "https://github.com/B-UMMI/DEN-IM/releases",
+                    "type": "Source code",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://github.com/B-UMMI/DEN-IM/blob/master/README.md",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/628073",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Bioinformatics,  Molecular Microbiology and Infection Unit",
+                    "email": "microbiologia@fm.ul.pt",
+                    "url": "http://im.fm.ul.pt/",
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Division",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "hans",
+            "additionDate": "2019-08-09T13:05:52Z",
+            "lastUpdate": "2020-06-16T10:55:25Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 146578537,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxNDY1Nzg1Mzc=",
+                "name": "DEN-IM",
+                "full_name": "B-UMMI/DEN-IM",
+                "private": false,
+                "owner": {
+                    "login": "B-UMMI",
+                    "id": 8566625,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjg1NjY2MjU=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/8566625?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/B-UMMI",
+                    "html_url": "https://github.com/B-UMMI",
+                    "followers_url": "https://api.github.com/users/B-UMMI/followers",
+                    "following_url": "https://api.github.com/users/B-UMMI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/B-UMMI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/B-UMMI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/B-UMMI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/B-UMMI/orgs",
+                    "repos_url": "https://api.github.com/users/B-UMMI/repos",
+                    "events_url": "https://api.github.com/users/B-UMMI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/B-UMMI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/B-UMMI/DEN-IM",
+                "description": "Dengue virus genotyping from shotgun and targeted metagenomics\u200b - A nextflow pipeline",
+                "fork": false,
+                "url": "https://api.github.com/repos/B-UMMI/DEN-IM",
+                "forks_url": "https://api.github.com/repos/B-UMMI/DEN-IM/forks",
+                "keys_url": "https://api.github.com/repos/B-UMMI/DEN-IM/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/B-UMMI/DEN-IM/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/B-UMMI/DEN-IM/teams",
+                "hooks_url": "https://api.github.com/repos/B-UMMI/DEN-IM/hooks",
+                "issue_events_url": "https://api.github.com/repos/B-UMMI/DEN-IM/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/B-UMMI/DEN-IM/events",
+                "assignees_url": "https://api.github.com/repos/B-UMMI/DEN-IM/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/B-UMMI/DEN-IM/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/B-UMMI/DEN-IM/tags",
+                "blobs_url": "https://api.github.com/repos/B-UMMI/DEN-IM/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/B-UMMI/DEN-IM/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/B-UMMI/DEN-IM/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/B-UMMI/DEN-IM/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/B-UMMI/DEN-IM/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/B-UMMI/DEN-IM/languages",
+                "stargazers_url": "https://api.github.com/repos/B-UMMI/DEN-IM/stargazers",
+                "contributors_url": "https://api.github.com/repos/B-UMMI/DEN-IM/contributors",
+                "subscribers_url": "https://api.github.com/repos/B-UMMI/DEN-IM/subscribers",
+                "subscription_url": "https://api.github.com/repos/B-UMMI/DEN-IM/subscription",
+                "commits_url": "https://api.github.com/repos/B-UMMI/DEN-IM/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/B-UMMI/DEN-IM/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/B-UMMI/DEN-IM/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/B-UMMI/DEN-IM/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/B-UMMI/DEN-IM/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/B-UMMI/DEN-IM/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/B-UMMI/DEN-IM/merges",
+                "archive_url": "https://api.github.com/repos/B-UMMI/DEN-IM/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/B-UMMI/DEN-IM/downloads",
+                "issues_url": "https://api.github.com/repos/B-UMMI/DEN-IM/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/B-UMMI/DEN-IM/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/B-UMMI/DEN-IM/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/B-UMMI/DEN-IM/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/B-UMMI/DEN-IM/labels{/name}",
+                "releases_url": "https://api.github.com/repos/B-UMMI/DEN-IM/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/B-UMMI/DEN-IM/deployments",
+                "created_at": "2018-08-29T09:40:25Z",
+                "updated_at": "2026-01-31T19:11:49Z",
+                "pushed_at": "2023-04-20T13:34:11Z",
+                "git_url": "git://github.com/B-UMMI/DEN-IM.git",
+                "ssh_url": "git@github.com:B-UMMI/DEN-IM.git",
+                "clone_url": "https://github.com/B-UMMI/DEN-IM.git",
+                "svn_url": "https://github.com/B-UMMI/DEN-IM",
+                "homepage": "",
+                "size": 12691,
+                "stargazers_count": 7,
+                "watchers_count": 7,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 3,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 3,
+                "watchers": 7,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "B-UMMI",
+                    "id": 8566625,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjg1NjY2MjU=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/8566625?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/B-UMMI",
+                    "html_url": "https://github.com/B-UMMI",
+                    "followers_url": "https://api.github.com/users/B-UMMI/followers",
+                    "following_url": "https://api.github.com/users/B-UMMI/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/B-UMMI/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/B-UMMI/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/B-UMMI/subscriptions",
+                    "organizations_url": "https://api.github.com/users/B-UMMI/orgs",
+                    "repos_url": "https://api.github.com/users/B-UMMI/repos",
+                    "events_url": "https://api.github.com/users/B-UMMI/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/B-UMMI/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 5,
+                "subscribers_count": 8
+            },
+            "contents": [
+                {
+                    "path": ".forkTree.json",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".treeDag.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "DEN-IM.html",
+                    "type": "blob"
+                },
+                {
+                    "path": "DEN-IM.nf",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "containers.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "lib",
+                    "type": "tree"
+                },
+                {
+                    "path": "nextflow.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "params.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "profiles.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "ref",
+                    "type": "tree"
+                },
+                {
+                    "path": "resources.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "resources",
+                    "type": "tree"
+                },
+                {
+                    "path": "templates",
+                    "type": "tree"
+                },
+                {
+                    "path": "user.config",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "cimendes",
+                    "contributions": 61
+                },
+                {
+                    "login": "ramirma",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 6,
+                    "title": "Feed in fasta files?",
+                    "created_at": "2021-06-16T09:08:45Z",
+                    "closed_at": "2021-08-16T13:47:07Z"
+                }
+            ],
+            "languages": {
+                "Python": 199762,
+                "Nextflow": 63938,
+                "HTML": 12592,
+                "Groovy": 10714,
+                "Shell": 3240
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1099/mgen.0.000328",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "32134380",
+                            "source": "MED",
+                            "pmid": "32134380",
+                            "pmcid": "PMC7200064",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7200064"
+                                ]
+                            },
+                            "doi": "10.1099/mgen.0.000328",
+                            "title": "DEN-IM: dengue virus genotyping from amplicon and shotgun metagenomic sequencing.",
+                            "authorString": "Mendes CI, Lizarazo E, Machado MP, Silva DN, Tami A, Ramirez M, Couto N, Rossen JWA, Carri\u00e7o JA.",
+                            "journalTitle": "Microb Genom",
+                            "issue": "3",
+                            "journalVolume": "6",
+                            "pubYear": "2020",
+                            "journalIssn": "2057-5858",
+                            "pubType": "research support, non-u.s. gov't; methods-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 5,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "bioproject",
+                                    "refseq",
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2020-03-06",
+                            "firstPublicationDate": "2020-03-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3010165645",
+                "doi": "https://doi.org/10.1099/mgen.0.000328",
+                "title": "DEN-IM: dengue virus genotyping from amplicon and shotgun metagenomic sequencing",
+                "display_name": "DEN-IM: dengue virus genotyping from amplicon and shotgun metagenomic sequencing",
+                "publication_year": 2020,
+                "publication_date": "2020-03-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W3010165645",
+                    "doi": "https://doi.org/10.1099/mgen.0.000328",
+                    "mag": "3010165645",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/32134380"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1099/mgen.0.000328",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.000328",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "datacite",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1099/mgen.0.000328",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5017303734",
+                            "display_name": "Catarina In\u00eas Mendes",
+                            "orcid": "https://orcid.org/0000-0002-3090-7426"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I141596103",
+                                "display_name": "University of Lisbon",
+                                "ror": "https://ror.org/01c27hj86",
+                                "country_code": "PT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "PT"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Catarina I. Mendes",
+                        "raw_affiliation_strings": [
+                            "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                            "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3090-7426",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                                "institution_ids": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5018187868",
+                            "display_name": "Erley Lizarazo",
+                            "orcid": "https://orcid.org/0000-0003-2749-9780"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Erley Lizarazo",
+                        "raw_affiliation_strings": [
+                            "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2749-9780",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5048075811",
+                            "display_name": "Miguel P. Machado",
+                            "orcid": "https://orcid.org/0000-0002-1786-8522"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I141596103",
+                                "display_name": "University of Lisbon",
+                                "ror": "https://ror.org/01c27hj86",
+                                "country_code": "PT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "PT"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Miguel P. Machado",
+                        "raw_affiliation_strings": [
+                            "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1786-8522",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                                "institution_ids": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5047644722",
+                            "display_name": "Diogo Nuno Silva",
+                            "orcid": "https://orcid.org/0000-0002-6827-2673"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I141596103",
+                                "display_name": "University of Lisbon",
+                                "ror": "https://ror.org/01c27hj86",
+                                "country_code": "PT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "PT"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Diogo N. Silva",
+                        "raw_affiliation_strings": [
+                            "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6827-2673",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                                "institution_ids": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5083986028",
+                            "display_name": "Adriana Tami",
+                            "orcid": "https://orcid.org/0000-0002-1918-9144"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Adriana Tami",
+                        "raw_affiliation_strings": [
+                            "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1918-9144",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5082344930",
+                            "display_name": "M\u00e1rio Ramirez",
+                            "orcid": "https://orcid.org/0000-0002-4084-6233"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I141596103",
+                                "display_name": "University of Lisbon",
+                                "ror": "https://ror.org/01c27hj86",
+                                "country_code": "PT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "PT"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "M\u00e1rio Ramirez",
+                        "raw_affiliation_strings": [
+                            "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4084-6233",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                                "institution_ids": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5083910434",
+                            "display_name": "Natacha Couto",
+                            "orcid": "https://orcid.org/0000-0002-9152-5464"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Natacha Couto",
+                        "raw_affiliation_strings": [
+                            "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9152-5464",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5075796846",
+                            "display_name": "John W. A. Rossen",
+                            "orcid": "https://orcid.org/0000-0002-7167-8623"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "John W. A. Rossen",
+                        "raw_affiliation_strings": [
+                            "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7167-8623",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Groningen, University Medical Center Groningen, Department of Medical Microbiology and Infection Prevention, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5057086640",
+                            "display_name": "Jo\u00e3o Andr\u00e9 Carri\u00e7o",
+                            "orcid": "https://orcid.org/0000-0002-5274-2722"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I141596103",
+                                "display_name": "University of Lisbon",
+                                "ror": "https://ror.org/01c27hj86",
+                                "country_code": "PT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "PT"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jo\u00e3o A. Carri\u00e7o",
+                        "raw_affiliation_strings": [
+                            "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5274-2722",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Instituto de Microbiologia, Instituto de Medicina Molecular, Faculdade de Medicina, Universidade de Lisboa, Lisboa, Portugal",
+                                "institution_ids": [
+                                    "https://openalex.org/I141596103"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 9,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5017303734"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I1334415907",
+                    "https://openalex.org/I141596103",
+                    "https://openalex.org/I169381384"
+                ],
+                "apc_list": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "apc_paid": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "fwci": 0.0,
+                "has_fulltext": true,
+                "cited_by_count": 6,
+                "citation_normalized_percentile": {
+                    "value": 0.02824508,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 91,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "6",
+                    "issue": "3",
+                    "first_page": null,
+                    "last_page": null
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10166",
+                    "display_name": "Mosquito-borne diseases and control",
+                    "score": 1.0,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2739",
+                        "display_name": "Public Health, Environmental and Occupational Health"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/27",
+                        "display_name": "Medicine"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/4",
+                        "display_name": "Health Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10166",
+                        "display_name": "Mosquito-borne diseases and control",
+                        "score": 1.0,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2739",
+                            "display_name": "Public Health, Environmental and Occupational Health"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12134",
+                        "display_name": "Insect symbiosis and bacterial influences",
+                        "score": 0.9861000180244446,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1109",
+                            "display_name": "Insect Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9776999950408936,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/metagenomics",
+                        "display_name": "Metagenomics",
+                        "score": 0.8315950632095337
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/amplicon",
+                        "display_name": "Amplicon",
+                        "score": 0.6768254041671753
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.6378028392791748
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/shotgun-sequencing",
+                        "display_name": "Shotgun sequencing",
+                        "score": 0.6144739985466003
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5862679481506348
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dengue-virus",
+                        "display_name": "Dengue virus",
+                        "score": 0.5632541179656982
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna-sequencing",
+                        "display_name": "DNA sequencing",
+                        "score": 0.41556715965270996
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.3362078070640564
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dengue-fever",
+                        "display_name": "Dengue fever",
+                        "score": 0.3324102759361267
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/virology",
+                        "display_name": "Virology",
+                        "score": 0.2836025357246399
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/polymerase-chain-reaction",
+                        "display_name": "Polymerase chain reaction",
+                        "score": 0.15653085708618164
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.1273488700389862
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C15151743",
+                        "wikidata": "https://www.wikidata.org/wiki/Q903778",
+                        "display_name": "Metagenomics",
+                        "level": 3,
+                        "score": 0.8315950632095337
+                    },
+                    {
+                        "id": "https://openalex.org/C8185291",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2844457",
+                        "display_name": "Amplicon",
+                        "level": 4,
+                        "score": 0.6768254041671753
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.6378028392791748
+                    },
+                    {
+                        "id": "https://openalex.org/C101985253",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1073526",
+                        "display_name": "Shotgun sequencing",
+                        "level": 4,
+                        "score": 0.6144739985466003
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5862679481506348
+                    },
+                    {
+                        "id": "https://openalex.org/C2779635636",
+                        "wikidata": "https://www.wikidata.org/wiki/Q476209",
+                        "display_name": "Dengue virus",
+                        "level": 3,
+                        "score": 0.5632541179656982
+                    },
+                    {
+                        "id": "https://openalex.org/C51679486",
+                        "wikidata": "https://www.wikidata.org/wiki/Q380546",
+                        "display_name": "DNA sequencing",
+                        "level": 3,
+                        "score": 0.41556715965270996
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.3362078070640564
+                    },
+                    {
+                        "id": "https://openalex.org/C533803919",
+                        "wikidata": "https://www.wikidata.org/wiki/Q30953",
+                        "display_name": "Dengue fever",
+                        "level": 2,
+                        "score": 0.3324102759361267
+                    },
+                    {
+                        "id": "https://openalex.org/C159047783",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7215",
+                        "display_name": "Virology",
+                        "level": 1,
+                        "score": 0.2836025357246399
+                    },
+                    {
+                        "id": "https://openalex.org/C49105822",
+                        "wikidata": "https://www.wikidata.org/wiki/Q176996",
+                        "display_name": "Polymerase chain reaction",
+                        "level": 3,
+                        "score": 0.15653085708618164
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.1273488700389862
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D003715",
+                        "descriptor_name": "Dengue",
+                        "qualifier_ui": "Q000382",
+                        "qualifier_name": "microbiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003715",
+                        "descriptor_name": "Dengue",
+                        "qualifier_ui": "Q000382",
+                        "qualifier_name": "microbiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003715",
+                        "descriptor_name": "Dengue",
+                        "qualifier_ui": "Q000382",
+                        "qualifier_name": "microbiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003715",
+                        "descriptor_name": "Dengue",
+                        "qualifier_ui": "Q000382",
+                        "qualifier_name": "microbiology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003716",
+                        "descriptor_name": "Dengue Virus",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003716",
+                        "descriptor_name": "Dengue Virus",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003716",
+                        "descriptor_name": "Dengue Virus",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D003716",
+                        "descriptor_name": "Dengue Virus",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054892",
+                        "descriptor_name": "Metagenome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054892",
+                        "descriptor_name": "Metagenome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054892",
+                        "descriptor_name": "Metagenome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D054892",
+                        "descriptor_name": "Metagenome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 9,
+                "locations": [
+                    {
+                        "id": "doi:10.1099/mgen.0.000328",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1099/mgen.0.000328",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4210186362",
+                            "display_name": "Microbial Genomics",
+                            "issn_l": "2057-5858",
+                            "issn": [
+                                "2057-5858"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320497",
+                            "host_organization_name": "Microbiology Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320497"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Microbiology Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial Genomics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:32134380",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32134380",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial genomics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:publications/8109c025-46c2-4dca-aec1-26736225c31d",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.rug.nl/en/publications/8109c025-46c2-4dca-aec1-26736225c31d",
+                        "pdf_url": "https://pure.rug.nl/ws/files/123707199/DEN_IM_dengue_virus_genotyping_from_amplicon_and_shotgun_metagenomic_sequencing.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Mendes, C I, Lizarazo, E, Machado, M P, Silva, D N, Tami, A, Ramirez, M, Couto, N, Rossen, J W A & Carri\u00e7o, J A 2020, 'DEN-IM : dengue virus genotyping from amplicon and shotgun metagenomic sequencing', Microbial genomics, vol. 6, no. 3, 000328. https://doi.org/10.1099/mgen.0.000328",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:repositorio.ul.pt:10451/49903",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/10451/49903",
+                        "pdf_url": "http://hdl.handle.net/10451/49903",
+                        "source": {
+                            "id": "https://openalex.org/S4306401074",
+                            "display_name": "Reposit\u00f3rio da Universidade de Lisboa (University of Lisbon)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I141596103",
+                            "host_organization_name": "University of Lisbon",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I141596103"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "journal article"
+                    },
+                    {
+                        "id": "pmh:oai:figshare.com:article/11316599",
+                        "is_oa": true,
+                        "landing_page_url": "https://figshare.com/articles/dataset/DEN-IM_Dengue_virus_genotyping_from_amplicon_and_shotgun_metagenomic_sequencing/11316599",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4377196282",
+                            "display_name": "Figshare",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210132348",
+                            "host_organization_name": "Figshare (United Kingdom)",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210132348"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Dataset"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7200064",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7200064",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microb Genom",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:datasets/334c46cb-d19c-468a-9051-7964d7889011",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.rug.nl/en/datasets/334c46cb-d19c-468a-9051-7964d7889011",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Dataset"
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:openaire/8109c025-46c2-4dca-aec1-26736225c31d",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/11370/8109c025-46c2-4dca-aec1-26736225c31d",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Mendes, C I, Lizarazo, E, Machado, M P, Silva, D N, Tami, A, Ramirez, M, Couto, N, Rossen, J W A & Carri\u00e7o, J A 2020, 'DEN-IM : dengue virus genotyping from amplicon and shotgun metagenomic sequencing', Microbial genomics, vol. 6, no. 3, 000328. https://doi.org/10.1099/mgen.0.000328",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "doi:10.6084/m9.figshare.11316599.v1",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.6084/m9.figshare.11316599.v1",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4377196282",
+                            "display_name": "Figshare",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210132348",
+                            "host_organization_name": "Figshare (United Kingdom)",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210132348"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": null,
+                        "is_accepted": false,
+                        "is_published": null,
+                        "raw_source_name": null,
+                        "raw_type": "dataset"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1099/mgen.0.000328",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.000328",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.6000000238418579,
+                        "display_name": "Industry, innovation and infrastructure",
+                        "id": "https://metadata.un.org/sdg/9"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320916",
+                        "display_name": "European Society of Clinical Microbiology and Infectious Diseases",
+                        "ror": "https://ror.org/02vkssr45"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320323105",
+                        "display_name": "Universitair Medisch Centrum Groningen",
+                        "ror": "https://ror.org/03cv38k47"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 31,
+                "referenced_works": [
+                    "https://openalex.org/W1595441435",
+                    "https://openalex.org/W1982855075",
+                    "https://openalex.org/W1996639554",
+                    "https://openalex.org/W2006900053",
+                    "https://openalex.org/W2088302077",
+                    "https://openalex.org/W2113679889",
+                    "https://openalex.org/W2120902911",
+                    "https://openalex.org/W2121180999",
+                    "https://openalex.org/W2128789431",
+                    "https://openalex.org/W2131222241",
+                    "https://openalex.org/W2141052558",
+                    "https://openalex.org/W2150131459",
+                    "https://openalex.org/W2158714788",
+                    "https://openalex.org/W2159954944",
+                    "https://openalex.org/W2170551349",
+                    "https://openalex.org/W2264969613",
+                    "https://openalex.org/W2328346769",
+                    "https://openalex.org/W2557069477",
+                    "https://openalex.org/W2558795507",
+                    "https://openalex.org/W2576984939",
+                    "https://openalex.org/W2596392831",
+                    "https://openalex.org/W2597042980",
+                    "https://openalex.org/W2605897695",
+                    "https://openalex.org/W2613409207",
+                    "https://openalex.org/W2754826145",
+                    "https://openalex.org/W2755355371",
+                    "https://openalex.org/W2768885587",
+                    "https://openalex.org/W2792034759",
+                    "https://openalex.org/W2887749901",
+                    "https://openalex.org/W2896561086",
+                    "https://openalex.org/W2944239259"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2399399246",
+                    "https://openalex.org/W1585158025",
+                    "https://openalex.org/W2775372485",
+                    "https://openalex.org/W3043668926",
+                    "https://openalex.org/W2149961808",
+                    "https://openalex.org/W2549485495",
+                    "https://openalex.org/W2021776701",
+                    "https://openalex.org/W3004711645",
+                    "https://openalex.org/W3156758060",
+                    "https://openalex.org/W3036436206"
+                ],
+                "abstract_inverted_index": {
+                    "Dengue": [
+                        0
+                    ],
+                    "virus": [
+                        1
+                    ],
+                    "(DENV)": [
+                        2
+                    ],
+                    "represents": [
+                        3
+                    ],
+                    "a": [
+                        4,
+                        73,
+                        128,
+                        167,
+                        187
+                    ],
+                    "public": [
+                        5
+                    ],
+                    "health": [
+                        6
+                    ],
+                    "threat": [
+                        7
+                    ],
+                    "and": [
+                        8,
+                        25,
+                        50,
+                        67,
+                        78,
+                        97,
+                        103,
+                        120,
+                        132,
+                        146,
+                        163,
+                        165,
+                        220,
+                        239,
+                        249,
+                        267,
+                        271
+                    ],
+                    "economic": [
+                        9
+                    ],
+                    "burden": [
+                        10
+                    ],
+                    "in": [
+                        11,
+                        72,
+                        224
+                    ],
+                    "affected": [
+                        12
+                    ],
+                    "countries.": [
+                        13
+                    ],
+                    "The": [
+                        14,
+                        207,
+                        233,
+                        263
+                    ],
+                    "availability": [
+                        15
+                    ],
+                    "of": [
+                        16,
+                        34,
+                        80,
+                        105,
+                        122,
+                        138,
+                        204,
+                        236,
+                        244,
+                        259
+                    ],
+                    "genomic": [
+                        17
+                    ],
+                    "data": [
+                        18,
+                        142
+                    ],
+                    "is": [
+                        19,
+                        57,
+                        151
+                    ],
+                    "key": [
+                        20
+                    ],
+                    "to": [
+                        21,
+                        45,
+                        51,
+                        63,
+                        153,
+                        182
+                    ],
+                    "understanding": [
+                        22
+                    ],
+                    "viral": [
+                        23,
+                        53,
+                        65,
+                        83
+                    ],
+                    "evolution": [
+                        24
+                    ],
+                    "dynamics,": [
+                        26
+                    ],
+                    "supporting": [
+                        27
+                    ],
+                    "improved": [
+                        28
+                    ],
+                    "control": [
+                        29
+                    ],
+                    "strategies.": [
+                        30
+                    ],
+                    "Currently,": [
+                        31
+                    ],
+                    "the": [
+                        32,
+                        59,
+                        81,
+                        86,
+                        101,
+                        106,
+                        111,
+                        118,
+                        136,
+                        155,
+                        161,
+                        191,
+                        229,
+                        260
+                    ],
+                    "use": [
+                        33
+                    ],
+                    "high-throughput": [
+                        35
+                    ],
+                    "sequencing": [
+                        36,
+                        141,
+                        213
+                    ],
+                    "(HTS)": [
+                        37
+                    ],
+                    "technologies,": [
+                        38
+                    ],
+                    "which": [
+                        39
+                    ],
+                    "can": [
+                        40,
+                        116,
+                        171
+                    ],
+                    "be": [
+                        41,
+                        173
+                    ],
+                    "applied": [
+                        42
+                    ],
+                    "both": [
+                        43,
+                        144
+                    ],
+                    "directly": [
+                        44
+                    ],
+                    "patient": [
+                        46
+                    ],
+                    "samples": [
+                        47,
+                        214
+                    ],
+                    "(shotgun": [
+                        48
+                    ],
+                    "metagenomics)": [
+                        49
+                    ],
+                    "PCR-amplified": [
+                        52
+                    ],
+                    "sequences": [
+                        54,
+                        243
+                    ],
+                    "(amplicon": [
+                        55
+                    ],
+                    "sequencing),": [
+                        56
+                    ],
+                    "potentially": [
+                        58
+                    ],
+                    "most": [
+                        60
+                    ],
+                    "informative": [
+                        61
+                    ],
+                    "approach": [
+                        62
+                    ],
+                    "monitor": [
+                        64
+                    ],
+                    "dissemination": [
+                        66
+                    ],
+                    "genetic": [
+                        68
+                    ],
+                    "diversity": [
+                        69
+                    ],
+                    "by": [
+                        70
+                    ],
+                    "providing,": [
+                        71
+                    ],
+                    "single": [
+                        74
+                    ],
+                    "methodological": [
+                        75
+                    ],
+                    "step,": [
+                        76
+                    ],
+                    "identification": [
+                        77
+                    ],
+                    "characterization": [
+                        79
+                    ],
+                    "whole": [
+                        82
+                    ],
+                    "genome": [
+                        84
+                    ],
+                    "at": [
+                        85,
+                        276
+                    ],
+                    "nucleotide": [
+                        87
+                    ],
+                    "level.": [
+                        88
+                    ],
+                    "Despite": [
+                        89
+                    ],
+                    "many": [
+                        90,
+                        112
+                    ],
+                    "advantages,": [
+                        91
+                    ],
+                    "these": [
+                        92
+                    ],
+                    "technologies": [
+                        93
+                    ],
+                    "require": [
+                        94
+                    ],
+                    "bioinformatics": [
+                        95,
+                        195
+                    ],
+                    "expertise": [
+                        96
+                    ],
+                    "appropriate": [
+                        98
+                    ],
+                    "infrastructure": [
+                        99
+                    ],
+                    "for": [
+                        100,
+                        135,
+                        193
+                    ],
+                    "analysis": [
+                        102,
+                        137,
+                        189
+                    ],
+                    "interpretation": [
+                        104
+                    ],
+                    "resulting": [
+                        107
+                    ],
+                    "data.": [
+                        108
+                    ],
+                    "In": [
+                        109
+                    ],
+                    "addition,": [
+                        110
+                    ],
+                    "software": [
+                        113
+                    ],
+                    "solutions": [
+                        114
+                    ],
+                    "available": [
+                        115,
+                        275
+                    ],
+                    "hamper": [
+                        117
+                    ],
+                    "reproducibility": [
+                        119
+                    ],
+                    "comparison": [
+                        121
+                    ],
+                    "results.": [
+                        123
+                    ],
+                    "Here": [
+                        124
+                    ],
+                    "we": [
+                        125,
+                        199
+                    ],
+                    "present": [
+                        126
+                    ],
+                    "DEN-IM,": [
+                        127,
+                        198
+                    ],
+                    "one-stop,": [
+                        129
+                    ],
+                    "user-friendly,": [
+                        130
+                    ],
+                    "containerized": [
+                        131
+                    ],
+                    "reproducible": [
+                        133
+                    ],
+                    "workflow": [
+                        134
+                    ],
+                    "DENV": [
+                        139,
+                        156,
+                        205,
+                        245,
+                        250
+                    ],
+                    "short-read": [
+                        140
+                    ],
+                    "from": [
+                        143,
+                        179,
+                        215
+                    ],
+                    "amplicon": [
+                        145,
+                        242
+                    ],
+                    "shotgun": [
+                        147,
+                        211
+                    ],
+                    "metagenomics": [
+                        148
+                    ],
+                    "approaches.": [
+                        149
+                    ],
+                    "It": [
+                        150,
+                        170
+                    ],
+                    "able": [
+                        152
+                    ],
+                    "infer": [
+                        154
+                    ],
+                    "coding": [
+                        157
+                    ],
+                    "sequence": [
+                        158
+                    ],
+                    "(CDS),": [
+                        159
+                    ],
+                    "identify": [
+                        160
+                    ],
+                    "serotype": [
+                        162
+                    ],
+                    "genotype,": [
+                        164
+                    ],
+                    "generate": [
+                        166
+                    ],
+                    "phylogenetic": [
+                        168
+                    ],
+                    "tree.": [
+                        169
+                    ],
+                    "easily": [
+                        172
+                    ],
+                    "run": [
+                        174
+                    ],
+                    "on": [
+                        175
+                    ],
+                    "any": [
+                        176
+                    ],
+                    "UNIX-like": [
+                        177
+                    ],
+                    "system,": [
+                        178
+                    ],
+                    "local": [
+                        180
+                    ],
+                    "machines": [
+                        181
+                    ],
+                    "high-performance": [
+                        183
+                    ],
+                    "computing": [
+                        184
+                    ],
+                    "clusters,": [
+                        185
+                    ],
+                    "performing": [
+                        186
+                    ],
+                    "comprehensive": [
+                        188
+                    ],
+                    "without": [
+                        190
+                    ],
+                    "requirement": [
+                        192
+                    ],
+                    "extensive": [
+                        194
+                    ],
+                    "expertise.": [
+                        196
+                    ],
+                    "Using": [
+                        197
+                    ],
+                    "successfully": [
+                        200
+                    ],
+                    "analysed": [
+                        201
+                    ],
+                    "two": [
+                        202
+                    ],
+                    "types": [
+                        203
+                    ],
+                    "datasets.": [
+                        206
+                    ],
+                    "first": [
+                        208
+                    ],
+                    "comprised": [
+                        209
+                    ],
+                    "25": [
+                        210
+                    ],
+                    "metagenomic": [
+                        212
+                    ],
+                    "patients": [
+                        216
+                    ],
+                    "with": [
+                        217
+                    ],
+                    "variable": [
+                        218
+                    ],
+                    "serotypes": [
+                        219
+                    ],
+                    "genotypes,": [
+                        221
+                    ],
+                    "including": [
+                        222
+                    ],
+                    "an": [
+                        223
+                    ],
+                    "vitro": [
+                        225
+                    ],
+                    "spiked": [
+                        226
+                    ],
+                    "sample": [
+                        227
+                    ],
+                    "containing": [
+                        228
+                    ],
+                    "four": [
+                        230
+                    ],
+                    "known": [
+                        231
+                    ],
+                    "serotypes.": [
+                        232
+                    ],
+                    "second": [
+                        234
+                    ],
+                    "consisted": [
+                        235
+                    ],
+                    "106": [
+                        237
+                    ],
+                    "paired-end": [
+                        238
+                    ],
+                    "76": [
+                        240
+                    ],
+                    "single-end": [
+                        241
+                    ],
+                    "3": [
+                        246
+                    ],
+                    "genotype": [
+                        247,
+                        252
+                    ],
+                    "III": [
+                        248
+                    ],
+                    "1": [
+                        251
+                    ],
+                    "I,": [
+                        253
+                    ],
+                    "respectively,": [
+                        254
+                    ],
+                    "where": [
+                        255
+                    ],
+                    "DEN-IM": [
+                        256,
+                        264
+                    ],
+                    "allowed": [
+                        257
+                    ],
+                    "detection": [
+                        258
+                    ],
+                    "intra-genotype": [
+                        261
+                    ],
+                    "diversity.": [
+                        262
+                    ],
+                    "workflow,": [
+                        265
+                    ],
+                    "parameters": [
+                        266
+                    ],
+                    "execution": [
+                        268
+                    ],
+                    "configuration": [
+                        269
+                    ],
+                    "files,": [
+                        270
+                    ],
+                    "documentation": [
+                        272
+                    ],
+                    "are": [
+                        273
+                    ],
+                    "freely": [
+                        274
+                    ],
+                    "https://github.com/B-UMMI/DEN-IM": [
+                        277
+                    ],
+                    ").": [
+                        278
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 4
+                    }
+                ],
+                "updated_date": "2026-05-29T09:21:14.243279",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "DEN-IM: dengue virus genotyping from amplicon and shotgun metagenomic sequencing",
+                "doi": "10.1099/mgen.0.000328",
+                "pmid": "32134380",
+                "pmc": "PMC7200064",
+                "isbns": [],
+                "altmetric_jid": "55d32c1c2a83eee8488b4567",
+                "issns": [
+                    "2057-5858"
+                ],
+                "journal": "Microbial Genomics",
+                "cohorts": {
+                    "sci": 10,
+                    "pub": 7,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 27729689,
+                        "mean": 10.83257216530629,
+                        "rank": 3572279,
+                        "pct": 87,
+                        "higher_than": 24154459
+                    },
+                    "journal": {
+                        "count": 1174,
+                        "mean": 13.4144667802385,
+                        "rank": 329,
+                        "pct": 71,
+                        "higher_than": 844
+                    },
+                    "similar_age_3m": {
+                        "count": 391526,
+                        "mean": 18.222682595791838,
+                        "rank": 71344,
+                        "pct": 81,
+                        "higher_than": 320068
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 40,
+                        "mean": 10.539500000000002,
+                        "rank": 15,
+                        "pct": 62,
+                        "higher_than": 25
+                    }
+                },
+                "authors": [
+                    "Catarina I. Mendes",
+                    "Erley Lizarazo",
+                    "Miguel P. Machado",
+                    "Diogo N. Silva",
+                    "Adriana Tami",
+                    "M\u00e1rio Ramirez",
+                    "Natacha Couto",
+                    "John W. A. Rossen",
+                    "Jo\u00e3o A. Carri\u00e7o"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1583020800,
+                "epubdate": 1583366400,
+                "dimensions_publication_id": "pub.1125412154",
+                "altmetric_id": 77085524,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 23,
+                "cited_by_tweeters_count": 18,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_accounts_count": 19,
+                "last_updated": 1607533347,
+                "score": 10.799999999999999,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 10.799999999999999
+                },
+                "url": "http://dx.doi.org/10.1099/mgen.0.000328",
+                "added_on": 1583425499,
+                "published_on": 1583366400,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "46",
+                    "connotea": "0"
+                },
+                "readers_count": 46,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=11&types=tttttttf",
+                    "medium": "https://badges.altmetric.com/?size=100&score=11&types=tttttttf",
+                    "large": "https://badges.altmetric.com/?size=180&score=11&types=tttttttf"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=77085524"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 2616,
+            "total_ccn": 503,
+            "avg_ccn": 4.12,
+            "nloc_per_file": 100.62,
+            "duplicate_rate": 17.56
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

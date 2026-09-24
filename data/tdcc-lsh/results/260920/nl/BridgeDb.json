@@ -1,0 +1,3197 @@
+{
+    "BridgeDb": {
+        "tool_name": "BridgeDb",
+        "biotools": {
+            "name": "BridgeDb",
+            "description": "BridgeDb is a framework to map identifiers between various databases.  It includes a Java library that provides an API to work with identifier-identifier mapping databases and resources.",
+            "homepage": "http://bridgedb.github.io/",
+            "biotoolsID": "bridgedb",
+            "biotoolsCURIE": "biotools:bridgedb",
+            "version": [
+                "3.0.18"
+            ],
+            "otherID": [],
+            "relation": [
+                {
+                    "biotoolsID": "identifiers.org",
+                    "type": "uses"
+                },
+                {
+                    "biotoolsID": "bioregistry",
+                    "type": "uses"
+                }
+            ],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1025",
+                                "term": "Gene identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1025",
+                                "term": "Gene identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": "API for converting gene identifiers (Ensembl, Entrez) to identifiers from another database. Depends on an identifier-identifier mapping database or service supported by the API.",
+                    "cmd": null
+                },
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0989",
+                                "term": "Protein identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0989",
+                                "term": "Protein identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                },
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1086",
+                                "term": "Compound identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1086",
+                                "term": "Compound identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": "API for converting compound identifiers (HMDB, ChEBI, ChemSpider, PubChem, etc) to identifiers from another database. Depends on an identifier-identifier mapping database or service supported by the API.",
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3325",
+                    "term": "Rare diseases"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2840",
+                    "term": "Toxicology"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "Java"
+            ],
+            "license": "Apache-2.0",
+            "collectionID": [
+                "Proteomics",
+                "ELIXIR-NL",
+                "BIGCAT-UM",
+                "BridgeDb",
+                "Rare Disease"
+            ],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [
+                "Interoperability"
+            ],
+            "elixirNode": [
+                "Netherlands"
+            ],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/bridgedb/BridgeDb",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/bridgedb/BridgeDb/issues",
+                    "type": [
+                        "Issue tracker"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://fosstodon.org/@bridgedb",
+                    "type": [
+                        "Social media"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://bridgedb.github.io/pages/docs.html",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1186/1471-2105-11-5",
+                    "pmid": "20047655",
+                    "pmcid": "PMC2824678",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1007/978-3-319-11964-9_7",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.3897/rio.8.e83031",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Maastricht University",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Institute",
+                    "typeRole": [
+                        "Provider"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "egonw",
+            "additionDate": "2015-12-01T16:27:10Z",
+            "lastUpdate": "2026-02-17T12:12:04.425822Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "proteomics.bio.tools",
+                    "ChrisEvelo"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 13923694,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMzkyMzY5NA==",
+                "name": "BridgeDb",
+                "full_name": "bridgedb/BridgeDb",
+                "private": false,
+                "owner": {
+                    "login": "bridgedb",
+                    "id": 5793302,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjU3OTMzMDI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/5793302?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/bridgedb",
+                    "html_url": "https://github.com/bridgedb",
+                    "followers_url": "https://api.github.com/users/bridgedb/followers",
+                    "following_url": "https://api.github.com/users/bridgedb/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/bridgedb/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/bridgedb/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/bridgedb/subscriptions",
+                    "organizations_url": "https://api.github.com/users/bridgedb/orgs",
+                    "repos_url": "https://api.github.com/users/bridgedb/repos",
+                    "events_url": "https://api.github.com/users/bridgedb/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/bridgedb/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/bridgedb/BridgeDb",
+                "description": "The BridgeDb Library source code",
+                "fork": false,
+                "url": "https://api.github.com/repos/bridgedb/BridgeDb",
+                "forks_url": "https://api.github.com/repos/bridgedb/BridgeDb/forks",
+                "keys_url": "https://api.github.com/repos/bridgedb/BridgeDb/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/bridgedb/BridgeDb/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/bridgedb/BridgeDb/teams",
+                "hooks_url": "https://api.github.com/repos/bridgedb/BridgeDb/hooks",
+                "issue_events_url": "https://api.github.com/repos/bridgedb/BridgeDb/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/bridgedb/BridgeDb/events",
+                "assignees_url": "https://api.github.com/repos/bridgedb/BridgeDb/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/bridgedb/BridgeDb/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/bridgedb/BridgeDb/tags",
+                "blobs_url": "https://api.github.com/repos/bridgedb/BridgeDb/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/bridgedb/BridgeDb/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/bridgedb/BridgeDb/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/bridgedb/BridgeDb/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/bridgedb/BridgeDb/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/bridgedb/BridgeDb/languages",
+                "stargazers_url": "https://api.github.com/repos/bridgedb/BridgeDb/stargazers",
+                "contributors_url": "https://api.github.com/repos/bridgedb/BridgeDb/contributors",
+                "subscribers_url": "https://api.github.com/repos/bridgedb/BridgeDb/subscribers",
+                "subscription_url": "https://api.github.com/repos/bridgedb/BridgeDb/subscription",
+                "commits_url": "https://api.github.com/repos/bridgedb/BridgeDb/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/bridgedb/BridgeDb/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/bridgedb/BridgeDb/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/bridgedb/BridgeDb/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/bridgedb/BridgeDb/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/bridgedb/BridgeDb/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/bridgedb/BridgeDb/merges",
+                "archive_url": "https://api.github.com/repos/bridgedb/BridgeDb/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/bridgedb/BridgeDb/downloads",
+                "issues_url": "https://api.github.com/repos/bridgedb/BridgeDb/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/bridgedb/BridgeDb/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/bridgedb/BridgeDb/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/bridgedb/BridgeDb/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/bridgedb/BridgeDb/labels{/name}",
+                "releases_url": "https://api.github.com/repos/bridgedb/BridgeDb/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/bridgedb/BridgeDb/deployments",
+                "created_at": "2013-10-28T11:15:16Z",
+                "updated_at": "2026-04-28T02:46:23Z",
+                "pushed_at": "2026-03-21T09:52:33Z",
+                "git_url": "git://github.com/bridgedb/BridgeDb.git",
+                "ssh_url": "git@github.com:bridgedb/BridgeDb.git",
+                "clone_url": "https://github.com/bridgedb/BridgeDb.git",
+                "svn_url": "https://github.com/bridgedb/BridgeDb",
+                "homepage": "https://bridgedb.org/",
+                "size": 34444,
+                "stargazers_count": 36,
+                "watchers_count": 36,
+                "language": "Java",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 22,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 37,
+                "license": {
+                    "key": "apache-2.0",
+                    "name": "Apache License 2.0",
+                    "spdx_id": "Apache-2.0",
+                    "url": "https://api.github.com/licenses/apache-2.0",
+                    "node_id": "MDc6TGljZW5zZTI="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "bioinformatics",
+                    "bridgedb",
+                    "database",
+                    "hacktoberfest",
+                    "identifier-mapping",
+                    "java",
+                    "mysql-backend",
+                    "uri"
+                ],
+                "visibility": "public",
+                "forks": 22,
+                "open_issues": 37,
+                "watchers": 36,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "bridgedb",
+                    "id": 5793302,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjU3OTMzMDI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/5793302?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/bridgedb",
+                    "html_url": "https://github.com/bridgedb",
+                    "followers_url": "https://api.github.com/users/bridgedb/followers",
+                    "following_url": "https://api.github.com/users/bridgedb/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/bridgedb/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/bridgedb/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/bridgedb/subscriptions",
+                    "organizations_url": "https://api.github.com/users/bridgedb/orgs",
+                    "repos_url": "https://api.github.com/users/bridgedb/repos",
+                    "events_url": "https://api.github.com/users/bridgedb/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/bridgedb/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 22,
+                "subscribers_count": 9
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "LOCATION_NOTES.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "UPGRADE_NOTES.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "batchmapper.bat",
+                    "type": "blob"
+                },
+                {
+                    "path": "batchmapper.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "benchmarking",
+                    "type": "tree"
+                },
+                {
+                    "path": "bridgedb-java.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "contrib",
+                    "type": "tree"
+                },
+                {
+                    "path": "dbbuilder",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "examples",
+                    "type": "tree"
+                },
+                {
+                    "path": "info.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "isOSGi.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "metric.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "mysqlConfig.sql",
+                    "type": "blob"
+                },
+                {
+                    "path": "org.bridgedb.bio",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.gui",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.rdb.construct",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.rdb",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.rdf",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.sql",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.tools.batchmapper",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.tools.info",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.tools.qc",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.tools.voidtool",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.api",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.loader",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.sql",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.ws.client",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.ws.core",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.uri.ws.server",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.utils",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.webservice.biomart",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.webservice.bridgerest",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.ws.client",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.ws.core",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb.ws.server",
+                    "type": "tree"
+                },
+                {
+                    "path": "org.bridgedb",
+                    "type": "tree"
+                },
+                {
+                    "path": "pom-java8.xml",
+                    "type": "blob"
+                },
+                {
+                    "path": "pom.xml",
+                    "type": "blob"
+                },
+                {
+                    "path": "qc.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "start-server-derby.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "start-server.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "start-server2.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "test-data",
+                    "type": "tree"
+                },
+                {
+                    "path": "voidtool.sh",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "egonw",
+                    "contributions": 599
+                },
+                {
+                    "login": "Christian-B",
+                    "contributions": 476
+                },
+                {
+                    "login": "m4na5",
+                    "contributions": 156
+                },
+                {
+                    "login": "stain",
+                    "contributions": 109
+                },
+                {
+                    "login": "ariutta",
+                    "contributions": 42
+                },
+                {
+                    "login": "hbasaric",
+                    "contributions": 27
+                },
+                {
+                    "login": "AlexanderPico",
+                    "contributions": 17
+                },
+                {
+                    "login": "DeniseSl22",
+                    "contributions": 17
+                },
+                {
+                    "login": "ianwdunlop",
+                    "contributions": 14
+                },
+                {
+                    "login": "nunogit",
+                    "contributions": 13
+                },
+                {
+                    "login": "randykerber",
+                    "contributions": 10
+                },
+                {
+                    "login": "youphendriks",
+                    "contributions": 9
+                },
+                {
+                    "login": "jenkins-mygrid",
+                    "contributions": 4
+                },
+                {
+                    "login": "marvinm2",
+                    "contributions": 2
+                },
+                {
+                    "login": "dependabot[bot]",
+                    "contributions": 2
+                },
+                {
+                    "login": "JonathanMELIUS",
+                    "contributions": 2
+                },
+                {
+                    "login": "mkutmon",
+                    "contributions": 2
+                },
+                {
+                    "login": "fehrhart",
+                    "contributions": 1
+                },
+                {
+                    "login": "tabbassidaloii",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 256,
+                    "title": "doesn't compile with a recent Maven",
+                    "created_at": "2025-07-06T05:33:16Z",
+                    "closed_at": "2025-07-28T20:30:01Z"
+                },
+                {
+                    "number": 248,
+                    "title": "request for adding this species: Rosmarinus officinalis",
+                    "created_at": "2024-09-19T05:13:32Z",
+                    "closed_at": "2024-10-15T10:19:08Z"
+                },
+                {
+                    "number": 245,
+                    "title": "Java8 compile fail",
+                    "created_at": "2024-07-25T11:02:25Z",
+                    "closed_at": "2024-07-25T11:30:40Z"
+                },
+                {
+                    "number": 244,
+                    "title": "request for adding this species: Solanum tuberosum",
+                    "created_at": "2024-07-17T10:49:49Z",
+                    "closed_at": "2024-07-25T18:51:16Z"
+                },
+                {
+                    "number": 242,
+                    "title": "Update nodejs",
+                    "created_at": "2024-04-08T13:49:16Z",
+                    "closed_at": "2024-04-08T15:16:18Z"
+                },
+                {
+                    "number": 240,
+                    "title": "wrong Xref from Bioregistry compact identifier",
+                    "created_at": "2024-03-13T20:15:18Z",
+                    "closed_at": "2024-04-08T15:16:34Z"
+                },
+                {
+                    "number": 234,
+                    "title": "subdomain has been hacked?",
+                    "created_at": "2023-12-15T08:26:44Z",
+                    "closed_at": "2023-12-15T20:32:30Z"
+                },
+                {
+                    "number": 228,
+                    "title": "Release BridgeDb Java with the new UniProtKB full name",
+                    "created_at": "2023-10-09T06:36:30Z",
+                    "closed_at": "2023-11-05T13:05:26Z"
+                },
+                {
+                    "number": 226,
+                    "title": "Update the BridgeDb Java code to match the new tests",
+                    "created_at": "2023-08-17T07:46:54Z",
+                    "closed_at": "2023-10-08T19:58:50Z"
+                },
+                {
+                    "number": 225,
+                    "title": "Write the BridgeDb java unit tests",
+                    "created_at": "2023-08-17T07:46:48Z",
+                    "closed_at": "2023-10-08T19:57:33Z"
+                },
+                {
+                    "number": 224,
+                    "title": "Define the expected BridgeDb Java behavior",
+                    "created_at": "2023-08-17T07:46:41Z",
+                    "closed_at": "2023-10-08T19:56:00Z"
+                },
+                {
+                    "number": 221,
+                    "title": "counting primary and secondary identifiers in the QC is ridiculously slow",
+                    "created_at": "2023-08-04T08:01:30Z",
+                    "closed_at": "2023-08-07T10:58:13Z"
+                },
+                {
+                    "number": 220,
+                    "title": "QC fails when comparing a schema 3 with a schema 4 database",
+                    "created_at": "2023-08-04T08:00:53Z",
+                    "closed_at": "2023-08-07T08:21:02Z"
+                },
+                {
+                    "number": 217,
+                    "title": "we want more sheep",
+                    "created_at": "2023-02-14T08:07:57Z",
+                    "closed_at": "2023-02-24T18:00:13Z"
+                },
+                {
+                    "number": 215,
+                    "title": "Bug: getBioregistryIdentifier() issue with Chebi identifiers",
+                    "created_at": "2022-10-04T06:20:02Z",
+                    "closed_at": "2022-10-15T17:47:33Z"
+                },
+                {
+                    "number": 214,
+                    "title": "AbstractResolverTest.java class",
+                    "created_at": "2022-07-19T12:40:00Z",
+                    "closed_at": "2023-09-26T09:41:50Z"
+                },
+                {
+                    "number": 211,
+                    "title": "JavaDoc errors when compiling with Java 17",
+                    "created_at": "2022-07-14T06:19:21Z",
+                    "closed_at": "2022-07-19T11:46:41Z"
+                },
+                {
+                    "number": 207,
+                    "title": "Update to client driver derby #nwobridgedb",
+                    "created_at": "2022-07-08T14:49:44Z",
+                    "closed_at": "2022-07-19T10:41:46Z"
+                },
+                {
+                    "number": 203,
+                    "title": "upgrade openrdf to rdf4j",
+                    "created_at": "2022-06-25T17:03:05Z",
+                    "closed_at": "2022-07-19T06:42:20Z"
+                },
+                {
+                    "number": 200,
+                    "title": "Move new plugin repositories from hbasaric to bridgedb github",
+                    "created_at": "2022-04-21T14:01:05Z",
+                    "closed_at": "2022-05-28T13:03:35Z"
+                },
+                {
+                    "number": 199,
+                    "title": "Move webservice plugins to separate repositories",
+                    "created_at": "2022-04-21T08:45:55Z",
+                    "closed_at": "2022-05-28T13:03:50Z"
+                },
+                {
+                    "number": 187,
+                    "title": "put a small test Derby file in the repo",
+                    "created_at": "2022-03-29T11:18:00Z",
+                    "closed_at": "2022-03-29T12:02:00Z"
+                },
+                {
+                    "number": 185,
+                    "title": "Derby database loading feature",
+                    "created_at": "2022-03-18T10:46:42Z",
+                    "closed_at": "2022-08-01T07:26:10Z"
+                },
+                {
+                    "number": 184,
+                    "title": "Fix bug in DataSourceRegisterTest.java testing class",
+                    "created_at": "2022-03-11T09:26:35Z",
+                    "closed_at": "2022-08-01T07:25:04Z"
+                },
+                {
+                    "number": 173,
+                    "title": "get OSGi bundles to be uploaded to Maven Central",
+                    "created_at": "2021-12-03T06:20:35Z",
+                    "closed_at": "2021-12-07T17:34:17Z"
+                },
+                {
+                    "number": 172,
+                    "title": "report the provenance of the compared files",
+                    "created_at": "2021-11-23T07:27:02Z",
+                    "closed_at": "2021-12-07T20:06:20Z"
+                },
+                {
+                    "number": 171,
+                    "title": "write Software Management Plan",
+                    "created_at": "2021-10-26T06:43:40Z",
+                    "closed_at": "2023-04-29T19:13:48Z"
+                },
+                {
+                    "number": 168,
+                    "title": "Function to get Prefix for Datasource",
+                    "created_at": "2021-04-29T08:43:47Z",
+                    "closed_at": "2021-04-29T14:57:44Z"
+                },
+                {
+                    "number": 160,
+                    "title": "Add contact details to the BridgeDb website",
+                    "created_at": "2020-12-15T14:30:50Z",
+                    "closed_at": "2020-12-15T15:32:56Z"
+                },
+                {
+                    "number": 157,
+                    "title": "add Organism.Unspecified",
+                    "created_at": "2020-10-14T18:39:08Z",
+                    "closed_at": "2020-10-15T12:08:50Z"
+                },
+                {
+                    "number": 154,
+                    "title": "Test BridgeDb 3.0 with downstream projects",
+                    "created_at": "2020-08-22T10:12:37Z",
+                    "closed_at": "2020-11-28T16:25:34Z"
+                },
+                {
+                    "number": 153,
+                    "title": "update the Scholia URL pattern",
+                    "created_at": "2020-06-08T16:40:45Z",
+                    "closed_at": "2020-08-09T12:57:44Z"
+                },
+                {
+                    "number": 152,
+                    "title": "add support for Guide to Pharmacology target identifiers",
+                    "created_at": "2020-05-17T19:30:34Z",
+                    "closed_at": "2020-06-02T05:44:47Z"
+                },
+                {
+                    "number": 151,
+                    "title": "BridgeDb not working in Cytoscape 3.8.0?",
+                    "created_at": "2020-04-20T13:42:18Z",
+                    "closed_at": "2020-11-22T21:58:27Z"
+                },
+                {
+                    "number": 145,
+                    "title": "datasources.tsv and other TSV files",
+                    "created_at": "2019-12-17T17:22:13Z",
+                    "closed_at": "2020-08-12T05:52:58Z"
+                },
+                {
+                    "number": 144,
+                    "title": "datasource.txt uses wrong WikiPathways URL scheme",
+                    "created_at": "2019-12-11T19:23:26Z",
+                    "closed_at": "2019-12-14T05:54:21Z"
+                },
+                {
+                    "number": 141,
+                    "title": "Dig up /xrefBatch/ code",
+                    "created_at": "2019-11-11T06:47:05Z",
+                    "closed_at": "2019-11-14T10:30:23Z"
+                },
+                {
+                    "number": 140,
+                    "title": "Backport Batch.java to 2.3",
+                    "created_at": "2019-11-05T15:34:56Z",
+                    "closed_at": "2019-11-14T10:31:18Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Update the BridgeDb webservice to 2.3.4",
+                    "created_at": "2019-11-05T10:53:06Z",
+                    "closed_at": "2019-12-02T18:15:43Z"
+                },
+                {
+                    "number": 138,
+                    "title": "Have BridgeDb webservice start in daemon mode by default",
+                    "created_at": "2019-11-04T13:25:12Z",
+                    "closed_at": "2023-04-29T19:15:42Z"
+                },
+                {
+                    "number": 137,
+                    "title": "xrefsBatch broken",
+                    "created_at": "2019-11-02T18:06:34Z",
+                    "closed_at": "2019-11-03T12:25:42Z"
+                },
+                {
+                    "number": 136,
+                    "title": "release QC on Maven Central",
+                    "created_at": "2019-09-12T12:08:14Z",
+                    "closed_at": "2019-09-12T12:13:20Z"
+                },
+                {
+                    "number": 135,
+                    "title": "Support for Compact Identifiers in the webservice API",
+                    "created_at": "2019-08-26T12:21:36Z",
+                    "closed_at": "2019-11-05T10:55:07Z"
+                },
+                {
+                    "number": 134,
+                    "title": "Support for Compact Identifiers in the library API",
+                    "created_at": "2019-08-26T12:20:51Z",
+                    "closed_at": "2020-08-16T12:35:13Z"
+                },
+                {
+                    "number": 133,
+                    "title": "Support for Compact Identifiers",
+                    "created_at": "2019-08-26T12:18:48Z",
+                    "closed_at": "2020-08-16T12:33:08Z"
+                },
+                {
+                    "number": 132,
+                    "title": "QC doesn't run: NoClassDefFoundError",
+                    "created_at": "2019-08-15T11:26:48Z",
+                    "closed_at": "2020-08-22T18:30:46Z"
+                },
+                {
+                    "number": 129,
+                    "title": "unit test should not use equals on classes",
+                    "created_at": "2019-07-24T11:06:31Z",
+                    "closed_at": "2019-08-17T10:45:38Z"
+                },
+                {
+                    "number": 126,
+                    "title": "QC tool should not throw an exception for older Derby files",
+                    "created_at": "2019-07-20T13:58:58Z",
+                    "closed_at": "2019-08-22T20:51:09Z"
+                },
+                {
+                    "number": 123,
+                    "title": "use JUnit @Tag for tests that depend on MySQL",
+                    "created_at": "2019-07-09T09:20:23Z",
+                    "closed_at": "2019-07-25T13:09:03Z"
+                },
+                {
+                    "number": 121,
+                    "title": "add CITATION.cff",
+                    "created_at": "2019-07-07T13:39:37Z",
+                    "closed_at": "2019-07-14T09:10:54Z"
+                },
+                {
+                    "number": 115,
+                    "title": "upgrade the test suite to JUnit5",
+                    "created_at": "2019-06-08T11:33:55Z",
+                    "closed_at": "2019-06-10T18:03:14Z"
+                },
+                {
+                    "number": 113,
+                    "title": "Check Jenkins; There are jobs failing consistently",
+                    "created_at": "2019-06-07T11:13:42Z",
+                    "closed_at": "2019-06-08T08:05:20Z"
+                },
+                {
+                    "number": 112,
+                    "title": "Datasources.txt, issues loading latest data",
+                    "created_at": "2019-06-06T12:06:16Z",
+                    "closed_at": "2019-06-08T12:20:03Z"
+                },
+                {
+                    "number": 110,
+                    "title": "QC tool should throws a warning for unchanged provenance",
+                    "created_at": "2019-05-27T15:57:21Z",
+                    "closed_at": "2021-12-07T20:07:23Z"
+                },
+                {
+                    "number": 105,
+                    "title": "SNP bridgeDb - discussion",
+                    "created_at": "2019-05-17T07:30:05Z",
+                    "closed_at": "2019-07-08T06:16:02Z"
+                },
+                {
+                    "number": 167,
+                    "title": "have GdbConstructImpl3.createGdbIndices() report what it's doing when Exceptions happen internally",
+                    "created_at": "2019-05-17T06:08:43Z",
+                    "closed_at": "2023-04-28T14:00:17Z"
+                },
+                {
+                    "number": 103,
+                    "title": "restore binary downloads from Download page",
+                    "created_at": "2019-05-15T10:58:55Z",
+                    "closed_at": "2019-05-26T14:20:32Z"
+                },
+                {
+                    "number": 102,
+                    "title": "add link to Maven Central on Download webpage",
+                    "created_at": "2019-05-15T10:58:17Z",
+                    "closed_at": "2019-05-19T08:04:28Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Disease BridgeDb",
+                    "created_at": "2019-05-14T12:42:00Z",
+                    "closed_at": "2023-04-29T19:16:41Z"
+                },
+                {
+                    "number": 96,
+                    "title": "Update QC for IUPHAR (Guide to Pharmacology)",
+                    "created_at": "2019-04-15T15:32:07Z",
+                    "closed_at": "2019-04-27T15:08:19Z"
+                },
+                {
+                    "number": 94,
+                    "title": "Add bridgedb library version to GET /{organism}/properties",
+                    "created_at": "2019-04-01T15:43:01Z",
+                    "closed_at": "2019-11-12T08:39:51Z"
+                },
+                {
+                    "number": 93,
+                    "title": "Install latest bridgedb databases in new server",
+                    "created_at": "2019-03-28T23:11:12Z",
+                    "closed_at": "2019-11-05T10:56:14Z"
+                },
+                {
+                    "number": 92,
+                    "title": "Metabolite query gives 502 error",
+                    "created_at": "2019-03-27T14:40:02Z",
+                    "closed_at": "2019-03-28T23:09:46Z"
+                },
+                {
+                    "number": 91,
+                    "title": "New HMDb IDs are not recognised",
+                    "created_at": "2019-03-27T14:37:15Z",
+                    "closed_at": "2019-03-28T23:10:23Z"
+                },
+                {
+                    "number": 90,
+                    "title": "Build org.bridgedb.tools.qc from regular build",
+                    "created_at": "2019-02-28T08:45:37Z",
+                    "closed_at": "2020-08-12T05:42:47Z"
+                },
+                {
+                    "number": 87,
+                    "title": "Add IUPHAR ID for mapping purposes in datasources.txt",
+                    "created_at": "2019-02-04T11:40:57Z",
+                    "closed_at": "2019-02-04T13:49:56Z"
+                },
+                {
+                    "number": 84,
+                    "title": "Link out to GeneWiki",
+                    "created_at": "2018-12-20T11:26:25Z",
+                    "closed_at": "2019-02-12T17:31:38Z"
+                },
+                {
+                    "number": 83,
+                    "title": "support Compact Identifiers as webservice output",
+                    "created_at": "2018-12-14T06:10:51Z",
+                    "closed_at": "2023-04-29T19:17:10Z"
+                },
+                {
+                    "number": 80,
+                    "title": "set up advisory board",
+                    "created_at": "2018-11-22T12:26:15Z",
+                    "closed_at": "2019-11-05T10:55:54Z"
+                },
+                {
+                    "number": 79,
+                    "title": "Does not compile with (Open)JDK 11",
+                    "created_at": "2018-10-17T17:44:10Z",
+                    "closed_at": "2019-02-25T19:49:06Z"
+                },
+                {
+                    "number": 78,
+                    "title": "set up a SAB",
+                    "created_at": "2018-07-12T08:07:59Z",
+                    "closed_at": "2018-07-15T08:38:59Z"
+                },
+                {
+                    "number": 77,
+                    "title": "Broken link",
+                    "created_at": "2018-06-25T18:54:17Z",
+                    "closed_at": "2019-02-26T09:57:47Z"
+                },
+                {
+                    "number": 76,
+                    "title": "Linkout miBase is not up to date",
+                    "created_at": "2018-05-24T15:52:47Z",
+                    "closed_at": "2019-11-12T12:52:35Z"
+                },
+                {
+                    "number": 74,
+                    "title": "New webservice API call - GetWebserviceProperties",
+                    "created_at": "2018-04-23T09:02:22Z",
+                    "closed_at": "2023-04-29T19:18:12Z"
+                },
+                {
+                    "number": 73,
+                    "title": "check website with list of system codes and make sure DSSTox and other new metabolite data sources are there",
+                    "created_at": "2018-04-23T07:15:02Z",
+                    "closed_at": "2018-09-15T06:36:28Z"
+                },
+                {
+                    "number": 71,
+                    "title": "Change the default opening page on the library",
+                    "created_at": "2018-03-28T21:40:26Z",
+                    "closed_at": "2018-04-09T06:20:57Z"
+                },
+                {
+                    "number": 70,
+                    "title": "Swagger on BridgeDb docker image",
+                    "created_at": "2018-03-28T15:10:52Z",
+                    "closed_at": "2019-11-05T15:38:19Z"
+                },
+                {
+                    "number": 69,
+                    "title": "Re-routing to non-existing url",
+                    "created_at": "2018-03-28T15:06:32Z",
+                    "closed_at": "2018-04-09T06:36:40Z"
+                },
+                {
+                    "number": 67,
+                    "title": "more than one datasource with \"urn:miriam:uniprot\" is causing trouble",
+                    "created_at": "2018-02-05T14:50:42Z",
+                    "closed_at": "2018-03-31T15:19:40Z"
+                },
+                {
+                    "number": 66,
+                    "title": "datasources.txt Uniprot identifiers causes IMS to fail",
+                    "created_at": "2018-01-17T11:04:20Z",
+                    "closed_at": "2018-03-31T15:19:17Z"
+                },
+                {
+                    "number": 61,
+                    "title": "linkset paths wrong for ensembl mus musculus",
+                    "created_at": "2017-11-24T15:59:40Z",
+                    "closed_at": "2018-02-05T14:23:12Z"
+                },
+                {
+                    "number": 59,
+                    "title": "introduce API for \"secondary\" identifiers",
+                    "created_at": "2017-10-21T09:08:15Z",
+                    "closed_at": "2020-08-16T18:14:27Z"
+                },
+                {
+                    "number": 58,
+                    "title": "IMS link set build failing",
+                    "created_at": "2017-10-18T21:38:43Z",
+                    "closed_at": "2018-03-31T15:19:04Z"
+                },
+                {
+                    "number": 54,
+                    "title": "check matching of new HMDB identifiers",
+                    "created_at": "2017-09-04T08:12:26Z",
+                    "closed_at": "2017-09-08T18:51:15Z"
+                },
+                {
+                    "number": 52,
+                    "title": "IDMapperUniprot does not follow relative redirects",
+                    "created_at": "2017-08-29T13:24:54Z",
+                    "closed_at": "2017-08-29T13:35:24Z"
+                },
+                {
+                    "number": 51,
+                    "title": "PubChem Substance needs to be secondary source",
+                    "created_at": "2017-08-21T14:53:19Z",
+                    "closed_at": "2017-09-03T14:25:40Z"
+                },
+                {
+                    "number": 50,
+                    "title": "Wikidata is primary source",
+                    "created_at": "2017-08-21T14:52:49Z",
+                    "closed_at": "2017-08-22T14:42:33Z"
+                },
+                {
+                    "number": 49,
+                    "title": "Webservice not working.",
+                    "created_at": "2017-07-28T10:21:25Z",
+                    "closed_at": "2017-08-26T21:47:53Z"
+                },
+                {
+                    "number": 47,
+                    "title": "add new data sources to datasources.txt",
+                    "created_at": "2017-07-04T07:17:39Z",
+                    "closed_at": "2017-07-11T06:16:24Z"
+                },
+                {
+                    "number": 45,
+                    "title": "idRegexPattern for RefSeq missing \"WP\" prefix",
+                    "created_at": "2017-05-20T13:18:14Z",
+                    "closed_at": "2017-05-20T13:55:27Z"
+                },
+                {
+                    "number": 43,
+                    "title": "Need new hasUriPattern for Uniprot to Ensembl Linkset.",
+                    "created_at": "2017-05-16T16:11:30Z",
+                    "closed_at": "2017-05-20T14:12:27Z"
+                },
+                {
+                    "number": 42,
+                    "title": "summarize the total number of identifiers and the total number of mappings",
+                    "created_at": "2017-04-28T13:24:40Z",
+                    "closed_at": "2017-06-22T09:18:44Z"
+                },
+                {
+                    "number": 41,
+                    "title": "Bump version to -SNAPSHOT",
+                    "created_at": "2017-01-09T14:15:15Z",
+                    "closed_at": "2017-06-22T09:18:57Z"
+                },
+                {
+                    "number": 36,
+                    "title": "webservice: `search` vs. `freeSearch` vs. `attributeSearch`",
+                    "created_at": "2016-12-01T18:34:48Z",
+                    "closed_at": "2016-12-06T19:03:14Z"
+                },
+                {
+                    "number": 35,
+                    "title": "missing probe identifiers?",
+                    "created_at": "2016-11-18T08:19:38Z",
+                    "closed_at": "2016-11-18T12:26:33Z"
+                },
+                {
+                    "number": 32,
+                    "title": "Replace onejar plugin",
+                    "created_at": "2016-09-26T09:32:20Z",
+                    "closed_at": "2017-07-11T04:57:03Z"
+                },
+                {
+                    "number": 31,
+                    "title": "data.bridgedb.org",
+                    "created_at": "2016-09-20T21:20:34Z",
+                    "closed_at": "2024-07-25T11:45:27Z"
+                },
+                {
+                    "number": 30,
+                    "title": "Maven-created jars are not compatible with PathVisio",
+                    "created_at": "2016-09-15T10:07:59Z",
+                    "closed_at": "2020-08-16T15:30:24Z"
+                },
+                {
+                    "number": 29,
+                    "title": "loading of databases should be more permissive with system codes from Derby files",
+                    "created_at": "2016-08-08T10:23:19Z",
+                    "closed_at": "2017-07-12T08:55:35Z"
+                },
+                {
+                    "number": 27,
+                    "title": "LIPID MAPS link out URL pattern is outdated",
+                    "created_at": "2016-01-16T08:33:52Z",
+                    "closed_at": "2017-07-11T04:53:33Z"
+                },
+                {
+                    "number": 26,
+                    "title": "add the Brachypodium distachyon organism",
+                    "created_at": "2015-12-20T08:46:02Z",
+                    "closed_at": "2018-03-01T19:41:47Z"
+                },
+                {
+                    "number": 24,
+                    "title": "Remove Ant as build system",
+                    "created_at": "2015-12-12T14:09:39Z",
+                    "closed_at": "2020-08-16T15:29:40Z"
+                },
+                {
+                    "number": 22,
+                    "title": "versions",
+                    "created_at": "2015-12-11T16:56:48Z",
+                    "closed_at": "2015-12-12T12:03:53Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Mismatches between datasources_headers.txt and BridgeDb vocab",
+                    "created_at": "2015-10-01T18:41:11Z",
+                    "closed_at": "2016-08-13T00:05:00Z"
+                },
+                {
+                    "number": 17,
+                    "title": "SwissProt and TrEMBL vs. UniProt Knowledgebase",
+                    "created_at": "2015-10-01T18:32:01Z",
+                    "closed_at": "2018-03-31T15:16:47Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Fix unigene URI pattern for organism+clusterId",
+                    "created_at": "2015-07-31T09:05:40Z",
+                    "closed_at": "2015-08-04T15:01:36Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Where is the BridgeDB ontology?",
+                    "created_at": "2015-07-27T16:04:26Z",
+                    "closed_at": "2015-10-01T18:27:07Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Grameen Arabidopsis -> Gramene Arabidopsis",
+                    "created_at": "2015-07-08T21:33:36Z",
+                    "closed_at": "2015-12-12T13:48:13Z"
+                }
+            ],
+            "languages": {
+                "Java": 1860234,
+                "Perl": 141309,
+                "Shell": 25004,
+                "CSS": 17388,
+                "Raku": 2369,
+                "HTML": 2283,
+                "R": 1959,
+                "Batchfile": 52
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/1471-2105-11-5",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "20047655",
+                            "source": "MED",
+                            "pmid": "20047655",
+                            "pmcid": "PMC2824678",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC2824678"
+                                ]
+                            },
+                            "doi": "10.1186/1471-2105-11-5",
+                            "title": "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services.",
+                            "authorString": "van Iersel MP, Pico AR, Kelder T, Gao J, Ho I, Hanspers K, Conklin BR, Evelo CT.",
+                            "journalTitle": "BMC Bioinformatics",
+                            "journalVolume": "11",
+                            "pubYear": "2010",
+                            "journalIssn": "1471-2105",
+                            "pageInfo": "5",
+                            "pubType": "product-review; research support, non-u.s. gov't; journal article; research support, n.i.h., extramural",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 124,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "uniprot"
+                                ]
+                            },
+                            "firstIndexDate": "2010-09-29",
+                            "firstPublicationDate": "2010-01-04"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2120680184",
+                "doi": "https://doi.org/10.1186/1471-2105-11-5",
+                "title": "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services",
+                "display_name": "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services",
+                "publication_year": 2010,
+                "publication_date": "2010-01-04",
+                "ids": {
+                    "openalex": "https://openalex.org/W2120680184",
+                    "doi": "https://doi.org/10.1186/1471-2105-11-5",
+                    "mag": "2120680184",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/20047655"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/1471-2105-11-5",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/1471-2105-11-5",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-11-5",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "datacite",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-11-5",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5058353197",
+                            "display_name": "Martijn van Iersel",
+                            "orcid": "https://orcid.org/0000-0002-5877-4338"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Martijn P van Iersel",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics-BiGCaT, Maastricht University, Maastricht, the Netherlands. martijn.vaniersel@bigcat.unimaas.nl",
+                            "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics-BiGCaT, Maastricht University, Maastricht, the Netherlands. martijn.vaniersel@bigcat.unimaas.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5070456387",
+                            "display_name": "Alexander R. Pico",
+                            "orcid": "https://orcid.org/0000-0001-5706-2163"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alexander R Pico",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5036590063",
+                            "display_name": "Thomas Kelder",
+                            "orcid": "https://orcid.org/0000-0002-5311-2247"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Thomas Kelder",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5014978419",
+                            "display_name": "Jianjiong Gao",
+                            "orcid": "https://orcid.org/0000-0002-5739-1781"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I76835614",
+                                "display_name": "University of Missouri",
+                                "ror": "https://ror.org/02ymw8z06",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I76835614"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jianjiong Gao",
+                        "raw_affiliation_strings": [
+                            "Department of Computer Science, University of Missouri, Columbia, MO, 65201, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Computer Science, University of Missouri, Columbia, MO, 65201, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I76835614"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039785034",
+                            "display_name": "Isaac Ho",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Isaac Ho",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5063972221",
+                            "display_name": "Kristina Hanspers",
+                            "orcid": "https://orcid.org/0000-0001-5410-599X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kristina Hanspers",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5051428406",
+                            "display_name": "Bruce R. Conklin",
+                            "orcid": "https://orcid.org/0000-0003-1463-6061"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I180670191",
+                                "display_name": "University of California, San Francisco",
+                                "ror": "https://ror.org/043mz5j54",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I180670191"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Bruce R Conklin",
+                        "raw_affiliation_strings": [
+                            "Departments of Medicine and Cellular and Molecular Pharmacology, University of California San Francisco, CA, 94143, USA",
+                            "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Departments of Medicine and Cellular and Molecular Pharmacology, University of California San Francisco, CA, 94143, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I180670191"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Gladstone Institute of Cardiovascular Disease, San Francisco, CA, 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5075750072",
+                            "display_name": "Chris T. Evelo",
+                            "orcid": "https://orcid.org/0000-0002-5301-3142"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Chris T Evelo",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, Maastricht University, Maastricht, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 8,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5058353197"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I34352273"
+                ],
+                "apc_list": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "apc_paid": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "fwci": 6.3972,
+                "has_fulltext": true,
+                "cited_by_count": 236,
+                "citation_normalized_percentile": {
+                    "value": 0.97437483,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 98,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "11",
+                    "issue": "1",
+                    "first_page": "5",
+                    "last_page": "5"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10885",
+                    "display_name": "Gene expression and cancer classification",
+                    "score": 0.5008000135421753,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10885",
+                        "display_name": "Gene expression and cancer classification",
+                        "score": 0.5008000135421753,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10887",
+                        "display_name": "Bioinformatics and Genomic Networks",
+                        "score": 0.2433999925851822,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11710",
+                        "display_name": "Biomedical Text Mining and Ontologies",
+                        "score": 0.04190000146627426,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/identifier",
+                        "display_name": "Identifier",
+                        "score": 0.830536961555481
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.6923364996910095
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/personalization",
+                        "display_name": "Personalization",
+                        "score": 0.5212174654006958
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/service",
+                        "display_name": "Service (business)",
+                        "score": 0.4983949661254883
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interface",
+                        "display_name": "Interface (matter)",
+                        "score": 0.4836519956588745
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/web-service",
+                        "display_name": "Web service",
+                        "score": 0.4688006043434143
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.45722854137420654
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/flexibility",
+                        "display_name": "Flexibility (engineering)",
+                        "score": 0.4470057487487793
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.43951404094696045
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interoperability",
+                        "display_name": "Interoperability",
+                        "score": 0.421709269285202
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/world-wide-web",
+                        "display_name": "World Wide Web",
+                        "score": 0.30160748958587646
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.12147429585456848
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C154504017",
+                        "wikidata": "https://www.wikidata.org/wiki/Q853614",
+                        "display_name": "Identifier",
+                        "level": 2,
+                        "score": 0.830536961555481
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6923364996910095
+                    },
+                    {
+                        "id": "https://openalex.org/C183003079",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1000371",
+                        "display_name": "Personalization",
+                        "level": 2,
+                        "score": 0.5212174654006958
+                    },
+                    {
+                        "id": "https://openalex.org/C2780378061",
+                        "wikidata": "https://www.wikidata.org/wiki/Q25351891",
+                        "display_name": "Service (business)",
+                        "level": 2,
+                        "score": 0.4983949661254883
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.4836519956588745
+                    },
+                    {
+                        "id": "https://openalex.org/C35578498",
+                        "wikidata": "https://www.wikidata.org/wiki/Q193424",
+                        "display_name": "Web service",
+                        "level": 2,
+                        "score": 0.4688006043434143
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.45722854137420654
+                    },
+                    {
+                        "id": "https://openalex.org/C2780598303",
+                        "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+                        "display_name": "Flexibility (engineering)",
+                        "level": 2,
+                        "score": 0.4470057487487793
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.43951404094696045
+                    },
+                    {
+                        "id": "https://openalex.org/C20136886",
+                        "wikidata": "https://www.wikidata.org/wiki/Q749647",
+                        "display_name": "Interoperability",
+                        "level": 2,
+                        "score": 0.421709269285202
+                    },
+                    {
+                        "id": "https://openalex.org/C136764020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466",
+                        "display_name": "World Wide Web",
+                        "level": 1,
+                        "score": 0.30160748958587646
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.12147429585456848
+                    },
+                    {
+                        "id": "https://openalex.org/C136264566",
+                        "wikidata": "https://www.wikidata.org/wiki/Q159810",
+                        "display_name": "Economy",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C162324750",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8134",
+                        "display_name": "Economics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C105795698",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12483",
+                        "display_name": "Statistics",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C157915830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+                        "display_name": "Bubble",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C33923547",
+                        "wikidata": "https://www.wikidata.org/wiki/Q395",
+                        "display_name": "Mathematics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C129307140",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+                        "display_name": "Maximum bubble pressure method",
+                        "level": 3,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014584",
+                        "descriptor_name": "User-Computer Interface",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D014584",
+                        "descriptor_name": "User-Computer Interface",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D014584",
+                        "descriptor_name": "User-Computer Interface",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020869",
+                        "descriptor_name": "Gene Expression Profiling",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020869",
+                        "descriptor_name": "Gene Expression Profiling",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020869",
+                        "descriptor_name": "Gene Expression Profiling",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/1471-2105-11-5",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/1471-2105-11-5",
+                        "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-11-5",
+                        "source": {
+                            "id": "https://openalex.org/S19032547",
+                            "display_name": "BMC Bioinformatics",
+                            "issn_l": "1471-2105",
+                            "issn": [
+                                "1471-2105"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:20047655",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/20047655",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC bioinformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire/f29665dd-6d2d-4472-9b6f-0307f3ae3360",
+                        "is_oa": true,
+                        "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/f29665dd-6d2d-4472-9b6f-0307f3ae3360",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402616",
+                            "display_name": "Research Publications (Maastricht University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I34352273",
+                            "host_organization_name": "Maastricht University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I34352273"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "van Iersel, M P, Pico, A R, Kelder, T A J, Gao, J, Ho, I, Hanspers, K, Conklin, B R & Evelo, C T A 2010, 'The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services', BMC Bioinformatics, vol. 11, 5. https://doi.org/10.1186/1471-2105-11-5",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:28eadf89d260446aaf24367a662ceca3",
+                        "is_oa": false,
+                        "landing_page_url": "https://doaj.org/article/28eadf89d260446aaf24367a662ceca3",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, Vol 11, Iss 1, p 5 (2010)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:escholarship.org/ark:/13030/qt7859w017",
+                        "is_oa": false,
+                        "landing_page_url": "https://escholarship.org/uc/item/7859w017",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400115",
+                            "display_name": "eScholarship (California Digital Library)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I2801248553",
+                            "host_organization_name": "California Digital Library",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I2801248553"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, vol 11, iss 1",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:2824678",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2824678",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:qt7859w017",
+                        "is_oa": false,
+                        "landing_page_url": "http://www.escholarship.org/uc/item/7859w017",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400115",
+                            "display_name": "eScholarship (California Digital Library)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I2801248553",
+                            "host_organization_name": "California Digital Library",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I2801248553"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "van Iersel, Martijn P; Pico, Alexander R; Kelder, Thomas; Gao, Jianjiong; Ho, Isaac; Hanspers, Kristina; \u00c2\u00a0et al.(2010). The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services. BMC Bioinformatics, 11(1), 5. doi: http://dx.doi.org/10.1186/1471-2105-11-5. Retrieved from: http://www.escholarship.org/uc/item/7859w017",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "doi:10.25504/fairsharing.5ry74y",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.25504/fairsharing.5ry74y",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S7407053452",
+                            "display_name": "FAIRsharing.org",
+                            "issn_l": null,
+                            "issn": [],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": null,
+                        "is_accepted": false,
+                        "is_published": null,
+                        "raw_source_name": null,
+                        "raw_type": "dataset"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/1471-2105-11-5",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/1471-2105-11-5",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-11-5",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.5099999904632568,
+                        "id": "https://metadata.un.org/sdg/9",
+                        "display_name": "Industry, innovation and infrastructure"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320325642",
+                        "display_name": "Transnationale Universiteit Limburg",
+                        "ror": null
+                    },
+                    {
+                        "id": "https://openalex.org/F4320328786",
+                        "display_name": "Norwegian Biodiversity Information Centre",
+                        "ror": "https://ror.org/04jnzhb65"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332161",
+                        "display_name": "National Institutes of Health",
+                        "ror": "https://ror.org/01cwqze88"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 17,
+                "referenced_works": [
+                    "https://openalex.org/W1869957243",
+                    "https://openalex.org/W1970594207",
+                    "https://openalex.org/W1979978607",
+                    "https://openalex.org/W1980160222",
+                    "https://openalex.org/W2010502047",
+                    "https://openalex.org/W2020561965",
+                    "https://openalex.org/W2106323366",
+                    "https://openalex.org/W2113555040",
+                    "https://openalex.org/W2120680184",
+                    "https://openalex.org/W2126664691",
+                    "https://openalex.org/W2146453000",
+                    "https://openalex.org/W2148115950",
+                    "https://openalex.org/W2156430848",
+                    "https://openalex.org/W2159675211",
+                    "https://openalex.org/W2162002323",
+                    "https://openalex.org/W2165681080",
+                    "https://openalex.org/W4210430020"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2093262417",
+                    "https://openalex.org/W2123131699",
+                    "https://openalex.org/W4378651134",
+                    "https://openalex.org/W913131694",
+                    "https://openalex.org/W650116260",
+                    "https://openalex.org/W2378329187",
+                    "https://openalex.org/W4390790060",
+                    "https://openalex.org/W1603423477",
+                    "https://openalex.org/W3209454962",
+                    "https://openalex.org/W1979633005"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Many": [
+                        1
+                    ],
+                    "complementary": [
+                        2
+                    ],
+                    "solutions": [
+                        3
+                    ],
+                    "are": [
+                        4
+                    ],
+                    "available": [
+                        5,
+                        173
+                    ],
+                    "for": [
+                        6,
+                        15,
+                        58,
+                        89,
+                        132
+                    ],
+                    "the": [
+                        7,
+                        128
+                    ],
+                    "identifier": [
+                        8,
+                        63,
+                        81,
+                        94,
+                        138
+                    ],
+                    "mapping": [
+                        9,
+                        27,
+                        30,
+                        48,
+                        82,
+                        118,
+                        139,
+                        156
+                    ],
+                    "problem.": [
+                        10
+                    ],
+                    "This": [
+                        11,
+                        39,
+                        65,
+                        84
+                    ],
+                    "creates": [
+                        12
+                    ],
+                    "an": [
+                        13,
+                        42
+                    ],
+                    "opportunity": [
+                        14
+                    ],
+                    "bioinformatics": [
+                        16,
+                        74,
+                        148,
+                        153
+                    ],
+                    "tool": [
+                        17,
+                        90
+                    ],
+                    "developers.": [
+                        18
+                    ],
+                    "Tools": [
+                        19
+                    ],
+                    "can": [
+                        20,
+                        76,
+                        98
+                    ],
+                    "be": [
+                        21,
+                        33,
+                        77,
+                        99
+                    ],
+                    "made": [
+                        22
+                    ],
+                    "to": [
+                        23,
+                        35,
+                        79,
+                        92,
+                        103,
+                        108,
+                        136
+                    ],
+                    "flexibly": [
+                        24
+                    ],
+                    "support": [
+                        25,
+                        93,
+                        104
+                    ],
+                    "multiple": [
+                        26
+                    ],
+                    "services": [
+                        28,
+                        31,
+                        97
+                    ],
+                    "or": [
+                        29,
+                        101,
+                        107
+                    ],
+                    "could": [
+                        32
+                    ],
+                    "combined": [
+                        34,
+                        100
+                    ],
+                    "get": [
+                        36
+                    ],
+                    "broader": [
+                        37
+                    ],
+                    "coverage.": [
+                        38
+                    ],
+                    "approach": [
+                        40,
+                        85
+                    ],
+                    "requires": [
+                        41
+                    ],
+                    "interface": [
+                        43,
+                        70
+                    ],
+                    "layer": [
+                        44,
+                        71
+                    ],
+                    "between": [
+                        45
+                    ],
+                    "tools": [
+                        46,
+                        75,
+                        154
+                    ],
+                    "and": [
+                        47,
+                        61,
+                        123,
+                        134,
+                        161,
+                        172
+                    ],
+                    "services.": [
+                        49,
+                        83
+                    ],
+                    "RESULTS:": [
+                        50
+                    ],
+                    "Here": [
+                        51
+                    ],
+                    "we": [
+                        52
+                    ],
+                    "present": [
+                        53
+                    ],
+                    "BridgeDb,": [
+                        54
+                    ],
+                    "a": [
+                        55,
+                        68
+                    ],
+                    "software": [
+                        56,
+                        168
+                    ],
+                    "framework": [
+                        57,
+                        66,
+                        129
+                    ],
+                    "gene,": [
+                        59
+                    ],
+                    "protein": [
+                        60
+                    ],
+                    "metabolite": [
+                        62
+                    ],
+                    "mapping.": [
+                        64,
+                        95
+                    ],
+                    "provides": [
+                        67,
+                        114
+                    ],
+                    "standardized": [
+                        69
+                    ],
+                    "through": [
+                        72
+                    ],
+                    "which": [
+                        73
+                    ],
+                    "connected": [
+                        78
+                    ],
+                    "different": [
+                        80
+                    ],
+                    "makes": [
+                        86
+                    ],
+                    "it": [
+                        87
+                    ],
+                    "easier": [
+                        88
+                    ],
+                    "developers": [
+                        91
+                    ],
+                    "Mapping": [
+                        96
+                    ],
+                    "merged": [
+                        102
+                    ],
+                    "multi-omics": [
+                        105
+                    ],
+                    "experiments": [
+                        106
+                    ],
+                    "integrate": [
+                        109
+                    ],
+                    "custom": [
+                        110
+                    ],
+                    "microarray": [
+                        111
+                    ],
+                    "annotations.": [
+                        112
+                    ],
+                    "BridgeDb": [
+                        113,
+                        141,
+                        158
+                    ],
+                    "its": [
+                        115
+                    ],
+                    "own": [
+                        116
+                    ],
+                    "ready-to-go": [
+                        117
+                    ],
+                    "services,": [
+                        119,
+                        157
+                    ],
+                    "both": [
+                        120
+                    ],
+                    "in": [
+                        121
+                    ],
+                    "webservice": [
+                        122
+                    ],
+                    "local": [
+                        124
+                    ],
+                    "database": [
+                        125
+                    ],
+                    "forms.": [
+                        126
+                    ],
+                    "However,": [
+                        127
+                    ],
+                    "is": [
+                        130,
+                        169
+                    ],
+                    "intended": [
+                        131
+                    ],
+                    "customization": [
+                        133
+                    ],
+                    "adaptation": [
+                        135
+                    ],
+                    "any": [
+                        137
+                    ],
+                    "service.": [
+                        140
+                    ],
+                    "has": [
+                        142
+                    ],
+                    "already": [
+                        143
+                    ],
+                    "been": [
+                        144
+                    ],
+                    "integrated": [
+                        145
+                    ],
+                    "into": [
+                        146
+                    ],
+                    "several": [
+                        147
+                    ],
+                    "applications.": [
+                        149
+                    ],
+                    "CONCLUSION:": [
+                        150
+                    ],
+                    "By": [
+                        151
+                    ],
+                    "uncoupling": [
+                        152
+                    ],
+                    "from": [
+                        155
+                    ],
+                    "improves": [
+                        159
+                    ],
+                    "capability": [
+                        160
+                    ],
+                    "flexibility": [
+                        162
+                    ],
+                    "of": [
+                        163
+                    ],
+                    "those": [
+                        164
+                    ],
+                    "tools.": [
+                        165
+                    ],
+                    "All": [
+                        166
+                    ],
+                    "described": [
+                        167
+                    ],
+                    "open": [
+                        170
+                    ],
+                    "source": [
+                        171
+                    ],
+                    "at": [
+                        174
+                    ],
+                    "http://www.bridgedb.org.": [
+                        175
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 7
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 9
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 26
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 20
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 36
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 16
+                    },
+                    {
+                        "year": 2018,
+                        "cited_by_count": 17
+                    },
+                    {
+                        "year": 2017,
+                        "cited_by_count": 15
+                    },
+                    {
+                        "year": 2016,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2015,
+                        "cited_by_count": 20
+                    },
+                    {
+                        "year": 2014,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2013,
+                        "cited_by_count": 12
+                    },
+                    {
+                        "year": 2012,
+                        "cited_by_count": 15
+                    }
+                ],
+                "updated_date": "2026-05-19T21:40:30.786675",
+                "created_date": "2016-06-24T00:00:00"
+            },
+            "altmetric": {
+                "title": "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services",
+                "doi": "10.1186/1471-2105-11-5",
+                "pmid": "20047655",
+                "pmc": "PMC2824678",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007a9",
+                "issns": [
+                    "1471-2105"
+                ],
+                "journal": "BMC Bioinformatics",
+                "cohorts": {
+                    "sci": 2,
+                    "pub": 1
+                },
+                "abstract": "Many complementary solutions are available for the identifier mapping problem. This creates an opportunity for bioinformatics tool developers. Tools can be made to flexibly support multiple mapping services or mapping services could be combined to get broader coverage. This approach requires an interface layer between tools and mapping services.",
+                "abstract_source": "pubmed",
+                "context": {
+                    "all": {
+                        "count": 29994878,
+                        "mean": 10.812610969712896,
+                        "rank": 1773462,
+                        "pct": 94,
+                        "higher_than": 28208419
+                    },
+                    "journal": {
+                        "count": 7792,
+                        "mean": 5.556294917864477,
+                        "rank": 215,
+                        "pct": 97,
+                        "higher_than": 7576
+                    },
+                    "similar_age_3m": {
+                        "count": 197192,
+                        "mean": 7.4185015112174915,
+                        "rank": 7241,
+                        "pct": 96,
+                        "higher_than": 189788
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 60,
+                        "mean": 5.993333333333334,
+                        "rank": 3,
+                        "pct": 95,
+                        "higher_than": 57
+                    }
+                },
+                "authors": [
+                    "Martijn P van Iersel",
+                    "Alexander R Pico",
+                    "Thomas Kelder",
+                    "Jianjiong Gao",
+                    "Isaac Ho",
+                    "Kristina Hanspers",
+                    "Bruce R Conklin",
+                    "Chris T Evelo"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1291161600,
+                "epubdate": 1262563200,
+                "dimensions_publication_id": "pub.1001861326",
+                "altmetric_id": 223087,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_feeds_count": 3,
+                "cited_by_gplus_count": 1,
+                "cited_by_posts_count": 19,
+                "cited_by_qna_count": 1,
+                "cited_by_tweeters_count": 3,
+                "cited_by_wikipedia_count": 1,
+                "cited_by_accounts_count": 9,
+                "last_updated": 1767571200,
+                "score": 25,
+                "history": {
+                    "1y": 5,
+                    "6m": 5,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 25
+                },
+                "url": "http://dx.doi.org/10.1186/1471-2105-11-5",
+                "added_on": 1313163689,
+                "published_on": 1262563200,
+                "subjects": [
+                    "computationalbiology"
+                ],
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "14",
+                    "mendeley": "125",
+                    "connotea": "2"
+                },
+                "readers_count": 135,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=25&types=qbbttwgg",
+                    "medium": "https://badges.altmetric.com/?size=100&score=25&types=qbbttwgg",
+                    "large": "https://badges.altmetric.com/?size=180&score=25&types=qbbttwgg"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=223087"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 26425,
+            "total_ccn": 5211,
+            "avg_ccn": 2.02,
+            "nloc_per_file": 81.56,
+            "duplicate_rate": 17.73
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

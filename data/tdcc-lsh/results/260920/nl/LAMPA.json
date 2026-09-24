@@ -1,0 +1,2184 @@
+{
+    "LAMPA": {
+        "tool_name": "LAMPA",
+        "biotools": {
+            "name": "LAMPA",
+            "description": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins.\n\nLAMPA, LArge Multidomain Protein Annotator.\n\nThis repository contains R package LAMPA presented in LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins by Gulyaeva AA, Sigorskih AI, Ocheredko ES, Samborskiy DV, Gorbalenya AE.\n\nSorry, something went wrong. Reload?.\n\nSorry, we cannot display this file.\n\nCollection of Jupyter notebooks that were used for LAMPA paper.\n\nSorry, this file is invalid so it cannot be displayed.",
+            "homepage": "https://github.com/Gorbalenya-Lab/LAMPA",
+            "biotoolsID": "lampa",
+            "biotoolsCURIE": "biotools:lampa",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2421",
+                            "term": "Database search"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0269",
+                            "term": "Transmembrane protein prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0303",
+                            "term": "Fold recognition"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0736",
+                    "term": "Protein folds and structural domains"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0099",
+                    "term": "RNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0080",
+                    "term": "Sequence analysis"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": null,
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [
+                {
+                    "url": "https://github.com/Gorbalenya-Lab/hh-suite-notebooks/tree/LAMPA",
+                    "type": "Source code",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://github.com/Gorbalenya-Lab/LAMPA/blob/master/LAMPA_manual.pdf",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/BIOINFORMATICS/BTAA065",
+                    "pmid": "32003788",
+                    "pmcid": "PMC7203729",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins",
+                        "abstract": "\u00a9 2020 The Author(s). Published by Oxford University Press.Motivation: To facilitate accurate estimation of statistical significance of sequence similarity in profile-profile searches, queries should ideally correspond to protein domains. For multidomain proteins, using domains as queries depends on delineation of domain borders, which may be unknown. Thus, proteins are commonly used as queries that complicate establishing homology for similarities close to cutoff levels of statistical significance. Results: In this article, we describe an iterative approach, called LAMPA, LArge Multidomain Protein Annotator, that resolves the above conundrum by gradual expansion of hit coverage of multidomain proteins through re-evaluating statistical significance of hit similarity using ever smaller queries defined at each iteration. LAMPA employs TMHMM and HHsearch for recognition of transmembrane regions and homology, respectively. We used Pfam database for annotating 2985 multidomain proteins (polyproteins) composed of >1000 amino acid residues, which dominate proteomes of RNA viruses. Under strict cutoffs, LAMPA outperformed HHsearch-mediated runs using intact polyproteins as queries by three measures: number of and coverage by identified homologous regions, and number of hit Pfam profiles. Compared to HHsearch, LAMPA identified 507 extra homologous regions in 14.4% of polyproteins. This Pfam-based annotation of RNA virus polyproteins by LAMPA was also superior to RefSeq expert annotation by two measures, region number and annotated length, for 69.3% of RNA virus polyprotein entries. We rationalized the obtained results based on dependencies of HHsearch hit statistical significance for local alignment similarity score from lengths and diversities of query-target pairs in computational experiments.",
+                        "date": "2020-05-01T00:00:00Z",
+                        "citationCount": 1,
+                        "authors": [
+                            {
+                                "name": "Gulyaeva A.A."
+                            },
+                            {
+                                "name": "Sigorskih A.I."
+                            },
+                            {
+                                "name": "Ocheredko E.S."
+                            },
+                            {
+                                "name": "Samborskiy D.V."
+                            },
+                            {
+                                "name": "Gorbalenya A.E."
+                            },
+                            {
+                                "name": "Gorbalenya A.E."
+                            },
+                            {
+                                "name": "Gorbalenya A.E."
+                            },
+                            {
+                                "name": "Gorbalenya A.E."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Alexander E Gorbalenya",
+                    "email": "a.e.gorbalenya@lumc.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-4967-7341",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-01-18T07:30:22Z",
+            "lastUpdate": "2021-02-12T11:12:26Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 236213441,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyMzYyMTM0NDE=",
+                "name": "LAMPA",
+                "full_name": "Gorbalenya-Lab/LAMPA",
+                "private": false,
+                "owner": {
+                    "login": "Gorbalenya-Lab",
+                    "id": 60525154,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNTI1MTU0",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/60525154?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Gorbalenya-Lab",
+                    "html_url": "https://github.com/Gorbalenya-Lab",
+                    "followers_url": "https://api.github.com/users/Gorbalenya-Lab/followers",
+                    "following_url": "https://api.github.com/users/Gorbalenya-Lab/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Gorbalenya-Lab/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Gorbalenya-Lab/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Gorbalenya-Lab/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Gorbalenya-Lab/orgs",
+                    "repos_url": "https://api.github.com/users/Gorbalenya-Lab/repos",
+                    "events_url": "https://api.github.com/users/Gorbalenya-Lab/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Gorbalenya-Lab/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/Gorbalenya-Lab/LAMPA",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA",
+                "forks_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/forks",
+                "keys_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/teams",
+                "hooks_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/hooks",
+                "issue_events_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/events",
+                "assignees_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/tags",
+                "blobs_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/languages",
+                "stargazers_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/stargazers",
+                "contributors_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/contributors",
+                "subscribers_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/subscribers",
+                "subscription_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/subscription",
+                "commits_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/merges",
+                "archive_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/downloads",
+                "issues_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/labels{/name}",
+                "releases_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/Gorbalenya-Lab/LAMPA/deployments",
+                "created_at": "2020-01-25T18:44:10Z",
+                "updated_at": "2026-05-11T22:11:22Z",
+                "pushed_at": "2026-05-11T22:11:14Z",
+                "git_url": "git://github.com/Gorbalenya-Lab/LAMPA.git",
+                "ssh_url": "git@github.com:Gorbalenya-Lab/LAMPA.git",
+                "clone_url": "https://github.com/Gorbalenya-Lab/LAMPA.git",
+                "svn_url": "https://github.com/Gorbalenya-Lab/LAMPA",
+                "homepage": null,
+                "size": 88,
+                "stargazers_count": 0,
+                "watchers_count": 0,
+                "language": "R",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 1,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 1,
+                "open_issues": 0,
+                "watchers": 0,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "Gorbalenya-Lab",
+                    "id": 60525154,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNTI1MTU0",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/60525154?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/Gorbalenya-Lab",
+                    "html_url": "https://github.com/Gorbalenya-Lab",
+                    "followers_url": "https://api.github.com/users/Gorbalenya-Lab/followers",
+                    "following_url": "https://api.github.com/users/Gorbalenya-Lab/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Gorbalenya-Lab/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Gorbalenya-Lab/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Gorbalenya-Lab/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Gorbalenya-Lab/orgs",
+                    "repos_url": "https://api.github.com/users/Gorbalenya-Lab/repos",
+                    "events_url": "https://api.github.com/users/Gorbalenya-Lab/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Gorbalenya-Lab/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 1,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "DESCRIPTION",
+                    "type": "blob"
+                },
+                {
+                    "path": "LAMPA_manual.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "NAMESPACE",
+                    "type": "blob"
+                },
+                {
+                    "path": "R",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "man",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "dvs",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 1,
+                    "title": "Adding a Software License",
+                    "created_at": "2025-12-03T11:09:05Z",
+                    "closed_at": "2026-05-11T22:12:16Z"
+                }
+            ],
+            "languages": {
+                "R": 25380
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btaa065",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "32003788",
+                            "source": "MED",
+                            "pmid": "32003788",
+                            "pmcid": "PMC7203729",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7203729"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btaa065",
+                            "title": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins.",
+                            "authorString": "Gulyaeva AA, Sigorskih AI, Ocheredko ES, Samborskiy DV, Gorbalenya AE.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "9",
+                            "journalVolume": "36",
+                            "pubYear": "2020",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "2731-2739",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 11,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2020-02-07",
+                            "firstPublicationDate": "2020-05-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3003196708",
+                "doi": "https://doi.org/10.1093/bioinformatics/btaa065",
+                "title": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins",
+                "display_name": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins",
+                "publication_year": 2020,
+                "publication_date": "2020-01-23",
+                "ids": {
+                    "openalex": "https://openalex.org/W3003196708",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btaa065",
+                    "mag": "3003196708",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/32003788"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btaa065",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btaa065",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/9/2731/33180998/btaa065.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/36/9/2731/33180998/btaa065.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5029867152",
+                            "display_name": "Anastasia Gulyaeva",
+                            "orcid": "https://orcid.org/0000-0002-3587-3587"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anastasia A Gulyaeva",
+                        "raw_affiliation_strings": [
+                            "Department of Medical Microbiology , Leiden University Medical Center, Leiden 2300 RC, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Medical Microbiology , Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5000630149",
+                            "display_name": "Andrey I Sigorskih",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210145583",
+                                "display_name": "Bioengineering Center",
+                                "ror": "https://ror.org/04f0ydx59",
+                                "country_code": "RU",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1313323035",
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "RU"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Andrey I Sigorskih",
+                        "raw_affiliation_strings": [
+                            "Faculty of Bioengineering and Bioinformatics"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Faculty of Bioengineering and Bioinformatics",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5074233644",
+                            "display_name": "Elena S Ocheredko",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210145583",
+                                "display_name": "Bioengineering Center",
+                                "ror": "https://ror.org/04f0ydx59",
+                                "country_code": "RU",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1313323035",
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "RU"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Elena S Ocheredko",
+                        "raw_affiliation_strings": [
+                            "Faculty of Bioengineering and Bioinformatics"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Faculty of Bioengineering and Bioinformatics",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039668629",
+                            "display_name": "Dmitry V. Samborskiy",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I19880235",
+                                "display_name": "Lomonosov Moscow State University",
+                                "ror": "https://ror.org/010pmpe69",
+                                "country_code": "RU",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I19880235"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "RU"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Dmitry V Samborskiy",
+                        "raw_affiliation_strings": [
+                            "Belozersky Institute of Physico-Chemical Biology , Lomonosov Moscow State University, Moscow 119899, Russia"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Belozersky Institute of Physico-Chemical Biology , Lomonosov Moscow State University, Moscow 119899, Russia",
+                                "institution_ids": [
+                                    "https://openalex.org/I19880235"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5038215233",
+                            "display_name": "Alexander E. Gorbalenya",
+                            "orcid": "https://orcid.org/0000-0002-4967-7341"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I19880235",
+                                "display_name": "Lomonosov Moscow State University",
+                                "ror": "https://ror.org/010pmpe69",
+                                "country_code": "RU",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I19880235"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210145583",
+                                "display_name": "Bioengineering Center",
+                                "ror": "https://ror.org/04f0ydx59",
+                                "country_code": "RU",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1313323035",
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "RU"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Alexander E Gorbalenya",
+                        "raw_affiliation_strings": [
+                            "Belozersky Institute of Physico-Chemical Biology , Lomonosov Moscow State University, Moscow 119899, Russia",
+                            "Department of Biomedical Data Sciences , Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                            "Department of Medical Microbiology , Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                            "Faculty of Bioengineering and Bioinformatics"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4967-7341",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Belozersky Institute of Physico-Chemical Biology , Lomonosov Moscow State University, Moscow 119899, Russia",
+                                "institution_ids": [
+                                    "https://openalex.org/I19880235"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Biomedical Data Sciences , Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Medical Microbiology , Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Faculty of Bioengineering and Bioinformatics",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210145583"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 5,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5038215233"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I19880235",
+                    "https://openalex.org/I2800006345",
+                    "https://openalex.org/I4210145583"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 0.5835,
+                "has_fulltext": true,
+                "cited_by_count": 13,
+                "citation_normalized_percentile": {
+                    "value": 0.64179909,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "36",
+                    "issue": "9",
+                    "first_page": "2731",
+                    "last_page": "2739"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10521",
+                    "display_name": "RNA and protein synthesis mechanisms",
+                    "score": 0.2935999929904938,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10521",
+                        "display_name": "RNA and protein synthesis mechanisms",
+                        "score": 0.2935999929904938,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12254",
+                        "display_name": "Machine Learning in Bioinformatics",
+                        "score": 0.28949999809265137,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10887",
+                        "display_name": "Bioinformatics and Genomic Networks",
+                        "score": 0.09809999912977219,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/polyproteins",
+                        "display_name": "Polyproteins",
+                        "score": 0.9620912075042725
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/refseq",
+                        "display_name": "RefSeq",
+                        "score": 0.7379047274589539
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5713459849357605
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.558508038520813
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/annotation",
+                        "display_name": "Annotation",
+                        "score": 0.5460399389266968
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/similarity",
+                        "display_name": "Similarity (geometry)",
+                        "score": 0.5096104145050049
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cluster-analysis",
+                        "display_name": "Cluster analysis",
+                        "score": 0.4654432535171509
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/sequence-alignment",
+                        "display_name": "Sequence alignment",
+                        "score": 0.4411023259162903
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/proteome",
+                        "display_name": "Proteome",
+                        "score": 0.42588990926742554
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/rna",
+                        "display_name": "RNA",
+                        "score": 0.37691381573677063
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.34170928597450256
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.2866945266723633
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.22231638431549072
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/peptide-sequence",
+                        "display_name": "Peptide sequence",
+                        "score": 0.21474161744117737
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.200914204120636
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.1891154944896698
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2910895815",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8054",
+                        "display_name": "Polyproteins",
+                        "level": 4,
+                        "score": 0.9620912075042725
+                    },
+                    {
+                        "id": "https://openalex.org/C151810110",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7307074",
+                        "display_name": "RefSeq",
+                        "level": 4,
+                        "score": 0.7379047274589539
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5713459849357605
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.558508038520813
+                    },
+                    {
+                        "id": "https://openalex.org/C2776321320",
+                        "wikidata": "https://www.wikidata.org/wiki/Q857525",
+                        "display_name": "Annotation",
+                        "level": 2,
+                        "score": 0.5460399389266968
+                    },
+                    {
+                        "id": "https://openalex.org/C103278499",
+                        "wikidata": "https://www.wikidata.org/wiki/Q254465",
+                        "display_name": "Similarity (geometry)",
+                        "level": 3,
+                        "score": 0.5096104145050049
+                    },
+                    {
+                        "id": "https://openalex.org/C73555534",
+                        "wikidata": "https://www.wikidata.org/wiki/Q622825",
+                        "display_name": "Cluster analysis",
+                        "level": 2,
+                        "score": 0.4654432535171509
+                    },
+                    {
+                        "id": "https://openalex.org/C45484198",
+                        "wikidata": "https://www.wikidata.org/wiki/Q827246",
+                        "display_name": "Sequence alignment",
+                        "level": 4,
+                        "score": 0.4411023259162903
+                    },
+                    {
+                        "id": "https://openalex.org/C104397665",
+                        "wikidata": "https://www.wikidata.org/wiki/Q860947",
+                        "display_name": "Proteome",
+                        "level": 2,
+                        "score": 0.42588990926742554
+                    },
+                    {
+                        "id": "https://openalex.org/C67705224",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11053",
+                        "display_name": "RNA",
+                        "level": 3,
+                        "score": 0.37691381573677063
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.34170928597450256
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.2866945266723633
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.22231638431549072
+                    },
+                    {
+                        "id": "https://openalex.org/C167625842",
+                        "wikidata": "https://www.wikidata.org/wiki/Q899763",
+                        "display_name": "Peptide sequence",
+                        "level": 3,
+                        "score": 0.21474161744117737
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.200914204120636
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.1891154944896698
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C115961682",
+                        "wikidata": "https://www.wikidata.org/wiki/Q860623",
+                        "display_name": "Image (mathematics)",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012328",
+                        "descriptor_name": "RNA Viruses",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012328",
+                        "descriptor_name": "RNA Viruses",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012328",
+                        "descriptor_name": "RNA Viruses",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D020815",
+                        "descriptor_name": "Polyproteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020815",
+                        "descriptor_name": "Polyproteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D020815",
+                        "descriptor_name": "Polyproteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030562",
+                        "descriptor_name": "Databases, Protein",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btaa065",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btaa065",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/9/2731/33180998/btaa065.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:32003788",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32003788",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3181262",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3181262",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(9), 2731 - 2739. OXFORD UNIV PRESS",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7203729",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7203729",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3181262",
+                        "is_oa": true,
+                        "landing_page_url": "https://academic.oup.com/bioinformatics/article/36/9/2731/5719022",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Article / Letter to editor"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btaa065",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btaa065",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/9/2731/33180998/btaa065.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/17",
+                        "display_name": "Partnerships for the goals",
+                        "score": 0.41999998688697815
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320929",
+                        "display_name": "Universiteit Leiden",
+                        "ror": "https://ror.org/027bh9e22"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320323080",
+                        "display_name": "Leids Universitair Medisch Centrum",
+                        "ror": "https://ror.org/05xvt9f17"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3003196708.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3003196708.grobid-xml"
+                },
+                "referenced_works_count": 43,
+                "referenced_works": [
+                    "https://openalex.org/W1552724685",
+                    "https://openalex.org/W1878730940",
+                    "https://openalex.org/W1959734218",
+                    "https://openalex.org/W1980892321",
+                    "https://openalex.org/W2010061854",
+                    "https://openalex.org/W2016960645",
+                    "https://openalex.org/W2027637974",
+                    "https://openalex.org/W2037684000",
+                    "https://openalex.org/W2051210555",
+                    "https://openalex.org/W2064699864",
+                    "https://openalex.org/W2084247958",
+                    "https://openalex.org/W2108301842",
+                    "https://openalex.org/W2108982334",
+                    "https://openalex.org/W2110650347",
+                    "https://openalex.org/W2114083522",
+                    "https://openalex.org/W2114938008",
+                    "https://openalex.org/W2116160060",
+                    "https://openalex.org/W2117486996",
+                    "https://openalex.org/W2125233222",
+                    "https://openalex.org/W2131478115",
+                    "https://openalex.org/W2135621733",
+                    "https://openalex.org/W2141838466",
+                    "https://openalex.org/W2141885858",
+                    "https://openalex.org/W2141925828",
+                    "https://openalex.org/W2145268834",
+                    "https://openalex.org/W2145605402",
+                    "https://openalex.org/W2153187042",
+                    "https://openalex.org/W2158714788",
+                    "https://openalex.org/W2161072217",
+                    "https://openalex.org/W2173732482",
+                    "https://openalex.org/W2243973145",
+                    "https://openalex.org/W2516022550",
+                    "https://openalex.org/W2521372695",
+                    "https://openalex.org/W2522071276",
+                    "https://openalex.org/W2557595285",
+                    "https://openalex.org/W2898402099",
+                    "https://openalex.org/W2945442113",
+                    "https://openalex.org/W2950954328",
+                    "https://openalex.org/W2952739713",
+                    "https://openalex.org/W2972411752",
+                    "https://openalex.org/W4236459334",
+                    "https://openalex.org/W4285719527",
+                    "https://openalex.org/W6677611723"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2066753372",
+                    "https://openalex.org/W2173732482",
+                    "https://openalex.org/W2054728806",
+                    "https://openalex.org/W2167922509",
+                    "https://openalex.org/W272471359",
+                    "https://openalex.org/W4388652965",
+                    "https://openalex.org/W2107903949",
+                    "https://openalex.org/W3003196708",
+                    "https://openalex.org/W2941035732",
+                    "https://openalex.org/W4234194328"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "To": [
+                        1
+                    ],
+                    "facilitate": [
+                        2
+                    ],
+                    "accurate": [
+                        3
+                    ],
+                    "estimation": [
+                        4
+                    ],
+                    "of": [
+                        5,
+                        8,
+                        31,
+                        55,
+                        81,
+                        84,
+                        91,
+                        109,
+                        126,
+                        134,
+                        153,
+                        162,
+                        177,
+                        182,
+                        205,
+                        218,
+                        232
+                    ],
+                    "statistical": [
+                        6,
+                        56,
+                        89,
+                        221
+                    ],
+                    "significance": [
+                        7,
+                        90,
+                        222
+                    ],
+                    "sequence": [
+                        9
+                    ],
+                    "similarity": [
+                        10,
+                        93,
+                        226
+                    ],
+                    "in": [
+                        11,
+                        175,
+                        235
+                    ],
+                    "profile-profile": [
+                        12
+                    ],
+                    "searches,": [
+                        13
+                    ],
+                    "queries": [
+                        14,
+                        27,
+                        44,
+                        97,
+                        148
+                    ],
+                    "should": [
+                        15
+                    ],
+                    "ideally": [
+                        16
+                    ],
+                    "correspond": [
+                        17
+                    ],
+                    "to": [
+                        18,
+                        52,
+                        167,
+                        191
+                    ],
+                    "protein": [
+                        19
+                    ],
+                    "domains.": [
+                        20
+                    ],
+                    "For": [
+                        21
+                    ],
+                    "multidomain": [
+                        22,
+                        85,
+                        122
+                    ],
+                    "proteins,": [
+                        23
+                    ],
+                    "using": [
+                        24,
+                        94,
+                        144
+                    ],
+                    "domains": [
+                        25
+                    ],
+                    "as": [
+                        26,
+                        43,
+                        147
+                    ],
+                    "depends": [
+                        28
+                    ],
+                    "on": [
+                        29,
+                        216
+                    ],
+                    "delineation": [
+                        30
+                    ],
+                    "domain": [
+                        32
+                    ],
+                    "borders,": [
+                        33
+                    ],
+                    "which": [
+                        34,
+                        131
+                    ],
+                    "may": [
+                        35
+                    ],
+                    "be": [
+                        36
+                    ],
+                    "unknown.": [
+                        37
+                    ],
+                    "Thus,": [
+                        38
+                    ],
+                    "proteins": [
+                        39,
+                        86,
+                        123
+                    ],
+                    "are": [
+                        40,
+                        254
+                    ],
+                    "commonly": [
+                        41
+                    ],
+                    "used": [
+                        42,
+                        116
+                    ],
+                    "that": [
+                        45,
+                        73
+                    ],
+                    "complicate": [
+                        46
+                    ],
+                    "establishing": [
+                        47
+                    ],
+                    "homology": [
+                        48
+                    ],
+                    "for": [
+                        49,
+                        107,
+                        119,
+                        203,
+                        223
+                    ],
+                    "similarities": [
+                        50
+                    ],
+                    "close": [
+                        51
+                    ],
+                    "cutoff": [
+                        53
+                    ],
+                    "levels": [
+                        54
+                    ],
+                    "significance.": [
+                        57
+                    ],
+                    "RESULTS:": [
+                        58
+                    ],
+                    "In": [
+                        59
+                    ],
+                    "this": [
+                        60
+                    ],
+                    "article,": [
+                        61
+                    ],
+                    "we": [
+                        62
+                    ],
+                    "describe": [
+                        63
+                    ],
+                    "an": [
+                        64
+                    ],
+                    "iterative": [
+                        65
+                    ],
+                    "approach,": [
+                        66
+                    ],
+                    "called": [
+                        67
+                    ],
+                    "LAMPA,": [
+                        68
+                    ],
+                    "LArge": [
+                        69
+                    ],
+                    "Multidomain": [
+                        70
+                    ],
+                    "Protein": [
+                        71
+                    ],
+                    "Annotator,": [
+                        72
+                    ],
+                    "resolves": [
+                        74
+                    ],
+                    "the": [
+                        75,
+                        212
+                    ],
+                    "above": [
+                        76
+                    ],
+                    "conundrum": [
+                        77
+                    ],
+                    "by": [
+                        78,
+                        149,
+                        156,
+                        186,
+                        195
+                    ],
+                    "gradual": [
+                        79
+                    ],
+                    "expansion": [
+                        80
+                    ],
+                    "hit": [
+                        82,
+                        92,
+                        163,
+                        220
+                    ],
+                    "coverage": [
+                        83,
+                        155
+                    ],
+                    "through": [
+                        87
+                    ],
+                    "re-evaluating": [
+                        88
+                    ],
+                    "ever": [
+                        95
+                    ],
+                    "smaller": [
+                        96
+                    ],
+                    "defined": [
+                        98
+                    ],
+                    "at": [
+                        99,
+                        247,
+                        256
+                    ],
+                    "each": [
+                        100
+                    ],
+                    "iteration.": [
+                        101
+                    ],
+                    "LAMPA": [
+                        102,
+                        140,
+                        169,
+                        187,
+                        241
+                    ],
+                    "employs": [
+                        103
+                    ],
+                    "TMHMM": [
+                        104
+                    ],
+                    "and": [
+                        105,
+                        112,
+                        154,
+                        160,
+                        200,
+                        230
+                    ],
+                    "HHsearch": [
+                        106,
+                        219
+                    ],
+                    "recognition": [
+                        108
+                    ],
+                    "transmembrane": [
+                        110
+                    ],
+                    "regions": [
+                        111,
+                        174
+                    ],
+                    "homology,": [
+                        113
+                    ],
+                    "respectively.": [
+                        114
+                    ],
+                    "We": [
+                        115,
+                        210
+                    ],
+                    "Pfam": [
+                        117,
+                        164
+                    ],
+                    "database": [
+                        118
+                    ],
+                    "annotating": [
+                        120
+                    ],
+                    "2985": [
+                        121
+                    ],
+                    "(polyproteins)": [
+                        124
+                    ],
+                    "composed": [
+                        125
+                    ],
+                    ">1000": [
+                        127
+                    ],
+                    "amino": [
+                        128
+                    ],
+                    "acid": [
+                        129
+                    ],
+                    "residues,": [
+                        130
+                    ],
+                    "dominate": [
+                        132
+                    ],
+                    "proteomes": [
+                        133
+                    ],
+                    "RNA": [
+                        135,
+                        183,
+                        206
+                    ],
+                    "viruses.": [
+                        136
+                    ],
+                    "Under": [
+                        137
+                    ],
+                    "strict": [
+                        138
+                    ],
+                    "cutoffs,": [
+                        139
+                    ],
+                    "outperformed": [
+                        141
+                    ],
+                    "HHsearch-mediated": [
+                        142
+                    ],
+                    "runs": [
+                        143
+                    ],
+                    "intact": [
+                        145
+                    ],
+                    "polyproteins": [
+                        146,
+                        185
+                    ],
+                    "three": [
+                        150
+                    ],
+                    "measures:": [
+                        151
+                    ],
+                    "number": [
+                        152,
+                        161,
+                        199
+                    ],
+                    "identified": [
+                        157,
+                        170
+                    ],
+                    "homologous": [
+                        158,
+                        173
+                    ],
+                    "regions,": [
+                        159
+                    ],
+                    "profiles.": [
+                        165
+                    ],
+                    "Compared": [
+                        166
+                    ],
+                    "HHsearch,": [
+                        168
+                    ],
+                    "507": [
+                        171
+                    ],
+                    "extra": [
+                        172
+                    ],
+                    "14.4%": [
+                        176
+                    ],
+                    "polyproteins.": [
+                        178
+                    ],
+                    "This": [
+                        179
+                    ],
+                    "Pfam-based": [
+                        180
+                    ],
+                    "annotation": [
+                        181,
+                        194
+                    ],
+                    "virus": [
+                        184,
+                        207
+                    ],
+                    "was": [
+                        188
+                    ],
+                    "also": [
+                        189
+                    ],
+                    "superior": [
+                        190
+                    ],
+                    "RefSeq": [
+                        192
+                    ],
+                    "expert": [
+                        193
+                    ],
+                    "two": [
+                        196
+                    ],
+                    "measures,": [
+                        197
+                    ],
+                    "region": [
+                        198
+                    ],
+                    "annotated": [
+                        201
+                    ],
+                    "length,": [
+                        202
+                    ],
+                    "69.3%": [
+                        204
+                    ],
+                    "polyprotein": [
+                        208
+                    ],
+                    "entries.": [
+                        209
+                    ],
+                    "rationalized": [
+                        211
+                    ],
+                    "obtained": [
+                        213
+                    ],
+                    "results": [
+                        214
+                    ],
+                    "based": [
+                        215
+                    ],
+                    "dependencies": [
+                        217
+                    ],
+                    "local": [
+                        224
+                    ],
+                    "alignment": [
+                        225
+                    ],
+                    "score": [
+                        227
+                    ],
+                    "from": [
+                        228
+                    ],
+                    "lengths": [
+                        229
+                    ],
+                    "diversities": [
+                        231
+                    ],
+                    "query-target": [
+                        233
+                    ],
+                    "pairs": [
+                        234
+                    ],
+                    "computational": [
+                        236
+                    ],
+                    "experiments.": [
+                        237
+                    ],
+                    "AVAILABILITY": [
+                        238
+                    ],
+                    "AND": [
+                        239
+                    ],
+                    "IMPLEMENTATION:": [
+                        240
+                    ],
+                    "1.0.0": [
+                        242
+                    ],
+                    "R": [
+                        243
+                    ],
+                    "package": [
+                        244
+                    ],
+                    "is": [
+                        245
+                    ],
+                    "placed": [
+                        246
+                    ],
+                    "github": [
+                        248
+                    ],
+                    "(https://github.com/Gorbalenya-Lab/LAMPA).": [
+                        249
+                    ],
+                    "SUPPLEMENTARY": [
+                        250
+                    ],
+                    "INFORMATION:": [
+                        251
+                    ],
+                    "Supplementary": [
+                        252
+                    ],
+                    "data": [
+                        253
+                    ],
+                    "available": [
+                        255
+                    ],
+                    "Bioinformatics": [
+                        257
+                    ],
+                    "online.": [
+                        258
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "LAMPA, LArge Multidomain Protein Annotator, and its application to RNA virus polyproteins",
+                "doi": "10.1093/bioinformatics/btaa065",
+                "pmid": "32003788",
+                "pmc": "PMC7203729",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "pub": 1,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 23577761,
+                        "mean": 10.375313420060321,
+                        "rank": 15329366,
+                        "pct": 32,
+                        "higher_than": 7761740
+                    },
+                    "journal": {
+                        "count": 9035,
+                        "mean": 8.157803873824033,
+                        "rank": 7241,
+                        "pct": 17,
+                        "higher_than": 1536
+                    },
+                    "similar_age_3m": {
+                        "count": 453897,
+                        "mean": 12.865992897065789,
+                        "rank": 259061,
+                        "pct": 40,
+                        "higher_than": 182304
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 169,
+                        "mean": 7.186639053254439,
+                        "rank": 124,
+                        "pct": 21,
+                        "higher_than": 37
+                    }
+                },
+                "authors": [
+                    "Anastasia A Gulyaeva",
+                    "Andrey I Sigorskih",
+                    "Elena S Ocheredko",
+                    "Dmitry V Samborskiy",
+                    "Alexander E Gorbalenya"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1588291200,
+                "epubdate": 1580428800,
+                "dimensions_publication_id": "pub.1124305437",
+                "altmetric_id": 74794721,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 2,
+                "cited_by_tweeters_count": 2,
+                "cited_by_accounts_count": 2,
+                "last_updated": 1581150001,
+                "score": 1,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btaa065",
+                "added_on": 1580483805,
+                "published_on": 1580428800,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "20",
+                    "connotea": "0"
+                },
+                "readers_count": 20,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=1&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=1&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=1&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=74794721"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 433,
+            "total_ccn": 82,
+            "avg_ccn": 6.31,
+            "nloc_per_file": 33.31,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

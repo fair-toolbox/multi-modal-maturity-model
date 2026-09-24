@@ -1,0 +1,2801 @@
+{
+    "Tanuki": {
+        "papers": null,
+        "github": null,
+        "gitlab": {
+            "repo": {
+                "id": 40975988,
+                "description": "AUMC RNAseq pipeline\r\nA snakemake made to perform QC + alignement + quantifications of reads coming from RNAseq experiments.",
+                "name": "tanuki",
+                "name_with_namespace": "HumanGenetics AmsterdamUMC / bioinf / pipelines / tanuki",
+                "path": "tanuki",
+                "path_with_namespace": "hg-aumc/bioinf/pipelines/tanuki",
+                "created_at": "2022-11-11T08:12:25.109Z",
+                "default_branch": "dev",
+                "tag_list": [
+                    "rnaseq",
+                    "snakemake"
+                ],
+                "topics": [
+                    "rnaseq",
+                    "snakemake"
+                ],
+                "ssh_url_to_repo": "git@gitlab.com:hg-aumc/bioinf/pipelines/tanuki.git",
+                "http_url_to_repo": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki.git",
+                "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki",
+                "readme_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/blob/dev/README.md",
+                "forks_count": 0,
+                "avatar_url": "https://gitlab.com/uploads/-/system/project/avatar/40975988/tanuki_updated_cleaned_tiny.png",
+                "star_count": 1,
+                "last_activity_at": "2026-02-16T10:26:17.031Z",
+                "visibility": "public",
+                "namespace": {
+                    "id": 116716846,
+                    "name": "pipelines",
+                    "path": "pipelines",
+                    "kind": "group",
+                    "full_path": "hg-aumc/bioinf/pipelines",
+                    "parent_id": 116716738,
+                    "avatar_url": null,
+                    "web_url": "https://gitlab.com/groups/hg-aumc/bioinf/pipelines"
+                },
+                "container_registry_image_prefix": "registry.gitlab.com/hg-aumc/bioinf/pipelines/tanuki",
+                "_links": {
+                    "self": "https://gitlab.com/api/v4/projects/40975988",
+                    "issues": "https://gitlab.com/api/v4/projects/40975988/issues",
+                    "repo_branches": "https://gitlab.com/api/v4/projects/40975988/repository/branches",
+                    "labels": "https://gitlab.com/api/v4/projects/40975988/labels",
+                    "events": "https://gitlab.com/api/v4/projects/40975988/events",
+                    "members": "https://gitlab.com/api/v4/projects/40975988/members",
+                    "cluster_agents": "https://gitlab.com/api/v4/projects/40975988/cluster_agents"
+                },
+                "marked_for_deletion_at": null,
+                "marked_for_deletion_on": null,
+                "packages_enabled": false,
+                "empty_repo": false,
+                "archived": false,
+                "resolve_outdated_diff_discussions": false,
+                "container_expiration_policy": {
+                    "cadence": "1d",
+                    "enabled": false,
+                    "keep_n": 10,
+                    "older_than": "90d",
+                    "name_regex": ".*",
+                    "name_regex_keep": null,
+                    "next_run_at": "2022-11-12T08:12:25.131Z"
+                },
+                "repository_object_format": "sha1",
+                "issues_enabled": true,
+                "merge_requests_enabled": false,
+                "wiki_enabled": true,
+                "jobs_enabled": false,
+                "snippets_enabled": false,
+                "container_registry_enabled": false,
+                "service_desk_enabled": true,
+                "can_create_merge_request_in": false,
+                "issues_access_level": "enabled",
+                "repository_access_level": "enabled",
+                "merge_requests_access_level": "private",
+                "forking_access_level": "disabled",
+                "wiki_access_level": "enabled",
+                "builds_access_level": "private",
+                "snippets_access_level": "disabled",
+                "pages_access_level": "enabled",
+                "analytics_access_level": "disabled",
+                "container_registry_access_level": "disabled",
+                "security_and_compliance_access_level": "disabled",
+                "releases_access_level": "private",
+                "environments_access_level": "disabled",
+                "feature_flags_access_level": "disabled",
+                "infrastructure_access_level": "disabled",
+                "monitor_access_level": "disabled",
+                "model_experiments_access_level": "disabled",
+                "model_registry_access_level": "enabled",
+                "package_registry_access_level": "disabled",
+                "emails_disabled": false,
+                "emails_enabled": true,
+                "show_diff_preview_in_email": true,
+                "shared_runners_enabled": true,
+                "lfs_enabled": false,
+                "creator_id": 10766085,
+                "import_status": "none",
+                "open_issues_count": 2,
+                "description_html": "<p data-sourcepos=\"1:1-2:102\" dir=\"auto\">AUMC RNAseq pipeline&#x000A;A snakemake made to perform QC + alignement + quantifications of reads coming from RNAseq experiments.</p>",
+                "updated_at": "2026-02-16T10:26:17.031Z",
+                "ci_config_path": "",
+                "public_jobs": true,
+                "shared_with_groups": [],
+                "only_allow_merge_if_pipeline_succeeds": false,
+                "allow_merge_on_skipped_pipeline": null,
+                "request_access_enabled": true,
+                "only_allow_merge_if_all_discussions_are_resolved": false,
+                "remove_source_branch_after_merge": true,
+                "printing_merge_request_link_enabled": true,
+                "merge_method": "merge",
+                "squash_option": "default_off",
+                "enforce_auth_checks_on_uploads": true,
+                "suggestion_commit_message": null,
+                "merge_commit_template": null,
+                "squash_commit_template": null,
+                "issue_branch_template": "",
+                "warn_about_potentially_unwanted_characters": true,
+                "autoclose_referenced_issues": true,
+                "max_artifacts_size": null,
+                "approvals_before_merge": 0,
+                "mirror": false,
+                "external_authorization_classification_label": "",
+                "requirements_enabled": true,
+                "requirements_access_level": "disabled",
+                "security_and_compliance_enabled": false,
+                "compliance_frameworks": [],
+                "issues_template": null,
+                "merge_pipelines_enabled": false,
+                "merge_trains_enabled": false,
+                "merge_trains_skip_train_allowed": false,
+                "only_allow_merge_if_all_status_checks_passed": false,
+                "allow_pipeline_trigger_approve_deployment": false,
+                "prevent_merge_without_jira_issue": false,
+                "duo_remote_flows_enabled": true,
+                "duo_foundational_flows_enabled": true,
+                "duo_sast_fp_detection_enabled": false,
+                "duo_secret_detection_fp_enabled": true,
+                "duo_sast_vr_workflow_enabled": false,
+                "spp_repository_pipeline_access": false,
+                "merge_request_title_regex": null,
+                "merge_request_title_regex_description": null,
+                "permissions": {
+                    "project_access": null,
+                    "group_access": null
+                }
+            },
+            "branches_count": 4,
+            "contributors": [
+                {
+                    "name": "karima",
+                    "email": "k.hajo@amsterdamumc.nl",
+                    "commits": 2,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Famke",
+                    "email": "f.h.f.schulting@amsterdamumc.nl",
+                    "commits": 2,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Roxane",
+                    "email": "roxane.boyer18@gmail.com",
+                    "commits": 4,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Hielke Walinga",
+                    "email": "hielkewalinga@gmail.com",
+                    "commits": 6,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Roxane Boyer",
+                    "email": "r.boyer@amsterdamumc.nl",
+                    "commits": 220,
+                    "additions": 0,
+                    "deletions": 0
+                }
+            ],
+            "closed_issues": [
+                {
+                    "project_id": 40975988,
+                    "id": 173992724,
+                    "iid": 27,
+                    "title": "Add time parameter in jobs",
+                    "description": "Time parameter needs to be added",
+                    "state": "closed",
+                    "created_at": "2025-09-26T08:20:20.619Z",
+                    "updated_at": "2025-11-11T12:09:23.505Z",
+                    "closed_at": "2025-11-11T12:09:23.263Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/27",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/27",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/27/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/27/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#27",
+                        "relative": "#27",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#27"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 172213947,
+                    "iid": 26,
+                    "title": "Set Tanuki up on Selene",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2025-08-21T11:06:21.105Z",
+                    "updated_at": "2025-09-26T08:18:59.571Z",
+                    "closed_at": "2025-09-26T08:18:59.426Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 27667738,
+                        "username": "famkeschulting",
+                        "public_email": "",
+                        "name": "Famke Schulting",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/27667738/avatar.png",
+                        "web_url": "https://gitlab.com/famkeschulting"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/26",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/26",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/26/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/26/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#26",
+                        "relative": "#26",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#26"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 165082632,
+                    "iid": 25,
+                    "title": "Regex for get_R1_fastq not specific enough.",
+                    "description": "The filename can contain a lot more than just R1, so the regex should be more specific.",
+                    "state": "closed",
+                    "created_at": "2025-04-01T15:16:01.633Z",
+                    "updated_at": "2025-04-04T09:37:19.244Z",
+                    "closed_at": "2025-04-02T13:27:11.277Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 24577752,
+                        "username": "h.walinga",
+                        "public_email": "",
+                        "name": "Hielke Walinga",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/24577752/avatar.png",
+                        "web_url": "https://gitlab.com/h.walinga"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/25",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/25",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/25/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/25/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#25",
+                        "relative": "#25",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#25"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 164752161,
+                    "iid": 24,
+                    "title": "Investigate impact sjbdOverhand in STAR indexation",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2025-03-26T11:45:08.688Z",
+                    "updated_at": "2026-02-16T10:27:19.337Z",
+                    "closed_at": "2026-02-16T10:27:18.990Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/24",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/24",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/24/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/24/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#24",
+                        "relative": "#24",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#24"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 164749305,
+                    "iid": 23,
+                    "title": "Add TrimGalore step",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2025-03-26T10:55:40.733Z",
+                    "updated_at": "2025-04-02T13:27:21.313Z",
+                    "closed_at": "2025-04-02T13:27:21.247Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/23",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/23",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/23/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/23/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#23",
+                        "relative": "#23",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#23"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 164635893,
+                    "iid": 22,
+                    "title": "Investigation short insert size",
+                    "description": "2 Solutions possible :\n- Add new option in star alignement : --peOverlapNbasesMin 30 (but then what happens if there is no overlap as it should?)\n- Aligned the R1 and R2 not as pairs to see if it increases the number of mapped reads",
+                    "state": "closed",
+                    "created_at": "2025-03-24T11:42:19.169Z",
+                    "updated_at": "2025-04-02T13:27:27.393Z",
+                    "closed_at": "2025-04-02T13:27:27.379Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [
+                        "Investigation"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/22",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/22",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/22/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/22/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#22",
+                        "relative": "#22",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#22"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 161393857,
+                    "iid": 21,
+                    "title": "Handle merge of sample that has multiple lanes for fastq",
+                    "description": "Samples that are sequenced accross several lanes",
+                    "state": "closed",
+                    "created_at": "2025-01-30T10:32:11.083Z",
+                    "updated_at": "2025-02-05T13:30:08.760Z",
+                    "closed_at": "2025-02-05T10:58:03.812Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/21",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/21",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/21/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/21/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#21",
+                        "relative": "#21",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#21"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 142840946,
+                    "iid": 19,
+                    "title": "Add auto email to cfg when pipeline results releases",
+                    "description": "Use conventional header so they can filter on it. Mail to cfg email adress Declare new publish end point on L drive. Publish on both L and M drive",
+                    "state": "closed",
+                    "created_at": "2024-03-01T13:16:03.831Z",
+                    "updated_at": "2024-04-23T12:56:34.871Z",
+                    "closed_at": "2024-04-23T12:56:34.709Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/19",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/19",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/19/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/19/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#19",
+                        "relative": "#19",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#19"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 142626083,
+                    "iid": 18,
+                    "title": "No samples recognized after merging",
+                    "description": "Because merged data does not respect the illumina convention, then an other pattern must be used to recognized sample names.\n- Give a different pattern as an option ?\n- Allow to look for 2 patterns ?",
+                    "state": "closed",
+                    "created_at": "2024-02-26T07:52:19.794Z",
+                    "updated_at": "2024-02-27T13:54:22.681Z",
+                    "closed_at": "2024-02-27T13:54:22.646Z",
+                    "closed_by": {
+                        "id": 8706216,
+                        "username": "bilgehannevruz",
+                        "public_email": "",
+                        "name": "Bilgehan Nevruz",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/8706216/avatar.png",
+                        "web_url": "https://gitlab.com/bilgehannevruz"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/18",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/18",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/18/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/18/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#18",
+                        "relative": "#18",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#18"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 141227148,
+                    "iid": 17,
+                    "title": "Change test dataset handling",
+                    "description": "New idea is to have a fixed location on the cluster with our test dataset to test pipelines.\nSo place the .test folder of this repo into the cluster ? \n/!\\ That makes things less portable for external that want to runs the pipeline",
+                    "state": "closed",
+                    "created_at": "2024-01-23T14:48:14.591Z",
+                    "updated_at": "2024-02-08T13:18:34.739Z",
+                    "closed_at": "2024-02-08T13:18:34.727Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/17",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/17",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/17/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/17/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#17",
+                        "relative": "#17",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#17"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 141168002,
+                    "iid": 16,
+                    "title": "Pipeline not working on nextseq2k data",
+                    "description": "Nextseq 2k data not having the same pattern recognition : \n\nGS : KPN1bE4-AMD-2_L002_R1.fastq.gz\nNextseq2k : LvdM-20231205-D01_S37_L001_R1_001.fastq.gz\n\nWe agreed with Bilgehan to use the _001 format convention, which is Illumina standard output.\n\nThe pipeline must be able to recognize this new file format.",
+                    "state": "closed",
+                    "created_at": "2024-01-22T13:49:32.764Z",
+                    "updated_at": "2024-02-08T13:18:44.680Z",
+                    "closed_at": "2024-02-08T13:18:44.668Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/16",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/16",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/16/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/16/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#16",
+                        "relative": "#16",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#16"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 137371315,
+                    "iid": 15,
+                    "title": "Add new organism of reference  coronavirus",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-10-31T13:22:06.218Z",
+                    "updated_at": "2023-11-01T07:29:43.652Z",
+                    "closed_at": "2023-11-01T07:29:43.643Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 2,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/15",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/15",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/15/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/15/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#15",
+                        "relative": "#15",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#15"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 137323818,
+                    "iid": 14,
+                    "title": "Add fastp as option to check duplication levels",
+                    "description": "Example of fastp command on one sample :\n\npaired_end :\n\nfastp --in1 G0292_L001_R1.fastq.gz --in2 G0292_L001_R2.fastq.gz --out1 /net/beegfs/cfg/rundata/SequencingProjects/202309-016/analysis/fastp_G0292/G0292_L001_R1_fastp_filtered.fastq.gz --out2 /net/beegfs/cfg/rundata/SequencingProjects/202309-016/analysis/fastp_G0292/G0292_L001_R2_fastp_filtered.fastq.gz --overrepresentation_analysis --dup_calc_accuracy 5 --dedup 5 -R G0292 --html=/net/beegfs/cfg/rundata/SequencingProjects/202309-016/analysis/fastp_G0292/fastp_report_G0292.html --json=/net/beegfs/cfg/rundata/SequencingProjects/202309-016/analysis/fastp_G0292/fastp_report_G0292.json\n\nUnpaired just remove --in2 and --out2\n\nMemory needed : 12G (level 5 of duplication accuracy)\nCores : 8\nNew conda package : fastp",
+                    "state": "closed",
+                    "created_at": "2023-10-30T11:32:49.695Z",
+                    "updated_at": "2026-02-16T10:26:17.011Z",
+                    "closed_at": "2026-02-16T10:26:16.856Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/14",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/14",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/14/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/14/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#14",
+                        "relative": "#14",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#14"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 137052649,
+                    "iid": 13,
+                    "title": "Permissions log folder and conda folder",
+                    "description": "Logs folder and conda env folder have permissions issues, because bound to the first person that ran the pipeline... Need to find a solution here",
+                    "state": "closed",
+                    "created_at": "2023-10-26T12:34:57.542Z",
+                    "updated_at": "2024-02-09T12:40:08.035Z",
+                    "closed_at": "2024-02-09T12:40:08.024Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/13",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/13",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/13/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/13/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#13",
+                        "relative": "#13",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#13"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 137023018,
+                    "iid": 12,
+                    "title": "Add option to copy MTQC report into QC folder",
+                    "description": "This should stay an option, so external of our group can still use the pipeline.",
+                    "state": "closed",
+                    "created_at": "2023-10-26T07:07:13.488Z",
+                    "updated_at": "2023-10-30T11:12:53.355Z",
+                    "closed_at": "2023-10-30T11:12:53.344Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/12",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/12",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/12/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/12/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#12",
+                        "relative": "#12",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#12"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 136029141,
+                    "iid": 11,
+                    "title": "Slack hooks for failed pipelines",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-10-04T13:41:09.619Z",
+                    "updated_at": "2024-02-09T12:40:15.047Z",
+                    "closed_at": "2024-02-09T12:40:15.038Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/11",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/11",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/11/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/11/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#11",
+                        "relative": "#11",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#11"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 136025937,
+                    "iid": 10,
+                    "title": "Several input folder when data coming from several FC",
+                    "description": "Because of RNAseq nature, not sure yet if we want to use merged data or not, when data sequenced on several FC.\nNeed to be able to give several input directories to tanuki at some point",
+                    "state": "closed",
+                    "created_at": "2023-10-04T12:47:31.900Z",
+                    "updated_at": "2023-10-05T13:14:45.308Z",
+                    "closed_at": "2023-10-05T13:14:45.298Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/10",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/10",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/10/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/10/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#10",
+                        "relative": "#10",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#10"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 135700659,
+                    "iid": 9,
+                    "title": "Put config file in output folder instead of tanuki folder",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-09-28T13:51:57.626Z",
+                    "updated_at": "2023-10-30T11:13:24.705Z",
+                    "closed_at": "2023-10-30T11:13:24.689Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/9",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/9",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/9/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/9/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#9",
+                        "relative": "#9",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#9"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 134659402,
+                    "iid": 7,
+                    "title": "Change references path target after change of folder structure",
+                    "description": "/net/beegfs/hgn/pub/02.References/01.Genomes/02.Ensembl/01.Homo_Sapiens\n\nWill become :\n\n/net/beegfs/hgn/pub/References/Specie/Source/Build/Annotation\n/net/beegfs/hgn/pub/References/Specie/Source/Build/Sequence\n/net/beegfs/hgn/pub/References/Specie/Source/Build/Index\n\nSpecies -> Human or Mouse\n\nSource -> RefSeq or NCBI or Ensembl\n\nBuild -> GrCh38 or GrCh37\n\nIndex -> STAR or bowtie2 or BWA or ...",
+                    "state": "closed",
+                    "created_at": "2023-09-14T08:35:54.491Z",
+                    "updated_at": "2023-09-28T13:51:27.694Z",
+                    "closed_at": "2023-09-28T13:51:27.672Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/7",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/7",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/7/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/7/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#7",
+                        "relative": "#7",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#7"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 132533329,
+                    "iid": 6,
+                    "title": "Remove dependency from gendiag",
+                    "description": "Gendiag is not going to go forward.\nRemove all dependencies from tanuki to gendiag and add all the references paths into local pipeline config",
+                    "state": "closed",
+                    "created_at": "2023-08-22T11:57:38.886Z",
+                    "updated_at": "2023-08-23T08:48:40.913Z",
+                    "closed_at": "2023-08-23T08:48:40.866Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/6",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/6",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/6/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/6/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#6",
+                        "relative": "#6",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#6"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 126594134,
+                    "iid": 5,
+                    "title": "Change to a different build for reference",
+                    "description": "- ensembl\n- gencode -> grCh38.p13 \n-",
+                    "state": "closed",
+                    "created_at": "2023-04-13T11:34:26.234Z",
+                    "updated_at": "2023-09-28T13:50:56.595Z",
+                    "closed_at": "2023-09-28T13:50:56.575Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/5",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/5",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/5/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/5/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#5",
+                        "relative": "#5",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#5"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 123729008,
+                    "iid": 4,
+                    "title": "Option for generating ready-to-use 3Drnaseq export",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-02-15T13:10:05.265Z",
+                    "updated_at": "2023-08-22T11:54:38.195Z",
+                    "closed_at": "2023-08-22T11:54:38.185Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [
+                        "FeatureRequest"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/4",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/4",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/4/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/4/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#4",
+                        "relative": "#4",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#4"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 123728990,
+                    "iid": 3,
+                    "title": "Add mouse reference",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-02-15T13:09:33.192Z",
+                    "updated_at": "2023-09-28T13:50:42.835Z",
+                    "closed_at": "2023-09-28T13:50:42.825Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [
+                        "FeatureRequest"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/3",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/3",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/3/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/3/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#3",
+                        "relative": "#3",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#3"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 123728794,
+                    "iid": 2,
+                    "title": "Option for unpaired reads",
+                    "description": "For now, the pipeline can only work with paired reads.",
+                    "state": "closed",
+                    "created_at": "2023-02-15T13:08:11.518Z",
+                    "updated_at": "2023-08-22T11:54:50.830Z",
+                    "closed_at": "2023-08-22T11:54:50.821Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [
+                        "FeatureRequest"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/2",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/2",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/2/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/2/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#2",
+                        "relative": "#2",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#2"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                },
+                {
+                    "project_id": 40975988,
+                    "id": 123728646,
+                    "iid": 1,
+                    "title": "Include option --salmon-only to skip star",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2023-02-15T13:04:54.280Z",
+                    "updated_at": "2023-08-22T11:55:04.070Z",
+                    "closed_at": "2023-08-22T11:55:04.060Z",
+                    "closed_by": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "labels": [
+                        "FeatureRequest"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 10766085,
+                            "username": "roxane.boyer18",
+                            "public_email": "",
+                            "name": "Roxane Boyer",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                            "web_url": "https://gitlab.com/roxane.boyer18"
+                        }
+                    ],
+                    "author": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 10766085,
+                        "username": "roxane.boyer18",
+                        "public_email": "",
+                        "name": "Roxane Boyer",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/10766085/avatar.png",
+                        "web_url": "https://gitlab.com/roxane.boyer18"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/hg-aumc/bioinf/pipelines/tanuki/-/work_items/1",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "weight": null,
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/40975988/issues/1",
+                        "notes": "https://gitlab.com/api/v4/projects/40975988/issues/1/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/40975988/issues/1/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/40975988",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#1",
+                        "relative": "#1",
+                        "full": "hg-aumc/bioinf/pipelines/tanuki#1"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null,
+                    "epic_iid": null,
+                    "epic": null,
+                    "iteration": null,
+                    "health_status": null
+                }
+            ],
+            "open_issues_count": 2,
+            "languages": {
+                "Snakemake": 53.83,
+                "Python": 46.17
+            },
+            "repository_tree": [
+                {
+                    "id": "89a070feff7c5a83cd08e6ad57a06d0088cab2d4",
+                    "name": "config",
+                    "type": "tree",
+                    "path": "config",
+                    "mode": "040000"
+                },
+                {
+                    "id": "450658a0a586146f96080fd616d6df5ade12fa70",
+                    "name": "misc",
+                    "type": "tree",
+                    "path": "misc",
+                    "mode": "040000"
+                },
+                {
+                    "id": "84be7c943a5a499a4e8e27bdefacd78457c9de08",
+                    "name": "profile",
+                    "type": "tree",
+                    "path": "profile",
+                    "mode": "040000"
+                },
+                {
+                    "id": "96a8f17cbdb213f7329c6a8b9c12666481959b88",
+                    "name": "tests",
+                    "type": "tree",
+                    "path": "tests",
+                    "mode": "040000"
+                },
+                {
+                    "id": "91837dc852c2cf5bcacff2368f90b61ba30454c4",
+                    "name": "workflow",
+                    "type": "tree",
+                    "path": "workflow",
+                    "mode": "040000"
+                },
+                {
+                    "id": "677b378f7ce75bbaebb80385dc0bca2fb9953dce",
+                    "name": ".gitignore",
+                    "type": "blob",
+                    "path": ".gitignore",
+                    "mode": "100644"
+                },
+                {
+                    "id": "2d0f84b79ea255fb60198c63ef4caa731c3b877e",
+                    "name": ".gitlab-ci.yml",
+                    "type": "blob",
+                    "path": ".gitlab-ci.yml",
+                    "mode": "100644"
+                },
+                {
+                    "id": "71503c48fef3141e11f8dcccc4df422f471c4ea9",
+                    "name": ".release-it.json",
+                    "type": "blob",
+                    "path": ".release-it.json",
+                    "mode": "100644"
+                },
+                {
+                    "id": "99ed080cd7b3012eb3e187b8fb6315c15d954be2",
+                    "name": "CHANGELOG.md",
+                    "type": "blob",
+                    "path": "CHANGELOG.md",
+                    "mode": "100644"
+                },
+                {
+                    "id": "e87ee36b303703f498f6ab75b5ba6aff4fb76ef0",
+                    "name": "README.md",
+                    "type": "blob",
+                    "path": "README.md",
+                    "mode": "100644"
+                },
+                {
+                    "id": "0613c1cc5ea930b168d21cfbeb792974ed653ae3",
+                    "name": "Snakefile",
+                    "type": "blob",
+                    "path": "Snakefile",
+                    "mode": "100644"
+                },
+                {
+                    "id": "5200db02937cbc8aa656a779ba9167f39ff2869c",
+                    "name": "init_workflow.py",
+                    "type": "blob",
+                    "path": "init_workflow.py",
+                    "mode": "100755"
+                },
+                {
+                    "id": "035e866b7c862aefdb071b8a04da616433bb06dc",
+                    "name": "package.json",
+                    "type": "blob",
+                    "path": "package.json",
+                    "mode": "100644"
+                }
+            ],
+            "default_branch_protected": false
+        },
+        "lizard": {
+            "total_nloc": 171,
+            "total_ccn": 43,
+            "avg_ccn": 2.87,
+            "nloc_per_file": 42.75,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "checklist": NaN,
+            "license": NaN,
+            "citation": NaN,
+            "registry": NaN,
+            "repository": NaN
+        }
+    }
+}
