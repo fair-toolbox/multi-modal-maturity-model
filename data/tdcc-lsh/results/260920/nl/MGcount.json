@@ -1,0 +1,2171 @@
+{
+    "MGcount": {
+        "tool_name": "MGcount",
+        "biotools": {
+            "name": "MGcount",
+            "description": "A total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts.",
+            "homepage": "https://github.com/hitaandrea/MGcount",
+            "biotoolsID": "mgcount",
+            "biotoolsCURIE": "biotools:mgcount",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3563",
+                            "term": "RNA-seq read count analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3170",
+                    "term": "RNA-Seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0659",
+                    "term": "Functional, regulatory and non-coding RNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3512",
+                    "term": "Gene transcripts"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "R",
+                "Python"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://filedn.com/lTnUWxFTA93JTyX3Hvbdn2h/mgcount/UserGuide.html",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1186/S12859-021-04544-3",
+                    "pmid": "35030988",
+                    "pmcid": "PMC8760670",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "MGcount: a total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts",
+                        "abstract": "\u00a9 2022, The Author(s).Background: Total-RNA sequencing (total-RNA-seq) allows the simultaneous study of both the coding and the non-coding transcriptome. Yet, computational pipelines have traditionally focused on particular biotypes, making assumptions that are not fullfilled by total-RNA-seq datasets. Transcripts from distinct RNA biotypes vary in length, biogenesis, and function, can overlap in a genomic region, and may be present in the genome with a high copy number. Consequently, reads from total-RNA-seq libraries may cause ambiguous genomic alignments, demanding for flexible quantification approaches. Results: Here we present Multi-Graph count (MGcount), a total-RNA-seq quantification tool combining two strategies for handling ambiguous alignments. First, MGcount assigns reads hierarchically to small-RNA and long-RNA features to account for length disparity when transcripts overlap in the same genomic position. Next, MGcount aggregates RNA products with similar sequences where reads systematically multi-map using a graph-based approach. MGcount outputs a transcriptomic count matrix compatible with RNA-sequencing downstream analysis pipelines, with both bulk and single-cell resolution, and the graphs that model repeated transcript structures for different biotypes. The software can be used as a python module or as a single-file executable program. Conclusions: MGcount is a flexible total-RNA-seq quantification tool that successfully integrates reads that align to multiple genomic locations or that overlap with multiple gene features. Its approach is suitable for the simultaneous estimation of protein-coding, long non-coding and small non-coding transcript concentration, in both precursor and processed forms. Both source code and compiled software are available at https://github.com/hitaandrea/MGcount.",
+                        "date": "2022-12-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Hita A."
+                            },
+                            {
+                                "name": "Brocart G."
+                            },
+                            {
+                                "name": "Fernandez A."
+                            },
+                            {
+                                "name": "Rehmsmeier M."
+                            },
+                            {
+                                "name": "Alemany A."
+                            },
+                            {
+                                "name": "Schvartzman S."
+                            }
+                        ],
+                        "journal": "BMC Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Sol Schvartzman",
+                    "email": "sol.schvartzman@diagenode.com",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-4330-1543",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Anna Alemany",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Marc Rehmsmeier",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2022-06-20T09:57:39.145578Z",
+            "lastUpdate": "2022-06-20T09:57:39.149335Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 390771075,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzOTA3NzEwNzU=",
+                "name": "MGcount",
+                "full_name": "hitaandrea/MGcount",
+                "private": false,
+                "owner": {
+                    "login": "hitaandrea",
+                    "id": 66251315,
+                    "node_id": "MDQ6VXNlcjY2MjUxMzE1",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/66251315?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/hitaandrea",
+                    "html_url": "https://github.com/hitaandrea",
+                    "followers_url": "https://api.github.com/users/hitaandrea/followers",
+                    "following_url": "https://api.github.com/users/hitaandrea/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/hitaandrea/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/hitaandrea/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/hitaandrea/subscriptions",
+                    "organizations_url": "https://api.github.com/users/hitaandrea/orgs",
+                    "repos_url": "https://api.github.com/users/hitaandrea/repos",
+                    "events_url": "https://api.github.com/users/hitaandrea/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/hitaandrea/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/hitaandrea/MGcount",
+                "description": "MGcount github repository",
+                "fork": false,
+                "url": "https://api.github.com/repos/hitaandrea/MGcount",
+                "forks_url": "https://api.github.com/repos/hitaandrea/MGcount/forks",
+                "keys_url": "https://api.github.com/repos/hitaandrea/MGcount/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/hitaandrea/MGcount/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/hitaandrea/MGcount/teams",
+                "hooks_url": "https://api.github.com/repos/hitaandrea/MGcount/hooks",
+                "issue_events_url": "https://api.github.com/repos/hitaandrea/MGcount/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/hitaandrea/MGcount/events",
+                "assignees_url": "https://api.github.com/repos/hitaandrea/MGcount/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/hitaandrea/MGcount/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/hitaandrea/MGcount/tags",
+                "blobs_url": "https://api.github.com/repos/hitaandrea/MGcount/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/hitaandrea/MGcount/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/hitaandrea/MGcount/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/hitaandrea/MGcount/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/hitaandrea/MGcount/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/hitaandrea/MGcount/languages",
+                "stargazers_url": "https://api.github.com/repos/hitaandrea/MGcount/stargazers",
+                "contributors_url": "https://api.github.com/repos/hitaandrea/MGcount/contributors",
+                "subscribers_url": "https://api.github.com/repos/hitaandrea/MGcount/subscribers",
+                "subscription_url": "https://api.github.com/repos/hitaandrea/MGcount/subscription",
+                "commits_url": "https://api.github.com/repos/hitaandrea/MGcount/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/hitaandrea/MGcount/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/hitaandrea/MGcount/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/hitaandrea/MGcount/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/hitaandrea/MGcount/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/hitaandrea/MGcount/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/hitaandrea/MGcount/merges",
+                "archive_url": "https://api.github.com/repos/hitaandrea/MGcount/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/hitaandrea/MGcount/downloads",
+                "issues_url": "https://api.github.com/repos/hitaandrea/MGcount/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/hitaandrea/MGcount/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/hitaandrea/MGcount/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/hitaandrea/MGcount/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/hitaandrea/MGcount/labels{/name}",
+                "releases_url": "https://api.github.com/repos/hitaandrea/MGcount/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/hitaandrea/MGcount/deployments",
+                "created_at": "2021-07-29T15:34:32Z",
+                "updated_at": "2024-04-16T20:38:21Z",
+                "pushed_at": "2023-01-19T14:36:43Z",
+                "git_url": "git://github.com/hitaandrea/MGcount.git",
+                "ssh_url": "git@github.com:hitaandrea/MGcount.git",
+                "clone_url": "https://github.com/hitaandrea/MGcount.git",
+                "svn_url": "https://github.com/hitaandrea/MGcount",
+                "homepage": null,
+                "size": 2942,
+                "stargazers_count": 14,
+                "watchers_count": 14,
+                "language": "R",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 9,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 5,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 9,
+                "open_issues": 5,
+                "watchers": 14,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 9,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "R",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "license.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "mgcount.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "mgcount",
+                    "type": "tree"
+                },
+                {
+                    "path": "requirements.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "hitaandrea",
+                    "contributions": 55
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 5,
+                    "title": "polars/datatypes.py - NotImplementedError: Conversion of polars data type Categorical to Python type not implemented (Tutorial 1 data)",
+                    "created_at": "2023-01-16T08:44:12Z",
+                    "closed_at": "2023-01-20T01:10:41Z"
+                },
+                {
+                    "number": 4,
+                    "title": "\u201cError in IRanges:::find_overlaps: 'maxgap' must be a single integer\u201d when running integrate_gtf_annotations.R",
+                    "created_at": "2023-01-13T06:36:54Z",
+                    "closed_at": "2023-01-16T18:28:24Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Error loading Python lib '/tmp/_MEIsFCECP/libpython3.6m.so.1.0'",
+                    "created_at": "2022-05-23T20:01:06Z",
+                    "closed_at": "2022-06-07T21:10:26Z"
+                },
+                {
+                    "number": 2,
+                    "title": "cannot run with C elegans gtf",
+                    "created_at": "2022-01-21T03:42:13Z",
+                    "closed_at": "2022-01-26T15:25:31Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Download file link is broken",
+                    "created_at": "2022-01-20T22:03:39Z",
+                    "closed_at": "2022-01-20T22:11:04Z"
+                }
+            ],
+            "languages": {
+                "R": 56182,
+                "Python": 43501
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s12859-021-04544-3",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "35030988",
+                            "source": "MED",
+                            "pmid": "35030988",
+                            "pmcid": "PMC8760670",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8760670"
+                                ]
+                            },
+                            "doi": "10.1186/s12859-021-04544-3",
+                            "title": "MGcount: a total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts.",
+                            "authorString": "Hita A, Brocart G, Fernandez A, Rehmsmeier M, Alemany A, Schvartzman S.",
+                            "journalTitle": "BMC Bioinformatics",
+                            "issue": "1",
+                            "journalVolume": "23",
+                            "pubYear": "2022",
+                            "journalIssn": "1471-2105",
+                            "pageInfo": "39",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 10,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2022-01-16",
+                            "firstPublicationDate": "2022-01-14"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4205502736",
+                "doi": "https://doi.org/10.1186/s12859-021-04544-3",
+                "title": "MGcount: a total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts",
+                "display_name": "MGcount: a total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts",
+                "publication_year": 2022,
+                "publication_date": "2022-01-14",
+                "ids": {
+                    "openalex": "https://openalex.org/W4205502736",
+                    "doi": "https://doi.org/10.1186/s12859-021-04544-3",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/35030988"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s12859-021-04544-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-021-04544-3",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-021-04544-3",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-021-04544-3",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5040914327",
+                            "display_name": "Andrea Hita",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I39343248",
+                                "display_name": "Humboldt-Universit\u00e4t zu Berlin",
+                                "ror": "https://ror.org/01hcx6992",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210147869",
+                                "display_name": "Diagenode (Belgium)",
+                                "ror": "https://ror.org/04wdqjx17",
+                                "country_code": "BE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "DE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Andrea Hita",
+                        "raw_affiliation_strings": [
+                            "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany",
+                            "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5087585262",
+                            "display_name": "Gilles Brocart",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210147869",
+                                "display_name": "Diagenode (Belgium)",
+                                "ror": "https://ror.org/04wdqjx17",
+                                "country_code": "BE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Gilles Brocart",
+                        "raw_affiliation_strings": [
+                            "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5091406834",
+                            "display_name": "Ana Fernandez",
+                            "orcid": "https://orcid.org/0000-0002-3790-4471"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I39343248",
+                                "display_name": "Humboldt-Universit\u00e4t zu Berlin",
+                                "ror": "https://ror.org/01hcx6992",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210147869",
+                                "display_name": "Diagenode (Belgium)",
+                                "ror": "https://ror.org/04wdqjx17",
+                                "country_code": "BE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ana Fernandez",
+                        "raw_affiliation_strings": [
+                            "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany",
+                            "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5086412711",
+                            "display_name": "Marc Rehmsmeier",
+                            "orcid": "https://orcid.org/0000-0002-5021-7721"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I39343248",
+                                "display_name": "Humboldt-Universit\u00e4t zu Berlin",
+                                "ror": "https://ror.org/01hcx6992",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marc Rehmsmeier",
+                        "raw_affiliation_strings": [
+                            "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biology, Humboldt-Universit\u00e4t zu Berlin, Berlin, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I39343248"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5026729663",
+                            "display_name": "Anna Alemany",
+                            "orcid": "https://orcid.org/0000-0002-0795-0290"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anna Alemany",
+                        "raw_affiliation_strings": [
+                            "Department of Anatomy and Embryology, Leiden University Medical Centre, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Anatomy and Embryology, Leiden University Medical Centre, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5079328626",
+                            "display_name": "Sol Schvartzman",
+                            "orcid": "https://orcid.org/0000-0003-4330-1543"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210147869",
+                                "display_name": "Diagenode (Belgium)",
+                                "ror": "https://ror.org/04wdqjx17",
+                                "country_code": "BE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sol Schvartzman",
+                        "raw_affiliation_strings": [
+                            "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium. sol.schvartzman@diagenode.com",
+                            "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-4330-1543",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium. sol.schvartzman@diagenode.com",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Epigenetics unit, Diagenode s.a., Li\u00e8ge, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147869"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5040914327"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I39343248",
+                    "https://openalex.org/I4210147869"
+                ],
+                "apc_list": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "apc_paid": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "fwci": 1.2993,
+                "has_fulltext": true,
+                "cited_by_count": 16,
+                "citation_normalized_percentile": {
+                    "value": 0.78638619,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "23",
+                    "issue": "1",
+                    "first_page": "39",
+                    "last_page": "39"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11289",
+                    "display_name": "Single-cell and spatial transcriptomics",
+                    "score": 0.8569999933242798,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11289",
+                        "display_name": "Single-cell and spatial transcriptomics",
+                        "score": 0.8569999933242798,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.0828000009059906,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10515",
+                        "display_name": "Cancer-related molecular mechanisms research",
+                        "score": 0.010900000110268593,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1306",
+                            "display_name": "Cancer Research"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.65104079246521
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/rna",
+                        "display_name": "RNA",
+                        "score": 0.5966796278953552
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.5066822171211243
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.4725106656551361
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/rna-seq",
+                        "display_name": "RNA-Seq",
+                        "score": 0.4514434039592743
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna-microarray",
+                        "display_name": "DNA microarray",
+                        "score": 0.4486442506313324
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.44082844257354736
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.37238550186157227
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/transcriptome",
+                        "display_name": "Transcriptome",
+                        "score": 0.36256223917007446
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.33811748027801514
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene-expression",
+                        "display_name": "Gene expression",
+                        "score": 0.19383537769317627
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.65104079246521
+                    },
+                    {
+                        "id": "https://openalex.org/C67705224",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11053",
+                        "display_name": "RNA",
+                        "level": 3,
+                        "score": 0.5966796278953552
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.5066822171211243
+                    },
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.4725106656551361
+                    },
+                    {
+                        "id": "https://openalex.org/C107397762",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2542347",
+                        "display_name": "RNA-Seq",
+                        "level": 5,
+                        "score": 0.4514434039592743
+                    },
+                    {
+                        "id": "https://openalex.org/C95371953",
+                        "wikidata": "https://www.wikidata.org/wiki/Q591745",
+                        "display_name": "DNA microarray",
+                        "level": 4,
+                        "score": 0.4486442506313324
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.44082844257354736
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.37238550186157227
+                    },
+                    {
+                        "id": "https://openalex.org/C162317418",
+                        "wikidata": "https://www.wikidata.org/wiki/Q252857",
+                        "display_name": "Transcriptome",
+                        "level": 4,
+                        "score": 0.36256223917007446
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.33811748027801514
+                    },
+                    {
+                        "id": "https://openalex.org/C150194340",
+                        "wikidata": "https://www.wikidata.org/wiki/Q26972",
+                        "display_name": "Gene expression",
+                        "level": 3,
+                        "score": 0.19383537769317627
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000081246",
+                        "descriptor_name": "RNA-Seq",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000081246",
+                        "descriptor_name": "RNA-Seq",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000081246",
+                        "descriptor_name": "RNA-Seq",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012313",
+                        "descriptor_name": "RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012313",
+                        "descriptor_name": "RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012313",
+                        "descriptor_name": "RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D017423",
+                        "descriptor_name": "Sequence Analysis, RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017423",
+                        "descriptor_name": "Sequence Analysis, RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017423",
+                        "descriptor_name": "Sequence Analysis, RNA",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D059467",
+                        "descriptor_name": "Transcriptome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059467",
+                        "descriptor_name": "Transcriptome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D059467",
+                        "descriptor_name": "Transcriptome",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s12859-021-04544-3",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s12859-021-04544-3",
+                        "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-021-04544-3",
+                        "source": {
+                            "id": "https://openalex.org/S19032547",
+                            "display_name": "BMC Bioinformatics",
+                            "issn_l": "1471-2105",
+                            "issn": [
+                                "1471-2105"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:35030988",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35030988",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC bioinformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3563179",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3563179",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, 23(1). BMC",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:d4c0f20552974b4b95dc3497513af342",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/d4c0f20552974b4b95dc3497513af342",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, Vol 23, Iss 1, Pp 1-21 (2022)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8760670",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8760670",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3563179",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3563179",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Article / Letter to editor"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s12859-021-04544-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-021-04544-3",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-021-04544-3",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4205502736.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4205502736.grobid-xml"
+                },
+                "referenced_works_count": 60,
+                "referenced_works": [
+                    "https://openalex.org/W66511391",
+                    "https://openalex.org/W1981509058",
+                    "https://openalex.org/W1999574084",
+                    "https://openalex.org/W2003849576",
+                    "https://openalex.org/W2011368877",
+                    "https://openalex.org/W2052785172",
+                    "https://openalex.org/W2061989469",
+                    "https://openalex.org/W2062344134",
+                    "https://openalex.org/W2075676541",
+                    "https://openalex.org/W2089485269",
+                    "https://openalex.org/W2100150348",
+                    "https://openalex.org/W2118420574",
+                    "https://openalex.org/W2121196786",
+                    "https://openalex.org/W2124209874",
+                    "https://openalex.org/W2134526812",
+                    "https://openalex.org/W2136288913",
+                    "https://openalex.org/W2138207763",
+                    "https://openalex.org/W2138208673",
+                    "https://openalex.org/W2139838862",
+                    "https://openalex.org/W2141152740",
+                    "https://openalex.org/W2149459654",
+                    "https://openalex.org/W2164998314",
+                    "https://openalex.org/W2172932999",
+                    "https://openalex.org/W2173732482",
+                    "https://openalex.org/W2177784250",
+                    "https://openalex.org/W2323326409",
+                    "https://openalex.org/W2395261932",
+                    "https://openalex.org/W2472783066",
+                    "https://openalex.org/W2545155109",
+                    "https://openalex.org/W2592811885",
+                    "https://openalex.org/W2611607080",
+                    "https://openalex.org/W2625585564",
+                    "https://openalex.org/W2756085100",
+                    "https://openalex.org/W2789254933",
+                    "https://openalex.org/W2797911854",
+                    "https://openalex.org/W2799571658",
+                    "https://openalex.org/W2801917323",
+                    "https://openalex.org/W2802431934",
+                    "https://openalex.org/W2807674901",
+                    "https://openalex.org/W2886347923",
+                    "https://openalex.org/W2887165975",
+                    "https://openalex.org/W2898440040",
+                    "https://openalex.org/W2899798803",
+                    "https://openalex.org/W2921362039",
+                    "https://openalex.org/W2951662798",
+                    "https://openalex.org/W2951890476",
+                    "https://openalex.org/W2952907961",
+                    "https://openalex.org/W2994632666",
+                    "https://openalex.org/W2996823043",
+                    "https://openalex.org/W3000102906",
+                    "https://openalex.org/W3002206352",
+                    "https://openalex.org/W3007760383",
+                    "https://openalex.org/W3021060601",
+                    "https://openalex.org/W3034853486",
+                    "https://openalex.org/W3111061871",
+                    "https://openalex.org/W3152493484",
+                    "https://openalex.org/W3159756629",
+                    "https://openalex.org/W3164692211",
+                    "https://openalex.org/W4200454931",
+                    "https://openalex.org/W4205247356"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4362511652",
+                    "https://openalex.org/W4362511917",
+                    "https://openalex.org/W4362511922",
+                    "https://openalex.org/W4362485688",
+                    "https://openalex.org/W4362530184",
+                    "https://openalex.org/W4362530193",
+                    "https://openalex.org/W2904597490",
+                    "https://openalex.org/W4362592482",
+                    "https://openalex.org/W4362511560",
+                    "https://openalex.org/W4377231761"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Total-RNA": [
+                        1
+                    ],
+                    "sequencing": [
+                        2
+                    ],
+                    "(total-RNA-seq)": [
+                        3
+                    ],
+                    "allows": [
+                        4
+                    ],
+                    "the": [
+                        5,
+                        10,
+                        13,
+                        56,
+                        115,
+                        154,
+                        209
+                    ],
+                    "simultaneous": [
+                        6,
+                        210
+                    ],
+                    "study": [
+                        7
+                    ],
+                    "of": [
+                        8,
+                        212
+                    ],
+                    "both": [
+                        9,
+                        148,
+                        222
+                    ],
+                    "coding": [
+                        11
+                    ],
+                    "and": [
+                        12,
+                        43,
+                        51,
+                        103,
+                        150,
+                        153,
+                        216,
+                        224,
+                        230
+                    ],
+                    "non-coding": [
+                        14,
+                        215,
+                        218
+                    ],
+                    "transcriptome.": [
+                        15
+                    ],
+                    "Yet,": [
+                        16
+                    ],
+                    "computational": [
+                        17
+                    ],
+                    "pipelines": [
+                        18
+                    ],
+                    "have": [
+                        19
+                    ],
+                    "traditionally": [
+                        20
+                    ],
+                    "focused": [
+                        21
+                    ],
+                    "on": [
+                        22
+                    ],
+                    "particular": [
+                        23
+                    ],
+                    "biotypes,": [
+                        24
+                    ],
+                    "making": [
+                        25
+                    ],
+                    "assumptions": [
+                        26
+                    ],
+                    "that": [
+                        27,
+                        156,
+                        187,
+                        191,
+                        198
+                    ],
+                    "are": [
+                        28,
+                        233
+                    ],
+                    "not": [
+                        29
+                    ],
+                    "fullfilled": [
+                        30
+                    ],
+                    "by": [
+                        31
+                    ],
+                    "total-RNA-seq": [
+                        32,
+                        66,
+                        86,
+                        184
+                    ],
+                    "datasets.": [
+                        33
+                    ],
+                    "Transcripts": [
+                        34
+                    ],
+                    "from": [
+                        35,
+                        65
+                    ],
+                    "distinct": [
+                        36
+                    ],
+                    "RNA": [
+                        37,
+                        122
+                    ],
+                    "biotypes": [
+                        38
+                    ],
+                    "vary": [
+                        39
+                    ],
+                    "in": [
+                        40,
+                        47,
+                        55,
+                        114,
+                        221
+                    ],
+                    "length,": [
+                        41
+                    ],
+                    "biogenesis,": [
+                        42
+                    ],
+                    "function,": [
+                        44
+                    ],
+                    "can": [
+                        45,
+                        166
+                    ],
+                    "overlap": [
+                        46,
+                        113,
+                        199
+                    ],
+                    "a": [
+                        48,
+                        59,
+                        85,
+                        132,
+                        137,
+                        170,
+                        175,
+                        182
+                    ],
+                    "genomic": [
+                        49,
+                        71,
+                        117,
+                        195
+                    ],
+                    "region,": [
+                        50
+                    ],
+                    "may": [
+                        52,
+                        68
+                    ],
+                    "be": [
+                        53,
+                        167
+                    ],
+                    "present": [
+                        54,
+                        81
+                    ],
+                    "genome": [
+                        57
+                    ],
+                    "with": [
+                        58,
+                        124,
+                        142,
+                        147,
+                        200
+                    ],
+                    "high": [
+                        60
+                    ],
+                    "copy": [
+                        61
+                    ],
+                    "number.": [
+                        62
+                    ],
+                    "Consequently,": [
+                        63
+                    ],
+                    "reads": [
+                        64,
+                        99,
+                        128,
+                        190
+                    ],
+                    "libraries": [
+                        67
+                    ],
+                    "cause": [
+                        69
+                    ],
+                    "ambiguous": [
+                        70,
+                        94
+                    ],
+                    "alignments,": [
+                        72
+                    ],
+                    "demanding": [
+                        73
+                    ],
+                    "for": [
+                        74,
+                        92,
+                        108,
+                        161,
+                        208
+                    ],
+                    "flexible": [
+                        75,
+                        183
+                    ],
+                    "quantification": [
+                        76,
+                        87,
+                        185
+                    ],
+                    "approaches.": [
+                        77
+                    ],
+                    "RESULTS:": [
+                        78
+                    ],
+                    "Here": [
+                        79
+                    ],
+                    "we": [
+                        80
+                    ],
+                    "Multi-Graph": [
+                        82
+                    ],
+                    "count": [
+                        83,
+                        139
+                    ],
+                    "(MGcount),": [
+                        84
+                    ],
+                    "tool": [
+                        88,
+                        186
+                    ],
+                    "combining": [
+                        89
+                    ],
+                    "two": [
+                        90
+                    ],
+                    "strategies": [
+                        91
+                    ],
+                    "handling": [
+                        93
+                    ],
+                    "alignments.": [
+                        95
+                    ],
+                    "First,": [
+                        96
+                    ],
+                    "MGcount": [
+                        97,
+                        120,
+                        135,
+                        180
+                    ],
+                    "assigns": [
+                        98
+                    ],
+                    "hierarchically": [
+                        100
+                    ],
+                    "to": [
+                        101,
+                        106,
+                        193
+                    ],
+                    "small-RNA": [
+                        102
+                    ],
+                    "long-RNA": [
+                        104
+                    ],
+                    "features": [
+                        105
+                    ],
+                    "account": [
+                        107
+                    ],
+                    "length": [
+                        109
+                    ],
+                    "disparity": [
+                        110
+                    ],
+                    "when": [
+                        111
+                    ],
+                    "transcripts": [
+                        112
+                    ],
+                    "same": [
+                        116
+                    ],
+                    "position.": [
+                        118
+                    ],
+                    "Next,": [
+                        119
+                    ],
+                    "aggregates": [
+                        121
+                    ],
+                    "products": [
+                        123
+                    ],
+                    "similar": [
+                        125
+                    ],
+                    "sequences": [
+                        126
+                    ],
+                    "where": [
+                        127
+                    ],
+                    "systematically": [
+                        129
+                    ],
+                    "multi-map": [
+                        130
+                    ],
+                    "using": [
+                        131
+                    ],
+                    "graph-based": [
+                        133
+                    ],
+                    "approach.": [
+                        134
+                    ],
+                    "outputs": [
+                        136
+                    ],
+                    "transcriptomic": [
+                        138
+                    ],
+                    "matrix": [
+                        140
+                    ],
+                    "compatible": [
+                        141
+                    ],
+                    "RNA-sequencing": [
+                        143
+                    ],
+                    "downstream": [
+                        144
+                    ],
+                    "analysis": [
+                        145
+                    ],
+                    "pipelines,": [
+                        146
+                    ],
+                    "bulk": [
+                        149
+                    ],
+                    "single-cell": [
+                        151
+                    ],
+                    "resolution,": [
+                        152
+                    ],
+                    "graphs": [
+                        155
+                    ],
+                    "model": [
+                        157
+                    ],
+                    "repeated": [
+                        158
+                    ],
+                    "transcript": [
+                        159,
+                        219
+                    ],
+                    "structures": [
+                        160
+                    ],
+                    "different": [
+                        162
+                    ],
+                    "biotypes.": [
+                        163
+                    ],
+                    "The": [
+                        164
+                    ],
+                    "software": [
+                        165,
+                        232
+                    ],
+                    "used": [
+                        168
+                    ],
+                    "as": [
+                        169,
+                        174
+                    ],
+                    "python": [
+                        171
+                    ],
+                    "module": [
+                        172
+                    ],
+                    "or": [
+                        173,
+                        197
+                    ],
+                    "single-file": [
+                        176
+                    ],
+                    "executable": [
+                        177
+                    ],
+                    "program.": [
+                        178
+                    ],
+                    "CONCLUSIONS:": [
+                        179
+                    ],
+                    "is": [
+                        181,
+                        206
+                    ],
+                    "successfully": [
+                        188
+                    ],
+                    "integrates": [
+                        189
+                    ],
+                    "align": [
+                        192
+                    ],
+                    "multiple": [
+                        194,
+                        201
+                    ],
+                    "locations": [
+                        196
+                    ],
+                    "gene": [
+                        202
+                    ],
+                    "features.": [
+                        203
+                    ],
+                    "Its": [
+                        204
+                    ],
+                    "approach": [
+                        205
+                    ],
+                    "suitable": [
+                        207
+                    ],
+                    "estimation": [
+                        211
+                    ],
+                    "protein-coding,": [
+                        213
+                    ],
+                    "long": [
+                        214
+                    ],
+                    "small": [
+                        217
+                    ],
+                    "concentration,": [
+                        220
+                    ],
+                    "precursor": [
+                        223
+                    ],
+                    "processed": [
+                        225
+                    ],
+                    "forms.": [
+                        226
+                    ],
+                    "Both": [
+                        227
+                    ],
+                    "source": [
+                        228
+                    ],
+                    "code": [
+                        229
+                    ],
+                    "compiled": [
+                        231
+                    ],
+                    "available": [
+                        234
+                    ],
+                    "at": [
+                        235
+                    ],
+                    "https://github.com/hitaandrea/MGcount": [
+                        236
+                    ],
+                    ".": [
+                        237
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "MGcount: a total RNA-seq quantification tool to address multi-mapping and multi-overlapping alignments ambiguity in non-coding transcripts",
+                "doi": "10.1186/s12859-021-04544-3",
+                "pmid": "35030988",
+                "pmc": "PMC8760670",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007a9",
+                "issns": [
+                    "1471-2105"
+                ],
+                "journal": "BMC Bioinformatics",
+                "cohorts": {
+                    "sci": 18,
+                    "pub": 16
+                },
+                "context": {
+                    "all": {
+                        "count": 32394374,
+                        "mean": 10.500550056500554,
+                        "rank": 1304786,
+                        "pct": 95,
+                        "higher_than": 31089582
+                    },
+                    "journal": {
+                        "count": 8277,
+                        "mean": 5.833725987676694,
+                        "rank": 103,
+                        "pct": 98,
+                        "higher_than": 8173
+                    },
+                    "similar_age_3m": {
+                        "count": 558583,
+                        "mean": 13.709047267818768,
+                        "rank": 27123,
+                        "pct": 95,
+                        "higher_than": 531459
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 115,
+                        "mean": 8.276086956521738,
+                        "rank": 4,
+                        "pct": 96,
+                        "higher_than": 111
+                    }
+                },
+                "authors": [
+                    "Andrea Hita",
+                    "Gilles Brocart",
+                    "Ana Fernandez",
+                    "Marc Rehmsmeier",
+                    "Anna Alemany",
+                    "Sol Schvartzman"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1669852800,
+                "epubdate": 1642118400,
+                "dimensions_publication_id": "pub.1144690687",
+                "altmetric_id": 120935131,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Algorithms",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Appl. in Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Microarrays",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 41,
+                "cited_by_tweeters_count": 34,
+                "cited_by_feeds_count": 2,
+                "cited_by_patents_count": 2,
+                "cited_by_accounts_count": 38,
+                "last_updated": 1757635200,
+                "score": 37.349999999999994,
+                "history": {
+                    "1y": 6,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 37.349999999999994
+                },
+                "url": "http://dx.doi.org/10.1186/s12859-021-04544-3",
+                "added_on": 1642222473,
+                "published_on": 1642118400,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "30",
+                    "connotea": "0"
+                },
+                "readers_count": 30,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=38&types=abtttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=38&types=abtttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=38&types=abtttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=120935131"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1593,
+            "total_ccn": 162,
+            "avg_ccn": 3.68,
+            "nloc_per_file": 159.3,
+            "duplicate_rate": 36.91
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

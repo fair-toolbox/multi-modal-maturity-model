@@ -1,0 +1,1848 @@
+{
+    "GmT": {
+        "tool_name": "GmT",
+        "biotools": {
+            "name": "GmT",
+            "description": "Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur.",
+            "homepage": "https://galaxyproject.org/use/gmt/",
+            "biotoolsID": "GmT",
+            "biotoolsCURIE": "biotools:GmT",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3431",
+                            "term": "Deposition"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3797",
+                            "term": "Rarefaction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3192",
+                            "term": "Sequence trimming"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Web application"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3697",
+                    "term": "Microbial ecology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3174",
+                    "term": "Metagenomics"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Windows",
+                "Mac"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "Unlicense",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/issues",
+                    "type": [
+                        "Issue tracker"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://galaxyproject.github.io/training-material/topics/metagenomics/",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/gigascience/giy166",
+                    "pmid": "30597007",
+                    "pmcid": "PMC6377400",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Galaxy mothur Toolset (GmT): A user-friendly application for 16S rRNA gene sequencing analysis using mothur",
+                        "abstract": "\u00a9 2018 The Author(s) 2018. Published by Oxford University Press.Background: The determination of microbial communities using the mothur tool suite (https://www.mothur.org) is well established. However, mothur requires bioinformatics-based proficiency in order to perform calculations via the command-line. Galaxy is a project dedicated to providing a user-friendly web interface for such command-line tools (https://galaxyproject.org/). Results: We have integrated the full set of 125+ mothur tools into Galaxy as the Galaxy mothur Toolset (GmT) and provided a set of workflows to perform end-To-end 16S rRNA gene analyses and integrate with third-party visualization and reporting tools. We demonstrate the utility of GmT by analyzing the mothur MiSeq standard operating procedure (SOP) dataset (https://www.mothur.org/wiki/MiSeq_SOP). Conclusions: GmT is available from the Galaxy Tool Shed, and a workflow definition file and full Galaxy training manual for the mothur SOP have been created. A Docker image with a fully configured GmT Galaxy is also available.",
+                        "date": "2019-02-01T00:00:00Z",
+                        "citationCount": 6,
+                        "authors": [
+                            {
+                                "name": "Hiltemann S.D."
+                            },
+                            {
+                                "name": "Boers S.A."
+                            },
+                            {
+                                "name": "Van Der Spek P.J."
+                            },
+                            {
+                                "name": "Jansen R."
+                            },
+                            {
+                                "name": "Hays J.P."
+                            },
+                            {
+                                "name": "Stubbs A.P."
+                            }
+                        ],
+                        "journal": "GigaScience"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Saskia Hiltemann",
+                    "email": "saskia.hiltemann@gmail.com",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "Ruta",
+            "additionDate": "2019-07-04T10:40:02Z",
+            "lastUpdate": "2020-06-16T10:55:23Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 95230805,
+                "node_id": "MDEwOlJlcG9zaXRvcnk5NTIzMDgwNQ==",
+                "name": "galaxy-mothur-toolset",
+                "full_name": "ErasmusMC-Bioinformatics/galaxy-mothur-toolset",
+                "private": false,
+                "owner": {
+                    "login": "ErasmusMC-Bioinformatics",
+                    "id": 12897176,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyODk3MTc2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12897176?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ErasmusMC-Bioinformatics",
+                    "html_url": "https://github.com/ErasmusMC-Bioinformatics",
+                    "followers_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/followers",
+                    "following_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/orgs",
+                    "repos_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/repos",
+                    "events_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset",
+                "description": "All information pertaining to the Galaxy Mothur Toolkit (GMT) project",
+                "fork": false,
+                "url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset",
+                "forks_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/forks",
+                "keys_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/teams",
+                "hooks_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/hooks",
+                "issue_events_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/events",
+                "assignees_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/tags",
+                "blobs_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/languages",
+                "stargazers_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/stargazers",
+                "contributors_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/contributors",
+                "subscribers_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/subscribers",
+                "subscription_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/subscription",
+                "commits_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/merges",
+                "archive_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/downloads",
+                "issues_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/labels{/name}",
+                "releases_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/ErasmusMC-Bioinformatics/galaxy-mothur-toolset/deployments",
+                "created_at": "2017-06-23T15:05:57Z",
+                "updated_at": "2025-12-10T12:29:53Z",
+                "pushed_at": "2025-12-10T12:30:06Z",
+                "git_url": "git://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset.git",
+                "ssh_url": "git@github.com:ErasmusMC-Bioinformatics/galaxy-mothur-toolset.git",
+                "clone_url": "https://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset.git",
+                "svn_url": "https://github.com/ErasmusMC-Bioinformatics/galaxy-mothur-toolset",
+                "homepage": null,
+                "size": 73,
+                "stargazers_count": 2,
+                "watchers_count": 2,
+                "language": "Dockerfile",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 2,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 2,
+                "open_issues": 1,
+                "watchers": 2,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "ErasmusMC-Bioinformatics",
+                    "id": 12897176,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyODk3MTc2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12897176?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ErasmusMC-Bioinformatics",
+                    "html_url": "https://github.com/ErasmusMC-Bioinformatics",
+                    "followers_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/followers",
+                    "following_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/orgs",
+                    "repos_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/repos",
+                    "events_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ErasmusMC-Bioinformatics/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 2,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "Galaxy-Workflow-Training_whoo_nomakebiom.ga",
+                    "type": "blob"
+                },
+                {
+                    "path": "Galaxy-Workflow-withireport.ga",
+                    "type": "blob"
+                },
+                {
+                    "path": "Galaxy-Workflow-withireport0.ga",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "data_libraries.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "docker-ireport",
+                    "type": "tree"
+                },
+                {
+                    "path": "docker",
+                    "type": "tree"
+                },
+                {
+                    "path": "tour.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "workflow.ga",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "shiltemann",
+                    "contributions": 11
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Dockerfile": 1534,
+                "Python": 436
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/gigascience/giy166",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "30597007",
+                            "source": "MED",
+                            "pmid": "30597007",
+                            "pmcid": "PMC6377400",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC6377400"
+                                ]
+                            },
+                            "doi": "10.1093/gigascience/giy166",
+                            "title": "Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur.",
+                            "authorString": "Hiltemann SD, Boers SA, van der Spek PJ, Jansen R, Hays JP, Stubbs AP.",
+                            "journalTitle": "Gigascience",
+                            "issue": "2",
+                            "journalVolume": "8",
+                            "pubYear": "2019",
+                            "journalIssn": "2047-217x",
+                            "pageInfo": "giy166",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 17,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2019-01-02",
+                            "firstPublicationDate": "2019-02-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2907449303",
+                "doi": "https://doi.org/10.1093/gigascience/giy166",
+                "title": "Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur",
+                "display_name": "Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur",
+                "publication_year": 2018,
+                "publication_date": "2018-02-28",
+                "ids": {
+                    "openalex": "https://openalex.org/W2907449303",
+                    "doi": "https://doi.org/10.1093/gigascience/giy166",
+                    "mag": "2907449303",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/30597007"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/gigascience/giy166",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/gigascience/giy166",
+                    "pdf_url": "https://academic.oup.com/gigascience/article-pdf/8/2/giy166/27784914/giy166.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S2735135405",
+                        "display_name": "GigaScience",
+                        "issn_l": "2047-217X",
+                        "issn": [
+                            "2047-217X"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311647",
+                        "host_organization_name": "University of Oxford",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "GigaScience",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://academic.oup.com/gigascience/article-pdf/8/2/giy166/27784914/giy166.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5013915440",
+                            "display_name": "Saskia Hiltemann",
+                            "orcid": "https://orcid.org/0000-0003-3803-468X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Saskia D Hiltemann",
+                        "raw_affiliation_strings": [
+                            "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3803-468X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5025436708",
+                            "display_name": "Stefan A. Boers",
+                            "orcid": "https://orcid.org/0000-0002-1560-6799"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Stefan A Boers",
+                        "raw_affiliation_strings": [
+                            "Erasmus University Medical Center Rotterdam, Department of Medical Microbiology and Infectious Diseases, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1560-6799",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Erasmus University Medical Center Rotterdam, Department of Medical Microbiology and Infectious Diseases, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5065513365",
+                            "display_name": "Peter J. van der Spek",
+                            "orcid": "https://orcid.org/0000-0002-2203-0652"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Peter J van der Spek",
+                        "raw_affiliation_strings": [
+                            "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2203-0652",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5102800228",
+                            "display_name": "Ruud Jansen",
+                            "orcid": "https://orcid.org/0000-0002-3565-734X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210163052",
+                                "display_name": "Spaarne Gasthuis",
+                                "ror": "https://ror.org/05d7whc82",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210163052"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ruud Jansen",
+                        "raw_affiliation_strings": [
+                            "Regional Laboratory of Public Health Kennemerland, Department of Molecular Biology, Boerhaavelaan 26, 2035 RC, Haarlem, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3565-734X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Regional Laboratory of Public Health Kennemerland, Department of Molecular Biology, Boerhaavelaan 26, 2035 RC, Haarlem, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210163052"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5017560675",
+                            "display_name": "John P. Hays",
+                            "orcid": "https://orcid.org/0000-0001-9183-4497"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "John P Hays",
+                        "raw_affiliation_strings": [
+                            "Erasmus University Medical Center Rotterdam, Department of Medical Microbiology and Infectious Diseases, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9183-4497",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Erasmus University Medical Center Rotterdam, Department of Medical Microbiology and Infectious Diseases, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5107426757",
+                            "display_name": "Andrew Stubbs",
+                            "orcid": "https://orcid.org/0000-0001-9817-9982"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Andrew P Stubbs",
+                        "raw_affiliation_strings": [
+                            "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Erasmus University Medical Center Rotterdam, Department of Pathology, Bioinformatics group, Wytemaweg 80, 3015 CN, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5013915440"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2801952686"
+                ],
+                "apc_list": {
+                    "value": 2439,
+                    "currency": "USD",
+                    "value_usd": 2439
+                },
+                "apc_paid": {
+                    "value": 2439,
+                    "currency": "USD",
+                    "value_usd": 2439
+                },
+                "fwci": 1.5606,
+                "has_fulltext": true,
+                "cited_by_count": 22,
+                "citation_normalized_percentile": {
+                    "value": 0.83882879,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "8",
+                    "issue": "2",
+                    "first_page": null,
+                    "last_page": null
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11791",
+                    "display_name": "Microbial Community Ecology and Physiology",
+                    "score": 0.40290001034736633,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2303",
+                        "display_name": "Ecology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11791",
+                        "display_name": "Microbial Community Ecology and Physiology",
+                        "score": 0.40290001034736633,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10066",
+                        "display_name": "Gut microbiota and health",
+                        "score": 0.15119999647140503,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.1370999962091446,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/workflow",
+                        "display_name": "Workflow",
+                        "score": 0.7327591776847839
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7171310782432556
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/galaxy",
+                        "display_name": "Galaxy",
+                        "score": 0.6542208790779114
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/visualization",
+                        "display_name": "Visualization",
+                        "score": 0.6352962255477905
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/set",
+                        "display_name": "Set (abstract data type)",
+                        "score": 0.5761004686355591
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interface",
+                        "display_name": "Interface (matter)",
+                        "score": 0.500424861907959
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/suite",
+                        "display_name": "Suite",
+                        "score": 0.48965221643447876
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.21266156435012817
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.19090059399604797
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/astrophysics",
+                        "display_name": "Astrophysics",
+                        "score": 0.16688385605812073
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.15868788957595825
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/physics",
+                        "display_name": "Physics",
+                        "score": 0.09944266080856323
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.07651445269584656
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C177212765",
+                        "wikidata": "https://www.wikidata.org/wiki/Q627335",
+                        "display_name": "Workflow",
+                        "level": 2,
+                        "score": 0.7327591776847839
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7171310782432556
+                    },
+                    {
+                        "id": "https://openalex.org/C98444146",
+                        "wikidata": "https://www.wikidata.org/wiki/Q318",
+                        "display_name": "Galaxy",
+                        "level": 2,
+                        "score": 0.6542208790779114
+                    },
+                    {
+                        "id": "https://openalex.org/C36464697",
+                        "wikidata": "https://www.wikidata.org/wiki/Q451553",
+                        "display_name": "Visualization",
+                        "level": 2,
+                        "score": 0.6352962255477905
+                    },
+                    {
+                        "id": "https://openalex.org/C177264268",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+                        "display_name": "Set (abstract data type)",
+                        "level": 2,
+                        "score": 0.5761004686355591
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.500424861907959
+                    },
+                    {
+                        "id": "https://openalex.org/C79581498",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+                        "display_name": "Suite",
+                        "level": 2,
+                        "score": 0.48965221643447876
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.21266156435012817
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.19090059399604797
+                    },
+                    {
+                        "id": "https://openalex.org/C44870925",
+                        "wikidata": "https://www.wikidata.org/wiki/Q37547",
+                        "display_name": "Astrophysics",
+                        "level": 1,
+                        "score": 0.16688385605812073
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.15868788957595825
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.09944266080856323
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.07651445269584656
+                    },
+                    {
+                        "id": "https://openalex.org/C157915830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+                        "display_name": "Bubble",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C166957645",
+                        "wikidata": "https://www.wikidata.org/wiki/Q23498",
+                        "display_name": "Archaeology",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C129307140",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+                        "display_name": "Maximum bubble pressure method",
+                        "level": 3,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C95457728",
+                        "wikidata": "https://www.wikidata.org/wiki/Q309",
+                        "display_name": "History",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D012336",
+                        "descriptor_name": "RNA, Ribosomal, 16S",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012336",
+                        "descriptor_name": "RNA, Ribosomal, 16S",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012336",
+                        "descriptor_name": "RNA, Ribosomal, 16S",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D017422",
+                        "descriptor_name": "Sequence Analysis, DNA",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064307",
+                        "descriptor_name": "Microbiota",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064307",
+                        "descriptor_name": "Microbiota",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064307",
+                        "descriptor_name": "Microbiota",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/gigascience/giy166",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/gigascience/giy166",
+                        "pdf_url": "https://academic.oup.com/gigascience/article-pdf/8/2/giy166/27784914/giy166.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2735135405",
+                            "display_name": "GigaScience",
+                            "issn_l": "2047-217X",
+                            "issn": [
+                                "2047-217X"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311647",
+                            "host_organization_name": "University of Oxford",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "GigaScience",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:30597007",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/30597007",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "GigaScience",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.eur.nl:openaire_cris_publications/240a0230-1678-4004-bc96-3cd0ef072780",
+                        "is_oa": false,
+                        "landing_page_url": "https://pure.eur.nl/en/publications/240a0230-1678-4004-bc96-3cd0ef072780",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401266",
+                            "display_name": "EUR Research Repository (Erasmus University Rotterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I913958620",
+                            "host_organization_name": "Erasmus University Rotterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I913958620"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Hiltemann, S, Boers, S, van der Spek, P, Jansen, R, Hays, J & Stubbs, A 2019, 'Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur', Gigascience online (online), vol. 8, no. 2, giy166. https://doi.org/10.1093/gigascience/giy166",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:5368800",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6377400",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:freidok.uni-freiburg.de:262334",
+                        "is_oa": false,
+                        "landing_page_url": "https://freidok.uni-freiburg.de/data/262334",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401057",
+                            "display_name": "FreiDok plus (Universit\u00e4tsbibliothek Freiburg)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I161046081",
+                            "host_organization_name": "University of Freiburg",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I161046081"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "GigaScience. - 8, 2 (2019) , 1-5, ISSN: 2047-217X",
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/gigascience/giy166",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/gigascience/giy166",
+                    "pdf_url": "https://academic.oup.com/gigascience/article-pdf/8/2/giy166/27784914/giy166.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S2735135405",
+                        "display_name": "GigaScience",
+                        "issn_l": "2047-217X",
+                        "issn": [
+                            "2047-217X"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311647",
+                        "host_organization_name": "University of Oxford",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "GigaScience",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G371209316",
+                        "display_name": null,
+                        "funder_award_id": "602860",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G469030309",
+                        "display_name": null,
+                        "funder_award_id": "E! 10959",
+                        "funder_id": "https://openalex.org/F4320338388",
+                        "funder_display_name": "Eurostars"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338388",
+                        "display_name": "Eurostars",
+                        "ror": null
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2907449303.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W2907449303.grobid-xml"
+                },
+                "referenced_works_count": 22,
+                "referenced_works": [
+                    "https://openalex.org/W1496933752",
+                    "https://openalex.org/W1703384511",
+                    "https://openalex.org/W1952352109",
+                    "https://openalex.org/W2018686814",
+                    "https://openalex.org/W2031893281",
+                    "https://openalex.org/W2072970694",
+                    "https://openalex.org/W2085926377",
+                    "https://openalex.org/W2104318549",
+                    "https://openalex.org/W2108718991",
+                    "https://openalex.org/W2110300022",
+                    "https://openalex.org/W2121180999",
+                    "https://openalex.org/W2138863122",
+                    "https://openalex.org/W2151488593",
+                    "https://openalex.org/W2159954944",
+                    "https://openalex.org/W2163250554",
+                    "https://openalex.org/W2302501749",
+                    "https://openalex.org/W2346143774",
+                    "https://openalex.org/W2773787581",
+                    "https://openalex.org/W2804419420",
+                    "https://openalex.org/W2907449303",
+                    "https://openalex.org/W4231658569",
+                    "https://openalex.org/W6813602439"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4231704780",
+                    "https://openalex.org/W2083794993",
+                    "https://openalex.org/W352609212",
+                    "https://openalex.org/W1511772879",
+                    "https://openalex.org/W4379115841",
+                    "https://openalex.org/W4200340037",
+                    "https://openalex.org/W608917066",
+                    "https://openalex.org/W4283652261",
+                    "https://openalex.org/W585424826",
+                    "https://openalex.org/W564602992"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "The": [
+                        1
+                    ],
+                    "determination": [
+                        2
+                    ],
+                    "of": [
+                        3,
+                        51,
+                        67,
+                        88
+                    ],
+                    "microbial": [
+                        4
+                    ],
+                    "communities": [
+                        5
+                    ],
+                    "using": [
+                        6
+                    ],
+                    "the": [
+                        7,
+                        26,
+                        48,
+                        58,
+                        86,
+                        92,
+                        106,
+                        121
+                    ],
+                    "mothur": [
+                        8,
+                        16,
+                        53,
+                        60,
+                        93,
+                        122
+                    ],
+                    "tool": [
+                        9
+                    ],
+                    "suite": [
+                        10
+                    ],
+                    "(https://www.mothur.org)": [
+                        11
+                    ],
+                    "is": [
+                        12,
+                        29,
+                        103,
+                        136
+                    ],
+                    "well": [
+                        13
+                    ],
+                    "established.": [
+                        14
+                    ],
+                    "However,": [
+                        15
+                    ],
+                    "requires": [
+                        17
+                    ],
+                    "bioinformatics-based": [
+                        18
+                    ],
+                    "proficiency": [
+                        19
+                    ],
+                    "in": [
+                        20
+                    ],
+                    "order": [
+                        21
+                    ],
+                    "to": [
+                        22,
+                        33,
+                        69
+                    ],
+                    "perform": [
+                        23,
+                        70
+                    ],
+                    "calculations": [
+                        24
+                    ],
+                    "via": [
+                        25
+                    ],
+                    "command-line.": [
+                        27
+                    ],
+                    "Galaxy": [
+                        28,
+                        56,
+                        59,
+                        107,
+                        117,
+                        135
+                    ],
+                    "a": [
+                        30,
+                        35,
+                        65,
+                        111,
+                        131
+                    ],
+                    "project": [
+                        31
+                    ],
+                    "dedicated": [
+                        32
+                    ],
+                    "providing": [
+                        34
+                    ],
+                    "user-friendly": [
+                        36
+                    ],
+                    "web": [
+                        37
+                    ],
+                    "interface": [
+                        38
+                    ],
+                    "for": [
+                        39,
+                        120
+                    ],
+                    "such": [
+                        40
+                    ],
+                    "command-line": [
+                        41
+                    ],
+                    "tools": [
+                        42,
+                        54
+                    ],
+                    "(https://galaxyproject.org/).": [
+                        43
+                    ],
+                    "RESULTS:": [
+                        44
+                    ],
+                    "We": [
+                        45,
+                        84
+                    ],
+                    "have": [
+                        46,
+                        124
+                    ],
+                    "integrated": [
+                        47
+                    ],
+                    "full": [
+                        49,
+                        116
+                    ],
+                    "set": [
+                        50,
+                        66
+                    ],
+                    "125+": [
+                        52
+                    ],
+                    "into": [
+                        55
+                    ],
+                    "as": [
+                        57
+                    ],
+                    "Toolset": [
+                        61
+                    ],
+                    "(GmT)": [
+                        62
+                    ],
+                    "and": [
+                        63,
+                        76,
+                        81,
+                        110,
+                        115
+                    ],
+                    "provided": [
+                        64
+                    ],
+                    "workflows": [
+                        68
+                    ],
+                    "end-to-end": [
+                        71
+                    ],
+                    "16S": [
+                        72
+                    ],
+                    "rRNA": [
+                        73
+                    ],
+                    "gene": [
+                        74
+                    ],
+                    "analyses": [
+                        75
+                    ],
+                    "integrate": [
+                        77
+                    ],
+                    "with": [
+                        78,
+                        130
+                    ],
+                    "third-party": [
+                        79
+                    ],
+                    "visualization": [
+                        80
+                    ],
+                    "reporting": [
+                        82
+                    ],
+                    "tools.": [
+                        83
+                    ],
+                    "demonstrate": [
+                        85
+                    ],
+                    "utility": [
+                        87
+                    ],
+                    "GmT": [
+                        89,
+                        102,
+                        134
+                    ],
+                    "by": [
+                        90
+                    ],
+                    "analyzing": [
+                        91
+                    ],
+                    "MiSeq": [
+                        94
+                    ],
+                    "standard": [
+                        95
+                    ],
+                    "operating": [
+                        96
+                    ],
+                    "procedure": [
+                        97
+                    ],
+                    "(SOP)": [
+                        98
+                    ],
+                    "dataset": [
+                        99
+                    ],
+                    "(https://www.mothur.org/wiki/MiSeq_SOP).": [
+                        100
+                    ],
+                    "CONCLUSIONS:": [
+                        101
+                    ],
+                    "available": [
+                        104
+                    ],
+                    "from": [
+                        105
+                    ],
+                    "Tool": [
+                        108
+                    ],
+                    "Shed,": [
+                        109
+                    ],
+                    "workflow": [
+                        112
+                    ],
+                    "definition": [
+                        113
+                    ],
+                    "file": [
+                        114
+                    ],
+                    "training": [
+                        118
+                    ],
+                    "manual": [
+                        119
+                    ],
+                    "SOP": [
+                        123
+                    ],
+                    "been": [
+                        125
+                    ],
+                    "created.": [
+                        126
+                    ],
+                    "A": [
+                        127
+                    ],
+                    "Docker": [
+                        128
+                    ],
+                    "image": [
+                        129
+                    ],
+                    "fully": [
+                        132
+                    ],
+                    "configured": [
+                        133
+                    ],
+                    "also": [
+                        137
+                    ],
+                    "available.": [
+                        138
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2018,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Galaxy mothur Toolset (GmT): a user-friendly application for 16S rRNA gene sequencing analysis using mothur",
+                "doi": "10.1093/gigascience/giy166",
+                "pmid": "30597007",
+                "pmc": "PMC6377400",
+                "altmetric_jid": "4f6fa81c3cf058f61000bb95",
+                "issns": [
+                    "2047-217X"
+                ],
+                "journal": "Giga Science",
+                "cohorts": {
+                    "pub": 18,
+                    "doc": 1,
+                    "sci": 9,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32447906,
+                        "mean": 10.454899247920654,
+                        "rank": 1976945,
+                        "pct": 93,
+                        "higher_than": 30467410
+                    },
+                    "journal": {
+                        "count": 1452,
+                        "mean": 18.417527548209367,
+                        "rank": 301,
+                        "pct": 79,
+                        "higher_than": 1152
+                    },
+                    "similar_age_3m": {
+                        "count": 361869,
+                        "mean": 14.57027197687561,
+                        "rank": 33413,
+                        "pct": 90,
+                        "higher_than": 328342
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 39,
+                        "mean": 28.644871794871797,
+                        "rank": 10,
+                        "pct": 74,
+                        "higher_than": 29
+                    }
+                },
+                "authors": [
+                    "Saskia D Hiltemann",
+                    "Stefan A Boers",
+                    "Peter J van der Spek",
+                    "Ruud Jansen",
+                    "John P Hays",
+                    "Andrew P Stubbs"
+                ],
+                "type": "article",
+                "pubdate": 1548979200,
+                "epubdate": 1519776000,
+                "dimensions_publication_id": "pub.1110956552",
+                "altmetric_id": 53378005,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_feeds_count": 1,
+                "cited_by_posts_count": 36,
+                "cited_by_tweeters_count": 29,
+                "cited_by_peer_review_sites_count": 1,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_accounts_count": 32,
+                "last_updated": 1551522927,
+                "score": 22.75,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 22.75
+                },
+                "url": "http://dx.doi.org/10.1093/gigascience/giy166",
+                "added_on": 1546444625,
+                "published_on": 1519776000,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "63",
+                    "connotea": "0"
+                },
+                "readers_count": 63,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=23&types=ebtttttf",
+                    "medium": "https://badges.altmetric.com/?size=100&score=23&types=ebtttttf",
+                    "large": "https://badges.altmetric.com/?size=180&score=23&types=ebtttttf"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=53378005"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 0,
+            "total_ccn": 0,
+            "avg_ccn": 0.0,
+            "nloc_per_file": 0.0,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

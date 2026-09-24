@@ -1,0 +1,2342 @@
+{
+    "VIBE": {
+        "tool_name": "VIBE",
+        "biotools": {
+            "name": "VIBE",
+            "description": "A pipeline-friendly software tool for genome diagnostics to prioritize genes by matching patient symptoms to literature.",
+            "homepage": "https://github.com/molgenis/vibe",
+            "biotoolsID": "vibe",
+            "biotoolsCURIE": "biotools:vibe",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3226",
+                            "term": "Variant prioritisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3096",
+                            "term": "Editing"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Workflow"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3298",
+                    "term": "Phenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3676",
+                    "term": "Exome sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0089",
+                    "term": "Ontology and terminology"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Java",
+                "Shell",
+                "R",
+                "Python"
+            ],
+            "license": "LGPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/molgenis/vibe-suppl",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1002/GGN2.10023",
+                    "pmid": "36619248",
+                    "pmcid": "PMC9744518",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "K. Joeri van der Velde",
+                    "email": "k.j.van.der.velde@umcg.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Morris A. Swertz",
+                    "email": "m.a.swertz@rug.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Pub2Tools",
+            "additionDate": "2024-05-06T09:46:36.012886Z",
+            "lastUpdate": "2024-05-06T09:46:36.015424Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 113445719,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMTM0NDU3MTk=",
+                "name": "vibe",
+                "full_name": "molgenis/vibe",
+                "private": false,
+                "owner": {
+                    "login": "molgenis",
+                    "id": 1688158,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2ODgxNTg=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1688158?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/molgenis",
+                    "html_url": "https://github.com/molgenis",
+                    "followers_url": "https://api.github.com/users/molgenis/followers",
+                    "following_url": "https://api.github.com/users/molgenis/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/molgenis/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/molgenis/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/molgenis/subscriptions",
+                    "organizations_url": "https://api.github.com/users/molgenis/orgs",
+                    "repos_url": "https://api.github.com/users/molgenis/repos",
+                    "events_url": "https://api.github.com/users/molgenis/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/molgenis/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/molgenis/vibe",
+                "description": "Variant Interpretation using Biomedical literature Evidence",
+                "fork": false,
+                "url": "https://api.github.com/repos/molgenis/vibe",
+                "forks_url": "https://api.github.com/repos/molgenis/vibe/forks",
+                "keys_url": "https://api.github.com/repos/molgenis/vibe/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/molgenis/vibe/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/molgenis/vibe/teams",
+                "hooks_url": "https://api.github.com/repos/molgenis/vibe/hooks",
+                "issue_events_url": "https://api.github.com/repos/molgenis/vibe/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/molgenis/vibe/events",
+                "assignees_url": "https://api.github.com/repos/molgenis/vibe/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/molgenis/vibe/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/molgenis/vibe/tags",
+                "blobs_url": "https://api.github.com/repos/molgenis/vibe/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/molgenis/vibe/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/molgenis/vibe/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/molgenis/vibe/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/molgenis/vibe/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/molgenis/vibe/languages",
+                "stargazers_url": "https://api.github.com/repos/molgenis/vibe/stargazers",
+                "contributors_url": "https://api.github.com/repos/molgenis/vibe/contributors",
+                "subscribers_url": "https://api.github.com/repos/molgenis/vibe/subscribers",
+                "subscription_url": "https://api.github.com/repos/molgenis/vibe/subscription",
+                "commits_url": "https://api.github.com/repos/molgenis/vibe/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/molgenis/vibe/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/molgenis/vibe/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/molgenis/vibe/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/molgenis/vibe/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/molgenis/vibe/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/molgenis/vibe/merges",
+                "archive_url": "https://api.github.com/repos/molgenis/vibe/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/molgenis/vibe/downloads",
+                "issues_url": "https://api.github.com/repos/molgenis/vibe/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/molgenis/vibe/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/molgenis/vibe/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/molgenis/vibe/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/molgenis/vibe/labels{/name}",
+                "releases_url": "https://api.github.com/repos/molgenis/vibe/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/molgenis/vibe/deployments",
+                "created_at": "2017-12-07T12:00:46Z",
+                "updated_at": "2021-11-15T08:19:54Z",
+                "pushed_at": "2022-09-27T13:02:13Z",
+                "git_url": "git://github.com/molgenis/vibe.git",
+                "ssh_url": "git@github.com:molgenis/vibe.git",
+                "clone_url": "https://github.com/molgenis/vibe.git",
+                "svn_url": "https://github.com/molgenis/vibe",
+                "homepage": "",
+                "size": 1087,
+                "stargazers_count": 0,
+                "watchers_count": 0,
+                "language": "Java",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 19,
+                "license": {
+                    "key": "lgpl-3.0",
+                    "name": "GNU Lesser General Public License v3.0",
+                    "spdx_id": "LGPL-3.0",
+                    "url": "https://api.github.com/licenses/lgpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTEy"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 19,
+                "watchers": 0,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "molgenis",
+                    "id": 1688158,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2ODgxNTg=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1688158?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/molgenis",
+                    "html_url": "https://github.com/molgenis",
+                    "followers_url": "https://api.github.com/users/molgenis/followers",
+                    "following_url": "https://api.github.com/users/molgenis/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/molgenis/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/molgenis/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/molgenis/subscriptions",
+                    "organizations_url": "https://api.github.com/users/molgenis/orgs",
+                    "repos_url": "https://api.github.com/users/molgenis/repos",
+                    "events_url": "https://api.github.com/users/molgenis/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/molgenis/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 5,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": ".ci",
+                    "type": "tree"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".travis.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "TestsPreprocessor.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "database",
+                    "type": "tree"
+                },
+                {
+                    "path": "pom.xml",
+                    "type": "blob"
+                },
+                {
+                    "path": "shared_testdata",
+                    "type": "tree"
+                },
+                {
+                    "path": "vibe-cli",
+                    "type": "tree"
+                },
+                {
+                    "path": "vibe-core",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "svandenhoek",
+                    "contributions": 680
+                },
+                {
+                    "login": "dennishendriksen",
+                    "contributions": 31
+                },
+                {
+                    "login": "molgenis-jenkins",
+                    "contributions": 26
+                },
+                {
+                    "login": "bartcharbon",
+                    "contributions": 24
+                },
+                {
+                    "login": "joerivandervelde",
+                    "contributions": 20
+                },
+                {
+                    "login": "mswertz",
+                    "contributions": 1
+                },
+                {
+                    "login": "RoanKanninga",
+                    "contributions": 1
+                },
+                {
+                    "login": "marikaris",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 69,
+                    "title": "Allow database to be used from a read-only partition",
+                    "created_at": "2021-01-25T17:00:38Z",
+                    "closed_at": "2021-01-28T12:28:47Z"
+                },
+                {
+                    "number": 59,
+                    "title": "Allow concurrent usage of database among separate JVMs",
+                    "created_at": "2020-08-25T07:50:23Z",
+                    "closed_at": "2021-01-28T12:29:07Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Sonar gives 0% code coverage",
+                    "created_at": "2019-12-17T12:17:12Z",
+                    "closed_at": "2020-03-12T11:07:18Z"
+                },
+                {
+                    "number": 18,
+                    "title": "TestNGPreprocessing fails on windows",
+                    "created_at": "2019-11-21T13:24:37Z",
+                    "closed_at": "2020-03-11T12:24:30Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Build failure using Java v11",
+                    "created_at": "2019-09-17T13:02:11Z",
+                    "closed_at": "2019-10-03T13:19:45Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Could not find artifact com.github.jsonld-java.jsonld-java:jsonld-java:bundle:0.11.1",
+                    "created_at": "2019-05-14T07:25:23Z",
+                    "closed_at": "2019-05-15T09:30:01Z"
+                }
+            ],
+            "languages": {
+                "Java": 408490,
+                "Shell": 23274
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1002/ggn2.10023",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36619248",
+                            "source": "MED",
+                            "pmid": "36619248",
+                            "pmcid": "PMC9744518",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9744518"
+                                ]
+                            },
+                            "doi": "10.1002/ggn2.10023",
+                            "title": "A pipeline-friendly software tool for genome diagnostics to prioritize genes by matching patient symptoms to literature.",
+                            "authorString": "van der Velde KJ, van den Hoek S, van Dijk F, Hendriksen D, van Diemen CC, Johansson LF, Abbott KM, Deelen P, Sikkema-Raddatz B, Swertz MA.",
+                            "journalTitle": "Adv Genet (Hoboken)",
+                            "issue": "1",
+                            "journalVolume": "1",
+                            "pubYear": "2020",
+                            "journalIssn": "2641-6573",
+                            "pageInfo": "e10023",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 4,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-01-09",
+                            "firstPublicationDate": "2020-08-10"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3016584810",
+                "doi": "https://doi.org/10.1002/ggn2.10023",
+                "title": "A pipeline\u2010friendly software tool for genome diagnostics to prioritize genes by matching patient symptoms to literature",
+                "display_name": "A pipeline\u2010friendly software tool for genome diagnostics to prioritize genes by matching patient symptoms to literature",
+                "publication_year": 2020,
+                "publication_date": "2020-04-14",
+                "ids": {
+                    "openalex": "https://openalex.org/W3016584810",
+                    "doi": "https://doi.org/10.1002/ggn2.10023",
+                    "mag": "3016584810",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36619248"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1002/ggn2.10023",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1002/ggn2.10023",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ggn2.10023",
+                    "source": {
+                        "id": "https://openalex.org/S4210183972",
+                        "display_name": "Advanced Genetics",
+                        "issn_l": "2641-6573",
+                        "issn": [
+                            "2641-6573"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Advanced Genetics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ggn2.10023",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5033039802",
+                            "display_name": "K. Joeri van der Velde",
+                            "orcid": "https://orcid.org/0000-0002-0934-8375"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "K. Joeri van der Velde",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5055809827",
+                            "display_name": "Sander van den Hoek",
+                            "orcid": "https://orcid.org/0009-0004-3743-650X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sander van den Hoek",
+                        "raw_affiliation_strings": [
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5111907417",
+                            "display_name": "Freerk van Dijk",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210127118",
+                                "display_name": "Princess M\u00e1xima Center",
+                                "ror": "https://ror.org/02aj7yc53",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I4210127118"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Freerk van Dijk",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Prinses\u2009Maxima Center for Child Oncology  Utrecht The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                            "Prinses Maxima Center for Child Oncology, Utrecht, The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Prinses\u2009Maxima Center for Child Oncology  Utrecht The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210127118"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Prinses Maxima Center for Child Oncology, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210127118"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5087133067",
+                            "display_name": "Dennis Hendriksen",
+                            "orcid": "https://orcid.org/0000-0003-0417-625X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Dennis Hendriksen",
+                        "raw_affiliation_strings": [
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5076917917",
+                            "display_name": "Cleo C. van Diemen",
+                            "orcid": "https://orcid.org/0000-0001-9283-2207"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Cleo C. van Diemen",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5076310194",
+                            "display_name": "Lennart Johansson",
+                            "orcid": "https://orcid.org/0000-0002-4914-3737"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Lennart F. Johansson",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5007999398",
+                            "display_name": "Kristin M. Abbott",
+                            "orcid": "https://orcid.org/0000-0002-4885-8124"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kristin M. Abbott",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5022697996",
+                            "display_name": "Patrick Deelen",
+                            "orcid": "https://orcid.org/0000-0002-5654-3966"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Patrick Deelen",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5059939296",
+                            "display_name": "Birgit Sikkema\u2010Raddatz",
+                            "orcid": "https://orcid.org/0000-0002-2239-9054"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Birgit Sikkema\u2010Raddatz",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5052368642",
+                            "display_name": "Morris A. Swertz",
+                            "orcid": "https://orcid.org/0000-0002-0979-3401"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1334415907",
+                                "display_name": "University Medical Center Groningen",
+                                "ror": "https://ror.org/03cv38k47",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Morris A. Swertz",
+                        "raw_affiliation_strings": [
+                            "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                            "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                            "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Genetics University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center University of Groningen and University Medical Center Groningen  Groningen The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Genomics Coordination Center, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Genetics, University of Groningen and University Medical Center Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1334415907",
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 10,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5033039802",
+                    "https://openalex.org/A5052368642"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I1334415907",
+                    "https://openalex.org/I169381384"
+                ],
+                "apc_list": {
+                    "value": 5200,
+                    "currency": "USD",
+                    "value_usd": 5200
+                },
+                "apc_paid": {
+                    "value": 5200,
+                    "currency": "USD",
+                    "value_usd": 5200
+                },
+                "fwci": 0.4168,
+                "has_fulltext": false,
+                "cited_by_count": 5,
+                "citation_normalized_percentile": {
+                    "value": 0.59379087,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 95
+                },
+                "biblio": {
+                    "volume": "1",
+                    "issue": "1",
+                    "first_page": "e10023",
+                    "last_page": "e10023"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11710",
+                    "display_name": "Biomedical Text Mining and Ontologies",
+                    "score": 0.9987999796867371,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11710",
+                        "display_name": "Biomedical Text Mining and Ontologies",
+                        "score": 0.9987999796867371,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.9955999851226807,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10215",
+                        "display_name": "Semantic Web and Ontologies",
+                        "score": 0.9731000065803528,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1702",
+                            "display_name": "Artificial Intelligence"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/executable",
+                        "display_name": "Executable",
+                        "score": 0.7507485747337341
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.6682327389717102
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.531895637512207
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/codebase",
+                        "display_name": "Codebase",
+                        "score": 0.5303778052330017
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/source-code",
+                        "display_name": "Source code",
+                        "score": 0.49671512842178345
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pipeline",
+                        "display_name": "Pipeline (software)",
+                        "score": 0.415894478559494
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/documentation",
+                        "display_name": "Documentation",
+                        "score": 0.41338256001472473
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.3573340177536011
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.16153350472450256
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C160145156",
+                        "wikidata": "https://www.wikidata.org/wiki/Q778586",
+                        "display_name": "Executable",
+                        "level": 2,
+                        "score": 0.7507485747337341
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6682327389717102
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.531895637512207
+                    },
+                    {
+                        "id": "https://openalex.org/C51929080",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2425187",
+                        "display_name": "Codebase",
+                        "level": 3,
+                        "score": 0.5303778052330017
+                    },
+                    {
+                        "id": "https://openalex.org/C43126263",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128751",
+                        "display_name": "Source code",
+                        "level": 2,
+                        "score": 0.49671512842178345
+                    },
+                    {
+                        "id": "https://openalex.org/C43521106",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+                        "display_name": "Pipeline (software)",
+                        "level": 2,
+                        "score": 0.415894478559494
+                    },
+                    {
+                        "id": "https://openalex.org/C56666940",
+                        "wikidata": "https://www.wikidata.org/wiki/Q788790",
+                        "display_name": "Documentation",
+                        "level": 2,
+                        "score": 0.41338256001472473
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.3573340177536011
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.16153350472450256
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 4,
+                "locations": [
+                    {
+                        "id": "doi:10.1002/ggn2.10023",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1002/ggn2.10023",
+                        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ggn2.10023",
+                        "source": {
+                            "id": "https://openalex.org/S4210183972",
+                            "display_name": "Advanced Genetics",
+                            "issn_l": "2641-6573",
+                            "issn": [
+                                "2641-6573"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320595",
+                            "host_organization_name": "Wiley",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320595"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Wiley"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Advanced Genetics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36619248",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36619248",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Advanced genetics (Hoboken, N.J.)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:b9a8c610f3244530ac14f9017f55d770",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/b9a8c610f3244530ac14f9017f55d770",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Advanced Genetics, Vol 1, Iss 1, Pp n/a-n/a (2020)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9744518",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9744518",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Adv Genet (Hoboken)",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1002/ggn2.10023",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1002/ggn2.10023",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ggn2.10023",
+                    "source": {
+                        "id": "https://openalex.org/S4210183972",
+                        "display_name": "Advanced Genetics",
+                        "issn_l": "2641-6573",
+                        "issn": [
+                            "2641-6573"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Advanced Genetics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/17",
+                        "display_name": "Partnerships for the goals",
+                        "score": 0.4099999964237213
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G5425049328",
+                        "display_name": null,
+                        "funder_award_id": "917.164.455",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 53,
+                "referenced_works": [
+                    "https://openalex.org/W954754213",
+                    "https://openalex.org/W2002655468",
+                    "https://openalex.org/W2012361142",
+                    "https://openalex.org/W2013759854",
+                    "https://openalex.org/W2048495389",
+                    "https://openalex.org/W2059313072",
+                    "https://openalex.org/W2069303969",
+                    "https://openalex.org/W2080770151",
+                    "https://openalex.org/W2089903000",
+                    "https://openalex.org/W2094500541",
+                    "https://openalex.org/W2101305463",
+                    "https://openalex.org/W2104008606",
+                    "https://openalex.org/W2119818111",
+                    "https://openalex.org/W2136437513",
+                    "https://openalex.org/W2136941319",
+                    "https://openalex.org/W2142537186",
+                    "https://openalex.org/W2144086069",
+                    "https://openalex.org/W2144427809",
+                    "https://openalex.org/W2153065499",
+                    "https://openalex.org/W2159583324",
+                    "https://openalex.org/W2162151166",
+                    "https://openalex.org/W2165446840",
+                    "https://openalex.org/W2170068732",
+                    "https://openalex.org/W2170282111",
+                    "https://openalex.org/W2235737683",
+                    "https://openalex.org/W2246559112",
+                    "https://openalex.org/W2269037521",
+                    "https://openalex.org/W2341884156",
+                    "https://openalex.org/W2537679995",
+                    "https://openalex.org/W2556048034",
+                    "https://openalex.org/W2558643140",
+                    "https://openalex.org/W2560074596",
+                    "https://openalex.org/W2580313249",
+                    "https://openalex.org/W2602589905",
+                    "https://openalex.org/W2605072706",
+                    "https://openalex.org/W2741654579",
+                    "https://openalex.org/W2758717538",
+                    "https://openalex.org/W2761866254",
+                    "https://openalex.org/W2782316010",
+                    "https://openalex.org/W2787126858",
+                    "https://openalex.org/W2794423006",
+                    "https://openalex.org/W2795749588",
+                    "https://openalex.org/W2799883338",
+                    "https://openalex.org/W2888930188",
+                    "https://openalex.org/W2901332105",
+                    "https://openalex.org/W2949886398",
+                    "https://openalex.org/W2950545834",
+                    "https://openalex.org/W2952445740",
+                    "https://openalex.org/W2953983664",
+                    "https://openalex.org/W2963322438",
+                    "https://openalex.org/W3016584810",
+                    "https://openalex.org/W4212919921",
+                    "https://openalex.org/W4393503754"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2598672065",
+                    "https://openalex.org/W1993817217",
+                    "https://openalex.org/W2344367508",
+                    "https://openalex.org/W3120610872",
+                    "https://openalex.org/W1638297612",
+                    "https://openalex.org/W2523911541",
+                    "https://openalex.org/W2098629748",
+                    "https://openalex.org/W4244608052",
+                    "https://openalex.org/W4312050194",
+                    "https://openalex.org/W2147884840"
+                ],
+                "abstract_inverted_index": {
+                    "Despite": [
+                        0
+                    ],
+                    "an": [
+                        1
+                    ],
+                    "explosive": [
+                        2
+                    ],
+                    "growth": [
+                        3
+                    ],
+                    "of": [
+                        4,
+                        18,
+                        42,
+                        46,
+                        76
+                    ],
+                    "next-generation": [
+                        5
+                    ],
+                    "sequencing": [
+                        6
+                    ],
+                    "data,": [
+                        7
+                    ],
+                    "genome": [
+                        8
+                    ],
+                    "diagnostics": [
+                        9
+                    ],
+                    "only": [
+                        10
+                    ],
+                    "provides": [
+                        11
+                    ],
+                    "a": [
+                        12,
+                        16,
+                        102,
+                        116,
+                        129,
+                        173,
+                        208
+                    ],
+                    "molecular": [
+                        13
+                    ],
+                    "diagnosis": [
+                        14
+                    ],
+                    "to": [
+                        15,
+                        39,
+                        104
+                    ],
+                    "minority": [
+                        17
+                    ],
+                    "patients.": [
+                        19
+                    ],
+                    "Software": [
+                        20
+                    ],
+                    "tools": [
+                        21,
+                        48,
+                        82
+                    ],
+                    "that": [
+                        22,
+                        67,
+                        120,
+                        160,
+                        187
+                    ],
+                    "prioritize": [
+                        23,
+                        105,
+                        163
+                    ],
+                    "genes": [
+                        24,
+                        107,
+                        219
+                    ],
+                    "based": [
+                        25,
+                        108,
+                        175,
+                        220
+                    ],
+                    "on": [
+                        26,
+                        109,
+                        176,
+                        221
+                    ],
+                    "patient": [
+                        27,
+                        178,
+                        222
+                    ],
+                    "symptoms": [
+                        28
+                    ],
+                    "using": [
+                        29,
+                        97
+                    ],
+                    "known": [
+                        30
+                    ],
+                    "gene-disease": [
+                        31,
+                        134
+                    ],
+                    "associations": [
+                        32,
+                        135,
+                        141
+                    ],
+                    "may": [
+                        33
+                    ],
+                    "complement": [
+                        34
+                    ],
+                    "variant": [
+                        35,
+                        59
+                    ],
+                    "filtering": [
+                        36
+                    ],
+                    "and": [
+                        37,
+                        124,
+                        139,
+                        150,
+                        162,
+                        213,
+                        229
+                    ],
+                    "interpretation": [
+                        38
+                    ],
+                    "increase": [
+                        40
+                    ],
+                    "chances": [
+                        41
+                    ],
+                    "success.": [
+                        43
+                    ],
+                    "However,": [
+                        44
+                    ],
+                    "many": [
+                        45,
+                        81
+                    ],
+                    "these": [
+                        47
+                    ],
+                    "cannot": [
+                        49,
+                        68
+                    ],
+                    "be": [
+                        50,
+                        69
+                    ],
+                    "used": [
+                        51
+                    ],
+                    "in": [
+                        52,
+                        172
+                    ],
+                    "practice": [
+                        53
+                    ],
+                    "because": [
+                        54,
+                        75
+                    ],
+                    "they": [
+                        55
+                    ],
+                    "are": [
+                        56,
+                        73,
+                        83,
+                        152,
+                        231
+                    ],
+                    "embedded": [
+                        57
+                    ],
+                    "within": [
+                        58
+                    ],
+                    "prioritization": [
+                        60
+                    ],
+                    "algorithms,": [
+                        61
+                    ],
+                    "or": [
+                        62,
+                        72,
+                        91
+                    ],
+                    "exist": [
+                        63
+                    ],
+                    "as": [
+                        64
+                    ],
+                    "remote": [
+                        65
+                    ],
+                    "services": [
+                        66
+                    ],
+                    "relied": [
+                        70
+                    ],
+                    "upon": [
+                        71,
+                        127
+                    ],
+                    "unacceptable": [
+                        74
+                    ],
+                    "legal/ethical": [
+                        77
+                    ],
+                    "barriers.": [
+                        78
+                    ],
+                    "In": [
+                        79
+                    ],
+                    "addition,": [
+                        80
+                    ],
+                    "not": [
+                        84
+                    ],
+                    "designed": [
+                        85,
+                        153
+                    ],
+                    "for": [
+                        86,
+                        154,
+                        165,
+                        217
+                    ],
+                    "command-line": [
+                        87,
+                        148
+                    ],
+                    "usage,": [
+                        88
+                    ],
+                    "closed-source,": [
+                        89
+                    ],
+                    "abandoned,": [
+                        90
+                    ],
+                    "unavailable.": [
+                        92
+                    ],
+                    "We": [
+                        93,
+                        169
+                    ],
+                    "present": [
+                        94
+                    ],
+                    "Variant": [
+                        95
+                    ],
+                    "Interpretation": [
+                        96
+                    ],
+                    "Biomedical": [
+                        98
+                    ],
+                    "literature": [
+                        99,
+                        138
+                    ],
+                    "Evidence": [
+                        100
+                    ],
+                    "(VIBE),": [
+                        101
+                    ],
+                    "tool": [
+                        103
+                    ],
+                    "disease": [
+                        106
+                    ],
+                    "Human": [
+                        110
+                    ],
+                    "Phenotype": [
+                        111
+                    ],
+                    "Ontology": [
+                        112
+                    ],
+                    "codes.": [
+                        113
+                    ],
+                    "VIBE": [
+                        114,
+                        171,
+                        188,
+                        206
+                    ],
+                    "is": [
+                        115,
+                        125,
+                        207
+                    ],
+                    "locally": [
+                        117,
+                        214
+                    ],
+                    "installed": [
+                        118
+                    ],
+                    "executable": [
+                        119
+                    ],
+                    "ensures": [
+                        121
+                    ],
+                    "operational": [
+                        122
+                    ],
+                    "availability": [
+                        123
+                    ],
+                    "built": [
+                        126
+                    ],
+                    "DisGeNET-RDF,": [
+                        128
+                    ],
+                    "comprehensive": [
+                        130
+                    ],
+                    "knowledge": [
+                        131
+                    ],
+                    "platform": [
+                        132
+                    ],
+                    "containing": [
+                        133
+                    ],
+                    "mostly": [
+                        136,
+                        142
+                    ],
+                    "from": [
+                        137,
+                        143
+                    ],
+                    "variant-disease": [
+                        140
+                    ],
+                    "curated": [
+                        144
+                    ],
+                    "source": [
+                        145,
+                        212,
+                        225
+                    ],
+                    "databases.": [
+                        146
+                    ],
+                    "VIBE's": [
+                        147
+                    ],
+                    "interface": [
+                        149
+                    ],
+                    "output": [
+                        151
+                    ],
+                    "easy": [
+                        155
+                    ],
+                    "incorporation": [
+                        156
+                    ],
+                    "into": [
+                        157
+                    ],
+                    "bioinformatic": [
+                        158
+                    ],
+                    "pipelines": [
+                        159
+                    ],
+                    "annotate": [
+                        161
+                    ],
+                    "variants": [
+                        164
+                    ],
+                    "further": [
+                        166
+                    ],
+                    "clinical": [
+                        167
+                    ],
+                    "interpretation.": [
+                        168
+                    ],
+                    "evaluate": [
+                        170
+                    ],
+                    "benchmark": [
+                        174,
+                        228
+                    ],
+                    "305": [
+                        177
+                    ],
+                    "cases": [
+                        179,
+                        194
+                    ],
+                    "alongside": [
+                        180
+                    ],
+                    "seven": [
+                        181
+                    ],
+                    "other": [
+                        182
+                    ],
+                    "tools.": [
+                        183,
+                        205
+                    ],
+                    "Our": [
+                        184
+                    ],
+                    "results": [
+                        185
+                    ],
+                    "demonstrate": [
+                        186
+                    ],
+                    "offers": [
+                        189
+                    ],
+                    "consistent": [
+                        190
+                    ],
+                    "performance": [
+                        191
+                    ],
+                    "with": [
+                        192
+                    ],
+                    "few": [
+                        193
+                    ],
+                    "missed,": [
+                        195
+                    ],
+                    "but": [
+                        196
+                    ],
+                    "we": [
+                        197
+                    ],
+                    "also": [
+                        198
+                    ],
+                    "find": [
+                        199
+                    ],
+                    "high": [
+                        200
+                    ],
+                    "complementarity": [
+                        201
+                    ],
+                    "among": [
+                        202
+                    ],
+                    "all": [
+                        203
+                    ],
+                    "tested": [
+                        204
+                    ],
+                    "powerful,": [
+                        209
+                    ],
+                    "free,": [
+                        210
+                    ],
+                    "open": [
+                        211
+                    ],
+                    "installable": [
+                        215
+                    ],
+                    "solution": [
+                        216
+                    ],
+                    "prioritizing": [
+                        218
+                    ],
+                    "symptoms.": [
+                        223
+                    ],
+                    "Project": [
+                        224
+                    ],
+                    "code,": [
+                        226
+                    ],
+                    "documentation,": [
+                        227
+                    ],
+                    "executables": [
+                        230
+                    ],
+                    "available": [
+                        232
+                    ],
+                    "at": [
+                        233
+                    ],
+                    "https://github.com/molgenis/vibe.": [
+                        234
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "A pipeline\u2010friendly software tool for genome diagnostics to prioritize genes by matching patient symptoms to literature",
+                "doi": "10.1002/ggn2.10023",
+                "pmid": "36619248",
+                "pmc": "PMC9744518",
+                "isbns": [],
+                "altmetric_jid": "5ea289575f295c00117c7d2e",
+                "issns": [
+                    "2641-6573"
+                ],
+                "journal": "Advanced Genetics",
+                "cohorts": {
+                    "pub": 3,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 25387668,
+                        "mean": 10.746735046558827,
+                        "rank": 7965383,
+                        "pct": 67,
+                        "higher_than": 17217128
+                    },
+                    "journal": {
+                        "count": 52,
+                        "mean": 16.123807692307693,
+                        "rank": 24,
+                        "pct": 53,
+                        "higher_than": 28
+                    },
+                    "similar_age_3m": {
+                        "count": 426414,
+                        "mean": 18.160005168685863,
+                        "rank": 166789,
+                        "pct": 60,
+                        "higher_than": 256780
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 5,
+                        "mean": 59.553599999999996,
+                        "rank": 4,
+                        "pct": 20,
+                        "higher_than": 1
+                    }
+                },
+                "authors": [
+                    "K. Joeri van der Velde",
+                    "Sander van den Hoek",
+                    "Freerk van Dijk",
+                    "Dennis Hendriksen",
+                    "Cleo C. van Diemen",
+                    "Lennart F. Johansson",
+                    "Kristin M. Abbott",
+                    "Patrick Deelen",
+                    "Birgit Sikkema\u2010Raddatz",
+                    "Morris A. Swertz"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1606780800,
+                "epubdate": 1597017600,
+                "dimensions_publication_id": "pub.1126643386",
+                "altmetric_id": 88161736,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_peer_review_sites_count": 1,
+                "cited_by_posts_count": 12,
+                "cited_by_tweeters_count": 4,
+                "cited_by_accounts_count": 5,
+                "last_updated": 1604067504,
+                "score": 3.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 3.5
+                },
+                "url": "http://dx.doi.org/10.1002/ggn2.10023",
+                "added_on": 1597282953,
+                "published_on": 1597017600,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "26",
+                    "connotea": "0"
+                },
+                "readers_count": 26,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=4&types=eeeetttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=4&types=eeeetttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=4&types=eeeetttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=88161736"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 4835,
+            "total_ccn": 1025,
+            "avg_ccn": 1.3,
+            "nloc_per_file": 43.95,
+            "duplicate_rate": 20.48
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

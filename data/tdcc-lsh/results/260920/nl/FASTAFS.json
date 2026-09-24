@@ -1,0 +1,2158 @@
+{
+    "FASTAFS": {
+        "tool_name": "FASTAFS",
+        "biotools": {
+            "name": "FASTAFS",
+            "description": "FASTAFS is toolkit for file system virtualisation of random access compressed FASTA files.\nAlthough it is uncommon, the FASTAFS format denotes the index (a typical header) after the data. The reason for this location is that most metadata can only be known after converting the entire FASTA file to FASTAFS. For instance, the number of nucleotides encoded within 2bit data, the number of N-characters or the checksum.",
+            "homepage": "https://github.com/yhoogstrate/fastafs",
+            "biotoolsID": "fastafs",
+            "biotoolsCURIE": "biotools:fastafs",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0335",
+                            "term": "Formatting"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3357",
+                            "term": "Format detection"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Suite"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3168",
+                    "term": "Sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0091",
+                    "term": "Bioinformatics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0659",
+                    "term": "Functional, regulatory and non-coding RNA"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2885",
+                    "term": "DNA polymorphism"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "C++",
+                "Python",
+                "Forth"
+            ],
+            "license": "GPL-2.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/yhoogstrate/fastafs/blob/master/doc/FASTAFS-FORMAT-SPECIFICATION.md",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1186/s12859-021-04455-3",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "FASTAFS: file system virtualisation of random access compressed FASTA files",
+                        "abstract": "\u00a9 2021, The Author(s).Background: The FASTA file format, used to store polymeric sequence data, has become a bioinformatics file standard used for decades. The relatively large files require additional files, beyond the scope of the original format, to identify sequences and to provide random access. Multiple compressors have been developed to archive FASTA files back and forth, but these lack direct access to targeted content or metadata of the archive. Moreover, these solutions are not directly backwards compatible to FASTA files, resulting in limited software integration. Results: We designed a linux based toolkit that virtualises the content of DNA, RNA and protein FASTA archives into the filesystem by using filesystem in userspace. This guarantees in-sync virtualised metadata files and offers fast random-access decompression using bit encodings plus Zstandard (zstd). The toolkit, FASTAFS, can track all its system-wide running instances, allows file integrity verification and can provide, instantly, scriptable access to sequence files and is easy to use and deploy. The file compression ratios were comparable but not superior to other state of the art archival tools, despite the innovative random access feature implemented in FASTAFS. Conclusions: FASTAFS is a user-friendly and easy to deploy backwards compatible generic purpose solution to store and access compressed FASTA files, since it offers file system access to FASTA files as well as in-sync metadata files through file virtualisation. Using virtual filesystems as in-between layer offers format conversion without the need to rewrite code into different programming languages while preserving compatibility.",
+                        "date": "2021-12-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Hoogstrate Y."
+                            },
+                            {
+                                "name": "Jenster G.W."
+                            },
+                            {
+                                "name": "Werken H.J.G."
+                            }
+                        ],
+                        "journal": "BMC Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Youri Hoogstrate",
+                    "email": "y.hoogstrate@erasmusmc.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "yhoogstrate",
+            "additionDate": "2021-01-18T11:45:19Z",
+            "lastUpdate": "2022-04-02T21:27:02.767791Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 110824253,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMTA4MjQyNTM=",
+                "name": "fastafs",
+                "full_name": "yhoogstrate/fastafs",
+                "private": false,
+                "owner": {
+                    "login": "yhoogstrate",
+                    "id": 2264697,
+                    "node_id": "MDQ6VXNlcjIyNjQ2OTc=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/2264697?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/yhoogstrate",
+                    "html_url": "https://github.com/yhoogstrate",
+                    "followers_url": "https://api.github.com/users/yhoogstrate/followers",
+                    "following_url": "https://api.github.com/users/yhoogstrate/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/yhoogstrate/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/yhoogstrate/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/yhoogstrate/subscriptions",
+                    "organizations_url": "https://api.github.com/users/yhoogstrate/orgs",
+                    "repos_url": "https://api.github.com/users/yhoogstrate/repos",
+                    "events_url": "https://api.github.com/users/yhoogstrate/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/yhoogstrate/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/yhoogstrate/fastafs",
+                "description": "toolkit for file system virtualisation of random access compressed FASTA, FAI, DICT & TWOBIT files",
+                "fork": false,
+                "url": "https://api.github.com/repos/yhoogstrate/fastafs",
+                "forks_url": "https://api.github.com/repos/yhoogstrate/fastafs/forks",
+                "keys_url": "https://api.github.com/repos/yhoogstrate/fastafs/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/yhoogstrate/fastafs/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/yhoogstrate/fastafs/teams",
+                "hooks_url": "https://api.github.com/repos/yhoogstrate/fastafs/hooks",
+                "issue_events_url": "https://api.github.com/repos/yhoogstrate/fastafs/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/yhoogstrate/fastafs/events",
+                "assignees_url": "https://api.github.com/repos/yhoogstrate/fastafs/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/yhoogstrate/fastafs/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/yhoogstrate/fastafs/tags",
+                "blobs_url": "https://api.github.com/repos/yhoogstrate/fastafs/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/yhoogstrate/fastafs/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/yhoogstrate/fastafs/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/yhoogstrate/fastafs/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/yhoogstrate/fastafs/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/yhoogstrate/fastafs/languages",
+                "stargazers_url": "https://api.github.com/repos/yhoogstrate/fastafs/stargazers",
+                "contributors_url": "https://api.github.com/repos/yhoogstrate/fastafs/contributors",
+                "subscribers_url": "https://api.github.com/repos/yhoogstrate/fastafs/subscribers",
+                "subscription_url": "https://api.github.com/repos/yhoogstrate/fastafs/subscription",
+                "commits_url": "https://api.github.com/repos/yhoogstrate/fastafs/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/yhoogstrate/fastafs/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/yhoogstrate/fastafs/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/yhoogstrate/fastafs/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/yhoogstrate/fastafs/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/yhoogstrate/fastafs/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/yhoogstrate/fastafs/merges",
+                "archive_url": "https://api.github.com/repos/yhoogstrate/fastafs/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/yhoogstrate/fastafs/downloads",
+                "issues_url": "https://api.github.com/repos/yhoogstrate/fastafs/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/yhoogstrate/fastafs/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/yhoogstrate/fastafs/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/yhoogstrate/fastafs/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/yhoogstrate/fastafs/labels{/name}",
+                "releases_url": "https://api.github.com/repos/yhoogstrate/fastafs/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/yhoogstrate/fastafs/deployments",
+                "created_at": "2017-11-15T11:22:18Z",
+                "updated_at": "2026-04-23T12:33:02Z",
+                "pushed_at": "2026-04-24T07:22:00Z",
+                "git_url": "git://github.com/yhoogstrate/fastafs.git",
+                "ssh_url": "git@github.com:yhoogstrate/fastafs.git",
+                "clone_url": "https://github.com/yhoogstrate/fastafs.git",
+                "svn_url": "https://github.com/yhoogstrate/fastafs",
+                "homepage": "",
+                "size": 3116,
+                "stargazers_count": 22,
+                "watchers_count": 22,
+                "language": "C++",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 5,
+                "license": {
+                    "key": "gpl-2.0",
+                    "name": "GNU General Public License v2.0",
+                    "spdx_id": "GPL-2.0",
+                    "url": "https://api.github.com/licenses/gpl-2.0",
+                    "node_id": "MDc6TGljZW5zZTg="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "2bit",
+                    "compression",
+                    "dna-sequences",
+                    "fasta",
+                    "filesystem",
+                    "fuse-filesystem"
+                ],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 5,
+                "watchers": 22,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 0
+            },
+            "contents": [
+                {
+                    "path": ".claude",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitmodules",
+                    "type": "blob"
+                },
+                {
+                    "path": ".travis.old",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "CLAUDE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "CMakeLists.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "CODE_OF_CONDUCT.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "Changelog",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "benchmarks",
+                    "type": "tree"
+                },
+                {
+                    "path": "build-debug.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "build-release-meson.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "build-release.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "cmake-modules",
+                    "type": "tree"
+                },
+                {
+                    "path": "dependencies",
+                    "type": "tree"
+                },
+                {
+                    "path": "doc",
+                    "type": "tree"
+                },
+                {
+                    "path": "guix",
+                    "type": "tree"
+                },
+                {
+                    "path": "include",
+                    "type": "tree"
+                },
+                {
+                    "path": "lib",
+                    "type": "tree"
+                },
+                {
+                    "path": "meson.build",
+                    "type": "blob"
+                },
+                {
+                    "path": "scripts",
+                    "type": "tree"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "test",
+                    "type": "tree"
+                },
+                {
+                    "path": "tmp",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "yhoogstrate",
+                    "contributions": 890
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 69,
+                    "title": "fix deprecation warning openSSL3 and MD5 init",
+                    "created_at": "2024-01-20T17:08:22Z",
+                    "closed_at": "2024-05-24T12:00:30Z"
+                },
+                {
+                    "number": 63,
+                    "title": "Runtime errors about buffer overflows",
+                    "created_at": "2022-01-12T07:55:51Z",
+                    "closed_at": "2022-02-11T11:08:26Z"
+                },
+                {
+                    "number": 50,
+                    "title": "`fastafs cache -o` not writing to cfg but expicitly to defined file",
+                    "created_at": "2020-01-27T14:18:51Z",
+                    "closed_at": "2020-01-27T15:59:51Z"
+                },
+                {
+                    "number": 49,
+                    "title": "disable masking by argument in fastafs view (and mount?)",
+                    "created_at": "2020-01-23T11:49:43Z",
+                    "closed_at": "2020-01-29T19:39:10Z"
+                },
+                {
+                    "number": 48,
+                    "title": "provide approriate file size for `/seq/...:...-...`",
+                    "created_at": "2020-01-23T10:34:56Z",
+                    "closed_at": "2020-01-27T20:12:53Z"
+                },
+                {
+                    "number": 35,
+                    "title": "mount as loop",
+                    "created_at": "2019-05-07T08:13:51Z",
+                    "closed_at": "2020-01-22T15:04:44Z"
+                },
+                {
+                    "number": 34,
+                    "title": "fastafs check gives error with new sha1 code on large sequences?",
+                    "created_at": "2019-04-30T15:34:12Z",
+                    "closed_at": "2019-05-03T12:46:04Z"
+                },
+                {
+                    "number": 32,
+                    "title": "mount .dict file",
+                    "created_at": "2019-04-30T12:03:16Z",
+                    "closed_at": "2019-06-05T10:49:53Z"
+                },
+                {
+                    "number": 27,
+                    "title": "add fastafs --cache file.2bit",
+                    "created_at": "2019-02-19T11:30:08Z",
+                    "closed_at": "2019-03-19T09:17:32Z"
+                },
+                {
+                    "number": 24,
+                    "title": "`fastafs view -p ` does not parse argument",
+                    "created_at": "2018-10-26T09:02:19Z",
+                    "closed_at": "2019-01-25T11:46:52Z"
+                },
+                {
+                    "number": 23,
+                    "title": "format updates",
+                    "created_at": "2018-10-26T08:59:41Z",
+                    "closed_at": "2019-04-11T11:22:09Z"
+                },
+                {
+                    "number": 22,
+                    "title": "API updates",
+                    "created_at": "2018-10-26T08:58:35Z",
+                    "closed_at": "2020-01-29T20:59:57Z"
+                },
+                {
+                    "number": 16,
+                    "title": "duplicate entries may appear in database",
+                    "created_at": "2018-01-17T11:52:00Z",
+                    "closed_at": "2026-04-23T12:29:45Z"
+                },
+                {
+                    "number": 12,
+                    "title": "size of mounted files do not exceed buffer size",
+                    "created_at": "2018-01-09T10:03:04Z",
+                    "closed_at": "2018-01-11T11:39:31Z"
+                },
+                {
+                    "number": 10,
+                    "title": "further compressing 2bit",
+                    "created_at": "2018-01-02T11:32:08Z",
+                    "closed_at": "2019-07-09T11:33:49Z"
+                },
+                {
+                    "number": 9,
+                    "title": "fastafs mount + .fai idx",
+                    "created_at": "2017-12-27T09:59:11Z",
+                    "closed_at": "2018-01-08T11:56:46Z"
+                },
+                {
+                    "number": 8,
+                    "title": "threaded `fastafs cache`",
+                    "created_at": "2017-12-27T09:58:53Z",
+                    "closed_at": "2019-08-18T19:14:57Z"
+                },
+                {
+                    "number": 7,
+                    "title": "fastafs mount CLI",
+                    "created_at": "2017-12-27T09:58:06Z",
+                    "closed_at": "2018-01-17T12:01:36Z"
+                }
+            ],
+            "languages": {
+                "C++": 571789,
+                "Python": 36868,
+                "CMake": 17268,
+                "Shell": 10202,
+                "Meson": 6716,
+                "Scheme": 1431
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s12859-021-04455-3",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34724897",
+                            "source": "MED",
+                            "pmid": "34724897",
+                            "pmcid": "PMC8558547",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8558547"
+                                ]
+                            },
+                            "doi": "10.1186/s12859-021-04455-3",
+                            "title": "FASTAFS: file system virtualisation of random access compressed FASTA files.",
+                            "authorString": "Hoogstrate Y, Jenster GW, van de Werken HJG.",
+                            "journalTitle": "BMC Bioinformatics",
+                            "issue": "1",
+                            "journalVolume": "22",
+                            "pubYear": "2021",
+                            "journalIssn": "1471-2105",
+                            "pageInfo": "535",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 3,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "gen",
+                                    "refseq"
+                                ]
+                            },
+                            "firstIndexDate": "2021-11-26",
+                            "firstPublicationDate": "2021-11-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3208553257",
+                "doi": "https://doi.org/10.1186/s12859-021-04455-3",
+                "title": "FASTAFS: file system virtualisation of random access compressed FASTA files",
+                "display_name": "FASTAFS: file system virtualisation of random access compressed FASTA files",
+                "publication_year": 2021,
+                "publication_date": "2021-11-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W3208553257",
+                    "doi": "https://doi.org/10.1186/s12859-021-04455-3",
+                    "mag": "3208553257",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34724897"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s12859-021-04455-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-021-04455-3",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-021-04455-3",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-021-04455-3",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5081979091",
+                            "display_name": "Youri Hoogstrate",
+                            "orcid": "https://orcid.org/0000-0003-2166-0676"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801952686",
+                                "display_name": "Erasmus MC",
+                                "ror": "https://ror.org/018906e22",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210149908",
+                                "display_name": "Erasmus MC Cancer Institute",
+                                "ror": "https://ror.org/03r4m3349",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686",
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913958620",
+                                "display_name": "Erasmus University Rotterdam",
+                                "ror": "https://ror.org/057w15z03",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913958620"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Youri Hoogstrate",
+                        "raw_affiliation_strings": [
+                            "Cancer Computational Biology Center, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                            "Department of Neurology, Erasmus University Medical Center, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                            "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                            "Department of Neurology, Erasmus University Medical Center, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2166-0676",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Cancer Computational Biology Center, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Neurology, Erasmus University Medical Center, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686",
+                                    "https://openalex.org/I913958620"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands. yhoogstrate@erasmusmc.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Neurology, Erasmus University Medical Center, Dr. Molewaterplein 40, 3015 GD, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2801952686"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5034635531",
+                            "display_name": "Guido Jenster",
+                            "orcid": "https://orcid.org/0000-0002-8658-2552"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210149908",
+                                "display_name": "Erasmus MC Cancer Institute",
+                                "ror": "https://ror.org/03r4m3349",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686",
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Guido W. Jenster",
+                        "raw_affiliation_strings": [
+                            "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5008299051",
+                            "display_name": "Harmen J.G. van de Werken",
+                            "orcid": "https://orcid.org/0000-0002-9794-1477"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210149908",
+                                "display_name": "Erasmus MC Cancer Institute",
+                                "ror": "https://ror.org/03r4m3349",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2801952686",
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Harmen J. G. van de Werken",
+                        "raw_affiliation_strings": [
+                            "Cancer Computational Biology Center, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                            "Department of Immunology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                            "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Cancer Computational Biology Center, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Immunology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Urology, Erasmus MC Cancer Institute, University Medical Center, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210149908"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5081979091"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2801952686",
+                    "https://openalex.org/I4210149908",
+                    "https://openalex.org/I913958620"
+                ],
+                "apc_list": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "apc_paid": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "fwci": 0.4071,
+                "has_fulltext": true,
+                "cited_by_count": 7,
+                "citation_normalized_percentile": {
+                    "value": 0.59976761,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 96
+                },
+                "biblio": {
+                    "volume": "22",
+                    "issue": "1",
+                    "first_page": "535",
+                    "last_page": "535"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10015",
+                    "display_name": "Genomics and Phylogenetic Studies",
+                    "score": 0.4595000147819519,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.4595000147819519,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T13937",
+                        "display_name": "Genetics, Bioinformatics, and Biomedical Research",
+                        "score": 0.15960000455379486,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11986",
+                        "display_name": "Scientific Computing and Data Management",
+                        "score": 0.08760000020265579,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1802",
+                            "display_name": "Information Systems and Management"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/18",
+                            "display_name": "Decision Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/2",
+                            "display_name": "Social Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7959949970245361
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/metadata",
+                        "display_name": "Metadata",
+                        "score": 0.6462445855140686
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.5871772170066833
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/random-access",
+                        "display_name": "Random access",
+                        "score": 0.575171172618866
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/file-format",
+                        "display_name": "File format",
+                        "score": 0.5546016693115234
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/versioning-file-system",
+                        "display_name": "Versioning file system",
+                        "score": 0.5220556259155273
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.4781566560268402
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-file",
+                        "display_name": "Data file",
+                        "score": 0.47534772753715515
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-file",
+                        "display_name": "Computer file",
+                        "score": 0.45846426486968994
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/sync",
+                        "display_name": "sync",
+                        "score": 0.4249059557914734
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.33909159898757935
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/stub-file",
+                        "display_name": "Stub file",
+                        "score": 0.16943636536598206
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-network",
+                        "display_name": "Computer network",
+                        "score": 0.10923588275909424
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7959949970245361
+                    },
+                    {
+                        "id": "https://openalex.org/C93518851",
+                        "wikidata": "https://www.wikidata.org/wiki/Q180160",
+                        "display_name": "Metadata",
+                        "level": 2,
+                        "score": 0.6462445855140686
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.5871772170066833
+                    },
+                    {
+                        "id": "https://openalex.org/C101722063",
+                        "wikidata": "https://www.wikidata.org/wiki/Q218825",
+                        "display_name": "Random access",
+                        "level": 2,
+                        "score": 0.575171172618866
+                    },
+                    {
+                        "id": "https://openalex.org/C97250363",
+                        "wikidata": "https://www.wikidata.org/wiki/Q235557",
+                        "display_name": "File format",
+                        "level": 2,
+                        "score": 0.5546016693115234
+                    },
+                    {
+                        "id": "https://openalex.org/C166807848",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3445065",
+                        "display_name": "Versioning file system",
+                        "level": 4,
+                        "score": 0.5220556259155273
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.4781566560268402
+                    },
+                    {
+                        "id": "https://openalex.org/C171730128",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5227290",
+                        "display_name": "Data file",
+                        "level": 2,
+                        "score": 0.47534772753715515
+                    },
+                    {
+                        "id": "https://openalex.org/C95637964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q82753",
+                        "display_name": "Computer file",
+                        "level": 2,
+                        "score": 0.45846426486968994
+                    },
+                    {
+                        "id": "https://openalex.org/C3913047",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1956265",
+                        "display_name": "sync",
+                        "level": 3,
+                        "score": 0.4249059557914734
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.33909159898757935
+                    },
+                    {
+                        "id": "https://openalex.org/C13674803",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7627301",
+                        "display_name": "Stub file",
+                        "level": 3,
+                        "score": 0.16943636536598206
+                    },
+                    {
+                        "id": "https://openalex.org/C31258907",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+                        "display_name": "Computer network",
+                        "level": 1,
+                        "score": 0.10923588275909424
+                    },
+                    {
+                        "id": "https://openalex.org/C127162648",
+                        "wikidata": "https://www.wikidata.org/wiki/Q16858953",
+                        "display_name": "Channel (broadcasting)",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D044962",
+                        "descriptor_name": "Data Compression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D044962",
+                        "descriptor_name": "Data Compression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D044962",
+                        "descriptor_name": "Data Compression",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s12859-021-04455-3",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s12859-021-04455-3",
+                        "pdf_url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-021-04455-3",
+                        "source": {
+                            "id": "https://openalex.org/S19032547",
+                            "display_name": "BMC Bioinformatics",
+                            "issn_l": "1471-2105",
+                            "issn": [
+                                "1471-2105"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34724897",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34724897",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC bioinformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:eur:oai:pure.eur.nl:publications/11e5b014-6a2f-4c9a-9704-0e9a5a8e7dc1",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.eur.nl/en/publications/11e5b014-6a2f-4c9a-9704-0e9a5a8e7dc1",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, 22(1):535. BioMed Central Ltd.",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:fbb2aed2325b447aa3f461d033a7c2f8",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/fbb2aed2325b447aa3f461d033a7c2f8",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics, Vol 22, Iss 1, Pp 1-12 (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:7450381",
+                        "is_oa": true,
+                        "landing_page_url": "http://europepmc.org/pmc/articles/PMC8558547",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8558547",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8558547",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Bioinformatics",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s12859-021-04455-3",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s12859-021-04455-3",
+                    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-021-04455-3",
+                    "source": {
+                        "id": "https://openalex.org/S19032547",
+                        "display_name": "BMC Bioinformatics",
+                        "issn_l": "1471-2105",
+                        "issn": [
+                            "1471-2105"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3208553257.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3208553257.grobid-xml"
+                },
+                "referenced_works_count": 19,
+                "referenced_works": [
+                    "https://openalex.org/W1978939618",
+                    "https://openalex.org/W2014677321",
+                    "https://openalex.org/W2034285706",
+                    "https://openalex.org/W2110417468",
+                    "https://openalex.org/W2110905563",
+                    "https://openalex.org/W2114792961",
+                    "https://openalex.org/W2119180969",
+                    "https://openalex.org/W2124799197",
+                    "https://openalex.org/W2154139219",
+                    "https://openalex.org/W2155943701",
+                    "https://openalex.org/W2158678815",
+                    "https://openalex.org/W2169456326",
+                    "https://openalex.org/W2336957559",
+                    "https://openalex.org/W2529838505",
+                    "https://openalex.org/W2605897695",
+                    "https://openalex.org/W2898440040",
+                    "https://openalex.org/W2951893579",
+                    "https://openalex.org/W4233120011",
+                    "https://openalex.org/W4255738661"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1988281752",
+                    "https://openalex.org/W3032858184",
+                    "https://openalex.org/W2157319784",
+                    "https://openalex.org/W2375081845",
+                    "https://openalex.org/W3209230099",
+                    "https://openalex.org/W1977082847",
+                    "https://openalex.org/W2625128489",
+                    "https://openalex.org/W2090798606",
+                    "https://openalex.org/W2356613511",
+                    "https://openalex.org/W96486943"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "The": [
+                        1,
+                        20,
+                        126,
+                        156
+                    ],
+                    "FASTA": [
+                        2,
+                        49,
+                        76,
+                        99,
+                        201,
+                        210
+                    ],
+                    "file": [
+                        3,
+                        15,
+                        137,
+                        157,
+                        206,
+                        219
+                    ],
+                    "format,": [
+                        4,
+                        33
+                    ],
+                    "used": [
+                        5,
+                        17
+                    ],
+                    "to": [
+                        6,
+                        34,
+                        38,
+                        47,
+                        59,
+                        75,
+                        146,
+                        152,
+                        165,
+                        189,
+                        196,
+                        209,
+                        233
+                    ],
+                    "store": [
+                        7,
+                        197
+                    ],
+                    "polymeric": [
+                        8
+                    ],
+                    "sequence": [
+                        9,
+                        147
+                    ],
+                    "data,": [
+                        10
+                    ],
+                    "has": [
+                        11
+                    ],
+                    "become": [
+                        12
+                    ],
+                    "a": [
+                        13,
+                        86,
+                        185
+                    ],
+                    "bioinformatics": [
+                        14
+                    ],
+                    "standard": [
+                        16
+                    ],
+                    "for": [
+                        18
+                    ],
+                    "decades.": [
+                        19
+                    ],
+                    "relatively": [
+                        21
+                    ],
+                    "large": [
+                        22
+                    ],
+                    "files": [
+                        23,
+                        50,
+                        114,
+                        148,
+                        211,
+                        217
+                    ],
+                    "require": [
+                        24
+                    ],
+                    "additional": [
+                        25
+                    ],
+                    "files,": [
+                        26,
+                        77,
+                        202
+                    ],
+                    "beyond": [
+                        27
+                    ],
+                    "the": [
+                        28,
+                        31,
+                        65,
+                        92,
+                        102,
+                        169,
+                        174,
+                        231
+                    ],
+                    "scope": [
+                        29
+                    ],
+                    "of": [
+                        30,
+                        64,
+                        94,
+                        168
+                    ],
+                    "original": [
+                        32
+                    ],
+                    "identify": [
+                        35
+                    ],
+                    "sequences": [
+                        36
+                    ],
+                    "and": [
+                        37,
+                        52,
+                        97,
+                        115,
+                        140,
+                        149,
+                        154,
+                        187,
+                        198
+                    ],
+                    "provide": [
+                        39
+                    ],
+                    "random": [
+                        40,
+                        176
+                    ],
+                    "access.": [
+                        41
+                    ],
+                    "Multiple": [
+                        42
+                    ],
+                    "compressors": [
+                        43
+                    ],
+                    "have": [
+                        44
+                    ],
+                    "been": [
+                        45
+                    ],
+                    "developed": [
+                        46
+                    ],
+                    "archive": [
+                        48
+                    ],
+                    "back": [
+                        51
+                    ],
+                    "forth,": [
+                        53
+                    ],
+                    "but": [
+                        54,
+                        162
+                    ],
+                    "these": [
+                        55,
+                        68
+                    ],
+                    "lack": [
+                        56
+                    ],
+                    "direct": [
+                        57
+                    ],
+                    "access": [
+                        58,
+                        145,
+                        177,
+                        199,
+                        208
+                    ],
+                    "targeted": [
+                        60
+                    ],
+                    "content": [
+                        61,
+                        93
+                    ],
+                    "or": [
+                        62
+                    ],
+                    "metadata": [
+                        63,
+                        113,
+                        216
+                    ],
+                    "archive.": [
+                        66
+                    ],
+                    "Moreover,": [
+                        67
+                    ],
+                    "solutions": [
+                        69
+                    ],
+                    "are": [
+                        70
+                    ],
+                    "not": [
+                        71,
+                        163
+                    ],
+                    "directly": [
+                        72
+                    ],
+                    "backwards": [
+                        73,
+                        191
+                    ],
+                    "compatible": [
+                        74,
+                        192
+                    ],
+                    "resulting": [
+                        78
+                    ],
+                    "in": [
+                        79,
+                        107,
+                        180
+                    ],
+                    "limited": [
+                        80
+                    ],
+                    "software": [
+                        81
+                    ],
+                    "integration.": [
+                        82
+                    ],
+                    "RESULTS:": [
+                        83
+                    ],
+                    "We": [
+                        84
+                    ],
+                    "designed": [
+                        85
+                    ],
+                    "linux": [
+                        87
+                    ],
+                    "based": [
+                        88
+                    ],
+                    "toolkit": [
+                        89
+                    ],
+                    "that": [
+                        90
+                    ],
+                    "virtualises": [
+                        91
+                    ],
+                    "DNA,": [
+                        95
+                    ],
+                    "RNA": [
+                        96
+                    ],
+                    "protein": [
+                        98
+                    ],
+                    "archives": [
+                        100
+                    ],
+                    "into": [
+                        101,
+                        236
+                    ],
+                    "filesystem": [
+                        103,
+                        106
+                    ],
+                    "by": [
+                        104
+                    ],
+                    "using": [
+                        105,
+                        120
+                    ],
+                    "userspace.": [
+                        108
+                    ],
+                    "This": [
+                        109
+                    ],
+                    "guarantees": [
+                        110
+                    ],
+                    "in-sync": [
+                        111,
+                        215
+                    ],
+                    "virtualised": [
+                        112
+                    ],
+                    "offers": [
+                        116,
+                        205,
+                        227
+                    ],
+                    "fast": [
+                        117
+                    ],
+                    "random-access": [
+                        118
+                    ],
+                    "decompression": [
+                        119
+                    ],
+                    "bit": [
+                        121
+                    ],
+                    "encodings": [
+                        122
+                    ],
+                    "plus": [
+                        123
+                    ],
+                    "Zstandard": [
+                        124
+                    ],
+                    "(zstd).": [
+                        125
+                    ],
+                    "toolkit,": [
+                        127
+                    ],
+                    "FASTAFS,": [
+                        128
+                    ],
+                    "can": [
+                        129,
+                        141
+                    ],
+                    "track": [
+                        130
+                    ],
+                    "all": [
+                        131
+                    ],
+                    "its": [
+                        132
+                    ],
+                    "system-wide": [
+                        133
+                    ],
+                    "running": [
+                        134
+                    ],
+                    "instances,": [
+                        135
+                    ],
+                    "allows": [
+                        136
+                    ],
+                    "integrity": [
+                        138
+                    ],
+                    "verification": [
+                        139
+                    ],
+                    "provide,": [
+                        142
+                    ],
+                    "instantly,": [
+                        143
+                    ],
+                    "scriptable": [
+                        144
+                    ],
+                    "is": [
+                        150,
+                        184
+                    ],
+                    "easy": [
+                        151,
+                        188
+                    ],
+                    "use": [
+                        153
+                    ],
+                    "deploy.": [
+                        155
+                    ],
+                    "compression": [
+                        158
+                    ],
+                    "ratios": [
+                        159
+                    ],
+                    "were": [
+                        160
+                    ],
+                    "comparable": [
+                        161
+                    ],
+                    "superior": [
+                        164
+                    ],
+                    "other": [
+                        166
+                    ],
+                    "state": [
+                        167
+                    ],
+                    "art": [
+                        170
+                    ],
+                    "archival": [
+                        171
+                    ],
+                    "tools,": [
+                        172
+                    ],
+                    "despite": [
+                        173
+                    ],
+                    "innovative": [
+                        175
+                    ],
+                    "feature": [
+                        178
+                    ],
+                    "implemented": [
+                        179
+                    ],
+                    "FASTAFS.": [
+                        181
+                    ],
+                    "CONCLUSIONS:": [
+                        182
+                    ],
+                    "FASTAFS": [
+                        183
+                    ],
+                    "user-friendly": [
+                        186
+                    ],
+                    "deploy": [
+                        190
+                    ],
+                    "generic": [
+                        193
+                    ],
+                    "purpose": [
+                        194
+                    ],
+                    "solution": [
+                        195
+                    ],
+                    "compressed": [
+                        200
+                    ],
+                    "since": [
+                        203
+                    ],
+                    "it": [
+                        204
+                    ],
+                    "system": [
+                        207
+                    ],
+                    "as": [
+                        212,
+                        214,
+                        224
+                    ],
+                    "well": [
+                        213
+                    ],
+                    "through": [
+                        218
+                    ],
+                    "virtualisation.": [
+                        220
+                    ],
+                    "Using": [
+                        221
+                    ],
+                    "virtual": [
+                        222
+                    ],
+                    "filesystems": [
+                        223
+                    ],
+                    "in-between": [
+                        225
+                    ],
+                    "layer": [
+                        226
+                    ],
+                    "format": [
+                        228
+                    ],
+                    "conversion": [
+                        229
+                    ],
+                    "without": [
+                        230
+                    ],
+                    "need": [
+                        232
+                    ],
+                    "rewrite": [
+                        234
+                    ],
+                    "code": [
+                        235
+                    ],
+                    "different": [
+                        237
+                    ],
+                    "programming": [
+                        238
+                    ],
+                    "languages": [
+                        239
+                    ],
+                    "while": [
+                        240
+                    ],
+                    "preserving": [
+                        241
+                    ],
+                    "compatibility.": [
+                        242
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2025,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "FASTAFS: file system virtualisation of random access compressed FASTA files",
+                "doi": "10.1186/s12859-021-04455-3",
+                "pmid": "34724897",
+                "pmc": "PMC8558547",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007a9",
+                "issns": [
+                    "1471-2105"
+                ],
+                "journal": "BMC Bioinformatics",
+                "cohorts": {
+                    "sci": 6,
+                    "pub": 3,
+                    "doc": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32434533,
+                        "mean": 10.496447370954902,
+                        "rank": 3093877,
+                        "pct": 90,
+                        "higher_than": 29284712
+                    },
+                    "journal": {
+                        "count": 8272,
+                        "mean": 5.813588007736944,
+                        "rank": 715,
+                        "pct": 91,
+                        "higher_than": 7557
+                    },
+                    "similar_age_3m": {
+                        "count": 463691,
+                        "mean": 14.445793534918682,
+                        "rank": 55584,
+                        "pct": 87,
+                        "higher_than": 407490
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 156,
+                        "mean": 5.297435897435897,
+                        "rank": 12,
+                        "pct": 92,
+                        "higher_than": 144
+                    }
+                },
+                "authors": [
+                    "Youri Hoogstrate",
+                    "Guido W. Jenster",
+                    "Harmen J. G. van de Werken"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1638316800,
+                "epubdate": 1635724800,
+                "dimensions_publication_id": "pub.1142279948",
+                "altmetric_id": 116069868,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Algorithms",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Appl. in Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Microarrays",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 15,
+                "cited_by_tweeters_count": 10,
+                "cited_by_feeds_count": 1,
+                "cited_by_wikipedia_count": 1,
+                "cited_by_accounts_count": 12,
+                "last_updated": 1678442943,
+                "score": 14,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 14
+                },
+                "url": "http://dx.doi.org/10.1186/s12859-021-04455-3",
+                "added_on": 1635767654,
+                "published_on": 1635724800,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "45",
+                    "connotea": "0"
+                },
+                "readers_count": 45,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=14&types=bttttttw",
+                    "medium": "https://badges.altmetric.com/?size=100&score=14&types=bttttttw",
+                    "large": "https://badges.altmetric.com/?size=180&score=14&types=bttttttw"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=116069868"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 11769,
+            "total_ccn": 1988,
+            "avg_ccn": 3.24,
+            "nloc_per_file": 165.76,
+            "duplicate_rate": 27.68
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

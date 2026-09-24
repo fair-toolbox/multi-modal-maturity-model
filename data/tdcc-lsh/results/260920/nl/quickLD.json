@@ -1,0 +1,2184 @@
+{
+    "quickLD": {
+        "tool_name": "quickLD",
+        "biotools": {
+            "name": "quickLD",
+            "description": "quickLD (qLD) is a tool to calculate Linkage disequilibrium (the non-random association between alleles at different loci), with highly efficient CPU and GPU kernels that utilize dense linear algebra (DLA) operations.",
+            "homepage": "https://github.com/pephco/quickLD",
+            "biotoolsID": "quickld",
+            "biotoolsCURIE": "biotools:quickld",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0488",
+                            "term": "Linkage disequilibrium calculation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3557",
+                            "term": "Imputation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3192",
+                            "term": "Sequence trimming"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3316",
+                    "term": "Computer science"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3570",
+                    "term": "Pure mathematics"
+                }
+            ],
+            "operatingSystem": [
+                "Linux"
+            ],
+            "language": [
+                "C",
+                "Shell",
+                "Other"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/pephco/quickLD",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1111/1755-0998.13438",
+                    "pmid": "34062051",
+                    "pmcid": "PMC8518384",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "quickLD: An efficient software for linkage disequilibrium analyses",
+                        "abstract": "\u00a9 2021 The Authors. Molecular Ecology Resources published by John Wiley & Sons Ltd.Software tools for linkage disequilibrium (LD) analyses are designed to calculate LD among all genetic variants in a single region. Since compute and memory requirements grow quadratically with the distance between variants, using these tools for long-range LD calculations leads to long execution times and increased allocation of memory resources. Furthermore, widely used tools do not fully utilize the computational resources of modern processors and/or graphics processing cards, limiting future large-scale analyses on thousands of samples. We present quickLD, a stand-alone and open-source software that computes several LD-related statistics, including the commonly used r2. quickLD calculates pairwise LD between genetic variants in a single region or in arbitrarily distant regions with negligible memory requirements. Moreover, quickLD achieves up to 95% and 97% of the theoretical peak performance of a CPU and a GPU, respectively, enabling 21.5\u00d7 faster processing than current state-of-the-art software on a multicore processor and 49.5\u00d7 faster processing when the aggregate processing power of a multicore CPU and a GPU is harnessed. quickLD can also be used in studies of selection, recombination, genetic drift, inbreeding and gene flow. The software is available at https://github.com/pephco/quickLD.",
+                        "date": "2021-10-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Theodoris C."
+                            },
+                            {
+                                "name": "Low T.M."
+                            },
+                            {
+                                "name": "Pavlidis P."
+                            },
+                            {
+                                "name": "Alachiotis N."
+                            }
+                        ],
+                        "journal": "Molecular Ecology Resources"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Nikolaos Alachiotis",
+                    "email": "n.alachiotis@utwente.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Pavlos Pavlidis",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Tze Meng Low",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Charalampos Theodoris",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2021-10-24T18:56:59.879640Z",
+            "lastUpdate": "2021-10-24T19:00:08.016859Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 358625337,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNTg2MjUzMzc=",
+                "name": "quickLD",
+                "full_name": "pephco/quickLD",
+                "private": false,
+                "owner": {
+                    "login": "pephco",
+                    "id": 81620185,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxNjIwMTg1",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/81620185?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/pephco",
+                    "html_url": "https://github.com/pephco",
+                    "followers_url": "https://api.github.com/users/pephco/followers",
+                    "following_url": "https://api.github.com/users/pephco/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/pephco/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/pephco/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/pephco/subscriptions",
+                    "organizations_url": "https://api.github.com/users/pephco/orgs",
+                    "repos_url": "https://api.github.com/users/pephco/repos",
+                    "events_url": "https://api.github.com/users/pephco/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/pephco/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/pephco/quickLD",
+                "description": "quickLD, a large-scale, long-range Linkage Disequilibrium analysis tool utilizing parallel CPU, GPU or heterogeneous computing.",
+                "fork": true,
+                "url": "https://api.github.com/repos/pephco/quickLD",
+                "forks_url": "https://api.github.com/repos/pephco/quickLD/forks",
+                "keys_url": "https://api.github.com/repos/pephco/quickLD/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/pephco/quickLD/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/pephco/quickLD/teams",
+                "hooks_url": "https://api.github.com/repos/pephco/quickLD/hooks",
+                "issue_events_url": "https://api.github.com/repos/pephco/quickLD/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/pephco/quickLD/events",
+                "assignees_url": "https://api.github.com/repos/pephco/quickLD/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/pephco/quickLD/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/pephco/quickLD/tags",
+                "blobs_url": "https://api.github.com/repos/pephco/quickLD/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/pephco/quickLD/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/pephco/quickLD/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/pephco/quickLD/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/pephco/quickLD/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/pephco/quickLD/languages",
+                "stargazers_url": "https://api.github.com/repos/pephco/quickLD/stargazers",
+                "contributors_url": "https://api.github.com/repos/pephco/quickLD/contributors",
+                "subscribers_url": "https://api.github.com/repos/pephco/quickLD/subscribers",
+                "subscription_url": "https://api.github.com/repos/pephco/quickLD/subscription",
+                "commits_url": "https://api.github.com/repos/pephco/quickLD/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/pephco/quickLD/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/pephco/quickLD/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/pephco/quickLD/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/pephco/quickLD/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/pephco/quickLD/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/pephco/quickLD/merges",
+                "archive_url": "https://api.github.com/repos/pephco/quickLD/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/pephco/quickLD/downloads",
+                "issues_url": "https://api.github.com/repos/pephco/quickLD/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/pephco/quickLD/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/pephco/quickLD/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/pephco/quickLD/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/pephco/quickLD/labels{/name}",
+                "releases_url": "https://api.github.com/repos/pephco/quickLD/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/pephco/quickLD/deployments",
+                "created_at": "2021-04-16T14:26:59Z",
+                "updated_at": "2024-04-20T17:10:22Z",
+                "pushed_at": "2022-06-10T12:47:26Z",
+                "git_url": "git://github.com/pephco/quickLD.git",
+                "ssh_url": "git@github.com:pephco/quickLD.git",
+                "clone_url": "https://github.com/pephco/quickLD.git",
+                "svn_url": "https://github.com/pephco/quickLD",
+                "homepage": "",
+                "size": 2733,
+                "stargazers_count": 10,
+                "watchers_count": 10,
+                "language": "C",
+                "has_issues": false,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 3,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 3,
+                "open_issues": 0,
+                "watchers": 10,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "pephco",
+                    "id": 81620185,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgxNjIwMTg1",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/81620185?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/pephco",
+                    "html_url": "https://github.com/pephco",
+                    "followers_url": "https://api.github.com/users/pephco/followers",
+                    "following_url": "https://api.github.com/users/pephco/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/pephco/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/pephco/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/pephco/subscriptions",
+                    "organizations_url": "https://api.github.com/users/pephco/orgs",
+                    "repos_url": "https://api.github.com/users/pephco/repos",
+                    "events_url": "https://api.github.com/users/pephco/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/pephco/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "parent": {
+                    "id": 279275121,
+                    "node_id": "MDEwOlJlcG9zaXRvcnkyNzkyNzUxMjE=",
+                    "name": "qLD",
+                    "full_name": "StrayLamb2/qLD",
+                    "private": false,
+                    "owner": {
+                        "login": "StrayLamb2",
+                        "id": 28883323,
+                        "node_id": "MDQ6VXNlcjI4ODgzMzIz",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/28883323?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/StrayLamb2",
+                        "html_url": "https://github.com/StrayLamb2",
+                        "followers_url": "https://api.github.com/users/StrayLamb2/followers",
+                        "following_url": "https://api.github.com/users/StrayLamb2/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/StrayLamb2/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/StrayLamb2/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/StrayLamb2/subscriptions",
+                        "organizations_url": "https://api.github.com/users/StrayLamb2/orgs",
+                        "repos_url": "https://api.github.com/users/StrayLamb2/repos",
+                        "events_url": "https://api.github.com/users/StrayLamb2/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/StrayLamb2/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "html_url": "https://github.com/StrayLamb2/qLD",
+                    "description": "quickLD, a large-scale, long-range Linkage Disequilibrium analysis tool utilizing parallel CPU, GPU or heterogeneous computing.",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/StrayLamb2/qLD",
+                    "forks_url": "https://api.github.com/repos/StrayLamb2/qLD/forks",
+                    "keys_url": "https://api.github.com/repos/StrayLamb2/qLD/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/StrayLamb2/qLD/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/StrayLamb2/qLD/teams",
+                    "hooks_url": "https://api.github.com/repos/StrayLamb2/qLD/hooks",
+                    "issue_events_url": "https://api.github.com/repos/StrayLamb2/qLD/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/StrayLamb2/qLD/events",
+                    "assignees_url": "https://api.github.com/repos/StrayLamb2/qLD/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/StrayLamb2/qLD/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/StrayLamb2/qLD/tags",
+                    "blobs_url": "https://api.github.com/repos/StrayLamb2/qLD/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/StrayLamb2/qLD/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/StrayLamb2/qLD/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/StrayLamb2/qLD/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/StrayLamb2/qLD/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/StrayLamb2/qLD/languages",
+                    "stargazers_url": "https://api.github.com/repos/StrayLamb2/qLD/stargazers",
+                    "contributors_url": "https://api.github.com/repos/StrayLamb2/qLD/contributors",
+                    "subscribers_url": "https://api.github.com/repos/StrayLamb2/qLD/subscribers",
+                    "subscription_url": "https://api.github.com/repos/StrayLamb2/qLD/subscription",
+                    "commits_url": "https://api.github.com/repos/StrayLamb2/qLD/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/StrayLamb2/qLD/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/StrayLamb2/qLD/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/StrayLamb2/qLD/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/StrayLamb2/qLD/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/StrayLamb2/qLD/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/StrayLamb2/qLD/merges",
+                    "archive_url": "https://api.github.com/repos/StrayLamb2/qLD/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/StrayLamb2/qLD/downloads",
+                    "issues_url": "https://api.github.com/repos/StrayLamb2/qLD/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/StrayLamb2/qLD/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/StrayLamb2/qLD/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/StrayLamb2/qLD/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/StrayLamb2/qLD/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/StrayLamb2/qLD/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/StrayLamb2/qLD/deployments",
+                    "created_at": "2020-07-13T10:46:50Z",
+                    "updated_at": "2024-11-23T14:01:57Z",
+                    "pushed_at": "2021-05-10T12:36:39Z",
+                    "git_url": "git://github.com/StrayLamb2/qLD.git",
+                    "ssh_url": "git@github.com:StrayLamb2/qLD.git",
+                    "clone_url": "https://github.com/StrayLamb2/qLD.git",
+                    "svn_url": "https://github.com/StrayLamb2/qLD",
+                    "homepage": "",
+                    "size": 2860,
+                    "stargazers_count": 3,
+                    "watchers_count": 3,
+                    "language": "C",
+                    "has_issues": true,
+                    "has_projects": true,
+                    "has_downloads": true,
+                    "has_wiki": true,
+                    "has_pages": false,
+                    "has_discussions": false,
+                    "forks_count": 5,
+                    "mirror_url": null,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 2,
+                    "license": {
+                        "key": "gpl-3.0",
+                        "name": "GNU General Public License v3.0",
+                        "spdx_id": "GPL-3.0",
+                        "url": "https://api.github.com/licenses/gpl-3.0",
+                        "node_id": "MDc6TGljZW5zZTk="
+                    },
+                    "allow_forking": true,
+                    "is_template": false,
+                    "web_commit_signoff_required": false,
+                    "has_pull_requests": true,
+                    "pull_request_creation_policy": "all",
+                    "topics": [
+                        "blis",
+                        "disequilibrium",
+                        "heterogeneous",
+                        "ld",
+                        "linkage",
+                        "opencl",
+                        "parallel",
+                        "qld",
+                        "quickld"
+                    ],
+                    "visibility": "public",
+                    "forks": 5,
+                    "open_issues": 2,
+                    "watchers": 3,
+                    "default_branch": "master"
+                },
+                "source": {
+                    "id": 279275121,
+                    "node_id": "MDEwOlJlcG9zaXRvcnkyNzkyNzUxMjE=",
+                    "name": "qLD",
+                    "full_name": "StrayLamb2/qLD",
+                    "private": false,
+                    "owner": {
+                        "login": "StrayLamb2",
+                        "id": 28883323,
+                        "node_id": "MDQ6VXNlcjI4ODgzMzIz",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/28883323?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/StrayLamb2",
+                        "html_url": "https://github.com/StrayLamb2",
+                        "followers_url": "https://api.github.com/users/StrayLamb2/followers",
+                        "following_url": "https://api.github.com/users/StrayLamb2/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/StrayLamb2/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/StrayLamb2/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/StrayLamb2/subscriptions",
+                        "organizations_url": "https://api.github.com/users/StrayLamb2/orgs",
+                        "repos_url": "https://api.github.com/users/StrayLamb2/repos",
+                        "events_url": "https://api.github.com/users/StrayLamb2/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/StrayLamb2/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "html_url": "https://github.com/StrayLamb2/qLD",
+                    "description": "quickLD, a large-scale, long-range Linkage Disequilibrium analysis tool utilizing parallel CPU, GPU or heterogeneous computing.",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/StrayLamb2/qLD",
+                    "forks_url": "https://api.github.com/repos/StrayLamb2/qLD/forks",
+                    "keys_url": "https://api.github.com/repos/StrayLamb2/qLD/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/StrayLamb2/qLD/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/StrayLamb2/qLD/teams",
+                    "hooks_url": "https://api.github.com/repos/StrayLamb2/qLD/hooks",
+                    "issue_events_url": "https://api.github.com/repos/StrayLamb2/qLD/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/StrayLamb2/qLD/events",
+                    "assignees_url": "https://api.github.com/repos/StrayLamb2/qLD/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/StrayLamb2/qLD/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/StrayLamb2/qLD/tags",
+                    "blobs_url": "https://api.github.com/repos/StrayLamb2/qLD/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/StrayLamb2/qLD/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/StrayLamb2/qLD/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/StrayLamb2/qLD/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/StrayLamb2/qLD/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/StrayLamb2/qLD/languages",
+                    "stargazers_url": "https://api.github.com/repos/StrayLamb2/qLD/stargazers",
+                    "contributors_url": "https://api.github.com/repos/StrayLamb2/qLD/contributors",
+                    "subscribers_url": "https://api.github.com/repos/StrayLamb2/qLD/subscribers",
+                    "subscription_url": "https://api.github.com/repos/StrayLamb2/qLD/subscription",
+                    "commits_url": "https://api.github.com/repos/StrayLamb2/qLD/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/StrayLamb2/qLD/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/StrayLamb2/qLD/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/StrayLamb2/qLD/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/StrayLamb2/qLD/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/StrayLamb2/qLD/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/StrayLamb2/qLD/merges",
+                    "archive_url": "https://api.github.com/repos/StrayLamb2/qLD/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/StrayLamb2/qLD/downloads",
+                    "issues_url": "https://api.github.com/repos/StrayLamb2/qLD/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/StrayLamb2/qLD/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/StrayLamb2/qLD/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/StrayLamb2/qLD/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/StrayLamb2/qLD/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/StrayLamb2/qLD/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/StrayLamb2/qLD/deployments",
+                    "created_at": "2020-07-13T10:46:50Z",
+                    "updated_at": "2024-11-23T14:01:57Z",
+                    "pushed_at": "2021-05-10T12:36:39Z",
+                    "git_url": "git://github.com/StrayLamb2/qLD.git",
+                    "ssh_url": "git@github.com:StrayLamb2/qLD.git",
+                    "clone_url": "https://github.com/StrayLamb2/qLD.git",
+                    "svn_url": "https://github.com/StrayLamb2/qLD",
+                    "homepage": "",
+                    "size": 2860,
+                    "stargazers_count": 3,
+                    "watchers_count": 3,
+                    "language": "C",
+                    "has_issues": true,
+                    "has_projects": true,
+                    "has_downloads": true,
+                    "has_wiki": true,
+                    "has_pages": false,
+                    "has_discussions": false,
+                    "forks_count": 5,
+                    "mirror_url": null,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 2,
+                    "license": {
+                        "key": "gpl-3.0",
+                        "name": "GNU General Public License v3.0",
+                        "spdx_id": "GPL-3.0",
+                        "url": "https://api.github.com/licenses/gpl-3.0",
+                        "node_id": "MDc6TGljZW5zZTk="
+                    },
+                    "allow_forking": true,
+                    "is_template": false,
+                    "web_commit_signoff_required": false,
+                    "has_pull_requests": true,
+                    "pull_request_creation_policy": "all",
+                    "topics": [
+                        "blis",
+                        "disequilibrium",
+                        "heterogeneous",
+                        "ld",
+                        "linkage",
+                        "opencl",
+                        "parallel",
+                        "qld",
+                        "quickld"
+                    ],
+                    "visibility": "public",
+                    "forks": 5,
+                    "open_issues": 2,
+                    "watchers": 3,
+                    "default_branch": "master"
+                },
+                "network_count": 5,
+                "subscribers_count": 0
+            },
+            "contents": [
+                {
+                    "path": "INSTRUCTIONS.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "VERSION",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "blis",
+                    "type": "tree"
+                },
+                {
+                    "path": "config",
+                    "type": "blob"
+                },
+                {
+                    "path": "heatmap_viewer_reqs.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "install_blis",
+                    "type": "blob"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "test_dataset",
+                    "type": "tree"
+                },
+                {
+                    "path": "test_run",
+                    "type": "blob"
+                },
+                {
+                    "path": "utilities",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "StrayLamb2",
+                    "contributions": 59
+                },
+                {
+                    "login": "alachins",
+                    "contributions": 4
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "C": 11041152,
+                "Shell": 143221,
+                "Makefile": 117403,
+                "Assembly": 63760,
+                "Python": 32333,
+                "Batchfile": 10943
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1111/1755-0998.13438",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34062051",
+                            "source": "MED",
+                            "pmid": "34062051",
+                            "pmcid": "PMC8518384",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8518384"
+                                ]
+                            },
+                            "doi": "10.1111/1755-0998.13438",
+                            "title": "quickLD: An efficient software for linkage disequilibrium analyses.",
+                            "authorString": "Theodoris C, Low TM, Pavlidis P, Alachiotis N.",
+                            "journalTitle": "Mol Ecol Resour",
+                            "issue": "7",
+                            "journalVolume": "21",
+                            "pubYear": "2021",
+                            "journalIssn": "1755-0998; 1755-098x; ",
+                            "pageInfo": "2580-2587",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 8,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-06-02",
+                            "firstPublicationDate": "2021-06-19"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3165537837",
+                "doi": "https://doi.org/10.1111/1755-0998.13438",
+                "title": "quickLD: An efficient software for linkage disequilibrium analyses",
+                "display_name": "quickLD: An efficient software for linkage disequilibrium analyses",
+                "publication_year": 2021,
+                "publication_date": "2021-06-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W3165537837",
+                    "doi": "https://doi.org/10.1111/1755-0998.13438",
+                    "mag": "3165537837",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34062051"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1111/1755-0998.13438",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1111/1755-0998.13438",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1755-0998.13438",
+                    "source": {
+                        "id": "https://openalex.org/S64961995",
+                        "display_name": "Molecular Ecology Resources",
+                        "issn_l": "1755-098X",
+                        "issn": [
+                            "1755-098X",
+                            "1755-0998"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Molecular Ecology Resources",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1755-0998.13438",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5003894550",
+                            "display_name": "Charalampos Theodoris",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I55741626",
+                                "display_name": "Technical University of Crete",
+                                "ror": "https://ror.org/03f8bz564",
+                                "country_code": "GR",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I55741626"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Charalampos Theodoris",
+                        "raw_affiliation_strings": [
+                            "Technical University of Crete  Chania Greece",
+                            "Technical University of Crete, Chania, Greece"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Technical University of Crete  Chania Greece",
+                                "institution_ids": [
+                                    "https://openalex.org/I55741626"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Technical University of Crete, Chania, Greece",
+                                "institution_ids": [
+                                    "https://openalex.org/I55741626"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5019607600",
+                            "display_name": "Tze Meng Low",
+                            "orcid": "https://orcid.org/0000-0002-5179-8249"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I74973139",
+                                "display_name": "Carnegie Mellon University",
+                                "ror": "https://ror.org/05x2bcf33",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I74973139"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Tze Meng Low",
+                        "raw_affiliation_strings": [
+                            "Carnegie Mellon University  Pittsburgh USA",
+                            "Carnegie Mellon University, Pittsburgh, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Carnegie Mellon University  Pittsburgh USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I74973139"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Carnegie Mellon University, Pittsburgh, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I74973139"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5101949068",
+                            "display_name": "Pavlos Pavlidis",
+                            "orcid": "https://orcid.org/0000-0002-8359-7257"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I8901234",
+                                "display_name": "Foundation for Research and Technology Hellas",
+                                "ror": "https://ror.org/052rphn09",
+                                "country_code": "GR",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I8901234"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Pavlos Pavlidis",
+                        "raw_affiliation_strings": [
+                            "Foundation for Research and Technology\u2010Hellas  Heraklion Greece",
+                            "Foundation for Research and Technology-Hellas, Heraklion, Greece"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8359-7257",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Foundation for Research and Technology\u2010Hellas  Heraklion Greece",
+                                "institution_ids": [
+                                    "https://openalex.org/I8901234"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Foundation for Research and Technology-Hellas, Heraklion, Greece",
+                                "institution_ids": [
+                                    "https://openalex.org/I8901234"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5010135755",
+                            "display_name": "Nikolaos Alachiotis",
+                            "orcid": "https://orcid.org/0000-0001-8162-3792"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I94624287",
+                                "display_name": "University of Twente",
+                                "ror": "https://ror.org/006hf6230",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I94624287"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Nikolaos Alachiotis",
+                        "raw_affiliation_strings": [
+                            "University of Twente  Enschede The Netherlands",
+                            "University of Twente, Enschede, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8162-3792",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Twente  Enschede The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I94624287"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "University of Twente, Enschede, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I94624287"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5010135755"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I94624287"
+                ],
+                "apc_list": {
+                    "value": 4940,
+                    "currency": "USD",
+                    "value_usd": 4940
+                },
+                "apc_paid": {
+                    "value": 4940,
+                    "currency": "USD",
+                    "value_usd": 4940
+                },
+                "fwci": 3.4714,
+                "has_fulltext": true,
+                "cited_by_count": 23,
+                "citation_normalized_percentile": {
+                    "value": 0.93238954,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "21",
+                    "issue": "7",
+                    "first_page": "2580",
+                    "last_page": "2587"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10261",
+                    "display_name": "Genetic Associations and Epidemiology",
+                    "score": 0.9939000010490417,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10261",
+                        "display_name": "Genetic Associations and Epidemiology",
+                        "score": 0.9939000010490417,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11468",
+                        "display_name": "Genetic Mapping and Diversity in Plants and Animals",
+                        "score": 0.9883000254631042,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11764",
+                        "display_name": "Evolution and Genetic Dynamics",
+                        "score": 0.9847999811172485,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.6694215536117554
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.6419757604598999
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/multi-core-processor",
+                        "display_name": "Multi-core processor",
+                        "score": 0.6276561617851257
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pairwise-comparison",
+                        "display_name": "Pairwise comparison",
+                        "score": 0.5878890156745911
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/linkage-disequilibrium",
+                        "display_name": "Linkage disequilibrium",
+                        "score": 0.5151116251945496
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/inbreeding",
+                        "display_name": "Inbreeding",
+                        "score": 0.4956570863723755
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphics",
+                        "display_name": "Graphics",
+                        "score": 0.46066585183143616
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/linkage",
+                        "display_name": "Linkage (software)",
+                        "score": 0.4596192240715027
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/parallel-computing",
+                        "display_name": "Parallel computing",
+                        "score": 0.42558497190475464
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/heuristic",
+                        "display_name": "Heuristic",
+                        "score": 0.41039833426475525
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.39661189913749695
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.23122766613960266
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.1628524661064148
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.1593456268310547
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/haplotype",
+                        "display_name": "Haplotype",
+                        "score": 0.1512531340122223
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/allele",
+                        "display_name": "Allele",
+                        "score": 0.12549611926078796
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6694215536117554
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.6419757604598999
+                    },
+                    {
+                        "id": "https://openalex.org/C78766204",
+                        "wikidata": "https://www.wikidata.org/wiki/Q555032",
+                        "display_name": "Multi-core processor",
+                        "level": 2,
+                        "score": 0.6276561617851257
+                    },
+                    {
+                        "id": "https://openalex.org/C184898388",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1435712",
+                        "display_name": "Pairwise comparison",
+                        "level": 2,
+                        "score": 0.5878890156745911
+                    },
+                    {
+                        "id": "https://openalex.org/C35605836",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2064311",
+                        "display_name": "Linkage disequilibrium",
+                        "level": 5,
+                        "score": 0.5151116251945496
+                    },
+                    {
+                        "id": "https://openalex.org/C2777782036",
+                        "wikidata": "https://www.wikidata.org/wiki/Q38978",
+                        "display_name": "Inbreeding",
+                        "level": 3,
+                        "score": 0.4956570863723755
+                    },
+                    {
+                        "id": "https://openalex.org/C21442007",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1027879",
+                        "display_name": "Graphics",
+                        "level": 2,
+                        "score": 0.46066585183143616
+                    },
+                    {
+                        "id": "https://openalex.org/C31266012",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6554340",
+                        "display_name": "Linkage (software)",
+                        "level": 3,
+                        "score": 0.4596192240715027
+                    },
+                    {
+                        "id": "https://openalex.org/C173608175",
+                        "wikidata": "https://www.wikidata.org/wiki/Q232661",
+                        "display_name": "Parallel computing",
+                        "level": 1,
+                        "score": 0.42558497190475464
+                    },
+                    {
+                        "id": "https://openalex.org/C173801870",
+                        "wikidata": "https://www.wikidata.org/wiki/Q201413",
+                        "display_name": "Heuristic",
+                        "level": 2,
+                        "score": 0.41039833426475525
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.39661189913749695
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.23122766613960266
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.1628524661064148
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.1593456268310547
+                    },
+                    {
+                        "id": "https://openalex.org/C197754878",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80711",
+                        "display_name": "Haplotype",
+                        "level": 4,
+                        "score": 0.1512531340122223
+                    },
+                    {
+                        "id": "https://openalex.org/C180754005",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80726",
+                        "display_name": "Allele",
+                        "level": 3,
+                        "score": 0.12549611926078796
+                    },
+                    {
+                        "id": "https://openalex.org/C2908647359",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2625603",
+                        "display_name": "Population",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C144024400",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21201",
+                        "display_name": "Sociology",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C149923435",
+                        "wikidata": "https://www.wikidata.org/wiki/Q37732",
+                        "display_name": "Demography",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008040",
+                        "descriptor_name": "Genetic Linkage",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008040",
+                        "descriptor_name": "Genetic Linkage",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008040",
+                        "descriptor_name": "Genetic Linkage",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D015810",
+                        "descriptor_name": "Linkage Disequilibrium",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015810",
+                        "descriptor_name": "Linkage Disequilibrium",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015810",
+                        "descriptor_name": "Linkage Disequilibrium",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1111/1755-0998.13438",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1111/1755-0998.13438",
+                        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1755-0998.13438",
+                        "source": {
+                            "id": "https://openalex.org/S64961995",
+                            "display_name": "Molecular Ecology Resources",
+                            "issn_l": "1755-098X",
+                            "issn": [
+                                "1755-098X",
+                                "1755-0998"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320595",
+                            "host_organization_name": "Wiley",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320595"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Wiley"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Molecular Ecology Resources",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34062051",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34062051",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Molecular ecology resources",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:ris.utwente.nl:openaire/774283a8-a651-46ef-9fa4-3abe111f8c97",
+                        "is_oa": false,
+                        "landing_page_url": "https://research.utwente.nl/en/publications/774283a8-a651-46ef-9fa4-3abe111f8c97",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4406922991",
+                            "display_name": "University of Twente Research Information",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Theodoris, C, Low, T M, Pavlidis, P & Alachiotis, N 2021, 'quickLD : An efficient software for linkage disequilibrium analyses', Molecular Ecology Resources, vol. 21, no. 7, pp. 2580-2587. https://doi.org/10.1111/1755-0998.13438",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:doi:10.6084/m9.figshare.14431268",
+                        "is_oa": true,
+                        "landing_page_url": "https://github.com/pephco/quickLD",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4406922384",
+                            "display_name": "Open MIND",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Software"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8518384",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8518384",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Mol Ecol Resour",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1111/1755-0998.13438",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1111/1755-0998.13438",
+                    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1755-0998.13438",
+                    "source": {
+                        "id": "https://openalex.org/S64961995",
+                        "display_name": "Molecular Ecology Resources",
+                        "issn_l": "1755-098X",
+                        "issn": [
+                            "1755-098X",
+                            "1755-0998"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320595",
+                        "host_organization_name": "Wiley",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320595"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Wiley"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Molecular Ecology Resources",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.46000000834465027,
+                        "display_name": "Industry, innovation and infrastructure",
+                        "id": "https://metadata.un.org/sdg/9"
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3165537837.pdf"
+                },
+                "referenced_works_count": 17,
+                "referenced_works": [
+                    "https://openalex.org/W1989695882",
+                    "https://openalex.org/W2091239497",
+                    "https://openalex.org/W2099085143",
+                    "https://openalex.org/W2104549677",
+                    "https://openalex.org/W2124165778",
+                    "https://openalex.org/W2158822573",
+                    "https://openalex.org/W2159487337",
+                    "https://openalex.org/W2160378127",
+                    "https://openalex.org/W2252007067",
+                    "https://openalex.org/W2294062686",
+                    "https://openalex.org/W2482240280",
+                    "https://openalex.org/W2909240409",
+                    "https://openalex.org/W2949848068",
+                    "https://openalex.org/W2964359086",
+                    "https://openalex.org/W2965582009",
+                    "https://openalex.org/W3115695775",
+                    "https://openalex.org/W3165537837"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2009039889",
+                    "https://openalex.org/W2309393540",
+                    "https://openalex.org/W2015671646",
+                    "https://openalex.org/W1587682229",
+                    "https://openalex.org/W2418151067",
+                    "https://openalex.org/W4319737407",
+                    "https://openalex.org/W4223595548",
+                    "https://openalex.org/W2037557848",
+                    "https://openalex.org/W2186202068",
+                    "https://openalex.org/W2141001738"
+                ],
+                "abstract_inverted_index": {
+                    "Abstract": [
+                        0
+                    ],
+                    "Software": [
+                        1
+                    ],
+                    "tools": [
+                        2,
+                        35,
+                        54
+                    ],
+                    "for": [
+                        3,
+                        36
+                    ],
+                    "linkage": [
+                        4
+                    ],
+                    "disequilibrium": [
+                        5
+                    ],
+                    "(LD)": [
+                        6
+                    ],
+                    "analyses": [
+                        7,
+                        72
+                    ],
+                    "are": [
+                        8
+                    ],
+                    "designed": [
+                        9
+                    ],
+                    "to": [
+                        10,
+                        41,
+                        121
+                    ],
+                    "calculate": [
+                        11
+                    ],
+                    "LD": [
+                        12,
+                        38,
+                        100
+                    ],
+                    "among": [
+                        13
+                    ],
+                    "all": [
+                        14
+                    ],
+                    "genetic": [
+                        15,
+                        102,
+                        177
+                    ],
+                    "variants": [
+                        16,
+                        103
+                    ],
+                    "in": [
+                        17,
+                        104,
+                        109,
+                        172
+                    ],
+                    "a": [
+                        18,
+                        80,
+                        105,
+                        131,
+                        134,
+                        146,
+                        159,
+                        163
+                    ],
+                    "single": [
+                        19,
+                        106
+                    ],
+                    "region.": [
+                        20
+                    ],
+                    "Since": [
+                        21
+                    ],
+                    "compute": [
+                        22
+                    ],
+                    "and": [
+                        23,
+                        45,
+                        82,
+                        123,
+                        133,
+                        149,
+                        162,
+                        180
+                    ],
+                    "memory": [
+                        24,
+                        49,
+                        115
+                    ],
+                    "requirements": [
+                        25
+                    ],
+                    "grow": [
+                        26
+                    ],
+                    "quadratically": [
+                        27
+                    ],
+                    "with": [
+                        28,
+                        113
+                    ],
+                    "the": [
+                        29,
+                        59,
+                        91,
+                        126,
+                        154
+                    ],
+                    "distance": [
+                        30
+                    ],
+                    "between": [
+                        31,
+                        101
+                    ],
+                    "variants,": [
+                        32
+                    ],
+                    "using": [
+                        33
+                    ],
+                    "these": [
+                        34
+                    ],
+                    "long\u2010range": [
+                        37
+                    ],
+                    "calculations": [
+                        39
+                    ],
+                    "leads": [
+                        40
+                    ],
+                    "long": [
+                        42
+                    ],
+                    "execution": [
+                        43
+                    ],
+                    "times": [
+                        44
+                    ],
+                    "increased": [
+                        46
+                    ],
+                    "allocation": [
+                        47
+                    ],
+                    "of": [
+                        48,
+                        62,
+                        75,
+                        125,
+                        130,
+                        158,
+                        174
+                    ],
+                    "resources.": [
+                        50
+                    ],
+                    "Furthermore,": [
+                        51
+                    ],
+                    "widely": [
+                        52
+                    ],
+                    "used": [
+                        53,
+                        93,
+                        171
+                    ],
+                    "do": [
+                        55
+                    ],
+                    "not": [
+                        56
+                    ],
+                    "fully": [
+                        57
+                    ],
+                    "utilize": [
+                        58
+                    ],
+                    "computational": [
+                        60
+                    ],
+                    "resources": [
+                        61
+                    ],
+                    "modern": [
+                        63
+                    ],
+                    "processors": [
+                        64
+                    ],
+                    "and/or": [
+                        65
+                    ],
+                    "graphics": [
+                        66
+                    ],
+                    "processing": [
+                        67,
+                        140,
+                        152,
+                        156
+                    ],
+                    "cards,": [
+                        68
+                    ],
+                    "limiting": [
+                        69
+                    ],
+                    "future": [
+                        70
+                    ],
+                    "large\u2010scale": [
+                        71
+                    ],
+                    "on": [
+                        73,
+                        145
+                    ],
+                    "thousands": [
+                        74
+                    ],
+                    "samples.": [
+                        76
+                    ],
+                    "We": [
+                        77
+                    ],
+                    "present": [
+                        78
+                    ],
+                    "quickLD,": [
+                        79
+                    ],
+                    "stand\u2010alone": [
+                        81
+                    ],
+                    "open\u2010source": [
+                        83
+                    ],
+                    "software": [
+                        84,
+                        144,
+                        184
+                    ],
+                    "that": [
+                        85
+                    ],
+                    "computes": [
+                        86
+                    ],
+                    "several": [
+                        87
+                    ],
+                    "LD\u2010related": [
+                        88
+                    ],
+                    "statistics,": [
+                        89
+                    ],
+                    "including": [
+                        90
+                    ],
+                    "commonly": [
+                        92
+                    ],
+                    "r": [
+                        94
+                    ],
+                    "2": [
+                        95
+                    ],
+                    ".": [
+                        96,
+                        189
+                    ],
+                    "quickLD": [
+                        97,
+                        118,
+                        167
+                    ],
+                    "calculates": [
+                        98
+                    ],
+                    "pairwise": [
+                        99
+                    ],
+                    "region": [
+                        107
+                    ],
+                    "or": [
+                        108
+                    ],
+                    "arbitrarily": [
+                        110
+                    ],
+                    "distant": [
+                        111
+                    ],
+                    "regions": [
+                        112
+                    ],
+                    "negligible": [
+                        114
+                    ],
+                    "requirements.": [
+                        116
+                    ],
+                    "Moreover,": [
+                        117
+                    ],
+                    "achieves": [
+                        119
+                    ],
+                    "up": [
+                        120
+                    ],
+                    "95%": [
+                        122
+                    ],
+                    "97%": [
+                        124
+                    ],
+                    "theoretical": [
+                        127
+                    ],
+                    "peak": [
+                        128
+                    ],
+                    "performance": [
+                        129
+                    ],
+                    "CPU": [
+                        132,
+                        161
+                    ],
+                    "GPU,": [
+                        135
+                    ],
+                    "respectively,": [
+                        136
+                    ],
+                    "enabling": [
+                        137
+                    ],
+                    "21.5\u00d7": [
+                        138
+                    ],
+                    "faster": [
+                        139,
+                        151
+                    ],
+                    "than": [
+                        141
+                    ],
+                    "current": [
+                        142
+                    ],
+                    "state\u2010of\u2010the\u2010art": [
+                        143
+                    ],
+                    "multicore": [
+                        147,
+                        160
+                    ],
+                    "processor": [
+                        148
+                    ],
+                    "49.5\u00d7": [
+                        150
+                    ],
+                    "when": [
+                        153
+                    ],
+                    "aggregate": [
+                        155
+                    ],
+                    "power": [
+                        157
+                    ],
+                    "GPU": [
+                        164
+                    ],
+                    "is": [
+                        165,
+                        185
+                    ],
+                    "harnessed.": [
+                        166
+                    ],
+                    "can": [
+                        168
+                    ],
+                    "also": [
+                        169
+                    ],
+                    "be": [
+                        170
+                    ],
+                    "studies": [
+                        173
+                    ],
+                    "selection,": [
+                        175
+                    ],
+                    "recombination,": [
+                        176
+                    ],
+                    "drift,": [
+                        178
+                    ],
+                    "inbreeding": [
+                        179
+                    ],
+                    "gene": [
+                        181
+                    ],
+                    "flow.": [
+                        182
+                    ],
+                    "The": [
+                        183
+                    ],
+                    "available": [
+                        186
+                    ],
+                    "at": [
+                        187
+                    ],
+                    "https://github.com/pephco/quickLD": [
+                        188
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "quickLD: An efficient software for linkage disequilibrium analyses",
+                "doi": "10.1111/1755-0998.13438",
+                "pmid": "34062051",
+                "pmc": "PMC8518384",
+                "isbns": [],
+                "altmetric_jid": "4f6fa5163cf058f6100037be",
+                "issns": [
+                    "1755-098X",
+                    "1755-0998"
+                ],
+                "journal": "Molecular Ecology Resources",
+                "cohorts": {
+                    "pub": 3,
+                    "sci": 5
+                },
+                "context": {
+                    "all": {
+                        "count": 27945582,
+                        "mean": 10.84617493920864,
+                        "rank": 5177089,
+                        "pct": 81,
+                        "higher_than": 22762291
+                    },
+                    "journal": {
+                        "count": 1897,
+                        "mean": 10.319411702688457,
+                        "rank": 669,
+                        "pct": 64,
+                        "higher_than": 1226
+                    },
+                    "similar_age_3m": {
+                        "count": 464878,
+                        "mean": 15.952156260352202,
+                        "rank": 104259,
+                        "pct": 77,
+                        "higher_than": 360480
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 66,
+                        "mean": 16.096848484848483,
+                        "rank": 27,
+                        "pct": 59,
+                        "higher_than": 39
+                    }
+                },
+                "authors": [
+                    "Charalampos Theodoris",
+                    "Tze Meng Low",
+                    "Pavlos Pavlidis",
+                    "Nikolaos Alachiotis"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1633046400,
+                "epubdate": 1624060800,
+                "dimensions_publication_id": "pub.1138502538",
+                "altmetric_id": 106863894,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 9,
+                "cited_by_tweeters_count": 8,
+                "cited_by_qna_count": 1,
+                "cited_by_accounts_count": 9,
+                "last_updated": 1700598235,
+                "score": 7.7,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 7.7
+                },
+                "url": "http://dx.doi.org/10.1111/1755-0998.13438",
+                "added_on": 1622610199,
+                "published_on": 1624060800,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Agricultural and Biological Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "25",
+                    "connotea": "0"
+                },
+                "readers_count": 25,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=8&types=qttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=8&types=qttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=8&types=qttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=106863894"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 82929,
+            "total_ccn": 10222,
+            "avg_ccn": 5.52,
+            "nloc_per_file": 48.33,
+            "duplicate_rate": 57.99
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

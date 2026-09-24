@@ -1,0 +1,2172 @@
+{
+    "ABPEPserver": {
+        "tool_name": "ABPEPserver",
+        "biotools": {
+            "name": "ABPEPserver",
+            "description": "Web application for documentation and analysis of substitutants.",
+            "homepage": "https://rhpc.nki.nl/sites/shiny/ABPEP/",
+            "biotoolsID": "abpepserver",
+            "biotoolsCURIE": "biotools:abpepserver",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2940",
+                            "term": "Scatter plot plotting"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3629",
+                            "term": "Deisotoping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Web application"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2640",
+                    "term": "Oncology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0108",
+                    "term": "Protein expression"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2830",
+                    "term": "Immunoproteins and antigens"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/jasminesmn/ABPEPserver",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1186/s12885-023-10970-8",
+                    "pmid": "37270525",
+                    "pmcid": "PMC10239192",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "ABPEPserver: a web application for documentation and analysis of substitutants",
+                        "abstract": "Background: Cancer immunotherapy is implemented by identifying antigens that are presented on the cell surface of cancer cells and illicit T-cell response (Schumacher and Schreiber, Science 348:69\u201374, 2015; Waldman et al., Nat Rev Immunol 20:651\u2013668, 2020; Zhang et al., Front Immunol 12:672,356, 2021b). Classical candidates of such antigens are the peptides resulting from genetic alterations and are named \u201cneoantigen\" (Schumacher and Schreiber, Science 348:69\u201374, 2015). Neoantigens have been widely catalogued across several human cancer types (Tan et al., Database (Oxford) 2020;2020b; Vigneron et al., Cancer Immun 13:15, 2013; Yi et al., iScience 24:103,107, 2021; Zhang et al., BMC Bioinformatics 22:40, 2021a). Recently, a new class of inducible antigens has been identified, namely Substitutants, that are produced as a result of aberrant protein translation (Pataskar et al., Nature 603:721\u2013727, 2022). Main: Catalogues of Substitutant expression across human cancer types, their specificity and association to gene expression signatures remain elusive for the scientific community's access. As a solution, we present ABPEPserver, an online database and analytical platform that can visualize a large-scale tumour proteomics analysis of Substitutant expression across eight tumour types sourced from the CPTAC database (Edwards et al., J Proteome Res 14:2707\u20132713, 2015). Functionally, ABPEPserver offers the analysis of gene-association signatures of Substitutant peptides, a comparison of enrichment between tumour and tumour-adjacent normal tissues, and a list of peptides that serve as candidates for immunotherapy design. ABPEPserver will significantly enhance the exploration of aberrant protein production in human cancer, as exemplified in a case study. Conclusion: ABPEPserver is designed on an R SHINY platform to catalogue Substitutant peptides in human cancer. The application is available at https://rhpc.nki.nl/sites/shiny/ABPEP/ . The code is available under GNU General public license from GitHub (https://github.com/jasminesmn/ABPEPserver).",
+                        "date": "2023-12-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Pataskar A."
+                            },
+                            {
+                                "name": "Montenegro Navarro J."
+                            },
+                            {
+                                "name": "Agami R."
+                            }
+                        ],
+                        "journal": "BMC Cancer"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Abhijeet Pataskar",
+                    "email": "a.pataskar@nki.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Reuven Agami",
+                    "email": "r.agami@nki.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-2848-2473",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Pub2Tools",
+            "additionDate": "2024-01-22T12:08:36.550063Z",
+            "lastUpdate": "2024-11-24T14:20:51.429039Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 467551011,
+                "node_id": "R_kgDOG95DIw",
+                "name": "ABPEPserver",
+                "full_name": "jasminesmn/ABPEPserver",
+                "private": false,
+                "owner": {
+                    "login": "jasminesmn",
+                    "id": 80966662,
+                    "node_id": "MDQ6VXNlcjgwOTY2NjYy",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/80966662?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/jasminesmn",
+                    "html_url": "https://github.com/jasminesmn",
+                    "followers_url": "https://api.github.com/users/jasminesmn/followers",
+                    "following_url": "https://api.github.com/users/jasminesmn/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jasminesmn/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jasminesmn/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jasminesmn/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jasminesmn/orgs",
+                    "repos_url": "https://api.github.com/users/jasminesmn/repos",
+                    "events_url": "https://api.github.com/users/jasminesmn/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jasminesmn/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/jasminesmn/ABPEPserver",
+                "description": "ABPEPserver is an online database and analytical platform that offers the visualization of a large-scale tumour proteomics analysis of Substitutant expression across multiple tumour types. ",
+                "fork": false,
+                "url": "https://api.github.com/repos/jasminesmn/ABPEPserver",
+                "forks_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/forks",
+                "keys_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/teams",
+                "hooks_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/hooks",
+                "issue_events_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/events",
+                "assignees_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/tags",
+                "blobs_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/languages",
+                "stargazers_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/stargazers",
+                "contributors_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/contributors",
+                "subscribers_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/subscribers",
+                "subscription_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/subscription",
+                "commits_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/merges",
+                "archive_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/downloads",
+                "issues_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/labels{/name}",
+                "releases_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/jasminesmn/ABPEPserver/deployments",
+                "created_at": "2022-03-08T14:41:55Z",
+                "updated_at": "2023-07-14T13:08:43Z",
+                "pushed_at": "2022-12-15T14:19:30Z",
+                "git_url": "git://github.com/jasminesmn/ABPEPserver.git",
+                "ssh_url": "git@github.com:jasminesmn/ABPEPserver.git",
+                "clone_url": "https://github.com/jasminesmn/ABPEPserver.git",
+                "svn_url": "https://github.com/jasminesmn/ABPEPserver",
+                "homepage": "",
+                "size": 1402,
+                "stargazers_count": 1,
+                "watchers_count": 1,
+                "language": "R",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "cancer",
+                    "immunology",
+                    "neoantigens",
+                    "peptides"
+                ],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 1,
+                "watchers": 1,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "app.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "homepage_UI.R",
+                    "type": "blob"
+                },
+                {
+                    "path": "images",
+                    "type": "tree"
+                },
+                {
+                    "path": "www",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "jasminesmn",
+                    "contributions": 24
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "R": 68800,
+                "CSS": 2562,
+                "JavaScript": 824
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s12885-023-10970-8",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "37270525",
+                            "source": "MED",
+                            "pmid": "37270525",
+                            "pmcid": "PMC10239192",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10239192"
+                                ]
+                            },
+                            "doi": "10.1186/s12885-023-10970-8",
+                            "title": "ABPEPserver: a web application for documentation and analysis of substitutants.",
+                            "authorString": "Pataskar A, Montenegro Navarro J, Agami R.",
+                            "journalTitle": "BMC Cancer",
+                            "issue": "1",
+                            "journalVolume": "23",
+                            "pubYear": "2023",
+                            "journalIssn": "1471-2407",
+                            "pageInfo": "502",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 0,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-06-04",
+                            "firstPublicationDate": "2023-06-03"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4379260007",
+                "doi": "https://doi.org/10.1186/s12885-023-10970-8",
+                "title": "ABPEPserver: a web application for documentation and analysis of substitutants",
+                "display_name": "ABPEPserver: a web application for documentation and analysis of substitutants",
+                "publication_year": 2023,
+                "publication_date": "2023-06-03",
+                "ids": {
+                    "openalex": "https://openalex.org/W4379260007",
+                    "doi": "https://doi.org/10.1186/s12885-023-10970-8",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/37270525"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s12885-023-10970-8",
+                    "is_oa": true,
+                    "landing_page_url": "http://dx.doi.org/10.1186/s12885-023-10970-8",
+                    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s12885-023-10970-8.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S192926780",
+                        "display_name": "BMC Cancer",
+                        "issn_l": "1471-2407",
+                        "issn": [
+                            "1471-2407"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Cancer",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://link.springer.com/content/pdf/10.1186/s12885-023-10970-8.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5065025244",
+                            "display_name": "Abhijeet Pataskar",
+                            "orcid": "https://orcid.org/0000-0003-1537-3371"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Abhijeet Pataskar",
+                        "raw_affiliation_strings": [
+                            "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands. a.pataskar@nki.nl",
+                            "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands. a.pataskar@nki.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5032844687",
+                            "display_name": "Jasmine Montenegro Navarro",
+                            "orcid": "https://orcid.org/0000-0001-5644-7758"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jasmine Montenegro Navarro",
+                        "raw_affiliation_strings": [
+                            "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5079323488",
+                            "display_name": "Reuven Agami",
+                            "orcid": "https://orcid.org/0000-0002-2848-2473"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913958620",
+                                "display_name": "Erasmus University Rotterdam",
+                                "ror": "https://ror.org/057w15z03",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913958620"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Reuven Agami",
+                        "raw_affiliation_strings": [
+                            "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands. r.agami@nki.nl",
+                            "Erasmus MC, Department of Genetics, Rotterdam University, Rotterdam, the Netherlands. r.agami@nki.nl",
+                            "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2848-2473",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands. r.agami@nki.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Erasmus MC, Department of Genetics, Rotterdam University, Rotterdam, the Netherlands. r.agami@nki.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I913958620"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Division of Oncogenomics, Oncode Institute, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX, Amsterdam, the Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5065025244"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2898336195",
+                    "https://openalex.org/I4210111138"
+                ],
+                "apc_list": {
+                    "value": 1790,
+                    "currency": "GBP",
+                    "value_usd": 2195
+                },
+                "apc_paid": {
+                    "value": 1790,
+                    "currency": "GBP",
+                    "value_usd": 2195
+                },
+                "fwci": 0.0,
+                "has_fulltext": true,
+                "cited_by_count": 0,
+                "citation_normalized_percentile": {
+                    "value": 0.24577378,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": null,
+                "biblio": {
+                    "volume": "23",
+                    "issue": "1",
+                    "first_page": "502",
+                    "last_page": "502"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T12576",
+                    "display_name": "vaccines and immunoinformatics approaches",
+                    "score": 0.5206000208854675,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T12576",
+                        "display_name": "vaccines and immunoinformatics approaches",
+                        "score": 0.5206000208854675,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10158",
+                        "display_name": "Cancer Immunotherapy and Biomarkers",
+                        "score": 0.20749999582767487,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2730",
+                            "display_name": "Oncology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10580",
+                        "display_name": "Immunotherapy and Immune Responses",
+                        "score": 0.08129999786615372,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2403",
+                            "display_name": "Immunology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/24",
+                            "display_name": "Immunology and Microbiology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/proteome",
+                        "display_name": "Proteome",
+                        "score": 0.5142459273338318
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5090669989585876
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/immunotherapy",
+                        "display_name": "Immunotherapy",
+                        "score": 0.5049636960029602
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/antigen",
+                        "display_name": "Antigen",
+                        "score": 0.49283623695373535
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cancer",
+                        "display_name": "Cancer",
+                        "score": 0.4689214825630188
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cancer-immunotherapy",
+                        "display_name": "Cancer immunotherapy",
+                        "score": 0.4570889174938202
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/proteomics",
+                        "display_name": "Proteomics",
+                        "score": 0.4259624481201172
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.40739166736602783
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.39760875701904297
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cancer-research",
+                        "display_name": "Cancer research",
+                        "score": 0.364779531955719
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.2884911894798279
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.28017497062683105
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C104397665",
+                        "wikidata": "https://www.wikidata.org/wiki/Q860947",
+                        "display_name": "Proteome",
+                        "level": 2,
+                        "score": 0.5142459273338318
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5090669989585876
+                    },
+                    {
+                        "id": "https://openalex.org/C2777701055",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1427096",
+                        "display_name": "Immunotherapy",
+                        "level": 3,
+                        "score": 0.5049636960029602
+                    },
+                    {
+                        "id": "https://openalex.org/C147483822",
+                        "wikidata": "https://www.wikidata.org/wiki/Q103537",
+                        "display_name": "Antigen",
+                        "level": 2,
+                        "score": 0.49283623695373535
+                    },
+                    {
+                        "id": "https://openalex.org/C121608353",
+                        "wikidata": "https://www.wikidata.org/wiki/Q12078",
+                        "display_name": "Cancer",
+                        "level": 2,
+                        "score": 0.4689214825630188
+                    },
+                    {
+                        "id": "https://openalex.org/C2780674031",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2012719",
+                        "display_name": "Cancer immunotherapy",
+                        "level": 4,
+                        "score": 0.4570889174938202
+                    },
+                    {
+                        "id": "https://openalex.org/C46111723",
+                        "wikidata": "https://www.wikidata.org/wiki/Q471857",
+                        "display_name": "Proteomics",
+                        "level": 3,
+                        "score": 0.4259624481201172
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.40739166736602783
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.39760875701904297
+                    },
+                    {
+                        "id": "https://openalex.org/C502942594",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3421914",
+                        "display_name": "Cancer research",
+                        "level": 1,
+                        "score": 0.364779531955719
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.2884911894798279
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.28017497062683105
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000941",
+                        "descriptor_name": "Antigens",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000941",
+                        "descriptor_name": "Antigens",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000941",
+                        "descriptor_name": "Antigens",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004282",
+                        "descriptor_name": "Documentation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004282",
+                        "descriptor_name": "Documentation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D004282",
+                        "descriptor_name": "Documentation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007167",
+                        "descriptor_name": "Immunotherapy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007167",
+                        "descriptor_name": "Immunotherapy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007167",
+                        "descriptor_name": "Immunotherapy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000628",
+                        "qualifier_name": "therapy",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000628",
+                        "qualifier_name": "therapy",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D009369",
+                        "descriptor_name": "Neoplasms",
+                        "qualifier_ui": "Q000628",
+                        "qualifier_name": "therapy",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010455",
+                        "descriptor_name": "Peptides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010455",
+                        "descriptor_name": "Peptides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010455",
+                        "descriptor_name": "Peptides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s12885-023-10970-8",
+                        "is_oa": true,
+                        "landing_page_url": "http://dx.doi.org/10.1186/s12885-023-10970-8",
+                        "pdf_url": "https://link.springer.com/content/pdf/10.1186/s12885-023-10970-8.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S192926780",
+                            "display_name": "BMC Cancer",
+                            "issn_l": "1471-2407",
+                            "issn": [
+                                "1471-2407"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC Cancer",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:37270525",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37270525",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BMC cancer",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.eur.nl:openaire/2727415e-c322-47af-84c3-258b1c23e120",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.eur.nl/en/publications/2727415e-c322-47af-84c3-258b1c23e120",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401266",
+                            "display_name": "EUR Research Repository (Erasmus University Rotterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I913958620",
+                            "host_organization_name": "Erasmus University Rotterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I913958620"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Pataskar, A, Montenegro Navarro, J & Agami, R 2023, 'ABPEPserver : a web application for documentation and analysis of substitutants', BMC Cancer, vol. 23, no. 1, 502. https://doi.org/10.1186/s12885-023-10970-8",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10239192",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10239192",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10239192/pdf/12885_2023_Article_10970.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Cancer",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.eur.nl:publications/2727415e-c322-47af-84c3-258b1c23e120",
+                        "is_oa": true,
+                        "landing_page_url": "http://www.scopus.com/inward/record.url?scp=85160895031&partnerID=8YFLogxK",
+                        "pdf_url": "https://pure.eur.nl/en/publications/2727415e-c322-47af-84c3-258b1c23e120",
+                        "source": {
+                            "id": "https://openalex.org/S4306401266",
+                            "display_name": "EUR Research Repository (Erasmus University Rotterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I913958620",
+                            "host_organization_name": "Erasmus University Rotterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I913958620"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": ""
+                    },
+                    {
+                        "id": "pmh:oai:zenodo.org:8003882",
+                        "is_oa": true,
+                        "landing_page_url": "https://zenodo.org/record/8003882",
+                        "pdf_url": "https://zenodo.org/record/8003882",
+                        "source": {
+                            "id": "https://openalex.org/S4306400562",
+                            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I67311998",
+                            "host_organization_name": "European Organization for Nuclear Research",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I67311998"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Cancer 23(1) 502",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:eur:oai:pure.eur.nl:publications/2727415e-c322-47af-84c3-258b1c23e120",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.eur.nl/files/94468277/ABPEPserver_a_web_application_for_documentation_and_analysis_of_substitutants.pdf",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Cancer, 23(1):502. BioMed Central Ltd.",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:c5a6a4a75bd54206b000c3841378bdf7",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/c5a6a4a75bd54206b000c3841378bdf7",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BMC Cancer, Vol 23, Iss 1, Pp 1-7 (2023)",
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s12885-023-10970-8",
+                    "is_oa": true,
+                    "landing_page_url": "http://dx.doi.org/10.1186/s12885-023-10970-8",
+                    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s12885-023-10970-8.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S192926780",
+                        "display_name": "BMC Cancer",
+                        "issn_l": "1471-2407",
+                        "issn": [
+                            "1471-2407"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BMC Cancer",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G107908811",
+                        "display_name": null,
+                        "funder_award_id": "832844",
+                        "funder_id": "https://openalex.org/F4320338352",
+                        "funder_display_name": "FP7 Ideas: European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G495896109",
+                        "display_name": null,
+                        "funder_award_id": "13647",
+                        "funder_id": "https://openalex.org/F4320322777",
+                        "funder_display_name": "KWF Kankerbestrijding"
+                    },
+                    {
+                        "id": "https://openalex.org/G8943215717",
+                        "display_name": "Aberrant proteome in cancer",
+                        "funder_award_id": "2021.034",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322777",
+                        "display_name": "KWF Kankerbestrijding",
+                        "ror": "https://ror.org/0368jnd28"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338352",
+                        "display_name": "FP7 Ideas: European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4379260007.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4379260007.grobid-xml"
+                },
+                "referenced_works_count": 23,
+                "referenced_works": [
+                    "https://openalex.org/W2011458181",
+                    "https://openalex.org/W2107123894",
+                    "https://openalex.org/W2271914738",
+                    "https://openalex.org/W2329674354",
+                    "https://openalex.org/W2914345456",
+                    "https://openalex.org/W2977528366",
+                    "https://openalex.org/W2982402173",
+                    "https://openalex.org/W2999995623",
+                    "https://openalex.org/W3006211741",
+                    "https://openalex.org/W3008682585",
+                    "https://openalex.org/W3015375987",
+                    "https://openalex.org/W3028523516",
+                    "https://openalex.org/W3043316508",
+                    "https://openalex.org/W3119681293",
+                    "https://openalex.org/W3126609356",
+                    "https://openalex.org/W3151427897",
+                    "https://openalex.org/W3156419307",
+                    "https://openalex.org/W3156592323",
+                    "https://openalex.org/W3188077199",
+                    "https://openalex.org/W3199626861",
+                    "https://openalex.org/W3199725740",
+                    "https://openalex.org/W3205542661",
+                    "https://openalex.org/W4221018567"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1982829397",
+                    "https://openalex.org/W2106414650",
+                    "https://openalex.org/W2347437365",
+                    "https://openalex.org/W1999412725",
+                    "https://openalex.org/W4390205769",
+                    "https://openalex.org/W2124137418",
+                    "https://openalex.org/W2391458050",
+                    "https://openalex.org/W2086860678",
+                    "https://openalex.org/W3022402204",
+                    "https://openalex.org/W2114732768"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Cancer": [
+                        1,
+                        84
+                    ],
+                    "immunotherapy": [
+                        2,
+                        224
+                    ],
+                    "is": [
+                        3,
+                        247,
+                        263,
+                        270
+                    ],
+                    "implemented": [
+                        4
+                    ],
+                    "by": [
+                        5
+                    ],
+                    "identifying": [
+                        6
+                    ],
+                    "antigens": [
+                        7,
+                        47,
+                        107
+                    ],
+                    "that": [
+                        8,
+                        113,
+                        165,
+                        219
+                    ],
+                    "are": [
+                        9,
+                        48,
+                        56,
+                        114
+                    ],
+                    "presented": [
+                        10
+                    ],
+                    "on": [
+                        11,
+                        249
+                    ],
+                    "the": [
+                        12,
+                        49,
+                        149,
+                        182,
+                        196,
+                        230
+                    ],
+                    "cell": [
+                        13
+                    ],
+                    "surface": [
+                        14
+                    ],
+                    "of": [
+                        15,
+                        45,
+                        105,
+                        119,
+                        131,
+                        173,
+                        198,
+                        201,
+                        206,
+                        217,
+                        232
+                    ],
+                    "cancer": [
+                        16,
+                        73,
+                        136
+                    ],
+                    "cells": [
+                        17
+                    ],
+                    "and": [
+                        18,
+                        23,
+                        55,
+                        60,
+                        140,
+                        162,
+                        210,
+                        214
+                    ],
+                    "illicit": [
+                        19
+                    ],
+                    "T-cell": [
+                        20
+                    ],
+                    "response": [
+                        21
+                    ],
+                    "(Schumacher": [
+                        22,
+                        59
+                    ],
+                    "Schreiber,": [
+                        24,
+                        61
+                    ],
+                    "Science": [
+                        25,
+                        62
+                    ],
+                    "348:69-74,": [
+                        26,
+                        63
+                    ],
+                    "2015;": [
+                        27
+                    ],
+                    "Waldman": [
+                        28
+                    ],
+                    "et": [
+                        29,
+                        37,
+                        76,
+                        82,
+                        89,
+                        95,
+                        124,
+                        186
+                    ],
+                    "al.,": [
+                        30,
+                        38,
+                        77,
+                        83,
+                        90,
+                        96,
+                        125,
+                        187
+                    ],
+                    "Nat": [
+                        31
+                    ],
+                    "Rev": [
+                        32
+                    ],
+                    "Immunol": [
+                        33,
+                        40
+                    ],
+                    "20:651-668,": [
+                        34
+                    ],
+                    "2020;": [
+                        35
+                    ],
+                    "Zhang": [
+                        36,
+                        94
+                    ],
+                    "Front": [
+                        39
+                    ],
+                    "12:672,356,": [
+                        41
+                    ],
+                    "2021b).": [
+                        42
+                    ],
+                    "Classical": [
+                        43
+                    ],
+                    "candidates": [
+                        44,
+                        222
+                    ],
+                    "such": [
+                        46
+                    ],
+                    "peptides": [
+                        50,
+                        218,
+                        257
+                    ],
+                    "resulting": [
+                        51
+                    ],
+                    "from": [
+                        52,
+                        181,
+                        277
+                    ],
+                    "genetic": [
+                        53
+                    ],
+                    "alterations": [
+                        54
+                    ],
+                    "named": [
+                        57
+                    ],
+                    "\"neoantigen\"": [
+                        58
+                    ],
+                    "2015).": [
+                        64,
+                        192
+                    ],
+                    "Neoantigens": [
+                        65
+                    ],
+                    "have": [
+                        66
+                    ],
+                    "been": [
+                        67,
+                        109
+                    ],
+                    "widely": [
+                        68
+                    ],
+                    "catalogued": [
+                        69
+                    ],
+                    "across": [
+                        70,
+                        134,
+                        176
+                    ],
+                    "several": [
+                        71
+                    ],
+                    "human": [
+                        72,
+                        135,
+                        237,
+                        259
+                    ],
+                    "types": [
+                        74,
+                        179
+                    ],
+                    "(Tan": [
+                        75
+                    ],
+                    "Database": [
+                        78
+                    ],
+                    "(Oxford)": [
+                        79
+                    ],
+                    "2020;2020b;": [
+                        80
+                    ],
+                    "Vigneron": [
+                        81
+                    ],
+                    "Immun": [
+                        85
+                    ],
+                    "13:15,": [
+                        86
+                    ],
+                    "2013;": [
+                        87
+                    ],
+                    "Yi": [
+                        88
+                    ],
+                    "iScience": [
+                        91
+                    ],
+                    "24:103,107,": [
+                        92
+                    ],
+                    "2021;": [
+                        93
+                    ],
+                    "BMC": [
+                        97
+                    ],
+                    "Bioinformatics": [
+                        98
+                    ],
+                    "22:40,": [
+                        99
+                    ],
+                    "2021a).": [
+                        100
+                    ],
+                    "Recently,": [
+                        101
+                    ],
+                    "a": [
+                        102,
+                        117,
+                        154,
+                        168,
+                        204,
+                        215,
+                        242
+                    ],
+                    "new": [
+                        103
+                    ],
+                    "class": [
+                        104
+                    ],
+                    "inducible": [
+                        106
+                    ],
+                    "has": [
+                        108
+                    ],
+                    "identified,": [
+                        110
+                    ],
+                    "namely": [
+                        111
+                    ],
+                    "Substitutants,": [
+                        112
+                    ],
+                    "produced": [
+                        115
+                    ],
+                    "as": [
+                        116,
+                        221,
+                        239
+                    ],
+                    "result": [
+                        118
+                    ],
+                    "aberrant": [
+                        120,
+                        233
+                    ],
+                    "protein": [
+                        121,
+                        234
+                    ],
+                    "translation": [
+                        122
+                    ],
+                    "(Pataskar": [
+                        123
+                    ],
+                    "Nature": [
+                        126
+                    ],
+                    "603:721-727,": [
+                        127
+                    ],
+                    "2022).": [
+                        128
+                    ],
+                    "MAIN:": [
+                        129
+                    ],
+                    "Catalogues": [
+                        130
+                    ],
+                    "Substitutant": [
+                        132,
+                        174,
+                        202,
+                        256
+                    ],
+                    "expression": [
+                        133,
+                        144,
+                        175
+                    ],
+                    "types,": [
+                        137
+                    ],
+                    "their": [
+                        138
+                    ],
+                    "specificity": [
+                        139
+                    ],
+                    "association": [
+                        141
+                    ],
+                    "to": [
+                        142,
+                        254
+                    ],
+                    "gene": [
+                        143
+                    ],
+                    "signatures": [
+                        145,
+                        200
+                    ],
+                    "remain": [
+                        146
+                    ],
+                    "elusive": [
+                        147
+                    ],
+                    "for": [
+                        148,
+                        223
+                    ],
+                    "scientific": [
+                        150
+                    ],
+                    "community's": [
+                        151
+                    ],
+                    "access.": [
+                        152
+                    ],
+                    "As": [
+                        153
+                    ],
+                    "solution,": [
+                        155
+                    ],
+                    "we": [
+                        156
+                    ],
+                    "present": [
+                        157
+                    ],
+                    "ABPEPserver,": [
+                        158
+                    ],
+                    "an": [
+                        159,
+                        250
+                    ],
+                    "online": [
+                        160
+                    ],
+                    "database": [
+                        161,
+                        184
+                    ],
+                    "analytical": [
+                        163
+                    ],
+                    "platform": [
+                        164,
+                        253
+                    ],
+                    "can": [
+                        166
+                    ],
+                    "visualize": [
+                        167
+                    ],
+                    "large-scale": [
+                        169
+                    ],
+                    "tumour": [
+                        170,
+                        178,
+                        209
+                    ],
+                    "proteomics": [
+                        171
+                    ],
+                    "analysis": [
+                        172,
+                        197
+                    ],
+                    "eight": [
+                        177
+                    ],
+                    "sourced": [
+                        180
+                    ],
+                    "CPTAC": [
+                        183
+                    ],
+                    "(Edwards": [
+                        185
+                    ],
+                    "J": [
+                        188
+                    ],
+                    "Proteome": [
+                        189
+                    ],
+                    "Res": [
+                        190
+                    ],
+                    "14:2707-2713,": [
+                        191
+                    ],
+                    "Functionally,": [
+                        193
+                    ],
+                    "ABPEPserver": [
+                        194,
+                        226,
+                        246
+                    ],
+                    "offers": [
+                        195
+                    ],
+                    "gene-association": [
+                        199
+                    ],
+                    "peptides,": [
+                        203
+                    ],
+                    "comparison": [
+                        205
+                    ],
+                    "enrichment": [
+                        207
+                    ],
+                    "between": [
+                        208
+                    ],
+                    "tumour-adjacent": [
+                        211
+                    ],
+                    "normal": [
+                        212
+                    ],
+                    "tissues,": [
+                        213
+                    ],
+                    "list": [
+                        216
+                    ],
+                    "serve": [
+                        220
+                    ],
+                    "design.": [
+                        225
+                    ],
+                    "will": [
+                        227
+                    ],
+                    "significantly": [
+                        228
+                    ],
+                    "enhance": [
+                        229
+                    ],
+                    "exploration": [
+                        231
+                    ],
+                    "production": [
+                        235
+                    ],
+                    "in": [
+                        236,
+                        241,
+                        258
+                    ],
+                    "cancer,": [
+                        238
+                    ],
+                    "exemplified": [
+                        240
+                    ],
+                    "case": [
+                        243
+                    ],
+                    "study.": [
+                        244
+                    ],
+                    "CONCLUSION:": [
+                        245
+                    ],
+                    "designed": [
+                        248
+                    ],
+                    "R": [
+                        251
+                    ],
+                    "SHINY": [
+                        252
+                    ],
+                    "catalogue": [
+                        255
+                    ],
+                    "cancer.": [
+                        260
+                    ],
+                    "The": [
+                        261,
+                        268
+                    ],
+                    "application": [
+                        262
+                    ],
+                    "available": [
+                        264,
+                        271
+                    ],
+                    "at": [
+                        265
+                    ],
+                    "https://rhpc.nki.nl/sites/shiny/ABPEP/": [
+                        266
+                    ],
+                    ".": [
+                        267
+                    ],
+                    "code": [
+                        269
+                    ],
+                    "under": [
+                        272
+                    ],
+                    "GNU": [
+                        273
+                    ],
+                    "General": [
+                        274
+                    ],
+                    "public": [
+                        275
+                    ],
+                    "license": [
+                        276
+                    ],
+                    "GitHub": [
+                        278
+                    ],
+                    "(": [
+                        279
+                    ],
+                    "https://github.com/jasminesmn/ABPEPserver": [
+                        280
+                    ],
+                    ").": [
+                        281
+                    ]
+                },
+                "counts_by_year": [],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "ABPEPserver: a web application for documentation and analysis of substitutants",
+                "doi": "10.1186/s12885-023-10970-8",
+                "pmid": "37270525",
+                "pmc": "PMC10239192",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100008b0",
+                "issns": [
+                    "1471-2407"
+                ],
+                "journal": "BMC Cancer",
+                "cohorts": {
+                    "pub": 2
+                },
+                "context": {
+                    "all": {
+                        "count": 23963877,
+                        "mean": 10.437990846158696,
+                        "rank": 15611196,
+                        "pct": 32,
+                        "higher_than": 7860690
+                    },
+                    "journal": {
+                        "count": 8554,
+                        "mean": 4.422082534486794,
+                        "rank": 3823,
+                        "pct": 50,
+                        "higher_than": 4299
+                    },
+                    "similar_age_3m": {
+                        "count": 211096,
+                        "mean": 11.400898093758167,
+                        "rank": 102918,
+                        "pct": 47,
+                        "higher_than": 101304
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 82,
+                        "mean": 1.2469512195121952,
+                        "rank": 18,
+                        "pct": 71,
+                        "higher_than": 59
+                    }
+                },
+                "authors": [
+                    "Abhijeet Pataskar",
+                    "Jasmine Montenegro Navarro",
+                    "Reuven Agami"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1685750400,
+                "epubdate": 1685750400,
+                "dimensions_publication_id": "pub.1158603887",
+                "altmetric_id": 149527142,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biomedicine",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Biomedicine, general",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Cancer Research",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Health Promotion and Disease Prevention",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Medicine/Public Health, general",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Oncology",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Surgical Oncology",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Oncology And Carcinogenesis",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 2,
+                "cited_by_tweeters_count": 2,
+                "cited_by_accounts_count": 2,
+                "last_updated": 1686191474,
+                "score": 1.25,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1.25
+                },
+                "url": "http://dx.doi.org/10.1186/s12885-023-10970-8",
+                "added_on": 1685873566,
+                "published_on": 1685750400,
+                "scopus_subjects": [
+                    "Medicine",
+                    "Life Sciences",
+                    "Health Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "3",
+                    "connotea": "0"
+                },
+                "readers_count": 3,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=2&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=2&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=2&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=149527142"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 242,
+            "total_ccn": 21,
+            "avg_ccn": 1.31,
+            "nloc_per_file": 80.67,
+            "duplicate_rate": 11.19
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

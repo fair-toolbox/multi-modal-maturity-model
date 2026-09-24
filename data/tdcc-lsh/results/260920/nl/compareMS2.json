@@ -1,0 +1,2419 @@
+{
+    "compareMS2": {
+        "tool_name": "compareMS2",
+        "biotools": {
+            "name": "compareMS2",
+            "description": "compareMS2 is a tool for comparing sets of (tandem) mass spectra for clustering samples, molecular phylogenetics, identification of biological species or tissues, and quality control. compareMS2 currently consumes Mascot Generic Format, or MGF, and produces output in a variety of common image and distance matrix formats.",
+            "homepage": "https://github.com/524D/compareMS2",
+            "biotoolsID": "comparems2",
+            "biotoolsCURIE": "biotools:comparems2",
+            "version": [
+                "1.0",
+                "2.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2424",
+                            "term": "Comparison"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0567",
+                            "term": "Phylogenetic tree visualisation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2536",
+                                "term": "Mass spectrometry data"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3651",
+                                    "term": "MGF"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3272",
+                                "term": "Species tree"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3603",
+                                    "term": "PNG"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3604",
+                                    "term": "SVG"
+                                }
+                            ]
+                        },
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2855",
+                                "term": "Distance matrix"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_1991",
+                                    "term": "mega"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_1912",
+                                    "term": "Nexus format"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_1910",
+                                    "term": "newick"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool",
+                "Desktop application"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0084",
+                    "term": "Phylogeny"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3172",
+                    "term": "Metabolomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Windows",
+                "Mac"
+            ],
+            "language": [
+                "C",
+                "JavaScript"
+            ],
+            "license": "MIT",
+            "collectionID": [
+                "ms-utils",
+                "Proteomics"
+            ],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [
+                "Netherlands"
+            ],
+            "elixirCommunity": [
+                "Proteomics"
+            ],
+            "link": [
+                {
+                    "url": "https://github.com/524D/compareMS2",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://www.ms-utils.org/compareMS2.html",
+                    "type": [
+                        "Software catalogue"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://research-software-directory.org/software/comparems2",
+                    "type": [
+                        "Software catalogue"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [
+                {
+                    "url": "http://www.ms-utils.org/compareMS2.c",
+                    "type": "Source code",
+                    "note": null,
+                    "version": "1.0"
+                },
+                {
+                    "url": "http://www.ms-utils.org/compareMS2.html",
+                    "type": "Binaries",
+                    "note": null,
+                    "version": "1.0"
+                },
+                {
+                    "url": "http://www.ms-utils.org/compareMS2.c",
+                    "type": "Source code",
+                    "note": null,
+                    "version": "1.0"
+                },
+                {
+                    "url": "https://github.com/524D/compareMS2/tree/main/src",
+                    "type": "Source code",
+                    "note": null,
+                    "version": "2.0"
+                },
+                {
+                    "url": "https://github.com/524D/compareMS2/tree/main",
+                    "type": "Binaries",
+                    "note": null,
+                    "version": "2.0"
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "http://www.ms-utils.org/compareMS2.html",
+                    "type": [
+                        "General",
+                        "Command-line options"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/524D/compareMS2",
+                    "type": [
+                        "General",
+                        "User manual",
+                        "Command-line options",
+                        "Installation instructions"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1002/rcm.6162",
+                    "pmid": "22368051",
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": "1.0",
+                    "note": null,
+                    "metadata": {
+                        "title": "Molecular phylogenetics by direct comparison of tandem mass spectra",
+                        "abstract": "Rationale: Molecular phylogenetics is the study of evolution and relatedness of organisms or genes. Mass spectrometry is used routinely for bacterial identification and has also been used for phylogenetic analysis, for instance from bone material. Unfortunately, only a small fraction of the acquired tandem mass spectra allow direct interpretation. Methods: We describe a new algorithm and software for molecular phylogenetics using pairwise comparisons of tandem mass spectra from enzymatically digested proteins. The spectra need not be annotated and all acquired data is used in the analysis. To demonstrate the method, we analyzed tryptic digests of sera from four great apes and two other primates. Results: The distribution of spectra dot products for thousands of tandem mass spectra collected from two samples provides a measure on the fraction of shared peptides between the two samples. When inverted, this becomes a distance metric. By pairwise comparison between species and averaging over four individuals per species, it was possible to reconstruct the unique correct phylogenetic tree for the great apes and other primates. Conclusions: The new method described here has several attractive features compared with existing methods, among them simplicity, the unbiased use of all acquired data rather than a small subset of spectra, and the potential use of heavily degraded proteins or proteins with a priori unknown modifications. \u00a9 2012 John Wiley & Sons, Ltd.",
+                        "date": "2012-04-15T00:00:00Z",
+                        "citationCount": 30,
+                        "authors": [
+                            {
+                                "name": "Palmblad M."
+                            },
+                            {
+                                "name": "Deelder A.M."
+                            }
+                        ],
+                        "journal": "Rapid Communications in Mass Spectrometry"
+                    }
+                },
+                {
+                    "doi": "10.1021/acs.jproteome.2c00457",
+                    "pmid": "36173614",
+                    "pmcid": "PMC9903320",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": "2.0",
+                    "note": null,
+                    "metadata": {
+                        "title": "compareMS2 2.0: An Improved Software for Comparing Tandem Mass Spectrometry Datasets",
+                        "abstract": "It has long been known that biological species can be identified from mass spectrometry data alone. Ten years ago, we described a method and software tool, compareMS2, for calculating a distance between sets of tandem mass spectra, as routinely collected in proteomics. This method has seen use in species identification and mixture characterization in food and feed products, as well as other applications. Here, we present the first major update of this software, including a new metric, a graphical user interface and additional functionality. The data have been deposited to ProteomeXchange with dataset identifier PXD034932.",
+                        "date": "2023-02-03T00:00:00Z",
+                        "citationCount": 7,
+                        "authors": [
+                            {
+                                "name": "Marissen R."
+                            },
+                            {
+                                "name": "Varunjikar M.S."
+                            },
+                            {
+                                "name": "Laros J.F.J."
+                            },
+                            {
+                                "name": "Rasinger J.D."
+                            },
+                            {
+                                "name": "Neely B.A."
+                            },
+                            {
+                                "name": "Palmblad M."
+                            }
+                        ],
+                        "journal": "Journal of Proteome Research"
+                    }
+                },
+                {
+                    "doi": "10.1021/acs.jproteome.1c00528",
+                    "pmid": "34523928",
+                    "pmcid": "PMC8491155",
+                    "type": [
+                        "Review"
+                    ],
+                    "version": "2.0",
+                    "note": null,
+                    "metadata": {
+                        "title": "Rewinding the Molecular Clock: Looking at Pioneering Molecular Phylogenetics Experiments in the Light of Proteomics",
+                        "abstract": "Science is full of overlooked and undervalued research waiting to be rediscovered. Proteomics is no exception. In this perspective, we follow the ripples from a 1960 study of Zuckerkandl, Jones, and Pauling comparing tryptic peptides across animal species. This pioneering work directly led to the molecular clock hypothesis and the ensuing explosion in molecular phylogenetics. In the decades following, proteins continued to provide essential clues on evolutionary history. While technology has continued to improve, contemporary proteomics has strayed from this larger biological context, rarely comparing species or asking how protein structure, function, and interactions have evolved. Here we recombine proteomics with molecular phylogenetics, highlighting the value of framing proteomic results in a larger biological context and how almost forgotten research, though technologically surpassed, can still generate new ideas and illuminate our work from a different perspective. Though it is infeasible to read all research published on a large topic, looking up older papers can be surprisingly rewarding when rediscovering a \"gem\"at the end of a long citation chain, aided by digital collections and perpetually helpful librarians. Proper literature study reduces unnecessary repetition and allows research to be more insightful and impactful by truly standing on the shoulders of giants. All data was uploaded to MassIVE (https://massive.ucsd.edu/) as dataset MSV000087993.",
+                        "date": "2021-10-01T00:00:00Z",
+                        "citationCount": 1,
+                        "authors": [
+                            {
+                                "name": "Neely B.A."
+                            },
+                            {
+                                "name": "Palmblad M."
+                            }
+                        ],
+                        "journal": "Journal of Proteome Research"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "lumc.nl",
+                    "email": null,
+                    "url": "https://www.lumc.nl",
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Institute",
+                    "typeRole": [
+                        "Support"
+                    ],
+                    "note": null
+                },
+                {
+                    "name": "Magnus Palmblad",
+                    "email": "magnus.palmblad@gmail.com",
+                    "url": "https://github.com/magnuspalmblad",
+                    "orcidid": "http://orcid.org/0000-0002-5865-8994",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Developer",
+                        "Primary contact",
+                        "Documentor"
+                    ],
+                    "note": null
+                },
+                {
+                    "name": "Rob Marissen",
+                    "email": null,
+                    "url": "https://github.com/524D",
+                    "orcidid": "https://orcid.org/0000-0002-1220-9173",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Developer"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2016-04-15T11:52:42Z",
+            "lastUpdate": "2025-04-16T14:22:04.957317Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "proteomics.bio.tools"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 340360692,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNDAzNjA2OTI=",
+                "name": "compareMS2",
+                "full_name": "524D/compareMS2",
+                "private": false,
+                "owner": {
+                    "login": "524D",
+                    "id": 50015273,
+                    "node_id": "MDQ6VXNlcjUwMDE1Mjcz",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/50015273?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/524D",
+                    "html_url": "https://github.com/524D",
+                    "followers_url": "https://api.github.com/users/524D/followers",
+                    "following_url": "https://api.github.com/users/524D/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/524D/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/524D/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/524D/subscriptions",
+                    "organizations_url": "https://api.github.com/users/524D/orgs",
+                    "repos_url": "https://api.github.com/users/524D/repos",
+                    "events_url": "https://api.github.com/users/524D/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/524D/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/524D/compareMS2",
+                "description": "Compare samples by MS2 spectra",
+                "fork": false,
+                "url": "https://api.github.com/repos/524D/compareMS2",
+                "forks_url": "https://api.github.com/repos/524D/compareMS2/forks",
+                "keys_url": "https://api.github.com/repos/524D/compareMS2/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/524D/compareMS2/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/524D/compareMS2/teams",
+                "hooks_url": "https://api.github.com/repos/524D/compareMS2/hooks",
+                "issue_events_url": "https://api.github.com/repos/524D/compareMS2/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/524D/compareMS2/events",
+                "assignees_url": "https://api.github.com/repos/524D/compareMS2/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/524D/compareMS2/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/524D/compareMS2/tags",
+                "blobs_url": "https://api.github.com/repos/524D/compareMS2/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/524D/compareMS2/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/524D/compareMS2/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/524D/compareMS2/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/524D/compareMS2/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/524D/compareMS2/languages",
+                "stargazers_url": "https://api.github.com/repos/524D/compareMS2/stargazers",
+                "contributors_url": "https://api.github.com/repos/524D/compareMS2/contributors",
+                "subscribers_url": "https://api.github.com/repos/524D/compareMS2/subscribers",
+                "subscription_url": "https://api.github.com/repos/524D/compareMS2/subscription",
+                "commits_url": "https://api.github.com/repos/524D/compareMS2/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/524D/compareMS2/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/524D/compareMS2/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/524D/compareMS2/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/524D/compareMS2/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/524D/compareMS2/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/524D/compareMS2/merges",
+                "archive_url": "https://api.github.com/repos/524D/compareMS2/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/524D/compareMS2/downloads",
+                "issues_url": "https://api.github.com/repos/524D/compareMS2/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/524D/compareMS2/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/524D/compareMS2/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/524D/compareMS2/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/524D/compareMS2/labels{/name}",
+                "releases_url": "https://api.github.com/repos/524D/compareMS2/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/524D/compareMS2/deployments",
+                "created_at": "2021-02-19T12:19:57Z",
+                "updated_at": "2026-05-22T14:13:26Z",
+                "pushed_at": "2026-05-22T14:13:04Z",
+                "git_url": "git://github.com/524D/compareMS2.git",
+                "ssh_url": "git@github.com:524D/compareMS2.git",
+                "clone_url": "https://github.com/524D/compareMS2.git",
+                "svn_url": "https://github.com/524D/compareMS2",
+                "homepage": null,
+                "size": 15607,
+                "stargazers_count": 4,
+                "watchers_count": 4,
+                "language": "JavaScript",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 2,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 15,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 2,
+                "open_issues": 15,
+                "watchers": 4,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 2,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".vscode",
+                    "type": "tree"
+                },
+                {
+                    "path": ".yarnrc.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "build-linux.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "build.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "develop.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "external_binaries",
+                    "type": "tree"
+                },
+                {
+                    "path": "forge.config.js",
+                    "type": "blob"
+                },
+                {
+                    "path": "package.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "pictures",
+                    "type": "tree"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "yarn.lock",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "524D",
+                    "contributions": 427
+                },
+                {
+                    "login": "magnuspalmblad",
+                    "contributions": 87
+                },
+                {
+                    "login": "github-actions[bot]",
+                    "contributions": 12
+                },
+                {
+                    "login": "neely",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 69,
+                    "title": "Improve error messages",
+                    "created_at": "2026-01-29T15:46:27Z",
+                    "closed_at": "2026-04-08T17:08:54Z"
+                },
+                {
+                    "number": 68,
+                    "title": "MEGA format has changed between MEGA X (10.2) and 12.1",
+                    "created_at": "2025-11-24T09:42:57Z",
+                    "closed_at": "2025-11-25T16:26:25Z"
+                },
+                {
+                    "number": 67,
+                    "title": "compareMS2 tree drawing fails (for large trees?)",
+                    "created_at": "2025-11-24T09:38:19Z",
+                    "closed_at": "2026-05-22T12:05:56Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Spectra2Species, Spectra to Species or spectra2species",
+                    "created_at": "2025-09-11T12:41:38Z",
+                    "closed_at": "2025-09-11T14:39:27Z"
+                },
+                {
+                    "number": 64,
+                    "title": "Only use JSON output of compareMS command line",
+                    "created_at": "2025-09-05T11:29:52Z",
+                    "closed_at": "2026-04-08T18:51:46Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Slow update of tree when pairwise comparisons already exist",
+                    "created_at": "2025-03-24T08:17:59Z",
+                    "closed_at": "2025-09-04T14:09:52Z"
+                },
+                {
+                    "number": 59,
+                    "title": "Parsing sample-to-species file",
+                    "created_at": "2025-02-24T16:45:08Z",
+                    "closed_at": "2025-03-13T10:28:57Z"
+                },
+                {
+                    "number": 57,
+                    "title": "QC colors disappear from tree",
+                    "created_at": "2024-09-27T14:16:03Z",
+                    "closed_at": "2025-03-07T16:45:15Z"
+                },
+                {
+                    "number": 56,
+                    "title": "Windows taskbar logo appear black",
+                    "created_at": "2024-09-26T16:37:03Z",
+                    "closed_at": "2024-09-27T13:35:42Z"
+                },
+                {
+                    "number": 54,
+                    "title": "For self-comparison, skip redundant file checks and memory allocation",
+                    "created_at": "2024-01-09T14:27:09Z",
+                    "closed_at": "2026-05-22T12:31:44Z"
+                },
+                {
+                    "number": 52,
+                    "title": "All mass differences at -1, 0, 1",
+                    "created_at": "2023-12-15T21:47:44Z",
+                    "closed_at": "2023-12-21T15:15:43Z"
+                },
+                {
+                    "number": 50,
+                    "title": "Add 1-to-N and N-to-1 run modes",
+                    "created_at": "2023-04-18T08:40:06Z",
+                    "closed_at": "2025-09-04T14:32:25Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Unexpected behavior when restricting RT window (msconvert bug?)",
+                    "created_at": "2023-03-17T13:11:57Z",
+                    "closed_at": "2023-03-29T13:35:25Z"
+                },
+                {
+                    "number": 47,
+                    "title": "How we can increase the speed of compareMS2",
+                    "created_at": "2022-11-25T02:29:28Z",
+                    "closed_at": "2025-09-04T14:18:17Z"
+                },
+                {
+                    "number": 46,
+                    "title": "Update 3.1 Configuring compareMS2 in README.md",
+                    "created_at": "2022-10-06T16:34:11Z",
+                    "closed_at": "2026-05-22T12:22:15Z"
+                },
+                {
+                    "number": 45,
+                    "title": "Replace Figure 1 in README.md with screenshot",
+                    "created_at": "2022-10-06T13:51:14Z",
+                    "closed_at": "2026-05-22T12:27:37Z"
+                },
+                {
+                    "number": 44,
+                    "title": "Debugger doesn't appear on Linux",
+                    "created_at": "2022-10-05T10:13:24Z",
+                    "closed_at": "2025-09-04T14:50:03Z"
+                },
+                {
+                    "number": 43,
+                    "title": "Add spectral angle (SA) metric for individual spectra comparisons",
+                    "created_at": "2022-06-09T20:46:11Z",
+                    "closed_at": "2022-06-21T04:30:19Z"
+                },
+                {
+                    "number": 41,
+                    "title": "Quality color scale does not update after run is finished",
+                    "created_at": "2022-05-24T11:01:27Z",
+                    "closed_at": "2022-05-24T11:03:34Z"
+                },
+                {
+                    "number": 40,
+                    "title": "Red-blue-green color scale should be red-green-blue to be consistent",
+                    "created_at": "2022-05-24T10:49:46Z",
+                    "closed_at": "2022-10-06T11:56:39Z"
+                },
+                {
+                    "number": 39,
+                    "title": "Rightmost digits in QC legend axis not shown",
+                    "created_at": "2022-05-24T10:46:00Z",
+                    "closed_at": "2022-05-28T18:14:29Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Consistent capitalization",
+                    "created_at": "2022-04-05T14:27:34Z",
+                    "closed_at": "2022-04-08T11:24:18Z"
+                },
+                {
+                    "number": 37,
+                    "title": "Error reading sample_to_species_mapping.txt",
+                    "created_at": "2022-03-28T10:22:53Z",
+                    "closed_at": "2022-03-30T14:57:31Z"
+                },
+                {
+                    "number": 36,
+                    "title": "Add license",
+                    "created_at": "2022-01-28T10:36:56Z",
+                    "closed_at": "2022-02-18T11:29:01Z"
+                },
+                {
+                    "number": 35,
+                    "title": "Make new release for beta testers",
+                    "created_at": "2021-12-17T08:12:33Z",
+                    "closed_at": "2021-12-17T10:38:24Z"
+                },
+                {
+                    "number": 34,
+                    "title": "Add RT filters",
+                    "created_at": "2021-12-15T13:37:18Z",
+                    "closed_at": "2022-01-28T10:43:37Z"
+                },
+                {
+                    "number": 33,
+                    "title": "Details disappear when finished - keep and/or save to log file.",
+                    "created_at": "2021-12-15T10:08:56Z",
+                    "closed_at": "2022-09-16T13:18:28Z"
+                },
+                {
+                    "number": 32,
+                    "title": "Start scan and End scan not used in hash?",
+                    "created_at": "2021-11-19T15:55:33Z",
+                    "closed_at": "2021-11-29T13:40:00Z"
+                },
+                {
+                    "number": 31,
+                    "title": "Latest compareMS.exe does not run in GUI",
+                    "created_at": "2021-11-19T15:31:19Z",
+                    "closed_at": "2021-11-19T16:55:29Z"
+                },
+                {
+                    "number": 30,
+                    "title": "Missing comparisons, branches and wrong tree when repeating analyses!",
+                    "created_at": "2021-11-19T12:55:07Z",
+                    "closed_at": "2021-12-15T10:06:27Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Add Newick to the output formats",
+                    "created_at": "2021-11-19T12:40:40Z",
+                    "closed_at": "2022-04-19T15:15:44Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Supporting additional image formats?",
+                    "created_at": "2021-11-19T12:30:05Z",
+                    "closed_at": "2022-03-04T10:02:51Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Indicate image file format in \"Save picture\"",
+                    "created_at": "2021-11-19T12:27:22Z",
+                    "closed_at": "2022-09-16T13:27:58Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Advanced parameters that could be consider basic parameters",
+                    "created_at": "2021-11-19T12:08:07Z",
+                    "closed_at": "2022-09-16T13:33:53Z"
+                },
+                {
+                    "number": 24,
+                    "title": "Make checkbox for \"compare all spectra\"",
+                    "created_at": "2021-11-19T12:04:53Z",
+                    "closed_at": "2022-03-04T11:39:21Z"
+                },
+                {
+                    "number": 23,
+                    "title": "MGF files not shown when browsing for files/directories",
+                    "created_at": "2021-11-19T12:00:22Z",
+                    "closed_at": "2021-11-19T16:54:02Z"
+                },
+                {
+                    "number": 21,
+                    "title": "Adding flag -x to enable experimental features of compareMS2",
+                    "created_at": "2021-10-07T15:17:33Z",
+                    "closed_at": "2021-11-19T12:08:43Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Code cleanup, compareMS2",
+                    "created_at": "2021-10-01T14:57:39Z",
+                    "closed_at": "2021-10-04T14:28:54Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Making remaining constants (advanced) user inputs",
+                    "created_at": "2021-09-23T09:42:28Z",
+                    "closed_at": "2021-12-16T12:45:31Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Major changes to metrics, inputs and intermediary formats",
+                    "created_at": "2021-09-23T09:35:51Z",
+                    "closed_at": "2021-10-04T14:29:23Z"
+                },
+                {
+                    "number": 17,
+                    "title": "If at all possible, calculate (symmetric) global metric in a single pass",
+                    "created_at": "2021-09-18T07:15:29Z",
+                    "closed_at": "2021-09-23T09:21:50Z"
+                },
+                {
+                    "number": 16,
+                    "title": "Add spectrum selection filter to compareMS2",
+                    "created_at": "2021-09-17T15:28:32Z",
+                    "closed_at": "2021-12-15T10:31:09Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Add picture of (new) GUI to instructions",
+                    "created_at": "2021-09-17T12:12:27Z",
+                    "closed_at": "2026-05-22T12:11:30Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Show quality by label color",
+                    "created_at": "2021-09-10T13:44:46Z",
+                    "closed_at": "2022-04-12T14:17:28Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Installation instructions (Linux)",
+                    "created_at": "2021-06-26T07:42:06Z",
+                    "closed_at": "2022-10-06T12:13:16Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Tree limited to initial area",
+                    "created_at": "2021-04-12T13:58:59Z",
+                    "closed_at": "2022-10-06T12:15:19Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Create OSF companion project for storing and sharing example data.",
+                    "created_at": "2021-04-04T11:17:23Z",
+                    "closed_at": "2021-04-04T11:20:45Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Behavior when not specfying the samples-to-species file",
+                    "created_at": "2021-03-26T09:36:51Z",
+                    "closed_at": "2021-04-11T19:35:24Z"
+                },
+                {
+                    "number": 8,
+                    "title": "GUI too large for small screens",
+                    "created_at": "2021-03-26T09:33:58Z",
+                    "closed_at": "2021-04-11T19:38:10Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Unexpected behavior (partial trees/labels appear incorrect)",
+                    "created_at": "2021-03-22T13:32:11Z",
+                    "closed_at": "2021-03-31T14:40:01Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Automatic generation of sample-to-species file?",
+                    "created_at": "2021-03-12T12:18:12Z",
+                    "closed_at": "2021-03-31T14:43:37Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Scaled vs topology-only tree layouts",
+                    "created_at": "2021-03-05T11:17:08Z",
+                    "closed_at": "2021-03-16T11:49:52Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Radial layout",
+                    "created_at": "2021-03-05T11:12:13Z",
+                    "closed_at": "2021-03-16T11:49:11Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Capitalization of compareMS2GUI",
+                    "created_at": "2021-03-04T19:08:22Z",
+                    "closed_at": "2021-03-16T11:48:58Z"
+                },
+                {
+                    "number": 1,
+                    "title": "\"Maximum chromatographic peak width\" should be \"Maximum scan number difference\"",
+                    "created_at": "2021-03-04T18:58:10Z",
+                    "closed_at": "2021-03-23T13:18:35Z"
+                }
+            ],
+            "languages": {
+                "JavaScript": 708767,
+                "HTML": 24284,
+                "CSS": 8112,
+                "Shell": 4649
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1021/acs.jproteome.2c00457",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36173614",
+                            "source": "MED",
+                            "pmid": "36173614",
+                            "pmcid": "PMC9903320",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9903320"
+                                ]
+                            },
+                            "doi": "10.1021/acs.jproteome.2c00457",
+                            "title": "compareMS2 2.0: An Improved Software for Comparing Tandem Mass Spectrometry Datasets.",
+                            "authorString": "Marissen R, Varunjikar MS, Laros JFJ, Rasinger JD, Neely BA, Palmblad M.",
+                            "journalTitle": "J Proteome Res",
+                            "issue": "2",
+                            "journalVolume": "22",
+                            "pubYear": "2023",
+                            "journalIssn": "1535-3893; 1535-3907; ",
+                            "pageInfo": "514-519",
+                            "pubType": "brief-report; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 4,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "Y",
+                            "dbCrossReferenceList": {
+                                "dbName": [
+                                    "PRIDE"
+                                ]
+                            },
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "pxd"
+                                ]
+                            },
+                            "firstIndexDate": "2022-09-30",
+                            "firstPublicationDate": "2022-09-29"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4297965456",
+                "doi": "https://doi.org/10.1021/acs.jproteome.2c00457",
+                "title": "compareMS2 2.0: An Improved Software for Comparing Tandem Mass Spectrometry Datasets",
+                "display_name": "compareMS2 2.0: An Improved Software for Comparing Tandem Mass Spectrometry Datasets",
+                "publication_year": 2022,
+                "publication_date": "2022-09-29",
+                "ids": {
+                    "openalex": "https://openalex.org/W4297965456",
+                    "doi": "https://doi.org/10.1021/acs.jproteome.2c00457",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36173614"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1021/acs.jproteome.2c00457",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jproteome.2c00457",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.2c00457",
+                    "source": {
+                        "id": "https://openalex.org/S74367812",
+                        "display_name": "Journal of Proteome Research",
+                        "issn_l": "1535-3893",
+                        "issn": [
+                            "1535-3893",
+                            "1535-3907"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Proteome Research",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.2c00457",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5060613117",
+                            "display_name": "Rob Marissen",
+                            "orcid": "https://orcid.org/0000-0002-1220-9173"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Rob Marissen",
+                        "raw_affiliation_strings": [
+                            "Center for Proteomics and Metabolomics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1220-9173",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Proteomics and Metabolomics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5029443249",
+                            "display_name": "Madhushri S. Varunjikar",
+                            "orcid": "https://orcid.org/0000-0001-9011-5642"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2802153510",
+                                "display_name": "Norwegian Institute of Marine Research",
+                                "ror": "https://ror.org/05vg74d16",
+                                "country_code": "NO",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802153510",
+                                    "https://openalex.org/I4210116418",
+                                    "https://openalex.org/I4210149801"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NO"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Madhushri S. Varunjikar",
+                        "raw_affiliation_strings": [
+                            "Institute of Marine Research, P.O. Box 1870\rNordnes, 5817 Bergen, Norway",
+                            "Institute of Marine Research, P.O. Box 1870 Nordnes, 5817 Bergen, Norway"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9011-5642",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute of Marine Research, P.O. Box 1870\rNordnes, 5817 Bergen, Norway",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802153510"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Institute of Marine Research, P.O. Box 1870 Nordnes, 5817 Bergen, Norway",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802153510"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5001355447",
+                            "display_name": "Jeroen F. J. Laros",
+                            "orcid": "https://orcid.org/0000-0002-8715-7371"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210104433",
+                                "display_name": "National Institute for Public Health and the Environment",
+                                "ror": "https://ror.org/01cesdt21",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210104433"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jeroen F. J. Laros",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands",
+                            "National Institute for Public Health and the Environment, 3720 BA Bilthoven, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "National Institute for Public Health and the Environment, 3720 BA Bilthoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210104433"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5003175960",
+                            "display_name": "Josef Daniel Rasinger",
+                            "orcid": "https://orcid.org/0000-0002-9424-4414"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2802153510",
+                                "display_name": "Norwegian Institute of Marine Research",
+                                "ror": "https://ror.org/05vg74d16",
+                                "country_code": "NO",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802153510",
+                                    "https://openalex.org/I4210116418",
+                                    "https://openalex.org/I4210149801"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NO"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Josef D. Rasinger",
+                        "raw_affiliation_strings": [
+                            "Institute of Marine Research, P.O. Box 1870\rNordnes, 5817 Bergen, Norway",
+                            "Institute of Marine Research, P.O. Box 1870 Nordnes, 5817 Bergen, Norway"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute of Marine Research, P.O. Box 1870\rNordnes, 5817 Bergen, Norway",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802153510"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Institute of Marine Research, P.O. Box 1870 Nordnes, 5817 Bergen, Norway",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802153510"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5028983911",
+                            "display_name": "Benjamin A. Neely",
+                            "orcid": "https://orcid.org/0000-0001-6120-7695"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321296531",
+                                "display_name": "National Institute of Standards and Technology",
+                                "ror": "https://ror.org/05xpvk416",
+                                "country_code": "US",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I1321296531",
+                                    "https://openalex.org/I1343035065"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Benjamin A. Neely",
+                        "raw_affiliation_strings": [
+                            "National Institute of Standards and Technology, Charleston, South Carolina 29412, United States"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6120-7695",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "National Institute of Standards and Technology, Charleston, South Carolina 29412, United States",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321296531"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5059772295",
+                            "display_name": "Magnus Palmblad",
+                            "orcid": "https://orcid.org/0000-0002-5865-8994"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Magnus Palmblad",
+                        "raw_affiliation_strings": [
+                            "Center for Proteomics and Metabolomics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5865-8994",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Proteomics and Metabolomics, Leiden University Medical Center, Postbus 9600, 2300 RC Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5059772295"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800006345",
+                    "https://openalex.org/I4210101928"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 0.7796,
+                "has_fulltext": false,
+                "cited_by_count": 10,
+                "citation_normalized_percentile": {
+                    "value": 0.69431862,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 91,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "22",
+                    "issue": "2",
+                    "first_page": "514",
+                    "last_page": "519"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T12388",
+                    "display_name": "Identification and Quantification in Food",
+                    "score": 0.9998999834060669,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T12388",
+                        "display_name": "Identification and Quantification in Food",
+                        "score": 0.9998999834060669,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10836",
+                        "display_name": "Metabolomics and Mass Spectrometry Studies",
+                        "score": 0.998199999332428,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10519",
+                        "display_name": "Advanced Proteomics Techniques and Applications",
+                        "score": 0.996999979019165,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1607",
+                            "display_name": "Spectroscopy"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/16",
+                            "display_name": "Chemistry"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.6422738432884216
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/tandem-mass-spectrometry",
+                        "display_name": "Tandem mass spectrometry",
+                        "score": 0.6275257468223572
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.6060829758644104
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mass-spectrometry",
+                        "display_name": "Mass spectrometry",
+                        "score": 0.5261033177375793
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/metric",
+                        "display_name": "Metric (unit)",
+                        "score": 0.5236789584159851
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/identification",
+                        "display_name": "Identification (biology)",
+                        "score": 0.5002973079681396
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/identifier",
+                        "display_name": "Identifier",
+                        "score": 0.4739432632923126
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/proteomics",
+                        "display_name": "Proteomics",
+                        "score": 0.4295506477355957
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.4175008535385132
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.3731911778450012
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chemistry",
+                        "display_name": "Chemistry",
+                        "score": 0.2487814724445343
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chromatography",
+                        "display_name": "Chromatography",
+                        "score": 0.23121917247772217
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.17577162384986877
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/engineering",
+                        "display_name": "Engineering",
+                        "score": 0.07487523555755615
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.6422738432884216
+                    },
+                    {
+                        "id": "https://openalex.org/C31827203",
+                        "wikidata": "https://www.wikidata.org/wiki/Q874296",
+                        "display_name": "Tandem mass spectrometry",
+                        "level": 3,
+                        "score": 0.6275257468223572
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.6060829758644104
+                    },
+                    {
+                        "id": "https://openalex.org/C162356407",
+                        "wikidata": "https://www.wikidata.org/wiki/Q180809",
+                        "display_name": "Mass spectrometry",
+                        "level": 2,
+                        "score": 0.5261033177375793
+                    },
+                    {
+                        "id": "https://openalex.org/C176217482",
+                        "wikidata": "https://www.wikidata.org/wiki/Q860554",
+                        "display_name": "Metric (unit)",
+                        "level": 2,
+                        "score": 0.5236789584159851
+                    },
+                    {
+                        "id": "https://openalex.org/C116834253",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+                        "display_name": "Identification (biology)",
+                        "level": 2,
+                        "score": 0.5002973079681396
+                    },
+                    {
+                        "id": "https://openalex.org/C154504017",
+                        "wikidata": "https://www.wikidata.org/wiki/Q853614",
+                        "display_name": "Identifier",
+                        "level": 2,
+                        "score": 0.4739432632923126
+                    },
+                    {
+                        "id": "https://openalex.org/C46111723",
+                        "wikidata": "https://www.wikidata.org/wiki/Q471857",
+                        "display_name": "Proteomics",
+                        "level": 3,
+                        "score": 0.4295506477355957
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.4175008535385132
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.3731911778450012
+                    },
+                    {
+                        "id": "https://openalex.org/C185592680",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+                        "display_name": "Chemistry",
+                        "level": 0,
+                        "score": 0.2487814724445343
+                    },
+                    {
+                        "id": "https://openalex.org/C43617362",
+                        "wikidata": "https://www.wikidata.org/wiki/Q170050",
+                        "display_name": "Chromatography",
+                        "level": 1,
+                        "score": 0.23121917247772217
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.17577162384986877
+                    },
+                    {
+                        "id": "https://openalex.org/C127413603",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+                        "display_name": "Engineering",
+                        "level": 0,
+                        "score": 0.07487523555755615
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C59822182",
+                        "wikidata": "https://www.wikidata.org/wiki/Q441",
+                        "display_name": "Botany",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C21547014",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1423657",
+                        "display_name": "Operations management",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D053719",
+                        "descriptor_name": "Tandem Mass Spectrometry",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D053719",
+                        "descriptor_name": "Tandem Mass Spectrometry",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D053719",
+                        "descriptor_name": "Tandem Mass Spectrometry",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1021/acs.jproteome.2c00457",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1021/acs.jproteome.2c00457",
+                        "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.2c00457",
+                        "source": {
+                            "id": "https://openalex.org/S74367812",
+                            "display_name": "Journal of Proteome Research",
+                            "issn_l": "1535-3893",
+                            "issn": [
+                                "1535-3893",
+                                "1535-3907"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320006",
+                            "host_organization_name": "American Chemical Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320006"
+                            ],
+                            "host_organization_lineage_names": [
+                                "American Chemical Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36173614",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36173614",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of proteome research",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3513392",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3513392",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research, 22(2), 514 - 519. AMER CHEMICAL SOC",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:imr.brage.unit.no:11250/3048875",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/11250/3048875",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401716",
+                            "display_name": "Duo Research Archive (University of Oslo)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I184942183",
+                            "host_organization_name": "University of Oslo",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I184942183"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "6",
+                        "raw_type": "info:eu-repo/semantics/other"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9903320",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9903320",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Proteome Res",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:rivm.openrepository.com:10029/626114",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/10029/626114",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401681",
+                            "display_name": "Rivm (National Institute for Public Health and the Environment)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210104433",
+                            "host_organization_name": "National Institute for Public Health and the Environment",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210104433"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of proteome research",
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:rivm.openrepository.com:10029/654439",
+                        "is_oa": false,
+                        "landing_page_url": "https://rivm.openrepository.com/handle/10029/654439",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401681",
+                            "display_name": "Rivm (National Institute for Public Health and the Environment)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210104433",
+                            "host_organization_name": "National Institute for Public Health and the Environment",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210104433"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3513392",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3513392",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "Article / Letter to editor"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1021/acs.jproteome.2c00457",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jproteome.2c00457",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.2c00457",
+                    "source": {
+                        "id": "https://openalex.org/S74367812",
+                        "display_name": "Journal of Proteome Research",
+                        "issn_l": "1535-3893",
+                        "issn": [
+                            "1535-3893",
+                            "1535-3907"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Proteome Research",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4297965456.pdf"
+                },
+                "referenced_works_count": 21,
+                "referenced_works": [
+                    "https://openalex.org/W1558190356",
+                    "https://openalex.org/W2035213532",
+                    "https://openalex.org/W2053943711",
+                    "https://openalex.org/W2081465448",
+                    "https://openalex.org/W2112078820",
+                    "https://openalex.org/W2152207030",
+                    "https://openalex.org/W2262410247",
+                    "https://openalex.org/W2320439720",
+                    "https://openalex.org/W2328331540",
+                    "https://openalex.org/W2410159668",
+                    "https://openalex.org/W2413273030",
+                    "https://openalex.org/W2593252320",
+                    "https://openalex.org/W2798084948",
+                    "https://openalex.org/W2883315617",
+                    "https://openalex.org/W2944075192",
+                    "https://openalex.org/W3103044350",
+                    "https://openalex.org/W3159487143",
+                    "https://openalex.org/W3200763682",
+                    "https://openalex.org/W3208691473",
+                    "https://openalex.org/W4214711650",
+                    "https://openalex.org/W4251751280"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4378651134",
+                    "https://openalex.org/W1979633005",
+                    "https://openalex.org/W2352307597",
+                    "https://openalex.org/W2163724607",
+                    "https://openalex.org/W1980092392",
+                    "https://openalex.org/W2608983118",
+                    "https://openalex.org/W4318812462",
+                    "https://openalex.org/W37347591",
+                    "https://openalex.org/W2103021125",
+                    "https://openalex.org/W2051901836"
+                ],
+                "abstract_inverted_index": {
+                    "It": [
+                        0
+                    ],
+                    "has": [
+                        1,
+                        44
+                    ],
+                    "long": [
+                        2
+                    ],
+                    "been": [
+                        3,
+                        87
+                    ],
+                    "known": [
+                        4
+                    ],
+                    "that": [
+                        5
+                    ],
+                    "biological": [
+                        6
+                    ],
+                    "species": [
+                        7,
+                        48
+                    ],
+                    "can": [
+                        8
+                    ],
+                    "be": [
+                        9
+                    ],
+                    "identified": [
+                        10
+                    ],
+                    "from": [
+                        11
+                    ],
+                    "mass": [
+                        12,
+                        35
+                    ],
+                    "spectrometry": [
+                        13
+                    ],
+                    "data": [
+                        14,
+                        85
+                    ],
+                    "alone.": [
+                        15
+                    ],
+                    "Ten": [
+                        16
+                    ],
+                    "years": [
+                        17
+                    ],
+                    "ago,": [
+                        18
+                    ],
+                    "we": [
+                        19,
+                        64
+                    ],
+                    "described": [
+                        20
+                    ],
+                    "a": [
+                        21,
+                        29,
+                        74,
+                        77
+                    ],
+                    "method": [
+                        22,
+                        43
+                    ],
+                    "and": [
+                        23,
+                        50,
+                        55,
+                        81
+                    ],
+                    "software": [
+                        24
+                    ],
+                    "tool,": [
+                        25
+                    ],
+                    "compareMS2,": [
+                        26
+                    ],
+                    "for": [
+                        27
+                    ],
+                    "calculating": [
+                        28
+                    ],
+                    "distance": [
+                        30
+                    ],
+                    "between": [
+                        31
+                    ],
+                    "sets": [
+                        32
+                    ],
+                    "of": [
+                        33,
+                        70
+                    ],
+                    "tandem": [
+                        34
+                    ],
+                    "spectra,": [
+                        36
+                    ],
+                    "as": [
+                        37,
+                        58,
+                        60
+                    ],
+                    "routinely": [
+                        38
+                    ],
+                    "collected": [
+                        39
+                    ],
+                    "in": [
+                        40,
+                        47,
+                        53
+                    ],
+                    "proteomics.": [
+                        41
+                    ],
+                    "This": [
+                        42
+                    ],
+                    "seen": [
+                        45
+                    ],
+                    "use": [
+                        46
+                    ],
+                    "identification": [
+                        49
+                    ],
+                    "mixture": [
+                        51
+                    ],
+                    "characterization": [
+                        52
+                    ],
+                    "food": [
+                        54
+                    ],
+                    "feed": [
+                        56
+                    ],
+                    "products,": [
+                        57
+                    ],
+                    "well": [
+                        59
+                    ],
+                    "other": [
+                        61
+                    ],
+                    "applications.": [
+                        62
+                    ],
+                    "Here,": [
+                        63
+                    ],
+                    "present": [
+                        65
+                    ],
+                    "the": [
+                        66
+                    ],
+                    "first": [
+                        67
+                    ],
+                    "major": [
+                        68
+                    ],
+                    "update": [
+                        69
+                    ],
+                    "this": [
+                        71
+                    ],
+                    "software,": [
+                        72
+                    ],
+                    "including": [
+                        73
+                    ],
+                    "new": [
+                        75
+                    ],
+                    "metric,": [
+                        76
+                    ],
+                    "graphical": [
+                        78
+                    ],
+                    "user": [
+                        79
+                    ],
+                    "interface": [
+                        80
+                    ],
+                    "additional": [
+                        82
+                    ],
+                    "functionality.": [
+                        83
+                    ],
+                    "The": [
+                        84
+                    ],
+                    "have": [
+                        86
+                    ],
+                    "deposited": [
+                        88
+                    ],
+                    "to": [
+                        89
+                    ],
+                    "ProteomeXchange": [
+                        90
+                    ],
+                    "with": [
+                        91
+                    ],
+                    "dataset": [
+                        92
+                    ],
+                    "identifier": [
+                        93
+                    ],
+                    "PXD034932.": [
+                        94
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "compareMS2 2.0: An Improved Software for Comparing Tandem Mass Spectrometry Datasets",
+                "doi": "10.1021/acs.jproteome.2c00457",
+                "pmid": "36173614",
+                "pmc": "PMC9903320",
+                "isbns": [],
+                "altmetric_jid": "4f6fa62a3cf058f610007e0f",
+                "issns": [
+                    "1535-3893",
+                    "1535-3907"
+                ],
+                "journal": "Journal of Proteome Research",
+                "cohorts": {
+                    "com": 4,
+                    "pub": 10,
+                    "sci": 4
+                },
+                "context": {
+                    "all": {
+                        "count": 32394374,
+                        "mean": 10.50054919678337,
+                        "rank": 4579636,
+                        "pct": 85,
+                        "higher_than": 27733300
+                    },
+                    "journal": {
+                        "count": 7424,
+                        "mean": 6.7929956896551715,
+                        "rank": 1183,
+                        "pct": 83,
+                        "higher_than": 6185
+                    },
+                    "similar_age_3m": {
+                        "count": 452432,
+                        "mean": 14.110695529936006,
+                        "rank": 74500,
+                        "pct": 83,
+                        "higher_than": 376659
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 77,
+                        "mean": 9.002597402597402,
+                        "rank": 25,
+                        "pct": 67,
+                        "higher_than": 52
+                    }
+                },
+                "authors": [
+                    "Rob Marissen",
+                    "Madhushri S. Varunjikar",
+                    "Jeroen F. J. Laros",
+                    "Josef D. Rasinger",
+                    "Benjamin A. Neely",
+                    "Magnus Palmblad"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1675382400,
+                "epubdate": 1664409600,
+                "dimensions_publication_id": "pub.1151451008",
+                "altmetric_id": 136600155,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Chemical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 20,
+                "cited_by_tweeters_count": 18,
+                "cited_by_accounts_count": 18,
+                "last_updated": 1676878927,
+                "score": 9.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 9.5
+                },
+                "url": "http://dx.doi.org/10.1021/acs.jproteome.2c00457",
+                "added_on": 1664469709,
+                "published_on": 1664409600,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Chemistry"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "24",
+                    "connotea": "0"
+                },
+                "readers_count": 24,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=10&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=10&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=10&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=136600155"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 9460,
+            "total_ccn": 4383,
+            "avg_ccn": 3.48,
+            "nloc_per_file": 350.37,
+            "duplicate_rate": 1.52
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": true
+        }
+    }
+}

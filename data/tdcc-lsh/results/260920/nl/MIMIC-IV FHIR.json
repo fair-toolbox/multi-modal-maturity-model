@@ -1,0 +1,2410 @@
+{
+    "MIMIC-IV FHIR": {
+        "tool_name": "MIMIC-IV FHIR",
+        "biotools": null,
+        "github": {
+            "repository": {
+                "id": 434333061,
+                "node_id": "R_kgDOGeNlhQ",
+                "name": "mimic-fhir",
+                "full_name": "kind-lab/mimic-fhir",
+                "private": false,
+                "owner": {
+                    "login": "kind-lab",
+                    "id": 83091120,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgzMDkxMTIw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/83091120?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/kind-lab",
+                    "html_url": "https://github.com/kind-lab",
+                    "followers_url": "https://api.github.com/users/kind-lab/followers",
+                    "following_url": "https://api.github.com/users/kind-lab/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/kind-lab/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/kind-lab/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/kind-lab/subscriptions",
+                    "organizations_url": "https://api.github.com/users/kind-lab/orgs",
+                    "repos_url": "https://api.github.com/users/kind-lab/repos",
+                    "events_url": "https://api.github.com/users/kind-lab/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/kind-lab/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/kind-lab/mimic-fhir",
+                "description": "A version of MIMIC-IV in FHIR",
+                "fork": false,
+                "url": "https://api.github.com/repos/kind-lab/mimic-fhir",
+                "forks_url": "https://api.github.com/repos/kind-lab/mimic-fhir/forks",
+                "keys_url": "https://api.github.com/repos/kind-lab/mimic-fhir/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/kind-lab/mimic-fhir/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/kind-lab/mimic-fhir/teams",
+                "hooks_url": "https://api.github.com/repos/kind-lab/mimic-fhir/hooks",
+                "issue_events_url": "https://api.github.com/repos/kind-lab/mimic-fhir/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/kind-lab/mimic-fhir/events",
+                "assignees_url": "https://api.github.com/repos/kind-lab/mimic-fhir/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/kind-lab/mimic-fhir/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/kind-lab/mimic-fhir/tags",
+                "blobs_url": "https://api.github.com/repos/kind-lab/mimic-fhir/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/kind-lab/mimic-fhir/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/kind-lab/mimic-fhir/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/kind-lab/mimic-fhir/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/kind-lab/mimic-fhir/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/kind-lab/mimic-fhir/languages",
+                "stargazers_url": "https://api.github.com/repos/kind-lab/mimic-fhir/stargazers",
+                "contributors_url": "https://api.github.com/repos/kind-lab/mimic-fhir/contributors",
+                "subscribers_url": "https://api.github.com/repos/kind-lab/mimic-fhir/subscribers",
+                "subscription_url": "https://api.github.com/repos/kind-lab/mimic-fhir/subscription",
+                "commits_url": "https://api.github.com/repos/kind-lab/mimic-fhir/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/kind-lab/mimic-fhir/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/kind-lab/mimic-fhir/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/kind-lab/mimic-fhir/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/kind-lab/mimic-fhir/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/kind-lab/mimic-fhir/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/kind-lab/mimic-fhir/merges",
+                "archive_url": "https://api.github.com/repos/kind-lab/mimic-fhir/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/kind-lab/mimic-fhir/downloads",
+                "issues_url": "https://api.github.com/repos/kind-lab/mimic-fhir/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/kind-lab/mimic-fhir/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/kind-lab/mimic-fhir/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/kind-lab/mimic-fhir/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/kind-lab/mimic-fhir/labels{/name}",
+                "releases_url": "https://api.github.com/repos/kind-lab/mimic-fhir/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/kind-lab/mimic-fhir/deployments",
+                "created_at": "2021-12-02T18:33:11Z",
+                "updated_at": "2026-03-03T04:45:32Z",
+                "pushed_at": "2024-10-28T16:19:57Z",
+                "git_url": "git://github.com/kind-lab/mimic-fhir.git",
+                "ssh_url": "git@github.com:kind-lab/mimic-fhir.git",
+                "clone_url": "https://github.com/kind-lab/mimic-fhir.git",
+                "svn_url": "https://github.com/kind-lab/mimic-fhir",
+                "homepage": "",
+                "size": 877,
+                "stargazers_count": 54,
+                "watchers_count": 54,
+                "language": "Jupyter Notebook",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 22,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 27,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 22,
+                "open_issues": 27,
+                "watchers": 54,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "kind-lab",
+                    "id": 83091120,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjgzMDkxMTIw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/83091120?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/kind-lab",
+                    "html_url": "https://github.com/kind-lab",
+                    "followers_url": "https://api.github.com/users/kind-lab/followers",
+                    "following_url": "https://api.github.com/users/kind-lab/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/kind-lab/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/kind-lab/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/kind-lab/subscriptions",
+                    "organizations_url": "https://api.github.com/users/kind-lab/orgs",
+                    "repos_url": "https://api.github.com/users/kind-lab/repos",
+                    "events_url": "https://api.github.com/users/kind-lab/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/kind-lab/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 22,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": ".env.example",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitmodules",
+                    "type": "blob"
+                },
+                {
+                    "path": ".vscode",
+                    "type": "tree"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "environment.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "fhir-packages",
+                    "type": "commit"
+                },
+                {
+                    "path": "gcp",
+                    "type": "tree"
+                },
+                {
+                    "path": "hapi-fhir-jpaserver-starter",
+                    "type": "tree"
+                },
+                {
+                    "path": "mimic-code",
+                    "type": "commit"
+                },
+                {
+                    "path": "mimic-profiles",
+                    "type": "commit"
+                },
+                {
+                    "path": "notebooks",
+                    "type": "tree"
+                },
+                {
+                    "path": "py_mimic_fhir",
+                    "type": "tree"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "sql",
+                    "type": "tree"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                },
+                {
+                    "path": "tutorial",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "alexmbennett2",
+                    "contributions": 427
+                },
+                {
+                    "login": "alistairewj",
+                    "contributions": 27
+                },
+                {
+                    "login": "piotrszul",
+                    "contributions": 26
+                },
+                {
+                    "login": "Evan8456",
+                    "contributions": 9
+                },
+                {
+                    "login": "joennlae",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 113,
+                    "title": "Wrong Display Name 'ABDOM AORTIC ANEURYSM' for ../mimic-diagnosis-icd9 (and icd10)",
+                    "created_at": "2024-06-27T07:17:04Z",
+                    "closed_at": "2024-07-31T23:28:04Z"
+                },
+                {
+                    "number": 112,
+                    "title": "Unknown code 'EVERY 4 WEEKS' in the CodeSystem '.../mimic-medication-frequency'",
+                    "created_at": "2024-06-27T07:01:11Z",
+                    "closed_at": "2024-07-31T23:28:03Z"
+                },
+                {
+                    "number": 111,
+                    "title": "value cannot be empty [MedicationDispense.medication.ofType(CodeableConcept).coding[0].code]",
+                    "created_at": "2024-06-27T06:52:30Z",
+                    "closed_at": "2024-07-31T23:28:03Z"
+                },
+                {
+                    "number": 110,
+                    "title": "value cannot be empty\t[Observation.value.ofType(string)\t]",
+                    "created_at": "2024-06-27T06:49:46Z",
+                    "closed_at": "2024-07-31T23:28:02Z"
+                },
+                {
+                    "number": 109,
+                    "title": "value cannot be empty\t[MedicationAdministration.dosage.dose.unit]",
+                    "created_at": "2024-06-27T06:47:38Z",
+                    "closed_at": "2024-07-31T23:28:02Z"
+                },
+                {
+                    "number": 108,
+                    "title": "Wrong Display Name 'Oxgyen saturation in Arterial blood' for http://loinc.org#2708-6",
+                    "created_at": "2024-06-27T06:43:57Z",
+                    "closed_at": "2024-07-31T23:28:02Z"
+                },
+                {
+                    "number": 103,
+                    "title": "Wrong namespace on the XHTML [Medication.text.div]",
+                    "created_at": "2024-06-27T06:02:24Z",
+                    "closed_at": "2024-07-31T23:28:01Z"
+                },
+                {
+                    "number": 102,
+                    "title": "Object must have some content [MedicationDispense.dosageInstruction[0]]",
+                    "created_at": "2024-06-27T06:00:04Z",
+                    "closed_at": "2024-07-31T23:28:03Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Object must have some content\t[Observation.hasMember[0]\t]",
+                    "created_at": "2024-06-27T05:56:20Z",
+                    "closed_at": "2024-07-31T23:28:01Z"
+                },
+                {
+                    "number": 99,
+                    "title": "Object must have some content [MedicationAdministration.request]",
+                    "created_at": "2024-06-27T05:51:30Z",
+                    "closed_at": "2024-07-31T23:28:01Z"
+                },
+                {
+                    "number": 98,
+                    "title": "The property medicationCodeableConcept must be an Object, not an Array ",
+                    "created_at": "2024-06-27T05:42:14Z",
+                    "closed_at": "2024-07-31T23:28:00Z"
+                },
+                {
+                    "number": 97,
+                    "title": "The extension http://mimic.mit.edu/fhir/mimic/StructureDefinition/mimic-lab-priority could not be found",
+                    "created_at": "2024-06-27T05:38:41Z",
+                    "closed_at": "2024-07-31T23:28:00Z"
+                },
+                {
+                    "number": 96,
+                    "title": "Value is '{Beats}/min' but must be '/min'",
+                    "created_at": "2024-06-27T05:35:52Z",
+                    "closed_at": "2024-07-31T23:28:00Z"
+                },
+                {
+                    "number": 95,
+                    "title": "Wrong whitespace in Display Name ' Black or African American'",
+                    "created_at": "2024-06-27T05:30:25Z",
+                    "closed_at": "2024-07-31T23:27:59Z"
+                },
+                {
+                    "number": 89,
+                    "title": "LICENSE",
+                    "created_at": "2023-10-27T18:23:49Z",
+                    "closed_at": "2023-11-16T14:07:05Z"
+                },
+                {
+                    "number": 87,
+                    "title": "Is complete version available for download?",
+                    "created_at": "2023-06-12T02:29:33Z",
+                    "closed_at": "2023-11-16T23:28:22Z"
+                },
+                {
+                    "number": 84,
+                    "title": "mimiciv_ed.edstays referenced in fhir_patient.sql is not part of mimiciv 2.2?",
+                    "created_at": "2023-03-11T07:41:48Z",
+                    "closed_at": "2023-03-11T13:33:04Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Pathling import of mimic-fhir resources",
+                    "created_at": "2022-05-11T14:24:12Z",
+                    "closed_at": "2022-05-24T19:38:55Z"
+                },
+                {
+                    "number": 58,
+                    "title": "Fix argument parsing for py_mimic_fhir",
+                    "created_at": "2022-04-20T20:40:09Z",
+                    "closed_at": "2022-05-24T19:40:34Z"
+                },
+                {
+                    "number": 57,
+                    "title": "Use a different variable than \"HOST\" in env",
+                    "created_at": "2022-04-20T20:26:24Z",
+                    "closed_at": "2022-05-11T13:01:12Z"
+                },
+                {
+                    "number": 56,
+                    "title": "Update micro specimen codesystem",
+                    "created_at": "2022-04-20T15:22:13Z",
+                    "closed_at": "2022-04-29T14:17:03Z"
+                },
+                {
+                    "number": 52,
+                    "title": "Experience on the Quickstart",
+                    "created_at": "2022-04-01T09:42:44Z",
+                    "closed_at": "2022-04-22T12:04:55Z"
+                },
+                {
+                    "number": 51,
+                    "title": "Update medication mapping",
+                    "created_at": "2022-03-31T15:25:35Z",
+                    "closed_at": "2022-04-29T14:05:00Z"
+                },
+                {
+                    "number": 50,
+                    "title": "Add comments to ObservationMicroSusc and ObservationMicroTest",
+                    "created_at": "2022-03-30T15:52:16Z",
+                    "closed_at": "2022-04-18T16:13:58Z"
+                },
+                {
+                    "number": 49,
+                    "title": "Micro specimen add type",
+                    "created_at": "2022-03-30T15:36:36Z",
+                    "closed_at": "2022-04-18T15:54:23Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Update create_fhir_tables with fhir_etl",
+                    "created_at": "2022-03-30T15:28:58Z",
+                    "closed_at": "2022-04-18T18:59:36Z"
+                },
+                {
+                    "number": 47,
+                    "title": "QA patient ethnicity/race",
+                    "created_at": "2022-03-29T20:28:13Z",
+                    "closed_at": "2022-04-18T15:56:22Z"
+                },
+                {
+                    "number": 44,
+                    "title": "Test ValueSet reference and expansion",
+                    "created_at": "2022-03-29T16:38:49Z",
+                    "closed_at": "2022-04-05T13:20:20Z"
+                },
+                {
+                    "number": 43,
+                    "title": "Limit in Observation Labs SQL",
+                    "created_at": "2022-03-29T08:21:09Z",
+                    "closed_at": "2022-05-24T19:39:56Z"
+                },
+                {
+                    "number": 42,
+                    "title": "ICU observation warning",
+                    "created_at": "2022-03-25T17:18:34Z",
+                    "closed_at": "2022-03-28T17:11:58Z"
+                },
+                {
+                    "number": 39,
+                    "title": "Pull in transfers as location for encounters",
+                    "created_at": "2022-03-23T19:19:19Z",
+                    "closed_at": "2022-05-24T19:37:37Z"
+                },
+                {
+                    "number": 38,
+                    "title": "Review lab tables for more data to pull into fhir",
+                    "created_at": "2022-03-23T14:03:22Z",
+                    "closed_at": "2022-03-29T19:06:39Z"
+                },
+                {
+                    "number": 37,
+                    "title": "Refactor Bundler",
+                    "created_at": "2022-03-22T21:12:07Z",
+                    "closed_at": "2022-04-29T14:06:28Z"
+                },
+                {
+                    "number": 33,
+                    "title": "Add CLI functionality to py_mimic_fhir",
+                    "created_at": "2022-03-17T20:32:06Z",
+                    "closed_at": "2022-03-29T19:07:25Z"
+                },
+                {
+                    "number": 31,
+                    "title": "Timing estimate for full fhir generation in postgres",
+                    "created_at": "2022-03-17T19:26:09Z",
+                    "closed_at": "2022-03-18T14:19:05Z"
+                },
+                {
+                    "number": 30,
+                    "title": "Integrate terminology script into py_mimic_fhir",
+                    "created_at": "2022-03-17T18:32:31Z",
+                    "closed_at": "2022-04-05T13:19:09Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Test demo data validate and export",
+                    "created_at": "2022-03-17T13:05:28Z",
+                    "closed_at": "2022-03-18T14:19:17Z"
+                },
+                {
+                    "number": 28,
+                    "title": "Update fhir_etl.subjects with demo script",
+                    "created_at": "2022-03-16T18:41:41Z",
+                    "closed_at": "2022-03-18T14:17:31Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Clean HAPI Server - Deleting old data on HAPI",
+                    "created_at": "2022-03-16T18:10:00Z",
+                    "closed_at": "2022-05-24T19:39:18Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Pull in demo subjects",
+                    "created_at": "2022-03-15T19:57:12Z",
+                    "closed_at": "2022-03-17T20:19:34Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Look into passing bundles in parallel",
+                    "created_at": "2022-03-15T19:51:47Z",
+                    "closed_at": "2022-09-08T20:31:46Z"
+                },
+                {
+                    "number": 24,
+                    "title": "Calculate largest bundle, use as benchmark in tests",
+                    "created_at": "2022-03-15T19:47:51Z",
+                    "closed_at": "2022-03-23T13:46:21Z"
+                },
+                {
+                    "number": 23,
+                    "title": "Confirm bundles validating codes",
+                    "created_at": "2022-03-15T19:44:44Z",
+                    "closed_at": "2022-03-18T14:17:51Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Catch failed bundles and write out to file",
+                    "created_at": "2022-03-15T15:09:15Z",
+                    "closed_at": "2022-03-23T13:45:09Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Update terminology to match mimic names",
+                    "created_at": "2022-03-10T19:44:44Z",
+                    "closed_at": "2022-03-14T19:22:21Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Terminology generation verification",
+                    "created_at": "2022-03-10T18:46:39Z",
+                    "closed_at": "2022-05-11T13:03:20Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Versioning Terminology based on MIMIC",
+                    "created_at": "2022-03-10T18:39:28Z",
+                    "closed_at": "2022-03-14T19:21:36Z"
+                },
+                {
+                    "number": 13,
+                    "title": "mimic-profiles",
+                    "created_at": "2022-01-28T16:18:07Z",
+                    "closed_at": "2022-03-14T19:22:07Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Microbiology Updates",
+                    "created_at": "2022-01-28T16:05:47Z",
+                    "closed_at": "2022-05-24T19:39:33Z"
+                },
+                {
+                    "number": 11,
+                    "title": "ValueSets/fhir_etl needed",
+                    "created_at": "2022-01-28T15:54:28Z",
+                    "closed_at": "2022-03-14T19:21:59Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Validate codes against custom valuesets",
+                    "created_at": "2022-01-28T15:52:11Z",
+                    "closed_at": "2022-03-14T19:21:48Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Bundling resources",
+                    "created_at": "2022-01-28T15:46:28Z",
+                    "closed_at": "2022-05-24T19:49:26Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Server Tests",
+                    "created_at": "2022-01-28T15:33:31Z",
+                    "closed_at": "2022-03-14T19:21:53Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Encounter References Hosp v ICU",
+                    "created_at": "2022-01-25T21:15:50Z",
+                    "closed_at": "2022-04-29T14:07:08Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Test cases needed",
+                    "created_at": "2022-01-12T15:18:22Z",
+                    "closed_at": "2022-05-11T13:02:27Z"
+                }
+            ],
+            "languages": {
+                "Jupyter Notebook": 234766,
+                "Python": 148045,
+                "PLpgSQL": 21884,
+                "Shell": 1207
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/jamia/ocad002",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36688534",
+                            "source": "MED",
+                            "pmid": "36688534",
+                            "pmcid": "PMC10018258",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10018258"
+                                ]
+                            },
+                            "doi": "10.1093/jamia/ocad002",
+                            "title": "MIMIC-IV on FHIR: converting a decade of in-patient data into an exchangeable, interoperable format.",
+                            "authorString": "Bennett AM, Ulrich H, van Damme P, Wiedekopf J, Johnson AEW.",
+                            "journalTitle": "J Am Med Inform Assoc",
+                            "issue": "4",
+                            "journalVolume": "30",
+                            "pubYear": "2023",
+                            "journalIssn": "1067-5027; 1527-974x; ",
+                            "pageInfo": "718-725",
+                            "pubType": "research support, non-u.s. gov't; journal article; case-report",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 17,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2023-01-24",
+                            "firstPublicationDate": "2023-03-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4317749998",
+                "doi": "https://doi.org/10.1093/jamia/ocad002",
+                "title": "MIMIC-IV on FHIR: converting a decade of in-patient data into an exchangeable, interoperable format",
+                "display_name": "MIMIC-IV on FHIR: converting a decade of in-patient data into an exchangeable, interoperable format",
+                "publication_year": 2023,
+                "publication_date": "2023-01-23",
+                "ids": {
+                    "openalex": "https://openalex.org/W4317749998",
+                    "doi": "https://doi.org/10.1093/jamia/ocad002",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36688534"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/jamia/ocad002",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/jamia/ocad002",
+                    "pdf_url": "https://academic.oup.com/jamia/article-pdf/30/4/718/49524369/ocad002.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S129839026",
+                        "display_name": "Journal of the American Medical Informatics Association",
+                        "issn_l": "1067-5027",
+                        "issn": [
+                            "1067-5027",
+                            "1527-974X"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of the American Medical Informatics Association",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/jamia/article-pdf/30/4/718/49524369/ocad002.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5048430587",
+                            "display_name": "Alex M Bennett",
+                            "orcid": "https://orcid.org/0000-0001-8211-9686"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801317318",
+                                "display_name": "Hospital for Sick Children",
+                                "ror": "https://ror.org/057q4rt57",
+                                "country_code": "CA",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2801317318"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210141030",
+                                "display_name": "SickKids Foundation",
+                                "ror": "https://ror.org/04374qe70",
+                                "country_code": "CA",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I4210141030"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210147079",
+                                "display_name": "Institute for Clinical Evaluative Sciences",
+                                "ror": "https://ror.org/05p6rhy72",
+                                "country_code": "CA",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210147079"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "CA"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alex M Bennett",
+                        "raw_affiliation_strings": [
+                            "Child Health Evaluative Sciences, The Hospital for Sick Children , Toronto, Ontario, Canada"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8211-9686",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Child Health Evaluative Sciences, The Hospital for Sick Children , Toronto, Ontario, Canada",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147079",
+                                    "https://openalex.org/I2801317318",
+                                    "https://openalex.org/I4210141030"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5002813701",
+                            "display_name": "Hannes Ulrich",
+                            "orcid": "https://orcid.org/0000-0002-8349-6798"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I32021983",
+                                "display_name": "Christian-Albrechts-Universit\u00e4t zu Kiel",
+                                "ror": "https://ror.org/04v76ef78",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I32021983"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210112713",
+                                "display_name": "University Hospital Schleswig-Holstein",
+                                "ror": "https://ror.org/01tvm6f46",
+                                "country_code": "DE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210112713"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I9341345",
+                                "display_name": "University of L\u00fcbeck",
+                                "ror": "https://ror.org/00t3r8h32",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I9341345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Hannes Ulrich",
+                        "raw_affiliation_strings": [
+                            "Institute for Medical Informatics and Statistics, Kiel University and University Hospital Center Schleswig-Holstein , Campus Kiel, Germany"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8349-6798",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute for Medical Informatics and Statistics, Kiel University and University Hospital Center Schleswig-Holstein , Campus Kiel, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210112713",
+                                    "https://openalex.org/I9341345",
+                                    "https://openalex.org/I32021983"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5024410976",
+                            "display_name": "Philip van Damme",
+                            "orcid": "https://orcid.org/0000-0002-7124-8949"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210148356",
+                                "display_name": "GGD Amsterdam",
+                                "ror": "https://ror.org/04gbbq803",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210088893",
+                                    "https://openalex.org/I4210148356"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210151833",
+                                "display_name": "Amsterdam University Medical Centers",
+                                "ror": "https://ror.org/05grdyy37",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210151833"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Philip van Damme",
+                        "raw_affiliation_strings": [
+                            "Amsterdam Public Health, Digital Health & Methodology , Amsterdam, The Netherlands",
+                            "Department of Medical Informatics, Amsterdam UMC Location University of Amsterdam , Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7124-8949",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Amsterdam Public Health, Digital Health & Methodology , Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210148356"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Medical Informatics, Amsterdam UMC Location University of Amsterdam , Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210151833",
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5070747857",
+                            "display_name": "Joshua Wiedekopf",
+                            "orcid": "https://orcid.org/0000-0002-9902-6459"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I9341345",
+                                "display_name": "University of L\u00fcbeck",
+                                "ror": "https://ror.org/00t3r8h32",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I9341345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Joshua Wiedekopf",
+                        "raw_affiliation_strings": [
+                            "IT Center for Clinical Research, University of L\u00fcbeck and University Hospital Center Schleswig-Holstein , Campus L\u00fcbeck, Germany"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9902-6459",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "IT Center for Clinical Research, University of L\u00fcbeck and University Hospital Center Schleswig-Holstein , Campus L\u00fcbeck, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I9341345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5003528274",
+                            "display_name": "Alistair E. W. Johnson",
+                            "orcid": "https://orcid.org/0000-0002-8735-3014"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2801317318",
+                                "display_name": "Hospital for Sick Children",
+                                "ror": "https://ror.org/057q4rt57",
+                                "country_code": "CA",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2801317318"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210141030",
+                                "display_name": "SickKids Foundation",
+                                "ror": "https://ror.org/04374qe70",
+                                "country_code": "CA",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I4210141030"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210147079",
+                                "display_name": "Institute for Clinical Evaluative Sciences",
+                                "ror": "https://ror.org/05p6rhy72",
+                                "country_code": "CA",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210147079"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "CA"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Alistair E W Johnson",
+                        "raw_affiliation_strings": [
+                            "Child Health Evaluative Sciences, The Hospital for Sick Children , Toronto, Ontario, Canada"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8735-3014",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Child Health Evaluative Sciences, The Hospital for Sick Children , Toronto, Ontario, Canada",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210147079",
+                                    "https://openalex.org/I2801317318",
+                                    "https://openalex.org/I4210141030"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 5,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5003528274"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2801317318",
+                    "https://openalex.org/I4210141030",
+                    "https://openalex.org/I4210147079"
+                ],
+                "apc_list": {
+                    "value": 3967,
+                    "currency": "USD",
+                    "value_usd": 3967
+                },
+                "apc_paid": {
+                    "value": 3967,
+                    "currency": "USD",
+                    "value_usd": 3967
+                },
+                "fwci": 8.9421,
+                "has_fulltext": true,
+                "cited_by_count": 30,
+                "citation_normalized_percentile": {
+                    "value": 0.9846925,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 96,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "30",
+                    "issue": "4",
+                    "first_page": "718",
+                    "last_page": "725"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T13248",
+                    "display_name": "Healthcare Technology and Patient Monitoring",
+                    "score": 0.3837999999523163,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2746",
+                        "display_name": "Surgery"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/27",
+                        "display_name": "Medicine"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/4",
+                        "display_name": "Health Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T13248",
+                        "display_name": "Healthcare Technology and Patient Monitoring",
+                        "score": 0.3837999999523163,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2746",
+                            "display_name": "Surgery"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10350",
+                        "display_name": "Electronic Health Records Systems",
+                        "score": 0.2953000068664551,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/3605",
+                            "display_name": "Health Information Management"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/36",
+                            "display_name": "Health Professions"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T13702",
+                        "display_name": "Machine Learning in Healthcare",
+                        "score": 0.09399999678134918,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1702",
+                            "display_name": "Artificial Intelligence"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/interoperability",
+                        "display_name": "Interoperability",
+                        "score": 0.8648613691329956
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-format",
+                        "display_name": "Data format",
+                        "score": 0.6041854619979858
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5997456908226013
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/patient-data",
+                        "display_name": "Patient data",
+                        "score": 0.4218248724937439
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/world-wide-web",
+                        "display_name": "World Wide Web",
+                        "score": 0.3901962637901306
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.3763121962547302
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-hardware",
+                        "display_name": "Computer hardware",
+                        "score": 0.07408487796783447
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C20136886",
+                        "wikidata": "https://www.wikidata.org/wiki/Q749647",
+                        "display_name": "Interoperability",
+                        "level": 2,
+                        "score": 0.8648613691329956
+                    },
+                    {
+                        "id": "https://openalex.org/C2985331491",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5227298",
+                        "display_name": "Data format",
+                        "level": 2,
+                        "score": 0.6041854619979858
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5997456908226013
+                    },
+                    {
+                        "id": "https://openalex.org/C3018822202",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1324077",
+                        "display_name": "Patient data",
+                        "level": 2,
+                        "score": 0.4218248724937439
+                    },
+                    {
+                        "id": "https://openalex.org/C136764020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466",
+                        "display_name": "World Wide Web",
+                        "level": 1,
+                        "score": 0.3901962637901306
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.3763121962547302
+                    },
+                    {
+                        "id": "https://openalex.org/C9390403",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3966",
+                        "display_name": "Computer hardware",
+                        "level": 1,
+                        "score": 0.07408487796783447
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D010361",
+                        "descriptor_name": "Patients",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010361",
+                        "descriptor_name": "Patients",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010361",
+                        "descriptor_name": "Patients",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D010361",
+                        "descriptor_name": "Patients",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D016247",
+                        "descriptor_name": "Information Storage and Retrieval",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D033181",
+                        "descriptor_name": "Information Dissemination",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057208",
+                        "descriptor_name": "Health Level Seven",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057208",
+                        "descriptor_name": "Health Level Seven",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057208",
+                        "descriptor_name": "Health Level Seven",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057208",
+                        "descriptor_name": "Health Level Seven",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057286",
+                        "descriptor_name": "Electronic Health Records",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057286",
+                        "descriptor_name": "Electronic Health Records",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057286",
+                        "descriptor_name": "Electronic Health Records",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057286",
+                        "descriptor_name": "Electronic Health Records",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066264",
+                        "descriptor_name": "Datasets as Topic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066264",
+                        "descriptor_name": "Datasets as Topic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066264",
+                        "descriptor_name": "Datasets as Topic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066264",
+                        "descriptor_name": "Datasets as Topic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/jamia/ocad002",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/jamia/ocad002",
+                        "pdf_url": "https://academic.oup.com/jamia/article-pdf/30/4/718/49524369/ocad002.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S129839026",
+                            "display_name": "Journal of the American Medical Informatics Association",
+                            "issn_l": "1067-5027",
+                            "issn": [
+                                "1067-5027",
+                                "1527-974X"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of the American Medical Informatics Association",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36688534",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36688534",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of the American Medical Informatics Association : JAMIA",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10018258",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10018258",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10018258/pdf/ocad002.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Am Med Inform Assoc",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.amsterdamumc.nl:openaire_cris_publications/cef99b86-84fb-4bfa-b92a-fdb9ec2b5315",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/cef99b86-84fb-4bfa-b92a-fdb9ec2b5315",
+                        "pdf_url": "https://pure.amsterdamumc.nl/files/142084820/Mimic-iv-on-fhir.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S7407055222",
+                            "display_name": "Pure Amsterdam UMC",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bennett, A M, Ulrich, H, van Damme, P, Wiedekopf, J & Johnson, A E W 2023, 'MIMIC-IV on FHIR : converting a decade of in-patient data into an exchangeable, interoperable format', Journal of the American Medical Informatics Association, vol. 30, no. 4, pp. 718-725. https://doi.org/10.1093/jamia/ocad002",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:amcpub:oai:pure.amc.nl:publications/881d8d3e-f0b2-4c6f-91af-abd7cc3cbe7f",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amc.nl/en/publications/mimiciv-on-fhir(881d8d3e-f0b2-4c6f-91af-abd7cc3cbe7f).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of the American Medical Informatics Association, 30(4), 718 - 725. Oxford University Press",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/jamia/ocad002",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/jamia/ocad002",
+                    "pdf_url": "https://academic.oup.com/jamia/article-pdf/30/4/718/49524369/ocad002.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S129839026",
+                        "display_name": "Journal of the American Medical Informatics Association",
+                        "issn_l": "1067-5027",
+                        "issn": [
+                            "1067-5027",
+                            "1527-974X"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of the American Medical Informatics Association",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "display_name": "Industry, innovation and infrastructure",
+                        "score": 0.46000000834465027,
+                        "id": "https://metadata.un.org/sdg/9"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320323654",
+                        "display_name": "Hospital for Sick Children",
+                        "ror": "https://ror.org/057q4rt57"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4317749998.pdf"
+                },
+                "referenced_works_count": 32,
+                "referenced_works": [
+                    "https://openalex.org/W2104608657",
+                    "https://openalex.org/W2117539524",
+                    "https://openalex.org/W2123712309",
+                    "https://openalex.org/W2151868700",
+                    "https://openalex.org/W2396881363",
+                    "https://openalex.org/W2751687090",
+                    "https://openalex.org/W2757504960",
+                    "https://openalex.org/W2784499877",
+                    "https://openalex.org/W2787483926",
+                    "https://openalex.org/W2802561155",
+                    "https://openalex.org/W2969097171",
+                    "https://openalex.org/W2977456252",
+                    "https://openalex.org/W2995225687",
+                    "https://openalex.org/W3049452588",
+                    "https://openalex.org/W3091504090",
+                    "https://openalex.org/W3098949126",
+                    "https://openalex.org/W3135446575",
+                    "https://openalex.org/W3162045605",
+                    "https://openalex.org/W3172260675",
+                    "https://openalex.org/W3191527445",
+                    "https://openalex.org/W3195573207",
+                    "https://openalex.org/W3199737851",
+                    "https://openalex.org/W4220757280",
+                    "https://openalex.org/W4220861944",
+                    "https://openalex.org/W4285021577",
+                    "https://openalex.org/W4290729089",
+                    "https://openalex.org/W4313439128",
+                    "https://openalex.org/W6801226087",
+                    "https://openalex.org/W6884869442",
+                    "https://openalex.org/W6884898520",
+                    "https://openalex.org/W6922242638",
+                    "https://openalex.org/W6941288424"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2748952813",
+                    "https://openalex.org/W2093262417",
+                    "https://openalex.org/W2123131699",
+                    "https://openalex.org/W913131694",
+                    "https://openalex.org/W650116260",
+                    "https://openalex.org/W2378329187",
+                    "https://openalex.org/W4390790060",
+                    "https://openalex.org/W2134191509",
+                    "https://openalex.org/W1603423477",
+                    "https://openalex.org/W2793346709"
+                ],
+                "abstract_inverted_index": {
+                    "OBJECTIVE:": [
+                        0
+                    ],
+                    "Convert": [
+                        1
+                    ],
+                    "the": [
+                        2,
+                        29,
+                        41,
+                        60,
+                        71,
+                        78,
+                        87,
+                        101,
+                        131,
+                        178,
+                        202,
+                        213,
+                        226,
+                        249
+                    ],
+                    "Medical": [
+                        3
+                    ],
+                    "Information": [
+                        4
+                    ],
+                    "Mart": [
+                        5
+                    ],
+                    "for": [
+                        6,
+                        84,
+                        246
+                    ],
+                    "Intensive": [
+                        7
+                    ],
+                    "Care": [
+                        8
+                    ],
+                    "(MIMIC)-IV": [
+                        9
+                    ],
+                    "database": [
+                        10
+                    ],
+                    "into": [
+                        11,
+                        74,
+                        105
+                    ],
+                    "Health": [
+                        12
+                    ],
+                    "Level": [
+                        13
+                    ],
+                    "7": [
+                        14
+                    ],
+                    "Fast": [
+                        15
+                    ],
+                    "Healthcare": [
+                        16
+                    ],
+                    "Interoperability": [
+                        17
+                    ],
+                    "Resources": [
+                        18,
+                        80
+                    ],
+                    "(FHIR).": [
+                        19
+                    ],
+                    "Additionally,": [
+                        20
+                    ],
+                    "generate": [
+                        21
+                    ],
+                    "and": [
+                        22,
+                        31,
+                        39,
+                        52,
+                        66,
+                        100,
+                        124,
+                        146,
+                        180,
+                        194,
+                        248
+                    ],
+                    "publish": [
+                        23
+                    ],
+                    "an": [
+                        24,
+                        106
+                    ],
+                    "openly": [
+                        25,
+                        205
+                    ],
+                    "available": [
+                        26
+                    ],
+                    "demo": [
+                        27,
+                        141
+                    ],
+                    "of": [
+                        28,
+                        43,
+                        55,
+                        112,
+                        182,
+                        212,
+                        225,
+                        251
+                    ],
+                    "resources,": [
+                        30
+                    ],
+                    "create": [
+                        32
+                    ],
+                    "a": [
+                        33,
+                        184,
+                        210
+                    ],
+                    "FHIR": [
+                        34,
+                        50,
+                        62,
+                        75,
+                        88,
+                        91,
+                        115,
+                        132,
+                        186,
+                        222,
+                        232,
+                        242
+                    ],
+                    "Implementation": [
+                        35
+                    ],
+                    "Guide": [
+                        36
+                    ],
+                    "to": [
+                        37,
+                        77
+                    ],
+                    "support": [
+                        38
+                    ],
+                    "clarify": [
+                        40
+                    ],
+                    "usage": [
+                        42
+                    ],
+                    "MIMIC-IV": [
+                        44,
+                        56,
+                        113,
+                        220,
+                        240
+                    ],
+                    "on": [
+                        45,
+                        172,
+                        221,
+                        241
+                    ],
+                    "FHIR.": [
+                        46
+                    ],
+                    "MATERIALS": [
+                        47
+                    ],
+                    "AND": [
+                        48
+                    ],
+                    "METHODS:": [
+                        49
+                    ],
+                    "profiles": [
+                        51,
+                        102
+                    ],
+                    "terminology": [
+                        53,
+                        67,
+                        192
+                    ],
+                    "system": [
+                        54
+                    ],
+                    "were": [
+                        57,
+                        68,
+                        82,
+                        93,
+                        103
+                    ],
+                    "modeled": [
+                        58
+                    ],
+                    "from": [
+                        59,
+                        70,
+                        191,
+                        201
+                    ],
+                    "base": [
+                        61
+                    ],
+                    "R4": [
+                        63
+                    ],
+                    "resources.": [
+                        64,
+                        150,
+                        163
+                    ],
+                    "Data": [
+                        65
+                    ],
+                    "reorganized": [
+                        69
+                    ],
+                    "relational": [
+                        72
+                    ],
+                    "structure": [
+                        73
+                    ],
+                    "according": [
+                        76
+                    ],
+                    "profiles.": [
+                        79,
+                        89
+                    ],
+                    "generated": [
+                        81,
+                        140
+                    ],
+                    "validated": [
+                        83,
+                        204
+                    ],
+                    "conformance": [
+                        85
+                    ],
+                    "with": [
+                        86
+                    ],
+                    "Finally,": [
+                        90
+                    ],
+                    "resources": [
+                        92
+                    ],
+                    "published": [
+                        94
+                    ],
+                    "as": [
+                        95,
+                        209
+                    ],
+                    "newline": [
+                        96
+                    ],
+                    "delimited": [
+                        97
+                    ],
+                    "JSON": [
+                        98
+                    ],
+                    "files": [
+                        99
+                    ],
+                    "packaged": [
+                        104
+                    ],
+                    "implementation": [
+                        107,
+                        128
+                    ],
+                    "guide.": [
+                        108
+                    ],
+                    "RESULTS:": [
+                        109
+                    ],
+                    "The": [
+                        110,
+                        139,
+                        151,
+                        164,
+                        188,
+                        198,
+                        217,
+                        234
+                    ],
+                    "modeling": [
+                        111,
+                        133,
+                        196,
+                        214
+                    ],
+                    "in": [
+                        114,
+                        117,
+                        167,
+                        239
+                    ],
+                    "resulted": [
+                        116
+                    ],
+                    "25": [
+                        118
+                    ],
+                    "profiles,": [
+                        119
+                    ],
+                    "2": [
+                        120
+                    ],
+                    "extensions,": [
+                        121
+                    ],
+                    "35": [
+                        122
+                    ],
+                    "ValueSets,": [
+                        123
+                    ],
+                    "34": [
+                        125
+                    ],
+                    "CodeSystems.": [
+                        126
+                    ],
+                    "An": [
+                        127
+                    ],
+                    "guide": [
+                        129
+                    ],
+                    "encompassing": [
+                        130
+                    ],
+                    "can": [
+                        134
+                    ],
+                    "be": [
+                        135,
+                        244
+                    ],
+                    "accessed": [
+                        136
+                    ],
+                    "at": [
+                        137
+                    ],
+                    "mimic.mit.edu/fhir/mimic.": [
+                        138
+                    ],
+                    "dataset": [
+                        142,
+                        153
+                    ],
+                    "contained": [
+                        143,
+                        154
+                    ],
+                    "100": [
+                        144
+                    ],
+                    "patients": [
+                        145,
+                        157
+                    ],
+                    "over": [
+                        147
+                    ],
+                    "915": [
+                        148
+                    ],
+                    "000": [
+                        149,
+                        156,
+                        162
+                    ],
+                    "full": [
+                        152
+                    ],
+                    "315": [
+                        155
+                    ],
+                    "covering": [
+                        158
+                    ],
+                    "approximately": [
+                        159
+                    ],
+                    "5": [
+                        160
+                    ],
+                    "840": [
+                        161
+                    ],
+                    "final": [
+                        165
+                    ],
+                    "datasets": [
+                        166
+                    ],
+                    "NDJSON": [
+                        168
+                    ],
+                    "format": [
+                        169
+                    ],
+                    "are": [
+                        170
+                    ],
+                    "accessible": [
+                        171,
+                        206,
+                        228
+                    ],
+                    "PhysioNet.": [
+                        173
+                    ],
+                    "DISCUSSION:": [
+                        174
+                    ],
+                    "Our": [
+                        175
+                    ],
+                    "work": [
+                        176
+                    ],
+                    "highlights": [
+                        177
+                    ],
+                    "challenges": [
+                        179,
+                        189
+                    ],
+                    "benefits": [
+                        181,
+                        199
+                    ],
+                    "generating": [
+                        183
+                    ],
+                    "real-world": [
+                        185,
+                        236
+                    ],
+                    "store.": [
+                        187
+                    ],
+                    "arise": [
+                        190
+                    ],
+                    "mapping": [
+                        193
+                    ],
+                    "profiling": [
+                        195
+                    ],
+                    "decisions.": [
+                        197
+                    ],
+                    "come": [
+                        200
+                    ],
+                    "extensively": [
+                        203
+                    ],
+                    "data": [
+                        207,
+                        237
+                    ],
+                    "created": [
+                        208,
+                        219
+                    ],
+                    "result": [
+                        211
+                    ],
+                    "work.": [
+                        215
+                    ],
+                    "CONCLUSION:": [
+                        216
+                    ],
+                    "newly": [
+                        218
+                    ],
+                    "provides": [
+                        223
+                    ],
+                    "one": [
+                        224
+                    ],
+                    "first": [
+                        227
+                    ],
+                    "deidentified": [
+                        229
+                    ],
+                    "critical": [
+                        230
+                    ],
+                    "care": [
+                        231
+                    ],
+                    "datasets.": [
+                        233
+                    ],
+                    "extensive": [
+                        235
+                    ],
+                    "found": [
+                        238
+                    ],
+                    "will": [
+                        243
+                    ],
+                    "invaluable": [
+                        245
+                    ],
+                    "research": [
+                        247
+                    ],
+                    "development": [
+                        250
+                    ],
+                    "healthcare": [
+                        252
+                    ],
+                    "applications.": [
+                        253
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 11
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 10
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-26T13:28:51.108037",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "MIMIC-IV on FHIR: converting a decade of in-patient data into an exchangeable, interoperable format",
+                "doi": "10.1093/jamia/ocad002",
+                "pmid": "36688534",
+                "pmc": "PMC10018258",
+                "isbns": [],
+                "altmetric_jid": "4f6fa5743cf058f610004cca",
+                "issns": [
+                    "1067-5027",
+                    "1527-974X"
+                ],
+                "journal": "Journal of the American Medical Informatics Association",
+                "cohorts": {
+                    "pub": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 32332113,
+                        "mean": 10.499293802294954,
+                        "rank": 20343187,
+                        "pct": 36,
+                        "higher_than": 11824357
+                    },
+                    "journal": {
+                        "count": 3781,
+                        "mean": 13.825958741073789,
+                        "rank": 2717,
+                        "pct": 27,
+                        "higher_than": 1039
+                    },
+                    "similar_age_3m": {
+                        "count": 512243,
+                        "mean": 12.372146129864149,
+                        "rank": 235679,
+                        "pct": 53,
+                        "higher_than": 272195
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 36,
+                        "mean": 18.82222222222222,
+                        "rank": 21,
+                        "pct": 41,
+                        "higher_than": 15
+                    }
+                },
+                "authors": [
+                    "Alex M Bennett",
+                    "Hannes Ulrich",
+                    "Philip van Damme",
+                    "Joshua Wiedekopf",
+                    "Alistair E W Johnson"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1678924800,
+                "epubdate": 1674432000,
+                "dimensions_publication_id": "pub.1154751608",
+                "altmetric_id": 141798788,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Engineering",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Medical And Health Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 3,
+                "cited_by_rdts_count": 1,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1727905185,
+                "score": 2.25,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.25
+                },
+                "url": "http://dx.doi.org/10.1093/jamia/ocad002",
+                "added_on": 1674720747,
+                "published_on": 1674432000,
+                "scopus_subjects": [
+                    "Medicine",
+                    "Health Sciences"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "69",
+                    "connotea": "0"
+                },
+                "readers_count": 69,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=rrtttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=rrtttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=rrtttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=141798788"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 2815,
+            "total_ccn": 493,
+            "avg_ccn": 1.62,
+            "nloc_per_file": 19.69,
+            "duplicate_rate": 21.12
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

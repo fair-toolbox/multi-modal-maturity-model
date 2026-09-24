@@ -1,0 +1,1775 @@
+{
+    "GlassesViewer": {
+        "tool_name": "GlassesViewer",
+        "biotools": {
+            "name": "GlassesViewer",
+            "description": "Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker.\n\nThis matlab utility can parse recording files from the Tobii Glasses 2 as stored on the SD card (no need for intervening Tobii software). Once parsed, it will display this data in a MATLAB GUI. Optional eye videos are also supported. In this GUI, sync events can be shown, and data can be optionally annotated (e.g. as slow and fast phase intervals) by hand or by a classifier algorithm, or such annotations can be loaded from file.",
+            "homepage": "https://github.com/dcnieho/GlassesViewer",
+            "biotoolsID": "glassesviewer",
+            "biotoolsCURIE": "biotools:glassesviewer",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_1812",
+                            "term": "Parsing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3454",
+                            "term": "Phasing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3168",
+                    "term": "Sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "MATLAB"
+            ],
+            "license": null,
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.3758/S13428-019-01314-1",
+                    "pmid": "31898293",
+                    "pmcid": "PMC7280338",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "GlassesViewer: Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker",
+                        "abstract": "\u00a9 2019, The Author(s).We present GlassesViewer, open-source software for viewing and analyzing eye-tracking data of the Tobii Pro Glasses 2 head-mounted eye tracker as well as the scene and eye videos and other data streams (pupil size, gyroscope, accelerometer, and TTL input) that this headset can record. The software provides the following functionality written in MATLAB: (1) a graphical interface for navigating the study- and recording structure produced by the Tobii Glasses 2; (2) functionality to unpack, parse, and synchronize the various data and video streams comprising a Glasses 2 recording; and (3) a graphical interface for viewing the Glasses 2\u2019s gaze direction, pupil size, gyroscope and accelerometer time-series data, along with the recorded scene and eye camera videos. In this latter interface, segments of data can furthermore be labeled through user-provided event classification algorithms or by means of manual annotation. Lastly, the toolbox provides integration with the GazeCode tool by Benjamins et al. (2018), enabling a completely open-source workflow for analyzing Tobii Pro Glasses 2 recordings.",
+                        "date": "2020-06-01T00:00:00Z",
+                        "citationCount": 10,
+                        "authors": [
+                            {
+                                "name": "Niehorster D.C."
+                            },
+                            {
+                                "name": "Hessels R.S."
+                            },
+                            {
+                                "name": "Benjamins J.S."
+                            }
+                        ],
+                        "journal": "Behavior Research Methods"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Diederick C. Niehorster",
+                    "email": "diederick_c.niehorster@humlab.lu.se",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-4672-8756",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-01-18T07:09:33Z",
+            "lastUpdate": "2021-01-23T10:07:41Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 127440130,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMjc0NDAxMzA=",
+                "name": "GlassesViewer",
+                "full_name": "dcnieho/GlassesViewer",
+                "private": false,
+                "owner": {
+                    "login": "dcnieho",
+                    "id": 1787673,
+                    "node_id": "MDQ6VXNlcjE3ODc2NzM=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1787673?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/dcnieho",
+                    "html_url": "https://github.com/dcnieho",
+                    "followers_url": "https://api.github.com/users/dcnieho/followers",
+                    "following_url": "https://api.github.com/users/dcnieho/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/dcnieho/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/dcnieho/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/dcnieho/subscriptions",
+                    "organizations_url": "https://api.github.com/users/dcnieho/orgs",
+                    "repos_url": "https://api.github.com/users/dcnieho/repos",
+                    "events_url": "https://api.github.com/users/dcnieho/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/dcnieho/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/dcnieho/GlassesViewer",
+                "description": "Parser, viewer and coding GUI for data from Tobii Glasses 2 and 3",
+                "fork": false,
+                "url": "https://api.github.com/repos/dcnieho/GlassesViewer",
+                "forks_url": "https://api.github.com/repos/dcnieho/GlassesViewer/forks",
+                "keys_url": "https://api.github.com/repos/dcnieho/GlassesViewer/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/dcnieho/GlassesViewer/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/dcnieho/GlassesViewer/teams",
+                "hooks_url": "https://api.github.com/repos/dcnieho/GlassesViewer/hooks",
+                "issue_events_url": "https://api.github.com/repos/dcnieho/GlassesViewer/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/dcnieho/GlassesViewer/events",
+                "assignees_url": "https://api.github.com/repos/dcnieho/GlassesViewer/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/dcnieho/GlassesViewer/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/dcnieho/GlassesViewer/tags",
+                "blobs_url": "https://api.github.com/repos/dcnieho/GlassesViewer/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/dcnieho/GlassesViewer/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/dcnieho/GlassesViewer/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/dcnieho/GlassesViewer/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/dcnieho/GlassesViewer/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/dcnieho/GlassesViewer/languages",
+                "stargazers_url": "https://api.github.com/repos/dcnieho/GlassesViewer/stargazers",
+                "contributors_url": "https://api.github.com/repos/dcnieho/GlassesViewer/contributors",
+                "subscribers_url": "https://api.github.com/repos/dcnieho/GlassesViewer/subscribers",
+                "subscription_url": "https://api.github.com/repos/dcnieho/GlassesViewer/subscription",
+                "commits_url": "https://api.github.com/repos/dcnieho/GlassesViewer/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/dcnieho/GlassesViewer/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/dcnieho/GlassesViewer/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/dcnieho/GlassesViewer/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/dcnieho/GlassesViewer/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/dcnieho/GlassesViewer/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/dcnieho/GlassesViewer/merges",
+                "archive_url": "https://api.github.com/repos/dcnieho/GlassesViewer/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/dcnieho/GlassesViewer/downloads",
+                "issues_url": "https://api.github.com/repos/dcnieho/GlassesViewer/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/dcnieho/GlassesViewer/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/dcnieho/GlassesViewer/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/dcnieho/GlassesViewer/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/dcnieho/GlassesViewer/labels{/name}",
+                "releases_url": "https://api.github.com/repos/dcnieho/GlassesViewer/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/dcnieho/GlassesViewer/deployments",
+                "created_at": "2018-03-30T14:57:06Z",
+                "updated_at": "2026-04-24T14:37:34Z",
+                "pushed_at": "2026-04-05T11:02:01Z",
+                "git_url": "git://github.com/dcnieho/GlassesViewer.git",
+                "ssh_url": "git@github.com:dcnieho/GlassesViewer.git",
+                "clone_url": "https://github.com/dcnieho/GlassesViewer.git",
+                "svn_url": "https://github.com/dcnieho/GlassesViewer",
+                "homepage": "",
+                "size": 109690,
+                "stargazers_count": 34,
+                "watchers_count": 34,
+                "language": "MATLAB",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 9,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "eye-tracking",
+                    "gui",
+                    "tobii-eye-tracker",
+                    "tobii-pro-glasses-2",
+                    "tobii-pro-glasses-3"
+                ],
+                "visibility": "public",
+                "forks": 9,
+                "open_issues": 0,
+                "watchers": 34,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 9,
+                "subscribers_count": 5
+            },
+            "contents": [
+                {
+                    "path": ".gitattributes",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "SDparser",
+                    "type": "tree"
+                },
+                {
+                    "path": "defaults.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "demo_data",
+                    "type": "tree"
+                },
+                {
+                    "path": "extractAllAndGetDataQuality.m",
+                    "type": "blob"
+                },
+                {
+                    "path": "function_library",
+                    "type": "tree"
+                },
+                {
+                    "path": "glassesViewer.m",
+                    "type": "blob"
+                },
+                {
+                    "path": "icons.mat",
+                    "type": "blob"
+                },
+                {
+                    "path": "manual.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "manual.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "screenshot.jpg",
+                    "type": "blob"
+                },
+                {
+                    "path": "screenshots",
+                    "type": "tree"
+                },
+                {
+                    "path": "user_functions",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "dcnieho",
+                    "contributions": 406
+                },
+                {
+                    "login": "tcsantini",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 10,
+                    "title": "Adding a Software License",
+                    "created_at": "2025-12-03T11:07:09Z",
+                    "closed_at": "2025-12-03T12:22:47Z"
+                },
+                {
+                    "number": 9,
+                    "title": "Where can I find my data?",
+                    "created_at": "2021-12-07T04:24:37Z",
+                    "closed_at": "2022-03-18T14:26:41Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Work with Tobii Pro Glasses 3? Some issues following demo manual",
+                    "created_at": "2021-12-06T00:02:28Z",
+                    "closed_at": "2021-12-06T01:14:37Z"
+                },
+                {
+                    "number": 7,
+                    "title": "streams shift and get tangled",
+                    "created_at": "2019-08-14T21:42:58Z",
+                    "closed_at": "2019-09-05T09:22:31Z"
+                },
+                {
+                    "number": 4,
+                    "title": "GlassesViewer requires eye video",
+                    "created_at": "2018-09-14T09:42:43Z",
+                    "closed_at": "2018-09-14T16:43:29Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Does not work for older firmware versions",
+                    "created_at": "2018-09-14T09:40:46Z",
+                    "closed_at": "2018-09-14T16:36:50Z"
+                },
+                {
+                    "number": 2,
+                    "title": "jsondecode not in older versions of matlab",
+                    "created_at": "2018-07-10T14:54:13Z",
+                    "closed_at": "2019-05-29T09:10:46Z"
+                }
+            ],
+            "languages": {
+                "MATLAB": 568086
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.3758/s13428-019-01314-1",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "31898293",
+                            "source": "MED",
+                            "pmid": "31898293",
+                            "pmcid": "PMC7280338",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7280338"
+                                ]
+                            },
+                            "doi": "10.3758/s13428-019-01314-1",
+                            "title": "GlassesViewer: Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker.",
+                            "authorString": "Niehorster DC, Hessels RS, Benjamins JS.",
+                            "journalTitle": "Behav Res Methods",
+                            "issue": "3",
+                            "journalVolume": "52",
+                            "pubYear": "2020",
+                            "journalIssn": "1554-351x; 1554-3528; ",
+                            "pageInfo": "1244-1253",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 31,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2020-01-05",
+                            "firstPublicationDate": "2020-06-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2999415693",
+                "doi": "https://doi.org/10.3758/s13428-019-01314-1",
+                "title": "GlassesViewer: Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker",
+                "display_name": "GlassesViewer: Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker",
+                "publication_year": 2020,
+                "publication_date": "2020-01-02",
+                "ids": {
+                    "openalex": "https://openalex.org/W2999415693",
+                    "doi": "https://doi.org/10.3758/s13428-019-01314-1",
+                    "mag": "2999415693",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/31898293"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.3758/s13428-019-01314-1",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3758/s13428-019-01314-1",
+                    "pdf_url": "https://link.springer.com/content/pdf/10.3758/s13428-019-01314-1.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S137478622",
+                        "display_name": "Behavior Research Methods",
+                        "issn_l": "1554-351X",
+                        "issn": [
+                            "1554-351X",
+                            "1554-3528"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319900",
+                        "host_organization_name": "Springer Science+Business Media",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319900",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Springer Science+Business Media",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Behavior Research Methods",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://link.springer.com/content/pdf/10.3758/s13428-019-01314-1.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5007070615",
+                            "display_name": "Diederick C. Niehorster",
+                            "orcid": "https://orcid.org/0000-0002-4672-8756"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I187531555",
+                                "display_name": "Lund University",
+                                "ror": "https://ror.org/012a77v79",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "SE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Diederick C. Niehorster",
+                        "raw_affiliation_strings": [
+                            "Lund University Humanities Laboratory and Department of Psychology, Lund University, Lund, Sweden. diederick_c.niehorster@humlab.lu.se",
+                            "Lund University Humanities Laboratory and Department of Psychology, Lund University, Lund, Sweden"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4672-8756",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Lund University Humanities Laboratory and Department of Psychology, Lund University, Lund, Sweden. diederick_c.niehorster@humlab.lu.se",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Lund University Humanities Laboratory and Department of Psychology, Lund University, Lund, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I187531555"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5044387359",
+                            "display_name": "Roy S. Hessels",
+                            "orcid": "https://orcid.org/0000-0002-4907-1067"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Roy S. Hessels",
+                        "raw_affiliation_strings": [
+                            "Experimental Psychology, Helmholtz Institute and Developmental Psychology, Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Experimental Psychology, Helmholtz Institute and Developmental Psychology, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5051444987",
+                            "display_name": "Jeroen S. Benjamins",
+                            "orcid": "https://orcid.org/0000-0003-4341-7167"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jeroen S. Benjamins",
+                        "raw_affiliation_strings": [
+                            "Experimental Psychology, Helmholtz Institute and Social, Health and Organisational Psychology, Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Experimental Psychology, Helmholtz Institute and Social, Health and Organisational Psychology, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5007070615"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I187531555"
+                ],
+                "apc_list": {
+                    "value": 2790,
+                    "currency": "EUR",
+                    "value_usd": 3590
+                },
+                "apc_paid": {
+                    "value": 2790,
+                    "currency": "EUR",
+                    "value_usd": 3590
+                },
+                "fwci": 7.1407,
+                "has_fulltext": true,
+                "cited_by_count": 93,
+                "citation_normalized_percentile": {
+                    "value": 0.97487437,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 98,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "52",
+                    "issue": "3",
+                    "first_page": "1244",
+                    "last_page": "1253"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11707",
+                    "display_name": "Gaze Tracking and Assistive Technology",
+                    "score": 0.9965999722480774,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1709",
+                        "display_name": "Human-Computer Interaction"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/17",
+                        "display_name": "Computer Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11707",
+                        "display_name": "Gaze Tracking and Assistive Technology",
+                        "score": 0.9965999722480774,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1709",
+                            "display_name": "Human-Computer Interaction"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10914",
+                        "display_name": "Tactile and Sensory Interactions",
+                        "score": 0.9707000255584717,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2805",
+                            "display_name": "Cognitive Neuroscience"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7904091477394104
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/eye-tracking",
+                        "display_name": "Eye tracking",
+                        "score": 0.6576541662216187
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/headset",
+                        "display_name": "Headset",
+                        "score": 0.6414153575897217
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.6255654096603394
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interface",
+                        "display_name": "Interface (matter)",
+                        "score": 0.6062610149383545
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphical-user-interface",
+                        "display_name": "Graphical user interface",
+                        "score": 0.5900100469589233
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gyroscope",
+                        "display_name": "Gyroscope",
+                        "score": 0.5467875599861145
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/accelerometer",
+                        "display_name": "Accelerometer",
+                        "score": 0.5394377112388611
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-vision",
+                        "display_name": "Computer vision",
+                        "score": 0.5120750069618225
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.44472208619117737
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-graphics",
+                        "display_name": "Computer graphics (images)",
+                        "score": 0.33454591035842896
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.07932159304618835
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7904091477394104
+                    },
+                    {
+                        "id": "https://openalex.org/C56461940",
+                        "wikidata": "https://www.wikidata.org/wiki/Q970687",
+                        "display_name": "Eye tracking",
+                        "level": 2,
+                        "score": 0.6576541662216187
+                    },
+                    {
+                        "id": "https://openalex.org/C2780657452",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1193170",
+                        "display_name": "Headset",
+                        "level": 2,
+                        "score": 0.6414153575897217
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.6255654096603394
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.6062610149383545
+                    },
+                    {
+                        "id": "https://openalex.org/C37789001",
+                        "wikidata": "https://www.wikidata.org/wiki/Q782543",
+                        "display_name": "Graphical user interface",
+                        "level": 2,
+                        "score": 0.5900100469589233
+                    },
+                    {
+                        "id": "https://openalex.org/C158488048",
+                        "wikidata": "https://www.wikidata.org/wiki/Q483400",
+                        "display_name": "Gyroscope",
+                        "level": 2,
+                        "score": 0.5467875599861145
+                    },
+                    {
+                        "id": "https://openalex.org/C89805583",
+                        "wikidata": "https://www.wikidata.org/wiki/Q192940",
+                        "display_name": "Accelerometer",
+                        "level": 2,
+                        "score": 0.5394377112388611
+                    },
+                    {
+                        "id": "https://openalex.org/C31972630",
+                        "wikidata": "https://www.wikidata.org/wiki/Q844240",
+                        "display_name": "Computer vision",
+                        "level": 1,
+                        "score": 0.5120750069618225
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.44472208619117737
+                    },
+                    {
+                        "id": "https://openalex.org/C121684516",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+                        "display_name": "Computer graphics (images)",
+                        "level": 1,
+                        "score": 0.33454591035842896
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.07932159304618835
+                    },
+                    {
+                        "id": "https://openalex.org/C129307140",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+                        "display_name": "Maximum bubble pressure method",
+                        "level": 3,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C76155785",
+                        "wikidata": "https://www.wikidata.org/wiki/Q418",
+                        "display_name": "Telecommunications",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C157915830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+                        "display_name": "Bubble",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C62520636",
+                        "wikidata": "https://www.wikidata.org/wiki/Q944",
+                        "display_name": "Quantum mechanics",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D005123",
+                        "descriptor_name": "Eye",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005123",
+                        "descriptor_name": "Eye",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005123",
+                        "descriptor_name": "Eye",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006257",
+                        "descriptor_name": "Head",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006257",
+                        "descriptor_name": "Head",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006257",
+                        "descriptor_name": "Head",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.3758/s13428-019-01314-1",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.3758/s13428-019-01314-1",
+                        "pdf_url": "https://link.springer.com/content/pdf/10.3758/s13428-019-01314-1.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S137478622",
+                            "display_name": "Behavior Research Methods",
+                            "issn_l": "1554-351X",
+                            "issn": [
+                                "1554-351X",
+                                "1554-3528"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310319900",
+                            "host_organization_name": "Springer Science+Business Media",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310319900",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Springer Science+Business Media",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Behavior Research Methods",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:31898293",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31898293",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Behavior research methods",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:lup.lub.lu.se:cbca74d0-25fa-4e56-af63-09668e55d1f2",
+                        "is_oa": false,
+                        "landing_page_url": "https://lup.lub.lu.se/record/cbca74d0-25fa-4e56-af63-09668e55d1f2",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400536",
+                            "display_name": "Lund University Publications (Lund University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I187531555",
+                            "host_organization_name": "Lund University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I187531555"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "ISSN: 1554-3528",
+                        "raw_type": "text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7280338",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7280338",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Behav Res Methods",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/409040",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/409040",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Behavior Research Methods, 52(3), 1244. Psychonomic Society Inc.",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.3758/s13428-019-01314-1",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.3758/s13428-019-01314-1",
+                    "pdf_url": "https://link.springer.com/content/pdf/10.3758/s13428-019-01314-1.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S137478622",
+                        "display_name": "Behavior Research Methods",
+                        "issn_l": "1554-351X",
+                        "issn": [
+                            "1554-351X",
+                            "1554-3528"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310319900",
+                        "host_organization_name": "Springer Science+Business Media",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310319900",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Springer Science+Business Media",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Behavior Research Methods",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321806",
+                        "display_name": "Lunds Universitet",
+                        "ror": "https://ror.org/012a77v79"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2999415693.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W2999415693.grobid-xml"
+                },
+                "referenced_works_count": 43,
+                "referenced_works": [
+                    "https://openalex.org/W57711171",
+                    "https://openalex.org/W1161474730",
+                    "https://openalex.org/W1545647014",
+                    "https://openalex.org/W1818035787",
+                    "https://openalex.org/W1900841621",
+                    "https://openalex.org/W1963864613",
+                    "https://openalex.org/W1964469224",
+                    "https://openalex.org/W1970909814",
+                    "https://openalex.org/W2003561621",
+                    "https://openalex.org/W2016711711",
+                    "https://openalex.org/W2067450646",
+                    "https://openalex.org/W2082490348",
+                    "https://openalex.org/W2086095402",
+                    "https://openalex.org/W2109606373",
+                    "https://openalex.org/W2125617549",
+                    "https://openalex.org/W2132545685",
+                    "https://openalex.org/W2154456984",
+                    "https://openalex.org/W2172929516",
+                    "https://openalex.org/W2210161297",
+                    "https://openalex.org/W2296790300",
+                    "https://openalex.org/W2517802470",
+                    "https://openalex.org/W2527335612",
+                    "https://openalex.org/W2543709087",
+                    "https://openalex.org/W2547399122",
+                    "https://openalex.org/W2587539154",
+                    "https://openalex.org/W2588429895",
+                    "https://openalex.org/W2605270364",
+                    "https://openalex.org/W2606124061",
+                    "https://openalex.org/W2780101989",
+                    "https://openalex.org/W2782000077",
+                    "https://openalex.org/W2782048214",
+                    "https://openalex.org/W2793602173",
+                    "https://openalex.org/W2796229485",
+                    "https://openalex.org/W2798036083",
+                    "https://openalex.org/W2806964160",
+                    "https://openalex.org/W2889332504",
+                    "https://openalex.org/W2902328740",
+                    "https://openalex.org/W2911721666",
+                    "https://openalex.org/W2913289143",
+                    "https://openalex.org/W2997514173",
+                    "https://openalex.org/W3003845156",
+                    "https://openalex.org/W3005863156",
+                    "https://openalex.org/W6602356359"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2356006086",
+                    "https://openalex.org/W1973973903",
+                    "https://openalex.org/W2545168295",
+                    "https://openalex.org/W2365897603",
+                    "https://openalex.org/W4234814094",
+                    "https://openalex.org/W2156308897",
+                    "https://openalex.org/W4303613760",
+                    "https://openalex.org/W2361871310",
+                    "https://openalex.org/W2417246878",
+                    "https://openalex.org/W1982154684"
+                ],
+                "abstract_inverted_index": {
+                    "We": [
+                        0
+                    ],
+                    "present": [
+                        1
+                    ],
+                    "GlassesViewer,": [
+                        2
+                    ],
+                    "open-source": [
+                        3,
+                        155
+                    ],
+                    "software": [
+                        4,
+                        45
+                    ],
+                    "for": [
+                        5,
+                        57,
+                        93,
+                        157
+                    ],
+                    "viewing": [
+                        6,
+                        94
+                    ],
+                    "and": [
+                        7,
+                        25,
+                        28,
+                        36,
+                        61,
+                        75,
+                        80,
+                        88,
+                        103,
+                        112
+                    ],
+                    "analyzing": [
+                        8,
+                        158
+                    ],
+                    "eye-tracking": [
+                        9
+                    ],
+                    "data": [
+                        10,
+                        30,
+                        79,
+                        122
+                    ],
+                    "of": [
+                        11,
+                        121,
+                        135
+                    ],
+                    "the": [
+                        12,
+                        23,
+                        47,
+                        59,
+                        66,
+                        77,
+                        95,
+                        109,
+                        139,
+                        144
+                    ],
+                    "Tobii": [
+                        13,
+                        67,
+                        159
+                    ],
+                    "Pro": [
+                        14,
+                        160
+                    ],
+                    "Glasses": [
+                        15,
+                        68,
+                        85,
+                        96,
+                        161
+                    ],
+                    "2": [
+                        16,
+                        86,
+                        162
+                    ],
+                    "head-mounted": [
+                        17
+                    ],
+                    "eye": [
+                        18,
+                        26,
+                        113
+                    ],
+                    "tracker": [
+                        19
+                    ],
+                    "as": [
+                        20,
+                        22
+                    ],
+                    "well": [
+                        21
+                    ],
+                    "scene": [
+                        24,
+                        111
+                    ],
+                    "videos": [
+                        27
+                    ],
+                    "other": [
+                        29
+                    ],
+                    "streams": [
+                        31,
+                        82
+                    ],
+                    "(pupil": [
+                        32
+                    ],
+                    "size,": [
+                        33,
+                        101
+                    ],
+                    "gyroscope,": [
+                        34
+                    ],
+                    "accelerometer,": [
+                        35
+                    ],
+                    "TTL": [
+                        37
+                    ],
+                    "input)": [
+                        38
+                    ],
+                    "that": [
+                        39
+                    ],
+                    "this": [
+                        40,
+                        117
+                    ],
+                    "headset": [
+                        41
+                    ],
+                    "can": [
+                        42,
+                        123
+                    ],
+                    "record.": [
+                        43
+                    ],
+                    "The": [
+                        44
+                    ],
+                    "provides": [
+                        46,
+                        141
+                    ],
+                    "following": [
+                        48
+                    ],
+                    "functionality": [
+                        49,
+                        71
+                    ],
+                    "written": [
+                        50
+                    ],
+                    "in": [
+                        51
+                    ],
+                    "MATLAB:": [
+                        52
+                    ],
+                    "(1)": [
+                        53
+                    ],
+                    "a": [
+                        54,
+                        84,
+                        90,
+                        153
+                    ],
+                    "graphical": [
+                        55,
+                        91
+                    ],
+                    "interface": [
+                        56,
+                        92
+                    ],
+                    "navigating": [
+                        58
+                    ],
+                    "study-": [
+                        60
+                    ],
+                    "recording": [
+                        62
+                    ],
+                    "structure": [
+                        63
+                    ],
+                    "produced": [
+                        64
+                    ],
+                    "by": [
+                        65,
+                        133,
+                        147
+                    ],
+                    "2;": [
+                        69
+                    ],
+                    "(2)": [
+                        70
+                    ],
+                    "to": [
+                        72
+                    ],
+                    "unpack,": [
+                        73
+                    ],
+                    "parse,": [
+                        74
+                    ],
+                    "synchronize": [
+                        76
+                    ],
+                    "various": [
+                        78
+                    ],
+                    "video": [
+                        81
+                    ],
+                    "comprising": [
+                        83
+                    ],
+                    "recording;": [
+                        87
+                    ],
+                    "(3)": [
+                        89
+                    ],
+                    "2's": [
+                        97
+                    ],
+                    "gaze": [
+                        98
+                    ],
+                    "direction,": [
+                        99
+                    ],
+                    "pupil": [
+                        100
+                    ],
+                    "gyroscope": [
+                        102
+                    ],
+                    "accelerometer": [
+                        104
+                    ],
+                    "time-series": [
+                        105
+                    ],
+                    "data,": [
+                        106
+                    ],
+                    "along": [
+                        107
+                    ],
+                    "with": [
+                        108,
+                        143
+                    ],
+                    "recorded": [
+                        110
+                    ],
+                    "camera": [
+                        114
+                    ],
+                    "videos.": [
+                        115
+                    ],
+                    "In": [
+                        116
+                    ],
+                    "latter": [
+                        118
+                    ],
+                    "interface,": [
+                        119
+                    ],
+                    "segments": [
+                        120
+                    ],
+                    "furthermore": [
+                        124
+                    ],
+                    "be": [
+                        125
+                    ],
+                    "labeled": [
+                        126
+                    ],
+                    "through": [
+                        127
+                    ],
+                    "user-provided": [
+                        128
+                    ],
+                    "event": [
+                        129
+                    ],
+                    "classification": [
+                        130
+                    ],
+                    "algorithms": [
+                        131
+                    ],
+                    "or": [
+                        132
+                    ],
+                    "means": [
+                        134
+                    ],
+                    "manual": [
+                        136
+                    ],
+                    "annotation.": [
+                        137
+                    ],
+                    "Lastly,": [
+                        138
+                    ],
+                    "toolbox": [
+                        140
+                    ],
+                    "integration": [
+                        142
+                    ],
+                    "GazeCode": [
+                        145
+                    ],
+                    "tool": [
+                        146
+                    ],
+                    "Benjamins": [
+                        148
+                    ],
+                    "et": [
+                        149
+                    ],
+                    "al.": [
+                        150
+                    ],
+                    "(2018),": [
+                        151
+                    ],
+                    "enabling": [
+                        152
+                    ],
+                    "completely": [
+                        154
+                    ],
+                    "workflow": [
+                        156
+                    ],
+                    "recordings.": [
+                        163
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 7
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 21
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 17
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 18
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 16
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 8
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "GlassesViewer: Open-source software for viewing and analyzing data from the Tobii Pro Glasses 2 eye tracker",
+                "doi": "10.3758/s13428-019-01314-1",
+                "pmid": "31898293",
+                "pmc": "PMC7280338",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f61000239d",
+                "issns": [
+                    "1554-3528"
+                ],
+                "journal": "Behavior Research Methods",
+                "cohorts": [],
+                "context": {
+                    "all": {
+                        "count": 29707359,
+                        "mean": 10.818542237093514,
+                        "rank": 10226842,
+                        "pct": 41,
+                        "higher_than": 12345574
+                    },
+                    "journal": {
+                        "count": 2292,
+                        "mean": 9.042801047120419,
+                        "rank": 1114,
+                        "pct": 44,
+                        "higher_than": 1013
+                    },
+                    "similar_age_3m": {
+                        "count": 493084,
+                        "mean": 12.687604647484006,
+                        "rank": 185334,
+                        "pct": 49,
+                        "higher_than": 245954
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 30,
+                        "mean": 4.816666666666666,
+                        "rank": 12,
+                        "pct": 56,
+                        "higher_than": 17
+                    }
+                },
+                "authors": [
+                    "Diederick C. Niehorster",
+                    "Roy S. Hessels",
+                    "Jeroen S. Benjamins"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1590969600,
+                "epubdate": 1577923200,
+                "dimensions_publication_id": "pub.1123790721",
+                "altmetric_id": 184808504,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Artificial Intelligence And Image Processing",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Cognitive Science",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Psychology",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_patents_count": 1,
+                "cited_by_posts_count": 1,
+                "cited_by_accounts_count": 1,
+                "last_updated": 1763424000,
+                "score": 3,
+                "history": {
+                    "1y": 3,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 3
+                },
+                "url": "http://dx.doi.org/10.3758/s13428-019-01314-1",
+                "added_on": 1763802343,
+                "published_on": 1577923200,
+                "scopus_subjects": [
+                    "Social Sciences",
+                    "Psychology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "103",
+                    "connotea": "0"
+                },
+                "readers_count": 103,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=aaaaaaaa",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=aaaaaaaa",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=aaaaaaaa"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=184808504"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 667,
+            "total_ccn": 195,
+            "avg_ccn": 1.5,
+            "nloc_per_file": 11.91,
+            "duplicate_rate": 2.41
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,1835 @@
+{
+    "APE": {
+        "tool_name": "APE",
+        "biotools": {
+            "name": "APE",
+            "description": "APE (the Automated Pipeline Explorer) as a command-line tool and API for automated composition of scientific workflows. APE is easily configured to a new application domain by providing it with a domain ontology and semantically annotated tools. It can then be used to synthesize purpose-specific workflows based on a specification of the available workflow inputs, desired outputs and possibly additional constraints.",
+            "homepage": "https://github.com/sanctuuary/APE/",
+            "biotoolsID": "ape",
+            "biotoolsCURIE": "biotools:ape",
+            "version": [
+                "2.1.7"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3429",
+                            "term": "Generation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0949",
+                                "term": "Workflow metadata"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3464",
+                                    "term": "JSON"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0949",
+                                "term": "Workflow metadata"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3604",
+                                    "term": "SVG"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3857",
+                                    "term": "CWL"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3603",
+                                    "term": "PNG"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library",
+                "Web API",
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0089",
+                    "term": "Ontology and terminology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0091",
+                    "term": "Bioinformatics"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Windows",
+                "Linux"
+            ],
+            "language": [
+                "Java"
+            ],
+            "license": "Apache-2.0",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/sanctuuary/ape",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [
+                {
+                    "url": "https://mvnrepository.com/artifact/io.github.sanctuuary/APE/2.1.7",
+                    "type": "Software package",
+                    "note": "Download APE java library or the CLI",
+                    "version": "2.1.7"
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://ape-framework.readthedocs.io/",
+                    "type": [
+                        "API documentation"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": null,
+                    "pmid": null,
+                    "pmcid": "PMC7304703",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1021/acs.jproteome.0c00983",
+                    "pmid": "33720735",
+                    "pmcid": "PMC8041394",
+                    "type": [
+                        "Benchmarking study"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "APE in the Wild: Automated Exploration of Proteomics Workflows in the bio.tools Registry",
+                        "abstract": "",
+                        "date": "2021-04-02T00:00:00Z",
+                        "citationCount": 7,
+                        "authors": [],
+                        "journal": "Journal of Proteome Research"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Vedran Kasalica",
+                    "email": "vedran.kasalica@health-ri.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-0097-1056",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Anna-Lena Lamprecht",
+                    "email": "anna-lena.lamprecht@uni-potsdam.de",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-1953-5606",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "VKasalica",
+            "additionDate": "2021-01-18T10:10:48Z",
+            "lastUpdate": "2025-12-01T13:47:56.062392Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "repository": null,
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1021/acs.jproteome.0c00983",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33720735",
+                            "source": "MED",
+                            "pmid": "33720735",
+                            "pmcid": "PMC8041394",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8041394"
+                                ]
+                            },
+                            "doi": "10.1021/acs.jproteome.0c00983",
+                            "title": "APE in the Wild: Automated Exploration of Proteomics Workflows in the bio.tools Registry.",
+                            "authorString": "Kasalica V, Schw\u00e4mmle V, Palmblad M, Ison J, Lamprecht AL.",
+                            "journalTitle": "J Proteome Res",
+                            "issue": "4",
+                            "journalVolume": "20",
+                            "pubYear": "2021",
+                            "journalIssn": "1535-3893; 1535-3907; ",
+                            "pageInfo": "2157-2165",
+                            "pubType": "brief-report; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 8,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-03-16",
+                            "firstPublicationDate": "2021-03-15"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3135962891",
+                "doi": "https://doi.org/10.1021/acs.jproteome.0c00983",
+                "title": "APE in the Wild: Automated Exploration of Proteomics Workflows in the bio.tools Registry",
+                "display_name": "APE in the Wild: Automated Exploration of Proteomics Workflows in the bio.tools Registry",
+                "publication_year": 2021,
+                "publication_date": "2021-03-15",
+                "ids": {
+                    "openalex": "https://openalex.org/W3135962891",
+                    "doi": "https://doi.org/10.1021/acs.jproteome.0c00983",
+                    "mag": "3135962891",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33720735"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1021/acs.jproteome.0c00983",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jproteome.0c00983",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.0c00983",
+                    "source": {
+                        "id": "https://openalex.org/S74367812",
+                        "display_name": "Journal of Proteome Research",
+                        "issn_l": "1535-3893",
+                        "issn": [
+                            "1535-3893",
+                            "1535-3907"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Proteome Research",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.0c00983",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5028743498",
+                            "display_name": "Vedran Kasalica",
+                            "orcid": "https://orcid.org/0000-0002-0097-1056"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Vedran Kasalica",
+                        "raw_affiliation_strings": [
+                            "Department of Information and Computing Sciences, Utrecht University, Utrecht 3584 CC, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-0097-1056",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Information and Computing Sciences, Utrecht University, Utrecht 3584 CC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5091329986",
+                            "display_name": "Veit Schw\u00e4mmle",
+                            "orcid": "https://orcid.org/0000-0002-9708-6722"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I177969490",
+                                "display_name": "University of Southern Denmark",
+                                "ror": "https://ror.org/03yrrjy16",
+                                "country_code": "DK",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I177969490"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DK"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Veit Schw\u00e4mmle",
+                        "raw_affiliation_strings": [
+                            "Department of Biochemistry and Molecular Biology, University of Southern Denmark, Odense 5230, Denmark"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9708-6722",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biochemistry and Molecular Biology, University of Southern Denmark, Odense 5230, Denmark",
+                                "institution_ids": [
+                                    "https://openalex.org/I177969490"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5059772295",
+                            "display_name": "Magnus Palmblad",
+                            "orcid": "https://orcid.org/0000-0002-5865-8994"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210101928",
+                                "display_name": "Netherlands Metabolomics Centre",
+                                "ror": "https://ror.org/00zh5wn98",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210101928"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Magnus Palmblad",
+                        "raw_affiliation_strings": [
+                            "Center for Proteomics and Metabolomics, Leiden University Medical Center, Leiden 2300 RC, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5865-8994",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Proteomics and Metabolomics, Leiden University Medical Center, Leiden 2300 RC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210101928",
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5080837511",
+                            "display_name": "Jon Ison",
+                            "orcid": "https://orcid.org/0000-0001-6666-1520"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1294671590",
+                                "display_name": "Centre National de la Recherche Scientifique",
+                                "ror": "https://ror.org/02feahw73",
+                                "country_code": "FR",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210138994",
+                                "display_name": "Institut Fran\u00e7ais de Bioinformatique",
+                                "ror": "https://ror.org/045f7pv37",
+                                "country_code": "FR",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210138994"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "FR"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jon Ison",
+                        "raw_affiliation_strings": [
+                            "Institut Fran\u00e7ais de Bioinformatique, CNRS, Cr\u00e9mieux F-91000, France"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institut Fran\u00e7ais de Bioinformatique, CNRS, Cr\u00e9mieux F-91000, France",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210138994",
+                                    "https://openalex.org/I1294671590"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5041810267",
+                            "display_name": "Anna\u2010Lena Lamprecht",
+                            "orcid": "https://orcid.org/0000-0003-1953-5606"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Anna-Lena Lamprecht",
+                        "raw_affiliation_strings": [
+                            "Department of Information and Computing Sciences, Utrecht University, Utrecht 3584 CC, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1953-5606",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Information and Computing Sciences, Utrecht University, Utrecht 3584 CC, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 5,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5028743498",
+                    "https://openalex.org/A5041810267"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I193662353"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 4.5498,
+                "has_fulltext": true,
+                "cited_by_count": 9,
+                "citation_normalized_percentile": {
+                    "value": 0.95071079,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 98
+                },
+                "biblio": {
+                    "volume": "20",
+                    "issue": "4",
+                    "first_page": "2157",
+                    "last_page": "2165"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11986",
+                    "display_name": "Scientific Computing and Data Management",
+                    "score": 0.9993000030517578,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1802",
+                        "display_name": "Information Systems and Management"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/18",
+                        "display_name": "Decision Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11986",
+                        "display_name": "Scientific Computing and Data Management",
+                        "score": 0.9993000030517578,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1802",
+                            "display_name": "Information Systems and Management"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/18",
+                            "display_name": "Decision Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/2",
+                            "display_name": "Social Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11937",
+                        "display_name": "Research Data Management Practices",
+                        "score": 0.9904000163078308,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1710",
+                            "display_name": "Information Systems"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11710",
+                        "display_name": "Biomedical Text Mining and Ontologies",
+                        "score": 0.9876999855041504,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/workflow",
+                        "display_name": "Workflow",
+                        "score": 0.7393090724945068
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/proteomics",
+                        "display_name": "Proteomics",
+                        "score": 0.7049192786216736
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5002503395080566
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4051715135574341
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-science",
+                        "display_name": "Data science",
+                        "score": 0.3682892322540283
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.3475611209869385
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.100623220205307
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biochemistry",
+                        "display_name": "Biochemistry",
+                        "score": 0.08716091513633728
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C177212765",
+                        "wikidata": "https://www.wikidata.org/wiki/Q627335",
+                        "display_name": "Workflow",
+                        "level": 2,
+                        "score": 0.7393090724945068
+                    },
+                    {
+                        "id": "https://openalex.org/C46111723",
+                        "wikidata": "https://www.wikidata.org/wiki/Q471857",
+                        "display_name": "Proteomics",
+                        "level": 3,
+                        "score": 0.7049192786216736
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5002503395080566
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4051715135574341
+                    },
+                    {
+                        "id": "https://openalex.org/C2522767166",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+                        "display_name": "Data science",
+                        "level": 1,
+                        "score": 0.3682892322540283
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.3475611209869385
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.100623220205307
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.08716091513633728
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D012042",
+                        "descriptor_name": "Registries",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012042",
+                        "descriptor_name": "Registries",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012042",
+                        "descriptor_name": "Registries",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012042",
+                        "descriptor_name": "Registries",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D040901",
+                        "descriptor_name": "Proteomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1021/acs.jproteome.0c00983",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1021/acs.jproteome.0c00983",
+                        "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.0c00983",
+                        "source": {
+                            "id": "https://openalex.org/S74367812",
+                            "display_name": "Journal of Proteome Research",
+                            "issn_l": "1535-3893",
+                            "issn": [
+                                "1535-3893",
+                                "1535-3907"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320006",
+                            "host_organization_name": "American Chemical Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320006"
+                            ],
+                            "host_organization_lineage_names": [
+                                "American Chemical Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33720735",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33720735",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of proteome research",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:sdu.dk:openaire_cris_publications/bcf6b648-c61d-4459-9a46-9fc5873de4c8",
+                        "is_oa": true,
+                        "landing_page_url": "https://portal.findresearcher.sdu.dk/da/publications/bcf6b648-c61d-4459-9a46-9fc5873de4c8",
+                        "pdf_url": "https://findresearcher.sdu.dk:8443/ws/files/181854872/acs.jproteome.0c00983.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306400423",
+                            "display_name": "University of Southern Denmark Research Portal (University of Southern Denmark)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I177969490",
+                            "host_organization_name": "University of Southern Denmark",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I177969490"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Kasalica, V, Schw\u00e4mmle, V, Palmblad, M, Ison, J & Lamprecht, A L 2021, 'APE in the Wild : Automated Exploration of Proteomics Workflows in the bio.tools Registry', Journal of Proteome Research, vol. 20, no. 4, pp. 2157\u20132165. https://doi.org/10.1021/acs.jproteome.0c00983",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3221392",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3221392",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research, 20(4), 2157 - 2165. AMER CHEMICAL SOC",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:HAL:hal-05130620v1",
+                        "is_oa": false,
+                        "landing_page_url": "https://cnrs.hal.science/hal-05130620",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402512",
+                            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1294671590",
+                            "host_organization_name": "Centre National de la Recherche Scientifique",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1294671590"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research, 2021, 20 (4), pp.2157--2165. &#x27E8;10.1021/acs.jproteome.0c00983&#x27E9;",
+                        "raw_type": "Journal articles"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8041394",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8041394",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Proteome Res",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3221392",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3221392",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research",
+                        "raw_type": "Article / Letter to editor"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/411632",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/411632",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Proteome Research, 20(4), 2157. American Chemical Society",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1021/acs.jproteome.0c00983",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jproteome.0c00983",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jproteome.0c00983",
+                    "source": {
+                        "id": "https://openalex.org/S74367812",
+                        "display_name": "Journal of Proteome Research",
+                        "issn_l": "1535-3893",
+                        "issn": [
+                            "1535-3893",
+                            "1535-3907"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Proteome Research",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.49000000953674316,
+                        "display_name": "Responsible consumption and production",
+                        "id": "https://metadata.un.org/sdg/12"
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3135962891.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3135962891.grobid-xml"
+                },
+                "referenced_works_count": 26,
+                "referenced_works": [
+                    "https://openalex.org/W179723585",
+                    "https://openalex.org/W1480875294",
+                    "https://openalex.org/W1592797580",
+                    "https://openalex.org/W1965518084",
+                    "https://openalex.org/W1979900513",
+                    "https://openalex.org/W2001653627",
+                    "https://openalex.org/W2002438471",
+                    "https://openalex.org/W2009577334",
+                    "https://openalex.org/W2048619144",
+                    "https://openalex.org/W2054353156",
+                    "https://openalex.org/W2114888488",
+                    "https://openalex.org/W2141541659",
+                    "https://openalex.org/W2145374174",
+                    "https://openalex.org/W2167840796",
+                    "https://openalex.org/W2484917209",
+                    "https://openalex.org/W2618602062",
+                    "https://openalex.org/W2752308847",
+                    "https://openalex.org/W2883524422",
+                    "https://openalex.org/W2917207851",
+                    "https://openalex.org/W2969930717",
+                    "https://openalex.org/W2981131276",
+                    "https://openalex.org/W3036158206",
+                    "https://openalex.org/W3084188058",
+                    "https://openalex.org/W3138912200",
+                    "https://openalex.org/W4235097469",
+                    "https://openalex.org/W6904651889"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4391375266",
+                    "https://openalex.org/W2082860237",
+                    "https://openalex.org/W2119695867",
+                    "https://openalex.org/W2130076355",
+                    "https://openalex.org/W1990804418",
+                    "https://openalex.org/W1993764875",
+                    "https://openalex.org/W2046158694",
+                    "https://openalex.org/W2788277189",
+                    "https://openalex.org/W2013243191",
+                    "https://openalex.org/W2088324202"
+                ],
+                "abstract_inverted_index": {
+                    "The": [
+                        0,
+                        27
+                    ],
+                    "bio.tools": [
+                        1,
+                        28,
+                        168
+                    ],
+                    "registry": [
+                        2
+                    ],
+                    "is": [
+                        3
+                    ],
+                    "a": [
+                        4,
+                        74,
+                        96,
+                        118,
+                        141
+                    ],
+                    "main": [
+                        5
+                    ],
+                    "catalogue": [
+                        6
+                    ],
+                    "of": [
+                        7,
+                        34,
+                        41,
+                        61,
+                        82,
+                        94,
+                        99,
+                        122,
+                        138,
+                        144,
+                        157,
+                        164,
+                        200
+                    ],
+                    "computational": [
+                        8
+                    ],
+                    "tools": [
+                        9,
+                        18,
+                        62,
+                        100,
+                        139,
+                        149
+                    ],
+                    "in": [
+                        10,
+                        167
+                    ],
+                    "the": [
+                        11,
+                        23,
+                        51,
+                        58,
+                        79,
+                        87,
+                        113,
+                        123,
+                        131,
+                        161,
+                        195
+                    ],
+                    "life": [
+                        12
+                    ],
+                    "sciences.": [
+                        13
+                    ],
+                    "More": [
+                        14
+                    ],
+                    "than": [
+                        15
+                    ],
+                    "17": [
+                        16
+                    ],
+                    "000": [
+                        17
+                    ],
+                    "have": [
+                        19
+                    ],
+                    "been": [
+                        20
+                    ],
+                    "registered": [
+                        21
+                    ],
+                    "by": [
+                        22
+                    ],
+                    "international": [
+                        24
+                    ],
+                    "bioinformatics": [
+                        25,
+                        53
+                    ],
+                    "community.": [
+                        26
+                    ],
+                    "metadata": [
+                        29
+                    ],
+                    "schema": [
+                        30
+                    ],
+                    "includes": [
+                        31
+                    ],
+                    "semantic": [
+                        32,
+                        165
+                    ],
+                    "annotations": [
+                        33,
+                        56,
+                        166
+                    ],
+                    "tool": [
+                        35,
+                        174
+                    ],
+                    "functions,": [
+                        36
+                    ],
+                    "that": [
+                        37,
+                        181
+                    ],
+                    "is,": [
+                        38
+                    ],
+                    "formal": [
+                        39
+                    ],
+                    "descriptions": [
+                        40
+                    ],
+                    "tools'": [
+                        42
+                    ],
+                    "data": [
+                        43
+                    ],
+                    "types,": [
+                        44
+                    ],
+                    "formats,": [
+                        45
+                    ],
+                    "and": [
+                        46,
+                        120,
+                        140,
+                        189
+                    ],
+                    "operations": [
+                        47
+                    ],
+                    "with": [
+                        48,
+                        101
+                    ],
+                    "terms": [
+                        49
+                    ],
+                    "from": [
+                        50
+                    ],
+                    "EDAM": [
+                        52
+                    ],
+                    "ontology.": [
+                        54
+                    ],
+                    "Such": [
+                        55
+                    ],
+                    "enable": [
+                        57
+                    ],
+                    "automated": [
+                        59,
+                        80
+                    ],
+                    "composition": [
+                        60,
+                        81,
+                        125,
+                        148
+                    ],
+                    "into": [
+                        63
+                    ],
+                    "multistep": [
+                        64
+                    ],
+                    "pipelines": [
+                        65
+                    ],
+                    "or": [
+                        66,
+                        172
+                    ],
+                    "workflows.": [
+                        67,
+                        84,
+                        146,
+                        203
+                    ],
+                    "In": [
+                        68
+                    ],
+                    "this": [
+                        69,
+                        155
+                    ],
+                    "Technical": [
+                        70
+                    ],
+                    "Note,": [
+                        71
+                    ],
+                    "we": [
+                        72,
+                        105
+                    ],
+                    "revisit": [
+                        73
+                    ],
+                    "previous": [
+                        75
+                    ],
+                    "case": [
+                        76
+                    ],
+                    "study": [
+                        77
+                    ],
+                    "on": [
+                        78,
+                        109
+                    ],
+                    "proteomics": [
+                        83
+                    ],
+                    "We": [
+                        85,
+                        111
+                    ],
+                    "use": [
+                        86,
+                        112
+                    ],
+                    "same": [
+                        88
+                    ],
+                    "four": [
+                        89
+                    ],
+                    "workflow": [
+                        90,
+                        124,
+                        190
+                    ],
+                    "scenarios": [
+                        91
+                    ],
+                    "but": [
+                        92
+                    ],
+                    "instead": [
+                        93
+                    ],
+                    "using": [
+                        95
+                    ],
+                    "small": [
+                        97
+                    ],
+                    "set": [
+                        98
+                    ],
+                    "carefully": [
+                        102
+                    ],
+                    "handcrafted": [
+                        103
+                    ],
+                    "annotations,": [
+                        104
+                    ],
+                    "explore": [
+                        106,
+                        154
+                    ],
+                    "workflows": [
+                        107
+                    ],
+                    "directly": [
+                        108
+                    ],
+                    "bio.tools.": [
+                        110
+                    ],
+                    "Automated": [
+                        114,
+                        147
+                    ],
+                    "Pipeline": [
+                        115
+                    ],
+                    "Explorer": [
+                        116
+                    ],
+                    "(APE),": [
+                        117
+                    ],
+                    "reimplementation": [
+                        119
+                    ],
+                    "extension": [
+                        121
+                    ],
+                    "method": [
+                        126
+                    ],
+                    "previously": [
+                        127
+                    ],
+                    "used.": [
+                        128
+                    ],
+                    "Moving": [
+                        129
+                    ],
+                    "\"into": [
+                        130
+                    ],
+                    "wild\"": [
+                        132
+                    ],
+                    "opens": [
+                        133
+                    ],
+                    "up": [
+                        134
+                    ],
+                    "an": [
+                        135
+                    ],
+                    "unprecedented": [
+                        136
+                    ],
+                    "wealth": [
+                        137
+                    ],
+                    "huge": [
+                        142
+                    ],
+                    "number": [
+                        143
+                    ],
+                    "alternative": [
+                        145
+                    ],
+                    "can": [
+                        150,
+                        192
+                    ],
+                    "be": [
+                        151
+                    ],
+                    "used": [
+                        152
+                    ],
+                    "to": [
+                        153,
+                        170
+                    ],
+                    "space": [
+                        156
+                    ],
+                    "possibilities": [
+                        158
+                    ],
+                    "systematically.": [
+                        159
+                    ],
+                    "Inevitably,": [
+                        160
+                    ],
+                    "mixed": [
+                        162
+                    ],
+                    "quality": [
+                        163
+                    ],
+                    "leads": [
+                        169
+                    ],
+                    "unintended": [
+                        171
+                    ],
+                    "erroneous": [
+                        173
+                    ],
+                    "combinations.": [
+                        175
+                    ],
+                    "However,": [
+                        176
+                    ],
+                    "our": [
+                        177
+                    ],
+                    "results": [
+                        178
+                    ],
+                    "also": [
+                        179
+                    ],
+                    "show": [
+                        180
+                    ],
+                    "additional": [
+                        182
+                    ],
+                    "control": [
+                        183
+                    ],
+                    "mechanisms": [
+                        184
+                    ],
+                    "(tool": [
+                        185
+                    ],
+                    "filters,": [
+                        186
+                    ],
+                    "configuration": [
+                        187
+                    ],
+                    "options,": [
+                        188
+                    ],
+                    "constraints)": [
+                        191
+                    ],
+                    "effectively": [
+                        193
+                    ],
+                    "guide": [
+                        194
+                    ],
+                    "exploration": [
+                        196
+                    ],
+                    "toward": [
+                        197
+                    ],
+                    "smaller": [
+                        198
+                    ],
+                    "sets": [
+                        199
+                    ],
+                    "more": [
+                        201
+                    ],
+                    "meaningful": [
+                        202
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-24T08:33:08.758527",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "APE in the Wild: Automated Exploration of Proteomics Workflows in the bio.tools Registry",
+                "doi": "10.1021/acs.jproteome.0c00983",
+                "pmid": "33720735",
+                "pmc": "PMC8041394",
+                "isbns": [],
+                "altmetric_jid": "4f6fa62a3cf058f610007e0f",
+                "issns": [
+                    "1535-3893",
+                    "1535-3907"
+                ],
+                "journal": "Journal of Proteome Research",
+                "cohorts": {
+                    "pub": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 32393211,
+                        "mean": 10.500436882777691,
+                        "rank": 21627281,
+                        "pct": 31,
+                        "higher_than": 10149887
+                    },
+                    "journal": {
+                        "count": 7424,
+                        "mean": 6.791918103448275,
+                        "rank": 4988,
+                        "pct": 28,
+                        "higher_than": 2120
+                    },
+                    "similar_age_3m": {
+                        "count": 471786,
+                        "mean": 16.06037387713925,
+                        "rank": 275980,
+                        "pct": 38,
+                        "higher_than": 182365
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 139,
+                        "mean": 10.314028776978416,
+                        "rank": 111,
+                        "pct": 20,
+                        "higher_than": 28
+                    }
+                },
+                "authors": [
+                    "Vedran Kasalica",
+                    "Veit Schwa\u0308mmle",
+                    "Magnus Palmblad",
+                    "Jon Ison",
+                    "Anna-Lena Lamprecht"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1617321600,
+                "epubdate": 1615766400,
+                "dimensions_publication_id": "pub.1136399674",
+                "altmetric_id": 101706775,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Chemical Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 3,
+                "cited_by_tweeters_count": 3,
+                "cited_by_accounts_count": 3,
+                "last_updated": 1615839902,
+                "score": 1.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1.5
+                },
+                "url": "http://dx.doi.org/10.1021/acs.jproteome.0c00983",
+                "added_on": 1616080847,
+                "published_on": 1615766400,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Physical Sciences",
+                    "Biochemistry, Genetics and Molecular Biology",
+                    "Chemistry"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "15",
+                    "connotea": "0"
+                },
+                "readers_count": 15,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=2&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=2&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=2&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=101706775"
+            }
+        },
+        "errors": [
+            "repository: Moved Permanently"
+        ],
+        "lizard": {
+            "total_nloc": 10441,
+            "total_ccn": 2502,
+            "avg_ccn": 1.83,
+            "nloc_per_file": 79.7,
+            "duplicate_rate": 15.56
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": true
+        }
+    }
+}

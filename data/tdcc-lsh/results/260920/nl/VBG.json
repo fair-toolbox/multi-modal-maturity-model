@@ -1,0 +1,3101 @@
+{
+    "VBG": {
+        "tool_name": "VBG",
+        "biotools": {
+            "name": "KUL-VBG",
+            "description": "Enabling whole brain parcellation in the presence of large lesions.\n\nA workflow to allow Freesurfer recon-all to run on brain images with large lesions. VBG is a bash script tested in Mac OSX, Ubuntu 18.0 and CentOS.",
+            "homepage": "https://github.com/KUL-Radneuron/KUL_VBG",
+            "biotoolsID": "kul-vbg",
+            "biotoolsCURIE": "biotools:kul-vbg",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3443",
+                            "term": "Image analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3659",
+                            "term": "Regression analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2409",
+                            "term": "Data handling"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3384",
+                    "term": "Medical imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3444",
+                    "term": "MRI"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3304",
+                    "term": "Neurobiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0634",
+                    "term": "Pathology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3421",
+                    "term": "Surgery"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Shell"
+            ],
+            "license": "MPL-2.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1101/2020.09.30.20204701",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1016/J.NEUROIMAGE.2021.117731",
+                    "pmid": "33454411",
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions",
+                        "abstract": "\u00a9 2021Brain atlases and templates are at the heart of neuroimaging analyses, for which they facilitate multimodal registration, enable group comparisons and provide anatomical reference. However, as atlas-based approaches rely on correspondence mapping between images they perform poorly in the presence of structural pathology. Whilst several strategies exist to overcome this problem, their performance is often dependent on the type, size and homogeneity of any lesions present. We therefore propose a new solution, referred to as Virtual Brain Grafting (VBG), which is a fully-automated, open-source workflow to reliably parcellate magnetic resonance imaging (MRI) datasets in the presence of a broad spectrum of focal brain pathologies, including large, bilateral, intra- and extra-axial, heterogeneous lesions with and without mass effect. The core of the VBG approach is the generation of a lesion-free T1-weighted image, which enables further image processing operations that would otherwise fail. Here we validated our solution based on Freesurfer recon-all parcellation in a group of 10 patients with heterogeneous gliomatous lesions, and a realistic synthetic cohort of glioma patients (n = 100) derived from healthy control data and patient data. We demonstrate that VBG outperforms a non-VBG approach assessed qualitatively by expert neuroradiologists and Mann-Whitney U tests to compare corresponding parcellations (real patients U(6,6) = 33, z = 2.738, P <. 010, synthetic-patients U(48,48) = 2076, z = 7.336, P <. 001). Results were also quantitatively evaluated by comparing mean dice scores from the synthetic-patients using one-way ANOVA (unilateral VBG = 0.894, bilateral VBG = 0.903, and non-VBG = 0.617, P <. 001). Additionally, we used linear regression to show the influence of lesion volume, lesion overlap with, and distance from the Freesurfer volumes of interest, on labeling accuracy. VBG may benefit the neuroimaging community by enabling automated state-of-the-art MRI analyses in clinical populations using methods such as FreeSurfer, CAT12, SPM, Connectome Workbench, as well as structural and functional connectomics. To fully maximize its availability, VBG is provided as open software under a Mozilla 2.0 license (https://github.com/KUL-Radneuron/KUL_VBG).",
+                        "date": "2021-04-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Radwan A.M."
+                            },
+                            {
+                                "name": "Emsell L."
+                            },
+                            {
+                                "name": "Blommaert J."
+                            },
+                            {
+                                "name": "Zhylka A."
+                            },
+                            {
+                                "name": "Kovacs S."
+                            },
+                            {
+                                "name": "Theys T."
+                            },
+                            {
+                                "name": "Sollmann N."
+                            },
+                            {
+                                "name": "Dupont P."
+                            },
+                            {
+                                "name": "Sunaert S."
+                            }
+                        ],
+                        "journal": "NeuroImage"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": null,
+                    "email": "ahmed.radwan@kuleuven.be",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "zsmag19",
+            "additionDate": "2021-01-18T11:26:28Z",
+            "lastUpdate": "2021-07-07T11:53:25Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 289035772,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyODkwMzU3NzI=",
+                "name": "KUL_VBG",
+                "full_name": "KUL-Radneuron/KUL_VBG",
+                "private": false,
+                "owner": {
+                    "login": "KUL-Radneuron",
+                    "id": 69977324,
+                    "node_id": "MDQ6VXNlcjY5OTc3MzI0",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/69977324?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/KUL-Radneuron",
+                    "html_url": "https://github.com/KUL-Radneuron",
+                    "followers_url": "https://api.github.com/users/KUL-Radneuron/followers",
+                    "following_url": "https://api.github.com/users/KUL-Radneuron/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/KUL-Radneuron/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/KUL-Radneuron/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/KUL-Radneuron/subscriptions",
+                    "organizations_url": "https://api.github.com/users/KUL-Radneuron/orgs",
+                    "repos_url": "https://api.github.com/users/KUL-Radneuron/repos",
+                    "events_url": "https://api.github.com/users/KUL-Radneuron/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/KUL-Radneuron/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/KUL-Radneuron/KUL_VBG",
+                "description": "A workflow to allow Freesurfer recon-all to run on brain image with gliomas",
+                "fork": false,
+                "url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG",
+                "forks_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/forks",
+                "keys_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/teams",
+                "hooks_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/hooks",
+                "issue_events_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/events",
+                "assignees_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/tags",
+                "blobs_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/languages",
+                "stargazers_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/stargazers",
+                "contributors_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/contributors",
+                "subscribers_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/subscribers",
+                "subscription_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/subscription",
+                "commits_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/merges",
+                "archive_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/downloads",
+                "issues_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/labels{/name}",
+                "releases_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/KUL-Radneuron/KUL_VBG/deployments",
+                "created_at": "2020-08-20T15:01:16Z",
+                "updated_at": "2025-12-08T20:03:30Z",
+                "pushed_at": "2024-06-17T23:25:31Z",
+                "git_url": "git://github.com/KUL-Radneuron/KUL_VBG.git",
+                "ssh_url": "git@github.com:KUL-Radneuron/KUL_VBG.git",
+                "clone_url": "https://github.com/KUL-Radneuron/KUL_VBG.git",
+                "svn_url": "https://github.com/KUL-Radneuron/KUL_VBG",
+                "homepage": "",
+                "size": 589116,
+                "stargazers_count": 32,
+                "watchers_count": 32,
+                "language": "Shell",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 5,
+                "license": {
+                    "key": "mpl-2.0",
+                    "name": "Mozilla Public License 2.0",
+                    "spdx_id": "MPL-2.0",
+                    "url": "https://api.github.com/licenses/mpl-2.0",
+                    "node_id": "MDc6TGljZW5zZTE0"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "brain-parcellation",
+                    "clinical-research",
+                    "lesion-correction",
+                    "mri-brain"
+                ],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 5,
+                "watchers": 32,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 5,
+                "subscribers_count": 3
+            },
+            "contents": [
+                {
+                    "path": "KUL_VBG.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "KUL_VBG_cook_template.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "KUL_synth_pats_4VBG.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "Licence.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "atlasses",
+                    "type": "tree"
+                },
+                {
+                    "path": "figs4readme",
+                    "type": "tree"
+                },
+                {
+                    "path": "share",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "Rad-dude",
+                    "contributions": 51
+                },
+                {
+                    "login": "treanus",
+                    "contributions": 12
+                },
+                {
+                    "login": "KUL-Radneuron",
+                    "contributions": 6
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 12,
+                    "title": "Execution time",
+                    "created_at": "2022-06-13T13:16:30Z",
+                    "closed_at": "2022-08-05T10:18:13Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Query regarding the lesion filled image",
+                    "created_at": "2022-05-10T10:02:42Z",
+                    "closed_at": "2022-08-05T10:18:52Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Error Calculating Overlapping Volumes and Writing to Text File",
+                    "created_at": "2022-02-24T03:10:50Z",
+                    "closed_at": "2022-08-05T10:18:37Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Script doesn't find the data files",
+                    "created_at": "2021-03-17T16:40:26Z",
+                    "closed_at": "2021-03-18T09:03:07Z"
+                },
+                {
+                    "number": 2,
+                    "title": "MNI masks normalization ",
+                    "created_at": "2021-02-23T13:03:24Z",
+                    "closed_at": "2021-02-25T14:27:24Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Function_path editing ",
+                    "created_at": "2021-01-21T10:27:42Z",
+                    "closed_at": "2021-01-21T12:14:32Z"
+                }
+            ],
+            "languages": {
+                "Shell": 138869
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1016/j.neuroimage.2021.117731",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33454411",
+                            "source": "MED",
+                            "pmid": "33454411",
+                            "doi": "10.1016/j.neuroimage.2021.117731",
+                            "title": "Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions.",
+                            "authorString": "Radwan AM, Emsell L, Blommaert J, Zhylka A, Kovacs S, Theys T, Sollmann N, Dupont P, Sunaert S.",
+                            "journalTitle": "Neuroimage",
+                            "journalVolume": "229",
+                            "pubYear": "2021",
+                            "journalIssn": "1053-8119; 1095-9572; ",
+                            "pageInfo": "117731",
+                            "pubType": "research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "N",
+                            "inEPMC": "N",
+                            "inPMC": "N",
+                            "hasPDF": "N",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 56,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2021-01-19",
+                            "firstPublicationDate": "2021-01-14"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3121396573",
+                "doi": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                "title": "Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions",
+                "display_name": "Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions",
+                "publication_year": 2021,
+                "publication_date": "2021-01-14",
+                "ids": {
+                    "openalex": "https://openalex.org/W3121396573",
+                    "doi": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                    "mag": "3121396573",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33454411"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1016/j.neuroimage.2021.117731",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S103225281",
+                        "display_name": "NeuroImage",
+                        "issn_l": "1053-8119",
+                        "issn": [
+                            "1053-8119",
+                            "1095-9572"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320990",
+                        "host_organization_name": "Elsevier BV",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320990"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Elsevier BV"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NeuroImage",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5050686988",
+                            "display_name": "Ahmed Radwan",
+                            "orcid": "https://orcid.org/0000-0002-4819-548X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Ahmed M. Radwan",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium. Electronic address: ahmed.radwan@kuleuven.be",
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4819-548X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium. Electronic address: ahmed.radwan@kuleuven.be",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5009995930",
+                            "display_name": "Louise Emsell",
+                            "orcid": "https://orcid.org/0000-0003-0011-4158"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1314596251",
+                                "display_name": "Allen Institute for Brain Science",
+                                "ror": "https://ror.org/00dcv1019",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I4210140341"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210153928",
+                                "display_name": "VIB-KU Leuven Center for Brain & Disease Research",
+                                "ror": "https://ror.org/045c7t348",
+                                "country_code": "BE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802017950",
+                                    "https://openalex.org/I4210153928",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Louise Emsell",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium; KU Leuven, Department of Geriatric Psychiatry, University Psychiatric Center, Leuven, Belgium; KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium",
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                            "KU Leuven, Department of Geriatric Psychiatry, University Psychiatric Center, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-0011-4158",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium; KU Leuven, Department of Geriatric Psychiatry, University Psychiatric Center, Leuven, Belgium; KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096",
+                                    "https://openalex.org/I1314596251"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210153928"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Geriatric Psychiatry, University Psychiatric Center, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5054692403",
+                            "display_name": "Jeroen Blommaert",
+                            "orcid": "https://orcid.org/0000-0002-4746-9688"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jeroen Blommaert",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Department of Oncology, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4746-9688",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Oncology, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5060665861",
+                            "display_name": "Andrey Zhylka",
+                            "orcid": "https://orcid.org/0000-0002-1369-1088"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I83019370",
+                                "display_name": "Eindhoven University of Technology",
+                                "ror": "https://ror.org/02c2kyt77",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I83019370"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Andrey Zhylka",
+                        "raw_affiliation_strings": [
+                            "Department of Biomedical Engineering, Eindhoven University of Technology, Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1369-1088",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biomedical Engineering, Eindhoven University of Technology, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I83019370"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5058130043",
+                            "display_name": "Silvia Kovacs",
+                            "orcid": "https://orcid.org/0000-0002-3552-9532"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800231306",
+                                "display_name": "Universitair Ziekenhuis Leuven",
+                                "ror": "https://ror.org/0424bsv16",
+                                "country_code": "BE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2800231306"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Silvia Kovacs",
+                        "raw_affiliation_strings": [
+                            "UZ Leuven, Department of Radiology, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3552-9532",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "UZ Leuven, Department of Radiology, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800231306"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5028975858",
+                            "display_name": "Tom Theys",
+                            "orcid": "https://orcid.org/0000-0001-7595-3234"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1314596251",
+                                "display_name": "Allen Institute for Brain Science",
+                                "ror": "https://ror.org/00dcv1019",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I4210140341"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210153928",
+                                "display_name": "VIB-KU Leuven Center for Brain & Disease Research",
+                                "ror": "https://ror.org/045c7t348",
+                                "country_code": "BE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802017950",
+                                    "https://openalex.org/I4210153928",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Tom Theys",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; KU Leuven, Department of Neurosciences, Research Group Experimental Neurosurgery and Neuroanatomy, Leuven, Belgium",
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                            "KU Leuven, Department of Neurosciences, Research Group Experimental Neurosurgery and Neuroanatomy, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7595-3234",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; KU Leuven, Department of Neurosciences, Research Group Experimental Neurosurgery and Neuroanatomy, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210153928"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Neurosciences, Research Group Experimental Neurosurgery and Neuroanatomy, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5001185288",
+                            "display_name": "Nico Sollmann",
+                            "orcid": "https://orcid.org/0000-0002-8120-2223"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2802619606",
+                                "display_name": "TUM Klinikum",
+                                "ror": "https://ror.org/04jc43x05",
+                                "country_code": "DE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2802619606",
+                                    "https://openalex.org/I62916508"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I62916508",
+                                "display_name": "Technical University of Munich",
+                                "ror": "https://ror.org/02kkvpp62",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I62916508"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nico Sollmann",
+                        "raw_affiliation_strings": [
+                            "Department of Diagnostic and Interventional Neuroradiology, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany; TUM-Neuroimaging Center, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany",
+                            "TUM-Neuroimaging Center, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany",
+                            "Department of Diagnostic and Interventional Neuroradiology, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8120-2223",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Diagnostic and Interventional Neuroradiology, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany; TUM-Neuroimaging Center, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802619606"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "TUM-Neuroimaging Center, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802619606",
+                                    "https://openalex.org/I62916508"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Diagnostic and Interventional Neuroradiology, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, Munich, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802619606",
+                                    "https://openalex.org/I62916508"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5006794669",
+                            "display_name": "Patrick Dupont",
+                            "orcid": "https://orcid.org/0000-0003-1980-2540"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1314596251",
+                                "display_name": "Allen Institute for Brain Science",
+                                "ror": "https://ror.org/00dcv1019",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I4210140341"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210153928",
+                                "display_name": "VIB-KU Leuven Center for Brain & Disease Research",
+                                "ror": "https://ror.org/045c7t348",
+                                "country_code": "BE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802017950",
+                                    "https://openalex.org/I4210153928",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Patrick Dupont",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; KU Leuven, Laboratory for Cognitive Neurology, Department of Neurosciences, Leuven, Belgium",
+                            "KU Leuven, Laboratory for Cognitive Neurology, Department of Neurosciences, Leuven, Belgium",
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1980-2540",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; KU Leuven, Laboratory for Cognitive Neurology, Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I4210153928",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Laboratory for Cognitive Neurology, Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210153928"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5000110993",
+                            "display_name": "Stefan Sunaert",
+                            "orcid": "https://orcid.org/0000-0002-1177-4680"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1314596251",
+                                "display_name": "Allen Institute for Brain Science",
+                                "ror": "https://ror.org/00dcv1019",
+                                "country_code": "US",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1314596251",
+                                    "https://openalex.org/I4210140341"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800231306",
+                                "display_name": "Universitair Ziekenhuis Leuven",
+                                "ror": "https://ror.org/0424bsv16",
+                                "country_code": "BE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2800231306"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210153928",
+                                "display_name": "VIB-KU Leuven Center for Brain & Disease Research",
+                                "ror": "https://ror.org/045c7t348",
+                                "country_code": "BE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2802017950",
+                                    "https://openalex.org/I4210153928",
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I99464096",
+                                "display_name": "KU Leuven",
+                                "ror": "https://ror.org/05f950310",
+                                "country_code": "BE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Stefan Sunaert",
+                        "raw_affiliation_strings": [
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium; KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; UZ Leuven, Department of Radiology, Leuven, Belgium",
+                            "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium",
+                            "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                            "UZ Leuven, Department of Radiology, Leuven, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-1177-4680",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium; KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium; UZ Leuven, Department of Radiology, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096",
+                                    "https://openalex.org/I1314596251"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Department of Imaging and Pathology, Translational MRI, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I99464096"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KU Leuven, Leuven Brain Institute (LBI), Department of Neurosciences, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210153928"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "UZ Leuven, Department of Radiology, Leuven, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800231306"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 4,
+                "institutions_distinct_count": 9,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5050686988"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I99464096"
+                ],
+                "apc_list": {
+                    "value": 3450,
+                    "currency": "USD",
+                    "value_usd": 3450
+                },
+                "apc_paid": {
+                    "value": 3450,
+                    "currency": "USD",
+                    "value_usd": 3450
+                },
+                "fwci": 6.5946,
+                "has_fulltext": false,
+                "cited_by_count": 86,
+                "citation_normalized_percentile": {
+                    "value": 0.97325038,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 97,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "229",
+                    "issue": null,
+                    "first_page": "117731",
+                    "last_page": "117731"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11304",
+                    "display_name": "Advanced Neuroimaging Techniques and Applications",
+                    "score": 0.9997000098228455,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2741",
+                        "display_name": "Radiology, Nuclear Medicine and Imaging"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/27",
+                        "display_name": "Medicine"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/4",
+                        "display_name": "Health Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11304",
+                        "display_name": "Advanced Neuroimaging Techniques and Applications",
+                        "score": 0.9997000098228455,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2741",
+                            "display_name": "Radiology, Nuclear Medicine and Imaging"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10129",
+                        "display_name": "Glioma Diagnosis and Treatment",
+                        "score": 0.9994000196456909,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2716",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12702",
+                        "display_name": "Brain Tumor Detection and Classification",
+                        "score": 0.9984999895095825,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2808",
+                            "display_name": "Neurology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/neuroimaging",
+                        "display_name": "Neuroimaging",
+                        "score": 0.5646145343780518
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/magnetic-resonance-imaging",
+                        "display_name": "Magnetic resonance imaging",
+                        "score": 0.552240252494812
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/lesion",
+                        "display_name": "Lesion",
+                        "score": 0.49186205863952637
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4676347076892853
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/workflow",
+                        "display_name": "Workflow",
+                        "score": 0.4206309914588928
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.4177429974079132
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/medicine",
+                        "display_name": "Medicine",
+                        "score": 0.4116500914096832
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pattern-recognition",
+                        "display_name": "Pattern recognition (psychology)",
+                        "score": 0.33015960454940796
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/radiology",
+                        "display_name": "Radiology",
+                        "score": 0.2981017231941223
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pathology",
+                        "display_name": "Pathology",
+                        "score": 0.20113199949264526
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.11994656920433044
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C58693492",
+                        "wikidata": "https://www.wikidata.org/wiki/Q551875",
+                        "display_name": "Neuroimaging",
+                        "level": 2,
+                        "score": 0.5646145343780518
+                    },
+                    {
+                        "id": "https://openalex.org/C143409427",
+                        "wikidata": "https://www.wikidata.org/wiki/Q161238",
+                        "display_name": "Magnetic resonance imaging",
+                        "level": 2,
+                        "score": 0.552240252494812
+                    },
+                    {
+                        "id": "https://openalex.org/C2781156865",
+                        "wikidata": "https://www.wikidata.org/wiki/Q827023",
+                        "display_name": "Lesion",
+                        "level": 2,
+                        "score": 0.49186205863952637
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4676347076892853
+                    },
+                    {
+                        "id": "https://openalex.org/C177212765",
+                        "wikidata": "https://www.wikidata.org/wiki/Q627335",
+                        "display_name": "Workflow",
+                        "level": 2,
+                        "score": 0.4206309914588928
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.4177429974079132
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.4116500914096832
+                    },
+                    {
+                        "id": "https://openalex.org/C153180895",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7148389",
+                        "display_name": "Pattern recognition (psychology)",
+                        "level": 2,
+                        "score": 0.33015960454940796
+                    },
+                    {
+                        "id": "https://openalex.org/C126838900",
+                        "wikidata": "https://www.wikidata.org/wiki/Q77604",
+                        "display_name": "Radiology",
+                        "level": 1,
+                        "score": 0.2981017231941223
+                    },
+                    {
+                        "id": "https://openalex.org/C142724271",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7208",
+                        "display_name": "Pathology",
+                        "level": 1,
+                        "score": 0.20113199949264526
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.11994656920433044
+                    },
+                    {
+                        "id": "https://openalex.org/C118552586",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7867",
+                        "display_name": "Psychiatry",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000076142",
+                        "descriptor_name": "Virtual Reality",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000076142",
+                        "descriptor_name": "Virtual Reality",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000076142",
+                        "descriptor_name": "Virtual Reality",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000293",
+                        "descriptor_name": "Adolescent",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000293",
+                        "descriptor_name": "Adolescent",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000293",
+                        "descriptor_name": "Adolescent",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000328",
+                        "descriptor_name": "Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000328",
+                        "descriptor_name": "Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000328",
+                        "descriptor_name": "Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000368",
+                        "descriptor_name": "Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000368",
+                        "descriptor_name": "Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000368",
+                        "descriptor_name": "Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001921",
+                        "descriptor_name": "Brain",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001931",
+                        "descriptor_name": "Brain Mapping",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000000981",
+                        "qualifier_name": "diagnostic imaging",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D001932",
+                        "descriptor_name": "Brain Neoplasms",
+                        "qualifier_ui": "Q000503",
+                        "qualifier_name": "physiopathology",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005260",
+                        "descriptor_name": "Female",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D007091",
+                        "descriptor_name": "Image Processing, Computer-Assisted",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008279",
+                        "descriptor_name": "Magnetic Resonance Imaging",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008297",
+                        "descriptor_name": "Male",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008875",
+                        "descriptor_name": "Middle Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008875",
+                        "descriptor_name": "Middle Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008875",
+                        "descriptor_name": "Middle Aged",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055815",
+                        "descriptor_name": "Young Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055815",
+                        "descriptor_name": "Young Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055815",
+                        "descriptor_name": "Young Adult",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057188",
+                        "descriptor_name": "Workflow",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D063132",
+                        "descriptor_name": "Connectome",
+                        "qualifier_ui": "Q000639",
+                        "qualifier_name": "trends",
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1016/j.neuroimage.2021.117731",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S103225281",
+                            "display_name": "NeuroImage",
+                            "issn_l": "1053-8119",
+                            "issn": [
+                                "1053-8119",
+                                "1095-9572"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320990",
+                            "host_organization_name": "Elsevier BV",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320990"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Elsevier BV"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NeuroImage",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33454411",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33454411",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NeuroImage",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.tue.nl:openaire_cris_publications/3b531a98-e828-4fc3-8990-2fa7309816be",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.tue.nl/en/publications/3b531a98-e828-4fc3-8990-2fa7309816be",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4406922641",
+                            "display_name": "TU/e Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Radwan, A, Emsell, L, Blommaert, J, Zhylka, A, Kovacs, S, Theys, T, Sollmann, N, Dupont, P & Sunaert, S 2021, 'Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions', Neuroimage, vol. 229, 117731. https://doi.org/10.1016/j.neuroimage.2021.117731",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:lirias2repo.kuleuven.be:123456789/669626",
+                        "is_oa": true,
+                        "landing_page_url": "https://lirias.kuleuven.be/handle/123456789/669626",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401954",
+                            "display_name": "Lirias (KU Leuven)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I99464096",
+                            "host_organization_name": "KU Leuven",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I99464096"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "acceptedVersion",
+                        "is_accepted": true,
+                        "is_published": false,
+                        "raw_source_name": "Neuroimage, vol. 229, Art.No. ARTN 117731",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:64457171947c4c85abb4021cbf3b7a81",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/64457171947c4c85abb4021cbf3b7a81",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "NeuroImage, Vol 229, Iss , Pp 117731- (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:mediatum.ub.tum.de:node/1650333",
+                        "is_oa": true,
+                        "landing_page_url": "https://mediatum.ub.tum.de/1650333",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4377196330",
+                            "display_name": "mediaTUM  (Technical University of Munich)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I62916508",
+                            "host_organization_name": "Technical University of Munich",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I62916508"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:mediatum.ub.tum.de:node/1660017",
+                        "is_oa": false,
+                        "landing_page_url": "https://mediatum.ub.tum.de/1660017",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4377196330",
+                            "display_name": "mediaTUM  (Technical University of Munich)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I62916508",
+                            "host_organization_name": "Technical University of Munich",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I62916508"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:tue:oai:pure.tue.nl:publications/3b531a98-e828-4fc3-8990-2fa7309816be",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.tue.nl/nl/publications/3b531a98-e828-4fc3-8990-2fa7309816be",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Neuroimage, 229:117731. Academic Press Inc.",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1016/j.neuroimage.2021.117731",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1016/j.neuroimage.2021.117731",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S103225281",
+                        "display_name": "NeuroImage",
+                        "issn_l": "1053-8119",
+                        "issn": [
+                            "1053-8119",
+                            "1095-9572"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320990",
+                        "host_organization_name": "Elsevier BV",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320990"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Elsevier BV"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NeuroImage",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/17",
+                        "score": 0.550000011920929,
+                        "display_name": "Partnerships for the goals"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1377196292",
+                        "display_name": null,
+                        "funder_award_id": "11B9919N",
+                        "funder_id": "https://openalex.org/F4320321730",
+                        "funder_display_name": "Fonds Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G8341547557",
+                        "display_name": null,
+                        "funder_award_id": "G0C0319N",
+                        "funder_id": "https://openalex.org/F4320321730",
+                        "funder_display_name": "Fonds Wetenschappelijk Onderzoek"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320319128",
+                        "display_name": "Vlaams Supercomputer Centrum",
+                        "ror": null
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321730",
+                        "display_name": "Fonds Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/03qtxy027"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322308",
+                        "display_name": "KU Leuven",
+                        "ror": "https://ror.org/05f950310"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320327336",
+                        "display_name": "Vlaamse regering",
+                        "ror": null
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 78,
+                "referenced_works": [
+                    "https://openalex.org/W7508719",
+                    "https://openalex.org/W1442829153",
+                    "https://openalex.org/W1489942343",
+                    "https://openalex.org/W1504902003",
+                    "https://openalex.org/W1528119265",
+                    "https://openalex.org/W1528881907",
+                    "https://openalex.org/W1899329334",
+                    "https://openalex.org/W1970928383",
+                    "https://openalex.org/W1973158444",
+                    "https://openalex.org/W1973290871",
+                    "https://openalex.org/W1977193733",
+                    "https://openalex.org/W1982132176",
+                    "https://openalex.org/W1983208069",
+                    "https://openalex.org/W1994166788",
+                    "https://openalex.org/W2004428985",
+                    "https://openalex.org/W2015513982",
+                    "https://openalex.org/W2024729467",
+                    "https://openalex.org/W2027703088",
+                    "https://openalex.org/W2045516163",
+                    "https://openalex.org/W2049988140",
+                    "https://openalex.org/W2053383165",
+                    "https://openalex.org/W2053983047",
+                    "https://openalex.org/W2058046532",
+                    "https://openalex.org/W2081280754",
+                    "https://openalex.org/W2082085086",
+                    "https://openalex.org/W2085641953",
+                    "https://openalex.org/W2090707470",
+                    "https://openalex.org/W2101135654",
+                    "https://openalex.org/W2113127939",
+                    "https://openalex.org/W2117140276",
+                    "https://openalex.org/W2117340355",
+                    "https://openalex.org/W2123983635",
+                    "https://openalex.org/W2127890285",
+                    "https://openalex.org/W2132551870",
+                    "https://openalex.org/W2133054185",
+                    "https://openalex.org/W2136145485",
+                    "https://openalex.org/W2142658473",
+                    "https://openalex.org/W2145661921",
+                    "https://openalex.org/W2196212278",
+                    "https://openalex.org/W2212967118",
+                    "https://openalex.org/W2296335794",
+                    "https://openalex.org/W2301358467",
+                    "https://openalex.org/W2394812591",
+                    "https://openalex.org/W2412167734",
+                    "https://openalex.org/W2461764954",
+                    "https://openalex.org/W2471406153",
+                    "https://openalex.org/W2474584762",
+                    "https://openalex.org/W2504437221",
+                    "https://openalex.org/W2573536041",
+                    "https://openalex.org/W2589647984",
+                    "https://openalex.org/W2591418495",
+                    "https://openalex.org/W2620799947",
+                    "https://openalex.org/W2751966865",
+                    "https://openalex.org/W2792267984",
+                    "https://openalex.org/W2810700317",
+                    "https://openalex.org/W2890039862",
+                    "https://openalex.org/W2912521358",
+                    "https://openalex.org/W2943358380",
+                    "https://openalex.org/W2949310792",
+                    "https://openalex.org/W2951103577",
+                    "https://openalex.org/W2951795510",
+                    "https://openalex.org/W2968446587",
+                    "https://openalex.org/W2970898057",
+                    "https://openalex.org/W2977883299",
+                    "https://openalex.org/W3016710033",
+                    "https://openalex.org/W3033878890",
+                    "https://openalex.org/W3152157423",
+                    "https://openalex.org/W4241074797",
+                    "https://openalex.org/W4401338748",
+                    "https://openalex.org/W6631713767",
+                    "https://openalex.org/W6697144307",
+                    "https://openalex.org/W6738458899",
+                    "https://openalex.org/W6744164257",
+                    "https://openalex.org/W6759078412",
+                    "https://openalex.org/W6761685072",
+                    "https://openalex.org/W6838881207",
+                    "https://openalex.org/W6912389957",
+                    "https://openalex.org/W6949782189"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1981780420",
+                    "https://openalex.org/W2182707996",
+                    "https://openalex.org/W45233828",
+                    "https://openalex.org/W2964988449",
+                    "https://openalex.org/W2327340211",
+                    "https://openalex.org/W2027542625",
+                    "https://openalex.org/W188202134",
+                    "https://openalex.org/W2397952901",
+                    "https://openalex.org/W4292199793",
+                    "https://openalex.org/W2029380707"
+                ],
+                "abstract_inverted_index": {
+                    "Brain": [
+                        0,
+                        76
+                    ],
+                    "atlases": [
+                        1
+                    ],
+                    "and": [
+                        2,
+                        20,
+                        60,
+                        108,
+                        113,
+                        161,
+                        177,
+                        193,
+                        246,
+                        268,
+                        307
+                    ],
+                    "templates": [
+                        3
+                    ],
+                    "are": [
+                        4
+                    ],
+                    "at": [
+                        5
+                    ],
+                    "the": [
+                        6,
+                        38,
+                        57,
+                        94,
+                        120,
+                        124,
+                        233,
+                        260,
+                        271,
+                        282
+                    ],
+                    "heart": [
+                        7
+                    ],
+                    "of": [
+                        8,
+                        40,
+                        62,
+                        96,
+                        100,
+                        119,
+                        126,
+                        154,
+                        166,
+                        262,
+                        274
+                    ],
+                    "neuroimaging": [
+                        9,
+                        283
+                    ],
+                    "analyses,": [
+                        10
+                    ],
+                    "for": [
+                        11
+                    ],
+                    "which": [
+                        12,
+                        79,
+                        131
+                    ],
+                    "they": [
+                        13,
+                        34
+                    ],
+                    "facilitate": [
+                        14
+                    ],
+                    "multimodal": [
+                        15
+                    ],
+                    "registration,": [
+                        16
+                    ],
+                    "enable": [
+                        17
+                    ],
+                    "group": [
+                        18,
+                        153
+                    ],
+                    "comparisons": [
+                        19
+                    ],
+                    "provide": [
+                        21
+                    ],
+                    "anatomical": [
+                        22
+                    ],
+                    "reference.": [
+                        23
+                    ],
+                    "However,": [
+                        24
+                    ],
+                    "as": [
+                        25,
+                        74,
+                        297,
+                        303,
+                        305,
+                        318
+                    ],
+                    "atlas-based": [
+                        26
+                    ],
+                    "approaches": [
+                        27
+                    ],
+                    "rely": [
+                        28
+                    ],
+                    "on": [
+                        29,
+                        56,
+                        147,
+                        276
+                    ],
+                    "correspondence": [
+                        30
+                    ],
+                    "mapping": [
+                        31
+                    ],
+                    "between": [
+                        32
+                    ],
+                    "images": [
+                        33
+                    ],
+                    "perform": [
+                        35
+                    ],
+                    "poorly": [
+                        36
+                    ],
+                    "in": [
+                        37,
+                        93,
+                        151,
+                        291
+                    ],
+                    "presence": [
+                        39,
+                        95
+                    ],
+                    "structural": [
+                        41,
+                        306
+                    ],
+                    "pathology.": [
+                        42
+                    ],
+                    "Whilst": [
+                        43
+                    ],
+                    "several": [
+                        44
+                    ],
+                    "strategies": [
+                        45
+                    ],
+                    "exist": [
+                        46
+                    ],
+                    "to": [
+                        47,
+                        73,
+                        85,
+                        197,
+                        258
+                    ],
+                    "overcome": [
+                        48
+                    ],
+                    "this": [
+                        49
+                    ],
+                    "problem,": [
+                        50
+                    ],
+                    "their": [
+                        51
+                    ],
+                    "performance": [
+                        52
+                    ],
+                    "is": [
+                        53,
+                        80,
+                        123,
+                        316
+                    ],
+                    "often": [
+                        54
+                    ],
+                    "dependent": [
+                        55
+                    ],
+                    "type,": [
+                        58
+                    ],
+                    "size": [
+                        59
+                    ],
+                    "homogeneity": [
+                        61
+                    ],
+                    "any": [
+                        63
+                    ],
+                    "lesions": [
+                        64,
+                        111
+                    ],
+                    "present.": [
+                        65
+                    ],
+                    "We": [
+                        66,
+                        180
+                    ],
+                    "therefore": [
+                        67
+                    ],
+                    "propose": [
+                        68
+                    ],
+                    "a": [
+                        69,
+                        81,
+                        97,
+                        127,
+                        152,
+                        162,
+                        185,
+                        322
+                    ],
+                    "new": [
+                        70
+                    ],
+                    "solution,": [
+                        71
+                    ],
+                    "referred": [
+                        72
+                    ],
+                    "Virtual": [
+                        75
+                    ],
+                    "Grafting": [
+                        77
+                    ],
+                    "(VBG),": [
+                        78
+                    ],
+                    "fully-automated,": [
+                        82
+                    ],
+                    "open-source": [
+                        83
+                    ],
+                    "workflow": [
+                        84
+                    ],
+                    "reliably": [
+                        86
+                    ],
+                    "parcellate": [
+                        87
+                    ],
+                    "magnetic": [
+                        88
+                    ],
+                    "resonance": [
+                        89
+                    ],
+                    "imaging": [
+                        90
+                    ],
+                    "(MRI)": [
+                        91
+                    ],
+                    "datasets": [
+                        92
+                    ],
+                    "broad": [
+                        98
+                    ],
+                    "spectrum": [
+                        99
+                    ],
+                    "focal": [
+                        101
+                    ],
+                    "brain": [
+                        102
+                    ],
+                    "pathologies,": [
+                        103
+                    ],
+                    "including": [
+                        104
+                    ],
+                    "large,": [
+                        105
+                    ],
+                    "bilateral,": [
+                        106
+                    ],
+                    "intra-": [
+                        107
+                    ],
+                    "extra-axial,": [
+                        109
+                    ],
+                    "heterogeneous": [
+                        110,
+                        158
+                    ],
+                    "with": [
+                        112,
+                        157
+                    ],
+                    "without": [
+                        114
+                    ],
+                    "mass": [
+                        115
+                    ],
+                    "effect.": [
+                        116
+                    ],
+                    "The": [
+                        117
+                    ],
+                    "core": [
+                        118
+                    ],
+                    "VBG": [
+                        121,
+                        183,
+                        239,
+                        243,
+                        279,
+                        315
+                    ],
+                    "approach": [
+                        122,
+                        187
+                    ],
+                    "generation": [
+                        125
+                    ],
+                    "lesion-free": [
+                        128
+                    ],
+                    "T1-weighted": [
+                        129
+                    ],
+                    "image,": [
+                        130
+                    ],
+                    "enables": [
+                        132
+                    ],
+                    "further": [
+                        133
+                    ],
+                    "image": [
+                        134
+                    ],
+                    "processing": [
+                        135
+                    ],
+                    "operations": [
+                        136
+                    ],
+                    "that": [
+                        137,
+                        182
+                    ],
+                    "would": [
+                        138
+                    ],
+                    "otherwise": [
+                        139
+                    ],
+                    "fail.": [
+                        140
+                    ],
+                    "Here": [
+                        141
+                    ],
+                    "we": [
+                        142,
+                        254
+                    ],
+                    "validated": [
+                        143
+                    ],
+                    "our": [
+                        144
+                    ],
+                    "solution": [
+                        145
+                    ],
+                    "based": [
+                        146
+                    ],
+                    "Freesurfer": [
+                        148,
+                        272
+                    ],
+                    "recon-all": [
+                        149
+                    ],
+                    "parcellation": [
+                        150
+                    ],
+                    "10": [
+                        155
+                    ],
+                    "patients": [
+                        156,
+                        168,
+                        202
+                    ],
+                    "gliomatous": [
+                        159
+                    ],
+                    "lesions,": [
+                        160
+                    ],
+                    "realistic": [
+                        163
+                    ],
+                    "synthetic": [
+                        164
+                    ],
+                    "cohort": [
+                        165
+                    ],
+                    "glioma": [
+                        167
+                    ],
+                    "(n": [
+                        169
+                    ],
+                    "=": [
+                        170,
+                        204,
+                        207,
+                        214,
+                        217,
+                        240,
+                        244,
+                        248
+                    ],
+                    "100)": [
+                        171
+                    ],
+                    "derived": [
+                        172
+                    ],
+                    "from": [
+                        173,
+                        232,
+                        270
+                    ],
+                    "healthy": [
+                        174
+                    ],
+                    "control": [
+                        175
+                    ],
+                    "data": [
+                        176
+                    ],
+                    "patient": [
+                        178
+                    ],
+                    "data.": [
+                        179
+                    ],
+                    "demonstrate": [
+                        181
+                    ],
+                    "outperforms": [
+                        184
+                    ],
+                    "non-VBG": [
+                        186,
+                        247
+                    ],
+                    "assessed": [
+                        188
+                    ],
+                    "qualitatively": [
+                        189
+                    ],
+                    "by": [
+                        190,
+                        227,
+                        285
+                    ],
+                    "expert": [
+                        191
+                    ],
+                    "neuroradiologists": [
+                        192
+                    ],
+                    "Mann-Whitney": [
+                        194
+                    ],
+                    "U": [
+                        195
+                    ],
+                    "tests": [
+                        196
+                    ],
+                    "compare": [
+                        198
+                    ],
+                    "corresponding": [
+                        199
+                    ],
+                    "parcellations": [
+                        200
+                    ],
+                    "(real": [
+                        201
+                    ],
+                    "U(6,6)": [
+                        203
+                    ],
+                    "33,": [
+                        205
+                    ],
+                    "z": [
+                        206,
+                        216
+                    ],
+                    "2.738,": [
+                        208
+                    ],
+                    "P": [
+                        209,
+                        219,
+                        250
+                    ],
+                    "<": [
+                        210,
+                        220,
+                        251
+                    ],
+                    ".010,": [
+                        211
+                    ],
+                    "synthetic-patients": [
+                        212,
+                        234
+                    ],
+                    "U(48,48)": [
+                        213
+                    ],
+                    "2076,": [
+                        215
+                    ],
+                    "7.336,": [
+                        218
+                    ],
+                    ".001).": [
+                        221,
+                        252
+                    ],
+                    "Results": [
+                        222
+                    ],
+                    "were": [
+                        223
+                    ],
+                    "also": [
+                        224
+                    ],
+                    "quantitatively": [
+                        225
+                    ],
+                    "evaluated": [
+                        226
+                    ],
+                    "comparing": [
+                        228
+                    ],
+                    "mean": [
+                        229
+                    ],
+                    "dice": [
+                        230
+                    ],
+                    "scores": [
+                        231
+                    ],
+                    "using": [
+                        235,
+                        294
+                    ],
+                    "one-way": [
+                        236
+                    ],
+                    "ANOVA": [
+                        237
+                    ],
+                    "(unilateral": [
+                        238
+                    ],
+                    "0.894,": [
+                        241
+                    ],
+                    "bilateral": [
+                        242
+                    ],
+                    "0.903,": [
+                        245
+                    ],
+                    "0.617,": [
+                        249
+                    ],
+                    "Additionally,": [
+                        253
+                    ],
+                    "used": [
+                        255
+                    ],
+                    "linear": [
+                        256
+                    ],
+                    "regression": [
+                        257
+                    ],
+                    "show": [
+                        259
+                    ],
+                    "influence": [
+                        261
+                    ],
+                    "lesion": [
+                        263,
+                        265
+                    ],
+                    "volume,": [
+                        264
+                    ],
+                    "overlap": [
+                        266
+                    ],
+                    "with,": [
+                        267
+                    ],
+                    "distance": [
+                        269
+                    ],
+                    "volumes": [
+                        273
+                    ],
+                    "interest,": [
+                        275
+                    ],
+                    "labeling": [
+                        277
+                    ],
+                    "accuracy.": [
+                        278
+                    ],
+                    "may": [
+                        280
+                    ],
+                    "benefit": [
+                        281
+                    ],
+                    "community": [
+                        284
+                    ],
+                    "enabling": [
+                        286
+                    ],
+                    "automated": [
+                        287
+                    ],
+                    "state-of-the-art": [
+                        288
+                    ],
+                    "MRI": [
+                        289
+                    ],
+                    "analyses": [
+                        290
+                    ],
+                    "clinical": [
+                        292
+                    ],
+                    "populations": [
+                        293
+                    ],
+                    "methods": [
+                        295
+                    ],
+                    "such": [
+                        296
+                    ],
+                    "FreeSurfer,": [
+                        298
+                    ],
+                    "CAT12,": [
+                        299
+                    ],
+                    "SPM,": [
+                        300
+                    ],
+                    "Connectome": [
+                        301
+                    ],
+                    "Workbench,": [
+                        302
+                    ],
+                    "well": [
+                        304
+                    ],
+                    "functional": [
+                        308
+                    ],
+                    "connectomics.": [
+                        309
+                    ],
+                    "To": [
+                        310
+                    ],
+                    "fully": [
+                        311
+                    ],
+                    "maximize": [
+                        312
+                    ],
+                    "its": [
+                        313
+                    ],
+                    "availability,": [
+                        314
+                    ],
+                    "provided": [
+                        317
+                    ],
+                    "open": [
+                        319
+                    ],
+                    "software": [
+                        320
+                    ],
+                    "under": [
+                        321
+                    ],
+                    "Mozilla": [
+                        323
+                    ],
+                    "2.0": [
+                        324
+                    ],
+                    "license": [
+                        325
+                    ],
+                    "(https://github.com/KUL-Radneuron/KUL_VBG).": [
+                        326
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 26
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 15
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 12
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 5
+                    }
+                ],
+                "updated_date": "2026-05-21T09:19:25.381259",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Virtual brain grafting: Enabling whole brain parcellation in the presence of large lesions",
+                "doi": "10.1016/j.neuroimage.2021.117731",
+                "pmid": "33454411",
+                "isbns": [],
+                "altmetric_jid": "4f6fa50c3cf058f610003196",
+                "issns": [
+                    "1053-8119",
+                    "1095-9572"
+                ],
+                "journal": "NeuroImage",
+                "cohorts": {
+                    "pub": 5,
+                    "sci": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 25387668,
+                        "mean": 10.746735046558827,
+                        "rank": 7154236,
+                        "pct": 71,
+                        "higher_than": 18185978
+                    },
+                    "journal": {
+                        "count": 12206,
+                        "mean": 11.579646239554318,
+                        "rank": 5714,
+                        "pct": 52,
+                        "higher_than": 6441
+                    },
+                    "similar_age_3m": {
+                        "count": 523384,
+                        "mean": 14.580487787169655,
+                        "rank": 168326,
+                        "pct": 67,
+                        "higher_than": 353525
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 241,
+                        "mean": 15.023908713692979,
+                        "rank": 136,
+                        "pct": 42,
+                        "higher_than": 103
+                    }
+                },
+                "authors": [
+                    "Ahmed M Radwan",
+                    "Louise Emsell",
+                    "Jeroen Blommaert",
+                    "Andrey Zhylka",
+                    "Silvia Kovacs",
+                    "Tom Theys",
+                    "Nico Sollmann",
+                    "Patrick Dupont",
+                    "Stefan Sunaert"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1617235200,
+                "epubdate": 1610582400,
+                "dimensions_publication_id": "pub.1134553068",
+                "altmetric_id": 97856440,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Medical And Health Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Psychology And Cognitive Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 6,
+                "cited_by_tweeters_count": 6,
+                "cited_by_accounts_count": 6,
+                "last_updated": 1615979177,
+                "score": 4.35,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 4.35
+                },
+                "url": "http://dx.doi.org/10.1016/j.neuroimage.2021.117731",
+                "added_on": 1610868555,
+                "published_on": 1610582400,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Neuroscience"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "123",
+                    "connotea": "0"
+                },
+                "readers_count": 123,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=5&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=5&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=5&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=97856440"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 0,
+            "total_ccn": 0,
+            "avg_ccn": 0.0,
+            "nloc_per_file": 0.0,
+            "duplicate_rate": 0.0
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

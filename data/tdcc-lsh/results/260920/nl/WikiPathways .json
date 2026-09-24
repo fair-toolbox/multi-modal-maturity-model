@@ -1,0 +1,3088 @@
+{
+    "WikiPathways ": {
+        "tool_name": "WikiPathways ",
+        "biotools": {
+            "name": "WikiPathways",
+            "description": "WikiPathways is a database of biological pathways maintained by and for the scientific community.",
+            "homepage": "https://www.wikipathways.org/",
+            "biotoolsID": "wikipathways",
+            "biotoolsCURIE": "biotools:wikipathways",
+            "version": [],
+            "otherID": [],
+            "relation": [
+                {
+                    "biotoolsID": "bridgedb",
+                    "type": "uses"
+                },
+                {
+                    "biotoolsID": "rwikipathways",
+                    "type": "usedBy"
+                }
+            ],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2497",
+                            "term": "Pathway or network analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0842",
+                                "term": "Identifier"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0006",
+                                "term": "Data"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2331",
+                                    "term": "HTML"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_2332",
+                                    "term": "XML"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3464",
+                                    "term": "JSON"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": "getPathway",
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Web API",
+                "Web application",
+                "Web service",
+                "Database portal"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0602",
+                    "term": "Molecular interactions, pathways and networks"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3325",
+                    "term": "Rare diseases"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "JavaScript"
+            ],
+            "license": "Apache-2.0",
+            "collectionID": [
+                "WikiPathways",
+                "Rare Disease",
+                "BIGCAT-UM",
+                "RD-connect"
+            ],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [
+                "Netherlands"
+            ],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/wikipathways/",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": "GitHub Organization"
+                },
+                {
+                    "url": "https://fosstodon.org/@wikipathways",
+                    "type": [
+                        "Social media"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [
+                {
+                    "url": "https://data.wikipathways.org/",
+                    "type": "Downloads page",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://www.wikipathways.org/index.php/WikiPathways",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "http://www.wikipathways.org/index.php/Help:WikiPathways_Webservice",
+                    "type": [
+                        "API documentation"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/nar/gkv1024",
+                    "pmid": "26481357",
+                    "pmcid": "PMC4702772",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1371/journal.pone.0006447",
+                    "pmid": "19649250",
+                    "pmcid": "PMC2714472",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1093/nar/gkaa1024",
+                    "pmid": "33211851",
+                    "pmcid": "PMC7779061",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1093/nar/gkx1064",
+                    "pmid": "29136241",
+                    "pmcid": "PMC5753270",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1093/nar/gkad960",
+                    "pmid": "37941138",
+                    "pmcid": "PMC10767877",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Martina Kutmon",
+                    "email": "martina.kutmon@maastrichtuniversity.nl",
+                    "url": "http://www.wikipathways.org/index.php/WikiPathways:About",
+                    "orcidid": "https://orcid.org/0000-0002-7699-8191",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                },
+                {
+                    "name": "Egon Willighagen",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0001-7542-0286",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Alexander R. Pico",
+                    "email": "apico@gladstone.ucsf.edu",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "ChrisEvelo",
+            "additionDate": "2017-07-20T18:33:51Z",
+            "lastUpdate": "2026-02-17T12:05:57.404853Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "ChrisEvelo",
+                    "egonw"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 438493632,
+                "node_id": "R_kgDOGiLhwA",
+                "name": "wikipathways-database",
+                "full_name": "wikipathways/wikipathways-database",
+                "private": false,
+                "owner": {
+                    "login": "wikipathways",
+                    "id": 4193922,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQxOTM5MjI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/4193922?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/wikipathways",
+                    "html_url": "https://github.com/wikipathways",
+                    "followers_url": "https://api.github.com/users/wikipathways/followers",
+                    "following_url": "https://api.github.com/users/wikipathways/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/wikipathways/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/wikipathways/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/wikipathways/subscriptions",
+                    "organizations_url": "https://api.github.com/users/wikipathways/orgs",
+                    "repos_url": "https://api.github.com/users/wikipathways/repos",
+                    "events_url": "https://api.github.com/users/wikipathways/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/wikipathways/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/wikipathways/wikipathways-database",
+                "description": "WikiPathways Database",
+                "fork": false,
+                "url": "https://api.github.com/repos/wikipathways/wikipathways-database",
+                "forks_url": "https://api.github.com/repos/wikipathways/wikipathways-database/forks",
+                "keys_url": "https://api.github.com/repos/wikipathways/wikipathways-database/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/wikipathways/wikipathways-database/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/wikipathways/wikipathways-database/teams",
+                "hooks_url": "https://api.github.com/repos/wikipathways/wikipathways-database/hooks",
+                "issue_events_url": "https://api.github.com/repos/wikipathways/wikipathways-database/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/wikipathways/wikipathways-database/events",
+                "assignees_url": "https://api.github.com/repos/wikipathways/wikipathways-database/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/wikipathways/wikipathways-database/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/wikipathways/wikipathways-database/tags",
+                "blobs_url": "https://api.github.com/repos/wikipathways/wikipathways-database/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/wikipathways/wikipathways-database/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/wikipathways/wikipathways-database/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/wikipathways/wikipathways-database/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/wikipathways/wikipathways-database/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/wikipathways/wikipathways-database/languages",
+                "stargazers_url": "https://api.github.com/repos/wikipathways/wikipathways-database/stargazers",
+                "contributors_url": "https://api.github.com/repos/wikipathways/wikipathways-database/contributors",
+                "subscribers_url": "https://api.github.com/repos/wikipathways/wikipathways-database/subscribers",
+                "subscription_url": "https://api.github.com/repos/wikipathways/wikipathways-database/subscription",
+                "commits_url": "https://api.github.com/repos/wikipathways/wikipathways-database/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/wikipathways/wikipathways-database/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/wikipathways/wikipathways-database/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/wikipathways/wikipathways-database/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/wikipathways/wikipathways-database/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/wikipathways/wikipathways-database/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/wikipathways/wikipathways-database/merges",
+                "archive_url": "https://api.github.com/repos/wikipathways/wikipathways-database/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/wikipathways/wikipathways-database/downloads",
+                "issues_url": "https://api.github.com/repos/wikipathways/wikipathways-database/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/wikipathways/wikipathways-database/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/wikipathways/wikipathways-database/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/wikipathways/wikipathways-database/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/wikipathways/wikipathways-database/labels{/name}",
+                "releases_url": "https://api.github.com/repos/wikipathways/wikipathways-database/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/wikipathways/wikipathways-database/deployments",
+                "created_at": "2021-12-15T04:28:15Z",
+                "updated_at": "2026-05-29T09:27:42Z",
+                "pushed_at": "2026-05-25T15:57:27Z",
+                "git_url": "git://github.com/wikipathways/wikipathways-database.git",
+                "ssh_url": "git@github.com:wikipathways/wikipathways-database.git",
+                "clone_url": "https://github.com/wikipathways/wikipathways-database.git",
+                "svn_url": "https://github.com/wikipathways/wikipathways-database",
+                "homepage": "https://www.wikipathways.org",
+                "size": 482171,
+                "stargazers_count": 16,
+                "watchers_count": 16,
+                "language": "Shell",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 21,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 19,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "bioinformatics",
+                    "biology",
+                    "pathway-analysis",
+                    "pathway-enrichment-analysis",
+                    "wikipathways"
+                ],
+                "visibility": "public",
+                "forks": 21,
+                "open_issues": 19,
+                "watchers": 16,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "wikipathways",
+                    "id": 4193922,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQxOTM5MjI=",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/4193922?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/wikipathways",
+                    "html_url": "https://github.com/wikipathways",
+                    "followers_url": "https://api.github.com/users/wikipathways/followers",
+                    "following_url": "https://api.github.com/users/wikipathways/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/wikipathways/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/wikipathways/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/wikipathways/subscriptions",
+                    "organizations_url": "https://api.github.com/users/wikipathways/orgs",
+                    "repos_url": "https://api.github.com/users/wikipathways/repos",
+                    "events_url": "https://api.github.com/users/wikipathways/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/wikipathways/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 21,
+                "subscribers_count": 10
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "2021",
+                    "type": "tree"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "HomologyMapperAuto-WithDependencies.jar",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "annotations",
+                    "type": "tree"
+                },
+                {
+                    "path": "communities",
+                    "type": "tree"
+                },
+                {
+                    "path": "downstream",
+                    "type": "tree"
+                },
+                {
+                    "path": "pathways",
+                    "type": "tree"
+                },
+                {
+                    "path": "scripts",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "actions-user",
+                    "contributions": 4172
+                },
+                {
+                    "login": "AlexanderPico",
+                    "contributions": 730
+                },
+                {
+                    "login": "hbasaric",
+                    "contributions": 264
+                },
+                {
+                    "login": "egonw",
+                    "contributions": 253
+                },
+                {
+                    "login": "ariutta",
+                    "contributions": 181
+                },
+                {
+                    "login": "khanspers",
+                    "contributions": 100
+                },
+                {
+                    "login": "mkutmon",
+                    "contributions": 40
+                },
+                {
+                    "login": "DeniseSl22",
+                    "contributions": 17
+                },
+                {
+                    "login": "larsgw",
+                    "contributions": 15
+                },
+                {
+                    "login": "fehrhart",
+                    "contributions": 9
+                },
+                {
+                    "login": "hasanbalci",
+                    "contributions": 6
+                },
+                {
+                    "login": "ManzeYu",
+                    "contributions": 4
+                },
+                {
+                    "login": "marvinm2",
+                    "contributions": 2
+                },
+                {
+                    "login": "AgustinGonvi",
+                    "contributions": 1
+                },
+                {
+                    "login": "IsabelWassink",
+                    "contributions": 1
+                },
+                {
+                    "login": "luiz-ladeira",
+                    "contributions": 1
+                },
+                {
+                    "login": "Artoria2e5",
+                    "contributions": 1
+                },
+                {
+                    "login": "pklemmer",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 60,
+                    "title": "inconsistent GPML between classic and this repo",
+                    "created_at": "2024-07-21T11:56:26Z",
+                    "closed_at": "2025-03-08T19:22:38Z"
+                },
+                {
+                    "number": 55,
+                    "title": "update node action?",
+                    "created_at": "2024-03-15T09:42:41Z",
+                    "closed_at": "2024-03-16T11:30:19Z"
+                },
+                {
+                    "number": 51,
+                    "title": "Possible issues with references",
+                    "created_at": "2023-11-08T19:39:06Z",
+                    "closed_at": "2023-12-03T15:27:48Z"
+                },
+                {
+                    "number": 45,
+                    "title": "Wpblocked should not be shown",
+                    "created_at": "2023-07-09T09:18:01Z",
+                    "closed_at": "2023-08-10T22:12:07Z"
+                },
+                {
+                    "number": 43,
+                    "title": "author-list job failing",
+                    "created_at": "2023-06-18T11:48:56Z",
+                    "closed_at": "2023-10-25T12:19:37Z"
+                },
+                {
+                    "number": 42,
+                    "title": "duplicates in the Participant table",
+                    "created_at": "2023-06-06T09:36:16Z",
+                    "closed_at": "2023-08-10T22:14:57Z"
+                },
+                {
+                    "number": 36,
+                    "title": "Community pathway lists",
+                    "created_at": "2023-05-04T07:40:25Z",
+                    "closed_at": "2023-10-11T20:39:19Z"
+                },
+                {
+                    "number": 35,
+                    "title": "nothing has been pushed to wp-homology since December",
+                    "created_at": "2023-04-25T19:42:07Z",
+                    "closed_at": "2023-04-25T23:05:35Z"
+                },
+                {
+                    "number": 30,
+                    "title": "update of metadata action step needed before June 1st",
+                    "created_at": "2023-03-12T20:05:04Z",
+                    "closed_at": "2023-05-05T18:44:37Z"
+                },
+                {
+                    "number": 27,
+                    "title": "explore Zenodo action for monthly archive of GPML files",
+                    "created_at": "2023-02-14T08:58:24Z",
+                    "closed_at": "2023-05-05T18:45:27Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Newline characters in the comments result in TSVs that break jekyll",
+                    "created_at": "2023-02-14T03:21:10Z",
+                    "closed_at": "2023-10-08T14:17:58Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Bridgedb and Ovis aries",
+                    "created_at": "2023-02-14T02:48:27Z",
+                    "closed_at": "2023-02-21T20:51:56Z"
+                },
+                {
+                    "number": 23,
+                    "title": "Re-enable copying of thumbnails in manual sync GitHub Action",
+                    "created_at": "2023-02-01T20:10:44Z",
+                    "closed_at": "2023-02-02T01:44:03Z"
+                },
+                {
+                    "number": 21,
+                    "title": "more user-friendly formatting of \"Last modified\"?",
+                    "created_at": "2023-02-01T09:34:19Z",
+                    "closed_at": "2025-05-23T19:28:20Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Merged pathway still on new site",
+                    "created_at": "2023-01-31T17:27:23Z",
+                    "closed_at": "2023-02-02T01:54:44Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Pubmed API rate limit",
+                    "created_at": "2023-01-31T14:32:54Z",
+                    "closed_at": "2023-03-25T13:32:00Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Difficult to test changes to workflows in a fork",
+                    "created_at": "2023-01-31T13:02:07Z",
+                    "closed_at": "2023-01-31T13:40:01Z"
+                },
+                {
+                    "number": 15,
+                    "title": "index.js drops all non-pubmed references from bibliography",
+                    "created_at": "2023-01-25T02:33:12Z",
+                    "closed_at": "2023-02-02T02:34:43Z"
+                },
+                {
+                    "number": 14,
+                    "title": "index.js runs on all ~1800 WPIDs every time one is updates",
+                    "created_at": "2023-01-25T02:18:28Z",
+                    "closed_at": "2023-02-02T02:27:47Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Switch from Pubmed to PubMed breaks index.js",
+                    "created_at": "2023-01-25T02:03:04Z",
+                    "closed_at": "2023-01-25T02:03:19Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Missing GPML from sync",
+                    "created_at": "2022-12-12T01:15:50Z",
+                    "closed_at": "2023-02-02T02:14:06Z"
+                },
+                {
+                    "number": 8,
+                    "title": "curation badge when 0 errors",
+                    "created_at": "2022-05-18T18:58:26Z",
+                    "closed_at": "2022-05-30T15:00:39Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Maintain global file of formatted (PubMed) references?",
+                    "created_at": "2022-03-09T19:44:10Z",
+                    "closed_at": "2023-12-03T15:11:16Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Parsing WPx-datanodes.tsv",
+                    "created_at": "2022-03-07T21:01:45Z",
+                    "closed_at": "2022-03-07T21:09:28Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Spaces after PMIDs in WP0-refs.tsv",
+                    "created_at": "2022-01-15T13:50:32Z",
+                    "closed_at": "2023-02-02T02:16:04Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Extra tab after column headers in datanodes.tsv",
+                    "created_at": "2022-01-15T11:54:12Z",
+                    "closed_at": "2022-03-02T18:00:27Z"
+                }
+            ],
+            "languages": {
+                "Shell": 40776,
+                "JavaScript": 20266,
+                "Python": 12306,
+                "R": 4965,
+                "Groovy": 709
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/nar/gkx1064",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "29136241",
+                            "source": "MED",
+                            "pmid": "29136241",
+                            "pmcid": "PMC5753270",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC5753270"
+                                ]
+                            },
+                            "doi": "10.1093/nar/gkx1064",
+                            "title": "WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research.",
+                            "authorString": "Slenter DN, Kutmon M, Hanspers K, Riutta A, Windsor J, Nunes N, M\u00e9lius J, Cirillo E, Coort SL, Digles D, Ehrhart F, Giesbertz P, Kalafati M, Martens M, Miller R, Nishida K, Rieswijk L, Waagmeester A, Eijssen LMT, Evelo CT, Pico AR, Willighagen EL.",
+                            "journalTitle": "Nucleic Acids Res",
+                            "issue": "d1",
+                            "journalVolume": "46",
+                            "pubYear": "2018",
+                            "journalIssn": "0305-1048; 1362-4962; ",
+                            "pageInfo": "D661-D667",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 656,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2017-11-15",
+                            "firstPublicationDate": "2018-01-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2767914218",
+                "doi": "https://doi.org/10.1093/nar/gkx1064",
+                "title": "WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research",
+                "display_name": "WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research",
+                "publication_year": 2017,
+                "publication_date": "2017-10-25",
+                "ids": {
+                    "openalex": "https://openalex.org/W2767914218",
+                    "doi": "https://doi.org/10.1093/nar/gkx1064",
+                    "mag": "2767914218",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/29136241"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/nar/gkx1064",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/nar/gkx1064",
+                    "pdf_url": "https://academic.oup.com/nar/article-pdf/46/D1/D661/23162184/gkx1064.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S134668137",
+                        "display_name": "Nucleic Acids Research",
+                        "issn_l": "0305-1048",
+                        "issn": [
+                            "0305-1048",
+                            "1362-4954",
+                            "1362-4962"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Nucleic Acids Research",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://academic.oup.com/nar/article-pdf/46/D1/D661/23162184/gkx1064.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5071903823",
+                            "display_name": "Denise Slenter",
+                            "orcid": "https://orcid.org/0000-0001-8449-1318"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Denise N Slenter",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5062841937",
+                            "display_name": "Martina Kutmon",
+                            "orcid": "https://orcid.org/0000-0002-7699-8191"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Martina Kutmon",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                            "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7699-8191",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5063972221",
+                            "display_name": "Kristina Hanspers",
+                            "orcid": "https://orcid.org/0000-0001-5410-599X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kristina Hanspers",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institutes, San Francisco, California, CA 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institutes, San Francisco, California, CA 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064769212",
+                            "display_name": "Anders Riutta",
+                            "orcid": "https://orcid.org/0000-0002-4693-0591"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Anders Riutta",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institutes, San Francisco, California, CA 94158, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-4693-0591",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institutes, San Francisco, California, CA 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050916185",
+                            "display_name": "Jacob Windsor",
+                            "orcid": "https://orcid.org/0000-0002-0249-7757"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jacob Windsor",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5074097147",
+                            "display_name": "Nuno Nunes",
+                            "orcid": "https://orcid.org/0000-0002-2498-0643"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nuno Nunes",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5040186093",
+                            "display_name": "Jonathan M\u00e9lius",
+                            "orcid": "https://orcid.org/0000-0001-8624-2972"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jonathan M\u00e9lius",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5068612501",
+                            "display_name": "Elisa Cirillo",
+                            "orcid": "https://orcid.org/0000-0002-0241-7833"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Elisa Cirillo",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-0241-7833",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5088503440",
+                            "display_name": "Susan L. Coort",
+                            "orcid": "https://orcid.org/0000-0003-1224-9690"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Susan L Coort",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1224-9690",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5059247283",
+                            "display_name": "Daniela Digles",
+                            "orcid": "https://orcid.org/0000-0001-5934-3559"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I129774422",
+                                "display_name": "University of Vienna",
+                                "ror": "https://ror.org/03prydq77",
+                                "country_code": "AT",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I129774422"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "AT"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Daniela Digles",
+                        "raw_affiliation_strings": [
+                            "University of Vienna, Department of Pharmaceutical Chemistry, 1090 Vienna, Austria"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Vienna, Department of Pharmaceutical Chemistry, 1090 Vienna, Austria",
+                                "institution_ids": [
+                                    "https://openalex.org/I129774422"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5061353760",
+                            "display_name": "Friederike Ehrhart",
+                            "orcid": "https://orcid.org/0000-0002-7770-620X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Friederike Ehrhart",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5042735384",
+                            "display_name": "Pieter Giesbertz",
+                            "orcid": "https://orcid.org/0000-0001-7461-8602"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I62916508",
+                                "display_name": "Technical University of Munich",
+                                "ror": "https://ror.org/02kkvpp62",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I62916508"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Pieter Giesbertz",
+                        "raw_affiliation_strings": [
+                            "Chair of Nutritional Physiology, Technische Universit\u00e4t M\u00fcnchen, 85350 Freising, Germany"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Chair of Nutritional Physiology, Technische Universit\u00e4t M\u00fcnchen, 85350 Freising, Germany",
+                                "institution_ids": [
+                                    "https://openalex.org/I62916508"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5050104635",
+                            "display_name": "Marianthi Kalafati",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marianthi Kalafati",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                            "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5046933371",
+                            "display_name": "Marvin Martens",
+                            "orcid": "https://orcid.org/0000-0003-2230-0840"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Marvin Martens",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5007578966",
+                            "display_name": "Ryan A. Miller",
+                            "orcid": "https://orcid.org/0000-0003-3477-7443"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Ryan Miller",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3477-7443",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5034175804",
+                            "display_name": "Kozo Nishida",
+                            "orcid": "https://orcid.org/0000-0001-8501-7319"
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Kozo Nishida",
+                        "raw_affiliation_strings": [
+                            "Laboratory for Biochemical Simulation, RIKEN Quantitative Biology Center, Suita, Osaka 565-0874, Japan"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8501-7319",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Laboratory for Biochemical Simulation, RIKEN Quantitative Biology Center, Suita, Osaka 565-0874, Japan",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5068366960",
+                            "display_name": "Linda Rieswijk",
+                            "orcid": "https://orcid.org/0000-0002-6106-1347"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I95457486",
+                                "display_name": "University of California, Berkeley",
+                                "ror": "https://ror.org/01an7q238",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I95457486"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Linda Rieswijk",
+                        "raw_affiliation_strings": [
+                            "Division of Environmental Health Sciences, School of Public Health, University of California, Berkeley, CA 94720, USA"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6106-1347",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Environmental Health Sciences, School of Public Health, University of California, Berkeley, CA 94720, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I95457486"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5048705669",
+                            "display_name": "Andra Waagmeester",
+                            "orcid": "https://orcid.org/0000-0001-9773-4008"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210135156",
+                                "display_name": "Terumo (Belgium)",
+                                "ror": "https://ror.org/043vk3t22",
+                                "country_code": "BE",
+                                "type": "company",
+                                "lineage": [
+                                    "https://openalex.org/I4210119124",
+                                    "https://openalex.org/I4210135156"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "BE",
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Andra Waagmeester",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                            "Micelio, Antwerp, Belgium"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9773-4008",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Micelio, Antwerp, Belgium",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210135156"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5045552083",
+                            "display_name": "Lars Eijssen",
+                            "orcid": "https://orcid.org/0000-0002-6473-2839"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800191616",
+                                "display_name": "Maastricht University Medical Centre",
+                                "ror": "https://ror.org/02d9ce178",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800191616"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Lars M T Eijssen",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                            "School for Mental Health and Neuroscience, Department of Psychiatry and Neuropsychology, Maastricht University Medical Centre, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "School for Mental Health and Neuroscience, Department of Psychiatry and Neuropsychology, Maastricht University Medical Centre, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800191616"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5075750072",
+                            "display_name": "Chris T. Evelo",
+                            "orcid": "https://orcid.org/0000-0002-5301-3142"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Chris T Evelo",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                            "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Maastricht Centre for Systems Biology (MaCSBio), Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5070456387",
+                            "display_name": "Alexander R. Pico",
+                            "orcid": "https://orcid.org/0000-0001-5706-2163"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1321430492",
+                                "display_name": "Gladstone Institutes",
+                                "ror": "https://ror.org/038321296",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alexander R Pico",
+                        "raw_affiliation_strings": [
+                            "Gladstone Institutes, San Francisco, California, CA 94158, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Gladstone Institutes, San Francisco, California, CA 94158, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1321430492"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5060194743",
+                            "display_name": "Egon Willighagen",
+                            "orcid": "https://orcid.org/0000-0001-7542-0286"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I34352273",
+                                "display_name": "Maastricht University",
+                                "ror": "https://ror.org/02jz4aj89",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Egon L Willighagen",
+                        "raw_affiliation_strings": [
+                            "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7542-0286",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Bioinformatics - BiGCaT, NUTRIM, Maastricht University, 6229 ER Maastricht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I34352273"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 5,
+                "institutions_distinct_count": 22,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5060194743"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I34352273"
+                ],
+                "apc_list": {
+                    "value": 3630,
+                    "currency": "USD",
+                    "value_usd": 3630
+                },
+                "apc_paid": {
+                    "value": 3630,
+                    "currency": "USD",
+                    "value_usd": 3630
+                },
+                "fwci": 38.2405,
+                "has_fulltext": false,
+                "cited_by_count": 1000,
+                "citation_normalized_percentile": {
+                    "value": 0.99889516,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "46",
+                    "issue": "D1",
+                    "first_page": "D661",
+                    "last_page": "D667"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10887",
+                    "display_name": "Bioinformatics and Genomic Networks",
+                    "score": 0.9991999864578247,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10887",
+                        "display_name": "Bioinformatics and Genomic Networks",
+                        "score": 0.9991999864578247,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10836",
+                        "display_name": "Metabolomics and Mass Spectrometry Studies",
+                        "score": 0.9959999918937683,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11710",
+                        "display_name": "Biomedical Text Mining and Ontologies",
+                        "score": 0.9943000078201294,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/annotation",
+                        "display_name": "Annotation",
+                        "score": 0.7271294593811035
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-curation",
+                        "display_name": "Data curation",
+                        "score": 0.7162224650382996
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interoperability",
+                        "display_name": "Interoperability",
+                        "score": 0.5792098045349121
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/identifier",
+                        "display_name": "Identifier",
+                        "score": 0.5552374124526978
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bridging",
+                        "display_name": "Bridging (networking)",
+                        "score": 0.533912718296051
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/documentation",
+                        "display_name": "Documentation",
+                        "score": 0.503863513469696
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.4791773557662964
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-science",
+                        "display_name": "Data science",
+                        "score": 0.43447983264923096
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biological-database",
+                        "display_name": "Biological database",
+                        "score": 0.4214697480201721
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4119192063808441
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.3970102369785309
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/world-wide-web",
+                        "display_name": "World Wide Web",
+                        "score": 0.3613053560256958
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.2794976830482483
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2776321320",
+                        "wikidata": "https://www.wikidata.org/wiki/Q857525",
+                        "display_name": "Annotation",
+                        "level": 2,
+                        "score": 0.7271294593811035
+                    },
+                    {
+                        "id": "https://openalex.org/C91632574",
+                        "wikidata": "https://www.wikidata.org/wiki/Q15088675",
+                        "display_name": "Data curation",
+                        "level": 2,
+                        "score": 0.7162224650382996
+                    },
+                    {
+                        "id": "https://openalex.org/C20136886",
+                        "wikidata": "https://www.wikidata.org/wiki/Q749647",
+                        "display_name": "Interoperability",
+                        "level": 2,
+                        "score": 0.5792098045349121
+                    },
+                    {
+                        "id": "https://openalex.org/C154504017",
+                        "wikidata": "https://www.wikidata.org/wiki/Q853614",
+                        "display_name": "Identifier",
+                        "level": 2,
+                        "score": 0.5552374124526978
+                    },
+                    {
+                        "id": "https://openalex.org/C174348530",
+                        "wikidata": "https://www.wikidata.org/wiki/Q188635",
+                        "display_name": "Bridging (networking)",
+                        "level": 2,
+                        "score": 0.533912718296051
+                    },
+                    {
+                        "id": "https://openalex.org/C56666940",
+                        "wikidata": "https://www.wikidata.org/wiki/Q788790",
+                        "display_name": "Documentation",
+                        "level": 2,
+                        "score": 0.503863513469696
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.4791773557662964
+                    },
+                    {
+                        "id": "https://openalex.org/C2522767166",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+                        "display_name": "Data science",
+                        "level": 1,
+                        "score": 0.43447983264923096
+                    },
+                    {
+                        "id": "https://openalex.org/C20901353",
+                        "wikidata": "https://www.wikidata.org/wiki/Q4117139",
+                        "display_name": "Biological database",
+                        "level": 2,
+                        "score": 0.4214697480201721
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4119192063808441
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.3970102369785309
+                    },
+                    {
+                        "id": "https://openalex.org/C136764020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q466",
+                        "display_name": "World Wide Web",
+                        "level": 1,
+                        "score": 0.3613053560256958
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.2794976830482483
+                    },
+                    {
+                        "id": "https://openalex.org/C31258907",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+                        "display_name": "Computer network",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011786",
+                        "descriptor_name": "Quality Control",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D030541",
+                        "descriptor_name": "Databases, Genetic",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D053858",
+                        "descriptor_name": "Metabolic Networks and Pathways",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D053858",
+                        "descriptor_name": "Metabolic Networks and Pathways",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D053858",
+                        "descriptor_name": "Metabolic Networks and Pathways",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D055432",
+                        "descriptor_name": "Metabolomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055432",
+                        "descriptor_name": "Metabolomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D055432",
+                        "descriptor_name": "Metabolomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D057225",
+                        "descriptor_name": "Data Mining",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057225",
+                        "descriptor_name": "Data Mining",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057225",
+                        "descriptor_name": "Data Mining",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057386",
+                        "descriptor_name": "Search Engine",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057386",
+                        "descriptor_name": "Search Engine",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D057386",
+                        "descriptor_name": "Search Engine",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D062126",
+                        "descriptor_name": "Databases, Chemical",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062126",
+                        "descriptor_name": "Databases, Chemical",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062126",
+                        "descriptor_name": "Databases, Chemical",
+                        "qualifier_ui": "Q000592",
+                        "qualifier_name": "standards",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D066289",
+                        "descriptor_name": "Data Curation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066289",
+                        "descriptor_name": "Data Curation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D066289",
+                        "descriptor_name": "Data Curation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/nar/gkx1064",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/nar/gkx1064",
+                        "pdf_url": "https://academic.oup.com/nar/article-pdf/46/D1/D661/23162184/gkx1064.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S134668137",
+                            "display_name": "Nucleic Acids Research",
+                            "issn_l": "0305-1048",
+                            "issn": [
+                                "0305-1048",
+                                "1362-4954",
+                                "1362-4962"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Nucleic Acids Research",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:29136241",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/29136241",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Nucleic acids research",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:cris.maastrichtuniversity.nl:openaire/f373860f-e5b5-41e6-b918-fe78177b38c2",
+                        "is_oa": true,
+                        "landing_page_url": "https://cris.maastrichtuniversity.nl/en/publications/f373860f-e5b5-41e6-b918-fe78177b38c2",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306402616",
+                            "display_name": "Research Publications (Maastricht University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I34352273",
+                            "host_organization_name": "Maastricht University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I34352273"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Slenter, D N, Kutmon, M, Hanspers, K, Riutta, A, Windsor, J, Nunes, N, M\u00e9lius, J, Cirillo, E, Coort, S L, Digles, D, Ehrhart, F, Giesbertz, P, Kalafati, M, Martens, M, Miller, R, Nishida, K, Rieswijk, L, Waagmeester, A, Eijssen, L M T, Evelo, C T, Pico, A R & Willighagen, E L 2018, 'WikiPathways : a multifaceted pathway database bridging metabolomics to other omics research', Nucleic Acids Research, vol. 46, no. D1, pp. D661-D667. https://doi.org/10.1093/nar/gkx1064",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:info:fedora/oai:univie.ac.at:o:1067915",
+                        "is_oa": true,
+                        "landing_page_url": "https://phaidra.univie.ac.at/o:1067915",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401993",
+                            "display_name": "Phaidra (Universit\u00e4t Wien)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I129774422",
+                            "host_organization_name": "University of Vienna",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I129774422"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-nc-nd",
+                        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "ISSN:0305-1048",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:4668329",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5753270",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/nar/gkx1064",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/nar/gkx1064",
+                    "pdf_url": "https://academic.oup.com/nar/article-pdf/46/D1/D661/23162184/gkx1064.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S134668137",
+                        "display_name": "Nucleic Acids Research",
+                        "issn_l": "0305-1048",
+                        "issn": [
+                            "0305-1048",
+                            "1362-4954",
+                            "1362-4962"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Nucleic Acids Research",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2767914218.pdf"
+                },
+                "referenced_works_count": 36,
+                "referenced_works": [
+                    "https://openalex.org/W1935434993",
+                    "https://openalex.org/W1986088036",
+                    "https://openalex.org/W1989277387",
+                    "https://openalex.org/W1999758530",
+                    "https://openalex.org/W2010502047",
+                    "https://openalex.org/W2063028213",
+                    "https://openalex.org/W2069928158",
+                    "https://openalex.org/W2084292968",
+                    "https://openalex.org/W2114688451",
+                    "https://openalex.org/W2116687544",
+                    "https://openalex.org/W2120680184",
+                    "https://openalex.org/W2123152121",
+                    "https://openalex.org/W2126997165",
+                    "https://openalex.org/W2138862823",
+                    "https://openalex.org/W2150420891",
+                    "https://openalex.org/W2151120337",
+                    "https://openalex.org/W2155083835",
+                    "https://openalex.org/W2160591663",
+                    "https://openalex.org/W2164298117",
+                    "https://openalex.org/W2214793050",
+                    "https://openalex.org/W2240002743",
+                    "https://openalex.org/W2267633033",
+                    "https://openalex.org/W2302501749",
+                    "https://openalex.org/W2396056682",
+                    "https://openalex.org/W2418056440",
+                    "https://openalex.org/W2464278521",
+                    "https://openalex.org/W2486330282",
+                    "https://openalex.org/W2512737207",
+                    "https://openalex.org/W2559588208",
+                    "https://openalex.org/W2566602058",
+                    "https://openalex.org/W2582455098",
+                    "https://openalex.org/W2596319736",
+                    "https://openalex.org/W2600124251",
+                    "https://openalex.org/W2731260319",
+                    "https://openalex.org/W2752510929",
+                    "https://openalex.org/W2773787581"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2169425537",
+                    "https://openalex.org/W2169589518",
+                    "https://openalex.org/W2086443788",
+                    "https://openalex.org/W2762474792",
+                    "https://openalex.org/W2111303602",
+                    "https://openalex.org/W2772431536",
+                    "https://openalex.org/W2951897737",
+                    "https://openalex.org/W2891678595",
+                    "https://openalex.org/W2097106271",
+                    "https://openalex.org/W2124450377"
+                ],
+                "abstract_inverted_index": {
+                    "WikiPathways": [
+                        0,
+                        27,
+                        53,
+                        65
+                    ],
+                    "(wikipathways.org)": [
+                        1
+                    ],
+                    "captures": [
+                        2
+                    ],
+                    "the": [
+                        3,
+                        46,
+                        52,
+                        74,
+                        95,
+                        118,
+                        121,
+                        132,
+                        151,
+                        163,
+                        166
+                    ],
+                    "collective": [
+                        4
+                    ],
+                    "knowledge": [
+                        5,
+                        167,
+                        191
+                    ],
+                    "represented": [
+                        6
+                    ],
+                    "in": [
+                        7,
+                        14,
+                        41,
+                        138,
+                        169
+                    ],
+                    "biological": [
+                        8
+                    ],
+                    "pathways.": [
+                        9
+                    ],
+                    "By": [
+                        10
+                    ],
+                    "providing": [
+                        11,
+                        110
+                    ],
+                    "a": [
+                        12,
+                        15,
+                        66,
+                        129
+                    ],
+                    "database": [
+                        13,
+                        107
+                    ],
+                    "curated,": [
+                        16
+                    ],
+                    "machine": [
+                        17
+                    ],
+                    "readable": [
+                        18
+                    ],
+                    "way,": [
+                        19
+                    ],
+                    "omics": [
+                        20,
+                        174
+                    ],
+                    "data": [
+                        21,
+                        37
+                    ],
+                    "analysis": [
+                        22
+                    ],
+                    "and": [
+                        23,
+                        28,
+                        48,
+                        59,
+                        68,
+                        80,
+                        99,
+                        109,
+                        124,
+                        150,
+                        156,
+                        172,
+                        186,
+                        198
+                    ],
+                    "visualization": [
+                        24
+                    ],
+                    "is": [
+                        25,
+                        60
+                    ],
+                    "enabled.": [
+                        26
+                    ],
+                    "other": [
+                        29
+                    ],
+                    "pathway": [
+                        30,
+                        70,
+                        190
+                    ],
+                    "databases": [
+                        31
+                    ],
+                    "are": [
+                        32
+                    ],
+                    "used": [
+                        33
+                    ],
+                    "to": [
+                        34,
+                        45,
+                        161,
+                        183,
+                        195
+                    ],
+                    "analyze": [
+                        35
+                    ],
+                    "experimental": [
+                        36,
+                        173
+                    ],
+                    "by": [
+                        38,
+                        102
+                    ],
+                    "research": [
+                        39,
+                        199
+                    ],
+                    "groups": [
+                        40
+                    ],
+                    "many": [
+                        42,
+                        83
+                    ],
+                    "fields.": [
+                        43
+                    ],
+                    "Due": [
+                        44
+                    ],
+                    "open": [
+                        47
+                    ],
+                    "collaborative": [
+                        49
+                    ],
+                    "nature": [
+                        50
+                    ],
+                    "of": [
+                        51,
+                        97,
+                        120,
+                        131,
+                        134,
+                        146,
+                        159,
+                        165
+                    ],
+                    "platform,": [
+                        54
+                    ],
+                    "our": [
+                        55,
+                        147
+                    ],
+                    "content": [
+                        56
+                    ],
+                    "keeps": [
+                        57
+                    ],
+                    "growing": [
+                        58
+                    ],
+                    "getting": [
+                        61
+                    ],
+                    "more": [
+                        62,
+                        111,
+                        181,
+                        192
+                    ],
+                    "accurate,": [
+                        63
+                    ],
+                    "making": [
+                        64
+                    ],
+                    "reliable": [
+                        67
+                    ],
+                    "rich": [
+                        69
+                    ],
+                    "database.": [
+                        71
+                    ],
+                    "Previously,": [
+                        72
+                    ],
+                    "however,": [
+                        73
+                    ],
+                    "focus": [
+                        75
+                    ],
+                    "was": [
+                        76
+                    ],
+                    "primarily": [
+                        77
+                    ],
+                    "on": [
+                        78,
+                        93
+                    ],
+                    "genes": [
+                        79
+                    ],
+                    "proteins,": [
+                        81
+                    ],
+                    "leaving": [
+                        82
+                    ],
+                    "metabolites": [
+                        84,
+                        105
+                    ],
+                    "with": [
+                        85,
+                        106
+                    ],
+                    "only": [
+                        86
+                    ],
+                    "limited": [
+                        87
+                    ],
+                    "annotation.": [
+                        88
+                    ],
+                    "Recent": [
+                        89
+                    ],
+                    "curation": [
+                        90,
+                        125
+                    ],
+                    "efforts": [
+                        91
+                    ],
+                    "focused": [
+                        92
+                    ],
+                    "improving": [
+                        94
+                    ],
+                    "annotation": [
+                        96,
+                        158
+                    ],
+                    "metabolism": [
+                        98
+                    ],
+                    "metabolic": [
+                        100
+                    ],
+                    "pathways": [
+                        101,
+                        171
+                    ],
+                    "associating": [
+                        103
+                    ],
+                    "unmapped": [
+                        104
+                    ],
+                    "identifiers": [
+                        108
+                    ],
+                    "detailed": [
+                        112
+                    ],
+                    "interaction": [
+                        113
+                    ],
+                    "knowledge.": [
+                        114
+                    ],
+                    "Here,": [
+                        115
+                    ],
+                    "we": [
+                        116,
+                        141
+                    ],
+                    "report": [
+                        117
+                    ],
+                    "outcomes": [
+                        119
+                    ],
+                    "continued": [
+                        122
+                    ],
+                    "growth": [
+                        123
+                    ],
+                    "efforts,": [
+                        126
+                    ],
+                    "such": [
+                        127
+                    ],
+                    "as": [
+                        128
+                    ],
+                    "doubling": [
+                        130
+                    ],
+                    "number": [
+                        133
+                    ],
+                    "annotated": [
+                        135
+                    ],
+                    "metabolite": [
+                        136,
+                        184
+                    ],
+                    "nodes": [
+                        137
+                    ],
+                    "WikiPathways.": [
+                        139
+                    ],
+                    "Furthermore,": [
+                        140
+                    ],
+                    "introduce": [
+                        142
+                    ],
+                    "an": [
+                        143
+                    ],
+                    "OpenAPI": [
+                        144
+                    ],
+                    "documentation": [
+                        145
+                    ],
+                    "web": [
+                        148
+                    ],
+                    "services": [
+                        149
+                    ],
+                    "FAIR": [
+                        152
+                    ],
+                    "(Findable,": [
+                        153
+                    ],
+                    "Accessible,": [
+                        154
+                    ],
+                    "Interoperable": [
+                        155
+                    ],
+                    "Reusable)": [
+                        157
+                    ],
+                    "resources": [
+                        160
+                    ],
+                    "increase": [
+                        162
+                    ],
+                    "interoperability": [
+                        164
+                    ],
+                    "encoded": [
+                        168
+                    ],
+                    "these": [
+                        170
+                    ],
+                    "data.": [
+                        175
+                    ],
+                    "New": [
+                        176
+                    ],
+                    "search": [
+                        177
+                    ],
+                    "options,": [
+                        178
+                    ],
+                    "monthly": [
+                        179
+                    ],
+                    "downloads,": [
+                        180
+                    ],
+                    "links": [
+                        182
+                    ],
+                    "databases,": [
+                        185
+                    ],
+                    "new": [
+                        187
+                    ],
+                    "portals": [
+                        188
+                    ],
+                    "make": [
+                        189
+                    ],
+                    "effortlessly": [
+                        193
+                    ],
+                    "accessible": [
+                        194
+                    ],
+                    "individual": [
+                        196
+                    ],
+                    "researchers": [
+                        197
+                    ],
+                    "communities.": [
+                        200
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 16
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 56
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 108
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 114
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 134
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 228
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 192
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 100
+                    },
+                    {
+                        "year": 2018,
+                        "cited_by_count": 47
+                    },
+                    {
+                        "year": 2017,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-29T09:21:14.243279",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research",
+                "doi": "10.1093/nar/gkx1064",
+                "pmid": "29136241",
+                "pmc": "PMC5753270",
+                "isbns": [],
+                "altmetric_jid": "4f6fa62f3cf058f61000832f",
+                "issns": [
+                    "1362-4962"
+                ],
+                "journal": "Nucleic Acids Research",
+                "cohorts": {
+                    "sci": 19,
+                    "pub": 27,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 31634113,
+                        "mean": 10.578963786593294,
+                        "rank": 979290,
+                        "pct": 96,
+                        "higher_than": 30677276
+                    },
+                    "journal": {
+                        "count": 32179,
+                        "mean": 7.7081714782932975,
+                        "rank": 450,
+                        "pct": 98,
+                        "higher_than": 31757
+                    },
+                    "similar_age_3m": {
+                        "count": 359447,
+                        "mean": 13.162036823231238,
+                        "rank": 15632,
+                        "pct": 95,
+                        "higher_than": 344017
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 385,
+                        "mean": 10.261038961038961,
+                        "rank": 9,
+                        "pct": 97,
+                        "higher_than": 376
+                    }
+                },
+                "authors": [
+                    "Denise N Slenter",
+                    "Martina Kutmon",
+                    "Kristina Hanspers",
+                    "Anders Riutta",
+                    "Jacob Windsor",
+                    "Nuno Nunes",
+                    "Jonathan M\u00e9lius",
+                    "Elisa Cirillo",
+                    "Susan L Coort",
+                    "Daniela Digles",
+                    "Friederike Ehrhart",
+                    "Pieter Giesbertz",
+                    "Marianthi Kalafati",
+                    "Marvin Martens",
+                    "Ryan Miller",
+                    "Kozo Nishida",
+                    "Linda Rieswijk",
+                    "Andra Waagmeester",
+                    "Lars M T Eijssen",
+                    "Chris T Evelo",
+                    "Alexander R Pico",
+                    "Egon L Willighagen"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1515024000,
+                "epubdate": 1510272000,
+                "dimensions_publication_id": "pub.1092391316",
+                "altmetric_id": 28713682,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Environmental Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 71,
+                "cited_by_feeds_count": 3,
+                "cited_by_tweeters_count": 47,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_wikipedia_count": 2,
+                "cited_by_rdts_count": 1,
+                "cited_by_patents_count": 1,
+                "cited_by_accounts_count": 55,
+                "last_updated": 1649665320,
+                "score": 51.05,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 51.05
+                },
+                "url": "http://dx.doi.org/10.1093/nar/gkx1064",
+                "added_on": 1510328341,
+                "published_on": 1510272000,
+                "subjects": [
+                    "biochemistry"
+                ],
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "1",
+                    "mendeley": "552",
+                    "connotea": "0"
+                },
+                "readers_count": 553,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=52&types=abrtttwf",
+                    "medium": "https://badges.altmetric.com/?size=100&score=52&types=abrtttwf",
+                    "large": "https://badges.altmetric.com/?size=180&score=52&types=abrtttwf"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=28713682"
+            }
+        },
+        "errors": []
+    }
+}

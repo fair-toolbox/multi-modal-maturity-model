@@ -1,0 +1,2082 @@
+{
+    "DrugEx": {
+        "tool_name": "DrugEx",
+        "biotools": {
+            "name": "DrugEx",
+            "description": "Deep learning toolkit for Drug Design with Pareto-based Multi-Objective optimization in Polypharmacology",
+            "homepage": "http://github.com/XuhanLiu/DrugEx",
+            "biotoolsID": "drugex",
+            "biotoolsCURIE": "biotools:drugex",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_4009",
+                            "term": "Small molecule design"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3216",
+                            "term": "Scaffolding"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0479",
+                            "term": "Backbone modelling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0269",
+                            "term": "Transmembrane protein prediction"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2258",
+                    "term": "Cheminformatics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0209",
+                    "term": "Medicinal chemistry"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3047",
+                    "term": "Molecular biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0154",
+                    "term": "Small molecules"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1186/S13321-021-00561-9",
+                    "pmid": "34772471",
+                    "pmcid": "PMC8588612",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "DrugEx v2: de novo design of drug molecules by Pareto-based multi-objective reinforcement learning in polypharmacology",
+                        "abstract": "\u00a9 2021, The Author(s).In polypharmacology drugs are required to bind to multiple specific targets, for example to enhance efficacy or to reduce resistance formation. Although deep learning has achieved a breakthrough in de novo design in drug discovery, most of its applications only focus on a single drug target to generate drug-like active molecules. However, in reality drug molecules often interact with more than one target which can have desired (polypharmacology) or undesired (toxicity) effects. In a previous study we proposed a new method named DrugEx that integrates an exploration strategy into RNN-based reinforcement learning to improve the diversity of the generated molecules. Here, we extended our DrugEx algorithm with multi-objective optimization to generate drug-like molecules towards multiple targets or one specific target while avoiding off-targets (the two adenosine receptors, A1AR and A2AAR, and the potassium ion channel hERG in this study). In our model, we applied an RNN as the agent and machine learning predictors as the environment. Both the agent and the environment were pre-trained in advance and then interplayed under a reinforcement learning framework. The concept of evolutionary algorithms was merged into our method such that crossover and mutation operations were implemented by the same deep learning model as the agent. During the training loop, the agent generates a batch of SMILES-based molecules. Subsequently scores for all objectives provided by the environment are used to construct Pareto ranks of the generated molecules. For this ranking a non-dominated sorting algorithm and a Tanimoto-based crowding distance algorithm using chemical fingerprints are applied. Here, we adopted GPU acceleration to speed up the process of Pareto optimization. The final reward of each molecule is calculated based on the Pareto ranking with the ranking selection algorithm. The agent is trained under the guidance of the reward to make sure it can generate desired molecules after convergence of the training process. All in all we demonstrate generation of compounds with a diverse predicted selectivity profile towards multiple targets, offering the potential of high efficacy and low toxicity.",
+                        "date": "2021-12-01T00:00:00Z",
+                        "citationCount": 1,
+                        "authors": [
+                            {
+                                "name": "Liu X."
+                            },
+                            {
+                                "name": "Ye K."
+                            },
+                            {
+                                "name": "van Vlijmen H.W.T."
+                            },
+                            {
+                                "name": "Emmerich M.T.M."
+                            },
+                            {
+                                "name": "IJzerman A.P."
+                            },
+                            {
+                                "name": "van Westen G.J.P."
+                            }
+                        ],
+                        "journal": "Journal of Cheminformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Gerard J. P. van Westen",
+                    "email": "gerard@lacdr.leidenuniv.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-0717-1817",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Adriaan P. IJzerman",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-1182-2259",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Michael T. M. Emmerich",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-7342-2090",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Herman W. T. van Vlijmen",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-1915-3141",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2022-05-12T19:28:40.569042Z",
+            "lastUpdate": "2022-05-12T19:28:52.191583Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 477696812,
+                "node_id": "R_kgDOHHkTLA",
+                "name": "DrugEx",
+                "full_name": "CDDLeiden/DrugEx",
+                "private": false,
+                "owner": {
+                    "login": "CDDLeiden",
+                    "id": 93788862,
+                    "node_id": "O_kgDOBZcavg",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/93788862?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CDDLeiden",
+                    "html_url": "https://github.com/CDDLeiden",
+                    "followers_url": "https://api.github.com/users/CDDLeiden/followers",
+                    "following_url": "https://api.github.com/users/CDDLeiden/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CDDLeiden/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CDDLeiden/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CDDLeiden/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CDDLeiden/orgs",
+                    "repos_url": "https://api.github.com/users/CDDLeiden/repos",
+                    "events_url": "https://api.github.com/users/CDDLeiden/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CDDLeiden/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/CDDLeiden/DrugEx",
+                "description": "De Novo Drug Design with RNNs and Transformers",
+                "fork": false,
+                "url": "https://api.github.com/repos/CDDLeiden/DrugEx",
+                "forks_url": "https://api.github.com/repos/CDDLeiden/DrugEx/forks",
+                "keys_url": "https://api.github.com/repos/CDDLeiden/DrugEx/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/CDDLeiden/DrugEx/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/CDDLeiden/DrugEx/teams",
+                "hooks_url": "https://api.github.com/repos/CDDLeiden/DrugEx/hooks",
+                "issue_events_url": "https://api.github.com/repos/CDDLeiden/DrugEx/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/CDDLeiden/DrugEx/events",
+                "assignees_url": "https://api.github.com/repos/CDDLeiden/DrugEx/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/CDDLeiden/DrugEx/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/CDDLeiden/DrugEx/tags",
+                "blobs_url": "https://api.github.com/repos/CDDLeiden/DrugEx/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/CDDLeiden/DrugEx/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/CDDLeiden/DrugEx/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/CDDLeiden/DrugEx/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/CDDLeiden/DrugEx/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/CDDLeiden/DrugEx/languages",
+                "stargazers_url": "https://api.github.com/repos/CDDLeiden/DrugEx/stargazers",
+                "contributors_url": "https://api.github.com/repos/CDDLeiden/DrugEx/contributors",
+                "subscribers_url": "https://api.github.com/repos/CDDLeiden/DrugEx/subscribers",
+                "subscription_url": "https://api.github.com/repos/CDDLeiden/DrugEx/subscription",
+                "commits_url": "https://api.github.com/repos/CDDLeiden/DrugEx/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/CDDLeiden/DrugEx/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/CDDLeiden/DrugEx/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/CDDLeiden/DrugEx/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/CDDLeiden/DrugEx/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/CDDLeiden/DrugEx/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/CDDLeiden/DrugEx/merges",
+                "archive_url": "https://api.github.com/repos/CDDLeiden/DrugEx/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/CDDLeiden/DrugEx/downloads",
+                "issues_url": "https://api.github.com/repos/CDDLeiden/DrugEx/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/CDDLeiden/DrugEx/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/CDDLeiden/DrugEx/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/CDDLeiden/DrugEx/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/CDDLeiden/DrugEx/labels{/name}",
+                "releases_url": "https://api.github.com/repos/CDDLeiden/DrugEx/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/CDDLeiden/DrugEx/deployments",
+                "created_at": "2022-04-04T12:45:43Z",
+                "updated_at": "2026-05-29T01:11:12Z",
+                "pushed_at": "2026-02-19T09:38:39Z",
+                "git_url": "git://github.com/CDDLeiden/DrugEx.git",
+                "ssh_url": "git@github.com:CDDLeiden/DrugEx.git",
+                "clone_url": "https://github.com/CDDLeiden/DrugEx.git",
+                "svn_url": "https://github.com/CDDLeiden/DrugEx",
+                "homepage": "https://cddleiden.github.io/DrugEx/docs/",
+                "size": 96043,
+                "stargazers_count": 185,
+                "watchers_count": 185,
+                "language": "Jupyter Notebook",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 29,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 6,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "cheminformatics",
+                    "de-novo-drug-design",
+                    "deep-learning",
+                    "drug-discovery",
+                    "reinforcement-learning"
+                ],
+                "visibility": "public",
+                "forks": 29,
+                "open_issues": 6,
+                "watchers": 185,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "CDDLeiden",
+                    "id": 93788862,
+                    "node_id": "O_kgDOBZcavg",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/93788862?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CDDLeiden",
+                    "html_url": "https://github.com/CDDLeiden",
+                    "followers_url": "https://api.github.com/users/CDDLeiden/followers",
+                    "following_url": "https://api.github.com/users/CDDLeiden/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CDDLeiden/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CDDLeiden/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CDDLeiden/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CDDLeiden/orgs",
+                    "repos_url": "https://api.github.com/users/CDDLeiden/repos",
+                    "events_url": "https://api.github.com/users/CDDLeiden/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CDDLeiden/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 29,
+                "subscribers_count": 4
+            },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "CHANGELOG.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "drugex",
+                    "type": "tree"
+                },
+                {
+                    "path": "figures",
+                    "type": "tree"
+                },
+                {
+                    "path": "pyproject.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "scripts",
+                    "type": "tree"
+                },
+                {
+                    "path": "testing",
+                    "type": "tree"
+                },
+                {
+                    "path": "tutorial",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "martin-sicho",
+                    "contributions": 517
+                },
+                {
+                    "login": "sohviluukkonen",
+                    "contributions": 310
+                },
+                {
+                    "login": "HellevdM",
+                    "contributions": 159
+                },
+                {
+                    "login": "XuhanLiu",
+                    "contributions": 71
+                },
+                {
+                    "login": "LindeSchoenmaker",
+                    "contributions": 57
+                },
+                {
+                    "login": "OlivierBeq",
+                    "contributions": 42
+                },
+                {
+                    "login": "rlvandenbroek",
+                    "contributions": 33
+                },
+                {
+                    "login": "David-Araripe",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 14,
+                    "title": "Inquiry on Property-Guided Optimization in DrugEx, with Chemprop models",
+                    "created_at": "2025-10-06T21:58:33Z",
+                    "closed_at": "2025-10-18T11:10:11Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Does DrugEx v3 support R-group enumeration with specified attachment points?",
+                    "created_at": "2025-05-29T06:52:32Z",
+                    "closed_at": "2025-10-23T07:12:46Z"
+                },
+                {
+                    "number": 12,
+                    "title": "How to obtain smiles-trans?",
+                    "created_at": "2025-05-22T11:03:39Z",
+                    "closed_at": "2025-10-23T07:12:22Z"
+                },
+                {
+                    "number": 11,
+                    "title": "CUDA error: invalid device ordinal",
+                    "created_at": "2024-12-06T08:17:30Z",
+                    "closed_at": "2024-12-11T16:01:28Z"
+                },
+                {
+                    "number": 9,
+                    "title": "unable to install",
+                    "created_at": "2024-08-27T06:46:56Z",
+                    "closed_at": "2024-12-09T06:05:25Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Issue with the 'drugex download' command",
+                    "created_at": "2024-05-04T23:53:05Z",
+                    "closed_at": "2024-05-20T05:44:13Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Small molecule generation for receptor",
+                    "created_at": "2024-03-15T20:50:53Z",
+                    "closed_at": "2024-04-23T08:31:48Z"
+                },
+                {
+                    "number": 6,
+                    "title": "issue",
+                    "created_at": "2024-02-21T10:53:24Z",
+                    "closed_at": "2024-02-21T11:22:01Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Evaluator must be provided to filter molecules by desirability",
+                    "created_at": "2023-09-27T12:30:03Z",
+                    "closed_at": "2024-03-07T16:22:16Z"
+                },
+                {
+                    "number": 3,
+                    "title": "License confusion",
+                    "created_at": "2023-06-27T14:40:27Z",
+                    "closed_at": "2023-09-21T07:20:16Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Hello",
+                    "created_at": "2023-05-24T09:29:37Z",
+                    "closed_at": "2023-09-21T07:21:25Z"
+                },
+                {
+                    "number": 1,
+                    "title": "qsprpred.scorers not found",
+                    "created_at": "2023-02-22T16:54:04Z",
+                    "closed_at": "2023-03-02T18:28:15Z"
+                }
+            ],
+            "languages": {
+                "Jupyter Notebook": 6494970,
+                "Python": 423582,
+                "Shell": 17705,
+                "Dockerfile": 714
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1021/acs.jcim.3c00434",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "37272707",
+                            "source": "MED",
+                            "pmid": "37272707",
+                            "pmcid": "PMC10306259",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10306259"
+                                ]
+                            },
+                            "doi": "10.1021/acs.jcim.3c00434",
+                            "title": "DrugEx: Deep Learning Models and Tools for Exploration of Drug-Like Chemical Space.",
+                            "authorString": "\u0160\u00edcho M, Luukkonen S, van den Maagdenberg HW, Schoenmaker L, B\u00e9quignon OJM, van Westen GJP.",
+                            "journalTitle": "J Chem Inf Model",
+                            "issue": "12",
+                            "journalVolume": "63",
+                            "pubYear": "2023",
+                            "journalIssn": "1549-9596; 1549-960x; ",
+                            "pageInfo": "3629-3636",
+                            "pubType": "brief-report; research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 17,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-06-06",
+                            "firstPublicationDate": "2023-06-05"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4379376560",
+                "doi": "https://doi.org/10.1021/acs.jcim.3c00434",
+                "title": "DrugEx: Deep Learning Models and Tools for Exploration of Drug-Like Chemical Space",
+                "display_name": "DrugEx: Deep Learning Models and Tools for Exploration of Drug-Like Chemical Space",
+                "publication_year": 2023,
+                "publication_date": "2023-06-05",
+                "ids": {
+                    "openalex": "https://openalex.org/W4379376560",
+                    "doi": "https://doi.org/10.1021/acs.jcim.3c00434",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/37272707"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1021/acs.jcim.3c00434",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jcim.3c00434",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c00434",
+                    "source": {
+                        "id": "https://openalex.org/S167262187",
+                        "display_name": "Journal of Chemical Information and Modeling",
+                        "issn_l": "1549-9596",
+                        "issn": [
+                            "1549-9596",
+                            "1549-960X"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Chemical Information and Modeling",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c00434",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5063973687",
+                            "display_name": "Martin \u0160\u00edcho",
+                            "orcid": "https://orcid.org/0000-0002-8771-1731"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I9073902",
+                                "display_name": "University of Chemistry and Technology, Prague",
+                                "ror": "https://ror.org/05ggn0a85",
+                                "country_code": "CZ",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I9073902"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "CZ",
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Martin \u0160\u00edcho",
+                        "raw_affiliation_strings": [
+                            "CZ-OPENSCREEN: National Infrastructure for Chemical Biology, Department of Informatics and Chemistry, Faculty of Chemical Technology, University of Chemistry and Technology Prague, Technick\u00e1 5, 166 28, Prague, Czech Republic",
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8771-1731",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "CZ-OPENSCREEN: National Infrastructure for Chemical Biology, Department of Informatics and Chemistry, Faculty of Chemical Technology, University of Chemistry and Technology Prague, Technick\u00e1 5, 166 28, Prague, Czech Republic",
+                                "institution_ids": [
+                                    "https://openalex.org/I9073902"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5008972636",
+                            "display_name": "Sohvi Luukkonen",
+                            "orcid": "https://orcid.org/0000-0001-9387-1427"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sohvi Luukkonen",
+                        "raw_affiliation_strings": [
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9387-1427",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052982318",
+                            "display_name": "Helle W. van den Maagdenberg",
+                            "orcid": "https://orcid.org/0000-0002-9718-7806"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Helle W. van den Maagdenberg",
+                        "raw_affiliation_strings": [
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-9718-7806",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5001242977",
+                            "display_name": "Linde Schoenmaker",
+                            "orcid": "https://orcid.org/0000-0001-9879-1004"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Linde Schoenmaker",
+                        "raw_affiliation_strings": [
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9879-1004",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5030705778",
+                            "display_name": "Olivier J. M. B\u00e9quignon",
+                            "orcid": "https://orcid.org/0000-0002-7554-9220"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Olivier J. M. B\u00e9quignon",
+                        "raw_affiliation_strings": [
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-7554-9220",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5088996741",
+                            "display_name": "Gerard J. P. van Westen",
+                            "orcid": "https://orcid.org/0000-0003-0717-1817"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210133171",
+                                "display_name": "Centre for Human Drug Research",
+                                "ror": "https://ror.org/044hshx49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210133171"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Gerard J. P. van Westen",
+                        "raw_affiliation_strings": [
+                            "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-0717-1817",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Leiden Academic Centre for Drug Research, Leiden University, 55 Einsteinweg, 2333 CC, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210133171",
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5088996741"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I121797337",
+                    "https://openalex.org/I4210133171"
+                ],
+                "apc_list": null,
+                "apc_paid": null,
+                "fwci": 6.5975,
+                "has_fulltext": true,
+                "cited_by_count": 35,
+                "citation_normalized_percentile": {
+                    "value": 0.97307026,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 94,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "63",
+                    "issue": "12",
+                    "first_page": "3629",
+                    "last_page": "3636"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10211",
+                    "display_name": "Computational Drug Discovery Methods",
+                    "score": 0.9998999834060669,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1703",
+                        "display_name": "Computational Theory and Mathematics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/17",
+                        "display_name": "Computer Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10211",
+                        "display_name": "Computational Drug Discovery Methods",
+                        "score": 0.9998999834060669,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1703",
+                            "display_name": "Computational Theory and Mathematics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11407",
+                        "display_name": "Innovative Microfluidic and Catalytic Techniques Innovation",
+                        "score": 0.9818000197410583,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2204",
+                            "display_name": "Biomedical Engineering"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/22",
+                            "display_name": "Engineering"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11948",
+                        "display_name": "Machine Learning in Materials Science",
+                        "score": 0.9728999733924866,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2505",
+                            "display_name": "Materials Chemistry"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/25",
+                            "display_name": "Materials Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7922552824020386
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/scripting-language",
+                        "display_name": "Scripting language",
+                        "score": 0.733886182308197
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chemical-space",
+                        "display_name": "Chemical space",
+                        "score": 0.6472638845443726
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graphical-user-interface",
+                        "display_name": "Graphical user interface",
+                        "score": 0.6424894332885742
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interface",
+                        "display_name": "Interface (matter)",
+                        "score": 0.631829023361206
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/variety",
+                        "display_name": "Variety (cybernetics)",
+                        "score": 0.5308336615562439
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/reinforcement-learning",
+                        "display_name": "Reinforcement learning",
+                        "score": 0.5011942386627197
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.49770405888557434
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/generator",
+                        "display_name": "Generator (circuit theory)",
+                        "score": 0.4813607335090637
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-engineering",
+                        "display_name": "Software engineering",
+                        "score": 0.4700031876564026
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/user-interface",
+                        "display_name": "User interface",
+                        "score": 0.4387330710887909
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/human\u2013computer-interaction",
+                        "display_name": "Human\u2013computer interaction",
+                        "score": 0.4109047055244446
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/drug-discovery",
+                        "display_name": "Drug discovery",
+                        "score": 0.3973257839679718
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.3075562119483948
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.30607840418815613
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.16931450366973877
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bioinformatics",
+                        "display_name": "Bioinformatics",
+                        "score": 0.1654907464981079
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7922552824020386
+                    },
+                    {
+                        "id": "https://openalex.org/C61423126",
+                        "wikidata": "https://www.wikidata.org/wiki/Q187432",
+                        "display_name": "Scripting language",
+                        "level": 2,
+                        "score": 0.733886182308197
+                    },
+                    {
+                        "id": "https://openalex.org/C99726746",
+                        "wikidata": "https://www.wikidata.org/wiki/Q906396",
+                        "display_name": "Chemical space",
+                        "level": 3,
+                        "score": 0.6472638845443726
+                    },
+                    {
+                        "id": "https://openalex.org/C37789001",
+                        "wikidata": "https://www.wikidata.org/wiki/Q782543",
+                        "display_name": "Graphical user interface",
+                        "level": 2,
+                        "score": 0.6424894332885742
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.631829023361206
+                    },
+                    {
+                        "id": "https://openalex.org/C136197465",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1729295",
+                        "display_name": "Variety (cybernetics)",
+                        "level": 2,
+                        "score": 0.5308336615562439
+                    },
+                    {
+                        "id": "https://openalex.org/C97541855",
+                        "wikidata": "https://www.wikidata.org/wiki/Q830687",
+                        "display_name": "Reinforcement learning",
+                        "level": 2,
+                        "score": 0.5011942386627197
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.49770405888557434
+                    },
+                    {
+                        "id": "https://openalex.org/C2780992000",
+                        "wikidata": "https://www.wikidata.org/wiki/Q17016113",
+                        "display_name": "Generator (circuit theory)",
+                        "level": 3,
+                        "score": 0.4813607335090637
+                    },
+                    {
+                        "id": "https://openalex.org/C115903868",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+                        "display_name": "Software engineering",
+                        "level": 1,
+                        "score": 0.4700031876564026
+                    },
+                    {
+                        "id": "https://openalex.org/C89505385",
+                        "wikidata": "https://www.wikidata.org/wiki/Q47146",
+                        "display_name": "User interface",
+                        "level": 2,
+                        "score": 0.4387330710887909
+                    },
+                    {
+                        "id": "https://openalex.org/C107457646",
+                        "wikidata": "https://www.wikidata.org/wiki/Q207434",
+                        "display_name": "Human\u2013computer interaction",
+                        "level": 1,
+                        "score": 0.4109047055244446
+                    },
+                    {
+                        "id": "https://openalex.org/C74187038",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1418791",
+                        "display_name": "Drug discovery",
+                        "level": 2,
+                        "score": 0.3973257839679718
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.3075562119483948
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.30607840418815613
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.16931450366973877
+                    },
+                    {
+                        "id": "https://openalex.org/C60644358",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128570",
+                        "display_name": "Bioinformatics",
+                        "level": 1,
+                        "score": 0.1654907464981079
+                    },
+                    {
+                        "id": "https://openalex.org/C157915830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+                        "display_name": "Bubble",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C163258240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q25342",
+                        "display_name": "Power (physics)",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C129307140",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+                        "display_name": "Maximum bubble pressure method",
+                        "level": 3,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C62520636",
+                        "wikidata": "https://www.wikidata.org/wiki/Q944",
+                        "display_name": "Quantum mechanics",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000069550",
+                        "descriptor_name": "Machine Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000069550",
+                        "descriptor_name": "Machine Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000069550",
+                        "descriptor_name": "Machine Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000069550",
+                        "descriptor_name": "Machine Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000077321",
+                        "descriptor_name": "Deep Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000077321",
+                        "descriptor_name": "Deep Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000077321",
+                        "descriptor_name": "Deep Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000077321",
+                        "descriptor_name": "Deep Learning",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015195",
+                        "descriptor_name": "Drug Design",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015195",
+                        "descriptor_name": "Drug Design",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015195",
+                        "descriptor_name": "Drug Design",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015195",
+                        "descriptor_name": "Drug Design",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 4,
+                "locations": [
+                    {
+                        "id": "doi:10.1021/acs.jcim.3c00434",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1021/acs.jcim.3c00434",
+                        "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c00434",
+                        "source": {
+                            "id": "https://openalex.org/S167262187",
+                            "display_name": "Journal of Chemical Information and Modeling",
+                            "issn_l": "1549-9596",
+                            "issn": [
+                                "1549-9596",
+                                "1549-960X"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320006",
+                            "host_organization_name": "American Chemical Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320006"
+                            ],
+                            "host_organization_lineage_names": [
+                                "American Chemical Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Chemical Information and Modeling",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:37272707",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37272707",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of chemical information and modeling",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.atira.dk:openaire/568f3d8b-3b63-485d-a1bf-9f3ed72c889b",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.vumc.nl/en/publications/568f3d8b-3b63-485d-a1bf-9f3ed72c889b",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S7407055350",
+                            "display_name": "Amsterdam UMC (VU Amsterdam) - Institutional Repository",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "\u0160\u00edcho, M, Luukkonen, S, van den Maagdenberg, H W, Schoenmaker, L, B\u00e9quignon, O J M & van Westen, G J P 2023, 'DrugEx : Deep Learning Models and Tools for Exploration of Drug-Like Chemical Space', Journal of Chemical Information and Modeling, vol. 63, no. 12, pp. 3629-3636. https://doi.org/10.1021/acs.jcim.3c00434",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10306259",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10306259",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10306259/pdf/ci3c00434.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Chem Inf Model",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1021/acs.jcim.3c00434",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1021/acs.jcim.3c00434",
+                    "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c00434",
+                    "source": {
+                        "id": "https://openalex.org/S167262187",
+                        "display_name": "Journal of Chemical Information and Modeling",
+                        "issn_l": "1549-9596",
+                        "issn": [
+                            "1549-9596",
+                            "1549-960X"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320006",
+                        "host_organization_name": "American Chemical Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320006"
+                        ],
+                        "host_organization_lineage_names": [
+                            "American Chemical Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Chemical Information and Modeling",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G6155010267",
+                        "display_name": null,
+                        "funder_award_id": "LM2023052",
+                        "funder_id": "https://openalex.org/F4320321005",
+                        "funder_display_name": "Ministerstvo \u0160kolstv\u00ed, Ml\u00e1de\u017ee a T\u011blov\u00fdchovy"
+                    },
+                    {
+                        "id": "https://openalex.org/G7499297189",
+                        "display_name": null,
+                        "funder_award_id": "NWO ENPPS.LIFT.019.010",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G7702355247",
+                        "display_name": null,
+                        "funder_award_id": "22-17367O",
+                        "funder_id": "https://openalex.org/F4320321006",
+                        "funder_display_name": "Grantov\u00e1 Agentura \u010cesk\u00e9 Republiky"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321005",
+                        "display_name": "Ministerstvo \u0160kolstv\u00ed, Ml\u00e1de\u017ee a T\u011blov\u00fdchovy",
+                        "ror": "https://ror.org/037n8p820"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321006",
+                        "display_name": "Grantov\u00e1 Agentura \u010cesk\u00e9 Republiky",
+                        "ror": "https://ror.org/01pv73b02"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4379376560.pdf"
+                },
+                "referenced_works_count": 37,
+                "referenced_works": [
+                    "https://openalex.org/W1981276685",
+                    "https://openalex.org/W1991286793",
+                    "https://openalex.org/W2022476850",
+                    "https://openalex.org/W2022485595",
+                    "https://openalex.org/W2064675550",
+                    "https://openalex.org/W2558999090",
+                    "https://openalex.org/W2610148085",
+                    "https://openalex.org/W2947161483",
+                    "https://openalex.org/W2964199361",
+                    "https://openalex.org/W3009321976",
+                    "https://openalex.org/W3009999522",
+                    "https://openalex.org/W3030948478",
+                    "https://openalex.org/W3044640842",
+                    "https://openalex.org/W3045928028",
+                    "https://openalex.org/W3080671367",
+                    "https://openalex.org/W3127347132",
+                    "https://openalex.org/W3158535672",
+                    "https://openalex.org/W3202726775",
+                    "https://openalex.org/W4214567217",
+                    "https://openalex.org/W4242320552",
+                    "https://openalex.org/W4313597804",
+                    "https://openalex.org/W4318952054",
+                    "https://openalex.org/W4319869596",
+                    "https://openalex.org/W4319986489",
+                    "https://openalex.org/W4321377212",
+                    "https://openalex.org/W4365442601",
+                    "https://openalex.org/W4379376560",
+                    "https://openalex.org/W6894022006",
+                    "https://openalex.org/W6894074071",
+                    "https://openalex.org/W6894079048",
+                    "https://openalex.org/W6894088855",
+                    "https://openalex.org/W6912819117",
+                    "https://openalex.org/W6931347953",
+                    "https://openalex.org/W6931378011",
+                    "https://openalex.org/W6931578503",
+                    "https://openalex.org/W6950416296",
+                    "https://openalex.org/W6969229953"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1485855377",
+                    "https://openalex.org/W2887259674",
+                    "https://openalex.org/W83892589",
+                    "https://openalex.org/W2103694131",
+                    "https://openalex.org/W1968389633",
+                    "https://openalex.org/W2922989098",
+                    "https://openalex.org/W2142078883",
+                    "https://openalex.org/W2989730933",
+                    "https://openalex.org/W2515131888",
+                    "https://openalex.org/W1449451933"
+                ],
+                "abstract_inverted_index": {
+                    "The": [
+                        0,
+                        111
+                    ],
+                    "discovery": [
+                        1
+                    ],
+                    "of": [
+                        2,
+                        19,
+                        27,
+                        81
+                    ],
+                    "novel": [
+                        3
+                    ],
+                    "molecules": [
+                        4
+                    ],
+                    "with": [
+                        5
+                    ],
+                    "desirable": [
+                        6
+                    ],
+                    "properties": [
+                        7
+                    ],
+                    "is": [
+                        8,
+                        114
+                    ],
+                    "a": [
+                        9,
+                        25,
+                        79,
+                        90
+                    ],
+                    "classic": [
+                        10
+                    ],
+                    "challenge": [
+                        11
+                    ],
+                    "in": [
+                        12
+                    ],
+                    "medicinal": [
+                        13
+                    ],
+                    "chemistry.": [
+                        14
+                    ],
+                    "With": [
+                        15
+                    ],
+                    "the": [
+                        16,
+                        51,
+                        65,
+                        71,
+                        101,
+                        106
+                    ],
+                    "recent": [
+                        17
+                    ],
+                    "advancements": [
+                        18
+                    ],
+                    "machine": [
+                        20
+                    ],
+                    "learning,": [
+                        21
+                    ],
+                    "there": [
+                        22
+                    ],
+                    "has": [
+                        23,
+                        89
+                    ],
+                    "been": [
+                        24
+                    ],
+                    "surge": [
+                        26
+                    ],
+                    "de": [
+                        28
+                    ],
+                    "novo": [
+                        29
+                    ],
+                    "drug": [
+                        30
+                    ],
+                    "design": [
+                        31
+                    ],
+                    "tools.": [
+                        32
+                    ],
+                    "However,": [
+                        33
+                    ],
+                    "few": [
+                        34
+                    ],
+                    "resources": [
+                        35
+                    ],
+                    "exist": [
+                        36
+                    ],
+                    "that": [
+                        37
+                    ],
+                    "are": [
+                        38
+                    ],
+                    "user-friendly": [
+                        39
+                    ],
+                    "as": [
+                        40,
+                        42
+                    ],
+                    "well": [
+                        41
+                    ],
+                    "easily": [
+                        43
+                    ],
+                    "customizable.": [
+                        44
+                    ],
+                    "In": [
+                        45
+                    ],
+                    "this": [
+                        46
+                    ],
+                    "application": [
+                        47,
+                        92
+                    ],
+                    "note,": [
+                        48
+                    ],
+                    "we": [
+                        49
+                    ],
+                    "present": [
+                        50
+                    ],
+                    "new": [
+                        52
+                    ],
+                    "versatile": [
+                        53
+                    ],
+                    "open-source": [
+                        54
+                    ],
+                    "software": [
+                        55
+                    ],
+                    "package": [
+                        56,
+                        63,
+                        113
+                    ],
+                    "DrugEx": [
+                        57,
+                        73,
+                        112
+                    ],
+                    "for": [
+                        58
+                    ],
+                    "multiobjective": [
+                        59,
+                        85
+                    ],
+                    "reinforcement": [
+                        60
+                    ],
+                    "learning.": [
+                        61
+                    ],
+                    "This": [
+                        62
+                    ],
+                    "contains": [
+                        64
+                    ],
+                    "consolidated": [
+                        66
+                    ],
+                    "and": [
+                        67,
+                        84,
+                        95
+                    ],
+                    "redesigned": [
+                        68
+                    ],
+                    "scripts": [
+                        69
+                    ],
+                    "from": [
+                        70
+                    ],
+                    "prior": [
+                        72
+                    ],
+                    "papers": [
+                        74
+                    ],
+                    "including": [
+                        75
+                    ],
+                    "multiple": [
+                        76
+                    ],
+                    "generator": [
+                        77
+                    ],
+                    "architectures,": [
+                        78
+                    ],
+                    "variety": [
+                        80
+                    ],
+                    "scoring": [
+                        82
+                    ],
+                    "tools,": [
+                        83
+                    ],
+                    "optimization": [
+                        86
+                    ],
+                    "methods.": [
+                        87
+                    ],
+                    "It": [
+                        88
+                    ],
+                    "flexible": [
+                        91
+                    ],
+                    "programming": [
+                        93
+                    ],
+                    "interface": [
+                        94,
+                        104,
+                        109
+                    ],
+                    "can": [
+                        96
+                    ],
+                    "readily": [
+                        97
+                    ],
+                    "be": [
+                        98
+                    ],
+                    "used": [
+                        99
+                    ],
+                    "via": [
+                        100
+                    ],
+                    "command": [
+                        102
+                    ],
+                    "line": [
+                        103
+                    ],
+                    "or": [
+                        105
+                    ],
+                    "graphical": [
+                        107
+                    ],
+                    "user": [
+                        108
+                    ],
+                    "GenUI.": [
+                        110
+                    ],
+                    "publicly": [
+                        115
+                    ],
+                    "available": [
+                        116
+                    ],
+                    "at": [
+                        117
+                    ],
+                    "https://github.com/CDDLeiden/DrugEx.": [
+                        118
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 13
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 15
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 2
+                    }
+                ],
+                "updated_date": "2026-05-29T09:21:14.243279",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "DrugEx: Deep Learning Models and Tools for Exploration of Drug-Like Chemical Space",
+                "doi": "10.1021/acs.jcim.3c00434",
+                "pmid": "37272707",
+                "pmc": "PMC10306259",
+                "isbns": [],
+                "altmetric_jid": "65eb316bf95d16000163f198",
+                "issns": [
+                    "1549-9596",
+                    "1549-960X"
+                ],
+                "journal": "Journal of Chemical Information and Modeling",
+                "cohorts": {
+                    "pub": 15,
+                    "sci": 10,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 30078001,
+                        "mean": 10.808549316425651,
+                        "rank": 2529981,
+                        "pct": 91,
+                        "higher_than": 27540291
+                    },
+                    "journal": {
+                        "count": 7445,
+                        "mean": 6.307770315648086,
+                        "rank": 502,
+                        "pct": 93,
+                        "higher_than": 6940
+                    },
+                    "similar_age_3m": {
+                        "count": 387208,
+                        "mean": 13.564987810169223,
+                        "rank": 39636,
+                        "pct": 89,
+                        "higher_than": 347459
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 151,
+                        "mean": 8.644701986754965,
+                        "rank": 15,
+                        "pct": 90,
+                        "higher_than": 136
+                    }
+                },
+                "authors": [
+                    "Martin S\u030ci\u0301cho",
+                    "Sohvi Luukkonen",
+                    "Helle W. van den Maagdenberg",
+                    "Linde Schoenmaker",
+                    "Olivier J. M. Be\u0301quignon",
+                    "Gerard J. P. van Westen"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1687737600,
+                "epubdate": 1685923200,
+                "dimensions_publication_id": "pub.1158630734",
+                "altmetric_id": 149574334,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 32,
+                "cited_by_tweeters_count": 26,
+                "cited_by_accounts_count": 26,
+                "last_updated": 1692679170,
+                "score": 16.75,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 16.75
+                },
+                "url": "http://dx.doi.org/10.1021/acs.jcim.3c00434",
+                "added_on": 1685980524,
+                "published_on": 1685923200,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "89",
+                    "connotea": "0"
+                },
+                "readers_count": 89,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=17&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=17&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=17&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=149574334"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 4869,
+            "total_ccn": 1376,
+            "avg_ccn": 2.51,
+            "nloc_per_file": 61.63,
+            "duplicate_rate": 2.64
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

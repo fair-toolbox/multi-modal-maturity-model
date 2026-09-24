@@ -1,0 +1,2364 @@
+{
+    "iScore": {
+        "tool_name": "iScore",
+        "biotools": {
+            "name": "iScore",
+            "description": "An MPI supported software for ranking protein-protein docking models based on a random walk graph kernel and support vector machines.\n\nSupport Vector Machine and Random walk Graph Kernel for Protein Interface Scoring.\n\nWelcome to iScore\u2019s documentation! \u2014 iScore documentation.\n\nSupport Vector Machine on Graph kernel for protein-protein conformation ranking.\n\nInstall iScore using pip install iScore.\n\nMinimal information to install the module.\n\niScore offers simple solutions to classify protein-protein interfaces using a support vector machine approach on graph kernels. The simplest way to use iScore is through dedicated binaries that hide the complexity of the approach and allows access to the code with simple command line interfaces. The two binaries are iscore.train and iscore.predict that respectively train a model using a trainging set and use this model to predict the near-native character of unkown conformations.\n\nFree document hosting provided by Read the Docs",
+            "homepage": "https://github.com/DeepRank/iScore",
+            "biotoolsID": "iScore",
+            "biotoolsCURIE": "biotools:iScore",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3899",
+                            "term": "Protein-protein docking"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2275",
+                    "term": "Molecular modelling"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0108",
+                    "term": "Protein expression"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "Apache-2.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://iscoredoc.readthedocs.io/",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1101/788166",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "Pub2Tools",
+            "additionDate": "2020-01-09T17:47:58Z",
+            "lastUpdate": "2020-12-14T13:26:15Z",
+            "editPermission": {
+                "type": "public",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 137098046,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMzcwOTgwNDY=",
+                "name": "iScore",
+                "full_name": "DeepRank/iScore",
+                "private": false,
+                "owner": {
+                    "login": "DeepRank",
+                    "id": 31408512,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxNDA4NTEy",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/31408512?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/DeepRank",
+                    "html_url": "https://github.com/DeepRank",
+                    "followers_url": "https://api.github.com/users/DeepRank/followers",
+                    "following_url": "https://api.github.com/users/DeepRank/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/DeepRank/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/DeepRank/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/DeepRank/subscriptions",
+                    "organizations_url": "https://api.github.com/users/DeepRank/orgs",
+                    "repos_url": "https://api.github.com/users/DeepRank/repos",
+                    "events_url": "https://api.github.com/users/DeepRank/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/DeepRank/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/DeepRank/iScore",
+                "description": "iScore: an MPI supported software for ranking protein-protein docking models based on a random walk graph kernel and support vector machines",
+                "fork": false,
+                "url": "https://api.github.com/repos/DeepRank/iScore",
+                "forks_url": "https://api.github.com/repos/DeepRank/iScore/forks",
+                "keys_url": "https://api.github.com/repos/DeepRank/iScore/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/DeepRank/iScore/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/DeepRank/iScore/teams",
+                "hooks_url": "https://api.github.com/repos/DeepRank/iScore/hooks",
+                "issue_events_url": "https://api.github.com/repos/DeepRank/iScore/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/DeepRank/iScore/events",
+                "assignees_url": "https://api.github.com/repos/DeepRank/iScore/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/DeepRank/iScore/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/DeepRank/iScore/tags",
+                "blobs_url": "https://api.github.com/repos/DeepRank/iScore/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/DeepRank/iScore/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/DeepRank/iScore/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/DeepRank/iScore/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/DeepRank/iScore/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/DeepRank/iScore/languages",
+                "stargazers_url": "https://api.github.com/repos/DeepRank/iScore/stargazers",
+                "contributors_url": "https://api.github.com/repos/DeepRank/iScore/contributors",
+                "subscribers_url": "https://api.github.com/repos/DeepRank/iScore/subscribers",
+                "subscription_url": "https://api.github.com/repos/DeepRank/iScore/subscription",
+                "commits_url": "https://api.github.com/repos/DeepRank/iScore/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/DeepRank/iScore/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/DeepRank/iScore/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/DeepRank/iScore/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/DeepRank/iScore/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/DeepRank/iScore/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/DeepRank/iScore/merges",
+                "archive_url": "https://api.github.com/repos/DeepRank/iScore/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/DeepRank/iScore/downloads",
+                "issues_url": "https://api.github.com/repos/DeepRank/iScore/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/DeepRank/iScore/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/DeepRank/iScore/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/DeepRank/iScore/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/DeepRank/iScore/labels{/name}",
+                "releases_url": "https://api.github.com/repos/DeepRank/iScore/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/DeepRank/iScore/deployments",
+                "created_at": "2018-06-12T16:16:02Z",
+                "updated_at": "2025-05-21T08:10:47Z",
+                "pushed_at": "2022-06-25T09:12:45Z",
+                "git_url": "git://github.com/DeepRank/iScore.git",
+                "ssh_url": "git@github.com:DeepRank/iScore.git",
+                "clone_url": "https://github.com/DeepRank/iScore.git",
+                "svn_url": "https://github.com/DeepRank/iScore",
+                "homepage": "",
+                "size": 21654,
+                "stargazers_count": 31,
+                "watchers_count": 31,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 10,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 12,
+                "license": {
+                    "key": "apache-2.0",
+                    "name": "Apache License 2.0",
+                    "spdx_id": "Apache-2.0",
+                    "url": "https://api.github.com/licenses/apache-2.0",
+                    "node_id": "MDc6TGljZW5zZTI="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 10,
+                "open_issues": 12,
+                "watchers": 31,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "DeepRank",
+                    "id": 31408512,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxNDA4NTEy",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/31408512?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/DeepRank",
+                    "html_url": "https://github.com/DeepRank",
+                    "followers_url": "https://api.github.com/users/DeepRank/followers",
+                    "following_url": "https://api.github.com/users/DeepRank/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/DeepRank/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/DeepRank/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/DeepRank/subscriptions",
+                    "organizations_url": "https://api.github.com/users/DeepRank/orgs",
+                    "repos_url": "https://api.github.com/users/DeepRank/repos",
+                    "events_url": "https://api.github.com/users/DeepRank/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/DeepRank/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 10,
+                "subscribers_count": 3
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".zenodo.json",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "MANIFEST.in",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "example",
+                    "type": "tree"
+                },
+                {
+                    "path": "iScore",
+                    "type": "tree"
+                },
+                {
+                    "path": "image",
+                    "type": "tree"
+                },
+                {
+                    "path": "makefile",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "test",
+                    "type": "tree"
+                },
+                {
+                    "path": "test_mpi",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "NicoRenaud",
+                    "contributions": 189
+                },
+                {
+                    "login": "CunliangGeng",
+                    "contributions": 66
+                },
+                {
+                    "login": "abelsiqueira",
+                    "contributions": 2
+                },
+                {
+                    "login": "LilySnow",
+                    "contributions": 1
+                },
+                {
+                    "login": "dependabot-preview[bot]",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 29,
+                    "title": "fail to repeat 684 dataset result",
+                    "created_at": "2021-01-25T04:06:14Z",
+                    "closed_at": "2022-02-22T16:50:01Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Dependabot couldn't authenticate with https://pypi.python.org/simple/",
+                    "created_at": "2020-09-24T06:29:50Z",
+                    "closed_at": "2020-09-28T06:22:23Z"
+                },
+                {
+                    "number": 21,
+                    "title": "a bug with \"mpiexec -n ${NPROC} iScore.predict\"",
+                    "created_at": "2020-02-05T10:04:04Z",
+                    "closed_at": "2020-02-07T08:43:01Z"
+                },
+                {
+                    "number": 20,
+                    "title": "Use PSSMGen or not?",
+                    "created_at": "2020-01-29T15:35:10Z",
+                    "closed_at": "2020-02-04T13:43:42Z"
+                },
+                {
+                    "number": 19,
+                    "title": "we need specify in the doc or somewhere: the lower iscore the better ",
+                    "created_at": "2020-01-29T10:38:06Z",
+                    "closed_at": "2020-02-04T13:55:13Z"
+                },
+                {
+                    "number": 18,
+                    "title": "need pssm mapping code to be more flexible",
+                    "created_at": "2020-01-29T09:54:11Z",
+                    "closed_at": "2020-02-04T13:56:38Z"
+                },
+                {
+                    "number": 16,
+                    "title": "error when some pdb files cannot have graph generated",
+                    "created_at": "2020-01-29T07:47:26Z",
+                    "closed_at": "2020-01-29T15:19:15Z"
+                },
+                {
+                    "number": 15,
+                    "title": "need the PSSM class to allow input sequence",
+                    "created_at": "2020-01-29T03:21:19Z",
+                    "closed_at": "2020-01-29T13:17:59Z"
+                },
+                {
+                    "number": 14,
+                    "title": "need proper error messages when pssm does not match pdb",
+                    "created_at": "2020-01-28T09:42:27Z",
+                    "closed_at": "2020-01-29T13:49:18Z"
+                },
+                {
+                    "number": 13,
+                    "title": "the pssm class hard-coded the file structure",
+                    "created_at": "2020-01-28T09:37:12Z",
+                    "closed_at": "2020-01-29T13:51:52Z"
+                },
+                {
+                    "number": 12,
+                    "title": "provide training_set.tar.gz",
+                    "created_at": "2020-01-28T03:02:24Z",
+                    "closed_at": "2020-02-05T13:35:03Z"
+                },
+                {
+                    "number": 9,
+                    "title": "issues of iscore doc",
+                    "created_at": "2019-06-04T11:23:55Z",
+                    "closed_at": "2020-02-20T08:27:08Z"
+                },
+                {
+                    "number": 8,
+                    "title": "how to uninstall iscore",
+                    "created_at": "2019-06-03T15:15:11Z",
+                    "closed_at": "2019-06-04T08:34:48Z"
+                }
+            ],
+            "languages": {
+                "Python": 151489,
+                "Cuda": 14092,
+                "Makefile": 1326,
+                "C++": 869
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btz496",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "31199455",
+                            "source": "MED",
+                            "pmid": "31199455",
+                            "pmcid": "PMC6956772",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC6956772"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btz496",
+                            "title": "iScore: a novel graph kernel-based function for scoring protein-protein docking models.",
+                            "authorString": "Geng C, Jung Y, Renaud N, Honavar V, Bonvin AMJJ, Xue LC.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "1",
+                            "journalVolume": "36",
+                            "pubYear": "2020",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "112-121",
+                            "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 67,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2019-06-15",
+                            "firstPublicationDate": "2020-01-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2950365860",
+                "doi": "https://doi.org/10.1093/bioinformatics/btz496",
+                "title": "iScore: a novel graph kernel-based function for scoring protein\u2013protein docking models",
+                "display_name": "iScore: a novel graph kernel-based function for scoring protein\u2013protein docking models",
+                "publication_year": 2019,
+                "publication_date": "2019-06-11",
+                "ids": {
+                    "openalex": "https://openalex.org/W2950365860",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btz496",
+                    "mag": "2950365860",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/31199455"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btz496",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz496",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/1/112/31813898/btz496.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "bronze",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/36/1/112/31813898/btz496.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5065088864",
+                            "display_name": "Cunliang Geng",
+                            "orcid": "https://orcid.org/0000-0002-1409-8358"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Cunliang Geng",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5035448772",
+                            "display_name": "Yong Gyu Jung",
+                            "orcid": "https://orcid.org/0000-0002-8493-4390"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I130769515",
+                                "display_name": "Pennsylvania State University",
+                                "ror": "https://ror.org/04p491231",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Yong Jung",
+                        "raw_affiliation_strings": [
+                            "Artificial Intelligence Research Laboratory, Pennsylvania State University, University Park , PA 16823, USA",
+                            "Bioinformatics & Genomics Graduate Program, Pennsylvania State University, University Park , PA 16802, USA",
+                            "Huck Institutes of the Life Sciences, Pennsylvania State University, University Park , PA 16802, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Artificial Intelligence Research Laboratory, Pennsylvania State University, University Park , PA 16823, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Bioinformatics & Genomics Graduate Program, Pennsylvania State University, University Park , PA 16802, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Huck Institutes of the Life Sciences, Pennsylvania State University, University Park , PA 16802, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5090656950",
+                            "display_name": "Nicolas Renaud",
+                            "orcid": "https://orcid.org/0000-0001-9589-2694"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210095242",
+                                "display_name": "Netherlands eScience Center",
+                                "ror": "https://ror.org/00rbjv475",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800991832",
+                                    "https://openalex.org/I4210090210",
+                                    "https://openalex.org/I4210095242"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Nicolas Renaud",
+                        "raw_affiliation_strings": [
+                            "Netherlands eScience Center , Amsterdam 1098 XG, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Netherlands eScience Center , Amsterdam 1098 XG, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210095242"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5004737962",
+                            "display_name": "Vasant Honavar",
+                            "orcid": "https://orcid.org/0000-0001-5399-3489"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I130769515",
+                                "display_name": "Pennsylvania State University",
+                                "ror": "https://ror.org/04p491231",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Vasant Honavar",
+                        "raw_affiliation_strings": [
+                            "Artificial Intelligence Research Laboratory, Pennsylvania State University, University Park , PA 16823, USA",
+                            "Bioinformatics & Genomics Graduate Program, Pennsylvania State University, University Park , PA 16802, USA",
+                            "Center for Big Data Analytics and Discovery Informatics, Pennsylvania State University, University Park , PA 16823, USA",
+                            "Clinical and Translational Sciences Institute, University Park , PA 16802, USA",
+                            "College of Information Sciences & Technology, Pennsylvania State University, University Park , PA 16802, USA",
+                            "Huck Institutes of the Life Sciences, Pennsylvania State University, University Park , PA 16802, USA",
+                            "Institute for Cyberscience, University Park , PA 16802, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Artificial Intelligence Research Laboratory, Pennsylvania State University, University Park , PA 16823, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Bioinformatics & Genomics Graduate Program, Pennsylvania State University, University Park , PA 16802, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Center for Big Data Analytics and Discovery Informatics, Pennsylvania State University, University Park , PA 16823, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Clinical and Translational Sciences Institute, University Park , PA 16802, USA",
+                                "institution_ids": []
+                            },
+                            {
+                                "raw_affiliation_string": "College of Information Sciences & Technology, Pennsylvania State University, University Park , PA 16802, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Huck Institutes of the Life Sciences, Pennsylvania State University, University Park , PA 16802, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Institute for Cyberscience, University Park , PA 16802, USA",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064072429",
+                            "display_name": "Alexandre M. J. J. Bonvin",
+                            "orcid": "https://orcid.org/0000-0001-7369-1322"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Alexandre M J J Bonvin",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7369-1322",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5086880868",
+                            "display_name": "Li C. Xue",
+                            "orcid": "https://orcid.org/0000-0002-2613-538X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Li C Xue",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-2613-538X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science \u2013 Chemistry, Utrecht University , Utrecht 3584 CH, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5064072429",
+                    "https://openalex.org/A5086880868"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I193662353"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": null,
+                "fwci": 4.7848,
+                "has_fulltext": false,
+                "cited_by_count": 88,
+                "citation_normalized_percentile": {
+                    "value": 0.96047778,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "36",
+                    "issue": "1",
+                    "first_page": "112",
+                    "last_page": "121"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10887",
+                    "display_name": "Bioinformatics and Genomic Networks",
+                    "score": 0.5819000005722046,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10887",
+                        "display_name": "Bioinformatics and Genomic Networks",
+                        "score": 0.5819000005722046,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10211",
+                        "display_name": "Computational Drug Discovery Methods",
+                        "score": 0.20499999821186066,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1703",
+                            "display_name": "Computational Theory and Mathematics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10044",
+                        "display_name": "Protein Structure and Dynamics",
+                        "score": 0.05169999971985817,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/docking",
+                        "display_name": "Docking (animal)",
+                        "score": 0.7526483535766602
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7016585469245911
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/macromolecular-docking",
+                        "display_name": "Macromolecular docking",
+                        "score": 0.48213765025138855
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/graph",
+                        "display_name": "Graph",
+                        "score": 0.4703400731086731
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/machine-learning",
+                        "display_name": "Machine learning",
+                        "score": 0.4432094991207123
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.41639333963394165
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.41369158029556274
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.40214860439300537
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/protein-structure",
+                        "display_name": "Protein structure",
+                        "score": 0.3963264226913452
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/theoretical-computer-science",
+                        "display_name": "Theoretical computer science",
+                        "score": 0.379526823759079
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.21499285101890564
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41685203",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1974042",
+                        "display_name": "Docking (animal)",
+                        "level": 2,
+                        "score": 0.7526483535766602
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7016585469245911
+                    },
+                    {
+                        "id": "https://openalex.org/C116887118",
+                        "wikidata": "https://www.wikidata.org/wiki/Q836685",
+                        "display_name": "Macromolecular docking",
+                        "level": 3,
+                        "score": 0.48213765025138855
+                    },
+                    {
+                        "id": "https://openalex.org/C132525143",
+                        "wikidata": "https://www.wikidata.org/wiki/Q141488",
+                        "display_name": "Graph",
+                        "level": 2,
+                        "score": 0.4703400731086731
+                    },
+                    {
+                        "id": "https://openalex.org/C119857082",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2539",
+                        "display_name": "Machine learning",
+                        "level": 1,
+                        "score": 0.4432094991207123
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.41639333963394165
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.41369158029556274
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.40214860439300537
+                    },
+                    {
+                        "id": "https://openalex.org/C47701112",
+                        "wikidata": "https://www.wikidata.org/wiki/Q735188",
+                        "display_name": "Protein structure",
+                        "level": 2,
+                        "score": 0.3963264226913452
+                    },
+                    {
+                        "id": "https://openalex.org/C80444323",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+                        "display_name": "Theoretical computer science",
+                        "level": 1,
+                        "score": 0.379526823759079
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.21499285101890564
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C159110408",
+                        "wikidata": "https://www.wikidata.org/wiki/Q121176",
+                        "display_name": "Nursing",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000465",
+                        "descriptor_name": "Algorithms",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011485",
+                        "descriptor_name": "Protein Binding",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011485",
+                        "descriptor_name": "Protein Binding",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011485",
+                        "descriptor_name": "Protein Binding",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011485",
+                        "descriptor_name": "Protein Binding",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011487",
+                        "descriptor_name": "Protein Conformation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011487",
+                        "descriptor_name": "Protein Conformation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011487",
+                        "descriptor_name": "Protein Conformation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011487",
+                        "descriptor_name": "Protein Conformation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000378",
+                        "qualifier_name": "metabolism",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": "Q000737",
+                        "qualifier_name": "chemistry",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062105",
+                        "descriptor_name": "Molecular Docking Simulation",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062105",
+                        "descriptor_name": "Molecular Docking Simulation",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062105",
+                        "descriptor_name": "Molecular Docking Simulation",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D062105",
+                        "descriptor_name": "Molecular Docking Simulation",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btz496",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz496",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/1/112/31813898/btz496.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:31199455",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31199455",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:5915558",
+                        "is_oa": false,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6956772",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:scholarsphere.psu.edu:aaf9604f-6378-4e90-b8cb-c768d9945ade",
+                        "is_oa": true,
+                        "landing_page_url": "https://scholarsphere.psu.edu/resources/aaf9604f-6378-4e90-b8cb-c768d9945ade",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401507",
+                            "display_name": "ScholarSphere (Penn State Libraries)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I3130638595",
+                            "host_organization_name": "Pangasinan State University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I3130638595"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/391765",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/391765",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(1). Oxford University Press",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btz496",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz496",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/1/112/31813898/btz496.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "display_name": "Peace, Justice and strong institutions",
+                        "score": 0.6000000238418579,
+                        "id": "https://metadata.un.org/sdg/16"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1140435109",
+                        "display_name": null,
+                        "funder_award_id": "1636795",
+                        "funder_id": "https://openalex.org/F4320306076",
+                        "funder_display_name": "National Science Foundation"
+                    },
+                    {
+                        "id": "https://openalex.org/G1750899738",
+                        "display_name": null,
+                        "funder_award_id": "1518732",
+                        "funder_id": "https://openalex.org/F4320306076",
+                        "funder_display_name": "National Science Foundation"
+                    },
+                    {
+                        "id": "https://openalex.org/G1865111532",
+                        "display_name": null,
+                        "funder_award_id": "027016G04",
+                        "funder_id": "https://openalex.org/F4320314239",
+                        "funder_display_name": "Netherlands eScience Center"
+                    },
+                    {
+                        "id": "https://openalex.org/G3526734248",
+                        "display_name": null,
+                        "funder_award_id": "1640834",
+                        "funder_id": "https://openalex.org/F4320306076",
+                        "funder_display_name": "National Science Foundation"
+                    },
+                    {
+                        "id": "https://openalex.org/G5005031318",
+                        "display_name": null,
+                        "funder_award_id": "UL1 TR000127",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G5109729550",
+                        "display_name": null,
+                        "funder_award_id": "722.014.005",
+                        "funder_id": "https://openalex.org/F4320321800",
+                        "funder_display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek"
+                    },
+                    {
+                        "id": "https://openalex.org/G5411885648",
+                        "display_name": null,
+                        "funder_award_id": "201406220132",
+                        "funder_id": "https://openalex.org/F4320322725",
+                        "funder_display_name": "China Scholarship Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G7544350372",
+                        "display_name": null,
+                        "funder_award_id": "TR002014",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320306076",
+                        "display_name": "National Science Foundation",
+                        "ror": "https://ror.org/021nxhr62"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320310071",
+                        "display_name": "Indian Institute of Science",
+                        "ror": "https://ror.org/04dese585"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320314239",
+                        "display_name": "Netherlands eScience Center",
+                        "ror": "https://ror.org/00rbjv475"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321800",
+                        "display_name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+                        "ror": "https://ror.org/04jsz6e67"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322725",
+                        "display_name": "China Scholarship Council",
+                        "ror": "https://ror.org/04atp4p48"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332161",
+                        "display_name": "National Institutes of Health",
+                        "ror": "https://ror.org/01cwqze88"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320337472",
+                        "display_name": "National Center for Advancing Translational Sciences",
+                        "ror": "https://ror.org/04pw6fb54"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2950365860.pdf"
+                },
+                "referenced_works_count": 68,
+                "referenced_works": [
+                    "https://openalex.org/W1030883578",
+                    "https://openalex.org/W1816257748",
+                    "https://openalex.org/W1907442748",
+                    "https://openalex.org/W1948562438",
+                    "https://openalex.org/W1963915837",
+                    "https://openalex.org/W1979284950",
+                    "https://openalex.org/W1981844148",
+                    "https://openalex.org/W1983851480",
+                    "https://openalex.org/W1985481261",
+                    "https://openalex.org/W1988739180",
+                    "https://openalex.org/W1988972583",
+                    "https://openalex.org/W1995017064",
+                    "https://openalex.org/W2000776641",
+                    "https://openalex.org/W2001457899",
+                    "https://openalex.org/W2012104865",
+                    "https://openalex.org/W2016385245",
+                    "https://openalex.org/W2018410079",
+                    "https://openalex.org/W2024911966",
+                    "https://openalex.org/W2027403155",
+                    "https://openalex.org/W2027794214",
+                    "https://openalex.org/W2041189078",
+                    "https://openalex.org/W2046736165",
+                    "https://openalex.org/W2056778909",
+                    "https://openalex.org/W2064000859",
+                    "https://openalex.org/W2067596330",
+                    "https://openalex.org/W2073911195",
+                    "https://openalex.org/W2087485814",
+                    "https://openalex.org/W2090672363",
+                    "https://openalex.org/W2091734240",
+                    "https://openalex.org/W2099438806",
+                    "https://openalex.org/W2105144494",
+                    "https://openalex.org/W2110968143",
+                    "https://openalex.org/W2116475379",
+                    "https://openalex.org/W2118401855",
+                    "https://openalex.org/W2120836664",
+                    "https://openalex.org/W2125677968",
+                    "https://openalex.org/W2129454543",
+                    "https://openalex.org/W2132328103",
+                    "https://openalex.org/W2136777954",
+                    "https://openalex.org/W2137167381",
+                    "https://openalex.org/W2140522686",
+                    "https://openalex.org/W2148212498",
+                    "https://openalex.org/W2153635508",
+                    "https://openalex.org/W2153983456",
+                    "https://openalex.org/W2154019529",
+                    "https://openalex.org/W2158714788",
+                    "https://openalex.org/W2160868144",
+                    "https://openalex.org/W2162259397",
+                    "https://openalex.org/W2163591503",
+                    "https://openalex.org/W2165531467",
+                    "https://openalex.org/W2166298331",
+                    "https://openalex.org/W2169408159",
+                    "https://openalex.org/W2170564629",
+                    "https://openalex.org/W2216040507",
+                    "https://openalex.org/W2548860129",
+                    "https://openalex.org/W2554109484",
+                    "https://openalex.org/W2588962857",
+                    "https://openalex.org/W2607037799",
+                    "https://openalex.org/W2612675301",
+                    "https://openalex.org/W2737584047",
+                    "https://openalex.org/W2776454016",
+                    "https://openalex.org/W2911738047",
+                    "https://openalex.org/W2915344963",
+                    "https://openalex.org/W3128824229",
+                    "https://openalex.org/W4206686222",
+                    "https://openalex.org/W4251504464",
+                    "https://openalex.org/W6678192332",
+                    "https://openalex.org/W6758327135"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2585040066",
+                    "https://openalex.org/W2996908194",
+                    "https://openalex.org/W2162380182",
+                    "https://openalex.org/W3005126098",
+                    "https://openalex.org/W2157273785",
+                    "https://openalex.org/W2862730334",
+                    "https://openalex.org/W3011103292",
+                    "https://openalex.org/W3187431608",
+                    "https://openalex.org/W1974422922",
+                    "https://openalex.org/W4309353019"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "Protein": [
+                        1
+                    ],
+                    "complexes": [
+                        2,
+                        17
+                    ],
+                    "play": [
+                        3
+                    ],
+                    "critical": [
+                        4,
+                        19
+                    ],
+                    "roles": [
+                        5,
+                        30
+                    ],
+                    "in": [
+                        6,
+                        31,
+                        189
+                    ],
+                    "many": [
+                        7
+                    ],
+                    "aspects": [
+                        8
+                    ],
+                    "of": [
+                        9,
+                        15,
+                        26,
+                        41,
+                        50,
+                        67,
+                        82,
+                        118,
+                        125,
+                        139,
+                        162,
+                        196,
+                        214,
+                        223,
+                        228
+                    ],
+                    "biological": [
+                        10
+                    ],
+                    "functions.": [
+                        11
+                    ],
+                    "Three-dimensional": [
+                        12
+                    ],
+                    "(3D)": [
+                        13
+                    ],
+                    "structures": [
+                        14,
+                        66
+                    ],
+                    "protein": [
+                        16,
+                        52,
+                        218,
+                        229
+                    ],
+                    "are": [
+                        18,
+                        250,
+                        259
+                    ],
+                    "for": [
+                        20,
+                        203,
+                        220
+                    ],
+                    "gaining": [
+                        21
+                    ],
+                    "insights": [
+                        22
+                    ],
+                    "into": [
+                        23
+                    ],
+                    "structural": [
+                        24
+                    ],
+                    "bases": [
+                        25
+                    ],
+                    "interactions": [
+                        27
+                    ],
+                    "and": [
+                        28,
+                        44,
+                        122,
+                        151,
+                        200,
+                        225
+                    ],
+                    "their": [
+                        29
+                    ],
+                    "the": [
+                        32,
+                        42,
+                        85,
+                        119,
+                        153,
+                        171,
+                        176,
+                        185,
+                        194,
+                        210,
+                        246
+                    ],
+                    "biomolecular": [
+                        33,
+                        68
+                    ],
+                    "pathways": [
+                        34
+                    ],
+                    "that": [
+                        35,
+                        105,
+                        138
+                    ],
+                    "orchestrate": [
+                        36
+                    ],
+                    "key": [
+                        37
+                    ],
+                    "cellular": [
+                        38
+                    ],
+                    "processes.": [
+                        39
+                    ],
+                    "Because": [
+                        40
+                    ],
+                    "expense": [
+                        43
+                    ],
+                    "effort": [
+                        45
+                    ],
+                    "associated": [
+                        46
+                    ],
+                    "with": [
+                        47,
+                        110,
+                        184
+                    ],
+                    "experimental": [
+                        48
+                    ],
+                    "determinations": [
+                        49
+                    ],
+                    "3D": [
+                        51,
+                        65
+                    ],
+                    "complex": [
+                        53
+                    ],
+                    "structures,": [
+                        54
+                    ],
+                    "computational": [
+                        55
+                    ],
+                    "docking": [
+                        56,
+                        76,
+                        163,
+                        166,
+                        247
+                    ],
+                    "has": [
+                        57
+                    ],
+                    "evolved": [
+                        58
+                    ],
+                    "as": [
+                        59
+                    ],
+                    "a": [
+                        60,
+                        79,
+                        90,
+                        98,
+                        111,
+                        115,
+                        123,
+                        130,
+                        159
+                    ],
+                    "valuable": [
+                        61
+                    ],
+                    "tool": [
+                        62
+                    ],
+                    "to": [
+                        63,
+                        101,
+                        217
+                    ],
+                    "predict": [
+                        64
+                    ],
+                    "complexes.": [
+                        69,
+                        230
+                    ],
+                    "Despite": [
+                        70
+                    ],
+                    "recent": [
+                        71
+                    ],
+                    "progress,": [
+                        72
+                    ],
+                    "reliably": [
+                        73
+                    ],
+                    "distinguishing": [
+                        74
+                    ],
+                    "near-native": [
+                        75,
+                        224
+                    ],
+                    "conformations": [
+                        77,
+                        104,
+                        227
+                    ],
+                    "from": [
+                        78,
+                        240,
+                        252
+                    ],
+                    "large": [
+                        80
+                    ],
+                    "number": [
+                        81
+                    ],
+                    "candidate": [
+                        83
+                    ],
+                    "conformations,": [
+                        84
+                    ],
+                    "so-called": [
+                        86
+                    ],
+                    "scoring": [
+                        87,
+                        102,
+                        131,
+                        141,
+                        173,
+                        187,
+                        204
+                    ],
+                    "problem,": [
+                        88
+                    ],
+                    "remains": [
+                        89
+                    ],
+                    "major": [
+                        91
+                    ],
+                    "challenge.": [
+                        92
+                    ],
+                    "RESULTS:": [
+                        93
+                    ],
+                    "Here": [
+                        94
+                    ],
+                    "we": [
+                        95
+                    ],
+                    "present": [
+                        96
+                    ],
+                    "iScore,": [
+                        97
+                    ],
+                    "novel": [
+                        99
+                    ],
+                    "approach": [
+                        100
+                    ],
+                    "docked": [
+                        103,
+                        205
+                    ],
+                    "combines": [
+                        106
+                    ],
+                    "HADDOCK": [
+                        107
+                    ],
+                    "energy": [
+                        108
+                    ],
+                    "terms": [
+                        109
+                    ],
+                    "score": [
+                        112,
+                        155,
+                        178
+                    ],
+                    "obtained": [
+                        113
+                    ],
+                    "using": [
+                        114
+                    ],
+                    "graph": [
+                        116,
+                        215
+                    ],
+                    "representation": [
+                        117
+                    ],
+                    "protein-protein": [
+                        120
+                    ],
+                    "interfaces": [
+                        121,
+                        219
+                    ],
+                    "measure": [
+                        124
+                    ],
+                    "evolutionary": [
+                        126
+                    ],
+                    "conservation.": [
+                        127
+                    ],
+                    "It": [
+                        128
+                    ],
+                    "achieves": [
+                        129
+                    ],
+                    "performance": [
+                        132
+                    ],
+                    "competitive": [
+                        133
+                    ],
+                    "with,": [
+                        134
+                    ],
+                    "or": [
+                        135
+                    ],
+                    "superior": [
+                        136
+                    ],
+                    "to,": [
+                        137
+                    ],
+                    "state-of-the-art": [
+                        140
+                    ],
+                    "functions": [
+                        142
+                    ],
+                    "on": [
+                        143,
+                        175
+                    ],
+                    "two": [
+                        144
+                    ],
+                    "independent": [
+                        145
+                    ],
+                    "datasets:": [
+                        146
+                    ],
+                    "(i)": [
+                        147
+                    ],
+                    "Docking": [
+                        148
+                    ],
+                    "software-specific": [
+                        149
+                    ],
+                    "models": [
+                        150,
+                        248
+                    ],
+                    "(ii)": [
+                        152
+                    ],
+                    "CAPRI": [
+                        154,
+                        177
+                    ],
+                    "set": [
+                        156,
+                        179
+                    ],
+                    "generated": [
+                        157
+                    ],
+                    "by": [
+                        158
+                    ],
+                    "wide": [
+                        160
+                    ],
+                    "variety": [
+                        161
+                    ],
+                    "approaches": [
+                        164,
+                        174
+                    ],
+                    "(i.e.": [
+                        165
+                    ],
+                    "software-non-specific).": [
+                        167
+                    ],
+                    "iScore": [
+                        168,
+                        235
+                    ],
+                    "ranks": [
+                        169
+                    ],
+                    "among": [
+                        170
+                    ],
+                    "top": [
+                        172
+                    ],
+                    "(13": [
+                        180
+                    ],
+                    "targets)": [
+                        181
+                    ],
+                    "when": [
+                        182
+                    ],
+                    "compared": [
+                        183
+                    ],
+                    "37": [
+                        186
+                    ],
+                    "groups": [
+                        188
+                    ],
+                    "CAPRI.": [
+                        190
+                    ],
+                    "The": [
+                        191,
+                        234
+                    ],
+                    "results": [
+                        192
+                    ],
+                    "demonstrate": [
+                        193
+                    ],
+                    "utility": [
+                        195
+                    ],
+                    "combining": [
+                        197
+                    ],
+                    "evolutionary,": [
+                        198
+                    ],
+                    "topological": [
+                        199
+                    ],
+                    "energetic": [
+                        201
+                    ],
+                    "information": [
+                        202
+                    ],
+                    "conformations.": [
+                        206
+                    ],
+                    "This": [
+                        207
+                    ],
+                    "work": [
+                        208
+                    ],
+                    "represents": [
+                        209
+                    ],
+                    "first": [
+                        211
+                    ],
+                    "successful": [
+                        212
+                    ],
+                    "demonstration": [
+                        213
+                    ],
+                    "kernels": [
+                        216
+                    ],
+                    "effective": [
+                        221
+                    ],
+                    "discrimination": [
+                        222
+                    ],
+                    "non-native": [
+                        226
+                    ],
+                    "AVAILABILITY": [
+                        231
+                    ],
+                    "AND": [
+                        232
+                    ],
+                    "IMPLEMENTATION:": [
+                        233
+                    ],
+                    "code": [
+                        236
+                    ],
+                    "is": [
+                        237
+                    ],
+                    "freely": [
+                        238
+                    ],
+                    "available": [
+                        239,
+                        251,
+                        260
+                    ],
+                    "Github:": [
+                        241
+                    ],
+                    "https://github.com/DeepRank/iScore": [
+                        242
+                    ],
+                    "(DOI:": [
+                        243
+                    ],
+                    "10.5281/zenodo.2630567).": [
+                        244
+                    ],
+                    "And": [
+                        245
+                    ],
+                    "used": [
+                        249
+                    ],
+                    "SBGrid:": [
+                        253
+                    ],
+                    "https://data.sbgrid.org/dataset/684).": [
+                        254
+                    ],
+                    "SUPPLEMENTARY": [
+                        255
+                    ],
+                    "INFORMATION:": [
+                        256
+                    ],
+                    "Supplementary": [
+                        257
+                    ],
+                    "data": [
+                        258
+                    ],
+                    "at": [
+                        261
+                    ],
+                    "Bioinformatics": [
+                        262
+                    ],
+                    "online.": [
+                        263
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 20
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 19
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 14
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2017,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": null
+        },
+        "errors": [
+            "altmetric: HTTP error while fetching data for DOI 10.1093/bioinformatics/btz496"
+        ],
+        "lizard": {
+            "total_nloc": 1840,
+            "total_ccn": 529,
+            "avg_ccn": 4.1,
+            "nloc_per_file": 70.77,
+            "duplicate_rate": 7.82
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,2373 @@
+{
+    "Mutalyzer": {
+        "tool_name": "Mutalyzer",
+        "biotools": {
+            "name": "Mutalyzer",
+            "description": "Tool that checks, analyzes and corrects descriptions of sequence variants according to the standard human sequence variant nomenclature of the Human Genome Sequence Variation Society (HGVS).",
+            "homepage": "https://mutalyzer.nl",
+            "biotoolsID": "mutalyzer",
+            "biotoolsCURIE": "biotools:mutalyzer",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2428",
+                            "term": "Validation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3778",
+                            "term": "Text annotation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3197",
+                            "term": "Genetic variation analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool",
+                "Web application"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3053",
+                    "term": "Genetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3577",
+                    "term": "Personalised medicine"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0199",
+                    "term": "Genetic variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3325",
+                    "term": "Rare diseases"
+                }
+            ],
+            "operatingSystem": [
+                "Linux"
+            ],
+            "language": [
+                "C++",
+                "Python"
+            ],
+            "license": "CC-BY-4.0",
+            "collectionID": [
+                "Rare Disease"
+            ],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "http://www.mybiosoftware.com/mutalyzer-hgvs-variant-nomenclature-checker.html",
+                    "type": [
+                        "Software catalogue"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/mutalyzer/description-extractor",
+                    "type": [
+                        "Other"
+                    ],
+                    "note": "C++ source code and Python interface"
+                }
+            ],
+            "download": [
+                {
+                    "url": "https://github.com/mutalyzer/mutalyzer",
+                    "type": "Source code",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [
+                {
+                    "url": "https://mutalyzer.nl/",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/bioinformatics/btv443",
+                    "pmid": "26231427",
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "An efficient algorithm for the extraction of HGVS variant descriptions from sequences",
+                        "abstract": "\u00a9 The Author 2015. Published by Oxford University Press. All rights reserved.Motivation: Unambiguous sequence variant descriptions are important in reporting the outcome of clinical diagnostic DNA tests. The standard nomenclature of the Human Genome Variation Society (HGVS) describes the observed variant sequence relative to a given reference sequence. We propose an efficient algorithm for the extraction of HGVS descriptions from two sequences with three main requirements in mind: minimizing the length of the resulting descriptions, minimizing the computation time and keeping the unambiguous descriptions biologically meaningful. Results: Our algorithm is able to compute the HGVS descriptions of complete chromosomes or other large DNA strings in a reasonable amount of computation time and its resulting descriptions are relatively small. Additional applications include updating of gene variant database contents and reference sequence liftovers.",
+                        "date": "2015-06-18T00:00:00Z",
+                        "citationCount": 13,
+                        "authors": [
+                            {
+                                "name": "Vis J.K."
+                            },
+                            {
+                                "name": "Vermaat M."
+                            },
+                            {
+                                "name": "Taschner P.E.M."
+                            },
+                            {
+                                "name": "Kok J.N."
+                            },
+                            {
+                                "name": "Laros J.F.J."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Vis JK",
+                    "email": "j.k.vis@lumc.nl",
+                    "url": "https://mutalyzer.nl/about",
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "ELIXIR-EE",
+            "additionDate": "2017-03-05T09:50:41Z",
+            "lastUpdate": "2020-06-16T10:55:23Z",
+            "editPermission": {
+                "type": "group",
+                "authors": [
+                    "ELIXIR-NL"
+                ]
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "github": {
+            "repository": {
+                "id": 169056559,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxNjkwNTY1NTk=",
+                "name": "mutalyzer",
+                "full_name": "mutalyzer/mutalyzer",
+                "private": false,
+                "owner": {
+                    "login": "mutalyzer",
+                    "id": 12197329,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyMTk3MzI5",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12197329?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/mutalyzer",
+                    "html_url": "https://github.com/mutalyzer",
+                    "followers_url": "https://api.github.com/users/mutalyzer/followers",
+                    "following_url": "https://api.github.com/users/mutalyzer/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/mutalyzer/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/mutalyzer/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/mutalyzer/subscriptions",
+                    "organizations_url": "https://api.github.com/users/mutalyzer/orgs",
+                    "repos_url": "https://api.github.com/users/mutalyzer/repos",
+                    "events_url": "https://api.github.com/users/mutalyzer/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/mutalyzer/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/mutalyzer/mutalyzer",
+                "description": "Tool suite for HGVS variant descriptions",
+                "fork": false,
+                "url": "https://api.github.com/repos/mutalyzer/mutalyzer",
+                "forks_url": "https://api.github.com/repos/mutalyzer/mutalyzer/forks",
+                "keys_url": "https://api.github.com/repos/mutalyzer/mutalyzer/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/mutalyzer/mutalyzer/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/mutalyzer/mutalyzer/teams",
+                "hooks_url": "https://api.github.com/repos/mutalyzer/mutalyzer/hooks",
+                "issue_events_url": "https://api.github.com/repos/mutalyzer/mutalyzer/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/mutalyzer/mutalyzer/events",
+                "assignees_url": "https://api.github.com/repos/mutalyzer/mutalyzer/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/mutalyzer/mutalyzer/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/mutalyzer/mutalyzer/tags",
+                "blobs_url": "https://api.github.com/repos/mutalyzer/mutalyzer/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/mutalyzer/mutalyzer/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/mutalyzer/mutalyzer/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/mutalyzer/mutalyzer/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/mutalyzer/mutalyzer/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/mutalyzer/mutalyzer/languages",
+                "stargazers_url": "https://api.github.com/repos/mutalyzer/mutalyzer/stargazers",
+                "contributors_url": "https://api.github.com/repos/mutalyzer/mutalyzer/contributors",
+                "subscribers_url": "https://api.github.com/repos/mutalyzer/mutalyzer/subscribers",
+                "subscription_url": "https://api.github.com/repos/mutalyzer/mutalyzer/subscription",
+                "commits_url": "https://api.github.com/repos/mutalyzer/mutalyzer/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/mutalyzer/mutalyzer/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/mutalyzer/mutalyzer/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/mutalyzer/mutalyzer/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/mutalyzer/mutalyzer/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/mutalyzer/mutalyzer/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/mutalyzer/mutalyzer/merges",
+                "archive_url": "https://api.github.com/repos/mutalyzer/mutalyzer/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/mutalyzer/mutalyzer/downloads",
+                "issues_url": "https://api.github.com/repos/mutalyzer/mutalyzer/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/mutalyzer/mutalyzer/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/mutalyzer/mutalyzer/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/mutalyzer/mutalyzer/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/mutalyzer/mutalyzer/labels{/name}",
+                "releases_url": "https://api.github.com/repos/mutalyzer/mutalyzer/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/mutalyzer/mutalyzer/deployments",
+                "created_at": "2019-02-04T09:44:22Z",
+                "updated_at": "2026-05-21T23:24:32Z",
+                "pushed_at": "2026-04-17T07:37:11Z",
+                "git_url": "git://github.com/mutalyzer/mutalyzer.git",
+                "ssh_url": "git@github.com:mutalyzer/mutalyzer.git",
+                "clone_url": "https://github.com/mutalyzer/mutalyzer.git",
+                "svn_url": "https://github.com/mutalyzer/mutalyzer",
+                "homepage": "https://mutalyzer.nl",
+                "size": 4557,
+                "stargazers_count": 49,
+                "watchers_count": 49,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 11,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 35,
+                "license": {
+                    "key": "mit",
+                    "name": "MIT License",
+                    "spdx_id": "MIT",
+                    "url": "https://api.github.com/licenses/mit",
+                    "node_id": "MDc6TGljZW5zZTEz"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "bioinformatics",
+                    "convert",
+                    "description",
+                    "hgvs",
+                    "map",
+                    "mutalyzer",
+                    "normalize",
+                    "variant"
+                ],
+                "visibility": "public",
+                "forks": 11,
+                "open_issues": 35,
+                "watchers": 49,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "mutalyzer",
+                    "id": 12197329,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyMTk3MzI5",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12197329?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/mutalyzer",
+                    "html_url": "https://github.com/mutalyzer",
+                    "followers_url": "https://api.github.com/users/mutalyzer/followers",
+                    "following_url": "https://api.github.com/users/mutalyzer/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/mutalyzer/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/mutalyzer/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/mutalyzer/subscriptions",
+                    "organizations_url": "https://api.github.com/users/mutalyzer/orgs",
+                    "repos_url": "https://api.github.com/users/mutalyzer/repos",
+                    "events_url": "https://api.github.com/users/mutalyzer/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/mutalyzer/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 11,
+                "subscribers_count": 6
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".readthedocs.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.rst",
+                    "type": "blob"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "images",
+                    "type": "tree"
+                },
+                {
+                    "path": "mutalyzer",
+                    "type": "tree"
+                },
+                {
+                    "path": "sandbox.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.cfg",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "mihailefter",
+                    "contributions": 269
+                },
+                {
+                    "login": "jkvis",
+                    "contributions": 9
+                },
+                {
+                    "login": "marksantcroos",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 115,
+                    "title": "related_references API endpoint returns internal server error 500",
+                    "created_at": "2026-01-14T15:08:17Z",
+                    "closed_at": "2026-02-20T16:55:56Z"
+                },
+                {
+                    "number": 110,
+                    "title": "How to pre-populate the cache all at once?",
+                    "created_at": "2025-01-22T23:10:55Z",
+                    "closed_at": "2025-01-28T16:06:11Z"
+                },
+                {
+                    "number": 103,
+                    "title": "Options for using `describe_dna` with `mutalyzer`?",
+                    "created_at": "2024-11-06T14:24:13Z",
+                    "closed_at": "2024-11-06T15:35:52Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Error building description-extractor during installation",
+                    "created_at": "2024-10-25T19:05:19Z",
+                    "closed_at": "2024-10-30T00:30:41Z"
+                },
+                {
+                    "number": 90,
+                    "title": "unexpected keyword argument 'strand'",
+                    "created_at": "2024-01-03T23:00:25Z",
+                    "closed_at": "2024-02-13T09:09:36Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Could someone kindly provide an example of using Mutalyzer3 API with Python?",
+                    "created_at": "2023-12-25T07:17:42Z",
+                    "closed_at": "2024-01-02T03:50:17Z"
+                },
+                {
+                    "number": 91,
+                    "title": "Coordinate system c does not match with M65131.1 c coordinate system.",
+                    "created_at": "2023-11-06T14:00:30Z",
+                    "closed_at": "2024-02-13T09:07:43Z"
+                },
+                {
+                    "number": 88,
+                    "title": "Problem with NR_ description",
+                    "created_at": "2023-10-12T09:34:16Z",
+                    "closed_at": "2024-02-13T09:08:49Z"
+                },
+                {
+                    "number": 86,
+                    "title": "Problem with normalized position",
+                    "created_at": "2023-09-13T15:50:21Z",
+                    "closed_at": "2023-09-14T17:00:50Z"
+                },
+                {
+                    "number": 80,
+                    "title": "Is the cache still supported?",
+                    "created_at": "2023-05-05T13:36:46Z",
+                    "closed_at": "2023-08-04T08:21:56Z"
+                },
+                {
+                    "number": 79,
+                    "title": "Error in normalizer: UnknownSeq is deprecated in biopython 1.81",
+                    "created_at": "2023-02-28T02:37:32Z",
+                    "closed_at": "2023-08-04T08:33:33Z"
+                },
+                {
+                    "number": 77,
+                    "title": "Short descriptions of variants are not interpreted correctly",
+                    "created_at": "2023-01-11T14:27:46Z",
+                    "closed_at": "2023-01-11T15:09:16Z"
+                },
+                {
+                    "number": 75,
+                    "title": "Missing semantic check(s) in sequence mode.",
+                    "created_at": "2023-01-06T14:45:42Z",
+                    "closed_at": "2023-08-04T08:34:12Z"
+                },
+                {
+                    "number": 74,
+                    "title": "Valid `r.` description rejected.",
+                    "created_at": "2022-12-21T18:13:36Z",
+                    "closed_at": "2023-08-04T08:22:11Z"
+                },
+                {
+                    "number": 72,
+                    "title": "Different approach for RNA/protein descriptions",
+                    "created_at": "2022-12-14T09:59:12Z",
+                    "closed_at": "2023-08-04T07:55:12Z"
+                },
+                {
+                    "number": 71,
+                    "title": "Bug? Incorrect p. generation in Normalizer with antisense insertions and duplications for NC refs",
+                    "created_at": "2022-12-13T20:04:53Z",
+                    "closed_at": "2023-08-04T08:43:42Z"
+                },
+                {
+                    "number": 70,
+                    "title": "Valid protein descriptions rejected.",
+                    "created_at": "2022-12-02T15:45:26Z",
+                    "closed_at": "2023-02-03T11:26:18Z"
+                },
+                {
+                    "number": 69,
+                    "title": "Wrong error after out of bounds error.",
+                    "created_at": "2022-11-04T07:26:07Z",
+                    "closed_at": "2022-11-09T09:13:27Z"
+                },
+                {
+                    "number": 68,
+                    "title": "Duplications normalization problem",
+                    "created_at": "2022-11-01T09:49:53Z",
+                    "closed_at": "2022-11-09T09:13:51Z"
+                },
+                {
+                    "number": 67,
+                    "title": "Back translation (2).",
+                    "created_at": "2022-10-27T09:23:21Z",
+                    "closed_at": "2023-02-03T11:25:05Z"
+                },
+                {
+                    "number": 60,
+                    "title": "algebra should use the right backend implementation",
+                    "created_at": "2022-07-26T09:41:27Z",
+                    "closed_at": "2022-08-18T07:18:42Z"
+                },
+                {
+                    "number": 57,
+                    "title": "mutalyzer_name_checker error?",
+                    "created_at": "2022-02-27T18:04:39Z",
+                    "closed_at": "2022-04-11T16:22:58Z"
+                },
+                {
+                    "number": 55,
+                    "title": "Have Name Checker convert \"chr1\" to proper NCBI Gene ID",
+                    "created_at": "2021-12-28T22:42:34Z",
+                    "closed_at": "2021-12-29T09:54:29Z"
+                },
+                {
+                    "number": 53,
+                    "title": "Wrong interpretation of conversions.",
+                    "created_at": "2021-12-23T18:31:29Z",
+                    "closed_at": "2023-08-04T08:46:41Z"
+                },
+                {
+                    "number": 52,
+                    "title": "Name checker bug.",
+                    "created_at": "2021-12-17T18:23:55Z",
+                    "closed_at": "2022-02-08T12:51:07Z"
+                },
+                {
+                    "number": 49,
+                    "title": "Mitochondrial reference not recognised.",
+                    "created_at": "2021-11-09T08:04:40Z",
+                    "closed_at": "2022-10-10T12:39:22Z"
+                },
+                {
+                    "number": 47,
+                    "title": "Mapping is asymmetric.",
+                    "created_at": "2021-10-23T09:57:54Z",
+                    "closed_at": "2023-08-04T08:25:34Z"
+                },
+                {
+                    "number": 46,
+                    "title": "Variant overlap detection and variant ordering",
+                    "created_at": "2021-10-19T07:07:14Z",
+                    "closed_at": "2022-02-08T12:49:39Z"
+                },
+                {
+                    "number": 45,
+                    "title": "Server error for view variants endpoint",
+                    "created_at": "2021-09-03T10:59:36Z",
+                    "closed_at": "2022-02-08T12:22:47Z"
+                },
+                {
+                    "number": 42,
+                    "title": "RNA descriptions.",
+                    "created_at": "2021-08-09T09:14:12Z",
+                    "closed_at": "2023-08-01T14:04:49Z"
+                },
+                {
+                    "number": 41,
+                    "title": "3' rule  don't apply to some hgvs.g",
+                    "created_at": "2021-06-21T09:42:51Z",
+                    "closed_at": "2021-06-21T10:13:22Z"
+                },
+                {
+                    "number": 40,
+                    "title": "there are some errors in readme.md",
+                    "created_at": "2021-05-07T07:49:13Z",
+                    "closed_at": "2021-09-01T09:47:51Z"
+                },
+                {
+                    "number": 35,
+                    "title": "Server error.",
+                    "created_at": "2021-03-10T10:00:03Z",
+                    "closed_at": "2022-02-08T12:23:53Z"
+                },
+                {
+                    "number": 30,
+                    "title": "Negative strand shift",
+                    "created_at": "2021-01-12T16:19:12Z",
+                    "closed_at": "2021-03-04T12:28:11Z"
+                },
+                {
+                    "number": 29,
+                    "title": "Issue warning on non-sorted variants",
+                    "created_at": "2021-01-08T10:48:16Z",
+                    "closed_at": "2022-02-08T12:47:50Z"
+                },
+                {
+                    "number": 28,
+                    "title": "Check protein descriptions",
+                    "created_at": "2021-01-08T10:14:40Z",
+                    "closed_at": "2021-03-04T14:19:36Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Missing affected transcripts.",
+                    "created_at": "2020-12-11T10:44:03Z",
+                    "closed_at": "2021-03-04T16:43:22Z"
+                },
+                {
+                    "number": 26,
+                    "title": "Missing feedback.",
+                    "created_at": "2020-12-11T10:41:22Z",
+                    "closed_at": "2021-03-04T12:26:42Z"
+                },
+                {
+                    "number": 25,
+                    "title": "Wrong normalisation.",
+                    "created_at": "2020-12-11T10:39:43Z",
+                    "closed_at": "2021-01-22T13:02:09Z"
+                },
+                {
+                    "number": 23,
+                    "title": "Short sequence repeats.",
+                    "created_at": "2020-10-14T17:00:20Z",
+                    "closed_at": "2021-03-04T12:22:56Z"
+                },
+                {
+                    "number": 22,
+                    "title": "Incorrect allele descriptions.",
+                    "created_at": "2020-09-25T16:31:25Z",
+                    "closed_at": "2021-03-04T12:22:01Z"
+                },
+                {
+                    "number": 20,
+                    "title": "No exons in transcript model.",
+                    "created_at": "2020-09-13T12:27:35Z",
+                    "closed_at": "2022-02-08T12:53:58Z"
+                },
+                {
+                    "number": 19,
+                    "title": "Superfluous selector for transcript references.",
+                    "created_at": "2020-09-13T12:25:22Z",
+                    "closed_at": "2021-03-04T14:19:05Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Position converter not working for chromosomes.",
+                    "created_at": "2020-09-12T17:10:55Z",
+                    "closed_at": "2021-03-04T12:16:54Z"
+                },
+                {
+                    "number": 17,
+                    "title": "Description extractor not working.",
+                    "created_at": "2020-09-12T17:08:07Z",
+                    "closed_at": "2021-01-08T09:22:22Z"
+                },
+                {
+                    "number": 16,
+                    "title": "Incorrect example.",
+                    "created_at": "2020-09-12T17:05:55Z",
+                    "closed_at": "2021-01-04T14:51:35Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Wrong title.",
+                    "created_at": "2020-09-12T16:59:39Z",
+                    "closed_at": "2021-01-08T09:46:42Z"
+                },
+                {
+                    "number": 13,
+                    "title": "`get_selectors` does not work for chromosomes.",
+                    "created_at": "2020-09-12T16:56:49Z",
+                    "closed_at": "2021-01-08T09:48:50Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Start and end positions swapped.",
+                    "created_at": "2020-09-12T16:54:02Z",
+                    "closed_at": "2021-01-08T09:25:24Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Website stalls indefinitely.",
+                    "created_at": "2020-08-21T08:39:32Z",
+                    "closed_at": "2021-03-04T12:14:59Z"
+                },
+                {
+                    "number": 10,
+                    "title": "Usage of legacy locus selectors.",
+                    "created_at": "2020-07-17T18:29:40Z",
+                    "closed_at": "2021-01-22T10:48:09Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Suggestion for performance.",
+                    "created_at": "2020-07-17T18:08:13Z",
+                    "closed_at": "2021-03-04T14:20:26Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Halt on ambiguous descriptions.",
+                    "created_at": "2020-07-17T17:59:04Z",
+                    "closed_at": "2021-03-04T12:12:47Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Missing warning messages.",
+                    "created_at": "2020-07-17T17:54:06Z",
+                    "closed_at": "2021-03-04T12:12:27Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Descriptions are not clickable.",
+                    "created_at": "2020-07-17T17:49:23Z",
+                    "closed_at": "2021-01-04T14:07:11Z"
+                },
+                {
+                    "number": 3,
+                    "title": "Normalised description model missing.",
+                    "created_at": "2020-07-17T17:47:59Z",
+                    "closed_at": "2021-01-08T09:14:13Z"
+                }
+            ],
+            "languages": {
+                "Python": 586311
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btab051",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33538839",
+                            "source": "MED",
+                            "pmid": "33538839",
+                            "pmcid": "PMC8479679",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8479679"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btab051",
+                            "title": "Mutalyzer 2: next generation HGVS nomenclature checker.",
+                            "authorString": "Lefter M, Vis JK, Vermaat M, den Dunnen JT, Taschner PEM, Laros JFJ.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "18",
+                            "journalVolume": "37",
+                            "pubYear": "2021",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "2811-2817",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 89,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "refseq"
+                                ]
+                            },
+                            "firstIndexDate": "2021-02-05",
+                            "firstPublicationDate": "2021-09-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3127526692",
+                "doi": "https://doi.org/10.1093/bioinformatics/btab051",
+                "title": "Mutalyzer 2: next generation HGVS nomenclature checker",
+                "display_name": "Mutalyzer 2: next generation HGVS nomenclature checker",
+                "publication_year": 2021,
+                "publication_date": "2021-01-23",
+                "ids": {
+                    "openalex": "https://openalex.org/W3127526692",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btab051",
+                    "mag": "3127526692",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33538839"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btab051",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab051",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/18/2811/40471521/btab051.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/37/18/2811/40471521/btab051.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5089051890",
+                            "display_name": "Mihai Lefter",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Mihai Lefter",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-3876-4754",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5062394749",
+                            "display_name": "Jonathan K. Vis",
+                            "orcid": "https://orcid.org/0000-0002-5815-9116"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jonathan K Vis",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5014519903",
+                            "display_name": "Martijn Vermaat",
+                            "orcid": "https://orcid.org/0000-0002-6554-1380"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Martijn Vermaat",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5040120668",
+                            "display_name": "Johan T. den Dunnen",
+                            "orcid": "https://orcid.org/0000-0002-6304-1710"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Johan T den Dunnen",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5053681207",
+                            "display_name": "Peter E.M. Taschner",
+                            "orcid": "https://orcid.org/0000-0001-9621-465X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I210716285",
+                                "display_name": "University of Applied Sciences Leiden",
+                                "ror": "https://ror.org/0093src13",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I210716285"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Peter E M Taschner",
+                        "raw_affiliation_strings": [
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                            "Generade Centre of Expertise Genomics and Leiden Centre for Applied Bioscience, University of Applied Sciences Leiden , Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Generade Centre of Expertise Genomics and Leiden Centre for Applied Bioscience, University of Applied Sciences Leiden , Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I210716285"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5001355447",
+                            "display_name": "Jeroen F. J. Laros",
+                            "orcid": "https://orcid.org/0000-0002-8715-7371"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2800006345",
+                                "display_name": "Leiden University Medical Center",
+                                "ror": "https://ror.org/05xvt9f17",
+                                "country_code": "NL",
+                                "type": "funder",
+                                "lineage": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210104433",
+                                "display_name": "National Institute for Public Health and the Environment",
+                                "ror": "https://ror.org/01cesdt21",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210104433"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jeroen F J Laros",
+                        "raw_affiliation_strings": [
+                            "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                            "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                            "National Institute for Public Health and the Environment (RIVM) , Bthoven, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8715-7371",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Clinical Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Human Genetics, Leiden University Medical Center (LUMC) Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2800006345"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "National Institute for Public Health and the Environment (RIVM) , Bthoven, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210104433"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5089051890"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2800006345"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 15.5386,
+                "has_fulltext": true,
+                "cited_by_count": 120,
+                "citation_normalized_percentile": {
+                    "value": 0.99408314,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 89,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "37",
+                    "issue": "18",
+                    "first_page": "2811",
+                    "last_page": "2817"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11642",
+                    "display_name": "Genomics and Rare Diseases",
+                    "score": 0.9666000008583069,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.9666000008583069,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11710",
+                        "display_name": "Biomedical Text Mining and Ontologies",
+                        "score": 0.01119999960064888,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.006000000052154064,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.8464145064353943
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/license",
+                        "display_name": "License",
+                        "score": 0.709862470626831
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/set",
+                        "display_name": "Set (abstract data type)",
+                        "score": 0.6710029244422913
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/suite",
+                        "display_name": "Suite",
+                        "score": 0.6580394506454468
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/source-code",
+                        "display_name": "Source code",
+                        "score": 0.5281816720962524
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/code",
+                        "display_name": "Code (set theory)",
+                        "score": 0.46670839190483093
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/variation",
+                        "display_name": "Variation (astronomy)",
+                        "score": 0.46614328026771545
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mit-license",
+                        "display_name": "MIT License",
+                        "score": 0.43718796968460083
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.4027421474456787
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.32022809982299805
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.08458393812179565
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.8464145064353943
+                    },
+                    {
+                        "id": "https://openalex.org/C2780560020",
+                        "wikidata": "https://www.wikidata.org/wiki/Q79719",
+                        "display_name": "License",
+                        "level": 2,
+                        "score": 0.709862470626831
+                    },
+                    {
+                        "id": "https://openalex.org/C177264268",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1514741",
+                        "display_name": "Set (abstract data type)",
+                        "level": 2,
+                        "score": 0.6710029244422913
+                    },
+                    {
+                        "id": "https://openalex.org/C79581498",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1367530",
+                        "display_name": "Suite",
+                        "level": 2,
+                        "score": 0.6580394506454468
+                    },
+                    {
+                        "id": "https://openalex.org/C43126263",
+                        "wikidata": "https://www.wikidata.org/wiki/Q128751",
+                        "display_name": "Source code",
+                        "level": 2,
+                        "score": 0.5281816720962524
+                    },
+                    {
+                        "id": "https://openalex.org/C2776760102",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5139990",
+                        "display_name": "Code (set theory)",
+                        "level": 3,
+                        "score": 0.46670839190483093
+                    },
+                    {
+                        "id": "https://openalex.org/C2778334786",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1586270",
+                        "display_name": "Variation (astronomy)",
+                        "level": 2,
+                        "score": 0.46614328026771545
+                    },
+                    {
+                        "id": "https://openalex.org/C174183944",
+                        "wikidata": "https://www.wikidata.org/wiki/Q334661",
+                        "display_name": "MIT License",
+                        "level": 3,
+                        "score": 0.43718796968460083
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.4027421474456787
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.32022809982299805
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.08458393812179565
+                    },
+                    {
+                        "id": "https://openalex.org/C95457728",
+                        "wikidata": "https://www.wikidata.org/wiki/Q309",
+                        "display_name": "History",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C166957645",
+                        "wikidata": "https://www.wikidata.org/wiki/Q23498",
+                        "display_name": "Archaeology",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C44870925",
+                        "wikidata": "https://www.wikidata.org/wiki/Q37547",
+                        "display_name": "Astrophysics",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C121332964",
+                        "wikidata": "https://www.wikidata.org/wiki/Q413",
+                        "display_name": "Physics",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014644",
+                        "descriptor_name": "Genetic Variation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014644",
+                        "descriptor_name": "Genetic Variation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014644",
+                        "descriptor_name": "Genetic Variation",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015894",
+                        "descriptor_name": "Genome, Human",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btab051",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab051",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/18/2811/40471521/btab051.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33538839",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33538839",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:lumc:oai:scholarlypublications.universiteitleiden.nl:item_3256617",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3256617",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 37(18), 2811 - 2817. OXFORD UNIV PRESS",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:7375451",
+                        "is_oa": true,
+                        "landing_page_url": "http://europepmc.org/pmc/articles/PMC8479679",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8479679",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8479679",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:rivm.openrepository.com:10029/624685",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/10029/624685",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401681",
+                            "display_name": "Rivm (National Institute for Public Health and the Environment)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210104433",
+                            "host_organization_name": "National Institute for Public Health and the Environment",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210104433"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:rivm.openrepository.com:10029/626401",
+                        "is_oa": false,
+                        "landing_page_url": "http://hdl.handle.net/10029/626401",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401681",
+                            "display_name": "Rivm (National Institute for Public Health and the Environment)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210104433",
+                            "host_organization_name": "National Institute for Public Health and the Environment",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210104433"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:rivm.openrepository.com:10029/653399",
+                        "is_oa": false,
+                        "landing_page_url": "https://rivm.openrepository.com/handle/10029/653399",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401681",
+                            "display_name": "Rivm (National Institute for Public Health and the Environment)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I4210104433",
+                            "host_organization_name": "National Institute for Public Health and the Environment",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I4210104433"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btab051",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btab051",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/37/18/2811/40471521/btab051.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/17",
+                        "display_name": "Partnerships for the goals",
+                        "score": 0.5
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3127526692.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3127526692.grobid-xml"
+                },
+                "referenced_works_count": 19,
+                "referenced_works": [
+                    "https://openalex.org/W1505561515",
+                    "https://openalex.org/W2017726138",
+                    "https://openalex.org/W2037458235",
+                    "https://openalex.org/W2059600528",
+                    "https://openalex.org/W2090724057",
+                    "https://openalex.org/W2099101325",
+                    "https://openalex.org/W2113537161",
+                    "https://openalex.org/W2140107851",
+                    "https://openalex.org/W2148378515",
+                    "https://openalex.org/W2149992227",
+                    "https://openalex.org/W2155074506",
+                    "https://openalex.org/W2161183224",
+                    "https://openalex.org/W2173732482",
+                    "https://openalex.org/W2309021002",
+                    "https://openalex.org/W2756892369",
+                    "https://openalex.org/W2952222590",
+                    "https://openalex.org/W2988303005",
+                    "https://openalex.org/W4252958302",
+                    "https://openalex.org/W6630292809"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2036021480",
+                    "https://openalex.org/W2546377002",
+                    "https://openalex.org/W4285209474",
+                    "https://openalex.org/W2046541848",
+                    "https://openalex.org/W22571951",
+                    "https://openalex.org/W4309247532",
+                    "https://openalex.org/W4384009753",
+                    "https://openalex.org/W2791776396",
+                    "https://openalex.org/W4286531993",
+                    "https://openalex.org/W2964820744"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "Unambiguous": [
+                        1
+                    ],
+                    "variant": [
+                        2,
+                        72
+                    ],
+                    "descriptions": [
+                        3,
+                        87
+                    ],
+                    "are": [
+                        4
+                    ],
+                    "of": [
+                        5,
+                        27,
+                        42,
+                        103,
+                        107,
+                        121
+                    ],
+                    "utmost": [
+                        6
+                    ],
+                    "importance": [
+                        7
+                    ],
+                    "in": [
+                        8,
+                        101
+                    ],
+                    "clinical": [
+                        9
+                    ],
+                    "genetic": [
+                        10,
+                        15
+                    ],
+                    "diagnostics,": [
+                        11
+                    ],
+                    "scientific": [
+                        12
+                    ],
+                    "literature": [
+                        13
+                    ],
+                    "and": [
+                        14,
+                        35,
+                        69,
+                        118,
+                        155
+                    ],
+                    "databases.": [
+                        16
+                    ],
+                    "The": [
+                        17,
+                        147
+                    ],
+                    "Human": [
+                        18
+                    ],
+                    "Genome": [
+                        19
+                    ],
+                    "Variation": [
+                        20
+                    ],
+                    "Society": [
+                        21
+                    ],
+                    "(HGVS)": [
+                        22
+                    ],
+                    "publishes": [
+                        23
+                    ],
+                    "a": [
+                        24,
+                        92,
+                        98,
+                        111,
+                        156
+                    ],
+                    "comprehensive": [
+                        25
+                    ],
+                    "set": [
+                        26
+                    ],
+                    "guidelines": [
+                        28,
+                        54
+                    ],
+                    "on": [
+                        29,
+                        152
+                    ],
+                    "how": [
+                        30
+                    ],
+                    "variants": [
+                        31
+                    ],
+                    "should": [
+                        32
+                    ],
+                    "be": [
+                        33
+                    ],
+                    "correctly": [
+                        34
+                    ],
+                    "unambiguously": [
+                        36
+                    ],
+                    "described.": [
+                        37
+                    ],
+                    "We": [
+                        38
+                    ],
+                    "present": [
+                        39
+                    ],
+                    "the": [
+                        40,
+                        43,
+                        52,
+                        63,
+                        80,
+                        108,
+                        129,
+                        141
+                    ],
+                    "implementation": [
+                        41
+                    ],
+                    "Mutalyzer": [
+                        44,
+                        75,
+                        96,
+                        123,
+                        134
+                    ],
+                    "2": [
+                        45
+                    ],
+                    "tool": [
+                        46
+                    ],
+                    "suite,": [
+                        47
+                    ],
+                    "designed": [
+                        48
+                    ],
+                    "to": [
+                        49,
+                        60,
+                        67,
+                        126
+                    ],
+                    "automatically": [
+                        50,
+                        127
+                    ],
+                    "apply": [
+                        51
+                    ],
+                    "HGVS": [
+                        53,
+                        64
+                    ],
+                    "so": [
+                        55
+                    ],
+                    "users": [
+                        56
+                    ],
+                    "do": [
+                        57
+                    ],
+                    "not": [
+                        58
+                    ],
+                    "have": [
+                        59
+                    ],
+                    "deal": [
+                        61
+                    ],
+                    "with": [
+                        62
+                    ],
+                    "intricacies": [
+                        65
+                    ],
+                    "explicitly": [
+                        66
+                    ],
+                    "check": [
+                        68
+                    ],
+                    "correct": [
+                        70,
+                        99,
+                        128
+                    ],
+                    "their": [
+                        71
+                    ],
+                    "descriptions.": [
+                        73
+                    ],
+                    "RESULTS:": [
+                        74
+                    ],
+                    "is": [
+                        76,
+                        135,
+                        150,
+                        159
+                    ],
+                    "profusely": [
+                        77
+                    ],
+                    "used": [
+                        78
+                    ],
+                    "by": [
+                        79
+                    ],
+                    "community,": [
+                        81
+                    ],
+                    "having": [
+                        82
+                    ],
+                    "processed": [
+                        83
+                    ],
+                    "over": [
+                        84
+                    ],
+                    "133": [
+                        85
+                    ],
+                    "million": [
+                        86
+                    ],
+                    "since": [
+                        88
+                    ],
+                    "its": [
+                        89
+                    ],
+                    "launch.": [
+                        90
+                    ],
+                    "Over": [
+                        91
+                    ],
+                    "five": [
+                        93
+                    ],
+                    "year": [
+                        94
+                    ],
+                    "period,": [
+                        95
+                    ],
+                    "reported": [
+                        97
+                    ],
+                    "input": [
+                        100
+                    ],
+                    "\u223c50%": [
+                        102
+                    ],
+                    "cases.": [
+                        104
+                    ],
+                    "In": [
+                        105
+                    ],
+                    "41%": [
+                        106
+                    ],
+                    "cases": [
+                        109
+                    ],
+                    "either": [
+                        110
+                    ],
+                    "syntactic": [
+                        112
+                    ],
+                    "or": [
+                        113
+                    ],
+                    "semantic": [
+                        114
+                    ],
+                    "error": [
+                        115
+                    ],
+                    "was": [
+                        116,
+                        124
+                    ],
+                    "identified": [
+                        117
+                    ],
+                    "for": [
+                        119
+                    ],
+                    "\u223c7%": [
+                        120
+                    ],
+                    "cases,": [
+                        122
+                    ],
+                    "able": [
+                        125
+                    ],
+                    "description.": [
+                        130
+                    ],
+                    "AVAILABILITY": [
+                        131
+                    ],
+                    "AND": [
+                        132
+                    ],
+                    "IMPLEMENTATION:": [
+                        133
+                    ],
+                    "an": [
+                        136
+                    ],
+                    "Open": [
+                        137
+                    ],
+                    "Source": [
+                        138
+                    ],
+                    "project": [
+                        139
+                    ],
+                    "under": [
+                        140
+                    ],
+                    "GNU": [
+                        142
+                    ],
+                    "Affero": [
+                        143
+                    ],
+                    "General": [
+                        144
+                    ],
+                    "Public": [
+                        145
+                    ],
+                    "License.": [
+                        146
+                    ],
+                    "source": [
+                        148
+                    ],
+                    "code": [
+                        149
+                    ],
+                    "available": [
+                        151,
+                        160
+                    ],
+                    "GitHub": [
+                        153
+                    ],
+                    "(https://github.com/mutalyzer/mutalyzer)": [
+                        154
+                    ],
+                    "running": [
+                        157
+                    ],
+                    "instance": [
+                        158
+                    ],
+                    "at:": [
+                        161
+                    ],
+                    "https://mutalyzer.nl.": [
+                        162
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 13
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 25
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 45
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 24
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 12
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Mutalyzer 2: next generation HGVS nomenclature checker",
+                "doi": "10.1093/bioinformatics/btab051",
+                "pmid": "33538839",
+                "pmc": "PMC8479679",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1460-2059"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "sci": 1,
+                    "pub": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 32777751,
+                        "mean": 10.495141575942782,
+                        "rank": 21865476,
+                        "pct": 31,
+                        "higher_than": 10282808
+                    },
+                    "journal": {
+                        "count": 14165,
+                        "mean": 8.115450052947406,
+                        "rank": 10958,
+                        "pct": 19,
+                        "higher_than": 2820
+                    },
+                    "similar_age_3m": {
+                        "count": 568194,
+                        "mean": 13.998059905595639,
+                        "rank": 340877,
+                        "pct": 37,
+                        "higher_than": 212072
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 289,
+                        "mean": 7.489100346020761,
+                        "rank": 200,
+                        "pct": 26,
+                        "higher_than": 76
+                    }
+                },
+                "authors": [
+                    "Mihai Lefter",
+                    "Jonathan K Vis",
+                    "Martijn Vermaat",
+                    "Johan T den Dunnen",
+                    "Peter E M Taschner",
+                    "Jeroen F J Laros"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1632873600,
+                "epubdate": 1612396800,
+                "dimensions_publication_id": "pub.1134829928",
+                "altmetric_id": 99432431,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 4,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1612784592,
+                "score": 1.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1.5
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btab051",
+                "added_on": 1612482740,
+                "published_on": 1612396800,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "113",
+                    "connotea": "0"
+                },
+                "readers_count": 113,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=2&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=2&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=2&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=99432431"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 6616,
+            "total_ccn": 2037,
+            "avg_ccn": 3.71,
+            "nloc_per_file": 127.23,
+            "duplicate_rate": 8.44
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

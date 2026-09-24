@@ -1,0 +1,2241 @@
+{
+    "Palidis": {
+        "tool_name": "Palidis",
+        "biotools": {
+            "name": "PaliDIS4",
+            "description": "Palindromic Detection of Insertion Sequences. The tool is based upon identifying inverted terminal repeats (ITRs) using paired-end, short-read metagenomic data/mixed microbial genomes.",
+            "homepage": "https://github.com/blue-moon22/palidis4",
+            "biotoolsID": "palidis4",
+            "biotoolsCURIE": "biotools:palidis4",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0427",
+                            "term": "Transposon prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3482",
+                            "term": "Antimicrobial resistance prediction"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3174",
+                    "term": "Metagenomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0798",
+                    "term": "Mobile genetic elements"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3697",
+                    "term": "Microbial ecology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3175",
+                    "term": "Structural variation"
+                }
+            ],
+            "operatingSystem": [
+                "Linux"
+            ],
+            "language": [
+                "Python",
+                "R"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1099/mgen.0.000917",
+                    "pmid": "36897935",
+                    "pmcid": "PMC10132078",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Palidis: fast discovery of novel insertion sequences",
+                        "abstract": "The diversity of microbial insertion sequences, crucial mobile genetic elements in generating diversity in microbial genomes, needs to be better represented in current microbial databases. Identification of these sequences in microbiome communities presents some significant problems that have led to their underrepresentation. Here, we present a bioinfor-matics pipeline called Palidis that recognizes insertion sequences in metagenomic sequence data rapidly by identifying inverted terminal repeat regions from mixed microbial community genomes. Applying Palidis to 264 human metagenomes identifies 879 unique insertion sequences, with 519 being novel and not previously characterized. Querying this catalogue against a large database of isolate genomes reveals evidence of horizontal gene transfer events across bacterial classes. We will continue to apply this tool more widely, building the Insertion Sequence Catalogue, a valuable resource for researchers wishing to query their microbial genomes for insertion sequences.",
+                        "date": "2023-01-01T00:00:00Z",
+                        "citationCount": 0,
+                        "authors": [
+                            {
+                                "name": "Carr V.R."
+                            },
+                            {
+                                "name": "Pissis S.P."
+                            },
+                            {
+                                "name": "Mullany P."
+                            },
+                            {
+                                "name": "Shoaie S."
+                            },
+                            {
+                                "name": "Gomez-Cabrero D."
+                            },
+                            {
+                                "name": "Moyes D.L."
+                            }
+                        ],
+                        "journal": "Microbial Genomics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Victoria R. Carr",
+                    "email": "vc11@sanger.ac.uk",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-3038-8929",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Solon P Pissis",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Peter Mullany",
+                    "email": null,
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Pub2Tools",
+            "additionDate": "2023-11-07T10:20:17.199441Z",
+            "lastUpdate": "2024-11-24T14:33:35.348397Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 616421009,
+                "node_id": "R_kgDOJL3WkQ",
+                "name": "palidis4",
+                "full_name": "blue-moon22/palidis4",
+                "private": false,
+                "owner": {
+                    "login": "blue-moon22",
+                    "id": 15203325,
+                    "node_id": "MDQ6VXNlcjE1MjAzMzI1",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/15203325?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/blue-moon22",
+                    "html_url": "https://github.com/blue-moon22",
+                    "followers_url": "https://api.github.com/users/blue-moon22/followers",
+                    "following_url": "https://api.github.com/users/blue-moon22/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/blue-moon22/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/blue-moon22/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/blue-moon22/subscriptions",
+                    "organizations_url": "https://api.github.com/users/blue-moon22/orgs",
+                    "repos_url": "https://api.github.com/users/blue-moon22/repos",
+                    "events_url": "https://api.github.com/users/blue-moon22/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/blue-moon22/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/blue-moon22/palidis4",
+                "description": "Tool to discover novel insertion sequences",
+                "fork": false,
+                "url": "https://api.github.com/repos/blue-moon22/palidis4",
+                "forks_url": "https://api.github.com/repos/blue-moon22/palidis4/forks",
+                "keys_url": "https://api.github.com/repos/blue-moon22/palidis4/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/blue-moon22/palidis4/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/blue-moon22/palidis4/teams",
+                "hooks_url": "https://api.github.com/repos/blue-moon22/palidis4/hooks",
+                "issue_events_url": "https://api.github.com/repos/blue-moon22/palidis4/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/blue-moon22/palidis4/events",
+                "assignees_url": "https://api.github.com/repos/blue-moon22/palidis4/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/blue-moon22/palidis4/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/blue-moon22/palidis4/tags",
+                "blobs_url": "https://api.github.com/repos/blue-moon22/palidis4/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/blue-moon22/palidis4/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/blue-moon22/palidis4/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/blue-moon22/palidis4/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/blue-moon22/palidis4/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/blue-moon22/palidis4/languages",
+                "stargazers_url": "https://api.github.com/repos/blue-moon22/palidis4/stargazers",
+                "contributors_url": "https://api.github.com/repos/blue-moon22/palidis4/contributors",
+                "subscribers_url": "https://api.github.com/repos/blue-moon22/palidis4/subscribers",
+                "subscription_url": "https://api.github.com/repos/blue-moon22/palidis4/subscription",
+                "commits_url": "https://api.github.com/repos/blue-moon22/palidis4/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/blue-moon22/palidis4/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/blue-moon22/palidis4/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/blue-moon22/palidis4/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/blue-moon22/palidis4/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/blue-moon22/palidis4/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/blue-moon22/palidis4/merges",
+                "archive_url": "https://api.github.com/repos/blue-moon22/palidis4/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/blue-moon22/palidis4/downloads",
+                "issues_url": "https://api.github.com/repos/blue-moon22/palidis4/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/blue-moon22/palidis4/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/blue-moon22/palidis4/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/blue-moon22/palidis4/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/blue-moon22/palidis4/labels{/name}",
+                "releases_url": "https://api.github.com/repos/blue-moon22/palidis4/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/blue-moon22/palidis4/deployments",
+                "created_at": "2023-03-20T11:04:43Z",
+                "updated_at": "2025-01-08T09:41:32Z",
+                "pushed_at": "2023-07-24T11:34:16Z",
+                "git_url": "git://github.com/blue-moon22/palidis4.git",
+                "ssh_url": "git@github.com:blue-moon22/palidis4.git",
+                "clone_url": "https://github.com/blue-moon22/palidis4.git",
+                "svn_url": "https://github.com/blue-moon22/palidis4",
+                "homepage": "",
+                "size": 85684,
+                "stargazers_count": 3,
+                "watchers_count": 3,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 0,
+                "watchers": 3,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitmodules",
+                    "type": "blob"
+                },
+                {
+                    "path": "Dockerfile",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "configs",
+                    "type": "commit"
+                },
+                {
+                    "path": "conftest.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "img",
+                    "type": "tree"
+                },
+                {
+                    "path": "modules",
+                    "type": "tree"
+                },
+                {
+                    "path": "nextflow.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "palidis.nf",
+                    "type": "blob"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "blue-moon22",
+                    "contributions": 258
+                },
+                {
+                    "login": "resistanceatlas",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Python": 220937,
+                "Nextflow": 20663,
+                "Dockerfile": 3039,
+                "Shell": 2254
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1099/mgen.0.000917",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36897935",
+                            "source": "MED",
+                            "pmid": "36897935",
+                            "pmcid": "PMC10132078",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10132078"
+                                ]
+                            },
+                            "doi": "10.1099/mgen.0.000917",
+                            "title": "Palidis: fast discovery of novel insertion sequences.",
+                            "authorString": "Carr VR, Pissis SP, Mullany P, Shoaie S, Gomez-Cabrero D, Moyes DL.",
+                            "journalTitle": "Microb Genom",
+                            "issue": "3",
+                            "journalVolume": "9",
+                            "pubYear": "2023",
+                            "journalIssn": "2057-5858",
+                            "pubType": "research support, non-u.s. gov't; methods-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 0,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-03-10",
+                            "firstPublicationDate": "2023-03-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4323811175",
+                "doi": "https://doi.org/10.1099/mgen.0.000917",
+                "title": "Palidis: fast discovery of novel insertion sequences",
+                "display_name": "Palidis: fast discovery of novel insertion sequences",
+                "publication_year": 2023,
+                "publication_date": "2023-03-14",
+                "ids": {
+                    "openalex": "https://openalex.org/W4323811175",
+                    "doi": "https://doi.org/10.1099/mgen.0.000917",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36897935"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1099/mgen.0.000917",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.000917",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1099/mgen.0.000917",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5075756370",
+                            "display_name": "Victoria R. Carr",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I183935753",
+                                "display_name": "King's College London",
+                                "ror": "https://ror.org/0220mzb33",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2802476451",
+                                "display_name": "Wellcome Sanger Institute",
+                                "ror": "https://ror.org/05cy4wa09",
+                                "country_code": "GB",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I2802476451",
+                                    "https://openalex.org/I87048295"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Victoria R. Carr",
+                        "raw_affiliation_strings": [
+                            "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                            "Parasites and Microbes, Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, UK"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3038-8929",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Parasites and Microbes, Wellcome Sanger Institute, Wellcome Genome Campus, Hinxton, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I2802476451"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5051275317",
+                            "display_name": "Solon P. Pissis",
+                            "orcid": "https://orcid.org/0000-0002-1445-1932"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1341640284",
+                                "display_name": "Centrum Wiskunde & Informatica",
+                                "ror": "https://ror.org/00x7ekv49",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1341640284",
+                                    "https://openalex.org/I2800991832",
+                                    "https://openalex.org/I4405262988"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I865915315",
+                                "display_name": "Vrije Universiteit Amsterdam",
+                                "ror": "https://ror.org/008xxew50",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Solon P. Pissis",
+                        "raw_affiliation_strings": [
+                            "Centrum Wiskunde en Informatica, Amsterdam, Netherlands",
+                            "Vrije Universiteit, Amsterdam, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centrum Wiskunde en Informatica, Amsterdam, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I1341640284"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Vrije Universiteit, Amsterdam, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I865915315"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5078120311",
+                            "display_name": "Peter Mullany",
+                            "orcid": "https://orcid.org/0000-0002-5419-6489"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210157535",
+                                "display_name": "Eastman Dental Hospital",
+                                "ror": "https://ror.org/055jskg35",
+                                "country_code": "GB",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1340918713",
+                                    "https://openalex.org/I4210157535"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I45129253",
+                                "display_name": "University College London",
+                                "ror": "https://ror.org/02jx3x895",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Peter Mullany",
+                        "raw_affiliation_strings": [
+                            "Department of Microbial Diseases, Eastman Dental Institute, University College London, 256 Gray\u2019s Inn Road, London, WC1X 8LD, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Microbial Diseases, Eastman Dental Institute, University College London, 256 Gray\u2019s Inn Road, London, WC1X 8LD, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210157535",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5084152654",
+                            "display_name": "Saeed Shoaie",
+                            "orcid": "https://orcid.org/0000-0001-5834-4533"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I183935753",
+                                "display_name": "King's College London",
+                                "ror": "https://ror.org/0220mzb33",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2800139495",
+                                "display_name": "Science for Life Laboratory",
+                                "ror": "https://ror.org/04ev03g22",
+                                "country_code": "SE",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I86987016",
+                                "display_name": "KTH Royal Institute of Technology",
+                                "ror": "https://ror.org/026vcq606",
+                                "country_code": "SE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I86987016"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB",
+                            "SE"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Saeed Shoaie",
+                        "raw_affiliation_strings": [
+                            "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                            "Science for Life Laboratory, KTH \u2013 Royal Institute of Technology, Stockholm, SE-171 21, Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Science for Life Laboratory, KTH \u2013 Royal Institute of Technology, Stockholm, SE-171 21, Sweden",
+                                "institution_ids": [
+                                    "https://openalex.org/I86987016",
+                                    "https://openalex.org/I2800139495"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5078466508",
+                            "display_name": "David G\u00f3mez-Cabrero",
+                            "orcid": "https://orcid.org/0000-0003-4186-3788"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I175051016",
+                                "display_name": "Universidad Publica de Navarra",
+                                "ror": "https://ror.org/02z0cah89",
+                                "country_code": "ES",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I175051016"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I183935753",
+                                "display_name": "King's College London",
+                                "ror": "https://ror.org/0220mzb33",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210097920",
+                                "display_name": "Complejo Hospitalario de Navarra",
+                                "ror": "https://ror.org/011787436",
+                                "country_code": "ES",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210097920"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210117069",
+                                "display_name": "Navarrabiomed",
+                                "ror": "https://ror.org/03atdda90",
+                                "country_code": "ES",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210117069"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I71920554",
+                                "display_name": "King Abdullah University of Science and Technology",
+                                "ror": "https://ror.org/01q3tbs38",
+                                "country_code": "SA",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I71920554"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "ES",
+                            "GB",
+                            "SA"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "David Gomez-Cabrero",
+                        "raw_affiliation_strings": [
+                            "Bioscience Program, Bioengineering Program, Biological and Environmental Science and Engineering Division, King Abdullah University of Science and Technology (KAUST), Thuwal 23955-6900, Saudi Arabia",
+                            "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                            "Translational Bioinformatics Unit, Navarrabiomed, Complejo Hospitalario de Navarra (CHN), Universidad P\u00fablica de Navarra (UPNA), IdiSNA, Pamplona, Spain"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioscience Program, Bioengineering Program, Biological and Environmental Science and Engineering Division, King Abdullah University of Science and Technology (KAUST), Thuwal 23955-6900, Saudi Arabia",
+                                "institution_ids": [
+                                    "https://openalex.org/I71920554"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I183935753"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Translational Bioinformatics Unit, Navarrabiomed, Complejo Hospitalario de Navarra (CHN), Universidad P\u00fablica de Navarra (UPNA), IdiSNA, Pamplona, Spain",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210117069",
+                                    "https://openalex.org/I4210097920",
+                                    "https://openalex.org/I175051016"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5034810485",
+                            "display_name": "David L. Moyes",
+                            "orcid": "https://orcid.org/0000-0002-1657-918X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I183935753",
+                                "display_name": "King's College London",
+                                "ror": "https://ror.org/0220mzb33",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I183935753"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "David L. Moyes",
+                        "raw_affiliation_strings": [
+                            "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King\u2019s College London, SE1 9RT, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I183935753"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 5,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5075756370"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I183935753",
+                    "https://openalex.org/I2802476451"
+                ],
+                "apc_list": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "apc_paid": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "fwci": 0.0,
+                "has_fulltext": true,
+                "cited_by_count": 0,
+                "citation_normalized_percentile": {
+                    "value": 0.01746821,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": null,
+                "biblio": {
+                    "volume": "9",
+                    "issue": "3",
+                    "first_page": null,
+                    "last_page": null
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10015",
+                    "display_name": "Genomics and Phylogenetic Studies",
+                    "score": 0.9998999834060669,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.9998999834060669,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10141",
+                        "display_name": "Probiotics and Fermented Foods",
+                        "score": 0.9980000257492065,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1106",
+                            "display_name": "Food Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11791",
+                        "display_name": "Microbial Community Ecology and Physiology",
+                        "score": 0.9977999925613403,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/metagenomics",
+                        "display_name": "Metagenomics",
+                        "score": 0.729621946811676
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.7117184400558472
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.6682257652282715
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/insertion-sequence",
+                        "display_name": "Insertion sequence",
+                        "score": 0.6519569158554077
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/horizontal-gene-transfer",
+                        "display_name": "Horizontal gene transfer",
+                        "score": 0.5965171456336975
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.5673662424087524
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pipeline",
+                        "display_name": "Pipeline (software)",
+                        "score": 0.5632407069206238
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/identification",
+                        "display_name": "Identification (biology)",
+                        "score": 0.5416333079338074
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mobile-genetic-elements",
+                        "display_name": "Mobile genetic elements",
+                        "score": 0.5257866382598877
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/sequence",
+                        "display_name": "Sequence (biology)",
+                        "score": 0.4817102551460266
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/human-microbiome-project",
+                        "display_name": "Human Microbiome Project",
+                        "score": 0.470980167388916
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bacterial-genome-size",
+                        "display_name": "Bacterial genome size",
+                        "score": 0.4503836929798126
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.4458176791667938
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/microbiome",
+                        "display_name": "Microbiome",
+                        "score": 0.4345252513885498
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.30039334297180176
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.2825689911842346
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/transposable-element",
+                        "display_name": "Transposable element",
+                        "score": 0.13336753845214844
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C15151743",
+                        "wikidata": "https://www.wikidata.org/wiki/Q903778",
+                        "display_name": "Metagenomics",
+                        "level": 3,
+                        "score": 0.729621946811676
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.7117184400558472
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.6682257652282715
+                    },
+                    {
+                        "id": "https://openalex.org/C157887575",
+                        "wikidata": "https://www.wikidata.org/wiki/Q417216",
+                        "display_name": "Insertion sequence",
+                        "level": 5,
+                        "score": 0.6519569158554077
+                    },
+                    {
+                        "id": "https://openalex.org/C92938381",
+                        "wikidata": "https://www.wikidata.org/wiki/Q83185",
+                        "display_name": "Horizontal gene transfer",
+                        "level": 4,
+                        "score": 0.5965171456336975
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.5673662424087524
+                    },
+                    {
+                        "id": "https://openalex.org/C43521106",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2165493",
+                        "display_name": "Pipeline (software)",
+                        "level": 2,
+                        "score": 0.5632407069206238
+                    },
+                    {
+                        "id": "https://openalex.org/C116834253",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2039217",
+                        "display_name": "Identification (biology)",
+                        "level": 2,
+                        "score": 0.5416333079338074
+                    },
+                    {
+                        "id": "https://openalex.org/C132533263",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2347362",
+                        "display_name": "Mobile genetic elements",
+                        "level": 4,
+                        "score": 0.5257866382598877
+                    },
+                    {
+                        "id": "https://openalex.org/C2778112365",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3511065",
+                        "display_name": "Sequence (biology)",
+                        "level": 2,
+                        "score": 0.4817102551460266
+                    },
+                    {
+                        "id": "https://openalex.org/C190944805",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3922751",
+                        "display_name": "Human Microbiome Project",
+                        "level": 4,
+                        "score": 0.470980167388916
+                    },
+                    {
+                        "id": "https://openalex.org/C3742359",
+                        "wikidata": "https://www.wikidata.org/wiki/Q4839988",
+                        "display_name": "Bacterial genome size",
+                        "level": 4,
+                        "score": 0.4503836929798126
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.4458176791667938
+                    },
+                    {
+                        "id": "https://openalex.org/C143121216",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1330402",
+                        "display_name": "Microbiome",
+                        "level": 2,
+                        "score": 0.4345252513885498
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.30039334297180176
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.2825689911842346
+                    },
+                    {
+                        "id": "https://openalex.org/C4918238",
+                        "wikidata": "https://www.wikidata.org/wiki/Q121438",
+                        "display_name": "Transposable element",
+                        "level": 4,
+                        "score": 0.13336753845214844
+                    },
+                    {
+                        "id": "https://openalex.org/C59822182",
+                        "wikidata": "https://www.wikidata.org/wiki/Q441",
+                        "display_name": "Botany",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D001419",
+                        "descriptor_name": "Bacteria",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D001419",
+                        "descriptor_name": "Bacteria",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D001419",
+                        "descriptor_name": "Bacteria",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004251",
+                        "descriptor_name": "DNA Transposable Elements",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004251",
+                        "descriptor_name": "DNA Transposable Elements",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D004251",
+                        "descriptor_name": "DNA Transposable Elements",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D056186",
+                        "descriptor_name": "Metagenomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D056186",
+                        "descriptor_name": "Metagenomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D056186",
+                        "descriptor_name": "Metagenomics",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064349",
+                        "descriptor_name": "Genome, Microbial",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064349",
+                        "descriptor_name": "Genome, Microbial",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D064349",
+                        "descriptor_name": "Genome, Microbial",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 10,
+                "locations": [
+                    {
+                        "id": "doi:10.1099/mgen.0.000917",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1099/mgen.0.000917",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4210186362",
+                            "display_name": "Microbial Genomics",
+                            "issn_l": "2057-5858",
+                            "issn": [
+                                "2057-5858"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320497",
+                            "host_organization_name": "Microbiology Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320497"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Microbiology Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial Genomics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36897935",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36897935",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial genomics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:cwi:oai:cwi.nl:32960",
+                        "is_oa": true,
+                        "landing_page_url": "https://ir.cwi.nl/pub/32960",
+                        "pdf_url": "https://ir.cwi.nl/pub/32960/32960.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:HAL:hal-04392744v1",
+                        "is_oa": true,
+                        "landing_page_url": "https://inria.hal.science/hal-04392744",
+                        "pdf_url": "https://inria.hal.science/hal-04392744/document",
+                        "source": {
+                            "id": "https://openalex.org/S4306402512",
+                            "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1294671590",
+                            "host_organization_name": "Centre National de la Recherche Scientifique",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1294671590"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microbial Genomics, 2023, 9 (3), &#x27E8;10.1099/mgen.0.000917&#x27E9;",
+                        "raw_type": "Journal articles"
+                    },
+                    {
+                        "id": "pmh:oai:kclpure.kcl.ac.uk:openaire/ede195da-3f43-493b-8f92-b970faccc12e",
+                        "is_oa": true,
+                        "landing_page_url": "https://kclpure.kcl.ac.uk/portal/en/publications/ede195da-3f43-493b-8f92-b970faccc12e",
+                        "pdf_url": "https://kclpure.kcl.ac.uk/ws/files/186448994/Palidis_fast_discovery_of_CARR_Accepted27October2022_GREEN_AAM.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306400216",
+                            "display_name": "Research Portal (King's College London)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I183935753",
+                            "host_organization_name": "King's College London",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I183935753"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Carr, V R, Pissis, S P, Mullany, P, Shoaie, S, Gomez-Cabrero, D & Moyes, D L 2023, 'Palidis: fast discovery of novel insertion sequences', Microbial Genomics, vol. 9, no. 3, 000917. https://doi.org/10.1099/mgen.0.000917",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10132078",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10132078",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10132078/pdf/mgen-9-917.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microb Genom",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:kclpure.kcl.ac.uk:publications/ede195da-3f43-493b-8f92-b970faccc12e",
+                        "is_oa": true,
+                        "landing_page_url": "http://www.scopus.com/inward/record.url?scp=85150079755&partnerID=8YFLogxK",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400216",
+                            "display_name": "Research Portal (King's College London)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I183935753",
+                            "host_organization_name": "King's College London",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I183935753"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Carr, V R, Pissis, S P, Mullany, P, Shoaie, S, Gomez-Cabrero, D & Moyes, D L 2023, 'Palidis: fast discovery of novel insertion sequences', Microbial Genomics, vol. 9, no. 3, 000917. https://doi.org/10.1099/mgen.0.000917",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:openaire/5e3eecb7-5550-406b-a850-c471e1c5eb73",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1871.1/5e3eecb7-5550-406b-a850-c471e1c5eb73",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Carr, V R, Pissis, S P, Mullany, P, Shoaie, S, Gomez-Cabrero, D & Moyes, D L 2023, 'Palidis: fast discovery of novel insertion sequences', Microbial Genomics, vol. 9, no. 3, 000917, pp. 1-9. https://doi.org/10.1099/mgen.0.000917",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:research.vu.nl:publications/5e3eecb7-5550-406b-a850-c471e1c5eb73",
+                        "is_oa": true,
+                        "landing_page_url": "http://www.scopus.com/inward/citedby.url?scp=85150079755&partnerID=8YFLogxK",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401107",
+                            "display_name": "VU Research Portal",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I865915315",
+                            "host_organization_name": "Vrije Universiteit Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I865915315"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Carr, V R, Pissis, S P, Mullany, P, Shoaie, S, Gomez-Cabrero, D & Moyes, D L 2023, 'Palidis: fast discovery of novel insertion sequences', Microbial Genomics, vol. 9, no. 3, 000917, pp. 1-9. https://doi.org/10.1099/mgen.0.000917",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:vu:oai:research.vu.nl:publications/5e3eecb7-5550-406b-a850-c471e1c5eb73",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.vu.nl/en/publications/5e3eecb7-5550-406b-a850-c471e1c5eb73",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microbial Genomics, 9(3):000917, 1 - 9. Microbiology Society",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1099/mgen.0.000917",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.000917",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G100154322",
+                        "display_name": null,
+                        "funder_award_id": "M009513",
+                        "funder_id": "https://openalex.org/F4320334629",
+                        "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G3726127999",
+                        "display_name": null,
+                        "funder_award_id": "BB/M009513/1",
+                        "funder_id": "https://openalex.org/F4320334627",
+                        "funder_display_name": "Engineering and Physical Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G5130063062",
+                        "display_name": null,
+                        "funder_award_id": "BB/M009513/1",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G544071009",
+                        "display_name": "London Interdisciplinary Doctoral Programme",
+                        "funder_award_id": "BB/M009513/1",
+                        "funder_id": "https://openalex.org/F4320334629",
+                        "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G5956151445",
+                        "display_name": null,
+                        "funder_award_id": "BB/M009513/1",
+                        "funder_id": "https://openalex.org/F4320320285",
+                        "funder_display_name": "King's College London"
+                    },
+                    {
+                        "id": "https://openalex.org/G6697205189",
+                        "display_name": null,
+                        "funder_award_id": "872539",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G7440903218",
+                        "display_name": null,
+                        "funder_award_id": "956229",
+                        "funder_id": "https://openalex.org/F4320320300",
+                        "funder_display_name": "European Commission"
+                    },
+                    {
+                        "id": "https://openalex.org/G7618242006",
+                        "display_name": null,
+                        "funder_award_id": "BB/S016899/1",
+                        "funder_id": "https://openalex.org/F4320334629",
+                        "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G8121670509",
+                        "display_name": "Quantitative Systems Biology Tools to Design Microbiome-Derived Products",
+                        "funder_award_id": "EP/S001301/1",
+                        "funder_id": "https://openalex.org/F4320334627",
+                        "funder_display_name": "Engineering and Physical Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G8742826788",
+                        "display_name": "e-HoMIniCS - elucidation of Host Microbiome Interactions in Cosmetic Skin",
+                        "funder_award_id": "BB/S016899/1",
+                        "funder_id": "https://openalex.org/F4320334629",
+                        "funder_display_name": "Biotechnology and Biological Sciences Research Council"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320285",
+                        "display_name": "King's College London",
+                        "ror": "https://ror.org/0220mzb33"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320300",
+                        "display_name": "European Commission",
+                        "ror": "https://ror.org/00k4n6c32"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320325677",
+                        "display_name": "Science for Life Laboratory",
+                        "ror": "https://ror.org/04ev03g22"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332167",
+                        "display_name": "Directorate for Biological Sciences",
+                        "ror": "https://ror.org/001xhss06"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334627",
+                        "display_name": "Engineering and Physical Sciences Research Council",
+                        "ror": "https://ror.org/0439y7842"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334629",
+                        "display_name": "Biotechnology and Biological Sciences Research Council",
+                        "ror": "https://ror.org/00cwqg982"
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 19,
+                "referenced_works": [
+                    "https://openalex.org/W1929185253",
+                    "https://openalex.org/W1996423252",
+                    "https://openalex.org/W2027831845",
+                    "https://openalex.org/W2046137036",
+                    "https://openalex.org/W2055043387",
+                    "https://openalex.org/W2068625887",
+                    "https://openalex.org/W2101291993",
+                    "https://openalex.org/W2114868025",
+                    "https://openalex.org/W2130062792",
+                    "https://openalex.org/W2131186249",
+                    "https://openalex.org/W2149452073",
+                    "https://openalex.org/W2170551349",
+                    "https://openalex.org/W2170747616",
+                    "https://openalex.org/W2518402156",
+                    "https://openalex.org/W2885680427",
+                    "https://openalex.org/W2997762748",
+                    "https://openalex.org/W3011660771",
+                    "https://openalex.org/W3212599762",
+                    "https://openalex.org/W4211090384"
+                ],
+                "related_works": [
+                    "https://openalex.org/W1989898630",
+                    "https://openalex.org/W2945663299",
+                    "https://openalex.org/W4390909895",
+                    "https://openalex.org/W1891155455",
+                    "https://openalex.org/W2520150954",
+                    "https://openalex.org/W2959951739",
+                    "https://openalex.org/W3154851329",
+                    "https://openalex.org/W3128039816",
+                    "https://openalex.org/W2983142016",
+                    "https://openalex.org/W2108332051"
+                ],
+                "abstract_inverted_index": {
+                    "The": [
+                        0
+                    ],
+                    "diversity": [
+                        1,
+                        12
+                    ],
+                    "of": [
+                        2,
+                        26,
+                        96,
+                        101
+                    ],
+                    "microbial": [
+                        3,
+                        14,
+                        23,
+                        67,
+                        132
+                    ],
+                    "insertion": [
+                        4,
+                        52,
+                        79,
+                        135
+                    ],
+                    "sequences,": [
+                        5,
+                        80
+                    ],
+                    "crucial": [
+                        6
+                    ],
+                    "mobile": [
+                        7
+                    ],
+                    "genetic": [
+                        8
+                    ],
+                    "elements": [
+                        9
+                    ],
+                    "in": [
+                        10,
+                        13,
+                        21,
+                        29,
+                        54
+                    ],
+                    "generating": [
+                        11
+                    ],
+                    "genomes,": [
+                        15
+                    ],
+                    "needs": [
+                        16
+                    ],
+                    "to": [
+                        17,
+                        39,
+                        72,
+                        112,
+                        129
+                    ],
+                    "be": [
+                        18
+                    ],
+                    "better": [
+                        19
+                    ],
+                    "represented": [
+                        20
+                    ],
+                    "current": [
+                        22
+                    ],
+                    "databases.": [
+                        24
+                    ],
+                    "Identification": [
+                        25
+                    ],
+                    "these": [
+                        27
+                    ],
+                    "sequences": [
+                        28,
+                        53
+                    ],
+                    "microbiome": [
+                        30
+                    ],
+                    "communities": [
+                        31
+                    ],
+                    "presents": [
+                        32
+                    ],
+                    "some": [
+                        33
+                    ],
+                    "significant": [
+                        34
+                    ],
+                    "problems": [
+                        35
+                    ],
+                    "that": [
+                        36,
+                        50
+                    ],
+                    "have": [
+                        37
+                    ],
+                    "led": [
+                        38
+                    ],
+                    "their": [
+                        40,
+                        131
+                    ],
+                    "underrepresentation.": [
+                        41
+                    ],
+                    "Here,": [
+                        42
+                    ],
+                    "we": [
+                        43
+                    ],
+                    "present": [
+                        44
+                    ],
+                    "a": [
+                        45,
+                        93,
+                        123
+                    ],
+                    "bioinformatics": [
+                        46
+                    ],
+                    "pipeline": [
+                        47
+                    ],
+                    "called": [
+                        48
+                    ],
+                    "Palidis": [
+                        49,
+                        71
+                    ],
+                    "recognizes": [
+                        51
+                    ],
+                    "metagenomic": [
+                        55
+                    ],
+                    "sequence": [
+                        56
+                    ],
+                    "data": [
+                        57
+                    ],
+                    "rapidly": [
+                        58
+                    ],
+                    "by": [
+                        59
+                    ],
+                    "identifying": [
+                        60
+                    ],
+                    "inverted": [
+                        61
+                    ],
+                    "terminal": [
+                        62
+                    ],
+                    "repeat": [
+                        63
+                    ],
+                    "regions": [
+                        64
+                    ],
+                    "from": [
+                        65
+                    ],
+                    "mixed": [
+                        66
+                    ],
+                    "community": [
+                        68
+                    ],
+                    "genomes.": [
+                        69
+                    ],
+                    "Applying": [
+                        70
+                    ],
+                    "264": [
+                        73
+                    ],
+                    "human": [
+                        74
+                    ],
+                    "metagenomes": [
+                        75
+                    ],
+                    "identifies": [
+                        76
+                    ],
+                    "879": [
+                        77
+                    ],
+                    "unique": [
+                        78
+                    ],
+                    "with": [
+                        81
+                    ],
+                    "519": [
+                        82
+                    ],
+                    "being": [
+                        83
+                    ],
+                    "novel": [
+                        84
+                    ],
+                    "and": [
+                        85
+                    ],
+                    "not": [
+                        86
+                    ],
+                    "previously": [
+                        87
+                    ],
+                    "characterized.": [
+                        88
+                    ],
+                    "Querying": [
+                        89
+                    ],
+                    "this": [
+                        90,
+                        114
+                    ],
+                    "catalogue": [
+                        91
+                    ],
+                    "against": [
+                        92
+                    ],
+                    "large": [
+                        94
+                    ],
+                    "database": [
+                        95
+                    ],
+                    "isolate": [
+                        97
+                    ],
+                    "genomes": [
+                        98,
+                        133
+                    ],
+                    "reveals": [
+                        99
+                    ],
+                    "evidence": [
+                        100
+                    ],
+                    "horizontal": [
+                        102
+                    ],
+                    "gene": [
+                        103
+                    ],
+                    "transfer": [
+                        104
+                    ],
+                    "events": [
+                        105
+                    ],
+                    "across": [
+                        106
+                    ],
+                    "bacterial": [
+                        107
+                    ],
+                    "classes.": [
+                        108
+                    ],
+                    "We": [
+                        109
+                    ],
+                    "will": [
+                        110
+                    ],
+                    "continue": [
+                        111
+                    ],
+                    "apply": [
+                        113
+                    ],
+                    "tool": [
+                        115
+                    ],
+                    "more": [
+                        116
+                    ],
+                    "widely,": [
+                        117
+                    ],
+                    "building": [
+                        118
+                    ],
+                    "the": [
+                        119
+                    ],
+                    "Insertion": [
+                        120
+                    ],
+                    "Sequence": [
+                        121
+                    ],
+                    "Catalogue,": [
+                        122
+                    ],
+                    "valuable": [
+                        124
+                    ],
+                    "resource": [
+                        125
+                    ],
+                    "for": [
+                        126,
+                        134
+                    ],
+                    "researchers": [
+                        127
+                    ],
+                    "wishing": [
+                        128
+                    ],
+                    "query": [
+                        130
+                    ],
+                    "sequences.": [
+                        136
+                    ]
+                },
+                "counts_by_year": [],
+                "updated_date": "2026-05-27T09:02:27.158192",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Palidis: fast discovery of novel insertion sequences",
+                "doi": "10.1099/mgen.0.000917",
+                "pmid": "36897935",
+                "pmc": "PMC10132078",
+                "isbns": [],
+                "altmetric_jid": "55d32c1c2a83eee8488b4567",
+                "issns": [
+                    "2057-5858"
+                ],
+                "journal": "Microbial Genomics",
+                "cohorts": {
+                    "pub": 5
+                },
+                "abstract": "The diversity of microbial insertion sequences, crucial mobile genetic elements in generating diversity in microbial genomes, needs to be better represented in current microbial databases. Identification of these sequences in microbiome communities presents some significant problems that have led to their underrepresentation. Here, we present a bioinformatics pipeline called Palidis that recognizes insertion sequences in metagenomic sequence data rapidly by identifying inverted terminal repeat regions from mixed microbial community genomes. Applying Palidis to 264 human metagenomes identifies 879 unique insertion sequences, with 519 being novel and not previously characterized. Querying this catalogue against a large database of isolate genomes reveals evidence of horizontal gene transfer events across bacterial classes. We will continue to apply this tool more widely, building the Insertion Sequence Catalogue, a valuable resource for researchers wishing to query their microbial genomes for insertion sequences.",
+                "context": {
+                    "all": {
+                        "count": 28103736,
+                        "mean": 10.846591844586074,
+                        "rank": 7263826,
+                        "pct": 74,
+                        "higher_than": 20802839
+                    },
+                    "journal": {
+                        "count": 1200,
+                        "mean": 13.16732,
+                        "rank": 605,
+                        "pct": 49,
+                        "higher_than": 591
+                    },
+                    "similar_age_3m": {
+                        "count": 438065,
+                        "mean": 14.026818554324128,
+                        "rank": 115904,
+                        "pct": 73,
+                        "higher_than": 321695
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 60,
+                        "mean": 10.5288,
+                        "rank": 24,
+                        "pct": 60,
+                        "higher_than": 36
+                    }
+                },
+                "authors": [
+                    "Victoria R. Carr",
+                    "Solon P. Pissis",
+                    "Peter Mullany",
+                    "Saeed Shoaie",
+                    "David Gomez-Cabrero",
+                    "David L. Moyes"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1678752000,
+                "epubdate": 1678406400,
+                "dimensions_publication_id": "pub.1156099191",
+                "altmetric_id": 143693976,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 6,
+                "cited_by_tweeters_count": 5,
+                "cited_by_patents_count": 1,
+                "cited_by_accounts_count": 6,
+                "last_updated": 1736985600,
+                "score": 5.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 5.5
+                },
+                "url": "http://dx.doi.org/10.1099/mgen.0.000917",
+                "added_on": 1678495504,
+                "published_on": 1678406400,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "12",
+                    "connotea": "0"
+                },
+                "readers_count": 12,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=6&types=attttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=6&types=attttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=6&types=attttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=143693976"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 3174,
+            "total_ccn": 289,
+            "avg_ccn": 2.78,
+            "nloc_per_file": 176.33,
+            "duplicate_rate": 1.23
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

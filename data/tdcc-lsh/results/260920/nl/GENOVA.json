@@ -1,0 +1,2242 @@
+{
+    "GENOVA": {
+        "tool_name": "GENOVA",
+        "biotools": {
+            "name": "GENOVA",
+            "description": "Here, we present GENome Organisation Visual Analytics (GENOVA): a software suite to perform in-depth analyses on various levels of genome organisation, using Hi-C data. GENOVA facilitates the comparison between multiple datasets and supports the majority of mapping-pipelines.\n\nThe increase in interest for Hi-C methods in the chromatin community has led to a need for more user-friendly and powerful analysis methods. The few currently available software packages for Hi-C do not allow a researcher to quickly summarize and visualize their data. An easy to use software package, which can generate a comprehensive set of publication-quality plots, would allow researchers to swiftly go from raw Hi-C data to interpretable results.",
+            "homepage": "http://github.com/dewitlab/GENOVA",
+            "biotoolsID": "genova",
+            "biotoolsCURIE": "biotools:genova",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3436",
+                            "term": "Aggregation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0481",
+                            "term": "Loop modelling"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3169",
+                    "term": "ChIP-seq"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3175",
+                    "term": "Structural variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0621",
+                    "term": "Model organisms"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0749",
+                    "term": "Transcription factors and regulatory sites"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3940",
+                    "term": "Chromosome conformation capture"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1101/2021.01.22.427620",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Elzo de Wit",
+                    "email": "e.d.wit@nki.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-03-19T08:44:06Z",
+            "lastUpdate": "2021-03-26T09:39:27Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 206806820,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyMDY4MDY4MjA=",
+                "name": "GENOVA",
+                "full_name": "deWitLab/GENOVA",
+                "private": false,
+                "owner": {
+                    "login": "deWitLab",
+                    "id": 16647900,
+                    "node_id": "MDQ6VXNlcjE2NjQ3OTAw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/16647900?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/deWitLab",
+                    "html_url": "https://github.com/deWitLab",
+                    "followers_url": "https://api.github.com/users/deWitLab/followers",
+                    "following_url": "https://api.github.com/users/deWitLab/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/deWitLab/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/deWitLab/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/deWitLab/subscriptions",
+                    "organizations_url": "https://api.github.com/users/deWitLab/orgs",
+                    "repos_url": "https://api.github.com/users/deWitLab/repos",
+                    "events_url": "https://api.github.com/users/deWitLab/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/deWitLab/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/deWitLab/GENOVA",
+                "description": "GENome Organisation Visual Analytics",
+                "fork": true,
+                "url": "https://api.github.com/repos/deWitLab/GENOVA",
+                "forks_url": "https://api.github.com/repos/deWitLab/GENOVA/forks",
+                "keys_url": "https://api.github.com/repos/deWitLab/GENOVA/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/deWitLab/GENOVA/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/deWitLab/GENOVA/teams",
+                "hooks_url": "https://api.github.com/repos/deWitLab/GENOVA/hooks",
+                "issue_events_url": "https://api.github.com/repos/deWitLab/GENOVA/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/deWitLab/GENOVA/events",
+                "assignees_url": "https://api.github.com/repos/deWitLab/GENOVA/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/deWitLab/GENOVA/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/deWitLab/GENOVA/tags",
+                "blobs_url": "https://api.github.com/repos/deWitLab/GENOVA/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/deWitLab/GENOVA/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/deWitLab/GENOVA/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/deWitLab/GENOVA/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/deWitLab/GENOVA/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/deWitLab/GENOVA/languages",
+                "stargazers_url": "https://api.github.com/repos/deWitLab/GENOVA/stargazers",
+                "contributors_url": "https://api.github.com/repos/deWitLab/GENOVA/contributors",
+                "subscribers_url": "https://api.github.com/repos/deWitLab/GENOVA/subscribers",
+                "subscription_url": "https://api.github.com/repos/deWitLab/GENOVA/subscription",
+                "commits_url": "https://api.github.com/repos/deWitLab/GENOVA/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/deWitLab/GENOVA/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/deWitLab/GENOVA/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/deWitLab/GENOVA/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/deWitLab/GENOVA/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/deWitLab/GENOVA/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/deWitLab/GENOVA/merges",
+                "archive_url": "https://api.github.com/repos/deWitLab/GENOVA/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/deWitLab/GENOVA/downloads",
+                "issues_url": "https://api.github.com/repos/deWitLab/GENOVA/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/deWitLab/GENOVA/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/deWitLab/GENOVA/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/deWitLab/GENOVA/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/deWitLab/GENOVA/labels{/name}",
+                "releases_url": "https://api.github.com/repos/deWitLab/GENOVA/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/deWitLab/GENOVA/deployments",
+                "created_at": "2019-09-06T14:05:29Z",
+                "updated_at": "2026-04-24T11:50:09Z",
+                "pushed_at": "2021-12-24T16:51:04Z",
+                "git_url": "git://github.com/deWitLab/GENOVA.git",
+                "ssh_url": "git@github.com:deWitLab/GENOVA.git",
+                "clone_url": "https://github.com/deWitLab/GENOVA.git",
+                "svn_url": "https://github.com/deWitLab/GENOVA",
+                "homepage": "",
+                "size": 517244,
+                "stargazers_count": 16,
+                "watchers_count": 16,
+                "language": "R",
+                "has_issues": false,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 0,
+                "watchers": 16,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "parent": {
+                    "id": 65380927,
+                    "node_id": "MDEwOlJlcG9zaXRvcnk2NTM4MDkyNw==",
+                    "name": "GENOVA",
+                    "full_name": "robinweide/GENOVA",
+                    "private": false,
+                    "owner": {
+                        "login": "robinweide",
+                        "id": 7115143,
+                        "node_id": "MDQ6VXNlcjcxMTUxNDM=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/7115143?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/robinweide",
+                        "html_url": "https://github.com/robinweide",
+                        "followers_url": "https://api.github.com/users/robinweide/followers",
+                        "following_url": "https://api.github.com/users/robinweide/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/robinweide/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/robinweide/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/robinweide/subscriptions",
+                        "organizations_url": "https://api.github.com/users/robinweide/orgs",
+                        "repos_url": "https://api.github.com/users/robinweide/repos",
+                        "events_url": "https://api.github.com/users/robinweide/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/robinweide/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "html_url": "https://github.com/robinweide/GENOVA",
+                    "description": "GENome Organisation Visual Analytics",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/robinweide/GENOVA",
+                    "forks_url": "https://api.github.com/repos/robinweide/GENOVA/forks",
+                    "keys_url": "https://api.github.com/repos/robinweide/GENOVA/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/robinweide/GENOVA/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/robinweide/GENOVA/teams",
+                    "hooks_url": "https://api.github.com/repos/robinweide/GENOVA/hooks",
+                    "issue_events_url": "https://api.github.com/repos/robinweide/GENOVA/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/robinweide/GENOVA/events",
+                    "assignees_url": "https://api.github.com/repos/robinweide/GENOVA/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/robinweide/GENOVA/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/robinweide/GENOVA/tags",
+                    "blobs_url": "https://api.github.com/repos/robinweide/GENOVA/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/robinweide/GENOVA/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/robinweide/GENOVA/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/robinweide/GENOVA/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/robinweide/GENOVA/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/robinweide/GENOVA/languages",
+                    "stargazers_url": "https://api.github.com/repos/robinweide/GENOVA/stargazers",
+                    "contributors_url": "https://api.github.com/repos/robinweide/GENOVA/contributors",
+                    "subscribers_url": "https://api.github.com/repos/robinweide/GENOVA/subscribers",
+                    "subscription_url": "https://api.github.com/repos/robinweide/GENOVA/subscription",
+                    "commits_url": "https://api.github.com/repos/robinweide/GENOVA/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/robinweide/GENOVA/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/robinweide/GENOVA/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/robinweide/GENOVA/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/robinweide/GENOVA/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/robinweide/GENOVA/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/robinweide/GENOVA/merges",
+                    "archive_url": "https://api.github.com/repos/robinweide/GENOVA/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/robinweide/GENOVA/downloads",
+                    "issues_url": "https://api.github.com/repos/robinweide/GENOVA/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/robinweide/GENOVA/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/robinweide/GENOVA/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/robinweide/GENOVA/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/robinweide/GENOVA/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/robinweide/GENOVA/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/robinweide/GENOVA/deployments",
+                    "created_at": "2016-08-10T12:32:09Z",
+                    "updated_at": "2026-05-26T07:21:17Z",
+                    "pushed_at": "2026-02-03T22:06:19Z",
+                    "git_url": "git://github.com/robinweide/GENOVA.git",
+                    "ssh_url": "git@github.com:robinweide/GENOVA.git",
+                    "clone_url": "https://github.com/robinweide/GENOVA.git",
+                    "svn_url": "https://github.com/robinweide/GENOVA",
+                    "homepage": "",
+                    "size": 517048,
+                    "stargazers_count": 91,
+                    "watchers_count": 91,
+                    "language": "R",
+                    "has_issues": true,
+                    "has_projects": true,
+                    "has_downloads": true,
+                    "has_wiki": true,
+                    "has_pages": false,
+                    "has_discussions": false,
+                    "forks_count": 16,
+                    "mirror_url": null,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 64,
+                    "license": {
+                        "key": "gpl-3.0",
+                        "name": "GNU General Public License v3.0",
+                        "spdx_id": "GPL-3.0",
+                        "url": "https://api.github.com/licenses/gpl-3.0",
+                        "node_id": "MDc6TGljZW5zZTk="
+                    },
+                    "allow_forking": true,
+                    "is_template": false,
+                    "web_commit_signoff_required": false,
+                    "has_pull_requests": true,
+                    "pull_request_creation_policy": "all",
+                    "topics": [
+                        "compartments",
+                        "hi-c",
+                        "loop",
+                        "tad",
+                        "visualization"
+                    ],
+                    "visibility": "public",
+                    "forks": 16,
+                    "open_issues": 64,
+                    "watchers": 91,
+                    "default_branch": "master"
+                },
+                "source": {
+                    "id": 65380927,
+                    "node_id": "MDEwOlJlcG9zaXRvcnk2NTM4MDkyNw==",
+                    "name": "GENOVA",
+                    "full_name": "robinweide/GENOVA",
+                    "private": false,
+                    "owner": {
+                        "login": "robinweide",
+                        "id": 7115143,
+                        "node_id": "MDQ6VXNlcjcxMTUxNDM=",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/7115143?v=4",
+                        "gravatar_id": "",
+                        "url": "https://api.github.com/users/robinweide",
+                        "html_url": "https://github.com/robinweide",
+                        "followers_url": "https://api.github.com/users/robinweide/followers",
+                        "following_url": "https://api.github.com/users/robinweide/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/robinweide/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/robinweide/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/robinweide/subscriptions",
+                        "organizations_url": "https://api.github.com/users/robinweide/orgs",
+                        "repos_url": "https://api.github.com/users/robinweide/repos",
+                        "events_url": "https://api.github.com/users/robinweide/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/robinweide/received_events",
+                        "type": "User",
+                        "user_view_type": "public",
+                        "site_admin": false
+                    },
+                    "html_url": "https://github.com/robinweide/GENOVA",
+                    "description": "GENome Organisation Visual Analytics",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/robinweide/GENOVA",
+                    "forks_url": "https://api.github.com/repos/robinweide/GENOVA/forks",
+                    "keys_url": "https://api.github.com/repos/robinweide/GENOVA/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/robinweide/GENOVA/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/robinweide/GENOVA/teams",
+                    "hooks_url": "https://api.github.com/repos/robinweide/GENOVA/hooks",
+                    "issue_events_url": "https://api.github.com/repos/robinweide/GENOVA/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/robinweide/GENOVA/events",
+                    "assignees_url": "https://api.github.com/repos/robinweide/GENOVA/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/robinweide/GENOVA/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/robinweide/GENOVA/tags",
+                    "blobs_url": "https://api.github.com/repos/robinweide/GENOVA/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/robinweide/GENOVA/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/robinweide/GENOVA/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/robinweide/GENOVA/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/robinweide/GENOVA/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/robinweide/GENOVA/languages",
+                    "stargazers_url": "https://api.github.com/repos/robinweide/GENOVA/stargazers",
+                    "contributors_url": "https://api.github.com/repos/robinweide/GENOVA/contributors",
+                    "subscribers_url": "https://api.github.com/repos/robinweide/GENOVA/subscribers",
+                    "subscription_url": "https://api.github.com/repos/robinweide/GENOVA/subscription",
+                    "commits_url": "https://api.github.com/repos/robinweide/GENOVA/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/robinweide/GENOVA/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/robinweide/GENOVA/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/robinweide/GENOVA/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/robinweide/GENOVA/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/robinweide/GENOVA/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/robinweide/GENOVA/merges",
+                    "archive_url": "https://api.github.com/repos/robinweide/GENOVA/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/robinweide/GENOVA/downloads",
+                    "issues_url": "https://api.github.com/repos/robinweide/GENOVA/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/robinweide/GENOVA/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/robinweide/GENOVA/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/robinweide/GENOVA/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/robinweide/GENOVA/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/robinweide/GENOVA/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/robinweide/GENOVA/deployments",
+                    "created_at": "2016-08-10T12:32:09Z",
+                    "updated_at": "2026-05-26T07:21:17Z",
+                    "pushed_at": "2026-02-03T22:06:19Z",
+                    "git_url": "git://github.com/robinweide/GENOVA.git",
+                    "ssh_url": "git@github.com:robinweide/GENOVA.git",
+                    "clone_url": "https://github.com/robinweide/GENOVA.git",
+                    "svn_url": "https://github.com/robinweide/GENOVA",
+                    "homepage": "",
+                    "size": 517048,
+                    "stargazers_count": 91,
+                    "watchers_count": 91,
+                    "language": "R",
+                    "has_issues": true,
+                    "has_projects": true,
+                    "has_downloads": true,
+                    "has_wiki": true,
+                    "has_pages": false,
+                    "has_discussions": false,
+                    "forks_count": 16,
+                    "mirror_url": null,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 64,
+                    "license": {
+                        "key": "gpl-3.0",
+                        "name": "GNU General Public License v3.0",
+                        "spdx_id": "GPL-3.0",
+                        "url": "https://api.github.com/licenses/gpl-3.0",
+                        "node_id": "MDc6TGljZW5zZTk="
+                    },
+                    "allow_forking": true,
+                    "is_template": false,
+                    "web_commit_signoff_required": false,
+                    "has_pull_requests": true,
+                    "pull_request_creation_policy": "all",
+                    "topics": [
+                        "compartments",
+                        "hi-c",
+                        "loop",
+                        "tad",
+                        "visualization"
+                    ],
+                    "visibility": "public",
+                    "forks": 16,
+                    "open_issues": 64,
+                    "watchers": 91,
+                    "default_branch": "master"
+                },
+                "network_count": 16,
+                "subscribers_count": 0
+            },
+            "contents": [
+                {
+                    "path": ".Rbuildignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".travis.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "CODE_OF_CONDUCT.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "DESCRIPTION",
+                    "type": "blob"
+                },
+                {
+                    "path": "GENOVA.Rproj",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "NAMESPACE",
+                    "type": "blob"
+                },
+                {
+                    "path": "NEWS.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "R",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.rmd",
+                    "type": "blob"
+                },
+                {
+                    "path": "data",
+                    "type": "tree"
+                },
+                {
+                    "path": "inst",
+                    "type": "tree"
+                },
+                {
+                    "path": "man",
+                    "type": "tree"
+                },
+                {
+                    "path": "misc",
+                    "type": "tree"
+                },
+                {
+                    "path": "vignettes",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "teunbrand",
+                    "contributions": 405
+                },
+                {
+                    "login": "robinweide",
+                    "contributions": 329
+                },
+                {
+                    "login": "deWitLab",
+                    "contributions": 40
+                },
+                {
+                    "login": "asedenocacciatore",
+                    "contributions": 2
+                },
+                {
+                    "login": "MarijneMia",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "R": 529031
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/nargab/lqab040",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "34046591",
+                            "source": "MED",
+                            "pmid": "34046591",
+                            "pmcid": "PMC8140737",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC8140737"
+                                ]
+                            },
+                            "doi": "10.1093/nargab/lqab040",
+                            "title": "Hi-C analyses with GENOVA: a case study with cohesin variants.",
+                            "authorString": "van der Weide RH, van den Brand T, Haarhuis JHI, Teunissen H, Rowland BD, de Wit E.",
+                            "journalTitle": "NAR Genom Bioinform",
+                            "issue": "2",
+                            "journalVolume": "3",
+                            "pubYear": "2021",
+                            "journalIssn": "2631-9268",
+                            "pageInfo": "lqab040",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 147,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "Y",
+                            "dbCrossReferenceList": {
+                                "dbName": [
+                                    "EMBL"
+                                ]
+                            },
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "geo"
+                                ]
+                            },
+                            "firstIndexDate": "2021-05-29",
+                            "firstPublicationDate": "2021-05-22"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3165253641",
+                "doi": "https://doi.org/10.1093/nargab/lqab040",
+                "title": "Hi-C analyses with GENOVA: a case study with cohesin variants",
+                "display_name": "Hi-C analyses with GENOVA: a case study with cohesin variants",
+                "publication_year": 2021,
+                "publication_date": "2021-04-09",
+                "ids": {
+                    "openalex": "https://openalex.org/W3165253641",
+                    "doi": "https://doi.org/10.1093/nargab/lqab040",
+                    "mag": "3165253641",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/34046591"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/nargab/lqab040",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/nargab/lqab040",
+                    "pdf_url": "https://academic.oup.com/nargab/article-pdf/3/2/lqab040/38108104/lqab040.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4210241000",
+                        "display_name": "NAR Genomics and Bioinformatics",
+                        "issn_l": "2631-9268",
+                        "issn": [
+                            "2631-9268"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "other-oa",
+                    "license_id": "https://openalex.org/licenses/other-oa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NAR Genomics and Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://academic.oup.com/nargab/article-pdf/3/2/lqab040/38108104/lqab040.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5062681183",
+                            "display_name": "Robin H. van der Weide",
+                            "orcid": "https://orcid.org/0000-0002-6466-7280"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Robin H van\u00a0der\u00a0Weide",
+                        "raw_affiliation_strings": [
+                            "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6466-7280",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5012626708",
+                            "display_name": "Teun van den Brand",
+                            "orcid": "https://orcid.org/0000-0002-9335-7468"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Teun van\u00a0den\u00a0Brand",
+                        "raw_affiliation_strings": [
+                            "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5085287704",
+                            "display_name": "Judith H.I. Haarhuis",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Judith H I Haarhuis",
+                        "raw_affiliation_strings": [
+                            "Division of Cell Biology, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Cell Biology, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5014412428",
+                            "display_name": "Hans Teunissen",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Hans Teunissen",
+                        "raw_affiliation_strings": [
+                            "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064187066",
+                            "display_name": "Benjamin D. Rowland",
+                            "orcid": "https://orcid.org/0000-0002-0694-8463"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Benjamin\u00a0D Rowland",
+                        "raw_affiliation_strings": [
+                            "Division of Cell Biology, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Cell Biology, The Netherlands Cancer Institute, Plesmanlaan 121, 1066CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5081340727",
+                            "display_name": "Elzo de Wit",
+                            "orcid": "https://orcid.org/0000-0003-2883-1415"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I2898336195",
+                                "display_name": "The Netherlands Cancer Institute",
+                                "ror": "https://ror.org/03xqtf034",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210111138",
+                                "display_name": "Oncode Institute",
+                                "ror": "https://ror.org/01n92vv28",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210111138"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Elzo de\u00a0Wit",
+                        "raw_affiliation_strings": [
+                            "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-2883-1415",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Division of Gene Regulation, Oncode Institute and The Netherlands Cancer Institute, Plesmanlaan 121, 1066 CX Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210111138",
+                                    "https://openalex.org/I2898336195"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5081340727"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I2898336195",
+                    "https://openalex.org/I4210111138"
+                ],
+                "apc_list": {
+                    "value": 2473,
+                    "currency": "USD",
+                    "value_usd": 2473
+                },
+                "apc_paid": {
+                    "value": 2473,
+                    "currency": "USD",
+                    "value_usd": 2473
+                },
+                "fwci": 9.4436,
+                "has_fulltext": true,
+                "cited_by_count": 163,
+                "citation_normalized_percentile": {
+                    "value": 0.98884622,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 98,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "3",
+                    "issue": "2",
+                    "first_page": "lqab040",
+                    "last_page": "lqab040"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10222",
+                    "display_name": "Genomics and Chromatin Dynamics",
+                    "score": 0.9998999834060669,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10222",
+                        "display_name": "Genomics and Chromatin Dynamics",
+                        "score": 0.9998999834060669,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10434",
+                        "display_name": "Chromosomal and Genetic Variations",
+                        "score": 0.9987999796867371,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1110",
+                            "display_name": "Plant Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10604",
+                        "display_name": "RNA Research and Splicing",
+                        "score": 0.9983000159263611,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/compartmentalization",
+                        "display_name": "Compartmentalization (fire protection)",
+                        "score": 0.7408842444419861
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/cohesin",
+                        "display_name": "Cohesin",
+                        "score": 0.639138400554657
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/locus",
+                        "display_name": "Locus (genetics)",
+                        "score": 0.5867208242416382
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5147581100463867
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5028457045555115
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.500957727432251
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chromosome-conformation-capture",
+                        "display_name": "Chromosome conformation capture",
+                        "score": 0.4959345757961273
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.4927537739276886
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/r-package",
+                        "display_name": "R package",
+                        "score": 0.47313204407691956
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.4442588984966278
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/compartment",
+                        "display_name": "Compartment (ship)",
+                        "score": 0.4233427941799164
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-package",
+                        "display_name": "Software package",
+                        "score": 0.4213697612285614
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/centromere",
+                        "display_name": "Centromere",
+                        "score": 0.4205319881439209
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/chromosome",
+                        "display_name": "Chromosome",
+                        "score": 0.410493403673172
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.33577656745910645
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.24685785174369812
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.129057377576828
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-science",
+                        "display_name": "Computational science",
+                        "score": 0.11314639449119568
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene-expression",
+                        "display_name": "Gene expression",
+                        "score": 0.08637690544128418
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C110455231",
+                        "wikidata": "https://www.wikidata.org/wiki/Q897788",
+                        "display_name": "Compartmentalization (fire protection)",
+                        "level": 3,
+                        "score": 0.7408842444419861
+                    },
+                    {
+                        "id": "https://openalex.org/C115821613",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21103063",
+                        "display_name": "Cohesin",
+                        "level": 4,
+                        "score": 0.639138400554657
+                    },
+                    {
+                        "id": "https://openalex.org/C84597430",
+                        "wikidata": "https://www.wikidata.org/wiki/Q106227",
+                        "display_name": "Locus (genetics)",
+                        "level": 3,
+                        "score": 0.5867208242416382
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5147581100463867
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5028457045555115
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.500957727432251
+                    },
+                    {
+                        "id": "https://openalex.org/C93946551",
+                        "wikidata": "https://www.wikidata.org/wiki/Q5113914",
+                        "display_name": "Chromosome conformation capture",
+                        "level": 5,
+                        "score": 0.4959345757961273
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.4927537739276886
+                    },
+                    {
+                        "id": "https://openalex.org/C2984074130",
+                        "wikidata": "https://www.wikidata.org/wiki/Q73539779",
+                        "display_name": "R package",
+                        "level": 2,
+                        "score": 0.47313204407691956
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.4442588984966278
+                    },
+                    {
+                        "id": "https://openalex.org/C203635412",
+                        "wikidata": "https://www.wikidata.org/wiki/Q17007432",
+                        "display_name": "Compartment (ship)",
+                        "level": 2,
+                        "score": 0.4233427941799164
+                    },
+                    {
+                        "id": "https://openalex.org/C3020440742",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1176855",
+                        "display_name": "Software package",
+                        "level": 3,
+                        "score": 0.4213697612285614
+                    },
+                    {
+                        "id": "https://openalex.org/C63491729",
+                        "wikidata": "https://www.wikidata.org/wiki/Q14762596",
+                        "display_name": "Centromere",
+                        "level": 4,
+                        "score": 0.4205319881439209
+                    },
+                    {
+                        "id": "https://openalex.org/C30481170",
+                        "wikidata": "https://www.wikidata.org/wiki/Q37748",
+                        "display_name": "Chromosome",
+                        "level": 3,
+                        "score": 0.410493403673172
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.33577656745910645
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.24685785174369812
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.129057377576828
+                    },
+                    {
+                        "id": "https://openalex.org/C459310",
+                        "wikidata": "https://www.wikidata.org/wiki/Q117801",
+                        "display_name": "Computational science",
+                        "level": 1,
+                        "score": 0.11314639449119568
+                    },
+                    {
+                        "id": "https://openalex.org/C150194340",
+                        "wikidata": "https://www.wikidata.org/wiki/Q26972",
+                        "display_name": "Gene expression",
+                        "level": 3,
+                        "score": 0.08637690544128418
+                    },
+                    {
+                        "id": "https://openalex.org/C55493867",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7094",
+                        "display_name": "Biochemistry",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C111936080",
+                        "wikidata": "https://www.wikidata.org/wiki/Q913367",
+                        "display_name": "Enhancer",
+                        "level": 4,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C127313418",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+                        "display_name": "Geology",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C111368507",
+                        "wikidata": "https://www.wikidata.org/wiki/Q43518",
+                        "display_name": "Oceanography",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C181199279",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8047",
+                        "display_name": "Enzyme",
+                        "level": 2,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 3,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/nargab/lqab040",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/nargab/lqab040",
+                        "pdf_url": "https://academic.oup.com/nargab/article-pdf/3/2/lqab040/38108104/lqab040.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4210241000",
+                            "display_name": "NAR Genomics and Bioinformatics",
+                            "issn_l": "2631-9268",
+                            "issn": [
+                                "2631-9268"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NAR Genomics and Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:34046591",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/34046591",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "NAR genomics and bioinformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:8140737",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8140737",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "NAR Genom Bioinform",
+                        "raw_type": "Text"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/nargab/lqab040",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/nargab/lqab040",
+                    "pdf_url": "https://academic.oup.com/nargab/article-pdf/3/2/lqab040/38108104/lqab040.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4210241000",
+                        "display_name": "NAR Genomics and Bioinformatics",
+                        "issn_l": "2631-9268",
+                        "issn": [
+                            "2631-9268"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "other-oa",
+                    "license_id": "https://openalex.org/licenses/other-oa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "NAR Genomics and Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1298376716",
+                        "display_name": "Cohesin-mediated chromosomal looping: From linear paths to 3D effects",
+                        "funder_award_id": "772471",
+                        "funder_id": "https://openalex.org/F4320338335",
+                        "funder_display_name": "H2020 European Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G7009589102",
+                        "display_name": null,
+                        "funder_award_id": "637597",
+                        "funder_id": "https://openalex.org/F4320338335",
+                        "funder_display_name": "H2020 European Research Council"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320322777",
+                        "display_name": "KWF Kankerbestrijding",
+                        "ror": "https://ror.org/0368jnd28"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320331496",
+                        "display_name": "Oncode Institute",
+                        "ror": "https://ror.org/01n92vv28"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320338335",
+                        "display_name": "H2020 European Research Council",
+                        "ror": "https://ror.org/0472cxd90"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3165253641.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3165253641.grobid-xml"
+                },
+                "referenced_works_count": 61,
+                "referenced_works": [
+                    "https://openalex.org/W1660678623",
+                    "https://openalex.org/W1831401007",
+                    "https://openalex.org/W1873772354",
+                    "https://openalex.org/W1915573037",
+                    "https://openalex.org/W1968126063",
+                    "https://openalex.org/W1973062929",
+                    "https://openalex.org/W2070021921",
+                    "https://openalex.org/W2090037139",
+                    "https://openalex.org/W2097798909",
+                    "https://openalex.org/W2102368172",
+                    "https://openalex.org/W2107866789",
+                    "https://openalex.org/W2116261028",
+                    "https://openalex.org/W2143599753",
+                    "https://openalex.org/W2161212572",
+                    "https://openalex.org/W2163412235",
+                    "https://openalex.org/W2185693210",
+                    "https://openalex.org/W2294365510",
+                    "https://openalex.org/W2341539131",
+                    "https://openalex.org/W2395654621",
+                    "https://openalex.org/W2401568148",
+                    "https://openalex.org/W2432927940",
+                    "https://openalex.org/W2470258573",
+                    "https://openalex.org/W2481029670",
+                    "https://openalex.org/W2528263447",
+                    "https://openalex.org/W2531252302",
+                    "https://openalex.org/W2558827688",
+                    "https://openalex.org/W2597274540",
+                    "https://openalex.org/W2610160407",
+                    "https://openalex.org/W2747643030",
+                    "https://openalex.org/W2757387674",
+                    "https://openalex.org/W2761461280",
+                    "https://openalex.org/W2765567136",
+                    "https://openalex.org/W2775505403",
+                    "https://openalex.org/W2803559294",
+                    "https://openalex.org/W2807993805",
+                    "https://openalex.org/W2810076504",
+                    "https://openalex.org/W2810823898",
+                    "https://openalex.org/W2812344549",
+                    "https://openalex.org/W2888425844",
+                    "https://openalex.org/W2904120442",
+                    "https://openalex.org/W2907707189",
+                    "https://openalex.org/W2921653064",
+                    "https://openalex.org/W2945594591",
+                    "https://openalex.org/W2949389238",
+                    "https://openalex.org/W2951050465",
+                    "https://openalex.org/W2960979937",
+                    "https://openalex.org/W2965729444",
+                    "https://openalex.org/W2971734187",
+                    "https://openalex.org/W2981928885",
+                    "https://openalex.org/W2987911680",
+                    "https://openalex.org/W2989713781",
+                    "https://openalex.org/W2991248607",
+                    "https://openalex.org/W2994756760",
+                    "https://openalex.org/W2998399076",
+                    "https://openalex.org/W3003909932",
+                    "https://openalex.org/W3007279945",
+                    "https://openalex.org/W3014273310",
+                    "https://openalex.org/W3017119031",
+                    "https://openalex.org/W3048464902",
+                    "https://openalex.org/W6712512536",
+                    "https://openalex.org/W6737493133"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4400956165",
+                    "https://openalex.org/W4200532260",
+                    "https://openalex.org/W2603840088",
+                    "https://openalex.org/W2767110090",
+                    "https://openalex.org/W4389426664",
+                    "https://openalex.org/W4401249746",
+                    "https://openalex.org/W4252694098",
+                    "https://openalex.org/W4230577440",
+                    "https://openalex.org/W4311588897",
+                    "https://openalex.org/W4285393737"
+                ],
+                "abstract_inverted_index": {
+                    "Abstract": [
+                        0
+                    ],
+                    "Conformation": [
+                        1
+                    ],
+                    "capture-approaches": [
+                        2
+                    ],
+                    "like": [
+                        3
+                    ],
+                    "Hi-C": [
+                        4,
+                        13,
+                        47,
+                        72,
+                        99,
+                        210
+                    ],
+                    "can": [
+                        5,
+                        57
+                    ],
+                    "elucidate": [
+                        6
+                    ],
+                    "chromosome": [
+                        7,
+                        33
+                    ],
+                    "structure": [
+                        8,
+                        165
+                    ],
+                    "at": [
+                        9,
+                        66
+                    ],
+                    "a": [
+                        10,
+                        25,
+                        67,
+                        132,
+                        147
+                    ],
+                    "genome-wide": [
+                        11
+                    ],
+                    "scale.": [
+                        12
+                    ],
+                    "datasets": [
+                        14
+                    ],
+                    "are": [
+                        15
+                    ],
+                    "large": [
+                        16
+                    ],
+                    "and": [
+                        17,
+                        31,
+                        52,
+                        70,
+                        110,
+                        123,
+                        131,
+                        151,
+                        177,
+                        188
+                    ],
+                    "require": [
+                        18
+                    ],
+                    "specialised": [
+                        19
+                    ],
+                    "software.": [
+                        20
+                    ],
+                    "Here,": [
+                        21
+                    ],
+                    "we": [
+                        22
+                    ],
+                    "present": [
+                        23
+                    ],
+                    "GENOVA:": [
+                        24
+                    ],
+                    "user-friendly": [
+                        26
+                    ],
+                    "software": [
+                        27
+                    ],
+                    "package": [
+                        28,
+                        84
+                    ],
+                    "to": [
+                        29,
+                        61,
+                        202,
+                        208
+                    ],
+                    "analyse": [
+                        30
+                    ],
+                    "visualise": [
+                        32,
+                        62
+                    ],
+                    "conformation": [
+                        34
+                    ],
+                    "capture": [
+                        35
+                    ],
+                    "(3C)": [
+                        36
+                    ],
+                    "data.": [
+                        37,
+                        81
+                    ],
+                    "GENOVA": [
+                        38,
+                        96,
+                        198
+                    ],
+                    "is": [
+                        39,
+                        163,
+                        199
+                    ],
+                    "an": [
+                        40,
+                        200
+                    ],
+                    "R-package": [
+                        41
+                    ],
+                    "that": [
+                        42,
+                        117,
+                        139,
+                        160,
+                        197,
+                        205
+                    ],
+                    "includes": [
+                        43
+                    ],
+                    "the": [
+                        44,
+                        63,
+                        88,
+                        93,
+                        107,
+                        158,
+                        161,
+                        169,
+                        180
+                    ],
+                    "most": [
+                        45
+                    ],
+                    "common": [
+                        46
+                    ],
+                    "analyses,": [
+                        48
+                    ],
+                    "such": [
+                        49,
+                        78
+                    ],
+                    "as": [
+                        50,
+                        79
+                    ],
+                    "compartment": [
+                        51
+                    ],
+                    "insulation": [
+                        53
+                    ],
+                    "score": [
+                        54
+                    ],
+                    "analysis.": [
+                        55
+                    ],
+                    "It": [
+                        56
+                    ],
+                    "create": [
+                        58
+                    ],
+                    "annotated": [
+                        59
+                    ],
+                    "heatmaps": [
+                        60
+                    ],
+                    "contact": [
+                        64
+                    ],
+                    "frequency": [
+                        65
+                    ],
+                    "specific": [
+                        68
+                    ],
+                    "locus": [
+                        69
+                    ],
+                    "aggregate": [
+                        71
+                    ],
+                    "signal": [
+                        73
+                    ],
+                    "over": [
+                        74
+                    ],
+                    "user-specified": [
+                        75
+                    ],
+                    "genomic": [
+                        76
+                    ],
+                    "regions": [
+                        77
+                    ],
+                    "ChIP-seq": [
+                        80
+                    ],
+                    "Finally,": [
+                        82
+                    ],
+                    "our": [
+                        83
+                    ],
+                    "supports": [
+                        85,
+                        157
+                    ],
+                    "output": [
+                        86
+                    ],
+                    "from": [
+                        87,
+                        101
+                    ],
+                    "major": [
+                        89
+                    ],
+                    "mapping-pipelines.": [
+                        90
+                    ],
+                    "We": [
+                        91,
+                        115,
+                        195
+                    ],
+                    "demonstrate": [
+                        92
+                    ],
+                    "capabilities": [
+                        94
+                    ],
+                    "of": [
+                        95,
+                        171
+                    ],
+                    "by": [
+                        97,
+                        168
+                    ],
+                    "analysing": [
+                        98
+                    ],
+                    "data": [
+                        100,
+                        156,
+                        211
+                    ],
+                    "HAP1": [
+                        102
+                    ],
+                    "cell": [
+                        103
+                    ],
+                    "lines": [
+                        104
+                    ],
+                    "in": [
+                        105,
+                        149,
+                        166,
+                        212
+                    ],
+                    "which": [
+                        106
+                    ],
+                    "cohesin-subunits": [
+                        108
+                    ],
+                    "SA1": [
+                        109
+                    ],
+                    "SA2": [
+                        111
+                    ],
+                    "were": [
+                        112
+                    ],
+                    "knocked": [
+                        113
+                    ],
+                    "out.": [
+                        114
+                    ],
+                    "find": [
+                        116
+                    ],
+                    "\u0394SA1": [
+                        118
+                    ],
+                    "cells": [
+                        119,
+                        127
+                    ],
+                    "gain": [
+                        120
+                    ],
+                    "intra-TAD": [
+                        121,
+                        153
+                    ],
+                    "interactions": [
+                        122
+                    ],
+                    "increase": [
+                        124
+                    ],
+                    "compartmentalisation.": [
+                        125
+                    ],
+                    "\u0394SA2": [
+                        126
+                    ],
+                    "have": [
+                        128
+                    ],
+                    "longer": [
+                        129,
+                        142
+                    ],
+                    "loops": [
+                        130
+                    ],
+                    "less": [
+                        133
+                    ],
+                    "compartmentalised": [
+                        134
+                    ],
+                    "genome.": [
+                        135
+                    ],
+                    "These": [
+                        136
+                    ],
+                    "results": [
+                        137
+                    ],
+                    "suggest": [
+                        138
+                    ],
+                    "cohesinSA1": [
+                        140,
+                        187
+                    ],
+                    "forms": [
+                        141
+                    ],
+                    "loops,": [
+                        143,
+                        186
+                    ],
+                    "while": [
+                        144
+                    ],
+                    "cohesinSA2": [
+                        145,
+                        189
+                    ],
+                    "plays": [
+                        146
+                    ],
+                    "role": [
+                        148
+                    ],
+                    "forming": [
+                        150
+                    ],
+                    "maintaining": [
+                        152
+                    ],
+                    "interactions.": [
+                        154
+                    ],
+                    "Our": [
+                        155
+                    ],
+                    "model": [
+                        159
+                    ],
+                    "genome": [
+                        162
+                    ],
+                    "provided": [
+                        164
+                    ],
+                    "3D": [
+                        167
+                    ],
+                    "counter-balancing": [
+                        170
+                    ],
+                    "loop": [
+                        172
+                    ],
+                    "formation": [
+                        173
+                    ],
+                    "on": [
+                        174,
+                        179
+                    ],
+                    "one": [
+                        175
+                    ],
+                    "hand,": [
+                        176
+                    ],
+                    "compartmentalization": [
+                        178
+                    ],
+                    "other": [
+                        181
+                    ],
+                    "hand.": [
+                        182
+                    ],
+                    "By": [
+                        183
+                    ],
+                    "differentially": [
+                        184
+                    ],
+                    "controlling": [
+                        185
+                    ],
+                    "therefore": [
+                        190
+                    ],
+                    "also": [
+                        191
+                    ],
+                    "affect": [
+                        192
+                    ],
+                    "nuclear": [
+                        193
+                    ],
+                    "compartmentalization.": [
+                        194
+                    ],
+                    "show": [
+                        196
+                    ],
+                    "easy": [
+                        201
+                    ],
+                    "use": [
+                        203
+                    ],
+                    "R-package,": [
+                        204
+                    ],
+                    "allows": [
+                        206
+                    ],
+                    "researchers": [
+                        207
+                    ],
+                    "explore": [
+                        209
+                    ],
+                    "great": [
+                        213
+                    ],
+                    "detail.": [
+                        214
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 9
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 43
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 50
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 32
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 20
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 8
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Hi-C analyses with GENOVA: a case study with cohesin variants",
+                "doi": "10.1093/nargab/lqab040",
+                "pmid": "34046591",
+                "pmc": "PMC8140737",
+                "isbns": [],
+                "altmetric_jid": "632af03ae6f36d0001251f88",
+                "issns": [
+                    "2631-9268"
+                ],
+                "journal": "NAR Genomics and Bioinformatics",
+                "cohorts": {
+                    "sci": 9,
+                    "pub": 10,
+                    "doc": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 30069453,
+                        "mean": 10.809305219087292,
+                        "rank": 2472529,
+                        "pct": 91,
+                        "higher_than": 27595016
+                    },
+                    "journal": {
+                        "count": 602,
+                        "mean": 7.406063122923588,
+                        "rank": 55,
+                        "pct": 90,
+                        "higher_than": 547
+                    },
+                    "similar_age_3m": {
+                        "count": 453610,
+                        "mean": 14.781582857520805,
+                        "rank": 48734,
+                        "pct": 89,
+                        "higher_than": 404812
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 32,
+                        "mean": 11.3796875,
+                        "rank": 7,
+                        "pct": 78,
+                        "higher_than": 25
+                    }
+                },
+                "authors": [
+                    "Robin H van der Weide",
+                    "Teun van den Brand",
+                    "Judith H I Haarhuis",
+                    "Hans Teunissen",
+                    "Benjamin D Rowland",
+                    "Elzo de Wit"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1617926400,
+                "epubdate": 1621641600,
+                "dimensions_publication_id": "pub.1138270111",
+                "altmetric_id": 106313245,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 23,
+                "cited_by_tweeters_count": 20,
+                "cited_by_feeds_count": 1,
+                "cited_by_accounts_count": 21,
+                "last_updated": 1700611200,
+                "score": 17.1,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 17.1
+                },
+                "url": "http://dx.doi.org/10.1093/nargab/lqab040",
+                "added_on": 1621794095,
+                "published_on": 1621641600,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "59",
+                    "connotea": "0"
+                },
+                "readers_count": 59,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=18&types=bttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=18&types=bttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=18&types=bttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=106313245"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 11568,
+            "total_ccn": 1432,
+            "avg_ccn": 4.27,
+            "nloc_per_file": 236.08,
+            "duplicate_rate": 15.34
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

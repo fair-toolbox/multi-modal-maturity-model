@@ -1,0 +1,1686 @@
+{
+    "iKaptive": {
+        "tool_name": "iKaptive",
+        "biotools": {
+            "name": "iKaptive",
+            "description": "Identification of <i>Acinetobacter baumannii</i> loci for capsular polysaccharide (KL) and lipooligosaccharide outer core (OCL) synthesis in genome assemblies using curated reference databases compatible with <i>Kaptive</i>.\n\nKaptive reports information about surface polysaccharide loci for Klebsiella and Acinetobacter baumannii genome assemblies. You can also run a graphical version of Kaptive via this web interface (source code).\n\nGiven a novel genome and a database of known loci (K, O or OC), Kaptive will help a user to decide whether their sample has a known or novel locus. It carries out the following for each input assembly:.\n\nKaptive is a tool for bacterial surface polysaccharide locus typing and variant evaluation.\n\nBLAST for all known locus nucleotide sequences (using blastn) to identify the best match ('best' defined as having the highest coverage).",
+            "homepage": "https://github.com/katholt/Kaptive",
+            "biotoolsID": "ikaptive",
+            "biotoolsCURIE": "biotools:ikaptive",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3840",
+                            "term": "Multilocus sequence typing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0525",
+                            "term": "Genome assembly"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3216",
+                            "term": "Scaffolding"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3431",
+                            "term": "Deposition"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0196",
+                    "term": "Sequence assembly"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3305",
+                    "term": "Public health and epidemiology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3673",
+                    "term": "Whole genome sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0102",
+                    "term": "Mapping"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3068",
+                    "term": "Literature and language"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "http://kaptive.holtlab.net/",
+                    "type": [
+                        "Other"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1099/MGEN.0.000339",
+                    "pmid": "32118530",
+                    "pmcid": "PMC7200062",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "Identification of acinetobacter baumannii loci for capsular polysaccharide (KL) and lipooligosaccharide outer core (OCL) synthesis in genome assemblies using curated reference databases compatible with kaptive",
+                        "abstract": "\u00a9 2020 The Authors.Multiply antibiotic-resistant Acinetobacter baumannii infections are a global public health concern and accurate tracking of the spread of specific lineages is needed. Variation in the composition and structure of capsular polysaccharide (CPS), a criti-cal determinant of virulence and phage susceptibility, makes it an attractive epidemiological marker. The outer core (OC) of lipooligosaccharide also exhibits variation. To take better advantage of the untapped information available in whole genome sequences, we have created a curated reference database of 92 publicly available gene clusters at the locus encoding proteins responsible for biosynthesis and export of CPS (K locus), and a second database for 12 gene clusters at the locus for outer core biosynthesis (OC locus). Each entry has been assigned a unique KL or OCL number, and is fully annotated using a simple, transparent and standardized nomenclature. These databases are compatible with Kaptive, a tool for in silico typing of bacterial surface polysaccharide loci, and their utility was validated using (a) >630 assembled A. baumannii draft genomes for which the KL and OCL regions had been previously typed manually, and (b) 3386 A. baumannii genome assemblies downloaded from NCBI. Among the previously typed genomes, Kaptive was able to confidently assign KL and OCL types with 100% accuracy. Among the genomes retrieved from NCBI, Kaptive detected known KL and OCL in 87 and 90% of genomes, respectively, indicating that the majority of common KL and OCL types are captured within the databases; 13 of the 92 KL in the database were not detected in any publicly available whole genome assembly. The failure to assign a KL or OCL type may indicate incomplete or poor-quality genomes. However, further novel variants may remain to be documented. Combining outputs with multilocus sequence typing (Institut Pasteur scheme) revealed multiple KL and OCL types in collections of a single sequence type (ST) representing each of the two predominant globally distributed clones, ST1 of GC1 and ST2 of GC2, and in collections of other clones comprising >20 isolates each (ST10, ST25, and ST140), indicating extensive within-clone replacement of these loci. The databases are available at https://\u200bgithub.\u200bcom/\u200bkatholt/\u200bKaptive and will be updated as further locus types become available.",
+                        "date": "2020-01-01T00:00:00Z",
+                        "citationCount": 28,
+                        "authors": [
+                            {
+                                "name": "Wyres K.L."
+                            },
+                            {
+                                "name": "Cahill S.M."
+                            },
+                            {
+                                "name": "Holt K.E."
+                            },
+                            {
+                                "name": "Hall R.M."
+                            },
+                            {
+                                "name": "Kenyon J.J."
+                            }
+                        ],
+                        "journal": "Microbial Genomics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Johanna J. Kenyon",
+                    "email": "johanna.kenyon@qut.edu.au",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-1487-6105",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Niclaskn",
+            "additionDate": "2021-01-18T08:10:00Z",
+            "lastUpdate": "2021-02-03T07:51:43Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "repository": null,
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1099/mgen.0.001007",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "37130055",
+                            "source": "MED",
+                            "pmid": "37130055",
+                            "pmcid": "PMC10272883",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10272883"
+                                ]
+                            },
+                            "doi": "10.1099/mgen.0.001007",
+                            "title": "Development of <i>Kaptive</i> databases for <i>Vibrio parahaemolyticus</i> O- and K-antigen genotyping.",
+                            "authorString": "van der Graaf-van Bloois L, Chen H, Wagenaar JA, Zomer AL.",
+                            "journalTitle": "Microb Genom",
+                            "issue": "5",
+                            "journalVolume": "9",
+                            "pubYear": "2023",
+                            "journalIssn": "2057-5858",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 11,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "bioproject",
+                                    "gen"
+                                ]
+                            },
+                            "firstIndexDate": "2023-05-03",
+                            "firstPublicationDate": "2023-05-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4367668371",
+                "doi": "https://doi.org/10.1099/mgen.0.001007",
+                "title": "Development of Kaptive databases for Vibrio parahaemolyticus O- and K-antigen genotyping",
+                "display_name": "Development of Kaptive databases for Vibrio parahaemolyticus O- and K-antigen genotyping",
+                "publication_year": 2023,
+                "publication_date": "2023-05-02",
+                "ids": {
+                    "openalex": "https://openalex.org/W4367668371",
+                    "doi": "https://doi.org/10.1099/mgen.0.001007",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/37130055"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1099/mgen.0.001007",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.001007",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://doi.org/10.1099/mgen.0.001007",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5024229502",
+                            "display_name": "Linda van der Graaf\u2013van Bloois",
+                            "orcid": "https://orcid.org/0000-0001-8181-3393"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Linda van der Graaf-van Bloois",
+                        "raw_affiliation_strings": [
+                            "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                            "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-8181-3393",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5012764388",
+                            "display_name": "Hong-You Chen",
+                            "orcid": "https://orcid.org/0000-0002-8127-5588"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210161402",
+                                "display_name": "Shanghai Municipal Center For Disease Control Prevention",
+                                "ror": "https://ror.org/04w00xm72",
+                                "country_code": "CN",
+                                "type": "government",
+                                "lineage": [
+                                    "https://openalex.org/I4210161402",
+                                    "https://openalex.org/I4210165456"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "CN"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Hongyou Chen",
+                        "raw_affiliation_strings": [
+                            "Shanghai Municipal Center for Disease Control and Prevention, Shanghai, PR China"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-8127-5588",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Shanghai Municipal Center for Disease Control and Prevention, Shanghai, PR China",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210161402"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5033901438",
+                            "display_name": "Jaap A. Wagenaar",
+                            "orcid": "https://orcid.org/0000-0002-3506-1490"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jaap A. Wagenaar",
+                        "raw_affiliation_strings": [
+                            "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                            "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands",
+                            "Wageningen Bioveterinary Research, Lelystad, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3506-1490",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands",
+                                "institution_ids": []
+                            },
+                            {
+                                "raw_affiliation_string": "Wageningen Bioveterinary Research, Lelystad, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5042804725",
+                            "display_name": "Aldert Zomer",
+                            "orcid": "https://orcid.org/0000-0002-0758-5190"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Aldert L. Zomer",
+                        "raw_affiliation_strings": [
+                            "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                            "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-0758-5190",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "WHO Collaborating Centre for Reference and Research on Campylobacter and Antimicrobial Resistance from a One Health Perspective/WOAH Reference Laboratory for Campylobacteriosis, Utrecht, The Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 4,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5024229502"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I193662353"
+                ],
+                "apc_list": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "apc_paid": {
+                    "value": 1500,
+                    "currency": "GBP",
+                    "value_usd": 1839
+                },
+                "fwci": 4.1818,
+                "has_fulltext": true,
+                "cited_by_count": 15,
+                "citation_normalized_percentile": {
+                    "value": 0.94076883,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "9",
+                    "issue": "5",
+                    "first_page": null,
+                    "last_page": null
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11684",
+                    "display_name": "Vibrio bacteria research studies",
+                    "score": 1.0,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1310",
+                        "display_name": "Endocrinology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11684",
+                        "display_name": "Vibrio bacteria research studies",
+                        "score": 1.0,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1310",
+                            "display_name": "Endocrinology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10506",
+                        "display_name": "Aquaculture disease management and microbiota",
+                        "score": 0.9945999979972839,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2403",
+                            "display_name": "Immunology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/24",
+                            "display_name": "Immunology and Microbiology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11048",
+                        "display_name": "Bacteriophages and microbial interactions",
+                        "score": 0.9879999756813049,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/vibrio-parahaemolyticus",
+                        "display_name": "Vibrio parahaemolyticus",
+                        "score": 0.9786815643310547
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genotyping",
+                        "display_name": "Genotyping",
+                        "score": 0.8387964963912964
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/serotype",
+                        "display_name": "Serotype",
+                        "score": 0.7772549390792847
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.7152754068374634
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/agglutination",
+                        "display_name": "Agglutination (biology)",
+                        "score": 0.6007651090621948
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genotype",
+                        "display_name": "Genotype",
+                        "score": 0.57021564245224
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/latex-fixation-test",
+                        "display_name": "Latex fixation test",
+                        "score": 0.5245266556739807
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genome",
+                        "display_name": "Genome",
+                        "score": 0.48771700263023376
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/microbiology",
+                        "display_name": "Microbiology",
+                        "score": 0.4516410827636719
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.4330174922943115
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/antigen",
+                        "display_name": "Antigen",
+                        "score": 0.36641725897789
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.3433733582496643
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/virology",
+                        "display_name": "Virology",
+                        "score": 0.3388734459877014
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.32484543323516846
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/bacteria",
+                        "display_name": "Bacteria",
+                        "score": 0.10981416702270508
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/antibody",
+                        "display_name": "Antibody",
+                        "score": 0.09532344341278076
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2776575720",
+                        "wikidata": "https://www.wikidata.org/wiki/Q134280",
+                        "display_name": "Vibrio parahaemolyticus",
+                        "level": 3,
+                        "score": 0.9786815643310547
+                    },
+                    {
+                        "id": "https://openalex.org/C31467283",
+                        "wikidata": "https://www.wikidata.org/wiki/Q912147",
+                        "display_name": "Genotyping",
+                        "level": 4,
+                        "score": 0.8387964963912964
+                    },
+                    {
+                        "id": "https://openalex.org/C10389963",
+                        "wikidata": "https://www.wikidata.org/wiki/Q848328",
+                        "display_name": "Serotype",
+                        "level": 2,
+                        "score": 0.7772549390792847
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.7152754068374634
+                    },
+                    {
+                        "id": "https://openalex.org/C143508840",
+                        "wikidata": "https://www.wikidata.org/wiki/Q393294",
+                        "display_name": "Agglutination (biology)",
+                        "level": 3,
+                        "score": 0.6007651090621948
+                    },
+                    {
+                        "id": "https://openalex.org/C135763542",
+                        "wikidata": "https://www.wikidata.org/wiki/Q106016",
+                        "display_name": "Genotype",
+                        "level": 3,
+                        "score": 0.57021564245224
+                    },
+                    {
+                        "id": "https://openalex.org/C37977956",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1806946",
+                        "display_name": "Latex fixation test",
+                        "level": 3,
+                        "score": 0.5245266556739807
+                    },
+                    {
+                        "id": "https://openalex.org/C141231307",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7020",
+                        "display_name": "Genome",
+                        "level": 3,
+                        "score": 0.48771700263023376
+                    },
+                    {
+                        "id": "https://openalex.org/C89423630",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7193",
+                        "display_name": "Microbiology",
+                        "level": 1,
+                        "score": 0.4516410827636719
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.4330174922943115
+                    },
+                    {
+                        "id": "https://openalex.org/C147483822",
+                        "wikidata": "https://www.wikidata.org/wiki/Q103537",
+                        "display_name": "Antigen",
+                        "level": 2,
+                        "score": 0.36641725897789
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.3433733582496643
+                    },
+                    {
+                        "id": "https://openalex.org/C159047783",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7215",
+                        "display_name": "Virology",
+                        "level": 1,
+                        "score": 0.3388734459877014
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.32484543323516846
+                    },
+                    {
+                        "id": "https://openalex.org/C523546767",
+                        "wikidata": "https://www.wikidata.org/wiki/Q10876",
+                        "display_name": "Bacteria",
+                        "level": 2,
+                        "score": 0.10981416702270508
+                    },
+                    {
+                        "id": "https://openalex.org/C159654299",
+                        "wikidata": "https://www.wikidata.org/wiki/Q79460",
+                        "display_name": "Antibody",
+                        "level": 2,
+                        "score": 0.09532344341278076
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005838",
+                        "descriptor_name": "Genotype",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012703",
+                        "descriptor_name": "Serotyping",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012703",
+                        "descriptor_name": "Serotyping",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D012703",
+                        "descriptor_name": "Serotyping",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D014736",
+                        "descriptor_name": "Vibrio parahaemolyticus",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014736",
+                        "descriptor_name": "Vibrio parahaemolyticus",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D014736",
+                        "descriptor_name": "Vibrio parahaemolyticus",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019081",
+                        "descriptor_name": "O Antigens",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019081",
+                        "descriptor_name": "O Antigens",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019081",
+                        "descriptor_name": "O Antigens",
+                        "qualifier_ui": "Q000235",
+                        "qualifier_name": "genetics",
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D065288",
+                        "descriptor_name": "Serogroup",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 5,
+                "locations": [
+                    {
+                        "id": "doi:10.1099/mgen.0.001007",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1099/mgen.0.001007",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4210186362",
+                            "display_name": "Microbial Genomics",
+                            "issn_l": "2057-5858",
+                            "issn": [
+                                "2057-5858"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320497",
+                            "host_organization_name": "Microbiology Society",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320497"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Microbiology Society"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial Genomics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:37130055",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37130055",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Microbial genomics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:library.wur.nl:wurpubs/617260",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.wur.nl/en/publications/development-of-kaptive-databases-for-vibrio-parahaemolyticus-o-an",
+                        "pdf_url": "https://edepot.wur.nl/635589",
+                        "source": {
+                            "id": "https://openalex.org/S4210201231",
+                            "display_name": "Socio-Environmental Systems Modeling",
+                            "issn_l": "2663-3027",
+                            "issn": [
+                                "2663-3027"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": true,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "ISSN: 2057-5858",
+                        "raw_type": "Article/Letter to editor"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10272883",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10272883",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10272883/pdf/mgen-9-1007.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microb Genom",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/428209",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/428209",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Microbial genomics, 9(5). Microbiology Society",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1099/mgen.0.001007",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1099/mgen.0.001007",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186362",
+                        "display_name": "Microbial Genomics",
+                        "issn_l": "2057-5858",
+                        "issn": [
+                            "2057-5858"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320497",
+                        "host_organization_name": "Microbiology Society",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320497"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Microbiology Society"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Microbial Genomics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/2",
+                        "score": 0.5699999928474426,
+                        "display_name": "Zero hunger"
+                    }
+                ],
+                "awards": [],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320329860",
+                        "display_name": "National Science and Technology Major Project",
+                        "ror": null
+                    }
+                ],
+                "has_content": {
+                    "pdf": false,
+                    "grobid_xml": false
+                },
+                "content_urls": null,
+                "referenced_works_count": 31,
+                "referenced_works": [
+                    "https://openalex.org/W1847253990",
+                    "https://openalex.org/W1967488337",
+                    "https://openalex.org/W1968404070",
+                    "https://openalex.org/W1972145956",
+                    "https://openalex.org/W1972868382",
+                    "https://openalex.org/W1984538337",
+                    "https://openalex.org/W1986642438",
+                    "https://openalex.org/W1986708244",
+                    "https://openalex.org/W1997043793",
+                    "https://openalex.org/W2031611770",
+                    "https://openalex.org/W2053940732",
+                    "https://openalex.org/W2073503396",
+                    "https://openalex.org/W2081232941",
+                    "https://openalex.org/W2096093282",
+                    "https://openalex.org/W2099001157",
+                    "https://openalex.org/W2100329192",
+                    "https://openalex.org/W2112364185",
+                    "https://openalex.org/W2118442768",
+                    "https://openalex.org/W2120902911",
+                    "https://openalex.org/W2122673596",
+                    "https://openalex.org/W2124967403",
+                    "https://openalex.org/W2126055489",
+                    "https://openalex.org/W2131730150",
+                    "https://openalex.org/W2141041418",
+                    "https://openalex.org/W2153325555",
+                    "https://openalex.org/W2578803792",
+                    "https://openalex.org/W2726257503",
+                    "https://openalex.org/W2951241054",
+                    "https://openalex.org/W3121652846",
+                    "https://openalex.org/W3196466241",
+                    "https://openalex.org/W4229587495"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2033342249",
+                    "https://openalex.org/W2378089853",
+                    "https://openalex.org/W1518948701",
+                    "https://openalex.org/W2141580704",
+                    "https://openalex.org/W1527615780",
+                    "https://openalex.org/W2069263427",
+                    "https://openalex.org/W2411586285",
+                    "https://openalex.org/W1974554373",
+                    "https://openalex.org/W1923863156",
+                    "https://openalex.org/W2214057049"
+                ],
+                "abstract_inverted_index": {
+                    "Vibrio": [
+                        0
+                    ],
+                    "parahaemolyticus": [
+                        1,
+                        24,
+                        47,
+                        92,
+                        160,
+                        175
+                    ],
+                    "is": [
+                        2,
+                        25,
+                        59
+                    ],
+                    "an": [
+                        3
+                    ],
+                    "important": [
+                        4
+                    ],
+                    "food-borne": [
+                        5
+                    ],
+                    "human": [
+                        6
+                    ],
+                    "pathogen": [
+                        7
+                    ],
+                    "and": [
+                        8,
+                        20,
+                        31,
+                        68,
+                        74,
+                        96,
+                        98,
+                        101,
+                        105,
+                        116,
+                        132,
+                        136,
+                        162,
+                        171
+                    ],
+                    "presents": [
+                        9
+                    ],
+                    "immunogenic": [
+                        10
+                    ],
+                    "surface": [
+                        11
+                    ],
+                    "polysaccharides,": [
+                        12
+                    ],
+                    "which": [
+                        13,
+                        66
+                    ],
+                    "can": [
+                        14,
+                        164
+                    ],
+                    "be": [
+                        15,
+                        165
+                    ],
+                    "used": [
+                        16,
+                        166
+                    ],
+                    "to": [
+                        17,
+                        167
+                    ],
+                    "distinguish": [
+                        18
+                    ],
+                    "problematic": [
+                        19
+                    ],
+                    "disease-causing": [
+                        21
+                    ],
+                    "lineages.": [
+                        22
+                    ],
+                    "V.": [
+                        23,
+                        46,
+                        91,
+                        159,
+                        174
+                    ],
+                    "divided": [
+                        26
+                    ],
+                    "in": [
+                        27
+                    ],
+                    "16": [
+                        28
+                    ],
+                    "O-serotypes": [
+                        29
+                    ],
+                    "(O-antigen)": [
+                        30
+                    ],
+                    "71": [
+                        32
+                    ],
+                    "K-serotypes": [
+                        33
+                    ],
+                    "(K-antigen).": [
+                        34
+                    ],
+                    "Agglutination": [
+                        35
+                    ],
+                    "tests": [
+                        36,
+                        58
+                    ],
+                    "are": [
+                        37,
+                        49
+                    ],
+                    "still": [
+                        38
+                    ],
+                    "the": [
+                        39,
+                        83,
+                        122,
+                        130,
+                        140,
+                        157,
+                        169
+                    ],
+                    "gold": [
+                        40
+                    ],
+                    "standard": [
+                        41
+                    ],
+                    "for": [
+                        42,
+                        56,
+                        77,
+                        113
+                    ],
+                    "serotyping,": [
+                        43
+                    ],
+                    "but": [
+                        44
+                    ],
+                    "many": [
+                        45
+                    ],
+                    "isolates": [
+                        48,
+                        93,
+                        176
+                    ],
+                    "not": [
+                        50
+                    ],
+                    "typable": [
+                        51
+                    ],
+                    "by": [
+                        52,
+                        65
+                    ],
+                    "agglutination.": [
+                        53
+                    ],
+                    "An": [
+                        54
+                    ],
+                    "alternative": [
+                        55
+                    ],
+                    "agglutination": [
+                        57
+                    ],
+                    "genotyping": [
+                        60
+                    ],
+                    "using": [
+                        61
+                    ],
+                    "whole-genome": [
+                        62
+                    ],
+                    "sequencing": [
+                        63
+                    ],
+                    "data,": [
+                        64
+                    ],
+                    "K-": [
+                        67
+                    ],
+                    "O-": [
+                        69,
+                        104,
+                        115,
+                        131,
+                        161,
+                        170
+                    ],
+                    "genotypes": [
+                        70
+                    ],
+                    "have": [
+                        71
+                    ],
+                    "been": [
+                        72
+                    ],
+                    "curated": [
+                        73
+                    ],
+                    "identified": [
+                        75,
+                        158
+                    ],
+                    "previously": [
+                        76
+                    ],
+                    "other": [
+                        78
+                    ],
+                    "clinically": [
+                        79
+                    ],
+                    "relevant": [
+                        80
+                    ],
+                    "organisms": [
+                        81
+                    ],
+                    "with": [
+                        82,
+                        143,
+                        156
+                    ],
+                    "software": [
+                        84
+                    ],
+                    "tool": [
+                        85
+                    ],
+                    "Kaptive": [
+                        86,
+                        111,
+                        145,
+                        154
+                    ],
+                    ".": [
+                        87
+                    ],
+                    "In": [
+                        88,
+                        124
+                    ],
+                    "this": [
+                        89
+                    ],
+                    "study,": [
+                        90,
+                        126
+                    ],
+                    "were": [
+                        94,
+                        107
+                    ],
+                    "serotyped": [
+                        95
+                    ],
+                    "sequenced,": [
+                        97
+                    ],
+                    "all": [
+                        99,
+                        114
+                    ],
+                    "known": [
+                        100
+                    ],
+                    "several": [
+                        102
+                    ],
+                    "novel": [
+                        103
+                    ],
+                    "K-loci": [
+                        106,
+                        117,
+                        133,
+                        163
+                    ],
+                    "identified.": [
+                        108
+                    ],
+                    "We": [
+                        109
+                    ],
+                    "developed": [
+                        110,
+                        153
+                    ],
+                    "databases": [
+                        112,
+                        155
+                    ],
+                    "after": [
+                        118
+                    ],
+                    "manual": [
+                        119
+                    ],
+                    "curation": [
+                        120
+                    ],
+                    "of": [
+                        121,
+                        134,
+                        139,
+                        173
+                    ],
+                    "loci.": [
+                        123
+                    ],
+                    "our": [
+                        125
+                    ],
+                    "we": [
+                        127
+                    ],
+                    "could": [
+                        128
+                    ],
+                    "genotype": [
+                        129
+                    ],
+                    "98": [
+                        135
+                    ],
+                    "93": [
+                        137
+                    ],
+                    "%": [
+                        138
+                    ],
+                    "genomes,": [
+                        141
+                    ],
+                    "respectively,": [
+                        142
+                    ],
+                    "a": [
+                        144
+                    ],
+                    "confidence": [
+                        146
+                    ],
+                    "score": [
+                        147
+                    ],
+                    "higher": [
+                        148
+                    ],
+                    "than": [
+                        149
+                    ],
+                    "\u2018none\u2019.": [
+                        150
+                    ],
+                    "The": [
+                        151
+                    ],
+                    "newly": [
+                        152
+                    ],
+                    "identify": [
+                        168
+                    ],
+                    "K-genotypes": [
+                        172
+                    ],
+                    "from": [
+                        177
+                    ],
+                    "genome": [
+                        178
+                    ],
+                    "sequences.": [
+                        179
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-27T09:02:27.158192",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Development of Kaptive databases for Vibrio parahaemolyticus O- and K-antigen genotyping",
+                "doi": "10.1099/mgen.0.001007",
+                "pmid": "37130055",
+                "pmc": "PMC10272883",
+                "isbns": [],
+                "altmetric_jid": "55d32c1c2a83eee8488b4567",
+                "issns": [
+                    "2057-5858"
+                ],
+                "journal": "Microbial Genomics",
+                "cohorts": {
+                    "sci": 17,
+                    "pub": 11
+                },
+                "context": {
+                    "all": {
+                        "count": 32731004,
+                        "mean": 10.497991822554546,
+                        "rank": 2549702,
+                        "pct": 92,
+                        "higher_than": 30179485
+                    },
+                    "journal": {
+                        "count": 1414,
+                        "mean": 12.103995756718529,
+                        "rank": 199,
+                        "pct": 85,
+                        "higher_than": 1216
+                    },
+                    "similar_age_3m": {
+                        "count": 427268,
+                        "mean": 13.7800303322505,
+                        "rank": 42212,
+                        "pct": 90,
+                        "higher_than": 385008
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 81,
+                        "mean": 10.99567901234568,
+                        "rank": 19,
+                        "pct": 76,
+                        "higher_than": 62
+                    }
+                },
+                "authors": [
+                    "Linda van der Graaf-van Bloois",
+                    "Hongyou Chen",
+                    "Jaap A. Wagenaar",
+                    "Aldert L. Zomer"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1682985600,
+                "epubdate": 1682985600,
+                "dimensions_publication_id": "pub.1157699861",
+                "altmetric_id": 147259106,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 31,
+                "cited_by_tweeters_count": 28,
+                "cited_by_accounts_count": 28,
+                "last_updated": 1713284291,
+                "score": 17.4,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 17.4
+                },
+                "url": "http://dx.doi.org/10.1099/mgen.0.001007",
+                "added_on": 1683101365,
+                "published_on": 1682985600,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "16",
+                    "connotea": "0"
+                },
+                "readers_count": 16,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=18&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=18&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=18&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=147259106"
+            }
+        },
+        "errors": [
+            "repository: Moved Permanently"
+        ],
+        "lizard": {
+            "total_nloc": 5872,
+            "total_ccn": 1294,
+            "avg_ccn": 3.59,
+            "nloc_per_file": 130.49,
+            "duplicate_rate": 2.59
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

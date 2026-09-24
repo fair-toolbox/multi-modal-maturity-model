@@ -1,0 +1,1497 @@
+{
+    "LightDock": {
+        "tool_name": "LightDock",
+        "biotools": {
+            "name": "LightDock",
+            "description": "It is a protein-protein docking framework based on the Glowworm Swarm Optimization algorithm.\nThe framework is highly versatile, with many options that can be further developed and optimized by the users: it can accept any user-defined scoring function, can use local gradient-free minimization, the simulation can be restrained from the beginning to focus on user-assigned interacting regions, and it has support for the use of pre-calculated conformers for both receptor and ligand.",
+            "homepage": "https://life.bsc.es/pid/lightdock/",
+            "biotoolsID": "lightdock",
+            "biotoolsCURIE": "biotools:lightdock",
+            "version": [
+                "0.4.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2464",
+                            "term": "Protein-protein interaction prediction"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2877",
+                                "term": "Protein complex"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_1476",
+                                    "term": "PDB"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2877",
+                                "term": "Protein complex"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0128",
+                    "term": "Protein interactions"
+                }
+            ],
+            "operatingSystem": [
+                "Linux",
+                "Mac"
+            ],
+            "language": [
+                "Python"
+            ],
+            "license": "Other",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": "Free of charge (with restrictions)",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/brianjimenez/lightdock",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://readthedocs.org/projects/lightdock/",
+                    "type": [
+                        "API documentation"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/brianjimenez/lightdock/blob/master/README.md",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/brianjimenez/lightdock/blob/master/LICENSE",
+                    "type": [
+                        "Terms of use"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": null,
+                    "pmid": "28968719",
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "LightDock: A new multi-scale approach to protein-protein docking",
+                        "abstract": "\u00a9 2017 The Author.Motivation: Computational prediction of protein-protein complex structure by docking can provide structural and mechanistic insights for protein interactions of biomedical interest. However, current methods struggle with difficult cases, such as those involving flexible proteins, low-affinity complexes or transient interactions. A major challenge is how to efficiently sample the structural and energetic landscape of the association at different resolution levels, given that each scoring function is often highly coupled to a specific type of search method. Thus, new methodologies capable of accommodating multi-scale conformational flexibility and scoring are strongly needed. Results: We describe here a new multi-scale protein-protein docking methodology, LightDock, capable of accommodating conformational flexibility and a variety of scoring functions at different resolution levels. Implicit use of normal modes during the search and atomic/coarse-grained combined scoring functions yielded improved predictive results with respect to state-of-the-art rigidbody docking, especially in flexible cases.",
+                        "date": "2018-01-01T00:00:00Z",
+                        "citationCount": 29,
+                        "authors": [
+                            {
+                                "name": "Jimenez-Garcia B."
+                            },
+                            {
+                                "name": "Roel-Touris J."
+                            },
+                            {
+                                "name": "Romero-Durana M."
+                            },
+                            {
+                                "name": "Vidal M."
+                            },
+                            {
+                                "name": "Jimenez-Gonzalez D."
+                            },
+                            {
+                                "name": "Fernandez-Recio J."
+                            }
+                        ],
+                        "journal": "Bioinformatics"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Brian Jimenez",
+                    "email": "brian.jimenez@bsc.es",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [
+                        "Primary contact"
+                    ],
+                    "note": null
+                }
+            ],
+            "owner": "admin",
+            "additionDate": "2017-11-02T09:30:52Z",
+            "lastUpdate": "2023-10-24T07:35:50.760785Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
+        "repository": null,
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1093/bioinformatics/btz642",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "31418773",
+                            "source": "MED",
+                            "pmid": "31418773",
+                            "pmcid": "PMC7005597",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7005597"
+                                ]
+                            },
+                            "doi": "10.1093/bioinformatics/btz642",
+                            "title": "LightDock goes information-driven.",
+                            "authorString": "Roel-Touris J, Bonvin AMJJ, Jim\u00e9nez-Garc\u00eda B.",
+                            "journalTitle": "Bioinformatics",
+                            "issue": "3",
+                            "journalVolume": "36",
+                            "pubYear": "2020",
+                            "journalIssn": "1367-4803; 1367-4811; ",
+                            "pageInfo": "950-952",
+                            "pubType": "brief-report; research support, non-u.s. gov't; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 27,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2019-08-17",
+                            "firstPublicationDate": "2020-02-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W2968836630",
+                "doi": "https://doi.org/10.1093/bioinformatics/btz642",
+                "title": "LightDock goes information-driven",
+                "display_name": "LightDock goes information-driven",
+                "publication_year": 2019,
+                "publication_date": "2019-08-15",
+                "ids": {
+                    "openalex": "https://openalex.org/W2968836630",
+                    "doi": "https://doi.org/10.1093/bioinformatics/btz642",
+                    "mag": "2968836630",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/31418773"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1093/bioinformatics/btz642",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz642",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/950/32369693/btz642.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "hybrid",
+                    "oa_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/950/32369693/btz642.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5086790564",
+                            "display_name": "Jorge Roel\u2010Touris",
+                            "orcid": "https://orcid.org/0000-0002-6588-624X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jorge Roel-Touris",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6588-624X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5064072429",
+                            "display_name": "Alexandre M. J. J. Bonvin",
+                            "orcid": "https://orcid.org/0000-0001-7369-1322"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alexandre M J J Bonvin",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-7369-1322",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5012374366",
+                            "display_name": "Brian Jim\u00e9nez\u2010Garc\u00eda",
+                            "orcid": "https://orcid.org/0000-0001-7786-2109"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Brian Jim\u00e9nez-Garc\u00eda",
+                        "raw_affiliation_strings": [
+                            "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bijvoet Center for Biomolecular Research, Faculty of Science, Department of Chemistry , Utrecht University, Utrecht, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 1,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5012374366"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I193662353"
+                ],
+                "apc_list": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "apc_paid": {
+                    "value": 3618,
+                    "currency": "USD",
+                    "value_usd": 3618
+                },
+                "fwci": 1.6234,
+                "has_fulltext": false,
+                "cited_by_count": 43,
+                "citation_normalized_percentile": {
+                    "value": 0.84077626,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "36",
+                    "issue": "3",
+                    "first_page": "950",
+                    "last_page": "952"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10044",
+                    "display_name": "Protein Structure and Dynamics",
+                    "score": 0.5896999835968018,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10044",
+                        "display_name": "Protein Structure and Dynamics",
+                        "score": 0.5896999835968018,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11016",
+                        "display_name": "Monoclonal and Polyclonal Antibodies Research",
+                        "score": 0.13050000369548798,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2741",
+                            "display_name": "Radiology, Nuclear Medicine and Imaging"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/27",
+                            "display_name": "Medicine"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/4",
+                            "display_name": "Health Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10211",
+                        "display_name": "Computational Drug Discovery Methods",
+                        "score": 0.03830000013113022,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1703",
+                            "display_name": "Computational Theory and Mathematics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/17",
+                            "display_name": "Computer Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/docking",
+                        "display_name": "Docking (animal)",
+                        "score": 0.7845700979232788
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7728582620620728
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/benchmark",
+                        "display_name": "Benchmark (surveying)",
+                        "score": 0.562131404876709
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.5547938942909241
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.5219364166259766
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/filter",
+                        "display_name": "Filter (signal processing)",
+                        "score": 0.5211731791496277
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/programming-language",
+                        "display_name": "Programming language",
+                        "score": 0.08351624011993408
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C41685203",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1974042",
+                        "display_name": "Docking (animal)",
+                        "level": 2,
+                        "score": 0.7845700979232788
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7728582620620728
+                    },
+                    {
+                        "id": "https://openalex.org/C185798385",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1161707",
+                        "display_name": "Benchmark (surveying)",
+                        "level": 2,
+                        "score": 0.562131404876709
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.5547938942909241
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.5219364166259766
+                    },
+                    {
+                        "id": "https://openalex.org/C106131492",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3072260",
+                        "display_name": "Filter (signal processing)",
+                        "level": 2,
+                        "score": 0.5211731791496277
+                    },
+                    {
+                        "id": "https://openalex.org/C199360897",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9143",
+                        "display_name": "Programming language",
+                        "level": 1,
+                        "score": 0.08351624011993408
+                    },
+                    {
+                        "id": "https://openalex.org/C31972630",
+                        "wikidata": "https://www.wikidata.org/wiki/Q844240",
+                        "display_name": "Computer vision",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C159110408",
+                        "wikidata": "https://www.wikidata.org/wiki/Q121176",
+                        "display_name": "Nursing",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C205649164",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1071",
+                        "display_name": "Geography",
+                        "level": 0,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C13280743",
+                        "wikidata": "https://www.wikidata.org/wiki/Q131089",
+                        "display_name": "Geodesy",
+                        "level": 1,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C71924100",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11190",
+                        "display_name": "Medicine",
+                        "level": 0,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D008024",
+                        "descriptor_name": "Ligands",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008024",
+                        "descriptor_name": "Ligands",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008024",
+                        "descriptor_name": "Ligands",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D011506",
+                        "descriptor_name": "Proteins",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D019295",
+                        "descriptor_name": "Computational Biology",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 4,
+                "locations": [
+                    {
+                        "id": "doi:10.1093/bioinformatics/btz642",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz642",
+                        "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/950/32369693/btz642.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S52395412",
+                            "display_name": "Bioinformatics",
+                            "issn_l": "1367-4803",
+                            "issn": [
+                                "1367-4803",
+                                "1367-4811"
+                            ],
+                            "is_oa": false,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311648",
+                            "host_organization_name": "Oxford University Press",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311648",
+                                "https://openalex.org/P4310311647"
+                            ],
+                            "host_organization_lineage_names": [
+                                "Oxford University Press",
+                                "University of Oxford"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:31418773",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31418773",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Bioinformatics (Oxford, England)",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7005597",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7005597",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:uu:oai:dspace.library.uu.nl:1874/391766",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/391766",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Bioinformatics, 36(3). Oxford University Press",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1093/bioinformatics/btz642",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1093/bioinformatics/btz642",
+                    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/36/3/950/32369693/btz642.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S52395412",
+                        "display_name": "Bioinformatics",
+                        "issn_l": "1367-4803",
+                        "issn": [
+                            "1367-4803",
+                            "1367-4811"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311648",
+                        "host_organization_name": "Oxford University Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311648",
+                            "https://openalex.org/P4310311647"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Oxford University Press",
+                            "University of Oxford"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Bioinformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W2968836630.pdf"
+                },
+                "referenced_works_count": 13,
+                "referenced_works": [
+                    "https://openalex.org/W1030883578",
+                    "https://openalex.org/W1978496023",
+                    "https://openalex.org/W1988972583",
+                    "https://openalex.org/W2027403155",
+                    "https://openalex.org/W2053538195",
+                    "https://openalex.org/W2064660701",
+                    "https://openalex.org/W2081912151",
+                    "https://openalex.org/W2125677968",
+                    "https://openalex.org/W2136777954",
+                    "https://openalex.org/W2153983456",
+                    "https://openalex.org/W2163194931",
+                    "https://openalex.org/W2753374271",
+                    "https://openalex.org/W2799682268"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2378211422",
+                    "https://openalex.org/W2745001401",
+                    "https://openalex.org/W4321353415",
+                    "https://openalex.org/W2130974462",
+                    "https://openalex.org/W972276598",
+                    "https://openalex.org/W4246352526",
+                    "https://openalex.org/W2028665553",
+                    "https://openalex.org/W2086519370",
+                    "https://openalex.org/W2087343574",
+                    "https://openalex.org/W4230315250"
+                ],
+                "abstract_inverted_index": {
+                    "MOTIVATION:": [
+                        0
+                    ],
+                    "The": [
+                        1,
+                        140
+                    ],
+                    "use": [
+                        2,
+                        20
+                    ],
+                    "of": [
+                        3,
+                        14,
+                        81,
+                        99,
+                        107,
+                        116
+                    ],
+                    "experimental": [
+                        4,
+                        34
+                    ],
+                    "information": [
+                        5,
+                        21,
+                        58
+                    ],
+                    "has": [
+                        6
+                    ],
+                    "been": [
+                        7
+                    ],
+                    "demonstrated": [
+                        8
+                    ],
+                    "to": [
+                        9,
+                        22,
+                        68,
+                        132
+                    ],
+                    "increase": [
+                        10
+                    ],
+                    "the": [
+                        11,
+                        24,
+                        30,
+                        64,
+                        69,
+                        74,
+                        97,
+                        103,
+                        108
+                    ],
+                    "success": [
+                        12
+                    ],
+                    "rate": [
+                        13
+                    ],
+                    "computational": [
+                        15
+                    ],
+                    "macromolecular": [
+                        16
+                    ],
+                    "docking.": [
+                        17,
+                        136
+                    ],
+                    "Many": [
+                        18
+                    ],
+                    "methods": [
+                        19
+                    ],
+                    "post-filter": [
+                        23
+                    ],
+                    "simulation": [
+                        25,
+                        31
+                    ],
+                    "output": [
+                        26
+                    ],
+                    "while": [
+                        27
+                    ],
+                    "others": [
+                        28
+                    ],
+                    "drive": [
+                        29
+                    ],
+                    "based": [
+                        32,
+                        90
+                    ],
+                    "on": [
+                        33,
+                        91,
+                        102
+                    ],
+                    "restraints,": [
+                        35
+                    ],
+                    "which": [
+                        36
+                    ],
+                    "can": [
+                        37
+                    ],
+                    "become": [
+                        38
+                    ],
+                    "problematic": [
+                        39
+                    ],
+                    "for": [
+                        40,
+                        55,
+                        78
+                    ],
+                    "more": [
+                        41
+                    ],
+                    "complex": [
+                        42
+                    ],
+                    "scenarios": [
+                        43
+                    ],
+                    "such": [
+                        44
+                    ],
+                    "as": [
+                        45
+                    ],
+                    "multiple": [
+                        46
+                    ],
+                    "binding": [
+                        47
+                    ],
+                    "interfaces.": [
+                        48
+                    ],
+                    "RESULTS:": [
+                        49
+                    ],
+                    "We": [
+                        50,
+                        95
+                    ],
+                    "present": [
+                        51
+                    ],
+                    "a": [
+                        52,
+                        124
+                    ],
+                    "novel": [
+                        53
+                    ],
+                    "method": [
+                        54
+                    ],
+                    "including": [
+                        56
+                    ],
+                    "interface": [
+                        57
+                    ],
+                    "into": [
+                        59
+                    ],
+                    "protein": [
+                        60
+                    ],
+                    "docking": [
+                        61
+                    ],
+                    "simulations": [
+                        62
+                    ],
+                    "within": [
+                        63
+                    ],
+                    "LightDock": [
+                        65
+                    ],
+                    "framework.": [
+                        66
+                    ],
+                    "Prior": [
+                        67
+                    ],
+                    "simulation,": [
+                        70
+                    ],
+                    "irrelevant": [
+                        71
+                    ],
+                    "regions": [
+                        72
+                    ],
+                    "from": [
+                        73,
+                        147,
+                        152
+                    ],
+                    "receptor": [
+                        75
+                    ],
+                    "are": [
+                        76,
+                        88,
+                        158
+                    ],
+                    "excluded": [
+                        77
+                    ],
+                    "sampling": [
+                        79
+                    ],
+                    "(filter": [
+                        80
+                    ],
+                    "initial": [
+                        82,
+                        85
+                    ],
+                    "swarms)": [
+                        83
+                    ],
+                    "and": [
+                        84,
+                        144,
+                        149
+                    ],
+                    "ligand": [
+                        86,
+                        92
+                    ],
+                    "poses": [
+                        87
+                    ],
+                    "pre-oriented": [
+                        89
+                    ],
+                    "input": [
+                        93
+                    ],
+                    "information.": [
+                        94,
+                        117
+                    ],
+                    "demonstrate": [
+                        96
+                    ],
+                    "applicability": [
+                        98
+                    ],
+                    "this": [
+                        100
+                    ],
+                    "approach": [
+                        101
+                    ],
+                    "new": [
+                        104
+                    ],
+                    "55": [
+                        105
+                    ],
+                    "cases": [
+                        106
+                    ],
+                    "Protein-Protein": [
+                        109
+                    ],
+                    "Docking": [
+                        110
+                    ],
+                    "Benchmark": [
+                        111
+                    ],
+                    "5,": [
+                        112
+                    ],
+                    "using": [
+                        113
+                    ],
+                    "different": [
+                        114
+                    ],
+                    "amounts": [
+                        115
+                    ],
+                    "Even": [
+                        118
+                    ],
+                    "with": [
+                        119
+                    ],
+                    "incomplete": [
+                        120
+                    ],
+                    "or": [
+                        121
+                    ],
+                    "incorrect": [
+                        122
+                    ],
+                    "information,": [
+                        123
+                    ],
+                    "significant": [
+                        125
+                    ],
+                    "improvement": [
+                        126
+                    ],
+                    "in": [
+                        127
+                    ],
+                    "performance": [
+                        128
+                    ],
+                    "is": [
+                        129,
+                        142
+                    ],
+                    "obtained": [
+                        130
+                    ],
+                    "compared": [
+                        131
+                    ],
+                    "blind": [
+                        133
+                    ],
+                    "ab": [
+                        134
+                    ],
+                    "initio": [
+                        135
+                    ],
+                    "AVAILABILITY": [
+                        137
+                    ],
+                    "AND": [
+                        138
+                    ],
+                    "IMPLEMENTATION:": [
+                        139
+                    ],
+                    "software": [
+                        141
+                    ],
+                    "supported": [
+                        143
+                    ],
+                    "freely": [
+                        145
+                    ],
+                    "available": [
+                        146,
+                        159
+                    ],
+                    "https://github.com/brianjimenez/lightdock": [
+                        148
+                    ],
+                    "analysis": [
+                        150
+                    ],
+                    "data": [
+                        151,
+                        157
+                    ],
+                    "https://github.com/brianjimenez/lightdock_bm5.": [
+                        153
+                    ],
+                    "SUPPLEMENTARY": [
+                        154
+                    ],
+                    "INFORMATION:": [
+                        155
+                    ],
+                    "Supplementary": [
+                        156
+                    ],
+                    "at": [
+                        160
+                    ],
+                    "Bioinformatics": [
+                        161
+                    ],
+                    "online.": [
+                        162
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 8
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 5
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 7
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2019,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-22T06:13:13.366637",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "LightDock goes information-driven",
+                "doi": "10.1093/bioinformatics/btz642",
+                "pmid": "31418773",
+                "pmc": "PMC7005597",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4e93cf058f6100023d2",
+                "issns": [
+                    "1367-4803",
+                    "1367-4811"
+                ],
+                "journal": "Bioinformatics",
+                "cohorts": {
+                    "pub": 4,
+                    "sci": 2
+                },
+                "context": {
+                    "all": {
+                        "count": 28169479,
+                        "mean": 10.848987131355893,
+                        "rank": 8250874,
+                        "pct": 70,
+                        "higher_than": 19883594
+                    },
+                    "journal": {
+                        "count": 10819,
+                        "mean": 8.26654441260745,
+                        "rank": 5113,
+                        "pct": 52,
+                        "higher_than": 5699
+                    },
+                    "similar_age_3m": {
+                        "count": 342565,
+                        "mean": 13.783196076656989,
+                        "rank": 117667,
+                        "pct": 65,
+                        "higher_than": 224182
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 118,
+                        "mean": 8.58886440677966,
+                        "rank": 57,
+                        "pct": 51,
+                        "higher_than": 61
+                    }
+                },
+                "authors": [
+                    "Jorge Roel-Touris",
+                    "Alexandre M J J Bonvin",
+                    "Brian Jim\u00e9nez-Garc\u00eda"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1580515200,
+                "epubdate": 1565913600,
+                "dimensions_publication_id": "pub.1120345333",
+                "altmetric_id": 65058254,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Mathematical Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Biological Sciences",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Information And Computing Sciences",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 7,
+                "cited_by_tweeters_count": 6,
+                "cited_by_accounts_count": 6,
+                "last_updated": 1566242224,
+                "score": 4.2,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 4.2
+                },
+                "url": "http://dx.doi.org/10.1093/bioinformatics/btz642",
+                "added_on": 1565963320,
+                "published_on": 1565913600,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "56",
+                    "connotea": "0"
+                },
+                "readers_count": 56,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=5&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=5&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=5&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=65058254"
+            }
+        },
+        "errors": [
+            "repository: Moved Permanently"
+        ],
+        "lizard": {
+            "total_nloc": 84143,
+            "total_ccn": 24327,
+            "avg_ccn": 6.0,
+            "nloc_per_file": 418.62,
+            "duplicate_rate": 71.17
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": true,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

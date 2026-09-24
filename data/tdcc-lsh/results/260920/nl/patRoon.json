@@ -1,0 +1,2896 @@
+{
+    "patRoon": {
+        "tool_name": "patRoon",
+        "biotools": {
+            "name": "patRoon",
+            "description": "Open source software platform for environmental mass spectrometry based non-target screening.\n\npatRoon aims to provide a solution for comprehensive mass spectrometry based non-target analysis (NTA) workflows for environmental analysis. The name is derived from a Dutch word that means pattern and may also be an acronym for hyPhenated mAss specTROmetry nOn-target aNalysis.\n\nThis R package contains example to test and demonstrate the patRoon R package. The data is used in the package vignette to demonstrate the various functionalities of patRoon regarding mass spectrometry based non-target analysis.",
+            "homepage": "https://rickhelmus.github.io/patRoon/index.html",
+            "biotoolsID": "patroon",
+            "biotoolsCURIE": "biotools:patroon",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3629",
+                            "term": "Deisotoping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3860",
+                            "term": "Spectrum calculation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2422",
+                            "term": "Data retrieval"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3891",
+                            "term": "Essential dynamics"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3520",
+                    "term": "Proteomics experiment"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0769",
+                    "term": "Workflows"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3855",
+                    "term": "Environmental science"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0780",
+                    "term": "Plant biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3343",
+                    "term": "Compound libraries and screening"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R",
+                "C++"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [
+                {
+                    "url": "https://github.com/rickhelmus/patRoon",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://github.com/rickhelmus/patRoonData",
+                    "type": [
+                        "Repository"
+                    ],
+                    "note": null
+                }
+            ],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://rickhelmus.github.io/patRoon/articles/tutorial.html",
+                    "type": [
+                        "Training material"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.21203/RS.3.RS-36675/V2",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "zsmag19",
+            "additionDate": "2021-01-18T11:46:50Z",
+            "lastUpdate": "2021-01-23T06:31:59Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 123685455,
+                "node_id": "MDEwOlJlcG9zaXRvcnkxMjM2ODU0NTU=",
+                "name": "patRoon",
+                "full_name": "rickhelmus/patRoon",
+                "private": false,
+                "owner": {
+                    "login": "rickhelmus",
+                    "id": 37015911,
+                    "node_id": "MDQ6VXNlcjM3MDE1OTEx",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/37015911?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/rickhelmus",
+                    "html_url": "https://github.com/rickhelmus",
+                    "followers_url": "https://api.github.com/users/rickhelmus/followers",
+                    "following_url": "https://api.github.com/users/rickhelmus/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/rickhelmus/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/rickhelmus/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/rickhelmus/subscriptions",
+                    "organizations_url": "https://api.github.com/users/rickhelmus/orgs",
+                    "repos_url": "https://api.github.com/users/rickhelmus/repos",
+                    "events_url": "https://api.github.com/users/rickhelmus/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/rickhelmus/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/rickhelmus/patRoon",
+                "description": "Workflow solutions for mass-spectrometry based non-target analysis.",
+                "fork": false,
+                "url": "https://api.github.com/repos/rickhelmus/patRoon",
+                "forks_url": "https://api.github.com/repos/rickhelmus/patRoon/forks",
+                "keys_url": "https://api.github.com/repos/rickhelmus/patRoon/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/rickhelmus/patRoon/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/rickhelmus/patRoon/teams",
+                "hooks_url": "https://api.github.com/repos/rickhelmus/patRoon/hooks",
+                "issue_events_url": "https://api.github.com/repos/rickhelmus/patRoon/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/rickhelmus/patRoon/events",
+                "assignees_url": "https://api.github.com/repos/rickhelmus/patRoon/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/rickhelmus/patRoon/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/rickhelmus/patRoon/tags",
+                "blobs_url": "https://api.github.com/repos/rickhelmus/patRoon/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/rickhelmus/patRoon/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/rickhelmus/patRoon/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/rickhelmus/patRoon/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/rickhelmus/patRoon/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/rickhelmus/patRoon/languages",
+                "stargazers_url": "https://api.github.com/repos/rickhelmus/patRoon/stargazers",
+                "contributors_url": "https://api.github.com/repos/rickhelmus/patRoon/contributors",
+                "subscribers_url": "https://api.github.com/repos/rickhelmus/patRoon/subscribers",
+                "subscription_url": "https://api.github.com/repos/rickhelmus/patRoon/subscription",
+                "commits_url": "https://api.github.com/repos/rickhelmus/patRoon/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/rickhelmus/patRoon/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/rickhelmus/patRoon/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/rickhelmus/patRoon/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/rickhelmus/patRoon/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/rickhelmus/patRoon/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/rickhelmus/patRoon/merges",
+                "archive_url": "https://api.github.com/repos/rickhelmus/patRoon/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/rickhelmus/patRoon/downloads",
+                "issues_url": "https://api.github.com/repos/rickhelmus/patRoon/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/rickhelmus/patRoon/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/rickhelmus/patRoon/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/rickhelmus/patRoon/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/rickhelmus/patRoon/labels{/name}",
+                "releases_url": "https://api.github.com/repos/rickhelmus/patRoon/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/rickhelmus/patRoon/deployments",
+                "created_at": "2018-03-03T11:23:35Z",
+                "updated_at": "2026-05-26T03:12:59Z",
+                "pushed_at": "2026-05-28T15:43:11Z",
+                "git_url": "git://github.com/rickhelmus/patRoon.git",
+                "ssh_url": "git@github.com:rickhelmus/patRoon.git",
+                "clone_url": "https://github.com/rickhelmus/patRoon.git",
+                "svn_url": "https://github.com/rickhelmus/patRoon",
+                "homepage": "https://rickhelmus.github.io/patRoon/",
+                "size": 712660,
+                "stargazers_count": 76,
+                "watchers_count": 76,
+                "language": "C",
+                "has_issues": true,
+                "has_projects": false,
+                "has_downloads": true,
+                "has_wiki": false,
+                "has_pages": true,
+                "has_discussions": false,
+                "forks_count": 26,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 27,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "mass-spectrometry",
+                    "non-target",
+                    "r"
+                ],
+                "visibility": "public",
+                "forks": 26,
+                "open_issues": 27,
+                "watchers": 76,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 26,
+                "subscribers_count": 8
+            },
+            "contents": [
+                {
+                    "path": ".Rbuildignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".circleci",
+                    "type": "tree"
+                },
+                {
+                    "path": ".covrignore",
+                    "type": "blob"
+                },
+                {
+                    "path": ".github",
+                    "type": "tree"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "CITATION.cff",
+                    "type": "blob"
+                },
+                {
+                    "path": "DESCRIPTION",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSES",
+                    "type": "tree"
+                },
+                {
+                    "path": "NAMESPACE",
+                    "type": "blob"
+                },
+                {
+                    "path": "NEWS.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "R",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "REUSE.toml",
+                    "type": "blob"
+                },
+                {
+                    "path": "TODO.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "_pkgdown.yaml",
+                    "type": "blob"
+                },
+                {
+                    "path": "av_trigger_deps.ps1",
+                    "type": "blob"
+                },
+                {
+                    "path": "data-raw",
+                    "type": "tree"
+                },
+                {
+                    "path": "docker",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "inst",
+                    "type": "tree"
+                },
+                {
+                    "path": "logo.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "man-roxygen",
+                    "type": "tree"
+                },
+                {
+                    "path": "man",
+                    "type": "tree"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "tests",
+                    "type": "tree"
+                },
+                {
+                    "path": "tools",
+                    "type": "tree"
+                },
+                {
+                    "path": "vignettes",
+                    "type": "tree"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "rickhelmus",
+                    "contributions": 5797
+                },
+                {
+                    "login": "LeonSaal",
+                    "contributions": 11
+                },
+                {
+                    "login": "ricardo-cunha",
+                    "contributions": 9
+                },
+                {
+                    "login": "Copilot",
+                    "contributions": 7
+                },
+                {
+                    "login": "rhelmus",
+                    "contributions": 5
+                },
+                {
+                    "login": "coltonlloyd",
+                    "contributions": 1
+                },
+                {
+                    "login": "egonw",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 156,
+                    "title": "MS2 data now missing with patRoon v3.0.0",
+                    "created_at": "2026-05-19T07:47:12Z",
+                    "closed_at": "2026-05-26T06:27:48Z"
+                },
+                {
+                    "number": 151,
+                    "title": "`verifyDependencies()` not detecting Open Babel on macOS - is this expected behavior?",
+                    "created_at": "2026-01-21T22:27:29Z",
+                    "closed_at": "2026-02-11T09:57:21Z"
+                },
+                {
+                    "number": 150,
+                    "title": "Suggestion: Further filtering of averaged MS\u00b2-spectra",
+                    "created_at": "2026-01-21T09:53:52Z",
+                    "closed_at": "2026-01-21T11:15:10Z"
+                },
+                {
+                    "number": 149,
+                    "title": "Error during report generation",
+                    "created_at": "2025-12-18T08:31:53Z",
+                    "closed_at": "2026-01-14T11:08:44Z"
+                },
+                {
+                    "number": 147,
+                    "title": "Error: featureGroup-sets group retention time",
+                    "created_at": "2025-12-03T15:19:01Z",
+                    "closed_at": "2025-12-11T08:44:53Z"
+                },
+                {
+                    "number": 144,
+                    "title": "Error: Consensus of compounds from same algorithm",
+                    "created_at": "2025-11-27T09:46:06Z",
+                    "closed_at": "2025-12-11T08:46:42Z"
+                },
+                {
+                    "number": 143,
+                    "title": "Suggestion: Exclude filter thresholds from cache-hash",
+                    "created_at": "2025-11-27T08:43:52Z",
+                    "closed_at": "2025-11-27T11:41:30Z"
+                },
+                {
+                    "number": 141,
+                    "title": "fillChromPeaks() compatibility with patRoon",
+                    "created_at": "2025-10-20T08:19:03Z",
+                    "closed_at": "2025-11-27T14:40:43Z"
+                },
+                {
+                    "number": 139,
+                    "title": "Request: Move getMaxCacheEntries to options",
+                    "created_at": "2025-09-23T12:31:32Z",
+                    "closed_at": "2025-10-01T09:02:25Z"
+                },
+                {
+                    "number": 136,
+                    "title": "Generating compounds issues using library and MetFrag",
+                    "created_at": "2025-09-09T09:32:33Z",
+                    "closed_at": "2025-09-16T01:39:37Z"
+                },
+                {
+                    "number": 133,
+                    "title": "Request: Specify featureQualities",
+                    "created_at": "2025-08-15T13:11:27Z",
+                    "closed_at": "2025-11-27T14:12:15Z"
+                },
+                {
+                    "number": 132,
+                    "title": "Extracting MS2 peak list and setting parameters",
+                    "created_at": "2025-08-05T03:56:05Z",
+                    "closed_at": "2025-09-09T09:05:09Z"
+                },
+                {
+                    "number": 130,
+                    "title": "Request: importFeatureGroupsOpenMS",
+                    "created_at": "2025-07-24T10:59:58Z",
+                    "closed_at": "2025-08-15T12:59:02Z"
+                },
+                {
+                    "number": 129,
+                    "title": "Question: Combining features before grouping",
+                    "created_at": "2025-05-12T07:00:12Z",
+                    "closed_at": "2025-05-26T07:33:23Z"
+                },
+                {
+                    "number": 128,
+                    "title": "Error: EICs with XCMS3-features",
+                    "created_at": "2025-04-14T10:08:07Z",
+                    "closed_at": "2025-04-25T07:58:56Z"
+                },
+                {
+                    "number": 127,
+                    "title": "Error: Graphics within Docker",
+                    "created_at": "2025-03-18T12:38:44Z",
+                    "closed_at": "2025-03-19T11:01:09Z"
+                },
+                {
+                    "number": 125,
+                    "title": "Error: unexpected behaviour in filter(featureGroupsSet)",
+                    "created_at": "2025-02-03T13:45:38Z",
+                    "closed_at": "2025-02-04T12:41:52Z"
+                },
+                {
+                    "number": 124,
+                    "title": "Mass defect",
+                    "created_at": "2025-02-01T01:35:28Z",
+                    "closed_at": "2025-02-05T23:09:16Z"
+                },
+                {
+                    "number": 123,
+                    "title": "Generating compounds empty-using MetFrag",
+                    "created_at": "2025-01-22T23:59:28Z",
+                    "closed_at": "2025-02-04T11:16:12Z"
+                },
+                {
+                    "number": 122,
+                    "title": "Request: pass extra arguments to OpenMS",
+                    "created_at": "2025-01-10T08:42:04Z",
+                    "closed_at": "2025-01-14T10:30:26Z"
+                },
+                {
+                    "number": 121,
+                    "title": "Update required: links to OpenMS-docs",
+                    "created_at": "2025-01-10T08:35:26Z",
+                    "closed_at": "2025-01-14T08:34:26Z"
+                },
+                {
+                    "number": 119,
+                    "title": "MS2 library",
+                    "created_at": "2025-01-07T04:41:24Z",
+                    "closed_at": "2025-01-16T04:57:55Z"
+                },
+                {
+                    "number": 115,
+                    "title": "MGF",
+                    "created_at": "2024-09-23T21:31:08Z",
+                    "closed_at": "2025-01-06T18:09:48Z"
+                },
+                {
+                    "number": 112,
+                    "title": "findFeatures Error - Error in if (!recentFFM) settings <- c(settings, `-algorithm:epd:masstrace_snr_filtering` = boolToChr(traceSNRFiltering)) :    missing value where TRUE/FALSE needed",
+                    "created_at": "2024-06-14T07:24:28Z",
+                    "closed_at": "2024-06-18T09:19:46Z"
+                },
+                {
+                    "number": 110,
+                    "title": "Error: report with compoundsConsensus fails",
+                    "created_at": "2024-05-16T11:33:11Z",
+                    "closed_at": "2024-06-27T07:09:41Z"
+                },
+                {
+                    "number": 108,
+                    "title": "merge generateCompounds from different tools",
+                    "created_at": "2024-04-19T20:44:44Z",
+                    "closed_at": "2024-05-02T17:08:38Z"
+                },
+                {
+                    "number": 107,
+                    "title": "Error: plotVenn() with featureGroupsComparison",
+                    "created_at": "2024-03-28T10:29:28Z",
+                    "closed_at": "2024-04-25T09:02:55Z"
+                },
+                {
+                    "number": 106,
+                    "title": "error with generateCompounds( ) - could not run MetFrag",
+                    "created_at": "2024-03-18T08:57:48Z",
+                    "closed_at": "2024-03-19T02:32:00Z"
+                },
+                {
+                    "number": 105,
+                    "title": "Using data processing code with already annotated csv file ",
+                    "created_at": "2024-02-26T12:49:53Z",
+                    "closed_at": "2024-03-06T10:00:52Z"
+                },
+                {
+                    "number": 104,
+                    "title": "Error: Finding features using XCMS",
+                    "created_at": "2024-02-19T15:01:18Z",
+                    "closed_at": "2024-03-28T11:33:45Z"
+                },
+                {
+                    "number": 102,
+                    "title": "Suggestion: 'conc'-column in newProject()",
+                    "created_at": "2024-02-07T13:35:39Z",
+                    "closed_at": "2024-02-21T14:38:43Z"
+                },
+                {
+                    "number": 101,
+                    "title": "Handbook: Inconsistency for labelled Isotopes",
+                    "created_at": "2024-02-07T08:39:38Z",
+                    "closed_at": "2024-02-14T08:59:21Z"
+                },
+                {
+                    "number": 100,
+                    "title": "Error: newProject()/Tp Screening unable to add parent suspect list",
+                    "created_at": "2024-02-05T09:24:16Z",
+                    "closed_at": "2024-02-14T08:52:03Z"
+                },
+                {
+                    "number": 97,
+                    "title": "Error: graphics device error in Docker",
+                    "created_at": "2024-01-23T09:25:15Z",
+                    "closed_at": "2024-02-07T08:09:35Z"
+                },
+                {
+                    "number": 96,
+                    "title": "Selection of several adducts",
+                    "created_at": "2024-01-15T20:32:00Z",
+                    "closed_at": "2024-02-21T17:48:11Z"
+                },
+                {
+                    "number": 94,
+                    "title": "Load a previous group features list",
+                    "created_at": "2023-12-16T11:53:23Z",
+                    "closed_at": "2023-12-22T04:20:13Z"
+                },
+                {
+                    "number": 93,
+                    "title": "Error: Docker RStudio-server, unable to connect to service",
+                    "created_at": "2023-12-04T09:45:04Z",
+                    "closed_at": "2023-12-18T14:00:33Z"
+                },
+                {
+                    "number": 92,
+                    "title": "MS2Quant: \"Error in if (fingerprints != \"\") { : the condition has length > 1\"",
+                    "created_at": "2023-11-14T14:07:08Z",
+                    "closed_at": "2023-11-14T22:04:28Z"
+                },
+                {
+                    "number": 91,
+                    "title": "MetFrag not functionning with java versions problem being compiled by a more recent version of the Java Runtime (52.0 and 55.0)",
+                    "created_at": "2023-10-19T16:08:23Z",
+                    "closed_at": "2023-10-19T17:50:17Z"
+                },
+                {
+                    "number": 90,
+                    "title": "Does compare/consensus on feature groups only work for fGroups based on the exact same data files (anaInfo)?",
+                    "created_at": "2023-08-04T14:11:23Z",
+                    "closed_at": "2023-12-18T14:03:49Z"
+                },
+                {
+                    "number": 89,
+                    "title": "Possibility for feature group filtering based on replicate groups and detection frequencies?",
+                    "created_at": "2023-08-03T08:32:04Z",
+                    "closed_at": "2023-08-03T10:19:02Z"
+                },
+                {
+                    "number": 88,
+                    "title": "loadMSLibrary \"Error: stod\"",
+                    "created_at": "2023-07-26T15:27:36Z",
+                    "closed_at": "2023-07-27T09:30:06Z"
+                },
+                {
+                    "number": 87,
+                    "title": "generateFormulas \"Object 'PLID' not found\" with SIRIUS and GenForm",
+                    "created_at": "2023-07-24T11:11:25Z",
+                    "closed_at": "2023-07-26T15:08:52Z"
+                },
+                {
+                    "number": 86,
+                    "title": "install error",
+                    "created_at": "2023-06-21T02:32:05Z",
+                    "closed_at": "2023-08-08T13:34:25Z"
+                },
+                {
+                    "number": 83,
+                    "title": "Error in (function (classes, fdef, mtable)",
+                    "created_at": "2023-05-17T15:29:15Z",
+                    "closed_at": "2023-08-08T13:34:46Z"
+                },
+                {
+                    "number": 82,
+                    "title": "Update link to OpenBabel",
+                    "created_at": "2023-05-15T15:09:50Z",
+                    "closed_at": "2023-05-15T18:39:25Z"
+                },
+                {
+                    "number": 81,
+                    "title": "MetaClean package deprecated",
+                    "created_at": "2023-05-15T14:43:19Z",
+                    "closed_at": "2023-12-18T14:04:27Z"
+                },
+                {
+                    "number": 76,
+                    "title": "Installation failure",
+                    "created_at": "2023-04-19T07:07:33Z",
+                    "closed_at": "2023-05-17T19:06:37Z"
+                },
+                {
+                    "number": 75,
+                    "title": "Docker: request canceled while waiting for connection",
+                    "created_at": "2023-04-05T10:20:25Z",
+                    "closed_at": "2023-08-08T13:34:58Z"
+                },
+                {
+                    "number": 72,
+                    "title": "Errors in DA formula calculation and during loading MSP libraries",
+                    "created_at": "2023-03-16T11:03:05Z",
+                    "closed_at": "2023-05-15T18:42:08Z"
+                },
+                {
+                    "number": 71,
+                    "title": "Componentization",
+                    "created_at": "2023-03-06T11:00:34Z",
+                    "closed_at": "2023-08-08T13:35:37Z"
+                },
+                {
+                    "number": 70,
+                    "title": "Updated Docker image",
+                    "created_at": "2023-02-16T22:30:03Z",
+                    "closed_at": "2023-08-08T13:35:18Z"
+                },
+                {
+                    "number": 69,
+                    "title": "Error: newProject(): Loading suspect list for one ionization",
+                    "created_at": "2023-02-07T13:10:03Z",
+                    "closed_at": "2023-02-09T12:07:16Z"
+                },
+                {
+                    "number": 68,
+                    "title": "Error: selectIons() - could not find chromPeaks",
+                    "created_at": "2023-02-07T12:56:30Z",
+                    "closed_at": "2023-02-09T12:06:03Z"
+                },
+                {
+                    "number": 67,
+                    "title": "windows install",
+                    "created_at": "2023-02-06T17:48:17Z",
+                    "closed_at": "2023-05-17T19:05:51Z"
+                },
+                {
+                    "number": 66,
+                    "title": "Error: Modifying Docker Image",
+                    "created_at": "2023-02-02T12:32:54Z",
+                    "closed_at": "2023-02-02T16:50:43Z"
+                },
+                {
+                    "number": 65,
+                    "title": "Error: Visualization: plotVenn(): diagram cut off",
+                    "created_at": "2022-12-14T10:28:39Z",
+                    "closed_at": "2023-12-18T14:04:52Z"
+                },
+                {
+                    "number": 64,
+                    "title": "Question: reporting: Increase resolution of plots",
+                    "created_at": "2022-12-14T10:20:49Z",
+                    "closed_at": "2023-05-13T19:27:51Z"
+                },
+                {
+                    "number": 62,
+                    "title": "Error: newProject(): General/Insert code into/Current file does not work",
+                    "created_at": "2022-12-13T12:14:27Z",
+                    "closed_at": "2022-12-13T13:06:01Z"
+                },
+                {
+                    "number": 61,
+                    "title": "Suggestion: newProject(): Save UI-Input as configuration file",
+                    "created_at": "2022-12-13T11:56:24Z",
+                    "closed_at": "2023-05-17T19:02:01Z"
+                },
+                {
+                    "number": 60,
+                    "title": "Suggestion: newProject(): Add remove button to Analyses/Generate analysis information/Load in script",
+                    "created_at": "2022-12-13T11:41:46Z",
+                    "closed_at": "2022-12-15T07:46:10Z"
+                },
+                {
+                    "number": 59,
+                    "title": "MetaClean labels flipped",
+                    "created_at": "2022-12-07T14:54:23Z",
+                    "closed_at": "2022-12-12T15:33:21Z"
+                },
+                {
+                    "number": 58,
+                    "title": "generateFormulas() and generate Compounds() errors",
+                    "created_at": "2022-11-11T08:34:17Z",
+                    "closed_at": "2023-02-24T20:57:48Z"
+                },
+                {
+                    "number": 56,
+                    "title": "isolatePrec argument filtering MSMS peaks",
+                    "created_at": "2022-10-26T09:21:09Z",
+                    "closed_at": "2022-10-26T13:36:56Z"
+                },
+                {
+                    "number": 55,
+                    "title": "Memory usage for generateMSPeakLists()",
+                    "created_at": "2022-10-14T20:38:41Z",
+                    "closed_at": "2023-08-08T13:36:15Z"
+                },
+                {
+                    "number": 54,
+                    "title": "Workaround for annotateSuspects() using SIRIUS?",
+                    "created_at": "2022-08-29T09:26:42Z",
+                    "closed_at": "2022-09-06T15:13:21Z"
+                },
+                {
+                    "number": 53,
+                    "title": "Error during findFeatures() and optimizeFeatureFinding()",
+                    "created_at": "2022-07-19T18:19:00Z",
+                    "closed_at": "2022-08-25T14:15:58Z"
+                },
+                {
+                    "number": 52,
+                    "title": "screenSuspects fatal error",
+                    "created_at": "2022-06-21T13:29:22Z",
+                    "closed_at": "2022-07-05T08:22:20Z"
+                },
+                {
+                    "number": 51,
+                    "title": "Linking parents and TPs... Error generating the `precursor` object",
+                    "created_at": "2022-05-23T23:53:11Z",
+                    "closed_at": "2022-12-12T15:35:10Z"
+                },
+                {
+                    "number": 50,
+                    "title": "FindFeatures issue with example data",
+                    "created_at": "2022-05-20T23:07:09Z",
+                    "closed_at": "2022-12-12T15:36:03Z"
+                },
+                {
+                    "number": 49,
+                    "title": "Patroon issues ",
+                    "created_at": "2022-04-11T21:48:57Z",
+                    "closed_at": "2022-05-24T10:02:14Z"
+                },
+                {
+                    "number": 48,
+                    "title": "Dependency broken - off CRAN",
+                    "created_at": "2022-03-03T19:24:54Z",
+                    "closed_at": "2022-03-04T16:45:54Z"
+                },
+                {
+                    "number": 46,
+                    "title": "[JOSS Review] Bug: `findFeaturesXCMS` and `findFeaturesXCMS3` fail on Windows",
+                    "created_at": "2022-02-24T10:20:58Z",
+                    "closed_at": "2022-02-24T13:21:12Z"
+                },
+                {
+                    "number": 45,
+                    "title": "[JOSS Review] Bug: `findFeaturesSIRIUS(...)` fails",
+                    "created_at": "2022-02-24T09:53:09Z",
+                    "closed_at": "2022-02-24T12:36:00Z"
+                },
+                {
+                    "number": 44,
+                    "title": "[JOSS Review]: Document option to use SAFD",
+                    "created_at": "2022-02-24T09:05:58Z",
+                    "closed_at": "2022-02-24T09:40:54Z"
+                },
+                {
+                    "number": 43,
+                    "title": "[JOSS Review] Bug: Let `findFeatures` functions also accept files which have lowercase file extension",
+                    "created_at": "2022-01-31T16:24:03Z",
+                    "closed_at": "2022-02-14T08:46:20Z"
+                },
+                {
+                    "number": 42,
+                    "title": "[JOSS Review] BUG: Can't centroid `mzml` data using `convertMSFiles`",
+                    "created_at": "2022-01-25T07:39:52Z",
+                    "closed_at": "2022-02-14T08:15:43Z"
+                },
+                {
+                    "number": 41,
+                    "title": "[JOSS Review] Update overview graphics",
+                    "created_at": "2022-01-07T10:13:23Z",
+                    "closed_at": "2022-02-14T08:15:10Z"
+                },
+                {
+                    "number": 40,
+                    "title": "[JOSS Review] State of the field: Do the authors describe how this software compares to other commonly-used packages?",
+                    "created_at": "2022-01-06T15:54:42Z",
+                    "closed_at": "2022-02-24T13:21:21Z"
+                },
+                {
+                    "number": 39,
+                    "title": "[JOSS Review] Handbook `single page` and `book format` don't match",
+                    "created_at": "2022-01-06T15:47:32Z",
+                    "closed_at": "2022-01-14T15:47:35Z"
+                },
+                {
+                    "number": 38,
+                    "title": "[JOSS Review] BUG: `generatePeakListsMzR` failes with feature groups from KPIC2",
+                    "created_at": "2022-01-06T15:28:31Z",
+                    "closed_at": "2022-02-24T13:21:49Z"
+                },
+                {
+                    "number": 37,
+                    "title": "[JOSS Review] BUG: Building rstudio docker image fails",
+                    "created_at": "2022-01-06T14:01:12Z",
+                    "closed_at": "2022-01-24T09:13:50Z"
+                },
+                {
+                    "number": 36,
+                    "title": "[JOSS Review] BUG: `groupFeaturesKPIC2` fails after `findFeaturesXCMS` if `loadRawData = TRUE`",
+                    "created_at": "2022-01-06T13:36:30Z",
+                    "closed_at": "2022-02-24T13:21:41Z"
+                },
+                {
+                    "number": 35,
+                    "title": "[JOSS Review] Create individual doc page for every function and class in handbook",
+                    "created_at": "2022-01-06T13:26:49Z",
+                    "closed_at": "2022-01-31T15:27:40Z"
+                },
+                {
+                    "number": 34,
+                    "title": "[JOSS Review] Make file extension for supported MS file types case insensitive",
+                    "created_at": "2022-01-05T13:29:53Z",
+                    "closed_at": "2022-01-13T13:28:07Z"
+                },
+                {
+                    "number": 33,
+                    "title": "[JOSS Review] `generateAnalysisInfo` function parameters documentation",
+                    "created_at": "2022-01-05T13:15:23Z",
+                    "closed_at": "2022-02-14T08:15:23Z"
+                },
+                {
+                    "number": 32,
+                    "title": "[JOSS Review] Fix citations DOIs",
+                    "created_at": "2022-01-03T13:40:06Z",
+                    "closed_at": "2022-01-24T09:12:36Z"
+                },
+                {
+                    "number": 30,
+                    "title": "findFeatures error",
+                    "created_at": "2021-12-20T01:18:37Z",
+                    "closed_at": "2021-12-20T14:21:01Z"
+                },
+                {
+                    "number": 29,
+                    "title": "fGroups issue",
+                    "created_at": "2021-12-16T15:11:32Z",
+                    "closed_at": "2021-12-20T10:54:53Z"
+                },
+                {
+                    "number": 28,
+                    "title": "small typo in the install script",
+                    "created_at": "2021-12-05T14:50:31Z",
+                    "closed_at": "2021-12-05T15:41:34Z"
+                },
+                {
+                    "number": 27,
+                    "title": "Potential bug in optimizeFeatureGrouping of XCMS3 parameters",
+                    "created_at": "2021-04-30T21:14:04Z",
+                    "closed_at": "2021-05-04T11:21:35Z"
+                },
+                {
+                    "number": 26,
+                    "title": "peak areas altered after conversion and fillChromPeaks()",
+                    "created_at": "2021-04-01T05:17:41Z",
+                    "closed_at": "2021-04-09T08:20:52Z"
+                },
+                {
+                    "number": 23,
+                    "title": "issue with matchedFilter (another small xcms3 optimization bug)",
+                    "created_at": "2021-01-30T15:43:45Z",
+                    "closed_at": "2021-01-30T20:02:47Z"
+                },
+                {
+                    "number": 22,
+                    "title": "issue with xcms3 peakgroups",
+                    "created_at": "2021-01-26T12:41:51Z",
+                    "closed_at": "2021-01-26T16:21:28Z"
+                },
+                {
+                    "number": 21,
+                    "title": "xcms3 optimizeFeatureFinding requires pre-loading library(xcms)",
+                    "created_at": "2021-01-16T10:35:48Z",
+                    "closed_at": "2021-01-19T17:18:13Z"
+                },
+                {
+                    "number": 19,
+                    "title": "OpenMS returning lots of zeroes",
+                    "created_at": "2021-01-05T03:46:16Z",
+                    "closed_at": "2021-01-19T08:54:02Z"
+                },
+                {
+                    "number": 18,
+                    "title": "Issues using docker image",
+                    "created_at": "2020-12-13T20:21:55Z",
+                    "closed_at": "2020-12-15T14:54:55Z"
+                },
+                {
+                    "number": 17,
+                    "title": "Problem finding feature with openms",
+                    "created_at": "2020-11-19T22:29:24Z",
+                    "closed_at": "2021-01-05T07:56:09Z"
+                },
+                {
+                    "number": 16,
+                    "title": "Error while running findFeatures",
+                    "created_at": "2020-11-07T11:02:40Z",
+                    "closed_at": "2020-11-09T13:13:55Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Finding features with OpenMS or XCMS",
+                    "created_at": "2020-10-19T11:41:10Z",
+                    "closed_at": "2020-10-29T15:19:00Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Using convertMSFiles",
+                    "created_at": "2020-09-19T23:19:59Z",
+                    "closed_at": "2020-10-28T08:11:03Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Problem getting started",
+                    "created_at": "2020-08-14T13:29:46Z",
+                    "closed_at": "2020-08-14T15:01:39Z"
+                },
+                {
+                    "number": 11,
+                    "title": "Warning message during run of findFeatures",
+                    "created_at": "2020-07-01T13:38:25Z",
+                    "closed_at": "2020-08-04T14:35:14Z"
+                },
+                {
+                    "number": 10,
+                    "title": "minor bug in optimization DoE (attempting single parameter sweep)",
+                    "created_at": "2019-12-21T15:01:05Z",
+                    "closed_at": "2019-12-26T10:45:56Z"
+                },
+                {
+                    "number": 8,
+                    "title": "Error : Failed to run genform",
+                    "created_at": "2019-04-04T09:18:10Z",
+                    "closed_at": "2019-04-04T15:00:15Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Update Interfaces: MSnBase, xcms3",
+                    "created_at": "2019-03-31T19:14:27Z",
+                    "closed_at": "2022-05-24T10:06:33Z"
+                },
+                {
+                    "number": 6,
+                    "title": "merging two featuresXCMS objects",
+                    "created_at": "2019-02-14T08:39:45Z",
+                    "closed_at": "2019-04-04T10:46:51Z"
+                },
+                {
+                    "number": 5,
+                    "title": "patRoon does not contain enviMass",
+                    "created_at": "2018-12-28T20:17:04Z",
+                    "closed_at": "2018-12-29T22:19:09Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Error: findFeatures(..., 'openms')",
+                    "created_at": "2018-07-22T10:21:28Z",
+                    "closed_at": "2019-04-04T10:47:10Z"
+                },
+                {
+                    "number": 3,
+                    "title": "gsub: invalid regular expression '\\', ",
+                    "created_at": "2018-07-21T02:42:05Z",
+                    "closed_at": "2018-07-22T16:37:00Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Installation of patRoon fails",
+                    "created_at": "2018-06-19T16:09:47Z",
+                    "closed_at": "2018-06-19T21:17:37Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Unable to install RDCOMClient",
+                    "created_at": "2018-06-12T08:41:17Z",
+                    "closed_at": "2018-07-22T16:37:49Z"
+                }
+            ],
+            "languages": {
+                "C": 9365363,
+                "C++": 4433771,
+                "R": 3111607,
+                "TeX": 30566,
+                "JavaScript": 27691,
+                "CSS": 3492,
+                "HTML": 2750,
+                "Dockerfile": 2441,
+                "Julia": 1716,
+                "PowerShell": 411
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s13321-020-00477-w",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "33407901",
+                            "source": "MED",
+                            "pmid": "33407901",
+                            "pmcid": "PMC7789171",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7789171"
+                                ]
+                            },
+                            "doi": "10.1186/s13321-020-00477-w",
+                            "title": "patRoon: open source software platform for environmental mass spectrometry based non-target screening.",
+                            "authorString": "Helmus R, Ter Laak TL, van Wezel AP, de Voogt P, Schymanski EL.",
+                            "journalTitle": "J Cheminform",
+                            "issue": "1",
+                            "journalVolume": "13",
+                            "pubYear": "2021",
+                            "journalIssn": "1758-2946",
+                            "pageInfo": "1",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 99,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2021-01-08",
+                            "firstPublicationDate": "2021-01-06"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3120715532",
+                "doi": "https://doi.org/10.1186/s13321-020-00477-w",
+                "title": "patRoon: open source software platform for environmental mass spectrometry based non-target screening",
+                "display_name": "patRoon: open source software platform for environmental mass spectrometry based non-target screening",
+                "publication_year": 2021,
+                "publication_date": "2021-01-06",
+                "ids": {
+                    "openalex": "https://openalex.org/W3120715532",
+                    "doi": "https://doi.org/10.1186/s13321-020-00477-w",
+                    "mag": "3120715532",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/33407901"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s13321-020-00477-w",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13321-020-00477-w",
+                    "pdf_url": "https://jcheminf.biomedcentral.com/track/pdf/10.1186/s13321-020-00477-w",
+                    "source": {
+                        "id": "https://openalex.org/S180838163",
+                        "display_name": "Journal of Cheminformatics",
+                        "issn_l": "1758-2946",
+                        "issn": [
+                            "1758-2946"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Cheminformatics",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "datacite",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://jcheminf.biomedcentral.com/track/pdf/10.1186/s13321-020-00477-w",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5057165415",
+                            "display_name": "Rick Helmus",
+                            "orcid": "https://orcid.org/0000-0001-9401-3133"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210096541",
+                                "display_name": "Institute for Biodiversity",
+                                "ror": "https://ror.org/01n8ggb71",
+                                "country_code": "DE",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210096541"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Rick Helmus",
+                        "raw_affiliation_strings": [
+                            "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands. r.helmus@uva.nl",
+                            "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9401-3133",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands. r.helmus@uva.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210096541",
+                                    "https://openalex.org/I887064364"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5052120353",
+                            "display_name": "Thomas L. ter Laak",
+                            "orcid": "https://orcid.org/0000-0002-6182-6004"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210139073",
+                                "display_name": "KWR Water Research Institute",
+                                "ror": "https://ror.org/04f1mvy95",
+                                "country_code": "NL",
+                                "type": "other",
+                                "lineage": [
+                                    "https://openalex.org/I4210139073"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Thomas L. ter Laak",
+                        "raw_affiliation_strings": [
+                            "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands",
+                            "KWR Water Research Institute, Chemical Water Quality and Health, P.O. Box 1072, 3430 BB, Nieuwegein, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6182-6004",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "KWR Water Research Institute, Chemical Water Quality and Health, P.O. Box 1072, 3430 BB, Nieuwegein, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210139073"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037728404",
+                            "display_name": "Annemarie P. van Wezel",
+                            "orcid": "https://orcid.org/0000-0002-6875-957X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Annemarie P. van Wezel",
+                        "raw_affiliation_strings": [
+                            "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-6875-957X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5002931647",
+                            "display_name": "Pim de Voogt",
+                            "orcid": "https://orcid.org/0000-0001-9065-9797"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Pim de Voogt",
+                        "raw_affiliation_strings": [
+                            "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-9065-9797",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, P.O. Box 94240, 1090 GE, Amsterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5016319274",
+                            "display_name": "Emma Schymanski",
+                            "orcid": "https://orcid.org/0000-0001-6868-8145"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I186903577",
+                                "display_name": "University of Luxembourg",
+                                "ror": "https://ror.org/036x5ad56",
+                                "country_code": "LU",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I186903577"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "LU"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Emma L. Schymanski",
+                        "raw_affiliation_strings": [
+                            "Luxembourg Centre for Systems Biomedicine (LCSB), University of Luxembourg, L-4367, Belvaux, Luxembourg"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0001-6868-8145",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Luxembourg Centre for Systems Biomedicine (LCSB), University of Luxembourg, L-4367, Belvaux, Luxembourg",
+                                "institution_ids": [
+                                    "https://openalex.org/I186903577"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 3,
+                "institutions_distinct_count": 5,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5057165415"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I4210096541",
+                    "https://openalex.org/I887064364"
+                ],
+                "apc_list": {
+                    "value": 1290,
+                    "currency": "GBP",
+                    "value_usd": 1582
+                },
+                "apc_paid": {
+                    "value": 1290,
+                    "currency": "GBP",
+                    "value_usd": 1582
+                },
+                "fwci": 12.8629,
+                "has_fulltext": true,
+                "cited_by_count": 204,
+                "citation_normalized_percentile": {
+                    "value": 0.99358713,
+                    "is_in_top_1_percent": true,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 96,
+                    "max": 100
+                },
+                "biblio": {
+                    "volume": "13",
+                    "issue": "1",
+                    "first_page": "1",
+                    "last_page": "1"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10836",
+                    "display_name": "Metabolomics and Mass Spectrometry Studies",
+                    "score": 0.9998000264167786,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1312",
+                        "display_name": "Molecular Biology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10836",
+                        "display_name": "Metabolomics and Mass Spectrometry Studies",
+                        "score": 0.9998000264167786,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T12073",
+                        "display_name": "Isotope Analysis in Ecology",
+                        "score": 0.9937999844551086,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11667",
+                        "display_name": "Advanced Chemical Sensor Technologies",
+                        "score": 0.9926000237464905,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2204",
+                            "display_name": "Biomedical Engineering"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/22",
+                            "display_name": "Engineering"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/workflow",
+                        "display_name": "Workflow",
+                        "score": 0.8705832362174988
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.8143657445907593
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.6723344326019287
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.5007960796356201
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/open-source-software",
+                        "display_name": "Open source software",
+                        "score": 0.4630923569202423
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/interface",
+                        "display_name": "Interface (matter)",
+                        "score": 0.44778192043304443
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software-engineering",
+                        "display_name": "Software engineering",
+                        "score": 0.4351552724838257
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/open-source",
+                        "display_name": "Open source",
+                        "score": 0.42825162410736084
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/annotation",
+                        "display_name": "Annotation",
+                        "score": 0.41308659315109253
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-science",
+                        "display_name": "Data science",
+                        "score": 0.3750859498977661
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/database",
+                        "display_name": "Database",
+                        "score": 0.3343737721443176
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.17624253034591675
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.08907824754714966
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C177212765",
+                        "wikidata": "https://www.wikidata.org/wiki/Q627335",
+                        "display_name": "Workflow",
+                        "level": 2,
+                        "score": 0.8705832362174988
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.8143657445907593
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.6723344326019287
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.5007960796356201
+                    },
+                    {
+                        "id": "https://openalex.org/C2988343187",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1130645",
+                        "display_name": "Open source software",
+                        "level": 3,
+                        "score": 0.4630923569202423
+                    },
+                    {
+                        "id": "https://openalex.org/C113843644",
+                        "wikidata": "https://www.wikidata.org/wiki/Q901882",
+                        "display_name": "Interface (matter)",
+                        "level": 4,
+                        "score": 0.44778192043304443
+                    },
+                    {
+                        "id": "https://openalex.org/C115903868",
+                        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+                        "display_name": "Software engineering",
+                        "level": 1,
+                        "score": 0.4351552724838257
+                    },
+                    {
+                        "id": "https://openalex.org/C3018397939",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3644502",
+                        "display_name": "Open source",
+                        "level": 3,
+                        "score": 0.42825162410736084
+                    },
+                    {
+                        "id": "https://openalex.org/C2776321320",
+                        "wikidata": "https://www.wikidata.org/wiki/Q857525",
+                        "display_name": "Annotation",
+                        "level": 2,
+                        "score": 0.41308659315109253
+                    },
+                    {
+                        "id": "https://openalex.org/C2522767166",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+                        "display_name": "Data science",
+                        "level": 1,
+                        "score": 0.3750859498977661
+                    },
+                    {
+                        "id": "https://openalex.org/C77088390",
+                        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+                        "display_name": "Database",
+                        "level": 1,
+                        "score": 0.3343737721443176
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.17624253034591675
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.08907824754714966
+                    },
+                    {
+                        "id": "https://openalex.org/C157915830",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2928001",
+                        "display_name": "Bubble",
+                        "level": 2,
+                        "score": 0.0
+                    },
+                    {
+                        "id": "https://openalex.org/C129307140",
+                        "wikidata": "https://www.wikidata.org/wiki/Q6795880",
+                        "display_name": "Maximum bubble pressure method",
+                        "level": 3,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 11,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s13321-020-00477-w",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s13321-020-00477-w",
+                        "pdf_url": "https://jcheminf.biomedcentral.com/track/pdf/10.1186/s13321-020-00477-w",
+                        "source": {
+                            "id": "https://openalex.org/S180838163",
+                            "display_name": "Journal of Cheminformatics",
+                            "issn_l": "1758-2946",
+                            "issn": [
+                                "1758-2946"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of Cheminformatics",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:33407901",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33407901",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Journal of cheminformatics",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:dare.uva.nl:openaire/05376e48-131a-43d7-a836-eb55c567d922",
+                        "is_oa": true,
+                        "landing_page_url": "https://handle.uba.uva.nl/personal/pure/en/publications/patroon-open-source-software-platform-for-environmental-mass-spectrometry-based-nontarget-screening(05376e48-131a-43d7-a836-eb55c567d922).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400088",
+                            "display_name": "UvA-DARE (University of Amsterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I887064364",
+                            "host_organization_name": "University of Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I887064364"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Helmus, R, ter Laak, T L, van Wezel, A P, de Voogt, P & Schymanski, E L 2021, 'patRoon: open source software platform for environmental mass spectrometry based non-target screening', Journal of Cheminformatics, vol. 13, 1. https://doi.org/10.1186/s13321-020-00477-w",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:doi:10.5281/zenodo.19474773",
+                        "is_oa": true,
+                        "landing_page_url": "https://github.com/rickhelmus/patRoon/tree/3.0.0",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4406922384",
+                            "display_name": "Open MIND",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Software"
+                    },
+                    {
+                        "id": "pmh:oai:dare.uva.nl:publications/05376e48-131a-43d7-a836-eb55c567d922",
+                        "is_oa": false,
+                        "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/patroon-open-source-software-platform-for-environmental-mass-spectrometry-based-nontarget-screening(05376e48-131a-43d7-a836-eb55c567d922).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400088",
+                            "display_name": "UvA-DARE (University of Amsterdam)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I887064364",
+                            "host_organization_name": "University of Amsterdam",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I887064364"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": ""
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:2e0f257c586947d096407d5cf4af08f5",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/2e0f257c586947d096407d5cf4af08f5",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Cheminformatics, Vol 13, Iss 1, Pp 1-25 (2021)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:europepmc.org:6700490",
+                        "is_oa": true,
+                        "landing_page_url": "http://europepmc.org/pmc/articles/PMC7789171",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400806",
+                            "display_name": "Europe PMC (PubMed Central)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1303153112",
+                            "host_organization_name": "European Bioinformatics Institute",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1303153112"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:orbilu.uni.lu:10993/44752",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.researchsquare.com/article/rs-36675/v2",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401815",
+                            "display_name": "Open Repository and Bibliography (University of Luxembourg)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I186903577",
+                            "host_organization_name": "University of Luxembourg",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I186903577"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "",
+                        "raw_type": "info:eu-repo/semantics/preprint"
+                    },
+                    {
+                        "id": "pmh:oai:orbilu.uni.lu:10993/46662",
+                        "is_oa": true,
+                        "landing_page_url": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00477-w",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401815",
+                            "display_name": "Open Repository and Bibliography (University of Luxembourg)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I186903577",
+                            "host_organization_name": "University of Luxembourg",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I186903577"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Journal of Cheminformatics, 13 (1), 1 (2021-01)",
+                        "raw_type": "peer reviewed"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7789171",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7789171",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "J Cheminform",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "doi:10.5281/zenodo.19474773",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.5281/zenodo.19474773",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400562",
+                            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I67311998",
+                            "host_organization_name": "European Organization for Nuclear Research",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I67311998"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": null,
+                        "is_accepted": false,
+                        "is_published": null,
+                        "raw_source_name": null,
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s13321-020-00477-w",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13321-020-00477-w",
+                    "pdf_url": "https://jcheminf.biomedcentral.com/track/pdf/10.1186/s13321-020-00477-w",
+                    "source": {
+                        "id": "https://openalex.org/S180838163",
+                        "display_name": "Journal of Cheminformatics",
+                        "issn_l": "1758-2946",
+                        "issn": [
+                            "1758-2946"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Journal of Cheminformatics",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.75,
+                        "display_name": "Clean water and sanitation",
+                        "id": "https://metadata.un.org/sdg/6"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1731480922",
+                        "display_name": null,
+                        "funder_award_id": "A18/BM/12341006",
+                        "funder_id": "https://openalex.org/F4320321038",
+                        "funder_display_name": "Fonds National de la Recherche Luxembourg"
+                    },
+                    {
+                        "id": "https://openalex.org/G8284467538",
+                        "display_name": null,
+                        "funder_award_id": "12341006",
+                        "funder_id": "https://openalex.org/F4320321038",
+                        "funder_display_name": "Fonds National de la Recherche Luxembourg"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320321008",
+                        "display_name": "Universiteit van Amsterdam",
+                        "ror": "https://ror.org/04dkp9463"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321038",
+                        "display_name": "Fonds National de la Recherche Luxembourg",
+                        "ror": "https://ror.org/039z13y21"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3120715532.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3120715532.grobid-xml"
+                },
+                "referenced_works_count": 97,
+                "referenced_works": [
+                    "https://openalex.org/W143096088",
+                    "https://openalex.org/W562646798",
+                    "https://openalex.org/W585085135",
+                    "https://openalex.org/W1488520384",
+                    "https://openalex.org/W1508604947",
+                    "https://openalex.org/W1543068333",
+                    "https://openalex.org/W1862448690",
+                    "https://openalex.org/W1964010911",
+                    "https://openalex.org/W1973012451",
+                    "https://openalex.org/W1989299822",
+                    "https://openalex.org/W1995560800",
+                    "https://openalex.org/W2009358784",
+                    "https://openalex.org/W2020230458",
+                    "https://openalex.org/W2027068200",
+                    "https://openalex.org/W2038872823",
+                    "https://openalex.org/W2048178510",
+                    "https://openalex.org/W2050345155",
+                    "https://openalex.org/W2073939393",
+                    "https://openalex.org/W2080046774",
+                    "https://openalex.org/W2081465448",
+                    "https://openalex.org/W2091172481",
+                    "https://openalex.org/W2095967914",
+                    "https://openalex.org/W2101394823",
+                    "https://openalex.org/W2106017862",
+                    "https://openalex.org/W2107083991",
+                    "https://openalex.org/W2107940314",
+                    "https://openalex.org/W2110017950",
+                    "https://openalex.org/W2112806519",
+                    "https://openalex.org/W2115993694",
+                    "https://openalex.org/W2146103026",
+                    "https://openalex.org/W2150827955",
+                    "https://openalex.org/W2159325249",
+                    "https://openalex.org/W2179948434",
+                    "https://openalex.org/W2264329385",
+                    "https://openalex.org/W2285468881",
+                    "https://openalex.org/W2287205341",
+                    "https://openalex.org/W2322330034",
+                    "https://openalex.org/W2325106992",
+                    "https://openalex.org/W2462175440",
+                    "https://openalex.org/W2473139211",
+                    "https://openalex.org/W2510334816",
+                    "https://openalex.org/W2548357532",
+                    "https://openalex.org/W2563842495",
+                    "https://openalex.org/W2580029075",
+                    "https://openalex.org/W2582743722",
+                    "https://openalex.org/W2591002382",
+                    "https://openalex.org/W2616976488",
+                    "https://openalex.org/W2740838806",
+                    "https://openalex.org/W2740856177",
+                    "https://openalex.org/W2748354746",
+                    "https://openalex.org/W2753791687",
+                    "https://openalex.org/W2760688277",
+                    "https://openalex.org/W2766865563",
+                    "https://openalex.org/W2769853272",
+                    "https://openalex.org/W2777466035",
+                    "https://openalex.org/W2804537538",
+                    "https://openalex.org/W2808481523",
+                    "https://openalex.org/W2810249717",
+                    "https://openalex.org/W2892914268",
+                    "https://openalex.org/W2896648185",
+                    "https://openalex.org/W2897980676",
+                    "https://openalex.org/W2900768516",
+                    "https://openalex.org/W2905511466",
+                    "https://openalex.org/W2907470641",
+                    "https://openalex.org/W2912430686",
+                    "https://openalex.org/W2913330600",
+                    "https://openalex.org/W2916775979",
+                    "https://openalex.org/W2922522932",
+                    "https://openalex.org/W2948830798",
+                    "https://openalex.org/W2964062642",
+                    "https://openalex.org/W2964268114",
+                    "https://openalex.org/W2973409925",
+                    "https://openalex.org/W2979119341",
+                    "https://openalex.org/W2980832723",
+                    "https://openalex.org/W2981234113",
+                    "https://openalex.org/W2988411357",
+                    "https://openalex.org/W2991100935",
+                    "https://openalex.org/W2995722311",
+                    "https://openalex.org/W3005229756",
+                    "https://openalex.org/W3018426427",
+                    "https://openalex.org/W3031823855",
+                    "https://openalex.org/W3043695720",
+                    "https://openalex.org/W3087856867",
+                    "https://openalex.org/W3088380395",
+                    "https://openalex.org/W3088746340",
+                    "https://openalex.org/W3089167717",
+                    "https://openalex.org/W3092102938",
+                    "https://openalex.org/W3105963012",
+                    "https://openalex.org/W3209641253",
+                    "https://openalex.org/W3210002506",
+                    "https://openalex.org/W3212987647",
+                    "https://openalex.org/W4237164438",
+                    "https://openalex.org/W4242053123",
+                    "https://openalex.org/W4251339138",
+                    "https://openalex.org/W4253523717",
+                    "https://openalex.org/W6912340174",
+                    "https://openalex.org/W6949971002"
+                ],
+                "related_works": [
+                    "https://openalex.org/W4376877853",
+                    "https://openalex.org/W1493891899",
+                    "https://openalex.org/W4250928611",
+                    "https://openalex.org/W166480398",
+                    "https://openalex.org/W1612808768",
+                    "https://openalex.org/W167327709",
+                    "https://openalex.org/W1977393088",
+                    "https://openalex.org/W4387839566",
+                    "https://openalex.org/W4210922265",
+                    "https://openalex.org/W2288962794"
+                ],
+                "abstract_inverted_index": {
+                    "Mass": [
+                        0
+                    ],
+                    "spectrometry": [
+                        1
+                    ],
+                    "based": [
+                        2,
+                        59
+                    ],
+                    "non-target": [
+                        3,
+                        70,
+                        136,
+                        198
+                    ],
+                    "analysis": [
+                        4,
+                        71,
+                        199
+                    ],
+                    "is": [
+                        5,
+                        142
+                    ],
+                    "increasingly": [
+                        6
+                    ],
+                    "adopted": [
+                        7
+                    ],
+                    "in": [
+                        8,
+                        18,
+                        46
+                    ],
+                    "environmental": [
+                        9,
+                        31,
+                        140
+                    ],
+                    "sciences": [
+                        10
+                    ],
+                    "to": [
+                        11,
+                        105,
+                        122,
+                        131,
+                        167,
+                        202
+                    ],
+                    "screen": [
+                        12
+                    ],
+                    "and": [
+                        13,
+                        68,
+                        79,
+                        103,
+                        107,
+                        134,
+                        147,
+                        171
+                    ],
+                    "identify": [
+                        14
+                    ],
+                    "numerous": [
+                        15
+                    ],
+                    "chemicals": [
+                        16
+                    ],
+                    "simultaneously": [
+                        17
+                    ],
+                    "highly": [
+                        19
+                    ],
+                    "complex": [
+                        20,
+                        112
+                    ],
+                    "samples.": [
+                        21
+                    ],
+                    "However,": [
+                        22
+                    ],
+                    "current": [
+                        23
+                    ],
+                    "data": [
+                        24,
+                        48,
+                        114,
+                        137,
+                        152
+                    ],
+                    "processing": [
+                        25,
+                        110
+                    ],
+                    "software": [
+                        26,
+                        61,
+                        91
+                    ],
+                    "either": [
+                        27
+                    ],
+                    "lack": [
+                        28
+                    ],
+                    "functionality": [
+                        29,
+                        102
+                    ],
+                    "for": [
+                        30,
+                        177
+                    ],
+                    "sciences,": [
+                        32
+                    ],
+                    "solve": [
+                        33
+                    ],
+                    "only": [
+                        34
+                    ],
+                    "part": [
+                        35
+                    ],
+                    "of": [
+                        36,
+                        81,
+                        111,
+                        129,
+                        139,
+                        153,
+                        206
+                    ],
+                    "the": [
+                        37,
+                        76,
+                        165
+                    ],
+                    "workflow,": [
+                        38
+                    ],
+                    "are": [
+                        39,
+                        44
+                    ],
+                    "not": [
+                        40
+                    ],
+                    "openly": [
+                        41
+                    ],
+                    "available": [
+                        42
+                    ],
+                    "and/or": [
+                        43
+                    ],
+                    "restricted": [
+                        45
+                    ],
+                    "input": [
+                        47
+                    ],
+                    "formats.": [
+                        49
+                    ],
+                    "In": [
+                        50,
+                        97,
+                        163
+                    ],
+                    "this": [
+                        51
+                    ],
+                    "paper": [
+                        52
+                    ],
+                    "we": [
+                        53
+                    ],
+                    "present": [
+                        54
+                    ],
+                    "patRoon,": [
+                        55
+                    ],
+                    "a": [
+                        56,
+                        94,
+                        145,
+                        157,
+                        203
+                    ],
+                    "new": [
+                        57
+                    ],
+                    "R": [
+                        58
+                    ],
+                    "open-source": [
+                        60
+                    ],
+                    "platform,": [
+                        62
+                    ],
+                    "which": [
+                        63
+                    ],
+                    "provides": [
+                        64
+                    ],
+                    "comprehensive,": [
+                        65
+                    ],
+                    "fully": [
+                        66
+                    ],
+                    "tailored": [
+                        67
+                    ],
+                    "straightforward": [
+                        69
+                    ],
+                    "workflows.": [
+                        72
+                    ],
+                    "This": [
+                        73,
+                        184
+                    ],
+                    "platform": [
+                        74
+                    ],
+                    "makes": [
+                        75
+                    ],
+                    "use,": [
+                        77,
+                        169
+                    ],
+                    "evaluation": [
+                        78
+                    ],
+                    "mixing": [
+                        80
+                    ],
+                    "well-tested": [
+                        82
+                    ],
+                    "algorithms": [
+                        83,
+                        174
+                    ],
+                    "seamless": [
+                        84
+                    ],
+                    "by": [
+                        85
+                    ],
+                    "harmonizing": [
+                        86
+                    ],
+                    "various": [
+                        87,
+                        101
+                    ],
+                    "common": [
+                        88
+                    ],
+                    "(primarily": [
+                        89
+                    ],
+                    "open)": [
+                        90
+                    ],
+                    "tools": [
+                        92
+                    ],
+                    "under": [
+                        93
+                    ],
+                    "consistent": [
+                        95
+                    ],
+                    "interface.": [
+                        96
+                    ],
+                    "addition,": [
+                        98,
+                        164
+                    ],
+                    "patRoon": [
+                        99,
+                        116,
+                        130,
+                        193
+                    ],
+                    "offers": [
+                        100
+                    ],
+                    "strategies": [
+                        104,
+                        121
+                    ],
+                    "simplify": [
+                        106
+                    ],
+                    "perform": [
+                        108,
+                        132
+                    ],
+                    "automated": [
+                        109,
+                        135
+                    ],
+                    "(environmental)": [
+                        113,
+                        197
+                    ],
+                    "effectively.": [
+                        115
+                    ],
+                    "implements": [
+                        117
+                    ],
+                    "several": [
+                        118
+                    ],
+                    "effective": [
+                        119
+                    ],
+                    "optimization": [
+                        120
+                    ],
+                    "significantly": [
+                        123
+                    ],
+                    "reduce": [
+                        124
+                    ],
+                    "computational": [
+                        125
+                    ],
+                    "times.": [
+                        126
+                    ],
+                    "The": [
+                        127
+                    ],
+                    "ability": [
+                        128,
+                        166
+                    ],
+                    "time-efficient": [
+                        133
+                    ],
+                    "annotation": [
+                        138
+                    ],
+                    "samples": [
+                        141,
+                        155
+                    ],
+                    "demonstrated": [
+                        143,
+                        176
+                    ],
+                    "with": [
+                        144,
+                        187
+                    ],
+                    "simple": [
+                        146
+                    ],
+                    "reproducible": [
+                        148
+                    ],
+                    "workflow": [
+                        149
+                    ],
+                    "using": [
+                        150
+                    ],
+                    "open-access": [
+                        151
+                    ],
+                    "spiked": [
+                        154
+                    ],
+                    "from": [
+                        156
+                    ],
+                    "drinking": [
+                        158
+                    ],
+                    "water": [
+                        159
+                    ],
+                    "treatment": [
+                        160
+                    ],
+                    "plant": [
+                        161
+                    ],
+                    "study.": [
+                        162
+                    ],
+                    "easily": [
+                        168
+                    ],
+                    "combine": [
+                        170
+                    ],
+                    "evaluate": [
+                        172
+                    ],
+                    "different": [
+                        173
+                    ],
+                    "was": [
+                        175
+                    ],
+                    "three": [
+                        178
+                    ],
+                    "commonly": [
+                        179
+                    ],
+                    "used": [
+                        180
+                    ],
+                    "feature": [
+                        181
+                    ],
+                    "finding": [
+                        182
+                    ],
+                    "algorithms.": [
+                        183
+                    ],
+                    "article,": [
+                        185
+                    ],
+                    "combined": [
+                        186
+                    ],
+                    "already": [
+                        188
+                    ],
+                    "published": [
+                        189
+                    ],
+                    "works,": [
+                        190
+                    ],
+                    "demonstrate": [
+                        191
+                    ],
+                    "that": [
+                        192
+                    ],
+                    "helps": [
+                        194
+                    ],
+                    "make": [
+                        195
+                    ],
+                    "comprehensive": [
+                        196
+                    ],
+                    "readily": [
+                        200
+                    ],
+                    "accessible": [
+                        201
+                    ],
+                    "wider": [
+                        204
+                    ],
+                    "community": [
+                        205
+                    ],
+                    "researchers.": [
+                        207
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 6
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 41
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 54
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 40
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 28
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 32
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "patRoon: open source software platform for environmental mass spectrometry based non-target screening",
+                "doi": "10.1186/s13321-020-00477-w",
+                "pmid": "33407901",
+                "pmc": "PMC7789171",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f61000084c",
+                "issns": [
+                    "1758-2946"
+                ],
+                "journal": "Journal of Cheminformatics",
+                "cohorts": {
+                    "pub": 9,
+                    "sci": 10,
+                    "com": 3
+                },
+                "context": {
+                    "all": {
+                        "count": 31777007,
+                        "mean": 10.569155601973467,
+                        "rank": 2171353,
+                        "pct": 93,
+                        "higher_than": 29607050
+                    },
+                    "journal": {
+                        "count": 1254,
+                        "mean": 8.753668261562998,
+                        "rank": 142,
+                        "pct": 88,
+                        "higher_than": 1111
+                    },
+                    "similar_age_3m": {
+                        "count": 553254,
+                        "mean": 13.897562421600217,
+                        "rank": 48824,
+                        "pct": 91,
+                        "higher_than": 504429
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 16,
+                        "mean": 11.865625,
+                        "rank": 5,
+                        "pct": 68,
+                        "higher_than": 11
+                    }
+                },
+                "authors": [
+                    "Rick Helmus",
+                    "Thomas L. ter Laak",
+                    "Annemarie P. van Wezel",
+                    "Pim de Voogt",
+                    "Emma L. Schymanski"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1638316800,
+                "epubdate": 1609891200,
+                "dimensions_publication_id": "pub.1134399264",
+                "altmetric_id": 97239800,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Applications in Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Documentation and Information in Chemistry",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Theoretical and Computational Chemistry",
+                        "scheme": "springer"
+                    }
+                ],
+                "cited_by_posts_count": 34,
+                "cited_by_tweeters_count": 22,
+                "cited_by_feeds_count": 1,
+                "cited_by_accounts_count": 23,
+                "last_updated": 1742781563,
+                "score": 20.099999999999998,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 20.099999999999998
+                },
+                "url": "http://dx.doi.org/10.1186/s13321-020-00477-w",
+                "added_on": 1610007079,
+                "published_on": 1609891200,
+                "scopus_subjects": [
+                    "Physical Sciences",
+                    "Social Sciences",
+                    "Chemistry",
+                    "Computer Science"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "221",
+                    "connotea": "0"
+                },
+                "readers_count": 221,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=21&types=bbtttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=21&types=bbtttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=21&types=bbtttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=97239800"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 110422,
+            "total_ccn": 58898,
+            "avg_ccn": 4.21,
+            "nloc_per_file": 207.56,
+            "duplicate_rate": null
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

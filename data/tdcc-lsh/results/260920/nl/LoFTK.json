@@ -1,0 +1,2463 @@
+{
+    "LoFTK": {
+        "tool_name": "LoFTK",
+        "biotools": {
+            "name": "LoFTK",
+            "description": "The Loss-of-Function ToolKit (LoFTK) allows efficient and automated prediction of LoF variants from both genotyped and sequenced genomes, identifying genes that are inactive in one or two copies, and providing summary statistics for downstream analyses.",
+            "homepage": "https://github.com/CirculatoryHealth/LoFTK",
+            "biotoolsID": "loftk",
+            "biotoolsCURIE": "biotools:loftk",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3196",
+                            "term": "Genotyping"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3227",
+                            "term": "Variant calling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3461",
+                            "term": "Virulence prediction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3675",
+                            "term": "Variant filtering"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2044",
+                                "term": "Sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3016",
+                                    "term": "VCF"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3958",
+                    "term": "Copy number variation"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3421",
+                    "term": "Surgery"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0203",
+                    "term": "Gene expression"
+                }
+            ],
+            "operatingSystem": [
+                "Linux"
+            ],
+            "language": [
+                "Perl",
+                "Shell"
+            ],
+            "license": "CC-BY-SA-4.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": "Open access",
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [
+                {
+                    "url": "https://github.com/CirculatoryHealth/LoFTK/releases/tag/v1.0.2",
+                    "type": "Source code",
+                    "note": null,
+                    "version": null
+                }
+            ],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1101/2021.08.09.455694",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [
+                {
+                    "name": "J. van Setten",
+                    "email": "j.vansetten@umcutrecht.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-4934-7510",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "B. J. Keating",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-3320-3723",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "F. W. Asselbergs",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-1692-8669",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "S. W. van der Laan",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0001-6888-1404",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "A. Alasiri",
+                    "email": null,
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0003-1450-2936",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": null,
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Jennifer",
+            "additionDate": "2022-01-14T01:20:28.294814Z",
+            "lastUpdate": "2022-01-14T01:20:28.297453Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 1,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 274101242,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyNzQxMDEyNDI=",
+                "name": "LoFTK",
+                "full_name": "CirculatoryHealth/LoFTK",
+                "private": false,
+                "owner": {
+                    "login": "CirculatoryHealth",
+                    "id": 63851568,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYzODUxNTY4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/63851568?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CirculatoryHealth",
+                    "html_url": "https://github.com/CirculatoryHealth",
+                    "followers_url": "https://api.github.com/users/CirculatoryHealth/followers",
+                    "following_url": "https://api.github.com/users/CirculatoryHealth/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CirculatoryHealth/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CirculatoryHealth/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CirculatoryHealth/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CirculatoryHealth/orgs",
+                    "repos_url": "https://api.github.com/users/CirculatoryHealth/repos",
+                    "events_url": "https://api.github.com/users/CirculatoryHealth/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CirculatoryHealth/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/CirculatoryHealth/LoFTK",
+                "description": "The Loss-of-Function ToolKit (LoFTK) allows efficient and automated prediction of LoF variants from both genotyped and sequenced genomes, identifying genes that are inactive in one or two copies, and providing summary statistics for downstream analyses.",
+                "fork": false,
+                "url": "https://api.github.com/repos/CirculatoryHealth/LoFTK",
+                "forks_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/forks",
+                "keys_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/teams",
+                "hooks_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/hooks",
+                "issue_events_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/events",
+                "assignees_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/tags",
+                "blobs_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/languages",
+                "stargazers_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/stargazers",
+                "contributors_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/contributors",
+                "subscribers_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/subscribers",
+                "subscription_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/subscription",
+                "commits_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/merges",
+                "archive_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/downloads",
+                "issues_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/labels{/name}",
+                "releases_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/CirculatoryHealth/LoFTK/deployments",
+                "created_at": "2020-06-22T09:58:10Z",
+                "updated_at": "2025-12-23T14:25:18Z",
+                "pushed_at": "2025-07-30T07:55:00Z",
+                "git_url": "git://github.com/CirculatoryHealth/LoFTK.git",
+                "ssh_url": "git@github.com:CirculatoryHealth/LoFTK.git",
+                "clone_url": "https://github.com/CirculatoryHealth/LoFTK.git",
+                "svn_url": "https://github.com/CirculatoryHealth/LoFTK",
+                "homepage": "",
+                "size": 335042,
+                "stargazers_count": 10,
+                "watchers_count": 10,
+                "language": "Perl",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": true,
+                "has_discussions": true,
+                "forks_count": 5,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 2,
+                "license": {
+                    "key": "cc-by-sa-4.0",
+                    "name": "Creative Commons Attribution Share Alike 4.0 International",
+                    "spdx_id": "CC-BY-SA-4.0",
+                    "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+                    "node_id": "MDc6TGljZW5zZTI2"
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "lofs",
+                    "loss-of-function"
+                ],
+                "visibility": "public",
+                "forks": 5,
+                "open_issues": 2,
+                "watchers": 10,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "CirculatoryHealth",
+                    "id": 63851568,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjYzODUxNTY4",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/63851568?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/CirculatoryHealth",
+                    "html_url": "https://github.com/CirculatoryHealth",
+                    "followers_url": "https://api.github.com/users/CirculatoryHealth/followers",
+                    "following_url": "https://api.github.com/users/CirculatoryHealth/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/CirculatoryHealth/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/CirculatoryHealth/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/CirculatoryHealth/subscriptions",
+                    "organizations_url": "https://api.github.com/users/CirculatoryHealth/orgs",
+                    "repos_url": "https://api.github.com/users/CirculatoryHealth/repos",
+                    "events_url": "https://api.github.com/users/CirculatoryHealth/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/CirculatoryHealth/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 5,
+                "subscribers_count": 2
+            },
+            "contents": [
+                {
+                    "path": ".DS_Store",
+                    "type": "blob"
+                },
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "LoF.config",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "_config.yml",
+                    "type": "blob"
+                },
+                {
+                    "path": "allele_to_vcf.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin",
+                    "type": "tree"
+                },
+                {
+                    "path": "data",
+                    "type": "tree"
+                },
+                {
+                    "path": "docs",
+                    "type": "tree"
+                },
+                {
+                    "path": "filter_counts.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "gene_lof_counts_to_dyad_lofs.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "merge_gene_lof_counts.pl",
+                    "type": "blob"
+                },
+                {
+                    "path": "run_loftk.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "src",
+                    "type": "tree"
+                },
+                {
+                    "path": "stat_desc.sh",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "Alasiriab2",
+                    "contributions": 153
+                },
+                {
+                    "login": "swvanderlaan",
+                    "contributions": 11
+                },
+                {
+                    "login": "R-Gharehb",
+                    "contributions": 5
+                },
+                {
+                    "login": "munytre",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 18,
+                    "title": "For already ran LOFTEE output",
+                    "created_at": "2021-08-13T17:37:44Z",
+                    "closed_at": "2021-08-23T18:40:32Z"
+                },
+                {
+                    "number": 15,
+                    "title": "stat_desc",
+                    "created_at": "2021-06-24T11:17:54Z",
+                    "closed_at": "2022-02-11T05:29:50Z"
+                },
+                {
+                    "number": 14,
+                    "title": "Dependency ",
+                    "created_at": "2021-06-24T09:53:01Z",
+                    "closed_at": "2022-02-11T05:30:17Z"
+                },
+                {
+                    "number": 13,
+                    "title": "Zenodo",
+                    "created_at": "2021-06-15T15:38:08Z",
+                    "closed_at": "2022-02-11T05:30:36Z"
+                },
+                {
+                    "number": 12,
+                    "title": "Input files requirment",
+                    "created_at": "2021-06-15T15:32:28Z",
+                    "closed_at": "2021-06-22T11:16:19Z"
+                },
+                {
+                    "number": 11,
+                    "title": "add description of files",
+                    "created_at": "2021-06-08T12:20:03Z",
+                    "closed_at": "2021-06-15T12:47:14Z"
+                },
+                {
+                    "number": 10,
+                    "title": "add a link PhyloCSF database (phylocsf.sql)",
+                    "created_at": "2021-06-08T11:36:40Z",
+                    "closed_at": "2021-06-15T15:24:40Z"
+                },
+                {
+                    "number": 9,
+                    "title": "add link for Ancestral sequence (human_ancestor.fa[.gz|.rz])",
+                    "created_at": "2021-06-08T11:35:59Z",
+                    "closed_at": "2021-06-15T15:26:31Z"
+                },
+                {
+                    "number": 7,
+                    "title": "Add gene name in snp.lof",
+                    "created_at": "2020-09-16T23:41:28Z",
+                    "closed_at": "2021-06-15T15:27:26Z"
+                },
+                {
+                    "number": 6,
+                    "title": "Run time and capacity ",
+                    "created_at": "2020-09-16T23:38:58Z",
+                    "closed_at": "2021-02-12T11:50:00Z"
+                },
+                {
+                    "number": 5,
+                    "title": "Summary statistic #2",
+                    "created_at": "2020-09-16T23:36:30Z",
+                    "closed_at": "2021-06-15T15:27:58Z"
+                },
+                {
+                    "number": 4,
+                    "title": "Split summary stat in separated bash script.",
+                    "created_at": "2020-09-16T09:57:55Z",
+                    "closed_at": "2021-06-15T15:33:16Z"
+                },
+                {
+                    "number": 3,
+                    "title": "USERNAME for dependency ",
+                    "created_at": "2020-09-16T09:57:05Z",
+                    "closed_at": "2021-06-15T15:29:59Z"
+                },
+                {
+                    "number": 2,
+                    "title": "Summary statistic #1",
+                    "created_at": "2020-09-11T23:38:26Z",
+                    "closed_at": "2021-06-15T15:35:02Z"
+                },
+                {
+                    "number": 1,
+                    "title": "Add example VCF header",
+                    "created_at": "2020-07-20T10:09:10Z",
+                    "closed_at": "2021-06-15T15:33:34Z"
+                }
+            ],
+            "languages": {
+                "Perl": 108639,
+                "Shell": 78531
+            },
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s13040-023-00321-5",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "36732776",
+                            "source": "MED",
+                            "pmid": "36732776",
+                            "pmcid": "PMC9893534",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC9893534"
+                                ]
+                            },
+                            "doi": "10.1186/s13040-023-00321-5",
+                            "title": "LoFTK: a framework for fully automated calculation of predicted Loss-of-Function variants and genes.",
+                            "authorString": "Alasiri A, Karczewski KJ, Cole B, Loza BL, Moore JH, van der Laan SW, Asselbergs FW, Keating BJ, van Setten J.",
+                            "journalTitle": "BioData Min",
+                            "issue": "1",
+                            "journalVolume": "16",
+                            "pubYear": "2023",
+                            "journalIssn": "1756-0381",
+                            "pageInfo": "3",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 1,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2023-02-03",
+                            "firstPublicationDate": "2023-02-02"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4319029703",
+                "doi": "https://doi.org/10.1186/s13040-023-00321-5",
+                "title": "LoFTK: a framework for fully automated calculation of predicted Loss-of-Function variants and genes",
+                "display_name": "LoFTK: a framework for fully automated calculation of predicted Loss-of-Function variants and genes",
+                "publication_year": 2023,
+                "publication_date": "2023-02-02",
+                "ids": {
+                    "openalex": "https://openalex.org/W4319029703",
+                    "doi": "https://doi.org/10.1186/s13040-023-00321-5",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/36732776"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s13040-023-00321-5",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13040-023-00321-5",
+                    "pdf_url": "https://biodatamining.biomedcentral.com/counter/pdf/10.1186/s13040-023-00321-5",
+                    "source": {
+                        "id": "https://openalex.org/S84409260",
+                        "display_name": "BioData Mining",
+                        "issn_l": "1756-0381",
+                        "issn": [
+                            "1756-0381"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BioData Mining",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://biodatamining.biomedcentral.com/counter/pdf/10.1186/s13040-023-00321-5",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5077007832",
+                            "display_name": "Abdulrahman Alasiri",
+                            "orcid": "https://orcid.org/0000-0003-1450-2936"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I185203018",
+                                "display_name": "King Saud bin Abdulaziz University for Health Sciences",
+                                "ror": "https://ror.org/0149jvn88",
+                                "country_code": "SA",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I185203018"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I223822909",
+                                "display_name": "Heidelberg University",
+                                "ror": "https://ror.org/038t36y30",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I223822909"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2802164966",
+                                "display_name": "University Hospital Heidelberg",
+                                "ror": "https://ror.org/013czdx64",
+                                "country_code": "DE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2802164966"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I3018483916",
+                                "display_name": "University Medical Center Utrecht",
+                                "ror": "https://ror.org/0575yy874",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I3018483916"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210095597",
+                                "display_name": "King Abdullah International Medical Research Center",
+                                "ror": "https://ror.org/009p8zv69",
+                                "country_code": "SA",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I4210095597"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4517696",
+                                "display_name": "National Guard Health Affairs",
+                                "ror": "https://ror.org/02pecpe58",
+                                "country_code": "SA",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4517696"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "NL",
+                            "SA"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Abdulrahman Alasiri",
+                        "raw_affiliation_strings": [
+                            "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands",
+                            "Medical Genomics Research Department, King Abdullah International Medical Research Center, King Saud Bin Abdulaziz University for Health Sciences, Ministry of National Guard Health Affairs, Riyadh, Saudi Arabia"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353",
+                                    "https://openalex.org/I3018483916",
+                                    "https://openalex.org/I223822909",
+                                    "https://openalex.org/I2802164966"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Medical Genomics Research Department, King Abdullah International Medical Research Center, King Saud Bin Abdulaziz University for Health Sciences, Ministry of National Guard Health Affairs, Riyadh, Saudi Arabia",
+                                "institution_ids": [
+                                    "https://openalex.org/I185203018",
+                                    "https://openalex.org/I4517696",
+                                    "https://openalex.org/I4210095597"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5106691485",
+                            "display_name": "Konrad J. Karczewski",
+                            "orcid": "https://orcid.org/0000-0003-2878-4671"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I107606265",
+                                "display_name": "Broad Institute",
+                                "ror": "https://ror.org/05a0ya142",
+                                "country_code": "US",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I107606265"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210087915",
+                                "display_name": "Massachusetts General Hospital",
+                                "ror": "https://ror.org/002pd6e78",
+                                "country_code": "US",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210087915",
+                                    "https://openalex.org/I48633490"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Konrad J. Karczewski",
+                        "raw_affiliation_strings": [
+                            "Analytic and Translational Genetics Unit, Massachusetts General Hospital, Boston, MA, USA",
+                            "Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, Cambridge, MA, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Analytic and Translational Genetics Unit, Massachusetts General Hospital, Boston, MA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210087915"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, Cambridge, MA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I107606265"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5061307250",
+                            "display_name": "Brian Cole",
+                            "orcid": "https://orcid.org/0000-0002-6377-6215"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I136199984",
+                                "display_name": "Harvard University",
+                                "ror": "https://ror.org/03vek6s52",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I136199984"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Brian Cole",
+                        "raw_affiliation_strings": [
+                            "Bioinformatics Core, Harvard Medical School, Boston, MA, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Bioinformatics Core, Harvard Medical School, Boston, MA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I136199984"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5009238693",
+                            "display_name": "Bao\u2010Li Loza",
+                            "orcid": "https://orcid.org/0000-0003-3917-6129"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I79576946",
+                                "display_name": "University of Pennsylvania",
+                                "ror": "https://ror.org/00b30xv10",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I79576946"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Bao-Li Loza",
+                        "raw_affiliation_strings": [
+                            "Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I79576946"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5032971510",
+                            "display_name": "Jason H. Moore",
+                            "orcid": "https://orcid.org/0000-0002-5015-1099"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I1282927834",
+                                "display_name": "Cedars-Sinai Medical Center",
+                                "ror": "https://ror.org/02pammg90",
+                                "country_code": "US",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I1282927834"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jason H. Moore",
+                        "raw_affiliation_strings": [
+                            "Department of Computational Biomedicine, Cedars-Sinai Medical Center, Los Angeles, CA, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Computational Biomedicine, Cedars-Sinai Medical Center, Los Angeles, CA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I1282927834"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5056664018",
+                            "display_name": "Sander W. van der Laan",
+                            "orcid": "https://orcid.org/0000-0001-6888-1404"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I3018483916",
+                                "display_name": "University Medical Center Utrecht",
+                                "ror": "https://ror.org/0575yy874",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I3018483916"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Sander W. van der Laan",
+                        "raw_affiliation_strings": [
+                            "Central Diagnostic Laboratory, Division Laboratories, Pharmacy, and Biomedical Genetics, University Medical Center Utrecht, University of Utrecht, Utrecht, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Central Diagnostic Laboratory, Division Laboratories, Pharmacy, and Biomedical Genetics, University Medical Center Utrecht, University of Utrecht, Utrecht, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353",
+                                    "https://openalex.org/I3018483916"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5039782389",
+                            "display_name": "Folkert W. Asselbergs",
+                            "orcid": "https://orcid.org/0000-0002-1692-8669"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210142469",
+                                "display_name": "Health Data Research UK",
+                                "ror": "https://ror.org/04rtjaj74",
+                                "country_code": "GB",
+                                "type": "nonprofit",
+                                "lineage": [
+                                    "https://openalex.org/I4210142469"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210151833",
+                                "display_name": "Amsterdam University Medical Centers",
+                                "ror": "https://ror.org/05grdyy37",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I4210151833"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I45129253",
+                                "display_name": "University College London",
+                                "ror": "https://ror.org/02jx3x895",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I124357947",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I887064364",
+                                "display_name": "University of Amsterdam",
+                                "ror": "https://ror.org/04dkp9463",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I887064364"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB",
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Folkert W. Asselbergs",
+                        "raw_affiliation_strings": [
+                            "Department of Cardiology, Amsterdam University Medical Centers, University of Amsterdam, Amsterdam, Netherlands",
+                            "Health Data Research UK and Institute of Health Informatics, University College London, London, UK"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cardiology, Amsterdam University Medical Centers, University of Amsterdam, Amsterdam, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210151833",
+                                    "https://openalex.org/I887064364"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Health Data Research UK and Institute of Health Informatics, University College London, London, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210142469",
+                                    "https://openalex.org/I45129253"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5058430815",
+                            "display_name": "Brendan J. Keating",
+                            "orcid": "https://orcid.org/0000-0002-3320-3723"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I79576946",
+                                "display_name": "University of Pennsylvania",
+                                "ror": "https://ror.org/00b30xv10",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I79576946"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Brendan J. Keating",
+                        "raw_affiliation_strings": [
+                            "Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I79576946"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5020949943",
+                            "display_name": "Jessica van Setten",
+                            "orcid": "https://orcid.org/0000-0002-4934-7510"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I193662353",
+                                "display_name": "Utrecht University",
+                                "ror": "https://ror.org/04pp8hn57",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I193662353"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I223822909",
+                                "display_name": "Heidelberg University",
+                                "ror": "https://ror.org/038t36y30",
+                                "country_code": "DE",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I223822909"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I2802164966",
+                                "display_name": "University Hospital Heidelberg",
+                                "ror": "https://ror.org/013czdx64",
+                                "country_code": "DE",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I2802164966"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I3018483916",
+                                "display_name": "University Medical Center Utrecht",
+                                "ror": "https://ror.org/0575yy874",
+                                "country_code": "NL",
+                                "type": "healthcare",
+                                "lineage": [
+                                    "https://openalex.org/I3018483916"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "DE",
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jessica van Setten",
+                        "raw_affiliation_strings": [
+                            "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands. j.vansetten@umcutrecht.nl",
+                            "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands. j.vansetten@umcutrecht.nl",
+                                "institution_ids": [
+                                    "https://openalex.org/I3018483916",
+                                    "https://openalex.org/I223822909",
+                                    "https://openalex.org/I2802164966"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Cardiology, Division Heart and Lungs, University Medical Center Utrecht, University of Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I193662353",
+                                    "https://openalex.org/I3018483916",
+                                    "https://openalex.org/I223822909",
+                                    "https://openalex.org/I2802164966"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 5,
+                "institutions_distinct_count": 9,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5077007832"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I185203018",
+                    "https://openalex.org/I193662353",
+                    "https://openalex.org/I223822909",
+                    "https://openalex.org/I2802164966",
+                    "https://openalex.org/I3018483916",
+                    "https://openalex.org/I4210095597",
+                    "https://openalex.org/I4517696"
+                ],
+                "apc_list": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "apc_paid": {
+                    "value": 1690,
+                    "currency": "GBP",
+                    "value_usd": 2072
+                },
+                "fwci": 2.9237,
+                "has_fulltext": true,
+                "cited_by_count": 10,
+                "citation_normalized_percentile": {
+                    "value": 0.90881902,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "16",
+                    "issue": "1",
+                    "first_page": "3",
+                    "last_page": "3"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T11642",
+                    "display_name": "Genomics and Rare Diseases",
+                    "score": 0.9776999950408936,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1311",
+                        "display_name": "Genetics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T11642",
+                        "display_name": "Genomics and Rare Diseases",
+                        "score": 0.9776999950408936,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1311",
+                            "display_name": "Genetics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11287",
+                        "display_name": "Cancer Genomics and Diagnostics",
+                        "score": 0.003100000089034438,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1306",
+                            "display_name": "Cancer Research"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10949",
+                        "display_name": "Genetic Neurodegenerative Diseases",
+                        "score": 0.0024999999441206455,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2804",
+                            "display_name": "Cellular and Molecular Neuroscience"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/28",
+                            "display_name": "Neuroscience"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/function",
+                        "display_name": "Function (biology)",
+                        "score": 0.6088330149650574
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5928592681884766
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.5093826055526733
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/loss-function",
+                        "display_name": "Loss function",
+                        "score": 0.49819397926330566
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.4332289397716522
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.3755304217338562
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.288199782371521
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.26646554470062256
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/phenotype",
+                        "display_name": "Phenotype",
+                        "score": 0.12788772583007812
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C14036430",
+                        "wikidata": "https://www.wikidata.org/wiki/Q3736076",
+                        "display_name": "Function (biology)",
+                        "level": 2,
+                        "score": 0.6088330149650574
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5928592681884766
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.5093826055526733
+                    },
+                    {
+                        "id": "https://openalex.org/C105951970",
+                        "wikidata": "https://www.wikidata.org/wiki/Q1036748",
+                        "display_name": "Loss function",
+                        "level": 4,
+                        "score": 0.49819397926330566
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.4332289397716522
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.3755304217338562
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.288199782371521
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.26646554470062256
+                    },
+                    {
+                        "id": "https://openalex.org/C127716648",
+                        "wikidata": "https://www.wikidata.org/wiki/Q104053",
+                        "display_name": "Phenotype",
+                        "level": 3,
+                        "score": 0.12788772583007812
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 8,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s13040-023-00321-5",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s13040-023-00321-5",
+                        "pdf_url": "https://biodatamining.biomedcentral.com/counter/pdf/10.1186/s13040-023-00321-5",
+                        "source": {
+                            "id": "https://openalex.org/S84409260",
+                            "display_name": "BioData Mining",
+                            "issn_l": "1756-0381",
+                            "issn": [
+                                "1756-0381"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BioData Mining",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:36732776",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/36732776",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "BioData mining",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.amsterdamumc.nl:openaire/7e46fa06-b572-494f-aaab-ac4653fe8126",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amsterdamumc.nl/en/publications/7e46fa06-b572-494f-aaab-ac4653fe8126",
+                        "pdf_url": "https://pure.amsterdamumc.nl/ws/files/136137864/s13040-023-00321-5.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S7407055222",
+                            "display_name": "Pure Amsterdam UMC",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "acceptedVersion",
+                        "is_accepted": true,
+                        "is_published": false,
+                        "raw_source_name": "Alasiri, A, Karczewski, K J, Cole, B, Loza, B-L, Moore, J H, van der Laan, S W, Asselbergs, F W, Keating, B J & van Setten, J 2023, 'LoFTK : a framework for fully automated calculation of predicted Loss-of-Function variants and genes', BioData mining, vol. 16, no. 1, 3. https://doi.org/10.1186/s13040-023-00321-5",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:eprints.ucl.ac.uk.OAI2:10165468",
+                        "is_oa": true,
+                        "landing_page_url": "https://discovery.ucl.ac.uk/id/eprint/10165468/",
+                        "pdf_url": "https://discovery.ucl.ac.uk/10165468/1/s13040-023-00321-5.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S4306400024",
+                            "display_name": "UCL Discovery (University College London)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I45129253",
+                            "host_organization_name": "University College London",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I45129253"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "   BioData Mining , 16  (1)    , Article 3. (2023)      ",
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:9893534",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9893534",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9893534/pdf/13040_2023_Article_321.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BioData Min",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:amcpub:oai:pure.amc.nl:publications/f3ea9e53-47a7-41fb-971b-66ea1e32c9f6",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.amc.nl/en/publications/loftk(f3ea9e53-47a7-41fb-971b-66ea1e32c9f6).html",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BioData mining, 16(1):3. BioMed Central",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:f8e71408467d4ef6916d54391004dd44",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/f8e71408467d4ef6916d54391004dd44",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "BioData Mining, Vol 16, Iss 1, Pp 1-10 (2023)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:dspace.library.uu.nl:1874/458592",
+                        "is_oa": true,
+                        "landing_page_url": "https://dspace.library.uu.nl/handle/1874/458592",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401649",
+                            "display_name": "Utrecht University Repository (Utrecht University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I193662353",
+                            "host_organization_name": "Utrecht University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I193662353"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s13040-023-00321-5",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13040-023-00321-5",
+                    "pdf_url": "https://biodatamining.biomedcentral.com/counter/pdf/10.1186/s13040-023-00321-5",
+                    "source": {
+                        "id": "https://openalex.org/S84409260",
+                        "display_name": "BioData Mining",
+                        "issn_l": "1756-0381",
+                        "issn": [
+                            "1756-0381"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "BioData Mining",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G1175529158",
+                        "display_name": null,
+                        "funder_award_id": "116074",
+                        "funder_id": "https://openalex.org/F4320326631",
+                        "funder_display_name": "Innovative Medicines Initiative"
+                    },
+                    {
+                        "id": "https://openalex.org/G1539220654",
+                        "display_name": null,
+                        "funder_award_id": "848146",
+                        "funder_id": "https://openalex.org/F4320332999",
+                        "funder_display_name": "Horizon 2020 Framework Programme"
+                    },
+                    {
+                        "id": "https://openalex.org/G2259971274",
+                        "display_name": null,
+                        "funder_award_id": "116074",
+                        "funder_id": "https://openalex.org/F4320314178",
+                        "funder_display_name": "European Federation of Pharmaceutical Industries and Associations"
+                    },
+                    {
+                        "id": "https://openalex.org/G2844294282",
+                        "display_name": null,
+                        "funder_award_id": "116074",
+                        "funder_id": "https://openalex.org/F4320332999",
+                        "funder_display_name": "Horizon 2020 Framework Programme"
+                    },
+                    {
+                        "id": "https://openalex.org/G3432332685",
+                        "display_name": null,
+                        "funder_award_id": "400016184",
+                        "funder_id": "https://openalex.org/F4320327902",
+                        "funder_display_name": "King Abdullah International Medical Research Center"
+                    },
+                    {
+                        "id": "https://openalex.org/G4608779662",
+                        "display_name": null,
+                        "funder_award_id": "2017T003",
+                        "funder_id": "https://openalex.org/F4320321642",
+                        "funder_display_name": "Hartstichting"
+                    },
+                    {
+                        "id": "https://openalex.org/G6271044808",
+                        "display_name": null,
+                        "funder_award_id": "01KL1802",
+                        "funder_id": "https://openalex.org/F4320330882",
+                        "funder_display_name": "European Research Area Network on Cardiovascular Diseases"
+                    },
+                    {
+                        "id": "https://openalex.org/G6682602594",
+                        "display_name": null,
+                        "funder_award_id": "LM010098",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    },
+                    {
+                        "id": "https://openalex.org/G7331901853",
+                        "display_name": null,
+                        "funder_award_id": "EU H2020",
+                        "funder_id": "https://openalex.org/F4320332999",
+                        "funder_display_name": "Horizon 2020 Framework Programme"
+                    },
+                    {
+                        "id": "https://openalex.org/G8858395165",
+                        "display_name": null,
+                        "funder_award_id": "H2020",
+                        "funder_id": "https://openalex.org/F4320332161",
+                        "funder_display_name": "National Institutes of Health"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320314178",
+                        "display_name": "European Federation of Pharmaceutical Industries and Associations",
+                        "ror": "https://ror.org/00g1x4v36"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320321642",
+                        "display_name": "Hartstichting",
+                        "ror": "https://ror.org/05nxhgm70"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320326631",
+                        "display_name": "Innovative Medicines Initiative",
+                        "ror": "https://ror.org/019af4n30"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320327902",
+                        "display_name": "King Abdullah International Medical Research Center",
+                        "ror": "https://ror.org/009p8zv69"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320330882",
+                        "display_name": "European Research Area Network on Cardiovascular Diseases",
+                        "ror": null
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332161",
+                        "display_name": "National Institutes of Health",
+                        "ror": "https://ror.org/01cwqze88"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320332999",
+                        "display_name": "Horizon 2020 Framework Programme",
+                        "ror": "https://ror.org/00k4n6c32"
+                    }
+                ],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": false
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4319029703.pdf"
+                },
+                "referenced_works_count": 20,
+                "referenced_works": [
+                    "https://openalex.org/W1992436001",
+                    "https://openalex.org/W2046975204",
+                    "https://openalex.org/W2061539393",
+                    "https://openalex.org/W2083272036",
+                    "https://openalex.org/W2087036932",
+                    "https://openalex.org/W2096791516",
+                    "https://openalex.org/W2108845602",
+                    "https://openalex.org/W2111307685",
+                    "https://openalex.org/W2127003470",
+                    "https://openalex.org/W2138138356",
+                    "https://openalex.org/W2143602768",
+                    "https://openalex.org/W2168412461",
+                    "https://openalex.org/W2256016639",
+                    "https://openalex.org/W2417483443",
+                    "https://openalex.org/W2529241974",
+                    "https://openalex.org/W2748225400",
+                    "https://openalex.org/W3029661147",
+                    "https://openalex.org/W3126160703",
+                    "https://openalex.org/W3177160312",
+                    "https://openalex.org/W3207912190"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2131250617",
+                    "https://openalex.org/W4233034052",
+                    "https://openalex.org/W2371030422",
+                    "https://openalex.org/W4366601060",
+                    "https://openalex.org/W2364878181",
+                    "https://openalex.org/W2903401309",
+                    "https://openalex.org/W2189035925",
+                    "https://openalex.org/W2464653720",
+                    "https://openalex.org/W2345994186",
+                    "https://openalex.org/W2366111644"
+                ],
+                "abstract_inverted_index": {
+                    "BACKGROUND:": [
+                        0
+                    ],
+                    "Loss-of-Function": [
+                        1,
+                        87
+                    ],
+                    "(LoF)": [
+                        2
+                    ],
+                    "variants": [
+                        3,
+                        29,
+                        51,
+                        98,
+                        185
+                    ],
+                    "in": [
+                        4,
+                        19,
+                        114,
+                        134,
+                        158,
+                        196
+                    ],
+                    "human": [
+                        5
+                    ],
+                    "genes": [
+                        6,
+                        56,
+                        74,
+                        110,
+                        136,
+                        154,
+                        192
+                    ],
+                    "are": [
+                        7,
+                        112,
+                        194
+                    ],
+                    "important": [
+                        8
+                    ],
+                    "due": [
+                        9
+                    ],
+                    "to": [
+                        10,
+                        37,
+                        210
+                    ],
+                    "their": [
+                        11
+                    ],
+                    "impact": [
+                        12
+                    ],
+                    "on": [
+                        13
+                    ],
+                    "clinical": [
+                        14
+                    ],
+                    "phenotypes": [
+                        15
+                    ],
+                    "and": [
+                        16,
+                        33,
+                        40,
+                        93,
+                        102,
+                        119,
+                        145,
+                        188,
+                        206
+                    ],
+                    "frequent": [
+                        17
+                    ],
+                    "occurrence": [
+                        18
+                    ],
+                    "the": [
+                        20,
+                        38,
+                        54,
+                        58,
+                        86,
+                        107,
+                        159,
+                        162
+                    ],
+                    "genomes": [
+                        21
+                    ],
+                    "of": [
+                        22,
+                        27,
+                        42,
+                        60,
+                        69,
+                        96,
+                        109,
+                        151
+                    ],
+                    "healthy": [
+                        23
+                    ],
+                    "individuals.": [
+                        24
+                    ],
+                    "The": [
+                        25
+                    ],
+                    "association": [
+                        26
+                    ],
+                    "LoF": [
+                        28,
+                        50,
+                        80,
+                        97,
+                        130,
+                        135,
+                        153,
+                        184
+                    ],
+                    "with": [
+                        30,
+                        137
+                    ],
+                    "complex": [
+                        31
+                    ],
+                    "diseases": [
+                        32
+                    ],
+                    "traits": [
+                        34
+                    ],
+                    "may": [
+                        35
+                    ],
+                    "lead": [
+                        36
+                    ],
+                    "discovery": [
+                        39
+                    ],
+                    "validation": [
+                        41
+                    ],
+                    "novel": [
+                        43
+                    ],
+                    "therapeutic": [
+                        44
+                    ],
+                    "targets.": [
+                        45
+                    ],
+                    "Current": [
+                        46
+                    ],
+                    "approaches": [
+                        47
+                    ],
+                    "predict": [
+                        48
+                    ],
+                    "high-confidence": [
+                        49
+                    ],
+                    "without": [
+                        52
+                    ],
+                    "identifying": [
+                        53,
+                        191
+                    ],
+                    "specific": [
+                        55
+                    ],
+                    "or": [
+                        57,
+                        116,
+                        198
+                    ],
+                    "number": [
+                        59
+                    ],
+                    "copies": [
+                        61,
+                        118,
+                        139
+                    ],
+                    "they": [
+                        62
+                    ],
+                    "affect.": [
+                        63
+                    ],
+                    "Moreover,": [
+                        64
+                    ],
+                    "there": [
+                        65
+                    ],
+                    "is": [
+                        66,
+                        171,
+                        202,
+                        207
+                    ],
+                    "a": [
+                        67,
+                        172,
+                        178
+                    ],
+                    "lack": [
+                        68
+                    ],
+                    "methods": [
+                        70
+                    ],
+                    "for": [
+                        71,
+                        123,
+                        182
+                    ],
+                    "detecting": [
+                        72
+                    ],
+                    "knockout": [
+                        73
+                    ],
+                    "caused": [
+                        75
+                    ],
+                    "by": [
+                        76,
+                        156,
+                        166
+                    ],
+                    "compound": [
+                        77
+                    ],
+                    "heterozygous": [
+                        78
+                    ],
+                    "(CH)": [
+                        79
+                    ],
+                    "variants.": [
+                        81
+                    ],
+                    "RESULTS:": [
+                        82
+                    ],
+                    "We": [
+                        83
+                    ],
+                    "have": [
+                        84,
+                        161
+                    ],
+                    "developed": [
+                        85
+                    ],
+                    "ToolKit": [
+                        88
+                    ],
+                    "(LoFTK),": [
+                        89
+                    ],
+                    "which": [
+                        90,
+                        132
+                    ],
+                    "allows": [
+                        91
+                    ],
+                    "efficient": [
+                        92
+                    ],
+                    "automated": [
+                        94
+                    ],
+                    "prediction": [
+                        95
+                    ],
+                    "from": [
+                        99,
+                        143,
+                        186
+                    ],
+                    "genotyped,": [
+                        100
+                    ],
+                    "imputed": [
+                        101
+                    ],
+                    "sequenced": [
+                        103,
+                        189
+                    ],
+                    "genomes.": [
+                        104
+                    ],
+                    "LoFTK": [
+                        105,
+                        126,
+                        157,
+                        170,
+                        201
+                    ],
+                    "enables": [
+                        106
+                    ],
+                    "identification": [
+                        108
+                    ],
+                    "that": [
+                        111,
+                        149,
+                        176,
+                        193
+                    ],
+                    "inactive": [
+                        113,
+                        195
+                    ],
+                    "one": [
+                        115
+                    ],
+                    "two": [
+                        117,
+                        138
+                    ],
+                    "provides": [
+                        120,
+                        177
+                    ],
+                    "summary": [
+                        121
+                    ],
+                    "statistics": [
+                        122
+                    ],
+                    "downstream": [
+                        124
+                    ],
+                    "analyses.": [
+                        125
+                    ],
+                    "can": [
+                        127
+                    ],
+                    "identify": [
+                        128
+                    ],
+                    "CH": [
+                        129,
+                        152
+                    ],
+                    "variants,": [
+                        131
+                    ],
+                    "result": [
+                        133
+                    ],
+                    "lost.": [
+                        140
+                    ],
+                    "Using": [
+                        141
+                    ],
+                    "data": [
+                        142
+                    ],
+                    "parents": [
+                        144
+                    ],
+                    "offspring": [
+                        146,
+                        160
+                    ],
+                    "we": [
+                        147
+                    ],
+                    "show": [
+                        148
+                    ],
+                    "96%": [
+                        150
+                    ],
+                    "predicted": [
+                        155
+                    ],
+                    "respective": [
+                        163
+                    ],
+                    "alleles": [
+                        164
+                    ],
+                    "donated": [
+                        165
+                    ],
+                    "each": [
+                        167
+                    ],
+                    "parent.": [
+                        168
+                    ],
+                    "CONCLUSIONS:": [
+                        169
+                    ],
+                    "command-line": [
+                        173
+                    ],
+                    "based": [
+                        174
+                    ],
+                    "tool": [
+                        175
+                    ],
+                    "reliable": [
+                        179
+                    ],
+                    "computational": [
+                        180
+                    ],
+                    "workflow": [
+                        181
+                    ],
+                    "predicting": [
+                        183
+                    ],
+                    "genotyped": [
+                        187
+                    ],
+                    "genomes,": [
+                        190
+                    ],
+                    "1": [
+                        197
+                    ],
+                    "2": [
+                        199
+                    ],
+                    "copies.": [
+                        200
+                    ],
+                    "an": [
+                        203
+                    ],
+                    "open": [
+                        204
+                    ],
+                    "software": [
+                        205
+                    ],
+                    "freely": [
+                        208
+                    ],
+                    "available": [
+                        209
+                    ],
+                    "non-commercial": [
+                        211
+                    ],
+                    "users": [
+                        212
+                    ],
+                    "at": [
+                        213
+                    ],
+                    "https://github.com/CirculatoryHealth/LoFTK": [
+                        214
+                    ],
+                    ".": [
+                        215
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 9
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "LoFTK: a framework for fully automated calculation of predicted Loss-of-Function variants and genes",
+                "doi": "10.1186/s13040-023-00321-5",
+                "pmid": "36732776",
+                "pmc": "PMC9893534",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f6100007e0",
+                "issns": [
+                    "1756-0381"
+                ],
+                "journal": "BioData Mining",
+                "cohorts": {
+                    "pub": 1
+                },
+                "abstract": "Loss-of-Function (LoF) variants in human genes are important due to their impact on clinical phenotypes and frequent occurrence in the genomes of healthy individuals. The association of LoF variants with complex diseases and traits may lead to the discovery and validation of novel therapeutic targets. Current approaches predict high-confidence LoF variants without identifying the specific genes or the number of copies they affect. Moreover, there is a lack of methods for detecting knockout genes caused by compound heterozygous (CH) LoF variants.\nWe have developed the Loss-of-Function ToolKit (LoFTK), which allows efficient and automated prediction of LoF variants from genotyped, imputed and sequenced genomes. LoFTK enables the identification of genes that are inactive in one or two copies and provides summary statistics for downstream analyses. LoFTK can identify CH LoF variants, which result in LoF genes with two copies lost. Using data from parents and offspring we show that 96% of CH LoF genes predicted by LoFTK in the offspring have the respective alleles donated by each parent.\nLoFTK is a command-line based tool that provides a reliable computational workflow for predicting LoF variants from genotyped and sequenced genomes, identifying genes that are inactive in 1 or 2 copies. LoFTK is an open software and is freely available to non-commercial users at https://github.com/CirculatoryHealth/LoFTK .",
+                "context": {
+                    "all": {
+                        "count": 23577761,
+                        "mean": 10.375313420060321,
+                        "rank": 15329366,
+                        "pct": 32,
+                        "higher_than": 7761740
+                    },
+                    "journal": {
+                        "count": 315,
+                        "mean": 7.676488888888889,
+                        "rank": 228,
+                        "pct": 25,
+                        "higher_than": 79
+                    },
+                    "similar_age_3m": {
+                        "count": 427678,
+                        "mean": 11.676404921458813,
+                        "rank": 210036,
+                        "pct": 47,
+                        "higher_than": 202727
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 8,
+                        "mean": 2.9875,
+                        "rank": 8,
+                        "pct": 1,
+                        "higher_than": 0
+                    }
+                },
+                "authors": [
+                    "Abdulrahman Alasiri",
+                    "Konrad J. Karczewski",
+                    "Brian Cole",
+                    "Bao-Li Loza",
+                    "Jason H. Moore",
+                    "Sander W. van der Laan",
+                    "Folkert W. Asselbergs",
+                    "Brendan J. Keating",
+                    "Jessica van Setten"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1675296000,
+                "epubdate": 1675296000,
+                "dimensions_publication_id": "pub.1155059894",
+                "altmetric_id": 142101988,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Medical Biochemistry And Metabolomics",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Artificial Intelligence And Image Processing",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Specialist Studies In Education",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Algorithms",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computational Biology/Bioinformatics",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Computer Appl. in Life Sciences",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Data Mining and Knowledge Discovery",
+                        "scheme": "springer"
+                    },
+                    {
+                        "name": "Life Sciences",
+                        "scheme": "springer"
+                    }
+                ],
+                "cited_by_posts_count": 1,
+                "cited_by_tweeters_count": 1,
+                "cited_by_accounts_count": 1,
+                "last_updated": 1675404337,
+                "score": 1,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 1
+                },
+                "url": "http://dx.doi.org/10.1186/s13040-023-00321-5",
+                "added_on": 1675404351,
+                "published_on": 1675296000,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Computer Science",
+                    "Physical Sciences",
+                    "Mathematics",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "7",
+                    "connotea": "0"
+                },
+                "readers_count": 7,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=1&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=1&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=1&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=142101988"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 684,
+            "total_ccn": 136,
+            "avg_ccn": 2.89,
+            "nloc_per_file": 52.62,
+            "duplicate_rate": 29.32
+        },
+        "howfairis": {
+            "repository": true,
+            "license": true,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

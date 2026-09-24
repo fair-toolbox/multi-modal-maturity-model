@@ -1,0 +1,1867 @@
+{
+    "PyCalibrate": {
+        "tool_name": "PyCalibrate",
+        "biotools": null,
+        "gitlab": {
+            "repository": {
+                "id": 39416069,
+                "description": "",
+                "name": "pycalibrate-psf",
+                "name_with_namespace": "CorbettLab / pycalibrate-psf",
+                "path": "pycalibrate-psf",
+                "path_with_namespace": "psfcheck/pycalibrate-psf",
+                "created_at": "2022-09-14T17:12:45.256Z",
+                "default_branch": "main",
+                "tag_list": [],
+                "topics": [],
+                "ssh_url_to_repo": "git@gitlab.com:psfcheck/pycalibrate-psf.git",
+                "http_url_to_repo": "https://gitlab.com/psfcheck/pycalibrate-psf.git",
+                "web_url": "https://gitlab.com/psfcheck/pycalibrate-psf",
+                "readme_url": "https://gitlab.com/psfcheck/pycalibrate-psf/-/blob/main/README.md",
+                "forks_count": 0,
+                "avatar_url": "https://gitlab.com/uploads/-/system/project/avatar/39416069/PSF_check_favicon_large.jpg",
+                "star_count": 0,
+                "last_activity_at": "2025-08-30T15:42:51.154Z",
+                "visibility": "public",
+                "namespace": {
+                    "id": 9424781,
+                    "name": "CorbettLab",
+                    "path": "psfcheck",
+                    "kind": "group",
+                    "full_path": "psfcheck",
+                    "parent_id": null,
+                    "avatar_url": "/uploads/-/system/group/avatar/9424781/3dpf_platy.png",
+                    "web_url": "https://gitlab.com/groups/psfcheck"
+                },
+                "container_registry_image_prefix": "registry.gitlab.com/psfcheck/pycalibrate-psf",
+                "_links": {
+                    "self": "https://gitlab.com/api/v4/projects/39416069",
+                    "issues": "https://gitlab.com/api/v4/projects/39416069/issues",
+                    "merge_requests": "https://gitlab.com/api/v4/projects/39416069/merge_requests",
+                    "repo_branches": "https://gitlab.com/api/v4/projects/39416069/repository/branches",
+                    "labels": "https://gitlab.com/api/v4/projects/39416069/labels",
+                    "events": "https://gitlab.com/api/v4/projects/39416069/events",
+                    "members": "https://gitlab.com/api/v4/projects/39416069/members",
+                    "cluster_agents": "https://gitlab.com/api/v4/projects/39416069/cluster_agents"
+                },
+                "marked_for_deletion_at": null,
+                "marked_for_deletion_on": null,
+                "packages_enabled": true,
+                "empty_repo": false,
+                "archived": false,
+                "resolve_outdated_diff_discussions": false,
+                "container_expiration_policy": {
+                    "cadence": "1d",
+                    "enabled": false,
+                    "keep_n": 10,
+                    "older_than": "90d",
+                    "name_regex": ".*",
+                    "name_regex_keep": null,
+                    "next_run_at": "2022-09-15T17:12:45.296Z"
+                },
+                "repository_object_format": "sha1",
+                "issues_enabled": true,
+                "merge_requests_enabled": true,
+                "wiki_enabled": true,
+                "jobs_enabled": true,
+                "snippets_enabled": true,
+                "container_registry_enabled": true,
+                "service_desk_enabled": true,
+                "can_create_merge_request_in": true,
+                "issues_access_level": "enabled",
+                "repository_access_level": "enabled",
+                "merge_requests_access_level": "enabled",
+                "forking_access_level": "enabled",
+                "wiki_access_level": "enabled",
+                "builds_access_level": "enabled",
+                "snippets_access_level": "enabled",
+                "pages_access_level": "enabled",
+                "analytics_access_level": "enabled",
+                "container_registry_access_level": "enabled",
+                "security_and_compliance_access_level": "private",
+                "releases_access_level": "enabled",
+                "environments_access_level": "enabled",
+                "feature_flags_access_level": "enabled",
+                "infrastructure_access_level": "enabled",
+                "monitor_access_level": "enabled",
+                "model_experiments_access_level": "enabled",
+                "model_registry_access_level": "enabled",
+                "package_registry_access_level": "enabled",
+                "emails_disabled": false,
+                "emails_enabled": true,
+                "show_diff_preview_in_email": true,
+                "shared_runners_enabled": true,
+                "lfs_enabled": true,
+                "creator_id": 1137143,
+                "import_status": "failed",
+                "open_issues_count": 0,
+                "description_html": "",
+                "updated_at": "2025-08-30T15:42:51.154Z",
+                "ci_config_path": "",
+                "public_jobs": true,
+                "shared_with_groups": [],
+                "only_allow_merge_if_pipeline_succeeds": false,
+                "allow_merge_on_skipped_pipeline": null,
+                "request_access_enabled": true,
+                "only_allow_merge_if_all_discussions_are_resolved": false,
+                "remove_source_branch_after_merge": true,
+                "printing_merge_request_link_enabled": true,
+                "merge_method": "merge",
+                "squash_option": "default_off",
+                "enforce_auth_checks_on_uploads": true,
+                "suggestion_commit_message": null,
+                "merge_commit_template": null,
+                "squash_commit_template": null,
+                "mr_default_title_template": null,
+                "issue_branch_template": null,
+                "warn_about_potentially_unwanted_characters": true,
+                "autoclose_referenced_issues": true,
+                "max_artifacts_size": null,
+                "external_authorization_classification_label": "",
+                "requirements_enabled": false,
+                "requirements_access_level": "enabled",
+                "security_and_compliance_enabled": false,
+                "compliance_frameworks": [],
+                "permissions": {
+                    "project_access": null,
+                    "group_access": null
+                }
+            },
+            "branches_count": 1,
+            "contributors": [
+                {
+                    "name": "Alexander Corbett",
+                    "email": "a.corbett@exeter.ac.uk",
+                    "commits": 3,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Jeremy Metz",
+                    "email": "metz.jp@gmail.com",
+                    "commits": 6,
+                    "additions": 0,
+                    "deletions": 0
+                }
+            ],
+            "closed_issues": [],
+            "open_issues_count": 0,
+            "languages": {
+                "Python": 97.18,
+                "HTML": 2.7,
+                "Batchfile": 0.08,
+                "Shell": 0.04
+            },
+            "repository_tree": [
+                {
+                    "id": "32e0497037934ab966ea8dd576be7b1f9b810f09",
+                    "name": "src",
+                    "type": "tree",
+                    "path": "src",
+                    "mode": "040000"
+                },
+                {
+                    "id": "b96477ed3fbe2b710e40cfc0a84e12beed1d48b5",
+                    "name": "pycalibrate_psf",
+                    "type": "tree",
+                    "path": "src/pycalibrate_psf",
+                    "mode": "040000"
+                },
+                {
+                    "id": "aae865e96fc877409a10cb813414700e4d231bf7",
+                    "name": "assets",
+                    "type": "tree",
+                    "path": "src/pycalibrate_psf/assets",
+                    "mode": "040000"
+                },
+                {
+                    "id": "e1350473b8a77ce8dc6a5094c54bcbf8bef28299",
+                    "name": "templates",
+                    "type": "tree",
+                    "path": "src/pycalibrate_psf/assets/templates",
+                    "mode": "040000"
+                },
+                {
+                    "id": "39bb2f04c2371acab641ae343e5fa345c9c94e36",
+                    "name": "tests",
+                    "type": "tree",
+                    "path": "tests",
+                    "mode": "040000"
+                },
+                {
+                    "id": "2ae275b628dbf8c3ecf1b745850cd709e1b8319d",
+                    "name": "integration",
+                    "type": "tree",
+                    "path": "tests/integration",
+                    "mode": "040000"
+                },
+                {
+                    "id": "6150dfb2e3b6202f0f60dac2376b06bd56494a55",
+                    "name": "unit",
+                    "type": "tree",
+                    "path": "tests/unit",
+                    "mode": "040000"
+                },
+                {
+                    "id": "f9b0860065602fe2921702f8d634205062002a91",
+                    "name": "LICENSE",
+                    "type": "blob",
+                    "path": "LICENSE",
+                    "mode": "100644"
+                },
+                {
+                    "id": "ed8b6ab13f4dc793ac37ca67a8c0b887db14dc3a",
+                    "name": "README.md",
+                    "type": "blob",
+                    "path": "README.md",
+                    "mode": "100644"
+                },
+                {
+                    "id": "7ee47918c6d65c57680b3504a606808f23006bc7",
+                    "name": "pyproject.toml",
+                    "type": "blob",
+                    "path": "pyproject.toml",
+                    "mode": "100644"
+                },
+                {
+                    "id": "51f02e3c7173cb36855440bbdddfd30786ed97a8",
+                    "name": "run.sh",
+                    "type": "blob",
+                    "path": "run.sh",
+                    "mode": "100755"
+                },
+                {
+                    "id": "555960e94ffb6c683310c2ac18a0d37bd10ff42e",
+                    "name": "run_windows.bat",
+                    "type": "blob",
+                    "path": "run_windows.bat",
+                    "mode": "100755"
+                },
+                {
+                    "id": "bff7f868262d1063775c2767471024b19054cac2",
+                    "name": "__init__.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/__init__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "00a4901a632e7407647bf5625a4fcef288660f85",
+                    "name": "__main__.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/__main__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "fe2f07b11dd2f29c0cdc59964e6583f629ea00ad",
+                    "name": "_version.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/_version.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "bd994affcf48cd93a74d6cb4e0586dbac2c10521",
+                    "name": "analysis.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/analysis.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "c594403faa5150a3dff798fa491ca6bfcf07b702",
+                    "name": "report_template.html",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/assets/templates/report_template.html",
+                    "mode": "100644"
+                },
+                {
+                    "id": "8af599bf399c83627435e55196e0db3336a81dcf",
+                    "name": "report_template_fpdf.html",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/assets/templates/report_template_fpdf.html",
+                    "mode": "100644"
+                },
+                {
+                    "id": "dc9e5963a71f7593373da454ef5b8efb69880105",
+                    "name": "report_template_weasyprint.html",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/assets/templates/report_template_weasyprint.html",
+                    "mode": "100644"
+                },
+                {
+                    "id": "b6629253e714166d1216805e57fa5cff1ec5ad66",
+                    "name": "batch.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/batch.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "c5b793c275554ca5a42edb012c1d087bf5c46e83",
+                    "name": "cli.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/cli.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "835c4ac81bd1899ffa35a238fff3b977dee8fa98",
+                    "name": "dataio.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/dataio.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "b21542f741be6b845e2b75e8c5793a46cbbf13e8",
+                    "name": "detection.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/detection.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "07d72a9c4c4e14a1e3bad149bd2eb41da8640882",
+                    "name": "guiqt.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/guiqt.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "3a20c8033499d70c56fc7a56fd85ac61354ebd86",
+                    "name": "log.txt",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/log.txt",
+                    "mode": "100644"
+                },
+                {
+                    "id": "59e2de6b0c3cdae92b4b3495857e9ecb940b0065",
+                    "name": "main.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/main.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "0a8be1c2772f8847ca25b2142ea32569c2d2d14f",
+                    "name": "output.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/output.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "1570de50a6427a4e26e1e905c3d30de493060725",
+                    "name": "plotting.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/plotting.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "1c4aca1be66dd1f0bc1973c39f2875c428603436",
+                    "name": "utility.py",
+                    "type": "blob",
+                    "path": "src/pycalibrate_psf/utility.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                    "name": "__init__.py",
+                    "type": "blob",
+                    "path": "tests/__init__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "428577fca676bc1be3f08bae29b16b43a64b5cf0",
+                    "name": "core.py",
+                    "type": "blob",
+                    "path": "tests/core.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                    "name": "__init__.py",
+                    "type": "blob",
+                    "path": "tests/integration/__init__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "ff2825021a04b6133adb734baf0b4f35ab782d26",
+                    "name": "test_cli_usage.py",
+                    "type": "blob",
+                    "path": "tests/integration/test_cli_usage.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "2a83185b25f1278fde9efd8246b278014f104665",
+                    "name": "test_gui_usage.py",
+                    "type": "blob",
+                    "path": "tests/integration/test_gui_usage.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                    "name": "__init__.py",
+                    "type": "blob",
+                    "path": "tests/unit/__init__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "4125852261d8089dd6ab86979286713051ebc52e",
+                    "name": "test_analysis.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_analysis.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "071e092666139a894bd3ae08cb3608d0f126dd21",
+                    "name": "test_dataio.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_dataio.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "ab0813d1ca11fd7459af47382c7106883cf70486",
+                    "name": "test_detection.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_detection.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "abce12a32132718fa3b95bd1c7c4719d8958b026",
+                    "name": "test_main.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_main.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "cd7efc6177865d170c169b9525b98e3a9aba1f86",
+                    "name": "test_output.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_output.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "9e585c677a2d9a96d41581d354d86fbc10831b5a",
+                    "name": "test_plot.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_plot.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "56f54a26de894d84bff6b6020d588562a44e217f",
+                    "name": "test_utility.py",
+                    "type": "blob",
+                    "path": "tests/unit/test_utility.py",
+                    "mode": "100644"
+                }
+            ],
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1242/bio.059758",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "37815435",
+                            "source": "MED",
+                            "pmid": "37815435",
+                            "pmcid": "PMC10651089",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10651089"
+                                ]
+                            },
+                            "doi": "10.1242/bio.059758",
+                            "title": "Fully automated point spread function analysis using PyCalibrate.",
+                            "authorString": "Metz J, Gintoli M, Corbett AD.",
+                            "journalTitle": "Biol Open",
+                            "issue": "11",
+                            "journalVolume": "12",
+                            "pubYear": "2023",
+                            "journalIssn": "2046-6390",
+                            "pageInfo": "bio059758",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 2,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "doi"
+                                ]
+                            },
+                            "firstIndexDate": "2023-10-11",
+                            "firstPublicationDate": "2023-11-10"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4387472524",
+                "doi": "https://doi.org/10.1242/bio.059758",
+                "title": "Fully automated point spread function analysis using PyCalibrate",
+                "display_name": "Fully automated point spread function analysis using PyCalibrate",
+                "publication_year": 2023,
+                "publication_date": "2023-10-10",
+                "ids": {
+                    "openalex": "https://openalex.org/W4387472524",
+                    "doi": "https://doi.org/10.1242/bio.059758",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/37815435"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1242/bio.059758",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1242/bio.059758",
+                    "pdf_url": "https://journals.biologists.com/bio/article-pdf/doi/10.1242/bio.059758/3231543/bio059758.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S2738063279",
+                        "display_name": "Biology Open",
+                        "issn_l": "2046-6390",
+                        "issn": [
+                            "2046-6390"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311847",
+                        "host_organization_name": "The Company of Biologists",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311847"
+                        ],
+                        "host_organization_lineage_names": [
+                            "The Company of Biologists"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Biology Open",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://journals.biologists.com/bio/article-pdf/doi/10.1242/bio.059758/3231543/bio059758.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5087930496",
+                            "display_name": "Jeremy Metz",
+                            "orcid": "https://orcid.org/0000-0002-8099-8776"
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": true,
+                        "raw_author_name": "Jeremy Metz",
+                        "raw_affiliation_strings": [
+                            "Jeremy Metz 1 , J\u00e4rf\u00e4lla, 17739 , Sweden"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Jeremy Metz 1 , J\u00e4rf\u00e4lla, 17739 , Sweden",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5027090443",
+                            "display_name": "Michele Gintoli",
+                            "orcid": "https://orcid.org/0000-0002-5254-9447"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I94624287",
+                                "display_name": "University of Twente",
+                                "ror": "https://ror.org/006hf6230",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I94624287"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Michele Gintoli",
+                        "raw_affiliation_strings": [
+                            "University of Twente 2 Faculty of Science and Technology , , 7500 AE Enschede , The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-5254-9447",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "University of Twente 2 Faculty of Science and Technology , , 7500 AE Enschede , The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I94624287"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5033321160",
+                            "display_name": "Alexander D. Corbett",
+                            "orcid": "https://orcid.org/0000-0003-1645-5475"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I23923803",
+                                "display_name": "University of Exeter",
+                                "ror": "https://ror.org/03yghzc09",
+                                "country_code": "GB",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I23923803"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "GB"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Alexander David Corbett",
+                        "raw_affiliation_strings": [
+                            "3 Department of Physics and Astronomy, Stocker Road, Exeter, EX4 4QL, UK",
+                            "4 Living Systems Institute, University of Exeter, EX4 4QL, UK"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0003-1645-5475",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "3 Department of Physics and Astronomy, Stocker Road, Exeter, EX4 4QL, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I23923803"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "4 Living Systems Institute, University of Exeter, EX4 4QL, UK",
+                                "institution_ids": [
+                                    "https://openalex.org/I23923803"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 3,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5087930496"
+                ],
+                "corresponding_institution_ids": [],
+                "apc_list": {
+                    "value": 1995,
+                    "currency": "USD",
+                    "value_usd": 1995
+                },
+                "apc_paid": {
+                    "value": 1995,
+                    "currency": "USD",
+                    "value_usd": 1995
+                },
+                "fwci": 0.3378,
+                "has_fulltext": true,
+                "cited_by_count": 1,
+                "citation_normalized_percentile": {
+                    "value": 0.77191666,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 94
+                },
+                "biblio": {
+                    "volume": "12",
+                    "issue": "11",
+                    "first_page": null,
+                    "last_page": null
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T12859",
+                    "display_name": "Cell Image Analysis Techniques",
+                    "score": 0.9998000264167786,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1304",
+                        "display_name": "Biophysics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/13",
+                        "display_name": "Biochemistry, Genetics and Molecular Biology"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T12859",
+                        "display_name": "Cell Image Analysis Techniques",
+                        "score": 0.9998000264167786,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1304",
+                            "display_name": "Biophysics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T13114",
+                        "display_name": "Image Processing Techniques and Applications",
+                        "score": 0.996999979019165,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2214",
+                            "display_name": "Media Technology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/22",
+                            "display_name": "Engineering"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10540",
+                        "display_name": "Advanced Fluorescence Microscopy Techniques",
+                        "score": 0.9933000206947327,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1304",
+                            "display_name": "Biophysics"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.83854079246521
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/software",
+                        "display_name": "Software",
+                        "score": 0.7347608804702759
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.7282508611679077
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/rendering",
+                        "display_name": "Rendering (computer graphics)",
+                        "score": 0.5185133218765259
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/point-spread-function",
+                        "display_name": "Point spread function",
+                        "score": 0.4707874655723572
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-vision",
+                        "display_name": "Computer vision",
+                        "score": 0.39434581995010376
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/data-mining",
+                        "display_name": "Data mining",
+                        "score": 0.367408812046051
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-graphics",
+                        "display_name": "Computer graphics (images)",
+                        "score": 0.35710322856903076
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.33990275859832764
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/operating-system",
+                        "display_name": "Operating system",
+                        "score": 0.25231027603149414
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.83854079246521
+                    },
+                    {
+                        "id": "https://openalex.org/C2777904410",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7397",
+                        "display_name": "Software",
+                        "level": 2,
+                        "score": 0.7347608804702759
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.7282508611679077
+                    },
+                    {
+                        "id": "https://openalex.org/C205711294",
+                        "wikidata": "https://www.wikidata.org/wiki/Q176953",
+                        "display_name": "Rendering (computer graphics)",
+                        "level": 2,
+                        "score": 0.5185133218765259
+                    },
+                    {
+                        "id": "https://openalex.org/C69179731",
+                        "wikidata": "https://www.wikidata.org/wiki/Q510427",
+                        "display_name": "Point spread function",
+                        "level": 2,
+                        "score": 0.4707874655723572
+                    },
+                    {
+                        "id": "https://openalex.org/C31972630",
+                        "wikidata": "https://www.wikidata.org/wiki/Q844240",
+                        "display_name": "Computer vision",
+                        "level": 1,
+                        "score": 0.39434581995010376
+                    },
+                    {
+                        "id": "https://openalex.org/C124101348",
+                        "wikidata": "https://www.wikidata.org/wiki/Q172491",
+                        "display_name": "Data mining",
+                        "level": 1,
+                        "score": 0.367408812046051
+                    },
+                    {
+                        "id": "https://openalex.org/C121684516",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7600677",
+                        "display_name": "Computer graphics (images)",
+                        "level": 1,
+                        "score": 0.35710322856903076
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.33990275859832764
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.25231027603149414
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D005456",
+                        "descriptor_name": "Fluorescent Dyes",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005456",
+                        "descriptor_name": "Fluorescent Dyes",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005456",
+                        "descriptor_name": "Fluorescent Dyes",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005456",
+                        "descriptor_name": "Fluorescent Dyes",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D006801",
+                        "descriptor_name": "Humans",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008853",
+                        "descriptor_name": "Microscopy",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008853",
+                        "descriptor_name": "Microscopy",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008853",
+                        "descriptor_name": "Microscopy",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D008853",
+                        "descriptor_name": "Microscopy",
+                        "qualifier_ui": "Q000379",
+                        "qualifier_name": "methods",
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D012984",
+                        "descriptor_name": "Software",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D015203",
+                        "descriptor_name": "Reproducibility of Results",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.1242/bio.059758",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1242/bio.059758",
+                        "pdf_url": "https://journals.biologists.com/bio/article-pdf/doi/10.1242/bio.059758/3231543/bio059758.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2738063279",
+                            "display_name": "Biology Open",
+                            "issn_l": "2046-6390",
+                            "issn": [
+                                "2046-6390"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310311847",
+                            "host_organization_name": "The Company of Biologists",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310311847"
+                            ],
+                            "host_organization_lineage_names": [
+                                "The Company of Biologists"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Biology Open",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:37815435",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37815435",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Biology open",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:ris.utwente.nl:openaire/be1428a4-963d-4ebc-a493-2a7ba5cc5f07",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.utwente.nl/en/publications/be1428a4-963d-4ebc-a493-2a7ba5cc5f07",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4406922991",
+                            "display_name": "University of Twente Research Information",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Metz, J, Gintoli, M & Corbett, A D 2023, 'Fully automated point spread function analysis using PyCalibrate', Biology Open, vol. 12, no. 11. https://doi.org/10.1242/bio.059758",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:ore.exeter.ac.uk:10871/134231",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/10871/134231",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401998",
+                            "display_name": "Open Research Exeter (University of Exeter)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I23923803",
+                            "host_organization_name": "University of Exeter",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I23923803"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "acceptedVersion",
+                        "is_accepted": true,
+                        "is_published": false,
+                        "raw_source_name": null,
+                        "raw_type": "Article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10651089",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10651089",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10651089/pdf/biolopen-12-059758.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Biol Open",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:680bd308a460453fb69bc79c24e309d1",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/680bd308a460453fb69bc79c24e309d1",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Biology Open, Vol 12, Iss 11 (2023)",
+                        "raw_type": "article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1242/bio.059758",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1242/bio.059758",
+                    "pdf_url": "https://journals.biologists.com/bio/article-pdf/doi/10.1242/bio.059758/3231543/bio059758.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S2738063279",
+                        "display_name": "Biology Open",
+                        "issn_l": "2046-6390",
+                        "issn": [
+                            "2046-6390"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310311847",
+                        "host_organization_name": "The Company of Biologists",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311847"
+                        ],
+                        "host_organization_lineage_names": [
+                            "The Company of Biologists"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Biology Open",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G12260768",
+                        "display_name": "Fast and Flexible Imaging of Excitable Tissues",
+                        "funder_award_id": "EP/R021252/1",
+                        "funder_id": "https://openalex.org/F4320334627",
+                        "funder_display_name": "Engineering and Physical Sciences Research Council"
+                    },
+                    {
+                        "id": "https://openalex.org/G4171807442",
+                        "display_name": null,
+                        "funder_award_id": "EP/R021252/1",
+                        "funder_id": "https://openalex.org/F4320334627",
+                        "funder_display_name": "Engineering and Physical Sciences Research Council"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320320275",
+                        "display_name": "University of Exeter",
+                        "ror": "https://ror.org/03yghzc09"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320334627",
+                        "display_name": "Engineering and Physical Sciences Research Council",
+                        "ror": "https://ror.org/0439y7842"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": false,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4387472524.pdf"
+                },
+                "referenced_works_count": 13,
+                "referenced_works": [
+                    "https://openalex.org/W1991927948",
+                    "https://openalex.org/W2018333808",
+                    "https://openalex.org/W2091655993",
+                    "https://openalex.org/W2157907246",
+                    "https://openalex.org/W2162819370",
+                    "https://openalex.org/W2167279371",
+                    "https://openalex.org/W2172188317",
+                    "https://openalex.org/W2807863202",
+                    "https://openalex.org/W3123753728",
+                    "https://openalex.org/W3177416381",
+                    "https://openalex.org/W3215287719",
+                    "https://openalex.org/W4226251227",
+                    "https://openalex.org/W4297972600"
+                ],
+                "related_works": [
+                    "https://openalex.org/W291250033",
+                    "https://openalex.org/W2035757446",
+                    "https://openalex.org/W3137044537",
+                    "https://openalex.org/W2008385118",
+                    "https://openalex.org/W880955280",
+                    "https://openalex.org/W2106647072",
+                    "https://openalex.org/W2172753644",
+                    "https://openalex.org/W2170209930",
+                    "https://openalex.org/W4246858109",
+                    "https://openalex.org/W54172855"
+                ],
+                "abstract_inverted_index": {
+                    "Reproducibility": [
+                        0
+                    ],
+                    "is": [
+                        1,
+                        7,
+                        17,
+                        27,
+                        32,
+                        144,
+                        159
+                    ],
+                    "severely": [
+                        2
+                    ],
+                    "limited": [
+                        3
+                    ],
+                    "if": [
+                        4
+                    ],
+                    "instrument": [
+                        5,
+                        15
+                    ],
+                    "performance": [
+                        6,
+                        16,
+                        143,
+                        164
+                    ],
+                    "assumed": [
+                        8
+                    ],
+                    "rather": [
+                        9
+                    ],
+                    "than": [
+                        10
+                    ],
+                    "measured.": [
+                        11
+                    ],
+                    "Within": [
+                        12
+                    ],
+                    "optical": [
+                        13
+                    ],
+                    "microscopy,": [
+                        14
+                    ],
+                    "typically": [
+                        18
+                    ],
+                    "measured": [
+                        19
+                    ],
+                    "using": [
+                        20
+                    ],
+                    "sub-resolution": [
+                        21
+                    ],
+                    "fluorescent": [
+                        22
+                    ],
+                    "beads.": [
+                        23
+                    ],
+                    "However,": [
+                        24
+                    ],
+                    "the": [
+                        25,
+                        44,
+                        51,
+                        67,
+                        70,
+                        73,
+                        88,
+                        100,
+                        123,
+                        167
+                    ],
+                    "process": [
+                        26,
+                        43
+                    ],
+                    "performed": [
+                        28
+                    ],
+                    "infrequently": [
+                        29
+                    ],
+                    "as": [
+                        30
+                    ],
+                    "it": [
+                        31,
+                        128
+                    ],
+                    "requires": [
+                        33,
+                        50
+                    ],
+                    "time": [
+                        34
+                    ],
+                    "and": [
+                        35,
+                        41,
+                        118,
+                        155,
+                        158
+                    ],
+                    "suitably": [
+                        36
+                    ],
+                    "trained": [
+                        37
+                    ],
+                    "staff": [
+                        38
+                    ],
+                    "to": [
+                        39,
+                        85,
+                        110,
+                        126,
+                        161
+                    ],
+                    "acquire": [
+                        40
+                    ],
+                    "then": [
+                        42
+                    ],
+                    "bead": [
+                        45,
+                        91
+                    ],
+                    "images.": [
+                        46,
+                        92
+                    ],
+                    "Analysis": [
+                        47
+                    ],
+                    "software": [
+                        48,
+                        151
+                    ],
+                    "still": [
+                        49
+                    ],
+                    "manual": [
+                        52
+                    ],
+                    "entry": [
+                        53
+                    ],
+                    "of": [
+                        54,
+                        69,
+                        90,
+                        134
+                    ],
+                    "imaging": [
+                        55
+                    ],
+                    "parameters.": [
+                        56
+                    ],
+                    "Human": [
+                        57
+                    ],
+                    "error": [
+                        58
+                    ],
+                    "from": [
+                        59
+                    ],
+                    "repeatedly": [
+                        60
+                    ],
+                    "typing": [
+                        61
+                    ],
+                    "these": [
+                        62
+                    ],
+                    "parameters": [
+                        63
+                    ],
+                    "can": [
+                        64,
+                        94
+                    ],
+                    "significantly": [
+                        65
+                    ],
+                    "affect": [
+                        66
+                    ],
+                    "outcome": [
+                        68
+                    ],
+                    "analysis,": [
+                        71
+                    ],
+                    "rendering": [
+                        72
+                    ],
+                    "results": [
+                        74
+                    ],
+                    "less": [
+                        75
+                    ],
+                    "reproducible.": [
+                        76
+                    ],
+                    "To": [
+                        77
+                    ],
+                    "avoid": [
+                        78
+                    ],
+                    "this": [
+                        79,
+                        139
+                    ],
+                    "issue,": [
+                        80
+                    ],
+                    "PyCalibrate": [
+                        81,
+                        93,
+                        120,
+                        141
+                    ],
+                    "has": [
+                        82
+                    ],
+                    "been": [
+                        83
+                    ],
+                    "developed": [
+                        84
+                    ],
+                    "fully": [
+                        86
+                    ],
+                    "automate": [
+                        87
+                    ],
+                    "analysis": [
+                        89,
+                        142,
+                        150
+                    ],
+                    "be": [
+                        95
+                    ],
+                    "accessed": [
+                        96
+                    ],
+                    "either": [
+                        97
+                    ],
+                    "by": [
+                        98
+                    ],
+                    "executing": [
+                        99
+                    ],
+                    "Python": [
+                        101
+                    ],
+                    "code": [
+                        102
+                    ],
+                    "locally": [
+                        103
+                    ],
+                    "or": [
+                        104
+                    ],
+                    "via": [
+                        105
+                    ],
+                    "a": [
+                        106,
+                        131
+                    ],
+                    "user-friendly": [
+                        107
+                    ],
+                    "web": [
+                        108
+                    ],
+                    "portal": [
+                        109
+                    ],
+                    "further": [
+                        111
+                    ],
+                    "improve": [
+                        112
+                    ],
+                    "accessibility": [
+                        113
+                    ],
+                    "when": [
+                        114
+                    ],
+                    "moving": [
+                        115
+                    ],
+                    "between": [
+                        116
+                    ],
+                    "locations": [
+                        117
+                    ],
+                    "machines.": [
+                        119
+                    ],
+                    "interfaces": [
+                        121
+                    ],
+                    "with": [
+                        122,
+                        130,
+                        147
+                    ],
+                    "BioFormats": [
+                        124
+                    ],
+                    "library": [
+                        125
+                    ],
+                    "make": [
+                        127
+                    ],
+                    "compatible": [
+                        129
+                    ],
+                    "wide": [
+                        132
+                    ],
+                    "range": [
+                        133
+                    ],
+                    "proprietary": [
+                        135
+                    ],
+                    "image": [
+                        136
+                    ],
+                    "formats.": [
+                        137
+                    ],
+                    "In": [
+                        138
+                    ],
+                    "study,": [
+                        140
+                    ],
+                    "directly": [
+                        145
+                    ],
+                    "compared": [
+                        146
+                    ],
+                    "alternative": [
+                        148
+                    ],
+                    "free-access": [
+                        149
+                    ],
+                    "PSFj,": [
+                        152
+                    ],
+                    "MetroloJ": [
+                        153
+                    ],
+                    "QC": [
+                        154
+                    ],
+                    "DayBook": [
+                        156
+                    ],
+                    "3": [
+                        157
+                    ],
+                    "demonstrated": [
+                        160
+                    ],
+                    "have": [
+                        162
+                    ],
+                    "equivalent": [
+                        163
+                    ],
+                    "but": [
+                        165
+                    ],
+                    "without": [
+                        166
+                    ],
+                    "need": [
+                        168
+                    ],
+                    "for": [
+                        169
+                    ],
+                    "user": [
+                        170
+                    ],
+                    "supervision.": [
+                        171
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2023,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "Fully automated point spread function analysis using PyCalibrate",
+                "doi": "10.1242/bio.059758",
+                "pmid": "37815435",
+                "pmc": "PMC10651089",
+                "isbns": [],
+                "altmetric_jid": "4f6fa60e3cf058f610006c70",
+                "issns": [
+                    "2046-6390"
+                ],
+                "journal": "Biology Open",
+                "cohorts": {
+                    "pub": 2,
+                    "sci": 1,
+                    "com": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 26368346,
+                        "mean": 10.8933441391432,
+                        "rank": 15249834,
+                        "pct": 41,
+                        "higher_than": 10939680
+                    },
+                    "journal": {
+                        "count": 1814,
+                        "mean": 5.084203969128997,
+                        "rank": 684,
+                        "pct": 60,
+                        "higher_than": 1097
+                    },
+                    "similar_age_3m": {
+                        "count": 370925,
+                        "mean": 12.186590113904428,
+                        "rank": 145641,
+                        "pct": 59,
+                        "higher_than": 222107
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 30,
+                        "mean": 2.243333333333333,
+                        "rank": 11,
+                        "pct": 63,
+                        "higher_than": 19
+                    }
+                },
+                "authors": [
+                    "Jeremy Metz",
+                    "Michele Gintoli",
+                    "Alexander David Corbett"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1700006400,
+                "epubdate": 1699574400,
+                "dimensions_publication_id": "pub.1164836286",
+                "altmetric_id": 155411314,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 4,
+                "cited_by_tweeters_count": 4,
+                "cited_by_accounts_count": 4,
+                "last_updated": 1721910582,
+                "score": 2.5,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.5
+                },
+                "url": "http://dx.doi.org/10.1242/bio.059758",
+                "added_on": 1697365334,
+                "published_on": 1699574400,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "6",
+                    "connotea": "0"
+                },
+                "readers_count": 6,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=tttttttt",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=tttttttt",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=tttttttt"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=155411314"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 1786,
+            "total_ccn": 409,
+            "avg_ccn": 2.19,
+            "nloc_per_file": 74.42,
+            "duplicate_rate": 1.11
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}

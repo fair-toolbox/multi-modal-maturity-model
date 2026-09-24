@@ -1,0 +1,1856 @@
+{
+    "PHFinder": {
+        "tool_name": "PHFinder",
+        "biotools": {
+            "name": "PHFinder",
+            "description": "Assisted detection of point heteroplasmy in sanger sequencing chromatograms.",
+            "homepage": "https://github.com/MSuarezMenendez/PHFinder",
+            "biotoolsID": "phfinder",
+            "biotoolsCURIE": "biotools:phfinder",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3203",
+                            "term": "Chromatogram visualisation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3215",
+                            "term": "Peak detection"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3227",
+                            "term": "Variant calling"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2229",
+                    "term": "Cell biology"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3168",
+                    "term": "Sequencing"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_2885",
+                    "term": "DNA polymorphism"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3500",
+                    "term": "Zoology"
+                }
+            ],
+            "operatingSystem": [
+                "Mac",
+                "Linux",
+                "Windows"
+            ],
+            "language": [
+                "Python",
+                "Shell"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": null,
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.7717/peerj.16028",
+                    "pmid": "37744223",
+                    "pmcid": "PMC10516101",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "PHFinder: assisted detection of point heteroplasmy in Sanger sequencing chromatograms",
+                        "abstract": "Heteroplasmy is the presence of two or more organellar genomes (mitochondrial or plastid DNA) in an organism, tissue, cell or organelle. Heteroplasmy can be detected by visual inspection of Sanger sequencing chromatograms, where it appears as multiple peaks of fluorescence at a single nucleotide position. Visual inspection of chromatograms is both consuming and highly subjective, as heteroplasmy is difficult to differentiate from background noise. Few software solutions are available to automate the detection of point heteroplasmies, and those that are available are typically proprietary, lack customization or are unsuitable for automated heteroplasmy assessment in large datasets. Here, we present PHFinder, a Python-based, open-source tool to assist in the detection of point heteroplasmies in large numbers of Sanger chromatograms. PHFinder automatically identifies point heteroplasmies directly from the chromatogram trace data. The program was tested with Sanger sequencing data from 100 humpback whales (Megaptera novaeangliae) tissue samples with known heteroplasmies. PHFinder detected most (90%) of the known heteroplasmies thereby greatly reducing the amount of visual inspection required. PHFinder is flexible and enables explicit specification of key parameters to infer double peaks (i.e., heteroplasmies).",
+                        "date": "2023-01-01T00:00:00Z",
+                        "citationCount": 2,
+                        "authors": [
+                            {
+                                "name": "Menendez M.S."
+                            },
+                            {
+                                "name": "Rivera-Leon V.E."
+                            },
+                            {
+                                "name": "Robbins J."
+                            },
+                            {
+                                "name": "Berube M."
+                            },
+                            {
+                                "name": "Palsboll P.J."
+                            }
+                        ],
+                        "journal": "PeerJ"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Marcos Su\u00e1rez Men\u00e9ndez",
+                    "email": "m.suarez.menendez@rug.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Pub2Tools",
+            "additionDate": "2024-03-20T14:31:33.597559Z",
+            "lastUpdate": "2024-11-24T14:07:34.574351Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "github": {
+            "repository": {
+                "id": 293524912,
+                "node_id": "MDEwOlJlcG9zaXRvcnkyOTM1MjQ5MTI=",
+                "name": "PHFinder",
+                "full_name": "MSuarezMenendez/PHFinder",
+                "private": false,
+                "owner": {
+                    "login": "MSuarezMenendez",
+                    "id": 66553392,
+                    "node_id": "MDQ6VXNlcjY2NTUzMzky",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/66553392?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/MSuarezMenendez",
+                    "html_url": "https://github.com/MSuarezMenendez",
+                    "followers_url": "https://api.github.com/users/MSuarezMenendez/followers",
+                    "following_url": "https://api.github.com/users/MSuarezMenendez/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/MSuarezMenendez/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/MSuarezMenendez/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/MSuarezMenendez/subscriptions",
+                    "organizations_url": "https://api.github.com/users/MSuarezMenendez/orgs",
+                    "repos_url": "https://api.github.com/users/MSuarezMenendez/repos",
+                    "events_url": "https://api.github.com/users/MSuarezMenendez/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/MSuarezMenendez/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/MSuarezMenendez/PHFinder",
+                "description": null,
+                "fork": false,
+                "url": "https://api.github.com/repos/MSuarezMenendez/PHFinder",
+                "forks_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/forks",
+                "keys_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/teams",
+                "hooks_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/hooks",
+                "issue_events_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/events",
+                "assignees_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/tags",
+                "blobs_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/languages",
+                "stargazers_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/stargazers",
+                "contributors_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/contributors",
+                "subscribers_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/subscribers",
+                "subscription_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/subscription",
+                "commits_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/merges",
+                "archive_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/downloads",
+                "issues_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/labels{/name}",
+                "releases_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/MSuarezMenendez/PHFinder/deployments",
+                "created_at": "2020-09-07T12:41:33Z",
+                "updated_at": "2024-07-08T12:24:34Z",
+                "pushed_at": "2023-09-19T09:34:00Z",
+                "git_url": "git://github.com/MSuarezMenendez/PHFinder.git",
+                "ssh_url": "git@github.com:MSuarezMenendez/PHFinder.git",
+                "clone_url": "https://github.com/MSuarezMenendez/PHFinder.git",
+                "svn_url": "https://github.com/MSuarezMenendez/PHFinder",
+                "homepage": null,
+                "size": 18782,
+                "stargazers_count": 1,
+                "watchers_count": 1,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 0,
+                "license": null,
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 0,
+                "watchers": 1,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 1
+            },
+            "contents": [
+                {
+                    "path": "ExampleDataDirectory",
+                    "type": "tree"
+                },
+                {
+                    "path": "PHFinder_Install",
+                    "type": "tree"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                }
+            ],
+            "contributors": [
+                {
+                    "login": "MSuarezMenendez",
+                    "contributions": 11
+                }
+            ],
+            "closed_issues": [],
+            "languages": {
+                "Python": 54313,
+                "Shell": 11456
+            },
+            "default_branch_protected": false
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.7717/peerj.16028",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "37744223",
+                            "source": "MED",
+                            "pmid": "37744223",
+                            "pmcid": "PMC10516101",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC10516101"
+                                ]
+                            },
+                            "doi": "10.7717/peerj.16028",
+                            "title": "PHFinder: assisted detection of point heteroplasmy in Sanger sequencing chromatograms.",
+                            "authorString": "Su\u00e1rez Men\u00e9ndez M, Rivera-Le\u00f3n VE, Robbins J, Berube M, Palsb\u00f8ll PJ.",
+                            "journalTitle": "PeerJ",
+                            "journalVolume": "11",
+                            "pubYear": "2023",
+                            "journalIssn": "2167-8359",
+                            "pageInfo": "e16028",
+                            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "Y",
+                            "citedByCount": 0,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "Y",
+                            "tmAccessionTypeList": {
+                                "accessionType": [
+                                    "refseq"
+                                ]
+                            },
+                            "firstIndexDate": "2023-09-26",
+                            "firstPublicationDate": "2023-09-19"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W4386849688",
+                "doi": "https://doi.org/10.7717/peerj.16028",
+                "title": "PHFinder: assisted detection of point heteroplasmy in Sanger sequencing chromatograms",
+                "display_name": "PHFinder: assisted detection of point heteroplasmy in Sanger sequencing chromatograms",
+                "publication_year": 2023,
+                "publication_date": "2023-09-19",
+                "ids": {
+                    "openalex": "https://openalex.org/W4386849688",
+                    "doi": "https://doi.org/10.7717/peerj.16028",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/37744223"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.7717/peerj.16028",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.7717/peerj.16028",
+                    "pdf_url": "https://peerj.com/articles/16028.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S1983995261",
+                        "display_name": "PeerJ",
+                        "issn_l": "2167-8359",
+                        "issn": [
+                            "2167-8359"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320104",
+                        "host_organization_name": "PeerJ, Inc.",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320104"
+                        ],
+                        "host_organization_lineage_names": [
+                            "PeerJ, Inc."
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "PeerJ",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://peerj.com/articles/16028.pdf",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5085764881",
+                            "display_name": "Marcos Su\u00e1rez-Men\u00e9ndez",
+                            "orcid": "https://orcid.org/0000-0001-6659-4620"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Marcos Su\u00e1rez Men\u00e9ndez",
+                        "raw_affiliation_strings": [
+                            "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5021333569",
+                            "display_name": "Vania E. Rivera-L\u00e9on",
+                            "orcid": "https://orcid.org/0000-0002-6851-4994"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Vania E. Rivera-Le\u00f3n",
+                        "raw_affiliation_strings": [
+                            "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5077115789",
+                            "display_name": "Jooke Robbins",
+                            "orcid": "https://orcid.org/0000-0002-6382-722X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210136480",
+                                "display_name": "Center for Coastal Studies",
+                                "ror": "https://ror.org/04ccfjy89",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jooke Robbins",
+                        "raw_affiliation_strings": [
+                            "Center for Coastal Studies, Provincetown, MA, United States of America"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Coastal Studies, Provincetown, MA, United States of America",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5103538303",
+                            "display_name": "Martine B\u00e9rub\u00e9",
+                            "orcid": "https://orcid.org/0000-0002-1831-2657"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210136480",
+                                "display_name": "Center for Coastal Studies",
+                                "ror": "https://ror.org/04ccfjy89",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Martine Berube",
+                        "raw_affiliation_strings": [
+                            "Center for Coastal Studies, Provincetown, MA, United States of America",
+                            "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Coastal Studies, Provincetown, MA, United States of America",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5004164907",
+                            "display_name": "Per J. Palsb\u00f8ll",
+                            "orcid": "https://orcid.org/0000-0002-4198-7599"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I169381384",
+                                "display_name": "University of Groningen",
+                                "ror": "https://ror.org/012p63287",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210136480",
+                                "display_name": "Center for Coastal Studies",
+                                "ror": "https://ror.org/04ccfjy89",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Per J. Palsb\u00f8ll",
+                        "raw_affiliation_strings": [
+                            "Center for Coastal Studies, Provincetown, MA, United States of America",
+                            "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Center for Coastal Studies, Provincetown, MA, United States of America",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210136480"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Marine Evolution and Conservation, Groningen Institute for Evolutionary Life Sciences, University of Groningen, Groningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I169381384"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 5,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5085764881"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I169381384"
+                ],
+                "apc_list": {
+                    "value": 1395,
+                    "currency": "USD",
+                    "value_usd": 1395
+                },
+                "apc_paid": {
+                    "value": 1395,
+                    "currency": "USD",
+                    "value_usd": 1395
+                },
+                "fwci": 0.2333,
+                "has_fulltext": true,
+                "cited_by_count": 1,
+                "citation_normalized_percentile": {
+                    "value": 0.62311115,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": false
+                },
+                "cited_by_percentile_year": {
+                    "min": 90,
+                    "max": 94
+                },
+                "biblio": {
+                    "volume": "11",
+                    "issue": null,
+                    "first_page": "e16028",
+                    "last_page": "e16028"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T10659",
+                    "display_name": "Marine animal studies overview",
+                    "score": 0.9995999932289124,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2303",
+                        "display_name": "Ecology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T10659",
+                        "display_name": "Marine animal studies overview",
+                        "score": 0.9995999932289124,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11056",
+                        "display_name": "Physiological and biochemical adaptations",
+                        "score": 0.992900013923645,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/2303",
+                            "display_name": "Ecology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/23",
+                            "display_name": "Environmental Science"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/3",
+                            "display_name": "Physical Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10015",
+                        "display_name": "Genomics and Phylogenetic Studies",
+                        "score": 0.972000002861023,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/heteroplasmy",
+                        "display_name": "Heteroplasmy",
+                        "score": 0.9399325847625732
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/sanger-sequencing",
+                        "display_name": "Sanger sequencing",
+                        "score": 0.7900053262710571
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.5376167893409729
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/python",
+                        "display_name": "Python (programming language)",
+                        "score": 0.5349176526069641
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computational-biology",
+                        "display_name": "Computational biology",
+                        "score": 0.4937358796596527
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.4216544032096863
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna-sequencing",
+                        "display_name": "DNA sequencing",
+                        "score": 0.39182400703430176
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.3683438003063202
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/mitochondrial-dna",
+                        "display_name": "Mitochondrial DNA",
+                        "score": 0.35625022649765015
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/pattern-recognition",
+                        "display_name": "Pattern recognition (psychology)",
+                        "score": 0.35461726784706116
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/genetics",
+                        "display_name": "Genetics",
+                        "score": 0.23310980200767517
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/dna",
+                        "display_name": "DNA",
+                        "score": 0.17181602120399475
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/gene",
+                        "display_name": "Gene",
+                        "score": 0.09191802144050598
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C181561989",
+                        "wikidata": "https://www.wikidata.org/wiki/Q2581905",
+                        "display_name": "Heteroplasmy",
+                        "level": 4,
+                        "score": 0.9399325847625732
+                    },
+                    {
+                        "id": "https://openalex.org/C76818968",
+                        "wikidata": "https://www.wikidata.org/wiki/Q181940",
+                        "display_name": "Sanger sequencing",
+                        "level": 4,
+                        "score": 0.7900053262710571
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.5376167893409729
+                    },
+                    {
+                        "id": "https://openalex.org/C519991488",
+                        "wikidata": "https://www.wikidata.org/wiki/Q28865",
+                        "display_name": "Python (programming language)",
+                        "level": 2,
+                        "score": 0.5349176526069641
+                    },
+                    {
+                        "id": "https://openalex.org/C70721500",
+                        "wikidata": "https://www.wikidata.org/wiki/Q177005",
+                        "display_name": "Computational biology",
+                        "level": 1,
+                        "score": 0.4937358796596527
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.4216544032096863
+                    },
+                    {
+                        "id": "https://openalex.org/C51679486",
+                        "wikidata": "https://www.wikidata.org/wiki/Q380546",
+                        "display_name": "DNA sequencing",
+                        "level": 3,
+                        "score": 0.39182400703430176
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.3683438003063202
+                    },
+                    {
+                        "id": "https://openalex.org/C24586158",
+                        "wikidata": "https://www.wikidata.org/wiki/Q27075",
+                        "display_name": "Mitochondrial DNA",
+                        "level": 3,
+                        "score": 0.35625022649765015
+                    },
+                    {
+                        "id": "https://openalex.org/C153180895",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7148389",
+                        "display_name": "Pattern recognition (psychology)",
+                        "level": 2,
+                        "score": 0.35461726784706116
+                    },
+                    {
+                        "id": "https://openalex.org/C54355233",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7162",
+                        "display_name": "Genetics",
+                        "level": 1,
+                        "score": 0.23310980200767517
+                    },
+                    {
+                        "id": "https://openalex.org/C552990157",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7430",
+                        "display_name": "DNA",
+                        "level": 2,
+                        "score": 0.17181602120399475
+                    },
+                    {
+                        "id": "https://openalex.org/C104317684",
+                        "wikidata": "https://www.wikidata.org/wiki/Q7187",
+                        "display_name": "Gene",
+                        "level": 2,
+                        "score": 0.09191802144050598
+                    },
+                    {
+                        "id": "https://openalex.org/C111919701",
+                        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+                        "display_name": "Operating system",
+                        "level": 1,
+                        "score": 0.0
+                    }
+                ],
+                "mesh": [
+                    {
+                        "descriptor_ui": "D000081942",
+                        "descriptor_name": "Heteroplasmy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000081942",
+                        "descriptor_name": "Heteroplasmy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000081942",
+                        "descriptor_name": "Heteroplasmy",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D000818",
+                        "descriptor_name": "Animals",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005453",
+                        "descriptor_name": "Fluorescence",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005453",
+                        "descriptor_name": "Fluorescence",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D005453",
+                        "descriptor_name": "Fluorescence",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008928",
+                        "descriptor_name": "Mitochondria",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008928",
+                        "descriptor_name": "Mitochondria",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D008928",
+                        "descriptor_name": "Mitochondria",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009711",
+                        "descriptor_name": "Nucleotides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009711",
+                        "descriptor_name": "Nucleotides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D009711",
+                        "descriptor_name": "Nucleotides",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": false
+                    },
+                    {
+                        "descriptor_ui": "D050640",
+                        "descriptor_name": "Humpback Whale",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D050640",
+                        "descriptor_name": "Humpback Whale",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    },
+                    {
+                        "descriptor_ui": "D050640",
+                        "descriptor_name": "Humpback Whale",
+                        "qualifier_ui": null,
+                        "qualifier_name": null,
+                        "is_major_topic": true
+                    }
+                ],
+                "locations_count": 6,
+                "locations": [
+                    {
+                        "id": "doi:10.7717/peerj.16028",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.7717/peerj.16028",
+                        "pdf_url": "https://peerj.com/articles/16028.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S1983995261",
+                            "display_name": "PeerJ",
+                            "issn_l": "2167-8359",
+                            "issn": [
+                                "2167-8359"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320104",
+                            "host_organization_name": "PeerJ, Inc.",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320104"
+                            ],
+                            "host_organization_lineage_names": [
+                                "PeerJ, Inc."
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "PeerJ",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:37744223",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37744223",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "PeerJ",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:openaire/4f7964ed-6bc3-4824-a237-a5b30b7ccc51",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.rug.nl/en/publications/4f7964ed-6bc3-4824-a237-a5b30b7ccc51",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Su\u00e1rez Men\u00e9ndez, M, Rivera-Le\u00f3n, V E, Robbins, J, Berube, M & Palsb\u00f8ll, P J 2023, 'PHFinder : Assisted detection of point heteroplasmy in Sanger sequencing chromatograms', PeerJ, vol. 11, e16028. https://doi.org/10.7717/peerj.16028",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:10516101",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10516101",
+                        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516101/pdf/peerj-11-16028.pdf",
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "PeerJ",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:b230a1d24d2248cd92230267e386a58b",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/b230a1d24d2248cd92230267e386a58b",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "PeerJ, Vol 11, p e16028 (2023)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pure.rug.nl:openaire_cris_publications/4f7964ed-6bc3-4824-a237-a5b30b7ccc51",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/11370/4f7964ed-6bc3-4824-a237-a5b30b7ccc51",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400420",
+                            "display_name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I169381384",
+                            "host_organization_name": "University of Groningen",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I169381384"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Su\u00e1rez Men\u00e9ndez, M, Rivera-Le\u00f3n, V E, Robbins, J, Berube, M & Palsb\u00f8ll, P J 2023, 'PHFinder : Assisted detection of point heteroplasmy in Sanger sequencing chromatograms', PeerJ, vol. 11, e16028. https://doi.org/10.7717/peerj.16028",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.7717/peerj.16028",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.7717/peerj.16028",
+                    "pdf_url": "https://peerj.com/articles/16028.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S1983995261",
+                        "display_name": "PeerJ",
+                        "issn_l": "2167-8359",
+                        "issn": [
+                            "2167-8359"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320104",
+                        "host_organization_name": "PeerJ, Inc.",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320104"
+                        ],
+                        "host_organization_lineage_names": [
+                            "PeerJ, Inc."
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "PeerJ",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "score": 0.6899999976158142,
+                        "display_name": "Life below water",
+                        "id": "https://metadata.un.org/sdg/14"
+                    }
+                ],
+                "awards": [],
+                "funders": [],
+                "has_content": {
+                    "pdf": true,
+                    "grobid_xml": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W4386849688.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W4386849688.grobid-xml"
+                },
+                "referenced_works_count": 27,
+                "referenced_works": [
+                    "https://openalex.org/W1517480469",
+                    "https://openalex.org/W2001700140",
+                    "https://openalex.org/W2014696811",
+                    "https://openalex.org/W2035177738",
+                    "https://openalex.org/W2035305815",
+                    "https://openalex.org/W2036827288",
+                    "https://openalex.org/W2049483551",
+                    "https://openalex.org/W2057403732",
+                    "https://openalex.org/W2081949803",
+                    "https://openalex.org/W2096504879",
+                    "https://openalex.org/W2108234281",
+                    "https://openalex.org/W2114850508",
+                    "https://openalex.org/W2117184467",
+                    "https://openalex.org/W2120979135",
+                    "https://openalex.org/W2121016876",
+                    "https://openalex.org/W2134975191",
+                    "https://openalex.org/W2136602405",
+                    "https://openalex.org/W2138270253",
+                    "https://openalex.org/W2140746251",
+                    "https://openalex.org/W2162713847",
+                    "https://openalex.org/W2170551349",
+                    "https://openalex.org/W2187615163",
+                    "https://openalex.org/W2191690548",
+                    "https://openalex.org/W2242464395",
+                    "https://openalex.org/W2804007336",
+                    "https://openalex.org/W3011009278",
+                    "https://openalex.org/W4386306851"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2008491791",
+                    "https://openalex.org/W2045533257",
+                    "https://openalex.org/W2049216889",
+                    "https://openalex.org/W2751159967",
+                    "https://openalex.org/W4384626625",
+                    "https://openalex.org/W2990508473",
+                    "https://openalex.org/W1978455114",
+                    "https://openalex.org/W1913521901",
+                    "https://openalex.org/W2061574765",
+                    "https://openalex.org/W2470284619"
+                ],
+                "abstract_inverted_index": {
+                    "Heteroplasmy": [
+                        0,
+                        21
+                    ],
+                    "is": [
+                        1,
+                        49,
+                        57,
+                        168
+                    ],
+                    "the": [
+                        2,
+                        71,
+                        107,
+                        125,
+                        155,
+                        161
+                    ],
+                    "presence": [
+                        3
+                    ],
+                    "of": [
+                        4,
+                        28,
+                        38,
+                        47,
+                        73,
+                        109,
+                        115,
+                        154,
+                        163,
+                        174
+                    ],
+                    "two": [
+                        5
+                    ],
+                    "or": [
+                        6,
+                        11,
+                        19,
+                        86
+                    ],
+                    "more": [
+                        7
+                    ],
+                    "organellar": [
+                        8
+                    ],
+                    "genomes": [
+                        9
+                    ],
+                    "(mitochondrial": [
+                        10
+                    ],
+                    "plastid": [
+                        12
+                    ],
+                    "DNA)": [
+                        13
+                    ],
+                    "in": [
+                        14,
+                        93,
+                        106,
+                        112
+                    ],
+                    "an": [
+                        15
+                    ],
+                    "organism,": [
+                        16
+                    ],
+                    "tissue,": [
+                        17
+                    ],
+                    "cell": [
+                        18
+                    ],
+                    "organelle.": [
+                        20
+                    ],
+                    "can": [
+                        22
+                    ],
+                    "be": [
+                        23
+                    ],
+                    "detected": [
+                        24,
+                        151
+                    ],
+                    "by": [
+                        25
+                    ],
+                    "visual": [
+                        26,
+                        164
+                    ],
+                    "inspection": [
+                        27,
+                        46,
+                        165
+                    ],
+                    "Sanger": [
+                        29,
+                        116,
+                        134
+                    ],
+                    "sequencing": [
+                        30,
+                        135
+                    ],
+                    "chromatograms,": [
+                        31
+                    ],
+                    "where": [
+                        32
+                    ],
+                    "it": [
+                        33
+                    ],
+                    "appears": [
+                        34
+                    ],
+                    "as": [
+                        35,
+                        55
+                    ],
+                    "multiple": [
+                        36
+                    ],
+                    "peaks": [
+                        37,
+                        180
+                    ],
+                    "fluorescence": [
+                        39
+                    ],
+                    "at": [
+                        40
+                    ],
+                    "a": [
+                        41,
+                        100
+                    ],
+                    "single": [
+                        42
+                    ],
+                    "nucleotide": [
+                        43
+                    ],
+                    "position.": [
+                        44
+                    ],
+                    "Visual": [
+                        45
+                    ],
+                    "chromatograms": [
+                        48
+                    ],
+                    "both": [
+                        50
+                    ],
+                    "consuming": [
+                        51
+                    ],
+                    "and": [
+                        52,
+                        76,
+                        170
+                    ],
+                    "highly": [
+                        53
+                    ],
+                    "subjective,": [
+                        54
+                    ],
+                    "heteroplasmy": [
+                        56,
+                        91
+                    ],
+                    "difficult": [
+                        58
+                    ],
+                    "to": [
+                        59,
+                        69,
+                        104,
+                        177
+                    ],
+                    "differentiate": [
+                        60
+                    ],
+                    "from": [
+                        61,
+                        124,
+                        137
+                    ],
+                    "background": [
+                        62
+                    ],
+                    "noise.": [
+                        63
+                    ],
+                    "Few": [
+                        64
+                    ],
+                    "software": [
+                        65
+                    ],
+                    "solutions": [
+                        66
+                    ],
+                    "are": [
+                        67,
+                        79,
+                        81,
+                        87
+                    ],
+                    "available": [
+                        68,
+                        80
+                    ],
+                    "automate": [
+                        70
+                    ],
+                    "detection": [
+                        72,
+                        108
+                    ],
+                    "point": [
+                        74,
+                        110,
+                        121
+                    ],
+                    "heteroplasmies,": [
+                        75
+                    ],
+                    "those": [
+                        77
+                    ],
+                    "that": [
+                        78
+                    ],
+                    "typically": [
+                        82
+                    ],
+                    "proprietary,": [
+                        83
+                    ],
+                    "lack": [
+                        84
+                    ],
+                    "customization": [
+                        85
+                    ],
+                    "unsuitable": [
+                        88
+                    ],
+                    "for": [
+                        89
+                    ],
+                    "automated": [
+                        90
+                    ],
+                    "assessment": [
+                        92
+                    ],
+                    "large": [
+                        94,
+                        113
+                    ],
+                    "datasets.": [
+                        95
+                    ],
+                    "Here,": [
+                        96
+                    ],
+                    "we": [
+                        97
+                    ],
+                    "present": [
+                        98
+                    ],
+                    "PHFinder,": [
+                        99
+                    ],
+                    "Python-based,": [
+                        101
+                    ],
+                    "open-source": [
+                        102
+                    ],
+                    "tool": [
+                        103
+                    ],
+                    "assist": [
+                        105
+                    ],
+                    "heteroplasmies": [
+                        111,
+                        122,
+                        157
+                    ],
+                    "numbers": [
+                        114
+                    ],
+                    "chromatograms.": [
+                        117
+                    ],
+                    "PHFinder": [
+                        118,
+                        150,
+                        167
+                    ],
+                    "automatically": [
+                        119
+                    ],
+                    "identifies": [
+                        120
+                    ],
+                    "directly": [
+                        123
+                    ],
+                    "chromatogram": [
+                        126
+                    ],
+                    "trace": [
+                        127
+                    ],
+                    "data.": [
+                        128
+                    ],
+                    "The": [
+                        129
+                    ],
+                    "program": [
+                        130
+                    ],
+                    "was": [
+                        131
+                    ],
+                    "tested": [
+                        132
+                    ],
+                    "with": [
+                        133,
+                        147
+                    ],
+                    "data": [
+                        136
+                    ],
+                    "100": [
+                        138
+                    ],
+                    "humpback": [
+                        139
+                    ],
+                    "whales": [
+                        140
+                    ],
+                    "(": [
+                        141,
+                        181
+                    ],
+                    "Megaptera": [
+                        142
+                    ],
+                    "novaeangliae": [
+                        143
+                    ],
+                    ")": [
+                        144
+                    ],
+                    "tissue": [
+                        145
+                    ],
+                    "samples": [
+                        146
+                    ],
+                    "known": [
+                        148,
+                        156
+                    ],
+                    "heteroplasmies.": [
+                        149
+                    ],
+                    "most": [
+                        152
+                    ],
+                    "(90%)": [
+                        153
+                    ],
+                    "thereby": [
+                        158
+                    ],
+                    "greatly": [
+                        159
+                    ],
+                    "reducing": [
+                        160
+                    ],
+                    "amount": [
+                        162
+                    ],
+                    "required.": [
+                        166
+                    ],
+                    "flexible": [
+                        169
+                    ],
+                    "enables": [
+                        171
+                    ],
+                    "explicit": [
+                        172
+                    ],
+                    "specification": [
+                        173
+                    ],
+                    "key": [
+                        175
+                    ],
+                    "parameters": [
+                        176
+                    ],
+                    "infer": [
+                        178
+                    ],
+                    "double": [
+                        179
+                    ],
+                    "i.e.": [
+                        182
+                    ],
+                    ",": [
+                        183
+                    ],
+                    "heteroplasmies).": [
+                        184
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2024,
+                        "cited_by_count": 1
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "PHFinder: assisted detection of point heteroplasmy in Sanger sequencing chromatograms",
+                "doi": "10.7717/peerj.16028",
+                "pmid": "37744223",
+                "pmc": "PMC10516101",
+                "isbns": [],
+                "altmetric_jid": "521f51273cf0582f62000000",
+                "issns": [
+                    "2167-8359"
+                ],
+                "journal": "PeerJ",
+                "cohorts": {
+                    "sci": 2,
+                    "pub": 1
+                },
+                "context": {
+                    "all": {
+                        "count": 32692245,
+                        "mean": 10.47621991808761,
+                        "rank": 19819290,
+                        "pct": 39,
+                        "higher_than": 12782480
+                    },
+                    "journal": {
+                        "count": 16647,
+                        "mean": 17.090893254039763,
+                        "rank": 7800,
+                        "pct": 52,
+                        "higher_than": 8787
+                    },
+                    "similar_age_3m": {
+                        "count": 377234,
+                        "mean": 13.256059501529554,
+                        "rank": 160216,
+                        "pct": 56,
+                        "higher_than": 214546
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 396,
+                        "mean": 9.708333333333332,
+                        "rank": 123,
+                        "pct": 68,
+                        "higher_than": 272
+                    }
+                },
+                "authors": [
+                    "Marcos Su\u00e1rez Men\u00e9ndez",
+                    "Vania E. Rivera-Le\u00f3n",
+                    "Jooke Robbins",
+                    "Martine Berube",
+                    "Per J. Palsb\u00f8ll"
+                ],
+                "type": "article",
+                "handles": [],
+                "pubdate": 1695081600,
+                "epubdate": 1695081600,
+                "dimensions_publication_id": "pub.1164252439",
+                "altmetric_id": 154386930,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "cited_by_posts_count": 6,
+                "cited_by_tweeters_count": 3,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_rdts_count": 1,
+                "cited_by_accounts_count": 5,
+                "last_updated": 1757605284,
+                "score": 2.85,
+                "history": {
+                    "1y": 0.25,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 2.85
+                },
+                "url": "http://dx.doi.org/10.7717/peerj.16028",
+                "added_on": 1695117221,
+                "published_on": 1695081600,
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "11",
+                    "connotea": "0"
+                },
+                "readers_count": 11,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=3&types=rrttttff",
+                    "medium": "https://badges.altmetric.com/?size=100&score=3&types=rrttttff",
+                    "large": "https://badges.altmetric.com/?size=180&score=3&types=rrttttff"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=154386930"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 56,
+            "total_ccn": 24,
+            "avg_ccn": 3.0,
+            "nloc_per_file": 11.2,
+            "duplicate_rate": 98.85
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": true,
+            "checklist": false
+        }
+    }
+}

@@ -1,0 +1,2339 @@
+{
+    "DiSCount": {
+        "tool_name": "DiSCount",
+        "biotools": {
+            "name": "DiSCount",
+            "description": "DISCount Pytorch implementation for seed and radicle detection using the You-Only-Look-Once object detector.",
+            "homepage": "https://gitlab.com/lodewijk-track32/discount_paper",
+            "biotoolsID": "discount",
+            "biotoolsCURIE": "biotools:discount",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3799",
+                            "term": "Quantification"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3553",
+                            "term": "Image annotation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3443",
+                            "term": "Image analysis"
+                        }
+                    ],
+                    "input": [],
+                    "output": [],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Script"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3382",
+                    "term": "Imaging"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3343",
+                    "term": "Compound libraries and screening"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": null,
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1186/S13007-020-00602-8",
+                    "pmid": "32377220",
+                    "pmcid": "PMC7195706",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": {
+                        "title": "DiSCount: Computer vision for automated quantification of Striga seed germination",
+                        "abstract": "\u00a9 2020 The Author(s).Background: Plant parasitic weeds belonging to the genus Striga are a major threat for food production in Sub-Saharan Africa and Southeast Asia. The parasite's life cycle starts with the induction of seed germination by host plant-derived signals, followed by parasite attachment, infection, outgrowth, flowering, reproduction, seed set and dispersal. Given the small seed size of the parasite (< 200 \u03bcm), quantification of the impact of new control measures that interfere with seed germination relies on manual, labour-intensive counting of seed batches under the microscope. Hence, there is a need for high-throughput assays that allow for large-scale screening of compounds or microorganisms that adversely affect Striga seed germination. Results: Here, we introduce DiSCount (Digital Striga Counter): A computer vision tool for automated quantification of total and germinated Striga seed numbers in standard glass fibre filter assays. We developed the software using a machine learning approach trained with a dataset of 98 manually annotated images. Then, we validated and tested the model against a total dataset of 188 manually counted images. The results showed that DiSCount has an average error of 3.38 percentage points per image compared to the manually counted dataset. Most importantly, DiSCount achieves a 100 to 3000-fold speed increase in image analysis when compared to manual analysis, with an inference time of approximately 3 s per image on a single CPU and 0.1 s on a GPU. Conclusions: DiSCount is accurate and efficient in quantifying total and germinated Striga seeds in a standardized germination assay. This automated computer vision tool enables for high-throughput, large-scale screening of chemical compound libraries and biological control agents of this devastating parasitic weed. The complete software and manual are hosted at https://gitlab.com/lodewijk-track32/discount_paper and the archived version is available at Zenodo with the DOI https://doi.org/10.5281/zenodo.3627138. The dataset used for testing is available at Zenodo with the DOI https://doi.org/10.5281/zenodo.3403956.",
+                        "date": "2020-05-01T00:00:00Z",
+                        "citationCount": 5,
+                        "authors": [
+                            {
+                                "name": "Masteling R."
+                            },
+                            {
+                                "name": "Voorhoeve L."
+                            },
+                            {
+                                "name": "Ijsselmuiden J."
+                            },
+                            {
+                                "name": "Dini-Andreote F."
+                            },
+                            {
+                                "name": "De Boer W."
+                            },
+                            {
+                                "name": "Raaijmakers J.M."
+                            }
+                        ],
+                        "journal": "Plant Methods"
+                    }
+                }
+            ],
+            "credit": [
+                {
+                    "name": "Raul Masteling",
+                    "email": "r.masteling@nioo.knaw.nl",
+                    "url": null,
+                    "orcidid": "https://orcid.org/0000-0002-3875-564X",
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                },
+                {
+                    "name": "Jos M. Raaijmakers",
+                    "email": "j.raaijmakers@nioo.knaw.nl",
+                    "url": null,
+                    "orcidid": null,
+                    "gridid": null,
+                    "rorid": null,
+                    "fundrefid": null,
+                    "typeEntity": "Person",
+                    "typeRole": [],
+                    "note": null
+                }
+            ],
+            "owner": "Kigaard",
+            "additionDate": "2021-01-18T09:00:15Z",
+            "lastUpdate": "2021-03-01T09:24:47Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": "tool"
+        },
+        "gitlab": {
+            "repository": {
+                "id": 13209105,
+                "description": "DISCount Pytorch implementation for seed and radicle detection using the You-Only-Look-Once object detector",
+                "name": "discount_paper",
+                "name_with_namespace": "Lodewijk / discount_paper",
+                "path": "discount_paper",
+                "path_with_namespace": "lodewijk-track32/discount_paper",
+                "created_at": "2019-07-07T19:21:43.315Z",
+                "default_branch": "master",
+                "tag_list": [],
+                "topics": [],
+                "ssh_url_to_repo": "git@gitlab.com:lodewijk-track32/discount_paper.git",
+                "http_url_to_repo": "https://gitlab.com/lodewijk-track32/discount_paper.git",
+                "web_url": "https://gitlab.com/lodewijk-track32/discount_paper",
+                "readme_url": null,
+                "forks_count": 0,
+                "avatar_url": null,
+                "star_count": 0,
+                "last_activity_at": "2021-11-02T16:09:01.527Z",
+                "visibility": "public",
+                "namespace": {
+                    "id": 4042625,
+                    "name": "Lodewijk",
+                    "path": "lodewijk-track32",
+                    "kind": "user",
+                    "full_path": "lodewijk-track32",
+                    "parent_id": null,
+                    "avatar_url": "https://secure.gravatar.com/avatar/5a94bf3bf0b292f1e9d44e9f787d06577e99fddd1d1f7ec617820978d027df91?s=80&d=identicon",
+                    "web_url": "https://gitlab.com/lodewijk-track32"
+                },
+                "container_registry_image_prefix": "registry.gitlab.com/lodewijk-track32/discount_paper",
+                "_links": {
+                    "self": "https://gitlab.com/api/v4/projects/13209105",
+                    "issues": "https://gitlab.com/api/v4/projects/13209105/issues",
+                    "merge_requests": "https://gitlab.com/api/v4/projects/13209105/merge_requests",
+                    "repo_branches": "https://gitlab.com/api/v4/projects/13209105/repository/branches",
+                    "labels": "https://gitlab.com/api/v4/projects/13209105/labels",
+                    "events": "https://gitlab.com/api/v4/projects/13209105/events",
+                    "members": "https://gitlab.com/api/v4/projects/13209105/members",
+                    "cluster_agents": "https://gitlab.com/api/v4/projects/13209105/cluster_agents"
+                },
+                "marked_for_deletion_at": null,
+                "marked_for_deletion_on": null,
+                "packages_enabled": true,
+                "empty_repo": false,
+                "archived": false,
+                "owner": {
+                    "id": 3145009,
+                    "username": "lodewijk-track32",
+                    "public_email": "",
+                    "name": "Lodewijk",
+                    "state": "active",
+                    "locked": false,
+                    "avatar_url": "https://secure.gravatar.com/avatar/5a94bf3bf0b292f1e9d44e9f787d06577e99fddd1d1f7ec617820978d027df91?s=80&d=identicon",
+                    "web_url": "https://gitlab.com/lodewijk-track32"
+                },
+                "resolve_outdated_diff_discussions": false,
+                "repository_object_format": "sha1",
+                "issues_enabled": true,
+                "merge_requests_enabled": true,
+                "wiki_enabled": true,
+                "jobs_enabled": true,
+                "snippets_enabled": true,
+                "container_registry_enabled": true,
+                "service_desk_enabled": true,
+                "can_create_merge_request_in": true,
+                "issues_access_level": "enabled",
+                "repository_access_level": "enabled",
+                "merge_requests_access_level": "enabled",
+                "forking_access_level": "enabled",
+                "wiki_access_level": "enabled",
+                "builds_access_level": "enabled",
+                "snippets_access_level": "enabled",
+                "pages_access_level": "enabled",
+                "analytics_access_level": "enabled",
+                "container_registry_access_level": "enabled",
+                "security_and_compliance_access_level": "private",
+                "releases_access_level": "enabled",
+                "environments_access_level": "enabled",
+                "feature_flags_access_level": "enabled",
+                "infrastructure_access_level": "enabled",
+                "monitor_access_level": "enabled",
+                "model_experiments_access_level": "enabled",
+                "model_registry_access_level": "enabled",
+                "package_registry_access_level": "public",
+                "emails_disabled": false,
+                "emails_enabled": true,
+                "show_diff_preview_in_email": true,
+                "shared_runners_enabled": true,
+                "lfs_enabled": true,
+                "creator_id": 3145009,
+                "import_status": "none",
+                "open_issues_count": 0,
+                "description_html": "<p data-sourcepos=\"1:1-1:107\" dir=\"auto\">DISCount Pytorch implementation for seed and radicle detection using the You-Only-Look-Once object detector</p>",
+                "updated_at": "2024-01-09T17:35:01.155Z",
+                "ci_config_path": null,
+                "public_jobs": true,
+                "shared_with_groups": [],
+                "only_allow_merge_if_pipeline_succeeds": false,
+                "allow_merge_on_skipped_pipeline": null,
+                "request_access_enabled": false,
+                "only_allow_merge_if_all_discussions_are_resolved": false,
+                "remove_source_branch_after_merge": null,
+                "printing_merge_request_link_enabled": true,
+                "merge_method": "merge",
+                "squash_option": "default_off",
+                "enforce_auth_checks_on_uploads": true,
+                "suggestion_commit_message": null,
+                "merge_commit_template": null,
+                "squash_commit_template": null,
+                "mr_default_title_template": null,
+                "issue_branch_template": null,
+                "warn_about_potentially_unwanted_characters": true,
+                "autoclose_referenced_issues": true,
+                "max_artifacts_size": null,
+                "external_authorization_classification_label": "",
+                "requirements_enabled": false,
+                "requirements_access_level": "enabled",
+                "security_and_compliance_enabled": false,
+                "compliance_frameworks": [],
+                "permissions": {
+                    "project_access": null,
+                    "group_access": null
+                }
+            },
+            "branches_count": 1,
+            "contributors": [
+                {
+                    "name": "Lodewijk",
+                    "email": "lodewijk@track32.nl",
+                    "commits": 21,
+                    "additions": 0,
+                    "deletions": 0
+                }
+            ],
+            "closed_issues": [],
+            "open_issues_count": 0,
+            "languages": {
+                "Python": 100.0
+            },
+            "repository_tree": [
+                {
+                    "id": "8b8d6d78376b63c4e7d310388b580138526dc81b",
+                    "name": "config",
+                    "type": "tree",
+                    "path": "config",
+                    "mode": "040000"
+                },
+                {
+                    "id": "dbff05d291a1089efad431349dfba6a3a45c29e8",
+                    "name": "data",
+                    "type": "tree",
+                    "path": "data",
+                    "mode": "040000"
+                },
+                {
+                    "id": "aedacb90dc3e5103364a2431a9bb949e3ff94d8b",
+                    "name": ".gitignore",
+                    "type": "blob",
+                    "path": ".gitignore",
+                    "mode": "100644"
+                },
+                {
+                    "id": "870d9fa02a5a2946f4030a4c2a4cc9501fba23ee",
+                    "name": "DISCount.py",
+                    "type": "blob",
+                    "path": "DISCount.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "11dd41e0ff22aad6e7ba05b9d08efb98b3cc73cf",
+                    "name": "DISCount_Installation_Guide.pdf",
+                    "type": "blob",
+                    "path": "DISCount_Installation_Guide.pdf",
+                    "mode": "100644"
+                },
+                {
+                    "id": "27abff48d1a83e1f9c3d23b9ac84eb20749e3a87",
+                    "name": "LICENSE",
+                    "type": "blob",
+                    "path": "LICENSE",
+                    "mode": "100644"
+                },
+                {
+                    "id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+                    "name": "__init__.py",
+                    "type": "blob",
+                    "path": "__init__.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "aa70674b170d4dac5950bff5ef90207d25a9d6d2",
+                    "name": "bbox.py",
+                    "type": "blob",
+                    "path": "bbox.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "5d65e44c07a0ecb1abf5ba165430f6bf4ff4df78",
+                    "name": "nioo.data",
+                    "type": "blob",
+                    "path": "config/nioo.data",
+                    "mode": "100644"
+                },
+                {
+                    "id": "2748817b63d03c1a36759a8ddbec0a07d2ee175a",
+                    "name": "nioo_15-05-2019_608.cfg",
+                    "type": "blob",
+                    "path": "config/nioo_15-05-2019_608.cfg",
+                    "mode": "100644"
+                },
+                {
+                    "id": "70b6e7b82400a7990f2b0cee43c9b4a54db40065",
+                    "name": "nioo_15-05-2019_608_9000.weights",
+                    "type": "blob",
+                    "path": "config/nioo_15-05-2019_608_9000.weights",
+                    "mode": "100644"
+                },
+                {
+                    "id": "f8fd79d8920d8f79198f67d061a74f511f029489",
+                    "name": "darknet.py",
+                    "type": "blob",
+                    "path": "darknet.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "611991f8755c5fa967dce92ec93ed43861e96c10",
+                    "name": "nioo.names",
+                    "type": "blob",
+                    "path": "data/nioo.names",
+                    "mode": "100644"
+                },
+                {
+                    "id": "3407f30ef8904aad626a3833e5ab468d04abbd04",
+                    "name": "discount_results.xlsx",
+                    "type": "blob",
+                    "path": "discount_results.xlsx",
+                    "mode": "100644"
+                },
+                {
+                    "id": "371b05b73324f19bc2717b66120be9a0b994a93b",
+                    "name": "evaluation.csv",
+                    "type": "blob",
+                    "path": "evaluation.csv",
+                    "mode": "100644"
+                },
+                {
+                    "id": "f30090237191d81bfa230609d15976c52481e996",
+                    "name": "preprocess.py",
+                    "type": "blob",
+                    "path": "preprocess.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "4aad97bb547fac9e15c34868b03baa872f3879fc",
+                    "name": "util.py",
+                    "type": "blob",
+                    "path": "util.py",
+                    "mode": "100644"
+                }
+            ],
+            "default_branch_protected": true
+        },
+        "publications": {
+            "europepmc": {
+                "version": "6.9",
+                "hitCount": 1,
+                "request": {
+                    "queryString": "doi:10.1186/s13007-020-00602-8",
+                    "resultType": "lite",
+                    "cursorMark": "*",
+                    "pageSize": 25,
+                    "sort": "",
+                    "synonym": false
+                },
+                "resultList": {
+                    "result": [
+                        {
+                            "id": "32377220",
+                            "source": "MED",
+                            "pmid": "32377220",
+                            "pmcid": "PMC7195706",
+                            "fullTextIdList": {
+                                "fullTextId": [
+                                    "PMC7195706"
+                                ]
+                            },
+                            "doi": "10.1186/s13007-020-00602-8",
+                            "title": "DiSCount: computer vision for automated quantification of <i>Striga</i> seed germination.",
+                            "authorString": "Masteling R, Voorhoeve L, IJsselmuiden J, Dini-Andreote F, de Boer W, Raaijmakers JM.",
+                            "journalTitle": "Plant Methods",
+                            "journalVolume": "16",
+                            "pubYear": "2020",
+                            "journalIssn": "1746-4811",
+                            "pageInfo": "60",
+                            "pubType": "research-article; journal article",
+                            "isOpenAccess": "Y",
+                            "inEPMC": "Y",
+                            "inPMC": "Y",
+                            "hasPDF": "Y",
+                            "hasBook": "N",
+                            "hasSuppl": "N",
+                            "citedByCount": 6,
+                            "hasReferences": "Y",
+                            "hasTextMinedTerms": "Y",
+                            "hasDbCrossReferences": "N",
+                            "hasLabsLinks": "Y",
+                            "hasTMAccessionNumbers": "N",
+                            "firstIndexDate": "2020-05-12",
+                            "firstPublicationDate": "2020-05-01"
+                        }
+                    ]
+                }
+            },
+            "openalex": {
+                "id": "https://openalex.org/W3021867278",
+                "doi": "https://doi.org/10.1186/s13007-020-00602-8",
+                "title": "DiSCount: computer vision for automated quantification of Striga seed germination",
+                "display_name": "DiSCount: computer vision for automated quantification of Striga seed germination",
+                "publication_year": 2020,
+                "publication_date": "2020-05-01",
+                "ids": {
+                    "openalex": "https://openalex.org/W3021867278",
+                    "doi": "https://doi.org/10.1186/s13007-020-00602-8",
+                    "mag": "3021867278",
+                    "pmid": "https://pubmed.ncbi.nlm.nih.gov/32377220"
+                },
+                "language": "en",
+                "primary_location": {
+                    "id": "doi:10.1186/s13007-020-00602-8",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13007-020-00602-8",
+                    "pdf_url": "https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-020-00602-8",
+                    "source": {
+                        "id": "https://openalex.org/S184470774",
+                        "display_name": "Plant Methods",
+                        "issn_l": "1746-4811",
+                        "issn": [
+                            "1746-4811"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Plant Methods",
+                    "raw_type": "journal-article"
+                },
+                "type": "article",
+                "indexed_in": [
+                    "crossref",
+                    "doaj",
+                    "pubmed"
+                ],
+                "open_access": {
+                    "is_oa": true,
+                    "oa_status": "gold",
+                    "oa_url": "https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-020-00602-8",
+                    "any_repository_has_fulltext": true
+                },
+                "authorships": [
+                    {
+                        "author_position": "first",
+                        "author": {
+                            "id": "https://openalex.org/A5055810147",
+                            "display_name": "Raul Masteling",
+                            "orcid": "https://orcid.org/0000-0002-3875-564X"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I210716285",
+                                "display_name": "University of Applied Sciences Leiden",
+                                "ror": "https://ror.org/0093src13",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I210716285"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210107786",
+                                "display_name": "Netherlands Institute of Ecology",
+                                "ror": "https://ror.org/01g25jp36",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1322597698",
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": true,
+                        "raw_author_name": "Raul Masteling",
+                        "raw_affiliation_strings": [
+                            "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                            "2Institute of Biology, Leiden University, Leiden, The Netherlands",
+                            "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands"
+                        ],
+                        "raw_orcid": "https://orcid.org/0000-0002-3875-564X",
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "2Institute of Biology, Leiden University, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I121797337",
+                                    "https://openalex.org/I210716285"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5022269713",
+                            "display_name": "Lodewijk Voorhoeve",
+                            "orcid": null
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I907135538",
+                                "display_name": "Rotterdam University of Applied Sciences",
+                                "ror": "https://ror.org/0481e1q24",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I907135538"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Lodewijk Voorhoeve",
+                        "raw_affiliation_strings": [
+                            "4School of Engineering and Applied Science, Rotterdam University of Applied Sciences, Rotterdam, The Netherlands",
+                            "Track32, Wageningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "4School of Engineering and Applied Science, Rotterdam University of Applied Sciences, Rotterdam, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I907135538"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Track32, Wageningen, The Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5037867511",
+                            "display_name": "Joris IJsselmuiden",
+                            "orcid": null
+                        },
+                        "institutions": [],
+                        "countries": [],
+                        "is_corresponding": false,
+                        "raw_author_name": "Joris IJsselmuiden",
+                        "raw_affiliation_strings": [
+                            "Track32, Wageningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "Track32, Wageningen, The Netherlands",
+                                "institution_ids": []
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5053275462",
+                            "display_name": "Francisco Dini\u2010Andreote",
+                            "orcid": "https://orcid.org/0000-0002-6654-0769"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I130769515",
+                                "display_name": "Pennsylvania State University",
+                                "ror": "https://ror.org/04p491231",
+                                "country_code": "US",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210107786",
+                                "display_name": "Netherlands Institute of Ecology",
+                                "ror": "https://ror.org/01g25jp36",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1322597698",
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL",
+                            "US"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Francisco Dini-Andreote",
+                        "raw_affiliation_strings": [
+                            "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                            "5Department of Plant Science, The Pennsylvania State University, University Park, State College, PA USA",
+                            "6Huck Institutes of the Life Sciences, The Pennsylvania State University, University Park, State College, PA USA",
+                            "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "5Department of Plant Science, The Pennsylvania State University, University Park, State College, PA USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "6Huck Institutes of the Life Sciences, The Pennsylvania State University, University Park, State College, PA USA",
+                                "institution_ids": [
+                                    "https://openalex.org/I130769515"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "middle",
+                        "author": {
+                            "id": "https://openalex.org/A5066177046",
+                            "display_name": "Wietse de Boer",
+                            "orcid": "https://orcid.org/0000-0002-5380-2993"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I4210107786",
+                                "display_name": "Netherlands Institute of Ecology",
+                                "ror": "https://ror.org/01g25jp36",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1322597698",
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I913481162",
+                                "display_name": "Wageningen University & Research",
+                                "ror": "https://ror.org/04qw24q55",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Wietse de Boer",
+                        "raw_affiliation_strings": [
+                            "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                            "7Chair Group Soil Biology, Wageningen University and Research (WUR), Wageningen, The Netherlands",
+                            "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "7Chair Group Soil Biology, Wageningen University and Research (WUR), Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I913481162"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB, Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "author_position": "last",
+                        "author": {
+                            "id": "https://openalex.org/A5072260864",
+                            "display_name": "Jos M. Raaijmakers",
+                            "orcid": "https://orcid.org/0000-0003-1608-6614"
+                        },
+                        "institutions": [
+                            {
+                                "id": "https://openalex.org/I121797337",
+                                "display_name": "Leiden University",
+                                "ror": "https://ror.org/027bh9e22",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I210716285",
+                                "display_name": "University of Applied Sciences Leiden",
+                                "ror": "https://ror.org/0093src13",
+                                "country_code": "NL",
+                                "type": "education",
+                                "lineage": [
+                                    "https://openalex.org/I210716285"
+                                ]
+                            },
+                            {
+                                "id": "https://openalex.org/I4210107786",
+                                "display_name": "Netherlands Institute of Ecology",
+                                "ror": "https://ror.org/01g25jp36",
+                                "country_code": "NL",
+                                "type": "facility",
+                                "lineage": [
+                                    "https://openalex.org/I1322597698",
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            }
+                        ],
+                        "countries": [
+                            "NL"
+                        ],
+                        "is_corresponding": false,
+                        "raw_author_name": "Jos M. Raaijmakers",
+                        "raw_affiliation_strings": [
+                            "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                            "2Institute of Biology, Leiden University, Leiden, The Netherlands",
+                            "Institute of Biology, Leiden University, Leiden, The Netherlands"
+                        ],
+                        "raw_orcid": null,
+                        "affiliations": [
+                            {
+                                "raw_affiliation_string": "1Department of Microbial Ecology, Netherlands Institute of Ecology (NIOO-KNAW), PO BOX 50, 6708 PB Wageningen, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I4210107786"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "2Institute of Biology, Leiden University, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I121797337",
+                                    "https://openalex.org/I210716285"
+                                ]
+                            },
+                            {
+                                "raw_affiliation_string": "Institute of Biology, Leiden University, Leiden, The Netherlands",
+                                "institution_ids": [
+                                    "https://openalex.org/I121797337"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "institutions": [],
+                "countries_distinct_count": 2,
+                "institutions_distinct_count": 6,
+                "corresponding_author_ids": [
+                    "https://openalex.org/A5055810147"
+                ],
+                "corresponding_institution_ids": [
+                    "https://openalex.org/I121797337",
+                    "https://openalex.org/I210716285",
+                    "https://openalex.org/I4210107786"
+                ],
+                "apc_list": {
+                    "value": 1790,
+                    "currency": "GBP",
+                    "value_usd": 2195
+                },
+                "apc_paid": {
+                    "value": 2311,
+                    "currency": "EUR",
+                    "value_usd": 2492
+                },
+                "fwci": 3.0059,
+                "has_fulltext": true,
+                "cited_by_count": 20,
+                "citation_normalized_percentile": {
+                    "value": 0.90682903,
+                    "is_in_top_1_percent": false,
+                    "is_in_top_10_percent": true
+                },
+                "cited_by_percentile_year": {
+                    "min": 95,
+                    "max": 99
+                },
+                "biblio": {
+                    "volume": "16",
+                    "issue": "1",
+                    "first_page": "60",
+                    "last_page": "60"
+                },
+                "is_retracted": false,
+                "is_paratext": false,
+                "is_xpac": false,
+                "primary_topic": {
+                    "id": "https://openalex.org/T12475",
+                    "display_name": "Plant Parasitism and Resistance",
+                    "score": 0.8956000208854675,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1110",
+                        "display_name": "Plant Science"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/11",
+                        "display_name": "Agricultural and Biological Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                "topics": [
+                    {
+                        "id": "https://openalex.org/T12475",
+                        "display_name": "Plant Parasitism and Resistance",
+                        "score": 0.8956000208854675,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1110",
+                            "display_name": "Plant Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T11098",
+                        "display_name": "Seed Germination and Physiology",
+                        "score": 0.01940000057220459,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1110",
+                            "display_name": "Plant Science"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/11",
+                            "display_name": "Agricultural and Biological Sciences"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    },
+                    {
+                        "id": "https://openalex.org/T10240",
+                        "display_name": "Plant tissue culture and regeneration",
+                        "score": 0.006099999882280827,
+                        "subfield": {
+                            "id": "https://openalex.org/subfields/1312",
+                            "display_name": "Molecular Biology"
+                        },
+                        "field": {
+                            "id": "https://openalex.org/fields/13",
+                            "display_name": "Biochemistry, Genetics and Molecular Biology"
+                        },
+                        "domain": {
+                            "id": "https://openalex.org/domains/1",
+                            "display_name": "Life Sciences"
+                        }
+                    }
+                ],
+                "keywords": [
+                    {
+                        "id": "https://openalex.org/keywords/striga",
+                        "display_name": "Striga",
+                        "score": 0.8836497068405151
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/germination",
+                        "display_name": "Germination",
+                        "score": 0.8725407719612122
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/biology",
+                        "display_name": "Biology",
+                        "score": 0.5467511415481567
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/artificial-intelligence",
+                        "display_name": "Artificial intelligence",
+                        "score": 0.37123212218284607
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/agronomy",
+                        "display_name": "Agronomy",
+                        "score": 0.35973265767097473
+                    },
+                    {
+                        "id": "https://openalex.org/keywords/computer-science",
+                        "display_name": "Computer science",
+                        "score": 0.292458713054657
+                    }
+                ],
+                "concepts": [
+                    {
+                        "id": "https://openalex.org/C2775832765",
+                        "wikidata": "https://www.wikidata.org/wiki/Q135029",
+                        "display_name": "Striga",
+                        "level": 3,
+                        "score": 0.8836497068405151
+                    },
+                    {
+                        "id": "https://openalex.org/C100701293",
+                        "wikidata": "https://www.wikidata.org/wiki/Q193838",
+                        "display_name": "Germination",
+                        "level": 2,
+                        "score": 0.8725407719612122
+                    },
+                    {
+                        "id": "https://openalex.org/C86803240",
+                        "wikidata": "https://www.wikidata.org/wiki/Q420",
+                        "display_name": "Biology",
+                        "level": 0,
+                        "score": 0.5467511415481567
+                    },
+                    {
+                        "id": "https://openalex.org/C154945302",
+                        "wikidata": "https://www.wikidata.org/wiki/Q11660",
+                        "display_name": "Artificial intelligence",
+                        "level": 1,
+                        "score": 0.37123212218284607
+                    },
+                    {
+                        "id": "https://openalex.org/C6557445",
+                        "wikidata": "https://www.wikidata.org/wiki/Q173113",
+                        "display_name": "Agronomy",
+                        "level": 1,
+                        "score": 0.35973265767097473
+                    },
+                    {
+                        "id": "https://openalex.org/C41008148",
+                        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+                        "display_name": "Computer science",
+                        "level": 0,
+                        "score": 0.292458713054657
+                    }
+                ],
+                "mesh": [],
+                "locations_count": 10,
+                "locations": [
+                    {
+                        "id": "doi:10.1186/s13007-020-00602-8",
+                        "is_oa": true,
+                        "landing_page_url": "https://doi.org/10.1186/s13007-020-00602-8",
+                        "pdf_url": "https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-020-00602-8",
+                        "source": {
+                            "id": "https://openalex.org/S184470774",
+                            "display_name": "Plant Methods",
+                            "issn_l": "1746-4811",
+                            "issn": [
+                                "1746-4811"
+                            ],
+                            "is_oa": true,
+                            "is_in_doaj": true,
+                            "is_core": true,
+                            "host_organization": "https://openalex.org/P4310320256",
+                            "host_organization_name": "BioMed Central",
+                            "host_organization_lineage": [
+                                "https://openalex.org/P4310320256",
+                                "https://openalex.org/P4310319965"
+                            ],
+                            "host_organization_lineage_names": [
+                                "BioMed Central",
+                                "Springer Nature"
+                            ],
+                            "type": "journal"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Plant Methods",
+                        "raw_type": "journal-article"
+                    },
+                    {
+                        "id": "pmid:32377220",
+                        "is_oa": false,
+                        "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32377220",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306525036",
+                            "display_name": "PubMed",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": null,
+                        "license_id": null,
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Plant methods",
+                        "raw_type": null
+                    },
+                    {
+                        "id": "pmh:oai:pure.knaw.nl:openaire/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6",
+                        "is_oa": true,
+                        "landing_page_url": "https://pure.knaw.nl/portal/en/publications/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400439",
+                            "display_name": "KNAW Research Portal (The Royal Netherlands Academy of Arts and Sciences)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "publishedVersion",
+                        "is_accepted": true,
+                        "is_published": true,
+                        "raw_source_name": "Masteling, R, Voorhoeve, L, Ijsselmuiden, J, Dini-Andreote, F, De Boer, W & Raaijmakers, J M 2020, 'DiSCount: computer vision for automated quantification of Striga seed germination', Plant Methods, vol. 16, no. 60. https://doi.org/10.1186/s13007-020-00602-8",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:doaj.org/article:09882931548c4911a50ba4a86fc69e48",
+                        "is_oa": true,
+                        "landing_page_url": "https://doaj.org/article/09882931548c4911a50ba4a86fc69e48",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401280",
+                            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": null,
+                            "host_organization_name": null,
+                            "host_organization_lineage": [],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by-sa",
+                        "license_id": "https://openalex.org/licenses/cc-by-sa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods, Vol 16, Iss 1, Pp 1-8 (2020)",
+                        "raw_type": "article"
+                    },
+                    {
+                        "id": "pmh:oai:pubmedcentral.nih.gov:7195706",
+                        "is_oa": true,
+                        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7195706",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S2764455111",
+                            "display_name": "PubMed Central",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": true,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1299303238",
+                            "host_organization_name": "National Institutes of Health",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1299303238"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods",
+                        "raw_type": "Text"
+                    },
+                    {
+                        "id": "pmh:oai:pure.knaw.nl:openaire_cris_publications/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/20.500.11755/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401286",
+                            "display_name": "KNAW research portal (Royal Academy of Art and Sciences (KNAW))",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Masteling, R, Voorhoeve, L, Ijsselmuiden, J, Dini-Andreote, F, De Boer, W & Raaijmakers, J M 2020, 'DiSCount: computer vision for automated quantification of Striga seed germination', Plant Methods, vol. 16, no. 60. https://doi.org/10.1186/s13007-020-00602-8",
+                        "raw_type": "info:eu-repo/semantics/publishedVersion"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3304779",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3304779",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods",
+                        "raw_type": "Article / Letter to editor"
+                    },
+                    {
+                        "id": "pmh:oai:scholarlypublications.universiteitleiden.nl:item_3629842",
+                        "is_oa": true,
+                        "landing_page_url": "https://hdl.handle.net/1887/3629842",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306400850",
+                            "display_name": "Leiden Repository (Leiden University)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I121797337",
+                            "host_organization_name": "Leiden University",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I121797337"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods",
+                        "raw_type": "Article / Letter to editor"
+                    },
+                    {
+                        "id": "pmh:ul:oai:scholarlypublications.universiteitleiden.nl:item_3304779",
+                        "is_oa": true,
+                        "landing_page_url": "http://hdl.handle.net/1887/3304779",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "cc-by",
+                        "license_id": "https://openalex.org/licenses/cc-by",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods, 16(1). Springer Science and Business Media {LLC}",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    },
+                    {
+                        "id": "pmh:wur:oai:library.wur.nl:wurpubs/564526",
+                        "is_oa": true,
+                        "landing_page_url": "https://research.wur.nl/en/publications/discount-computer-vision-for-automated-quantification-of-striga-s",
+                        "pdf_url": null,
+                        "source": {
+                            "id": "https://openalex.org/S4306401843",
+                            "display_name": "Data Archiving and Networked Services (DANS)",
+                            "issn_l": null,
+                            "issn": null,
+                            "is_oa": false,
+                            "is_in_doaj": false,
+                            "is_core": false,
+                            "host_organization": "https://openalex.org/I1322597698",
+                            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
+                            "host_organization_lineage": [
+                                "https://openalex.org/I1322597698"
+                            ],
+                            "host_organization_lineage_names": [],
+                            "type": "repository"
+                        },
+                        "license": "other-oa",
+                        "license_id": "https://openalex.org/licenses/other-oa",
+                        "version": "submittedVersion",
+                        "is_accepted": false,
+                        "is_published": false,
+                        "raw_source_name": "Plant Methods, 16(1)",
+                        "raw_type": "info:eu-repo/semantics/article"
+                    }
+                ],
+                "best_oa_location": {
+                    "id": "doi:10.1186/s13007-020-00602-8",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.1186/s13007-020-00602-8",
+                    "pdf_url": "https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-020-00602-8",
+                    "source": {
+                        "id": "https://openalex.org/S184470774",
+                        "display_name": "Plant Methods",
+                        "issn_l": "1746-4811",
+                        "issn": [
+                            "1746-4811"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": true,
+                        "host_organization": "https://openalex.org/P4310320256",
+                        "host_organization_name": "BioMed Central",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310320256",
+                            "https://openalex.org/P4310319965"
+                        ],
+                        "host_organization_lineage_names": [
+                            "BioMed Central",
+                            "Springer Nature"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Plant Methods",
+                    "raw_type": "journal-article"
+                },
+                "sustainable_development_goals": [
+                    {
+                        "id": "https://metadata.un.org/sdg/2",
+                        "score": 0.5199999809265137,
+                        "display_name": "Zero hunger"
+                    },
+                    {
+                        "id": "https://metadata.un.org/sdg/12",
+                        "score": 0.4099999964237213,
+                        "display_name": "Responsible consumption and production"
+                    }
+                ],
+                "awards": [
+                    {
+                        "id": "https://openalex.org/G408457099",
+                        "display_name": null,
+                        "funder_award_id": "OPP1082853",
+                        "funder_id": "https://openalex.org/F4320306137",
+                        "funder_display_name": "Bill and Melinda Gates Foundation"
+                    }
+                ],
+                "funders": [
+                    {
+                        "id": "https://openalex.org/F4320306137",
+                        "display_name": "Bill and Melinda Gates Foundation",
+                        "ror": "https://ror.org/0456r8d26"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320318605",
+                        "display_name": "Nederlands Instituut voor Ecologie",
+                        "ror": "https://ror.org/01g25jp36"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320320934",
+                        "display_name": "Koninklijke Nederlandse Akademie van Wetenschappen",
+                        "ror": "https://ror.org/043c0p156"
+                    },
+                    {
+                        "id": "https://openalex.org/F4320322719",
+                        "display_name": "Ethiopian Institute of Agricultural Research",
+                        "ror": "https://ror.org/01mhm6x57"
+                    }
+                ],
+                "has_content": {
+                    "grobid_xml": true,
+                    "pdf": true
+                },
+                "content_urls": {
+                    "pdf": "https://content.openalex.org/works/W3021867278.pdf",
+                    "grobid_xml": "https://content.openalex.org/works/W3021867278.grobid-xml"
+                },
+                "referenced_works_count": 29,
+                "referenced_works": [
+                    "https://openalex.org/W1992377121",
+                    "https://openalex.org/W2001142368",
+                    "https://openalex.org/W2045075183",
+                    "https://openalex.org/W2046829176",
+                    "https://openalex.org/W2057693322",
+                    "https://openalex.org/W2102696761",
+                    "https://openalex.org/W2106707368",
+                    "https://openalex.org/W2108598243",
+                    "https://openalex.org/W2109941005",
+                    "https://openalex.org/W2127795208",
+                    "https://openalex.org/W2150076265",
+                    "https://openalex.org/W2159676924",
+                    "https://openalex.org/W2193145675",
+                    "https://openalex.org/W2339904428",
+                    "https://openalex.org/W2499986362",
+                    "https://openalex.org/W2565639579",
+                    "https://openalex.org/W2570343428",
+                    "https://openalex.org/W2736649602",
+                    "https://openalex.org/W2773833127",
+                    "https://openalex.org/W2783437385",
+                    "https://openalex.org/W2796347433",
+                    "https://openalex.org/W2803268489",
+                    "https://openalex.org/W2904124528",
+                    "https://openalex.org/W2924104011",
+                    "https://openalex.org/W2963037989",
+                    "https://openalex.org/W2982241425",
+                    "https://openalex.org/W3106250896",
+                    "https://openalex.org/W4285719527",
+                    "https://openalex.org/W6756040250"
+                ],
+                "related_works": [
+                    "https://openalex.org/W2767339232",
+                    "https://openalex.org/W2062773479",
+                    "https://openalex.org/W2117062680",
+                    "https://openalex.org/W2876222639",
+                    "https://openalex.org/W3135335120",
+                    "https://openalex.org/W2061816535",
+                    "https://openalex.org/W1981245444",
+                    "https://openalex.org/W2169524218",
+                    "https://openalex.org/W3201471755",
+                    "https://openalex.org/W1553039580"
+                ],
+                "abstract_inverted_index": {
+                    "Abstract": [
+                        0
+                    ],
+                    "Background": [
+                        1
+                    ],
+                    "Plant": [
+                        2
+                    ],
+                    "parasitic": [
+                        3,
+                        272
+                    ],
+                    "weeds": [
+                        4
+                    ],
+                    "belonging": [
+                        5
+                    ],
+                    "to": [
+                        6,
+                        190,
+                        201,
+                        210
+                    ],
+                    "the": [
+                        7,
+                        29,
+                        51,
+                        56,
+                        63,
+                        83,
+                        142,
+                        163,
+                        191,
+                        284,
+                        292,
+                        306
+                    ],
+                    "genus": [
+                        8
+                    ],
+                    "Striga": [
+                        9,
+                        105,
+                        131,
+                        244
+                    ],
+                    "are": [
+                        10,
+                        279
+                    ],
+                    "a": [
+                        11,
+                        88,
+                        120,
+                        145,
+                        151,
+                        166,
+                        199,
+                        224,
+                        231,
+                        247
+                    ],
+                    "major": [
+                        12
+                    ],
+                    "threat": [
+                        13
+                    ],
+                    "for": [
+                        14,
+                        90,
+                        95,
+                        124,
+                        257,
+                        299
+                    ],
+                    "food": [
+                        15
+                    ],
+                    "production": [
+                        16
+                    ],
+                    "in": [
+                        17,
+                        134,
+                        205,
+                        239,
+                        246
+                    ],
+                    "Sub-Saharan": [
+                        18
+                    ],
+                    "Africa": [
+                        19
+                    ],
+                    "and": [
+                        20,
+                        48,
+                        129,
+                        161,
+                        227,
+                        237,
+                        242,
+                        265,
+                        277,
+                        283
+                    ],
+                    "Southeast": [
+                        21
+                    ],
+                    "Asia.": [
+                        22
+                    ],
+                    "The": [
+                        23,
+                        174,
+                        274,
+                        296
+                    ],
+                    "parasite\u2019s": [
+                        24
+                    ],
+                    "life": [
+                        25
+                    ],
+                    "cycle": [
+                        26
+                    ],
+                    "starts": [
+                        27
+                    ],
+                    "with": [
+                        28,
+                        71,
+                        150,
+                        213,
+                        291,
+                        305
+                    ],
+                    "induction": [
+                        30
+                    ],
+                    "of": [
+                        31,
+                        55,
+                        62,
+                        65,
+                        79,
+                        98,
+                        127,
+                        153,
+                        169,
+                        183,
+                        217,
+                        261,
+                        269
+                    ],
+                    "seed": [
+                        32,
+                        46,
+                        53,
+                        72,
+                        80,
+                        106,
+                        132
+                    ],
+                    "germination": [
+                        33,
+                        73,
+                        249
+                    ],
+                    "by": [
+                        34,
+                        39
+                    ],
+                    "host": [
+                        35
+                    ],
+                    "plant-derived": [
+                        36
+                    ],
+                    "signals,": [
+                        37
+                    ],
+                    "followed": [
+                        38
+                    ],
+                    "parasite": [
+                        40,
+                        57
+                    ],
+                    "attachment,": [
+                        41
+                    ],
+                    "infection,": [
+                        42
+                    ],
+                    "outgrowth,": [
+                        43
+                    ],
+                    "flowering,": [
+                        44
+                    ],
+                    "reproduction,": [
+                        45
+                    ],
+                    "set": [
+                        47
+                    ],
+                    "dispersal.": [
+                        49
+                    ],
+                    "Given": [
+                        50
+                    ],
+                    "small": [
+                        52
+                    ],
+                    "size": [
+                        54
+                    ],
+                    "(&lt;": [
+                        58
+                    ],
+                    "200": [
+                        59
+                    ],
+                    "\u03bcm),": [
+                        60
+                    ],
+                    "quantification": [
+                        61,
+                        126
+                    ],
+                    "impact": [
+                        64
+                    ],
+                    "new": [
+                        66
+                    ],
+                    "control": [
+                        67,
+                        267
+                    ],
+                    "measures": [
+                        68
+                    ],
+                    "that": [
+                        69,
+                        93,
+                        102,
+                        177
+                    ],
+                    "interfere": [
+                        70
+                    ],
+                    "relies": [
+                        74
+                    ],
+                    "on": [
+                        75,
+                        223,
+                        230
+                    ],
+                    "manual,": [
+                        76
+                    ],
+                    "labour-intensive": [
+                        77
+                    ],
+                    "counting": [
+                        78
+                    ],
+                    "batches": [
+                        81
+                    ],
+                    "under": [
+                        82
+                    ],
+                    "microscope.": [
+                        84
+                    ],
+                    "Hence,": [
+                        85
+                    ],
+                    "there": [
+                        86
+                    ],
+                    "is": [
+                        87,
+                        235,
+                        287,
+                        301
+                    ],
+                    "need": [
+                        89
+                    ],
+                    "high-throughput": [
+                        91
+                    ],
+                    "assays": [
+                        92
+                    ],
+                    "allow": [
+                        94
+                    ],
+                    "large-scale": [
+                        96,
+                        259
+                    ],
+                    "screening": [
+                        97,
+                        260
+                    ],
+                    "compounds": [
+                        99
+                    ],
+                    "or": [
+                        100
+                    ],
+                    "microorganisms": [
+                        101
+                    ],
+                    "adversely": [
+                        103
+                    ],
+                    "affect": [
+                        104
+                    ],
+                    "germination.": [
+                        107
+                    ],
+                    "Results": [
+                        108
+                    ],
+                    "Here,": [
+                        109
+                    ],
+                    "we": [
+                        110,
+                        159
+                    ],
+                    "introduce": [
+                        111
+                    ],
+                    "DiSCount": [
+                        112,
+                        178,
+                        197,
+                        234
+                    ],
+                    "(": [
+                        113
+                    ],
+                    "Di": [
+                        114
+                    ],
+                    "gital": [
+                        115
+                    ],
+                    "S": [
+                        116
+                    ],
+                    "triga": [
+                        117
+                    ],
+                    "Count": [
+                        118
+                    ],
+                    "er):": [
+                        119
+                    ],
+                    "computer": [
+                        121,
+                        253
+                    ],
+                    "vision": [
+                        122,
+                        254
+                    ],
+                    "tool": [
+                        123,
+                        255
+                    ],
+                    "automated": [
+                        125,
+                        252
+                    ],
+                    "total": [
+                        128,
+                        167,
+                        241
+                    ],
+                    "germinated": [
+                        130,
+                        243
+                    ],
+                    "numbers": [
+                        133
+                    ],
+                    "standard": [
+                        135
+                    ],
+                    "glass": [
+                        136
+                    ],
+                    "fibre": [
+                        137
+                    ],
+                    "filter": [
+                        138
+                    ],
+                    "assays.": [
+                        139
+                    ],
+                    "We": [
+                        140
+                    ],
+                    "developed": [
+                        141
+                    ],
+                    "software": [
+                        143,
+                        276
+                    ],
+                    "using": [
+                        144
+                    ],
+                    "machine": [
+                        146
+                    ],
+                    "learning": [
+                        147
+                    ],
+                    "approach": [
+                        148
+                    ],
+                    "trained": [
+                        149
+                    ],
+                    "dataset": [
+                        152,
+                        168,
+                        297
+                    ],
+                    "98": [
+                        154
+                    ],
+                    "manually": [
+                        155,
+                        171,
+                        192
+                    ],
+                    "annotated": [
+                        156
+                    ],
+                    "images.": [
+                        157,
+                        173
+                    ],
+                    "Then,": [
+                        158
+                    ],
+                    "validated": [
+                        160
+                    ],
+                    "tested": [
+                        162
+                    ],
+                    "model": [
+                        164
+                    ],
+                    "against": [
+                        165
+                    ],
+                    "188": [
+                        170
+                    ],
+                    "counted": [
+                        172,
+                        193
+                    ],
+                    "results": [
+                        175
+                    ],
+                    "showed": [
+                        176
+                    ],
+                    "has": [
+                        179
+                    ],
+                    "an": [
+                        180,
+                        214
+                    ],
+                    "average": [
+                        181
+                    ],
+                    "error": [
+                        182
+                    ],
+                    "3.38": [
+                        184
+                    ],
+                    "percentage": [
+                        185
+                    ],
+                    "points": [
+                        186
+                    ],
+                    "per": [
+                        187,
+                        221
+                    ],
+                    "image": [
+                        188,
+                        206,
+                        222
+                    ],
+                    "compared": [
+                        189,
+                        209
+                    ],
+                    "dataset.": [
+                        194
+                    ],
+                    "Most": [
+                        195
+                    ],
+                    "importantly,": [
+                        196
+                    ],
+                    "achieves": [
+                        198
+                    ],
+                    "100": [
+                        200
+                    ],
+                    "3000-fold": [
+                        202
+                    ],
+                    "speed": [
+                        203
+                    ],
+                    "increase": [
+                        204
+                    ],
+                    "analysis": [
+                        207
+                    ],
+                    "when": [
+                        208
+                    ],
+                    "manual": [
+                        211,
+                        278
+                    ],
+                    "analysis,": [
+                        212
+                    ],
+                    "inference": [
+                        215
+                    ],
+                    "time": [
+                        216
+                    ],
+                    "approximately": [
+                        218
+                    ],
+                    "3": [
+                        219
+                    ],
+                    "s": [
+                        220,
+                        229
+                    ],
+                    "single": [
+                        225
+                    ],
+                    "CPU": [
+                        226
+                    ],
+                    "0.1": [
+                        228
+                    ],
+                    "GPU.": [
+                        232
+                    ],
+                    "Conclusions": [
+                        233
+                    ],
+                    "accurate": [
+                        236
+                    ],
+                    "efficient": [
+                        238
+                    ],
+                    "quantifying": [
+                        240
+                    ],
+                    "seeds": [
+                        245
+                    ],
+                    "standardized": [
+                        248
+                    ],
+                    "assay.": [
+                        250
+                    ],
+                    "This": [
+                        251
+                    ],
+                    "enables": [
+                        256
+                    ],
+                    "high-throughput,": [
+                        258
+                    ],
+                    "chemical": [
+                        262
+                    ],
+                    "compound": [
+                        263
+                    ],
+                    "libraries": [
+                        264
+                    ],
+                    "biological": [
+                        266
+                    ],
+                    "agents": [
+                        268
+                    ],
+                    "this": [
+                        270
+                    ],
+                    "devastating": [
+                        271
+                    ],
+                    "weed.": [
+                        273
+                    ],
+                    "complete": [
+                        275
+                    ],
+                    "hosted": [
+                        280
+                    ],
+                    "at": [
+                        281,
+                        289,
+                        303
+                    ],
+                    "https://gitlab.com/lodewijk-track32/discount_paper": [
+                        282
+                    ],
+                    "archived": [
+                        285
+                    ],
+                    "version": [
+                        286
+                    ],
+                    "available": [
+                        288,
+                        302
+                    ],
+                    "Zenodo": [
+                        290,
+                        304
+                    ],
+                    "DOI": [
+                        293,
+                        307
+                    ],
+                    "10.5281/zenodo.3627138": [
+                        294
+                    ],
+                    ".": [
+                        295,
+                        309
+                    ],
+                    "used": [
+                        298
+                    ],
+                    "testing": [
+                        300
+                    ],
+                    "10.5281/zenodo.3403956": [
+                        308
+                    ]
+                },
+                "counts_by_year": [
+                    {
+                        "year": 2026,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2025,
+                        "cited_by_count": 2
+                    },
+                    {
+                        "year": 2024,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2023,
+                        "cited_by_count": 4
+                    },
+                    {
+                        "year": 2022,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2021,
+                        "cited_by_count": 3
+                    },
+                    {
+                        "year": 2020,
+                        "cited_by_count": 3
+                    }
+                ],
+                "updated_date": "2026-05-21T06:26:12.895304",
+                "created_date": "2025-10-10T00:00:00"
+            },
+            "altmetric": {
+                "title": "DiSCount: computer vision for automated quantification of Striga seed germination",
+                "doi": "10.1186/s13007-020-00602-8",
+                "pmid": "32377220",
+                "pmc": "PMC7195706",
+                "isbns": [],
+                "altmetric_jid": "4f6fa4d03cf058f61000088b",
+                "issns": [
+                    "1746-4811"
+                ],
+                "journal": "Plant Methods",
+                "cohorts": {
+                    "com": 1,
+                    "sci": 5,
+                    "pub": 7
+                },
+                "context": {
+                    "all": {
+                        "count": 27724281,
+                        "mean": 10.834096118056229,
+                        "rank": 5354913,
+                        "pct": 80,
+                        "higher_than": 22362087
+                    },
+                    "journal": {
+                        "count": 1376,
+                        "mean": 6.160171511627907,
+                        "rank": 297,
+                        "pct": 78,
+                        "higher_than": 1077
+                    },
+                    "similar_age_3m": {
+                        "count": 415345,
+                        "mean": 20.05814885456671,
+                        "rank": 110640,
+                        "pct": 73,
+                        "higher_than": 304535
+                    },
+                    "similar_age_journal_3m": {
+                        "count": 47,
+                        "mean": 7.7092340425531924,
+                        "rank": 14,
+                        "pct": 70,
+                        "higher_than": 33
+                    }
+                },
+                "authors": [
+                    "Raul Masteling",
+                    "Lodewijk Voorhoeve",
+                    "Joris IJsselmuiden",
+                    "Francisco Dini-Andreote",
+                    "Wietse de Boer",
+                    "Jos M. Raaijmakers"
+                ],
+                "type": "article",
+                "handles": [
+                    "20.500.11755/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6"
+                ],
+                "pubdate": 1606780800,
+                "epubdate": 1588291200,
+                "dimensions_publication_id": "pub.1127311454",
+                "handle": "20.500.11755/bc68f2da-7a9c-45c6-9b71-7ad30f42d8d6",
+                "altmetric_id": 81115271,
+                "schema": "1.5.4",
+                "is_oa": false,
+                "publisher_subjects": [
+                    {
+                        "name": "Plant Biology",
+                        "scheme": "era"
+                    },
+                    {
+                        "name": "Agricultural Biotechnology",
+                        "scheme": "era"
+                    }
+                ],
+                "cited_by_posts_count": 16,
+                "cited_by_tweeters_count": 12,
+                "cited_by_fbwalls_count": 1,
+                "cited_by_bluesky_count": 1,
+                "cited_by_accounts_count": 14,
+                "last_updated": 1620733832,
+                "score": 7.2,
+                "history": {
+                    "1y": 0,
+                    "6m": 0,
+                    "3m": 0,
+                    "1m": 0,
+                    "1w": 0,
+                    "6d": 0,
+                    "5d": 0,
+                    "4d": 0,
+                    "3d": 0,
+                    "2d": 0,
+                    "1d": 0,
+                    "at": 7.2
+                },
+                "url": "http://dx.doi.org/10.1186/s13007-020-00602-8",
+                "added_on": 1588551905,
+                "published_on": 1588291200,
+                "scopus_subjects": [
+                    "Life Sciences",
+                    "Agricultural and Biological Sciences",
+                    "Biochemistry, Genetics and Molecular Biology"
+                ],
+                "readers": {
+                    "citeulike": "0",
+                    "mendeley": "59",
+                    "connotea": "0"
+                },
+                "readers_count": 59,
+                "images": {
+                    "small": "https://badges.altmetric.com/?size=64&score=8&types=ttttttfu",
+                    "medium": "https://badges.altmetric.com/?size=100&score=8&types=ttttttfu",
+                    "large": "https://badges.altmetric.com/?size=180&score=8&types=ttttttfu"
+                },
+                "details_url": "https://www.altmetric.com/details.php?citation_id=81115271"
+            }
+        },
+        "errors": [],
+        "lizard": {
+            "total_nloc": 624,
+            "total_ccn": 130,
+            "avg_ccn": 2.95,
+            "nloc_per_file": 104.0,
+            "duplicate_rate": 11.09
+        },
+        "howfairis": {
+            "repository": true,
+            "license": false,
+            "registry": false,
+            "citation": false,
+            "checklist": false
+        }
+    }
+}
