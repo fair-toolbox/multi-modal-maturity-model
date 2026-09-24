@@ -1,0 +1,825 @@
+{
+    "osl-dynamics": {
+        "papers": {
+            "id": "38285016",
+            "source": "MED",
+            "pmid": "38285016",
+            "pmcid": "PMC10945565",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC10945565"
+                ]
+            },
+            "doi": "10.7554/elife.91949",
+            "title": "osl-dynamics, a toolbox for modeling fast dynamic brain activity.",
+            "authorString": "Gohil C, Huang R, Roberts E, van Es MWJ, Quinn AJ, Vidaurre D, Woolrich MW.",
+            "journalTitle": "Elife",
+            "journalVolume": "12",
+            "pubYear": "2024",
+            "journalIssn": "2050-084x",
+            "pageInfo": "RP91949",
+            "pubType": "research-article; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 15,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2024-01-30",
+            "firstPublicationDate": "2024-01-29"
+        },
+        "github": {
+            "repo": {
+                "id": 380237698,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzODAyMzc2OTg=",
+                "name": "osl-ephys",
+                "full_name": "OHBA-analysis/osl-ephys",
+                "private": false,
+                "owner": {
+                    "login": "OHBA-analysis",
+                    "id": 15248840,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1MjQ4ODQw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/15248840?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/OHBA-analysis",
+                    "html_url": "https://github.com/OHBA-analysis",
+                    "followers_url": "https://api.github.com/users/OHBA-analysis/followers",
+                    "following_url": "https://api.github.com/users/OHBA-analysis/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/OHBA-analysis/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/OHBA-analysis/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/OHBA-analysis/subscriptions",
+                    "organizations_url": "https://api.github.com/users/OHBA-analysis/orgs",
+                    "repos_url": "https://api.github.com/users/OHBA-analysis/repos",
+                    "events_url": "https://api.github.com/users/OHBA-analysis/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/OHBA-analysis/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/OHBA-analysis/osl-ephys",
+                "description": "Electrophysiological Data Analysis Toolbox",
+                "fork": false,
+                "url": "https://api.github.com/repos/OHBA-analysis/osl-ephys",
+                "forks_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/forks",
+                "keys_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/teams",
+                "hooks_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/hooks",
+                "issue_events_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/events",
+                "assignees_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/tags",
+                "blobs_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/languages",
+                "stargazers_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/stargazers",
+                "contributors_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/contributors",
+                "subscribers_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/subscribers",
+                "subscription_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/subscription",
+                "commits_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/merges",
+                "archive_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/downloads",
+                "issues_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/labels{/name}",
+                "releases_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/OHBA-analysis/osl-ephys/deployments",
+                "created_at": "2021-06-25T12:55:30Z",
+                "updated_at": "2026-02-19T18:15:10Z",
+                "pushed_at": "2026-01-28T09:15:13Z",
+                "git_url": "git://github.com/OHBA-analysis/osl-ephys.git",
+                "ssh_url": "git@github.com:OHBA-analysis/osl-ephys.git",
+                "clone_url": "https://github.com/OHBA-analysis/osl-ephys.git",
+                "svn_url": "https://github.com/OHBA-analysis/osl-ephys",
+                "homepage": "https://osl-ephys.readthedocs.io/en/latest/",
+                "size": 13711,
+                "stargazers_count": 63,
+                "watchers_count": 63,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": true,
+                "forks_count": 13,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 44,
+                "license": {
+                    "key": "other",
+                    "name": "Other",
+                    "spdx_id": "NOASSERTION",
+                    "url": null,
+                    "node_id": "MDc6TGljZW5zZTA="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "eeg",
+                    "meg",
+                    "python"
+                ],
+                "visibility": "public",
+                "forks": 13,
+                "open_issues": 44,
+                "watchers": 63,
+                "default_branch": "main",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "OHBA-analysis",
+                    "id": 15248840,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1MjQ4ODQw",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/15248840?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/OHBA-analysis",
+                    "html_url": "https://github.com/OHBA-analysis",
+                    "followers_url": "https://api.github.com/users/OHBA-analysis/followers",
+                    "following_url": "https://api.github.com/users/OHBA-analysis/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/OHBA-analysis/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/OHBA-analysis/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/OHBA-analysis/subscriptions",
+                    "organizations_url": "https://api.github.com/users/OHBA-analysis/orgs",
+                    "repos_url": "https://api.github.com/users/OHBA-analysis/repos",
+                    "events_url": "https://api.github.com/users/OHBA-analysis/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/OHBA-analysis/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 13,
+                "subscribers_count": 4
+            },
+            "contributors": [
+                {
+                    "login": "cgohil8",
+                    "contributions": 401
+                },
+                {
+                    "login": "matsvanes",
+                    "contributions": 362
+                },
+                {
+                    "login": "AJQuinn",
+                    "contributions": 220
+                },
+                {
+                    "login": "neurofractal",
+                    "contributions": 14
+                },
+                {
+                    "login": "HQian96",
+                    "contributions": 8
+                },
+                {
+                    "login": "scho97",
+                    "contributions": 4
+                },
+                {
+                    "login": "marcoFabus",
+                    "contributions": 2
+                },
+                {
+                    "login": "sbraeut",
+                    "contributions": 2
+                },
+                {
+                    "login": "mlfarinha",
+                    "contributions": 2
+                },
+                {
+                    "login": "evanr70",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 416,
+                    "title": "ECG data in ica_autoreject",
+                    "created_at": "2025-09-05T07:18:46+00:00",
+                    "closed_at": "2025-09-10T15:58:39+00:00"
+                },
+                {
+                    "number": 414,
+                    "title": "Question about the brain parcellation labels",
+                    "created_at": "2025-07-22T12:05:13+00:00",
+                    "closed_at": "2025-07-22T12:32:56+00:00"
+                },
+                {
+                    "number": 407,
+                    "title": "import error running osl-ephys2.2.0",
+                    "created_at": "2025-05-20T06:40:35+00:00",
+                    "closed_at": "2025-05-20T14:31:14+00:00"
+                },
+                {
+                    "number": 406,
+                    "title": "Giles_parcellation, parcel description",
+                    "created_at": "2025-05-13T06:07:50+00:00",
+                    "closed_at": "2025-05-20T23:56:53+00:00"
+                },
+                {
+                    "number": 390,
+                    "title": "gen_html_page: KeyError: 'filename'",
+                    "created_at": "2025-04-10T05:30:04+00:00",
+                    "closed_at": "2025-04-23T00:42:22+00:00"
+                },
+                {
+                    "number": 389,
+                    "title": "run src chain, load_parcellation",
+                    "created_at": "2025-04-08T06:54:51+00:00",
+                    "closed_at": "2025-04-08T23:21:38+00:00"
+                },
+                {
+                    "number": 388,
+                    "title": "[Bug] weird smri file orient process logic",
+                    "created_at": "2025-03-31T14:32:03+00:00",
+                    "closed_at": "2025-04-01T17:20:39+00:00"
+                },
+                {
+                    "number": 367,
+                    "title": "Frequency Range Changes in Parcellated Data",
+                    "created_at": "2024-12-18T07:30:33+00:00",
+                    "closed_at": "2024-12-18T09:56:54+00:00"
+                },
+                {
+                    "number": 366,
+                    "title": "Upgrade to latest MNE-Python version",
+                    "created_at": "2024-11-25T12:14:22+00:00",
+                    "closed_at": "2025-05-20T13:51:06+00:00"
+                },
+                {
+                    "number": 365,
+                    "title": "Visualization of Parcellated Data \"parc-raw.fif\"",
+                    "created_at": "2024-11-21T20:29:03+00:00",
+                    "closed_at": "2024-11-22T15:56:51+00:00"
+                },
+                {
+                    "number": 363,
+                    "title": "How to Design GLM for Continuous Variables in Source-Space Data",
+                    "created_at": "2024-11-20T09:43:19+00:00",
+                    "closed_at": "2024-11-27T07:10:42+00:00"
+                },
+                {
+                    "number": 358,
+                    "title": "Remove Sign Flipping",
+                    "created_at": "2024-10-27T23:37:44+00:00",
+                    "closed_at": "2024-11-01T09:17:34+00:00"
+                },
+                {
+                    "number": 347,
+                    "title": "UCL Structural Issue",
+                    "created_at": "2024-09-23T02:57:38+00:00",
+                    "closed_at": "2024-12-30T09:52:10+00:00"
+                },
+                {
+                    "number": 346,
+                    "title": "Python 3.8 deprecated and shortly to go out of security maintenance",
+                    "created_at": "2024-09-19T12:17:40+00:00",
+                    "closed_at": "2025-05-20T13:51:06+00:00"
+                },
+                {
+                    "number": 343,
+                    "title": "src_recon batch fails with extra funcs",
+                    "created_at": "2024-09-07T18:01:55+00:00",
+                    "closed_at": "2024-10-09T08:42:39+00:00"
+                },
+                {
+                    "number": 336,
+                    "title": "incorrect suffix of preproc logfile",
+                    "created_at": "2024-09-03T18:21:58+00:00",
+                    "closed_at": "2024-09-04T09:34:59+00:00"
+                },
+                {
+                    "number": 332,
+                    "title": "Debugging line left in documentation",
+                    "created_at": "2024-08-22T06:24:47+00:00",
+                    "closed_at": "2024-10-09T08:41:29+00:00"
+                },
+                {
+                    "number": 329,
+                    "title": "installation issue on Mac",
+                    "created_at": "2024-08-02T16:09:53+00:00",
+                    "closed_at": "2024-08-02T20:12:21+00:00"
+                },
+                {
+                    "number": 310,
+                    "title": "report improvements",
+                    "created_at": "2024-07-03T11:17:00+00:00",
+                    "closed_at": "2024-10-09T08:40:37+00:00"
+                },
+                {
+                    "number": 306,
+                    "title": "yaml loader in preprocessing.batch.read_dataset() not working",
+                    "created_at": "2024-06-28T15:55:01+00:00",
+                    "closed_at": "2024-06-29T17:42:28+00:00"
+                },
+                {
+                    "number": 279,
+                    "title": "maxfilter logfile issue",
+                    "created_at": "2024-03-18T13:14:11+00:00",
+                    "closed_at": "2024-03-18T13:35:25+00:00"
+                },
+                {
+                    "number": 269,
+                    "title": "Python code uses a different reference brain to Matlab",
+                    "created_at": "2024-02-14T19:51:02+00:00",
+                    "closed_at": "2024-02-15T09:49:50+00:00"
+                },
+                {
+                    "number": 262,
+                    "title": "Nans in structural causes BET to seg fault",
+                    "created_at": "2024-02-01T17:23:16+00:00",
+                    "closed_at": "2024-02-08T11:27:19+00:00"
+                },
+                {
+                    "number": 259,
+                    "title": "Update pinned toolbox versions",
+                    "created_at": "2024-01-11T15:19:46+00:00",
+                    "closed_at": "2024-02-08T17:48:32+00:00"
+                },
+                {
+                    "number": 258,
+                    "title": "Documentation improvements",
+                    "created_at": "2024-01-11T14:20:53+00:00",
+                    "closed_at": "2024-10-09T08:43:10+00:00"
+                },
+                {
+                    "number": 249,
+                    "title": "bug in plotting glm spectrum clusters",
+                    "created_at": "2024-01-09T11:13:04+00:00",
+                    "closed_at": "2024-01-09T11:16:29+00:00"
+                },
+                {
+                    "number": 247,
+                    "title": "multistage/cbu maxfilter create transsss files",
+                    "created_at": "2024-01-03T17:00:44+00:00",
+                    "closed_at": "2024-01-03T17:16:44+00:00"
+                },
+                {
+                    "number": 245,
+                    "title": "dim_labels bug in glm.SensorMaxStatPerm",
+                    "created_at": "2023-12-19T14:55:15+00:00",
+                    "closed_at": "2024-01-03T17:24:06+00:00"
+                },
+                {
+                    "number": 244,
+                    "title": "index error when mode=None in `detect_badsegments`",
+                    "created_at": "2023-12-04T13:41:11+00:00",
+                    "closed_at": "2024-05-14T21:04:49+00:00"
+                },
+                {
+                    "number": 242,
+                    "title": "PSD of epoched parcellated data incorrect",
+                    "created_at": "2023-11-23T19:23:23+00:00",
+                    "closed_at": "2024-02-09T09:45:24+00:00"
+                },
+                {
+                    "number": 241,
+                    "title": "New MNE version breaks import in tests",
+                    "created_at": "2023-11-22T13:40:20+00:00",
+                    "closed_at": "2023-12-01T13:18:29+00:00"
+                },
+                {
+                    "number": 238,
+                    "title": "Move OSF tutorials to readthedocs",
+                    "created_at": "2023-11-16T10:58:56+00:00",
+                    "closed_at": "2024-10-09T08:44:15+00:00"
+                },
+                {
+                    "number": 237,
+                    "title": "Add Citation file",
+                    "created_at": "2023-11-15T16:28:46+00:00",
+                    "closed_at": "2024-10-09T08:44:39+00:00"
+                },
+                {
+                    "number": 233,
+                    "title": "Surface extraction fails if sMRI sform code is incorrect",
+                    "created_at": "2023-10-31T15:55:02+00:00",
+                    "closed_at": "2024-02-09T09:45:23+00:00"
+                },
+                {
+                    "number": 232,
+                    "title": "Source Recon 3D backend issue in VSCode",
+                    "created_at": "2023-10-31T12:58:09+00:00",
+                    "closed_at": "2024-01-11T15:26:24+00:00"
+                },
+                {
+                    "number": 222,
+                    "title": "Rename raw_report.py",
+                    "created_at": "2023-09-06T08:57:09+00:00",
+                    "closed_at": "2023-11-15T15:32:32+00:00"
+                },
+                {
+                    "number": 220,
+                    "title": "Add version_assert and version_warn to batch config",
+                    "created_at": "2023-08-31T11:18:11+00:00",
+                    "closed_at": "2024-03-02T13:59:48+00:00"
+                },
+                {
+                    "number": 218,
+                    "title": "[preproc] read_dataset assumes extension is `preproc_raw.fif`",
+                    "created_at": "2023-08-30T09:15:55+00:00",
+                    "closed_at": "2023-08-30T14:00:13+00:00"
+                },
+                {
+                    "number": 217,
+                    "title": "[preproc] bad channel detection does not mark channels with low variance",
+                    "created_at": "2023-08-24T14:46:51+00:00",
+                    "closed_at": "2023-08-31T12:54:28+00:00"
+                },
+                {
+                    "number": 216,
+                    "title": "Using -trans in maxfilter affects coregistration",
+                    "created_at": "2023-08-23T17:57:31+00:00",
+                    "closed_at": "2024-05-15T09:08:00+00:00"
+                },
+                {
+                    "number": 210,
+                    "title": "Funny naming of run_multistage_maxfilter output from --trans stage.",
+                    "created_at": "2023-07-16T12:28:57+00:00",
+                    "closed_at": "2024-01-03T17:10:32+00:00"
+                },
+                {
+                    "number": 209,
+                    "title": "glm.glm_spectrum bug(?)",
+                    "created_at": "2023-07-13T12:55:30+00:00",
+                    "closed_at": "2023-07-13T13:40:36+00:00"
+                },
+                {
+                    "number": 205,
+                    "title": "Naming issue when saving/loading ICA",
+                    "created_at": "2023-06-09T09:52:37+00:00",
+                    "closed_at": "2023-07-03T13:02:11+00:00"
+                },
+                {
+                    "number": 204,
+                    "title": "Source reconstruction broken",
+                    "created_at": "2023-05-30T13:20:14+00:00",
+                    "closed_at": "2023-07-03T13:02:10+00:00"
+                },
+                {
+                    "number": 189,
+                    "title": "OSL Workshop - Dynamics",
+                    "created_at": "2023-03-24T11:16:58+00:00",
+                    "closed_at": "2023-04-19T15:30:58+00:00"
+                },
+                {
+                    "number": 188,
+                    "title": "OSL Workshop - Source recon",
+                    "created_at": "2023-03-24T11:16:45+00:00",
+                    "closed_at": "2023-04-13T15:35:56+00:00"
+                },
+                {
+                    "number": 187,
+                    "title": "OSL Workshop - GLM",
+                    "created_at": "2023-03-24T11:16:32+00:00",
+                    "closed_at": "2023-05-12T10:05:18+00:00"
+                },
+                {
+                    "number": 186,
+                    "title": "OSL Workshop - Preprocessing",
+                    "created_at": "2023-03-24T11:16:12+00:00",
+                    "closed_at": "2023-04-14T10:06:44+00:00"
+                },
+                {
+                    "number": 181,
+                    "title": "Save EMG in parcellated data fif file.",
+                    "created_at": "2023-03-21T15:16:44+00:00",
+                    "closed_at": "2023-03-21T15:26:24+00:00"
+                },
+                {
+                    "number": 175,
+                    "title": "Picks not being used in beamforming",
+                    "created_at": "2023-03-15T09:47:46+00:00",
+                    "closed_at": "2023-03-17T09:41:02+00:00"
+                },
+                {
+                    "number": 174,
+                    "title": "version/commit number in preproc info",
+                    "created_at": "2023-03-10T18:05:02+00:00",
+                    "closed_at": "2023-03-20T14:03:58+00:00"
+                },
+                {
+                    "number": 161,
+                    "title": "source recon report page doesn't load when navigating",
+                    "created_at": "2023-02-14T15:57:32+00:00",
+                    "closed_at": "2023-02-28T18:44:20+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "Coreg copies the preprocessed data",
+                    "created_at": "2023-02-06T10:17:38+00:00",
+                    "closed_at": "2023-03-20T14:03:57+00:00"
+                },
+                {
+                    "number": 156,
+                    "title": "Report error when extention is not preproc_raw.fif",
+                    "created_at": "2023-02-03T16:17:51+00:00",
+                    "closed_at": "2023-08-31T09:09:17+00:00"
+                },
+                {
+                    "number": 149,
+                    "title": "Issues with FSL if filepath contains a space",
+                    "created_at": "2023-01-23T21:27:36+00:00",
+                    "closed_at": "2023-02-02T14:58:30+00:00"
+                },
+                {
+                    "number": 148,
+                    "title": "Typo in compute_surfaces error message",
+                    "created_at": "2023-01-23T21:19:41+00:00",
+                    "closed_at": "2023-02-02T14:58:03+00:00"
+                },
+                {
+                    "number": 146,
+                    "title": "Coreg doesn't load in report on hbaws42",
+                    "created_at": "2022-12-19T11:34:56+00:00",
+                    "closed_at": "2023-03-25T15:12:21+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "Rogue dirs in the preprocessing report directory cause an error",
+                    "created_at": "2022-12-13T11:48:05+00:00",
+                    "closed_at": "2023-02-02T14:20:03+00:00"
+                },
+                {
+                    "number": 132,
+                    "title": "fix_sign_ambiguity appears before coreg, beamform_and_parcellate in the config workflow report plot",
+                    "created_at": "2022-11-29T13:47:43+00:00",
+                    "closed_at": "2022-12-02T16:14:53+00:00"
+                },
+                {
+                    "number": 123,
+                    "title": "Manual ICA Issues",
+                    "created_at": "2022-11-18T09:40:03+00:00",
+                    "closed_at": "2022-11-29T10:12:31+00:00"
+                },
+                {
+                    "number": 115,
+                    "title": "Add list of options for preproc",
+                    "created_at": "2022-11-10T16:45:15+00:00",
+                    "closed_at": "2023-11-09T17:05:00+00:00"
+                },
+                {
+                    "number": 113,
+                    "title": "report directory naming convention",
+                    "created_at": "2022-11-09T10:30:19+00:00",
+                    "closed_at": "2022-11-11T10:03:22+00:00"
+                },
+                {
+                    "number": 112,
+                    "title": "use a default window (in sec) for preproc report spectrum",
+                    "created_at": "2022-11-09T10:25:53+00:00",
+                    "closed_at": "2022-11-11T10:03:54+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "maxfilter README example",
+                    "created_at": "2022-11-04T15:09:57+00:00",
+                    "closed_at": "2022-11-18T09:17:04+00:00"
+                },
+                {
+                    "number": 109,
+                    "title": "maxfilter.py Import Error",
+                    "created_at": "2022-11-04T14:46:52+00:00",
+                    "closed_at": "2022-11-18T09:17:05+00:00"
+                },
+                {
+                    "number": 105,
+                    "title": "Recommendations should be documented",
+                    "created_at": "2022-10-28T12:53:01+00:00",
+                    "closed_at": "2023-11-15T16:20:17+00:00"
+                },
+                {
+                    "number": 102,
+                    "title": "Typos and documentation improvements",
+                    "created_at": "2022-10-25T14:32:44+00:00",
+                    "closed_at": "2023-03-20T14:03:58+00:00"
+                },
+                {
+                    "number": 95,
+                    "title": "Source recon report: Sign flip plots are not displayed when switching between subjects using arrow keys",
+                    "created_at": "2022-10-19T15:53:13+00:00",
+                    "closed_at": "2022-11-11T10:04:16+00:00"
+                },
+                {
+                    "number": 75,
+                    "title": "make osl_maxfilter operable from a script call",
+                    "created_at": "2022-09-29T09:42:27+00:00",
+                    "closed_at": "2022-11-18T09:17:19+00:00"
+                },
+                {
+                    "number": 74,
+                    "title": "Separate batch \"coregister\" into separate surface, coregister and forward to match the underlying functions",
+                    "created_at": "2022-09-29T09:29:28+00:00",
+                    "closed_at": "2022-10-14T10:51:05+00:00"
+                },
+                {
+                    "number": 72,
+                    "title": "Option to just beamform via the config in source reconstruction",
+                    "created_at": "2022-09-27T14:37:16+00:00",
+                    "closed_at": "2022-10-14T10:52:38+00:00"
+                },
+                {
+                    "number": 71,
+                    "title": "Source reconstruction report improvements",
+                    "created_at": "2022-09-27T14:36:11+00:00",
+                    "closed_at": "2022-11-11T10:04:36+00:00"
+                },
+                {
+                    "number": 70,
+                    "title": "Add global panel to reports",
+                    "created_at": "2022-09-27T10:59:57+00:00",
+                    "closed_at": "2022-11-11T10:04:44+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "Change default output structure of preprocessing",
+                    "created_at": "2022-09-27T10:58:12+00:00",
+                    "closed_at": "2022-11-08T10:50:43+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "request: coreg report with legend",
+                    "created_at": "2022-09-27T10:02:18+00:00",
+                    "closed_at": "2022-09-27T16:32:48+00:00"
+                },
+                {
+                    "number": 62,
+                    "title": "Restructure output files in source reconstruction",
+                    "created_at": "2022-09-22T13:29:17+00:00",
+                    "closed_at": "2022-09-22T14:28:34+00:00"
+                },
+                {
+                    "number": 60,
+                    "title": "report.gen_report fails if there is only one channel type",
+                    "created_at": "2022-09-21T10:27:41+00:00",
+                    "closed_at": "2022-09-21T15:49:29+00:00"
+                },
+                {
+                    "number": 58,
+                    "title": "report ICA only shows single topo for Elekta data",
+                    "created_at": "2022-09-16T14:53:41+00:00",
+                    "closed_at": "2022-09-16T15:58:35+00:00"
+                },
+                {
+                    "number": 56,
+                    "title": "Preproc bad segment detection doesn't detect zeros",
+                    "created_at": "2022-09-15T17:53:51+00:00",
+                    "closed_at": "2022-10-03T10:44:42+00:00"
+                },
+                {
+                    "number": 54,
+                    "title": "Report doesn't show bad channels",
+                    "created_at": "2022-09-15T14:21:38+00:00",
+                    "closed_at": "2022-09-16T13:46:37+00:00"
+                },
+                {
+                    "number": 53,
+                    "title": "adding Elekta channel descriptions",
+                    "created_at": "2022-09-15T14:00:21+00:00",
+                    "closed_at": "2022-09-16T14:51:43+00:00"
+                },
+                {
+                    "number": 52,
+                    "title": "Variance/correlation plot in parcellation panel of source reconstruction report",
+                    "created_at": "2022-09-14T13:28:22+00:00",
+                    "closed_at": "2022-09-27T16:34:31+00:00"
+                },
+                {
+                    "number": 51,
+                    "title": "Argument ordering in preprocessing functions",
+                    "created_at": "2022-09-14T07:44:12+00:00",
+                    "closed_at": "2022-09-22T09:29:51+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "logger error in batch processing",
+                    "created_at": "2022-09-08T09:38:08+00:00",
+                    "closed_at": "2022-09-08T09:39:56+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "Suggestions for report improvement",
+                    "created_at": "2022-09-07T13:19:17+00:00",
+                    "closed_at": "2022-09-08T09:12:45+00:00"
+                },
+                {
+                    "number": 33,
+                    "title": "File structure of preprocessing output",
+                    "created_at": "2022-09-02T14:49:06+00:00",
+                    "closed_at": "2022-09-05T14:05:26+00:00"
+                },
+                {
+                    "number": 29,
+                    "title": "mne.preprocessing.annotate_flat no longer available",
+                    "created_at": "2022-08-17T12:55:56+00:00",
+                    "closed_at": "2023-03-20T14:04:10+00:00"
+                },
+                {
+                    "number": 28,
+                    "title": "Feature request: generate report with existing plots",
+                    "created_at": "2022-08-02T16:14:37+00:00",
+                    "closed_at": "2022-09-05T14:39:14+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "osl_maxfilter returns log filenames with _tsss_tsss extension",
+                    "created_at": "2022-08-02T12:51:11+00:00",
+                    "closed_at": "2022-09-27T15:29:05+00:00"
+                },
+                {
+                    "number": 26,
+                    "title": "osl_maxfilter 'adjacent' output returns error",
+                    "created_at": "2022-08-01T12:37:38+00:00",
+                    "closed_at": "2023-03-18T11:12:24+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "report doesn't show ICA",
+                    "created_at": "2022-06-07T10:14:50+00:00",
+                    "closed_at": "2022-06-27T09:52:09+00:00"
+                },
+                {
+                    "number": 20,
+                    "title": "report can't plot ecg",
+                    "created_at": "2022-06-06T16:59:35+00:00",
+                    "closed_at": "2022-06-27T09:51:54+00:00"
+                },
+                {
+                    "number": 9,
+                    "title": "Error loading in SPM data when event-value is str",
+                    "created_at": "2022-02-21T16:50:52+00:00",
+                    "closed_at": "2022-05-31T15:47:45+00:00"
+                },
+                {
+                    "number": 8,
+                    "title": "Feature request: EOG timeseries",
+                    "created_at": "2022-02-18T12:56:29+00:00",
+                    "closed_at": "2022-09-05T14:38:10+00:00"
+                },
+                {
+                    "number": 6,
+                    "title": "new config style breaks plot_preproc_flowchart ",
+                    "created_at": "2022-02-07T11:46:27+00:00",
+                    "closed_at": "2022-02-07T14:56:24+00:00"
+                },
+                {
+                    "number": 4,
+                    "title": "Filtering before ICA",
+                    "created_at": "2022-02-02T10:52:04+00:00",
+                    "closed_at": "2022-09-12T13:12:11+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "fslpy.utils.filetree is deprecated",
+                    "created_at": "2022-01-27T16:02:18+00:00",
+                    "closed_at": "2022-01-31T12:47:58+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 899996,
+                "HTML": 74387,
+                "Makefile": 269
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 11729,
+            "total_ccn": 2771,
+            "avg_ccn": 5.49,
+            "nloc_per_file": 107.61,
+            "duplicate_rate": 10.58
+        }
+    }
+}

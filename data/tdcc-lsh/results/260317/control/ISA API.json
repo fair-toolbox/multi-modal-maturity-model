@@ -1,0 +1,2521 @@
+{
+    "ISA API": {
+        "papers": {
+            "id": "34528664",
+            "source": "MED",
+            "pmid": "34528664",
+            "pmcid": "PMC8444265",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC8444265"
+                ]
+            },
+            "doi": "10.1093/gigascience/giab060",
+            "title": "ISA API: An open platform for interoperable life science experimental metadata.",
+            "authorString": "Johnson D, Batista D, Batista D, Cochrane K, Davey RP, Etuk A, Gonzalez-Beltran A, Haug K, Izzo M, Larralde M, Lawson TN, Minotto A, Moreno P, Nainala VC, O'Donovan C, Pireddu L, Roger P, Shaw F, Steinbeck C, Weber RJM, Sansone SA, Rocca-Serra P.",
+            "journalTitle": "Gigascience",
+            "issue": "9",
+            "journalVolume": "10",
+            "pubYear": "2021",
+            "journalIssn": "2047-217x",
+            "pageInfo": "giab060",
+            "pubType": "research support, non-u.s. gov't; research-article; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "Y",
+            "citedByCount": 19,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "Y",
+            "tmAccessionTypeList": {
+                "accessionType": [
+                    "rrid",
+                    "doi"
+                ]
+            },
+            "firstIndexDate": "2021-09-17",
+            "firstPublicationDate": "2021-09-01"
+        },
+        "github": {
+            "repo": {
+                "id": 32074183,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzMjA3NDE4Mw==",
+                "name": "isa-api",
+                "full_name": "ISA-tools/isa-api",
+                "private": false,
+                "owner": {
+                    "login": "ISA-tools",
+                    "id": 517700,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjUxNzcwMA==",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/517700?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ISA-tools",
+                    "html_url": "https://github.com/ISA-tools",
+                    "followers_url": "https://api.github.com/users/ISA-tools/followers",
+                    "following_url": "https://api.github.com/users/ISA-tools/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ISA-tools/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ISA-tools/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ISA-tools/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ISA-tools/orgs",
+                    "repos_url": "https://api.github.com/users/ISA-tools/repos",
+                    "events_url": "https://api.github.com/users/ISA-tools/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ISA-tools/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/ISA-tools/isa-api",
+                "description": "ISA tools API",
+                "fork": false,
+                "url": "https://api.github.com/repos/ISA-tools/isa-api",
+                "forks_url": "https://api.github.com/repos/ISA-tools/isa-api/forks",
+                "keys_url": "https://api.github.com/repos/ISA-tools/isa-api/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/ISA-tools/isa-api/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/ISA-tools/isa-api/teams",
+                "hooks_url": "https://api.github.com/repos/ISA-tools/isa-api/hooks",
+                "issue_events_url": "https://api.github.com/repos/ISA-tools/isa-api/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/ISA-tools/isa-api/events",
+                "assignees_url": "https://api.github.com/repos/ISA-tools/isa-api/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/ISA-tools/isa-api/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/ISA-tools/isa-api/tags",
+                "blobs_url": "https://api.github.com/repos/ISA-tools/isa-api/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ISA-tools/isa-api/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ISA-tools/isa-api/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/ISA-tools/isa-api/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/ISA-tools/isa-api/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/ISA-tools/isa-api/languages",
+                "stargazers_url": "https://api.github.com/repos/ISA-tools/isa-api/stargazers",
+                "contributors_url": "https://api.github.com/repos/ISA-tools/isa-api/contributors",
+                "subscribers_url": "https://api.github.com/repos/ISA-tools/isa-api/subscribers",
+                "subscription_url": "https://api.github.com/repos/ISA-tools/isa-api/subscription",
+                "commits_url": "https://api.github.com/repos/ISA-tools/isa-api/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/ISA-tools/isa-api/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/ISA-tools/isa-api/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/ISA-tools/isa-api/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/ISA-tools/isa-api/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/ISA-tools/isa-api/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/ISA-tools/isa-api/merges",
+                "archive_url": "https://api.github.com/repos/ISA-tools/isa-api/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/ISA-tools/isa-api/downloads",
+                "issues_url": "https://api.github.com/repos/ISA-tools/isa-api/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/ISA-tools/isa-api/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/ISA-tools/isa-api/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/ISA-tools/isa-api/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/ISA-tools/isa-api/labels{/name}",
+                "releases_url": "https://api.github.com/repos/ISA-tools/isa-api/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/ISA-tools/isa-api/deployments",
+                "created_at": "2015-03-12T11:49:55Z",
+                "updated_at": "2026-02-09T15:09:41Z",
+                "pushed_at": "2026-03-13T14:49:22Z",
+                "git_url": "git://github.com/ISA-tools/isa-api.git",
+                "ssh_url": "git@github.com:ISA-tools/isa-api.git",
+                "clone_url": "https://github.com/ISA-tools/isa-api.git",
+                "svn_url": "https://github.com/ISA-tools/isa-api",
+                "homepage": "https://isa-tools.org",
+                "size": 168470,
+                "stargazers_count": 46,
+                "watchers_count": 46,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": true,
+                "has_discussions": true,
+                "forks_count": 43,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 44,
+                "license": {
+                    "key": "other",
+                    "name": "Other",
+                    "spdx_id": "NOASSERTION",
+                    "url": null,
+                    "node_id": "MDc6TGljZW5zZTA="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "data-management",
+                    "experimental-metadata",
+                    "isa",
+                    "life-sciences-image",
+                    "python"
+                ],
+                "visibility": "public",
+                "forks": 43,
+                "open_issues": 44,
+                "watchers": 46,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "ISA-tools",
+                    "id": 517700,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjUxNzcwMA==",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/517700?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ISA-tools",
+                    "html_url": "https://github.com/ISA-tools",
+                    "followers_url": "https://api.github.com/users/ISA-tools/followers",
+                    "following_url": "https://api.github.com/users/ISA-tools/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ISA-tools/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ISA-tools/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ISA-tools/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ISA-tools/orgs",
+                    "repos_url": "https://api.github.com/users/ISA-tools/repos",
+                    "events_url": "https://api.github.com/users/ISA-tools/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ISA-tools/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 43,
+                "subscribers_count": 8
+            },
+            "contributors": [
+                {
+                    "login": "djcomlab",
+                    "contributions": 1546
+                },
+                {
+                    "login": "Zigur",
+                    "contributions": 562
+                },
+                {
+                    "login": "proccaserra",
+                    "contributions": 464
+                },
+                {
+                    "login": "agbeltran",
+                    "contributions": 437
+                },
+                {
+                    "login": "terazus",
+                    "contributions": 327
+                },
+                {
+                    "login": "machinelit",
+                    "contributions": 130
+                },
+                {
+                    "login": "alfieabdulrahman",
+                    "contributions": 39
+                },
+                {
+                    "login": "knirirr",
+                    "contributions": 37
+                },
+                {
+                    "login": "ptth222",
+                    "contributions": 20
+                },
+                {
+                    "login": "pkrog",
+                    "contributions": 18
+                },
+                {
+                    "login": "vedina",
+                    "contributions": 10
+                },
+                {
+                    "login": "ntk73",
+                    "contributions": 9
+                },
+                {
+                    "login": "oyurekten",
+                    "contributions": 5
+                },
+                {
+                    "login": "pcm32",
+                    "contributions": 4
+                },
+                {
+                    "login": "yjarosz",
+                    "contributions": 4
+                },
+                {
+                    "login": "drj11",
+                    "contributions": 1
+                },
+                {
+                    "login": "nsoranzo",
+                    "contributions": 1
+                },
+                {
+                    "login": "nokome",
+                    "contributions": 1
+                },
+                {
+                    "login": "jshoyer",
+                    "contributions": 1
+                },
+                {
+                    "login": "rabuono",
+                    "contributions": 1
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 609,
+                    "title": "\"Normalisation Name\" not picked up, not recognised by ISA-Tab validator using default configuration in ISA-API. v.0.14.3",
+                    "created_at": "2026-02-06T12:15:31+00:00",
+                    "closed_at": "2026-02-09T15:09:11+00:00"
+                },
+                {
+                    "number": 608,
+                    "title": "KeyError: 'data_schema.json' in json2jsonld.py",
+                    "created_at": "2026-02-06T12:13:29+00:00",
+                    "closed_at": "2026-02-09T15:09:10+00:00"
+                },
+                {
+                    "number": 605,
+                    "title": "Metabolite Assignment File support in 'Datafile.py'",
+                    "created_at": "2025-11-25T14:06:01+00:00",
+                    "closed_at": "2026-02-09T15:09:09+00:00"
+                },
+                {
+                    "number": 598,
+                    "title": "upgrade ols.py and associated test to take into account changes to OLS v2 api + EFO not found from OLS v2 ontology list",
+                    "created_at": "2025-10-31T10:51:18+00:00",
+                    "closed_at": "2025-11-03T14:32:54+00:00"
+                },
+                {
+                    "number": 597,
+                    "title": "mock access to service to avoid test failure during build",
+                    "created_at": "2025-10-29T17:18:22+00:00",
+                    "closed_at": "2025-11-03T14:15:10+00:00"
+                },
+                {
+                    "number": 591,
+                    "title": "jsonschema.RefResolve deprecation",
+                    "created_at": "2025-10-22T09:47:50+00:00",
+                    "closed_at": "2025-11-03T15:02:21+00:00"
+                },
+                {
+                    "number": 584,
+                    "title": "investigate mismatch for unit _id",
+                    "created_at": "2025-10-06T13:43:26+00:00",
+                    "closed_at": "2025-11-13T20:07:41+00:00"
+                },
+                {
+                    "number": 583,
+                    "title": "Python 3.12 works",
+                    "created_at": "2025-10-05T19:56:08+00:00",
+                    "closed_at": "2025-11-12T09:37:12+00:00"
+                },
+                {
+                    "number": 582,
+                    "title": "Create protocols in sample tables when they don't have input and outputs",
+                    "created_at": "2025-09-23T14:15:08+00:00",
+                    "closed_at": "2025-10-28T13:09:42+00:00"
+                },
+                {
+                    "number": 575,
+                    "title": "deal with SQLAlchemy breaking change when upgrading from 1.4 to 2.+",
+                    "created_at": "2025-04-01T10:56:32+00:00",
+                    "closed_at": "2025-11-13T18:02:24+00:00"
+                },
+                {
+                    "number": 571,
+                    "title": "cannot install isatools package due to ModuleNotFoundError: No module named 'distutils'",
+                    "created_at": "2025-01-09T12:58:02+00:00",
+                    "closed_at": "2025-11-13T18:08:15+00:00"
+                },
+                {
+                    "number": 570,
+                    "title": "Cannot install isatools package due to PyYAML dependency problem",
+                    "created_at": "2025-01-06T15:03:58+00:00",
+                    "closed_at": "2025-11-13T18:04:42+00:00"
+                },
+                {
+                    "number": 569,
+                    "title": "in isatab.dump.write.py, error not caught in flatten() method",
+                    "created_at": "2024-09-06T15:28:30+00:00",
+                    "closed_at": "2025-04-10T15:12:45+00:00"
+                },
+                {
+                    "number": 566,
+                    "title": "Add new test to catch plink related issue when serializing to TAB",
+                    "created_at": "2024-08-05T10:37:30+00:00",
+                    "closed_at": "2025-11-13T18:20:20+00:00"
+                },
+                {
+                    "number": 563,
+                    "title": "Test deprecation messages",
+                    "created_at": "2024-07-12T14:38:18+00:00",
+                    "closed_at": "2025-10-22T14:33:46+00:00"
+                },
+                {
+                    "number": 562,
+                    "title": "Upgrading to Python 3.12",
+                    "created_at": "2024-07-12T14:26:13+00:00",
+                    "closed_at": "2024-07-22T12:03:44+00:00"
+                },
+                {
+                    "number": 557,
+                    "title": "mock pubmed API call in test",
+                    "created_at": "2024-03-25T15:43:38+00:00",
+                    "closed_at": "2024-08-30T11:51:06+00:00"
+                },
+                {
+                    "number": 545,
+                    "title": "derives_from relation on Material",
+                    "created_at": "2024-02-29T13:36:03+00:00",
+                    "closed_at": "2025-04-10T14:47:48+00:00"
+                },
+                {
+                    "number": 544,
+                    "title": "Installation Before Testing",
+                    "created_at": "2024-02-29T13:17:41+00:00",
+                    "closed_at": "2024-07-22T11:52:57+00:00"
+                },
+                {
+                    "number": 540,
+                    "title": "Required Fields In Investigation XML Config",
+                    "created_at": "2024-02-23T07:53:58+00:00",
+                    "closed_at": "2025-11-13T18:27:57+00:00"
+                },
+                {
+                    "number": 528,
+                    "title": "rewrite test for test_get_ontology in test_isatools_utils.py",
+                    "created_at": "2024-02-01T14:37:47+00:00",
+                    "closed_at": "2024-07-22T11:56:26+00:00"
+                },
+                {
+                    "number": 523,
+                    "title": "Characteristic values are recast as string in ISA tab",
+                    "created_at": "2024-01-23T16:54:22+00:00",
+                    "closed_at": "2025-11-13T18:10:28+00:00"
+                },
+                {
+                    "number": 520,
+                    "title": "ISA Validation Configurations Too Restrictive",
+                    "created_at": "2024-01-19T07:13:21+00:00",
+                    "closed_at": "2025-11-13T19:33:42+00:00"
+                },
+                {
+                    "number": 511,
+                    "title": "Comments[] attached to assays aren't serialized",
+                    "created_at": "2023-11-02T12:40:49+00:00",
+                    "closed_at": "2024-07-22T11:57:44+00:00"
+                },
+                {
+                    "number": 506,
+                    "title": "OLS3->OLS4 update",
+                    "created_at": "2023-10-23T15:30:26+00:00",
+                    "closed_at": "2024-07-22T11:59:28+00:00"
+                },
+                {
+                    "number": 503,
+                    "title": "Unable to generate ISA-Tab files for a study and associated assays ",
+                    "created_at": "2023-09-21T09:07:36+00:00",
+                    "closed_at": "2023-09-29T19:32:27+00:00"
+                },
+                {
+                    "number": 498,
+                    "title": "Unable to install isatools due to PyYAML build failure",
+                    "created_at": "2023-07-26T03:19:29+00:00",
+                    "closed_at": "2024-07-22T12:00:16+00:00"
+                },
+                {
+                    "number": 497,
+                    "title": "\"Performer\" field missing",
+                    "created_at": "2023-04-12T16:10:23+00:00",
+                    "closed_at": "2024-07-22T12:00:50+00:00"
+                },
+                {
+                    "number": 496,
+                    "title": "Typo in publication name shown in README.md",
+                    "created_at": "2023-02-14T09:45:35+00:00",
+                    "closed_at": "2023-02-14T09:47:10+00:00"
+                },
+                {
+                    "number": 487,
+                    "title": "0.13.0 installation error",
+                    "created_at": "2023-01-23T14:27:47+00:00",
+                    "closed_at": "2023-02-13T14:34:46+00:00"
+                },
+                {
+                    "number": 485,
+                    "title": "create a repository under ISA-tools organisation for all ISA JSON-LD contexts",
+                    "created_at": "2022-12-14T17:14:03+00:00",
+                    "closed_at": "2024-07-22T12:02:53+00:00"
+                },
+                {
+                    "number": 483,
+                    "title": "comment_schema.json is different depending on the source",
+                    "created_at": "2022-12-09T15:17:08+00:00",
+                    "closed_at": "2025-11-13T19:36:06+00:00"
+                },
+                {
+                    "number": 481,
+                    "title": "Wikidata namespace(s)",
+                    "created_at": "2022-11-30T13:19:24+00:00",
+                    "closed_at": "2023-02-13T14:36:50+00:00"
+                },
+                {
+                    "number": 469,
+                    "title": "[TODO] Tasks for release",
+                    "created_at": "2022-10-25T10:28:28+00:00",
+                    "closed_at": "2023-02-13T14:39:30+00:00"
+                },
+                {
+                    "number": 462,
+                    "title": "pandas incompatibility (isatools bioconda distribution)",
+                    "created_at": "2022-09-27T08:24:06+00:00",
+                    "closed_at": "2022-10-28T14:08:18+00:00"
+                },
+                {
+                    "number": 458,
+                    "title": "bug in create mode",
+                    "created_at": "2022-08-16T16:11:27+00:00",
+                    "closed_at": "2022-10-25T15:49:01+00:00"
+                },
+                {
+                    "number": 451,
+                    "title": "usage/installation on Mac M1 chip",
+                    "created_at": "2022-06-30T10:02:53+00:00",
+                    "closed_at": "2022-10-25T11:37:03+00:00"
+                },
+                {
+                    "number": 446,
+                    "title": "Error when opening Metabolights study MTBLS719",
+                    "created_at": "2022-04-21T08:23:11+00:00",
+                    "closed_at": "2022-10-25T11:39:07+00:00"
+                },
+                {
+                    "number": 443,
+                    "title": "make new release",
+                    "created_at": "2022-02-22T17:02:11+00:00",
+                    "closed_at": "2025-11-13T19:54:33+00:00"
+                },
+                {
+                    "number": 433,
+                    "title": "Add @id to ISA JSON schemas",
+                    "created_at": "2021-11-25T16:35:53+00:00",
+                    "closed_at": "2022-07-21T13:08:18+00:00"
+                },
+                {
+                    "number": 432,
+                    "title": "'TypeError: Could not resolve data type labeled:' when conversion from Tab to JSON",
+                    "created_at": "2021-11-24T11:42:09+00:00",
+                    "closed_at": "2024-07-22T12:06:25+00:00"
+                },
+                {
+                    "number": 428,
+                    "title": "Issue with changes to pandas ParserError in pandas v1.3.4 ",
+                    "created_at": "2021-11-12T18:11:08+00:00",
+                    "closed_at": "2022-10-25T14:38:47+00:00"
+                },
+                {
+                    "number": 427,
+                    "title": "ISAjson validation not running until the end",
+                    "created_at": "2021-10-22T07:56:41+00:00",
+                    "closed_at": "2025-11-13T19:52:55+00:00"
+                },
+                {
+                    "number": 421,
+                    "title": "utf-8 encoded json fails UTF-8 check",
+                    "created_at": "2021-10-15T14:42:12+00:00",
+                    "closed_at": "2022-10-25T14:37:42+00:00"
+                },
+                {
+                    "number": 420,
+                    "title": "samples not well serialized in JSON? ",
+                    "created_at": "2021-10-08T16:18:40+00:00",
+                    "closed_at": "2022-07-21T13:08:18+00:00"
+                },
+                {
+                    "number": 416,
+                    "title": "investigate deserialization of Protocol Parameter Value",
+                    "created_at": "2021-09-20T09:34:08+00:00",
+                    "closed_at": "2025-11-13T20:04:42+00:00"
+                },
+                {
+                    "number": 414,
+                    "title": "isajson: create @id for a number of ISA objects currently 'orphaned'",
+                    "created_at": "2021-08-18T14:43:15+00:00",
+                    "closed_at": "2025-11-13T19:50:53+00:00"
+                },
+                {
+                    "number": 409,
+                    "title": "issue on Technology Type object in. assay_schema.json ",
+                    "created_at": "2021-07-09T09:39:46+00:00",
+                    "closed_at": "2025-11-13T19:55:43+00:00"
+                },
+                {
+                    "number": 407,
+                    "title": "BDD: Behave not compatible with Pandas v1.3.0+",
+                    "created_at": "2021-07-07T09:29:06+00:00",
+                    "closed_at": "2022-10-25T14:38:59+00:00"
+                },
+                {
+                    "number": 406,
+                    "title": "Characteristic Categories should be serialised as Ontology Annotations in ISA-TAB",
+                    "created_at": "2021-07-01T18:00:14+00:00",
+                    "closed_at": "2025-11-13T20:05:54+00:00"
+                },
+                {
+                    "number": 400,
+                    "title": "Comment[] attached to Characteristics are not serialized",
+                    "created_at": "2021-06-17T17:03:35+00:00",
+                    "closed_at": "2024-07-26T12:24:51+00:00"
+                },
+                {
+                    "number": 399,
+                    "title": "Document ISA-Tab patterns",
+                    "created_at": "2021-06-11T18:20:01+00:00",
+                    "closed_at": "2025-11-13T19:46:03+00:00"
+                },
+                {
+                    "number": 398,
+                    "title": "Duplicate Protocol names in studies generated from Datascriptor",
+                    "created_at": "2021-05-24T14:52:30+00:00",
+                    "closed_at": "2021-07-05T15:35:24+00:00"
+                },
+                {
+                    "number": 397,
+                    "title": "Investigation addingg a Characteristic Declaration section in the ISA i_inv file under \u2018Study Section",
+                    "created_at": "2021-05-20T21:50:32+00:00",
+                    "closed_at": "2022-10-25T11:36:24+00:00"
+                },
+                {
+                    "number": 394,
+                    "title": "string index out of range, on well-formed document",
+                    "created_at": "2021-04-12T08:45:30+00:00",
+                    "closed_at": "2021-04-12T13:05:28+00:00"
+                },
+                {
+                    "number": 392,
+                    "title": "write_assay_table_files not working",
+                    "created_at": "2021-03-16T15:18:21+00:00",
+                    "closed_at": "2022-10-25T11:34:18+00:00"
+                },
+                {
+                    "number": 390,
+                    "title": "ISA cookbook - broken logo image links on all Hands-on practicals pages",
+                    "created_at": "2021-03-04T12:15:07+00:00",
+                    "closed_at": "2022-10-25T11:33:47+00:00"
+                },
+                {
+                    "number": 389,
+                    "title": "Allow a mode to force substitution of protocol type strings if a synonym is used in a Protocol",
+                    "created_at": "2021-02-25T14:39:37+00:00",
+                    "closed_at": "2022-10-25T11:33:36+00:00"
+                },
+                {
+                    "number": 388,
+                    "title": "Invalid JSON in isa_study_design_element_schema.json",
+                    "created_at": "2021-02-19T15:35:34+00:00",
+                    "closed_at": "2022-10-25T11:33:23+00:00"
+                },
+                {
+                    "number": 385,
+                    "title": "Tip: Testing pypi deployment with testpy",
+                    "created_at": "2021-02-02T12:56:40+00:00",
+                    "closed_at": "2021-02-25T14:21:22+00:00"
+                },
+                {
+                    "number": 381,
+                    "title": "All UUID created during Model.py/OntologyAnnotation.__init__() are duplicates",
+                    "created_at": "2021-01-18T21:56:51+00:00",
+                    "closed_at": "2021-01-25T10:59:42+00:00"
+                },
+                {
+                    "number": 378,
+                    "title": "File extension support for Product Nodes ",
+                    "created_at": "2020-12-15T18:55:21+00:00",
+                    "closed_at": "2021-01-18T11:02:28+00:00"
+                },
+                {
+                    "number": 377,
+                    "title": "Add pertinent error message if no options and/or values are being supplied for a protocol parameter in an Assay workflow",
+                    "created_at": "2020-12-07T12:18:59+00:00",
+                    "closed_at": "2021-01-25T11:01:06+00:00"
+                },
+                {
+                    "number": 374,
+                    "title": "Message printed out on import",
+                    "created_at": "2020-11-18T19:22:03+00:00",
+                    "closed_at": "2020-11-24T11:21:03+00:00"
+                },
+                {
+                    "number": 372,
+                    "title": "create a helper function to show users current ISA Protocol.type values",
+                    "created_at": "2020-11-11T15:12:18+00:00",
+                    "closed_at": "2021-01-27T18:58:47+00:00"
+                },
+                {
+                    "number": 371,
+                    "title": "Protocol Type inference is incorrect",
+                    "created_at": "2020-11-11T10:03:19+00:00",
+                    "closed_at": "2021-02-25T14:28:44+00:00"
+                },
+                {
+                    "number": 370,
+                    "title": "Uniform strings describing assay nodes",
+                    "created_at": "2020-11-09T12:47:15+00:00",
+                    "closed_at": "2020-11-18T19:15:33+00:00"
+                },
+                {
+                    "number": 369,
+                    "title": "Generate one assay table per assay type",
+                    "created_at": "2020-11-09T12:32:17+00:00",
+                    "closed_at": "2020-11-17T17:14:58+00:00"
+                },
+                {
+                    "number": 368,
+                    "title": "General clean-up of the code for v0.12",
+                    "created_at": "2020-11-09T12:17:18+00:00",
+                    "closed_at": "2020-12-15T16:51:10+00:00"
+                },
+                {
+                    "number": 364,
+                    "title": "node error while writing study files",
+                    "created_at": "2020-10-09T07:57:45+00:00",
+                    "closed_at": "2020-10-16T10:06:59+00:00"
+                },
+                {
+                    "number": 362,
+                    "title": "Parsing ISA tab to JSON",
+                    "created_at": "2020-10-01T11:55:08+00:00",
+                    "closed_at": "2022-10-25T11:28:35+00:00"
+                },
+                {
+                    "number": 360,
+                    "title": "isaTools/Model/Comment raises ISAModelAttributeError when setting comment value with valid value",
+                    "created_at": "2020-07-15T14:38:57+00:00",
+                    "closed_at": "2021-01-25T11:00:11+00:00"
+                },
+                {
+                    "number": 358,
+                    "title": "Missing column \"Protocol Name\" if protocol is on \"non-standard\" type",
+                    "created_at": "2020-06-03T16:45:59+00:00",
+                    "closed_at": "2020-11-09T12:26:50+00:00"
+                },
+                {
+                    "number": 357,
+                    "title": "Dependencies Evaluation/Review",
+                    "created_at": "2020-05-14T10:48:24+00:00",
+                    "closed_at": "2021-01-18T14:51:26+00:00"
+                },
+                {
+                    "number": 356,
+                    "title": "Connector from Datascriptor-like Arms and ISA-API create Arms",
+                    "created_at": "2020-04-29T18:08:28+00:00",
+                    "closed_at": "2020-07-07T10:32:22+00:00"
+                },
+                {
+                    "number": 355,
+                    "title": "Creating connectors between JSON and OrderedDict representations for AssayGraph templates",
+                    "created_at": "2020-04-22T18:14:42+00:00",
+                    "closed_at": "2020-04-29T18:03:57+00:00"
+                },
+                {
+                    "number": 354,
+                    "title": "allow ISA-Tab serializer to use double quotes ",
+                    "created_at": "2020-04-06T15:11:30+00:00",
+                    "closed_at": "2022-10-25T11:28:27+00:00"
+                },
+                {
+                    "number": 353,
+                    "title": "Writing big study/assay files",
+                    "created_at": "2020-01-24T09:27:03+00:00",
+                    "closed_at": "2022-10-25T11:27:33+00:00"
+                },
+                {
+                    "number": 352,
+                    "title": "Handling quantitative fields in FactorValues (and possibly OntologyAnnotation and Chars)",
+                    "created_at": "2020-01-16T11:24:36+00:00",
+                    "closed_at": "2022-10-25T11:27:16+00:00"
+                },
+                {
+                    "number": 351,
+                    "title": "isatools pip3.5 install has naming collision with mzml2isa",
+                    "created_at": "2020-01-14T18:12:58+00:00",
+                    "closed_at": "2022-10-25T11:27:00+00:00"
+                },
+                {
+                    "number": 347,
+                    "title": "Parameter Units not displayed in Study File",
+                    "created_at": "2019-12-09T12:47:55+00:00",
+                    "closed_at": "2019-12-20T12:17:02+00:00"
+                },
+                {
+                    "number": 346,
+                    "title": "mappings in models.py are all set to `none` by the studyDesign serializer",
+                    "created_at": "2019-11-13T15:03:13+00:00",
+                    "closed_at": "2019-12-18T16:46:18+00:00"
+                },
+                {
+                    "number": 345,
+                    "title": "Add 'Phenotyping' to the supported protocol type list for MIAPPE compliance",
+                    "created_at": "2019-10-24T11:52:31+00:00",
+                    "closed_at": "2021-02-25T14:44:16+00:00"
+                },
+                {
+                    "number": 344,
+                    "title": "isatab2json problem in new isa-tools version v0.10.4",
+                    "created_at": "2019-10-22T15:26:41+00:00",
+                    "closed_at": "2021-03-01T16:04:34+00:00"
+                },
+                {
+                    "number": 343,
+                    "title": "consistency of schema keys and implementation: ",
+                    "created_at": "2019-10-15T11:21:27+00:00",
+                    "closed_at": "2021-01-18T13:05:21+00:00"
+                },
+                {
+                    "number": 342,
+                    "title": "Ongoing work for the `study_design/timeline` branch",
+                    "created_at": "2019-10-07T15:57:37+00:00",
+                    "closed_at": "2020-11-09T12:22:47+00:00"
+                },
+                {
+                    "number": 339,
+                    "title": "Factor values issue",
+                    "created_at": "2019-08-26T12:08:02+00:00",
+                    "closed_at": "2022-10-25T11:26:39+00:00"
+                },
+                {
+                    "number": 338,
+                    "title": "ontology term serialisation issue from the create mode",
+                    "created_at": "2019-08-22T17:57:17+00:00",
+                    "closed_at": "2021-03-01T15:51:54+00:00"
+                },
+                {
+                    "number": 337,
+                    "title": "missing unit key triggers an error when deserializing study design",
+                    "created_at": "2019-07-26T15:53:12+00:00",
+                    "closed_at": "2019-12-18T16:45:50+00:00"
+                },
+                {
+                    "number": 335,
+                    "title": "create uuid for all OntologyAnnotation objects",
+                    "created_at": "2019-06-18T12:31:18+00:00",
+                    "closed_at": "2020-06-24T18:57:00+00:00"
+                },
+                {
+                    "number": 334,
+                    "title": "ISAJON serialiser does not create the study.CharacteristicCategories properly",
+                    "created_at": "2019-06-17T15:25:43+00:00",
+                    "closed_at": "2020-07-07T09:12:13+00:00"
+                },
+                {
+                    "number": 333,
+                    "title": "Allow Parameter Value selection in AssayGraph dict",
+                    "created_at": "2019-06-13T16:53:34+00:00",
+                    "closed_at": "2019-12-20T12:09:43+00:00"
+                },
+                {
+                    "number": 332,
+                    "title": "JSON dump problem",
+                    "created_at": "2019-05-21T09:50:01+00:00",
+                    "closed_at": "2021-01-25T10:59:17+00:00"
+                },
+                {
+                    "number": 331,
+                    "title": "Comments on Study Protocol and Study Factors are not written by ISA-Tab dump function",
+                    "created_at": "2019-05-06T22:06:34+00:00",
+                    "closed_at": "2020-07-07T09:15:09+00:00"
+                },
+                {
+                    "number": 329,
+                    "title": "Refactoring the SampleAssayPlan to a graph structure",
+                    "created_at": "2019-03-22T16:22:49+00:00",
+                    "closed_at": "2019-10-07T15:46:30+00:00"
+                },
+                {
+                    "number": 328,
+                    "title": "Typo in a comment",
+                    "created_at": "2019-03-05T14:15:34+00:00",
+                    "closed_at": "2020-11-09T12:22:24+00:00"
+                },
+                {
+                    "number": 327,
+                    "title": "Term Source from Study design descriptors not returned",
+                    "created_at": "2019-03-05T12:04:26+00:00",
+                    "closed_at": "2019-03-05T13:02:23+00:00"
+                },
+                {
+                    "number": 323,
+                    "title": "Hash (#) in protocol text causes parsing issues",
+                    "created_at": "2018-11-19T09:32:36+00:00",
+                    "closed_at": "2020-07-07T09:10:59+00:00"
+                },
+                {
+                    "number": 322,
+                    "title": "Failure to generate Assay Name is protocol type not recognized when serializing to Tab",
+                    "created_at": "2018-11-07T16:03:44+00:00",
+                    "closed_at": "2020-07-08T14:44:23+00:00"
+                },
+                {
+                    "number": 321,
+                    "title": "Refactor create mode to support StudyCells, StudyArms and Elements",
+                    "created_at": "2018-11-01T16:23:53+00:00",
+                    "closed_at": "2019-03-22T16:12:47+00:00"
+                },
+                {
+                    "number": 320,
+                    "title": "Support for Epochs and Epochs to SampleAssayPlan Mapping",
+                    "created_at": "2018-10-17T17:53:22+00:00",
+                    "closed_at": "2018-11-01T16:26:03+00:00"
+                },
+                {
+                    "number": 319,
+                    "title": "Missing protocol parameters cause errors",
+                    "created_at": "2018-10-11T12:22:52+00:00",
+                    "closed_at": "2022-10-25T11:25:28+00:00"
+                },
+                {
+                    "number": 318,
+                    "title": "Updates to create model to support different epoch types",
+                    "created_at": "2018-08-14T14:39:31+00:00",
+                    "closed_at": "2019-12-20T12:13:49+00:00"
+                },
+                {
+                    "number": 317,
+                    "title": "Integrate merge function from CUDDEL hackathon",
+                    "created_at": "2018-08-13T15:49:41+00:00",
+                    "closed_at": "2018-08-20T14:52:51+00:00"
+                },
+                {
+                    "number": 315,
+                    "title": "Update rtd documentation to match latest release",
+                    "created_at": "2018-08-13T15:44:46+00:00",
+                    "closed_at": "2021-03-01T15:52:09+00:00"
+                },
+                {
+                    "number": 314,
+                    "title": "Migrate isatools-galaxy code into ISA API",
+                    "created_at": "2018-08-13T15:42:03+00:00",
+                    "closed_at": "2018-08-17T15:04:09+00:00"
+                },
+                {
+                    "number": 313,
+                    "title": "Create model object serialization to/from JSON",
+                    "created_at": "2018-08-13T15:37:12+00:00",
+                    "closed_at": "2019-12-20T12:12:49+00:00"
+                },
+                {
+                    "number": 312,
+                    "title": "Tox tests fail due to \"import file mismatch\" problem",
+                    "created_at": "2018-08-02T15:19:07+00:00",
+                    "closed_at": "2018-08-07T15:01:42+00:00"
+                },
+                {
+                    "number": 311,
+                    "title": "Missing process if Extract name is missing in ISA-Tab",
+                    "created_at": "2018-08-02T15:14:19+00:00",
+                    "closed_at": "2019-07-08T11:49:38+00:00"
+                },
+                {
+                    "number": 310,
+                    "title": "ISA Create fails when using fractional factorial design with GC or LC assays",
+                    "created_at": "2018-08-02T12:44:42+00:00",
+                    "closed_at": "2018-08-07T13:36:30+00:00"
+                },
+                {
+                    "number": 309,
+                    "title": "Adding Comments to existing Person to a Study loaded fails to dump out",
+                    "created_at": "2018-07-19T09:17:57+00:00",
+                    "closed_at": "2018-07-24T15:12:39+00:00"
+                },
+                {
+                    "number": 308,
+                    "title": "Update to new version of pandas",
+                    "created_at": "2018-07-17T12:25:41+00:00",
+                    "closed_at": "2018-08-08T13:49:12+00:00"
+                },
+                {
+                    "number": 307,
+                    "title": "ISA create for NMR assay outputs incorrect data file type",
+                    "created_at": "2018-06-07T08:10:50+00:00",
+                    "closed_at": "2018-06-17T21:41:56+00:00"
+                },
+                {
+                    "number": 306,
+                    "title": "Error parsing investigation file MTBLS213",
+                    "created_at": "2018-05-16T16:14:57+00:00",
+                    "closed_at": "2018-05-16T17:51:11+00:00"
+                },
+                {
+                    "number": 305,
+                    "title": "sra2isatab fails due to PKIX path building failed (Mac OSX only)",
+                    "created_at": "2018-05-10T15:26:03+00:00",
+                    "closed_at": "2020-07-07T09:57:59+00:00"
+                },
+                {
+                    "number": 304,
+                    "title": "ParameterValue is not Commentable",
+                    "created_at": "2018-04-09T16:03:09+00:00",
+                    "closed_at": "2018-04-18T12:18:23+00:00"
+                },
+                {
+                    "number": 303,
+                    "title": "Duplicate columns when adding new process",
+                    "created_at": "2018-04-03T14:33:17+00:00",
+                    "closed_at": "2018-05-02T08:12:27+00:00"
+                },
+                {
+                    "number": 302,
+                    "title": "Fix file pattern identification in SRA conversion ",
+                    "created_at": "2018-03-21T11:28:38+00:00",
+                    "closed_at": "2018-05-02T07:49:43+00:00"
+                },
+                {
+                    "number": 301,
+                    "title": "API error with sample BII-I-1 Study",
+                    "created_at": "2018-03-19T16:08:19+00:00",
+                    "closed_at": "2018-05-02T09:12:01+00:00"
+                },
+                {
+                    "number": 300,
+                    "title": "Factor values not returned by mtbls on MTBLS36",
+                    "created_at": "2018-02-28T14:39:38+00:00",
+                    "closed_at": "2018-03-09T08:25:00+00:00"
+                },
+                {
+                    "number": 299,
+                    "title": "Adding Comment field using API does not work",
+                    "created_at": "2018-01-31T15:45:59+00:00",
+                    "closed_at": "2018-06-22T13:59:49+00:00"
+                },
+                {
+                    "number": 298,
+                    "title": "Add identifier attribute to TreatmentSequence",
+                    "created_at": "2018-01-31T11:01:21+00:00",
+                    "closed_at": "2018-08-13T14:42:38+00:00"
+                },
+                {
+                    "number": 297,
+                    "title": "Add support for treatment sequence definition file ",
+                    "created_at": "2018-01-31T10:58:21+00:00",
+                    "closed_at": "2019-12-20T12:10:36+00:00"
+                },
+                {
+                    "number": 296,
+                    "title": "Relationship between treatment sequence and sampling is currently implicit",
+                    "created_at": "2018-01-30T11:01:59+00:00",
+                    "closed_at": "2019-12-20T12:10:55+00:00"
+                },
+                {
+                    "number": 295,
+                    "title": "Change InterventionStudyDesign to a generic StudyDesign",
+                    "created_at": "2018-01-30T09:56:16+00:00",
+                    "closed_at": "2018-01-30T13:47:45+00:00"
+                },
+                {
+                    "number": 294,
+                    "title": "IsaModelObjectFactory does not create StudyFactors in Study object",
+                    "created_at": "2018-01-26T15:41:33+00:00",
+                    "closed_at": "2018-01-30T10:17:38+00:00"
+                },
+                {
+                    "number": 293,
+                    "title": "IsaModelObjectFactory in create model does not recognize 'NMR spectroscopy' tech type",
+                    "created_at": "2018-01-26T15:05:55+00:00",
+                    "closed_at": "2018-01-30T10:18:10+00:00"
+                },
+                {
+                    "number": 292,
+                    "title": "ISA-Tab validator reports metabolite profiling/nmr spectroscopy as invalid mt/tt",
+                    "created_at": "2018-01-26T15:01:52+00:00",
+                    "closed_at": "2018-01-30T10:18:30+00:00"
+                },
+                {
+                    "number": 291,
+                    "title": "AssayTopologyModifiers.technical_replicates set to zero gives unrelated fatal error",
+                    "created_at": "2018-01-18T11:00:04+00:00",
+                    "closed_at": "2018-01-30T10:18:45+00:00"
+                },
+                {
+                    "number": 289,
+                    "title": "MTBLS.get('...') Does not work when setting target_dir",
+                    "created_at": "2018-01-08T15:38:12+00:00",
+                    "closed_at": "2018-01-08T16:34:05+00:00"
+                },
+                {
+                    "number": 287,
+                    "title": "Download Data from MetaboLights",
+                    "created_at": "2017-12-20T10:59:09+00:00",
+                    "closed_at": "2017-12-21T13:23:50+00:00"
+                },
+                {
+                    "number": 286,
+                    "title": "Incorrect parsing of the Comments field for Study Contacts",
+                    "created_at": "2017-12-08T10:54:37+00:00",
+                    "closed_at": "2017-12-19T15:51:05+00:00"
+                },
+                {
+                    "number": 285,
+                    "title": "Add documentation on how unbalanced designs are supported through the implicit relationship between TreatmentSequence and SampleAssayPlan",
+                    "created_at": "2017-12-07T15:10:18+00:00",
+                    "closed_at": "2019-12-20T12:13:08+00:00"
+                },
+                {
+                    "number": 284,
+                    "title": "Extend implementation of isatools.create.models.IsaModelObjectFactory ",
+                    "created_at": "2017-12-06T10:29:10+00:00",
+                    "closed_at": "2018-08-13T15:10:34+00:00"
+                },
+                {
+                    "number": 283,
+                    "title": "Complete implementation to check epochs when adding a Treatment to a Treatment Sequence",
+                    "created_at": "2017-12-01T11:15:13+00:00",
+                    "closed_at": "2017-12-04T09:41:11+00:00"
+                },
+                {
+                    "number": 282,
+                    "title": "Handling of empty OA's for multiple valued fields",
+                    "created_at": "2017-11-27T16:17:48+00:00",
+                    "closed_at": "2017-12-19T09:15:44+00:00"
+                },
+                {
+                    "number": 280,
+                    "title": "Add function to get_num_study_groups and test for get_num_study_groups and check_study_groups",
+                    "created_at": "2017-11-23T07:23:47+00:00",
+                    "closed_at": "2017-11-23T08:09:15+00:00"
+                },
+                {
+                    "number": 276,
+                    "title": "Add function to correct ISA-tab files that use a parameter name without declaring them",
+                    "created_at": "2017-11-22T02:15:22+00:00",
+                    "closed_at": "2018-01-03T10:49:38+00:00"
+                },
+                {
+                    "number": 275,
+                    "title": "Custom label mapping for materials and filenames",
+                    "created_at": "2017-11-21T02:51:52+00:00",
+                    "closed_at": "2022-10-25T11:20:35+00:00"
+                },
+                {
+                    "number": 274,
+                    "title": "isatab.py Handle multiple columns with the same names",
+                    "created_at": "2017-11-15T17:24:17+00:00",
+                    "closed_at": "2018-01-03T11:26:09+00:00"
+                },
+                {
+                    "number": 273,
+                    "title": "Extend the documentation about validation referring to the rules",
+                    "created_at": "2017-11-14T20:49:38+00:00",
+                    "closed_at": "2021-03-01T16:19:52+00:00"
+                },
+                {
+                    "number": 272,
+                    "title": "Create mode: repeated measure design and writer",
+                    "created_at": "2017-11-14T10:59:09+00:00",
+                    "closed_at": "2018-08-13T15:11:39+00:00"
+                },
+                {
+                    "number": 271,
+                    "title": "Add string trimming in parsing/validation of tab files",
+                    "created_at": "2017-11-09T16:10:28+00:00",
+                    "closed_at": "2017-12-19T09:16:11+00:00"
+                },
+                {
+                    "number": 270,
+                    "title": "Factors declared in the middle of Study ignored",
+                    "created_at": "2017-11-08T18:12:08+00:00",
+                    "closed_at": "2018-01-03T09:14:44+00:00"
+                },
+                {
+                    "number": 269,
+                    "title": "Remove multiplied Characteristics when reading rows with the same SourceName",
+                    "created_at": "2017-11-08T14:15:39+00:00",
+                    "closed_at": "2018-01-03T11:35:33+00:00"
+                },
+                {
+                    "number": 267,
+                    "title": "Pandas FutureWarning in isatab2w4m.py",
+                    "created_at": "2017-11-07T12:44:49+00:00",
+                    "closed_at": "2017-11-17T10:12:19+00:00"
+                },
+                {
+                    "number": 266,
+                    "title": "Warnings flagged by Pandas in isatab.read_tfile()",
+                    "created_at": "2017-11-07T12:21:13+00:00",
+                    "closed_at": "2017-12-05T12:45:35+00:00"
+                },
+                {
+                    "number": 265,
+                    "title": "Test failure on branch py2_isatools-lite with MTBLS30-2",
+                    "created_at": "2017-11-07T11:31:36+00:00",
+                    "closed_at": "2017-12-08T10:31:18+00:00"
+                },
+                {
+                    "number": 264,
+                    "title": "isatab2json.convert() Enable validation against non-default config prior to conversion",
+                    "created_at": "2017-11-06T17:59:28+00:00",
+                    "closed_at": "2017-12-05T12:45:35+00:00"
+                },
+                {
+                    "number": 263,
+                    "title": "isatab.check_protocol_usage() Remove artificial blank protocol that leads to a warning",
+                    "created_at": "2017-11-06T17:21:40+00:00",
+                    "closed_at": "2017-12-05T12:45:34+00:00"
+                },
+                {
+                    "number": 262,
+                    "title": "isatab.check_ontology_fields complete implementation to check against declared ontology sources",
+                    "created_at": "2017-11-06T17:00:57+00:00",
+                    "closed_at": "2018-01-03T09:15:28+00:00"
+                },
+                {
+                    "number": 261,
+                    "title": "isatab.check_ontology_field.check_single_field should be negated",
+                    "created_at": "2017-11-06T16:58:28+00:00",
+                    "closed_at": "2017-11-17T10:17:23+00:00"
+                },
+                {
+                    "number": 260,
+                    "title": "isatab.validate() doesn't support data type 'double'",
+                    "created_at": "2017-11-06T16:29:06+00:00",
+                    "closed_at": "2017-11-17T10:14:45+00:00"
+                },
+                {
+                    "number": 259,
+                    "title": "isatab.validate() doesn't print logging info",
+                    "created_at": "2017-11-06T15:53:23+00:00",
+                    "closed_at": "2017-12-07T16:10:31+00:00"
+                },
+                {
+                    "number": 258,
+                    "title": "Support loading of configurations without technology type",
+                    "created_at": "2017-11-06T12:22:13+00:00",
+                    "closed_at": "2017-12-20T11:53:12+00:00"
+                },
+                {
+                    "number": 257,
+                    "title": "Fix QC batch injection to allow varying Characteristics",
+                    "created_at": "2017-11-06T11:53:32+00:00",
+                    "closed_at": "2017-12-19T09:16:37+00:00"
+                },
+                {
+                    "number": 256,
+                    "title": "Fix broken links to test data in docs",
+                    "created_at": "2017-11-02T14:42:15+00:00",
+                    "closed_at": "2017-11-02T16:25:56+00:00"
+                },
+                {
+                    "number": 255,
+                    "title": "Update docs on Installation from sources",
+                    "created_at": "2017-11-02T14:33:50+00:00",
+                    "closed_at": "2017-11-02T16:20:51+00:00"
+                },
+                {
+                    "number": 254,
+                    "title": "Port sra2isatab XSLT conversion to pure Python",
+                    "created_at": "2017-10-30T15:54:15+00:00",
+                    "closed_at": "2020-06-24T18:42:25+00:00"
+                },
+                {
+                    "number": 253,
+                    "title": "Pandas/Numpy issue in Galaxy with py2_isatools-lite",
+                    "created_at": "2017-10-29T09:56:55+00:00",
+                    "closed_at": "2017-11-02T16:26:51+00:00"
+                },
+                {
+                    "number": 252,
+                    "title": "Inject pre/post run batches of QC runs in create model",
+                    "created_at": "2017-10-23T11:05:43+00:00",
+                    "closed_at": "2017-11-03T10:35:25+00:00"
+                },
+                {
+                    "number": 251,
+                    "title": "Refactor AssayTopologyModifiers to separate technology-specific elements",
+                    "created_at": "2017-10-23T11:04:13+00:00",
+                    "closed_at": "2017-11-01T17:24:36+00:00"
+                },
+                {
+                    "number": 250,
+                    "title": "sra2isatab fails when trying to access any accession number",
+                    "created_at": "2017-10-18T13:39:35+00:00",
+                    "closed_at": "2017-10-18T14:52:47+00:00"
+                },
+                {
+                    "number": 248,
+                    "title": "Add tests for sra2isatab.py",
+                    "created_at": "2017-10-16T11:29:26+00:00",
+                    "closed_at": "2017-10-30T15:55:24+00:00"
+                },
+                {
+                    "number": 247,
+                    "title": "Integrate study groups/factors size calculation checks in validator",
+                    "created_at": "2017-10-16T10:53:45+00:00",
+                    "closed_at": "2017-10-31T19:53:23+00:00"
+                },
+                {
+                    "number": 246,
+                    "title": "Add saxon9he.jar to ISA-API distribution",
+                    "created_at": "2017-10-13T11:43:59+00:00",
+                    "closed_at": "2017-10-18T14:52:35+00:00"
+                },
+                {
+                    "number": 245,
+                    "title": "Load create model settings from JSON",
+                    "created_at": "2017-10-06T13:39:52+00:00",
+                    "closed_at": "2017-10-13T11:40:15+00:00"
+                },
+                {
+                    "number": 244,
+                    "title": "Support paired files output in SRA export",
+                    "created_at": "2017-10-06T09:16:29+00:00",
+                    "closed_at": "2017-10-12T14:29:20+00:00"
+                },
+                {
+                    "number": 243,
+                    "title": "mtbls.get() fails on MTBLS404",
+                    "created_at": "2017-10-03T14:05:30+00:00",
+                    "closed_at": "2017-10-03T15:42:37+00:00"
+                },
+                {
+                    "number": 242,
+                    "title": "Change testing in Travis/CI to use tox",
+                    "created_at": "2017-09-25T08:20:18+00:00",
+                    "closed_at": "2017-09-25T16:25:20+00:00"
+                },
+                {
+                    "number": 241,
+                    "title": "ISA API v0.9.0 cannot read isatools.ini when doing anything",
+                    "created_at": "2017-09-22T14:56:56+00:00",
+                    "closed_at": "2017-09-25T09:13:04+00:00"
+                },
+                {
+                    "number": 240,
+                    "title": "Integrate export to W4M format",
+                    "created_at": "2017-09-20T10:15:22+00:00",
+                    "closed_at": "2017-10-17T16:23:03+00:00"
+                },
+                {
+                    "number": 239,
+                    "title": "Issue with importing ENA metadata given accession number",
+                    "created_at": "2017-09-13T15:50:33+00:00",
+                    "closed_at": "2017-10-19T11:02:33+00:00"
+                },
+                {
+                    "number": 238,
+                    "title": "SRA export omits SPOT_DESCRIPTOR section of XML output",
+                    "created_at": "2017-09-06T15:57:16+00:00",
+                    "closed_at": "2017-09-07T16:07:40+00:00"
+                },
+                {
+                    "number": 237,
+                    "title": "create a curation function to recast spurious Factor Value into either Parameter Values or Characterisitics",
+                    "created_at": "2017-08-29T15:56:23+00:00",
+                    "closed_at": "2017-10-31T17:09:42+00:00"
+                },
+                {
+                    "number": 236,
+                    "title": "Serialize Sample/Assay Plan objects to JSON",
+                    "created_at": "2017-08-21T12:14:08+00:00",
+                    "closed_at": "2017-09-07T16:05:11+00:00"
+                },
+                {
+                    "number": 235,
+                    "title": "Parser giving warning when 'Protocol REF' is not immediately before a 'Data Transformation'",
+                    "created_at": "2017-08-15T17:35:37+00:00",
+                    "closed_at": "2017-10-06T13:41:39+00:00"
+                },
+                {
+                    "number": 234,
+                    "title": "Support automated testing and CI across all platforms",
+                    "created_at": "2017-08-01T20:11:36+00:00",
+                    "closed_at": "2020-07-08T14:45:00+00:00"
+                },
+                {
+                    "number": 233,
+                    "title": "Support Python 2.7",
+                    "created_at": "2017-08-01T20:06:42+00:00",
+                    "closed_at": "2017-08-23T11:48:18+00:00"
+                },
+                {
+                    "number": 232,
+                    "title": "Complete AssayPlan (and related classes) and generate a assay file from the information on the AssayPlan",
+                    "created_at": "2017-07-24T10:31:53+00:00",
+                    "closed_at": "2017-09-07T16:05:57+00:00"
+                },
+                {
+                    "number": 231,
+                    "title": "create test examples for various designs",
+                    "created_at": "2017-07-05T16:32:23+00:00",
+                    "closed_at": "2019-12-20T12:12:17+00:00"
+                },
+                {
+                    "number": 230,
+                    "title": "Generate a study sample file from the information on the SamplePlan",
+                    "created_at": "2017-07-05T15:24:11+00:00",
+                    "closed_at": "2017-09-07T16:05:37+00:00"
+                },
+                {
+                    "number": 229,
+                    "title": "Complete SamplePlan class",
+                    "created_at": "2017-07-05T15:21:44+00:00",
+                    "closed_at": "2017-08-23T15:40:39+00:00"
+                },
+                {
+                    "number": 228,
+                    "title": "create a method for inserting metadata based on ISA-API curation methods",
+                    "created_at": "2017-07-03T11:16:05+00:00",
+                    "closed_at": "2019-12-20T12:11:36+00:00"
+                },
+                {
+                    "number": 227,
+                    "title": "Validate against a generic configuration if no measurement/technology type available",
+                    "created_at": "2017-07-03T10:16:16+00:00",
+                    "closed_at": "2021-03-01T16:22:38+00:00"
+                },
+                {
+                    "number": 226,
+                    "title": "Cannot load tab files that are not detected as UTF-8 encoded",
+                    "created_at": "2017-06-30T10:03:06+00:00",
+                    "closed_at": "2017-07-03T09:27:29+00:00"
+                },
+                {
+                    "number": 225,
+                    "title": "mw2isa test failing due to AttributeError",
+                    "created_at": "2017-06-29T09:29:21+00:00",
+                    "closed_at": "2017-07-07T11:45:08+00:00"
+                },
+                {
+                    "number": 224,
+                    "title": "Compute study groups and group sizes",
+                    "created_at": "2017-06-27T19:36:45+00:00",
+                    "closed_at": "2017-10-30T15:56:00+00:00"
+                },
+                {
+                    "number": 223,
+                    "title": "ISA-Tab validator fails to load Publications block if PubMed ID missing",
+                    "created_at": "2017-06-27T16:26:02+00:00",
+                    "closed_at": "2017-07-03T09:27:25+00:00"
+                },
+                {
+                    "number": 222,
+                    "title": "magetab2isatab splitting of table sometimes outputs empty cells",
+                    "created_at": "2017-06-23T10:23:17+00:00",
+                    "closed_at": "2017-06-30T09:30:19+00:00"
+                },
+                {
+                    "number": 221,
+                    "title": "mtbls.get_factors_summary() fails with TypeError on MTBLS26",
+                    "created_at": "2017-06-22T11:59:59+00:00",
+                    "closed_at": "2017-06-23T09:21:08+00:00"
+                },
+                {
+                    "number": 220,
+                    "title": "Implement ArrayExpress IO",
+                    "created_at": "2017-06-22T11:45:14+00:00",
+                    "closed_at": "2017-06-22T15:32:38+00:00"
+                },
+                {
+                    "number": 219,
+                    "title": "Implement various MAGE-TAB  inferred corrections for converting to ISA-Tab",
+                    "created_at": "2017-06-20T11:16:15+00:00",
+                    "closed_at": "2017-07-10T08:26:07+00:00"
+                },
+                {
+                    "number": 218,
+                    "title": "magetab2isatab split SDRF table does not work when Sample Name missing",
+                    "created_at": "2017-06-19T09:17:26+00:00",
+                    "closed_at": "2017-06-20T16:18:59+00:00"
+                },
+                {
+                    "number": 217,
+                    "title": "DataFrame shape errors when parsing MAGE-TABs from ArrayExpress",
+                    "created_at": "2017-06-15T13:42:08+00:00",
+                    "closed_at": "2017-06-19T10:42:45+00:00"
+                },
+                {
+                    "number": 216,
+                    "title": "Distinguish between importers and converters",
+                    "created_at": "2017-06-12T10:32:31+00:00",
+                    "closed_at": "2017-07-24T12:03:58+00:00"
+                },
+                {
+                    "number": 214,
+                    "title": "Allow silencing of text output during import of ISA",
+                    "created_at": "2017-06-08T13:41:35+00:00",
+                    "closed_at": "2017-07-07T11:45:08+00:00"
+                },
+                {
+                    "number": 213,
+                    "title": "Import from ArrayExpress MAGE-Tab to ISA-Tab",
+                    "created_at": "2017-06-05T10:58:18+00:00",
+                    "closed_at": "2017-06-22T16:30:27+00:00"
+                },
+                {
+                    "number": 212,
+                    "title": "In ISA-Tab IO, read/write sample FactorValues out to s_*.txt and a_*.txt files",
+                    "created_at": "2017-06-05T10:52:58+00:00",
+                    "closed_at": "2018-01-03T09:13:21+00:00"
+                },
+                {
+                    "number": 211,
+                    "title": "Add utility function for addition of a protocol to a study, preventing duplicates",
+                    "created_at": "2017-06-05T10:33:48+00:00",
+                    "closed_at": "2017-10-03T13:33:42+00:00"
+                },
+                {
+                    "number": 210,
+                    "title": "Parsing ISA-Tab empty column produces single unnamed objects",
+                    "created_at": "2017-06-05T10:32:16+00:00",
+                    "closed_at": "2017-06-19T16:23:33+00:00"
+                },
+                {
+                    "number": 209,
+                    "title": "sampleTab conversion hangs on ICL-ISATAB-sample",
+                    "created_at": "2017-05-29T15:00:50+00:00",
+                    "closed_at": "2017-05-29T19:59:53+00:00"
+                },
+                {
+                    "number": 208,
+                    "title": "ISA-Tab validator does not validate s_*.txt file correctly",
+                    "created_at": "2017-05-27T21:37:46+00:00",
+                    "closed_at": "2017-06-30T09:54:47+00:00"
+                },
+                {
+                    "number": 207,
+                    "title": "Issue with longest_path logic for determining ISA-Tab columns for output",
+                    "created_at": "2017-05-23T15:16:20+00:00",
+                    "closed_at": "2020-06-24T18:44:39+00:00"
+                },
+                {
+                    "number": 205,
+                    "title": "json2isatab does not write out BII-I-1 microarray, px and tx assays",
+                    "created_at": "2017-03-28T14:55:40+00:00",
+                    "closed_at": "2017-06-19T16:23:31+00:00"
+                },
+                {
+                    "number": 204,
+                    "title": "Import from PRIDE XML",
+                    "created_at": "2017-03-27T10:45:36+00:00",
+                    "closed_at": "2020-06-24T17:03:09+00:00"
+                },
+                {
+                    "number": 203,
+                    "title": "Import from MAGE-TAB",
+                    "created_at": "2017-03-21T17:20:31+00:00",
+                    "closed_at": "2017-06-02T14:47:22+00:00"
+                },
+                {
+                    "number": 202,
+                    "title": "Hatch not recognised as comment in ISA-Tab table file parsing",
+                    "created_at": "2017-03-06T14:46:09+00:00",
+                    "closed_at": "2017-03-06T16:12:59+00:00"
+                },
+                {
+                    "number": 201,
+                    "title": "Improve error message due to issue loading ISA-Tab",
+                    "created_at": "2017-03-06T14:13:55+00:00",
+                    "closed_at": "2017-03-20T13:34:45+00:00"
+                },
+                {
+                    "number": 200,
+                    "title": "Trouble using isatab.dump",
+                    "created_at": "2017-03-04T16:06:59+00:00",
+                    "closed_at": "2017-03-17T11:59:28+00:00"
+                },
+                {
+                    "number": 199,
+                    "title": "The isatab.load method is not considering the Comment[] fields in the different sections of the ISA-Tab files",
+                    "created_at": "2017-03-02T23:02:08+00:00",
+                    "closed_at": "2017-03-03T12:42:01+00:00"
+                },
+                {
+                    "number": 198,
+                    "title": "Define __str__ and __repr__ for the objects in the model",
+                    "created_at": "2017-03-02T22:38:33+00:00",
+                    "closed_at": "2017-10-05T20:52:57+00:00"
+                },
+                {
+                    "number": 197,
+                    "title": "New loader fails for ISA-Tab files with no Investigation",
+                    "created_at": "2017-03-02T16:08:17+00:00",
+                    "closed_at": "2017-03-02T16:55:30+00:00"
+                },
+                {
+                    "number": 196,
+                    "title": "New loader should ignore rows starting with #",
+                    "created_at": "2017-03-02T16:00:41+00:00",
+                    "closed_at": "2017-03-02T16:55:16+00:00"
+                },
+                {
+                    "number": 195,
+                    "title": "Update setup.py for PyPI for release",
+                    "created_at": "2017-02-27T09:04:22+00:00",
+                    "closed_at": "2017-03-02T16:53:50+00:00"
+                },
+                {
+                    "number": 194,
+                    "title": "Update docs for release",
+                    "created_at": "2017-02-27T09:03:53+00:00",
+                    "closed_at": "2017-02-27T16:26:05+00:00"
+                },
+                {
+                    "number": 192,
+                    "title": "Add support for ontology annotations using Zooma",
+                    "created_at": "2017-02-07T11:16:31+00:00",
+                    "closed_at": "2020-06-24T17:04:30+00:00"
+                },
+                {
+                    "number": 191,
+                    "title": "Enable Support of  2 'Sample Name' chaining to allow representation/tracking of Aliquots",
+                    "created_at": "2017-02-07T11:13:27+00:00",
+                    "closed_at": "2017-03-28T12:17:49+00:00"
+                },
+                {
+                    "number": 190,
+                    "title": "BioSamples/SampleTab import to ISA",
+                    "created_at": "2017-01-31T11:13:49+00:00",
+                    "closed_at": "2017-03-21T12:12:27+00:00"
+                },
+                {
+                    "number": 189,
+                    "title": "ValueError: ('Could not resolve Protocol parameter from Parameter Value ', 'Post Extraction')",
+                    "created_at": "2017-01-27T11:55:30+00:00",
+                    "closed_at": "2017-01-27T12:17:11+00:00"
+                },
+                {
+                    "number": 188,
+                    "title": "ISA create mode calls: phased implementation",
+                    "created_at": "2017-01-23T12:14:07+00:00",
+                    "closed_at": "2019-07-08T11:43:01+00:00"
+                },
+                {
+                    "number": 187,
+                    "title": "NMR support in ISA-Tab writing",
+                    "created_at": "2017-01-23T12:14:01+00:00",
+                    "closed_at": "2017-03-20T12:40:08+00:00"
+                },
+                {
+                    "number": 186,
+                    "title": "Functionality to merge study and assay table (for each assay available) into one table",
+                    "created_at": "2017-01-23T11:53:54+00:00",
+                    "closed_at": "2017-01-23T16:32:42+00:00"
+                },
+                {
+                    "number": 185,
+                    "title": "Access to individual ISA-Tab files independently (for simple tweaks only)",
+                    "created_at": "2017-01-17T11:26:15+00:00",
+                    "closed_at": "2017-02-15T17:39:59+00:00"
+                },
+                {
+                    "number": 184,
+                    "title": "Improve speed when serializing to tab",
+                    "created_at": "2017-01-16T12:27:00+00:00",
+                    "closed_at": "2017-03-02T15:46:08+00:00"
+                },
+                {
+                    "number": 183,
+                    "title": "Use ISAdatasets repository as primary repository for tab and json examples",
+                    "created_at": "2017-01-16T11:34:44+00:00",
+                    "closed_at": "2017-02-15T17:34:07+00:00"
+                },
+                {
+                    "number": 182,
+                    "title": "Support command-line calls to ISA API sample-tab conversions",
+                    "created_at": "2017-01-10T11:44:06+00:00",
+                    "closed_at": "2017-03-21T12:12:13+00:00"
+                },
+                {
+                    "number": 181,
+                    "title": "Update isatab2json converter to use new ISA-Tab parser",
+                    "created_at": "2017-01-10T11:03:55+00:00",
+                    "closed_at": "2017-01-17T11:06:54+00:00"
+                },
+                {
+                    "number": 180,
+                    "title": "Export ISArchive zip files from ISA content",
+                    "created_at": "2017-01-06T10:36:08+00:00",
+                    "closed_at": "2017-01-30T23:11:40+00:00"
+                },
+                {
+                    "number": 179,
+                    "title": "if more than one study.design_descriptors is supplied, serialization fails",
+                    "created_at": "2017-01-05T22:53:59+00:00",
+                    "closed_at": "2017-01-06T12:06:52+00:00"
+                },
+                {
+                    "number": 177,
+                    "title": "MW2ISA failing tests in Jenkins (Phenomenal)",
+                    "created_at": "2016-12-05T20:26:49+00:00",
+                    "closed_at": "2017-02-20T11:19:43+00:00"
+                },
+                {
+                    "number": 176,
+                    "title": "Modify test_mzml2isa.py (TestMzml2IsaTab) so that changes in the metadata files don't affect the test",
+                    "created_at": "2016-12-05T14:24:04+00:00",
+                    "closed_at": "2016-12-22T12:32:12+00:00"
+                },
+                {
+                    "number": 174,
+                    "title": "ISA-Tab parser does not recognise some File columns",
+                    "created_at": "2016-12-01T16:58:50+00:00",
+                    "closed_at": "2016-12-13T16:59:30+00:00"
+                },
+                {
+                    "number": 172,
+                    "title": "isatab._build_roles_str is missing checks against NoneType",
+                    "created_at": "2016-12-01T13:50:04+00:00",
+                    "closed_at": "2016-12-01T13:52:03+00:00"
+                },
+                {
+                    "number": 171,
+                    "title": "isatab.validate2 - Some exceptions that occurs when validating are hidden",
+                    "created_at": "2016-11-30T19:36:09+00:00",
+                    "closed_at": "2016-12-06T23:19:17+00:00"
+                },
+                {
+                    "number": 170,
+                    "title": "isatab2json conversion",
+                    "created_at": "2016-11-29T10:05:13+00:00",
+                    "closed_at": "2016-12-06T23:21:17+00:00"
+                },
+                {
+                    "number": 168,
+                    "title": "Performance issues with ISA-Tab parser on larger tables",
+                    "created_at": "2016-11-28T11:48:04+00:00",
+                    "closed_at": "2017-01-17T11:08:13+00:00"
+                },
+                {
+                    "number": 167,
+                    "title": "provide ISAMapper Functionality",
+                    "created_at": "2016-11-24T15:14:38+00:00",
+                    "closed_at": "2020-12-15T15:22:05+00:00"
+                },
+                {
+                    "number": 166,
+                    "title": "API Create mode: make it aware of Quality Control element",
+                    "created_at": "2016-11-24T12:18:05+00:00",
+                    "closed_at": "2018-08-13T13:17:39+00:00"
+                },
+                {
+                    "number": 165,
+                    "title": "a function to merge 2 isa-tab files",
+                    "created_at": "2016-11-24T11:32:25+00:00",
+                    "closed_at": "2022-10-25T11:20:06+00:00"
+                },
+                {
+                    "number": 164,
+                    "title": "Integrate mzml2isa into ISA API",
+                    "created_at": "2016-11-23T14:55:18+00:00",
+                    "closed_at": "2016-11-28T14:50:22+00:00"
+                },
+                {
+                    "number": 163,
+                    "title": "ISAvalidator2: reports success when assays are not supported by configuration",
+                    "created_at": "2016-11-18T17:22:42+00:00",
+                    "closed_at": "2016-11-22T22:40:00+00:00"
+                },
+                {
+                    "number": 162,
+                    "title": "ISA validator2: sticky error messages with carry over from distinct studies",
+                    "created_at": "2016-11-17T17:44:11+00:00",
+                    "closed_at": "2016-11-22T22:39:45+00:00"
+                },
+                {
+                    "number": 160,
+                    "title": "ISA-Tab validation: detect and warn of pooling events before data transformation",
+                    "created_at": "2016-11-09T16:01:48+00:00",
+                    "closed_at": "2016-12-07T18:27:48+00:00"
+                },
+                {
+                    "number": 158,
+                    "title": "Generated SRA submission issues when sending to ENA",
+                    "created_at": "2016-11-01T12:34:50+00:00",
+                    "closed_at": "2016-11-05T11:37:06+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "Support for Publication metadata lookup",
+                    "created_at": "2016-10-30T17:02:53+00:00",
+                    "closed_at": "2017-01-24T17:16:51+00:00"
+                },
+                {
+                    "number": 155,
+                    "title": "Missing imports when using json2sra.convert()",
+                    "created_at": "2016-10-19T15:03:43+00:00",
+                    "closed_at": "2016-10-19T15:48:48+00:00"
+                },
+                {
+                    "number": 154,
+                    "title": "Should geographic values have units?",
+                    "created_at": "2016-10-17T09:52:24+00:00",
+                    "closed_at": "2017-03-20T14:22:47+00:00"
+                },
+                {
+                    "number": 152,
+                    "title": "Increase test coverage",
+                    "created_at": "2016-10-10T14:33:42+00:00",
+                    "closed_at": "2016-12-06T23:46:30+00:00"
+                },
+                {
+                    "number": 151,
+                    "title": "Complete user guide for creating ISA content using Python model objects",
+                    "created_at": "2016-10-10T13:54:54+00:00",
+                    "closed_at": "2016-12-06T23:58:03+00:00"
+                },
+                {
+                    "number": 149,
+                    "title": "test_load_config_metagenome_seq fails with latest commit",
+                    "created_at": "2016-10-06T16:20:26+00:00",
+                    "closed_at": "2016-11-15T11:09:59+00:00"
+                },
+                {
+                    "number": 148,
+                    "title": "Broken link in isatools.readthedocs.org - Creating ISA objects page",
+                    "created_at": "2016-10-04T13:35:52+00:00",
+                    "closed_at": "2016-10-10T13:59:35+00:00"
+                },
+                {
+                    "number": 147,
+                    "title": "ISA validators: Checks on name field of things like Comments",
+                    "created_at": "2016-10-02T15:26:23+00:00",
+                    "closed_at": "2016-12-22T12:33:12+00:00"
+                },
+                {
+                    "number": 146,
+                    "title": "Unexpected pooling on MS process in JSON output using isatab2json",
+                    "created_at": "2016-09-28T11:21:42+00:00",
+                    "closed_at": "2016-12-07T18:21:16+00:00"
+                },
+                {
+                    "number": 145,
+                    "title": "ISACreator XML assay templates ",
+                    "created_at": "2016-09-28T06:00:15+00:00",
+                    "closed_at": "2016-09-28T10:27:42+00:00"
+                },
+                {
+                    "number": 144,
+                    "title": "TypeError indicating missing positional argument for isatab2json.convert",
+                    "created_at": "2016-09-20T23:17:40+00:00",
+                    "closed_at": "2016-11-22T19:28:57+00:00"
+                },
+                {
+                    "number": 143,
+                    "title": "SRA import does not output all assays when dealing with comma separated accession lists",
+                    "created_at": "2016-09-12T16:22:36+00:00",
+                    "closed_at": "2016-09-12T16:29:14+00:00"
+                },
+                {
+                    "number": 142,
+                    "title": "Missing SRA resource files (xml) from published isatools package on PyPI",
+                    "created_at": "2016-09-09T10:42:26+00:00",
+                    "closed_at": "2016-09-09T11:04:12+00:00"
+                },
+                {
+                    "number": 141,
+                    "title": "Compile/Build failure due to EBI Maven repo 500 error?",
+                    "created_at": "2016-08-31T19:03:04+00:00",
+                    "closed_at": "2016-09-01T13:38:56+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "Decouple the isatab2json conversion from saving the files",
+                    "created_at": "2016-08-22T15:21:18+00:00",
+                    "closed_at": "2016-08-23T07:34:45+00:00"
+                },
+                {
+                    "number": 139,
+                    "title": "Add a diff functionality for Tab and JSON files",
+                    "created_at": "2016-08-15T17:17:12+00:00",
+                    "closed_at": "2016-09-08T15:26:10+00:00"
+                },
+                {
+                    "number": 138,
+                    "title": "Validation on ISA JSON sample data shows errors in BII-I-1 and BII-S-3",
+                    "created_at": "2016-08-11T14:02:35+00:00",
+                    "closed_at": "2016-08-24T16:04:22+00:00"
+                },
+                {
+                    "number": 137,
+                    "title": "Validation on TEST-ISA-charac-param-factor shows characteristic category error",
+                    "created_at": "2016-08-11T13:45:59+00:00",
+                    "closed_at": "2016-08-24T15:57:40+00:00"
+                },
+                {
+                    "number": 136,
+                    "title": "Validation on BII-I-1 JSON test data reports errors on characteristic categories",
+                    "created_at": "2016-08-11T13:44:00+00:00",
+                    "closed_at": "2016-08-24T15:57:15+00:00"
+                },
+                {
+                    "number": 135,
+                    "title": "Validation on BII-I-1 test data reports undeclared sample in assay file",
+                    "created_at": "2016-08-11T13:40:36+00:00",
+                    "closed_at": "2016-09-07T11:53:13+00:00"
+                },
+                {
+                    "number": 134,
+                    "title": "New ISA tab validator raises errors on sparse Protocol REF cells in assay tables",
+                    "created_at": "2016-08-11T13:21:54+00:00",
+                    "closed_at": "2016-08-24T15:58:18+00:00"
+                },
+                {
+                    "number": 132,
+                    "title": "Enhance test suite and improve test coverage",
+                    "created_at": "2016-07-26T21:09:18+00:00",
+                    "closed_at": "2016-09-08T15:07:20+00:00"
+                },
+                {
+                    "number": 131,
+                    "title": "json2isatab duplicates some assay rows in some cases",
+                    "created_at": "2016-07-25T11:06:14+00:00",
+                    "closed_at": "2016-09-07T11:57:48+00:00"
+                },
+                {
+                    "number": 130,
+                    "title": "isatab2json fails with MTBLS1 dataset; ValidationError: 'Acquisition Parameter Data File'",
+                    "created_at": "2016-07-21T13:41:16+00:00",
+                    "closed_at": "2016-08-23T18:08:45+00:00"
+                },
+                {
+                    "number": 129,
+                    "title": "json2sra conversion produces unpredictable output on BII-S-3",
+                    "created_at": "2016-07-18T15:35:50+00:00",
+                    "closed_at": "2016-09-07T14:30:19+00:00"
+                },
+                {
+                    "number": 128,
+                    "title": "Allow to specify/parametrize i_investigation.txt file name",
+                    "created_at": "2016-07-18T12:55:44+00:00",
+                    "closed_at": "2016-10-30T22:40:21+00:00"
+                },
+                {
+                    "number": 127,
+                    "title": "Allow Parameters to have default values",
+                    "created_at": "2016-07-18T12:51:32+00:00",
+                    "closed_at": "2019-12-20T12:11:58+00:00"
+                },
+                {
+                    "number": 126,
+                    "title": "JSON validation on BII-S-3.json test data raises error relating to Material_Type declaration",
+                    "created_at": "2016-07-15T14:22:32+00:00",
+                    "closed_at": "2016-09-07T11:52:51+00:00"
+                },
+                {
+                    "number": 125,
+                    "title": "Add call to validators before performing a conversion",
+                    "created_at": "2016-07-15T10:32:42+00:00",
+                    "closed_at": "2016-08-24T15:59:13+00:00"
+                },
+                {
+                    "number": 124,
+                    "title": "Conversion to MAGE-TAB",
+                    "created_at": "2016-07-11T13:08:38+00:00",
+                    "closed_at": "2017-06-02T14:47:22+00:00"
+                },
+                {
+                    "number": 123,
+                    "title": "Conversion to PRIDE XML",
+                    "created_at": "2016-07-11T13:06:10+00:00",
+                    "closed_at": "2020-06-24T18:44:59+00:00"
+                },
+                {
+                    "number": 122,
+                    "title": "Replacement SRA export",
+                    "created_at": "2016-07-11T12:01:39+00:00",
+                    "closed_at": "2016-09-07T16:24:04+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "Batch validation generating a report.",
+                    "created_at": "2016-07-11T11:37:01+00:00",
+                    "closed_at": "2016-10-31T17:30:57+00:00"
+                },
+                {
+                    "number": 120,
+                    "title": "SampleTab export",
+                    "created_at": "2016-07-11T11:32:56+00:00",
+                    "closed_at": "2017-03-21T12:12:38+00:00"
+                },
+                {
+                    "number": 119,
+                    "title": "ISAtab validator (new) does not handle column headings enclosed with speechmarks",
+                    "created_at": "2016-07-07T11:18:25+00:00",
+                    "closed_at": "2016-07-07T13:47:10+00:00"
+                },
+                {
+                    "number": 118,
+                    "title": "Documentation for new validators usage incorrect",
+                    "created_at": "2016-07-07T10:16:34+00:00",
+                    "closed_at": "2016-07-07T10:21:00+00:00"
+                },
+                {
+                    "number": 117,
+                    "title": "rst file improperly rendered in github",
+                    "created_at": "2016-07-06T11:13:20+00:00",
+                    "closed_at": "2016-07-06T12:44:05+00:00"
+                },
+                {
+                    "number": 116,
+                    "title": "TypeError when running json2isatab, in investigation publications comments",
+                    "created_at": "2016-07-04T16:18:58+00:00",
+                    "closed_at": "2016-07-06T12:44:52+00:00"
+                },
+                {
+                    "number": 115,
+                    "title": "ISA validator GUI tool, like jsonlint",
+                    "created_at": "2016-06-11T07:30:04+00:00",
+                    "closed_at": "2022-10-25T11:18:14+00:00"
+                },
+                {
+                    "number": 114,
+                    "title": "Improve validators reporting to provide JSON reports with error codes",
+                    "created_at": "2016-06-11T07:25:35+00:00",
+                    "closed_at": "2016-11-06T22:16:57+00:00"
+                },
+                {
+                    "number": 113,
+                    "title": "Package and publish 0.2 release on PyPI",
+                    "created_at": "2016-06-10T16:29:39+00:00",
+                    "closed_at": "2016-06-10T19:42:42+00:00"
+                },
+                {
+                    "number": 112,
+                    "title": "Test data for ISA JSON configurations",
+                    "created_at": "2016-06-10T16:23:48+00:00",
+                    "closed_at": "2022-10-25T11:17:50+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "Missing Protocol REF cause some process sequences to be skipped in tab2json conversion",
+                    "created_at": "2016-06-10T15:17:34+00:00",
+                    "closed_at": "2016-12-06T15:24:58+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "Complete set of ISA JSON configurations",
+                    "created_at": "2016-06-07T16:54:05+00:00",
+                    "closed_at": "2016-06-10T16:28:24+00:00"
+                },
+                {
+                    "number": 109,
+                    "title": "Documentation for 0.2 release",
+                    "created_at": "2016-06-07T16:48:01+00:00",
+                    "closed_at": "2016-06-10T16:28:37+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "\"required\" constraints on JSON schemas causes validation failure for \"@id\" objects",
+                    "created_at": "2016-06-07T14:41:27+00:00",
+                    "closed_at": "2016-12-06T23:23:27+00:00"
+                },
+                {
+                    "number": 107,
+                    "title": "ISA-JSON visualisation or validation?",
+                    "created_at": "2016-05-09T08:55:18+00:00",
+                    "closed_at": "2017-07-03T11:18:41+00:00"
+                },
+                {
+                    "number": 106,
+                    "title": "Unit value error in test data s_BII-S-3.txt in tests/data/BII-S-3",
+                    "created_at": "2016-04-13T14:34:29+00:00",
+                    "closed_at": "2016-07-06T18:39:07+00:00"
+                },
+                {
+                    "number": 105,
+                    "title": "Remove samples list from assay schema since it links to study samples declared already",
+                    "created_at": "2016-04-12T13:37:13+00:00",
+                    "closed_at": "2022-10-25T11:17:27+00:00"
+                },
+                {
+                    "number": 104,
+                    "title": "Reduce parameters to store ontology annotations instead of protocol parameters",
+                    "created_at": "2016-04-08T14:22:46+00:00",
+                    "closed_at": "2021-03-01T16:28:43+00:00"
+                },
+                {
+                    "number": 103,
+                    "title": "Reduce characteristic categories to store ontology annotations instead of material attributes",
+                    "created_at": "2016-04-07T13:36:09+00:00",
+                    "closed_at": "2021-03-01T16:29:31+00:00"
+                },
+                {
+                    "number": 102,
+                    "title": "Move documentation from Github wiki to readthedocs.org",
+                    "created_at": "2016-04-05T15:00:43+00:00",
+                    "closed_at": "2016-04-10T14:38:08+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "When using ISA JSON in UUID or counter IdentifierTypes cannot detect Array_Design_REF",
+                    "created_at": "2016-03-22T11:48:14+00:00",
+                    "closed_at": "2017-03-28T13:48:44+00:00"
+                },
+                {
+                    "number": 100,
+                    "title": "Tab parser should consider comment rows (that start with #)",
+                    "created_at": "2016-03-15T12:06:30+00:00",
+                    "closed_at": "2016-03-16T13:14:30+00:00"
+                },
+                {
+                    "number": 99,
+                    "title": "Consider guidelines to include curator information in the ISA model",
+                    "created_at": "2016-03-15T10:56:10+00:00",
+                    "closed_at": "2022-10-25T11:16:45+00:00"
+                },
+                {
+                    "number": 98,
+                    "title": "ISA JSON content validator",
+                    "created_at": "2016-03-14T12:58:28+00:00",
+                    "closed_at": "2016-06-07T16:49:50+00:00"
+                },
+                {
+                    "number": 97,
+                    "title": "Attach factor values to raw data files",
+                    "created_at": "2016-03-14T12:26:19+00:00",
+                    "closed_at": "2022-10-25T11:16:23+00:00"
+                },
+                {
+                    "number": 96,
+                    "title": "ISA mime types",
+                    "created_at": "2016-03-13T07:40:10+00:00",
+                    "closed_at": "2016-04-10T17:40:35+00:00"
+                },
+                {
+                    "number": 95,
+                    "title": "Getting more done in GitHub with ZenHub",
+                    "created_at": "2016-03-09T16:26:13+00:00",
+                    "closed_at": "2016-03-09T16:31:05+00:00"
+                },
+                {
+                    "number": 93,
+                    "title": "Distribution package cannot find files needed for command line methods",
+                    "created_at": "2016-03-08T21:48:00+00:00",
+                    "closed_at": "2016-03-09T14:06:40+00:00"
+                },
+                {
+                    "number": 92,
+                    "title": "JSON to ISA tab converter fails when Investigation publications present",
+                    "created_at": "2016-03-07T16:19:01+00:00",
+                    "closed_at": "2016-03-09T14:06:14+00:00"
+                },
+                {
+                    "number": 91,
+                    "title": "Provide command line call for linkedISA conversion",
+                    "created_at": "2016-03-05T16:05:51+00:00",
+                    "closed_at": "2021-03-01T16:34:25+00:00"
+                },
+                {
+                    "number": 90,
+                    "title": "isatab2json doesn't find schemas in PyPI distribution",
+                    "created_at": "2016-03-01T14:36:28+00:00",
+                    "closed_at": "2016-03-02T10:21:30+00:00"
+                },
+                {
+                    "number": 89,
+                    "title": "Installing isatools package from pip doesn't install dependencies",
+                    "created_at": "2016-02-28T21:47:41+00:00",
+                    "closed_at": "2016-02-29T12:07:31+00:00"
+                },
+                {
+                    "number": 87,
+                    "title": "Package and publish 0.1 release on PyPI",
+                    "created_at": "2016-02-25T11:15:37+00:00",
+                    "closed_at": "2016-02-27T11:57:10+00:00"
+                },
+                {
+                    "number": 86,
+                    "title": "API documentation of 0.1 release functionality",
+                    "created_at": "2016-02-24T15:31:04+00:00",
+                    "closed_at": "2016-03-02T10:22:50+00:00"
+                },
+                {
+                    "number": 83,
+                    "title": "assertTabEqual support for ISAtab comparisons",
+                    "created_at": "2016-02-18T12:29:41+00:00",
+                    "closed_at": "2016-02-19T17:44:19+00:00"
+                },
+                {
+                    "number": 82,
+                    "title": "Compute stats about the ISA dataset(s)",
+                    "created_at": "2016-02-18T11:55:14+00:00",
+                    "closed_at": "2021-03-01T16:33:13+00:00"
+                },
+                {
+                    "number": 81,
+                    "title": "Comment parsing to satisfy BII-S-* conversion",
+                    "created_at": "2016-02-17T21:45:43+00:00",
+                    "closed_at": "2016-02-20T15:14:23+00:00"
+                },
+                {
+                    "number": 80,
+                    "title": "Extend process schema to support data points as outputs",
+                    "created_at": "2016-02-12T10:33:35+00:00",
+                    "closed_at": "2020-06-24T21:03:06+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "Specify validator rules",
+                    "created_at": "2016-02-11T13:52:53+00:00",
+                    "closed_at": "2016-06-07T16:47:00+00:00"
+                },
+                {
+                    "number": 78,
+                    "title": "Refactor test data to download at setup time",
+                    "created_at": "2016-02-08T11:24:34+00:00",
+                    "closed_at": "2017-01-22T22:54:04+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "Integrate ISA API to use in IPython Notebook",
+                    "created_at": "2016-02-01T16:48:42+00:00",
+                    "closed_at": "2016-03-14T17:07:26+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "ISA tab validator (Python version)",
+                    "created_at": "2016-02-01T14:10:04+00:00",
+                    "closed_at": "2016-06-10T16:28:50+00:00"
+                },
+                {
+                    "number": 67,
+                    "title": "property \"materials\" in assay_schema.json is not correct",
+                    "created_at": "2016-01-29T15:28:09+00:00",
+                    "closed_at": "2016-02-01T22:04:12+00:00"
+                },
+                {
+                    "number": 63,
+                    "title": "Typo in assay_schema.json",
+                    "created_at": "2016-01-28T08:07:13+00:00",
+                    "closed_at": "2016-01-28T10:08:05+00:00"
+                },
+                {
+                    "number": 62,
+                    "title": "Support conversion generating different types of identifiers",
+                    "created_at": "2016-01-27T12:02:24+00:00",
+                    "closed_at": "2016-01-27T12:32:21+00:00"
+                },
+                {
+                    "number": 61,
+                    "title": "Refactor unit declarations",
+                    "created_at": "2016-01-26T13:54:58+00:00",
+                    "closed_at": "2016-02-02T12:53:37+00:00"
+                },
+                {
+                    "number": 60,
+                    "title": "Consider characteristics with ontology annotations",
+                    "created_at": "2016-01-26T13:15:48+00:00",
+                    "closed_at": "2022-10-25T11:11:36+00:00"
+                },
+                {
+                    "number": 59,
+                    "title": "ideally-canonical.json invalid JSON",
+                    "created_at": "2016-01-26T09:39:50+00:00",
+                    "closed_at": "2016-01-27T08:57:23+00:00"
+                },
+                {
+                    "number": 57,
+                    "title": "Extend isatab parser to identify attributes (Characteristics) associated with material nodes",
+                    "created_at": "2016-01-25T15:56:29+00:00",
+                    "closed_at": "2016-01-25T23:46:54+00:00"
+                },
+                {
+                    "number": 56,
+                    "title": "Define object where factor values are attached to",
+                    "created_at": "2016-01-18T10:27:21+00:00",
+                    "closed_at": "2016-03-14T12:25:53+00:00"
+                },
+                {
+                    "number": 55,
+                    "title": "Investigate representation of derived data files",
+                    "created_at": "2016-01-15T12:47:19+00:00",
+                    "closed_at": "2016-01-18T13:58:44+00:00"
+                },
+                {
+                    "number": 54,
+                    "title": "Incorporate sra xslt conversion",
+                    "created_at": "2016-01-15T12:34:05+00:00",
+                    "closed_at": "2016-02-11T10:16:47+00:00"
+                },
+                {
+                    "number": 52,
+                    "title": "Implement github api to retrieve files",
+                    "created_at": "2016-01-14T23:16:51+00:00",
+                    "closed_at": "2016-02-01T22:04:12+00:00"
+                },
+                {
+                    "number": 51,
+                    "title": "Incorporate ISA default configurations in ISA object creation functionality",
+                    "created_at": "2016-01-13T22:44:09+00:00",
+                    "closed_at": "2022-10-25T11:09:29+00:00"
+                },
+                {
+                    "number": 50,
+                    "title": "Check factors/parameters/characteristics values and links to their types (headers in the tab)",
+                    "created_at": "2016-01-13T15:08:48+00:00",
+                    "closed_at": "2016-01-26T00:07:04+00:00"
+                },
+                {
+                    "number": 49,
+                    "title": "Check object where characteristics are attached to",
+                    "created_at": "2016-01-13T15:06:21+00:00",
+                    "closed_at": "2016-02-02T13:43:44+00:00"
+                },
+                {
+                    "number": 48,
+                    "title": "Modify the produced json to avoid repetitions of objects",
+                    "created_at": "2016-01-13T15:01:54+00:00",
+                    "closed_at": "2020-07-08T13:52:06+00:00"
+                },
+                {
+                    "number": 44,
+                    "title": "isatab2CEDAR tests reference non-existent datasets in repository scope",
+                    "created_at": "2015-12-23T14:14:59+00:00",
+                    "closed_at": "2016-01-06T13:14:22+00:00"
+                },
+                {
+                    "number": 43,
+                    "title": "isatab2json conversion throws AttributeError in createExecuteStudyProtocol() ",
+                    "created_at": "2015-12-23T13:40:53+00:00",
+                    "closed_at": "2016-01-06T15:06:11+00:00"
+                },
+                {
+                    "number": 42,
+                    "title": "Parameters in the process schema",
+                    "created_at": "2015-12-23T07:40:52+00:00",
+                    "closed_at": "2016-01-26T12:14:23+00:00"
+                },
+                {
+                    "number": 41,
+                    "title": "Characteristic category and Factor Value factor names missing in JSON schemas and tab2json conversion",
+                    "created_at": "2015-12-22T16:55:41+00:00",
+                    "closed_at": "2016-01-26T12:01:38+00:00"
+                },
+                {
+                    "number": 40,
+                    "title": "Study filenames missing from conversion to JSON",
+                    "created_at": "2015-12-22T16:27:52+00:00",
+                    "closed_at": "2015-12-22T16:33:19+00:00"
+                },
+                {
+                    "number": 39,
+                    "title": "Data file pointers",
+                    "created_at": "2015-12-22T13:59:52+00:00",
+                    "closed_at": "2016-01-27T09:35:53+00:00"
+                },
+                {
+                    "number": 38,
+                    "title": "Extend isatab parser to deal with process parameters",
+                    "created_at": "2015-12-22T09:53:17+00:00",
+                    "closed_at": "2016-01-20T12:05:20+00:00"
+                },
+                {
+                    "number": 37,
+                    "title": "Unpopulated objects appear in generated JSON",
+                    "created_at": "2015-12-21T22:31:06+00:00",
+                    "closed_at": "2016-02-24T15:43:33+00:00"
+                },
+                {
+                    "number": 36,
+                    "title": "Characteristics of Sources appear in Samples list of generated JSON",
+                    "created_at": "2015-12-21T22:25:14+00:00",
+                    "closed_at": "2016-01-26T11:44:52+00:00"
+                },
+                {
+                    "number": 35,
+                    "title": " Characteristics with numeric values and ontology annotations #303 ",
+                    "created_at": "2015-12-21T14:01:34+00:00",
+                    "closed_at": "2016-01-26T10:19:04+00:00"
+                },
+                {
+                    "number": 34,
+                    "title": "Name of the (nano) material JSON schema",
+                    "created_at": "2015-12-18T14:21:29+00:00",
+                    "closed_at": "2016-01-26T11:43:16+00:00"
+                },
+                {
+                    "number": 32,
+                    "title": "Set up continuous integration",
+                    "created_at": "2015-12-10T20:23:41+00:00",
+                    "closed_at": "2016-02-08T11:25:15+00:00"
+                },
+                {
+                    "number": 31,
+                    "title": "JSON to Tab conversion (v1)",
+                    "created_at": "2015-12-09T13:32:31+00:00",
+                    "closed_at": "2016-02-26T17:11:39+00:00"
+                },
+                {
+                    "number": 30,
+                    "title": "Schema support for numeric factor values?",
+                    "created_at": "2015-12-09T10:59:17+00:00",
+                    "closed_at": "2015-12-19T17:56:14+00:00"
+                },
+                {
+                    "number": 29,
+                    "title": "JSON-LD representation for ISA v1",
+                    "created_at": "2015-12-08T12:43:06+00:00",
+                    "closed_at": "2024-07-22T12:04:42+00:00"
+                },
+                {
+                    "number": 28,
+                    "title": "Incompatibilities with Python 3",
+                    "created_at": "2015-12-07T15:09:41+00:00",
+                    "closed_at": "2015-12-21T22:34:46+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "typo in publication_schema.json",
+                    "created_at": "2015-11-20T15:28:19+00:00",
+                    "closed_at": "2015-11-20T15:35:12+00:00"
+                },
+                {
+                    "number": 26,
+                    "title": "derives relation between material?",
+                    "created_at": "2015-11-09T11:31:30+00:00",
+                    "closed_at": "2015-12-09T11:50:21+00:00"
+                },
+                {
+                    "number": 24,
+                    "title": "Representation of experimental data extracted from literature",
+                    "created_at": "2015-11-03T09:41:32+00:00",
+                    "closed_at": "2020-06-24T18:40:38+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "needed minor fixes in isa_model_version_1_0_schemas",
+                    "created_at": "2015-11-02T14:14:06+00:00",
+                    "closed_at": "2015-11-06T21:29:43+00:00"
+                },
+                {
+                    "number": 22,
+                    "title": "investigation without biological material (ISA v1)",
+                    "created_at": "2015-11-02T07:53:26+00:00",
+                    "closed_at": "2015-12-22T13:55:17+00:00"
+                },
+                {
+                    "number": 21,
+                    "title": "ISA v1 JSON examples",
+                    "created_at": "2015-10-29T07:54:57+00:00",
+                    "closed_at": "2015-12-22T13:55:02+00:00"
+                },
+                {
+                    "number": 18,
+                    "title": "JSON files in ISA archive ",
+                    "created_at": "2015-10-23T07:13:54+00:00",
+                    "closed_at": "2015-10-23T07:34:15+00:00"
+                },
+                {
+                    "number": 17,
+                    "title": "Support for Comments in ISA-JSON v1 schemas",
+                    "created_at": "2015-10-20T11:39:20+00:00",
+                    "closed_at": "2016-02-17T21:46:41+00:00"
+                },
+                {
+                    "number": 16,
+                    "title": "ISA JSON v1 to SRA ",
+                    "created_at": "2015-10-16T10:56:56+00:00",
+                    "closed_at": "2016-02-26T17:11:25+00:00"
+                },
+                {
+                    "number": 15,
+                    "title": "ISA 2 JSON conversion",
+                    "created_at": "2015-10-15T10:35:09+00:00",
+                    "closed_at": "2016-02-26T17:12:44+00:00"
+                },
+                {
+                    "number": 14,
+                    "title": "Make isa-api distributable",
+                    "created_at": "2015-10-12T20:12:48+00:00",
+                    "closed_at": "2015-10-21T16:21:56+00:00"
+                },
+                {
+                    "number": 12,
+                    "title": "Tab to JSON converter fails on parsing Affiliations",
+                    "created_at": "2015-10-09T11:39:53+00:00",
+                    "closed_at": "2015-10-23T07:37:10+00:00"
+                },
+                {
+                    "number": 11,
+                    "title": "Represent configuration files in the JSON rep for ISA v1",
+                    "created_at": "2015-09-30T09:15:21+00:00",
+                    "closed_at": "2016-07-06T19:15:53+00:00"
+                },
+                {
+                    "number": 10,
+                    "title": "Add tests for two-way conversion Tab-JSON & JSON-Tab",
+                    "created_at": "2015-09-29T12:12:41+00:00",
+                    "closed_at": "2016-02-20T17:46:32+00:00"
+                },
+                {
+                    "number": 9,
+                    "title": "Creation functionality for ISA v1",
+                    "created_at": "2015-09-29T12:11:37+00:00",
+                    "closed_at": "2016-02-17T21:53:24+00:00"
+                },
+                {
+                    "number": 8,
+                    "title": "CEDAR conversion",
+                    "created_at": "2015-09-29T11:58:41+00:00",
+                    "closed_at": "2016-03-16T13:07:48+00:00"
+                },
+                {
+                    "number": 7,
+                    "title": "bioCADDIE conversion",
+                    "created_at": "2015-09-29T11:58:30+00:00",
+                    "closed_at": "2020-06-24T21:04:00+00:00"
+                },
+                {
+                    "number": 6,
+                    "title": "ISA JSON schemas for create mode",
+                    "created_at": "2015-09-29T11:58:16+00:00",
+                    "closed_at": "2017-10-30T17:39:32+00:00"
+                },
+                {
+                    "number": 5,
+                    "title": "Check ISA v1 JSON schemas",
+                    "created_at": "2015-09-29T11:58:02+00:00",
+                    "closed_at": "2015-12-19T00:00:58+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "Use xslt2isa as a library",
+                    "created_at": "2015-09-23T11:53:25+00:00",
+                    "closed_at": "2016-03-14T12:08:33+00:00"
+                },
+                {
+                    "number": 1,
+                    "title": "Support for ontology term lookup",
+                    "created_at": "2015-05-20T14:55:29+00:00",
+                    "closed_at": "2017-01-30T17:03:20+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 2533186,
+                "Jupyter Notebook": 648302,
+                "XSLT": 410337,
+                "Gherkin": 17524,
+                "Common Workflow Language": 6820,
+                "Shell": 263
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 42108,
+            "total_ccn": 9582,
+            "avg_ccn": 2.9,
+            "nloc_per_file": 174.0,
+            "duplicate_rate": null
+        }
+    }
+}

@@ -1,0 +1,895 @@
+{
+    "MutateX": {
+        "papers": {
+            "id": "35323860",
+            "source": "MED",
+            "pmid": "35323860",
+            "doi": "10.1093/bib/bbac074",
+            "title": "MutateX: an automated pipeline for in silico saturation mutagenesis of protein structures and structural ensembles.",
+            "authorString": "Tiberti M, Terkelsen T, Degn K, Beltrame L, Cremers TC, da Piedade I, Di Marco M, Maiani E, Papaleo E.",
+            "journalTitle": "Brief Bioinform",
+            "issue": "3",
+            "journalVolume": "23",
+            "pubYear": "2022",
+            "journalIssn": "1467-5463; 1477-4054; ",
+            "pageInfo": "bbac074",
+            "pubType": "research support, non-u.s. gov't; journal article",
+            "isOpenAccess": "N",
+            "inEPMC": "N",
+            "inPMC": "N",
+            "hasPDF": "N",
+            "hasBook": "N",
+            "hasSuppl": "N",
+            "citedByCount": 49,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2022-03-25",
+            "firstPublicationDate": "2022-05-01"
+        },
+        "github": {
+            "repo": {
+                "id": 36660717,
+                "node_id": "MDEwOlJlcG9zaXRvcnkzNjY2MDcxNw==",
+                "name": "mutatex",
+                "full_name": "ELELAB/mutatex",
+                "private": false,
+                "owner": {
+                    "login": "ELELAB",
+                    "id": 12696253,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyNjk2MjUz",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12696253?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ELELAB",
+                    "html_url": "https://github.com/ELELAB",
+                    "followers_url": "https://api.github.com/users/ELELAB/followers",
+                    "following_url": "https://api.github.com/users/ELELAB/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ELELAB/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ELELAB/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ELELAB/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ELELAB/orgs",
+                    "repos_url": "https://api.github.com/users/ELELAB/repos",
+                    "events_url": "https://api.github.com/users/ELELAB/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ELELAB/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/ELELAB/mutatex",
+                "description": "scripts and facilities for in-silico mutagenesis with FoldX",
+                "fork": false,
+                "url": "https://api.github.com/repos/ELELAB/mutatex",
+                "forks_url": "https://api.github.com/repos/ELELAB/mutatex/forks",
+                "keys_url": "https://api.github.com/repos/ELELAB/mutatex/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/ELELAB/mutatex/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/ELELAB/mutatex/teams",
+                "hooks_url": "https://api.github.com/repos/ELELAB/mutatex/hooks",
+                "issue_events_url": "https://api.github.com/repos/ELELAB/mutatex/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/ELELAB/mutatex/events",
+                "assignees_url": "https://api.github.com/repos/ELELAB/mutatex/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/ELELAB/mutatex/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/ELELAB/mutatex/tags",
+                "blobs_url": "https://api.github.com/repos/ELELAB/mutatex/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ELELAB/mutatex/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ELELAB/mutatex/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/ELELAB/mutatex/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/ELELAB/mutatex/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/ELELAB/mutatex/languages",
+                "stargazers_url": "https://api.github.com/repos/ELELAB/mutatex/stargazers",
+                "contributors_url": "https://api.github.com/repos/ELELAB/mutatex/contributors",
+                "subscribers_url": "https://api.github.com/repos/ELELAB/mutatex/subscribers",
+                "subscription_url": "https://api.github.com/repos/ELELAB/mutatex/subscription",
+                "commits_url": "https://api.github.com/repos/ELELAB/mutatex/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/ELELAB/mutatex/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/ELELAB/mutatex/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/ELELAB/mutatex/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/ELELAB/mutatex/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/ELELAB/mutatex/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/ELELAB/mutatex/merges",
+                "archive_url": "https://api.github.com/repos/ELELAB/mutatex/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/ELELAB/mutatex/downloads",
+                "issues_url": "https://api.github.com/repos/ELELAB/mutatex/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/ELELAB/mutatex/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/ELELAB/mutatex/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/ELELAB/mutatex/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/ELELAB/mutatex/labels{/name}",
+                "releases_url": "https://api.github.com/repos/ELELAB/mutatex/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/ELELAB/mutatex/deployments",
+                "created_at": "2015-06-01T12:56:36Z",
+                "updated_at": "2026-03-09T14:20:30Z",
+                "pushed_at": "2026-03-09T14:20:25Z",
+                "git_url": "git://github.com/ELELAB/mutatex.git",
+                "ssh_url": "git@github.com:ELELAB/mutatex.git",
+                "clone_url": "https://github.com/ELELAB/mutatex.git",
+                "svn_url": "https://github.com/ELELAB/mutatex",
+                "homepage": null,
+                "size": 154290,
+                "stargazers_count": 67,
+                "watchers_count": 67,
+                "language": "Python",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 18,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 1,
+                "license": {
+                    "key": "gpl-3.0",
+                    "name": "GNU General Public License v3.0",
+                    "spdx_id": "GPL-3.0",
+                    "url": "https://api.github.com/licenses/gpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTk="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [],
+                "visibility": "public",
+                "forks": 18,
+                "open_issues": 1,
+                "watchers": 67,
+                "default_branch": "master",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "custom_properties": {},
+                "organization": {
+                    "login": "ELELAB",
+                    "id": 12696253,
+                    "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyNjk2MjUz",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/12696253?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ELELAB",
+                    "html_url": "https://github.com/ELELAB",
+                    "followers_url": "https://api.github.com/users/ELELAB/followers",
+                    "following_url": "https://api.github.com/users/ELELAB/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ELELAB/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ELELAB/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ELELAB/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ELELAB/orgs",
+                    "repos_url": "https://api.github.com/users/ELELAB/repos",
+                    "events_url": "https://api.github.com/users/ELELAB/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ELELAB/received_events",
+                    "type": "Organization",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "network_count": 18,
+                "subscribers_count": 5
+            },
+            "contributors": [
+                {
+                    "login": "mtiberti",
+                    "contributions": 434
+                },
+                {
+                    "login": "mattu90",
+                    "contributions": 4
+                },
+                {
+                    "login": "elenapapaleo",
+                    "contributions": 3
+                },
+                {
+                    "login": "jordansafer",
+                    "contributions": 2
+                },
+                {
+                    "login": "DegnKristine",
+                    "contributions": 2
+                },
+                {
+                    "login": "marnaudi",
+                    "contributions": 2
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 211,
+                    "title": "aLI",
+                    "created_at": "2025-12-17T09:17:43+00:00",
+                    "closed_at": "2026-01-05T10:17:57+00:00"
+                },
+                {
+                    "number": 210,
+                    "title": "FoldX PositionScan: \"Specified residue not found\"",
+                    "created_at": "2025-10-29T18:02:41+00:00",
+                    "closed_at": "2025-11-25T08:45:31+00:00"
+                },
+                {
+                    "number": 209,
+                    "title": "Issue plotting results from limited mutation scan using \"--no-multimers\" option",
+                    "created_at": "2025-10-20T16:07:02+00:00",
+                    "closed_at": "2026-03-09T14:20:26+00:00"
+                },
+                {
+                    "number": 207,
+                    "title": "Confusing WARNINGs when calculating binding DGs",
+                    "created_at": "2025-07-04T09:34:12+00:00",
+                    "closed_at": "2025-12-03T12:16:26+00:00"
+                },
+                {
+                    "number": 206,
+                    "title": "Windows compatibility & failed run cleanup",
+                    "created_at": "2025-06-23T13:56:54+00:00",
+                    "closed_at": "2025-06-28T06:57:56+00:00"
+                },
+                {
+                    "number": 205,
+                    "title": "Residues were skipped during execution",
+                    "created_at": "2025-06-11T13:45:58+00:00",
+                    "closed_at": "2025-07-15T11:01:22+00:00"
+                },
+                {
+                    "number": 204,
+                    "title": "Issues Running MutateX \u2013 FoldX Errors (Return Code 255) when Running Example Dataset (PTEN)",
+                    "created_at": "2025-02-05T12:23:48+00:00",
+                    "closed_at": "2025-06-11T14:57:59+00:00"
+                },
+                {
+                    "number": 203,
+                    "title": "Remove support for FoldX 4.0",
+                    "created_at": "2025-01-03T09:38:29+00:00",
+                    "closed_at": "2025-12-03T12:16:54+00:00"
+                },
+                {
+                    "number": 202,
+                    "title": "Check compatibility with FoldX 5.1",
+                    "created_at": "2025-01-03T09:37:30+00:00",
+                    "closed_at": "2025-10-06T12:43:40+00:00"
+                },
+                {
+                    "number": 201,
+                    "title": "MutateX crashes when trying to fill in undefined chain names, but A chains already exists",
+                    "created_at": "2024-12-11T11:07:21+00:00",
+                    "closed_at": "2025-06-04T15:47:50+00:00"
+                },
+                {
+                    "number": 197,
+                    "title": "Issue when providing the font with ddg2logo",
+                    "created_at": "2024-11-19T14:16:31+00:00",
+                    "closed_at": "2024-12-10T13:02:33+00:00"
+                },
+                {
+                    "number": 195,
+                    "title": "`ddg2excel` sometimes writes multiple sets of values into average output file",
+                    "created_at": "2024-11-19T12:41:55+00:00",
+                    "closed_at": "2024-11-22T14:10:39+00:00"
+                },
+                {
+                    "number": 194,
+                    "title": "Multimer bug",
+                    "created_at": "2024-11-12T07:26:44+00:00",
+                    "closed_at": "2024-12-06T16:26:03+00:00"
+                },
+                {
+                    "number": 191,
+                    "title": "`ddg2excel`'s output should optionally include standard deviation",
+                    "created_at": "2024-07-31T12:42:53+00:00",
+                    "closed_at": "2024-11-18T09:39:25+00:00"
+                },
+                {
+                    "number": 190,
+                    "title": "WARNING:root:Residue couldn't be recognized",
+                    "created_at": "2024-06-13T02:10:23+00:00",
+                    "closed_at": "2024-11-05T17:20:29+00:00"
+                },
+                {
+                    "number": 189,
+                    "title": "Some residues are not recognized in ddg2histo, even though they are present in the structure and heatmaps / boxplots.",
+                    "created_at": "2024-05-03T07:31:35+00:00",
+                    "closed_at": "2024-11-13T14:16:11+00:00"
+                },
+                {
+                    "number": 188,
+                    "title": "Error for simultaneous mutations",
+                    "created_at": "2024-04-05T14:16:03+00:00",
+                    "closed_at": "2024-04-16T08:08:43+00:00"
+                },
+                {
+                    "number": 187,
+                    "title": "Biopython >=1.82: change use of three_to_one to protein_letters_3to1",
+                    "created_at": "2024-03-28T01:18:43+00:00",
+                    "closed_at": "2024-04-03T14:24:05+00:00"
+                },
+                {
+                    "number": 186,
+                    "title": "ERROR:root:couldn't read or parse your PDB file",
+                    "created_at": "2024-02-28T04:09:58+00:00",
+                    "closed_at": "2024-11-05T17:18:18+00:00"
+                },
+                {
+                    "number": 183,
+                    "title": "Make MutateX compatible with latest versions of requirements",
+                    "created_at": "2024-02-26T09:12:32+00:00",
+                    "closed_at": "2024-12-10T13:01:36+00:00"
+                },
+                {
+                    "number": 182,
+                    "title": "PDB Parsing Error while using ddg2excel",
+                    "created_at": "2024-02-23T15:08:07+00:00",
+                    "closed_at": "2024-03-01T15:18:19+00:00"
+                },
+                {
+                    "number": 180,
+                    "title": "Error concerning FoldX executable file",
+                    "created_at": "2024-02-13T22:17:16+00:00",
+                    "closed_at": "2024-02-15T23:18:35+00:00"
+                },
+                {
+                    "number": 179,
+                    "title": "Verbose mode has no effect on output",
+                    "created_at": "2024-02-07T09:20:51+00:00",
+                    "closed_at": "2024-03-04T08:26:10+00:00"
+                },
+                {
+                    "number": 177,
+                    "title": "test `interaction_multimers_poslist` is broken",
+                    "created_at": "2024-02-06T08:27:07+00:00",
+                    "closed_at": "2024-02-16T16:00:44+00:00"
+                },
+                {
+                    "number": 176,
+                    "title": "MutateX is incompatible with BioPython >1.78",
+                    "created_at": "2024-01-31T15:11:44+00:00",
+                    "closed_at": "2024-12-10T13:02:00+00:00"
+                },
+                {
+                    "number": 175,
+                    "title": "IndexError: list index out of range",
+                    "created_at": "2024-01-27T14:17:26+00:00",
+                    "closed_at": "2024-02-01T00:15:50+00:00"
+                },
+                {
+                    "number": 174,
+                    "title": "Examples require changes to be ran and this is not very explicit in docs",
+                    "created_at": "2023-11-27T08:59:55+00:00",
+                    "closed_at": "2024-11-27T15:07:33+00:00"
+                },
+                {
+                    "number": 173,
+                    "title": "WARNING:root:FoldX exited with error for run repair_L8S8! Return code 5",
+                    "created_at": "2023-09-22T16:34:16+00:00",
+                    "closed_at": "2023-09-26T20:59:38+00:00"
+                },
+                {
+                    "number": 172,
+                    "title": "Overwriting problems related to this warning:WARNING:root:The specified rotabase file will be used instead of allowing FoldX to generate one",
+                    "created_at": "2023-08-28T09:49:48+00:00",
+                    "closed_at": "2024-11-06T08:43:00+00:00"
+                },
+                {
+                    "number": 170,
+                    "title": "Modifications to setup.py file ",
+                    "created_at": "2023-08-15T11:45:07+00:00",
+                    "closed_at": "2024-12-10T13:05:14+00:00"
+                },
+                {
+                    "number": 168,
+                    "title": "Add an analysis tool for PCA/dimensionality reduction",
+                    "created_at": "2023-08-02T08:04:45+00:00",
+                    "closed_at": "2023-10-18T11:16:53+00:00"
+                },
+                {
+                    "number": 165,
+                    "title": "`ddg2logo` crashes if no config file is provided",
+                    "created_at": "2023-07-05T13:49:56+00:00",
+                    "closed_at": "2024-01-22T14:06:50+00:00"
+                },
+                {
+                    "number": 164,
+                    "title": "ValueError: negative dimensions are not allowed - when running ddg2logo",
+                    "created_at": "2023-06-22T11:12:54+00:00",
+                    "closed_at": "2023-10-17T12:35:29+00:00"
+                },
+                {
+                    "number": 163,
+                    "title": "'matplotlib.font_manager' ",
+                    "created_at": "2023-06-08T15:39:41+00:00",
+                    "closed_at": "2023-10-17T12:37:10+00:00"
+                },
+                {
+                    "number": 161,
+                    "title": "unexpected output in csv from `ddg2excel` with multimer mode",
+                    "created_at": "2023-05-04T12:45:33+00:00",
+                    "closed_at": "2023-05-16T12:44:58+00:00"
+                },
+                {
+                    "number": 160,
+                    "title": "example runs fail",
+                    "created_at": "2023-04-27T03:03:14+00:00",
+                    "closed_at": "2023-10-17T12:36:34+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "`pdb2labels` writes output csv with dos newlines",
+                    "created_at": "2023-03-15T15:32:55+00:00",
+                    "closed_at": "2023-03-21T14:53:06+00:00"
+                },
+                {
+                    "number": 156,
+                    "title": "bugs in ddg2heatmap ",
+                    "created_at": "2023-02-24T14:10:21+00:00",
+                    "closed_at": "2023-03-21T14:52:24+00:00"
+                },
+                {
+                    "number": 154,
+                    "title": "Speed up saturation scan",
+                    "created_at": "2023-02-14T11:44:24+00:00",
+                    "closed_at": "2024-01-16T11:29:25+00:00"
+                },
+                {
+                    "number": 152,
+                    "title": "no output from dd2g* when using a position list",
+                    "created_at": "2023-01-27T11:53:11+00:00",
+                    "closed_at": "2023-02-01T10:10:52+00:00"
+                },
+                {
+                    "number": 151,
+                    "title": "Missing check of structure consistency between repair and mutation phase",
+                    "created_at": "2023-01-26T14:56:30+00:00",
+                    "closed_at": "2024-02-20T10:27:39+00:00"
+                },
+                {
+                    "number": 148,
+                    "title": "pdb2label seems wrongly referenced in the pdf of the manual",
+                    "created_at": "2022-11-14T12:11:26+00:00",
+                    "closed_at": "2022-11-14T13:12:16+00:00"
+                },
+                {
+                    "number": 145,
+                    "title": "Error during the \"Report Phase\" ",
+                    "created_at": "2022-10-27T11:12:06+00:00",
+                    "closed_at": "2022-10-27T12:05:44+00:00"
+                },
+                {
+                    "number": 144,
+                    "title": "Wrong WT residue and ddg2summary",
+                    "created_at": "2022-10-26T08:31:58+00:00",
+                    "closed_at": "2024-01-16T11:31:08+00:00"
+                },
+                {
+                    "number": 142,
+                    "title": "MutateX crashes when two identical chains don't have the same numbering in multimer mode",
+                    "created_at": "2022-10-14T08:19:55+00:00",
+                    "closed_at": "2024-02-06T08:35:43+00:00"
+                },
+                {
+                    "number": 141,
+                    "title": "ddg2lables doesn't work",
+                    "created_at": "2022-10-06T17:23:16+00:00",
+                    "closed_at": "2022-11-14T14:17:20+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "implementing support for single mutation list ",
+                    "created_at": "2022-08-31T13:06:10+00:00",
+                    "closed_at": "2024-11-05T17:16:27+00:00"
+                },
+                {
+                    "number": 139,
+                    "title": "add case study for protein-DNA binding ",
+                    "created_at": "2022-08-31T13:04:06+00:00",
+                    "closed_at": "2022-10-27T13:58:52+00:00"
+                },
+                {
+                    "number": 138,
+                    "title": "Some of the letters are upside-down when using ddg2logo",
+                    "created_at": "2022-08-30T15:17:43+00:00",
+                    "closed_at": "2024-11-13T15:38:33+00:00"
+                },
+                {
+                    "number": 137,
+                    "title": "What do the mutatex usage parameters mean",
+                    "created_at": "2022-08-11T13:22:52+00:00",
+                    "closed_at": "2022-08-23T07:45:19+00:00"
+                },
+                {
+                    "number": 133,
+                    "title": "ddg2dg doesn't support position list (-q)",
+                    "created_at": "2022-07-15T08:05:06+00:00",
+                    "closed_at": "2022-07-18T09:54:38+00:00"
+                },
+                {
+                    "number": 131,
+                    "title": "options scatter and single in ddg2distribution have confusing names",
+                    "created_at": "2022-07-07T10:29:38+00:00",
+                    "closed_at": "2022-07-07T13:06:35+00:00"
+                },
+                {
+                    "number": 130,
+                    "title": "User manual should contain more information about the format of raw data",
+                    "created_at": "2022-06-27T12:43:42+00:00",
+                    "closed_at": "2022-11-15T08:32:22+00:00"
+                },
+                {
+                    "number": 129,
+                    "title": "User manual is missing one example of running a plotting tool with poslist",
+                    "created_at": "2022-06-27T12:34:25+00:00",
+                    "closed_at": "2022-08-12T08:44:16+00:00"
+                },
+                {
+                    "number": 127,
+                    "title": "FoldX Warning error",
+                    "created_at": "2022-06-10T19:20:34+00:00",
+                    "closed_at": "2022-06-17T08:27:45+00:00"
+                },
+                {
+                    "number": 125,
+                    "title": "Thanks for writing this code",
+                    "created_at": "2022-05-17T12:36:16+00:00",
+                    "closed_at": "2024-11-05T17:10:18+00:00"
+                },
+                {
+                    "number": 122,
+                    "title": "WARNING:root:FoldX exited with error for run TA348! Return code 255",
+                    "created_at": "2022-03-31T01:57:16+00:00",
+                    "closed_at": "2022-04-24T13:53:01+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "unable to run example sh file",
+                    "created_at": "2022-03-30T10:53:23+00:00",
+                    "closed_at": "2022-03-30T13:29:59+00:00"
+                },
+                {
+                    "number": 120,
+                    "title": "ddg2logo revision 2",
+                    "created_at": "2022-03-25T19:45:30+00:00",
+                    "closed_at": "2023-05-25T14:46:11+00:00"
+                },
+                {
+                    "number": 119,
+                    "title": "ddg2logo revision 1",
+                    "created_at": "2022-03-25T19:44:00+00:00",
+                    "closed_at": "2022-06-23T08:29:08+00:00"
+                },
+                {
+                    "number": 116,
+                    "title": "Data for the examples is missing",
+                    "created_at": "2022-01-28T08:42:54+00:00",
+                    "closed_at": "2022-02-17T14:13:02+00:00"
+                },
+                {
+                    "number": 114,
+                    "title": "PTM support is not explicitly stated in the manual",
+                    "created_at": "2022-01-21T16:53:49+00:00",
+                    "closed_at": "2022-01-21T17:10:32+00:00"
+                },
+                {
+                    "number": 112,
+                    "title": "User guide is lacking information about model pre-processing",
+                    "created_at": "2022-01-06T15:35:09+00:00",
+                    "closed_at": "2022-01-06T15:41:02+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "ddg2summary output",
+                    "created_at": "2021-12-09T20:24:22+00:00",
+                    "closed_at": "2022-06-27T12:16:22+00:00"
+                },
+                {
+                    "number": 110,
+                    "title": "minor problems with mutatex/utils.py, specifically with filter_reslist()",
+                    "created_at": "2021-05-26T16:53:45+00:00",
+                    "closed_at": "2022-06-23T08:25:13+00:00"
+                },
+                {
+                    "number": 108,
+                    "title": "ddg2distribution lacks support for partial scans",
+                    "created_at": "2021-01-19T14:12:22+00:00",
+                    "closed_at": "2021-01-19T14:44:03+00:00"
+                },
+                {
+                    "number": 105,
+                    "title": "MutateX crashes when PDBs not in the current folder are supplied as input",
+                    "created_at": "2021-01-07T14:50:11+00:00",
+                    "closed_at": "2021-01-12T14:31:52+00:00"
+                },
+                {
+                    "number": 104,
+                    "title": "Allow the user to skip the repair phase",
+                    "created_at": "2021-01-07T12:17:35+00:00",
+                    "closed_at": "2021-01-13T10:21:00+00:00"
+                },
+                {
+                    "number": 103,
+                    "title": "Error after the repair-phase 2",
+                    "created_at": "2020-12-17T16:34:56+00:00",
+                    "closed_at": "2021-01-12T15:15:18+00:00"
+                },
+                {
+                    "number": 102,
+                    "title": "Overall progress tracking",
+                    "created_at": "2020-11-05T08:05:59+00:00",
+                    "closed_at": "2024-11-05T17:09:11+00:00"
+                },
+                {
+                    "number": 101,
+                    "title": "interface_ddgs ",
+                    "created_at": "2020-11-01T17:25:20+00:00",
+                    "closed_at": "2020-11-06T08:05:22+00:00"
+                },
+                {
+                    "number": 100,
+                    "title": "how ddG calculated in mutatex",
+                    "created_at": "2020-10-13T15:09:00+00:00",
+                    "closed_at": "2020-12-17T19:25:13+00:00"
+                },
+                {
+                    "number": 98,
+                    "title": "Wild type residues types should be checked when using a position list",
+                    "created_at": "2020-09-16T10:46:39+00:00",
+                    "closed_at": "2023-01-04T13:24:09+00:00"
+                },
+                {
+                    "number": 95,
+                    "title": "Mutation runs are getting terminated before completing",
+                    "created_at": "2020-07-31T08:01:45+00:00",
+                    "closed_at": "2021-12-09T20:21:02+00:00"
+                },
+                {
+                    "number": 94,
+                    "title": "ddg2summary is not installed in the right location",
+                    "created_at": "2020-07-03T13:55:46+00:00",
+                    "closed_at": "2020-09-15T07:33:03+00:00"
+                },
+                {
+                    "number": 93,
+                    "title": "Add individual data points in histogram and box plots",
+                    "created_at": "2020-04-02T15:35:04+00:00",
+                    "closed_at": "2022-11-15T08:18:07+00:00"
+                },
+                {
+                    "number": 92,
+                    "title": "Unrecognised residues from FoldX",
+                    "created_at": "2020-02-13T13:43:22+00:00",
+                    "closed_at": "2022-12-16T17:07:17+00:00"
+                },
+                {
+                    "number": 91,
+                    "title": "PDB files with multiple dots in the filename are not handled correctly",
+                    "created_at": "2020-02-07T12:27:41+00:00",
+                    "closed_at": "2020-12-17T19:28:08+00:00"
+                },
+                {
+                    "number": 90,
+                    "title": "Use logomaker library in ddg2logo to plot logo plots",
+                    "created_at": "2020-02-06T11:50:13+00:00",
+                    "closed_at": "2024-12-03T12:04:05+00:00"
+                },
+                {
+                    "number": 89,
+                    "title": "Limiting mutations to a list of residues",
+                    "created_at": "2020-01-20T13:38:35+00:00",
+                    "closed_at": "2020-09-15T07:27:55+00:00"
+                },
+                {
+                    "number": 88,
+                    "title": "mutatex crashes at the end of the calculation in Python 2.7",
+                    "created_at": "2019-12-12T15:31:38+00:00",
+                    "closed_at": "2022-02-17T14:10:56+00:00"
+                },
+                {
+                    "number": 87,
+                    "title": "The output text format isn't very user friendly",
+                    "created_at": "2019-11-25T16:34:00+00:00",
+                    "closed_at": "2022-06-28T22:30:37+00:00"
+                },
+                {
+                    "number": 80,
+                    "title": "Deprecation warning in ddg2distribution",
+                    "created_at": "2019-10-02T07:31:09+00:00",
+                    "closed_at": "2022-02-17T14:18:19+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "mutatex crashes instead of handling FileNotFoundError exceptions correctly",
+                    "created_at": "2019-10-01T06:39:11+00:00",
+                    "closed_at": "2019-10-02T09:40:57+00:00"
+                },
+                {
+                    "number": 77,
+                    "title": "ddg2pdb crashes when option -h is used",
+                    "created_at": "2019-09-26T15:22:01+00:00",
+                    "closed_at": "2019-09-26T15:24:10+00:00"
+                },
+                {
+                    "number": 76,
+                    "title": "The first and last residues are half height in heat maps from ddg2heatmap",
+                    "created_at": "2019-09-20T08:39:46+00:00",
+                    "closed_at": "2019-09-26T15:21:44+00:00"
+                },
+                {
+                    "number": 74,
+                    "title": "Add position in mutation rank in the output of ddg2summary",
+                    "created_at": "2019-09-18T07:31:13+00:00",
+                    "closed_at": "2019-09-18T11:07:03+00:00"
+                },
+                {
+                    "number": 72,
+                    "title": "Decouple data structures from functional parts of the codebase",
+                    "created_at": "2019-08-28T14:52:02+00:00",
+                    "closed_at": "2022-04-24T14:04:45+00:00"
+                },
+                {
+                    "number": 71,
+                    "title": "Excessive code duplication",
+                    "created_at": "2019-08-28T14:46:28+00:00",
+                    "closed_at": "2022-04-24T14:04:04+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "Parsing of label file is broken on Python 3",
+                    "created_at": "2019-08-28T14:23:18+00:00",
+                    "closed_at": "2019-08-28T14:26:40+00:00"
+                },
+                {
+                    "number": 67,
+                    "title": "the y-axis label in ddg2scatter is not in the right format",
+                    "created_at": "2019-08-27T15:03:50+00:00",
+                    "closed_at": "2019-08-27T15:29:34+00:00"
+                },
+                {
+                    "number": 66,
+                    "title": "x-tics can still be seen in the plots produced by ddg2ditribution -T scatter",
+                    "created_at": "2019-08-27T15:01:12+00:00",
+                    "closed_at": "2019-08-27T15:29:34+00:00"
+                },
+                {
+                    "number": 65,
+                    "title": "Self-mutations test could also include interaction energy when possible",
+                    "created_at": "2019-08-27T13:09:43+00:00",
+                    "closed_at": "2020-09-23T07:08:19+00:00"
+                },
+                {
+                    "number": 64,
+                    "title": "Multimer labels are not always generated in alphabetical order when using multimers",
+                    "created_at": "2019-08-27T08:49:31+00:00",
+                    "closed_at": "2019-08-30T11:23:42+00:00"
+                },
+                {
+                    "number": 61,
+                    "title": "MutateX crashes during repair",
+                    "created_at": "2019-08-26T09:53:24+00:00",
+                    "closed_at": "2019-08-26T11:33:06+00:00"
+                },
+                {
+                    "number": 56,
+                    "title": "FoldX processes aren't killed when the main process dies",
+                    "created_at": "2019-08-19T08:44:34+00:00",
+                    "closed_at": "2019-08-23T08:33:44+00:00"
+                },
+                {
+                    "number": 54,
+                    "title": "ddg2xlsx doesn't support custom labels",
+                    "created_at": "2019-08-15T07:58:45+00:00",
+                    "closed_at": "2019-08-15T09:48:26+00:00"
+                },
+                {
+                    "number": 50,
+                    "title": "ddg2histo -r option doesn't handle lowercase residues",
+                    "created_at": "2019-08-07T08:47:19+00:00",
+                    "closed_at": "2019-08-07T09:15:52+00:00"
+                },
+                {
+                    "number": 49,
+                    "title": "Plotting scripts crash when label file is not found",
+                    "created_at": "2019-08-07T07:23:24+00:00",
+                    "closed_at": "2019-08-07T13:47:09+00:00"
+                },
+                {
+                    "number": 47,
+                    "title": "Plotting tools only support the default font",
+                    "created_at": "2019-08-05T12:25:49+00:00",
+                    "closed_at": "2019-08-05T14:09:07+00:00"
+                },
+                {
+                    "number": 37,
+                    "title": "Refactor code as Python package",
+                    "created_at": "2019-06-25T08:11:00+00:00",
+                    "closed_at": "2019-07-08T13:59:07+00:00"
+                },
+                {
+                    "number": 35,
+                    "title": "Add setuptools installation script",
+                    "created_at": "2019-06-24T07:05:19+00:00",
+                    "closed_at": "2019-07-08T13:59:08+00:00"
+                },
+                {
+                    "number": 34,
+                    "title": "Refactor internals of gather_data",
+                    "created_at": "2019-06-20T11:46:06+00:00",
+                    "closed_at": "2019-07-23T06:53:37+00:00"
+                },
+                {
+                    "number": 33,
+                    "title": "Add check about mutation list content",
+                    "created_at": "2019-06-20T09:20:50+00:00",
+                    "closed_at": "2019-07-26T12:00:01+00:00"
+                },
+                {
+                    "number": 30,
+                    "title": "Refactor internals of ddg2xlsx",
+                    "created_at": "2019-05-23T09:27:30+00:00",
+                    "closed_at": "2019-06-24T07:12:09+00:00"
+                },
+                {
+                    "number": 29,
+                    "title": "Refactor internals of ddg2density",
+                    "created_at": "2019-05-23T09:15:19+00:00",
+                    "closed_at": "2019-06-24T07:11:42+00:00"
+                },
+                {
+                    "number": 27,
+                    "title": "Documentation needs to be updated",
+                    "created_at": "2019-05-13T08:42:39+00:00",
+                    "closed_at": "2019-10-27T12:59:57+00:00"
+                },
+                {
+                    "number": 26,
+                    "title": "Check compatibility with Python 3",
+                    "created_at": "2019-05-13T07:55:33+00:00",
+                    "closed_at": "2019-05-23T09:49:43+00:00"
+                },
+                {
+                    "number": 23,
+                    "title": "Check and implement compatibility with FoldX 5",
+                    "created_at": "2019-05-06T09:18:14+00:00",
+                    "closed_at": "2019-05-09T15:34:26+00:00"
+                },
+                {
+                    "number": 22,
+                    "title": "MutateX still attempts to calculate binding DDGs when only one chain is present",
+                    "created_at": "2019-04-03T14:51:58+00:00",
+                    "closed_at": "2019-06-19T07:26:22+00:00"
+                },
+                {
+                    "number": 5,
+                    "title": "tar.gz of mutations dir",
+                    "created_at": "2018-02-07T13:25:49+00:00",
+                    "closed_at": "2018-02-16T08:38:10+00:00"
+                },
+                {
+                    "number": 2,
+                    "title": "Add support for FoldX 4 in MutateX",
+                    "created_at": "2015-10-08T18:01:23+00:00",
+                    "closed_at": "2018-02-07T13:22:14+00:00"
+                },
+                {
+                    "number": 1,
+                    "title": "Reporting issues/ideas with MutateX",
+                    "created_at": "2015-10-08T09:26:34+00:00",
+                    "closed_at": "2019-05-23T09:15:31+00:00"
+                }
+            ],
+            "languages": {
+                "Python": 255440,
+                "Shell": 23304
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 970,
+            "total_ccn": 325,
+            "avg_ccn": 4.58,
+            "nloc_per_file": 194.0,
+            "duplicate_rate": 9.97
+        }
+    }
+}

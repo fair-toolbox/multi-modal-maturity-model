@@ -1,0 +1,3287 @@
+{
+    "MS2AI": {
+        "papers": {
+            "id": "34636883",
+            "source": "MED",
+            "pmid": "34636883",
+            "doi": "10.1093/bioinformatics/btab701",
+            "title": "MS2AI: automated repurposing of public peptide LC-MS data for machine learning applications.",
+            "authorString": "Rehfeldt TG, Krawczyk K, B\u00f8gebjerg M, Schw\u00e4mmle V, R\u00f6ttger R.",
+            "journalTitle": "Bioinformatics",
+            "issue": "3",
+            "journalVolume": "38",
+            "pubYear": "2022",
+            "journalIssn": "1367-4803; 1367-4811; ",
+            "pageInfo": "875-877",
+            "pubType": "research support, non-u.s. gov't; journal article",
+            "isOpenAccess": "N",
+            "inEPMC": "N",
+            "inPMC": "N",
+            "hasPDF": "N",
+            "hasBook": "N",
+            "hasSuppl": "N",
+            "citedByCount": 6,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "N",
+            "firstIndexDate": "2021-10-13",
+            "firstPublicationDate": "2022-01-01"
+        },
+        "github": null,
+        "gitlab": {
+            "repo": {
+                "id": 18736238,
+                "description": "",
+                "name": "MS2AI",
+                "name_with_namespace": "RoettgerLab / MS2AI",
+                "path": "ms2ai",
+                "path_with_namespace": "roettgerlab/ms2ai",
+                "created_at": "2020-05-12T14:31:09.204Z",
+                "default_branch": "master",
+                "tag_list": [],
+                "topics": [],
+                "ssh_url_to_repo": "git@gitlab.com:roettgerlab/ms2ai.git",
+                "http_url_to_repo": "https://gitlab.com/roettgerlab/ms2ai.git",
+                "web_url": "https://gitlab.com/roettgerlab/ms2ai",
+                "readme_url": "https://gitlab.com/roettgerlab/ms2ai/-/blob/master/readme.md",
+                "forks_count": 2,
+                "avatar_url": null,
+                "star_count": 2,
+                "last_activity_at": "2023-05-24T11:10:24.640Z",
+                "visibility": "public",
+                "namespace": {
+                    "id": 9353895,
+                    "name": "RoettgerLab",
+                    "path": "roettgerlab",
+                    "kind": "group",
+                    "full_path": "roettgerlab",
+                    "parent_id": null,
+                    "avatar_url": null,
+                    "web_url": "https://gitlab.com/groups/roettgerlab"
+                },
+                "container_registry_image_prefix": "registry.gitlab.com/roettgerlab/ms2ai",
+                "_links": {
+                    "self": "https://gitlab.com/api/v4/projects/18736238",
+                    "issues": "https://gitlab.com/api/v4/projects/18736238/issues",
+                    "merge_requests": "https://gitlab.com/api/v4/projects/18736238/merge_requests",
+                    "repo_branches": "https://gitlab.com/api/v4/projects/18736238/repository/branches",
+                    "labels": "https://gitlab.com/api/v4/projects/18736238/labels",
+                    "events": "https://gitlab.com/api/v4/projects/18736238/events",
+                    "members": "https://gitlab.com/api/v4/projects/18736238/members",
+                    "cluster_agents": "https://gitlab.com/api/v4/projects/18736238/cluster_agents"
+                },
+                "marked_for_deletion_at": null,
+                "marked_for_deletion_on": null,
+                "packages_enabled": true,
+                "empty_repo": false,
+                "archived": false,
+                "resolve_outdated_diff_discussions": false,
+                "container_expiration_policy": {
+                    "cadence": "7d",
+                    "enabled": false,
+                    "keep_n": null,
+                    "older_than": null,
+                    "name_regex": null,
+                    "name_regex_keep": null,
+                    "next_run_at": "2020-10-21T08:58:26.099Z"
+                },
+                "repository_object_format": "sha1",
+                "issues_enabled": true,
+                "merge_requests_enabled": true,
+                "wiki_enabled": true,
+                "jobs_enabled": true,
+                "snippets_enabled": true,
+                "container_registry_enabled": true,
+                "service_desk_enabled": true,
+                "can_create_merge_request_in": true,
+                "issues_access_level": "enabled",
+                "repository_access_level": "enabled",
+                "merge_requests_access_level": "enabled",
+                "forking_access_level": "enabled",
+                "wiki_access_level": "enabled",
+                "builds_access_level": "enabled",
+                "snippets_access_level": "enabled",
+                "pages_access_level": "enabled",
+                "analytics_access_level": "enabled",
+                "container_registry_access_level": "enabled",
+                "security_and_compliance_access_level": "private",
+                "releases_access_level": "enabled",
+                "environments_access_level": "enabled",
+                "feature_flags_access_level": "enabled",
+                "infrastructure_access_level": "enabled",
+                "monitor_access_level": "enabled",
+                "model_experiments_access_level": "enabled",
+                "model_registry_access_level": "enabled",
+                "package_registry_access_level": "public",
+                "emails_disabled": false,
+                "emails_enabled": true,
+                "show_diff_preview_in_email": true,
+                "shared_runners_enabled": true,
+                "lfs_enabled": true,
+                "creator_id": 5799849,
+                "import_status": "none",
+                "open_issues_count": 1,
+                "description_html": "",
+                "updated_at": "2023-12-12T00:16:33.390Z",
+                "ci_config_path": null,
+                "public_jobs": true,
+                "shared_with_groups": [],
+                "only_allow_merge_if_pipeline_succeeds": false,
+                "allow_merge_on_skipped_pipeline": null,
+                "request_access_enabled": true,
+                "only_allow_merge_if_all_discussions_are_resolved": false,
+                "remove_source_branch_after_merge": true,
+                "printing_merge_request_link_enabled": true,
+                "merge_method": "merge",
+                "squash_option": "default_off",
+                "enforce_auth_checks_on_uploads": true,
+                "suggestion_commit_message": null,
+                "merge_commit_template": null,
+                "squash_commit_template": null,
+                "issue_branch_template": null,
+                "warn_about_potentially_unwanted_characters": true,
+                "autoclose_referenced_issues": true,
+                "max_artifacts_size": null,
+                "external_authorization_classification_label": "",
+                "requirements_enabled": false,
+                "requirements_access_level": "enabled",
+                "security_and_compliance_enabled": false,
+                "compliance_frameworks": [],
+                "permissions": {
+                    "project_access": null,
+                    "group_access": null
+                }
+            },
+            "branches_count": 3,
+            "contributors": [
+                {
+                    "name": "Veit",
+                    "email": "veits@bmb.sdu.dk",
+                    "commits": 1,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Alex Gherega",
+                    "email": "alex.gherega@gmail.com",
+                    "commits": 2,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "panzerschnitzel",
+                    "email": "panzer.schnitzel@gmail.com",
+                    "commits": 3,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "TjobberTjob",
+                    "email": "31824117+TjobberTjob@users.noreply.github.com",
+                    "commits": 4,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "root",
+                    "email": "root@DESKTOP-TE5U5Q4.localdomain",
+                    "commits": 7,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "Tobias",
+                    "email": "tobiasgrehfeldt@gmail.com",
+                    "commits": 10,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "tobias",
+                    "email": "tobiasgchristense@outlook.dk",
+                    "commits": 29,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "tjobber",
+                    "email": "1DKwritesomething",
+                    "commits": 117,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "TjobberTjob",
+                    "email": "tobiasgchristensen@outlook.dk",
+                    "commits": 150,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "TjobberTjob",
+                    "email": "TobiasgChristensen@outlook.dk",
+                    "commits": 349,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "tjobbertjob",
+                    "email": "TobiasGChristensen@outlook.dk",
+                    "commits": 505,
+                    "additions": 0,
+                    "deletions": 0
+                },
+                {
+                    "name": "TjobberTjob",
+                    "email": "tobiasgc95@hotmail.com",
+                    "commits": 823,
+                    "additions": 0,
+                    "deletions": 0
+                }
+            ],
+            "closed_issues": [
+                {
+                    "project_id": 18736238,
+                    "id": 71246039,
+                    "iid": 36,
+                    "title": "[task] create summary functions",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-09-16T11:56:25.974Z",
+                    "updated_at": "2021-12-06T12:50:48.090Z",
+                    "closed_at": "2021-12-06T12:50:48.089Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "To Do"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 1,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/36",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/36",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/36/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/36/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#36",
+                        "relative": "#36",
+                        "full": "roettgerlab/ms2ai#36"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 71245950,
+                    "iid": 35,
+                    "title": "[task] database for metadata",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-09-16T11:54:20.693Z",
+                    "updated_at": "2021-12-06T12:50:48.385Z",
+                    "closed_at": "2021-12-06T12:50:48.384Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "To Do"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/35",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/35",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/35/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/35/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#35",
+                        "relative": "#35",
+                        "full": "roettgerlab/ms2ai#35"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 69615876,
+                    "iid": 34,
+                    "title": "[idea] ms2 binning",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-08-10T08:54:46.582Z",
+                    "updated_at": "2020-09-16T11:53:33.633Z",
+                    "closed_at": "2020-09-16T11:53:33.475Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/34",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/34",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/34/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/34/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#34",
+                        "relative": "#34",
+                        "full": "roettgerlab/ms2ai#34"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 68927197,
+                    "iid": 33,
+                    "title": "[task] adding examples",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-23T22:06:57.882Z",
+                    "updated_at": "2020-07-27T09:58:33.632Z",
+                    "closed_at": "2020-07-27T09:54:33.354Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/33",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/33",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/33/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/33/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#33",
+                        "relative": "#33",
+                        "full": "roettgerlab/ms2ai#33"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 68923572,
+                    "iid": 32,
+                    "title": "[task] add doc strings",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-23T19:42:05.355Z",
+                    "updated_at": "2021-12-06T12:50:48.771Z",
+                    "closed_at": "2021-12-06T12:50:48.771Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "To Do"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/32",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/32",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/32/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/32/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#32",
+                        "relative": "#32",
+                        "full": "roettgerlab/ms2ai#32"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 68923363,
+                    "iid": 31,
+                    "title": "[task]Renaming and refactoring",
+                    "description": "Changing naming and folder placement of files. Along with creating a unified main run function",
+                    "state": "closed",
+                    "created_at": "2020-07-23T19:36:11.626Z",
+                    "updated_at": "2020-07-27T09:31:56.339Z",
+                    "closed_at": "2020-07-27T09:31:56.301Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/31",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/31",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/31/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/31/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#31",
+                        "relative": "#31",
+                        "full": "roettgerlab/ms2ai#31"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 59291322,
+                    "iid": 30,
+                    "title": "[task] id files flexibility",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-15T14:35:38.497Z",
+                    "updated_at": "2021-12-06T12:50:48.563Z",
+                    "closed_at": "2021-12-06T12:50:48.562Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "To Do"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/30",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/30",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/30/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/30/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#30",
+                        "relative": "#30",
+                        "full": "roettgerlab/ms2ai#30"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 59269181,
+                    "iid": 29,
+                    "title": "[task] k-fold data generator",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-15T14:13:38.156Z",
+                    "updated_at": "2020-07-27T09:32:01.463Z",
+                    "closed_at": "2020-07-27T09:32:01.338Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 2,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/29",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/29",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/29/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/29/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#29",
+                        "relative": "#29",
+                        "full": "roettgerlab/ms2ai#29"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 59264432,
+                    "iid": 28,
+                    "title": "[task] Application for paper",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-15T14:09:20.296Z",
+                    "updated_at": "2021-12-06T12:50:48.467Z",
+                    "closed_at": "2021-12-06T12:50:48.466Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "In progress"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 2,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/28",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/28",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/28/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/28/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#28",
+                        "relative": "#28",
+                        "full": "roettgerlab/ms2ai#28"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 57164957,
+                    "iid": 27,
+                    "title": "[task] add logging structure",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-14T12:41:40.263Z",
+                    "updated_at": "2020-08-18T09:56:36.112Z",
+                    "closed_at": "2020-08-18T09:56:35.900Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/27",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/27",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/27/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/27/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#27",
+                        "relative": "#27",
+                        "full": "roettgerlab/ms2ai#27"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 56857852,
+                    "iid": 26,
+                    "title": "[task] add pride info to scraper",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-14T08:44:08.159Z",
+                    "updated_at": "2020-07-17T08:09:32.282Z",
+                    "closed_at": "2020-07-17T08:09:32.242Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/26",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/26",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/26/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/26/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#26",
+                        "relative": "#26",
+                        "full": "roettgerlab/ms2ai#26"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 56826758,
+                    "iid": 25,
+                    "title": "[task] multiprocessing write extractor",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-07-14T08:15:39.871Z",
+                    "updated_at": "2020-07-15T09:05:05.177Z",
+                    "closed_at": "2020-07-15T09:05:05.143Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/25",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/25",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/25/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/25/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#25",
+                        "relative": "#25",
+                        "full": "roettgerlab/ms2ai#25"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 56821700,
+                    "iid": 24,
+                    "title": "[task] multiprocessing write scraper",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-14T08:05:12.161Z",
+                    "updated_at": "2020-07-15T09:05:07.272Z",
+                    "closed_at": "2020-07-15T09:05:07.243Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/24",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/24",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/24/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/24/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#24",
+                        "relative": "#24",
+                        "full": "roettgerlab/ms2ai#24"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 55365350,
+                    "iid": 23,
+                    "title": "[task] fix local extractor",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-13T10:44:31.387Z",
+                    "updated_at": "2020-08-07T21:49:37.584Z",
+                    "closed_at": "2020-08-06T13:50:12.414Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/23",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/23",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/23/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/23/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#23",
+                        "relative": "#23",
+                        "full": "roettgerlab/ms2ai#23"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54339482,
+                    "iid": 22,
+                    "title": "[bug] recursion limit [scraper]",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-07-11T21:07:22.104Z",
+                    "updated_at": "2020-07-15T09:05:10.071Z",
+                    "closed_at": "2020-07-15T09:05:10.044Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/22",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/22",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/22/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/22/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#22",
+                        "relative": "#22",
+                        "full": "roettgerlab/ms2ai#22"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54166487,
+                    "iid": 21,
+                    "title": "[task] formulate architecture goals",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-09T14:26:03.230Z",
+                    "updated_at": "2021-12-06T12:50:48.282Z",
+                    "closed_at": "2021-12-06T12:50:48.281Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Ready for review"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/21",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/21",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/21/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/21/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#21",
+                        "relative": "#21",
+                        "full": "roettgerlab/ms2ai#21"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54163507,
+                    "iid": 20,
+                    "title": "[task] refactor scraper",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-09T13:23:47.303Z",
+                    "updated_at": "2020-07-15T09:05:08.892Z",
+                    "closed_at": "2020-07-15T09:05:08.864Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/20",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/20",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/20/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/20/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#20",
+                        "relative": "#20",
+                        "full": "roettgerlab/ms2ai#20"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54162755,
+                    "iid": 19,
+                    "title": "[issue] Thermorawfileparser conda installation",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-07-09T13:06:55.946Z",
+                    "updated_at": "2021-12-06T12:50:48.677Z",
+                    "closed_at": "2021-12-06T12:50:48.676Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "To Do"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 2,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/19",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/19",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/19/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/19/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#19",
+                        "relative": "#19",
+                        "full": "roettgerlab/ms2ai#19"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54155944,
+                    "iid": 18,
+                    "title": "replace old read and writes",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-09T10:46:15.453Z",
+                    "updated_at": "2020-07-09T10:46:58.594Z",
+                    "closed_at": "2020-07-09T10:46:58.294Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/18",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/18",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/18/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/18/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#18",
+                        "relative": "#18",
+                        "full": "roettgerlab/ms2ai#18"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54155937,
+                    "iid": 17,
+                    "title": "full image png problems",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-09T10:46:07.037Z",
+                    "updated_at": "2020-07-09T10:46:57.673Z",
+                    "closed_at": "2020-07-09T10:46:57.541Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/17",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/17",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/17/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/17/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#17",
+                        "relative": "#17",
+                        "full": "roettgerlab/ms2ai#17"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 54155914,
+                    "iid": 16,
+                    "title": "fix msgpack issue",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-09T10:45:34.791Z",
+                    "updated_at": "2020-07-09T10:46:57.048Z",
+                    "closed_at": "2020-07-09T10:46:56.903Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/16",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/16",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/16/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/16/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#16",
+                        "relative": "#16",
+                        "full": "roettgerlab/ms2ai#16"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 53869535,
+                    "iid": 15,
+                    "title": "I/O Storage",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-07-03T08:28:42.351Z",
+                    "updated_at": "2020-07-07T10:11:59.440Z",
+                    "closed_at": "2020-07-07T10:10:14.564Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 5092321,
+                            "username": "tjobbertjob",
+                            "public_email": "",
+                            "name": "Tobias Greisager Rehfeldt",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                            "web_url": "https://gitlab.com/tjobbertjob"
+                        }
+                    ],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/15",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/15",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/15/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/15/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#15",
+                        "relative": "#15",
+                        "full": "roettgerlab/ms2ai#15"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 53869261,
+                    "iid": 14,
+                    "title": "fix config file",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-03T08:25:30.532Z",
+                    "updated_at": "2020-07-07T10:12:03.839Z",
+                    "closed_at": "2020-07-03T08:27:21.438Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 5092321,
+                            "username": "tjobbertjob",
+                            "public_email": "",
+                            "name": "Tobias Greisager Rehfeldt",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                            "web_url": "https://gitlab.com/tjobbertjob"
+                        }
+                    ],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/14",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/14",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/14/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/14/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#14",
+                        "relative": "#14",
+                        "full": "roettgerlab/ms2ai#14"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 53868550,
+                    "iid": 13,
+                    "title": "create storage structure",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-03T08:10:03.257Z",
+                    "updated_at": "2020-07-07T10:12:07.041Z",
+                    "closed_at": "2020-07-03T08:20:40.023Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/13",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/13",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/13/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/13/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#13",
+                        "relative": "#13",
+                        "full": "roettgerlab/ms2ai#13"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 52899038,
+                    "iid": 12,
+                    "title": "Refactor peptide extractor",
+                    "description": null,
+                    "state": "closed",
+                    "created_at": "2020-07-01T08:49:27.561Z",
+                    "updated_at": "2020-07-07T10:11:47.934Z",
+                    "closed_at": "2020-07-07T10:10:16.497Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 2,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/12",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/12",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/12/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/12/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#12",
+                        "relative": "#12",
+                        "full": "roettgerlab/ms2ai#12"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 51512123,
+                    "iid": 11,
+                    "title": "[msa2ai][readme] Add space after ####",
+                    "description": "Add a space after ####:\n```\n#####Required python packages:\n```",
+                    "state": "closed",
+                    "created_at": "2020-06-29T14:42:43.797Z",
+                    "updated_at": "2020-07-09T10:47:21.864Z",
+                    "closed_at": "2020-06-29T15:35:20.068Z",
+                    "closed_by": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 302212,
+                            "username": "alex.gherega",
+                            "public_email": "",
+                            "name": "Catalin-Alexandru Gherega",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                            "web_url": "https://gitlab.com/alex.gherega"
+                        }
+                    ],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/11",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/11",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/11/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/11/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#11",
+                        "relative": "#11",
+                        "full": "roettgerlab/ms2ai#11"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 51495346,
+                    "iid": 10,
+                    "title": "[extractor.py] refactor extractor",
+                    "description": "",
+                    "state": "closed",
+                    "created_at": "2020-06-29T14:06:26.296Z",
+                    "updated_at": "2020-07-07T10:11:52.149Z",
+                    "closed_at": "2020-07-07T10:10:14.565Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/10",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/10",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/10/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/10/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#10",
+                        "relative": "#10",
+                        "full": "roettgerlab/ms2ai#10"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 40926858,
+                    "iid": 9,
+                    "title": "New server for testing purposes",
+                    "description": "Find the specifications for a machine in the range of 80,000 Kr. (10,000 \u20ac):\n\nRAMc (also upper limit for potential upgrades)\n\nHDDs and SDD(s)\n\nHigh-end graphic card or not?\n\n1 or 2 CPUs\n\n...\n\nPlease add your wishlist and preferences, so I can ask for a quote **next week**.",
+                    "state": "closed",
+                    "created_at": "2020-06-10T14:56:50.853Z",
+                    "updated_at": "2020-07-07T10:12:18.128Z",
+                    "closed_at": "2020-06-14T06:23:32.586Z",
+                    "closed_by": {
+                        "id": 374872,
+                        "username": "veitveit",
+                        "public_email": "",
+                        "name": "Veit",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/374872/avatar.png",
+                        "web_url": "https://gitlab.com/veitveit"
+                    },
+                    "labels": [
+                        "Done",
+                        "hardware"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 374872,
+                        "username": "veitveit",
+                        "public_email": "",
+                        "name": "Veit",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/374872/avatar.png",
+                        "web_url": "https://gitlab.com/veitveit"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 9,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": "2020-06-15",
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/9",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/9",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/9/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/9/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#9",
+                        "relative": "#9",
+                        "full": "roettgerlab/ms2ai#9"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35463128,
+                    "iid": 8,
+                    "title": "More systematic exploration of MaxQuant output",
+                    "description": "There are many often partly redundant files: msms.txt, allPeptides.txt, evidence.txt\nThey present the data on different levels.\n\nWe want to extract all relevant information that can be matched to a peak (pair retention time, ms/z) in MS1.\n\nImplementation would require\n- Read full set of relevant files and extract information per feature (pair of scan number + file name)\n- Filter for irrelevant features (e.g. too low score, bad spectrum, ..., will need to be defined)\n- Assemble entries for each feature combining MS1 with MS2 + properties like charge, identification score, ..., and also quantifications. A clear definition of what is what will be needed.\n- (Question) Would a database taking features on this level be efficient?\n- Summary of MS run for general quality control and addition of metadata from PRIDE",
+                    "state": "closed",
+                    "created_at": "2020-06-05T06:07:02.755Z",
+                    "updated_at": "2021-12-06T12:50:49.144Z",
+                    "closed_at": "2021-12-06T12:50:49.142Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Enhancement"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 374872,
+                        "username": "veitveit",
+                        "public_email": "",
+                        "name": "Veit",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/374872/avatar.png",
+                        "web_url": "https://gitlab.com/veitveit"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/8",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/8",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/8/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/8/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#8",
+                        "relative": "#8",
+                        "full": "roettgerlab/ms2ai#8"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35233325,
+                    "iid": 7,
+                    "title": "[scraper.py] redesign & refactor",
+                    "description": "Part of the #4",
+                    "state": "closed",
+                    "created_at": "2020-05-31T14:40:03.448Z",
+                    "updated_at": "2020-07-09T10:47:14.222Z",
+                    "closed_at": "2020-07-07T10:12:49.118Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Done"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 1,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/7",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/7",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/7/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/7/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#7",
+                        "relative": "#7",
+                        "full": "roettgerlab/ms2ai#7"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35228700,
+                    "iid": 6,
+                    "title": "Deal with corrupted  zip files",
+                    "description": "I realized that there are many zip-files that throw out errors when e.g. using \"unzip\".\nOne workaround (if not done already) would be to use \"jar xvf\" as it can work with corrupted or incomplete zip-files",
+                    "state": "closed",
+                    "created_at": "2020-05-31T08:53:15.308Z",
+                    "updated_at": "2021-12-06T12:50:49.603Z",
+                    "closed_at": "2021-12-06T12:50:49.602Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Enhancement"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 374872,
+                        "username": "veitveit",
+                        "public_email": "",
+                        "name": "Veit",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/374872/avatar.png",
+                        "web_url": "https://gitlab.com/veitveit"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/6",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/6",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/6/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/6/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#6",
+                        "relative": "#6",
+                        "full": "roettgerlab/ms2ai#6"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35208743,
+                    "iid": 5,
+                    "title": "Story: Documentation pages",
+                    "description": "Produce independent pages clarifying the following:\n\n* project overall documentation and presentation\n\n* project setup and dependencies\n\n* pipeline use case examples\nNOTE: thise page also requires a code module `examples` \n\n* releases (current dev stage and future objectives)",
+                    "state": "closed",
+                    "created_at": "2020-05-30T07:46:14.677Z",
+                    "updated_at": "2021-12-06T12:50:48.891Z",
+                    "closed_at": "2021-12-06T12:50:48.890Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Story"
+                    ],
+                    "milestone": null,
+                    "assignees": [],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/5",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/5",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/5/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/5/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#5",
+                        "relative": "#5",
+                        "full": "roettgerlab/ms2ai#5"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35208632,
+                    "iid": 4,
+                    "title": "Story: Re-design MS2AI",
+                    "description": "Detail some design decisions and put together a set of design tasks to improve clarity and flexibility for ms2ai code-base.",
+                    "state": "closed",
+                    "created_at": "2020-05-30T07:35:35.017Z",
+                    "updated_at": "2021-12-06T12:50:49.243Z",
+                    "closed_at": "2021-12-06T12:50:49.238Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Story"
+                    ],
+                    "milestone": {
+                        "id": 1304554,
+                        "iid": 2,
+                        "project_id": 18736238,
+                        "title": "Re-design strategy",
+                        "description": "Put together a minimal set of goals and specific tasks in order to synthesize the overall design",
+                        "state": "active",
+                        "created_at": "2020-05-30T07:35:10.864Z",
+                        "updated_at": "2020-05-30T07:35:10.864Z",
+                        "due_date": "2020-06-17",
+                        "start_date": "2020-06-03",
+                        "expired": true,
+                        "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/milestones/2"
+                    },
+                    "assignees": [],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 6,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/4",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/4",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/4/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/4/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#4",
+                        "relative": "#4",
+                        "full": "roettgerlab/ms2ai#4"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35208605,
+                    "iid": 3,
+                    "title": "Story: Improve design for current architecture",
+                    "description": "The current architecture is based on pipeline architecture with a monolitich-ish design.\n\nThe pipeline flow needs to be preserved while adding flexibility to the ecosystem via component and layers based design.\n\nBased on work from #2 we can abstract away some concepts and achieve the above scenario.\n\nSome examples to start the story: \n\n* conceptualize the filtering (i.e. can we describe a general framework for users to add particularize ms2ai with code for their own filtering needs)\n\n* conceptualize the data source\n\n* conceptualize raw data formats and extraction",
+                    "state": "closed",
+                    "created_at": "2020-05-30T07:31:41.484Z",
+                    "updated_at": "2021-12-06T12:50:49.491Z",
+                    "closed_at": "2021-12-06T12:50:49.487Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Story"
+                    ],
+                    "milestone": {
+                        "id": 1304536,
+                        "iid": 1,
+                        "project_id": 18736238,
+                        "title": "Collect/filter/extract data from PRIDE: use cases",
+                        "description": "Provide several use-cases and data acquisition scenarios for abstracting some of the current workflow components ",
+                        "state": "active",
+                        "created_at": "2020-05-30T06:59:50.620Z",
+                        "updated_at": "2020-05-30T06:59:50.620Z",
+                        "due_date": "2020-06-17",
+                        "start_date": "2020-05-27",
+                        "expired": true,
+                        "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/milestones/1"
+                    },
+                    "assignees": [],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 0,
+                    "merge_requests_count": 0,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/3",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/3",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/3/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/3/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#3",
+                        "relative": "#3",
+                        "full": "roettgerlab/ms2ai#3"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 35208177,
+                    "iid": 2,
+                    "title": "Story: Data collection & transformation",
+                    "description": "This story is concerned with collecting use-case scenarios for the following features:",
+                    "state": "closed",
+                    "created_at": "2020-05-30T06:47:30.864Z",
+                    "updated_at": "2021-12-06T12:50:49.011Z",
+                    "closed_at": "2021-12-06T12:50:49.006Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Story"
+                    ],
+                    "milestone": {
+                        "id": 1304536,
+                        "iid": 1,
+                        "project_id": 18736238,
+                        "title": "Collect/filter/extract data from PRIDE: use cases",
+                        "description": "Provide several use-cases and data acquisition scenarios for abstracting some of the current workflow components ",
+                        "state": "active",
+                        "created_at": "2020-05-30T06:59:50.620Z",
+                        "updated_at": "2020-05-30T06:59:50.620Z",
+                        "due_date": "2020-06-17",
+                        "start_date": "2020-05-27",
+                        "expired": true,
+                        "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/milestones/1"
+                    },
+                    "assignees": [],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": null,
+                    "user_notes_count": 9,
+                    "merge_requests_count": 0,
+                    "upvotes": 1,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/2",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/2",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/2/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/2/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#2",
+                        "relative": "#2",
+                        "full": "roettgerlab/ms2ai#2"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                },
+                {
+                    "project_id": 18736238,
+                    "id": 34690076,
+                    "iid": 1,
+                    "title": "[extract.py] FileNotFoundError",
+                    "description": "Running the extract.py example:\n\n`python extractor.py PXD004732`\n\nwith config.json format_software property changed to docker:\n\n`\"format_software\": \"docker\",`\n\nGives the following error:\n\n```\nAccessions: PXD004732\nfile: PXD004732/01640c_BA2-Thermo_SRM_Pool_9_01_01-ETD-1h-R2                                               \n-i, --input: specify a valid RAW file location                          \t\nError - usage is:\n  -h, --help                 Prints out the options.\n      --version              Prints out the library version.\n  -i, --input=VALUE          The raw file input (Required). Specify this or an\n                               input directory -d.\n  -d, --input_directory=VALUE\n                             The directory containing the raw files (Required).\n                               Specify this or an input raw file -i.\n  -o, --output=VALUE         The output directory. Specify this or an output\n                               file -b. Specifying neither writes to the input\n                               directory.\n  -b, --output_file=VALUE    The output file. Specify this or an output\n                               directory -o. Specifying neither writes to the\n                               input directory.\n  -f, --format=VALUE         The spectra output format: 0 for MGF, 1 for mzML,\n                               2 for indexed mzML, 3 for Parquet. Defaults to\n                               mzML if no format is specified.\n  -m, --metadata=VALUE       The metadata output format: 0 for JSON, 1 for TXT.\n  -c, --metadata_output_file=VALUE\n                             The metadata output file. By default the metadata\n                               file is written to the output directory.\n  -g, --gzip                 GZip the output file.\n  -p, --noPeakPicking        Don't use the peak picking provided by the native\n                               Thermo library. By default peak picking is\n                               enabled.\n  -z, --noZlibCompression    Don't use zlib compression for the m/z ratios and\n                               intensities. By default zlib compression is\n                               enabled.\n  -l, --logging=VALUE        Optional logging level: 0 for silent, 1 for\n                               verbose.\n  -e, --ignoreInstrumentErrors\n                             Ignore missing properties by the instrument.\n  -u, --s3_url[=VALUE]       Optional property to write directly the data into\n                               S3 Storage.\n  -k, --s3_accesskeyid[=VALUE]\n                             Optional key for the S3 bucket to write the file\n                               output.\n  -t, --s3_secretaccesskey[=VALUE]\n                             Optional key for the S3 bucket to write the file\n                               output.\n  -n, --s3_bucketName[=VALUE]\n                             S3 bucket name\nRawfile error. 01640c_BA2-Thermo_SRM_Pool_9_01_01-ETD-1h-R2: \u2716 | Error Class: <class 'FileNotFoundError'> | Error: [Errno 2] No such file or directory: 'data/PXD004732/01640c_BA2-Thermo_SRM_Pool_9_01_01-ETD-1h-R2/file.mzML' | Line: 704\nfile: PXD004732/01640c_BA2-Thermo_SRM_Pool_9_01_01-DDA-1h-R2\n```",
+                    "state": "closed",
+                    "created_at": "2020-05-18T14:05:13.354Z",
+                    "updated_at": "2020-07-09T10:47:36.875Z",
+                    "closed_at": "2020-07-09T10:47:36.851Z",
+                    "closed_by": {
+                        "id": 5092321,
+                        "username": "tjobbertjob",
+                        "public_email": "",
+                        "name": "Tobias Greisager Rehfeldt",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://secure.gravatar.com/avatar/31f4cf648bf410790baa040a4d5bb81f948ad9700c0596f6a2b8c6f18b3df857?s=80&d=identicon",
+                        "web_url": "https://gitlab.com/tjobbertjob"
+                    },
+                    "labels": [
+                        "Ready for review"
+                    ],
+                    "milestone": null,
+                    "assignees": [
+                        {
+                            "id": 302212,
+                            "username": "alex.gherega",
+                            "public_email": "",
+                            "name": "Catalin-Alexandru Gherega",
+                            "state": "active",
+                            "locked": false,
+                            "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                            "web_url": "https://gitlab.com/alex.gherega"
+                        }
+                    ],
+                    "author": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "type": "ISSUE",
+                    "assignee": {
+                        "id": 302212,
+                        "username": "alex.gherega",
+                        "public_email": "",
+                        "name": "Catalin-Alexandru Gherega",
+                        "state": "active",
+                        "locked": false,
+                        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/302212/Anunt_scoala_de_vara_clojure_v2.png",
+                        "web_url": "https://gitlab.com/alex.gherega"
+                    },
+                    "user_notes_count": 1,
+                    "merge_requests_count": 2,
+                    "upvotes": 0,
+                    "downvotes": 0,
+                    "start_date": null,
+                    "due_date": null,
+                    "confidential": false,
+                    "discussion_locked": null,
+                    "issue_type": "issue",
+                    "web_url": "https://gitlab.com/roettgerlab/ms2ai/-/work_items/1",
+                    "time_stats": {
+                        "time_estimate": 0,
+                        "total_time_spent": 0,
+                        "human_time_estimate": null,
+                        "human_total_time_spent": null
+                    },
+                    "task_completion_status": {
+                        "count": 0,
+                        "completed_count": 0
+                    },
+                    "blocking_issues_count": 0,
+                    "has_tasks": true,
+                    "task_status": "0 of 0 checklist items completed",
+                    "_links": {
+                        "self": "https://gitlab.com/api/v4/projects/18736238/issues/1",
+                        "notes": "https://gitlab.com/api/v4/projects/18736238/issues/1/notes",
+                        "award_emoji": "https://gitlab.com/api/v4/projects/18736238/issues/1/award_emoji",
+                        "project": "https://gitlab.com/api/v4/projects/18736238",
+                        "closed_as_duplicate_of": null
+                    },
+                    "references": {
+                        "short": "#1",
+                        "relative": "#1",
+                        "full": "roettgerlab/ms2ai#1"
+                    },
+                    "severity": "UNKNOWN",
+                    "moved_to_id": null,
+                    "imported": false,
+                    "imported_from": "none",
+                    "service_desk_reply_to": null
+                }
+            ],
+            "open_issues_count": 1,
+            "languages": {
+                "Python": 100.0
+            },
+            "repository_tree": [
+                {
+                    "id": "bb82a0728448c8ffe3673541afbf97d9743064bf",
+                    "name": "extractor",
+                    "type": "tree",
+                    "path": "extractor",
+                    "mode": "040000"
+                },
+                {
+                    "id": "3bf8133671680c296b0bed41cf0210346ded83cb",
+                    "name": "filter",
+                    "type": "tree",
+                    "path": "filter",
+                    "mode": "040000"
+                },
+                {
+                    "id": "745effca698f5929874f908bc18298d452f035bf",
+                    "name": "network",
+                    "type": "tree",
+                    "path": "network",
+                    "mode": "040000"
+                },
+                {
+                    "id": "f081d83d88f52d522bb8e52590c8c28ec6623432",
+                    "name": "pride_api",
+                    "type": "tree",
+                    "path": "pride_api",
+                    "mode": "040000"
+                },
+                {
+                    "id": "e3e7599963282a6a34c980a9222f11b34798f0b4",
+                    "name": "scraper",
+                    "type": "tree",
+                    "path": "scraper",
+                    "mode": "040000"
+                },
+                {
+                    "id": "23c196c28e8c2923a27f5bb23515b1dbea164e1e",
+                    "name": "storage",
+                    "type": "tree",
+                    "path": "storage",
+                    "mode": "040000"
+                },
+                {
+                    "id": "dfefcd2542baea33ca5ade4c79e5cf8bad8663ea",
+                    "name": "utils",
+                    "type": "tree",
+                    "path": "utils",
+                    "mode": "040000"
+                },
+                {
+                    "id": "12bb00ba14b1771489236f11756e59f17ec6a30e",
+                    "name": "Documentation.pdf",
+                    "type": "blob",
+                    "path": "Documentation.pdf",
+                    "mode": "100644"
+                },
+                {
+                    "id": "f01972bfd71a0d2fb6a482ba3f77d46fe4a8ed9e",
+                    "name": "LICENSE",
+                    "type": "blob",
+                    "path": "LICENSE",
+                    "mode": "100644"
+                },
+                {
+                    "id": "bb555485f5e632d4c7e1d17314c60c64d64b8273",
+                    "name": "changelog.txt",
+                    "type": "blob",
+                    "path": "changelog.txt",
+                    "mode": "100644"
+                },
+                {
+                    "id": "1c08c78a0d856d61de300febe6a1618b2031d8d4",
+                    "name": "extractor_api.py",
+                    "type": "blob",
+                    "path": "extractor_api.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "7dfc3f5886e0eda2f55e12546edce6bbb254a929",
+                    "name": "filter_api.py",
+                    "type": "blob",
+                    "path": "filter_api.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "2294b34fa6c300e993caf3737055ecbb1c31374e",
+                    "name": "network_api.py",
+                    "type": "blob",
+                    "path": "network_api.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "3fe1efc8fd25034df37632d7c23a258f70c91ee1",
+                    "name": "readme.md",
+                    "type": "blob",
+                    "path": "readme.md",
+                    "mode": "100644"
+                },
+                {
+                    "id": "3da8943f18f99e2cf136bf4121f6a0245a28ce88",
+                    "name": "requirements.txt",
+                    "type": "blob",
+                    "path": "requirements.txt",
+                    "mode": "100644"
+                },
+                {
+                    "id": "68e03e4552784cc98581bc84ce36173e49bc6653",
+                    "name": "scraper_api.py",
+                    "type": "blob",
+                    "path": "scraper_api.py",
+                    "mode": "100644"
+                },
+                {
+                    "id": "b97e84ec4727b3c1277db970498317f641e2ce11",
+                    "name": "utility_api.py",
+                    "type": "blob",
+                    "path": "utility_api.py",
+                    "mode": "100644"
+                }
+            ],
+            "default_branch_protected": true
+        },
+        "lizard": {
+            "total_nloc": 2623,
+            "total_ccn": 1191,
+            "avg_ccn": 4.92,
+            "nloc_per_file": 46.02,
+            "duplicate_rate": 2.33
+        }
+    }
+}

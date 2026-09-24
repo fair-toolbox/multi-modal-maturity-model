@@ -1,0 +1,633 @@
+{
+    "sequali": {
+        "papers": {
+            "id": "39927290",
+            "source": "MED",
+            "pmid": "39927290",
+            "pmcid": "PMC11802474",
+            "fullTextIdList": {
+                "fullTextId": [
+                    "PMC11802474"
+                ]
+            },
+            "doi": "10.1093/bioadv/vbaf010",
+            "title": "Sequali: efficient and comprehensive quality control of short- and long-read sequencing data.",
+            "authorString": "Vorderman RHP.",
+            "journalTitle": "Bioinform Adv",
+            "issue": "1",
+            "journalVolume": "5",
+            "pubYear": "2025",
+            "journalIssn": "2635-0041",
+            "pageInfo": "vbaf010",
+            "pubType": "brief-report; journal article",
+            "isOpenAccess": "Y",
+            "inEPMC": "Y",
+            "inPMC": "Y",
+            "hasPDF": "Y",
+            "hasBook": "N",
+            "hasSuppl": "N",
+            "citedByCount": 1,
+            "hasReferences": "Y",
+            "hasTextMinedTerms": "Y",
+            "hasDbCrossReferences": "N",
+            "hasLabsLinks": "Y",
+            "hasTMAccessionNumbers": "Y",
+            "tmAccessionTypeList": {
+                "accessionType": [
+                    "gen"
+                ]
+            },
+            "firstIndexDate": "2025-02-10",
+            "firstPublicationDate": "2025-01-29"
+        },
+        "github": {
+            "repo": {
+                "id": 613270250,
+                "node_id": "R_kgDOJI3C6g",
+                "name": "sequali",
+                "full_name": "rhpvorderman/sequali",
+                "private": false,
+                "owner": {
+                    "login": "rhpvorderman",
+                    "id": 26142226,
+                    "node_id": "MDQ6VXNlcjI2MTQyMjI2",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/26142226?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/rhpvorderman",
+                    "html_url": "https://github.com/rhpvorderman",
+                    "followers_url": "https://api.github.com/users/rhpvorderman/followers",
+                    "following_url": "https://api.github.com/users/rhpvorderman/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/rhpvorderman/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/rhpvorderman/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/rhpvorderman/subscriptions",
+                    "organizations_url": "https://api.github.com/users/rhpvorderman/orgs",
+                    "repos_url": "https://api.github.com/users/rhpvorderman/repos",
+                    "events_url": "https://api.github.com/users/rhpvorderman/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/rhpvorderman/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "html_url": "https://github.com/rhpvorderman/sequali",
+                "description": "Fast sequencing data quality metrics",
+                "fork": false,
+                "url": "https://api.github.com/repos/rhpvorderman/sequali",
+                "forks_url": "https://api.github.com/repos/rhpvorderman/sequali/forks",
+                "keys_url": "https://api.github.com/repos/rhpvorderman/sequali/keys{/key_id}",
+                "collaborators_url": "https://api.github.com/repos/rhpvorderman/sequali/collaborators{/collaborator}",
+                "teams_url": "https://api.github.com/repos/rhpvorderman/sequali/teams",
+                "hooks_url": "https://api.github.com/repos/rhpvorderman/sequali/hooks",
+                "issue_events_url": "https://api.github.com/repos/rhpvorderman/sequali/issues/events{/number}",
+                "events_url": "https://api.github.com/repos/rhpvorderman/sequali/events",
+                "assignees_url": "https://api.github.com/repos/rhpvorderman/sequali/assignees{/user}",
+                "branches_url": "https://api.github.com/repos/rhpvorderman/sequali/branches{/branch}",
+                "tags_url": "https://api.github.com/repos/rhpvorderman/sequali/tags",
+                "blobs_url": "https://api.github.com/repos/rhpvorderman/sequali/git/blobs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/rhpvorderman/sequali/git/tags{/sha}",
+                "git_refs_url": "https://api.github.com/repos/rhpvorderman/sequali/git/refs{/sha}",
+                "trees_url": "https://api.github.com/repos/rhpvorderman/sequali/git/trees{/sha}",
+                "statuses_url": "https://api.github.com/repos/rhpvorderman/sequali/statuses/{sha}",
+                "languages_url": "https://api.github.com/repos/rhpvorderman/sequali/languages",
+                "stargazers_url": "https://api.github.com/repos/rhpvorderman/sequali/stargazers",
+                "contributors_url": "https://api.github.com/repos/rhpvorderman/sequali/contributors",
+                "subscribers_url": "https://api.github.com/repos/rhpvorderman/sequali/subscribers",
+                "subscription_url": "https://api.github.com/repos/rhpvorderman/sequali/subscription",
+                "commits_url": "https://api.github.com/repos/rhpvorderman/sequali/commits{/sha}",
+                "git_commits_url": "https://api.github.com/repos/rhpvorderman/sequali/git/commits{/sha}",
+                "comments_url": "https://api.github.com/repos/rhpvorderman/sequali/comments{/number}",
+                "issue_comment_url": "https://api.github.com/repos/rhpvorderman/sequali/issues/comments{/number}",
+                "contents_url": "https://api.github.com/repos/rhpvorderman/sequali/contents/{+path}",
+                "compare_url": "https://api.github.com/repos/rhpvorderman/sequali/compare/{base}...{head}",
+                "merges_url": "https://api.github.com/repos/rhpvorderman/sequali/merges",
+                "archive_url": "https://api.github.com/repos/rhpvorderman/sequali/{archive_format}{/ref}",
+                "downloads_url": "https://api.github.com/repos/rhpvorderman/sequali/downloads",
+                "issues_url": "https://api.github.com/repos/rhpvorderman/sequali/issues{/number}",
+                "pulls_url": "https://api.github.com/repos/rhpvorderman/sequali/pulls{/number}",
+                "milestones_url": "https://api.github.com/repos/rhpvorderman/sequali/milestones{/number}",
+                "notifications_url": "https://api.github.com/repos/rhpvorderman/sequali/notifications{?since,all,participating}",
+                "labels_url": "https://api.github.com/repos/rhpvorderman/sequali/labels{/name}",
+                "releases_url": "https://api.github.com/repos/rhpvorderman/sequali/releases{/id}",
+                "deployments_url": "https://api.github.com/repos/rhpvorderman/sequali/deployments",
+                "created_at": "2023-03-13T08:45:16Z",
+                "updated_at": "2026-03-15T15:58:45Z",
+                "pushed_at": "2025-09-10T12:45:47Z",
+                "git_url": "git://github.com/rhpvorderman/sequali.git",
+                "ssh_url": "git@github.com:rhpvorderman/sequali.git",
+                "clone_url": "https://github.com/rhpvorderman/sequali.git",
+                "svn_url": "https://github.com/rhpvorderman/sequali",
+                "homepage": "",
+                "size": 9929,
+                "stargazers_count": 32,
+                "watchers_count": 32,
+                "language": "C",
+                "has_issues": true,
+                "has_projects": true,
+                "has_downloads": true,
+                "has_wiki": true,
+                "has_pages": false,
+                "has_discussions": false,
+                "forks_count": 0,
+                "mirror_url": null,
+                "archived": false,
+                "disabled": false,
+                "open_issues_count": 13,
+                "license": {
+                    "key": "agpl-3.0",
+                    "name": "GNU Affero General Public License v3.0",
+                    "spdx_id": "AGPL-3.0",
+                    "url": "https://api.github.com/licenses/agpl-3.0",
+                    "node_id": "MDc6TGljZW5zZTE="
+                },
+                "allow_forking": true,
+                "is_template": false,
+                "web_commit_signoff_required": false,
+                "has_pull_requests": true,
+                "pull_request_creation_policy": "all",
+                "topics": [
+                    "bam",
+                    "fastq",
+                    "illumina",
+                    "nanopore",
+                    "qc",
+                    "quality-control"
+                ],
+                "visibility": "public",
+                "forks": 0,
+                "open_issues": 13,
+                "watchers": 32,
+                "default_branch": "develop",
+                "permissions": {
+                    "admin": false,
+                    "maintain": false,
+                    "push": false,
+                    "triage": false,
+                    "pull": true
+                },
+                "temp_clone_token": "",
+                "network_count": 0,
+                "subscribers_count": 2
+            },
+            "contributors": [
+                {
+                    "login": "rhpvorderman",
+                    "contributions": 1392
+                }
+            ],
+            "closed_issues": [
+                {
+                    "number": 250,
+                    "title": "Release 1.0.2",
+                    "created_at": "2025-09-09T09:26:05+00:00",
+                    "closed_at": "2025-09-19T10:16:40+00:00"
+                },
+                {
+                    "number": 248,
+                    "title": "Fix memory leaks",
+                    "created_at": "2025-09-09T06:32:30+00:00",
+                    "closed_at": "2025-09-09T09:18:06+00:00"
+                },
+                {
+                    "number": 245,
+                    "title": "pi tag should have a valid uuid4 format with 36 characters.  Counted 3",
+                    "created_at": "2025-09-05T07:30:49+00:00",
+                    "closed_at": "2025-09-05T14:31:04+00:00"
+                },
+                {
+                    "number": 244,
+                    "title": "free(): corrupted unsorted chunks",
+                    "created_at": "2025-09-01T08:41:05+00:00",
+                    "closed_at": "2025-09-05T13:26:22+00:00"
+                },
+                {
+                    "number": 240,
+                    "title": "Strip debug information from wheel builds",
+                    "created_at": "2025-05-26T16:36:37+00:00",
+                    "closed_at": "2025-05-27T09:28:15+00:00"
+                },
+                {
+                    "number": 238,
+                    "title": "Release 1.0.1",
+                    "created_at": "2025-05-26T16:24:49+00:00",
+                    "closed_at": "2025-05-26T17:20:59+00:00"
+                },
+                {
+                    "number": 234,
+                    "title": "Release 1.0.0",
+                    "created_at": "2025-05-26T06:20:11+00:00",
+                    "closed_at": "2025-05-26T13:45:27+00:00"
+                },
+                {
+                    "number": 228,
+                    "title": "Reproducible HTML",
+                    "created_at": "2025-05-21T09:00:45+00:00",
+                    "closed_at": "2025-05-23T11:28:02+00:00"
+                },
+                {
+                    "number": 227,
+                    "title": "proper accession number for GM24385",
+                    "created_at": "2025-03-19T21:08:57+00:00",
+                    "closed_at": "2025-05-23T10:13:01+00:00"
+                },
+                {
+                    "number": 226,
+                    "title": "Separate figure generation",
+                    "created_at": "2025-03-05T16:45:17+00:00",
+                    "closed_at": "2025-05-26T13:47:01+00:00"
+                },
+                {
+                    "number": 225,
+                    "title": "Galaxy wrapper",
+                    "created_at": "2025-03-05T10:56:11+00:00",
+                    "closed_at": "2025-03-19T15:22:50+00:00"
+                },
+                {
+                    "number": 224,
+                    "title": "Error in \"Per tile quality\" section",
+                    "created_at": "2025-02-25T09:20:33+00:00",
+                    "closed_at": "2025-03-03T15:04:57+00:00"
+                },
+                {
+                    "number": 219,
+                    "title": "End-anchored plots",
+                    "created_at": "2024-12-15T08:20:25+00:00",
+                    "closed_at": "2025-05-23T09:45:02+00:00"
+                },
+                {
+                    "number": 211,
+                    "title": "Refactor AdapterCounter",
+                    "created_at": "2024-11-29T08:21:43+00:00",
+                    "closed_at": "2024-12-17T08:25:35+00:00"
+                },
+                {
+                    "number": 207,
+                    "title": "Python 3.13 support",
+                    "created_at": "2024-11-20T10:36:37+00:00",
+                    "closed_at": "2024-11-20T10:50:23+00:00"
+                },
+                {
+                    "number": 204,
+                    "title": "Investigate the CPython limited ABI",
+                    "created_at": "2024-11-13T08:42:57+00:00",
+                    "closed_at": "2024-11-29T09:27:09+00:00"
+                },
+                {
+                    "number": 203,
+                    "title": "Use alignment flags like samtools fastq",
+                    "created_at": "2024-11-01T11:28:47+00:00",
+                    "closed_at": "2024-11-22T14:09:33+00:00"
+                },
+                {
+                    "number": 202,
+                    "title": "Small typo under Adapter content section",
+                    "created_at": "2024-10-21T09:35:39+00:00",
+                    "closed_at": "2024-11-20T10:44:28+00:00"
+                },
+                {
+                    "number": 200,
+                    "title": "Release 0.12.0",
+                    "created_at": "2024-10-09T09:11:24+00:00",
+                    "closed_at": "2024-10-11T08:17:30+00:00"
+                },
+                {
+                    "number": 199,
+                    "title": "Add support for read splitting tags",
+                    "created_at": "2024-10-09T09:02:12+00:00",
+                    "closed_at": "2024-12-13T13:20:07+00:00"
+                },
+                {
+                    "number": 197,
+                    "title": "Add N50 and N90 as summary statistics",
+                    "created_at": "2024-10-04T10:00:05+00:00",
+                    "closed_at": "2024-12-04T08:05:44+00:00"
+                },
+                {
+                    "number": 194,
+                    "title": "N50 is not a median",
+                    "created_at": "2024-10-03T13:09:36+00:00",
+                    "closed_at": "2024-10-04T12:17:20+00:00"
+                },
+                {
+                    "number": 191,
+                    "title": "Release 0.11.1",
+                    "created_at": "2024-08-12T08:33:53+00:00",
+                    "closed_at": "2024-08-13T07:06:42+00:00"
+                },
+                {
+                    "number": 188,
+                    "title": "Intermittent increased memory usage on CPython 3.12",
+                    "created_at": "2024-08-10T09:05:06+00:00",
+                    "closed_at": "2024-08-12T08:30:24+00:00"
+                },
+                {
+                    "number": 185,
+                    "title": "Release 0.11.0",
+                    "created_at": "2024-08-09T11:41:12+00:00",
+                    "closed_at": "2024-08-10T09:03:25+00:00"
+                },
+                {
+                    "number": 182,
+                    "title": "Make HTML reports more reproducible.",
+                    "created_at": "2024-07-09T12:21:59+00:00",
+                    "closed_at": "2024-07-10T04:52:31+00:00"
+                },
+                {
+                    "number": 176,
+                    "title": "Add FastQC-like \"judgements\" on the quality of the library",
+                    "created_at": "2024-06-21T11:56:05+00:00",
+                    "closed_at": "2025-05-23T14:29:06+00:00"
+                },
+                {
+                    "number": 174,
+                    "title": "\"Solve\" the insert size distribution in order to extrapolate the estimate. ",
+                    "created_at": "2024-06-10T06:20:13+00:00",
+                    "closed_at": "2024-11-20T10:46:38+00:00"
+                },
+                {
+                    "number": 169,
+                    "title": "Release 0.10.0",
+                    "created_at": "2024-06-03T06:39:34+00:00",
+                    "closed_at": "2024-06-04T09:28:47+00:00"
+                },
+                {
+                    "number": 166,
+                    "title": "Check if sequences occur multiple times in the same read.",
+                    "created_at": "2024-05-27T08:01:11+00:00",
+                    "closed_at": "2024-06-03T06:37:20+00:00"
+                },
+                {
+                    "number": 162,
+                    "title": "Release 0.9.1",
+                    "created_at": "2024-05-22T10:19:24+00:00",
+                    "closed_at": "2024-05-24T08:52:43+00:00"
+                },
+                {
+                    "number": 159,
+                    "title": "sequali crashes when no adapters are found",
+                    "created_at": "2024-05-22T09:53:51+00:00",
+                    "closed_at": "2024-05-22T10:17:31+00:00"
+                },
+                {
+                    "number": 157,
+                    "title": "Release 0.9.0",
+                    "created_at": "2024-05-21T09:51:37+00:00",
+                    "closed_at": "2024-05-24T08:52:28+00:00"
+                },
+                {
+                    "number": 153,
+                    "title": "Add very common repeats in the human genome.",
+                    "created_at": "2024-05-17T09:49:51+00:00",
+                    "closed_at": "2024-11-20T10:47:49+00:00"
+                },
+                {
+                    "number": 152,
+                    "title": "Paired report order is hideous",
+                    "created_at": "2024-05-15T12:26:55+00:00",
+                    "closed_at": "2024-05-21T05:19:10+00:00"
+                },
+                {
+                    "number": 151,
+                    "title": "Add polyA and PolyG to contaminants",
+                    "created_at": "2024-05-15T12:26:13+00:00",
+                    "closed_at": "2024-05-18T06:33:39+00:00"
+                },
+                {
+                    "number": 146,
+                    "title": "Release 0.8.0",
+                    "created_at": "2024-05-08T14:02:57+00:00",
+                    "closed_at": "2024-05-08T15:21:18+00:00"
+                },
+                {
+                    "number": 140,
+                    "title": "Add a citation info file or chapter",
+                    "created_at": "2024-05-07T11:23:43+00:00",
+                    "closed_at": "2024-05-08T13:50:46+00:00"
+                },
+                {
+                    "number": 135,
+                    "title": "Make sequali paired-end aware",
+                    "created_at": "2024-04-19T06:20:03+00:00",
+                    "closed_at": "2024-05-10T10:18:18+00:00"
+                },
+                {
+                    "number": 133,
+                    "title": "Release 0.7.1",
+                    "created_at": "2024-04-17T04:48:45+00:00",
+                    "closed_at": "2024-04-19T04:57:27+00:00"
+                },
+                {
+                    "number": 129,
+                    "title": "Release 0.7.0",
+                    "created_at": "2024-04-10T10:54:56+00:00",
+                    "closed_at": "2024-04-10T12:20:45+00:00"
+                },
+                {
+                    "number": 121,
+                    "title": "MultiQC integration improvement suggestion",
+                    "created_at": "2024-04-02T11:24:44+00:00",
+                    "closed_at": "2024-05-21T06:16:14+00:00"
+                },
+                {
+                    "number": 119,
+                    "title": "Release 0.6.0",
+                    "created_at": "2024-03-29T13:40:26+00:00",
+                    "closed_at": "2024-04-02T11:23:42+00:00"
+                },
+                {
+                    "number": 111,
+                    "title": "Per read quality score distribution table",
+                    "created_at": "2024-03-25T14:23:02+00:00",
+                    "closed_at": "2024-03-26T14:52:35+00:00"
+                },
+                {
+                    "number": 109,
+                    "title": "Add used version to the html report.",
+                    "created_at": "2024-03-22T16:05:30+00:00",
+                    "closed_at": "2024-03-25T14:50:57+00:00"
+                },
+                {
+                    "number": 106,
+                    "title": "Release 0.5.1",
+                    "created_at": "2024-03-22T13:53:40+00:00",
+                    "closed_at": "2024-03-22T16:02:25+00:00"
+                },
+                {
+                    "number": 102,
+                    "title": "Release 0.5.0",
+                    "created_at": "2024-03-15T13:28:09+00:00",
+                    "closed_at": "2024-03-19T10:46:40+00:00"
+                },
+                {
+                    "number": 99,
+                    "title": "Investigate byte pair encoding for less error-prone sequence classification.",
+                    "created_at": "2024-03-12T13:40:14+00:00",
+                    "closed_at": "2024-06-05T10:30:19+00:00"
+                },
+                {
+                    "number": 97,
+                    "title": "Add example reports",
+                    "created_at": "2024-03-04T10:55:31+00:00",
+                    "closed_at": "2024-03-04T10:58:45+00:00"
+                },
+                {
+                    "number": 96,
+                    "title": "ValueError: not enough values to unpack",
+                    "created_at": "2024-01-08T01:29:41+00:00",
+                    "closed_at": "2024-04-17T07:20:48+00:00"
+                },
+                {
+                    "number": 94,
+                    "title": "Multi-sample support and statistics",
+                    "created_at": "2023-12-04T10:18:36+00:00",
+                    "closed_at": "2024-05-22T10:42:22+00:00"
+                },
+                {
+                    "number": 93,
+                    "title": "Release 0.4.1",
+                    "created_at": "2023-12-01T18:47:42+00:00",
+                    "closed_at": "2023-12-04T07:17:39+00:00"
+                },
+                {
+                    "number": 90,
+                    "title": "IndexError if a later read was sequenced earlier",
+                    "created_at": "2023-12-01T14:11:28+00:00",
+                    "closed_at": "2023-12-01T18:38:38+00:00"
+                },
+                {
+                    "number": 89,
+                    "title": "Move documentation to readthedocs",
+                    "created_at": "2023-12-01T09:59:08+00:00",
+                    "closed_at": "2024-03-29T06:08:28+00:00"
+                },
+                {
+                    "number": 88,
+                    "title": "_qc.pyi stub is not up to date.",
+                    "created_at": "2023-12-01T09:49:06+00:00",
+                    "closed_at": "2024-03-26T12:11:06+00:00"
+                },
+                {
+                    "number": 87,
+                    "title": "Modern package layout centered around pyproject.toml and setuptools_scm",
+                    "created_at": "2023-12-01T09:34:26+00:00",
+                    "closed_at": "2024-03-25T14:19:16+00:00"
+                },
+                {
+                    "number": 86,
+                    "title": "MultiQC integration",
+                    "created_at": "2023-12-01T09:33:34+00:00",
+                    "closed_at": "2024-05-21T06:14:35+00:00"
+                },
+                {
+                    "number": 84,
+                    "title": "Release 0.4.0",
+                    "created_at": "2023-12-01T09:13:02+00:00",
+                    "closed_at": "2023-12-01T18:47:13+00:00"
+                },
+                {
+                    "number": 81,
+                    "title": "Crash on empty read with metadata",
+                    "created_at": "2023-11-30T12:38:50+00:00",
+                    "closed_at": "2023-12-01T09:11:21+00:00"
+                },
+                {
+                    "number": 80,
+                    "title": "IndexError with single input read",
+                    "created_at": "2023-11-30T12:25:06+00:00",
+                    "closed_at": "2023-12-01T09:11:20+00:00"
+                },
+                {
+                    "number": 79,
+                    "title": "Add a --version command-line option",
+                    "created_at": "2023-11-30T12:10:11+00:00",
+                    "closed_at": "2023-12-01T08:16:35+00:00"
+                },
+                {
+                    "number": 76,
+                    "title": "Release 0.3.0",
+                    "created_at": "2023-11-22T13:33:30+00:00",
+                    "closed_at": "2023-11-29T11:23:12+00:00"
+                },
+                {
+                    "number": 71,
+                    "title": "Fingerprint might not work very well for nanopore reads",
+                    "created_at": "2023-11-20T11:25:08+00:00",
+                    "closed_at": "2023-11-22T13:07:28+00:00"
+                },
+                {
+                    "number": 69,
+                    "title": "Current adapter searcher does not work well for nanopore adapters",
+                    "created_at": "2023-11-17T19:27:44+00:00",
+                    "closed_at": "2023-11-21T13:55:48+00:00"
+                },
+                {
+                    "number": 68,
+                    "title": "Pygal has some issues with proper installation.",
+                    "created_at": "2023-11-17T11:59:11+00:00",
+                    "closed_at": "2023-11-22T10:10:33+00:00"
+                },
+                {
+                    "number": 67,
+                    "title": "Suggestion: Add a link to the homepage/repo to the report",
+                    "created_at": "2023-11-16T10:05:53+00:00",
+                    "closed_at": "2023-11-22T10:32:31+00:00"
+                },
+                {
+                    "number": 65,
+                    "title": "Crash on empty read",
+                    "created_at": "2023-11-15T16:18:00+00:00",
+                    "closed_at": "2023-11-17T11:57:57+00:00"
+                },
+                {
+                    "number": 64,
+                    "title": "Crash on empty input",
+                    "created_at": "2023-11-15T16:15:14+00:00",
+                    "closed_at": "2023-11-17T11:57:57+00:00"
+                },
+                {
+                    "number": 62,
+                    "title": "ZeroDivisionError",
+                    "created_at": "2023-11-15T13:48:58+00:00",
+                    "closed_at": "2023-11-15T19:51:40+00:00"
+                },
+                {
+                    "number": 59,
+                    "title": "Release 0.2.0",
+                    "created_at": "2023-11-15T08:49:07+00:00",
+                    "closed_at": "2023-11-15T14:07:11+00:00"
+                },
+                {
+                    "number": 57,
+                    "title": "Display the total sequences and the number of subsampled sequences as well as the sampling rate for overrepresented sequences.",
+                    "created_at": "2023-11-14T15:30:28+00:00",
+                    "closed_at": "2023-11-15T08:48:49+00:00"
+                },
+                {
+                    "number": 52,
+                    "title": "make threads configurable through the CLI",
+                    "created_at": "2023-11-09T20:37:44+00:00",
+                    "closed_at": "2023-11-10T09:31:09+00:00"
+                },
+                {
+                    "number": 48,
+                    "title": "Release 0.1.0",
+                    "created_at": "2023-11-09T19:16:30+00:00",
+                    "closed_at": "2023-11-10T15:40:00+00:00"
+                }
+            ],
+            "languages": {
+                "C": 252114,
+                "Python": 238422,
+                "CSS": 1889,
+                "JavaScript": 612
+            },
+            "default_branch_protected": true
+        },
+        "gitlab": null,
+        "lizard": {
+            "total_nloc": 8023,
+            "total_ccn": 1434,
+            "avg_ccn": 3.41,
+            "nloc_per_file": 191.02,
+            "duplicate_rate": 5.03
+        }
+    }
+}
