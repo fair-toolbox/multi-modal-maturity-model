@@ -80,6 +80,13 @@ mkdocs serve
 
 See [Contributing](https://fair-toolbox.github.io/multi-modal-maturity-model/contributing/) for guidelines.
 
+## Results from the TDCC-LSH project
+
+The `data/` directory contains the maturity scores computed for the tools evaluated in the TDCC-LSH project, including the control set and the Netherlands-focused tool set (`nl`), together with their processed results.
+
+An interactive Streamlit app is available at [mmmm-tdcc-lsh.streamlit.app](https://mmmm-tdcc-lsh.streamlit.app/) for visualizing these results and for running the tool on your own software.
+
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
