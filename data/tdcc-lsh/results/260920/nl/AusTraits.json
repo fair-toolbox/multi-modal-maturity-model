@@ -1,7 +1,123 @@
 {
     "AusTraits": {
         "tool_name": "AusTraits",
-        "biotools": null,
+        "biotools": {
+            "name": "austraits",
+            "description": "austraits is an R package for accessing the AusTraits Plant database and working with traits.build databases",
+            "homepage": "https://traitecoevo.github.io/austraits",
+            "biotoolsID": "austraits",
+            "biotoolsCURIE": "biotools:austraits",
+            "version": [
+                "v3.1.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2409",
+                            "term": "Data handling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0224",
+                            "term": "Query and retrieval"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_0920",
+                                "term": "Genotype/phenotype report"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3752",
+                                    "term": "CSV"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2884",
+                                "term": "Plot"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Database portal",
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0780",
+                    "term": "Plant biology"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://traitecoevo.github.io/austraits",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                },
+                {
+                    "url": "https://traitecoevo.github.io/austraits/articles/austraits.html",
+                    "type": [
+                        "Installation instructions",
+                        "Quick start guide"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1038/s41597-021-01006-6",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-08T11:15:59.810070Z",
+            "lastUpdate": "2026-07-08T11:15:59.812648Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 361940830,

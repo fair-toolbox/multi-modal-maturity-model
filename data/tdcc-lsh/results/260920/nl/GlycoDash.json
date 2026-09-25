@@ -1,7 +1,148 @@
 {
     "GlycoDash": {
         "tool_name": "GlycoDash",
-        "biotools": null,
+        "biotools": {
+            "name": "GlycoDash",
+            "description": "GlycoDash is an R Shiny dashboard for processing glycomics data obtained from LaCyTools, SweetSuite and Skyline.",
+            "homepage": "https://github.com/Center-for-Proteomics-and-Metabolomics/GlycoDash",
+            "biotoolsID": "GlycoDash",
+            "biotoolsCURIE": "biotools:GlycoDash",
+            "version": [
+                "v1.11.5-master"
+            ],
+            "otherID": [],
+            "relation": [
+                {
+                    "biotoolsID": "skyline",
+                    "type": "uses"
+                }
+            ],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2428",
+                            "term": "Validation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0226",
+                            "term": "Annotation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0337",
+                            "term": "Visualisation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2536",
+                                "term": "Mass spectrometry data"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3752",
+                                    "term": "CSV"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_2330",
+                                    "term": "Textual format"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3620",
+                                    "term": "xlsx"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2048",
+                                "term": "Report"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2331",
+                                    "term": "HTML"
+                                }
+                            ]
+                        },
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2536",
+                                "term": "Mass spectrometry data"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3620",
+                                    "term": "xlsx"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3292",
+                    "term": "Biochemistry"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0121",
+                    "term": "Proteomics"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/Center-for-Proteomics-and-Metabolomics/GlycoDash/releases/download/v1.11.5-master/GlycoDash_user_guide_v1.11.5.pdf",
+                    "type": [
+                        "User manual"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1007/s00216-025-05794-3",
+                    "pmid": "39985669",
+                    "pmcid": "PMC11961463",
+                    "type": [],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "ingghrid",
+            "additionDate": "2026-06-26T09:04:29.196971Z",
+            "lastUpdate": "2026-07-21T21:16:02.046479Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 655200683,

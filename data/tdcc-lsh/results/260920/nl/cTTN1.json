@@ -1,7 +1,109 @@
 {
     "cTTN1": {
         "tool_name": "cTTN1",
-        "biotools": null,
+        "biotools": {
+            "name": "cTTN",
+            "description": "cTTN is a set of R scripts for analyzing genetic constraint in the TTN gene by adjusting for sequencing depth and calculating constraint metrics with confidence intervals. It includes tools for obtaining observed and expected variant counts from gnomAD exome data.",
+            "homepage": "https://github.com/ImperialCardioGenetics/cTTN",
+            "biotoolsID": "cTTN",
+            "biotoolsCURIE": "biotools:cTTN",
+            "version": [],
+            "otherID": [],
+            "relation": [
+                {
+                    "biotoolsID": "ggplot2",
+                    "type": "uses"
+                }
+            ],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3197",
+                            "term": "Genetic variation analysis"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3494",
+                                "term": "DNA sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2330",
+                                    "term": "Textual format"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2884",
+                                "term": "Plot"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3295",
+                    "term": "Epigenetics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "Not licensed",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1161/circulationaha.120.050455",
+                    "pmid": "33583186",
+                    "pmcid": "PMC8032209",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-08T11:24:16.997773Z",
+            "lastUpdate": "2026-07-08T11:24:16.999645Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 322570570,

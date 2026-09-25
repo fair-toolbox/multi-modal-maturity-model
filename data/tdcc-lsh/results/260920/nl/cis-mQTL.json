@@ -1,7 +1,114 @@
 {
     "cis-mQTL": {
         "tool_name": "cis-mQTL",
-        "biotools": null,
+        "biotools": {
+            "name": "Cis-mQTL-mapping-protocol-for-methylome",
+            "description": "Cis-mQTL mapping protocol for placental methylome using TensorQTL, providing a step-by-step guide for genotype QC, imputation, and analysis with detailed scripts and commands.",
+            "homepage": "https://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome",
+            "biotoolsID": "Cis-mQTL-mapping-protocol-for-methylome",
+            "biotoolsCURIE": "biotools:Cis-mQTL-mapping-protocol-for-methylome",
+            "version": [
+                "v.1.0.0"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_0282",
+                            "term": "Genetic mapping"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3494",
+                                "term": "DNA sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3288",
+                                    "term": "PED/MAP"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1860",
+                                "term": "QTL map"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2333",
+                                    "term": "Binary format"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0625",
+                    "term": "Genotype and phenotype"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R",
+                "Perl"
+            ],
+            "license": "Not licensed",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/ariadnacilleros/Cis-mQTL-mapping-protocol-for-methylome/wiki",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1038/s41467-025-57760-3",
+                    "pmid": "40087310",
+                    "pmcid": "PMC11909199",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-08T10:56:48.735452Z",
+            "lastUpdate": "2026-07-08T11:00:03.323156Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 304346824,

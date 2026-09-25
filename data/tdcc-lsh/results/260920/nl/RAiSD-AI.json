@@ -1,7 +1,132 @@
 {
     "RAiSD-AI": {
         "tool_name": "RAiSD-AI",
-        "biotools": null,
+        "biotools": {
+            "name": "RAiSD-AI",
+            "description": "RAiSD-AI is a tool for training, testing, and deploying Convolutional Neural Networks to detect selective sweeps in genomic data, extending the functionality of the original RAiSD software with machine learning capabilities. It supports SNP data processing, CNN model training with TensorFlow or PyTorch, and genome-wide selective sweep detection.",
+            "homepage": "https://github.com/alachins/RAiSD-AI",
+            "biotoolsID": "RAiSD-AI",
+            "biotoolsCURIE": "biotools:RAiSD-AI",
+            "version": [
+                "4.5"
+            ],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_2403",
+                            "term": "Sequence analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3197",
+                            "term": "Genetic variation analysis"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3434",
+                            "term": "Conversion"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3494",
+                                "term": "DNA sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3016",
+                                    "term": "VCF"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_1929",
+                                    "term": "FASTA"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2048",
+                                "term": "Report"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Command-line tool"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_0622",
+                    "term": "Genomics"
+                },
+                {
+                    "uri": "http://edamontology.org/topic_3474",
+                    "term": "Machine learning"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "Shell",
+                "R",
+                "Python",
+                "C"
+            ],
+            "license": "Not licensed",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1038/s42003-018-0085-8",
+                    "pmid": "30271960",
+                    "pmcid": "PMC6123745",
+                    "type": [
+                        "Method"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.32942/x2gw9b",
+                    "pmid": null,
+                    "pmcid": null,
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-06T12:26:03.208638Z",
+            "lastUpdate": "2026-07-06T12:26:03.210726Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 825651324,

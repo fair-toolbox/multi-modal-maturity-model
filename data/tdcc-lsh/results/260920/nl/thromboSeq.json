@@ -1,7 +1,103 @@
 {
     "thromboSeq": {
         "tool_name": "thromboSeq",
-        "biotools": null,
+        "biotools": {
+            "name": "thromboSeq",
+            "description": "thromboSeq is a bioinformatics tool designed for the analysis of thrombosis-related sequencing data, providing functionalities for variant calling, annotation, and functional interpretation. It streamlines the processing of high-throughput sequencing data to identify genetic variants associated with thrombotic disorders.",
+            "homepage": "https://github.com/MyronBest/thromboSeq_source_code",
+            "biotoolsID": "thromboseq",
+            "biotoolsCURIE": "biotools:thromboseq",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_1812",
+                            "term": "Data parsing"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_0314",
+                            "term": "Gene expression profiling"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3218",
+                            "term": "Sequencing quality control"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2977",
+                                "term": "Nucleic acid sequence"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_2058",
+                                    "term": "Gene expression report format"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2955",
+                                "term": "Sequence report"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [],
+            "operatingSystem": [],
+            "language": [
+                "Shell",
+                "R",
+                "Perl"
+            ],
+            "license": "GPL-3.0",
+            "collectionID": [],
+            "maturity": "Mature",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.3390/cancers13184644",
+                    "pmid": "34572871",
+                    "pmcid": "PMC8468408",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-08T15:57:08.302197Z",
+            "lastUpdate": "2026-07-08T15:57:08.307883Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 147026415,

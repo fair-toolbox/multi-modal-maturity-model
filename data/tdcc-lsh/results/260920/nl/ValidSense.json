@@ -1,7 +1,128 @@
 {
     "ValidSense": {
         "tool_name": "ValidSense",
-        "biotools": null,
+        "biotools": {
+            "name": "ValidSense",
+            "description": "ValidSense is a toolbox for assessing agreement between two quantitative methods or devices measuring the same quantity using the Limits of Agreement (LoA) analysis, also known as the Bland-Altman analysis.",
+            "homepage": "https://github.com/umcu/ValidSense",
+            "biotoolsID": "ValidSense",
+            "biotoolsCURIE": "biotools:ValidSense",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3695",
+                            "term": "Data filtering"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2424",
+                            "term": "Comparison"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3108",
+                                "term": "Experimental measurement"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3620",
+                                    "term": "xlsx"
+                                },
+                                {
+                                    "uri": "http://edamontology.org/format_3752",
+                                    "term": "CSV"
+                                }
+                            ]
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2884",
+                                "term": "Plot"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3603",
+                                    "term": "PNG"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [],
+            "operatingSystem": [],
+            "language": [
+                "Python"
+            ],
+            "license": "MIT",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1016/s0140-6736(86)90837-8",
+                    "pmid": "2868172",
+                    "pmcid": null,
+                    "type": [
+                        "Method"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1177/096228029900800204",
+                    "pmid": "10501650",
+                    "pmcid": null,
+                    "type": [
+                        "Method"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                },
+                {
+                    "doi": "10.1080/10543400701329422",
+                    "pmid": "17613642",
+                    "pmcid": null,
+                    "type": [
+                        "Method"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-06T12:14:33.158172Z",
+            "lastUpdate": "2026-07-06T12:14:33.159951Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 979341214,
