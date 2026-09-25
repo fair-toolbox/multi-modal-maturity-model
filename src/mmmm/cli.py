@@ -10,7 +10,7 @@ from typing import Optional
 import click
 import yaml
 
-from multi_modal_maturity_model import __version__, MaturityPipeline
+from mmmm import __version__, MaturityPipeline
 
 logger = logging.getLogger(__name__)
 

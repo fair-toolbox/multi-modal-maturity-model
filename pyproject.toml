@@ -37,10 +37,10 @@ docs = [
 ]
 
 [project.scripts]
-maturity-model = "multi_modal_maturity_model.cli:main"
+mmmm = "mmmm.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.dynamic]
-version = {attr = "multi_modal_maturity_model.__version__"}
+version = {attr = "mmmm.__version__"}

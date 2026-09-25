@@ -1,7 +1,7 @@
 """Tests for dimension and overall scoring."""
 
-from multi_modal_maturity_model.config import WeightsConfig, load_config
-from multi_modal_maturity_model.scoring import _weighted_average, score_all
+from mmmm.config import WeightsConfig, load_config
+from mmmm.scoring import _weighted_average, score_all
 
 
 class TestWeightedAverage:

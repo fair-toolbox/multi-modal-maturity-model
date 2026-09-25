@@ -9,6 +9,9 @@ The maturity model is truly multi-modal in that it combines several orthogonal a
 - **Software metadata** — FAIRness and sustainability
 - **Manual evaluation** — user communities, project governance and scientific uniqueness
 
+![Sankey diagram of the maturity model](docs/assets/sankey.png)
+
+
 ## Installation
 
 Requires Python 3.12+.
@@ -31,7 +34,8 @@ maturity-model analyze https://github.com/user/repo -o results.json
 maturity-model analyze https://github.com/user/repo \
   --weights my-weights.yaml \
   --biotools my-tool \
-  --doi 10.1000/example \
+  --doi 10.1000/example1 \
+  --doi 10.1020/example2 \
   --output results.json
 
 # Analyze a local checkout (skip cloning)

@@ -2,14 +2,14 @@
 
 import pytest
 
-from multi_modal_maturity_model.config import (
+from mmmm.config import (
     ExtractionConfig,
     MetricsConfig,
     MetricSpec,
     NormalizationConfig,
     load_config,
 )
-from multi_modal_maturity_model.normalization import (
+from mmmm.normalization import (
     normalize_metric,
     normalize_all,
 )
