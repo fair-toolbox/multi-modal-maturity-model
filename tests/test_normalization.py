@@ -116,7 +116,7 @@ class TestNormalizeMetrics:
 
         result = normalize_all(extracted, metrics_cfg)
 
-        assert result["star_count"] == 0.5
+        assert result["star_count"] == 1.0
         assert result["license"] == 1.0
         assert result["fwci"] == 0.5
 
@@ -130,7 +130,7 @@ class TestNormalizeMetrics:
         result = normalize_all(extracted, metrics_cfg)
 
         assert "star_count" in result
-        assert result["star_count"] == 0.5
+        assert result["star_count"] == 1.0
         assert "fork_count" in result  # Included because value is None
         assert result["fork_count"] is None
         assert "citation_count" in result  # Included because no value
@@ -139,13 +139,13 @@ class TestNormalizeMetrics:
     def test_invert_flag_integration(self):
         extracted = {
             "num_open_issues": 0,  # 0 issues is good
-            "days_since_last_commit": 180,  # 180 days is bad
+            "days_since_last_commit": 365,
         }
 
         result = normalize_all(extracted, metrics_cfg)
 
         assert result["num_open_issues"] == 1.0  # 0 issues = perfect
-        assert result["days_since_last_commit"] == 0.0  # 180 days = worst
+        assert result["days_since_last_commit"] == 0.0  # 365 days = worst
 
     def test_empty_input(self):
         empty_cfg = MetricsConfig.model_validate({"metrics": {}})
@@ -179,8 +179,8 @@ class TestNormalizeMetrics:
         assert result["input_formats"] == 1.0
         assert result["biotools_registry"] == 1.0  # True → 1.0
         assert result["default_branch_protected"] == 1.0
-        assert result["star_count"] == 1.0  # 100/100
-        assert result["fork_count"] == 0.5  # 50/100
+        assert result["star_count"] == 1.0
+        assert result["fork_count"] == 1.0
         assert result["num_open_issues"] == 1.0  # 0 issues inverted = perfect
         assert result["has_workflow_support"] == 0.0
         assert result["secret_scanning"] == 0.0

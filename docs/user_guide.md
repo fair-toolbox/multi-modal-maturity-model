@@ -10,7 +10,7 @@ Requires Python 3.12+.
 pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git
 ```
 
-This installs both the `maturity-model` command-line tool and the `multi_modal_maturity_model` Python package.
+This installs both the `mmmm` command-line tool and the `mmmm` Python package.
 
 ## API Tokens
 
@@ -30,13 +30,13 @@ ALTMETRIC_TOKEN=...
 Analyze a repository and print a summary to the terminal:
 
 ```bash
-maturity-model analyze https://github.com/user/repo
+mmmm analyze https://github.com/user/repo
 ```
 
 Save the full results as JSON:
 
 ```bash
-maturity-model analyze https://github.com/user/repo -o results.json
+mmmm analyze https://github.com/user/repo -o results.json
 ```
 
 ### Options
@@ -53,7 +53,7 @@ maturity-model analyze https://github.com/user/repo -o results.json
 Example with optional identifiers:
 
 ```bash
-maturity-model analyze https://github.com/user/repo \
+mmmm analyze https://github.com/user/repo \
   --biotools my-tool \
   --doi 10.1000/example \
   --weights my-weights.yaml \

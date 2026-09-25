@@ -10,7 +10,7 @@ The three configuration files are:
 | `metrics.yaml` | Metric definitions: type, extraction method, sources and normalization |
 | `patterns.yaml` | File patterns used by pattern-based metrics |
 
-The defaults live in `src/multi_modal_maturity_model/config/default/` of the repository, and an example weights file is provided at [`config/example_weights.yaml`](https://github.com/fair-toolbox/multi-modal-maturity-model/blob/main/config/example_weights.yaml).
+The defaults live in `src/mmmm/config/default/` of the repository, and an example weights file is provided at [`config/example_weights.yaml`](https://github.com/fair-toolbox/multi-modal-maturity-model/blob/main/config/example_weights.yaml).
 
 ## API Tokens
 
@@ -27,7 +27,7 @@ Runtime settings (API tokens) are read from environment variables or a `.env` fi
 Pass a custom weights file to weight dimensions and metrics to your needs:
 
 ```bash
-maturity-model analyze https://github.com/user/repo --weights my-weights.yaml
+mmmm analyze https://github.com/user/repo --weights my-weights.yaml
 ```
 
 ```python

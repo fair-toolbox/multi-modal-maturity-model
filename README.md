@@ -20,7 +20,7 @@ Requires Python 3.12+.
 pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git
 ```
 
-This installs the `maturity-model` command-line tool and the `multi_modal_maturity_model` Python package.
+This installs the `mmmm` command-line tool and the `mmmm` Python package.
 
 ## Usage
 
@@ -28,10 +28,10 @@ CLI:
 
 ```bash
 # Analyze a repository with default weights
-maturity-model analyze https://github.com/user/repo -o results.json
+mmmm analyze https://github.com/user/repo -o results.json
 
 # Use a custom weights file and optional identifiers
-maturity-model analyze https://github.com/user/repo \
+mmmm analyze https://github.com/user/repo \
   --weights my-weights.yaml \
   --biotools my-tool \
   --doi 10.1000/example1 \
@@ -39,7 +39,7 @@ maturity-model analyze https://github.com/user/repo \
   --output results.json
 
 # Analyze a local checkout (skip cloning)
-maturity-model analyze https://github.com/user/repo --local-repo-path ./repo
+mmmm analyze https://github.com/user/repo --local-repo-path ./repo
 ```
 
 ## Configuration

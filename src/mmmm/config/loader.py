@@ -24,7 +24,7 @@ def _read_yaml(path: Path) -> Any:
 
 
 def _default_config_name(filename: str) -> Path:
-    return Path(resources.files("multi_modal_maturity_model.config.default") / filename)
+    return Path(resources.files("mmmm.config.default") / filename)
 
 
 def load_weights_config(path: Path | str | None = None) -> WeightsConfig:

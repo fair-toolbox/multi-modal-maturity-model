@@ -39,7 +39,7 @@ pip install git+https://github.com/fair-toolbox/multi-modal-maturity-model.git
 Analyze a repository:
 
 ```bash
-maturity-model analyze https://github.com/user/repo
+mmmm analyze https://github.com/user/repo
 ```
 
 See the [User Guide](user_guide.md) for more examples and options.
