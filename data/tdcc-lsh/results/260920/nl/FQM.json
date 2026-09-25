@@ -1,7 +1,99 @@
 {
     "FQM": {
         "tool_name": "FQM",
-        "biotools": null,
+        "biotools": {
+            "name": "FQM_Analysis",
+            "description": "Fully automatic CAC scoring analysis of QRM CCI insert",
+            "homepage": "https://github.com/nwerf/FQM_Analysis",
+            "biotoolsID": "FQM_Analysis",
+            "biotoolsCURIE": "biotools:FQM_Analysis",
+            "version": [],
+            "otherID": [],
+            "relation": [],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3438",
+                            "term": "Calculation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2968",
+                                "term": "Image"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2048",
+                                "term": "Report"
+                            },
+                            "format": [
+                                {
+                                    "uri": "http://edamontology.org/format_3620",
+                                    "term": "xlsx"
+                                }
+                            ]
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_3452",
+                    "term": "Tomography"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "MATLAB",
+                "Python"
+            ],
+            "license": "Not licensed",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": null,
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [],
+            "publication": [
+                {
+                    "doi": "10.1002/mp.14912",
+                    "pmid": "33932026",
+                    "pmcid": "PMC8360117",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-08T11:03:44.222317Z",
+            "lastUpdate": "2026-07-08T11:04:14.406090Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 280418414,

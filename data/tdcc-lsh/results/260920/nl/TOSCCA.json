@@ -1,7 +1,125 @@
 {
     "TOSCCA": {
         "tool_name": "TOSCCA",
-        "biotools": null,
+        "biotools": {
+            "name": "toscca",
+            "description": "toscca is an R package to perform Thresholded Ordered Sparse Canonical Correlation Analysis (TOSCCA).",
+            "homepage": "https://github.com/nuria-sv/toscca",
+            "biotoolsID": "toscca",
+            "biotoolsCURIE": "biotools:toscca",
+            "version": [
+                "1.0"
+            ],
+            "otherID": [],
+            "relation": [
+                {
+                    "biotoolsID": "ggplot2",
+                    "type": "uses"
+                }
+            ],
+            "function": [
+                {
+                    "operation": [
+                        {
+                            "uri": "http://edamontology.org/operation_3935",
+                            "term": "Dimensionality reduction"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_3465",
+                            "term": "Correlation"
+                        },
+                        {
+                            "uri": "http://edamontology.org/operation_2238",
+                            "term": "Statistical calculation"
+                        }
+                    ],
+                    "input": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_3869",
+                                "term": "Simulation"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "output": [
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_1636",
+                                "term": "Heat map"
+                            },
+                            "format": []
+                        },
+                        {
+                            "data": {
+                                "uri": "http://edamontology.org/data_2884",
+                                "term": "Plot"
+                            },
+                            "format": []
+                        }
+                    ],
+                    "note": null,
+                    "cmd": null
+                }
+            ],
+            "toolType": [
+                "Library"
+            ],
+            "topic": [
+                {
+                    "uri": "http://edamontology.org/topic_2269",
+                    "term": "Statistics and probability"
+                }
+            ],
+            "operatingSystem": [],
+            "language": [
+                "R"
+            ],
+            "license": "Other",
+            "collectionID": [],
+            "maturity": "Emerging",
+            "cost": "Free of charge",
+            "accessibility": null,
+            "elixirPlatform": [],
+            "elixirNode": [],
+            "elixirCommunity": [],
+            "link": [],
+            "download": [],
+            "documentation": [
+                {
+                    "url": "https://github.com/nuria-sv/toscca/wiki",
+                    "type": [
+                        "General"
+                    ],
+                    "note": null
+                }
+            ],
+            "publication": [
+                {
+                    "doi": "10.1093/bioadv/vbae021",
+                    "pmid": "38456127",
+                    "pmcid": "PMC10919946",
+                    "type": [
+                        "Primary"
+                    ],
+                    "version": null,
+                    "note": null,
+                    "metadata": null
+                }
+            ],
+            "credit": [],
+            "owner": "n.m.palmblad@lumc.nl",
+            "additionDate": "2026-07-06T11:54:00.427442Z",
+            "lastUpdate": "2026-07-06T11:55:37.471769Z",
+            "editPermission": {
+                "type": "private",
+                "authors": []
+            },
+            "validated": 0,
+            "homepage_status": 0,
+            "elixir_badge": 0,
+            "confidence_flag": null
+        },
         "github": {
             "repository": {
                 "id": 530732400,
