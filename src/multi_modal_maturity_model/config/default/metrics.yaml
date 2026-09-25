@@ -27,10 +27,8 @@ metrics:
         gitlab:
           path: "repository.star_count"
     normalization:
-      scaler: clamp
-      lo: 0.0
-      hi: 100.0
-      invert: false
+      scaler: log
+      cap: 50.0
 
   fork_count:
     type: numeric
@@ -45,8 +43,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 0.0
-      hi: 100.0
-      invert: false
+      hi: 25.0
 
   num_open_issues:
     type: numeric
@@ -61,7 +58,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 0.0
-      hi: 200.0
+      hi: 20.0
       invert: true
 
   has_workflow_support:
@@ -137,7 +134,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 0.0
-      hi: 180.0
+      hi: 365.0
       invert: true
 
   avg_issue_close_time_days:
@@ -154,7 +151,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 0.0
-      hi: 90.0
+      hi: 250.0
       invert: true
 
   inverse_simpson_index:
@@ -175,7 +172,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 1.0
-      hi: 20.0
+      hi: 4.0
       invert: false
 
   gitignore_present:
@@ -337,7 +334,7 @@ metrics:
           path: "cited_by_count"
     normalization:
       scaler: log
-      cap: 200.0
+      cap: 100.0
 
   altmetric_score:
     type: numeric
@@ -350,7 +347,7 @@ metrics:
           path: "score"
     normalization:
       scaler: log
-      cap: 100.0
+      cap: 50.0
 
   # ---------------------------------------------------------------------------
   # Code Quality Metrics (Lizard)
@@ -366,8 +363,8 @@ metrics:
           path: "nloc_per_file"
     normalization:
       scaler: clamp
-      lo: 0.0
-      hi: 1000.0
+      lo: 20.0
+      hi: 500.0
       invert: true
 
   avg_ccn:
@@ -395,7 +392,7 @@ metrics:
     normalization:
       scaler: clamp
       lo: 0.0
-      hi: 100.0
+      hi: 30.0
       invert: true
 
 # =============================================================================
@@ -447,6 +444,7 @@ normalization_methods:
     description: "Logarithmic scaling with optional cap"
     parameters:
       - cap: "Maximum value for log scaling"
+      - invert: "If true, higher values map to lower scores"
 
   fraction:
     description: "Already a fraction in [0,1], no transformation needed"
