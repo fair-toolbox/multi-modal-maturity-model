@@ -161,6 +161,568 @@
                 "network_count": 2,
                 "subscribers_count": 2
             },
+            "contents": [
+                {
+                    "path": ".gitignore",
+                    "type": "blob"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "blob"
+                },
+                {
+                    "path": "README.md",
+                    "type": "blob"
+                },
+                {
+                    "path": "bin/cancersig",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/app/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/app/profile.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/app/signature.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/config.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/features.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/merge.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/msi.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/snv.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/sv.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_1/exp_msi_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_1/raw_msisensor_out",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_1/raw_msisensor_out_somatic",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_2/exp_msi_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_2/raw_msisensor_out",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/msi_profiler/MSIProfiler/test_profile_2/raw_msisensor_out_somatic",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/MSI/cancer1/sample1.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/MSI/cancer1/sample2.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/MSI/cancer2/sample3.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/MSI/cancer2/sample4.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SNV/cancer1/sample1.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SNV/cancer1/sample2.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SNV/cancer2/sample3.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SNV/cancer2/sample4.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SV/cancer1/sample1.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SV/cancer1/sample2.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SV/cancer2/sample3.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/SV/cancer2/sample4.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_1/exp_merged_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/MSI/cancer1/sample1.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/MSI/cancer1/sample2.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/MSI/cancer2/sample3.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/MSI/cancer2/sample4.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SNV/cancer1/sample1.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SNV/cancer1/sample2.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SNV/cancer2/sample3.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SNV/cancer2/sample4.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SV/cancer1/sample1.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SV/cancer1/sample2.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SV/cancer2/sample3.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/SV/cancer2/sample4.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_2/exp_merged_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/MSI/cancer1/sample1.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/MSI/cancer1/sample2.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/MSI/cancer2/sample3.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/MSI/cancer2/sample4.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SNV/cancer1/sample1.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SNV/cancer1/sample2.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SNV/cancer2/sample4.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SV/cancer1/sample1.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SV/cancer1/sample2.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SV/cancer2/sample3.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/SV/cancer2/sample4.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_3/exp_merged_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/MSI/cancer1/sample1.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/MSI/cancer1/sample2.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/MSI/cancer2/sample3.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/MSI/cancer2/sample4.msi.profile.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SNV/cancer1/sample1.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SNV/cancer1/sample2.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SNV/cancer2/sample3.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SNV/cancer2/sample4.snv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SV/cancer1/sample1.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SV/cancer1/sample2.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SV/cancer2/sample3.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/profile_merger/ProfileMerger/test_merge_4/SV/cancer2/sample4.sv.feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/exp_event.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/exp_snv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/input.vcf.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/input.vcf.gz.tbi",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/ref_genome.fa",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_1/ref_genome.fa.fai",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/exp_event.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/exp_snv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/input.vcf.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/input.vcf.gz.tbi",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/ref_genome.fa",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_2/ref_genome.fa.fai",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/exp_event.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/exp_snv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/input.vcf.gz",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/input.vcf.gz.tbi",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/ref_genome.fa",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_3/ref_genome.fa.fai",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_4/exp_snv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_4/input.vcf",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_4/ref_genome.fa",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_4/ref_genome.fa.fai",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_5/exp_snv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_5/input.vcf",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_5/input.vcf.gz.tbi",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_5/ref_genome.fa",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/snv_profiler/SNVProfiler/test_profile_5/ref_genome.fa.fai",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/sv_profiler/SVProfiler/test_profile_1/exp_sv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/sv_profiler/SVProfiler/test_profile_1/input.vcf",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/sv_profiler/SVProfiler/test_profile_2/exp_sv_feature.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/data/sv_profiler/SVProfiler/test_profile_2/input.vcf",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/test_msi_profiler.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/test_profile_merger.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/test_snv_profiler.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/profile/test/test_sv_profiler.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/decipher.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/figure.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/decipher/CancerSigController/test_decipher_1/mutation_profiles.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/decipher/CancerSigController/test_decipher_2/mutation_profiles.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/decipher/CancerSigController/test_decipher_3/mutation_profiles.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_1/exp_weights",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_1/mutation_profiles.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_1/signatures_probabilities.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_2/exp_weights",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_2/mutation_profiles.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/data/visualize/Visualizer/test_visualize_2/signatures_probabilities.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/test_decipher.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/test/test_visualize.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/signature/visualize.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/template.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/utils/__init__.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/utils/disp.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/utils/logger.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "cancersig/utils/readVCF.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/example_sample1_cancersig_profile.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/example_sample2_cancersig_profile.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/example_sample3_cancersig_profile.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/example_sample4_cancersig_profile.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/output_deciphered_2_processes.pdf",
+                    "type": "blob"
+                },
+                {
+                    "path": "example/output_deciphered_2_processes.txt",
+                    "type": "blob"
+                },
+                {
+                    "path": "figures/A_demo_sample_combined_profile.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "figures/A_demo_sample_snv_only_profile.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "figures/workflow.png",
+                    "type": "blob"
+                },
+                {
+                    "path": "install.sh",
+                    "type": "blob"
+                },
+                {
+                    "path": "setup.py",
+                    "type": "blob"
+                },
+                {
+                    "path": "unit_test",
+                    "type": "blob"
+                }
+            ],
             "contributors": [
                 {
                     "login": "jessada",
